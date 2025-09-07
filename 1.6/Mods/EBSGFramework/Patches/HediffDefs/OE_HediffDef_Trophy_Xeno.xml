@@ -439,39 +439,6 @@
     </comps>
   </HediffDef>
 
-<!--=============== Mechfeaster - Effect ====================-->
-  <HediffDef>
-    <defName>OE_Trophy_Xeno_NanogenicRanged_Hediff</defName>
-    <label>Nanogel on Kill</label>
-    <description>You shouldn't be able to read this outside devmode.</description>
-    <hediffClass>HediffWithComps</hediffClass>
-    <everCurableByItem>false</everCurableByItem>
-    <scenarioCanAdd>false</scenarioCanAdd>
-    <initialSeverity>1.0</initialSeverity>
-	<maxSeverity>1.0</maxSeverity>
-	<stages>
-	  <li>
-        <becomeVisible>false</becomeVisible>
-      </li>
-	</stages>
-    <comps>
-      <li Class="EBSGFramework.HediffCompProperties_DRGOnKill">
-	    <resourceOffsets>
-		  <li>
-		    <mainResourceGene>OE_NanomorphNanogenic</mainResourceGene>
-			<amount>0.05</amount>
-			<maxDistance>18.9</maxDistance>
-			<allowHumanoids>False</allowHumanoids>
-			<allowDryads>False</allowDryads>
-			<allowInsects>False</allowInsects>
-			<allowAnimals>False</allowAnimals>
-			<allowEntities>False</allowEntities>
-		  </li>
-		</resourceOffsets>
-      </li>
-    </comps>
-  </HediffDef>
-
 			</value>
 		  </li>
 		</operations>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
 
@@ -23,14 +23,11 @@
 <!--=============== Pistol ====================-->
 <!--=============== Base ====================-->
   <ThingDef Name="OETrophyXenoPistolBase" ParentName="OERangedBaseNC" Abstract="True">
-    <descriptionHyperlinks>
-	  <GeneDef>OE_NanomorphNanogenic</GeneDef>
-	</descriptionHyperlinks>	
 	<soundInteract>Interact_ChargeRifle</soundInteract>
 	<weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
-	<tradeTags>
+	<tradeTags>f
       <li>OEGearTrophy</li>
 	  <li>OEGearTrophySell</li>
     </tradeTags>
@@ -82,22 +79,6 @@
 	  <OE_Mooncloth>2</OE_Mooncloth>
       <OE_Syntherius>25</OE_Syntherius>
     </costList>
-	<comps>
-	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
-        <hediffs>
-		  <li>
-		    <hediff>OE_Trophy_Xeno_NanogenicRanged_Hediff</hediff>
-		  </li>
-		</hediffs>
-      </li>
-	</comps>
-	<modExtensions>
-	  <li Class="EBSGFramework.EquipRestrictExtension">
-	    <requiredGenesToEquip>
-		  <li>OE_NanomorphNanogenic</li>
-		</requiredGenesToEquip>
-	  </li>
-	</modExtensions>
 	<thingCategories Inherit="False">
       <li>OE_Category_Weapons_Trophy_Ranged</li>
     </thingCategories>
@@ -178,13 +159,6 @@
 	  <MarketValue>2050</MarketValue>
     </statBases>
 	<comps Inherit="False">
-      <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
-        <hediffs>
-		  <li>
-		    <hediff>OE_Trophy_Xeno_NanogenicRanged_Hediff</hediff>
-		  </li>
-		</hediffs>
-      </li>
 	  <li Class="CompProperties_Styleable"/>
 	  <li Class="CompProperties_Forbiddable"/>
 	  <li Class="CompProperties_EquippableAbilityReloadable"/>
@@ -221,6 +195,7 @@
 			  </operations>
 			</match>
 		  </li>  
+		</operations>
 		</operations>
 	</match>
 </Operation>
