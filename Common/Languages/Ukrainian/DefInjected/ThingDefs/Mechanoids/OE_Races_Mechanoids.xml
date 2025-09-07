@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+<!--=============== Maid ====================-->
+<OE_Mech_Maid.label>Покоївка</OE_Mech_Maid.label>
+<OE_Mech_Maid.description>Механоїд створений як домогосподарка. Не маючи зброї далекого бою, вона може робити лише слабкі атаки ближнього бою. Покоївка може тягати, прибирати, готувати, а також рятувати поранених, гасити пожежі, лікувати хворих і навіть проводити операції, коли більш кваліфікована людина недоступна.</OE_Mech_Maid.description>
+<OE_Mech_Maid.tools.left_fist.label>ліва рука</OE_Mech_Maid.tools.left_fist.label>
+<OE_Mech_Maid.tools.right_fist.label>права рука</OE_Mech_Maid.tools.right_fist.label>
+<OE_Mech_Maid.tools.head.label>голова</OE_Mech_Maid.tools.head.label>
+<OE_Mech_Maid.tools.head-1.label>голова</OE_Mech_Maid.tools.head-1.label>
+
+<!--=============== Octo ====================-->
+<OE_Mech_Octo.label>Окто-Бот</OE_Mech_Octo.label>
+<OE_Mech_Octo.description>Механоїд створений як рабочий. Не маючи зброї далекого бою, вона може робити лише слабкі атаки ближнього бою. Окто-Бот спроектований виконувати велику кількість завдань, таких як будівництво, крафт, перевезення, видобуток корисних копалин, ковальство та пошиття одягу.</OE_Mech_Octo.description>
+<OE_Mech_Octo.tools.tentacle.label>щупальце</OE_Mech_Octo.tools.tentacle.label>
+<OE_Mech_Octo.tools.head.label>голова</OE_Mech_Octo.tools.head.label>
+<OE_Mech_Octo.tools.head-1.label>голова</OE_Mech_Octo.tools.head-1.label>
+
+<!--=============== Arachna ====================-->
+<!--=============== OMC ====================-->
+<OE_Mech_OMC_Arachna.label>OMC Арахна</OE_Mech_OMC_Arachna.label>
+<OE_Mech_OMC_Arachna.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйована Штурмова Гвинтівка OMC.</OE_Mech_OMC_Arachna.description>
+<OE_Mech_OMC_Arachna.tools.front_left_leg.label>передня ліва нога</OE_Mech_OMC_Arachna.tools.front_left_leg.label>
+<OE_Mech_OMC_Arachna.tools.front_right_leg.label>передня права нога</OE_Mech_OMC_Arachna.tools.front_right_leg.label>
+<OE_Mech_OMC_Arachna.tools.head.label>голова</OE_Mech_OMC_Arachna.tools.head.label>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<OE_Mech_OTC_Arachna_Acid.label>OTC Арахна(Кислота)</OE_Mech_OTC_Arachna_Acid.label>
+<OE_Mech_OTC_Arachna_Acid.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйований Дробовик OTC заряджений Кислотним ушкодженням.</OE_Mech_OTC_Arachna_Acid.description>
+<OE_Mech_OTC_Arachna_Acid.tools.front_left_leg.label>передня ліва нога</OE_Mech_OTC_Arachna_Acid.tools.front_left_leg.label>
+<OE_Mech_OTC_Arachna_Acid.tools.front_right_leg.label>передня права нога</OE_Mech_OTC_Arachna_Acid.tools.front_right_leg.label>
+<OE_Mech_OTC_Arachna_Acid.tools.head.label>голова</OE_Mech_OTC_Arachna_Acid.tools.head.label>
+<!--=============== Cryo ====================-->
+<OE_Mech_OTC_Arachna_Cryo.label>OTC Арахна(Кріо)</OE_Mech_OTC_Arachna_Cryo.label>
+<OE_Mech_OTC_Arachna_Cryo.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйований Дробовик OTC заряджений Кріо ушкодженням.</OE_Mech_OTC_Arachna_Cryo.description>
+<OE_Mech_OTC_Arachna_Cryo.tools.front_left_leg.label>передня ліва нога</OE_Mech_OTC_Arachna_Cryo.tools.front_left_leg.label>
+<OE_Mech_OTC_Arachna_Cryo.tools.front_right_leg.label>передня права нога</OE_Mech_OTC_Arachna_Cryo.tools.front_right_leg.label>
+<OE_Mech_OTC_Arachna_Cryo.tools.head.label>голова</OE_Mech_OTC_Arachna_Cryo.tools.head.label>
+<!--=============== Fire ====================-->
+<OE_Mech_OTC_Arachna_Fire.label>OTC Арахна(Вогонь)</OE_Mech_OTC_Arachna_Fire.label>
+<OE_Mech_OTC_Arachna_Fire.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйований Дробовик OTC заряджений Вогняним ушкодженням.</OE_Mech_OTC_Arachna_Fire.description>
+<OE_Mech_OTC_Arachna_Fire.tools.front_left_leg.label>передня ліва нога</OE_Mech_OTC_Arachna_Fire.tools.front_left_leg.label>
+<OE_Mech_OTC_Arachna_Fire.tools.front_right_leg.label>передня права нога</OE_Mech_OTC_Arachna_Fire.tools.front_right_leg.label>
+<OE_Mech_OTC_Arachna_Fire.tools.head.label>голова</OE_Mech_OTC_Arachna_Fire.tools.head.label>
+<!--=============== EMP ====================-->
+<OE_Mech_OTC_Arachna_EMP.label>OTC Арахна(ЕМІ)</OE_Mech_OTC_Arachna_EMP.label>
+<OE_Mech_OTC_Arachna_EMP.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйований Дробовик OTC заряджений ЕМІ ушкодженням.</OE_Mech_OTC_Arachna_EMP.description>
+<OE_Mech_OTC_Arachna_EMP.tools.front_left_leg.label>передня ліва нога</OE_Mech_OTC_Arachna_EMP.tools.front_left_leg.label>
+<OE_Mech_OTC_Arachna_EMP.tools.front_right_leg.label>передня права нога</OE_Mech_OTC_Arachna_EMP.tools.front_right_leg.label>
+<OE_Mech_OTC_Arachna_EMP.tools.head.label>голова</OE_Mech_OTC_Arachna_EMP.tools.head.label>
+
+<!--=============== OCC ====================-->
+<OE_Mech_OCC_Arachna.label>OCC Арахна</OE_Mech_OCC_Arachna.label>
+<OE_Mech_OCC_Arachna.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйована Гвинтівка OCC.</OE_Mech_OCC_Arachna.description>
+<OE_Mech_OCC_Arachna.tools.front_left_leg.label>передня ліва нога</OE_Mech_OCC_Arachna.tools.front_left_leg.label>
+<OE_Mech_OCC_Arachna.tools.front_right_leg.label>передня права нога</OE_Mech_OCC_Arachna.tools.front_right_leg.label>
+<OE_Mech_OCC_Arachna.tools.head.label>голова</OE_Mech_OCC_Arachna.tools.head.label>
+
+<!--=============== OEC ====================-->
+<OE_Mech_OEC_Arachna.label>OEC Арахна</OE_Mech_OEC_Arachna.label>
+<OE_Mech_OEC_Arachna.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйована Снайперська Гвинтівка OEC.</OE_Mech_OEC_Arachna.description>
+<OE_Mech_OEC_Arachna.tools.front_left_leg.label>передня ліва нога</OE_Mech_OEC_Arachna.tools.front_left_leg.label>
+<OE_Mech_OEC_Arachna.tools.front_right_leg.label>передня права нога</OE_Mech_OEC_Arachna.tools.front_right_leg.label>
+<OE_Mech_OEC_Arachna.tools.head.label>голова</OE_Mech_OEC_Arachna.tools.head.label>
+
+<!--=============== CAC ====================-->
+<OE_Mech_CAC_Arachna.label>CAC Арахна</OE_Mech_CAC_Arachna.label>
+<OE_Mech_CAC_Arachna.description>Броньований бойовий механоїд середнього розміру. За основу дизайну взято однойменних істот.\n\nУ цій моделі використовується реконструйований Мініган CAC.</OE_Mech_CAC_Arachna.description>
+<OE_Mech_CAC_Arachna.tools.front_left_leg.label>передня ліва нога</OE_Mech_CAC_Arachna.tools.front_left_leg.label>
+<OE_Mech_CAC_Arachna.tools.front_right_leg.label>передня права нога</OE_Mech_CAC_Arachna.tools.front_right_leg.label>
+<OE_Mech_CAC_Arachna.tools.head.label>голова</OE_Mech_CAC_Arachna.tools.head.label>
+
+<!--=============== Arachna Queen ====================-->
+<OE_Mech_ArachnaQueen.label>Королева-Арахна</OE_Mech_ArachnaQueen.label>
+<OE_Mech_ArachnaQueen.description>Надтехнологічний та надважкий механоїд із вбудованим гестатором. За наявності потрібних ресурсів Королева-Арахна здатна формувати бойових дронів-арахна у своєму масивному панцирі і випускати їх у бій. Королева-Арахна є копією аватара божества якому поклоняються Культисти Червоної Арахни. Здібності Хватка Королеви та Прокляття Королеви допомагають їй домінувати на полі бою. Навіть її смерть має наслідки для ворогів.</OE_Mech_ArachnaQueen.description>
+<OE_Mech_ArachnaQueen.tools.front_left_leg.label>передня ліва нога</OE_Mech_ArachnaQueen.tools.front_left_leg.label>
+<OE_Mech_ArachnaQueen.tools.front_right_leg.label>передня права нога</OE_Mech_ArachnaQueen.tools.front_right_leg.label>
+<OE_Mech_ArachnaQueen.tools.head.label>голова</OE_Mech_ArachnaQueen.tools.head.label>
+
+<!--=============== Crimson Arachna ====================-->
+<OE_Mech_CrimsonArachna.label>Алая Арахна</OE_Mech_CrimsonArachna.label>
+<OE_Mech_CrimsonArachna.description>Надтехнологічний та надважкий механоїд із вбудованим гестатором. За наявності потрібних ресурсів Алая Арахна здатна формувати бойових дронов-арахна у своєму масивному панцирі і випускати їх у бій. Алая Арахна є аватаром божества якому поклоняються Культисти Алої Арахни. Здібності Хватка Королеви та Прокляття Королеви допомагають їй домінувати на полі бою. Навіть її смерть має наслідки для ворогів.</OE_Mech_CrimsonArachna.description>
+<OE_Mech_CrimsonArachna.tools.front_left_leg.label>передня ліва нога</OE_Mech_CrimsonArachna.tools.front_left_leg.label>
+<OE_Mech_CrimsonArachna.tools.front_right_leg.label>передня права нога</OE_Mech_CrimsonArachna.tools.front_right_leg.label>
+<OE_Mech_CrimsonArachna.tools.head.label>голова</OE_Mech_CrimsonArachna.tools.head.label>
+
+<!--=============== Arachna Drone ====================-->
+<OE_Mech_ArachnaDrone.label>Дрон-Арахна</OE_Mech_ArachnaDrone.label>
+<OE_Mech_ArachnaDrone.description>Невеликий бойовий механоїд, який зазвичай виготовляється і запускається надважким механоїдом, Королевою-Арахна. Дрон-Арахна — одиниця, що витрачається, призначена для масованих атак у ближньому бою на противника. На механоїді встановлено одноразовий акумулятор..</OE_Mech_ArachnaDrone.description>
+<OE_Mech_ArachnaDrone.tools.front_left_leg.label>передня ліва нога</OE_Mech_ArachnaDrone.tools.front_left_leg.label>
+<OE_Mech_ArachnaDrone.tools.front_right_leg.label>передня права нога</OE_Mech_ArachnaDrone.tools.front_right_leg.label>
+<OE_Mech_ArachnaDrone.tools.head.label>голова</OE_Mech_ArachnaDrone.tools.head.label>
+<OE_Mech_ArachnaDrone.tools.head-1.label>голова</OE_Mech_ArachnaDrone.tools.head-1.label>
+
+<!--=============== Crimson Arachna Drone ====================-->
+<OE_Mech_CrimsonArachnaDrone.label>Алий Дрон-Арахна</OE_Mech_CrimsonArachnaDrone.label>
+<OE_Mech_CrimsonArachnaDrone.description>Невеликий бойовий механоїд, що зазвичай виготовляється і запускається надважким механоїдом, Алая Арахна. Алий Дрон-Арахна — одиниця, що витрачається, призначена для масованих атак у ближньому бою на противника. На механоїді встановлено одноразовий акумулятор.</OE_Mech_CrimsonArachnaDrone.description>
+<OE_Mech_CrimsonArachnaDrone.tools.front_left_leg.label>передня ліва нога</OE_Mech_CrimsonArachnaDrone.tools.front_left_leg.label>
+<OE_Mech_CrimsonArachnaDrone.tools.front_right_leg.label>передня права нога</OE_Mech_CrimsonArachnaDrone.tools.front_right_leg.label>
+<OE_Mech_CrimsonArachnaDrone.tools.head.label>голова</OE_Mech_CrimsonArachnaDrone.tools.head.label>
+<OE_Mech_CrimsonArachnaDrone.tools.head-1.label>голова</OE_Mech_CrimsonArachnaDrone.tools.head-1.label>
+
+<!--=============== Dominator ====================-->
+<!--=============== OMC ====================-->
+<OE_Mech_OMC_Dominator.label>OMC Домінатор</OE_Mech_OMC_Dominator.label>
+<OE_Mech_OMC_Dominator.description>Добре броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково вмонтована Ракетна Установка і використовується реконструйовий Дробовик OMC.</OE_Mech_OMC_Dominator.description>
+<OE_Mech_OMC_Dominator.tools.left_fist.label>ліва рука</OE_Mech_OMC_Dominator.tools.left_fist.label>
+<OE_Mech_OMC_Dominator.tools.right_fist.label>права рука</OE_Mech_OMC_Dominator.tools.right_fist.label>
+<OE_Mech_OMC_Dominator.tools.head.label>голова</OE_Mech_OMC_Dominator.tools.head.label>
+
+<Bullet_OMC_MRL.label>ракета з міні смерті MK-II</Bullet_OMC_MRL.label>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<OE_Mech_OTC_Dominator_Acid.label>OTC Домінатор(Кислота)</OE_Mech_OTC_Dominator_Acid.label>
+<OE_Mech_OTC_Dominator_Acid.description>Добре броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлена програма "Хаос" і використовується реконструйована Багатоствольна Зброя OTC з Кислотними зарядами.</OE_Mech_OTC_Dominator_Acid.description>
+<OE_Mech_OTC_Dominator_Acid.tools.left_fist.label>ліва рука</OE_Mech_OTC_Dominator_Acid.tools.left_fist.label>
+<OE_Mech_OTC_Dominator_Acid.tools.right_fist.label>права рука</OE_Mech_OTC_Dominator_Acid.tools.right_fist.label>
+<OE_Mech_OTC_Dominator_Acid.tools.head.label>голова</OE_Mech_OTC_Dominator_Acid.tools.head.label>
+<!--=============== Cryo ====================-->
+<OE_Mech_OTC_Dominator_Cryo.label>OTC Домінатор(Кріо)</OE_Mech_OTC_Dominator_Cryo.label>
+<OE_Mech_OTC_Dominator_Cryo.description>Добре броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлена програма "Хаос" і використовується реконструйована Багатоствольна Зброя OTC з Кріо зарядами.</OE_Mech_OTC_Dominator_Cryo.description>
+<OE_Mech_OTC_Dominator_Cryo.tools.left_fist.label>ліва рука</OE_Mech_OTC_Dominator_Cryo.tools.left_fist.label>
+<OE_Mech_OTC_Dominator_Cryo.tools.right_fist.label>права рука</OE_Mech_OTC_Dominator_Cryo.tools.right_fist.label>
+<OE_Mech_OTC_Dominator_Cryo.tools.head.label>голова</OE_Mech_OTC_Dominator_Cryo.tools.head.label>
+<!--=============== Fire ====================-->
+<OE_Mech_OTC_Dominator_Fire.label>OTC Домінатор(Вогонь)</OE_Mech_OTC_Dominator_Fire.label>
+<OE_Mech_OTC_Dominator_Fire.description>Добре броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлена програма "Хаос" і використовується реконструйована Багатоствольна Зброя OTC з Вогненними зарядами.</OE_Mech_OTC_Dominator_Fire.description>
+<OE_Mech_OTC_Dominator_Fire.tools.left_fist.label>ліва рука</OE_Mech_OTC_Dominator_Fire.tools.left_fist.label>
+<OE_Mech_OTC_Dominator_Fire.tools.right_fist.label>права рука</OE_Mech_OTC_Dominator_Fire.tools.right_fist.label>
+<OE_Mech_OTC_Dominator_Fire.tools.head.label>голова</OE_Mech_OTC_Dominator_Fire.tools.head.label>
+<!--=============== EMP ====================-->
+<OE_Mech_OTC_Dominator_EMP.label>OTC Домінатор(ЕМІ)</OE_Mech_OTC_Dominator_EMP.label>
+<OE_Mech_OTC_Dominator_EMP.description>Добре броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлена програма "Хаос" і використовується реконструйована Багатоствольна Зброя OTC з ЕМІ зарядами.</OE_Mech_OTC_Dominator_EMP.description>
+<OE_Mech_OTC_Dominator_EMP.tools.left_fist.label>ліва рука</OE_Mech_OTC_Dominator_EMP.tools.left_fist.label>
+<OE_Mech_OTC_Dominator_EMP.tools.right_fist.label>права рука</OE_Mech_OTC_Dominator_EMP.tools.right_fist.label>
+<OE_Mech_OTC_Dominator_EMP.tools.head.label>голова</OE_Mech_OTC_Dominator_EMP.tools.head.label>
+
+<!--=============== OCC ====================-->
+<OE_Mech_OCC_Dominator.label>OCC Домінатор</OE_Mech_OCC_Dominator.label>
+<OE_Mech_OCC_Dominator.description>Тяжко броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлена програма "Авангард" і використовується реконструйована Дриль OCC.</OE_Mech_OCC_Dominator.description>
+<OE_Mech_OCC_Dominator.tools.left_fist.label>ліва рука</OE_Mech_OCC_Dominator.tools.left_fist.label>
+<OE_Mech_OCC_Dominator.tools.right_fist.label>права рука</OE_Mech_OCC_Dominator.tools.right_fist.label>
+<OE_Mech_OCC_Dominator.tools.head.label>head</OE_Mech_OCC_Dominator.tools.head.label>
+
+<!--=============== OEC ====================-->
+<OE_Mech_OEC_Dominator.label>OEC Домінатор</OE_Mech_OEC_Dominator.label>
+<OE_Mech_OEC_Dominator.description>Броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлено модуль "Скачок" і використовується реконструйовий Лук OEC.</OE_Mech_OEC_Dominator.description>
+<OE_Mech_OEC_Dominator.tools.left_fist.label>ліва рука</OE_Mech_OEC_Dominator.tools.left_fist.label>
+<OE_Mech_OEC_Dominator.tools.right_fist.label>права рука</OE_Mech_OEC_Dominator.tools.right_fist.label>
+<OE_Mech_OEC_Dominator.tools.head.label>голова</OE_Mech_OEC_Dominator.tools.head.label>
+
+<!--=============== ODC ====================-->
+<!--=============== Light ====================-->
+<OE_Mech_ODC_Dominator_Light.label>ODC Домінатор(Легкий)</OE_Mech_ODC_Dominator_Light.label>
+<OE_Mech_ODC_Dominator_Light.description>Броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлено модуль "Камуфляж" і використовується реконструйовані Кігті ODC.</OE_Mech_ODC_Dominator_Light.description>
+<OE_Mech_ODC_Dominator_Light.tools.left_claws.label>ліві кігті</OE_Mech_ODC_Dominator_Light.tools.left_claws.label>
+<OE_Mech_ODC_Dominator_Light.tools.right_claws.label>праві кігті</OE_Mech_ODC_Dominator_Light.tools.right_claws.label>
+<OE_Mech_ODC_Dominator_Light.tools.head.label>голова</OE_Mech_ODC_Dominator_Light.tools.head.label>
+<!--=============== Heavy ====================-->
+<OE_Mech_ODC_Dominator_Heavy.label>ODC Домінатор(Важкий)</OE_Mech_ODC_Dominator_Heavy.label>
+<OE_Mech_ODC_Dominator_Heavy.description>Тяжко броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nУ цій моделі додатково встановлена програма "Провокація" і використовується реконструйовий важкий Піломет ODC.</OE_Mech_ODC_Dominator_Heavy.description>
+<OE_Mech_ODC_Dominator_Heavy.tools.left_fist.label>ліва рука</OE_Mech_ODC_Dominator_Heavy.tools.left_fist.label>
+<OE_Mech_ODC_Dominator_Heavy.tools.right_fist.label>права рука</OE_Mech_ODC_Dominator_Heavy.tools.right_fist.label>
+<OE_Mech_ODC_Dominator_Heavy.tools.head.label>голова</OE_Mech_ODC_Dominator_Heavy.tools.head.label>
+
+<!--=============== OMG ====================-->
+<OE_Mech_OMG_Dominator.label>Домінатор Найманців</OE_Mech_OMG_Dominator.label>
+<OE_Mech_OMG_Dominator.description>Сильно модифікований броньований бойовий механоїд середнього розміру. Серія Домінатор - це сучасний бойовий механоїд, покликаний сіяти смерть та руйнування на полі бою.\n\nЦя модель використовує реконструйований важкий OMG Дробовик, Снайперську гвинтівку або Мініган.</OE_Mech_OMG_Dominator.description>
+<OE_Mech_OMG_Dominator.tools.left_fist.label>ліва рука</OE_Mech_OMG_Dominator.tools.left_fist.label>
+<OE_Mech_OMG_Dominator.tools.right_fist.label>права рука</OE_Mech_OMG_Dominator.tools.right_fist.label>
+<OE_Mech_OMG_Dominator.tools.head.label>голова</OE_Mech_OMG_Dominator.tools.head.label>
+
+<!--=============== Chaos Lord ====================-->
+<OE_Mech_ChaosLord.label>Лорд Хаосу</OE_Mech_ChaosLord.label>
+<OE_Mech_ChaosLord.description>Лорд Хаосу - це прототип, заснований на Домінаторі, добре броньованому механоїді середнього розміру. Спочатку розроблені як бойові механоїди, але тести виявили значні покращення, що призвело до їх використання як убивць. Крім того, вони можуть використовувати покращені здібності Домінаторів.\n\nВикористовує спеціально розроблену унікальну Велику Протонну Гвинтівку.</OE_Mech_ChaosLord.description>
+<OE_Mech_ChaosLord.tools.left_fist.label>ліва рука</OE_Mech_ChaosLord.tools.left_fist.label>
+<OE_Mech_ChaosLord.tools.right_fist.label>права рука</OE_Mech_ChaosLord.tools.right_fist.label>
+<OE_Mech_ChaosLord.tools.head.label>голова</OE_Mech_ChaosLord.tools.head.label>
+
+<!--=============== Fallen Legion ====================-->
+<OE_Mech_FallenLegion.label>Падший Легіон</OE_Mech_FallenLegion.label>
+<OE_Mech_FallenLegion.description>Надтехнологічний, надброньований механоїд розміром із фортецю з вбудованим гестатором. За наявності необхідних ресурсів Падший Легіон здатний формувати середнього розміру бойових Стражів Падшого Легіону. Падший Легіон - модель невідомої розробки, заснований на серії механоїдів Домінатор. Створений для придушення ворогів та повного контролю над полем бою.\n\nВикористовує спеціально розроблений спис-пушку - Спис Падшого Легіону та 4 променеві турелі Легіону.</OE_Mech_FallenLegion.description>
+<OE_Mech_FallenLegion.tools.left_fist.label>ліва рука</OE_Mech_FallenLegion.tools.left_fist.label>
+<OE_Mech_FallenLegion.tools.right_fist.label>права рука</OE_Mech_FallenLegion.tools.right_fist.label>
+<OE_Mech_FallenLegion.tools.head.label>голова</OE_Mech_FallenLegion.tools.head.label>
+
+<!--=============== Fallen Legion Guard ====================-->
+<OE_Mech_LegionGuard.label>Страж Падшого Легіону</OE_Mech_LegionGuard.label>
+<OE_Mech_LegionGuard.description>Надтехнологічний та надброньований механоїд середнього розміру з вбудованим гестатором. За наявності необхідних ресурсів Страж Падшого Легіону здатний формувати бойових Дронів Падшого Легіону. Страж Падшого Легіону - це бойовий механоїд, що розгортається, зазвичай виготовляється всередині надтехнологічного механоїду - Падший Легіон. На механоїді встановлено одноразовий акумулятор.\n\nВикористовує спеціально розроблений спис-пушку - Спис стража Занепалого Легіону.</OE_Mech_LegionGuard.description>
+<OE_Mech_LegionGuard.tools.left_fist.label>ліва рука</OE_Mech_LegionGuard.tools.left_fist.label>
+<OE_Mech_LegionGuard.tools.right_fist.label>права рука</OE_Mech_LegionGuard.tools.right_fist.label>
+<OE_Mech_LegionGuard.tools.head.label>голова</OE_Mech_LegionGuard.tools.head.label>
+
+<!--=============== Fallen Legion Drone ====================-->
+<OE_Mech_LegionDrone.label>Дрон Падшого Легіону</OE_Mech_LegionDrone.label>
+<OE_Mech_LegionDrone.description>Невеликий бойовий механоїд, що зазвичай виготовляється і запускається надважким механоїдом, Страж Падшого Легіону. Дрон Падшого Легіону — одиниця, що витрачається, призначена для масованих атак у ближньому бою на противника. На механоїді встановлено одноразовий акумулятор.</OE_Mech_LegionDrone.description>
+<OE_Mech_LegionDrone.tools.left_fist.label>ліва рука</OE_Mech_LegionDrone.tools.left_fist.label>
+<OE_Mech_LegionDrone.tools.right_fist.label>права рука</OE_Mech_LegionDrone.tools.right_fist.label>
+<OE_Mech_LegionDrone.tools.head.label>голова</OE_Mech_LegionDrone.tools.head.label>
+<OE_Mech_LegionDrone.tools.head-1.label>голова</OE_Mech_LegionDrone.tools.head-1.label>
+
+<!--=============== Swarmling Drone ====================-->
+<!--=============== CAC ====================-->
+<CAC_Swarmling_Drone.label>Дрон-роєвик Культистів</CAC_Swarmling_Drone.label>
+<CAC_Swarmling_Drone.description>Дрон-роєвик Культистів - невеликий автономний механоїд, створений для ефективного знищення. Дрони-роєвики працюють від довговічної батареї.</CAC_Swarmling_Drone.description>
+<CAC_Swarmling_Drone.tools.stinger.label>жало</CAC_Swarmling_Drone.tools.stinger.label>
+
+<!--=============== OMG ====================-->
+<OMG_Swarmling_Drone.label>Дрон-роєвик Найманців</OMG_Swarmling_Drone.label>
+<OMG_Swarmling_Drone.description>Дрон-роєвик Найманців - невеликий автономний механоїд, створений для ефективного знищення. Дрони-роєвики працюють від довговічної батареї.</OMG_Swarmling_Drone.description>
+<OMG_Swarmling_Drone.tools.stinger.label>жало</OMG_Swarmling_Drone.tools.stinger.label>
+
+</LanguageData>

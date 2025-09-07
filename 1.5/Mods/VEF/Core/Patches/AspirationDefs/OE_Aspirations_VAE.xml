@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Aspirations Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Consume Timbium ====================-->
+	<VAspirE.AspirationDef>
+		<defName>VAspirE_OE_ConsumeTimbium</defName>
+		<label>consume timbium</label>
+		<iconPath>UI/AspirationIcons/Aspiration_OE_ConsumeTimbium</iconPath>
+		<description>{0} wants to ride the timbium high.</description>
+		<requiredTraitsAny>
+			<DrugDesire>2</DrugDesire>
+			<DrugDesire>1</DrugDesire>
+		</requiredTraitsAny>
+		<satisfiedHediff>OE_TimbiumHigh</satisfiedHediff>
+	</VAspirE.AspirationDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Kinetic Drive ====================-->
+  <HediffDef>
+    <defName>OE_Ghoul_KineticDrive</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>kinetic drive</label>
+    <description>This creature's blood is saturated with volatile stimulants and synthetic adrenaline, greatly enhancing its speed and combat reflexes, at the cost of rising metabolic strain.</description>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+		<statFactors>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+		  <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+        </statFactors>
+        <statOffsets>
+          <MoveSpeed>4</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Ghoul_KineticDrive_Effecter</stateEffecter>
+      </li>
+    </comps>
+  </HediffDef>  
+
+  <EffecterDef>
+    <defName>OE_Ghoul_KineticDrive_Effecter</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+        <soundDef>GasReleasing</soundDef>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.3</positionRadius>
+        <fleckDef>OE_Ghoul_KineticDrive_FleckA</fleckDef>
+        <chancePerTick>0.1</chancePerTick>
+        <scale>0.4~1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.3</positionRadius>
+        <fleckDef>OE_Ghoul_KineticDrive_FleckB</fleckDef>
+        <chancePerTick>0.15</chancePerTick>
+        <scale>0.25~0.6</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OE_Ghoul_KineticDrive_FleckA</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.3</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>0.8</growthRate>
+    <acceleration>(0, 0, 2)</acceleration>
+    <graphicData>
+      <texPath>Things/Gas/GasCloudThickA</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(0, 255, 162, 64)</color>
+    </graphicData>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OE_Ghoul_KineticDrive_FleckB</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.3</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>0.8</growthRate>
+    <acceleration>(0, 0, 2)</acceleration>
+    <graphicData>
+      <texPath>Things/Gas/GasCloudThickA</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(255, 215, 0, 64)</color>
+    </graphicData>
+  </FleckDef>
+
+<!--=============== Bastion Drive ====================-->
+  <HediffDef>
+    <defName>OE_Ghoul_BastionDrive</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>bastion drive</label>
+    <description>This creature's blood is saturated with protective catalysts and biochemical shields, hardening its body against injury and fire, at the cost of rising metabolic strain.</description>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+		<statFactors>
+          <IncomingDamageFactor>0.5</IncomingDamageFactor>
+		  <Flammability>0</Flammability>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Ghoul_BastionDrive_Effecter</stateEffecter>
+      </li>
+    </comps>
+  </HediffDef>  
+
+  <EffecterDef>
+    <defName>OE_Ghoul_BastionDrive_Effecter</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+        <soundDef>GasReleasing</soundDef>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.3</positionRadius>
+        <fleckDef>OE_Ghoul_BastionDrive_FleckA</fleckDef>
+        <chancePerTick>0.1</chancePerTick>
+        <scale>0.4~1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.3</positionRadius>
+        <fleckDef>OE_Ghoul_BastionDrive_FleckB</fleckDef>
+        <chancePerTick>0.15</chancePerTick>
+        <scale>0.25~0.6</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OE_Ghoul_BastionDrive_FleckA</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.3</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>0.8</growthRate>
+    <acceleration>(0, 0, 2)</acceleration>
+    <graphicData>
+      <texPath>Things/Gas/GasCloudThickA</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(0, 192, 240, 64)</color>
+    </graphicData>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OE_Ghoul_BastionDrive_FleckB</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.3</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>0.8</growthRate>
+    <acceleration>(0, 0, 2)</acceleration>
+    <graphicData>
+      <texPath>Things/Gas/GasCloudThickA</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(166, 120, 240, 64)</color>
+    </graphicData>
+  </FleckDef>
+
+</Defs>

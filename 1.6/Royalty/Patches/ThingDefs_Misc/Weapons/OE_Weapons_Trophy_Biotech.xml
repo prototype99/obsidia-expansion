@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+
+<!--=============== Mech Hammer ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophyMechHammerBase">
+    <defName>OE_Trophy_MechHammer_P</defName>
+    <label>Persona Forgestorm</label>
+    <description>Persona hammer of the famous ancient blacksmith Luke Ainsworth, which was passed on and improved from generation to generation.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves mechanitor skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_MechHammer_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

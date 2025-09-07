@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== CAC - Envy ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+	<defName>CAC_Trophy_Knife</defName>
+    <label>Sixth Arachna's Sin - Envy</label>
+    <description>Amalgam weapon created on the basis of EGO technology. Knife used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Sixth Arachna's Sin - Envy. Increases the owner's working and learning stats at the expense of social stats.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Sin_Envy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<weaponTags>
+	  <li>CACTrophy</li>
+	  <li>CACTrophyEnvy</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>4700</MarketValue>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <!-- + -->
+	  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1.00</EntityStudyRate>
+	  <GlobalLearningFactor>1.00</GlobalLearningFactor>
+	  <WorkSpeedGlobal>1.00</WorkSpeedGlobal>
+	  <!-- - -->
+	  <SocialImpact>-0.75</SocialImpact>
+	  <NegotiationAbility>-0.75</NegotiationAbility>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== CAC - Greed ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+	<defName>CAC_Trophy_BigScythe</defName>
+    <label>Third Arachna's Sin - Greed</label>
+    <description>Amalgam weapon created on the basis of EGO technology. Big Scythe used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Third Arachna's Sin - Greed. Increases the owner's gathering stats at the expense of working stats.</description>
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Sin_Greed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+	  <li>CACTrophy</li>
+	  <li>CACTrophyGreed</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>4700</MarketValue>
+	  <Mass>4.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <!-- + -->
+	  <PlantHarvestYield>1.00</PlantHarvestYield>
+	  <AnimalGatherYield>1.00</AnimalGatherYield>
+	  <MiningYield>1.00</MiningYield>
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.75</WorkSpeedGlobal>
+	  <ConstructSuccessChance>-0.75</ConstructSuccessChance>
+	  <FixBrokenDownBuildingSuccessChance>-0.75</FixBrokenDownBuildingSuccessChance>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>Scratch</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== CAC - Lust ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+	<defName>CAC_Trophy_Whip</defName>
+    <label>First Arachna's Sin - Lust</label>
+    <description>Amalgam weapon created on the basis of EGO technology. Whip used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents First Arachna's Sin - Lust. Increases the owner's social and animal training stats at the expense of increased joy reduction.</description>
+	<uiIconScale>0.85</uiIconScale>
+	<graphicData>
+	  <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Sin_Lust</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawOffsetNorth>(0.0, 0.0, -0.15)</drawOffsetNorth>
+	  <drawOffsetEast>(0.0, 0.0, -0.15)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.15)</drawOffsetSouth>
+	  <drawOffsetWest>(0.0, 0.0, -0.15)</drawOffsetWest>
+    </graphicData>
+	<weaponTags>
+	  <li>CACTrophy</li>
+	  <li>CACTrophyLust</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>3175</MarketValue>
+      <Mass>2.5</Mass>
+	  <AccuracyTouch>1.20</AccuracyTouch>
+      <AccuracyShort>1.15</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <!-- + -->
+	  <TameAnimalChance>1.0</TameAnimalChance>
+	  <TrainAnimalChance>1.0</TrainAnimalChance>
+	  <ArrestSuccessChance>1.0</ArrestSuccessChance>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.0</SocialIdeoSpreadFrequencyFactor>
+	  <!-- - -->
+	  <JoyFallRateFactor>0.75</JoyFallRateFactor>
+	  <Fertility>3.5</Fertility>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_CAC_Trophy_W</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Wave_CAC_Trophy_W</defName>
+    <label>First Arachna's Sin - Lust wave</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_MeleeWave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>80</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>Flame</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== CAC - Wrath ====================-->
+<!--=============== Base ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+	<defName>CAC_Trophy_Shotgun</defName>
+    <label>Fifth Arachna's Sin - Wrath</label>
+    <description>Amalgam weapon created on the basis of EGO technology. Shotgun used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Fifth Arachna's Sin - Wrath. Increases the owner's chance to deal x2 or x3 damage with a weapon at the expense of mental stability.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Sin_Wrath</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.1</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Shotgun</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACTrophy</li>
+	  <li>CACTrophyWrath</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2300</MarketValue> 
+      <Mass>4.5</Mass>
+	  <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <StaggerDurationFactor>-0.75</StaggerDurationFactor>
+	  <MentalBreakThreshold>0.35</MentalBreakThreshold>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_Trophy_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Pawn_Spelopede_Angry</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>Cut</def>
+            <amount>20</amount>
+			<chance>25</chance>
+          </li>
+		  <li>
+            <def>Cut</def>
+            <amount>20</amount>
+			<chance>15</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_Trophy_S</defName>
+    <label>Fifth Arachna's Sin - Wrath blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+	  <speed>70</speed>
+	  <extraDamages>
+	    <li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>Flame</def>
+		 <amount>10</amount>
+       </li>
+		<li>
+         <def>Bullet</def>
+		 <amount>25</amount>
+         <chance>25</chance>
+        </li>
+		<li>
+         <def>Bullet</def>
+		 <amount>25</amount>
+         <chance>15</chance>
+        </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== CAC - Gluttony ====================-->
+<!--=============== Base ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+	<defName>CAC_Trophy_Minigun</defName>
+    <label>Second Arachna's Sin - Gluttony</label>
+    <description>Amalgam weapon created on the basis of EGO technology. Minigun used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Second Arachna's Sin - Gluttony. Increases the owner's healing stats at the expense of increased nutrition reduction.</description>
+	<soundInteract>Interact_Revolver</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Sin_Gluttony</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACTrophy</li>
+	  <li>CACTrophyGluttony</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>4425</MarketValue>
+      <Mass>7.5</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <!-- + -->
+	  <ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+	  <InjuryHealingFactor>2.5</InjuryHealingFactor>
+	  <CancerRate>-0.50</CancerRate>
+	  <!-- - -->
+	  <ForagedNutritionPerDay>-5</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.75</RawNutritionFactor>
+	  <EatingSpeed>-0.75</EatingSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_Trophy_MG</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>24.9</range>
+		<burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Pawn_BigInsect_Angry</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_Trophy_MG</defName>
+    <label>Second Arachna's Sin - Gluttony bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>65</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>Flame</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

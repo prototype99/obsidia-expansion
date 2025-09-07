@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== ISEKAI Memories ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamISEKAIMemories</defName>
+    <label>ISEKAI Memories</label>
+    <description>Carriers of this amalgam gene display an unusual mix of behavior and recollection, as if their minds are stitched together from countless lifetimes.\n\nThey often drift into tales of distant worlds, claiming flashes of wisdom drawn from their “past reincarnations,” and can’t resist reminding others of the fateful day they were struck down by the legendary Truck-kun. To them, every campfire chat is a chance to retell their otherworldly beginnings.\n\nOnce per day the pawn gains both a positive and a negative buff, reflecting the chaotic echoes of their isekai memories.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamISEKAIMemories</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>98</displayOrderInCategory>
+	<geneClass>EBSGFramework.HediffAdder</geneClass>
+    <biostatCpx>4</biostatCpx>
+	<biostatArc>2</biostatArc>
+    <modExtensions>
+      <li Class="EBSGFramework.EBSGExtension">
+        <hediffsToApply>
+          <li>
+            <hediff>OE_AmalgamISEKAIMemories_PositiveGiver_Hediff</hediff>
+          </li>
+		  <li>
+            <hediff>OE_AmalgamISEKAIMemories_NegativeGiver_Hediff</hediff>
+          </li>
+        </hediffsToApply>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

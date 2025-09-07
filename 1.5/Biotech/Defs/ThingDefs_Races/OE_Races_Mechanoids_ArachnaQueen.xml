@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arachna Queen ====================-->
+  <ThingDef ParentName="SuperHeavyMechanoid">
+    <defName>OE_Mech_ArachnaQueen</defName>
+    <label>Arachna Queen</label>
+    <description>An ultra-tech and ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the Arachna Queen can form small Arachna Drones combat mechs within its massive carapace and deploy them into combat\n\nThe Arachna Queen is the avatar's replica of the deity worshiped by the Crimson Arachna Cult. The Queen's Grasp and Queen's Curse abilities help her dominate the battlefield. Even her death has consequences for her enemies.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Mech_ArachnaDrone</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <MoveSpeed>1.75</MoveSpeed>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+	  <EMPResistance>0.85</EMPResistance>
+    </statBases>
+	<tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEMechanicalArachnaQueen</body>
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>4.0</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>15</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </butcherProducts>
+	<killedLeavingsPlayerHostile>
+      <OE_ArachnaCore>1</OE_ArachnaCore>
+    </killedLeavingsPlayerHostile>
+	<comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.74, 0.20, 0.23)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>1000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+		<interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+        <interceptOutgoingProjectiles>true</interceptOutgoingProjectiles>
+        <chargeDurationTicks>5400</chargeDurationTicks>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>OE_Mech_ArachnaDrone</spawnPawnKind>
+        <fixedIngredient>OE_Syntherius</fixedIngredient>
+        <costPerPawn>4</costPerPawn>
+        <startingIngredientCount>96</startingIngredientCount>
+        <maxIngredientCount>96</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>30.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>OEMechCry</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+      </li>
+    </comps>
+  </ThingDef>
+    
+  <PawnKindDef Name="OEKindBaseMechArachnaQueen" ParentName="HeavyMechanoidKind">
+    <defName>OE_Mech_ArachnaQueen</defName>
+    <label>Arachna Queen</label>
+	<race>OE_Mech_ArachnaQueen</race>
+	<combatPower>650</combatPower>
+	<maxPerGroup>3</maxPerGroup>
+    <allowInMechClusters>true</allowInMechClusters>
+    <lifeStages>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaQueen/ArachnaQueen</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaQueen/AllegianceOverlays/Mech_ArachnaQueen</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaQueen/ArachnaQueenAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaQueen/AllegianceOverlays/Mech_ArachnaQueen</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechQueenGrip</li>
+	  <li>OE_MechQueenCurse</li>
+    </abilities>
+	<skipResistant>true</skipResistant>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEKindBaseMechArachnaQueen">
+    <defName>OE_Mech_NewArachnaQueen</defName>
+    <label>Arachna Queen</label>
+    <race>OE_Mech_ArachnaQueen</race>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+	<minGenerationAge>1</minGenerationAge>
+	<maxGenerationAge>98</maxGenerationAge>
+  </PawnKindDef>
+
+<!--=============== Crimson Arachna ====================-->
+  <ThingDef ParentName="SuperHeavyMechanoid">
+    <defName>OE_Mech_CrimsonArachna</defName>
+    <label>Crimson Arachna</label>
+    <description>An ultra-tech and ultra-heavy mech with a built-in mech gestator. Fed with appropriate resources, the Crimson Arachna can form small Crimson Arachna Drones combat mechs within its massive carapace and deploy them into combat\n\nThe Crimson Arachna is the avatar of the deity worshiped by the Crimson Arachna Cult. The Queen's Grasp and Queen's Curse abilities help her dominate the battlefield. Even her death has consequences for her enemies.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Mech_CrimsonArachnaDrone</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>4000</MarketValue>
+      <MoveSpeed>1.75</MoveSpeed>
+      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+	  <EMPResistance>0.85</EMPResistance>
+    </statBases>
+	<tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>3.25</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>3.25</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEMechanicalArachnaQueen</body>
+      <baseBodySize>3.5</baseBodySize>
+      <baseHealthScale>4.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>20</OE_Empyrium>
+      <OE_Orichalcum>20</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+	  <OE_ArachnaCore>1</OE_ArachnaCore>
+    </butcherProducts>
+	<killedLeavingsPlayerHostile>
+      <OE_ArachnaCore>1</OE_ArachnaCore>
+    </killedLeavingsPlayerHostile>
+	<comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>6.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.74, 0.20, 0.23)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>1500</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+		<interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+        <interceptOutgoingProjectiles>true</interceptOutgoingProjectiles>
+        <chargeDurationTicks>5400</chargeDurationTicks>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>OE_Mech_CrimsonArachnaDrone</spawnPawnKind>
+        <fixedIngredient>OE_Syntherius</fixedIngredient>
+        <costPerPawn>4</costPerPawn>
+        <startingIngredientCount>120</startingIngredientCount>
+        <maxIngredientCount>120</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>30.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>OEMechCry</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+      </li>
+    </comps>
+  </ThingDef>
+    
+  <PawnKindDef Name="OEKindBaseMechCrimsonArachnaQueen" ParentName="HeavyMechanoidKind">
+    <defName>OE_Mech_CrimsonArachna</defName>
+    <label>Crimson Arachna</label>
+	<race>OE_Mech_CrimsonArachna</race>
+	<combatPower>675</combatPower>
+	<maxPerGroup>3</maxPerGroup>
+    <allowInMechClusters>true</allowInMechClusters>
+    <lifeStages>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaQueen/CrimsonArachna</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaQueen/AllegianceOverlays/Mech_CrimsonArachna</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.0</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaQueen/CrimsonArachnaAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaQueen/AllegianceOverlays/Mech_CrimsonArachna</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.0</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechQueenGrip</li>
+	  <li>OE_MechQueenCurse</li>
+    </abilities>
+	<skipResistant>true</skipResistant>
+  </PawnKindDef>
+
+</Defs>

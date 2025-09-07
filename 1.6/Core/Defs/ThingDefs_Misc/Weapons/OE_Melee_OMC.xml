@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC - Sword ====================-->
+  <ThingDef Name="OMCSwordBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCSwordBase">
+    <defName>OMC_Sword</defName>
+    <label>Delimiter</label>
+    <description>Regular Sword used by OMC Soldiers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>605</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCBaseMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCSwordBase">
+    <defName>OMC_Sword_M</defName>
+    <label>Delimiter MK-II</label>
+    <description>Modified Sword used by OMC Officers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Sword_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>855</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCBaseMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_Sword>1</OMC_Sword>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OMC - Axe ====================-->
+  <ThingDef Name="OMCAxeBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCAxeBase">
+    <defName>OMC_Axe</defName>
+    <label>Furious</label>
+    <description>Regular Axe used by OMC Soldiers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>605</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCBaseMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCAxeBase">
+    <defName>OMC_Axe_M</defName>
+    <label>Furious MK-II</label>
+    <description>Modified Axe used by OMC Officers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Axe_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>855</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCBaseMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Axe>1</OMC_Axe>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OMC - Whip ====================-->
+  <ThingDef Name="OMCWhipBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>0.85</uiIconScale>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>1.5</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCWhipWave" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCWhipWave">
+    <defName>Wave_OMC_W</defName>
+    <label>Bloodspiller wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCWhipWave">
+    <defName>Wave_OMC_W_M</defName>
+    <label>Bloodspiller MK-II wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCWhipBase">
+    <defName>OMC_Whip</defName>
+    <label>Bloodspiller</label>
+    <description>Regular Whip used by OMC Soldiers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Whip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>365</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMelee</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Mooncloth>12</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCWhipBase">
+    <defName>OMC_Whip_M</defName>
+    <label>Bloodspiller MK-II</label>
+    <description>Modified Whip used by OMC Officers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Whip_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>615</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_Whip>1</OMC_Whip>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OMC - Elemental Whip ====================-->
+  <ThingDef Name="OMCElemWhipBase" ParentName="OMCWhipBase" Abstract="True">
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCElemWhipWave" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageAmountBase>8</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Acid ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_Acid</defName>
+    <label>Bloodspiller Acid wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCAcid</damageDef>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_M_Acid</defName>
+    <label>Bloodspiller MK-II Acid wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCAcid</damageDef>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_Acid</defName>
+    <label>Bloodspiller(Acid)</label>
+    <description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Acid/Whip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>440</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMelee</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_Acid</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Mooncloth>12</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_M_Acid</defName>
+    <label>Bloodspiller MK-II(Acid)</label>
+    <description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Acid/Whip_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>690</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_Acid</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_Acid>1</OMC_Whip_Acid>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_Cryo</defName>
+    <label>Bloodspiller Cryo wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_M_Cryo</defName>
+    <label>Bloodspiller MK-II Cryo wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_Cryo</defName>
+    <label>Bloodspiller(Cryo)</label>
+    <description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Cryo/Whip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>440</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMelee</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_Cryo</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Mooncloth>12</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_M_Cryo</defName>
+    <label>Bloodspiller MK-II(Cryo)</label>
+    <description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Cryo/Whip_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>690</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_Cryo</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_Cryo>1</OMC_Whip_Cryo>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_Fire</defName>
+    <label>Bloodspiller Fire wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Flame</damageDef>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_M_Fire</defName>
+    <label>Bloodspiller MK-II Fire wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Flame</damageDef>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_Fire</defName>
+    <label>Bloodspiller(Fire)</label>
+    <description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Fire/Whip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>440</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMelee</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_Fire</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Mooncloth>12</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_M_Fire</defName>
+    <label>Bloodspiller MK-II(Fire)</label>
+    <description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Fire/Whip_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>690</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_Fire</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_Fire>1</OMC_Whip_Fire>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_EMP</defName>
+    <label>Bloodspiller EMP wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>EMP</damageDef>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OMC_W_M_EMP</defName>
+    <label>Bloodspiller MK-II EMP wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>EMP</damageDef>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_EMP</defName>
+    <label>Bloodspiller(EMP)</label>
+    <description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/EMP/Whip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>440</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMelee</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_EMP</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Mooncloth>12</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_M_EMP</defName>
+    <label>Bloodspiller MK-II(EMP)</label>
+    <description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/EMP/Whip_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>690</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_EMP</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_EMP>1</OMC_Whip_EMP>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

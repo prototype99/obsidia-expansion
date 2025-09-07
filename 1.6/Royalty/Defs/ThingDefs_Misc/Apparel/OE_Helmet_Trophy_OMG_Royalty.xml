@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Trophy Helmet ====================-->
+<!--=============== Neuroflash ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Neuroflash</defName>
+    <label>Mercenary Helmet(Neuroflash)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner with power of Psychic shock lance.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Neuroflash/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <PsychicSensitivity>0.75</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.135</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.35</MeditationFocusGain>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Neuroflash/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_CastTargetEffect</verbClass>
+		<commandIcon>UI/Abilities/Armor/Shock</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>41.9</range>
+        <warmupTime>2.5</warmupTime>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+          <neverTargetIncapacitated>true</neverTargetIncapacitated>
+        </targetParams>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_PsychicShock</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_BrainDamageChance">
+        <brainDamageChance>0.3</brainDamageChance>
+      </li>
+      <li Class="CompProperties_TargetEffect_GoodwillImpact">
+        <goodwillImpact>-200</goodwillImpact>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Mindtwister ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Mindtwister</defName>
+    <label>Mercenary Helmet(Mindtwister)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner with power of Psychic insanity lance.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Mindtwister/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <PsychicSensitivity>0.35</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.135</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.75</MeditationFocusGain>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Mindtwister/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_CastTargetEffect</verbClass>
+        <commandIcon>UI/Abilities/Armor/Insanity</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>41.9</range>
+        <warmupTime>2.5</warmupTime>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+          <neverTargetIncapacitated>true</neverTargetIncapacitated>
+        </targetParams>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_Berserk</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_BrainDamageChance">
+        <brainDamageChance>0.3</brainDamageChance>
+      </li>
+      <li Class="CompProperties_TargetEffect_GoodwillImpact">
+        <goodwillImpact>-200</goodwillImpact>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

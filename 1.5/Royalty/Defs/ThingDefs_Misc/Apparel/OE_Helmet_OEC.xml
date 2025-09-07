@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC Helmet ====================-->
+  <ThingDef Name="OECHelmetBase" ParentName="OEHelmetBase" Abstract="True">
+	<tradeTags>
+      <li>OECGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+	  <WorkToMake>25000</WorkToMake>
+	  <Mass>2</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.4</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.2</MeditationFocusGain>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OEC_Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECHelmetBase" MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>OEC_Helmet</defName>
+    <label>OEC Hunter Helmet</label>
+    <description>Light power armor Helmet, well protects the owner. Designed for use by Hunters representing the OEC.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OEC/OECHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>980</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>45</OE_Mythril>
+	  <OE_Mooncloth>20</OE_Mooncloth>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OEC/OECHelmet</wornGraphicPath>
+	  <tags>
+		<li>OECHunter</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OECArmor</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OECHelmetMod" ParentName="OECHelmetBase" MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>OEC_Helmet_M</defName>
+    <label>OEC Inquisitor Helmet</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nThe hardened version provides more protection to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OEC/OECHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1305</MarketValue>
+	  <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+	  <Beauty>3</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Helmet>1</OEC_Helmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OEC/OECHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OECInquisitor</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OECGearMod</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OECHelmetMod">
+	<defName>OEC_Helmet_M_Spacer</defName>
+    <label>OEC Inquisitor Helmet(Space Griffin)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OEC/Spacer/OECHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1630</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Helmet_M>1</OEC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OEC/Spacer/OECHelmet_M</wornGraphicPath>
+      <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OECHelmetMod">
+	<defName>OEC_Helmet_M_Melee</defName>
+    <label>OEC Inquisitor Helmet(Gladiator)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nModified visor with analyzing computer that helps the user close combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OEC/Melee/OECHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1630</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>4</MeleeHitChance>
+      <MeleeDodgeChance>4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OEC_Helmet_M>1</OEC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OEC/Melee/OECHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OECInquisitor_Melee</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OECHelmetMod">
+	<defName>OEC_Helmet_M_Ranged</defName>
+    <label>OEC Inquisitor Helmet(Ranger)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nModified visor with targeting computer that helps the user aim.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OEC/Ranged/OECHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1630</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.20</AimingDelayFactor>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OEC_Helmet_M>1</OEC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OEC/Ranged/OECHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OECInquisitor_Ranged</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

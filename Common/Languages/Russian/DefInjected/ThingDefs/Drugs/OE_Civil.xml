@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Azulium ====================-->
+<OE_Azulium.label>азулиум</OE_Azulium.label>
+<OE_Azulium.description>Обычное антипсихотическое лекарство, используется для профилактики нервных срывов и улучшения общего настроения. Обсидийская технология, препарат не вызывает привыкания и не имеет побочных эффектов.</OE_Azulium.description>
+<OE_Azulium.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Azulium.ingestible.ingestCommandString>
+<OE_Azulium.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Azulium.ingestible.ingestReportString>
+
+<!--=============== Timbium ====================-->
+<OE_Timbium.label>тимбиум</OE_Timbium.label>
+<OE_Timbium.description>Тяжелый препарат для рабочих, используется Обсидийскими рабочими для увеличения продуктивности. Обсидийская технология, стимулятор может вызвать привыкание но не имеет побочных эффектов.</OE_Timbium.description>
+<OE_Timbium.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Timbium.ingestible.ingestCommandString>
+<OE_Timbium.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Timbium.ingestible.ingestReportString>
+
+<!--=============== Garganadol ====================-->
+<OE_Garganadol.label>гарганадол</OE_Garganadol.label>
+<OE_Garganadol.description>Уникальная медецинская спецразработка, сильнодействующий препарат на базе Люциферия, использует смесь механитов из передовых миров, которая значительно улучшает функционирование организма.\n\nОтключает потребность: Сытость.</OE_Garganadol.description>
+<OE_Garganadol.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Garganadol.ingestible.ingestCommandString>
+<OE_Garganadol.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Garganadol.ingestible.ingestReportString>
+
+<!--=============== Cofagradol ====================-->
+<OE_Cofagradol.label>кофаградол</OE_Cofagradol.label>
+<OE_Cofagradol.description>Уникальная медецинская спецразработка, сильнодействующий препарат на базе Люциферия, использует смесь механитов из передовых миров, которая значительно улучшает функционирование организма.\n\nОтключает потребность: Сон.</OE_Cofagradol.description>
+<OE_Cofagradol.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Cofagradol.ingestible.ingestCommandString>
+<OE_Cofagradol.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Cofagradol.ingestible.ingestReportString>
+
+<!--=============== Cressadol ====================-->
+<OE_Cressadol.label>крессадол</OE_Cressadol.label>
+<OE_Cressadol.description>Уникальная медецинская спецразработка, сильнодействующий препарат на базе Люциферия, использует смесь механитов из передовых миров, которая значительно улучшает функционирование организма.\n\nОтключает потребность: Удовлетворённость.</OE_Cressadol.description>
+<OE_Cressadol.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Cressadol.ingestible.ingestCommandString>
+<OE_Cressadol.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Cressadol.ingestible.ingestReportString>
+
+<!--=============== Florgadol ====================-->
+<OE_Florgadol.label>флоргадол</OE_Florgadol.label>
+<OE_Florgadol.description>Уникальная медецинская спецразработка, сильнодействующий препарат на базе Люциферия, использует смесь механитов из передовых миров, которая значительно улучшает функционирование организма.\n\nОтключает потребность: Настроение.</OE_Florgadol.description>
+<OE_Florgadol.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Florgadol.ingestible.ingestCommandString>
+<OE_Florgadol.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Florgadol.ingestible.ingestReportString>
+
+</LanguageData>

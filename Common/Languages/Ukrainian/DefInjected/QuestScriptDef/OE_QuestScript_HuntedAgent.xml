@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Hunted Agent ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_HuntedAgent.questNameRules.rulesStrings>
+  <li>questName->Порятунок [askerIndefA]</li>
+  <li>questName->Допомога [askerIndefB]</li>
+  <li>questName->[askerAdj] [askerIndefC]</li>
+  <li>questName->[askerIndefC] у втечі від [enemyFaction_pawnsPlural]</li>
+  <li>questName->[enemyFaction_pawnsPlural] переслідують [askerIndefA]</li>
+  <li>questName->Під обстрілом</li>
+  <li>questName->Останній рубіж</li>
+  <!-- Pieces -->
+  <li>askerAdj(asker_gender==Male)->відчайдушний</li>
+  <li>askerAdj(asker_gender==Male)->скажений</li>
+  <li>askerAdj(asker_gender==Male)->переслідуваний</li>
+  <li>askerAdj(asker_gender==Female)->відчайдушна</li>
+  <li>askerAdj(asker_gender==Female)->скажена</li>
+  <li>askerAdj(asker_gender==Female)->переслідувана</li>
+
+  <li>askerIndefA->агента</li>
+  <li>askerIndefA->[asker_nameFull]</li>
+  <li>askerIndefA->[asker_royalTitleInCurrentFaction]</li>
+
+  <li>askerIndefB->агенту</li>
+  <li>askerIndefB->[asker_nameFull]</li>
+  <li>askerIndefB->[asker_royalTitleInCurrentFaction]</li>
+
+  <li>askerIndefC->агент</li>
+  <li>askerIndefC->[asker_nameFull]</li>
+  <li>askerIndefC->[asker_royalTitleInCurrentFaction]</li>
+</OE_Quest_HuntedAgent.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_HuntedAgent.questDescriptionRules.rulesStrings>
+  <li>questDescription->[asker_nameFull], [asker_seasoned_oe] [asker_royalTitleInCurrentFaction] з [asker_faction_name], ледь [asker_escaped_oe] смертельної засідки. З [asker_possessive] ворогами, що йдуть по п'ятах, [asker_pronoun] терміново потрібна допомога. Захистіть [asker_objective] на [map_definite] до прибуття підкріплення, і [asker_pronoun] обіцяє частку у вигляді [royalFavorReward] [asker_faction_royalFavorLabel].\nГрупа [enemyFaction_pawnsPlural] складається з:\n[raid/raidPawnKinds]\n\n[asker_nameDef] занадто [asker_busy_oe], ухиляючись від куль, щоб надати більше деталей.</li>
+  <li>questDescription->[asker_nameFull], [asker_oneof_oe] найхитріших [asker_royalTitleInCurrentFaction] у [asker_faction_name], ледь [asker_escaped_oe] невдалої засідки. Тепер [asker_possessive] вороги швидко наближаються, і [asker_pronoun] потрібна допомога, щоб вижити до приходу підкріплення. Зустріньтеся з [asker_nameDef] на [map_definite], захистіть [asker_pronoun], і вам буде обіцяна нагорода — [royalFavorReward] [asker_faction_royalFavorLabel].\nГрупа [enemyFaction_pawnsPlural] складається з:\n[raid/raidPawnKinds]\n\n[asker_nameDef] занадто [asker_shaken_oe], щоб надати більше деталей.</li>
+  <li>questDescription->[asker_nameFull], ключова фігура в [asker_faction_name], [asker_walkedinto_oe] в пастку. З [asker_possessive] мертвими охоронцями та [asker_pronoun] у бігах, часу зовсім мало. [asker_pronoun] потрібна підтримка на [map_definite], щоб відбити ворогів, поки небезпека не спаде. [asker_pronoun] обіцяє [royalFavorReward] [asker_faction_royalFavorLabel] в обмін.\nГрупа [enemyFaction_pawnsPlural] складається з:\n[raid/raidPawnKinds]\n\n[asker_nameDef] занадто [asker_very_scared_oe], щоб пояснити більше.</li>
+  <li>asker_escaped_oe(asker_gender==Male)->уникнув</li>
+  <li>asker_escaped_oe(asker_gender==Female)->уникнула</li>
+  <li>asker_seasoned_oe(asker_gender==Male)->досвідчений</li>
+  <li>asker_seasoned_oe(asker_gender==Female)->досвідчена</li>
+  <li>asker_busy_oe(asker_gender==Male)->зайнятий</li>
+  <li>asker_busy_oe(asker_gender==Female)->зайнята</li>
+  <li>asker_oneof_oe(asker_gender==Male)->один із</li>
+  <li>asker_oneof_oe(asker_gender==Female)->одна із</li>
+  <li>asker_shaken_oe(asker_gender==Male)->приголомшений</li>
+  <li>asker_shaken_oe(asker_gender==Female)->приголомшена</li>
+  <li>asker_walkedinto_oe(asker_gender==Male)->потрапив</li>
+  <li>asker_walkedinto_oe(asker_gender==Female)->потрапила</li>
+  <li>asker_very_scared_oe(asker_gender==Male)->наляканий</li>
+  <li>asker_very_scared_oe(asker_gender==Female)->налякана</li>
+</OE_Quest_HuntedAgent.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Raid arrives ====================-->
+<OE_Quest_HuntedAgent.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterLabel.value.slateRef>{BASELABEL} наздоганяє [../asker_nameDef]</OE_Quest_HuntedAgent.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterLabel.value.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterText.value.slateRef>{BASETEXT}\n\n[enemyFaction_pawnsPlural] прийшов за [../asker_nameDef].</OE_Quest_HuntedAgent.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterText.value.slateRef>
+<!--=============== Shuttle ====================-->
+<OE_Quest_HuntedAgent.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>Має відправитись на шаттлі</OE_Quest_HuntedAgent.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>Шаттл прибув</OE_Quest_HuntedAgent.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>Шаттл прибув забрати [asker_nameDef].</OE_Quest_HuntedAgent.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>
+<!--=============== Asker died ====================-->
+<OE_Quest_HuntedAgent.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>Гість загинув: {SUBJECT_definite}</OE_Quest_HuntedAgent.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гість, якого ви повинні були захищати, загинув. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>
+<!--=============== Surgery Violation ====================-->
+<OE_Quest_HuntedAgent.root.nodes.askerSurgeryViolation.node.nodes.Letter.label.slateRef>Заборонена операція: {SUBJECT_definite}</OE_Quest_HuntedAgent.root.nodes.askerSurgeryViolation.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.askerSurgeryViolation.node.nodes.Letter.text.slateRef>Несанкціонована, жорстока хірургічна операція була проведена на {SUBJECT_definite}, на гості, якого ви повинні були захищати. По цій причині [asker_pronoun] спробує покинути ваше поселення. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.askerSurgeryViolation.node.nodes.Letter.text.slateRef>
+<!--=============== Lodger's xenogerm absorbed ====================-->
+<OE_Quest_HuntedAgent.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>Поглинання ксеногену: {SUBJECT_definite}</OE_Quest_HuntedAgent.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, кого вам доручено захищати, насильно поглинає ксеноген. Через це порушення {SUBJECT_pronoun} тепер спробує покинути поселення. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.text.slateRef>
+<!--=============== Lodger arrested ====================-->
+<OE_Quest_HuntedAgent.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>Ув'язнено: {SUBJECT_definite}</OE_Quest_HuntedAgent.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гість, якого ви були повинні захищати, ув'язнений. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>
+<!--=============== Asker left map ====================-->
+<OE_Quest_HuntedAgent.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>Гість зник: {SUBJECT_definite}</OE_Quest_HuntedAgent.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>{SUBJECT_definite} гість, якого ви повинні були захищати, зник. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>
+<!--=============== Lodger ran wild ====================-->
+<OE_Quest_HuntedAgent.root.nodes.askerRanWild.node.nodes.Letter.label.slateRef>Гість зник: {SUBJECT_definite}</OE_Quest_HuntedAgent.root.nodes.askerRanWild.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.askerRanWild.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гість, якого ви повинні були захищати, тав диким. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.askerRanWild.node.nodes.Letter.text.slateRef>
+<!--=============== Shuttle destroyed ====================-->
+<OE_Quest_HuntedAgent.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef>Шаттл зруйновано</OE_Quest_HuntedAgent.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef> 
+<OE_Quest_HuntedAgent.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>Шаттл, відправлений забрати [asker_nameDef], був знищений. [asker_pronoun] покине поселення пішечком. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>
+<!--=============== Shuttle sent ====================-->
+<OE_Quest_HuntedAgent.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>Завдання провалене: «[resolvedQuestName]»</OE_Quest_HuntedAgent.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedAgent.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>Шаттл, відправлений забрати [asker_nameDef], відлетів без пасажира [asker_objective]. [asker_pronoun] покине поселення пішечком. [failLetterEndingCommon]</OE_Quest_HuntedAgent.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>
+
+</LanguageData>

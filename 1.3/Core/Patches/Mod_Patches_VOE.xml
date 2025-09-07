@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Mining Outpost ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Outposts Expanded</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	  <success>Always</success>
+	  <xpath>/Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li/ResultOptions</xpath>
+		<value>
+			<li>
+              <BaseAmount>750</BaseAmount>
+              <Thing>OE_Obsidian</Thing>
+              <MinSkills>
+                <Mining>60</Mining>
+              </MinSkills>
+            </li>
+			<li>
+              <BaseAmount>750</BaseAmount>
+              <Thing>OE_Mythril</Thing>
+              <MinSkills>
+                <Mining>70</Mining>
+              </MinSkills>
+            </li>
+			<li>
+              <BaseAmount>750</BaseAmount>
+              <Thing>OE_Platinum</Thing>
+              <MinSkills>
+                <Mining>65</Mining>
+              </MinSkills>
+            </li>
+		</value>
+	</match>
+</Operation>
+<!--=============== Obsidia Syntherius Outpost ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Outposts Expanded</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	  <success>Always</success>
+	  <xpath>/Defs</xpath>
+		<value>
+  <WorldObjectDef ParentName="OutpostBase">
+    <defName>OE_Outpost_Syntherius</defName>
+    <label>obsidia syntherius outpost</label>
+    <description>Places a temporary, autonomously-led camp that specializes in collecting syntherius from syntherius trees in the areas, cannot be placed on deserts. Once an ample amount is collected, a delivery will be made at the outskirts of a faction's primary colony.</description>
+    <expandingIconTexture>WorldObjects/OutpostLogging</expandingIconTexture>
+    <modExtensions>
+      <li Class="Outposts.OutpostExtension">
+        <DisallowedBiomes>
+          <li>Desert</li>
+          <li>ExtremeDesert</li>
+        </DisallowedBiomes>
+		<RequiredSkills>
+          <Plants>10</Plants>
+        </RequiredSkills>
+        <RequiresGrowing>true</RequiresGrowing>
+        <MinPawns>3</MinPawns>
+        <ProvidedFood>MealFine_Veg</ProvidedFood>
+        <ResultOptions>
+          <li>
+            <AmountPerPawn>5</AmountPerPawn>
+            <Thing>OE_Syntherius</Thing>
+          </li>
+        </ResultOptions>
+        <Event>VOE_JoinLoggingOutpost</Event>
+      </li>
+      <li Class="KCSG.CustomGenOption">
+        <useStructureLayout>True</useStructureLayout>
+        <chooseFromlayouts>
+          <li>Outpost_Struct_Logging</li>
+        </chooseFromlayouts>
+        <fullClear>true</fullClear>
+      </li>
+    </modExtensions>
+  </WorldObjectDef>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

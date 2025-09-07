@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Head ====================-->
+<!--=============== Сyberware - Ideologist ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareNeck_Ideologist</defName>
+    <label>cyberware - Ideologist</label>
+    <labelNoun>a cyberware - Ideologist</labelNoun>
+    <description>An installed cyberware - Ideologist.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareNeck_Ideologist</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareNeck_Ideologist</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>5</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <ConversionPower>0.05</ConversionPower>
+          <SocialIdeoSpreadFrequencyFactor>0.05</SocialIdeoSpreadFrequencyFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <ConversionPower>0.10</ConversionPower>
+          <SocialIdeoSpreadFrequencyFactor>0.10</SocialIdeoSpreadFrequencyFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <ConversionPower>0.15</ConversionPower>
+          <SocialIdeoSpreadFrequencyFactor>0.15</SocialIdeoSpreadFrequencyFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <ConversionPower>0.20</ConversionPower>
+          <SocialIdeoSpreadFrequencyFactor>0.20</SocialIdeoSpreadFrequencyFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <ConversionPower>0.25</ConversionPower>
+          <SocialIdeoSpreadFrequencyFactor>0.25</SocialIdeoSpreadFrequencyFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareNeck_Ideologist</defName>
+    <label>cyberware - Ideologist</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in ideology skills.\n\nInstallation requires - cyberware interface.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareNeck_Ideologist</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Ideologist</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>15</OE_Mythril>
+	  <OE_FungalWoodLog>15</OE_FungalWoodLog>
+      <OE_Syntherius>55</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>15</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+        <userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareNeck_Ideologist</hediffDef>
+        <bodyPart>Neck</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Power Base ====================-->
+  <ThingDef ParentName="BuildingBase" Name="OEPowerBase" Abstract="True">
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Flammability>0.85</Flammability>
+      <Beauty>-5</Beauty>
+    </statBases>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Breakdownable"/>
+	  <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <constructEffect>ConstructMetal</constructEffect>
+    <canOverlapZones>false</canOverlapZones>
+  </ThingDef>
+
+<!--=============== Batteries Base ====================-->
+  <ThingDef ParentName="OEPowerBase" Name="OEBatteriesBase" Abstract="True">
+    <thingClass>Building_Battery</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<uiOrder>2020.666</uiOrder>
+	<staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+	<designationCategory>Power</designationCategory>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<comps>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(80,112,180,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Medium ====================-->
+  <ThingDef ParentName="OEBatteriesBase">
+    <defName>OE_Battery_Medium</defName>
+    <label>obsidia battery</label>
+    <description>Stores large amounts of electricity for later use. Due to Obsidia technologies, this battery unit is significantly more efficient. Charged large advanced batteries are waterproof and don't explode when exposed to rain.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_Battery_Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+	  <Mass>20</Mass>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+      <OE_Mythril>75</OE_Mythril>
+	  <OE_Syntherius>50</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEPower</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>4500</storedEnergyMax>
+        <efficiency>0.95</efficiency>
+		<shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Large ====================-->
+  <ThingDef ParentName="OEBatteriesBase">
+    <defName>OE_Battery_Large</defName>
+    <label>large obsidia battery</label>
+    <description>Stores huge amounts of electricity for later use. Due to Obsidia technologies, this battery unit is significantly more efficient. Charged large advanced batteries are waterproof and don't explode when exposed to rain.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_Battery_Large</texPath>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2950</MarketValue>
+	  <Mass>35</Mass>
+	  <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+    </statBases>
+    <size>(5,5)</size>
+    <costList>
+      <OE_Obsidian>200</OE_Obsidian>
+      <OE_Mythril>150</OE_Mythril>
+	  <OE_Syntherius>100</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEPowerExp</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>10000</storedEnergyMax>
+        <efficiency>0.95</efficiency>
+		<shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Syntherius Generator ====================-->
+  <ThingDef ParentName="OEPowerBase" Name="OESyntheriusGeneratorBase" Abstract="True">
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiOrder>2100.666</uiOrder>
+	<fillPercent>1.0</fillPercent>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<comps>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(80,112,180,0)</glowColor>
+      </li>
+    </comps>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Medium ====================-->
+  <ThingDef ParentName="OESyntheriusGeneratorBase">
+    <defName>OE_SyntheriusGenerator_Medium</defName>
+    <label>syntherius powered generator</label>
+    <description>Produces power by consuming syntherius. Must be periodically loaded with syntherius fuel by hand.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_SyntheriusGenerator_Medium</texPath>
+      <drawSize>(3,5)</drawSize>
+	  <drawOffset>(0,0,1)</drawOffset>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+	  <Mass>35</Mass>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>7500</WorkToBuild>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+      <OE_Mythril>25</OE_Mythril>
+	  <OE_Syntherius>75</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEPower</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-6000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>1.0</fuelConsumptionRate>
+        <fuelCapacity>60.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-5</heatPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Large ====================-->
+  <ThingDef ParentName="OESyntheriusGeneratorBase">
+    <defName>OE_SyntheriusGenerator_Large</defName>
+    <label>large syntherius powered generator</label>
+    <description>Produces a large amount of power by consuming syntherius. Must be periodically loaded with syntherius fuel by hand.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_SyntheriusGenerator_Large</texPath>
+      <drawSize>(5,8)</drawSize>
+	  <drawOffset>(0,0,1.5)</drawOffset>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MarketValue>3850</MarketValue>
+	  <Mass>50</Mass>
+	  <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+    </statBases>
+    <size>(5,5)</size>
+    <costList>
+      <OE_Obsidian>200</OE_Obsidian>
+      <OE_Mythril>50</OE_Mythril>
+	  <OE_Syntherius>150</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEPowerAdv</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-16000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.85</fuelConsumptionRate>
+        <fuelCapacity>100.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-15</heatPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Quantum Generator ====================-->
+  <ThingDef ParentName="OEPowerBase" Name="OEQuantumGeneratorBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiOrder>2111.666</uiOrder>
+    <fillPercent>1.0</fillPercent>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Portable ====================-->
+  <ThingDef ParentName="OEQuantumGeneratorBase">
+    <defName>OE_QuantumGenerator_Micro</defName>
+    <label>portable quantum generator</label>
+    <description>Generates small amounts of free energy, forever, without using fuel. Due to Obsidia technologies, this generator is extremely fragile.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_QuantumGenerator_Portable</texPath>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<tradeTags>
+      <li>OEBuilding</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+	<statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+	  <MarketValue>1000</MarketValue>
+	  <WorkToBuild>2500</WorkToBuild>
+	  <Mass>10</Mass>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+      <OE_Mythril>100</OE_Mythril>
+	  <OE_Syntherius>50</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEPowerAdv</li>
+	  <li>OMGGear</li>
+    </researchPrerequisites>
+	<fillPercent>0.5</fillPercent>
+	<blockWind>False</blockWind>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	<designationCategory>Power</designationCategory>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-750</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-5</heatPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Medium ====================-->
+  <ThingDef ParentName="OEQuantumGeneratorBase">
+    <defName>OE_QuantumGenerator_Medium</defName>
+    <label>quantum generator</label>
+    <description>Generates free energy, forever, without using fuel. Due to Obsidia technologies, this generator is extremely fragile.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_QuantumGenerator_Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MarketValue>2350</MarketValue>
+	  <Mass>20</Mass>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+      <OE_Mythril>200</OE_Mythril>
+	  <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEPowerExp</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	<designationCategory>Power</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-6750</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-15</heatPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Large ====================-->
+  <ThingDef ParentName="OEQuantumGeneratorBase">
+    <defName>OE_QuantumGenerator_Large</defName>
+    <label>large quantum generator</label>
+    <description>Generates large amounts of free energy, forever, without using fuel. Due to Obsidia technologies, this generator is extremely fragile.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_QuantumGenerator_Large</texPath>
+      <drawSize>(5,5)</drawSize>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MarketValue>5500</MarketValue>
+	  <Mass>35</Mass>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+    </statBases>
+    <size>(5,5)</size>
+    <costList>
+      <OE_Obsidian>200</OE_Obsidian>
+      <OE_Mythril>400</OE_Mythril>
+	  <OE_Syntherius>50</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEPowerExp</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+	<designationCategory>Power</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-18750</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-30</heatPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Geothermal Generator ====================-->
+  <ThingDef ParentName="OEPowerBase">
+    <defName>OE_GeothermalGenerator</defName>
+    <label>obsidia geothermal generator</label>
+    <description>This small, Obsidia generator produces electricity from geothermal steam geysers. Must be placed on a steam geyser.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/OE_GeothermalGenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(4.03,1.0,3.25)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0,5.4,6)</rect>
+      </damageData>
+    </graphicData>
+	<uiOrder>2110.666</uiOrder>
+    <passability>Impassable</passability>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MarketValue>1750</MarketValue>
+	  <Mass>35</Mass>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(4,4)</size>
+    <costList>
+      <OE_Obsidian>150</OE_Obsidian>
+      <OE_Mythril>75</OE_Mythril>
+	  <OE_Syntherius>50</OE_Syntherius>
+    </costList>
+	<bringAlongOnGravship>false</bringAlongOnGravship>
+    <rotatable>false</rotatable>
+    <designationCategory>Power</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_OnSteamGeyser</li>
+    </placeWorkers>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+	  <li>OEPowerAdv</li>
+	</researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSteam</compClass>
+        <basePowerConsumption>-4800</basePowerConsumption>
+		<shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <li Class="CompProperties_AmbientSound">
+        <sound>GeothermalPlant_Ambience</sound>
+        <disabledOnUnpowered>true</disabledOnUnpowered>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

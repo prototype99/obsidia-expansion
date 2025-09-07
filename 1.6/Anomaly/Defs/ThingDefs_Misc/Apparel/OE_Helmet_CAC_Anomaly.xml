@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Priest ====================-->
+  <ThingDef ParentName="OEHelmetBase">
+	<defName>CAC_PriestHelmet</defName>
+    <label>CAC Priest Helmet</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Priests.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/CAC/Priest/CACHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>CACGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+    <statBases>
+      <Mass>5</Mass>
+	  <WorkToMake>35000</WorkToMake>
+	  <MarketValue>2255</MarketValue>
+	  <ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.10</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.95</ArmorRating_Heat>
+      <Insulation_Cold>125</Insulation_Cold>
+      <Insulation_Heat>40</Insulation_Heat>
+	  <Beauty>-2</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.75</VacuumResistance>
+	  <ToxicResistance>0.25</ToxicResistance>
+	  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.5</EntityStudyRate>
+	  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</ConversionPower>
+	  <RangedWeapon_Cooldown>-0.35</RangedWeapon_Cooldown>
+	  <MeleeHitChance>8</MeleeHitChance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">-0.5</PsychicSensitivity>
+	  <GlobalLearningFactor>-0.5</GlobalLearningFactor>
+	  <Flammability>-0.85</Flammability>
+	  <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OE_Empyrium>75</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_ArachnaCore>1</OE_ArachnaCore>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/CAC/Priest/CACHelmet</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACPriest</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisites>
+	    <li>CACGearAdv</li>
+		<li>CACSerum</li>
+	  </researchPrerequisites>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

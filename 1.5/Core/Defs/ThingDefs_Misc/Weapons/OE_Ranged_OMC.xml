@@ -1,0 +1,1338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC - Pistol ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCPistolBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCPistolBullet" ParentName="BaseBullet" Abstract="True">
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCPistolBullet">
+    <defName>Bullet_OMC_P</defName>
+    <label>Impaler bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCPistolBullet">
+    <defName>Bullet_OMC_P_M</defName>
+    <label>Impaler MK-II bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletSmall_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCPistolBase">
+    <defName>OMC_Pistol</defName>
+    <label>Impaler</label>
+    <description>Regular Auto Pistol used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>440</MarketValue>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_P</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>55</OE_Obsidian>
+	  <OE_Mythril>40</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCPistolBase">
+    <defName>OMC_Pistol_M</defName>
+    <label>Impaler MK-II</label>
+    <description>Modified Auto Pistol used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Pistol_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCLightGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>690</MarketValue>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_P_M</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Pistol>1</OMC_Pistol>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OMC - Shotgun Sidearm ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCShotgunSBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_Shotgun</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCShotgunSBullet" ParentName="BaseBullet" Abstract="True">
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>23</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+	  <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCShotgunSBullet">
+    <defName>Bullet_OMC_SS</defName>
+    <label>Hellscream blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="OMCShotgunSBullet">
+    <defName>Bullet_OMC_SS_M</defName>
+    <label>Hellscream MK-II blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_Shotgun_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCShotgunSBase">
+    <defName>OMC_ShotgunS</defName>
+    <label>Hellscream</label>
+    <description>Regular Shotgun Sidearm used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/ShotgunSidearm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+	  <li>OMCShortGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>740</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_SS</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>65</OE_Obsidian>
+	  <OE_Mythril>60</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCShotgunSBase">
+    <defName>OMC_ShotgunS_M</defName>
+    <label>Hellscream MK-II</label>
+    <description>Modified Shotgun Sidearm used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/ShotgunSidearm_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+	  <li>OMCShortGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>990</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_SS_M</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_ShotgunS>1</OMC_ShotgunS>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OMC - AssaultRifle ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCAssaultRifleBase" ParentName="OERangedBase" Abstract="True">
+    <soundInteract>Interact_SMG</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>22500</WorkToMake>
+      <Mass>4.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCARBullet" ParentName="BaseBullet" Abstract="True">
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCARBullet">
+    <defName>Bullet_OMC_AR</defName>
+    <label>Striker bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCARBullet">
+    <defName>Bullet_OMC_AR_M</defName>
+    <label>Striker MK-II bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletSmall_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCAssaultRifleBase">
+    <defName>OMC_AR</defName>
+    <label>Striker</label>
+    <description>Regular Assault Rifle used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/AssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCBaseGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>870</MarketValue>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_AR</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>	
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCAssaultRifleBase">
+    <defName>OMC_AR_M</defName>
+    <label>Striker MK-II</label>
+    <description>Modified Assault Rifle used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/AssaultRifle_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCBaseGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1120</MarketValue>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_AR_M</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_AR>1</OMC_AR>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OMC - Shotgun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCShotgunBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Shotgun</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCShotgunBullet" ParentName="BaseBullet" Abstract="True">
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>23</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCShotgunBullet">
+    <defName>Bullet_OMC_S</defName>
+    <label>Doom blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCShotgunBullet">
+    <defName>Bullet_OMC_S_M</defName>
+    <label>Doom MK-II blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_Shotgun_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCShotgunBase">
+    <defName>OMC_Shotgun</defName>
+    <label>Doom</label>
+    <description>Regular Auto Shotgun used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCShortGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>885</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>85</OE_Obsidian>
+	  <OE_Mythril>45</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCShotgunBase">
+    <defName>OMC_Shotgun_M</defName>
+    <label>Doom MK-II</label>
+    <description>Modified Auto Shotgun used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Shotgun_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCShortGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1135</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_S_M</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Shotgun>1</OMC_Shotgun>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OMC - SniperRifle ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCSniperRifleBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponClasses>
+	  <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCSniperRifleBullet" ParentName="BaseBullet" Abstract="True">
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCSniperRifleBullet">
+    <defName>Bullet_OMC_SR</defName>
+    <label>Skullmasher bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCSniperRifleBullet">
+    <defName>Bullet_OMC_SR_M</defName>
+    <label>Skullmasher MK-II bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletBig_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCSniperRifleBase">
+    <defName>OMC_SniperRifle</defName>
+    <label>Skullmasher</label>
+    <description>Regular Auto Sniper Rifle used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponTags>
+      <li>OMCSniperGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2165</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_SR</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>49.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>100</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>9</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCSniperRifleBase">
+    <defName>OMC_SniperRifle_M</defName>
+    <label>Skullmasher MK-II</label>
+    <description>Modified Auto Sniper Rifle used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/SniperRifle_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponTags>
+      <li>OMCSniperGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2415</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_SR_M</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>49.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_SniperRifle>1</OMC_SniperRifle>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Cross ====================-->
+<!--=============== OMC - Rocket Launcher ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCRocketLauncherBase" ParentName="OERangedBase" Abstract="True">
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>13.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.30</MoveSpeed>
+	</equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCRocketLauncherBullet" ParentName="BaseBullet" Abstract="True">
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+	  <explosionRadius>3.9</explosionRadius>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCRocketLauncherBullet">
+    <defName>Bullet_OMC_RL</defName>
+    <label>Giant's Bane rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCRocketLauncherBullet">
+    <defName>Bullet_OMC_RL_M</defName>
+    <label>Giant's Bane MK-II rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_Rocket_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef> 
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCRocketLauncherBase">
+    <defName>OMC_RocketLauncher</defName>
+    <label>Giant's Bane</label>
+    <description>Regular Rocket Launcher used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OCC Rocket Launcher.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2305</MarketValue>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_RL</defaultProjectile>
+		<forcedMissRadius>4.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>200</OE_Obsidian>
+	  <OE_Mythril>45</OE_Mythril>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>24</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCRocketLauncherBase">
+    <defName>OMC_RocketLauncher_M</defName>
+    <label>Giant's Bane MK-II</label>
+    <description>Modified Rocket Launcher used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OCC Rocket Launcher.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/RocketLauncher_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCHeavyGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2555</MarketValue>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_RL_M</defaultProjectile>
+		<forcedMissRadius>4.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_RocketLauncher>1</OMC_RocketLauncher>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OMC - Revolver ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCRevolverBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_Revolver</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OMCRevolverBullet" ParentName="BaseBullet" Abstract="True">
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCRevolverBullet">
+    <defName>Bullet_OMC_R</defName>
+    <label>Merciless bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="OMCRevolverBullet">
+    <defName>Bullet_OMC_R_M</defName>
+    <label>Merciless MK-II bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletSmall_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCRevolverBase">
+    <defName>OMC_Revolver</defName>
+    <label>Merciless</label>
+    <description>Regular Revolver used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OEC Revolver.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>640</MarketValue>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_R</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>65</OE_Obsidian>
+	  <OE_Mythril>60</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OMCRevolverBase">
+    <defName>OMC_Revolver_M</defName>
+    <label>Merciless MK-II</label>
+    <description>Modified Revolver used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OEC Revolver.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Revolver_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCLightGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>890</MarketValue>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_R_M</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Revolver>1</OMC_Revolver>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

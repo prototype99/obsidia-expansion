@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Helmet ====================-->
+  <ThingDef Name="OMGHelmetBase" ParentName="OEHelmetBaseNQ" Abstract="True">
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>4250</MarketValue>
+	  <Mass>2</Mass>
+	  <ArmorRating_Sharp>1.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.50</ArmorRating_Heat>
+      <Insulation_Cold>150</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+	<costList>
+      <OE_Empyrium>75</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_MercenaryKit>2</OE_MercenaryKit>
+    </costList>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.70</ToxicResistance>
+	  <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+	  <PainShockThreshold>0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.4</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.091</PsychicEntropyRecoveryRate>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+	  <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">2</MechControlGroups>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">10</MechBandwidth>
+    </equippedStatOffsets>
+	<burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OMG_Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Classic ====================-->
+  <ThingDef ParentName="OMGHelmetBase">
+	<defName>OMG_Helmet_Classic</defName>
+    <label>Mercenary Helmet(Classic)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Classic/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+	  <AimingDelayFactor>-0.20</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Classic/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OMGMercenary</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+    </apparel>
+  </ThingDef>
+
+</Defs>

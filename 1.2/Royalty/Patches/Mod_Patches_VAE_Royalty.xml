@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Armour Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OEC Barrier ====================-->
+  <ThingDef ParentName="OECArmorModBarrier">
+	<defName>OEC_Armor_M_Barrier</defName>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

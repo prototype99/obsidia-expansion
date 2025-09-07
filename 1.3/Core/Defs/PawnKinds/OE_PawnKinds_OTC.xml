@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Recruit ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Recruit</defName>
+    <label>OTC recruit</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>9000~10000</apparelMoney>
+	<apparelTags>
+      <li>OTCMechanic</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>3000~4000</weaponMoney>
+	<weaponTags>
+      <li>OTCBaseMelee_Acid</li>
+	  <li>OTCBaseMelee_Cryo</li>
+	  <li>OTCBaseMelee_Fire</li>
+	  <li>OTCBaseMelee_EMP</li>
+	  <li>OTCLightGun_Acid</li>
+	  <li>OTCLightGun_Cryo</li>
+	  <li>OTCLightGun_Fire</li>
+	  <li>OTCLightGun_EMP</li>
+    </weaponTags>
+    <techHediffsMoney>2500~4000</techHediffsMoney>
+	<techHediffsChance>0.35</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+    </techHediffsTags>
+	<combatPower>100</combatPower>
+  </PawnKindDef>
+
+<!--=============== Mechanic ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Mechanic_Melee</defName>
+    <label>OTC mechanic</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+      <li>OTCMechanic</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech">OEModuleI_Mechanitor</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>OTCBaseMelee_Acid</li>
+	  <li>OTCHeavyMelee_Acid</li>
+	  <li>OTCBaseMelee_Cryo</li>
+	  <li>OTCHeavyMelee_Cryo</li>
+	  <li>OTCBaseMelee_Fire</li>
+	  <li>OTCHeavyMelee_Fire</li>
+	  <li>OTCBaseMelee_EMP</li>
+	  <li>OTCHeavyMelee_EMP</li>
+    </weaponTags>
+    <techHediffsMoney>3000~4500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OTCBionics</li>
+    </techHediffsTags>
+	<combatPower>135</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Mechanic_Ranged</defName>
+    <label>OTC mechanic</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+      <li>OTCMechanic</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech">OEModuleI_Mechanitor</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>OTCLightGun_Acid</li>
+	  <li>OTCBaseGun_Acid</li>
+	  <li>OTCLightGun_Cryo</li>
+	  <li>OTCBaseGun_Cryo</li>
+	  <li>OTCLightGun_Fire</li>
+	  <li>OTCBaseGun_Fire</li>
+      <li>OTCLightGun_EMP</li>
+	  <li>OTCBaseGun_EMP</li>
+    </weaponTags>
+    <techHediffsMoney>3000~4500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OTCBionics</li>
+    </techHediffsTags>
+	<combatPower>135</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Mechanic_Heavy</defName>
+    <label>OTC mechanic</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+      <li>OTCMechanic</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech">OEModuleI_Mechanitor</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>OTCHeavyGun_Acid</li>
+	  <li>OTCHeavyGun_Cryo</li>
+	  <li>OTCHeavyGun_Fire</li>
+	  <li>OTCHeavyGun_EMP</li>
+    </weaponTags>
+    <techHediffsMoney>3000~4500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OTCBionics</li>
+    </techHediffsTags>
+	<combatPower>135</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Engineer ====================-->
+<!--=============== Acid ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Acid_Melee</defName>
+    <label>OTC Acid engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Ranged</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCBaseMeleeM_Acid</li>
+	  <li>OTCHeavyMeleeM_Acid</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Acid_Ranged</defName>
+    <label>OTC Acid engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCLightGunM_Acid</li>
+	  <li>OTCBaseGunM_Acid</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Acid_Heavy</defName>
+    <label>OTC Acid engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCHeavyGunM_Acid</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Cryo ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Cryo_Melee</defName>
+    <label>OTC Cryo engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Ranged</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCBaseMeleeM_Cryo</li>
+	  <li>OTCHeavyMeleeM_Cryo</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Cryo_Ranged</defName>
+    <label>OTC Cryo engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCLightGunM_Cryo</li>
+	  <li>OTCBaseGunM_Cryo</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Cryo_Heavy</defName>
+    <label>OTC Cryo engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCHeavyGunM_Cryo</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Fire ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Fire_Melee</defName>
+    <label>OTC Fire engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Ranged</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCBaseMeleeM_Fire</li>
+	  <li>OTCHeavyMeleeM_Fire</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Fire_Ranged</defName>
+    <label>OTC Fire engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCLightGunM_Fire</li>
+	  <li>OTCBaseGunM_Fire</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_Fire_Heavy</defName>
+    <label>OTC Fire engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCHeavyGunM_Fire</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== EMP ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_EMP_Melee</defName>
+    <label>OTC EMP engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Ranged</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Grenadier_EMP</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCBaseMeleeM_EMP</li>
+	  <li>OTCHeavyMeleeM_EMP</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_EMP_Ranged</defName>
+    <label>OTC EMP engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCLightGunM_EMP</li>
+	  <li>OTCBaseGunM_EMP</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OTC_Engineer_EMP_Heavy</defName>
+    <label>OTC EMP engineer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OTCEngineer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OTCEngineer_Melee</li>
+	  <li>OTCEngineer_Grenadier_Acid</li>
+	  <li>OTCEngineer_Grenadier_Cryo</li>
+	  <li>OTCEngineer_Grenadier_Fire</li>
+	  <li>OTCEngineer_Shield</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OTCHeavyGunM_EMP</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OTCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Arachna ====================-->
+<!--=============== Acid ====================-->
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OTC_Mech_Arachna_Acid</defName>
+    <label>OTC Arachna(Acid)</label>
+    <race>OE_Mech_OTC_Arachna_Acid</race>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+    <weaponTags>
+      <li>OTCArachna_Acid</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== Cryo ====================-->
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OTC_Mech_Arachna_Cryo</defName>
+    <label>OTC Arachna(Cryo)</label>
+    <race>OE_Mech_OTC_Arachna_Cryo</race>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+    <weaponTags>
+      <li>OTCArachna_Cryo</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== Fire ====================-->
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OTC_Mech_Arachna_Fire</defName>
+    <label>OTC Arachna(Fire)</label>
+    <race>OE_Mech_OTC_Arachna_Fire</race>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+    <weaponTags>
+      <li>OTCArachna_Fire</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== EMP ====================-->
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OTC_Mech_Arachna_EMP</defName>
+    <label>OTC Arachna(EMP)</label>
+    <race>OE_Mech_OTC_Arachna_EMP</race>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+    <weaponTags>
+      <li>OTCArachna_EMP</li>
+    </weaponTags>
+  </PawnKindDef>
+
+</Defs>

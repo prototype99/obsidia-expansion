@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC Helmet ====================-->
+  <ThingDef Name="CACHelmetBase" ParentName="OEHelmetBase" Abstract="True">
+	<tradeTags>
+      <li>CACCultist</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Light ====================-->
+  <ThingDef Name="CACHelmetLight" ParentName="CACHelmetBase" Abstract="True">
+	<statBases>
+      <Mass>2</Mass>
+	  <ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.95</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <RangedWeapon_Cooldown>-0.2</RangedWeapon_Cooldown>
+	  <MeleeHitChance>4</MeleeHitChance>
+	  <GlobalLearningFactor>-0.2</GlobalLearningFactor>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="CACHelmetLight">
+	<defName>CAC_LightHelmet</defName>
+    <label>CAC Cultist Light Helmet</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by CAC Cultists.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/CAC/Light/CACHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1725</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Empyrium>35</OE_Empyrium>
+	  <OE_Orichalcum>20</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/CAC/Light/CACHelmet</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGear</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+  <ThingDef Name="CACHelmetHeavy" ParentName="CACHelmetBase" Abstract="True">
+	<statBases>
+      <Mass>3</Mass>
+	  <ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <RangedWeapon_Cooldown>-0.2</RangedWeapon_Cooldown>
+	  <MeleeHitChance>4</MeleeHitChance>
+	  <GlobalLearningFactor>-0.2</GlobalLearningFactor>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="CACHelmetHeavy">
+	<defName>CAC_HeavyHelmet</defName>
+    <label>CAC Cultist Heavy Helmet</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Cultists.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/CAC/Heavy/CACHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1750</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Empyrium>50</OE_Empyrium>
+	  <OE_Orichalcum>10</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/CAC/Heavy/CACHelmet</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGear</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

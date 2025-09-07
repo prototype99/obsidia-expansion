@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Obsidia Gravship Hull ====================-->
+<OE_GravshipHull.label>obsidia gravship hull</OE_GravshipHull.label>
+<OE_GravshipHull.description>Reinforced Obsidia hull segment with layered armor and airtight sealing. Designed for gravship integration, it prevents oxygen leaks in vacuum and connects directly to internal substructure, meaning it can only be built on a gravship.</OE_GravshipHull.description>
+
+<!--=============== Obsidia Grav Field Extender ====================-->
+<OE_GravFieldExtender.label>obsidia grav field extender</OE_GravFieldExtender.label>
+<OE_GravFieldExtender.description>A specialized obsidia device used to increase the size of a gravship. It extends the area in which substructure can be built, and increases the amount of substructure that a gravship can support. Must be built near a grav engine.\n\nA gravship can support up to four obsidia grav field extenders.</OE_GravFieldExtender.description>
+
+<!--=============== Obsidia Pilot Console ====================-->
+<OE_PilotConsole.label>obsidia pilot console</OE_PilotConsole.label>
+<OE_PilotConsole.description>A small obsidia pilot console that allows launching and piloting a gravship. It draws power directly from the grav engine.</OE_PilotConsole.description>
+
+<!--=============== Obsidia Repulsorlift Engine ====================-->
+<!--=============== Small ====================-->
+<OE_RepulsorliftEngine_Small.label>small obsidia repulsorlift engine</OE_RepulsorliftEngine_Small.label>
+<OE_RepulsorliftEngine_Small.description>A repulsorlift engine uses focused gravitic pulses to reduce planetary drag during flight. This compact Obsidia design is powered by chemfuel and increases the range of a gravship. Requires gravship substructure and an unobstructed, roof-free area.\n\nA gravship can support up to ten small obsidia repulsorlift engines.</OE_RepulsorliftEngine_Small.description>
+
+<!--=============== Large ====================-->
+<OE_RepulsorliftEngine_Large.label>colonial obsidia repulsorlift engine</OE_RepulsorliftEngine_Large.label>
+<OE_RepulsorliftEngine_Large.description>A repulsorlift engine uses focused gravitic pulses to reduce planetary drag during flight. This massive colonial-era model is powered by chemfuel and greatly increases the range of a gravship. Requires gravship substructure and an unobstructed, roof-free area.\n\nA gravship can support up to four colonial obsidia repulsorlift engine.</OE_RepulsorliftEngine_Large.description>
+
+<!--=============== Obsidia Fuel Optimizer ====================-->
+<OE_FuelOptimizer.label>obsidia fuel optimizer</OE_FuelOptimizer.label>
+<OE_FuelOptimizer.description>An obsidian-engineered gravtech unit that refines and blends chemfuel with reactive compounds, reducing overall fuel consumption during flight. It reduces the fuel needed for gravship flight.\n\nA gravship can support two obsidia fuel optimizers.</OE_FuelOptimizer.description>
+
+<!--=============== Obsidia Gravship Shield Generator ====================-->
+<OE_GravshipShieldTower.label>obsidia gravship shield tower</OE_GravshipShieldTower.label>
+<OE_GravshipShieldTower.description>An obsidia gravship shield tower designed to protect a gravship. It uses modern Obsidia gravtech to project a focused deflection field that repels incoming projectiles with pulsed momentum barriers. It works against normal shots and mortars. Those inside can still shoot out.\n\nIt must be charged before use. One gravship can support five obsidia gravship shield towers.</OE_GravshipShieldTower.description>
+
+<OE_GravshipShieldTower.comps.CompInteractable_GravshipShieldGenerator.jobString>activate</OE_GravshipShieldTower.comps.CompInteractable_GravshipShieldGenerator.jobString>
+
+</LanguageData>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OCC - Shields ====================-->
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OEShieldBase">
+    <defName>OCC_Shield_Big</defName>
+    <label>Reforged Bulwark</label>
+	<description>Reforged big Shield used by OCC Paladins.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/OCC/OCCShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1910</MarketValue>
+	  <MaxHitPoints>250</MaxHitPoints>
+      <ArmorRating_Sharp>1.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <WorkToMake>100000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+	<costList>
+      <OE_Obsidian>135</OE_Obsidian>
+	  <OE_Mythril>30</OE_Mythril>
+	  <OE_Platinum>20</OE_Platinum>
+	  <OE_Syntherius>15</OE_Syntherius>
+    </costList>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+	  <PainShockThreshold>0.2</PainShockThreshold>
+	  <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>OCCShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+          <li>Legs</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/OCC/OCCShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.1</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisites>
+        <li>OCCGearMod</li>
+        <li>OEGearCross</li>
+      </researchPrerequisites>
+	  <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OCC_Utility</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Luraxin Serum ====================-->
+  <ThingDef ParentName="OESerumBase">
+    <defName>OE_LuraxinSerum</defName>
+    <label>luraxin serum</label>
+    <description>A capsule of thick fluid containing a mixture concentrated combat stimulant Luraxin. Intended for use by psy-users.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Serum/OE_Luraxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <hediffDef>OE_LuraxinSerum</hediffDef>
+        <allowRepeatedUse>true</allowRepeatedUse>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+    </comps>
+    <costList>
+      <OE_Luraxin>2</OE_Luraxin>
+	  <Neutroamine>2</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+  <HediffDef ParentName="OESerumHediffBase">
+    <defName>OE_LuraxinSerum</defName>
+    <label>luraxin serum</label>
+    <description>Luraxin Serum in the bloodstream. Boosts psycasts stats.</description>
+    <stages>
+      <li>
+        <painFactor>0.65</painFactor>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+            <offset>0.45</offset>
+		  </li>
+		</capMods>
+		<statOffsets>
+          <PsychicSensitivity>0.75</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Alcrexin Serum ====================-->
+  <ThingDef ParentName="OESerumBase">
+    <defName>OE_AlcrexinSerum</defName>
+    <label>alcrexin serum</label>
+    <description>A capsule of thick fluid containing a mixture concentrated combat stimulant Alcrexin. Intended for use by mechanitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Serum/OE_Alcrexin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <hediffDef>OE_AlcrexinSerum</hediffDef>
+        <allowRepeatedUse>true</allowRepeatedUse>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+    </comps>
+    <costList>
+      <OE_Alcrexin>2</OE_Alcrexin>
+	  <Neutroamine>2</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+  <HediffDef ParentName="OESerumHediffBase">
+    <defName>OE_AlcrexinSerum</defName>
+    <label>alcrexin serum</label>
+    <description>Alcrexin Serum in the bloodstream. Boosts mechanitors stats.</description>
+    <stages>
+      <li>
+        <painFactor>0.15</painFactor>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+            <offset>0.15</offset>
+		  </li>
+		</capMods>
+		<statOffsets>
+          <MechBandwidth>6</MechBandwidth>
+		  <WorkSpeedGlobalOffsetMech>0.40</WorkSpeedGlobalOffsetMech>
+		  <MechRemoteShieldEnergy>150</MechRemoteShieldEnergy>
+		  <MechFormingSpeed>0.75</MechFormingSpeed>
+		  <MechRepairSpeed>0.75</MechRepairSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

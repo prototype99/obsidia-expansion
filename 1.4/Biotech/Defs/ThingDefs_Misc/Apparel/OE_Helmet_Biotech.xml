@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OEHelmetBase">
+	<defName>OE_Helmet_Kid</defName>
+    <label>obsidia kid helmet</label>
+    <description>Light helmet, well protects the owner. Designed for use by Obsidia Empire kids.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OE/Kid/OEHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>20000</WorkToMake>
+	  <Mass>1.5</Mass>
+	  <MarketValue>855</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>25</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <GlobalLearningFactor>0.10</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OE_Obsidian>45</OE_Obsidian>
+	  <OE_Mythril>15</OE_Mythril>
+	  <OE_Mooncloth>15</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <apparel>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <developmentalStageFilter>Child</developmentalStageFilter>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OE/Kid/OEHelmet</wornGraphicPath>
+	  <tags>
+		<li>OEKid</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+	  <skillRequirements>
+		<Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OEHelmetBase">
+	<defName>OE_Helmet_Kid_Spacer</defName>
+    <label>obsidia kid helmet(Space Griffin)</label>
+    <description>Light helmet, well protects the owner. Designed for use by Obsidia Empire kids.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OE/Kid/Spacer/OEHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>20000</WorkToMake>
+	  <Mass>1.5</Mass>
+	  <MarketValue>1005</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <GlobalLearningFactor>0.10</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OE_Helmet_Kid>1</OE_Helmet_Kid>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <developmentalStageFilter>Child</developmentalStageFilter>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OE/Kid/Spacer/OEHelmet</wornGraphicPath>
+	  <tags>
+		<li>OEKid</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+	  <skillRequirements>
+		<Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

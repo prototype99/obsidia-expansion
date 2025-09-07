@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="OСCHelmetMod">
+	<defName>OCC_Helmet_M_Mechanitor</defName>
+    <label>OCC Paladin Helmet(Overseer)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nModified for improves Mechanoids Control abilities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OCC/Mechanitor/OCCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1700</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechRemoteRepairDistance>5.9</MechRemoteRepairDistance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OCC_Helmet_M>1</OCC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OCC/Mechanitor/OCCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OCCPaladin_Mechanitor</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

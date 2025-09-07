@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Liquid Type ====================-->
+<!--=============== Various ====================-->
+<!--=============== Royal Jelly ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_RoyalJelly</defName>
+    <label>royal jelly slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nRoyal jelly slime production type, produces 15 Royal Jelly every 5 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_RoyalJelly</ThingDef>
+	  <ThingDef>VFEI2_RoyalInsectJelly</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1050</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>OmnivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <VFEI2_RoyalInsectJelly>5</VFEI2_RoyalInsectJelly>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>VFEI2_RoyalInsectJelly</milkDef>
+        <milkIntervalDays>5</milkIntervalDays>
+        <milkAmount>15</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_RoyalJelly</defName>
+    <label>royal jelly slime</label>
+    <labelPlural>royal jelly slimes</labelPlural>
+    <race>OE_Slime_RoyalJelly</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/RoyalJelly/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/RoyalJelly/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/RoyalJelly/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/RoyalJelly/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/RoyalJelly/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/RoyalJelly/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>25</combatPower>
+  </PawnKindDef>
+
+</Defs>

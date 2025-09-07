@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Drifter Clans - Base ====================-->
+  <FactionDef ParentName="FactionBase" Name="ObsidiaDrifterClansBase" Abstract="True">
+    <categoryTag>ObsidiaDrifterClans</categoryTag>
+	<pawnSingular>obsidian</pawnSingular>
+    <pawnsPlural>obsidians</pawnsPlural>
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>5</maxConfigurableAtWorldCreation>
+	<canMakeRandomly>true</canMakeRandomly>
+	<canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+	<earliestRaidDays>35</earliestRaidDays>
+	<structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>ImperialCommon</li>
+		  <li>ImperialFighter</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Outlander</li>
+		  <li>Offworld</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+    </backstoryFilters>
+	<apparelStuffFilter>
+      <thingDefs>
+		<li>OE_Mooncloth</li>
+		<li>OE_Leather_Ogren</li>
+		<li>OE_Leather_Direwolf</li>
+		<li>OE_Leather_Astrinx</li>
+		<li>OE_Leather_Raptor</li>
+        <li>OE_Obsidian</li>
+		<li>OE_ObsidianSynthweave</li>
+		<li>OE_Platinum</li>
+		<li>OE_PlatinumSynthweave</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Cloth</li>
+		<li>Uranium</li>
+      </disallowedThingDefs>
+    </apparelStuffFilter>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>ObsidiaEmpireRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+		<li>(1500, 150)</li>
+        <li>(3000, 300)</li>
+        <li>(5000, 500)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+	<pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ODC_Nomad>20</ODC_Nomad>
+		  <ODC_Recon_Melee>15</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>15</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>10</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Recon_Prestige>
+		  <ODC_Duelist_Melee>15</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>10</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>15</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Duelist_Prestige>
+		  <ODC_Trader>5</ODC_Trader>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ODC_Trader>1</ODC_Trader>
+        </traders>
+        <carriers>
+          <OE_Ogren>5</OE_Ogren>
+        </carriers>
+        <guards>
+          <ODC_Nomad>20</ODC_Nomad>
+		  <ODC_Recon_Melee>15</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>15</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>10</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Recon_Prestige>
+		  <ODC_Duelist_Melee>15</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>10</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>15</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Duelist_Prestige>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ODC_Nomad>20</ODC_Nomad>
+		  <ODC_Recon_Melee>15</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>15</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>10</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Recon_Prestige>
+		  <ODC_Duelist_Melee>15</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>10</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>15</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Duelist_Prestige>
+		  <ODC_Leader_Boss>1</ODC_Leader_Boss>
+		  <ODC_Leader_Mayor>1</ODC_Leader_Mayor>
+		  <ODC_Leader_Admiral>1</ODC_Leader_Admiral>
+		  <OE_Bruul_Acid>1</OE_Bruul_Acid>
+		  <OE_Bruul_Cryo>1</OE_Bruul_Cryo>
+		  <OE_Bruul_Fire>1</OE_Bruul_Fire>
+		  <OE_Bruul_EMP>1</OE_Bruul_EMP>
+        </options>
+      </li> 
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ODC_Nomad>20</ODC_Nomad>
+		  <ODC_Recon_Melee>15</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>15</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>10</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Recon_Prestige>
+		  <ODC_Duelist_Melee>15</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>10</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>15</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Duelist_Prestige>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ODC_Nomad>20</ODC_Nomad>
+		  <ODC_Recon_Melee>15</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>15</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>10</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Recon_Prestige>
+        </options>
+      </li>	  
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ODC_Nomad>20</ODC_Nomad>
+		  <ODC_Duelist_Melee>15</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>10</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>15</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">5</ODC_Duelist_Prestige>
+        </options>
+      </li>	  
+	</pawnGroupMakers>
+	<settlementTexturePath>World/WorldObjects/Expanding/Colony</settlementTexturePath>
+  </FactionDef>
+
+<!--=============== Obsidia Syndicate Clan - Faction ====================-->
+  <FactionDef ParentName="ObsidiaDrifterClansBase">
+    <defName>ObsidiaSyndicateClan</defName>
+    <label>Obsidia Syndicate Clan</label>
+    <description>They were once part ultratech colonysts society from Obsidia planet, organized along military lines. Having rejected Obsidia Empire, many different factions were formed, but over time, only three main directions survived, which united into Obsidia Drifter Clans.\n\nChange is sudden, violent, and a necessary force to ensure the planet can return to a state of growth. Obsidia Syndicate Clan see themselves as merely the instrument of this change.\n\nTheir goal is to raiding and robbing their more productive neighbors.</description>
+    <colorSpectrum>
+	  <li>(0.92, 0.61, 0.08)</li>
+	  <li>(1.00, 0.55, 0.00)</li> 
+	  <li>(0.76, 0.72, 0.33)</li>
+	  <li>(1.00, 0.00, 0.67)</li>
+	  <li>(0.80, 0.13, 0.32)</li>
+	  <li>(0.80, 0.20, 0.13)</li>
+    </colorSpectrum>
+	<listOrderPriority>101</listOrderPriority>
+	<naturalEnemy>true</naturalEnemy>
+    <leaderTitle>boss</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/ObsidiaSyndicateClan</factionIconPath>
+    <factionNameMaker>ObsidiaSyndicateClanNamerFaction</factionNameMaker>
+	<allowedCultures>
+	  <li>Rustican</li>
+	  <li>Kriminul</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Sophian</li>
+	</allowedCultures>
+	<requiredMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+	</requiredMemes>
+	<allowedMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Aristocratic</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+	</allowedMemes>
+	<fixedLeaderKinds>
+      <li>ODC_Leader_Boss</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>Base_ObsidiaDrifterClans_Common</li>
+    </baseTraderKinds>
+	<caravanTraderKinds>
+      <li>Caravan_ObsidiaDrifterClans_Standard</li>
+	  <li>Caravan_ObsidiaDrifterClans_Slaver</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_ObsidiaDrifterClans_Common</li>
+    </visitorTraderKinds>
+  </FactionDef>
+
+  <RulePackDef>
+    <defName>ObsidiaSyndicateClanNamerFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->Obsidia [OEF] of [OES]</li>
+        <li>r_name(p=2)->The [OEF] of [OES]</li>
+		
+        <li>OEF(p=4)->Syndicate</li>
+        <li>OEF->Clan</li>
+        <li>OEF->Band</li>
+
+        <li>OES(p=4)->Banishment</li>
+        <li>OES->Carnage</li>
+        <li>OES->Blood</li>
+        <li>OES->Anarchy</li>
+        <li>OES->Terror</li>
+		<li>OES->Badass</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<!--=============== Obsidia Renegade Clan - Faction ====================-->
+  <FactionDef ParentName="ObsidiaDrifterClansBase">
+    <defName>ObsidiaRenegadeClan</defName>
+    <label>Obsidia Renegade Clan</label>
+    <description>They were once part ultratech colonysts society from Obsidia planet, organized along military lines. Having rejected Obsidia Empire, many different factions were formed, but over time, only three main directions survived, which united into Obsidia Drifter Clans.\n\nObsidia Renegade Clan are sworn protectors of what little remains of the free colonies.\n\nTheir goal is to restore order by bringing prosperity and direction to the violent world.</description>
+    <colorSpectrum>
+	  <li>(0.91, 0.92, 0.42)</li>
+	  <li>(0.32, 0.80, 0.13)</li>
+	  <li>(0.54, 0.80, 0.33)</li>
+	  <li>(0.02, 1.00, 0.00)</li>
+	  <li>(0.25, 0.85, 0.56)</li>
+	  <li>(0.06, 0.22, 0.14)</li>
+    </colorSpectrum>
+	<listOrderPriority>102</listOrderPriority>
+	<naturalEnemy>false</naturalEnemy>
+    <leaderTitle>mayor</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/ObsidiaRenegadeClan</factionIconPath>
+    <factionNameMaker>ObsidiaRenegadeClanNamerFaction</factionNameMaker>
+	<allowedCultures>
+	  <li>Rustican</li>
+	  <li>Kriminul</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Sophian</li>
+	</allowedCultures>
+	<allowedMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Emancipation</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
+	</allowedMemes>
+	<fixedLeaderKinds>
+      <li>ODC_Leader_Mayor</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>Base_ObsidiaDrifterClans_Common</li>
+    </baseTraderKinds>
+	<caravanTraderKinds>
+      <li>Caravan_ObsidiaDrifterClans_Standard</li>
+	  <li>Caravan_ObsidiaDrifterClans_Animals</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_ObsidiaDrifterClans_Common</li>
+    </visitorTraderKinds>
+  </FactionDef>
+
+  <RulePackDef>
+    <defName>ObsidiaRenegadeClanNamerFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->Obsidia [OEF] of [OES]</li>
+        <li>r_name(p=2)->The [OEF] of [OES]</li>
+		
+        <li>OEF(p=4)->Renegade</li>
+        <li>OEF->Clan</li>
+        <li>OEF->Community</li>
+
+        <li>OES(p=4)->Honor</li>
+        <li>OES->Duty</li>
+        <li>OES->Equality</li>
+        <li>OES->Magistrate</li>
+        <li>OES->Protection</li>
+		<li>OES->Help</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<!--=============== Obsidia Pilgrim Clan - Faction ====================-->
+  <FactionDef ParentName="ObsidiaDrifterClansBase">
+    <defName>ObsidiaPilgrimClan</defName>
+    <label>Obsidia Pilgrim Clan</label>
+    <description>They were once part ultratech colonysts society from Obsidia planet, organized along military lines. Having rejected Obsidia Empire, many different factions were formed, but over time, only three main directions survived, which united into Obsidia Drifter Clans.\n\nObsidia Pilgrim Clan embody the cold vacuum of space - heartless and bent on taking anything left unprotected. Driven by profits.\n\nTheir goal is to enrich themselves by trading with hi-tech neighbors.</description>
+    <colorSpectrum>
+	  <li>(0.13, 0.71, 0.78)</li>
+	  <li>(0.22, 0.90, 0.55)</li>
+	  <li>(0.07, 0.17, 0.32)</li>
+	  <li>(0.34, 0.59, 0.86)</li>
+	  <li>(0.22, 0.81, 0.90)</li>
+	  <li>(0.09, 0.07, 0.58)</li>
+    </colorSpectrum>
+	<listOrderPriority>103</listOrderPriority>
+	<naturalEnemy>false</naturalEnemy>
+    <leaderTitle>admiral</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/ObsidiaPilgrimClan</factionIconPath>
+    <factionNameMaker>ObsidiaPilgrimClanNamerFaction</factionNameMaker>
+	<allowedCultures>
+	  <li>Rustican</li>
+	  <li>Kriminul</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Sophian</li>
+	</allowedCultures>
+	<requiredMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+	</requiredMemes>
+	<allowedMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Light</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Anonymity</li>
+	</allowedMemes>
+	<fixedLeaderKinds>
+      <li>ODC_Leader_Admiral</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>Base_ObsidiaDrifterClans_Common</li>
+    </baseTraderKinds>
+	<caravanTraderKinds>
+      <li>Caravan_ObsidiaDrifterClans_Standard</li>
+	  <li>Caravan_ObsidiaDrifterClans_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_ObsidiaDrifterClans_Common</li>
+    </visitorTraderKinds>
+  </FactionDef>
+
+  <RulePackDef>
+    <defName>ObsidiaPilgrimClanNamerFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->Obsidia [OEF] of [OES]</li>
+        <li>r_name(p=2)->The [OEF] of [OES]</li>
+		
+        <li>OEF(p=4)->Pilgrim</li>
+        <li>OEF->Clan</li>
+        <li>OEF->Сorporation</li>
+
+        <li>OES(p=4)->Profits</li>
+        <li>OES->Honesty</li>
+        <li>OES->Benefits</li>
+        <li>OES->Discounts</li>
+        <li>OES->Trade</li>
+		<li>OES->Coins</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

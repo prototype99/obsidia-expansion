@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Aura Modules ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEModuleAuraBase" ParentName="OEModuleBase" Abstract="True">
+    <description>The module provides the owner with various auras with bonuses depending on the model. Designed for use in various areas of Obsidia.</description>
+	<tickerType>Normal</tickerType>
+	<statBases>
+	  <MarketValue>1575</MarketValue>
+    </statBases>
+	<costList>
+	  <OE_Mythril>45</OE_Mythril>
+	  <OE_Platinum>45</OE_Platinum>
+	  <OE_Syntherius>45</OE_Syntherius>
+    </costList>
+	<recipeMaker>
+	  <researchPrerequisites>
+		<li>OEModules</li>
+		<li>ODCGearAdv</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Brigadier ====================-->
+  <ThingDef ParentName="OEModuleAuraBase">
+    <defName>OE_Module_AuraBrigadier</defName>
+    <label>Aura Module - Brigadier</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/A_Brigadier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_AuraBrigadier</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AuraBrigadier</defName>
+    <label>Aura Module - Brigadier</label>
+    <description>This person is using a Aura Module - Brigadier. Everyone within an effect radius gains working stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <GlobalLearningFactor>0.20</GlobalLearningFactor>
+		  <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_AuraBrigadierBuff</hediff>
+		<range>8</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_AuraBrigadierBuff</defName>
+    <label>Aura Module - Brigadier</label>
+    <description>Someone is using the Aura Module - Brigadier nearby, boosting this person's working stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <GlobalLearningFactor>0.40</GlobalLearningFactor>
+		  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>8</maxDistance>
+		<customMote>Mote_OE_AuraBrigadierLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_AuraBrigadierLine</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <graphicData>
+      <shaderType>MoteGlow</shaderType>
+      <texPath>Things/Mote/ModuleAuraBuff/OE_ModuleAura_LinkLine</texPath>
+	  <color>(186, 229, 124)</color>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Battle Commander ====================-->
+  <ThingDef ParentName="OEModuleAuraBase">
+    <defName>OE_Module_AuraBattleCommander</defName>
+    <label>Aura Module - Battle Commander</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/A_BattleCommander</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_AuraBattleCommander</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AuraBattleCommander</defName>
+    <label>Aura Module - Battle Commander</label>
+    <description>This person is using a Aura Module - Battle Commander. Everyone within an effect radius gains combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.10</AimingDelayFactor>
+		  <MeleeHitChance>2</MeleeHitChance>
+		  <MeleeDodgeChance>2</MeleeDodgeChance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_AuraBattleCommanderBuff</hediff>
+		<range>8</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_AuraBattleCommanderBuff</defName>
+    <label>Aura Module - Battle Commander</label>
+    <description>Someone is using the Aura Module - Battle Commander nearby, boosting this person's combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.20</AimingDelayFactor>
+		  <MeleeHitChance>4</MeleeHitChance>
+		  <MeleeDodgeChance>4</MeleeDodgeChance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>8</maxDistance>
+		<customMote>Mote_OE_AuraBattleCommanderLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_AuraBattleCommanderLine</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <graphicData>
+      <shaderType>MoteGlow</shaderType>
+      <texPath>Things/Mote/ModuleAuraBuff/OE_ModuleAura_LinkLine</texPath>
+	  <color>(249, 171, 34)</color>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Guard Commander ====================-->
+  <ThingDef ParentName="OEModuleAuraBase">
+    <defName>OE_Module_AuraGuardCommander</defName>
+    <label>Aura Module - Guard Commander</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/A_GuardCommander</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_AuraGuardCommander</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AuraGuardCommander</defName>
+    <label>Aura Module - Guard Commander</label>
+    <description>This person is using a Aura Module - Guard Commander. Everyone within an effect radius gains defensive stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PainShockThreshold>0.10</PainShockThreshold>
+		  <PsychicSensitivity>-0.10</PsychicSensitivity>
+		  <Flammability>-0.10</Flammability>
+		  <ToxicResistance>0.10</ToxicResistance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_AuraGuardCommanderBuff</hediff>
+		<range>8</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_AuraGuardCommanderBuff</defName>
+    <label>Aura Module - Guard Commander</label>
+    <description>Someone is using the Aura Module - Guard Commander nearby, boosting this person's defensive stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PainShockThreshold>0.20</PainShockThreshold>
+		  <PsychicSensitivity>-0.20</PsychicSensitivity>
+		  <Flammability>-0.20</Flammability>
+		  <ToxicResistance>0.20</ToxicResistance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>8</maxDistance>
+		<customMote>Mote_OE_AuraGuardCommanderLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_AuraGuardCommanderLine</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <graphicData>
+      <shaderType>MoteGlow</shaderType>
+      <texPath>Things/Mote/ModuleAuraBuff/OE_ModuleAura_LinkLine</texPath>
+	  <color>(151, 203, 221)</color>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

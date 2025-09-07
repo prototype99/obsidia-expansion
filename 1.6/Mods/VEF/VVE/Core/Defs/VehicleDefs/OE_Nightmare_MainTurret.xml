@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Vehicles Turret Base ====================-->
+  <Vehicles.VehicleTurretDef Name="OEVehicleTurretBase" ParentName="VehicleTurretBase" Abstract="True">
+	<reloadSound>VVE_BulldogReloadSound</reloadSound>
+	<genericAmmo>true</genericAmmo>
+	<autoSnapTargeting>true</autoSnapTargeting>
+	<turretType>Rotatable</turretType>
+	<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+	<rotationSpeed>1.5</rotationSpeed>
+	<projectileOffset>2.0</projectileOffset>
+	<projectileShifting>
+	  <li>-0.80</li>
+	  <li>-0.60</li>
+	</projectileShifting>
+	<reloadTimer>2.5</reloadTimer>
+	<ammunition>
+	  <thingDefs>
+		<li>OE_AmmoKit</li>
+	  </thingDefs>
+	</ammunition>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OMC ====================--> 
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_OMC_Nightmare_MainTurret</defName>
+	<label>Sutherland turret bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OMC_BulletBig_M</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+	</graphicData>
+	<projectile>
+	  <damageDef>Bullet</damageDef>
+	  <damageAmountBase>28</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>120</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase">
+	<defName>OMC_Nightmare_MainTurret</defName>
+	<label>Sutherland turret</label>
+	<description>Large mounted Sniper turret used by OMC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/OMC_Nightmare_CannonTop</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>Shot_SniperRifle</shotSound>
+	<magazineCapacity>64</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>2.5</warmUpTimer>
+	<maxRange>55.9</maxRange>
+	<projectile>Bullet_OMC_Nightmare_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>2</shotsPerBurst>
+		<ticksBetweenShots>12</ticksBetweenShots>
+		<ticksBetweenBursts>150</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>8</shotsPerBurst>
+		<ticksBetweenShots>12</ticksBetweenShots>
+		<ticksBetweenBursts>150</ticksBetweenBursts>
+		<spreadRadius>0.9</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_OTC_Nightmare_Acid_MainTurret</defName>
+	<label>Glasgow Acid turret energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OTC_EnergySmall_M_Acid</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	</graphicData>
+	<projectile>
+	  <damageDef>OTCAcid</damageDef>
+	  <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>75</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase">
+	<defName>OTC_Nightmare_Acid_MainTurret</defName>
+	<label>Glasgow turret(Acid)</label>
+	<description>Large mounted Multi-Cannon turret used by OTC nightmare. Charged with Acid damage.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/OTC_Nightmare_CannonTop_Acid</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>Shot_NeedleGun</shotSound>
+	<magazineCapacity>128</magazineCapacity>
+	<chargePerAmmoCount>0.155</chargePerAmmoCount>
+	<warmUpTimer>2.0</warmUpTimer>
+	<maxRange>25.9</maxRange>
+	<projectile>Bullet_OTC_Nightmare_Acid_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>4</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>16</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<spreadRadius>1.0</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_OTC_Nightmare_Cryo_MainTurret</defName>
+	<label>Glasgow Cryo turret energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OTC_EnergySmall_M_Cryo</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	</graphicData>
+	<projectile>
+	  <damageDef>OTCCryo</damageDef>
+	  <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>75</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase">
+	<defName>OTC_Nightmare_Cryo_MainTurret</defName>
+	<label>Glasgow turret(Cryo)</label>
+	<description>Large mounted Multi-Cannon turret used by OTC nightmare. Charged with Cryo damage.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/OTC_Nightmare_CannonTop_Cryo</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>Shot_NeedleGun</shotSound>
+	<magazineCapacity>128</magazineCapacity>
+	<chargePerAmmoCount>0.155</chargePerAmmoCount>
+	<warmUpTimer>2.0</warmUpTimer>
+	<maxRange>25.9</maxRange>
+	<projectile>Bullet_OTC_Nightmare_Cryo_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>4</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>16</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<spreadRadius>1.0</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_OTC_Nightmare_Fire_MainTurret</defName>
+	<label>Glasgow Fire turret energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OTC_EnergySmall_M_Fire</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	</graphicData>
+	<projectile>
+	  <damageDef>Flame</damageDef>
+	  <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>75</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase">
+	<defName>OTC_Nightmare_Fire_MainTurret</defName>
+	<label>Glasgow turret(Fire)</label>
+	<description>Large mounted Multi-Cannon turret used by OTC nightmare. Charged with Fire damage.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/OTC_Nightmare_CannonTop_Fire</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>Shot_NeedleGun</shotSound>
+	<magazineCapacity>128</magazineCapacity>
+	<chargePerAmmoCount>0.155</chargePerAmmoCount>
+	<warmUpTimer>2.0</warmUpTimer>
+	<maxRange>25.9</maxRange>
+	<projectile>Bullet_OTC_Nightmare_Fire_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>4</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>16</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<spreadRadius>1.0</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_OTC_Nightmare_EMP_MainTurret</defName>
+	<label>Glasgow EMP turret energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OTC_EnergySmall_M_EMP</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	</graphicData>
+	<projectile>
+	  <damageDef>EMP</damageDef>
+	  <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>75</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase">
+	<defName>OTC_Nightmare_EMP_MainTurret</defName>
+	<label>Glasgow turret(EMP)</label>
+	<description>Large mounted Multi-Cannon turret used by OTC nightmare. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/OTC_Nightmare_CannonTop_EMP</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>Shot_NeedleGun</shotSound>
+	<magazineCapacity>128</magazineCapacity>
+	<chargePerAmmoCount>0.155</chargePerAmmoCount>
+	<warmUpTimer>2.0</warmUpTimer>
+	<maxRange>25.9</maxRange>
+	<projectile>Bullet_OTC_Nightmare_EMP_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>4</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>16</shotsPerBurst>
+		<ticksBetweenShots>5</ticksBetweenShots>
+		<ticksBetweenBursts>102</ticksBetweenBursts>
+		<spreadRadius>1.0</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OCC ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_OCC_Nightmare_MainTurret</defName>
+	<label>Gloucester turret rocket</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OCC_Rocket_M</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+	  <damageDef>OCCBlast</damageDef>
+	  <damageAmountBase>40</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>45</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase">
+	<defName>OCC_Nightmare_MainTurret</defName>
+	<label>Gloucester turret</label>
+	<description>Large mounted Rocket Launcher turret used by OCC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/OCC_Nightmare_CannonTop</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>InfernoCannon_Fire</shotSound>
+	<magazineCapacity>32</magazineCapacity>
+	<chargePerAmmoCount>0.625</chargePerAmmoCount>
+	<warmUpTimer>4.0</warmUpTimer>
+	<maxRange>45.9</maxRange>
+	<projectile>Bullet_OCC_Nightmare_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>1</shotsPerBurst>
+		<ticksBetweenShots>15</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<spreadRadius>1.9</spreadRadius>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>4</shotsPerBurst>
+		<ticksBetweenShots>15</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<spreadRadius>2.9</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OEC ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_OEC_Nightmare_MainTurret</defName>
+	<label>Akatsuki turret bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OEC_BulletSmall_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<projectile>
+	  <damageDef>Bullet</damageDef>
+	  <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>75</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase" Abstract="True">
+	<defName>OEC_Nightmare_MainTurret</defName>
+	<label>Akatsuki turret</label>
+	<description>Large mounted Minigun turret used by OEC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/OEC_Nightmare_CannonTop</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>Shot_Minigun</shotSound>
+	<magazineCapacity>256</magazineCapacity>
+	<chargePerAmmoCount>0.08</chargePerAmmoCount>
+	<warmUpTimer>3.2</warmUpTimer>
+	<maxRange>25.9</maxRange>
+	<projectile>Bullet_OEC_Nightmare_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>8</shotsPerBurst>
+		<ticksBetweenShots>3</ticksBetweenShots>
+		<ticksBetweenBursts>180</ticksBetweenBursts>
+		<spreadRadius>0.9</spreadRadius>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>32</shotsPerBurst>
+		<ticksBetweenShots>3</ticksBetweenShots>
+		<ticksBetweenBursts>180</ticksBetweenBursts>
+		<spreadRadius>1.9</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== ODC ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_ODC_Nightmare_MainTurret</defName>
+	<label>Burai turret blast</label>
+	<graphicData>
+	  <texPath>Things/Projectile/ODC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<projectile>
+	  <damageDef>Bullet</damageDef>
+	  <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>70</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleTurretBase">
+	<defName>ODC_Nightmare_MainTurret</defName>
+	<label>Burai turret</label>
+	<description>Large mounted Shotgun turret used by ODC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/CannonTop/ODC_Nightmare_CannonTop</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(3, 3)</drawSize>
+	</graphicData>
+	<shotSound>Shot_Shotgun</shotSound>
+	<magazineCapacity>64</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>1.25</warmUpTimer>
+	<maxRange>20.9</maxRange>
+	<projectile>Bullet_ODC_Nightmare_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>2</shotsPerBurst>
+		<ticksBetweenShots>10</ticksBetweenShots>
+		<ticksBetweenBursts>75</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	  <li>
+		<shotsPerBurst>8</shotsPerBurst>
+		<ticksBetweenShots>10</ticksBetweenShots>
+		<ticksBetweenBursts>75</ticksBetweenBursts>
+		<spreadRadius>0.9</spreadRadius>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+</Defs>

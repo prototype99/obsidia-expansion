@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Anomaly</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== CAC - Anomaly ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_CAC_Anomaly</defName>
+    <kindDef>OE_Returned_Boss</kindDef>
+    <appearAfterTicks>100</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_CAC_Anomaly</defName>
+    <boss>OE_Beaconboss_CAC_Anomaly</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OE_ChaosSlime_Larval>3</OE_ChaosSlime_Larval>
+		  <OE_ChaosSlime_Adult>1</OE_ChaosSlime_Adult>
+		  <Gorehulk>2</Gorehulk>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OE_ChaosSlime_Adult>3</OE_ChaosSlime_Adult>
+		  <OE_ChaosSlime_Badass>1</OE_ChaosSlime_Badass>
+		  <Gorehulk>3</Gorehulk>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OE_Returned>1</OE_Returned>
+		  <OE_ChaosSlime_Badass>3</OE_ChaosSlime_Badass>
+		  <OE_ChaosSlime_SuperBadass>1</OE_ChaosSlime_SuperBadass>
+		  <Gorehulk>4</Gorehulk>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <OE_Returned>2</OE_Returned>
+		  <OE_ChaosSlime_Badass>3</OE_ChaosSlime_Badass>
+		  <OE_ChaosSlime_SuperBadass>1</OE_ChaosSlime_SuperBadass>
+		  <OE_CyberArachna>1</OE_CyberArachna>
+		  <Gorehulk>5</Gorehulk>
+		  <Chimera>1</Chimera>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <OE_Returned>3</OE_Returned>
+		  <OE_ChaosSlime_SuperBadass>3</OE_ChaosSlime_SuperBadass>
+		  <OE_ChaosSlime_UltimateBadass>1</OE_ChaosSlime_UltimateBadass>
+		  <OE_CyberArachna>2</OE_CyberArachna>
+		  <Gorehulk>6</Gorehulk>
+		  <Chimera>2</Chimera>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Cultists entities squad led by {LEADERKIND_label} armed with CAC gear.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

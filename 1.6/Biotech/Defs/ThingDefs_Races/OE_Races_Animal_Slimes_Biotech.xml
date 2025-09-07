@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Liquid Type ====================-->
+<!--=============== Various ====================-->
+<!--=============== Hemogen ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Hemogen</defName>
+    <label>hemogen slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nHemogen slime production type, produces 3 Hemogen every 2 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Hemogen</ThingDef>
+	  <ThingDef>HemogenPack</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>350</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimalStrict</foodType>
+    </race>
+	<butcherProducts>
+      <HemogenPack>5</HemogenPack>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>HemogenPack</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>3</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Hemogen</defName>
+    <label>hemogen slime</label>
+    <labelPlural>hemogen slimes</labelPlural>
+    <race>OE_Slime_Hemogen</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+<!--=============== Syntherius of Sin ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_SyntheriusOfSin</defName>
+    <label>Syntherius of Sin slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nSyntherius slime production type, produces 1 Syntherius Of Sin every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OE_SyntheriusOfSin</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>5250</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeArchean</li>
+      </willNeverEat>
+    </race>
+	<butcherProducts>
+      <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_SyntheriusOfSin</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>1</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_SyntheriusOfSin</defName>
+    <label>Syntherius of Sin slime</label>
+    <labelPlural>Syntherius of Sin slimes</labelPlural>
+    <race>OE_Slime_SyntheriusOfSin</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/SyntheriusOfSin/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/SyntheriusOfSin/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/SyntheriusOfSin/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/SyntheriusOfSin/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/SyntheriusOfSin/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/SyntheriusOfSin/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Exotic Types ====================-->
+<!--=============== Alcrexin ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Alcrexin</defName>
+    <label>alcrexin slime</label>
+    <description>Slimes - an exotic amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nAlcrexin slime production type, produces 3 Alcrexin every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Alcrexin</ThingDef>
+	  <ThingDef>OE_Alcrexin</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimalStrict</foodType>
+    </race>
+	<butcherProducts>
+      <OE_Alcrexin>5</OE_Alcrexin>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Alcrexin</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>3</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Alcrexin</defName>
+    <label>alcrexin slime</label>
+    <labelPlural>alcrexin slimes</labelPlural>
+    <race>OE_Slime_Alcrexin</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Alcrexin/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Alcrexin/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Alcrexin/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Alcrexin/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Alcrexin/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Alcrexin/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+</Defs>

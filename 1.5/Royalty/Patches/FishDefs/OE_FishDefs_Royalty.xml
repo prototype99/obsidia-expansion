@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Vanilla Fishing Expanded - Fishing Treasures AddOn</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+					<!--== Rare ==-->
+					<VCE_Fishing.FishDef>
+					  <defName>OE_SpecialFishloot_PersonaKit</defName>
+					  <thingDef>OE_PersonaKit</thingDef>
+					  <fishSizeCategory>Special</fishSizeCategory>
+					  <canBeFreshwater>true</canBeFreshwater>
+					  <canBeSaltwater>true</canBeSaltwater>
+					  <allowedBiomes>
+						<li>Warm</li>
+						<li>Cold</li>
+						<li>Hot</li>
+						<li>VCEF_BiomeAlienJungly</li>
+						<li>VCEF_BiomeAlienHot</li>
+						<li>VCEF_BiomeAlienCold</li>
+					  </allowedBiomes>
+					  <commonality>0.025</commonality>
+					  <baseFishingYield>1</baseFishingYield>
+					  <dontScaleFishingYieldWithSkill>true</dontScaleFishingYieldWithSkill>
+					</VCE_Fishing.FishDef>
+
+				  </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

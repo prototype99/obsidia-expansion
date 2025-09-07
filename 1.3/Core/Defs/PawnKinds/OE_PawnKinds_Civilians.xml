@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Colonist ====================-->
+  <PawnKindDef ParentName="OEPawnC">
+	<defName>OE_Colonist</defName>
+	<label>Obsidia colonist</label>
+	<itemQuality>Normal</itemQuality>
+	<isFighter>false</isFighter>
+	<apparelMoney>1500~2500</apparelMoney>
+	<apparelTags>
+      <li>OEModuleI</li>
+	  <li>OEModuleW</li>
+    </apparelTags>
+	<weaponMoney>3500~5500</weaponMoney>
+	<weaponTags>
+	  <li>OMCBaseMelee</li>
+	  <li>OMCLightGun</li>
+    </weaponTags>
+	<techHediffsMoney>150~1000</techHediffsMoney>
+	<techHediffsChance>0.05</techHediffsChance>
+	<techHediffsTags>
+      <li>OEBionics</li>
+      <li>OEBionics_Advanced</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<inventoryOptions>
+      <skipChance>0.35</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>25~75</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	<combatPower>45</combatPower>
+  </PawnKindDef>
+
+<!--=============== Laborer ====================-->
+  <PawnKindDef ParentName="OEPawnC">
+	<defName>OE_Laborer</defName>
+	<label>Obsidia laborer</label>
+	<itemQuality>Normal</itemQuality>
+	<isFighter>false</isFighter>
+	<requiredWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>Cleaning</li>
+      <li>Hauling</li>
+      <li>Mining</li>
+      <li>Firefighting</li>
+    </requiredWorkTags>
+	<apparelMoney>1500~3000</apparelMoney>
+	<apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+	<apparelTags>
+      <li>OEModuleW</li>
+	  <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+	<weaponMoney>3500~5500</weaponMoney>
+	<weaponTags>
+	  <li>OTCBaseMelee_Acid</li>
+	  <li>OTCBaseMelee_Cryo</li>
+	  <li>OTCBaseMelee_Fire</li>
+	  <li>OTCBaseMelee_EMP</li>
+	  <li>OTCLightGun_Acid</li>
+	  <li>OTCLightGun_Cryo</li>
+	  <li>OTCLightGun_Fire</li>
+	  <li>OTCLightGun_EMP</li>
+    </weaponTags>
+	<techHediffsMoney>150~1000</techHediffsMoney>
+	<techHediffsChance>0.05</techHediffsChance>
+	<techHediffsTags>
+      <li>OEBionics</li>
+      <li>OEBionics_Advanced</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>45</combatPower>
+  </PawnKindDef>
+
+<!--=============== Trader ====================-->
+  <PawnKindDef ParentName="OEPawnC">
+	<defName>OE_Trader</defName>
+	<label>Obsidia trader</label>
+	<itemQuality>Normal</itemQuality>
+	<isFighter>false</isFighter>
+	<trader>true</trader>
+	<apparelMoney>2500~6000</apparelMoney>
+	<apparelTags>
+      <li>OEModuleW</li>
+	  <li>OEModuleI</li>
+	  <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+	<weaponMoney>3500~5500</weaponMoney>
+	<weaponTags>
+	  <li>OMCBaseMelee</li>
+	  <li>OMCLightGun</li>
+	  <li>OTCBaseMelee_Acid</li>
+	  <li>OTCBaseMelee_Cryo</li>
+	  <li>OTCBaseMelee_Fire</li>
+	  <li>OTCBaseMelee_EMP</li>
+	  <li>OTCLightGun_Acid</li>
+	  <li>OTCLightGun_Cryo</li>
+	  <li>OTCLightGun_Fire</li>
+	  <li>OTCLightGun_EMP</li>
+	  <li>OCCHeavyMelee</li>
+	  <li>OCCLightGun</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBaseMelee</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECLightGun</li>
+    </weaponTags>
+	<techHediffsMoney>250~1000</techHediffsMoney>
+    <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+	<techHediffsChance>0.1</techHediffsChance>
+	<techHediffsTags>
+      <li>OEBionics</li>
+      <li>OEBionics_Advanced</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>45</combatPower>
+	<inventoryOptions>
+     <skipChance>0.70</skipChance>
+     <subOptionsTakeAll>
+       <li>
+         <thingDef>Silver</thingDef>
+         <countRange>75~200</countRange>
+       </li>
+     </subOptionsTakeAll>
+   </inventoryOptions>
+  </PawnKindDef>
+
+<!--=============== Consul ====================-->
+  <PawnKindDef ParentName="OEPawnC">
+	<defName>OE_Consul</defName>
+	<label>Obsidia consul</label>
+	<itemQuality>Good</itemQuality>
+	<factionLeader>true</factionLeader>
+	<isFighter>false</isFighter>
+	<apparelMoney>18000~25000</apparelMoney>
+	<apparelTags>
+      <li>OEModuleW</li>
+	  <li>OEModuleI</li>
+	  <li>OEModuleB</li>
+	  <li>OEModuleT</li>
+    </apparelTags>
+	<specificApparelRequirements>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<apparelLayer>Middle</apparelLayer>
+		<requiredTag>OMCSoldier</requiredTag>
+      </li>
+    </specificApparelRequirements>
+	<weaponMoney>10000~15500</weaponMoney>
+	<weaponTags>
+	  <li>OMCBaseMelee</li>
+	  <li>OMCLightGun</li>
+	  <li>OMCTrophyMelee</li>
+	  <li>OMCTrophyRanged</li>
+	  <li>OTCBaseMelee_Acid</li>
+	  <li>OTCBaseMelee_Cryo</li>
+	  <li>OTCBaseMelee_Fire</li>
+	  <li>OTCBaseMelee_EMP</li>
+	  <li>OTCLightGun_Acid</li>
+	  <li>OTCLightGun_Cryo</li>
+	  <li>OTCLightGun_Fire</li>
+	  <li>OTCLightGun_EMP</li>
+	  <li>OTCTrophyMelee</li>
+	  <li>OTCTrophyRanged</li>
+	  <li>OCCHeavyMelee</li>
+	  <li>OCCLightGun</li>
+	  <li>OCCTrophyMelee</li>
+	  <li>OCCTrophyRanged</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBaseMelee</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECLightGun</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ECTrophyMelee</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECTrophyRanged</li>
+    </weaponTags>
+	<techHediffsMoney>13000~15000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<gearHealthRange>1~1</gearHealthRange>
+	<combatPower>45</combatPower>
+  </PawnKindDef>
+
+</Defs>

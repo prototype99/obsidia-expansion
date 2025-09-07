@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Battle ====================-->
+<!--=============== Arachnas ====================-->
+  <ThingDef ParentName="MU_MechSPackItemBase">
+    <defName>OE_UpgradePack_Arachna</defName>
+    <label>arachna upgrade pack</label>
+    <description>Pack of different upgrades for arachnas.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/OE_UpgradePack_Arachna</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+	  <MarketValue>2500</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.25</Mass>
+    </statBases>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+		<li>OEMechtechAdv</li>
+		<li>MU_AdvancedUpgrades</li>
+	  </researchPrerequisites>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>25</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_UpgradePack_Arachna</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechSPackBase">
+    <defName>OE_UpgradePack_Arachna</defName>
+    <label>arachna upgrade pack</label>
+    <description>Pack of different upgrades for arachnas.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Militor</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.25</MoveSpeed>
+	  <RangedCooldownFactor>0.65</RangedCooldownFactor>
+	  <AimingDelayFactor>0.65</AimingDelayFactor>
+	  <MU_RangedDamageFactor>1.25</MU_RangedDamageFactor>
+	  <MeleeHitChance>1.25</MeleeHitChance>
+	  <MeleeDamageFactor>1.25</MeleeDamageFactor>
+	  <StaggerDurationFactor>0</StaggerDurationFactor>
+	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
+	</statFactors>
+	<statOffsets>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <MeleeHitChance>4</MeleeHitChance>
+	</statOffsets>
+	<upgradePoints>1</upgradePoints>
+	<mechanoidDefs>
+	  <li>OE_Mech_OMC_Arachna</li>
+	  <li>OE_Mech_OTC_Arachna_Acid</li>
+	  <li>OE_Mech_OTC_Arachna_Cryo</li>
+	  <li>OE_Mech_OTC_Arachna_Fire</li>
+	  <li>OE_Mech_OTC_Arachna_EMP</li>
+	  <li>OE_Mech_OCC_Arachna</li>
+	  <li>OE_Mech_OEC_Arachna</li>
+	  <li>OE_Mech_CAC_Arachna</li>
+	  <li>OE_Mech_ArachnaQueen</li>
+	  <li>OE_Mech_CrimsonArachna</li>
+	</mechanoidDefs>
+	<linkedThingDef>OE_UpgradePack_Arachna</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Dominators ====================-->
+  <ThingDef ParentName="MU_MechSPackItemBase">
+    <defName>OE_UpgradePack_Dominator</defName>
+    <label>dominator upgrade pack</label>
+    <description>Pack of different upgrades for dominators.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/OE_UpgradePack_Dominator</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+	  <MarketValue>2500</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.25</Mass>
+    </statBases>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OEMechtechAdv</li>
+		<li>MU_AdvancedUpgrades</li>
+	  </researchPrerequisites>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>25</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_UpgradePack_Dominator</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechSPackBase">
+    <defName>OE_UpgradePack_Dominator</defName>
+    <label>dominator upgrade pack</label>
+    <description>Pack of different upgrades for dominators.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Militor</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.25</MoveSpeed>
+	  <RangedCooldownFactor>0.65</RangedCooldownFactor>
+	  <AimingDelayFactor>0.65</AimingDelayFactor>
+	  <MU_RangedDamageFactor>1.25</MU_RangedDamageFactor>
+	  <MeleeHitChance>1.25</MeleeHitChance>
+	  <MeleeDamageFactor>1.25</MeleeDamageFactor>
+	  <StaggerDurationFactor>0</StaggerDurationFactor>
+	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
+	</statFactors>
+	<statOffsets>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <MeleeHitChance>4</MeleeHitChance>
+	</statOffsets>
+	<upgradePoints>1</upgradePoints>
+	<mechanoidDefs>
+	  <li>OE_Mech_OMC_Dominator</li>
+	  <li>OE_Mech_OTC_Dominator_Acid</li>
+	  <li>OE_Mech_OTC_Dominator_Cryo</li>
+	  <li>OE_Mech_OTC_Dominator_Fire</li>
+	  <li>OE_Mech_OTC_Dominator_EMP</li>
+	  <li>OE_Mech_OCC_Dominator</li>
+	  <li>OE_Mech_OEC_Dominator</li>
+	  <li>OE_Mech_ODC_Dominator_Light</li>
+	  <li>OE_Mech_ODC_Dominator_Heavy</li>
+	  <li>OE_Mech_OMG_Dominator</li>
+	  <li>OE_Mech_ChaosLord</li>
+	  <li>OE_Mech_FallenLegion</li>
+	</mechanoidDefs>
+	<linkedThingDef>OE_UpgradePack_Dominator</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Support ====================-->
+<!--=============== Octo ====================-->
+  <ThingDef ParentName="MU_MechSPackItemBase">
+    <defName>OE_UpgradePack_Octo</defName>
+    <label>octo upgrade pack</label>
+    <description>Pack of different upgrades for octo.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/OE_UpgradePack_Octo</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+	  <MarketValue>1000</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.25</Mass>
+    </statBases>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OEMechtechAdv</li>
+		<li>MU_AdvancedUpgrades</li>
+	  </researchPrerequisites>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_UpgradePack_Octo</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechSPackBase">
+    <defName>OE_UpgradePack_Octo</defName>
+    <label>octo upgrade pack</label>
+    <description>Pack of different upgrades for octo.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Militor</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.5</MoveSpeed>
+	</statFactors>
+	<statOffsets>
+	  <WorkSpeedGlobal>0.65</WorkSpeedGlobal>
+	</statOffsets>
+	<upgradePoints>1</upgradePoints>
+	<mechanoidDefs>
+	  <li>OE_Mech_Octo</li>
+	</mechanoidDefs>
+	<linkedThingDef>OE_UpgradePack_Octo</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Maid ====================-->
+  <ThingDef ParentName="MU_MechSPackItemBase">
+    <defName>OE_UpgradePack_Maid</defName>
+    <label>maid upgrade pack</label>
+    <description>Pack of different upgrades for maid.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/OE_UpgradePack_Maid</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+	  <MarketValue>1000</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.25</Mass>
+    </statBases>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OEMechtechAdv</li>
+		<li>MU_AdvancedUpgrades</li>
+	  </researchPrerequisites>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_UpgradePack_Maid</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechSPackBase">
+    <defName>OE_UpgradePack_Maid</defName>
+    <label>maid upgrade pack</label>
+    <description>Pack of different upgrades for maid.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Militor</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.5</MoveSpeed>
+	</statFactors>
+	<statOffsets>
+	  <WorkSpeedGlobal>0.65</WorkSpeedGlobal>
+	  <CleaningSpeed>0.65</CleaningSpeed>
+	</statOffsets>
+	<upgradePoints>1</upgradePoints>
+	<mechanoidDefs>
+	  <li>OE_Mech_Maid</li>
+	</mechanoidDefs>
+	<linkedThingDef>OE_UpgradePack_Maid</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

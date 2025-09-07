@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OMC - Shields ====================-->
+<!--=============== Medium ====================-->
+  <ThingDef ParentName="OEShieldBase">
+    <defName>OMC_Shield_Medium</defName>
+    <label>Aegis MK-II</label>
+	<description>Modified medium Shield used by OMC Officers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/OMC/OMCShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>OMCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1150</MarketValue>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+      <WorkToMake>100000</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Obsidian>90</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Platinum>20</OE_Platinum>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VEF.Apparels.CompProperties_Shield">
+        <shieldTags>
+          <li>OMCShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/OMC/OMCShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.05</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisites>
+        <li>OMCGearMod</li>
+        <li>OEGearCross</li>
+      </researchPrerequisites>
+	  <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OMC_Utility</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

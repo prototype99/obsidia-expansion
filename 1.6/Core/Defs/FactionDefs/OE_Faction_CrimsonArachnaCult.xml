@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Crimson Arachna Cult - Faction ====================-->
+  <FactionDef ParentName="FactionBase">
+    <defName>ObsidiaCrimsonArachnaCult</defName>
+    <label>Crimson Arachna Cult</label>
+	<categoryTag>ObsidiaCult</categoryTag>
+    <description>The ancient and dangerous cult of Obsidia, worshiping Arachnas as deities, was completely exterminated many centuries ago... But Crimson Arachna Cult survived, the surviving followers hid in the dark depths and shadows of the streets, step by step putting down the roots of their influence on Obsidia and its colonies. Having absorbed enough influence, power and technology, the cult again revealed itself to the world in order to exterminate all the infidels!\n\nThe cult completely rejects any relationship, other than hostility, with other factions.</description>
+    <colorSpectrum>
+	  <li>(0.74, 0.20, 0.23)</li>
+	  <li>(0.70, 0.09, 0.09)</li>
+    </colorSpectrum>
+	<pawnSingular>cultist</pawnSingular>
+    <pawnsPlural>cultists</pawnsPlural>
+    <listOrderPriority>104</listOrderPriority>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+	<displayInFactionSelection>false</displayInFactionSelection>
+    <leaderTitle>vizier</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/CrimsonArachnaCult</factionIconPath>
+    <fixedName>Crimson Arachna Cult</fixedName>
+    <techLevel>Ultra</techLevel>
+	<hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+	<permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+	<permanentEnemyToEveryoneExcept>
+      <li MayRequire="Ludeon.Rimworld.Anomaly">HoraxCult</li>
+	  <li MayRequire="Ludeon.Rimworld.Anomaly">Entities</li>
+    </permanentEnemyToEveryoneExcept>
+	<canPsychicRitualSiege MayRequire="Ludeon.RimWorld.Anomaly">true</canPsychicRitualSiege>
+	<earliestRaidDays>95</earliestRaidDays>
+	<arrivalLayerWhitelist>
+      <li>Surface</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </arrivalLayerWhitelist>
+	<allowedCultures>
+	  <li MayRequire="ObsidiaExpansion.Ideology.StylePack">OE_Culture_Obsidia</li>
+	  <li>Kriminul</li>
+	</allowedCultures>
+	<requiredMemes>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_ViolentConversion</li>
+	</requiredMemes>
+	<allowedMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_InsectoidSupremacy</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_MechanoidSupremacy</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_ExaltedPriesthood</li>
+	</allowedMemes>
+	<xenotypeSet>
+      <xenotypeChances>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.03</Dirtmole>
+		<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+		<Waster MayRequire="Ludeon.RimWorld.Biotech">0.03</Waster>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+		<Impid MayRequire="Ludeon.RimWorld.Biotech">0.03</Impid>
+		<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.03</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.03</Yttakin>
+		<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.03</Sanguophage>
+      </xenotypeChances>
+    </xenotypeSet>
+	<structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+    <backstoryFilters>
+	  <li>
+        <categories>
+          <li>OECultist</li>
+		  <li>OECivilians</li>
+		  <li>OEFighters</li>
+		  <li>Outlander</li>
+        </categories>
+        <commonality>0.6</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>ImperialCommon</li>
+		  <li>ImperialFighter</li>
+        </categories>
+        <commonality>0.2</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Pirate</li>
+		  <li>Offworld</li>
+        </categories>
+        <commonality>0.2</commonality>
+      </li>
+    </backstoryFilters>
+	<apparelStuffFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+		<li>OE_ObsidianSynthweave</li>
+        <li>OE_Mythril</li>
+		<li>OE_MythrilSynthweave</li>
+		<li>OE_Platinum</li>
+		<li>OE_PlatinumSynthweave</li>
+		<li>OE_Empyrium</li>
+		<li>OE_EmpyriumSynthweave</li>
+		<li>OE_Orichalcum</li>
+		<li>OE_OrichalcumSynthweave</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Cloth</li>
+		<li>Uranium</li>
+      </disallowedThingDefs>
+    </apparelStuffFilter>
+	<fixedLeaderKinds>
+      <li>CAC_Vizier</li>
+    </fixedLeaderKinds>
+    <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+    <raidLootMaker>ObsidiaEmpireRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+		<li>(1500, 150)</li>
+        <li>(3000, 300)</li>
+        <li>(5000, 500)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+		  <CAC_Acolyte>25</CAC_Acolyte>
+		  <CAC_Apostle>25</CAC_Apostle>
+		  <CAC_Disciple>25</CAC_Disciple>
+		  <CAC_Prefect>25</CAC_Prefect>
+		  <CAC_Confessor>25</CAC_Confessor>
+		  <CAC_Deacon>25</CAC_Deacon>
+		  <CAC_Pontifex>25</CAC_Pontifex>
+		  <CAC_Acolyte_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Acolyte_Prestige>
+		  <CAC_Apostle_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Apostle_Prestige>
+		  <CAC_Disciple_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Disciple_Prestige>
+		  <CAC_Prefect_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Prefect_Prestige>
+		  <CAC_Confessor_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Confessor_Prestige>
+		  <CAC_Deacon_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Deacon_Prestige>
+		  <CAC_Pontifex_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Pontifex_Prestige>
+		  <CAC_Acolyte_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Acolyte_Mechanitor>
+		  <CAC_Apostle_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Apostle_Mechanitor>
+		  <CAC_Disciple_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Disciple_Mechanitor>
+		  <CAC_Prefect_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Prefect_Mechanitor>
+		  <CAC_Confessor_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Confessor_Mechanitor>
+		  <CAC_Deacon_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Deacon_Mechanitor>
+		  <CAC_Pontifex_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Pontifex_Mechanitor>
+		  <CAC_Mech_Arachna>20</CAC_Mech_Arachna>
+		  <CAC_Vizier>5</CAC_Vizier>
+		  <CAC_Mech_CrimsonArachna MayRequire="Ludeon.Rimworld.Biotech">2</CAC_Mech_CrimsonArachna>
+		  <CAC_Returned MayRequire="Ludeon.RimWorld.Anomaly">10</CAC_Returned>
+		  <CAC_CyberArachna MayRequire="Ludeon.RimWorld.Anomaly">5</CAC_CyberArachna>
+		  <CAC_SinPriest MayRequire="Ludeon.RimWorld.Anomaly">1</CAC_SinPriest>
+        </options>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Anomaly">
+        <kindDef>Combat</kindDef>
+        <options>
+		  <CAC_Acolyte>15</CAC_Acolyte>
+		  <CAC_Apostle>15</CAC_Apostle>
+		  <CAC_Disciple>15</CAC_Disciple>
+		  <CAC_Prefect>15</CAC_Prefect>
+		  <CAC_Confessor>15</CAC_Confessor>
+		  <CAC_Deacon>15</CAC_Deacon>
+		  <CAC_Pontifex>15</CAC_Pontifex>
+		  <CAC_Mech_Arachna>5</CAC_Mech_Arachna>
+		  <CAC_Returned MayRequire="Ludeon.RimWorld.Anomaly">1</CAC_Returned>
+        </options>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Anomaly">
+        <kindDef>Combat</kindDef>
+        <options>
+		  <CAC_Acolyte>15</CAC_Acolyte>
+		  <CAC_Apostle>15</CAC_Apostle>
+		  <CAC_Disciple>15</CAC_Disciple>
+		  <CAC_Prefect>15</CAC_Prefect>
+		  <CAC_Confessor>15</CAC_Confessor>
+		  <CAC_Deacon>15</CAC_Deacon>
+		  <CAC_Pontifex>15</CAC_Pontifex>
+		  <CAC_Mech_Arachna>5</CAC_Mech_Arachna>
+		  <CAC_CyberArachna MayRequire="Ludeon.RimWorld.Anomaly">1</CAC_CyberArachna>
+        </options>
+      </li>
+	  <li MayRequire="Ludeon.Rimworld.Anomaly">
+        <kindDef>PsychicRitualSiege</kindDef>
+        <options>
+		  <CAC_Acolyte>25</CAC_Acolyte>
+		  <CAC_Apostle>25</CAC_Apostle>
+		  <CAC_Disciple>25</CAC_Disciple>
+		  <CAC_Prefect>25</CAC_Prefect>
+		  <CAC_Confessor>25</CAC_Confessor>
+		  <CAC_Deacon>25</CAC_Deacon>
+		  <CAC_Pontifex>25</CAC_Pontifex>
+		  <CAC_Acolyte_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Acolyte_Prestige>
+		  <CAC_Apostle_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Apostle_Prestige>
+		  <CAC_Disciple_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Disciple_Prestige>
+		  <CAC_Prefect_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Prefect_Prestige>
+		  <CAC_Confessor_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Confessor_Prestige>
+		  <CAC_Deacon_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Deacon_Prestige>
+		  <CAC_Pontifex_Prestige MayRequire="Ludeon.RimWorld.Royalty">15</CAC_Pontifex_Prestige>
+		  <CAC_Acolyte_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Acolyte_Mechanitor>
+		  <CAC_Apostle_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Apostle_Mechanitor>
+		  <CAC_Disciple_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Disciple_Mechanitor>
+		  <CAC_Prefect_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Prefect_Mechanitor>
+		  <CAC_Confessor_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Confessor_Mechanitor>
+		  <CAC_Deacon_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Deacon_Mechanitor>
+		  <CAC_Pontifex_Mechanitor MayRequire="Ludeon.RimWorld.Biotech">1</CAC_Pontifex_Mechanitor>
+		  <CAC_Mech_Arachna>20</CAC_Mech_Arachna>
+		  <CAC_Vizier>5</CAC_Vizier>
+		  <CAC_Mech_CrimsonArachna MayRequire="Ludeon.Rimworld.Biotech">2</CAC_Mech_CrimsonArachna>
+		  <CAC_Returned MayRequire="Ludeon.RimWorld.Anomaly">20</CAC_Returned>
+		  <CAC_CyberArachna MayRequire="Ludeon.RimWorld.Anomaly">10</CAC_CyberArachna>
+		  <CAC_SinPriest MayRequire="Ludeon.RimWorld.Anomaly">1</CAC_SinPriest>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/Expanding/Colony</settlementTexturePath>
+	<disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
+
+</Defs>

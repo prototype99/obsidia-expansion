@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Grasslands ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Grasslands"]/wildAnimals</xpath>
+    <value>
+        <OE_Armagon>0.2</OE_Armagon>
+        <OE_Direwolf>0.1</OE_Direwolf>
+		<OE_Raptor>0.1</OE_Raptor>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Astrinx>0.1</OE_Astrinx>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+		<OE_Scorpid_Red>0.12</OE_Scorpid_Red>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Grasslands"]/coastalWildAnimals</xpath>
+    <value>
+        <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Snapper>0.1</OE_Snapper>
+		<OE_Sharkaradon>0.09</OE_Sharkaradon>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Grasslands"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+		<li>OE_Rosner</li>
+		<li>OE_Sharkaradon</li>
+		<li>OE_Slime_Hauler</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Grasslands"]/wildPlants</xpath>
+    <value>
+		<Plant_OE_Alpine_B>0.001</Plant_OE_Alpine_B>
+		<Plant_OE_JumyBush>0.05</Plant_OE_JumyBush>
+		<Plant_OE_ToxiJumyBush MayRequire="Ludeon.RimWorld.Biotech">0.15</Plant_OE_ToxiJumyBush>
+		<Plant_OE_SucculentOfDoom_Flower MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_OE_SucculentOfDoom_Flower>
+    </value>
+</Operation>
+
+
+<!--=============== GlacialPlain ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="GlacialPlain"]/wildAnimals</xpath>
+    <value>
+        <OE_Direwolf>0.1</OE_Direwolf>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Astrinx>0.1</OE_Astrinx>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+		<OE_Rosner>0.3</OE_Rosner>
+		<OE_Hootie>0.075</OE_Hootie>
+		<OE_Scorpid_Blue>0.12</OE_Scorpid_Blue>
+		<OE_Caterpillar_Arctic>0.08</OE_Caterpillar_Arctic>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="GlacialPlain"]/coastalWildAnimals</xpath>
+    <value>
+        <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="GlacialPlain"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+		<li>OE_Rosner</li>
+		<li>OE_Sharkaradon</li>
+		<li>OE_Slime_Hauler</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="GlacialPlain"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_Tundral_B>0.001</Plant_OE_Tundral_B>
+		<Plant_OE_JumyBush>0.05</Plant_OE_JumyBush>
+		<Plant_OE_TreePearlpeach MayRequire="Ludeon.RimWorld.Biotech">0.05</Plant_OE_TreePearlpeach>
+		<Plant_OE_ToxiJumyBush MayRequire="Ludeon.RimWorld.Biotech">0.15</Plant_OE_ToxiJumyBush>
+		<Plant_OE_SucculentOfDoom_Flower MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_OE_SucculentOfDoom_Flower>
+    </value>
+</Operation>
+
+<!--=============== Glowforest ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Glowforest"]/wildAnimals</xpath>
+    <value>
+        <OE_Armagon>0.2</OE_Armagon>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+		<OE_Arachna_Green>0.1</OE_Arachna_Green>
+		<OE_Arachna_Red>0.1</OE_Arachna_Red>
+		<OE_Arachna_Yellow>0.1</OE_Arachna_Yellow>
+		<OE_Arachna_Tox MayRequire="Ludeon.RimWorld.Biotech">0.5</OE_Arachna_Tox>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+		<OE_Scorpid_Red>0.12</OE_Scorpid_Red>
+		<OE_Scorpid_Blue>0.12</OE_Scorpid_Blue>
+		<OE_Scorpid_Tox MayRequire="Ludeon.RimWorld.Biotech">0.5</OE_Scorpid_Tox>
+		<OE_Caterpillar_Brown>0.08</OE_Caterpillar_Brown>
+		<OE_Caterpillar_Arctic>0.08</OE_Caterpillar_Arctic>
+		<OE_Caterpillar_Desert>0.08</OE_Caterpillar_Desert>
+		<OE_Caterpillar_Tox MayRequire="Ludeon.RimWorld.Biotech">0.5</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Glowforest"]/coastalWildAnimals</xpath>
+    <value>
+        <OE_Snapper>0.1</OE_Snapper>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Glowforest"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+		<li>OE_Rosner</li>
+		<li>OE_Slime_Hauler</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Glowforest"]/wildPlants</xpath>
+    <value>
+		<Plant_OE_TreeFungi>0.1</Plant_OE_TreeFungi>
+		<Plant_OE_Pellashroom>0.05</Plant_OE_Pellashroom>
+		<Plant_OE_TreeSyntherius>0.01</Plant_OE_TreeSyntherius>
+		<Plant_OE_MyceliumStump>0.02</Plant_OE_MyceliumStump>
+		<Plant_OE_TreePearlpeach MayRequire="Ludeon.RimWorld.Biotech">0.05</Plant_OE_TreePearlpeach>
+		<Plant_OE_ToxiJumy MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_OE_ToxiJumy>
+		<Plant_OE_SucculentOfDoom_Flower MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_OE_SucculentOfDoom_Flower>
+    </value>
+</Operation>
+
+<!--=============== LavaField ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/wildAnimals</xpath>
+    <value>
+        <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Arachna_Red>0.1</OE_Arachna_Red>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+		<OE_Scorpid_Red>0.12</OE_Scorpid_Red>
+		<OE_Caterpillar_Desert>0.08</OE_Caterpillar_Desert>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/coastalWildAnimals</xpath>
+    <value>
+        <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Snapper>0.1</OE_Snapper>
+		<OE_Sharkaradon>0.09</OE_Sharkaradon>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_Pellashroom>0.1</Plant_OE_Pellashroom>
+		<Plant_OE_MyceliumStump>0.02</Plant_OE_MyceliumStump>
+		<Plant_OE_SucculentOfDoom_Flower MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_OE_SucculentOfDoom_Flower>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="LavaField"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+		<li>OE_Rosner</li>
+		<li>OE_Slime_Hauler</li>
+    </value>
+</Operation>
+
+<!--=============== Scarlands ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Scarlands"]/wildAnimals</xpath>
+    <value>
+        <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+		<OE_Scorpid_Red>0.12</OE_Scorpid_Red>
+		<OE_Scorpid_Blue>0.12</OE_Scorpid_Blue>
+		<OE_Scorpid_Tox MayRequire="Ludeon.RimWorld.Biotech">0.5</OE_Scorpid_Tox>
+		<OE_Caterpillar_Brown>0.04</OE_Caterpillar_Brown>
+		<OE_Caterpillar_Arctic>0.04</OE_Caterpillar_Arctic>
+		<OE_Caterpillar_Desert>0.04</OE_Caterpillar_Desert>
+		<OE_Caterpillar_Tox MayRequire="Ludeon.RimWorld.Biotech">0.5</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Scarlands"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_Pellashroom>0.1</Plant_OE_Pellashroom>
+		<Plant_OE_MyceliumStump>0.02</Plant_OE_MyceliumStump>
+		<Plant_OE_TreeSyntherius>0.01</Plant_OE_TreeSyntherius>
+		<Plant_OE_TreePearlpeach MayRequire="Ludeon.RimWorld.Biotech">0.05</Plant_OE_TreePearlpeach>
+		<Plant_OE_ToxiJumy MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_OE_ToxiJumy>
+		<Plant_OE_SucculentOfDoom_Flower MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_OE_SucculentOfDoom_Flower>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Scarlands"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+		<li>OE_Rosner</li>
+		<li>OE_Sharkaradon</li>
+		<li>OE_Slime_Hauler</li>
+    </value>
+</Operation>
+
+</Patch>

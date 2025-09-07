@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Dialects ====================-->
+  <FactionLanguages.LanguageFamilyDef>
+    <defName>OE_Obsidia</defName>
+	<forcedLanguage>OE_Language_Obsidia</forcedLanguage>
+	<linkedRace>Human</linkedRace>
+	<factionDialects>
+	  <li>
+	    <dialectDef>OE_Obsidia_Standard</dialectDef>
+		<factions>
+		  <li>ObsidiaEmpire</li>
+		  <li>ObsidiaCrimsonArachnaCult</li>
+		</factions>
+	  </li>
+	  <li>
+	    <dialectDef>OE_Obsidia_Outerworld</dialectDef>
+		<factions>
+		  <li>ObsidiaSyndicateClan</li>
+		  <li>ObsidiaRenegadeClan</li>
+		  <li>ObsidiaPilgrimClan</li>
+		  <li>ObsidiaMercenaryGangs</li>
+		</factions>
+	  </li>
+	  <li>
+	    <dialectDef>OE_Obsidia_Ancient</dialectDef>
+		<factions>
+		  <li>ObsidiaEmpireSins</li>
+		</factions>
+	  </li>
+	</factionDialects>
+  </FactionLanguages.LanguageFamilyDef>
+
+</Defs>

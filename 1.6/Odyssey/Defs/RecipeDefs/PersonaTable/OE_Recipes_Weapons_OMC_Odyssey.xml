@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC - Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Pistol_P</defName>
+    <label>Reset Paragon Impaler MK-II</label>
+    <description>Reset an Paragon Impaler MK-II.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Impaler MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Pistol_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Pistol_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Pistol_P>1</OMC_Pistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - Shotgun Sidearm ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_ShotgunS_P</defName>
+    <label>Reset Paragon Hellscream MK-II</label>
+    <description>Reset an Paragon Hellscream MK-II.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Hellscream MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_ShotgunS_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_ShotgunS_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_ShotgunS_P>1</OMC_ShotgunS_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - AssaultRifle ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_AR_P</defName>
+    <label>Reset Paragon Striker MK-II</label>
+    <description>Reset an Paragon Striker MK-II.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Striker MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_AR_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_AR_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_AR_P>1</OMC_AR_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - Shotgun ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Shotgun_P</defName>
+    <label>Reset Paragon Doom MK-II</label>
+    <description>Reset an Paragon Doom MK-II.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Doom MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Shotgun_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Shotgun_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Shotgun_P>1</OMC_Shotgun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - SniperRifle ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_SniperRifle_P</defName>
+    <label>Reset Paragon Skullmasher MK-II</label>
+    <description>Reset an Paragon Skullmasher MK-II.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Skullmasher MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_SniperRifle_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_SniperRifle_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_SniperRifle_P>1</OMC_SniperRifle_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== Cross ====================-->
+<!--=============== OMC - Rocket Launcher ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_RocketLauncher_P</defName>
+    <label>Reset Paragon Giant's Bane MK-II</label>
+    <description>Reset an Paragon Giant's Bane MK-II.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Giant's Bane MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_RocketLauncher_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_RocketLauncher_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_RocketLauncher_P>1</OMC_RocketLauncher_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - Revolver ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Revolver_P</defName>
+    <label>Reset Paragon Merciless MK-II</label>
+    <description>Reset an Paragon Merciless MK-II.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Merciless MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Revolver_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Revolver_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Revolver_P>1</OMC_Revolver_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

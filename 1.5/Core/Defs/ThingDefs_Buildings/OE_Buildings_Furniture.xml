@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Book Archive ====================-->
+  <ThingDef ParentName="FurnitureBase">
+    <defName>OE_Bookarchive</defName>
+    <label>obsidia book archive</label>
+    <description>The obsidia book archive serves for safely storing 20 books. Books stored here will passively enhance academic work done nearby, and increase the beauty of the bookcase. The stored books will never deteriorate.</description>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+	<graphicData>
+      <texPath>Things/Building/Furniture/Bookarchive</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1,2)</drawSize>
+	  <drawOffset>(0,0,0.5)</drawOffset>
+    </graphicData>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingClass>Building_Bookcase</thingClass>
+    <rotatable>false</rotatable>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+	<preventDroppingThingsOn>true</preventDroppingThingsOn>
+    <deselectedSelectionBracketFactor>0.3</deselectedSelectionBracketFactor>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+	<surfaceType>None</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+	<statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+	  <Flammability>0</Flammability>
+      <Beauty>2</Beauty>
+      <Mass>15</Mass>
+      <WorkToBuild>1500</WorkToBuild>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+    </statBases>
+    <size>(1,1)</size>
+	<costList>
+      <OE_Obsidian>20</OE_Obsidian>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <building>
+      <storageGroupTag>Bookcase</storageGroupTag>
+      <maxItemsInCell>20</maxItemsInCell>
+      <blueprintClass>Blueprint_Bookcase</blueprintClass>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+	  <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <categories Inherit="False">
+            <li>Books</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Books</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>      
+	  <relatedBuildCommands>
+        <li>Bookcase</li>
+		<li>BookcaseSmall</li>
+      </relatedBuildCommands>
+	  <paintable>false</paintable>
+    </building>
+	<placeWorkers>
+      <li>PlaceWorker_DrawLinesToResearchTablesInRoom</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_ContentsBooks</li>
+    </inspectorTabs>
+	<researchPrerequisites>
+      <li>OEFurniture</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+</Defs>

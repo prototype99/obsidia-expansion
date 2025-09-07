@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OE - Sword ====================-->
+<OE_Sword.label>Прото Разделитель</OE_Sword.label>
+<OE_Sword.description>Прото Меч, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Sword.description>
+
+<OE_Sword.tools.handle.label>рукоять</OE_Sword.tools.handle.label>
+<OE_Sword.tools.point.label>остриё</OE_Sword.tools.point.label>
+<OE_Sword.tools.edge.label>лезвие</OE_Sword.tools.edge.label>
+
+<!--=============== OE - Hammer ====================-->
+<OE_Hammer.label>Прото Немезида</OE_Hammer.label>
+<OE_Hammer.description>Прото Молот, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Hammer.description>
+
+<OE_Hammer.tools.handle.label>рукоять</OE_Hammer.tools.handle.label>
+<OE_Hammer.tools.head.label>боевая часть</OE_Hammer.tools.head.label>
+
+<!--=============== OE - Spear ====================-->
+<OE_Spear.label>Прото Элитра</OE_Spear.label>
+<OE_Spear.description>Прото Копье, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Spear.description>
+
+<OE_Spear.tools.shaft.label>древко</OE_Spear.tools.shaft.label>
+<OE_Spear.tools.point.label>остриё</OE_Spear.tools.point.label>
+
+<!--=============== OE - Pistol ====================-->
+<Bullet_OE_P.label>пуля из Прото Цепеша</Bullet_OE_P.label>
+
+<OE_Pistol.label>Прото Цепеш</OE_Pistol.label>
+<OE_Pistol.verbs.Verb_Shoot.label>Прото Цепеш</OE_Pistol.verbs.Verb_Shoot.label>
+<OE_Pistol.description>Прото Пистолет, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Pistol.description>
+
+<OE_Pistol.tools.grip.label>рукоять</OE_Pistol.tools.grip.label>
+<OE_Pistol.tools.barrel.label>ствол</OE_Pistol.tools.barrel.label>
+
+<!--=============== OE - SMG ====================-->
+<Bullet_OE_SMG.label>пуля из Прото Эквалайзера</Bullet_OE_SMG.label>
+
+<OE_SMG.label>Прото Эквалайзер</OE_SMG.label>
+<OE_SMG.verbs.Verb_Shoot.label>Прото Эквалайзер</OE_SMG.verbs.Verb_Shoot.label>
+<OE_SMG.description>Прото СМГ, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_SMG.description>
+
+<OE_SMG.tools.stock.label>приклад</OE_SMG.tools.stock.label>
+<OE_SMG.tools.barrel.label>ствол</OE_SMG.tools.barrel.label>
+
+<!--=============== OE - Shotgun ====================-->
+<Bullet_OE_S.label>дробь Прото Гибели</Bullet_OE_S.label>
+
+<OE_Shotgun.label>Прото Гибель</OE_Shotgun.label>
+<OE_Shotgun.verbs.Verb_Shoot.label>Прото Гибель</OE_Shotgun.verbs.Verb_Shoot.label>
+<OE_Shotgun.description>Прото Дробовик, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Shotgun.description>
+
+<OE_Shotgun.tools.stock.label>приклад</OE_Shotgun.tools.stock.label>
+<OE_Shotgun.tools.barrel.label>ствол</OE_Shotgun.tools.barrel.label>
+
+<!--=============== OE - Rifle ====================-->
+<Bullet_OE_R.label>пуля из Прото Цербера</Bullet_OE_R.label>
+
+<OE_Rifle.label>Прото Цербер</OE_Rifle.label>
+<OE_Rifle.verbs.Verb_Shoot.label>Прото Цербер</OE_Rifle.verbs.Verb_Shoot.label>
+<OE_Rifle.description>Прото Винтовка, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Rifle.description>
+
+<OE_Rifle.tools.stock.label>приклад</OE_Rifle.tools.stock.label>
+<OE_Rifle.tools.barrel.label>ствол</OE_Rifle.tools.barrel.label>
+
+<!--=============== OE - Bow ====================-->
+<Bullet_OE_B.label>стрела из Прото Гордыни</Bullet_OE_B.label>
+
+<OE_Bow.label>Прото Гордыня</OE_Bow.label>
+<OE_Bow.verbs.Verb_Shoot.label>Прото Гордыня</OE_Bow.verbs.Verb_Shoot.label>
+<OE_Bow.description>Прото Лук, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Bow.description>
+
+<OE_Bow.tools.limb.label>плечо</OE_Bow.tools.limb.label>
+
+<!--=============== OE - Lancecaster ====================-->
+<Bullet_OE_L_Beam.label>луч из Прото Деструкто</Bullet_OE_L_Beam.label>
+
+<OE_Lancecaster.label>Прото Деструкто</OE_Lancecaster.label>
+<OE_Lancecaster.verbs.Verb_Shoot.label>Прото Деструкто</OE_Lancecaster.verbs.Verb_Shoot.label>
+<OE_Lancecaster.description>Прото Лэнскастер, разработан для использования воинами Империи Обсидии несколько столетий назад.</OE_Lancecaster.description>
+
+<OE_Lancecaster.tools.stock.label>приклад</OE_Lancecaster.tools.stock.label>
+<OE_Lancecaster.tools.barrel.label>ствол</OE_Lancecaster.tools.barrel.label>
+
+</LanguageData>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Vanilla Factions Expanded - Insectoids ====================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>		
+<!--=============== OE - Trophy Modules ====================-->
+<!--=============== Special ====================-->
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_Pacifier</defName>
+    <label>Psychic Module - Pacifier</label>
+	<description>The module provides the owner with power of Psychic pacifier. Unique designed on the basis of Archotech technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_Pacifier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleS</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+    <verbs>
+      <li>
+		<verbClass>VFEI.Verb_CastHumanEffect</verbClass>
+		<commandIcon>UI/Abilities/Armor/Pacifier</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>34.9</range>
+        <warmupTime>1.0</warmupTime>
+        <targetParams>
+          <canTargetHumans>true</canTargetHumans>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetMechs>false</canTargetMechs>
+          <canTargetAnimals>false</canTargetAnimals>
+          <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+        </targetParams>
+        <soundCast>PsychicShockLanceCast</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+		<ammoDef>VFEI_Artifacts_PsychicPacifier</ammoDef>
+        <ammoCountToRefill>2</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>VFEI.CompTargetEffect_Recruit</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_BrainDamageChance">
+        <brainDamageChance>0.3</brainDamageChance>
+      </li>
+      <li Class="CompProperties_TargetEffect_GoodwillImpact">
+        <goodwillImpact>-200</goodwillImpact>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_AnimalTamer</defName>
+    <label>Psychic Module - Animal Tamer</label>
+	<description>The module provides the owner with power of Psychic animal tamer. Unique designed on the basis of Archotech technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_AnimalTamer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleT</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+	<verbs>
+      <li>
+		<verbClass>VFEI.Verb_CastAnimalEffect</verbClass>
+		<commandIcon>UI/Abilities/Armor/AnimalTamer</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>34.9</range>
+        <warmupTime>1.0</warmupTime>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetHumans>false</canTargetHumans>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+        </targetParams>
+        <soundCast>PsychicShockLanceCast</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+		<ammoDef>VFEI_Artifacts_PsychicAnimalTamer</ammoDef>
+        <ammoCountToRefill>2</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>VFEI.CompTargetEffect_Tame</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_BrainDamageChance">
+        <brainDamageChance>0.3</brainDamageChance>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+				  </value>
+			   </li>
+			</operations>
+		</match>
+	</Operation>
+
+<!--=============== Vanilla Factions Expanded - Vikings ====================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Vanilla Factions Expanded - Vikings</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>		
+<!--=============== OE - Trophy Modules ====================-->
+<!--=============== Special ====================-->
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_PlantGrower</defName>
+    <label>Psychic Module - Cornucopia</label>
+	<description>The module provides the owner with power of Psychic cornucopia. Unique designed on the basis of Archotech technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_PlantGrower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleS</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_CastTargetEffect</verbClass>
+		<commandIcon>UI/Abilities/Armor/Pacifier</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <onlyManualCast>true</onlyManualCast>
+        <soundCast>PsychicShockLanceCast</soundCast>
+      </li>
+    </verbs>
+    <comps>
+	  <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+		<ammoDef>VFEV_PlantGrowerArtifact</ammoDef>
+        <ammoCountToRefill>2</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+	  <li Class="CompProperties_Targetable">
+		<compClass>VFEV.CompTargetable_AllPlantsOnTheMap</compClass>
+		<doCameraShake>true</doCameraShake>
+		<fleckOnUsed>PsycastAreaEffect</fleckOnUsed>
+		<fleckOnUsedScale>10</fleckOnUsedScale>
+	  </li>
+	  <li>
+	    <compClass>VFEV.CompTargetEffect_PlantGrower</compClass>
+	  </li>
+	  <li Class="CompProperties_UseEffectArtifact">
+	    <sound>PsychicAnimalPulserCast</sound>
+	  </li>
+	</comps>
+  </ThingDef>
+
+				  </value>
+			   </li>
+			</operations>
+		</match>
+	</Operation>
+
+<!--=============== Vanilla Factions Expanded - Pirates ====================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>		
+<!--=============== OE - Trophy Modules ====================-->
+<!--=============== Special ====================-->
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_Privateer</defName>
+    <label>Special Module - Privateer</label>
+	<description>The module provides the owner integrated grappling hook. Unique designed to getting in and out of dangerous situations easily. Grappling hook connects to walls and solid rock and allows the users to quickly move to the desired location.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_Privateer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleS</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+    <comps>
+	  <li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+		<abilities>
+		  <li>OE_GrapplingHook</li>
+		</abilities>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <VFECore.Abilities.AbilityDef>
+    <defName>OE_GrapplingHook</defName>
+    <label>grappling hook</label>
+    <description>Grappling hook connects to walls and solid rock and allows the users to quickly move to the desired location. The launcher does not require ammunition, but time needs to be reserved between shots to wind it up again.</description>
+    <abilityClass>VFEPirates.Ability_GrapplingHook</abilityClass>
+    <targetMode>Thing</targetMode>
+    <range>17.9</range>
+    <iconPath>UI/Abilities/Armor/Privateer</iconPath>
+    <cooldownTime>0</cooldownTime>
+    <castTime>0</castTime>
+    <chance>0</chance>
+    <modExtensions>
+      <li Class="VFEPirates.AbilityExtension_GrapplingHook">
+        <reloadIconPath>UI/Abilities/Armor/Privateer_Reload</reloadIconPath>
+        <reloadTicks>500</reloadTicks>
+        <labelUnloaded>reload grappling hook</labelUnloaded>
+      </li>
+      <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+        <projectile>VFEP_Bullet_GrapplingHook</projectile>
+      </li>
+    </modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+				  </value>
+			   </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

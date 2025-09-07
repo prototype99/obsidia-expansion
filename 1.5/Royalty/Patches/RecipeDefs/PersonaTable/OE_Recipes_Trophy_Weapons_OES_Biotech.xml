@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+
+<!--=============== Core ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OES_LegionSpear_A</defName>
+    <label>Reset Legion Spear</label>
+    <description>Reset a Legion Spear.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Legion Spear.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OES_LegionSpear_A</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OES_LegionSpear_A</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OES_LegionSpear_A>1</OES_LegionSpear_A>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Level-1 ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OES_LegionSpear_B</defName>
+    <label>Reset Legion Spear Mk.I</label>
+    <description>Reset a Legion Spear Mk.I.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Legion Spear Mk.I.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OES_LegionSpear_B</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OES_LegionSpear_B</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OES_LegionSpear_B>1</OES_LegionSpear_B>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Level-2 ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OES_LegionSpear_C</defName>
+    <label>Reset Legion Spear Mk.II</label>
+    <description>Reset a Legion Spear Mk.II.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Legion Spear Mk.II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OES_LegionSpear_C</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OES_LegionSpear_C</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OES_LegionSpear_C>1</OES_LegionSpear_C>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Level-3 ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OES_LegionSpear_D</defName>
+    <label>Reset Legion Spear Mk.III</label>
+    <description>Reset a Legion Spear Mk.III.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Legion Spear Mk.III.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OES_LegionSpear_D</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OES_LegionSpear_D</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OES_LegionSpear_D>1</OES_LegionSpear_D>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Level-4 ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OES_LegionSpear_E</defName>
+    <label>Reset Legion Spear Mk.IV</label>
+    <description>Reset a Legion Spear Mk.IV.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Legion Spear Mk.IV.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OES_LegionSpear_E</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OES_LegionSpear_E</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OES_LegionSpear_E>1</OES_LegionSpear_E>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Level-5 ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OES_LegionSpear_F</defName>
+    <label>Reset Legion Spear Mk.V</label>
+    <description>Reset a Legion Spear Mk.V.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Legion Spear Mk.V.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OES_LegionSpear_F</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OES_LegionSpear_F</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OES_LegionSpear_F>1</OES_LegionSpear_F>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

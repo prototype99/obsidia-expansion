@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Smoke ====================-->
+  <EffecterDef>
+    <defName>EGO_SmokeColumn</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>EGO_SmokeEffect</fleckDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <rotationRate>-10~10</rotationRate>
+        <speed>0.1~0.35</speed>
+        <scale>0.8~1.2</scale>
+        <chancePerTick>0.002</chancePerTick>
+        <positionOffset>(0,0,0.5)</positionOffset>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>EGO_SmokeEffect</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+      <color>(5, 68, 82)</color>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.50</fadeInTime>
+    <solidTime>2</solidTime>
+    <fadeOutTime>1.2</fadeOutTime>
+    <growthRate>0.005</growthRate>
+  </FleckDef>
+
+<!--=============== EGO Cloud ====================-->
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>EGO_SmokeCloud</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+      <color>(5, 68, 82)</color>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.50</fadeInTime>
+    <solidTime>20</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <growthRate>0.05</growthRate>
+  </FleckDef>
+
+</Defs>

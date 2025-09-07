@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Expansion - Mechtech ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject30">
+		<defName>OEMechtech</defName>
+		<label>OE - Mechtech</label>
+		<description>Research Obsidia mechanitors technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OESynth</li>
+			<li>BasicMechtech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+		<discoveredLetterTitle>About: Building Obsidia mechs</discoveredLetterTitle>
+		<discoveredLetterText>You now have the knowledge to construct basic Mechanoids from the Obsidia Expansion.\n\nBuild them using standard Mech Gestators or Large Mech Gestators to bolster your colony’s strength.</discoveredLetterText>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Advanced Mechtech ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject30">
+		<defName>OEMechtechAdv</defName>
+		<label>OE - Adv. Mechtech</label>
+		<description>Research advanced Obsidia mechanitors technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEMechtech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+		<requiredAnalyzed>
+			<li>OE_ArachnaCore</li>
+		</requiredAnalyzed>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Advanced Bioengineering ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OEBioengineeringAdv</defName>
+		<label>OE - Adv. Bioengineering</label>
+		<description>Research advanced of Obsidia bioengineering technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEBioengineering</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+		<requiredAnalyzed>
+			<li>OE_EGOSeed</li>
+		</requiredAnalyzed>
+	</ResearchProjectDef>
+
+<!--=============== OES - The Fall ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject35">
+		<defName>OESGear</defName>
+		<label>OES - The Fall</label>
+		<description>Research advanced fragments of Obsidia Eidolons technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>OEGearCross</li>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<requiredAnalyzed>
+			<li>OE_SyntheriusOfSin</li>
+		</requiredAnalyzed>
+		<discoveredLetterTitle>About: Empire Sins equipment</discoveredLetterTitle>
+		<discoveredLetterText>You've gained the knowledge to craft part of the ultra-tier gear from the Obsidia Empire Sins.\n\nThis requires Heroic Kits, which are obtained by dismantling Heroic-grade equipment.</discoveredLetterText>
+	</ResearchProjectDef>
+
+</Defs>

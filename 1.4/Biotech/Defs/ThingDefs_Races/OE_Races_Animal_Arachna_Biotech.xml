@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Waste Arachna ====================-->
+  <ThingDef ParentName="OEBaseArachna">
+    <defName>OE_Arachna_Tox</defName>
+    <label>waste arachna</label>
+    <description>Obsidia Arachna are huge arthropod. These strong and fast creatures prefer to form small hunting groups. They are very difficult to tame and almost impossible to train. Also, many are mistaken in thinking that Arachnas produce webs.\n\nWaste Arachna prefers polluted areas.</description>
+	<statBases>
+	  <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
+	  <ToxicResistance>1</ToxicResistance>
+	  <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+	</statBases>
+	<tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.75</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>ToxGas</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>	
+	</tools>
+	<race>
+	  <deathActionWorkerClass>DeathActionWorker_ToxCloud</deathActionWorkerClass>
+	</race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseArachna">
+    <defName>OE_Arachna_Tox</defName>
+    <label>waste arachna</label>
+    <labelPlural>waste arachnas</labelPlural>
+    <race>OE_Arachna_Tox</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Tox/ArachnaMale</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Tox/ArachnaFemale</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Tox/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Tox/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Tox/ArachnaMale</texPath>
+          <drawSize>1.0</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Tox/ArachnaFemale</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Tox/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Tox/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.75</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Tox/ArachnaMale</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Tox/ArachnaFemale</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Tox/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Tox/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>2.5</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

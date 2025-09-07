@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Jumyline ====================-->
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>OE_Jumyline_Candies</defName>
+    <label>jumyline candies</label>
+    <description>These small but very sweet candies are coocked from selected Jumy berries and delicious chocolate.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Jumy_Berries</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Food/Jumyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<tradeTags>
+      <li>OEFood</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>5</MarketValue>
+	  <WorkToMake>200</WorkToMake>
+      <Mass>0.025</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.15</joy>
+      <joyKind>Gluttonous</joyKind>
+	  <tasteThought>OE_AteJumylineCandies</tasteThought>
+	  <defaultNumToIngestAtOnce>4</defaultNumToIngestAtOnce>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+<!--=============== Ate Jumyline Candies ====================-->
+  <ThoughtDef>
+    <defName>OE_AteJumylineCandies</defName>
+    <durationDays>0.5</durationDays>
+    <stages>
+      <li>
+        <label>ate jumyline candies</label>
+        <description>Those Jumyline candies were unbelievably sweet. A treat that brightened both my taste buds and my mood.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!--=============== Base - Obsidia Can Meal ====================-->
+  <ThingDef Name="ObsidiaCanMealBase" ParentName="MealBaseIngredientless" Abstract="True">
+    <description>A true culinary masterpiece, this dish captivates the senses and brings pure joy to the soul.</description>
+    <tradeability>Buyable</tradeability>
+	<tradeTags>
+      <li>OEFood</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+	<statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+	  <MarketValue>50</MarketValue>
+      <WorkToMake>850</WorkToMake>
+      <Nutrition>1.25</Nutrition>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>OE_AteObsidiaCanMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ObsidiaCanMealBase">
+    <defName>OE_CanMeal</defName>
+    <label>obsidia can meal</label>
+    <graphicData>
+      <texPath>Things/Item/Meal/CanMeal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+<!--=============== Vegetarian ====================-->
+  <ThingDef ParentName="ObsidiaCanMealBase">
+    <defName>OE_CanMeal_Veg</defName>
+    <label>vegetarian obsidia can meal</label>
+    <graphicData>
+      <texPath>Things/Item/Meal/CanMealVeg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+<!--=============== Carnivore ====================-->
+  <ThingDef ParentName="ObsidiaCanMealBase">
+    <defName>OE_CanMeal_Meat</defName>
+    <label>carnivore obsidia can meal</label>
+    <graphicData>
+      <texPath>Things/Item/Meal/CanMealMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+    <li Class="CompProperties_Ingredients">
+      <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+    </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ate Obsidia Can Meal ====================-->
+  <ThoughtDef>
+    <defName>OE_AteObsidiaCanMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate obsidia can meal</label>
+        <description>That obsidia can meal was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+    <replaceThoughts>
+      <li>AteLavishMeal</li>
+    </replaceThoughts>
+  </ThoughtDef>
+
+</Defs>

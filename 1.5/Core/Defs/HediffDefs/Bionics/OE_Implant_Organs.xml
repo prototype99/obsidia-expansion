@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Stomach ====================-->
+<!--=============== Implant - Traveler ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantStomach_Traveler</defName>
+    <label>stomach implant - Traveler</label>
+    <labelNoun>a stomach implant - Traveler</labelNoun>
+    <description>An installed stomach implant - Traveler.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantStomach_Traveler</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantStomach_Traveler</spawnThingOnRemoved>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ForagedNutritionPerDay>10</ForagedNutritionPerDay>
+	    </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantStomach_Traveler</defName>
+    <label>stomach implant - Traveler</label>
+    <description>Obsidia traveler stomach implant was designed to additional nutrition while traveling by caravan.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantStomach_Traveler</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/ODC/OE_Stomach</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>ODCBionics</li>
+    </techHediffsTags>	
+    <costList>
+      <OE_PlatinumSynthweave>20</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantStomach_Traveler</defName>
+    <label>install stomach implant - Traveler</label>
+    <description>Install a stomach implant - Traveler.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantStomach_Traveler</ThingDef>
+      <HediffDef>OE_ImplantStomach_Traveler</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing stomach implant - Traveler.</jobString>
+	<uiIconThing>OE_ImplantStomach_Traveler</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantStomach_Traveler</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantStomach_Traveler</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantStomach_Traveler</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantStomach_Traveler</defName>
+    <label>remove stomach implant - Traveler</label>
+    <description>Remove a stomach implant - Traveler.</description>
+    <jobString>Removing stomach implant - Traveler.</jobString>
+    <removesHediff>OE_ImplantStomach_Traveler</removesHediff>
+	<uiIconThing>OE_ImplantStomach_Traveler</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Heart ====================-->
+<!--=============== Implant - Healing ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantHeart_Healing</defName>
+    <label>heart implant - Healing</label>
+    <labelNoun>a heart implant - Healing</labelNoun>
+    <description>An installed heart implant - Healing.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantHeart_Healing</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantHeart_Healing</spawnThingOnRemoved>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <InjuryHealingFactor>1.5</InjuryHealingFactor>
+	    </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantHeart_Healing</defName>
+    <label>heart implant - Healing</label>
+    <description>Obsidia healing heart implant was designed to releases nanomachines and healing factors that speed up wound healing.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantHeart_Healing</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OMC/OE_Heart</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OMCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_PlatinumSynthweave>20</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantHeart_Healing</defName>
+    <label>install heart implant - Healing</label>
+    <description>Install a heart implant - Healing.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantHeart_Healing</ThingDef>
+      <HediffDef>OE_ImplantHeart_Healing</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing heart implant - Healing.</jobString>
+	<uiIconThing>OE_ImplantHeart_Healing</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantHeart_Healing</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantHeart_Healing</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantHeart_Healing</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantHeart_Healing</defName>
+    <label>remove heart implant - Healing</label>
+    <description>Remove a heart implant - Healing.</description>
+    <jobString>Removing heart implant - Healing.</jobString>
+    <removesHediff>OE_ImplantHeart_Healing</removesHediff>
+	<uiIconThing>OE_ImplantHeart_Healing</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Kidney ====================-->
+<!--=============== Implant - Coagulator ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantKidney_Coagulator</defName>
+    <label>kidney implant - Coagulator</label>
+    <labelNoun>a kidney implant - Coagulator</labelNoun>
+    <description>An installed kidney implant - Coagulator.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantKidney_Coagulator</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantKidney_Coagulator</spawnThingOnRemoved>
+	<stages>
+	  <li>
+	    <totalBleedFactor>0.5</totalBleedFactor>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantKidney_Coagulator</defName>
+    <label>kidney implant - Coagulator</label>
+    <description>Obsidia coagulator kidney implant was designed to releases nanomachines and coagulating factors in response to blood loss, reducing bleeding rates significantly.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantKidney_Coagulator</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OCC/OE_Kidney</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OCCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_PlatinumSynthweave>20</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantKidney_Coagulator</defName>
+    <label>install kidney implant - Coagulator</label>
+    <description>Install a kidney implant - Coagulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantKidney_Coagulator</ThingDef>
+      <HediffDef>OE_ImplantKidney_Coagulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing kidney implant - Coagulator.</jobString>
+	<uiIconThing>OE_ImplantKidney_Coagulator</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantKidney_Coagulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantKidney_Coagulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantKidney_Coagulator</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantKidney_Coagulator</defName>
+    <label>remove kidney implant - Coagulator</label>
+    <description>Remove a kidney implant - Coagulator.</description>
+    <jobString>Removing kidney implant - Coagulator.</jobString>
+    <removesHediff>OE_ImplantKidney_Coagulator</removesHediff>
+	<uiIconThing>OE_ImplantKidney_Coagulator</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Liver ====================-->
+<!--=============== Implant - Antibiotic ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantLiver_Antibiotic</defName>
+    <label>liver implant - Immune assistant</label>
+    <labelNoun>a liver implant - Immune assistant</labelNoun>
+    <description>An installed liver implant - Immune assistant.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantLiver_Antibiotic</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantLiver_Antibiotic</spawnThingOnRemoved>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+	    </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantLiver_Antibiotic</defName>
+    <label>liver implant - Immune assistant</label>
+    <description>Obsidia immune assistant liver implant was designed to speed up gains immunity to diseases.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantLiver_Antibiotic</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OTC/OE_Liver</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OTCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_PlatinumSynthweave>20</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>4.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantLiver_Antibiotic</defName>
+    <label>install liver implant - Immune assistant</label>
+    <description>Install a liver implant - Immune assistant.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantLiver_Antibiotic</ThingDef>
+      <HediffDef>OE_ImplantLiver_Antibiotic</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing liver implant - Immune assistant.</jobString>
+	<uiIconThing>OE_ImplantLiver_Antibiotic</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantLiver_Antibiotic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantLiver_Antibiotic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantLiver_Antibiotic</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantLiver_Antibiotic</defName>
+    <label>remove liver implant - Immune assistant</label>
+    <description>Remove a liver implant - Immune assistant.</description>
+    <jobString>Removing liver implant - Immune assistant.</jobString>
+    <removesHediff>OE_ImplantLiver_Antibiotic</removesHediff>
+	<uiIconThing>OE_ImplantLiver_Antibiotic</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Lung ====================-->
+<!--=============== Implant - Filtration ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantLung_Filtration</defName>
+    <label>lung implant - Antitox-filter</label>
+    <labelNoun>a lung implant - Antitox-filter</labelNoun>
+    <description>An installed lung implant - Antitox-filter.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantLung_Filtration</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantLung_Filtration</spawnThingOnRemoved>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
+		  <ToxicResistance>0.15</ToxicResistance>
+	    </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantLung_Filtration</defName>
+    <label>lung implant - Antitox-filter</label>
+    <description>Obsidia antitox-filter lung implant was designed to reduce the intake of environmental toxins, allowing the user to survive longer in polluted environments. Additionally, it negates the irritation of acidic smoke and prevents lung rot in this lung.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantLung_Filtration</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OTC/OE_Lung</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OTCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_PlatinumSynthweave>20</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantLung_Filtration</defName>
+    <label>install lung implant - Antitox-filter</label>
+    <description>Install a lung implant - Antitox-filter.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantLung_Filtration</ThingDef>
+      <HediffDef>OE_ImplantLung_Filtration</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing lung implant - Antitox-filter.</jobString>
+	<uiIconThing>OE_ImplantLung_Filtration</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantLung_Filtration</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantLung_Filtration</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantLung_Filtration</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantLung_Filtration</defName>
+    <label>remove lung implant - Antitox-filter</label>
+    <description>Remove a lung implant - Antitox-filter.</description>
+    <jobString>Removing lung implant - Antitox-filter.</jobString>
+    <removesHediff>OE_ImplantLung_Filtration</removesHediff>
+	<uiIconThing>OE_ImplantLung_Filtration</uiIconThing>
+  </RecipeDef>
+
+</Defs>

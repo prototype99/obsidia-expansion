@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC ====================-->
+<!--=============== Small ====================-->
+<OMC_Turret_Small.label>OMC Doom Turret</OMC_Turret_Small.label>
+<OMC_Turret_Small.description>An automatic OMC Auto Shotgun-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OMC_Turret_Small.description>
+<OMC_Turret_Small.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OMC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OMC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OMC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OMC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OMC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OMC_Turret_SmallPowered.label>OMC Doom Powered Turret</OMC_Turret_SmallPowered.label>
+<OMC_Turret_SmallPowered.description>An automatic OMC Auto Shotgun-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OMC_Turret_SmallPowered.description>
+<OMC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OMC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OMC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OMC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OMC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OMC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OMC_TurretGun_Small.label>Doom Turret</OMC_TurretGun_Small.label>
+<OMC_TurretGun_Small.verbs.Verb_Shoot.label>Doom Turret</OMC_TurretGun_Small.verbs.Verb_Shoot.label>
+<OMC_TurretGun_Small.description>Reconstructed OMC Auto Shotgun for turrets. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_TurretGun_Small.description>
+
+<OMC_TurretBullet_Small.label>doom turret blast</OMC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OMC_Turret_Big.label>OMC Striker Turret</OMC_Turret_Big.label>
+<OMC_Turret_Big.description>An automatic OMC Assault Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OMC_Turret_Big.description>
+<OMC_Turret_Big.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OMC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OMC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OMC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OMC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OMC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OMC_TurretGun_Big.label>Striker Turret</OMC_TurretGun_Big.label>
+<OMC_TurretGun_Big.verbs.Verb_Shoot.label>Striker Turret</OMC_TurretGun_Big.verbs.Verb_Shoot.label>
+<OMC_TurretGun_Big.description>Reconstructed OMC Assault Rifle for turrets. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_TurretGun_Big.description>
+
+<OMC_TurretBullet_Big.label>striker turret bullet</OMC_TurretBullet_Big.label>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_Acid.label>OTC Equalizer Turret(Acid)</OTC_Turret_Small_Acid.label>
+<OTC_Turret_Small_Acid.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Small_Acid.description>
+<OTC_Turret_Small_Acid.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Small_Acid.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_Acid.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Small_Acid.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_Acid.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Small_Acid.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_Acid.label>OTC Equalizer Powered Turret(Acid)</OTC_Turret_SmallPowered_Acid.label>
+<OTC_Turret_SmallPowered_Acid.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OTC_Turret_SmallPowered_Acid.description>
+<OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_Acid.label>Equalizer Turret(Acid)</OTC_TurretGun_Small_Acid.label>
+<OTC_TurretGun_Small_Acid.verbs.Verb_Shoot.label>Equalizer Turret(Acid)</OTC_TurretGun_Small_Acid.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_Acid.description>Reconstructed OTC SMG for turrets. Balanced weapon with Acid charges.</OTC_TurretGun_Small_Acid.description>
+
+<OTC_TurretBullet_Small_Acid.label>equalizer turret Acid energy bullet</OTC_TurretBullet_Small_Acid.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_Acid.label>OTC Meteor Turret(Acid)</OTC_Turret_Big_Acid.label>
+<OTC_Turret_Big_Acid.description>An automatic OTC Grenade Launcher-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Big_Acid.description>
+<OTC_Turret_Big_Acid.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Big_Acid.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_Acid.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Big_Acid.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_Acid.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Big_Acid.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_Acid.label>Meteor Turret(Acid)</OTC_TurretGun_Big_Acid.label>
+<OTC_TurretGun_Big_Acid.verbs.Verb_Shoot.label>Meteor Turret(Acid)</OTC_TurretGun_Big_Acid.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_Acid.description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with Acid charges.</OTC_TurretGun_Big_Acid.description>
+
+<OTC_TurretBullet_Big_Acid.label>meteor turret Acid grenade</OTC_TurretBullet_Big_Acid.label>
+<!--=============== Cryo ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_Cryo.label>OTC Equalizer Turret(Cryo)</OTC_Turret_Small_Cryo.label>
+<OTC_Turret_Small_Cryo.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Small_Cryo.description>
+<OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_Cryo.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Small_Cryo.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_Cryo.label>OTC Equalizer Powered Turret(Cryo)</OTC_Turret_SmallPowered_Cryo.label>
+<OTC_Turret_SmallPowered_Cryo.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OTC_Turret_SmallPowered_Cryo.description>
+<OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_Cryo.label>Equalizer Turret(Cryo)</OTC_TurretGun_Small_Cryo.label>
+<OTC_TurretGun_Small_Cryo.verbs.Verb_Shoot.label>Equalizer Turret(Cryo)</OTC_TurretGun_Small_Cryo.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_Cryo.description>Reconstructed OTC SMG for turrets. Balanced weapon with Cryo charges.</OTC_TurretGun_Small_Cryo.description>
+
+<OTC_TurretBullet_Small_Cryo.label>equalizer turret Cryo energy bullet</OTC_TurretBullet_Small_Cryo.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_Cryo.label>OTC Meteor Turret(Cryo)</OTC_Turret_Big_Cryo.label>
+<OTC_Turret_Big_Cryo.description>An automatic OTC Grenade Launcher-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Big_Cryo.description>
+<OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_Cryo.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Big_Cryo.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_Cryo.label>Meteor Turret(Cryo)</OTC_TurretGun_Big_Cryo.label>
+<OTC_TurretGun_Big_Cryo.verbs.Verb_Shoot.label>Meteor Turret(Cryo)</OTC_TurretGun_Big_Cryo.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_Cryo.description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with Cryo charges.</OTC_TurretGun_Big_Cryo.description>
+
+<OTC_TurretBullet_Big_Cryo.label>meteor turret Cryo grenade</OTC_TurretBullet_Big_Cryo.label>
+<!--=============== Fire ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_Fire.label>OTC Equalizer Turret(Fire)</OTC_Turret_Small_Fire.label>
+<OTC_Turret_Small_Fire.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Small_Fire.description>
+<OTC_Turret_Small_Fire.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Small_Fire.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_Fire.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Small_Fire.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_Fire.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Small_Fire.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_Fire.label>OTC Equalizer Powered Turret(Fire)</OTC_Turret_SmallPowered_Fire.label>
+<OTC_Turret_SmallPowered_Fire.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OTC_Turret_SmallPowered_Fire.description>
+<OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_Fire.label>Equalizer Turret(Fire)</OTC_TurretGun_Small_Fire.label>
+<OTC_TurretGun_Small_Fire.verbs.Verb_Shoot.label>Equalizer Turret(Fire)</OTC_TurretGun_Small_Fire.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_Fire.description>Reconstructed OTC SMG for turrets. Balanced weapon with Fire charges.</OTC_TurretGun_Small_Fire.description>
+
+<OTC_TurretBullet_Small_Fire.label>equalizer turret Fire energy bullet</OTC_TurretBullet_Small_Fire.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_Fire.label>OTC Meteor Turret(Fire)</OTC_Turret_Big_Fire.label>
+<OTC_Turret_Big_Fire.description>An automatic OTC Grenade Launcher-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Big_Fire.description>
+<OTC_Turret_Big_Fire.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Big_Fire.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_Fire.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Big_Fire.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_Fire.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Big_Fire.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_Fire.label>Meteor Turret(Fire)</OTC_TurretGun_Big_Fire.label>
+<OTC_TurretGun_Big_Fire.verbs.Verb_Shoot.label>Meteor Turret(Fire)</OTC_TurretGun_Big_Fire.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_Fire.description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with Fire charges.</OTC_TurretGun_Big_Fire.description>
+
+<OTC_TurretBullet_Big_Fire.label>meteor turret Fire grenade</OTC_TurretBullet_Big_Fire.label>
+<!--=============== EMP ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_EMP.label>OTC Equalizer Turret(EMP)</OTC_Turret_Small_EMP.label>
+<OTC_Turret_Small_EMP.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Small_EMP.description>
+<OTC_Turret_Small_EMP.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Small_EMP.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_EMP.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Small_EMP.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_EMP.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Small_EMP.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_EMP.label>OTC Equalizer Powered Turret(EMP)</OTC_Turret_SmallPowered_EMP.label>
+<OTC_Turret_SmallPowered_EMP.description>An automatic OTC SMG-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OTC_Turret_SmallPowered_EMP.description>
+<OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_EMP.label>Equalizer Turret(EMP)</OTC_TurretGun_Small_EMP.label>
+<OTC_TurretGun_Small_EMP.verbs.Verb_Shoot.label>Equalizer Turret(EMP)</OTC_TurretGun_Small_EMP.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_EMP.description>Reconstructed OTC SMG for turrets. Balanced weapon with EMP charges.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OTC_TurretGun_Small_EMP.description>
+
+<OTC_TurretBullet_Small_EMP.label>equalizer turret EMP energy bullet</OTC_TurretBullet_Small_EMP.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_EMP.label>OTC Meteor Turret(EMP)</OTC_Turret_Big_EMP.label>
+<OTC_Turret_Big_EMP.description>An automatic OTC Grenade Launcher-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OTC_Turret_Big_EMP.description>
+<OTC_Turret_Big_EMP.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OTC_Turret_Big_EMP.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_EMP.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OTC_Turret_Big_EMP.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_EMP.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OTC_Turret_Big_EMP.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_EMP.label>Meteor Turret(EMP)</OTC_TurretGun_Big_EMP.label>
+<OTC_TurretGun_Big_EMP.verbs.Verb_Shoot.label>Meteor Turret(EMP)</OTC_TurretGun_Big_EMP.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_EMP.description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with EMP charges.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OTC_TurretGun_Big_EMP.description>
+
+<OTC_TurretBullet_Big_EMP.label>meteor turret EMP grenade</OTC_TurretBullet_Big_EMP.label>
+
+<!--=============== OCC ====================-->
+<!--=============== Small ====================-->
+<OCC_Turret_Small.label>OCC Cerberus Turret</OCC_Turret_Small.label>
+<OCC_Turret_Small.description>An automatic OCC Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OCC_Turret_Small.description>
+<OCC_Turret_Small.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OCC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OCC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OCC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OCC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OCC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OCC_Turret_SmallPowered.label>OCC Cerberus Powered Turret</OCC_Turret_SmallPowered.label>
+<OCC_Turret_SmallPowered.description>An automatic OCC Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OCC_Turret_SmallPowered.description>
+<OCC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OCC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OCC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OCC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OCC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OCC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OCC_TurretGun_Small.label>Cerberus Turret</OCC_TurretGun_Small.label>
+<OCC_TurretGun_Small.verbs.Verb_Shoot.label>Cerberus Turret</OCC_TurretGun_Small.verbs.Verb_Shoot.label>
+<OCC_TurretGun_Small.description>Reconstructed OCC Rifle for turrets. Slow weapon are designed to use blast bullets.</OCC_TurretGun_Small.description>
+
+<OCC_TurretBullet_Small.label>cerberus turret bullet</OCC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OCC_Turret_Big.label>OCC Behemoth Turret</OCC_Turret_Big.label>
+<OCC_Turret_Big.description>An automatic OCC Rocket Launcher-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OCC_Turret_Big.description>
+<OCC_Turret_Big.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OCC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OCC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OCC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OCC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OCC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OCC_TurretGun_Big.label>Behemoth Turret</OCC_TurretGun_Big.label>
+<OCC_TurretGun_Big.verbs.Verb_Shoot.label>Behemoth Turret</OCC_TurretGun_Big.verbs.Verb_Shoot.label>
+<OCC_TurretGun_Big.description>Reconstructed OCC Rocket Launcher for turrets. Slow weapon are designed to use blast bullets.</OCC_TurretGun_Big.description>
+
+<OCC_TurretBullet_Big.label>behemoth turret rocket</OCC_TurretBullet_Big.label>
+
+<!--=============== OEC ====================-->
+<!--=============== Small ====================-->
+<OEC_Turret_Small.label>OEC Peacemaker Turret</OEC_Turret_Small.label>
+<OEC_Turret_Small.description>An automatic OEC Revolver-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OEC_Turret_Small.description>
+<OEC_Turret_Small.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OEC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OEC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OEC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OEC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OEC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OEC_Turret_SmallPowered.label>OEC Peacemaker Powered Turret</OEC_Turret_SmallPowered.label>
+<OEC_Turret_SmallPowered.description>An automatic OEC Revolver-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OEC_Turret_SmallPowered.description>
+<OEC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OEC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OEC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OEC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OEC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OEC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OEC_TurretGun_Small.label>Peacemaker Turret</OEC_TurretGun_Small.label>
+<OEC_TurretGun_Small.verbs.Verb_Shoot.label>Peacemaker Turret</OEC_TurretGun_Small.verbs.Verb_Shoot.label>
+<OEC_TurretGun_Small.description>Reconstructed OEC Revolver for turrets. Extremely armor-piercing.</OEC_TurretGun_Small.description>
+
+<OEC_TurretBullet_Small.label>peacemaker turret bullet</OEC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OEC_Turret_Big.label>OEC Judgement Turret</OEC_Turret_Big.label>
+<OEC_Turret_Big.description>An automatic OEC Sniper Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OEC_Turret_Big.description>
+<OEC_Turret_Big.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OEC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OEC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OEC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OEC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OEC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OEC_TurretGun_Big.label>Judgement Turret</OEC_TurretGun_Big.label>
+<OEC_TurretGun_Big.verbs.Verb_Shoot.label>Judgement Turret</OEC_TurretGun_Big.verbs.Verb_Shoot.label>
+<OEC_TurretGun_Big.description>Reconstructed OEC Sniper Rifle for turrets. Extremely armor-piercing.</OEC_TurretGun_Big.description>
+
+<OEC_TurretBullet_Big.label>judgement turret bullet</OEC_TurretBullet_Big.label>
+
+<!--=============== ODC ====================-->
+<!--=============== Small ====================-->
+<ODC_Turret_Small.label>ODC Thoughtless Turret</ODC_Turret_Small.label>
+<ODC_Turret_Small.description>An automatic ODC Assault Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</ODC_Turret_Small.description>
+<ODC_Turret_Small.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</ODC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<ODC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</ODC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<ODC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</ODC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<ODC_Turret_SmallPowered.label>ODC Thoughtless Powered Turret</ODC_Turret_SmallPowered.label>
+<ODC_Turret_SmallPowered.description>An automatic ODC Assault Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</ODC_Turret_SmallPowered.description>
+<ODC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</ODC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<ODC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</ODC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<ODC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</ODC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<ODC_TurretGun_Small.label>Thoughtless Turret</ODC_TurretGun_Small.label>
+<ODC_TurretGun_Small.verbs.Verb_Shoot.label>Thoughtless Turret</ODC_TurretGun_Small.verbs.Verb_Shoot.label>
+<ODC_TurretGun_Small.description>Reconstructed ODC Assault Rifle for turrets. Specially modified weapon with non-lethal bullets.</ODC_TurretGun_Small.description>
+
+<ODC_TurretBullet_Small.label>thoughtless turret bullet</ODC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<ODC_Turret_Big.label>N.A.C.J.A.C.</ODC_Turret_Big.label>
+<ODC_Turret_Big.description>Neo Armstrong Cyclone Jet Armstrong Cannon prohibited but legendary weapons of Obsidia. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</ODC_Turret_Big.description>
+<ODC_Turret_Big.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</ODC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<ODC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</ODC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<ODC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</ODC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<ODC_TurretGun_Big.label>N.A.C.J.A.C.</ODC_TurretGun_Big.label>
+<ODC_TurretGun_Big.verbs.Verb_Shoot.label>N.A.C.J.A.C.</ODC_TurretGun_Big.verbs.Verb_Shoot.label>
+<ODC_TurretGun_Big.description>Neo Armstrong Cyclone Jet Armstrong Cannon prohibited but legendary weapons of Obsidia.</ODC_TurretGun_Big.description>
+
+<ODC_TurretBullet_Big.label>N.A.C.J.A.C. charge</ODC_TurretBullet_Big.label>
+
+<!--=============== CAC ====================-->
+<!--=============== Small ====================-->
+<CAC_Turret_Small.label>CAC Widowmaker Turret</CAC_Turret_Small.label>
+<CAC_Turret_Small.description>An automatic CAC Sniper Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</CAC_Turret_Small.description>
+<CAC_Turret_Small.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</CAC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<CAC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</CAC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<CAC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</CAC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<CAC_Turret_SmallPowered.label>CAC Widowmaker Powered Turret</CAC_Turret_SmallPowered.label>
+<CAC_Turret_SmallPowered.description>An automatic CAC Sniper Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</CAC_Turret_SmallPowered.description>
+<CAC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</CAC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<CAC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</CAC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<CAC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</CAC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<CAC_TurretGun_Small.label>Widowmaker Turret</CAC_TurretGun_Small.label>
+<CAC_TurretGun_Small.verbs.Verb_Shoot.label>Widowmaker Turret</CAC_TurretGun_Small.verbs.Verb_Shoot.label>
+<CAC_TurretGun_Small.description>Reconstructed CAC Sniper Rifle for turrets. Specially modified weapon with increased power.</CAC_TurretGun_Small.description>
+
+<CAC_TurretBullet_Small.label>widowmaker turret bullet</CAC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<CAC_Turret_Big.label>CAC Blackout Turret</CAC_Turret_Big.label>
+<CAC_Turret_Big.description>An automatic CAC Minigun-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</CAC_Turret_Big.description>
+<CAC_Turret_Big.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</CAC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<CAC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</CAC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<CAC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</CAC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<CAC_TurretGun_Big.label>Blackout Turret</CAC_TurretGun_Big.label>
+<CAC_TurretGun_Big.verbs.Verb_Shoot.label>Blackout Turret</CAC_TurretGun_Big.verbs.Verb_Shoot.label>
+<CAC_TurretGun_Big.description>Reconstructed CAC Minigun for turrets. Specially modified weapon with increased power.</CAC_TurretGun_Big.description>
+
+<CAC_TurretBullet_Big.label>blackout turret bullet</CAC_TurretBullet_Big.label>
+
+<!--=============== OMG ====================-->
+<!--=============== Small ====================-->
+<OMG_Turret_Small.label>OMG Bytecrusher Turret</OMG_Turret_Small.label>
+<OMG_Turret_Small.description>An automatic OMG Shotgun-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OMG_Turret_Small.description>
+<OMG_Turret_Small.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OMG_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OMG_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OMG_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OMG_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OMG_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OMG_Turret_SmallPowered.label>OMG Bytecrusher Powered Turret</OMG_Turret_SmallPowered.label>
+<OMG_Turret_SmallPowered.description>An automatic OMG Shotgun-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</OMG_Turret_SmallPowered.description>
+<OMG_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OMG_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OMG_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OMG_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OMG_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OMG_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OMG_TurretGun_Small.label>Bytecrusher Turret</OMG_TurretGun_Small.label>
+<OMG_TurretGun_Small.verbs.Verb_Shoot.label>Bytecrusher Turret</OMG_TurretGun_Small.verbs.Verb_Shoot.label>
+<OMG_TurretGun_Small.description>Reconstructed OMG Shotgun for turrets. Specially modified weapon charged with Necrobane and EMP damages.</OMG_TurretGun_Small.description>
+
+<OMG_TurretBullet_Small.label>Bytecrusher turret blast</OMG_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OMG_Turret_Big.label>OMG Etherstrike Turret</OMG_Turret_Big.label>
+<OMG_Turret_Big.description>An automatic OMG Sniper Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</OMG_Turret_Big.description>
+<OMG_Turret_Big.comps.CompRefuelable.fuelLabel>Shoots until run out of charges</OMG_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OMG_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Fuel capacity</OMG_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OMG_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</OMG_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OMG_TurretGun_Big.label>Etherstrike Turret</OMG_TurretGun_Big.label>
+<OMG_TurretGun_Big.verbs.Verb_Shoot.label>Etherstrike Turret</OMG_TurretGun_Big.verbs.Verb_Shoot.label>
+<OMG_TurretGun_Big.description>Reconstructed OMG Sniper Rifle for turrets. Specially modified weapon charged with Necrobane and EMP damages.</OMG_TurretGun_Big.description>
+
+<OMG_TurretBullet_Big.label>Etherstrike turret bullet</OMG_TurretBullet_Big.label>
+
+<!--=============== EGO ====================-->
+<!--=============== Shotgun ====================-->
+<EGO_Turret_Small_Shotgun.label>EGO Corrupter Turret</EGO_Turret_Small_Shotgun.label>
+<EGO_Turret_Small_Shotgun.description>Amalgam Shotgun-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</EGO_Turret_Small_Shotgun.description>
+
+<EGO_TurretGun_Small_Shotgun.label>Corrupter Turret</EGO_TurretGun_Small_Shotgun.label>
+<EGO_TurretGun_Small_Shotgun.verbs.Verb_Shoot.label>Corrupter Turret</EGO_TurretGun_Small_Shotgun.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_Shotgun.description>Amalgam Shotgun for turrets.</EGO_TurretGun_Small_Shotgun.description>
+
+<!--=============== SMG ====================-->
+<EGO_Turret_Small_SMG.label>EGO Toxocyst Turret</EGO_Turret_Small_SMG.label>
+<EGO_Turret_Small_SMG.description>Amalgam SMG-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</EGO_Turret_Small_SMG.description>
+
+<EGO_TurretGun_Small_SMG.label>Toxocyst Turret</EGO_TurretGun_Small_SMG.label>
+<EGO_TurretGun_Small_SMG.verbs.Verb_Shoot.label>Toxocyst Turret</EGO_TurretGun_Small_SMG.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_SMG.description>Amalgam SMG for turrets.</EGO_TurretGun_Small_SMG.description>
+
+<!--=============== SniperRifle ====================-->
+<EGO_Turret_Small_SniperRifle.label>EGO Patagius Turret</EGO_Turret_Small_SniperRifle.label>
+<EGO_Turret_Small_SniperRifle.description>Amalgam Sniper Rifle-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</EGO_Turret_Small_SniperRifle.description>
+
+<EGO_TurretGun_Small_SniperRifle.label>Patagius Turret</EGO_TurretGun_Small_SniperRifle.label>
+<EGO_TurretGun_Small_SniperRifle.verbs.Verb_Shoot.label>Patagius Turret</EGO_TurretGun_Small_SniperRifle.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_SniperRifle.description>Amalgam Sniper Rifle for turrets.</EGO_TurretGun_Small_SniperRifle.description>
+
+<!--=============== GrenadeLauncher ====================-->
+<EGO_Turret_Small_GrenadeLauncher.label>EGO Sporothrix Turret</EGO_Turret_Small_GrenadeLauncher.label>
+<EGO_Turret_Small_GrenadeLauncher.description>Amalgam Grenade Launcher-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</EGO_Turret_Small_GrenadeLauncher.description>
+
+<EGO_TurretGun_Small_GrenadeLauncher.label>Sporothrix Turret</EGO_TurretGun_Small_GrenadeLauncher.label>
+<EGO_TurretGun_Small_GrenadeLauncher.verbs.Verb_Shoot.label>Sporothrix Turret</EGO_TurretGun_Small_GrenadeLauncher.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_GrenadeLauncher.description>Amalgam Grenade Launcher for turrets.</EGO_TurretGun_Small_GrenadeLauncher.description>
+
+</LanguageData>

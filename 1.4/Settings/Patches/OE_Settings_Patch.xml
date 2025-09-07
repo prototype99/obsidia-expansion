@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Syntherius Harvest Yield ====================-->
+<Operation Class="XmlExtensions.UseSettings">
+  <modId>ObsidiaExpansion.Core</modId>
+  <keys>
+    <li>oe_syntheriustree_harvestyield</li>
+	<li>oe_syntheriusroot_harvestyield</li>
+	<li>oe_syntheriusslime_milkamount</li>
+	<li>oe_syntheriuspack_killedleavings</li>
+	<li>oe_syntheriusdryad_spawncount</li>
+	<li>oe_syntheriusoutpost_amountperpawn</li>
+  </keys>
+  <defaultValues>
+    <li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>15</li>
+	<li>1</li>
+	<li>5</li>
+  </defaultValues>
+  <apply>
+    <Operation Class="PatchOperationSequence">
+	  <success>Normal</success>
+	  <operations> 
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/ThingDef[defName="Plant_OE_TreeSyntherius"]/plant/harvestYield</xpath>
+		  <value>
+		    <harvestYield>{oe_syntheriustree_harvestyield}</harvestYield>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/ThingDef[defName="Plant_OE_SyntheriusRoot"]/plant/harvestYield</xpath>
+		  <value>
+		    <harvestYield>{oe_syntheriusroot_harvestyield}</harvestYield>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/ThingDef[defName="OE_Slime_Syntherius"]/comps/li[@Class="CompProperties_Milkable"]/milkAmount</xpath>
+		  <value>
+		    <milkAmount>{oe_syntheriusslime_milkamount}</milkAmount>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/ThingDef[defName="OE_SyntheriusPack"]/killedLeavings/OE_Syntherius</xpath>
+		  <value>
+		    <OE_Syntherius>{oe_syntheriuspack_killedleavings}</OE_Syntherius>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="Ludeon.Rimworld.Ideology">
+		  <xpath>/Defs/ThingDef[defName="OE_Dryad_Synthesis"]/comps/li[@Class="CompProperties_Spawner"]/spawnCount</xpath>
+		  <value>
+		    <spawnCount>{oe_syntheriusdryad_spawncount}</spawnCount>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.Ideo.Dryads">
+		  <xpath>/Defs/ThingDef[defName="OE_AwakenedDryad_Synthesis"]/comps/li[@Class="CompProperties_Spawner"]/spawnCount</xpath>
+		  <value>
+		    <spawnCount>{oe_syntheriusdryad_spawncount}</spawnCount>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.outposts">
+		  <xpath>/Defs/WorldObjectDef[defName="OE_Outpost_Syntherius"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ResultOptions/li/AmountPerPawn</xpath>
+		  <value>
+            <AmountPerPawn>{oe_syntheriusoutpost_amountperpawn}</AmountPerPawn>
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+  </apply>
+</Operation>
+
+<!--=============== Research Cost Amount ====================-->
+<Operation Class="XmlExtensions.UseSettings">
+  <modId>ObsidiaExpansion.Core</modId>
+  <keys>
+    <li>OE_ResearchCostAmount</li>
+  </keys>
+  <defaultValues>
+    <li>0</li>
+  </defaultValues>
+  <apply>
+    <Operation Class="XmlExtensions.IfStatement">
+	  <condition Class="XmlExtensions.Boolean.Comparision">
+	    <value1>{OE_ResearchCostAmount}</value1>
+		<value2>1</value2>
+		<relation>eq</relation>
+	  </condition>
+	  <caseTrue>
+	    <Operation Class="PatchOperationSequence">
+		  <operations>
+		    <li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject10"]/baseCost</xpath>
+			  <value>
+			    <baseCost>5000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject15"]/baseCost</xpath>
+			  <value>
+			    <baseCost>7500</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject20"]/baseCost</xpath>
+			  <value>
+			    <baseCost>10000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject25"]/baseCost</xpath>
+			  <value>
+			    <baseCost>12500</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject30"]/baseCost</xpath>
+			  <value>
+			    <baseCost>15000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject35"]/baseCost</xpath>
+			  <value>
+			    <baseCost>17500</baseCost>
+			  </value>
+			</li>
+		  </operations>
+		</Operation>
+	  </caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.IfStatement">
+	  <condition Class="XmlExtensions.Boolean.Comparision">
+	    <value1>{OE_ResearchCostAmount}</value1>
+		<value2>2</value2>
+		<relation>eq</relation>
+	  </condition>
+	  <caseTrue>
+	    <Operation Class="PatchOperationSequence">
+		  <operations>
+		    <li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject10"]/baseCost</xpath>
+			  <value>
+			    <baseCost>2000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject15"]/baseCost</xpath>
+			  <value>
+			    <baseCost>3000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject20"]/baseCost</xpath>
+			  <value>
+			    <baseCost>4000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject25"]/baseCost</xpath>
+			  <value>
+			    <baseCost>5000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject30"]/baseCost</xpath>
+			  <value>
+			    <baseCost>6000</baseCost>
+			  </value>
+			</li>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ResearchProjectDef[@Name="OEResearchProject35"]/baseCost</xpath>
+			  <value>
+			    <baseCost>7000</baseCost>
+			  </value>
+			</li>
+		  </operations>
+		</Operation>
+	  </caseTrue>
+	</Operation>
+  </apply>
+</Operation>
+
+</Patch>

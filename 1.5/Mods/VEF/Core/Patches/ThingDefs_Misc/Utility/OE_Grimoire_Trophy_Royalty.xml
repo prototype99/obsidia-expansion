@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OE - Trophy Grimoire ====================-->
+<!--=============== Various ====================-->
+<!--=============== Psy ====================-->
+  <ThingDef ParentName="OEGrimoireBase">
+    <defName>OE_Trophy_Grimoire_Psy</defName>
+    <label>Grimoire of Mental Supremacy</label>
+	<description>Grimoires are enigmatic artifacts, forged from unknown relics during the final days of Obsidia's Last War. Each was crafted with a singular purpose by a unique mind—some brilliant, some mad, all unforgettable. It's said that those who carry a Grimoire often find themselves speaking to it, unconsciously, as if the book listens. Whispers claim that the soul of each creator remains bound within their work, waiting... watching.\n\nBorn of nobility, Balthazar Blake defied tradition by fighting on the frontlines with his psionic gifts. Respected by soldiers, feared by aristocrats, he became a beacon of mental might and moral clarity. In his final years, he wove his memories and essence into his Grimoire, a final act of service to the minds yet to awaken.\n\nGrants an energy shield for protection. Emits an aura boosting psy stats for allies and the owner within 24 tiles.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>OE_Trophy_Grimoire_Psy_Aura</HediffDef>
+	  <HediffDef>OE_Trophy_Grimoire_Psy_AuraBuff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grimoire/Psy/OE_Grimiore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<equippedStatOffsets>
+      <PsychicSensitivity>0.66</PsychicSensitivity>
+	  <PsychicEntropyRecoveryRate>0.125</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.66</MeditationFocusGain>
+    </equippedStatOffsets>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/Grimoire/Psy/OE_Grimiore</wornGraphicPath>
+    </apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_Trophy_Grimoire_Psy_Aura</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Psy_Aura</defName>
+    <label>Aura of Mental Supremacy</label>
+    <description>This person is using a Grimoire of Mental Supremacy. Everyone within an effect radius gains psy stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets/>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_Trophy_Grimoire_Psy_AuraBuff</hediff>
+		<range>24</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Psy_AuraBuff</defName>
+    <label>Aura of Mental Supremacy</label>
+    <description>Someone is using the Grimoire of Mental Supremacy nearby, boosting this person's psy stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PsychicSensitivity>0.66</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.125</PsychicEntropyRecoveryRate>
+		  <MeditationFocusGain>0.66</MeditationFocusGain>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+	    <disappearsAfterTicks>30</disappearsAfterTicks>
+		<showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

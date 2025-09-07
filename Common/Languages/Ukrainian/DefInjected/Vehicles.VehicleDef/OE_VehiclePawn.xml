@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== MCV ====================-->
+<ODC_MCV.label>Мобільний Колоніальний Транспорт</ODC_MCV.label>
+<ODC_MCV.description>Мобільний Колоніальний Транспорт(МСТ) є основою експансії Імперії Обсидії у минулому. Повільний та легкоозброєний, але супер броньований транспорт. Чудово підходить для перевезення великої кількості пішаків та вантажів на великі відстані. В даний час використовується ODC.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Водій x1 Кулеметник x2 Пасажир x12\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</ODC_MCV.description>
+<ODC_MCV.properties.roles.0.label>Водій</ODC_MCV.properties.roles.0.label>
+<ODC_MCV.properties.roles.1.label>Передній кулеметник</ODC_MCV.properties.roles.1.label>
+<ODC_MCV.properties.roles.2.label>Задній кулеметник</ODC_MCV.properties.roles.2.label>
+<ODC_MCV.properties.roles.3.label>Пасажир</ODC_MCV.properties.roles.3.label>
+<ODC_MCV.components.0.label>Двигун</ODC_MCV.components.0.label>
+<ODC_MCV.components.1.label>Ядро</ODC_MCV.components.1.label>
+<ODC_MCV.components.2.label>Ядро</ODC_MCV.components.2.label>
+<ODC_MCV.components.3.label>Ядро</ODC_MCV.components.3.label>
+<ODC_MCV.components.4.label>Перше ліве колесо</ODC_MCV.components.4.label>
+<ODC_MCV.components.5.label>Друге ліве колесо</ODC_MCV.components.5.label>
+<ODC_MCV.components.6.label>Третє ліве колесо</ODC_MCV.components.6.label>
+<ODC_MCV.components.7.label>Перше праве колесо</ODC_MCV.components.7.label>
+<ODC_MCV.components.8.label>Друге праве колесо</ODC_MCV.components.8.label>
+<ODC_MCV.components.9.label>Третє праве колесо</ODC_MCV.components.9.label>
+<ODC_MCV.components.10.label>Перша ліва підвіска</ODC_MCV.components.10.label>
+<ODC_MCV.components.11.label>Друга ліва підвіска</ODC_MCV.components.11.label>
+<ODC_MCV.components.12.label>Третя ліва підвіска</ODC_MCV.components.12.label>
+<ODC_MCV.components.13.label>Перша права підвіска</ODC_MCV.components.13.label>
+<ODC_MCV.components.14.label>Друга права підвіска</ODC_MCV.components.14.label>
+<ODC_MCV.components.15.label>Третя права підвіска</ODC_MCV.components.15.label>
+<ODC_MCV.components.16.label>Коробка передач</ODC_MCV.components.16.label>
+<ODC_MCV.components.17.label>Передня бронепластина</ODC_MCV.components.17.label>
+<ODC_MCV.components.18.label>Ліва бронепластина</ODC_MCV.components.18.label>
+<ODC_MCV.components.19.label>Права бронепластина</ODC_MCV.components.19.label>
+<ODC_MCV.components.20.label>Задня бронепластина</ODC_MCV.components.20.label>
+<ODC_MCV.components.21.label>Оббивка салону</ODC_MCV.components.21.label>
+<ODC_MCV.components.22.label>Приладова панель</ODC_MCV.components.22.label>
+<ODC_MCV.components.23.label>Керуючий апарат</ODC_MCV.components.23.label>
+<ODC_MCV.components.24.label>Генератор</ODC_MCV.components.24.label>
+<ODC_MCV.components.25.label>Дах</ODC_MCV.components.25.label>
+
+<!--=============== Nightmare ====================-->
+<!--=============== OMC ====================-->
+<OMC_Nightmare.label>Сазерленд</OMC_Nightmare.label>
+<OMC_Nightmare.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася OMC та оснащена Снайперською туреллю.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</OMC_Nightmare.description>
+<OMC_Nightmare.properties.roles.0.label>Пілот</OMC_Nightmare.properties.roles.0.label>
+<OMC_Nightmare.components.0.label>Двигун</OMC_Nightmare.components.0.label>
+<OMC_Nightmare.components.1.label>Ядро</OMC_Nightmare.components.1.label>
+<OMC_Nightmare.components.2.label>Передня ліва нога</OMC_Nightmare.components.2.label>
+<OMC_Nightmare.components.3.label>Передня права нога</OMC_Nightmare.components.3.label>
+<OMC_Nightmare.components.4.label>Задня ліва нога</OMC_Nightmare.components.4.label>
+<OMC_Nightmare.components.5.label>Задня права нога</OMC_Nightmare.components.5.label>
+<OMC_Nightmare.components.6.label>Коробка передач</OMC_Nightmare.components.6.label>
+<OMC_Nightmare.components.7.label>Передня ліва бронепластина</OMC_Nightmare.components.7.label>
+<OMC_Nightmare.components.8.label>Передня права бронепластина</OMC_Nightmare.components.8.label>
+<OMC_Nightmare.components.9.label>Задня ліва бронепластина</OMC_Nightmare.components.9.label>
+<OMC_Nightmare.components.10.label>Задня права бронепластина</OMC_Nightmare.components.10.label>
+<OMC_Nightmare.components.11.label>Приладова панель</OMC_Nightmare.components.11.label>
+<OMC_Nightmare.components.12.label>Керуючий апарат</OMC_Nightmare.components.12.label>
+<OMC_Nightmare.components.13.label>Дах</OMC_Nightmare.components.13.label>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<OTC_Nightmare_Acid.label>Глазго(Кислота)</OTC_Nightmare_Acid.label>
+<OTC_Nightmare_Acid.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася OTC та оснащена Кислотною Багатоствольною туреллю.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</OTC_Nightmare_Acid.description>
+<OTC_Nightmare_Acid.properties.roles.0.label>Пілот</OTC_Nightmare_Acid.properties.roles.0.label>
+<OTC_Nightmare_Acid.components.0.label>Двигун</OTC_Nightmare_Acid.components.0.label>
+<OTC_Nightmare_Acid.components.1.label>Ядро</OTC_Nightmare_Acid.components.1.label>
+<OTC_Nightmare_Acid.components.2.label>Передня ліва нога</OTC_Nightmare_Acid.components.2.label>
+<OTC_Nightmare_Acid.components.3.label>Передня права нога</OTC_Nightmare_Acid.components.3.label>
+<OTC_Nightmare_Acid.components.4.label>Задня ліва нога</OTC_Nightmare_Acid.components.4.label>
+<OTC_Nightmare_Acid.components.5.label>Задня права нога</OTC_Nightmare_Acid.components.5.label>
+<OTC_Nightmare_Acid.components.6.label>Коробка передач</OTC_Nightmare_Acid.components.6.label>
+<OTC_Nightmare_Acid.components.7.label>Передня ліва бронепластина</OTC_Nightmare_Acid.components.7.label>
+<OTC_Nightmare_Acid.components.8.label>Передня права бронепластина</OTC_Nightmare_Acid.components.8.label>
+<OTC_Nightmare_Acid.components.9.label>Задня ліва бронепластина</OTC_Nightmare_Acid.components.9.label>
+<OTC_Nightmare_Acid.components.10.label>Задня права бронепластина</OTC_Nightmare_Acid.components.10.label>
+<OTC_Nightmare_Acid.components.11.label>Приладова панель</OTC_Nightmare_Acid.components.11.label>
+<OTC_Nightmare_Acid.components.12.label>Керуючий апарат</OTC_Nightmare_Acid.components.12.label>
+<OTC_Nightmare_Acid.components.13.label>Дах</OTC_Nightmare_Acid.components.13.label>
+<!--=============== Cryo ====================-->
+<OTC_Nightmare_Cryo.label>Глазго(Кріо)</OTC_Nightmare_Cryo.label>
+<OTC_Nightmare_Cryo.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася OTC та оснащена Кріо Багатоствольною туреллю.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</OTC_Nightmare_Cryo.description>
+<OTC_Nightmare_Cryo.properties.roles.0.label>Пілот</OTC_Nightmare_Cryo.properties.roles.0.label>
+<OTC_Nightmare_Cryo.components.0.label>Двигун</OTC_Nightmare_Cryo.components.0.label>
+<OTC_Nightmare_Cryo.components.1.label>Ядро</OTC_Nightmare_Cryo.components.1.label>
+<OTC_Nightmare_Cryo.components.2.label>Передня ліва нога</OTC_Nightmare_Cryo.components.2.label>
+<OTC_Nightmare_Cryo.components.3.label>Передня права нога</OTC_Nightmare_Cryo.components.3.label>
+<OTC_Nightmare_Cryo.components.4.label>Задня ліва нога</OTC_Nightmare_Cryo.components.4.label>
+<OTC_Nightmare_Cryo.components.5.label>Задня права нога</OTC_Nightmare_Cryo.components.5.label>
+<OTC_Nightmare_Cryo.components.6.label>Коробка передач</OTC_Nightmare_Cryo.components.6.label>
+<OTC_Nightmare_Cryo.components.7.label>Передня ліва бронепластина</OTC_Nightmare_Cryo.components.7.label>
+<OTC_Nightmare_Cryo.components.8.label>Передня права бронепластина</OTC_Nightmare_Cryo.components.8.label>
+<OTC_Nightmare_Cryo.components.9.label>Задня ліва бронепластина</OTC_Nightmare_Cryo.components.9.label>
+<OTC_Nightmare_Cryo.components.10.label>Задня права бронепластина</OTC_Nightmare_Cryo.components.10.label>
+<OTC_Nightmare_Cryo.components.11.label>Приладова панель</OTC_Nightmare_Cryo.components.11.label>
+<OTC_Nightmare_Cryo.components.12.label>Керуючий апарат</OTC_Nightmare_Cryo.components.12.label>
+<OTC_Nightmare_Cryo.components.13.label>Дах</OTC_Nightmare_Cryo.components.13.label>
+<!--=============== Fire ====================-->
+<OTC_Nightmare_Fire.label>Глазго(Вогонь)</OTC_Nightmare_Fire.label>
+<OTC_Nightmare_Fire.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася OTC та оснащена Вогняною Багатоствольною туреллю.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</OTC_Nightmare_Fire.description>
+<OTC_Nightmare_Fire.properties.roles.0.label>Пілот</OTC_Nightmare_Fire.properties.roles.0.label>
+<OTC_Nightmare_Fire.components.0.label>Двигун</OTC_Nightmare_Fire.components.0.label>
+<OTC_Nightmare_Fire.components.1.label>Ядро</OTC_Nightmare_Fire.components.1.label>
+<OTC_Nightmare_Fire.components.2.label>Передня ліва нога</OTC_Nightmare_Fire.components.2.label>
+<OTC_Nightmare_Fire.components.3.label>Передня права нога</OTC_Nightmare_Fire.components.3.label>
+<OTC_Nightmare_Fire.components.4.label>Задня ліва нога</OTC_Nightmare_Fire.components.4.label>
+<OTC_Nightmare_Fire.components.5.label>Задня права нога</OTC_Nightmare_Fire.components.5.label>
+<OTC_Nightmare_Fire.components.6.label>Коробка передач</OTC_Nightmare_Fire.components.6.label>
+<OTC_Nightmare_Fire.components.7.label>Передня ліва бронепластина</OTC_Nightmare_Fire.components.7.label>
+<OTC_Nightmare_Fire.components.8.label>Передня права бронепластина</OTC_Nightmare_Fire.components.8.label>
+<OTC_Nightmare_Fire.components.9.label>Задня ліва бронепластина</OTC_Nightmare_Fire.components.9.label>
+<OTC_Nightmare_Fire.components.10.label>Задня права бронепластина</OTC_Nightmare_Fire.components.10.label>
+<OTC_Nightmare_Fire.components.11.label>Приладова панель</OTC_Nightmare_Fire.components.11.label>
+<OTC_Nightmare_Fire.components.12.label>Керуючий апарат</OTC_Nightmare_Fire.components.12.label>
+<OTC_Nightmare_Fire.components.13.label>Дах</OTC_Nightmare_Fire.components.13.label>
+<!--=============== EMP ====================-->
+<OTC_Nightmare_EMP.label>Глазго(ЕМІ)</OTC_Nightmare_EMP.label>
+<OTC_Nightmare_EMP.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася OTC та оснащена ЕМІ Багатоствольною туреллю.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</OTC_Nightmare_EMP.description>
+<OTC_Nightmare_EMP.properties.roles.0.label>Пілот</OTC_Nightmare_EMP.properties.roles.0.label>
+<OTC_Nightmare_EMP.components.0.label>Двигун</OTC_Nightmare_EMP.components.0.label>
+<OTC_Nightmare_EMP.components.1.label>Ядро</OTC_Nightmare_EMP.components.1.label>
+<OTC_Nightmare_EMP.components.2.label>Передня ліва нога</OTC_Nightmare_EMP.components.2.label>
+<OTC_Nightmare_EMP.components.3.label>Передня права нога</OTC_Nightmare_EMP.components.3.label>
+<OTC_Nightmare_EMP.components.4.label>Задня ліва нога</OTC_Nightmare_EMP.components.4.label>
+<OTC_Nightmare_EMP.components.5.label>Задня права нога</OTC_Nightmare_EMP.components.5.label>
+<OTC_Nightmare_EMP.components.6.label>Коробка передач</OTC_Nightmare_EMP.components.6.label>
+<OTC_Nightmare_EMP.components.7.label>Передня ліва бронепластина</OTC_Nightmare_EMP.components.7.label>
+<OTC_Nightmare_EMP.components.8.label>Передня права бронепластина</OTC_Nightmare_EMP.components.8.label>
+<OTC_Nightmare_EMP.components.9.label>Задня ліва бронепластина</OTC_Nightmare_EMP.components.9.label>
+<OTC_Nightmare_EMP.components.10.label>Задня права бронепластина</OTC_Nightmare_EMP.components.10.label>
+<OTC_Nightmare_EMP.components.11.label>Приладова панель</OTC_Nightmare_EMP.components.11.label>
+<OTC_Nightmare_EMP.components.12.label>Керуючий апарат</OTC_Nightmare_EMP.components.12.label>
+<OTC_Nightmare_EMP.components.13.label>Дах</OTC_Nightmare_EMP.components.13.label>
+
+<!--=============== OCC ====================-->
+<OCC_Nightmare.label>Глостер</OCC_Nightmare.label>
+<OCC_Nightmare.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася OCC та оснащена Ракетною туреллю.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</OCC_Nightmare.description>
+<OCC_Nightmare.properties.roles.0.label>Пілот</OCC_Nightmare.properties.roles.0.label>
+<OCC_Nightmare.components.0.label>Двигун</OCC_Nightmare.components.0.label>
+<OCC_Nightmare.components.1.label>Ядро</OCC_Nightmare.components.1.label>
+<OCC_Nightmare.components.2.label>Передня ліва нога</OCC_Nightmare.components.2.label>
+<OCC_Nightmare.components.3.label>Передня права нога</OCC_Nightmare.components.3.label>
+<OCC_Nightmare.components.4.label>Задня ліва нога</OCC_Nightmare.components.4.label>
+<OCC_Nightmare.components.5.label>Задня права нога</OCC_Nightmare.components.5.label>
+<OCC_Nightmare.components.6.label>Коробка передач</OCC_Nightmare.components.6.label>
+<OCC_Nightmare.components.7.label>Передня ліва бронепластина</OCC_Nightmare.components.7.label>
+<OCC_Nightmare.components.8.label>Передня права бронепластина</OCC_Nightmare.components.8.label>
+<OCC_Nightmare.components.9.label>Задня ліва бронепластина</OCC_Nightmare.components.9.label>
+<OCC_Nightmare.components.10.label>Задня права бронепластина</OCC_Nightmare.components.10.label>
+<OCC_Nightmare.components.11.label>Приладова панель</OCC_Nightmare.components.11.label>
+<OCC_Nightmare.components.12.label>Керуючий апарат</OCC_Nightmare.components.12.label>
+<OCC_Nightmare.components.13.label>Дах</OCC_Nightmare.components.13.label>
+
+<!--=============== OEC ====================-->
+<OEC_Nightmare.label>Акацукі</OEC_Nightmare.label>
+<OEC_Nightmare.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася OEC та оснащена туреллю з Мініганом.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</OEC_Nightmare.description>
+<OEC_Nightmare.properties.roles.0.label>Пілот</OEC_Nightmare.properties.roles.0.label>
+<OEC_Nightmare.components.0.label>Двигун</OEC_Nightmare.components.0.label>
+<OEC_Nightmare.components.1.label>Ядро</OEC_Nightmare.components.1.label>
+<OEC_Nightmare.components.2.label>Передня ліва нога</OEC_Nightmare.components.2.label>
+<OEC_Nightmare.components.3.label>Передня права нога</OEC_Nightmare.components.3.label>
+<OEC_Nightmare.components.4.label>Задня ліва нога</OEC_Nightmare.components.4.label>
+<OEC_Nightmare.components.5.label>Задня права нога</OEC_Nightmare.components.5.label>
+<OEC_Nightmare.components.6.label>Коробка передач</OEC_Nightmare.components.6.label>
+<OEC_Nightmare.components.7.label>Передня ліва бронепластина</OEC_Nightmare.components.7.label>
+<OEC_Nightmare.components.8.label>Передня права бронепластина</OEC_Nightmare.components.8.label>
+<OEC_Nightmare.components.9.label>Задня ліва бронепластина</OEC_Nightmare.components.9.label>
+<OEC_Nightmare.components.10.label>Задня права бронепластина</OEC_Nightmare.components.10.label>
+<OEC_Nightmare.components.11.label>Приладова панель</OEC_Nightmare.components.11.label>
+<OEC_Nightmare.components.12.label>Керуючий апарат</OEC_Nightmare.components.12.label>
+<OEC_Nightmare.components.13.label>Дах</OEC_Nightmare.components.13.label>
+
+<!--=============== ODC ====================-->
+<ODC_Nightmare.label>Бурай</ODC_Nightmare.label>
+<ODC_Nightmare.description>Кошмари - арахноподібні бойові машини, розроблені Імперією Обсидії.\n\nДана модель розроблялася ODC та оснащена туреллю з Дробовиком.\n\n&lt;color=#bb8f04&gt;Екіпаж:&lt;/color&gt; Пілот x1\n&lt;color=#bb8f04&gt;Тип палива:&lt;/color&gt; Сінтеріус</ODC_Nightmare.description>
+<ODC_Nightmare.properties.roles.0.label>Пілот</ODC_Nightmare.properties.roles.0.label>
+<ODC_Nightmare.components.0.label>Двигун</ODC_Nightmare.components.0.label>
+<ODC_Nightmare.components.1.label>Ядро</ODC_Nightmare.components.1.label>
+<ODC_Nightmare.components.2.label>Передня ліва нога</ODC_Nightmare.components.2.label>
+<ODC_Nightmare.components.3.label>Передня права нога</ODC_Nightmare.components.3.label>
+<ODC_Nightmare.components.4.label>Задня ліва нога</ODC_Nightmare.components.4.label>
+<ODC_Nightmare.components.5.label>Задня права нога</ODC_Nightmare.components.5.label>
+<ODC_Nightmare.components.6.label>Коробка передач</ODC_Nightmare.components.6.label>
+<ODC_Nightmare.components.7.label>Передня ліва бронепластина</ODC_Nightmare.components.7.label>
+<ODC_Nightmare.components.8.label>Передня права бронепластина</ODC_Nightmare.components.8.label>
+<ODC_Nightmare.components.9.label>Задня ліва бронепластина</ODC_Nightmare.components.9.label>
+<ODC_Nightmare.components.10.label>Задня права бронепластина</ODC_Nightmare.components.10.label>
+<ODC_Nightmare.components.11.label>Приладова панель</ODC_Nightmare.components.11.label>
+<ODC_Nightmare.components.12.label>Керуючий апарат</ODC_Nightmare.components.12.label>
+<ODC_Nightmare.components.13.label>Дах</ODC_Nightmare.components.13.label>
+
+</LanguageData>

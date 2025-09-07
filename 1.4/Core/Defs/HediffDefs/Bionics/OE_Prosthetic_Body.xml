@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Spine ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticSpine</defName>
+    <label>bionic spine</label>
+    <labelNoun>a bionic spine</labelNoun>
+    <description>An installed bionic spine.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticSpine</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticSpine</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticSpine</defName>
+    <label>bionic spine</label>
+    <description>Obsidia bionic spine. It is better than a biological spine in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticSpine</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Spine</texPath>
+    </graphicData>
+    <costList>
+      <OE_DragonianWoodLog>35</OE_DragonianWoodLog>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>25</OE_DragonianWoodLog>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>10</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticSpine</defName>
+    <label>install bionic spine</label>
+    <description>Install a bionic spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticSpine</ThingDef>
+      <HediffDef>OE_ProstheticSpine</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticSpine</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticSpine</defName>
+    <label>remove bionic spine</label>
+    <description>Remove a bionic spine.</description>
+    <jobString>Removing bionic spine.</jobString>
+    <removesHediff>OE_ProstheticSpine</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticSpine_M</defName>
+    <label>advanced bionic spine</label>
+    <labelNoun>an advanced bionic spine</labelNoun>
+    <description>An installed advanced bionic spine.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticSpine_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticSpine_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticSpine_M</defName>
+    <label>advanced bionic spine</label>
+    <description>Obsidian advanced bionic spine. It is much better than a biological spine in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticSpine_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Spine</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+    <costList>
+      <OE_ProstheticSpine>1</OE_ProstheticSpine>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>25</OE_DragonianWoodLog>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>10</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticSpine_M</defName>
+    <label>install advanced bionic spine</label>
+    <description>Install an advanced bionic spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticSpine_M</ThingDef>
+      <HediffDef>OE_ProstheticSpine_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing advanced bionic spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticSpine_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticSpine_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticSpine_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticSpine_M</defName>
+    <label>remove advanced bionic spine</label>
+    <description>Remove an advanced bionic spine.</description>
+    <jobString>Removing advanced bionic spine.</jobString>
+    <removesHediff>OE_ProstheticSpine_M</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticSpine_CAC</defName>
+    <label>cultist bionic spine</label>
+    <labelNoun>a cultist bionic spine</labelNoun>
+    <description>An installed cultist bionic spine.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticSpine_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticSpine_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.05</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticSpine_CAC</defName>
+    <label>cultist bionic spine</label>
+    <description>Obsidia cultist bionic spine. It is much better than a biological spine in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticSpine_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Spine</texPath>
+    </graphicData>
+    <butcherProducts>
+	  <OE_DragonianWoodLog>30</OE_DragonianWoodLog>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>10</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticSpine_CAC</defName>
+    <label>install cultist bionic spine</label>
+    <description>Install a cultist bionic spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticSpine_CAC</ThingDef>
+      <HediffDef>OE_ProstheticSpine_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cultist bionic spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticSpine_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticSpine_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticSpine_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticSpine_CAC</defName>
+    <label>remove cultist bionic spine</label>
+    <description>Remove a cultist bionic spine.</description>
+    <jobString>Removing cultist bionic spine.</jobString>
+    <removesHediff>OE_ProstheticSpine_CAC</removesHediff>
+  </RecipeDef>
+
+</Defs>

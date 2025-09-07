@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Vanilla ====================-->
+<!--=============== Civilian ====================-->
+<OECivilian.degreeDatas.handyman.label>умілець</OECivilian.degreeDatas.handyman.label>
+<OECivilian.degreeDatas.handyman.description>{PAWN_nameDef} {PAWN_gender ? природжений умілець : природжена вмілиця}. {PAWN_nameDef} {PAWN_gender ? розумний : розумна} і працює старанніше інших.</OECivilian.degreeDatas.handyman.description>
+
+<!--=============== Soldier ====================-->
+<OESoldier.degreeDatas.trained.label>натренованість</OESoldier.degreeDatas.trained.label>
+<OESoldier.degreeDatas.trained.description>Після величезної кількості тренувань, {PAWN_nameDef} {PAWN_gender ? навчений : навчена} використовувати абсолютно будь-яку зброю.</OESoldier.degreeDatas.trained.description>
+
+<!--=============== Nomad ====================-->
+<OENomad.degreeDatas.nomad.label>кочівник</OENomad.degreeDatas.nomad.label>
+<OENomad.degreeDatas.nomad.description>Кочівники звикли обходитися меншою кількістю їжі і висипаються набагато швидше за інших.</OENomad.degreeDatas.nomad.description>
+
+<!--=============== Cultist ====================-->
+<OECultist.degreeDatas.spiritual.label>духовность</OECultist.degreeDatas.spiritual.label>
+<OECultist.degreeDatas.spiritual.description>{PAWN_nameDef} обладает непоколебимой волей и телом, способным выдержать любые испытания.</OECultist.degreeDatas.spiritual.description>
+
+<!--=============== Eidolon ====================-->
+<OEEidolon.degreeDatas.proudly.label>гордовитість</OEEidolon.degreeDatas.proudly.label>
+<OEEidolon.degreeDatas.proudly.description>{PAWN_nameDef} будучи героєм купається в променях слави.</OEEidolon.degreeDatas.proudly.description>
+
+<!--=============== Unstable ====================-->
+<!--=============== Catalyst ====================-->
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.label>нестабільний каталізатор</OEUnstableCatalyst.degreeDatas.unstable_catalyst.label>
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.description>Усередині {PAWN_nameDef} вирує нестабільна сила. На межі зриву {PAWN_pronoun} може спалахнути геніальністю — або божевіллям.\nЗ імовірністю 75% нервовий зрив спричиняє випадкове натхнення.</OEUnstableCatalyst.degreeDatas.unstable_catalyst.description>
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.mentalBreakInspirationGainReasonText>Охоплений нестабільною енергією, [PAWN_nameIndef] розкриває дикий потенціал.</OEUnstableCatalyst.degreeDatas.unstable_catalyst.mentalBreakInspirationGainReasonText>
+
+<!--=============== Laborer ====================-->
+<OEUnstableLaborer.degreeDatas.unstable_laborer.label>нестабільний працівник</OEUnstableLaborer.degreeDatas.unstable_laborer.label>
+<OEUnstableLaborer.degreeDatas.unstable_laborer.description>{PAWN_nameDef} виснажує {PAWN_pronoun} себе до межі, ганяючись за миттєвою продуктивністю ціною психіки.\nЗ імовірністю 50% нервовий зрив спричиняє Трудовий шал.</OEUnstableLaborer.degreeDatas.unstable_laborer.description>
+<OEUnstableLaborer.degreeDatas.unstable_laborer.mentalBreakInspirationGainReasonText>Охоплений внутрішнім хаосом, [PAWN_nameIndef] впадає в маніакальний трудовий шал.</OEUnstableLaborer.degreeDatas.unstable_laborer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Wanderer ====================-->
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.label>нестабільний мандрівник</OEUnstableWanderer.degreeDatas.unstable_wanderer.label>
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.description>Неспокійний і непередбачуваний, {PAWN_nameDef} знаходить ясність у стрімкому, безглуздому русі.\nЗ імовірністю 50% нервовий зрив спричиняє Руховий шал.</OEUnstableWanderer.degreeDatas.unstable_wanderer.description>
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.mentalBreakInspirationGainReasonText>Охоплений бурею емоцій, [PAWN_nameIndef] відчуває непереборне прагнення до руху.</OEUnstableWanderer.degreeDatas.unstable_wanderer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Marksman ====================-->
+<OEUnstableMarksman.degreeDatas.unstable_marksman.label>нестабільний стрілець</OEUnstableMarksman.degreeDatas.unstable_marksman.label>
+<OEUnstableMarksman.degreeDatas.unstable_marksman.description>У моменти нестабільності зосередженість {PAWN_nameDef} загострюється, перетворюючи хаос на смертельну точність.\nЗ імовірністю 50% нервовий зрив спричиняє Стрілецький шал.</OEUnstableMarksman.degreeDatas.unstable_marksman.description>
+<OEUnstableMarksman.degreeDatas.unstable_marksman.mentalBreakInspirationGainReasonText>На межі божевілля [PAWN_nameIndef] стає моторошно влучним зі зброєю.</OEUnstableMarksman.degreeDatas.unstable_marksman.mentalBreakInspirationGainReasonText>
+
+<OEUnstableTrader.degreeDatas.unstable_trader.label>нестабільний торговець</OEUnstableTrader.degreeDatas.unstable_trader.label>
+<OEUnstableTrader.degreeDatas.unstable_trader.description>Розлом у свідомості {PAWN_nameDef} часом відкриває спалахи торгового генія.\nЗ імовірністю 50% нервовий зрив спричиняє Натхнення торгівлі.</OEUnstableTrader.degreeDatas.unstable_trader.description>
+<OEUnstableTrader.degreeDatas.unstable_trader.mentalBreakInspirationGainReasonText>Крізь пелену нестабільності [PAWN_nameIndef] знаходить момент блискучих перемовин.</OEUnstableTrader.degreeDatas.unstable_trader.mentalBreakInspirationGainReasonText>
+
+<!--=============== Charmer ====================-->
+<OEUnstableCharmer.degreeDatas.unstable_charmer.label>нестабільний звабник</OEUnstableCharmer.degreeDatas.unstable_charmer.label>
+<OEUnstableCharmer.degreeDatas.unstable_charmer.description>Дивна, нестійка енергія робить {PAWN_nameDef} несподівано чарівним у найнесподіваніші моменти.\nЗ імовірністю 50% нервовий зрив спричиняє Натхнення вербування.</OEUnstableCharmer.degreeDatas.unstable_charmer.description>
+<OEUnstableCharmer.degreeDatas.unstable_charmer.mentalBreakInspirationGainReasonText>З нестабільною впевненістю [PAWN_nameIndef] здобуває дар переконання.</OEUnstableCharmer.degreeDatas.unstable_charmer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Whisperer ====================-->
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.label>нестабільний шептун</OEUnstableWhisperer.degreeDatas.unstable_whisperer.label>
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.description>Нестабільна аура {PAWN_nameDef} іноді викликає дивну реакцію у тварин.\nЗ імовірністю 50% нервовий зрив спричиняє Натхнення приручення.</OEUnstableWhisperer.degreeDatas.unstable_whisperer.description>
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.mentalBreakInspirationGainReasonText>Охоплений внутрішньою бурею, [PAWN_nameIndef] знаходить тимчасовий зв'язок із природою.</OEUnstableWhisperer.degreeDatas.unstable_whisperer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Surgeon ====================-->
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.label>нестабільний хірург</OEUnstableSurgeon.degreeDatas.unstable_surgeon.label>
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.description>Балансуючи між безумством і ясністю, {PAWN_nameDef} здатен на медичні дива.\nЗ імовірністю 50% нервовий зрив спричиняє Натхнення хірургії.</OEUnstableSurgeon.degreeDatas.unstable_surgeon.description>
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.mentalBreakInspirationGainReasonText>Під тиском відчаю [PAWN_nameIndef] досягає хірургічної досконалості.</OEUnstableSurgeon.degreeDatas.unstable_surgeon.mentalBreakInspirationGainReasonText>
+
+<!--=============== Creator ====================-->
+<OEUnstableCreator.degreeDatas.unstable_creator.label>нестабільний творець</OEUnstableCreator.degreeDatas.unstable_creator.label>
+<OEUnstableCreator.degreeDatas.unstable_creator.description>Зі шторму в голові {PAWN_pronoun} народжуються спалахи мистецького генія.\nЗ імовірністю 50% нервовий зрив спричиняє Натхнення творчості.</OEUnstableCreator.degreeDatas.unstable_creator.description>
+<OEUnstableCreator.degreeDatas.unstable_creator.mentalBreakInspirationGainReasonText>Натхненний внутрішнім хаосом, [PAWN_nameIndef] стає невтримним творцем.</OEUnstableCreator.degreeDatas.unstable_creator.mentalBreakInspirationGainReasonText>
+
+<!--=============== Skills Mastery ====================-->
+<OESkillsMastery.degreeDatas.golden_soul.label>золота душа</OESkillsMastery.degreeDatas.golden_soul.label>
+<OESkillsMastery.degreeDatas.golden_soul.description>У {PAWN_nameDef} є щось особливе — золота іскра таланту в кожній справі.</OESkillsMastery.degreeDatas.golden_soul.description>
+
+<OESkillsMastery.degreeDatas.faded_spark.label>згасла іскра</OESkillsMastery.degreeDatas.faded_spark.label>
+<OESkillsMastery.degreeDatas.faded_spark.description>Колись сповнений потенціалу, тепер {PAWN_nameDef} наче втратив внутрішнє світло.</OESkillsMastery.degreeDatas.faded_spark.description>
+
+<!--=============== Skills Quality ====================-->
+<!--=============== Mining ====================-->
+<OEQualityMining.degreeDatas.vein_whisperer.label>шепіт жил</OEQualityMining.degreeDatas.vein_whisperer.label>
+<OEQualityMining.degreeDatas.vein_whisperer.description>{PAWN_nameDef} видобуває з дивовижною точністю, хоч і повільно.</OEQualityMining.degreeDatas.vein_whisperer.description>
+
+<OEQualityMining.degreeDatas.tunnel_dancer.label>тонельний танцюрист</OEQualityMining.degreeDatas.tunnel_dancer.label>
+<OEQualityMining.degreeDatas.tunnel_dancer.description>{PAWN_nameDef} копає швидко й рішуче, але втрачає частину цінного.</OEQualityMining.degreeDatas.tunnel_dancer.description>
+
+<!--=============== Cooking ====================-->
+<OEQualityCooking.degreeDatas.careful_chef.label>обережний кухар</OEQualityCooking.degreeDatas.careful_chef.label>
+<OEQualityCooking.degreeDatas.careful_chef.description>{PAWN_nameDef} готує з ретельністю та турботою, навіть якщо це повільніше.</OEQualityCooking.degreeDatas.careful_chef.description>
+
+<OEQualityCooking.degreeDatas.blazing_cook.label>палкий кухар</OEQualityCooking.degreeDatas.blazing_cook.label>
+<OEQualityCooking.degreeDatas.blazing_cook.description>{PAWN_nameDef} працює на кухні з вогнем у серці, жертвуючи обережністю.</OEQualityCooking.degreeDatas.blazing_cook.description>
+
+<!--=============== Plants ====================-->
+<OEQualityPlants.degreeDatas.gentle_harvester.label>ніжний жнець</OEQualityPlants.degreeDatas.gentle_harvester.label>
+<OEQualityPlants.degreeDatas.gentle_harvester.description>{PAWN_nameDef} дбайливо збирає врожай, але працює повільніше.</OEQualityPlants.degreeDatas.gentle_harvester.description>
+
+<OEQualityPlants.degreeDatas.swift_planter.label>швидкий землероб</OEQualityPlants.degreeDatas.swift_planter.label>
+<OEQualityPlants.degreeDatas.swift_planter.description>{PAWN_nameDef} швидко обробляє поля, проте результат буває меншим.</OEQualityPlants.degreeDatas.swift_planter.description>
+
+<!--=============== Animals ====================-->
+<OEQualityAnimals.degreeDatas.careful_handler.label>дбайливий скотар</OEQualityAnimals.degreeDatas.careful_handler.label>
+<OEQualityAnimals.degreeDatas.careful_handler.description>{PAWN_nameDef} приділяє тваринам більше уваги й отримує з них більше користі.</OEQualityAnimals.degreeDatas.careful_handler.description>
+
+<OEQualityAnimals.degreeDatas.efficient_handler.label>швидкий скотар</OEQualityAnimals.degreeDatas.efficient_handler.label>
+<OEQualityAnimals.degreeDatas.efficient_handler.description>{PAWN_nameDef} швидко працює з тваринами, але частина ресурсу втрачається.</OEQualityAnimals.degreeDatas.efficient_handler.description>
+
+<!--=============== Fishing - VFE ====================-->
+<OEFishermanVCEF.degreeDatas.deep_catcher.label>глибоководний ловець</OEFishermanVCEF.degreeDatas.deep_catcher.label>
+<OEFishermanVCEF.degreeDatas.deep_catcher.description>{PAWN_nameDef} рибалить уважно й зосереджено, зазвичай витягаючи більше з кожного закидання.</OEFishermanVCEF.degreeDatas.deep_catcher.description>
+
+<OEFishermanVCEF.degreeDatas.quick_hook.label>швидкий гачок</OEFishermanVCEF.degreeDatas.quick_hook.label>
+<OEFishermanVCEF.degreeDatas.quick_hook.description>{PAWN_nameDef} закидає вудку швидко й часто, хоча частина риби може зірватися з гачка.</OEFishermanVCEF.degreeDatas.quick_hook.description>
+
+<!--=============== Royalty ====================-->
+<!--=============== Psy Blood ====================-->
+<OEPsyBlood.degreeDatas.noble_blood.label>благородна кров</OEPsyBlood.degreeDatas.noble_blood.label>
+<OEPsyBlood.degreeDatas.noble_blood.description>{PAWN_nameDef} {PAWN_gender ? спадкоємець : спадкоємиця} стародавнього і благородного роду. Наявність {PAWN_pronoun} дає вроджений талант до псі-здібностей.</OEPsyBlood.degreeDatas.noble_blood.description>
+
+<!--=============== Monk ====================-->
+<OEPsyMonk.degreeDatas.monk.label>монах</OEPsyMonk.degreeDatas.monk.label>
+<OEPsyMonk.degreeDatas.monk.description>{PAWN_nameDef} знаходить незвичайну ясність у спокої, черпаючи силу з кожної миті споглядання.</OEPsyMonk.degreeDatas.monk.description>
+
+<!--=============== Psy Warrior ====================-->
+<OEPsyWarrior.degreeDatas.psywarrior.label>псі-воїн</OEPsyWarrior.degreeDatas.psywarrior.label>
+<OEPsyWarrior.degreeDatas.psywarrior.description>Бій — природний стан для {PAWN_nameDef}, чиї удари поєднують фізичну міць і псіонічну силу.</OEPsyWarrior.degreeDatas.psywarrior.description>
+
+<!--=============== Psy Marksman ====================-->
+<OEPsyMarksman.degreeDatas.psymarksman.label>псі-снайпер</OEPsyMarksman.degreeDatas.psymarksman.label>
+<OEPsyMarksman.degreeDatas.psymarksman.description>Точність {PAWN_nameDef} спрямовується як твердими руками, так і загостреним псі-відчуттям.</OEPsyMarksman.degreeDatas.psymarksman.description>
+
+<!--=============== Ideology ====================-->
+<!--=============== Ideology Spread ====================-->
+<OEIdeoSpread.degreeDatas.ardent_preacher.label>палкий проповідник</OEIdeoSpread.degreeDatas.ardent_preacher.label>
+<OEIdeoSpread.degreeDatas.ardent_preacher.description>{PAWN_nameDef} поширює віру з палаючим завзяттям — іноді аж надто пристрасно, навіть для {PAWN_pronoun} самого.</OEIdeoSpread.degreeDatas.ardent_preacher.description>
+
+<OEIdeoSpread.degreeDatas.quiet_soul.label>тиха душа</OEIdeoSpread.degreeDatas.quiet_soul.label>
+<OEIdeoSpread.degreeDatas.quiet_soul.description>Спокійний і урівноважений, {PAWN_nameDef} рідко провокує конфлікти — але йому важко надихнути інших на глибоку віру.</OEIdeoSpread.degreeDatas.quiet_soul.description>
+
+<!--=============== Ideology Power ====================-->
+<OEIdeoPower.degreeDatas.lawbringer.label>виконавець закону</OEIdeoPower.degreeDatas.lawbringer.label>
+<OEIdeoPower.degreeDatas.lawbringer.description>Погляд {PAWN_nameDef} подібний до зарядженої гвинтівки — {PAWN_pronoun} приносить порядок у хаос, хоча тягар правосуддя важко нести.</OEIdeoPower.degreeDatas.lawbringer.description>
+
+<OEIdeoPower.degreeDatas.softspoken_deputy.label>м’який помічник</OEIdeoPower.degreeDatas.softspoken_deputy.label>
+<OEIdeoPower.degreeDatas.softspoken_deputy.description>{PAWN_nameDef} підтримує порядок м’яко, уникаючи конфліктів — але йому бракує рішучості, щоб встановити закон.</OEIdeoPower.degreeDatas.softspoken_deputy.description>
+
+<!--=============== Ideology Hacking ====================-->
+<OEIdeoHacking.degreeDatas.netrunner.label>мережевий бігун</OEIdeoHacking.degreeDatas.netrunner.label>
+<OEIdeoHacking.degreeDatas.netrunner.description>{PAWN_nameDef} проходить крізь фаєрволи та протоколи, як вода — швидше, ніж більшість встигає моргнути.</OEIdeoHacking.degreeDatas.netrunner.description>
+
+<OEIdeoHacking.degreeDatas.cyber_tinker.label>кібер-майстер</OEIdeoHacking.degreeDatas.cyber_tinker.label>
+<OEIdeoHacking.degreeDatas.cyber_tinker.description>Допитливий і винахідливий, {PAWN_nameDef} здатен розібрати систему й зібрати її краще, ніж раніше — принаймні, здебільшого.</OEIdeoHacking.degreeDatas.cyber_tinker.description>
+
+<OEIdeoHacking.degreeDatas.script_kiddie.label>скрипт-дитинча</OEIdeoHacking.degreeDatas.script_kiddie.label>
+<OEIdeoHacking.degreeDatas.script_kiddie.description>{PAWN_nameDef} знає рівно стільки, щоб покопирсатися в системах — але не здатен зламати по-справжньому складний код.</OEIdeoHacking.degreeDatas.script_kiddie.description>
+
+<OEIdeoHacking.degreeDatas.terminal_hazard.label>термінальна загроза</OEIdeoHacking.degreeDatas.terminal_hazard.label>
+<OEIdeoHacking.degreeDatas.terminal_hazard.description>Коли {PAWN_nameDef} торкається до терміналу, питання лише в часі — і в тому, наскільки сильно все поламається.</OEIdeoHacking.degreeDatas.terminal_hazard.description>
+
+<!--=============== Biotech ====================-->
+<!--=============== Mech Love ====================-->
+<OEMechLove.degreeDatas.mech_fan.label>фанат меха</OEMechLove.degreeDatas.mech_fan.label>
+<OEMechLove.degreeDatas.mech_fan.description>{PAWN_nameDef} великий фанат механоїдів. І як {PAWN_pronoun} здатний контролювати більше механоїдів.</OEMechLove.degreeDatas.mech_fan.description>
+
+<!--=============== Mech Instinct ====================-->
+<OEMechInstinct.degreeDatas.mechtech_instinct.label>інстинкт мехтехніка</OEMechInstinct.degreeDatas.mechtech_instinct.label>
+<OEMechInstinct.degreeDatas.mechtech_instinct.description>{PAWN_nameDef} поводиться з механоїдом так, ніби народився для цього — швидко збираючи, налаштовуючи та лагодячи будь-яку машину.</OEMechInstinct.degreeDatas.mechtech_instinct.description>
+
+<!--=============== Anomaly ====================-->
+<!--=============== Ritualist ====================-->
+<OERitualist.degreeDatas.ritual_master.label>майстер ритуалів</OERitualist.degreeDatas.ritual_master.label>
+<OERitualist.degreeDatas.ritual_master.description>Ритуали наповнюють {PAWN_nameDef} енергією — {PAWN_pronoun} проводить їх з точністю та пристрастю.</OERitualist.degreeDatas.ritual_master.description>
+
+<OERitualist.degreeDatas.ceremonial_adept.label>церемоніальний адепт</OERitualist.degreeDatas.ceremonial_adept.label>
+<OERitualist.degreeDatas.ceremonial_adept.description>{PAWN_nameDef} проводить ритуали чітко й без вагань.</OERitualist.degreeDatas.ceremonial_adept.description>
+
+<OERitualist.degreeDatas.unsteady_speaker.label>невпевнений оратор</OERitualist.degreeDatas.unsteady_speaker.label>
+<OERitualist.degreeDatas.unsteady_speaker.description>Ритуали даються {PAWN_nameDef} важко — {PAWN_pronoun} часто збивається з ритму.</OERitualist.degreeDatas.unsteady_speaker.description>
+
+<OERitualist.degreeDatas.reluctant_vessel.label>неохочий провідник</OERitualist.degreeDatas.reluctant_vessel.label>
+<OERitualist.degreeDatas.reluctant_vessel.description>{PAWN_nameDef} тяготиться священними обрядами й проводить їх неохоче та незграбно.</OERitualist.degreeDatas.reluctant_vessel.description>
+
+<!--=============== Odyssey ====================-->
+<!--=============== Fishing - Odyssey ====================-->
+<OEFisherman.degreeDatas.deep_catcher.label>глибоководний ловець</OEFisherman.degreeDatas.deep_catcher.label>
+<OEFisherman.degreeDatas.deep_catcher.description>{PAWN_nameDef} рибалить уважно й зосереджено, зазвичай витягаючи більше з кожного закидання.</OEFisherman.degreeDatas.deep_catcher.description>
+
+<OEFisherman.degreeDatas.quick_hook.label>швидкий гачок</OEFisherman.degreeDatas.quick_hook.label>
+<OEFisherman.degreeDatas.quick_hook.description>{PAWN_nameDef} закидає вудку швидко й часто, хоча частина риби може зірватися з гачка.</OEFisherman.degreeDatas.quick_hook.description>
+
+<!--=============== Piloting Ability ====================-->
+<OEPilotingGood.degreeDatas.ace_pilot.label>ас пілотування</OEPilotingGood.degreeDatas.ace_pilot.label>
+<OEPilotingGood.degreeDatas.ace_pilot.description>{PAWN_nameDef}, здається, народився для польотів, перетворюючи навіть найупертіший корабель на танцюючу зоряну пташку.</OEPilotingGood.degreeDatas.ace_pilot.description>
+
+<OEPilotingBad.degreeDatas.clumsy_flier.label>незграбний пілот</OEPilotingBad.degreeDatas.clumsy_flier.label>
+<OEPilotingBad.degreeDatas.clumsy_flier.description>Кожного разу, коли {PAWN_nameDef} береться за керування, хтось перевіряє рятувальні капсули — про всяк випадок.</OEPilotingBad.degreeDatas.clumsy_flier.description>
+
+</LanguageData>

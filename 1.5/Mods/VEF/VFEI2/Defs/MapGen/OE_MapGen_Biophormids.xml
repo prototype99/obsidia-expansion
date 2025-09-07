@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <VFEInsectoids.InsectMapGenDef ParentName="HiveSpawnBase">
+    <defName>OE_BiophormidsMapGen</defName>
+	<hiveGenelinesToSpawn Inherit="False">
+		<li>OE_Biophormids</li>
+	</hiveGenelinesToSpawn>
+  </VFEInsectoids.InsectMapGenDef>
+
+</Defs>

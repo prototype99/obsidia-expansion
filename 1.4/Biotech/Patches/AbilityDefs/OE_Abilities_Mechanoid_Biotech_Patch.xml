@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Alpha Genes</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationReplace">
+		  <xpath>/Defs/AbilityDef[defName="OE_MechLordRedline"]</xpath>
+		    <value>
+
+  <AbilityDef>
+    <defName>OE_MechLordRedline</defName>
+    <label>grand redline</label>
+    <description>Grand Redline mode grant the Chaos Lord an ability to increased combat potential and movespeed.</description>
+    <iconPath>UI/Abilities/OE_MechLordRedline</iconPath>
+	<cooldownTicksRange>25000</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+	<targetRequired>False</targetRequired>
+	<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+	<stunTargetWhileCasting>True</stunTargetWhileCasting>
+	<showPsycastEffects>False</showPsycastEffects>
+	<writeCombatLog>True</writeCombatLog>
+    <verbProperties>
+	  <verbClass>Verb_CastAbility</verbClass>
+	  <drawAimPie>False</drawAimPie>
+      <warmupTime>0.1</warmupTime>
+	  <requireLineOfSight>False</requireLineOfSight>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+	    <canTargetSelf>true</canTargetSelf>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetBuildings>false</canTargetBuildings>
+	  </targetParams>
+    </verbProperties>
+    <comps>
+	  <li Class="AlphaGenes.CompProperties_GiveHediff">
+        <hediffDef>OE_LordRedline</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+	<jobDef>CastAbilityOnThing</jobDef>
+  </AbilityDef>
+
+			</value>
+		</li>
+	    <li Class="PatchOperationReplace">
+		  <xpath>/Defs/AbilityDef[defName="OE_MechLordVanguard"]</xpath>
+		    <value>
+
+  <AbilityDef>
+    <defName>OE_MechLordVanguard</defName>
+    <label>grand vanguard</label>
+    <description>Vanguard program grant the Chaos Lord an ability to reducing incoming damage with small reducing movespeed.</description>
+    <iconPath>UI/Abilities/OE_MechLordVanguard</iconPath>
+	<cooldownTicksRange>20000</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+	<targetRequired>False</targetRequired>
+	<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+	<stunTargetWhileCasting>True</stunTargetWhileCasting>
+	<showPsycastEffects>False</showPsycastEffects>
+	<writeCombatLog>True</writeCombatLog>
+    <verbProperties>
+	  <verbClass>Verb_CastAbility</verbClass>
+	  <drawAimPie>False</drawAimPie>
+      <warmupTime>0.1</warmupTime>
+	  <requireLineOfSight>False</requireLineOfSight>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+	    <canTargetSelf>true</canTargetSelf>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetBuildings>false</canTargetBuildings>
+	  </targetParams>
+    </verbProperties>
+    <comps>
+	   <li Class="AlphaGenes.CompProperties_GiveHediff">
+        <hediffDef>OE_Vanguard</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+	<jobDef>CastAbilityOnThing</jobDef>
+  </AbilityDef>
+
+			</value>
+		</li>
+	  </operations>
+	</match>
+</Operation>	  
+
+</Patch>

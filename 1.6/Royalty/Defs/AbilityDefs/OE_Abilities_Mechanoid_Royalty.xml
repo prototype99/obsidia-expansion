@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Dominator ====================-->
+<!--=============== ODC ====================-->
+  <AbilityDef>
+    <defName>OE_MechCamouflage</defName>
+    <label>camouflage</label>
+    <description>Camouflage device grant the Dominator an ability to activate the inner stealth module which renders the user invisible.</description>
+	<iconPath>UI/Abilities/OE_MechCamouflage</iconPath>
+    <cooldownTicksRange>25000</cooldownTicksRange>
+	<hostile>false</hostile>
+	<charges>3</charges>
+	<aiCanUse>true</aiCanUse>
+	<ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<targetRequired>False</targetRequired>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<statBases>
+      <Ability_Duration>25</Ability_Duration>
+    </statBases>
+	<verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>False</drawAimPie>
+	  <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+	  <range>-1</range>
+	  <targetable>false</targetable>
+	  <targetParams>
+		<canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicInvisibility</hediffDef>
+		<onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+        <psychic>True</psychic>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== Chaos Lord ====================-->
+  <AbilityDef>
+    <defName>OE_MechLordCamouflage</defName>
+    <label>shadow walk</label>
+    <description>Camouflage device grant the Chaos Lord an ability to activate the inner stealth module which renders the user invisible.</description>
+	<iconPath>UI/Abilities/OE_MechLordCamouflage</iconPath>
+    <cooldownTicksRange>45000</cooldownTicksRange>
+	<hostile>false</hostile>
+	<aiCanUse>true</aiCanUse>
+	<ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<targetRequired>False</targetRequired>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<statBases>
+      <Ability_Duration>500</Ability_Duration>
+    </statBases>
+	<verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>False</drawAimPie>
+	  <range>-1</range>
+	  <targetable>false</targetable>
+	  <targetParams>
+		<canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicInvisibility</hediffDef>
+		<onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+        <psychic>True</psychic>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

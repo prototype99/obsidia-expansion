@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Amalgam Aptitudes ====================-->
+  <GeneTemplateDef>
+    <defName>OE_AmalgamAptitude</defName>
+    <label>amalgam {0}</label>
+    <description>The carrier of this amalgam gene has increased aptitude in {0} by 8. Aptitude acts like an offset on skill level. Additionally, one level of passion is added to {0}.</description>
+    <iconPath>UI/Icons/Genes/Skills/Amalgam/{0}</iconPath>
+	<geneTemplateType>Skill</geneTemplateType>
+	<geneClass>Gene</geneClass>
+    <displayCategory>OE_AmalgamAptitudesGenes</displayCategory>
+	<displayOrderOffset>1</displayOrderOffset>
+    <selectionWeight>0.05</selectionWeight>
+	<aptitudeOffset>8</aptitudeOffset>
+    <biostatCpx>4</biostatCpx>
+	<passionModType>AddOneLevel</passionModType>
+	<exclusionTagPrefix>Aptitude</exclusionTagPrefix>
+	<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+  </GeneTemplateDef>
+
+</Defs>

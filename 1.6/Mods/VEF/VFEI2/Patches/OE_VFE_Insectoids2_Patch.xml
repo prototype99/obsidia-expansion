@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+<!--=============== Faction ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Insect"]/pawnGroupMakers</xpath>
+    <value>
+      <li>
+	    <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+		<options>
+		  <OE_Labryscid>12</OE_Labryscid>
+		  <OE_Razorsythe>10</OE_Razorsythe>
+		  <OE_Winglance>8</OE_Winglance>
+		  <OE_Brontarok>6</OE_Brontarok>
+		  <OE_Swarmella>3</OE_Swarmella>
+		  <OE_Monarchid>1</OE_Monarchid>
+		</options>
+	  </li>
+	  <li>
+	    <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+		<options>
+		  <Megascarab>10</Megascarab>
+		  <Spelopede>7</Spelopede>
+		  <Megaspider>3</Megaspider>
+		  <OE_Infestor_Acid>2</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+		  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+		  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+		  <VFEI2_Megapede>2</VFEI2_Megapede>
+		  <VFEI2_Queen>1</VFEI2_Queen>
+		  <VFEI2_Swarmling>1</VFEI2_Swarmling>
+		</options>
+	  </li>
+	  <li>
+	    <kindDef>Settlement</kindDef>
+		<commonality>100</commonality>
+		<options>
+		  <Megascarab>10</Megascarab>
+		  <Spelopede>7</Spelopede>
+		  <Megaspider>3</Megaspider>
+		  <OE_Infestor_Acid>2</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+		  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+		  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+		  <VFEI2_Megapede>2</VFEI2_Megapede>
+		  <VFEI2_Queen>1</VFEI2_Queen>
+		  <VFEI2_Swarmling>1</VFEI2_Swarmling>
+		</options>
+	  </li>
+    </value>
+</Operation>
+
+<!--=============== Genelines ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Sorne"]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>1</OE_Infestor_Acid>
+	  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Fire>
+	  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+	  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+	  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Nuchadus"]/insects</xpath>
+    <value>
+      <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Fire>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Kemia"]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>1</OE_Infestor_Acid>
+	  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+	  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Xanides"]/insects</xpath>
+    <value>
+      <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+	  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+    </value>
+</Operation>
+
+<!--=============== Thumpers ====================-->
+<!--=============== empress thumper ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Empress"]/waves/li[1]/insects</xpath>
+    <value>
+      <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Empress"]/waves/li[6]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>1</OE_Infestor_Acid>
+	  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Empress"]/waves/li[7]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>1</OE_Infestor_Acid>
+	  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Tox>
+	  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Empress"]/waves/li[8]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>2</OE_Infestor_Acid>
+	  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Fire>
+	  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Tox>
+	  <OE_Mutalisk_Corrupter>2</OE_Mutalisk_Corrupter>
+	  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+    </value>
+</Operation>
+
+<!--=============== titantick thumper ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Titantick"]/waves/li[6]/insects</xpath>
+    <value>
+      <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Fire>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Titantick"]/waves/li[7]/insects</xpath>
+    <value>
+      <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Fire>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Titantick"]/waves/li[8]/insects</xpath>
+    <value>
+      <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">3</OE_Infestor_Fire>
+    </value>
+</Operation>
+
+<!--=============== gigamite thumper ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Gigamite"]/waves/li[6]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>1</OE_Infestor_Acid>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Gigamite"]/waves/li[7]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>2</OE_Infestor_Acid>
+	  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Gigamite"]/waves/li[8]/insects</xpath>
+    <value>
+      <OE_Infestor_Acid>2</OE_Infestor_Acid>
+	  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Tox>
+	  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+    </value>
+</Operation>
+
+<!--=============== silverfish thumper ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Silverfish"]/waves/li[7]/insects</xpath>
+    <value>
+      <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/VFEInsectoids.InsectWaveDef[defName="VFEI2_Thumper_Silverfish"]/waves/li[8]/insects</xpath>
+    <value>
+      <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+	  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+    </value>
+</Operation>
+ 
+</Patch>
+

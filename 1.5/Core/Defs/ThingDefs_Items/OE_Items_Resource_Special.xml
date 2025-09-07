@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Compressed Syntherius ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_SyntheriusPack</defName>
+    <label>compressed syntherius</label>
+    <description>A batch of syntherius hermetically compressed into a special container for safe transportation and storage.\n\nFor further use, be sure to decompresse it.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Syntherius</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/OE_SyntheriusPack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>110</MarketValue>
+      <Mass>2.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticM</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<killedLeavings>
+	  <OE_Syntherius>15</OE_Syntherius>
+    </killedLeavings>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Decompresse syntherius</useLabel>
+		<useDuration>300</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>0</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Arachna Core ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_ArachnaCore</defName>
+    <label>arachna core</label>
+    <description>A hyper-advanced computer core containing the AI persona of the Arachne Queen. It's unknown how the Crimson Arachna Cult got it, but with proper tuning it has huge potential.</description>
+	<descriptionHyperlinks>
+      <ThingDef MayRequire="Ludeon.RimWorld.Biotech">OE_Beacon_CrimsonArachna</ThingDef>
+	  <ThingDef MayRequire="Ludeon.RimWorld.Biotech">OE_Mech_ArachnaQueen</ThingDef>
+	  <ThingDef MayRequire="Ludeon.RimWorld.Biotech">OE_Mech_CrimsonArachna</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/OE_ArachnaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>1750</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Unstable Stone ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_UnstableStone</defName>
+    <label>ustable power stone</label>
+    <description>An unstable power stone from legends. By studying it, you can be able to stabilize and use its power.</description>
+	<descriptionHyperlinks>
+      <ThingDef>ODC_Trophy_PowerFist_B</ThingDef>
+	  <HediffDef>OE_ImplantPowerStone_Evolution</HediffDef>
+	  <HediffDef>OE_ImplantPowerStone_Operator</HediffDef>
+	  <HediffDef>OE_ImplantPowerStone_Champion</HediffDef>
+	  <HediffDef>OE_ImplantPowerStone_Outrider</HediffDef>
+	  <HediffDef MayRequire="Ludeon.Rimworld.Royalty">OE_ImplantPowerStone_Monarch</HediffDef>
+	  <HediffDef MayRequire="Ludeon.Rimworld.Biotech">OE_ImplantPowerStone_Techmaster</HediffDef>
+	  <HediffDef MayRequire="Ludeon.Rimworld.Anomaly">OE_ImplantPowerStone_Undead</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/UnstableStone</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <RoyalFavorValue>0.200</RoyalFavorValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>350</MarketValue>
+      <Mass>1.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

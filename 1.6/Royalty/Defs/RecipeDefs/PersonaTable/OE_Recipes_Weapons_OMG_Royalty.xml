@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG - Rapier ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMG_Rapier</defName>
+    <label>Reset Pulseblade</label>
+    <description>Reset a Pulseblade.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Pulseblade.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMG_Rapier</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMG_Rapier</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMG_Rapier>1</OMG_Rapier>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== OMG - Axe ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMG_Axe</defName>
+    <label>Reset Nanoblade</label>
+    <description>Reset a Nanoblade.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Nanoblade.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMG_Axe</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMG_Axe</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMG_Axe>1</OMG_Axe>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== OMG - BattleAxe ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMG_BattleAxe</defName>
+    <label>Reset Datacrush</label>
+    <description>Reset a Datacrush.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Datacrush.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMG_BattleAxe</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMG_BattleAxe</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMG_BattleAxe>1</OMG_BattleAxe>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== OMG - Dual Sword ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMG_DualSword</defName>
+    <label>Reset Twin Glitch</label>
+    <description>Reset a Twin Glitch.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Twin Glitch.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMG_DualSword</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMG_DualSword</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMG_DualSword>1</OMG_DualSword>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== OMG - Scepter ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMG_Scepter</defName>
+    <label>Reset Pulsecaster</label>
+    <description>Reset a Pulsecaster.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Pulsecaster.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMG_Scepter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMG_Scepter</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMG_Scepter>1</OMG_Scepter>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>

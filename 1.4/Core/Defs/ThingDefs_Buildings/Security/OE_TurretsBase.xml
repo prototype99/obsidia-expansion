@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Building Base ====================-->
+  <ThingDef Name="OE_TurretBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <techLevel>Industrial</techLevel>
+    <uiIconScale>0.9</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OEExoticBuilding</li>
+    </tradeTags>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+  </ThingDef>
+<!--=============== Small ====================-->
+  <ThingDef Name="OE_TurretBase_Small" ParentName="OE_TurretBase" Abstract="True">
+    <designationCategory>Security</designationCategory>
+	<designatorDropdown>OE_Turrets_Small</designatorDropdown>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>7500</WorkToBuild>
+      <Mass>20</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+	<building>
+      <turretTopOffset>(0, 0.15)</turretTopOffset>
+    </building>
+	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.98</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>	
+  </ThingDef>
+
+  <ThingDef Name="OE_TurretBase_SmallPowered" ParentName="OE_TurretBase" Abstract="True">
+    <designationCategory>Security</designationCategory>
+	<designatorDropdown>OE_Turrets_SmallPowered</designatorDropdown>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>7500</WorkToBuild>
+      <Mass>20</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+	<building>
+      <turretTopOffset>(0, 0.15)</turretTopOffset>
+    </building>
+	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.98</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>	
+  </ThingDef>  
+<!--=============== Big ====================-->
+  <ThingDef Name="OE_TurretBase_Big" ParentName="OE_TurretBase" Abstract="True">
+    <designationCategory>Security</designationCategory>
+	<designatorDropdown>OE_Turrets_Big</designatorDropdown>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<size>(4,4)</size>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>15000</WorkToBuild>
+      <Mass>55</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+    </statBases>
+	<building>
+      <turretTopDrawSize>5</turretTopDrawSize>
+	  <turretTopOffset>(0, 1.0)</turretTopOffset>
+    </building>
+	<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.98</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>	
+  </ThingDef>
+
+  <ThingDef Name="OE_TurretBase_BigSpecial" ParentName="OE_TurretBase" Abstract="True">
+    <designatorDropdown>OE_Turrets_Big</designatorDropdown>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<size>(4,4)</size>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>15000</WorkToBuild>
+      <Mass>55</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+    </statBases>
+	<building>
+      <turretTopDrawSize>5</turretTopDrawSize>
+	  <turretTopOffset>(0, 1.0)</turretTopOffset>
+    </building>
+	<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.98</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>	
+  </ThingDef>
+
+</Defs>

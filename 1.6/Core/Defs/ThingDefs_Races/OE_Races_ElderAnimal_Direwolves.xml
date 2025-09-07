@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Elder Direwolves Base ====================-->
+  <ThingDef Name="OEBaseDirewolfElder" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>5.25</MoveSpeed>
+      <MarketValue>3500</MarketValue>
+      <ComfyTemperatureMin>-75</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.45</ArmorRating_Heat>
+	  <ToxicResistance>0.55</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.25</ToxicEnvironmentResistance>
+      <FilthRate>2</FilthRate>
+	  <CaravanRidingSpeedFactor>2.0</CaravanRidingSpeedFactor>
+	  <Wildness>0.99</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>21</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>21</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>21</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <animalType>Canine</animalType>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+	  <packAnimal>true</packAnimal>
+      <maxPreyBodySize>5.5</maxPreyBodySize>
+      <petness>0.1</petness>
+      <baseBodySize>4.8</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>12.5</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>OE_Leather_Direwolf</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+	  <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_ElderJump</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_ElderPower_Direwolf</li>
+      </specialTrainables>	
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <gestationPeriodDays>11</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>150</lifeExpectancy>
+	  <canCrossBreedWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Direwolf</li>
+      </canCrossBreedWith>
+      <crossAggroWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Direwolf</li>
+      </crossAggroWith>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Dog_Injured</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Dog_Call</soundCall>
+          <soundAngry>Pawn_Dog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Elder Direwolf ====================-->
+  <ThingDef ParentName="OEBaseDirewolfElder">
+    <defName>OE_Elder_Direwolf</defName>
+    <label>elder direwolf</label>
+    <description>Obsidia Direwolves look like normal wolves, but these creatures are nearly twice the size. Because of their fur, they prefer to live in cool climates. Hard to tame, but once tamed, they become loyal protectors.\n\nBut among them, there are legends of a singular Direwolf—one who survived countless winters alone in the frozen wastelands, devouring only the strongest prey and evading every trap laid by hunters. This beast did not just survive—it adapted. Over time, the EGO Seed dormant within its blood awakened, binding to its primal instincts and forming a natural amalgam of ferocity and endurance.\n\nNow known as the Elder Direwolf, this creature is no longer just a predator—it's a force of nature. With reinforced hide, crushing jaws, and a terrifying ability to leap great distances, it embodies the wrath of the tundra itself.\n\nElder Direwolves are even rarer and more dangerous than the typical Direwolf.</description>
+    <race>
+      <meatLabel>elder direwolf meat</meatLabel>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Elder_Direwolf</defName>
+    <label>elder direwolf</label>
+    <labelPlural>elder direwolves</labelPlural>
+    <race>OE_Elder_Direwolf</race>
+	<combatPower>550</combatPower>
+	<ecoSystemWeight>1.0</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+	<abilities>
+      <li>OE_ElderJump</li>
+	  <li>OE_ElderPower_Direwolf</li>
+    </abilities>
+    <lifeStages>
+      <li>
+        <label>elder direwolf puppy</label>
+        <labelPlural>elder direwolf puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Direwolf/Elder/Direwolf_Black</texPath>
+          <drawSize>1.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Direwolf/Elder/Dessicated_Direwolf_east</texPath>
+          <drawSize>1.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Direwolf/Elder/Direwolf_Black</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Direwolf/Elder/Dessicated_Direwolf_east</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Direwolf/Elder/Direwolf_Black</texPath>
+          <drawSize>3.0</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Direwolf/Elder/Dessicated_Direwolf_east</texPath>
+          <drawSize>3.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>OE_EGOSeed_Elder_Direwolf</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+	<alternateGraphicChance>0.75</alternateGraphicChance>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Direwolf/Elder/Direwolf_Grey</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Direwolf/Elder/Direwolf_White</texPath>
+	  </li>
+	</alternateGraphics>
+  </PawnKindDef>
+
+</Defs>

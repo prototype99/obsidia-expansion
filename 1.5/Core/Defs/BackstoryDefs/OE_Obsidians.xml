@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Civilians ====================-->
+<!--=============== Colonist ====================-->
+  <BackstoryDef>
+    <defName>OE_Colonist</defName>
+    <title>obsidia colonist</title>
+    <titleShort>colonist</titleShort>
+    <description>[PAWN_nameDef] completed Obsidia Colonists course. Possesses all the necessary skills to support life in the colony.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Animals</li>
+	  <li>Cooking</li>
+	  <li>PlantWork</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Animals>3</Animals>
+      <Cooking>3</Cooking>
+	  <Plants>3</Plants>
+	  <Crafting>-2</Crafting>
+      <Intellectual>-2</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Farmer</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECivilian>0</OECivilian>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Worker ====================-->
+  <BackstoryDef>
+    <defName>OE_Worker</defName>
+    <title>obsidia worker</title>
+    <titleShort>worker</titleShort>
+    <description>[PAWN_nameDef] completed Obsidia Workers course. Possesses all the necessary skills to build a colony and extract useful resources.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Constructing</li>
+	  <li>Crafting</li>
+	  <li>Mining</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Construction>3</Construction>
+      <Crafting>3</Crafting>
+	  <Mining>3</Mining>
+	  <Animals>-2</Animals>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Miner</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECivilian>0</OECivilian>
+    </forcedTraits>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Scientist ====================-->
+  <BackstoryDef>
+    <defName>OE_Scientist</defName>
+    <title>obsidia scientist</title>
+    <titleShort>scientist</titleShort>
+    <description>[PAWN_nameDef] completed Obsidia Scientists course. Possesses all the necessary skills for the development and improvement the colony.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Intellectual</li>
+	  <li>Caring</li>
+	  <li>Social</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Intellectual>3</Intellectual>
+      <Medicine>3</Medicine>
+	  <Social>3</Social>
+	  <Cooking>-2</Cooking>
+      <Mining>-2</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Scientist</li>
+	  <li>Researcher</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECivilian>0</OECivilian>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Artisan ====================-->
+  <BackstoryDef>
+    <defName>OE_Artisan</defName>
+    <title>obsidia artisan</title>
+    <titleShort>artisan</titleShort>
+    <description>[PAWN_nameDef] mastered the arts of form and function in Obsidia’s creative guilds. Able to turn even discarded scrap into breathtaking works. Has an eye for beauty, but little interest in fieldwork.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Artistic</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+	<workDisables>
+      <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <Artistic>6</Artistic>
+      <Crafting>3</Crafting>
+	  <Plants>-2</Plants>
+	  <Mining>-2</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Pirate</li>
+	  <li>Madman</li>
+    </spawnCategories>
+	<bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Trader ====================-->
+  <BackstoryDef>
+    <defName>OE_Trader</defName>
+    <title>obsidia trader</title>
+    <titleShort>trader</titleShort>
+    <description>[PAWN_nameDef] traveled between scattered Obsidia enclaves, negotiating deals and uncovering rare goods. Learned to read people well—but rarely touched a tool or weapon.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Social</li>
+	  <li>Intellectual</li>
+	  <li>Animals</li>
+    </requiredWorkTags>
+	<workDisables>
+      <li>Cooking</li>
+    </workDisables>
+    <skillGains>
+      <Social>6</Social>
+      <Intellectual>2</Intellectual>
+	  <Animals>1</Animals>
+	  <Construction>-2</Construction>
+	  <Melee>-2</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Scientist</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Caretaker ====================-->
+  <BackstoryDef>
+    <defName>OE_Caretaker</defName>
+    <title>obsidia caretaker</title>
+    <titleShort>caretaker</titleShort>
+    <description>[PAWN_nameDef] devoted years to caring for Obsidia’s wounded, orphans, and beasts of burden. Soft-spoken and patient, but ill-suited for combat roles.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Caring</li>
+	  <li>Social</li>
+	  <li>Animals</li>
+    </requiredWorkTags>
+	<workDisables>
+      <li>Violent</li>
+    </workDisables>
+    <skillGains>
+      <Medicine>4</Medicine>
+      <Animals>3</Animals>
+	  <Social>1</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Scholar ====================-->
+  <BackstoryDef>
+    <defName>OE_Scholar</defName>
+    <title>obsidia scholar</title>
+    <titleShort>scholar</titleShort>
+    <description>[PAWN_nameDef] spent countless hours in databanks and echo-archives, studying Obsidia’s forgotten legacies. Brilliant with theory—awkward with social and tools.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+	<workDisables>
+      <li>Caring</li>
+    </workDisables>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Crafting>3</Crafting>
+	  <Social>-2</Social>
+	  <Construction>-2</Construction>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Engineer ====================-->
+  <BackstoryDef>
+    <defName>OE_Engineer</defName>
+    <title>obsidia engineer</title>
+    <titleShort>engineer</titleShort>
+    <description>[PAWN_nameDef] worked on critical infrastructure during the collapse of the Obsidia core systems. Skilled at building and repairing, but tends to avoid social entanglements.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Constructing</li>
+	  <li>Crafting</li>
+	  <li>Intellectual</li>
+    </requiredWorkTags>
+	<workDisables>
+      <li>Animals</li>
+    </workDisables>
+    <skillGains>
+      <Construction>5</Construction>
+      <Crafting>3</Crafting>
+	  <Intellectual>1</Intellectual>
+	  <Social>-2</Social>
+	  <Artistic>-1</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>ImperialCommon</li>
+	  <li>Scientist</li>
+	  <li>Researcher</li>
+    </spawnCategories>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Combat ====================-->
+<!--=============== Melee ====================-->
+  <BackstoryDef>
+    <defName>OE_Soldier_Melee</defName>
+    <title>obsidia warrior</title>
+    <titleShort>warrior</titleShort>
+    <description>[PAWN_nameDef] completed combat Obsidia Warriors course. Trained in close combat and medicine to keep his comrades healthy.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Caring</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Melee>5</Melee>
+      <Medicine>3</Medicine>
+      <Shooting>-3</Shooting>
+    </skillGains>
+    <spawnCategories>
+      <li>OEFighters</li>
+	  <li>ImperialCommon</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+	  <li>Pirate</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OESoldier>0</OESoldier>
+    </forcedTraits>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+	<possessions>
+      <OE_Blue_TionantJelly>2</OE_Blue_TionantJelly>
+    </possessions>
+  </BackstoryDef>
+
+<!--=============== Ranged ====================-->
+  <BackstoryDef>
+    <defName>OE_Soldier_Ranged</defName>
+    <title>obsidia gunner</title>
+    <titleShort>gunner</titleShort>
+    <description>[PAWN_nameDef] completed combat Obsidia Gunners courses. Trained in ranged combat and construction skills to maintain vehicles and buildings.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Constructing</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Shooting>5</Shooting>
+      <Construction>3</Construction>
+      <Melee>-3</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>OEFighters</li>
+	  <li>ImperialCommon</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+	  <li>Pirate</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OESoldier>0</OESoldier>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+	<possessions>
+      <OE_Blue_TionantJelly>2</OE_Blue_TionantJelly>
+    </possessions>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Snapper Base ====================-->
+  <ThingDef Name="OEBaseSnapper" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+	<statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <MarketValue>125</MarketValue>
+      <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.35</ArmorRating_Heat>
+	  <ToxicResistance>0</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+      <FilthRate>8</FilthRate>
+    </statBases>
+	<uiIconScale>1.5</uiIconScale>
+    <tools>
+      <li>
+        <label>claw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>BeetleLikeWithClaw</body>
+      <baseHungerRate>1.0</baseHungerRate>
+	  <baseBodySize>0.55</baseBodySize>
+      <baseHealthScale>0.7</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal</foodType>
+	  <leatherDef>OE_Leather_Raptor</leatherDef>
+	  <meatMarketValue>0.95</meatMarketValue>
+      <trainability>None</trainability>
+      <wildness>0.5</wildness>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.05</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Insectoid_Eat</soundEating>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>OEAnimal</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+		<eggFertilizedDef>OE_EggSnapperFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>5.661</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>2~8</eggCountRange>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseSnapper" Abstract="True">
+    <combatPower>75</combatPower>
+    <ecoSystemWeight>0.75</ecoSystemWeight>
+	<wildGroupSize>3~5</wildGroupSize>
+  </PawnKindDef>
+
+<!--=============== Snapper ====================-->
+  <ThingDef ParentName="OEBaseSnapper">
+    <defName>OE_Snapper</defName>
+    <label>snapper</label>
+    <description>A medium sized obsidia crab species. A very calm creature. But on the planet Obsidia, they are considered pests due to their high reproduction rate.</description>
+	<race>
+      <meatLabel>snapper meat</meatLabel>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseSnapper">
+    <defName>OE_Snapper</defName>
+    <label>snapper</label>
+    <race>OE_Snapper</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snapper/Snapper_Red</texPath>
+          <drawSize>0.85</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snapper/Dessicated_Snapper_south</texPath>
+          <drawSize>0.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snapper/Snapper_Red</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snapper/Dessicated_Snapper_south</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snapper/Snapper_Red</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.45, 0.45, 0.45)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Snapper/Dessicated_Snapper_south</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<alternateGraphicChance>0.75</alternateGraphicChance>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Snapper/Snapper_Orange</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Snapper/Snapper_Blue</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Snapper/Snapper_Green</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Snapper/Snapper_Black</texPath>
+	  </li>
+	</alternateGraphics>
+  </PawnKindDef>
+
+</Defs>

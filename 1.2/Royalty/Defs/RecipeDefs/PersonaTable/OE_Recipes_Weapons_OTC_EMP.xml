@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Hammer ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Hammer_P_EMP</defName>
+    <label>Reset Persona Nemesis Prototype(EMP)</label>
+    <description>Reset an Persona Nemesis Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Nemesis Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Hammer_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Hammer_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Hammer_P_EMP>1</OTC_Hammer_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - BigAxe ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_BigAxe_P_EMP</defName>
+    <label>Reset Persona Genesis Prototype(EMP)</label>
+    <description>Reset an Persona Genesis Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Genesis Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_BigAxe_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_BigAxe_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_BigAxe_P_EMP>1</OTC_BigAxe_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - ChainAxe ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_ChainAxe_P_EMP</defName>
+    <label>Reset Persona Netherbane Prototype(EMP)</label>
+    <description>Reset an Persona Netherbane Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Netherbane Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_ChainAxe_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_ChainAxe_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_ChainAxe_P_EMP>1</OTC_ChainAxe_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Pistol_P_EMP</defName>
+    <label>Reset Persona Celestial Prototype(EMP)</label>
+    <description>Reset an Persona Celestial Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Celestial Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Pistol_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Pistol_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Pistol_P_EMP>1</OTC_Pistol_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - SMG ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_SMG_P_EMP</defName>
+    <label>Reset Persona Equalizer Prototype(EMP)</label>
+    <description>Reset an Persona Equalizer Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Equalizer Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_SMG_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_SMG_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_SMG_P_EMP>1</OTC_SMG_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - Shotgun ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Shotgun_P_EMP</defName>
+    <label>Reset Persona Quasar Prototype(EMP)</label>
+    <description>Reset an Persona Quasar Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Quasar Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Shotgun_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Shotgun_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Shotgun_P_EMP>1</OTC_Shotgun_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - GrenadeLauncher ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_GrenadeLauncher_P_EMP</defName>
+    <label>Reset Persona Meteor Prototype(EMP)</label>
+    <description>Reset an Persona Meteor Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Meteor Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_GrenadeLauncher_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_GrenadeLauncher_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_GrenadeLauncher_P_EMP>1</OTC_GrenadeLauncher_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== Cross ====================-->
+<!--=============== OTC - SniperRifle ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_SniperRifle_P_EMP</defName>
+    <label>Reset Persona Nova Prototype(EMP)</label>
+    <description>Reset an Persona Nova Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Nova Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_SniperRifle_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_SniperRifle_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_SniperRifle_P_EMP>1</OTC_SniperRifle_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - MultiCannon ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_MultiCannon_P_EMP</defName>
+    <label>Reset Persona Pulsar Prototype(EMP)</label>
+    <description>Reset an Persona Pulsar Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Pulsar Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_MultiCannon_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_MultiCannon_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_MultiCannon_P_EMP>1</OTC_MultiCannon_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - Bow ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Bow_P_EMP</defName>
+    <label>Reset Persona Nimbus Prototype(EMP)</label>
+    <description>Reset an Persona Nimbus Prototype(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Nimbus Prototype(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Bow_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Bow_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Bow_P_EMP>1</OTC_Bow_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

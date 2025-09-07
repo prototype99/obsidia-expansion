@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Eyes ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+    <value>
+        <li>
+		  <hediff>OE_ProstheticEye</hediff>
+		  <wounds>
+		    <li>
+			  <textureSouth>Things/Pawn/Humanlike/HeadAttachments/Bionic/OE_BionicEye_south</textureSouth>
+			  <textureNorth>Things/Pawn/Humanlike/HeadAttachments/Bionic/OE_BionicEye_south</textureNorth>
+			  <textureEast>Things/Pawn/Humanlike/HeadAttachments/Bionic/OE_BionicEye_east</textureEast>
+			  <textureWest>Things/Pawn/Humanlike/HeadAttachments/Bionic/OE_BionicEye_east</textureWest>
+			  <flipWest>true</flipWest>
+			  <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+			  <flipOnRotation>South</flipOnRotation>
+			  <scale>1.05</scale>
+			</li>
+		  </wounds>
+		</li>
+    </value>
+</Operation>
+<!--=============== Prosthetic - Mod ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+    <value>
+        <li>
+		  <hediff>OE_ProstheticEye_M</hediff>
+		  <wounds>
+		    <li>
+			  <textureSouth>Things/Pawn/Humanlike/HeadAttachments/Bionic/Adv/OE_BionicEye_south</textureSouth>
+			  <textureNorth>Things/Pawn/Humanlike/HeadAttachments/Bionic/Adv/OE_BionicEye_south</textureNorth>
+			  <textureEast>Things/Pawn/Humanlike/HeadAttachments/Bionic/Adv/OE_BionicEye_east</textureEast>
+			  <textureWest>Things/Pawn/Humanlike/HeadAttachments/Bionic/Adv/OE_BionicEye_east</textureWest>
+			  <flipWest>true</flipWest>
+			  <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+			  <flipOnRotation>South</flipOnRotation>
+			  <scale>1.05</scale>
+			</li>
+		  </wounds>
+		</li>
+    </value>
+</Operation>
+<!--=============== Prosthetic - CAC ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+    <value>
+        <li>
+		  <hediff>OE_ProstheticEye_CAC</hediff>
+		  <wounds>
+		    <li>
+			  <textureSouth>Things/Pawn/Humanlike/HeadAttachments/Bionic/CAC/OE_BionicEye_south</textureSouth>
+			  <textureNorth>Things/Pawn/Humanlike/HeadAttachments/Bionic/CAC/OE_BionicEye_south</textureNorth>
+			  <textureEast>Things/Pawn/Humanlike/HeadAttachments/Bionic/CAC/OE_BionicEye_east</textureEast>
+			  <textureWest>Things/Pawn/Humanlike/HeadAttachments/Bionic/CAC/OE_BionicEye_east</textureWest>
+			  <flipWest>true</flipWest>
+			  <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+			  <flipOnRotation>South</flipOnRotation>
+			  <scale>1.05</scale>
+			</li>
+		  </wounds>
+		</li>
+    </value>
+</Operation>
+
+</Patch>

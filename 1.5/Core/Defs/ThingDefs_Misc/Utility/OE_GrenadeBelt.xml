@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Grenade Belts ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEGrenadeBeltsBase" ParentName="ApparelNoQualityBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>4</Mass>
+      <Flammability>0.35</Flammability>
+      <EquipDelay>2</EquipDelay>
+	  <Beauty>0</Beauty>
+    </statBases>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk>
+		    <offset>(-0.0,-0.15)</offset>
+		  </hulk>
+		  <fat>
+		    <offset>(-0.0,-0.0)</offset>
+		  </fat>
+		  <thin>
+		    <offset>(0.10,-0.0)</offset>
+		  </thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk>
+		    <offset>(-0.0,-0.10)</offset>
+		  </hulk>
+		  <fat>
+		    <offset>(-0.0,-0.0)</offset>
+		  </fat>
+		  <thin>
+		    <offset>(-0.10,-0.0)</offset>
+		  </thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk>
+		    <offset>(-0.0,-0.15)</offset>
+		  </hulk>
+		  <fat>
+		    <offset>(-0.10,-0.10)</offset>
+		  </fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk>
+		    <offset>(-0.0,-0.15)</offset>
+		  </hulk>
+		  <fat>
+		    <offset>(-0.0,-0.10)</offset>
+		  </fat>
+        </west>
+        <male>  
+		  <scale>(0.55,0.55)</scale>
+		</male>
+        <female>
+		  <scale>(0.55,0.55)</scale>
+		</female>
+        <thin>
+		  <scale>(0.5,0.5)</scale>
+		</thin>
+        <hulk>
+		  <scale>(0.7,0.7)</scale>
+		</hulk>
+        <fat>
+		  <scale>(0.7,0.7)</scale>
+		</fat>
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Grenade ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEGrenadeBeltsProjectileBase" ParentName="BaseGrenadeProjectile" Abstract="True">
+    <projectile>
+      <speed>18</speed>
+      <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <shadowSize>0.6</shadowSize>
+	  <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OEGrenadeBeltsBase">
+    <defName>OTC_GrenadeBelt_Acid</defName>
+    <label>OTC grenade belt(Acid)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Acid damage on explode. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Designed and modified for use by OTC Engineers.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grenades/OTC/Acid/OTCGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OTCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <verbs>
+      <li>
+        <label>throw acid grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_GrenadeBelt_OTC_Acid</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Grenades/OTC/Acid/OTCGrenadeBelt</wornGraphicPath>
+      <tags>
+        <li>OTCGrenadeBelt</li>
+		<li>OTCGrenadeBelt_Acid</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OTC_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountToRefill>24</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OEGrenadeBeltsProjectileBase">
+    <defName>Grenade_GrenadeBelt_OTC_Acid</defName>
+    <label>OTC grenade(Acid)</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_GrenadeBelt_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.55, 0.55)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>OTCAcid</damageDef>
+	  <damageAmountBase>18</damageAmountBase>
+      <explosionRadius>2.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OEGrenadeBeltsBase">
+    <defName>OTC_GrenadeBelt_Cryo</defName>
+    <label>OTC grenade belt(Cryo)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Cryo damage on explode. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Designed and modified for use by OTC Engineers.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grenades/OTC/Cryo/OTCGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OTCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <verbs>
+      <li>
+        <label>throw cryo grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_GrenadeBelt_OTC_Cryo</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Grenades/OTC/Cryo/OTCGrenadeBelt</wornGraphicPath>
+      <tags>
+        <li>OTCGrenadeBelt</li>
+		<li>OTCGrenadeBelt_Cryo</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OTC_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountToRefill>24</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OEGrenadeBeltsProjectileBase">
+    <defName>Grenade_GrenadeBelt_OTC_Cryo</defName>
+    <label>OTC grenade(Cryo)</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_GrenadeBelt_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.55, 0.55)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>OTCCryo</damageDef>
+	  <damageAmountBase>18</damageAmountBase>
+      <explosionRadius>2.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OEGrenadeBeltsBase">
+    <defName>OTC_GrenadeBelt_Fire</defName>
+    <label>OTC grenade belt(Fire)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Fire damage on explode. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Designed and modified for use by OTC Engineers.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grenades/OTC/Fire/OTCGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OTCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <verbs>
+      <li>
+        <label>throw fire grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_GrenadeBelt_OTC_Fire</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Grenades/OTC/Fire/OTCGrenadeBelt</wornGraphicPath>
+      <tags>
+        <li>OTCGrenadeBelt</li>
+		<li>OTCGrenadeBelt_Fire</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OTC_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountToRefill>24</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OEGrenadeBeltsProjectileBase">
+    <defName>Grenade_GrenadeBelt_OTC_Fire</defName>
+    <label>OTC grenade(Fire)</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_GrenadeBelt_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.55, 0.55)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Flame</damageDef>
+	  <damageAmountBase>18</damageAmountBase>
+      <explosionRadius>2.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OEGrenadeBeltsBase">
+    <defName>OTC_GrenadeBelt_EMP</defName>
+    <label>OTC grenade belt(EMP)</label>
+    <description>A grenade belt loaded with explosives that deal powerful EMP damage on explode. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Designed and modified for use by OTC Engineers.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grenades/OTC/EMP/OTCGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OTCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <verbs>
+      <li>
+        <label>throw EMP grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_GrenadeBelt_OTC_EMP</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Grenades/OTC/EMP/OTCGrenadeBelt</wornGraphicPath>
+      <tags>
+        <li>OTCGrenadeBelt</li>
+		<li>OTCGrenadeBelt_EMP</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OTC_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountToRefill>24</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OEGrenadeBeltsProjectileBase">
+    <defName>Grenade_GrenadeBelt_OTC_EMP</defName>
+    <label>OTC grenade(EMP)</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_GrenadeBelt_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.55, 0.55)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>EMP</damageDef>
+	  <damageAmountBase>18</damageAmountBase>
+      <explosionRadius>2.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OCC ====================-->
+  <ThingDef ParentName="OEGrenadeBeltsBase">
+    <defName>OCC_GrenadeBelt</defName>
+    <label>OCC grenade belt</label>
+    <description>A grenade belt loaded with explosives that deal powerful Blast damage on explode. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Designed and modified for use by OCC Paladins.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grenades/OCC/OCCGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <verbs>
+      <li>
+        <label>throw blast grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_GrenadeBelt_OCC</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <costList>
+	  <OE_Obsidian>25</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Grenades/OCC/OCCGrenadeBelt</wornGraphicPath>
+      <tags>
+        <li>OCCGrenadeBelt</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OCC_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountToRefill>24</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OEGrenadeBeltsProjectileBase">
+    <defName>Grenade_GrenadeBelt_OCC</defName>
+    <label>OCC grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_GrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.55, 0.55)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+	  <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>3.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+<!--=============== ODC ====================-->
+  <ThingDef ParentName="OEGrenadeBeltsBase">
+    <defName>ODC_GrenadeBelt</defName>
+    <label>ODC grenade belt</label>
+    <description>A grenade belt loaded with explosives that deal powerful Stun damage on explode. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Designed for use by Obsidia Drifters.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grenades/ODC/ODCGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>ODCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <verbs>
+      <li>
+        <label>throw stun grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_GrenadeBelt_ODC</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <costList>
+	  <OE_Obsidian>15</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Grenades/ODC/ODCGrenadeBelt</wornGraphicPath>
+      <tags>
+        <li>ODCGrenadeBelt</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGear</researchPrerequisite>	
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_ODC_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountToRefill>24</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OEGrenadeBeltsProjectileBase">
+    <defName>Grenade_GrenadeBelt_ODC</defName>
+    <label>ODC grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_GrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.55, 0.55)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Stun</damageDef>
+	  <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>2.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OMG ====================-->
+  <ThingDef ParentName="OEGrenadeBeltsBase">
+    <defName>OMG_GrenadeBelt</defName>
+    <label>Mercenaries grenade belt</label>
+    <description>A grenade belt loaded with explosives that deal powerful Necrobane damage on explode. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Designed for use by Mercenaries.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grenades/OMG/OMGGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <label>throw necrobane grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>17.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_GrenadeBelt_OMG</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+	<costList>
+	  <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>10</OE_Syntherius>
+	  <OE_MercenaryKit>1</OE_MercenaryKit>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Grenades/OMG/OMGGrenadeBelt</wornGraphicPath>
+      <tags>
+        <li>OMGGrenadeBelt</li>
+      </tags>
+    </apparel>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OMG_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountToRefill>24</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="OEGrenadeBeltsProjectileBase">
+    <defName>Grenade_GrenadeBelt_OMG</defName>
+    <label>OMG grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMG_GrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.55, 0.55)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>OMGNecrobane</damageDef>
+	  <damageAmountBase>25</damageAmountBase>
+      <explosionRadius>3.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+</Defs>

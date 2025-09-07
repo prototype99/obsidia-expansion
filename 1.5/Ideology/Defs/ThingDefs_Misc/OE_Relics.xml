@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ancient Obsidia Blade ====================-->
+  <ThingDef ParentName="RelicInertBase">
+    <defName>OE_RelicBlade</defName>
+    <label>ancient obsidia blade</label>
+    <graphicData>
+      <texPath>Things/Item/Relic/OE_Blade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+    <stuffCategories>
+	  <li>Metallic</li>
+	  <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+<!--=============== Ancient Dragon Skull ====================-->
+  <ThingDef ParentName="RelicInertBase">
+    <defName>OE_RelicDragonSkull</defName>
+    <label>ancient dragon skull</label>
+    <graphicData>
+      <texPath>Things/Item/Relic/OE_DragonSkull</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <Mass>3.5</Mass>
+    </statBases>
+    <stuffCategories>
+	  <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+<!--=============== Crystal Star ====================-->
+  <ThingDef ParentName="RelicInertBase">
+    <defName>OE_RelicStar</defName>
+    <label>crystal star</label>
+    <graphicData>
+      <texPath>Things/Item/Relic/OE_Star</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+    <stuffCategories>
+	  <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+<!--=============== Banners ====================-->
+  <ThingDef ParentName="RelicInertBase">
+    <defName>OE_RelicBannerA</defName>
+    <label>obsidia empire banner</label>
+    <graphicData>
+      <texPath>Things/Item/Relic/OE_Banner/OE_BannerA</texPath>
+	  <maskPath>Things/Item/Relic/OE_Banner/OE_Banner_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<statBases>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>3</Beauty>
+      <MarketValue>550</MarketValue>
+    </statBases>
+    <stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="RelicInertBase">
+    <defName>OE_RelicBannerB</defName>
+    <label>obsidia drifter clans banner</label>
+    <graphicData>
+      <texPath>Things/Item/Relic/OE_Banner/OE_BannerB</texPath>
+	  <maskPath>Things/Item/Relic/OE_Banner/OE_Banner_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<statBases>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>3</Beauty>
+      <MarketValue>550</MarketValue>
+    </statBases>
+    <stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="RelicInertBase">
+    <defName>OE_RelicBannerC</defName>
+    <label>crimson arachna cult banner</label>
+    <graphicData>
+      <texPath>Things/Item/Relic/OE_Banner/OE_BannerC</texPath>
+	  <maskPath>Things/Item/Relic/OE_Banner/OE_Banner_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<statBases>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>3</Beauty>
+      <MarketValue>550</MarketValue>
+    </statBases>
+    <stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="RelicInertBase">
+    <defName>OE_RelicBannerD</defName>
+    <label>obsidia empire heroes banner</label>
+    <graphicData>
+      <texPath>Things/Item/Relic/OE_Banner/OE_BannerD</texPath>
+	  <maskPath>Things/Item/Relic/OE_Banner/OE_Banner_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<statBases>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>3</Beauty>
+      <MarketValue>550</MarketValue>
+    </statBases>
+    <stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+</Defs>

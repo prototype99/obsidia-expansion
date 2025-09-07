@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+<!--=============== Inquisitor ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Inquisitor_Mechanitor</defName>
+    <label>OEC inquisitor</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+      <li>OECInquisitor_Mechanitor</li>
+	  <li>OEModuleI_Mechanitor</li>
+    </apparelTags>
+    <weaponMoney>9000~14000</weaponMoney>
+	<weaponTags>
+      <li>OECBaseMeleeM</li>
+	  <li>OECHeavyMeleeM</li>
+	  <li>OECRangedMeleeM</li>
+	  <li>OECLightGunM</li>
+	  <li>OECShortGunM</li>
+	  <li>OECBaseGunM</li>
+	  <li>OECSniperGunM</li>
+	  <li>OECHeavyGunM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>Mechlink</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>OECBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>9~12</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>9~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+				  </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

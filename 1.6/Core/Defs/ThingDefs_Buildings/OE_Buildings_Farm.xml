@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Artificial Ecosystem Base ====================-->
+  <ThingDef ParentName="BuildingBase" Name="OEArtEcosys" Abstract="True">
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <passability>PassThroughOnly</passability>
+    <pathCost>5</pathCost>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.20</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <fertility>5.5</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Ground</sowTag>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>OEFarmExp</li>
+    </researchPrerequisites>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+  </ThingDef>
+
+<!--=============== Artificial Ecosystem Micro ====================-->
+  <ThingDef ParentName="OEArtEcosys" Name="OEArtEcosysMicro" Abstract="True">
+	<designatorDropdown>OE_ArtEcosys_Micro</designatorDropdown>
+    <graphicData>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<statBases>
+      <WorkToBuild>750</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.45</Flammability>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Obsidian>15</OE_Obsidian>
+      <OE_Mythril>5</OE_Mythril>
+	  <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+  </ThingDef>
+  
+<!--=============== Various ====================-->
+<!--=============== Sun ====================-->
+  <ThingDef ParentName="OEArtEcosysMicro">
+    <defName>OE_ArtEcosysMicro_Sun</defName>
+    <label>small obsidia artificial ecosystem (sun)</label>
+    <description>Provides plants grow faster planted in this small artificial ecosystem due Obsidia technologies. Requires a high amount of power to work; plants will die if power is cut. Contains a built-in sun lamp to provide light for the plants.</description>
+    <graphicData>
+      <texPath>Things/Building/Farm/Small_Sun</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Farm/Small_Sun</uiIconPath>
+	<statBases>
+	  <MarketValue>95</MarketValue>
+	</statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+		<overlightRadius>3.0</overlightRadius>
+		<glowRadius>3.0</glowRadius>
+		<glowColor>(370,370,370,0)</glowColor>
+	  </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Dusk ====================-->
+  <ThingDef ParentName="OEArtEcosysMicro">
+    <defName>OE_ArtEcosysMicro_Dusk</defName>
+    <label>small obsidia artificial ecosystem (dusk)</label>
+    <description>Provides plants grow faster planted in this small artificial ecosystem due Obsidia technologies. Requires a high amount of power to work; plants will die if power is cut.</description>
+    <graphicData>
+      <texPath>Things/Building/Farm/Small_Dusk</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Farm/Small_Dusk</uiIconPath>
+	<statBases>
+	  <MarketValue>85</MarketValue>
+	</statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Artificial Ecosystem Medium ====================-->
+  <ThingDef ParentName="OEArtEcosys" Name="OEArtEcosysMedium" Abstract="True">
+	<designatorDropdown>OE_ArtEcosys_Medium</designatorDropdown>
+    <graphicData>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+	<statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.45</Flammability>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <OE_Obsidian>135</OE_Obsidian>
+      <OE_Mythril>45</OE_Mythril>
+	  <OE_Syntherius>18</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Sun ====================-->
+  <ThingDef ParentName="OEArtEcosysMedium">
+    <defName>OE_ArtEcosysMedium_Sun</defName>
+    <label>obsidia artificial ecosystem (sun)</label>
+    <description>Provides plants grow faster planted in this artificial ecosystem due Obsidia technologies. Requires a high amount of power to work; plants will die if power is cut. Contains a built-in sun lamp to provide light for the plants.</description>
+    <graphicData>
+      <texPath>Things/Building/Farm/Medium_Sun</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Farm/Medium_Sun</uiIconPath>
+	<statBases>
+	  <MarketValue>285</MarketValue>
+	</statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>475</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+		<overlightRadius>5.0</overlightRadius>
+		<glowRadius>5.0</glowRadius>
+		<glowColor>(370,370,370,0)</glowColor>
+	  </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Dusk ====================-->
+  <ThingDef ParentName="OEArtEcosysMedium">
+    <defName>OE_ArtEcosysMedium_Dusk</defName>
+    <label>obsidia artificial ecosystem (dusk)</label>
+    <description>Provides plants grow faster planted in this artificial ecosystem due Obsidia technologies. Requires a high amount of power to work; plants will die if power is cut.</description>
+    <graphicData>
+      <texPath>Things/Building/Farm/Medium_Dusk</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Farm/Medium_Dusk</uiIconPath>
+	<statBases>
+	  <MarketValue>255</MarketValue>
+	</statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Artificial Ecosystem Large ====================-->
+  <ThingDef ParentName="OEArtEcosys" Name="OEArtEcosysLarge" Abstract="True">
+	<designatorDropdown>OE_ArtEcosys_Large</designatorDropdown>
+    <graphicData>
+	  <drawSize>(5,5)</drawSize>
+    </graphicData>
+	<statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0.45</Flammability>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <size>(5,5)</size>
+    <costList>
+      <OE_Obsidian>375</OE_Obsidian>
+      <OE_Mythril>125</OE_Mythril>
+	  <OE_Syntherius>50</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Sun ====================-->
+  <ThingDef ParentName="OEArtEcosysLarge">
+    <defName>OE_ArtEcosysLarge_Sun</defName>
+    <label>large obsidia artificial ecosystem (sun)</label>
+    <description>Provides plants grow faster planted in this large artificial ecosystem due Obsidia technologies. Requires a high amount of power to work; plants will die if power is cut. Contains a built-in sun lamp to provide light for the plants.</description>
+    <graphicData>
+      <texPath>Things/Building/Farm/Large_Sun</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Farm/Large_Sun</uiIconPath>
+	<statBases>
+	  <MarketValue>575</MarketValue>
+	</statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>700</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+		<overlightRadius>7.0</overlightRadius>
+		<glowRadius>7.0</glowRadius>
+		<glowColor>(370,370,370,0)</glowColor>
+	  </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Dusk ====================-->
+  <ThingDef ParentName="OEArtEcosysLarge">
+    <defName>OE_ArtEcosysLarge_Dusk</defName>
+    <label>large obsidia artificial ecosystem (dusk)</label>
+    <description>Provides plants grow faster planted in this large artificial ecosystem due Obsidia technologies. Requires a high amount of power to work; plants will die if power is cut.</description>
+    <graphicData>
+      <texPath>Things/Building/Farm/Large_Dusk</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Farm/Large_Dusk</uiIconPath>
+	<statBases>
+	  <MarketValue>525</MarketValue>
+	</statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>600</basePowerConsumption>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

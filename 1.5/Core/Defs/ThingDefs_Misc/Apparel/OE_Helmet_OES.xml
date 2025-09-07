@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OES Helmet ====================-->
+  <ThingDef Name="OESHelmetBase" ParentName="OEHelmetBaseNQ" Abstract="True">
+	<tradeTags>
+      <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>4250</MarketValue>
+	  <Mass>2</Mass>
+	  <ArmorRating_Sharp>2.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.70</ArmorRating_Heat>
+      <Insulation_Cold>150</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+	<costList>
+      <OE_Empyrium>75</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_HeroicKit>2</OE_HeroicKit>
+    </costList>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.70</ToxicResistance>
+	  <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+	  <PainShockThreshold>0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.4</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.091</PsychicEntropyRecoveryRate>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+	  <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">2</MechControlGroups>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">10</MechBandwidth>
+    </equippedStatOffsets>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OES_Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OESHelmetBase">
+	<defName>OES_Helmet_Melee</defName>
+    <label>Heroic Eidolon Helmet(Gladiator)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed for use by Eidolons, once called Heroes! Reveals the full potential of its owner.\n\nThis modification intended for melee weapon user and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OES/Melee/OESHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OES/Melee/OESHelmet</wornGraphicPath>
+	  <tags>
+		<li>OESEidolon</li>
+		<li>OESEidolon_Shield</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OESHelmetBase">
+	<defName>OES_Helmet_Ranged</defName>
+    <label>Heroic Eidolon Helmet(Ranger)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed for use by Eidolons, once called Heroes! Reveals the full potential of its owner.\n\nThis modification intended for ranged weapon user and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OES/Ranged/OESHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <AimingDelayFactor>-0.20</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OES/Ranged/OESHelmet</wornGraphicPath>
+	  <tags>
+		<li>OESEidolon</li>
+		<li>OESEidolon_Barrier</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+    </apparel>
+  </ThingDef>
+
+</Defs>

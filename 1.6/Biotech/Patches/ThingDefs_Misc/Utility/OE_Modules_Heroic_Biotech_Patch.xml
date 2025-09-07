@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== OE - Heroic Modules ====================-->
+<Operation Class="PatchOperationSequence">
+  <operations>
+    <li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[@Name="OEHeroicModuleBase"]</xpath>
+	  <value>
+	    <recipeMaker>
+		  <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+		  <researchPrerequisite>OESGear</researchPrerequisite>
+		  <skillRequirements>
+		    <Crafting>12</Crafting>
+			<Intellectual>12</Intellectual>
+		  </skillRequirements>
+		  <recipeUsers>
+		    <li>OE_ArmorStation</li>
+		  </recipeUsers>
+		</recipeMaker>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[@Name="OEHeroicModuleBase"]/statBases</xpath>
+	  <value>
+	    <WorkToMake>25000</WorkToMake>
+	  </value>
+    </li>
+	<!--=============== Battle ====================-->
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicWarrior"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Warrior>1</OE_Module_Warrior>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicResist"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Resist>1</OE_Module_Resist>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicPsy"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Psy>1</OE_Module_Psy>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<!--=============== Intelligence ====================-->
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicMedic"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Medic>1</OE_Module_Medic>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicScientist"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Scientist>1</OE_Module_Scientist>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicSocial"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Social>1</OE_Module_Social>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<!--=============== Worker ====================-->
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicBuilder"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Builder>1</OE_Module_Builder>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicCook"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Cook>1</OE_Module_Cook>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicEngineer"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Engineer>1</OE_Module_Engineer>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicFarmer"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Farmer>1</OE_Module_Farmer>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+	<li Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicHerdsman"]</xpath>
+	  <value>
+	    <costList>
+		  <OE_Module_Herdsman>1</OE_Module_Herdsman>
+		  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+		</costList>
+	  </value>
+    </li>
+  </operations>
+</Operation>
+
+</Patch>

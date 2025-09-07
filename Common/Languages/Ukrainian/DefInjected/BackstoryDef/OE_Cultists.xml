@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Special ====================-->
+<!--=============== Cultist ====================-->
+<OE_Cultist.title>культист алої арахни</OE_Cultist.title>
+<OE_Cultist.titleFemale>культистка алої арахни</OE_Cultist.titleFemale>
+<OE_Cultist.titleShort>культист</OE_Cultist.titleShort>
+<OE_Cultist.titleShortFemale>культистка</OE_Cultist.titleShortFemale>
+<OE_Cultist.description>{PAWN_nameDef} як член Культу Алої Арахни має непохитну віру та бажання привнести цю віру у будь-який спосіб.</OE_Cultist.description>
+
+<!--=============== Cryptkeeper ====================-->
+<OE_Cryptkeeper.title>криптограф алої арахни</OE_Cryptkeeper.title>
+<OE_Cryptkeeper.titleShort>криптограф</OE_Cryptkeeper.titleShort>
+<OE_Cryptkeeper.description>{PAWN_nameDef} {PAWN_gender ? служив : служила} хранителем заборонених гробниць і біозапечатаних реліквій Культу Червоної Арахни. {PAWN_gender ? Шепотівся : Шепотілася} з мертвими, {PAWN_gender ? каталогізував : каталогізувала} реліквії та {PAWN_gender ? обслуговував : обслуговувала} те, що не слід пробуджувати.</OE_Cryptkeeper.description>
+
+<!--=============== Zealot ====================-->
+<OE_Zealot.title>фанатик алої арахни</OE_Zealot.title>
+<OE_Zealot.titleFemale>фанатичка алої арахни</OE_Zealot.titleFemale>
+<OE_Zealot.titleShort>фанатик</OE_Zealot.titleShort>
+<OE_Zealot.titleShortFemale>фанатичка</OE_Zealot.titleShortFemale>
+<OE_Zealot.description>{PAWN_nameDef} {PAWN_gender ? проводив : проводила} криваві ритуали в ім’я Культу Червоної Арахни. {PAWN_gender ? Рушійний : Рушійна} фанатичною вірою, {PAWN_gender ? вселяв : вселяла} страх і благоговіння через піснеспіви, вогонь і жертвопринесення.</OE_Zealot.description>
+
+<!--=============== Herald ====================-->
+<OE_Herald.title>вістник алої арахни</OE_Herald.title>
+<OE_Herald.titleShort>вістник</OE_Herald.titleShort>
+<OE_Herald.description>{PAWN_nameDef} {PAWN_gender ? був : була} голосом Культу Червоної Арахни, несучи святе вчення на окраїнні світи через видіння, ритуальну риторику й шепіт одкровень. {PAWN_gender ? Його : Її} слова сіють як відданість, так і жах.</OE_Herald.description>
+
+</LanguageData>

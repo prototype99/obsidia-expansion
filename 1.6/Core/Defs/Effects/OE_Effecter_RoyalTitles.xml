@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Royal Target ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OE_RoyalTarget_MarkFleck</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <solidTime>9999999</solidTime>
+      <needsMaintenance>true</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/RoyalTarget/OE_RoyalTarget_MarkFleck</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_RoyalTarget_Mark_Effect</defName>
+    <children>
+    <li>
+	  <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+	  <moteDef>OE_RoyalTarget_MarkFleck</moteDef>
+	  <scale>1.0~1.0</scale>
+	  <rotation>0</rotation>
+	  <positionOffset>(0, 0, 1)</positionOffset>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+      <rotateTowardsTargetCenter>false</rotateTowardsTargetCenter>
+	</li>
+    </children>
+  </EffecterDef>
+
+</Defs>

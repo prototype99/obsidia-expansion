@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OE_TurretBase_Small">
+    <defName>OTC_Turret_Small_Acid</defName>
+    <label>OTC Equalizer Turret(Acid)</label>
+    <description>An automatic OTC Acid SMG-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/Acid/TurretSmall_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+      <OE_Mythril>20</OE_Mythril>
+	  <OE_Platinum>15</OE_Platinum>
+	  <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>1225</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>100</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Small_Acid</turretGunDef>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OTCWeapons</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>300</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>8.6</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps>  
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Small_Acid" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Small_Acid</defName>
+    <label>Equalizer Turret(Acid)</label>
+    <description>Reconstructed OTC SMG for turrets. Balanced weapon with Acid charges.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/Acid/TurretSmall_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Small_Acid</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>6</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Small_Acid</defName>
+    <label>equalizer turret Acid energy bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_M_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>OTCAcid</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OE_TurretBase_Big">
+    <defName>OTC_Turret_Big_Acid</defName>
+    <label>OTC Meteor(Acid)</label>
+    <description>An automatic OTC Acid Grenade Launcher-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretBig_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/Acid/TurretBig_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>150</OE_Obsidian>
+      <OE_Mythril>40</OE_Mythril>
+	  <OE_Platinum>25</OE_Platinum>
+	  <OE_Syntherius>80</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>2375</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>225</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Big_Acid</turretGunDef>
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+	  <li>OTCGearMod</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>70</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1.4</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps> 
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Big_Acid" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Big_Acid</defName>
+    <label>Meteor Turret(Acid)</label>
+    <description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with Acid charges.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/Acid/TurretBig_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Big_Acid</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>7.9</minRange>
+		<range>35.9</range>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Big_Acid</defName>
+    <label>meteor turret Acid grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OTCAcid</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <explosionRadius>2.9</explosionRadius>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <shadowSize>0.6</shadowSize>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OE_TurretBase_Small">
+    <defName>OTC_Turret_Small_Cryo</defName>
+    <label>OTC Equalizer Turret(Cryo)</label>
+    <description>An automatic OTC Cryo SMG-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/Cryo/TurretSmall_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+      <OE_Mythril>20</OE_Mythril>
+	  <OE_Platinum>15</OE_Platinum>
+	  <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>1225</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>100</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Small_Cryo</turretGunDef>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OTCWeapons</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>300</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>8.6</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps>  
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Small_Cryo" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Small_Cryo</defName>
+    <label>Equalizer Turret(Cryo)</label>
+    <description>Reconstructed OTC SMG for turrets. Balanced weapon with Cryo charges.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/Cryo/TurretSmall_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Small_Cryo</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>6</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Small_Cryo</defName>
+    <label>Equalizer turret Cryo energy bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_M_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>OTCCryo</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OE_TurretBase_Big">
+    <defName>OTC_Turret_Big_Cryo</defName>
+    <label>OTC Meteor(Cryo)</label>
+    <description>An automatic OTC Cryo Grenade Launcher-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretBig_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/Cryo/TurretBig_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>150</OE_Obsidian>
+      <OE_Mythril>40</OE_Mythril>
+	  <OE_Platinum>25</OE_Platinum>
+	  <OE_Syntherius>80</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>2375</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>225</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Big_Cryo</turretGunDef>
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+	  <li>OTCGearMod</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>70</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1.4</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps> 
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Big_Cryo" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Big_Cryo</defName>
+    <label>Meteor Turret(Cryo)</label>
+    <description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with Cryo charges.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/Cryo/TurretBig_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Big_Cryo</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>7.9</minRange>
+		<range>35.9</range>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Big_Cryo</defName>
+    <label>meteor turret Cryo grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OTCCryo</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <explosionRadius>2.9</explosionRadius>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <shadowSize>0.6</shadowSize>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OE_TurretBase_Small">
+    <defName>OTC_Turret_Small_Fire</defName>
+    <label>OTC Equalizer Turret(Fire)</label>
+    <description>An automatic OTC Fire SMG-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/Fire/TurretSmall_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+      <OE_Mythril>20</OE_Mythril>
+	  <OE_Platinum>15</OE_Platinum>
+	  <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>1225</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>100</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Small_Fire</turretGunDef>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OTCWeapons</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>300</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>8.6</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps>  
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Small_Fire" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Small_Fire</defName>
+    <label>Equalizer Turret(Fire)</label>
+    <description>Reconstructed OTC SMG for turrets. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/Fire/TurretSmall_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Small_Fire</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>6</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Small_Fire</defName>
+    <label>Equalizer turret Fire energy bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_M_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OE_TurretBase_Big">
+    <defName>OTC_Turret_Big_Fire</defName>
+    <label>OTC Meteor(Fire)</label>
+    <description>An automatic OTC Fire Grenade Launcher-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretBig_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/Fire/TurretBig_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>150</OE_Obsidian>
+      <OE_Mythril>40</OE_Mythril>
+	  <OE_Platinum>25</OE_Platinum>
+	  <OE_Syntherius>80</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>2375</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>225</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Big_Fire</turretGunDef>
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+	  <li>OTCGearMod</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>70</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1.4</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps> 
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Big_Fire" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Big_Fire</defName>
+    <label>Meteor Turret(Fire)</label>
+    <description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/Fire/TurretBig_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Big_Fire</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>7.9</minRange>
+		<range>35.9</range>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Big_Fire</defName>
+    <label>meteor turret Fire grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <explosionRadius>2.9</explosionRadius>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <shadowSize>0.6</shadowSize>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OE_TurretBase_Small">
+    <defName>OTC_Turret_Small_EMP</defName>
+    <label>OTC Equalizer Turret(EMP)</label>
+    <description>An automatic OTC EMP SMG-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly EMP.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/EMP/TurretSmall_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+      <OE_Mythril>20</OE_Mythril>
+	  <OE_Platinum>15</OE_Platinum>
+	  <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>1225</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>100</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Small_EMP</turretGunDef>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OTCWeapons</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>300</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>8.6</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps>  
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Small_EMP" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Small_EMP</defName>
+    <label>Equalizer Turret(EMP)</label>
+    <description>Reconstructed OTC SMG for turrets. Balanced weapon with EMP charges.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/EMP/TurretSmall_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Small_EMP</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>6</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Small_EMP</defName>
+    <label>Equalizer turret EMP energy bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_M_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>EMP</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OE_TurretBase_Big">
+    <defName>OTC_Turret_Big_EMP</defName>
+    <label>OTC Meteor(EMP)</label>
+    <description>An automatic OTC EMP Grenade Launcher-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly EMP.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretBig_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OTC/EMP/TurretBig_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>150</OE_Obsidian>
+      <OE_Mythril>40</OE_Mythril>
+	  <OE_Platinum>25</OE_Platinum>
+	  <OE_Syntherius>80</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>2375</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>225</combatPower> 
+	  <turretGunDef>OTC_TurretGun_Big_EMP</turretGunDef>
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+	  <li>OTCGearMod</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>70</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1.4</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps> 
+  </ThingDef>
+
+  <ThingDef Name="OTC_TurretGun_Big_EMP" ParentName="BaseWeaponTurret">
+    <defName>OTC_TurretGun_Big_EMP</defName>
+    <label>Meteor Turret(EMP)</label>
+    <description>Reconstructed OTC Grenade Launcher for turrets. Balanced weapon with EMP charges.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OTC/EMP/TurretBig_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OTC_TurretBullet_Big_EMP</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>7.9</minRange>
+		<range>35.9</range>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OTC_TurretBullet_Big_EMP</defName>
+    <label>meteor turret EMP grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>EMP</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <explosionRadius>2.9</explosionRadius>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <shadowSize>0.6</shadowSize>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

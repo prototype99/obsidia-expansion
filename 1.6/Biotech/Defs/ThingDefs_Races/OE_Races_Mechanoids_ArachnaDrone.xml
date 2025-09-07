@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arachna Drone ====================-->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>OE_Mech_ArachnaDrone</defName>
+    <label>Arachna Drone</label>
+    <description>A small, deployable combat mechanoid usually manufactured inside an ultra-heavy Arachna Queen mech. Arachna Drone are expendable melee fighters designed to swarm-attack enemies. They are mounted with non-rechargeable power source.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Mech_ArachnaQueen</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>450</MarketValue>
+	  <MoveSpeed>3.75</MoveSpeed>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+	  <EMPResistance>0.025</EMPResistance>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5.0</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>3</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5.0</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>3</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEMechanicalArachnaDrone</body>
+      <baseHealthScale>1.35</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+    </race>
+	<butcherProducts>
+      <OE_Syntherius>1</OE_Syntherius>
+    </butcherProducts>
+	<comps Inherit="False">
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+      </comps>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>OE_Mech_ArachnaDrone</defName>
+    <label>Arachna Drone</label>
+	<labelPlural>Arachna Drones</labelPlural>
+    <race>OE_Mech_ArachnaDrone</race>
+	<combatPower>15</combatPower>
+	<allowInMechClusters>false</allowInMechClusters>
+	<forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaDrone/ArachnaDrone</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaDrone/AllegianceOverlays/Mech_ArachnaDrone</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaDrone/ArachnaDroneAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaDrone/AllegianceOverlays/Mech_ArachnaDrone</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<abilities>
+      <li>OE_MechDroneJump</li>
+    </abilities>
+  </PawnKindDef>
+
+<!--=============== Crimson Arachna Drone ====================-->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>OE_Mech_CrimsonArachnaDrone</defName>
+    <label>Crimson Arachna Drone</label>
+    <description>A small, deployable combat mechanoid usually manufactured inside an ultra-heavy Crimson Arachna mech. Crimson Arachna Drone are expendable melee fighters designed to swarm-attack enemies. They are mounted with non-rechargeable power source.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Mech_CrimsonArachna</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>575</MarketValue>
+	  <MoveSpeed>3.9</MoveSpeed>
+	  <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+	  <EMPResistance>0.025</EMPResistance>
+    </statBases>
+	<tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Scratch</def>
+              <amount>5</amount>
+			  <chance>0.55</chance>
+            </li>
+			<li>
+              <def>Stun</def>
+              <amount>3</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Scratch</def>
+              <amount>5</amount>
+			  <chance>0.55</chance>
+            </li>
+			<li>
+              <def>Stun</def>
+              <amount>3</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEMechanicalArachnaDrone</body>
+      <baseHealthScale>1.4</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+    </race>
+	<butcherProducts>
+      <OE_Syntherius>1</OE_Syntherius>
+    </butcherProducts>
+	<comps Inherit="False">
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+      </comps>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>OE_Mech_CrimsonArachnaDrone</defName>
+    <label>Crimson Arachna Drone</label>
+	<labelPlural>Crimson Arachna Drones</labelPlural>
+    <race>OE_Mech_CrimsonArachnaDrone</race>
+	<combatPower>20</combatPower>
+	<allowInMechClusters>false</allowInMechClusters>
+	<forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaDrone/CrimsonArachnaDrone</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaDrone/AllegianceOverlays/Mech_ArachnaDrone</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ArachnaDrone/ArachnaDroneAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/ArachnaDrone/AllegianceOverlays/Mech_ArachnaDrone</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<abilities>
+      <li>OE_MechDroneJump</li>
+    </abilities>
+  </PawnKindDef>
+
+</Defs>

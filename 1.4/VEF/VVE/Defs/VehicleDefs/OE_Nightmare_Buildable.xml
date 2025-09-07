@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Vehicles Blueprint Base ====================-->
+  <Vehicles.VehicleBuildDef Name="OEVehicleBuildableBase" ParentName="VehicleBaseBuildable" Abstract="True">
+	<designationCategory>VF_Vehicles</designationCategory>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<statBases>
+	  <MaxHitPoints>500</MaxHitPoints>
+	  <WorkToBuild>35000</WorkToBuild>
+	  <Flammability>0.05</Flammability>
+	</statBases>
+	<size>(2, 2)</size>
+	<uiIconScale>0.5</uiIconScale>
+	<costList>
+	  <OE_Obsidian>300</OE_Obsidian>
+	  <OE_Platinum>45</OE_Platinum>
+	  <OE_Mythril>45</OE_Mythril>
+	  <OE_ModernizationKit>3</OE_ModernizationKit>
+	  <OE_SyntheriusVehicleCore>1</OE_SyntheriusVehicleCore>
+	</costList>
+	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </Vehicles.VehicleBuildDef>
+
+<!--=============== OMC ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase">
+	<defName>OMC_Nightmare_Blueprint</defName>
+	<label>OMC Sutherland</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OMC and is equipped with a Sniper turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>OMCGearMod</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>OMC_Nightmare</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase">
+	<defName>OTC_Nightmare_Acid_Blueprint</defName>
+	<label>OTC Glasgow(Acid)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with an Acid Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>OTCGearMod</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>OTC_Nightmare_Acid</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+<!--=============== Cryo ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase">
+	<defName>OTC_Nightmare_Cryo_Blueprint</defName>
+	<label>OTC Glasgow(Cryo)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with a Cryo Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>OTCGearMod</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>OTC_Nightmare_Cryo</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+<!--=============== Fire ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase">
+	<defName>OTC_Nightmare_Fire_Blueprint</defName>
+	<label>OTC Glasgow(Fire)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with a Fire Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>OTCGearMod</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>OTC_Nightmare_Fire</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+<!--=============== EMP ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase">
+	<defName>OTC_Nightmare_EMP_Blueprint</defName>
+	<label>OTC Glasgow(EMP)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with an EMP Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>OTCGearMod</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>OTC_Nightmare_EMP</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+
+<!--=============== OCC ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase">
+	<defName>OCC_Nightmare_Blueprint</defName>
+	<label>OCC Gloucester</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OCC and is equipped with a Rocket Launcher turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>OCCGearMod</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>OCC_Nightmare</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+
+<!--=============== OEC ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase" Abstract="True">
+	<defName>OEC_Nightmare_Blueprint</defName>
+	<label>OEC Akatsuki</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OEC and is equipped with a Minigun turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>OECGearMod</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>OEC_Nightmare</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+
+<!--=============== ODC ====================-->
+  <Vehicles.VehicleBuildDef ParentName="OEVehicleBuildableBase">
+	<defName>ODC_Nightmare_Blueprint</defName>
+	<label>ODC Burai</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by ODC and is equipped with a Shotgun turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<researchPrerequisites>
+	  <li>ODCGearAdv</li>
+	  <li>OESynth</li>
+	</researchPrerequisites>
+	<thingToSpawn>ODC_Nightmare</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+
+</Defs>

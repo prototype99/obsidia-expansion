@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC Armor ====================-->
+  <ThingDef Name="CACArmorBase" ParentName="OEArmorBase" Abstract="True">
+	<tradeTags>
+      <li>CACCultist</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>100000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Light ====================-->
+  <ThingDef Name="CACArmorLight" ParentName="CACArmorBase" Abstract="True">
+	<statBases>
+	  <Mass>10</Mass>
+	  <ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.95</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+	  <PainShockThreshold>0.2</PainShockThreshold>
+	  <MentalBreakThreshold>0.1</MentalBreakThreshold>
+	  <TrapSpringChance>-0.75</TrapSpringChance>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="CACArmorLight">
+	<defName>CAC_LightArmor</defName>
+    <label>CAC Cultist Light Armor</label>
+    <description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>4550</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Empyrium>100</OE_Empyrium>
+	  <OE_Orichalcum>50</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGear</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Smoker ====================-->
+  <ThingDef ParentName="CACArmorLight">
+	<defName>CAC_LightArmor_Smoker</defName>
+    <label>CAC Cultist Light Armor(Fogler)</label>
+    <description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Smokepop pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Smoker/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5550</MarketValue>
+	  <SmokepopBeltRadius>6.9</SmokepopBeltRadius>
+    </statBases>
+    <costList Inherit="False">
+      <CAC_LightArmor>1</CAC_LightArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Smoker/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smokepop</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Smokepop</verbClass>
+		<commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+  <ThingDef Name="CACArmorHeavy" ParentName="CACArmorBase" Abstract="True">
+	<statBases>
+	  <Mass>10</Mass>
+	  <ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+	  <PainShockThreshold>0.2</PainShockThreshold>
+	  <MentalBreakThreshold>0.1</MentalBreakThreshold>
+	  <TrapSpringChance>-0.75</TrapSpringChance>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="CACArmorHeavy">
+	<defName>CAC_HeavyArmor</defName>
+    <label>CAC Cultist Heavy Armor</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>4925</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Empyrium>150</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGear</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Smoker ====================-->
+  <ThingDef ParentName="CACArmorHeavy">
+	<defName>CAC_HeavyArmor_Smoker</defName>
+    <label>CAC Cultist Heavy Armor(Fogler)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Smokepop pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Smoker/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5925</MarketValue>
+	  <SmokepopBeltRadius>6.9</SmokepopBeltRadius>
+    </statBases>
+    <costList Inherit="False">
+      <CAC_HeavyArmor>1</CAC_HeavyArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Smoker/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smokepop</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Smokepop</verbClass>
+		<commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

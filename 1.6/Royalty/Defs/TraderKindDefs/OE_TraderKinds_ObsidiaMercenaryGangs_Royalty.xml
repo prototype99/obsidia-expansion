@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Obsidia Mercenary Gangs - Tribute Collector ====================-->
+  <TraderKindDef>
+    <defName>Base_ObsidiaMercenaryGangs_TributeCollector</defName>
+	<label>obsidia mercenaries tribute collector</label>
+    <requestable>False</requestable>
+    <commonality>1</commonality>
+    <category>TributeCollector</category>
+    <tradeCurrency>Favor</tradeCurrency>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    <stockGenerators>
+      <!-- Buying -->
+      <li Class="StockGenerator_BuySlaves" />
+	  <li Class="StockGenerator_BuySingleDef">
+        <thingDef>OE_UnstableStone</thingDef>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>OEGearTrophy</tag>
+      </li>
+	  <li Class="StockGenerator_BuyTradeTag">
+        <tag>OEGearTrophySell</tag>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

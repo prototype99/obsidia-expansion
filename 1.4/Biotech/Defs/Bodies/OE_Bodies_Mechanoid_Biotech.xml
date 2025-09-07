@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Octo ====================-->
+  <BodyDef>
+    <defName>OEMechanicalOcto</defName>
+    <label>mechanical octo</label>
+    <corePart>
+      <def>OEOctoHood</def>
+	  <groups>
+	    <li>HeadAttackTool</li>
+	  </groups>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.1</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>MechanicalHead</def>
+          <coverage>0.05</coverage>
+          <parts>
+		    <li>
+              <def>ArtificialBrain</def>
+              <coverage>0.2</coverage>
+              <depth>Inside</depth>
+            </li>
+			<li>
+              <def>SightSensor</def>
+			  <customLabel>left sight sensor</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+			<li>
+              <def>SightSensor</def>
+              <customLabel>right sight sensor</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+			<li>
+              <def>HearingSensor</def>
+			  <customLabel>hearing sensor</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+			<li>
+              <def>SmellSensor</def>
+			  <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>OEOctoTentacle</def>
+          <customLabel>first tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>OEOctoTentacle</def>
+          <customLabel>second tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+		<li>
+          <def>OEOctoTentacle</def>
+          <customLabel>third tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>OEOctoTentacle</def>
+          <customLabel>fourth tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+		<li>
+          <def>OEOctoTentacle</def>
+          <customLabel>fifth tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>OEOctoTentacle</def>
+          <customLabel>sixth tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+		<li>
+          <def>OEOctoTentacle</def>
+          <customLabel>seventh tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>OEOctoTentacle</def>
+          <customLabel>eighth tentacle</customLabel>
+		  <groups>
+		    <li>Arms</li>
+		  </groups>
+          <coverage>0.06</coverage>
+          <height>Bottom</height>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+<!--=============== Arachna Drone ====================-->
+  <BodyDef>
+    <defName>OEMechanicalArachnaDrone</defName>
+    <label>mechanical arachna drone</label>
+    <corePart>
+      <def>MechanicalThoraxCanManipulate</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+		<li>
+          <def>Reactor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>FluidReprocessor</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>MechanicalNeck</def>
+          <coverage>0.05</coverage>
+		  <height>Top</height>
+          <parts>
+		    <li>
+              <def>MechanicalHead</def>
+              <coverage>0.60</coverage>
+              <groups>
+				<li>HeadAttackTool</li>
+			  </groups>
+			  <parts>
+			    <li>
+				  <def>ArtificialBrain</def>
+				  <coverage>0.2</coverage>
+				  <depth>Inside</depth>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>left first sight sensor</customLabel>
+				  <coverage>0.1</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>left second sight sensor</customLabel>
+				  <coverage>0.05</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>right first sight sensor</customLabel>
+				  <coverage>0.1</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>right second sight sensor</customLabel>
+				  <coverage>0.05</coverage>
+				</li>
+				<li>
+				  <def>HearingSensor</def>
+				  <coverage>0.05</coverage>
+				  <customLabel>left hearing sensor</customLabel>
+				</li>
+				<li>
+				  <def>HearingSensor</def>
+				  <coverage>0.05</coverage>
+				  <customLabel>right hearing sensor</customLabel>
+				</li>
+				<li>
+				  <def>SmellSensor</def>
+				  <coverage>0.05</coverage>
+				</li>
+			  </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>left first leg</customLabel>
+          <coverage>0.10</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontLeftLeg</li>
+		  </groups>
+        </li>
+		<li>
+          <def>MechanicalLeg</def>
+          <customLabel>left second leg</customLabel>
+          <coverage>0.10</coverage>
+          <height>Bottom</height>
+        </li>
+		<li>
+          <def>MechanicalLeg</def>
+          <customLabel>right first leg</customLabel>
+          <coverage>0.10</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontRightLeg</li>
+		  </groups>
+        </li>
+		<li>
+          <def>MechanicalLeg</def>
+          <customLabel>right second leg</customLabel>
+          <coverage>0.10</coverage>
+          <height>Bottom</height>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+<!--=============== Arachna Queen ====================-->
+  <BodyDef>
+    <defName>OEMechanicalArachnaQueen</defName>
+    <label>mechanical arachna queen</label>
+    <corePart>
+      <def>OEMechanicalThoraxLarge</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+		<li>
+          <def>Reactor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>FluidReprocessor</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>MechanicalNeck</def>
+          <coverage>0.05</coverage>
+		  <height>Top</height>
+          <parts>
+		    <li>
+              <def>OEMechanicalHeadLarge</def>
+              <coverage>0.60</coverage>
+              <groups>
+				<li>HeadAttackTool</li>
+			  </groups>
+			  <parts>
+			    <li>
+				  <def>ArtificialBrain</def>
+				  <coverage>0.2</coverage>
+				  <depth>Inside</depth>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>left first sight sensor</customLabel>
+				  <coverage>0.1</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>left second sight sensor</customLabel>
+				  <coverage>0.05</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>right first sight sensor</customLabel>
+				  <coverage>0.1</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>right second sight sensor</customLabel>
+				  <coverage>0.05</coverage>
+				</li>
+				<li>
+				  <def>HearingSensor</def>
+				  <coverage>0.05</coverage>
+				  <customLabel>left hearing sensor</customLabel>
+				</li>
+				<li>
+				  <def>HearingSensor</def>
+				  <coverage>0.05</coverage>
+				  <customLabel>right hearing sensor</customLabel>
+				</li>
+				<li>
+				  <def>SmellSensor</def>
+				  <coverage>0.05</coverage>
+				</li>
+			  </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>OEMechanicalLegLarge</def>
+          <customLabel>left first leg</customLabel>
+          <coverage>0.20</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontLeftLeg</li>
+		  </groups>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFootLarge</def>
+			  <customLabel>left first foot</customLabel>
+			  <coverage>0.08</coverage>
+			</li>
+		  </parts>
+        </li>
+		<li>
+          <def>OEMechanicalLegLarge</def>
+          <customLabel>left second leg</customLabel>
+          <coverage>0.20</coverage>
+          <height>Bottom</height>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFootLarge</def>
+			  <customLabel>left second foot</customLabel>
+			  <coverage>0.08</coverage>
+			</li>
+		  </parts>
+        </li>
+		<li>
+          <def>OEMechanicalLegLarge</def>
+          <customLabel>right first leg</customLabel>
+          <coverage>0.20</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontRightLeg</li>
+		  </groups>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFootLarge</def>
+			  <customLabel>right first foot</customLabel>
+			  <coverage>0.08</coverage>
+			</li>
+		  </parts>
+        </li>
+		<li>
+          <def>OEMechanicalLegLarge</def>
+          <customLabel>right second leg</customLabel>
+          <coverage>0.20</coverage>
+          <height>Bottom</height>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFootLarge</def>
+			  <customLabel>right first foot</customLabel>
+			  <coverage>0.08</coverage>
+			</li>
+		  </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+</Defs>

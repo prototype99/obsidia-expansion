@@ -1,0 +1,1180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Show Me Your Hands</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+
+  <WHands.ClutterHandsTDef>
+    <defName>ClutterHandsSettings_ObsidiaExpansion</defName>
+    <label>Weapon hand settings</label>
+    <thingClass>Thing</thingClass>
+    <WeaponCompLoader>
+<!--=============== Other ====================-->  
+	  <li>
+        <!-- Wood's -->
+		<MainHand>(-0.089, 0.100, -0.059)</MainHand>
+        <ThingTargets>
+          <li>OE_FungalWoodLog</li>
+		  <li>OE_DragonianWoodLog</li>
+        </ThingTargets>
+      </li>
+<!--=============== OMC ====================-->      
+	  <li>
+        <!-- Delimiter -->
+		<MainHand>(-0.250, 0.100, 0.000)</MainHand>
+        <ThingTargets>
+          <li>OMC_Sword</li>
+		  <li>OMC_Sword_M</li>
+		  <li>OMC_Sword_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Furious -->
+		<MainHand>(-0.073, 0.100, 0.075)</MainHand>
+        <ThingTargets>
+          <li>OMC_Axe</li>
+		  <li>OMC_Axe_M</li>
+		  <li>OMC_Axe_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Bloodspiller -->
+		<MainHand>(-0.300, 0.100, -0.200)</MainHand>
+        <ThingTargets>
+          <li>OMC_Whip</li>
+		  <li>OMC_Whip_M</li>
+		  <li>OMC_Whip_P</li>
+		  <li>OMC_Whip_Acid</li>
+		  <li>OMC_Whip_M_Acid</li>
+		  <li>OMC_Whip_P_Acid</li>
+		  <li>OMC_Whip_Cryo</li>
+		  <li>OMC_Whip_M_Cryo</li>
+		  <li>OMC_Whip_P_Cryo</li>
+		  <li>OMC_Whip_Fire</li>
+		  <li>OMC_Whip_M_Fire</li>
+		  <li>OMC_Whip_P_Fire</li>
+		  <li>OMC_Whip_EMP</li>
+		  <li>OMC_Whip_M_EMP</li>
+		  <li>OMC_Whip_P_EMP</li>
+        </ThingTargets>
+      </li>	 	  
+	  <li>
+        <!-- Impaler -->
+		<MainHand>(-0.135, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+          <li>OMC_Pistol</li>
+		  <li>OMC_Pistol_M</li>
+		  <li>OMC_Pistol_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Hellscream -->
+		<MainHand>(-0.180, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+          <li>OMC_ShotgunS</li>
+		  <li>OMC_ShotgunS_M</li>
+		  <li>OMC_ShotgunS_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Striker -->
+		<MainHand>(-0.150, 0.100, -0.018)</MainHand>
+        <SecHand>(0.12, -0.100, -0.095)</SecHand>
+        <ThingTargets>
+          <li>OMC_AR</li>
+		  <li>OMC_AR_M</li>
+		  <li>OMC_AR_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Doom -->
+		<MainHand>(-0.130, 0.100, -0.045)</MainHand>
+        <SecHand>(0.200, -0.100, -0.041)</SecHand>
+        <ThingTargets>
+          <li>OMC_Shotgun</li>
+		  <li>OMC_Shotgun_M</li>
+		  <li>OMC_Shotgun_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Skullmasher -->
+		<MainHand>(-0.265, 0.100, -0.004)</MainHand>
+        <SecHand>(0.083, -0.100, -0.022)</SecHand>
+        <ThingTargets>
+          <li>OMC_SniperRifle</li>
+		  <li>OMC_SniperRifle_M</li>
+		  <li>OMC_SniperRifle_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Giant's Bane -->
+		<MainHand>(0.175, 0.100, -0.145)</MainHand>
+        <SecHand>(-0.145, -0.100, -0.05)</SecHand>
+        <ThingTargets>
+          <li>OMC_RocketLauncher</li>
+		  <li>OMC_RocketLauncher_M</li>
+		  <li>OMC_RocketLauncher_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Merciless -->
+		<MainHand>(-0.165, 0.100, -0.05)</MainHand>
+        <ThingTargets>
+          <li>OMC_Revolver</li>
+		  <li>OMC_Revolver_M</li>
+		  <li>OMC_Revolver_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Empress's Blessing -->
+		<MainHand>(-0.25, 0.100, 0.005)</MainHand>
+        <ThingTargets>
+          <li>OMC_Trophy_Chainsword</li>
+		  <li>OMC_Trophy_Chainsword_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Prototype sX-01a -->
+		<MainHand>(-0.200, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+          <li>OMC_Trophy_Pistol</li>
+		  <li>OMC_Trophy_Pistol_P</li>
+        </ThingTargets>
+      </li>
+<!--=============== OTC ====================-->
+	  <li>
+        <!-- Nemesis -->
+		<MainHand>(-0.100, 0.100, 0.05)</MainHand>
+        <ThingTargets>
+		  <li>OTC_Hammer_Acid</li>
+		  <li>OTC_Hammer_M_Acid</li>
+		  <li>OTC_Hammer_P_Acid</li>
+		  <li>OTC_Hammer_Cryo</li>
+		  <li>OTC_Hammer_M_Cryo</li>
+		  <li>OTC_Hammer_P_Cryo</li>
+		  <li>OTC_Hammer_Fire</li>
+		  <li>OTC_Hammer_M_Fire</li>
+		  <li>OTC_Hammer_P_Fire</li>
+		  <li>OTC_Hammer_EMP</li>
+		  <li>OTC_Hammer_M_EMP</li>
+		  <li>OTC_Hammer_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Genesis -->
+		<MainHand>(-0.200, 0.100, -0.165)</MainHand>
+        <SecHand>(-0.080, -0.100, -0.055)</SecHand>
+        <ThingTargets>
+		  <li>OTC_BigAxe_Acid</li>
+		  <li>OTC_BigAxe_M_Acid</li>
+		  <li>OTC_BigAxe_P_Acid</li>
+		  <li>OTC_BigAxe_Cryo</li>
+		  <li>OTC_BigAxe_M_Cryo</li>
+		  <li>OTC_BigAxe_P_Cryo</li>
+		  <li>OTC_BigAxe_Fire</li>
+		  <li>OTC_BigAxe_M_Fire</li>
+		  <li>OTC_BigAxe_P_Fire</li>
+		  <li>OTC_BigAxe_EMP</li>
+		  <li>OTC_BigAxe_M_EMP</li>
+		  <li>OTC_BigAxe_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Netherbane -->
+		<MainHand>(-0.105, 0.100, 0.06)</MainHand>
+        <ThingTargets>
+		  <li>OTC_ChainAxe_Acid</li>
+		  <li>OTC_ChainAxe_M_Acid</li>
+		  <li>OTC_ChainAxe_P_Acid</li>
+		  <li>OTC_ChainAxe_Cryo</li>
+		  <li>OTC_ChainAxe_M_Cryo</li>
+		  <li>OTC_ChainAxe_P_Cryo</li>
+		  <li>OTC_ChainAxe_Fire</li>
+		  <li>OTC_ChainAxe_M_Fire</li>
+		  <li>OTC_ChainAxe_P_Fire</li>
+		  <li>OTC_ChainAxe_EMP</li>
+		  <li>OTC_ChainAxe_M_EMP</li>
+		  <li>OTC_ChainAxe_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Celestial -->
+		<MainHand>(-0.135, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+		  <li>OTC_Pistol_Acid</li>
+		  <li>OTC_Pistol_M_Acid</li>
+		  <li>OTC_Pistol_P_Acid</li>
+		  <li>OTC_Pistol_Cryo</li>
+		  <li>OTC_Pistol_M_Cryo</li>
+		  <li>OTC_Pistol_P_Cryo</li>
+		  <li>OTC_Pistol_Fire</li>
+		  <li>OTC_Pistol_M_Fire</li>
+		  <li>OTC_Pistol_P_Fire</li>
+		  <li>OTC_Pistol_EMP</li>
+		  <li>OTC_Pistol_M_EMP</li>
+		  <li>OTC_Pistol_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Equalizer -->
+		<MainHand>(-0.1, 0.100, 0.0)</MainHand>
+        <SecHand>(0.185, -0.100, -0.075)</SecHand>
+        <ThingTargets>
+		  <li>OTC_SMG_Acid</li>
+		  <li>OTC_SMG_M_Acid</li>
+		  <li>OTC_SMG_P_Acid</li>
+		  <li>OTC_SMG_Cryo</li>
+		  <li>OTC_SMG_M_Cryo</li>
+		  <li>OTC_SMG_P_Cryo</li>
+		  <li>OTC_SMG_Fire</li>
+		  <li>OTC_SMG_M_Fire</li>
+		  <li>OTC_SMG_P_Fire</li>
+		  <li>OTC_SMG_EMP</li>
+		  <li>OTC_SMG_M_EMP</li>
+		  <li>OTC_SMG_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Quasar -->
+		<MainHand>(-0.120, 0.100, -0.05)</MainHand>
+        <SecHand>(0.2, -0.100, -0.05)</SecHand>
+        <ThingTargets>
+		  <li>OTC_Shotgun_Acid</li>
+		  <li>OTC_Shotgun_M_Acid</li>
+		  <li>OTC_Shotgun_P_Acid</li>
+		  <li>OTC_Shotgun_Cryo</li>
+		  <li>OTC_Shotgun_M_Cryo</li>
+		  <li>OTC_Shotgun_P_Cryo</li>
+		  <li>OTC_Shotgun_Fire</li>
+		  <li>OTC_Shotgun_M_Fire</li>
+		  <li>OTC_Shotgun_P_Fire</li>
+		  <li>OTC_Shotgun_EMP</li>
+		  <li>OTC_Shotgun_M_EMP</li>
+		  <li>OTC_Shotgun_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Meteor -->
+		<MainHand>(-0.425, 0.100, 0.100)</MainHand>
+        <SecHand>(-0.1, -0.100, 0.175)</SecHand>
+        <ThingTargets>
+		  <li>OTC_GrenadeLauncher_Acid</li>
+		  <li>OTC_GrenadeLauncher_M_Acid</li>
+		  <li>OTC_GrenadeLauncher_P_Acid</li>
+		  <li>OTC_GrenadeLauncher_Cryo</li>
+		  <li>OTC_GrenadeLauncher_M_Cryo</li>
+		  <li>OTC_GrenadeLauncher_P_Cryo</li>
+		  <li>OTC_GrenadeLauncher_Fire</li>
+		  <li>OTC_GrenadeLauncher_M_Fire</li>
+		  <li>OTC_GrenadeLauncher_P_Fire</li>
+		  <li>OTC_GrenadeLauncher_EMP</li>
+		  <li>OTC_GrenadeLauncher_M_EMP</li>
+		  <li>OTC_GrenadeLauncher_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Nova -->
+		<MainHand>(-0.265, 0.100, -0.004)</MainHand>
+        <SecHand>(0.083, -0.100, -0.022)</SecHand>
+        <ThingTargets>
+		  <li>OTC_SniperRifle_Acid</li>
+		  <li>OTC_SniperRifle_M_Acid</li>
+		  <li>OTC_SniperRifle_P_Acid</li>
+		  <li>OTC_SniperRifle_Cryo</li>
+		  <li>OTC_SniperRifle_M_Cryo</li>
+		  <li>OTC_SniperRifle_P_Cryo</li>
+		  <li>OTC_SniperRifle_Fire</li>
+		  <li>OTC_SniperRifle_M_Fire</li>
+		  <li>OTC_SniperRifle_P_Fire</li>
+		  <li>OTC_SniperRifle_EMP</li>
+		  <li>OTC_SniperRifle_M_EMP</li>
+		  <li>OTC_SniperRifle_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Pulsar -->
+		<MainHand>(-0.425, 0.100, 0.100)</MainHand>
+        <SecHand>(-0.115, -0.100, 0.175)</SecHand>
+        <ThingTargets>
+		  <li>OTC_MultiCannon_Acid</li>
+		  <li>OTC_MultiCannon_M_Acid</li>
+		  <li>OTC_MultiCannon_P_Acid</li>
+		  <li>OTC_MultiCannon_Cryo</li>
+		  <li>OTC_MultiCannon_M_Cryo</li>
+		  <li>OTC_MultiCannon_P_Cryo</li>
+		  <li>OTC_MultiCannon_Fire</li>
+		  <li>OTC_MultiCannon_M_Fire</li>
+		  <li>OTC_MultiCannon_P_Fire</li>
+		  <li>OTC_MultiCannon_EMP</li>
+		  <li>OTC_MultiCannon_M_EMP</li>
+		  <li>OTC_MultiCannon_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Nimbus -->
+		<MainHand>(-0.1, -0.100, 0.0)</MainHand>
+        <ThingTargets>
+		  <li>OTC_Bow_Acid</li>
+		  <li>OTC_Bow_M_Acid</li>
+		  <li>OTC_Bow_P_Acid</li>
+		  <li>OTC_Bow_Cryo</li>
+		  <li>OTC_Bow_M_Cryo</li>
+		  <li>OTC_Bow_P_Cryo</li>
+		  <li>OTC_Bow_Fire</li>
+		  <li>OTC_Bow_M_Fire</li>
+		  <li>OTC_Bow_P_Fire</li>
+		  <li>OTC_Bow_EMP</li>
+		  <li>OTC_Bow_M_EMP</li>
+		  <li>OTC_Bow_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Rift -->
+		<MainHand>(-0.220, 0.100, 0.000)</MainHand>
+        <ThingTargets>
+		  <li>OTC_Trophy_Sword_Acid</li>
+		  <li>OTC_Trophy_Sword_P_Acid</li>
+		  <li>OTC_Trophy_Sword_Cryo</li>
+		  <li>OTC_Trophy_Sword_P_Cryo</li>
+		  <li>OTC_Trophy_Sword_Fire</li>
+		  <li>OTC_Trophy_Sword_P_Fire</li>
+		  <li>OTC_Trophy_Sword_EMP</li>
+		  <li>OTC_Trophy_Sword_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Randy's Deck -->
+		<MainHand>(-0.200, 0.100, -0.125)</MainHand>
+        <SecHand>(-0.230, -0.100, 0.05)</SecHand>
+        <ThingTargets>
+		  <li>OTC_Trophy_Cards</li>
+		  <li>OTC_Trophy_Cards_P</li>
+        </ThingTargets>
+      </li>
+
+<!--=============== OCC ====================-->
+	  <li>
+        <!-- Shikigami -->
+		<MainHand>(-0.350, 0.100, -0.350)</MainHand>
+        <SecHand>(-0.245, -0.100, -0.245)</SecHand>
+        <ThingTargets>
+          <li>OCC_BigSword</li>
+		  <li>OCC_BigSword_M</li>
+		  <li>OCC_BigSword_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Oni -->
+		<MainHand>(-0.210, 0.100, -0.210)</MainHand>
+        <SecHand>(-0.120, -0.100, -0.120)</SecHand>
+        <ThingTargets>
+          <li>OCC_BigHammer</li>
+		  <li>OCC_BigHammer_M</li>
+		  <li>OCC_BigHammer_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Typhon -->
+		<MainHand>(0.000, 0.000, 0.000)</MainHand>
+        <ThingTargets>
+          <li>OCC_PowerFist</li>
+		  <li>OCC_PowerFist_M</li>
+		  <li>OCC_PowerFist_P</li>
+		  <li>OCC_PowerFist_Acid</li>
+		  <li>OCC_PowerFist_M_Acid</li>
+		  <li>OCC_PowerFist_P_Acid</li>
+		  <li>OCC_PowerFist_Cryo</li>
+		  <li>OCC_PowerFist_M_Cryo</li>
+		  <li>OCC_PowerFist_P_Cryo</li>
+		  <li>OCC_PowerFist_Fire</li>
+		  <li>OCC_PowerFist_M_Fire</li>
+		  <li>OCC_PowerFist_P_Fire</li>
+		  <li>OCC_PowerFist_EMP</li>
+		  <li>OCC_PowerFist_M_EMP</li>
+		  <li>OCC_PowerFist_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Hornet -->
+		<MainHand>(-0.165, 0.100, -0.05)</MainHand>
+        <ThingTargets>
+          <li>OCC_Revolver</li>
+		  <li>OCC_Revolver_M</li>
+		  <li>OCC_Revolver_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Cerberus -->
+		<MainHand>(-0.270, 0.100, -0.075)</MainHand>
+        <SecHand>(0.06, -0.100, -0.075)</SecHand>
+        <ThingTargets>
+          <li>OCC_Rifle</li>
+		  <li>OCC_Rifle_M</li>
+		  <li>OCC_Rifle_P</li>
+        </ThingTargets>
+      </li>	  
+	  <li>
+        <!-- Hydra -->
+		<MainHand>(-0.425, 0.100, 0.100)</MainHand>
+        <SecHand>(-0.1, -0.100, 0.175)</SecHand>
+        <ThingTargets>
+          <li>OCC_Minigun</li>
+		  <li>OCC_Minigun_M</li>
+		  <li>OCC_Minigun_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Chimera -->
+		<MainHand>(-0.425, 0.100, 0.100)</MainHand>
+        <SecHand>(-0.1, -0.100, 0.180)</SecHand>
+        <ThingTargets>
+          <li>OCC_MultiCannon</li>
+		  <li>OCC_MultiCannon_M</li>
+		  <li>OCC_MultiCannon_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Behemoth -->
+		<MainHand>(0.120, 0.100, -0.145)</MainHand>
+        <SecHand>(-0.190, -0.100, -0.05)</SecHand>
+        <ThingTargets>
+          <li>OCC_RocketLauncher</li>
+		  <li>OCC_RocketLauncher_M</li>
+		  <li>OCC_RocketLauncher_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Scylla -->
+		<MainHand>(-0.150, 0.100, -0.018)</MainHand>
+        <SecHand>(0.100, -0.100, -0.095)</SecHand>
+        <ThingTargets>
+          <li>OCC_AR</li>
+		  <li>OCC_AR_M</li>
+		  <li>OCC_AR_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Wendigo -->
+		<MainHand>(-0.1, -0.100, 0.0)</MainHand>
+        <ThingTargets>
+          <li>OCC_Bow</li>
+		  <li>OCC_Bow_M</li>
+		  <li>OCC_Bow_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Balor -->
+		<MainHand>(-0.260, 0.100, -0.260)</MainHand>
+        <SecHand>(-0.140, -0.100, -0.140)</SecHand>
+        <ThingTargets>
+          <li>OCC_Trophy_Drillspear</li>
+		  <li>OCC_Trophy_Drillspear_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Cronus -->
+		<MainHand>(-0.250, 0.100, -0.025)</MainHand>
+        <SecHand>(0.085, -0.100, -0.05)</SecHand>
+        <ThingTargets>
+          <li>OCC_Trophy_Railgun</li>
+		  <li>OCC_Trophy_Railgun_P</li>
+        </ThingTargets>
+      </li>
+<!--=============== OEC ====================-->
+	  <li>
+        <!-- Shard -->
+		<MainHand>(-0.195, 0.100, 0.0)</MainHand>
+        <ThingTargets>
+          <li>OEC_Knife</li>
+		  <li>OEC_Knife_M</li>
+		  <li>OEC_Knife_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Reaper -->
+		<MainHand>(-0.195, 0.100, -0.44)</MainHand>
+        <SecHand>(-0.135, -0.100, -0.315)</SecHand>
+        <ThingTargets>
+          <li>OEC_Katana</li>
+		  <li>OEC_Katana_M</li>
+		  <li>OEC_Katana_P</li>
+		  <li>OEC_Katana_Acid</li>
+		  <li>OEC_Katana_M_Acid</li>
+		  <li>OEC_Katana_P_Acid</li>
+		  <li>OEC_Katana_Cryo</li>
+		  <li>OEC_Katana_M_Cryo</li>
+		  <li>OEC_Katana_P_Cryo</li>
+		  <li>OEC_Katana_Fire</li>
+		  <li>OEC_Katana_M_Fire</li>
+		  <li>OEC_Katana_P_Fire</li>
+		  <li>OEC_Katana_EMP</li>
+		  <li>OEC_Katana_M_EMP</li>
+		  <li>OEC_Katana_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Elitra -->
+		<MainHand>(-0.220, 0.100, -0.220)</MainHand>
+        <SecHand>(-0.055, -0.100, -0.055)</SecHand>
+        <ThingTargets>
+          <li>OEC_Spear</li>
+		  <li>OEC_Spear_M</li>
+		  <li>OEC_Spear_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Truth -->
+		<MainHand>(0.000, 0.000, 0.000)</MainHand>
+        <ThingTargets>
+          <li>OEC_Claws</li>
+		  <li>OEC_Claws_M</li>
+		  <li>OEC_Claws_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Peacemaker -->
+		<MainHand>(-0.22, 0.100, -0.05)</MainHand>
+        <ThingTargets>
+          <li>OEC_Revolver</li>
+		  <li>OEC_Revolver_M</li>
+		  <li>OEC_Revolver_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Redeemer -->
+		<MainHand>(-0.175, 0.100, -0.045)</MainHand>
+        <SecHand>(0.145, -0.100, -0.045)</SecHand>
+        <ThingTargets>
+          <li>OEC_Shotgun</li>
+		  <li>OEC_Shotgun_M</li>
+		  <li>OEC_Shotgun_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Judgement -->
+		<MainHand>(-0.280, 0.100, -0.004)</MainHand>
+        <SecHand>(0.075, -0.100, -0.022)</SecHand>
+        <ThingTargets>
+          <li>OEC_SniperRifle</li>
+		  <li>OEC_SniperRifle_M</li>
+		  <li>OEC_SniperRifle_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Pride -->
+		<MainHand>(-0.095, -0.100, 0.0)</MainHand>
+        <ThingTargets>
+          <li>OEC_Bow</li>
+		  <li>OEC_Bow_M</li>
+		  <li>OEC_Bow_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Verdict -->
+		<MainHand>(-0.185, 0.100, -0.018)</MainHand>
+        <SecHand>(0.092, -0.100, -0.092)</SecHand>
+        <ThingTargets>
+          <li>OEC_AR</li>
+		  <li>OEC_AR_M</li>
+		  <li>OEC_AR_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Unchained -->
+		<MainHand>(-0.475, 0.100, 0.140)</MainHand>
+        <SecHand>(-0.145, -0.100, 0.225)</SecHand>
+        <ThingTargets>
+          <li>OEC_Minigun</li>
+		  <li>OEC_Minigun_M</li>
+		  <li>OEC_Minigun_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Ancient Scepter -->
+		<MainHand>(-0.11, 0.100, -0.11)</MainHand>
+        <SecHand>(0.074, -0.100, 0.074)</SecHand>
+        <ThingTargets>
+          <li>OEC_Trophy_Scepter</li>
+		  <li>OEC_Trophy_Scepter_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Divinity -->
+		<MainHand>(-0.170, 0.100, 0.01)</MainHand>
+        <ThingTargets>
+          <li>OEC_Trophy_Pistol</li>
+		  <li>OEC_Trophy_Pistol_P</li>
+        </ThingTargets>
+      </li>
+<!--=============== ODC ====================-->
+	  <li>
+        <!-- Scar -->
+		<MainHand>(-0.180, 0.100, 0.042)</MainHand>
+        <ThingTargets>
+          <li>ODC_Knife</li>
+		  <li>ODC_Knife_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Mercy - Emergent -->
+		<MainHand>(-0.260, 0.100, 0.06)</MainHand>
+        <ThingTargets>
+          <li>ODC_Sword</li>
+		  <li>ODC_Sword_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Bequest - Apex -->
+		<MainHand>(-0.355, 0.100, -0.280)</MainHand>
+        <SecHand>(-0.275, -0.100, -0.195)</SecHand>
+        <ThingTargets>
+          <li>ODC_BigSword</li>
+		  <li>ODC_BigSword_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Guillotine - Apex -->
+		<MainHand>(-0.040, 0.100, -0.040)</MainHand>
+        <SecHand>(0.040, -0.100, 0.040)</SecHand>
+        <ThingTargets>
+          <li>ODC_DualSword</li>
+		  <li>ODC_DualSword_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Imperfect - Emergent -->
+		<MainHand>(-0.340, 0.100, 0.042)</MainHand>
+        <ThingTargets>
+          <li>ODC_Rapier</li>
+		  <li>ODC_Rapier_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Defiant - Apex -->
+		<MainHand>(-0.340, 0.100, 0.042)</MainHand>
+        <ThingTargets>
+          <li>ODC_RapierGuard</li>
+		  <li>ODC_RapierGuard_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Enigma - Apex -->
+		<MainHand>(-0.340, 0.100, 0.042)</MainHand>
+        <ThingTargets>
+          <li>ODC_Rapier_Acid</li>
+		  <li>ODC_Rapier_P_Acid</li>
+		  <li>ODC_Rapier_Cryo</li>
+		  <li>ODC_Rapier_P_Cryo</li>
+		  <li>ODC_Rapier_Fire</li>
+		  <li>ODC_Rapier_P_Fire</li>
+		  <li>ODC_Rapier_EMP</li>
+		  <li>ODC_Rapier_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Purpose -->
+		<MainHand>(-0.135, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+          <li>ODC_Pistol</li>
+		  <li>ODC_Pistol_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Trespasser - Emergent -->
+		<MainHand>(-0.165, 0.100, -0.05)</MainHand>
+        <ThingTargets>
+          <li>ODC_Revolver</li>
+		  <li>ODC_Revolver_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Trespasser - Apex -->
+		<MainHand>(-0.165, 0.100, -0.05)</MainHand>
+        <ThingTargets>
+          <li>ODC_Revolver_Acid</li>
+		  <li>ODC_Revolver_P_Acid</li>
+		  <li>ODC_Revolver_Cryo</li>
+		  <li>ODC_Revolver_P_Cryo</li>
+		  <li>ODC_Revolver_Fire</li>
+		  <li>ODC_Revolver_P_Fire</li>
+		  <li>ODC_Revolver_EMP</li>
+		  <li>ODC_Revolver_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Misfit - Emergent< -->
+		<MainHand>(-0.175, 0.100, 0.0)</MainHand>
+        <SecHand>(0.11, -0.100, -0.075)</SecHand>
+        <ThingTargets>
+          <li>ODC_SMG_A</li>
+		  <li>ODC_SMG_A_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Misfit - Apex -->
+		<MainHand>(-0.1, 0.100, 0.0)</MainHand>
+        <SecHand>(0.180, -0.100, -0.075)</SecHand>
+        <ThingTargets>
+          <li>ODC_SMG_B</li>
+		  <li>ODC_SMG_B_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Inheritance -->
+		<MainHand>(-0.190, 0.100, -0.04)</MainHand>
+        <SecHand>(0.140, -0.100, -0.041)</SecHand>
+        <ThingTargets>
+          <li>ODC_Rifle</li>
+		  <li>ODC_Rifle_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Conspirator - Emergent -->
+		<MainHand>(-0.130, 0.100, -0.045)</MainHand>
+        <SecHand>(0.200, -0.100, -0.041)</SecHand>
+        <ThingTargets>
+          <li>ODC_Shotgun</li>
+		  <li>ODC_Shotgun_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Conspirator - Apex -->
+		<MainHand>(-0.130, 0.100, -0.045)</MainHand>
+        <SecHand>(0.200, -0.100, -0.041)</SecHand>
+        <ThingTargets>
+          <li>ODC_Shotgun_Acid</li>
+		  <li>ODC_Shotgun_P_Acid</li>
+		  <li>ODC_Shotgun_Cryo</li>
+		  <li>ODC_Shotgun_P_Cryo</li>
+		  <li>ODC_Shotgun_Fire</li>
+		  <li>ODC_Shotgun_P_Fire</li>
+		  <li>ODC_Shotgun_EMP</li>
+		  <li>ODC_Shotgun_P_EMP</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Thoughtless - Emergent -->
+		<MainHand>(-0.150, 0.100, -0.018)</MainHand>
+        <SecHand>(0.12, -0.100, -0.095)</SecHand>
+        <ThingTargets>
+          <li>ODC_AssaultRifle_A</li>
+		  <li>ODC_AssaultRifle_A_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Thoughtless - Apex -->
+		<MainHand>(-0.150, 0.100, -0.018)</MainHand>
+        <SecHand>(0.12, -0.100, -0.095)</SecHand>
+        <ThingTargets>
+          <li>ODC_AssaultRifle_B</li>
+		  <li>ODC_AssaultRifle_B_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Smuggler - Emergent -->
+		<MainHand>(-0.265, 0.100, -0.022)</MainHand>
+        <SecHand>(0.1, -0.100, -0.022)</SecHand>
+        <ThingTargets>
+          <li>ODC_SniperRifle_A</li>
+		  <li>ODC_SniperRifle_A_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Smuggler - Apex -->
+		<MainHand>(-0.265, 0.100, -0.022)</MainHand>
+        <SecHand>(0.1, -0.100, -0.022)</SecHand>
+        <ThingTargets>
+          <li>ODC_SniperRifle_B</li>
+		  <li>ODC_SniperRifle_B_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Temptation -->
+		<MainHand>(-0.33, 0.100, 0.042)</MainHand>
+        <ThingTargets>
+          <li>ODC_Trophy_Sickle_A</li>
+		  <li>ODC_Trophy_Sickle_A_P</li>
+		  <li>ODC_Trophy_Sickle_B</li>
+		  <li>ODC_Trophy_Sickle_B_P</li>
+		  <li>ODC_Trophy_Sickle_C</li>
+		  <li>ODC_Trophy_Sickle_C_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Harvest -->
+		<MainHand>(-0.255, 0.100, 0.140)</MainHand>
+        <SecHand>(0.05, -0.100, 0.23)</SecHand>
+        <ThingTargets>
+          <li>ODC_Trophy_BladeLauncher_A</li>
+		  <li>ODC_Trophy_BladeLauncher_A_P</li>
+		  <li>ODC_Trophy_BladeLauncher_B</li>
+		  <li>ODC_Trophy_BladeLauncher_B_P</li>
+		  <li>ODC_Trophy_BladeLauncher_C</li>
+		  <li>ODC_Trophy_BladeLauncher_C_P</li>
+        </ThingTargets>
+      </li>
+
+<!--=============== CAC ====================-->
+	  <li>
+        <!-- Souldrinker -->
+		<MainHand>(-0.135, 0.100, 0.05)</MainHand>
+        <ThingTargets>
+          <li>CAC_Scythe</li>
+		  <li>CAC_Scythe_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Souleater -->
+		<MainHand>(-0.320, 0.100, -0.255)</MainHand>
+        <SecHand>(-0.185, -0.100, -0.115)</SecHand>
+        <ThingTargets>
+          <li>CAC_BigScythe</li>
+		  <li>CAC_BigScythe_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Apathy -->
+		<MainHand>(-0.27, 0.100, -0.165)</MainHand>
+        <ThingTargets>
+          <li>CAC_Thurible</li>
+		  <li>CAC_Thurible_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Silentsong -->
+		<MainHand>(-0.135, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+          <li>CAC_Pistol</li>
+		  <li>CAC_Pistol_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heartstriker -->
+		<MainHand>(-0.180, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+          <li>CAC_ShotgunS</li>
+		  <li>CAC_ShotgunS_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Echo -->
+		<MainHand>(-0.01, 0.100, 0.0)</MainHand>
+        <SecHand>(0.185, -0.100, -0.075)</SecHand>
+        <ThingTargets>
+          <li>CAC_SMG</li>
+		  <li>CAC_SMG_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Grieving -->
+		<MainHand>(-0.130, 0.100, -0.045)</MainHand>
+        <SecHand>(0.200, -0.100, -0.041)</SecHand>
+        <ThingTargets>
+          <li>CAC_Shotgun</li>
+		  <li>CAC_Shotgun_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Widowmaker -->
+		<MainHand>(-0.265, 0.100, -0.004)</MainHand>
+        <SecHand>(0.083, -0.100, -0.022)</SecHand>
+        <ThingTargets>
+          <li>CAC_SniperRifle</li>
+		  <li>CAC_SniperRifle_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Blackout -->
+		<MainHand>(-0.425, 0.100, 0.100)</MainHand>
+        <SecHand>(-0.115, -0.100, 0.185)</SecHand>
+        <ThingTargets>
+          <li>CAC_Minigun</li>
+		  <li>CAC_Minigun_P</li>
+        </ThingTargets>
+      </li>
+
+<!--=============== OES ====================-->
+	  <li>
+        <!-- Heroic Delimiter -->
+		<MainHand>(-0.250, 0.100, 0.000)</MainHand>
+        <ThingTargets>
+          <li>OES_Sword</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Furious -->
+		<MainHand>(-0.073, 0.100, 0.075)</MainHand>
+        <ThingTargets>
+          <li>OES_Axe</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Nemesis -->
+		<MainHand>(-0.100, 0.100, 0.05)</MainHand>
+        <ThingTargets>
+          <li>OES_Hammer</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Genesis -->
+		<MainHand>(-0.200, 0.100, -0.165)</MainHand>
+        <SecHand>(-0.080, -0.100, -0.055)</SecHand>
+        <ThingTargets>
+          <li>OES_BigAxe</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Shikigami -->
+		<MainHand>(-0.350, 0.100, -0.350)</MainHand>
+        <SecHand>(-0.245, -0.100, -0.245)</SecHand>
+        <ThingTargets>
+          <li>OES_BigSword</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Typhon -->
+		<MainHand>(0.000, 0.000, 0.000)</MainHand>
+        <ThingTargets>
+          <li>OES_PowerFist</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Reaper -->
+		<MainHand>(-0.195, 0.100, -0.44)</MainHand>
+        <SecHand>(-0.135, -0.100, -0.315)</SecHand>
+        <ThingTargets>
+          <li>OES_Katana</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Elitra -->
+		<MainHand>(-0.220, 0.100, -0.220)</MainHand>
+        <SecHand>(-0.055, -0.100, -0.055)</SecHand>
+        <ThingTargets>
+          <li>OES_Spear</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Guillotine -->
+		<MainHand>(-0.040, 0.100, -0.040)</MainHand>
+        <SecHand>(0.040, -0.100, 0.040)</SecHand>
+        <ThingTargets>
+          <li>OES_DualSword</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Imperfect -->
+		<MainHand>(-0.340, 0.100, 0.0)</MainHand>
+        <ThingTargets>
+          <li>OES_Rapier</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Souldrinker -->
+		<MainHand>(-0.135, 0.100, 0.05)</MainHand>
+        <ThingTargets>
+          <li>OES_Scythe</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Hellscream -->
+		<MainHand>(-0.180, 0.100, -0.035)</MainHand>
+        <ThingTargets>
+          <li>OES_ShotgunS</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Cerberus -->
+		<MainHand>(-0.240, 0.100, -0.075)</MainHand>
+        <SecHand>(0.09, -0.100, -0.075)</SecHand>
+        <ThingTargets>
+          <li>OES_Rifle</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Pride -->
+		<MainHand>(-0.087, -0.100, 0.0)</MainHand>
+        <ThingTargets>
+          <li>OES_Bow</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Heroic Unchained -->
+		<MainHand>(-0.440, 0.100, 0.100)</MainHand>
+        <SecHand>(-0.150, -0.100, 0.180)</SecHand>
+        <ThingTargets>
+          <li>OES_Minigun</li>
+        </ThingTargets>
+      </li>
+
+<!--=============== EGO ====================-->
+	  <li>
+        <!-- Lymocyst -->
+		<MainHand>(-0.145, 0.100, -0.020)</MainHand>
+        <ThingTargets>
+          <li>EGO_Knife</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Devourer -->
+		<MainHand>(0.000, 0.000, 0.000)</MainHand>
+        <ThingTargets>
+          <li>EGO_Claws</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Bonesword -->
+		<MainHand>(-0.295, 0.100, -0.320)</MainHand>
+		<SecHand>(-0.230, -0.100, -0.250)</SecHand>
+        <ThingTargets>
+          <li>EGO_BigSword</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Batterbone -->
+		<MainHand>(-0.215, 0.100, -0.215)</MainHand>
+		<SecHand>(-0.125, -0.100, -0.105)</SecHand>
+        <ThingTargets>
+          <li>EGO_BigHammer</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Batterskull -->
+		<MainHand>(-0.120, 0.100, -0.120)</MainHand>
+		<SecHand>(-0.070, -0.100, 0.000)</SecHand>
+        <ThingTargets>
+          <li>EGO_BigScythe</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Carnifex -->
+		<MainHand>(-0.060, 0.100, -0.095)</MainHand>
+		<SecHand>(0.035, -0.100, 0.020)</SecHand>
+        <ThingTargets>
+          <li>EGO_Scepter</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Proboscis -->
+		<MainHand>(-0.300, 0.100, -0.210)</MainHand>
+        <ThingTargets>
+          <li>EGO_Whip</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Humunculus -->
+		<MainHand>(-0.215, 0.100, -0.050)</MainHand>
+        <ThingTargets>
+          <li>EGO_Pistol</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Corrupter -->
+		<MainHand>(-0.295, 0.100, -0.085)</MainHand>
+		<SecHand>(0.100, -0.100, -0.050)</SecHand>
+        <ThingTargets>
+          <li>EGO_Shotgun</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Toxocyst -->
+		<MainHand>(-0.090, 0.100, -0.045)</MainHand>
+		<SecHand>(0.215, -0.100, 0.005)</SecHand>
+        <ThingTargets>
+          <li>EGO_SMG</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Patagius -->
+		<MainHand>(-0.270, 0.100, -0.110)</MainHand>
+		<SecHand>(0.140, -0.100, -0.060)</SecHand>
+        <ThingTargets>
+          <li>EGO_SniperRifle</li>
+        </ThingTargets>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech">
+        <!-- Sporothrix -->
+		<MainHand>(-0.460, 0.100, 0.165)</MainHand>
+		<SecHand>(-0.070, -0.100, 0.100)</SecHand>
+        <ThingTargets>
+          <li>EGO_GrenadeLauncher</li>
+        </ThingTargets>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech">
+        <!-- Ulcerated -->
+		<MainHand>(0.020, 0.100, -0.200)</MainHand>
+		<SecHand>(-0.245, -0.100, -0.145)</SecHand>
+        <ThingTargets>
+          <li>EGO_RocketLauncher</li>
+        </ThingTargets>
+      </li>	  
+
+<!--=============== OE ====================-->
+	  <li>
+        <!-- Lloyd's Shovel -->
+		<MainHand>(-0.390, 0.100, -0.390)</MainHand>
+		<SecHand>(-0.080, -0.100, -0.080)</SecHand>
+        <ThingTargets>
+          <li>OE_Trophy_Shovel</li>
+		  <li>OE_Trophy_Shovel_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Black Prince Sword -->
+		<MainHand>(-0.255, 0.100, -0.255)</MainHand>
+        <ThingTargets>
+          <li>OE_Trophy_BrokenSword</li>
+		  <li>OE_Trophy_BrokenSword_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Forgestorm -->
+		<MainHand>(-0.125, 0.100, 0.000)</MainHand>
+        <ThingTargets>
+          <li>OE_Trophy_MechHammer</li>
+		  <li>OE_Trophy_MechHammer_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Prototype sX-02a -->
+		<MainHand>(-0.165, 0.100, -0.020)</MainHand>
+        <ThingTargets>
+          <li>OE_Trophy_RepairPistol</li>
+		  <li>OE_Trophy_RepairPistol_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Titanstrike -->
+		<MainHand>(-0.290, 0.100, -0.050)</MainHand>
+		<SecHand>(0.015, -0.100, -0.135)</SecHand>
+        <ThingTargets>
+          <li>OE_Trophy_UnstableGun</li>
+		  <li>OE_Trophy_UnstableGun_P</li>
+        </ThingTargets>
+      </li>
+	  <li>
+        <!-- Ashisogi Jizō -->
+		<MainHand>(-0.100, 0.100, 0.010)</MainHand>
+        <ThingTargets>
+          <li>OE_Trophy_SampleCollector</li>
+		  <li>OE_Trophy_SampleCollector_P</li>
+        </ThingTargets>
+      </li>
+    </WeaponCompLoader>
+  </WHands.ClutterHandsTDef>
+
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

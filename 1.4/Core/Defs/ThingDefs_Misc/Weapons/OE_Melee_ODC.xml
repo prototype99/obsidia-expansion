@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Melee ====================-->
+  <ThingDef Name="ODCMeleeBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<tradeTags>
+      <li>ODCWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== ODC Knife ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_Knife</defName>
+    <label>Scar</label>
+    <description>Common Knife used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>435</MarketValue>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+	  <OE_Platinum>25</OE_Platinum>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Sword ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_Sword</defName>
+    <label>Mercy - Emergent</label>
+    <description>Moded Sword used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>635</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Knife>1</ODC_Knife>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Big Sword ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_BigSword</defName>
+    <label>Bequest - Apex</label>
+    <description>Specialised Big Sword used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/BigSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCHeavyMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1035</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.10</MoveSpeed>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Sword>1</ODC_Sword>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Dual Sword ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_DualSword</defName>
+    <label>Guillotine - Apex</label>
+    <description>Specialised Dual Sword used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/DualSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCHeavyMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1035</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.10</MoveSpeed>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Sword>1</ODC_Sword>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Rapier ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_Rapier</defName>
+    <label>Imperfect - Emergent</label>
+    <description>Moded Rapier used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Rapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>635</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Knife>1</ODC_Knife>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Rapier ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_RapierGuard</defName>
+    <label>Defiant - Apex</label>
+    <description>Specialised Rapier used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/RapierGuard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCHeavyMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>835</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.80</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Elemental Rapier ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_Rapier_Acid</defName>
+    <label>Enigma - Apex(Acid)</label>
+    <description>Specialised Rapier used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/Rapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>835</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_Rapier_Cryo</defName>
+    <label>Enigma - Apex(Cryo)</label>
+    <description>Specialised Rapier used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/Rapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>835</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_Rapier_Fire</defName>
+    <label>Enigma - Apex(Fire)</label>
+    <description>Specialised Rapier used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/Rapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>835</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="ODCMeleeBase">
+    <defName>ODC_Rapier_EMP</defName>
+    <label>Enigma - Apex(EMP)</label>
+    <description>Specialised Rapier used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/Rapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>835</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

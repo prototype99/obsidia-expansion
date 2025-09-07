@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Nomad ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Nomad</defName>
+    <label>ODC nomad</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+	  <li>ODCNomad</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+	  <li>ODCLightGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<combatPower>100</combatPower>
+  </PawnKindDef>
+
+<!--=============== Trader ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Trader</defName>
+    <label>ODC trader</label>
+	<itemQuality>Good</itemQuality>
+	<trader>true</trader>
+    <apparelMoney>15000~18000</apparelMoney>
+	<apparelTags>
+	  <li>ODCNomad</li>
+	  <li>ODCTrader</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>5500~7500</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+	  <li>ODCLightGun</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+	<inventoryOptions>
+     <skipChance>0.70</skipChance>
+     <subOptionsTakeAll>
+       <li>
+         <thingDef>Silver</thingDef>
+         <countRange>150~350</countRange>
+       </li>
+     </subOptionsTakeAll>
+   </inventoryOptions>
+  </PawnKindDef>
+
+<!--=============== Recon ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Recon_Melee</defName>
+    <label>ODC recon</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~25000</apparelMoney>
+	<apparelTags>
+	  <li>ODCRecon</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCRecon_Barrier</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCRecon_Prestige</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Recon_Ranged</defName>
+    <label>ODC recon</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~25000</apparelMoney>
+	<apparelTags>
+	  <li>ODCRecon</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCRecon_Shield</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCRecon_Prestige</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>ODCLightGun</li>
+	  <li>ODCBaseGun</li>
+	  <li>ODCShortGun</li>
+	  <li>ODCHeavyGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+	</skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Recon_Sniper</defName>
+    <label>ODC recon</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~25000</apparelMoney>
+	<apparelTags>
+	  <li>ODCRecon</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCRecon_Shield</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCRecon_Prestige</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>5000~6500</weaponMoney>
+	<weaponTags>
+      <li>ODCSniperGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+	</skills>
+  </PawnKindDef>
+
+<!--=============== Duelist ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Duelist_Melee</defName>
+    <label>ODC duelist</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~25000</apparelMoney>
+	<apparelTags>
+	  <li>ODCDuelist</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCDuelist_Barrier</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCDuelist_Prestige</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+	</skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Duelist_HeavyMelee</defName>
+    <label>ODC duelist</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~25000</apparelMoney>
+	<apparelTags>
+	  <li>ODCDuelist</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCDuelist_Barrier</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCDuelist_Prestige</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>5000~6500</weaponMoney>
+	<weaponTags>
+      <li>ODCHeavyMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+	</skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Duelist_Ranged</defName>
+    <label>ODC duelist</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~25000</apparelMoney>
+	<apparelTags>
+	  <li>ODCDuelist</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCDuelist_Shield</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCDuelist_Prestige</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>ODCLightGun</li>
+	  <li>ODCBaseGun</li>
+	  <li>ODCShortGun</li>
+	  <li>ODCHeavyGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+	</skills>  
+  </PawnKindDef>
+
+<!--=============== Leaders ====================-->
+<!--=============== Boss ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Leader_Boss</defName>
+    <label>Syndicate boss</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>18000~27500</apparelMoney>
+	<apparelTags>
+	  <li>ODCRecon</li>
+	  <li>OEModuleW</li>
+	  <li>OEModuleI</li>
+	  <li>OEModuleB</li>
+	  <li>OEModuleT</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCRecon_Shield</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCRecon_Prestige</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15500</weaponMoney>
+	<weaponTags>
+      <li>ODCLightGun</li>
+	  <li>ODCBaseGun</li>
+	  <li>ODCShortGun</li>
+	  <li>ODCSniperGun</li>
+	  <li>ODCHeavyGun</li>
+	  <li>ODCTrophyRanged</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>200</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~12</range>
+      </li>
+	</skills>  
+  </PawnKindDef>
+
+<!--=============== Mayor ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Leader_Mayor</defName>
+    <label>Renegade mayor</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>18000~27500</apparelMoney>
+	<apparelTags>
+	  <li>ODCDuelist</li>
+	  <li>OEModuleW</li>
+	  <li>OEModuleI</li>
+	  <li>OEModuleB</li>
+	  <li>OEModuleT</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCDuelist_Barrier</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCRecon_Prestige</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15500</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+	  <li>ODCHeavyMelee</li>
+	  <li>ODCTrophyMelee</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>200</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~12</range>
+      </li>
+	</skills>  
+  </PawnKindDef>
+
+<!--=============== Admiral ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Leader_Admiral</defName>
+    <label>Pilgrim Admiral</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>18000~27500</apparelMoney>
+	<apparelTags>
+	  <li>ODCNomad</li>
+	  <li>ODCRecon</li>
+	  <li>ODCDuelist</li>
+	  <li>OEModuleW</li>
+	  <li>OEModuleI</li>
+	  <li>OEModuleB</li>
+	  <li>OEModuleT</li>
+	  <li>ODCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCRecon_Shield</li>
+	  <li>ODCRecon_Barrier</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCRecon_Prestige</li>
+	  <li>ODCDuelist_Shield</li>
+	  <li>ODCDuelist_Barrier</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">ODCRecon_Prestige</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15500</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+	  <li>ODCHeavyMelee</li>
+	  <li>ODCTrophyMelee</li>
+	  <li>ODCLightGun</li>
+	  <li>ODCBaseGun</li>
+	  <li>ODCShortGun</li>
+	  <li>ODCSniperGun</li>
+	  <li>ODCHeavyGun</li>
+	  <li>ODCTrophyRanged</li>
+    </weaponTags>
+    <techHediffsMoney>4000~6000</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>200</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~10</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~10</range>
+      </li>
+	</skills>
+  </PawnKindDef>
+
+<!--=============== Dominator ====================-->
+<!--=============== Light ====================-->
+  <PawnKindDef ParentName="ODCKindBaseMechDominatorLight">
+    <defName>ODC_Mech_Dominator_Light</defName>
+    <label>ODC Dominator(Light)</label>
+	<allowInMechClusters>false</allowInMechClusters>
+  </PawnKindDef>
+<!--=============== Heavy ====================-->
+  <PawnKindDef ParentName="ODCKindBaseMechDominatorHeavy">
+    <defName>ODC_Mech_Dominator_Heavy</defName>
+    <label>ODC Dominator(Heavy)</label>
+	<allowInMechClusters>false</allowInMechClusters>
+  </PawnKindDef>
+
+</Defs>

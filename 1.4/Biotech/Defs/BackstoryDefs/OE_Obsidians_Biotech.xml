@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Mechanitor ====================-->
+  <BackstoryDef>
+    <defName>OE_Mechanitor</defName>
+    <title>obsidia mechanitor</title>
+    <titleShort>mechanitor</titleShort>
+    <baseDesc>[PAWN_nameDef] representative of one of the most popular Obsidia mecha fan clubs. Becoming a full-fledged mechanitor is able to reveal hiden potential. Possesses excellent creative skills.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Constructing</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <li><key>Construction</key><value>4</value></li>
+      <li><key>Crafting</key><value>4</value></li>
+	  <li><key>Artistic</key><value>-4</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>OEFighters</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEMechLove>0</OEMechLove>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

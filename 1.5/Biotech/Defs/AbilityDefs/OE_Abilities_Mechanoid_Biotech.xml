@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Queen's Grip ====================-->
+  <AbilityDef>
+    <defName>OE_MechQueenGrip</defName>
+    <label>queen's grip</label>
+    <description>Queen's Grip grant the Arachna Queen an ability to teleport the target right next to the caster. Objects which are too large cannot be teleported.</description>
+    <iconPath>UI/Abilities/OE_MechQueenGrip</iconPath>
+    <cooldownTicksRange>3750</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<statBases>
+      <Ability_EffectRadius>2.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetItems>False</canTargetItems>
+        <canTargetPawns>True</canTargetPawns>
+		<canTargetBuildings>False</canTargetBuildings>
+		<thingCategory>Item</thingCategory>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityTeleport">
+        <compClass>CompAbilityEffect_Teleport</compClass>
+        <destination>Caster</destination>
+        <requiresLineOfSight>True</requiresLineOfSight>
+        <range>24.9</range>
+		<stunTicks>18~60</stunTicks>
+        <goodwillImpact>-15</goodwillImpact>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== Queen's Curse ====================-->
+  <AbilityDef>
+    <defName>OE_MechQueenCurse</defName>
+    <label>queen's curse</label>
+    <description>Queen's Curse grant the Arachna Queen an ability to fully disarm the target and increases incoming damage for an extended 12 hours.</description>
+    <iconPath>UI/Abilities/OE_MechQueenCurse</iconPath>
+    <cooldownTicksRange>120000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetItems>False</canTargetItems>
+        <canTargetPawns>True</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_QueenCurse</hediffDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_QueenCurse</defName>
+    <label>Cursed</label>
+    <labelNoun>cursed</labelNoun>
+    <description>The curse fully disarms the target and increases incoming damage. The curse has a very long duration.</description>
+	<hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.8,0.8,0.35)</defaultLabelColor>
+	<makesSickThought>true</makesSickThought>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Curse_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <IncomingDamageFactor>1.5</IncomingDamageFactor>
+        </statOffsets>
+		<capMods>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<setMax>0.0</setMax>
+		  </li>
+		</capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Drone Assault ====================-->
+  <AbilityDef>
+    <defName>OE_MechDroneJump</defName>
+    <label>drone assault</label>
+    <description>Jumps towards its target.</description>
+    <iconPath>UI/Abilities/OE_MechDroneJump</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+	  <violent>true</violent>
+      <range>12.9</range>
+      <warmupTime>0.25</warmupTime>
+	  <requireLineOfSight>true</requireLineOfSight>
+	  <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+	  <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetItems>False</canTargetItems>
+        <canTargetPawns>True</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+<!--=============== Chaos Lord ====================-->
+<!--=============== Grand Redline ====================-->
+  <AbilityDef>
+    <defName>OE_MechLordRedline</defName>
+    <label>grand redline</label>
+    <description>Grand Redline mode grant the Chaos Lord an ability to increased combat potential and movespeed.</description>
+    <iconPath>UI/Abilities/OE_MechLordRedline</iconPath>
+	<cooldownTicksRange>25000</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+    <writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>False</drawAimPie>
+	  <range>-1</range>
+      <warmupTime>0.1</warmupTime>
+	  <targetable>false</targetable>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+	    <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+    </verbProperties>
+    <comps>
+	  <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_LordRedline</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_LordRedline</defName>
+    <label>grand redline</label>
+    <labelNoun>grand redline</labelNoun>
+    <description>A special Chaos Lord's mode that raises their combat potential and movespeed.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Redline_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+	  <li>
+		<minSeverity>0.01</minSeverity>
+		<statOffsets>
+		  <AimingDelayFactor>-0.75</AimingDelayFactor>
+		  <RangedCooldownFactor MayRequire="Ludeon.Rimworld.Biotech">-0.75</RangedCooldownFactor>
+		  <MoveSpeed>2.75</MoveSpeed>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Grand Vanguard ====================-->
+  <AbilityDef>
+    <defName>OE_MechLordVanguard</defName>
+    <label>grand vanguard</label>
+    <description>Vanguard program grant the Chaos Lord an ability to reducing incoming damage with small reducing movespeed.</description>
+    <iconPath>UI/Abilities/OE_MechLordVanguard</iconPath>
+	<cooldownTicksRange>20000</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+    <writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>False</drawAimPie>
+	  <range>-1</range>
+      <warmupTime>0.1</warmupTime>
+	  <targetable>false</targetable>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+		 <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+    </verbProperties>
+    <comps>
+	   <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_Vanguard</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== Chaos Blink ====================-->
+  <AbilityDef>
+    <defName>OE_MechLordBlink</defName>
+    <label>chaos blink</label>
+    <description>Blink device grant the Chaos Lord an ability to teleport the target to a random position not too far from its starting point.</description>
+	<iconPath>UI/Abilities/OE_MechLordBlink</iconPath>
+	<cooldownTicksRange>5000</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+	<targetRequired>False</targetRequired>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <range>-1</range>
+	  <warmupTime>0.1</warmupTime>
+	  <targetable>false</targetable>
+	  <targetParams>
+		 <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+    </verbProperties>
+	<comps>
+      <li Class="CompProperties_AbilityTeleport">
+        <compClass>CompAbilityEffect_Teleport</compClass>
+        <destination>RandomInRange</destination>
+        <randomRange>6.9~24.9</randomRange>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>10</clamorRadius>
+        <destClamorType>Ability</destClamorType>
+        <destClamorRadius>10</destClamorRadius>
+        <stunTicks>18~60</stunTicks>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

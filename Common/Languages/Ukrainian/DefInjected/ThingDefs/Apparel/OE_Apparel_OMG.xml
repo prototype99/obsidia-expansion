@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMG - Helmet ====================-->
+<OMG_Helmet_Classic.label>Шолом Найманця(Класика)</OMG_Helmet_Classic.label>
+<OMG_Helmet_Classic.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Helmet_Classic.description>
+
+<!--=============== OMG - Armor ====================-->
+<OMG_Armor_Corsair.label>Броня Найманця(Корсар)</OMG_Armor_Corsair.label>
+<OMG_Armor_Corsair.verbs.Verb_SmokePop.label>Броня Найманця(Корсар)</OMG_Armor_Corsair.verbs.Verb_SmokePop.label>
+<OMG_Armor_Corsair.description>Сильно модифікована важка силова броня, що відмінно захищає власника. Призначена для використання Найманцями.\n\nМодифікований з додаванням Димової шашки і позбавляє предмети рівнів якості.</OMG_Armor_Corsair.description>
+<OMG_Armor_Corsair.comps.CompApparelReloadable.chargeNoun>димова завіса</OMG_Armor_Corsair.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Corsair.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Armor_Corsair.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_Armor_Demolition.label>Броня Найманця(Підривник)</OMG_Armor_Demolition.label>
+<OMG_Armor_Demolition.verbs.Verb_LaunchProjectileStatic.label>Броня Найманця(Підривник)</OMG_Armor_Demolition.verbs.Verb_LaunchProjectileStatic.label>
+<OMG_Armor_Demolition.description>Сильно модифікована важка силова броня, що відмінно захищає власника. Призначена для використання Найманцями.\n\nМодифікований з додаванням гранатомета і позбавляє предмети рівнів якості.</OMG_Armor_Demolition.description>
+<OMG_Armor_Demolition.comps.CompApparelReloadable.chargeNoun>граната</OMG_Armor_Demolition.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Demolition.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Armor_Demolition.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_Armor_Commando.label>Броня Найманця(Коммандос)</OMG_Armor_Commando.label>
+<OMG_Armor_Commando.description>Сильно модифікована важка силова броня, що відмінно захищає власника. Призначена для використання Найманцями.\n\nМодифікований з додаванням ранця з туреллю, що працює від акумулятора і позбавляє предмети рівнів якості.</OMG_Armor_Commando.description>
+<OMG_Armor_Commando.verbs.deploy_turret.label>поставити турель</OMG_Armor_Commando.verbs.deploy_turret.label>
+<OMG_Armor_Commando.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Armor_Commando.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Commando.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Armor_Commando.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_Armor_Swarmling.label>Броня Найманця(Роєвик)</OMG_Armor_Swarmling.label>
+<OMG_Armor_Swarmling.description>Сильно модифікована важка силова броня, що відмінно захищає власника. Призначена для використання Найманцями.\n\nМодифіковано з додаванням ранця, що дає змогу розгортати дронів, які працюють від акумулятора і позбавляє предмети рівнів якості.</OMG_Armor_Swarmling.description>
+<OMG_Armor_Swarmling.verbs.deploy_swarmling_drone.label>розгорнути дрона-роєвика</OMG_Armor_Swarmling.verbs.deploy_swarmling_drone.label>
+<OMG_Armor_Swarmling.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Armor_Swarmling.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Swarmling.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Armor_Swarmling.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OМG - Grenades ====================-->
+<OMG_Grenade.label>взривна граната Найманців</OMG_Grenade.label>
+
+<Grenade_Armor_OMG_TurretPack.label>капсула ранця з OMG туреллю</Grenade_Armor_OMG_TurretPack.label>
+<Grenade_Armor_OMG_SwarmlingPack.label>капсула з OMG дроном-роєвиком</Grenade_Armor_OMG_SwarmlingPack.label>
+
+<!--=============== OMG Trophy Helmet ====================-->
+<!--=============== Forgemind ====================-->
+<OMG_Trophy_Helmet_Forgemind.label>Шолом Найманця(Розум Кузні)</OMG_Trophy_Helmet_Forgemind.label>
+<OMG_Trophy_Helmet_Forgemind.verbs.Verb_Spawn.label>Шолом Найманця(Розум Кузні)</OMG_Trophy_Helmet_Forgemind.verbs.Verb_Spawn.label>
+<OMG_Trophy_Helmet_Forgemind.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає власнику доступ до системи орбітальних метео-супутників.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Forgemind.description>
+<OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Hellrain ====================-->
+<OMG_Trophy_Helmet_Hellrain.label>Шолом Найманця(Пекельний дощ)</OMG_Trophy_Helmet_Hellrain.label>
+<OMG_Trophy_Helmet_Hellrain.verbs.Verb_Bombardment.label>Шолом Найманця(Пекельний дощ)</OMG_Trophy_Helmet_Hellrain.verbs.Verb_Bombardment.label>
+<OMG_Trophy_Helmet_Hellrain.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає власнику доступ до системи орбітального бомбардування.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Hellrain.description>
+<OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Orbicore ====================-->
+<OMG_Trophy_Helmet_Orbicore.label>Шолом Найманця(Орбікор)</OMG_Trophy_Helmet_Orbicore.label>
+<OMG_Trophy_Helmet_Orbicore.verbs.Verb_PowerBeam.label>Шолом Найманця(Орбікор)</OMG_Trophy_Helmet_Orbicore.verbs.Verb_PowerBeam.label>
+<OMG_Trophy_Helmet_Orbicore.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає власнику доступ до системи силового променя.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Orbicore.description>
+<OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Neuroflash ====================-->
+<OMG_Trophy_Helmet_Neuroflash.label>Шолом Найманця(Нейрофлеш)</OMG_Trophy_Helmet_Neuroflash.label>
+<OMG_Trophy_Helmet_Neuroflash.verbs.Verb_CastTargetEffect.label>Шолом Найманця(Нейрофлеш)</OMG_Trophy_Helmet_Neuroflash.verbs.Verb_CastTargetEffect.label>
+<OMG_Trophy_Helmet_Neuroflash.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає власнику сили Списа потрясіння.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Neuroflash.description>
+<OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Mindtwister ====================-->
+<OMG_Trophy_Helmet_Mindtwister.label>Шолом Найманця(Головоломка)</OMG_Trophy_Helmet_Mindtwister.label>
+<OMG_Trophy_Helmet_Mindtwister.verbs.Verb_CastTargetEffect.label>Шолом Найманця(Головоломка)</OMG_Trophy_Helmet_Mindtwister.verbs.Verb_CastTargetEffect.label>
+<OMG_Trophy_Helmet_Mindtwister.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає власнику сили Списа божевілля.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Mindtwister.description>
+<OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Gasveil ====================-->
+<OMG_Trophy_Helmet_Gasveil.label>Шолом Найманця(Гейзер)</OMG_Trophy_Helmet_Gasveil.label>
+<OMG_Trophy_Helmet_Gasveil.verbs.Verb_DeployToxPack.label>Шолом Найманця(Гейзер)</OMG_Trophy_Helmet_Gasveil.verbs.Verb_DeployToxPack.label>
+<OMG_Trophy_Helmet_Gasveil.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає вбудований модуль із токсичним пакетом.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Gasveil.description>
+<OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Dronefather ====================-->
+<OMG_Trophy_Helmet_Dronefather.label>Шолом Найманця(Отець Дронов)</OMG_Trophy_Helmet_Dronefather.label>
+<OMG_Trophy_Helmet_Dronefather.verbs.Verb_MechCluster.label>Шолом Найманця(Отець Дронов)</OMG_Trophy_Helmet_Dronefather.verbs.Verb_MechCluster.label>
+<OMG_Trophy_Helmet_Dronefather.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає власнику доступ до системи орбітальної висадки механоїдів.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Dronefather.description>
+<OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Firemark ====================-->
+<OMG_Trophy_Helmet_Firemark.label>Шолом Найманця(Вогняна Мітка)</OMG_Trophy_Helmet_Firemark.label>
+<OMG_Trophy_Helmet_Firemark.verbs.Verb_LaunchProjectileStaticPsychic.label>Шолом Найманця(Вогняна Мітка)</OMG_Trophy_Helmet_Firemark.verbs.Verb_LaunchProjectileStaticPsychic.label>
+<OMG_Trophy_Helmet_Firemark.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає вбудований модуль із диспенсером для ракети-дизраптор.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Firemark.description>
+<OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_DisruptorFlare.label>ракета-дизраптор</OMG_DisruptorFlare.label>
+
+<!--=============== Fleshcrafter ====================-->
+<OMG_Trophy_Helmet_Fleshcrafter.label>Шолом Найманця(Плоторіз)</OMG_Trophy_Helmet_Fleshcrafter.label>
+<OMG_Trophy_Helmet_Fleshcrafter.verbs.Verb_CastTargetEffectBiomutationLance.label>Шолом Найманця(Плоторіз)</OMG_Trophy_Helmet_Fleshcrafter.verbs.Verb_CastTargetEffectBiomutationLance.label>
+<OMG_Trophy_Helmet_Fleshcrafter.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає власнику сили Списа біомутації.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Fleshcrafter.description>
+<OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Necrospark ====================-->
+<OMG_Trophy_Helmet_Necrospark.label>Шолом Найманця(Некроспалах)</OMG_Trophy_Helmet_Necrospark.label>
+<OMG_Trophy_Helmet_Necrospark.verbs.Verb_LaunchProjectileStatic.label>Шолом Найманця(Некроспалах)</OMG_Trophy_Helmet_Necrospark.verbs.Verb_LaunchProjectileStatic.label>
+<OMG_Trophy_Helmet_Necrospark.description>Сильно модифікований важкий силовий шолом, що чудово захищає власника. Призначений для використання Найманцями.\n\nЦя варіація надає вбудований модуль із диспенсером для капсул із порошком мертвого життя.\n\nЦя модифікація позбавляє предмети рівнів якості.</OMG_Trophy_Helmet_Necrospark.description>
+<OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.chargeNoun>заряд</OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_OMG_Deadlife.label>капсула з порошком мертвого життя</Grenade_OMG_Deadlife.label>
+<Shell_OMG_Deadlife.label>капсула з порошком мертвого життя</Shell_OMG_Deadlife.label>
+
+</LanguageData>

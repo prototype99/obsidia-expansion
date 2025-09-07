@@ -1,0 +1,1491 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Player gettable ====================-->
+<!--=============== Base ====================-->
+  <RoyalTitleDef Abstract="True" Name="OEBaseObsidiaEmpireTitle" >
+    <tags>
+      <li>ObsidiaEmpireTitle</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEWorker</li>
+		  <li>OEMilitary</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+  </RoyalTitleDef>
+
+<!--=============== Aspirant ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_1_Aspirant</defName>
+    <label>aspirant</label>
+    <description>The title of Aspirant marks the beginning of one’s journey within the Obsidia Empire. Aspirants show promise in academic, technical, or administrative fields, and must prove their loyalty and skill through training and service. This initial stage determines their future standing, and many outsiders start as Aspirants when seeking to join the Obsidia Empire.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+	<permitPointsAwarded>1</permitPointsAwarded>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+	<maxPsylinkLevel>1</maxPsylinkLevel>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_01_Aspirant</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_01_Aspirant</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+ 
+<!--=============== Arbiter ====================--> 
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_2_Arbiter</defName>
+    <label>arbiter</label>
+    <description>Arbiters are entrusted with maintaining order and justice within the territories of the Obsidia Empire. They act as impartial judges in matters of dispute, ensuring that the laws of the Obsidia Empire are upheld with precision and fairness. Arbiters often oversee negotiations, settlements, and legal proceedings, handling both internal conflicts and relations with trusted external factions. Their decisions carry significant weight, making them key figures in the Obsidia Empire’s judiciary system.</description>
+    <seniority>100</seniority>
+    <favorCost>9</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+	<commonality>1</commonality>
+	<maxPsylinkLevel>2</maxPsylinkLevel>
+	<permitPointsAwarded>1</permitPointsAwarded>
+	<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+	<foodRequirement>
+      <minQuality>MealSimple</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">OE_Pearlpeach_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_02_Arbiter</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_02_Arbiter</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Custodian ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_3_Custodian</defName>
+    <label>custodian</label>
+	<labelFemale>custodiana</labelFemale>
+    <description>The title of Custodian is given to those responsible for preserving the Obsidia Empire’s most critical technologies, knowledge, and resources. Custodians guard vast libraries of data, secure rare materials, and oversee technological relics from the Obsidia Empire’s ancient past. Beyond merely safeguarding, Custodians are also charged with advancing these resources, ensuring that the Obsidia Empire’s legacy continues to evolve. Custodians often lead research initiatives or manage vital industrial complexes.</description>
+    <seniority>200</seniority>
+    <favorCost>21</favorCost>
+    <changeHeirQuestPoints>1200</changeHeirQuestPoints>
+	<maxPsylinkLevel>3</maxPsylinkLevel>
+	<recruitmentResistanceOffset>15</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>1</decreeMentalBreakCommonality>
+	<permitPointsAwarded>1</permitPointsAwarded>
+	<minExpectation>Moderate</minExpectation>
+	<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>16</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>20</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+		  <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealSimple</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">OE_Pearlpeach_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_03_Custodian</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_03_Custodian</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Overseer ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_4_Overseer</defName>
+    <label>overseer</label>
+    <description>An Overseer holds authority over a region or critical operation within the Obsidia Empire, such as a planetary colony or a large-scale research project. They are responsible for ensuring that productivity, efficiency, and discipline are maintained at the highest levels. Overseers report directly to the central governing body, acting as the eyes and ears of the Obsidia Empire in their assigned domains. Their leadership is essential to maintaining the Obsidia Empire’s far-reaching expansion and infrastructure.</description>
+    <seniority>300</seniority>
+    <favorCost>37</favorCost>
+    <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+	<decreeMtbDays>-1</decreeMtbDays>
+	<maxPsylinkLevel>4</maxPsylinkLevel>
+	<recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>2</decreeMentalBreakCommonality>
+	<permitPointsAwarded>1</permitPointsAwarded>
+	<canBeInherited>True</canBeInherited>
+	<minExpectation>Moderate</minExpectation>
+	<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Neck</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEModuleT</li>
+		  <li>OEModuleB</li>
+		  <li>OEModuleHB</li>
+		  <li>OEModuleI</li>
+		  <li>OEModuleHI</li>
+		  <li>OEModuleW</li>
+		  <li>OEModuleHW</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>35</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+		  <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+	  <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">OE_Pearlpeach_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_04_Overseer</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_04_Overseer</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== High Master ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_5_HighMaster</defName>
+    <label>high master</label>
+	<labelFemale>high mistress</labelFemale>
+    <description>A High Master is a recognized expert in a specific discipline, whether it be in technology, administration, or philosophical teachings of the Obsidia Empire. High Masters are often called upon to mentor lower-ranked members, lead grand projects, or make key decisions that shape the future of their specialized fields. Their wisdom and expertise make them invaluable assets to the Obsidia Empire, and they hold considerable respect and authority in their areas of mastery.</description>
+    <seniority>400</seniority>
+    <favorCost>61</favorCost>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+    <decreeMtbDays>-1</decreeMtbDays>
+	<maxPsylinkLevel>5</maxPsylinkLevel>
+	<recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>3</decreeMentalBreakCommonality>
+	<permitPointsAwarded>2</permitPointsAwarded>
+	<canBeInherited>True</canBeInherited>
+	<minExpectation>High</minExpectation>
+	<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Neck</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEModuleT</li>
+		  <li>OEModuleB</li>
+		  <li>OEModuleHB</li>
+		  <li>OEModuleI</li>
+		  <li>OEModuleHI</li>
+		  <li>OEModuleW</li>
+		  <li>OEModuleHW</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+	<throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+		  <li>GrandThrone</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_StellicThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>100</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>160</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>OE_Lighting_CeilingLamp_Small</li>
+          <li>OE_Lighting_CeilingLamp_Big</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Column</li>
+		  <li>OE_Column_Armored</li>
+		  <li>OE_Column_Light</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_Pillar</li>
+        </things>
+        <count>4</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>2</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harp</li>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_PipeOrgan</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>50</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+		  <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Dresser</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+	  <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">OE_Pearlpeach_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<grantedAbilities>
+      <li>OE_RoyalTarget</li>
+    </grantedAbilities>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_05_HighMaster</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_05_HighMaster</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Chief Advisor ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_6_ChiefAdvisor</defName>
+    <label>chief advisor</label>
+	<labelFemale>chief advisoress</labelFemale>
+    <description>The Chief Advisor serves as the closest counsel to the most powerful leaders of the Obsidia Empire. Tasked with providing strategic guidance and insight, the Chief Advisor plays a pivotal role in shaping policy, governance, and long-term planning. Their knowledge spans a wide range of fields, and they often speak with the voice of the Obsidia Empire’s leadership in diplomatic missions or in the internal council. A Chief Advisor’s influence can often decide the direction of entire sectors of the Obsidia Empire’s operations.</description>
+    <seniority>500</seniority>
+    <favorCost>93</favorCost>
+    <changeHeirQuestPoints>2800</changeHeirQuestPoints>
+    <decreeMtbDays>-1</decreeMtbDays>
+	<maxPsylinkLevel>6</maxPsylinkLevel>
+	<recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>5</decreeMentalBreakCommonality>
+	<permitPointsAwarded>2</permitPointsAwarded>
+	<canBeInherited>True</canBeInherited>
+	<minExpectation>SkyHigh</minExpectation>
+	<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+	<disabledWorkTags>
+      <li>Cleaning</li>
+    </disabledWorkTags>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Neck</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEModuleT</li>
+		  <li>OEModuleB</li>
+		  <li>OEModuleHB</li>
+		  <li>OEModuleI</li>
+		  <li>OEModuleHI</li>
+		  <li>OEModuleW</li>
+		  <li>OEModuleHW</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+	<throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+		  <li>GrandThrone</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_StellicThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>140</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>180</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>OE_Lighting_CeilingLamp_Small</li>
+          <li>OE_Lighting_CeilingLamp_Big</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+		  <li>OE_Column_Armored</li>
+		  <li>OE_Column_Light</li>
+        </things>
+        <count>4</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>2</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harp</li>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_PipeOrgan</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>65</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Dresser</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<grantedAbilities>
+      <li>OE_RoyalTarget</li>
+    </grantedAbilities>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_06_ChiefAdvisor</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_06_ChiefAdvisor</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Grand Executor ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_7_GrandExecutor</defName>
+    <label>grand executor</label>
+    <description>The Grand Executor is responsible for enforcing the will of the Obsidia Empire across its vast domains. As one of the highest authority figures, they are tasked with executing major policies, overseeing key operations, and ensuring that the Obsidia Empire's laws and commands are followed without fail. Grand Executors often lead the Obsidia Empire’s most ambitious endeavors, whether they involve expansion, conquest, or reform. Their word is law, and their reach extends across all corners of the Obsidia Empire.</description>
+    <seniority>600</seniority>
+    <favorCost>133</favorCost>
+    <changeHeirQuestPoints>3500</changeHeirQuestPoints>
+	<suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays>
+	<maxPsylinkLevel>7</maxPsylinkLevel>
+	<recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>10</decreeMentalBreakCommonality>
+	<permitPointsAwarded>2</permitPointsAwarded>
+	<canBeInherited>True</canBeInherited>
+	<minExpectation>Noble</minExpectation>
+	<requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+	<disabledWorkTags>
+      <li>Cleaning</li>
+    </disabledWorkTags>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Neck</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEModuleT</li>
+		  <li>OEModuleB</li>
+		  <li>OEModuleHB</li>
+		  <li>OEModuleI</li>
+		  <li>OEModuleHI</li>
+		  <li>OEModuleW</li>
+		  <li>OEModuleHW</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+	<throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+		  <li>GrandThrone</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_StellicThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>160</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>200</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>OE_Lighting_CeilingLamp_Small</li>
+          <li>OE_Lighting_CeilingLamp_Big</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+		  <li>OE_Column_Armored</li>
+		  <li>OE_Column_Light</li>
+        </things>
+        <count>6</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>4</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_PipeOrgan</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+	  <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Dresser</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<grantedAbilities>
+      <li>OE_RoyalTarget</li>
+	  <li>Speech</li>
+    </grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_07_GrandExecutor</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_07_GrandExecutor</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Supreme Regent ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_8_SupremeRegent</defName>
+    <label>supreme regent</label>
+	<labelFemale>supreme regentess</labelFemale>
+    <description>The title of Supreme Regent is reserved for those who govern in the absence of the Obsidia Empire’s highest rulers. They act with near-absolute authority, holding the power to make decisions on behalf of the ruling elite. Supreme Regents are trusted with maintaining stability and control across the Obsidia Empire during times of transition or crisis. Their leadership ensures that the Obsidia Empire continues to thrive, even when its primary rulers are otherwise occupied with external matters.</description>
+    <seniority>700</seniority>
+	<favorCost>190</favorCost>
+    <changeHeirQuestPoints>4500</changeHeirQuestPoints>
+	<suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays>
+	<maxPsylinkLevel>8</maxPsylinkLevel>
+	<recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>10</decreeMentalBreakCommonality>
+	<permitPointsAwarded>3</permitPointsAwarded>
+	<canBeInherited>True</canBeInherited>
+	<minExpectation>Royal</minExpectation>
+	<requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+	<replaceOnRecruited>OE_Title_7_GrandExecutor</replaceOnRecruited>
+	<disabledWorkTags>
+      <li>Cleaning</li>
+    </disabledWorkTags>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Neck</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEModuleT</li>
+		  <li>OEModuleB</li>
+		  <li>OEModuleHB</li>
+		  <li>OEModuleI</li>
+		  <li>OEModuleHI</li>
+		  <li>OEModuleW</li>
+		  <li>OEModuleHW</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+	<throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+		  <li>GrandThrone</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_StellicThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>200</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>220</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>OE_Lighting_CeilingLamp_Small</li>
+          <li>OE_Lighting_CeilingLamp_Big</li>
+        </things>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+		  <li>OE_Column_Armored</li>
+		  <li>OE_Column_Light</li>
+        </things>
+        <count>8</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>6</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>6</count>
+      </li>
+	  <li Class="RoomRequirement_Thing" MayRequire="OskarPotocki.VFE.Empire">
+        <thingDef>VFEE_GrandTable</thingDef>
+      </li>
+	  <li Class="RoomRequirement_ThingCount" MayRequire="OskarPotocki.VFE.Empire">
+        <thingDef>VFEE_GrandChair</thingDef>
+        <count>8</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_PipeOrgan</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>4</count>
+      </li>
+	  <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>95</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Dresser</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<grantedAbilities>
+      <li>OE_RoyalTarget</li>
+	  <li>Speech</li>
+    </grantedAbilities>
+    <speechCooldown>600000</speechCooldown>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_08_SupremeRegent</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_08_SupremeRegent</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Eternal Dominator ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitle">
+    <defName>OE_Title_9_EternalDominator</defName>
+    <label>eternal dominator</label>
+	<labelFemale>eternal dominatrix</labelFemale>
+    <description>The Eternal Dominator is a title of unmatched authority and strength within the Obsidia Empire. Those who hold this title have complete control over entire regions or sectors of the Obsidia Empire, wielding their power with an iron fist. They are both feared and revered, seen as embodiments of the Obsidia Empire’s relentless drive for dominance and expansion. Their decisions shape the future of entire worlds, and their reign is marked by absolute command.</description>
+    <seniority>800</seniority>
+	<favorCost>275</favorCost>
+    <changeHeirQuestPoints>6000</changeHeirQuestPoints>
+	<suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays>
+	<maxPsylinkLevel>10</maxPsylinkLevel>
+	<recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>10</decreeMentalBreakCommonality>
+	<permitPointsAwarded>3</permitPointsAwarded>
+	<canBeInherited>True</canBeInherited>
+	<minExpectation>Royal</minExpectation>
+	<requiredMinimumApparelQuality>Masterwork</requiredMinimumApparelQuality>
+	<replaceOnRecruited>OE_Title_7_GrandExecutor</replaceOnRecruited>
+	<disabledWorkTags>
+      <li>Cleaning</li>
+	  <li>Commoner</li>
+    </disabledWorkTags>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Neck</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEModuleT</li>
+		  <li>OEModuleB</li>
+		  <li>OEModuleHB</li>
+		  <li>OEModuleI</li>
+		  <li>OEModuleHI</li>
+		  <li>OEModuleW</li>
+		  <li>OEModuleHW</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+	<throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+		  <li>GrandThrone</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_StellicThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>220</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>240</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>OE_Lighting_CeilingLamp_Small</li>
+          <li>OE_Lighting_CeilingLamp_Big</li>
+        </things>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+		  <li>OE_Column_Armored</li>
+		  <li>OE_Column_Light</li>
+        </things>
+        <count>10</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>8</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>8</count>
+      </li>
+	  <li Class="RoomRequirement_Thing" MayRequire="OskarPotocki.VFE.Empire">
+        <thingDef>VFEE_GrandTable</thingDef>
+      </li>
+	  <li Class="RoomRequirement_ThingCount" MayRequire="OskarPotocki.VFE.Empire">
+        <thingDef>VFEE_GrandChair</thingDef>
+        <count>12</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Piano</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_PipeOrgan</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>4</count>
+      </li>
+	  <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>35</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>95</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Dresser</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<grantedAbilities>
+      <li>OE_RoyalTarget</li>
+	  <li>Speech</li>
+    </grantedAbilities>
+    <speechCooldown>360000</speechCooldown>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_09_EternalDominator</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_09_EternalDominator</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!-- ============== NPC only psycaster ============================= -->
+<!--=============== Base ====================-->
+  <RoyalTitleDef Abstract="True" Name="OEBaseObsidiaEmpireTitleNPC" ParentName="OEBaseObsidiaEmpireTitle">
+	<recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+	<decreeMentalBreakCommonality>10</decreeMentalBreakCommonality>
+	<suppressIdleAlert>true</suppressIdleAlert>
+	<minExpectation>Royal</minExpectation>
+	<disabledWorkTags>
+      <li>Cleaning</li>
+	  <li>Commoner</li>
+    </disabledWorkTags>
+	<requiredApparel>
+	  <li>
+        <bodyPartGroupsMatchAny>
+          <li>Neck</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>OEModuleT</li>
+		  <li>OEModuleB</li>
+		  <li>OEModuleHB</li>
+		  <li>OEModuleI</li>
+		  <li>OEModuleHI</li>
+		  <li>OEModuleW</li>
+		  <li>OEModuleHW</li>
+        </requiredTags>
+      </li>
+	</requiredApparel>
+	<throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+		  <li>GrandThrone</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_StellicThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>220</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>240</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+		  <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>OE_Lighting_CeilingLamp_Small</li>
+          <li>OE_Lighting_CeilingLamp_Big</li>
+        </things>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+		  <li>OE_Column_Armored</li>
+		  <li>OE_Column_Light</li>
+        </things>
+        <count>10</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>8</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>8</count>
+      </li>
+	  <li Class="RoomRequirement_Thing" MayRequire="OskarPotocki.VFE.Empire">
+        <thingDef>VFEE_GrandTable</thingDef>
+      </li>
+	  <li Class="RoomRequirement_ThingCount" MayRequire="OskarPotocki.VFE.Empire">
+        <thingDef>VFEE_GrandChair</thingDef>
+        <count>12</count>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Piano</li>
+		  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_PipeOrgan</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>4</count>
+      </li>
+	  <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbidAltars" MayRequire="Ludeon.RimWorld.Ideology">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>35</area>
+      </li>
+	  <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>95</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+		  <li MayRequire="VanillaExpanded.VFECore">Bed_Kingsize</li>
+          <li MayRequire="VanillaExpanded.VFECore">Bed_DoubleErgonomic</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Bed_AdvDoubleBed</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalEndTable</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedEndTable</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Dresser</li>
+          <li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+          <li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+        </things>
+      </li>
+	  <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>PlantPot</li>
+          <li MayRequire="VanillaExpanded.VFEArt">VFE_DecorativePlantPot</li>
+        </things>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+	<foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+		<li>OE_Jumy_Berries</li>
+		<li>OE_Pearlapple_Fruit</li>
+		<li>OE_Green_TionantJelly</li>
+		<li>OE_Red_TionantJelly</li>
+		<li>OE_Yellow_TionantJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+	<replaceOnRecruited>OE_Title_7_GrandExecutor</replaceOnRecruited>
+	<grantedAbilities>
+      <li>OE_RoyalTarget</li>
+	  <li>Speech</li>
+    </grantedAbilities>
+    <speechCooldown>360000</speechCooldown>
+  </RoyalTitleDef>
+
+<!--=============== Exalted Emperor ====================-->
+  <RoyalTitleDef ParentName="OEBaseObsidiaEmpireTitleNPC">
+    <defName>OE_Title_10_ExaltedEmperor</defName>
+    <label>exalted emperor</label>
+	<labelFemale>exalted empress</labelFemale>
+    <description>The Exalted Emperor is the supreme ruler of the Obsidia Empire, holding absolute authority over all its domains. Their wisdom, vision, and power are beyond question, guiding the Obsidia Empire’s course through the ages. The Exalted Emperor is both a symbol of the Obsidia Empire’s eternal legacy and the ultimate decision-maker in all matters, from military campaigns to diplomatic relations. Under their reign, the Obsidia Empire thrives, expanding its influence across the galaxy with unparalleled might.</description>
+    <seniority>1000</seniority>
+    <commonality>0.01</commonality>
+	<maxPsylinkLevel>12</maxPsylinkLevel>
+	<requiredMinimumApparelQuality>Legendary</requiredMinimumApparelQuality>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OE/TitleIcon_10_ExaltedEmperor</iconPath>
+		<greyIconPath>UI/Icons/Titles/OE/Grey/TitleIcon_10_ExaltedEmperor</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+</Defs>

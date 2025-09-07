@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arachna Base ====================-->
+  <ThingDef Name="OEBaseMechArachna" ParentName="BaseMechanoidWalker" Abstract="True">
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>3.2</MoveSpeed>
+	  <PsychicSensitivity>1.0</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+    </statBases>
+	<tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEMechanicalArachna</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>1.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>20</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OEKindBaseMechArachna" ParentName="BaseMechanoidKind" Abstract="True">
+    <combatPower>125</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Arachna/Arachna</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Arachna/AllegianceOverlays/Mech_Arachna</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Arachna/ArachnaAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Arachna/AllegianceOverlays/Mech_Arachna</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+
+<!--=============== OMC ====================-->
+  <ThingDef ParentName="OEBaseMechArachna">
+    <defName>OE_Mech_OMC_Arachna</defName>
+    <label>OMC Arachna</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed OMC Assault Rifle.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OE_Mech_OMC_Arachna</defName>
+    <label>OMC Arachna</label>
+    <race>OE_Mech_OMC_Arachna</race>
+    <weaponTags>
+      <li>OMCArachna</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OEBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_Acid</defName>
+    <label>OTC Arachna(Acid)</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed OTC Shotgun with Acid charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_Acid</defName>
+    <label>OTC Arachna(Acid)</label>
+    <race>OE_Mech_OTC_Arachna_Acid</race>
+    <weaponTags>
+      <li>OTCArachna_Acid</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OEBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_Cryo</defName>
+    <label>OTC Arachna(Cryo)</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed OTC Shotgun with Cryo charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_Cryo</defName>
+    <label>OTC Arachna(Cryo)</label>
+    <race>OE_Mech_OTC_Arachna_Cryo</race>
+    <weaponTags>
+      <li>OTCArachna_Cryo</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OEBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_Fire</defName>
+    <label>OTC Arachna(Fire)</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed OTC Shotgun with Fire charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_Fire</defName>
+    <label>OTC Arachna(Fire)</label>
+    <race>OE_Mech_OTC_Arachna_Fire</race>
+    <weaponTags>
+      <li>OTCArachna_Fire</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OEBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_EMP</defName>
+    <label>OTC Arachna(EMP)</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed OTC Shotgun with EMP charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OE_Mech_OTC_Arachna_EMP</defName>
+    <label>OTC Arachna(EMP)</label>
+    <race>OE_Mech_OTC_Arachna_EMP</race>
+    <weaponTags>
+      <li>OTCArachna_EMP</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--=============== OCC ====================-->
+  <ThingDef ParentName="OEBaseMechArachna">
+    <defName>OE_Mech_OCC_Arachna</defName>
+    <label>OCC Arachna</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed OCC Rifle.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OE_Mech_OCC_Arachna</defName>
+    <label>OCC Arachna</label>
+    <race>OE_Mech_OCC_Arachna</race>
+    <weaponTags>
+      <li>OCCArachna</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--=============== OEC ====================-->
+  <ThingDef ParentName="OEBaseMechArachna">
+    <defName>OE_Mech_OEC_Arachna</defName>
+    <label>OEC Arachna</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed OEC Sniper Rifle.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OE_Mech_OEC_Arachna</defName>
+    <label>OEC Arachna</label>
+    <race>OE_Mech_OEC_Arachna</race>
+    <weaponTags>
+      <li>OECArachna</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--=============== Crimson Arachna Base ====================-->
+  <ThingDef Name="OEBaseMechCrimsonArachna" ParentName="BaseMechanoidWalker" Abstract="True">
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <MoveSpeed>3.0</MoveSpeed>
+	  <PsychicSensitivity>1.0</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+    </statBases>
+	<tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEMechanicalArachna</body>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>1.25</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>25</OE_Empyrium>
+      <OE_Orichalcum>15</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OEKindBaseMechCrimsonArachna" ParentName="BaseMechanoidKind" Abstract="True">
+    <combatPower>135</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Arachna/CrimsonArachna</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Arachna/AllegianceOverlays/Mech_Arachna</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.35</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Arachna/ArachnaAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Arachna/AllegianceOverlays/Mech_Arachna</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.35</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+
+<!--=============== CAC ====================-->
+  <ThingDef ParentName="OEBaseMechCrimsonArachna">
+    <defName>OE_Mech_CAC_Arachna</defName>
+    <label>CAC Arachna</label>
+    <description>A medium-sized armored combat mechanoid. The creatures of the same name are taken as the basis for the design.\n\nThis model uses reconstructed CAC Minigun.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OEKindBaseMechCrimsonArachna">
+    <defName>OE_Mech_CAC_Arachna</defName>
+    <label>CAC Arachna</label>
+    <race>OE_Mech_CAC_Arachna</race>
+    <weaponTags>
+      <li>CACArachna</li>
+    </weaponTags>
+  </PawnKindDef>
+
+</Defs>

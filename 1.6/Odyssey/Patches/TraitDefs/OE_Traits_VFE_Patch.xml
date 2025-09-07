@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Fishing ====================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Vanilla Fishing Expanded - Fishing Treasures AddOn</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAttributeSet">
+				  <xpath>/Defs/TraitDef[defName="OEFishermanVCEF"]</xpath>
+				  <attribute>Abstract</attribute>
+				  <value>True</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

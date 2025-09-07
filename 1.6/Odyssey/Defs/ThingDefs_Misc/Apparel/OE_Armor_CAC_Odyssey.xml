@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Light ====================-->
+<!--=============== Swarmling ====================-->
+  <ThingDef ParentName="CACArmorLight">
+	<defName>CAC_LightArmor_Swarmling</defName>
+    <label>CAC Cultist Light Armor(Swarmling)</label>
+    <description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered drones.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Swarmling/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3955</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <CAC_LightArmor>1</CAC_LightArmor>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Swarmling/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>CACLightCultist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy swarmling drone</label>
+        <defaultProjectile>Grenade_Armor_CAC_SwarmlingPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+<!--=============== Swarmling ====================-->
+  <ThingDef ParentName="CACArmorHeavy">
+	<defName>CAC_HeavyArmor_Swarmling</defName>
+    <label>CAC Cultist Heavy Armor(Swarmling)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered drones.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Swarmling/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>4155</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <CAC_HeavyArmor>1</CAC_HeavyArmor>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Swarmling/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>CACHeavyCultist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy swarmling drone</label>
+        <defaultProjectile>Grenade_Armor_CAC_SwarmlingPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_CAC_SwarmlingPack</defName>
+    <label>CAC swarmling pack capsule</label> 
+    <thingClass>Projectile_SpawnsPawnZeroAge</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/CAC_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/DeploySwarmlingDrone_CAC</uiIconPath>
+    <projectile>
+      <speed>45</speed>
+      <spawnsPawnKind>CAC_Swarmling_Drone</spawnsPawnKind>
+      <tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
+    </projectile>
+  </ThingDef>
+
+<!--=============== CAC Swarmling Drone ====================-->
+  <ThingDef ParentName="BaseDrone">
+    <defName>CAC_Swarmling_Drone</defName>
+    <label>Cultist Swarmling Drone</label>
+    <description>Cultist Swarmling Drone - small autonomous mechanoid built for efficient elimination. Swarmling Drones are powered by a long-lasting battery.</description>
+    <statBases>
+      <MarketValue>100</MarketValue>
+	  <MoveSpeed>5.8</MoveSpeed>
+	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <MaxFlightTime>30</MaxFlightTime>
+    </statBases>
+    <race>
+      <thinkTreeConstant>WaspDroneConstant</thinkTreeConstant>
+      <baseHealthScale>0.45</baseHealthScale>
+      <baseBodySize>0.25</baseBodySize>
+      <hasCorpse>true</hasCorpse>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Wasp_Wounded</soundWounded>
+          <soundDeath>Pawn_Wasp_Death</soundDeath>
+          <soundCall>Pawn_Wasp_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <butcherProducts>
+      <OE_Syntherius>1</OE_Syntherius>
+    </butcherProducts>
+    <tools Inherit="False">
+      <li>
+        <label>stinger</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>6</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+        <linkedBodyPartsGroup>SpikedShellAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>3</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseDroneKind">
+    <defName>CAC_Swarmling_Drone</defName>
+    <label>Cultist Swarmling Drone</label>
+    <labelPlural>Cultist Swarmling Drones</labelPlural>
+    <race>CAC_Swarmling_Drone</race>
+    <combatPower>35</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/SwarmlingDrone/CAC/SwarmlingDrone</texPath>
+          <drawSize>0.95</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

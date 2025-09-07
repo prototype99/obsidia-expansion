@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Woods ====================-->
+  <TerrainDef  ParentName="FloorBase">
+    <defName>OE_FungiPlankFloor</defName>
+    <label>fungi floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Excellent fungi wood flooring, beautiful enough, clean and universal due to its low chance of burning. Very easy to install.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+	<designatorDropdown>OE_Floor_Tile_Wood</designatorDropdown>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(190,190,190)</color>
+	<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <Beauty>2</Beauty>
+	  <WorkToBuild>150</WorkToBuild>
+      <Flammability>0.02</Flammability>
+	  <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <OE_FungalWoodLog>5</OE_FungalWoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef  ParentName="FloorBase">
+    <defName>OE_DragonianPlankFloor</defName>
+    <label>dragonian floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Dragonian floor is highly prized by Obsidia nobility because of its luxury. Mostly used in hunting lodges.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+	<designatorDropdown>OE_Floor_Tile_Wood</designatorDropdown>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(49,52,73)</color>
+	<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <Beauty>20</Beauty>
+	  <WorkToBuild>750</WorkToBuild>
+      <Flammability>0.1</Flammability>
+	  <Cleanliness>0.3</Cleanliness>
+    </statBases>
+    <costList>
+      <OE_DragonianWoodLog>5</OE_DragonianWoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>  
+
+<!--=============== Metals ====================-->
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>OE_ObsidianTile</defName>
+    <label>obsidian tile</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>Standard obsidian floor is beautiful and clean. Very difficult to lay.</description>
+    <color>(33,29,44)</color>
+    <statBases>
+      <Beauty>5</Beauty>
+      <WorkToBuild>1000</WorkToBuild>
+      <Cleanliness>0.3</Cleanliness>
+	  <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <OE_Obsidian>10</OE_Obsidian>
+    </costList>
+    <designationHotKey>Misc2</designationHotKey>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>OE_MythrilTile</defName>
+    <label>mythril tile</label>
+    <renderPrecedence>244</renderPrecedence>
+    <description>Mythril tile is the most luxurious of the bunch and provides a cleanliness bonus. Highly prized by Obsidia nobility.</description>
+    <color>(242,253,234)</color>
+    <statBases>
+      <Beauty>15</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Cleanliness>0.5</Cleanliness>
+	  <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+    </costList>
+    <designationHotKey>Misc3</designationHotKey>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>OE_PlatinumTile</defName>
+    <label>platinum tile</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>Standard platinum floor is beautiful and clean. Very difficult to lay.</description>
+    <color>(229,229,229)</color>
+    <statBases>
+      <Beauty>10</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Cleanliness>0.8</Cleanliness>
+	  <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <OE_Platinum>10</OE_Platinum>
+    </costList>
+    <designationHotKey>Misc2</designationHotKey>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>OE_EmpyriumTile</defName>
+    <label>empyrium tile</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>Empyrium tile is the most luxurious of the bunch and provides a cleanliness bonus. Highly prized by Obsidia nobility.</description>
+    <color>(120,41,112)</color>
+    <statBases>
+      <Beauty>10</Beauty>
+      <WorkToBuild>1200</WorkToBuild>
+      <Cleanliness>0.8</Cleanliness>
+	  <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <OE_Empyrium>10</OE_Empyrium>
+    </costList>
+    <designationHotKey>Misc2</designationHotKey>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>OE_OrichalcumTile</defName>
+    <label>orichalcum tile</label>
+    <renderPrecedence>243</renderPrecedence>
+    <description>Orichalcum tile is the most luxurious of the bunch and provides a cleanliness bonus. Highly prized by Obsidia nobility.</description>
+    <color>(21,173,122)</color>
+    <statBases>
+      <Beauty>20</Beauty>
+      <WorkToBuild>1000</WorkToBuild>
+      <Cleanliness>0.8</Cleanliness>
+	  <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </costList>
+    <designationHotKey>Misc2</designationHotKey>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+  </TerrainDef>
+
+<!--=============== Crystal Tilled Soil ====================-->
+  <TerrainDef>
+    <defName>OE_Crystal_TilledSoil</defName>
+    <label>crystal tilled soil</label>
+	<description>Triple efficient tilled soil with Sinterius. Costly but effective Obsidia technique.</description>
+    <texturePath>Terrain/Surfaces/Crystal_TilledSoil</texturePath>
+	<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/Crystal_TilledSoil_Pollution</pollutionOverlayTexturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+	<layerable>true</layerable>
+    <pathCost>2</pathCost>
+	<designationCategory>Floors</designationCategory>
+	<constructEffect>ConstructDirt</constructEffect>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+	  <WorkToBuild>1000</WorkToBuild>
+      <Cleanliness>0.05</Cleanliness>
+    </statBases>
+	<costList>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<researchPrerequisites>
+      <li>OEFarmAdv</li>
+    </researchPrerequisites>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+	<filthAcceptanceMask>
+      <li>Unnatural</li>
+    </filthAcceptanceMask>
+    <fertility>3.0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <tags>
+      <li>Soil</li>
+    </tags>
+  </TerrainDef>
+
+</Defs>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Obsidia Walls ====================-->
+<OE_Wall.label>obsidia wall</OE_Wall.label>
+<OE_Wall.description>Reinforced Obsidia heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools. Capable of holding up a roof.</OE_Wall.description>
+
+<OE_Embrasure.label>obsidia embrasure</OE_Embrasure.label>
+<OE_Embrasure.description>Reinforced Obsidia heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools. Capable of holding up a roof. Designed with tactical holes to see and fire through.</OE_Embrasure.description>
+
+<!--=============== Obsidia Doors ====================-->
+<OE_Door.label>obsidia door</OE_Door.label>
+<OE_Door.description>Reinforced Obsidia heavy doorway. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</OE_Door.description>
+  
+<OE_Autodoor.label>obsidia autodoor</OE_Autodoor.label>
+<OE_Autodoor.description>Reinforced Obsidia heavy doorway. Powered operation allows people to move through the door without slowing down.</OE_Autodoor.description>
+
+<OE_Petdoor.label>obsidia animal door</OE_Petdoor.label>
+<OE_Petdoor.description>Reinforced Obsidia heavy doorway. Allows animals to pass while insulating the temperature. Animal flaps are commonly used as barn doors to give penned animals a sheltered place to sleep.</OE_Petdoor.description>
+
+<OE_ArmoredDoor.label>armored obsidia door</OE_ArmoredDoor.label>
+<OE_ArmoredDoor.description>Armored Obsidia heavy double doorway. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.\n\nThis large, heavy door requires adjacent walls to function.</OE_ArmoredDoor.description>
+
+<OE_ArmoredAutodoor.label>armored obsidia autodoor</OE_ArmoredAutodoor.label>
+<OE_ArmoredAutodoor.description>Armored Obsidia heavy double doorway. Powered operation allows people to move through the door without slowing down.\n\nThis large, heavy door requires adjacent walls to function.</OE_ArmoredAutodoor.description>
+
+<OE_ArmoredPetdoor.label>armored obsidia animal door</OE_ArmoredPetdoor.label>
+<OE_ArmoredPetdoor.description>Armored Obsidia heavy double doorway. Allows animals to pass while insulating the temperature. Animal flaps are commonly used as barn doors to give penned animals a sheltered place to sleep.\n\nThis large, heavy door requires adjacent walls to function.</OE_ArmoredPetdoor.description>
+
+<!--=============== Obsidia Columns ====================-->
+<OE_Column_Armored.label>obsidia column</OE_Column_Armored.label>
+<OE_Column_Armored.description>Reinforced Obsidia heavy column. Capable of holding up a roof. Does not block sight or movement and looks quite nice.</OE_Column_Armored.description>
+
+<OE_Column_Light.label>obsidia light column</OE_Column_Light.label>
+<OE_Column_Light.description>Reinforced Obsidia heavy column. Capable of holding up a roof. Does not block sight or movement and looks quite nice, also lights the area.</OE_Column_Light.description>
+
+</LanguageData>

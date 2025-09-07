@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG - Ignite ====================-->
+  <AbilityDef>
+    <defName>OMG_Ignite</defName>
+    <label>ignite</label>
+    <description>Unleashes a short burst of flames, scorching enemies at short range.</description>
+    <iconPath>UI/Abilities/Weapon/Ignite</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>5.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <flammabilityAttachFireChanceCurve>
+        <points>
+          <li>(0.2, 0)</li>
+          <li>(1, 1)</li>
+        </points>
+      </flammabilityAttachFireChanceCurve>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFireSpew">
+        <range>5.9</range>
+        <lineWidthEnd>3</lineWidthEnd>
+        <filthDef>Filth_Ash</filthDef>
+        <damAmount>10</damAmount>
+        <canHitFilledCells>true</canHitFilledCells>
+      </li>
+      <li Class="CompProperties_AbilityBurner">
+        <numStreams>15</numStreams>
+        <range>7</range> <!-- go a bit further than the actual ability range, since it's meant to be a noisy effect -->
+        <coneSizeDegrees>12</coneSizeDegrees>
+        <moteDef>Mote_IncineratorBurst</moteDef>
+        <barrelOffsetDistance>6</barrelOffsetDistance>
+        <sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
+        <lifespanNoise>40</lifespanNoise>
+        <rangeNoise>.4</rangeNoise>
+        <effecterDef>BurnerUsed</effecterDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== OMG - Burner ====================-->
+  <AbilityDef>
+    <defName>OMG_Burner</defName>
+    <label>burner</label>
+    <description>Unleashes a steady stream of flames, scorching enemies at medium range.</description>
+    <iconPath>UI/Abilities/Weapon/Burner</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>9.9</range>
+      <warmupTime>0.75</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <flammabilityAttachFireChanceCurve>
+        <points>
+          <li>(0.2, 0)</li>
+          <li>(1, 1)</li>
+        </points>
+      </flammabilityAttachFireChanceCurve>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFireSpew">
+        <range>9.9</range>
+        <lineWidthEnd>3</lineWidthEnd>
+        <filthDef>Filth_Ash</filthDef>
+        <damAmount>12</damAmount>
+        <canHitFilledCells>true</canHitFilledCells>
+      </li>
+      <li Class="CompProperties_AbilityBurner">
+        <numStreams>15</numStreams>
+        <range>11</range> <!-- go a bit further than the actual ability range, since it's meant to be a noisy effect -->
+        <coneSizeDegrees>10</coneSizeDegrees>
+        <moteDef>Mote_IncineratorBurst</moteDef>
+        <barrelOffsetDistance>6</barrelOffsetDistance>
+        <sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
+        <lifespanNoise>40</lifespanNoise>
+        <rangeNoise>.4</rangeNoise>
+        <effecterDef>BurnerUsed</effecterDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== OMG - Inferno ====================-->
+  <AbilityDef>
+    <defName>OMG_Inferno</defName>
+    <label>inferno</label>
+    <description>Unleashes a powerful stream of flames, scorching enemies at long range.</description>
+    <iconPath>UI/Abilities/Weapon/Inferno</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>14.9</range>
+      <warmupTime>1.0</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <flammabilityAttachFireChanceCurve>
+        <points>
+          <li>(0.2, 0)</li>
+          <li>(1, 1)</li>
+        </points>
+      </flammabilityAttachFireChanceCurve>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFireSpew">
+        <range>14.9</range>
+        <lineWidthEnd>5</lineWidthEnd>
+        <filthDef>Filth_Ash</filthDef>
+        <damAmount>16</damAmount>
+        <canHitFilledCells>true</canHitFilledCells>
+      </li>
+      <li Class="CompProperties_AbilityBurner">
+        <numStreams>15</numStreams>
+        <range>16</range> <!-- go a bit further than the actual ability range, since it's meant to be a noisy effect -->
+        <coneSizeDegrees>18</coneSizeDegrees>
+        <moteDef>Mote_IncineratorBurst</moteDef>
+        <barrelOffsetDistance>6</barrelOffsetDistance>
+        <sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
+        <lifespanNoise>40</lifespanNoise>
+        <rangeNoise>.4</rangeNoise>
+        <effecterDef>BurnerUsed</effecterDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

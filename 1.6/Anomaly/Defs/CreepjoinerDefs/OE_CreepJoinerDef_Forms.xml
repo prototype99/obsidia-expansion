@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Creep Joiner Base ====================-->
+  <CreepJoinerFormKindDef Abstract="True" Name="OEBaseCreepJoinerKind" ParentName="BaseCreepJoinerKind">
+    <apparelRequired>
+      <li>OE_Uniform_Military</li>
+	  <li MayRequire="VanillaExpanded.VARME">OE_Footwear_Military</li>
+      <li MayRequire="VanillaExpanded.VARME">OE_Handwear_Military</li>
+    </apparelRequired>
+  </CreepJoinerFormKindDef>
+
+<!--=============== Obsidia Escaped Subject ====================-->
+  <CreepJoinerFormKindDef Abstract="True" Name="OEBaseCreepJoinerEscapedSubject" ParentName="OEBaseCreepJoinerKind">
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+	<itemQuality>Normal</itemQuality>
+	<apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
+	<techHediffsRequired>
+	  <li>OE_ImplantBrain_Prisoner</li>
+    </techHediffsRequired>
+	<inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>OE_Blue_TionantJelly</thingDef>
+          <countRange>1~5</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	<existingDamage>
+      <li>
+        <damage>SurgicalCut</damage>
+        <chance>0.55</chance>
+        <groups>
+          <li>Torso</li>
+        </groups>
+      </li>
+	  <li>
+        <damage>SurgicalCut</damage>
+        <chance>0.55</chance>
+        <groups>
+          <li>Arms</li>
+        </groups>
+      </li>
+      <li>
+        <damage>SurgicalCut</damage>
+        <chance>0.55</chance>
+        <groups>
+          <li>Legs</li>
+        </groups>
+      </li>
+    </existingDamage>
+	<forcedTraits>
+      <OESoldier/>
+    </forcedTraits>
+	<requires>
+	  <li>PerfectHuman</li>
+	  <li>BodyMastery</li>
+	  <li>DeathRefusal</li>
+    </requires>
+    <excludes>
+      <li>Assault</li>
+    </excludes>
+  </CreepJoinerFormKindDef>
+
+  <CreepJoinerFormKindDef ParentName="OEBaseCreepJoinerEscapedSubject">
+    <defName>OMC_EscapedSubject</defName>
+    <label>escaped subject</label>
+    <weight>1</weight>
+    <letterLabel>Very scared looking Obsidia Empire Soldier is approaching your colony.</letterLabel>
+    <letterPrompt>{PAWN_nameDef} becoming a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OMC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</letterPrompt>
+	<apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+      <li>OMCSoldier</li>
+    </apparelTags>
+    <fixedInventory>
+      <OMC_Axe />
+    </fixedInventory>
+	<techHediffsMoney>2000~3500</techHediffsMoney>
+    <techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OMCBionics</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+  </CreepJoinerFormKindDef>
+
+  <CreepJoinerFormKindDef ParentName="OEBaseCreepJoinerEscapedSubject">
+    <defName>OTC_EscapedSubject</defName>
+    <label>escaped subject</label>
+    <weight>1</weight>
+    <letterLabel>Very scared looking Obsidia Empire Mechanic is approaching your colony.</letterLabel>
+    <letterPrompt>{PAWN_nameDef} becoming a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OTC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</letterPrompt>
+	<apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+      <li>OTCMechanic</li>
+    </apparelTags>
+    <fixedInventory>
+      <OTC_BigAxe_Cryo />
+    </fixedInventory>
+	<techHediffsMoney>3000~4500</techHediffsMoney>
+    <techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OTCBionics</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+  </CreepJoinerFormKindDef>
+
+  <CreepJoinerFormKindDef ParentName="OEBaseCreepJoinerEscapedSubject">
+    <defName>OCC_EscapedSubject</defName>
+    <label>escaped subject</label>
+    <weight>1</weight>
+    <letterLabel>Very scared looking Obsidia Empire Knight is approaching your colony.</letterLabel>
+    <letterPrompt>{PAWN_nameDef} becoming a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OCC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</letterPrompt>
+	<apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+      <li>OCCKnight</li>
+    </apparelTags>
+    <fixedInventory>
+      <OCC_BigHammer />
+    </fixedInventory>
+	<techHediffsMoney>2500~4000</techHediffsMoney>
+    <techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OCCBionics</li>
+    </techHediffsTags>
+	<combatPower>150</combatPower>
+  </CreepJoinerFormKindDef>
+
+<!--=============== Obsidia Lost Drifter ====================-->
+  <CreepJoinerFormKindDef ParentName="OEBaseCreepJoinerKind">
+    <defName>ODC_LostDrifter</defName>
+    <label>lost drifter</label>
+    <weight>1</weight>
+    <letterLabel>A hungry drifter is approaching your colony.</letterLabel>
+    <letterPrompt>After the raid on {PAWN_possessive} trade caravan {PAWN_nameDef} separated from it. After several weeks of wandering, the hungry {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} asks to stay in your colony for a while - at least until {PAWN_pronoun} has recovered {PAWN_possessive} strength.</letterPrompt>
+	<minGenerationAge>16</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>5~8</range>
+      </li>
+	  <li>
+        <skill>Social</skill>
+        <range>14~20</range>
+      </li>
+    </skills>
+	<itemQuality>Normal</itemQuality>
+	<apparelAllowHeadgearChance>0.55</apparelAllowHeadgearChance>
+	<apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+      <li>ODCNomad</li>
+    </apparelTags>
+    <fixedInventory>
+      <ODC_Sword />
+    </fixedInventory>
+	<techHediffsMoney>2000~3500</techHediffsMoney>
+    <techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<combatPower>100</combatPower>
+	<startingHediffs>
+      <li>
+        <def>Malnutrition</def>
+        <chance>1.0</chance>
+      </li>
+    </startingHediffs>
+	<forcedTraits>
+      <OENomad/>
+    </forcedTraits>
+	<requires>
+	  <li>Joybringer</li>
+	  <li>BodyMastery</li>
+    </requires>
+	<excludes>
+	  <li>OrganDecay</li>
+	</excludes>
+  </CreepJoinerFormKindDef>
+
+<!--=============== Forsaken Cultist ====================-->
+  <CreepJoinerFormKindDef ParentName="OEBaseCreepJoinerKind">
+    <defName>CAC_ForsakenCultist</defName>
+    <label>forsaken cultist</label>
+    <weight>1</weight>
+    <letterLabel>Non-aggressive Crimson Arachna cultist is approaching your colony.</letterLabel>
+    <letterPrompt>{PAWN_nameDef} was a child who born and lived {PAWN_possessive} entire life in the Crimson Arachna Cult. According to {PAWN_nameDef} words {PAWN_pronoun} became disillusioned with their beliefs and ran away from the cult to see the world.\n\nNow {PAWN_pronoun} begs to join your colony.</letterPrompt>
+	<minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>30</maxGenerationAge>
+	<bodyTypeGraphicPaths>
+      <Male>Things/Pawn/Humanlike/Bodies/CultEscapee_Male</Male>
+      <Female>Things/Pawn/Humanlike/Bodies/CultEscapee_Female</Female>
+      <Hulk>Things/Pawn/Humanlike/Bodies/CultEscapee_Hulk</Hulk>
+      <Fat>Things/Pawn/Humanlike/Bodies/CultEscapee_Fat</Fat>
+      <Thin>Things/Pawn/Humanlike/Bodies/CultEscapee_Thin</Thin>
+    </bodyTypeGraphicPaths>
+    <forcedHeadTypes>
+      <li>CultEscapee</li>
+    </forcedHeadTypes>
+	<hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+	<beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+	<startingHediffs>
+      <li>
+        <def>Tentacle</def>
+        <chance>0.65</chance>
+      </li>
+    </startingHediffs>
+	<itemQuality>Good</itemQuality>
+	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+	<apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+      <li>CACLightCultist</li>
+	  <li>CACHeavyCultist</li>
+    </apparelTags>
+    <fixedInventory>
+      <CAC_Pistol />
+    </fixedInventory>
+	<techHediffsMoney>20000~35000</techHediffsMoney>
+    <techHediffsChance>1.0</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsRequired>
+	  <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>CACBionics</li>
+    </techHediffsTags>
+	<combatPower>225</combatPower>
+	<forcedTraits>
+      <OECultist/>
+    </forcedTraits>
+	<requires>
+	  <li>ShamblerOverlord</li>
+	  <li>Fleshcrafter</li>
+	  <li>UnnaturalHealing</li>
+      <li>Alchemist</li>
+      <li>Occultist</li>
+	  <li>PsychicButcher</li>
+    </requires>
+    <excludes>
+	  <li>Metalhorror</li>
+	  <li>Joybringer</li>
+    </excludes>
+  </CreepJoinerFormKindDef>
+
+</Defs>

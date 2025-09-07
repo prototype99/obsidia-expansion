@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Paladin ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Paladin_Mechanitor</defName>
+    <label>OCC paladin</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+      <li>OCCPaladin_Mechanitor</li>
+	  <li>OEModuleI_Mechanitor</li>
+    </apparelTags>
+    <weaponMoney>9000~13000</weaponMoney>
+	<weaponTags>
+      <li>OCCBaseMeleeM</li>
+	  <li>OCCHeavyMeleeM</li>
+	  <li>OCCLightGunM</li>
+	  <li>OCCBaseGunM</li>
+	  <li>OCCSniperGunM</li>
+	  <li>OCCHeavyGunM</li>
+    </weaponTags>
+    <techHediffsMoney>3500~5500</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>Mechlink</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>OCCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>9~12</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>9~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>

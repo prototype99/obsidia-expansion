@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Obsidia Colonists ====================-->
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>OE_ObsidiaColonists</defName>
+    <label>Obsidia colonists</label>
+    <description>Your colony is part of the Interplanetary Expansion Program of Obsidia Empire. You have to survive and build a thriving colony with a basic support package.</description>
+    <scenario>
+      <summary>A group of Obsidia Empire colonists - the classic Obsidia Expansion experience.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>OE_ObsidiaPlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+		  <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+		  <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+        </li>
+		<li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+		  <chance>0.25</chance>
+		  <context>PlayerStarter</context>
+		  <hideOffMap>True</hideOffMap>
+		  <hediff>CryptosleepSickness</hediff>
+		  <severityRange>1~1</severityRange>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OE_SynthesisPrinter</thingDef>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+		  <count>1000</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>500</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>10</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentSpacer</thingDef>
+          <count>5</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OE_Yellow_TionantJelly</thingDef>
+		  <count>25</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OE_Blue_TionantJelly</thingDef>
+		  <count>15</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OMC_Pistol</thingDef>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OMC_Sword</thingDef>
+		  <count>2</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ShipChunk</thingDef>
+		  <count>5</count>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>OECore</project>
+        </li>
+		<li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Congratulations! You have become part of the Interplanetary Expansion Program of Obsidia Empire.\n\nIt is time to setting up a farming zone, build residential structures. Construct power sources, defenses and get everything what colony need if you want to make it on this harsh world.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+<!--=============== Obsidia Agent ====================-->
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>OE_ObsidiaAgent</defName>
+    <label>Obsidia agent</label>
+    <description>You're one of the surviving agents after a shipwreck on an unknown planet. You have to survive and create a colony for further implementation your mission.</description>
+    <scenario>
+      <summary>One of the Obsidia Empire agents - the advanced Obsidia Expansion experience.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>OE_ObsidiaAgentPlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+		  <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>1</pawnCount>
+		  <pawnChoiceCount>5</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+        </li>
+		<li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+		  <chance>0.25</chance>
+		  <context>PlayerStarter</context>
+		  <hideOffMap>True</hideOffMap>
+		  <hediff>CryptosleepSickness</hediff>
+		  <severityRange>1~1</severityRange>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OE_SynthesisPrinter</thingDef>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+		  <count>2000</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OE_Yellow_TionantJelly</thingDef>
+		  <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OE_Blue_TionantJelly</thingDef>
+		  <count>5</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OMC_Pistol</thingDef>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OMC_Sword</thingDef>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OMC_Armor</thingDef>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>OMC_Helmet</thingDef>
+        </li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ShipChunk</thingDef>
+		  <count>9</count>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>OECore</project>
+        </li>
+		<li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Mission log #94%#02$-Y3:\n\nMain status: #unknown#\n\nAdditional status: shipwreck\n\nFurther instructions:\n\n-create a colony\n\n-eliminate #unknown#\n\n-make contacts with #unknown#\n\n-#unknown# survive\n\n-start the Mission #94%80*$-Y4\n\nYou are ready?\n\nY/#unknown#</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

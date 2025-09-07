@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Special ====================-->
+<!--=============== Cultist ====================-->
+<OE_Cultist.title>культист алой арахны</OE_Cultist.title>
+<OE_Cultist.titleFemale>культистка алой арахны</OE_Cultist.titleFemale>
+<OE_Cultist.titleShort>культист</OE_Cultist.titleShort>
+<OE_Cultist.titleShortFemale>культистка</OE_Cultist.titleShortFemale>
+<OE_Cultist.description>{PAWN_nameDef} как член Культа Алой Арахны имеет непоколебимую веру и желание привнести эту веру все любым способом.</OE_Cultist.description>
+
+<!--=============== Cryptkeeper ====================-->
+<OE_Cryptkeeper.title>криптограф алой арахны</OE_Cryptkeeper.title>
+<OE_Cryptkeeper.titleShort>криптограф</OE_Cryptkeeper.titleShort>
+<OE_Cryptkeeper.description>{PAWN_nameDef} {PAWN_gender ? служил : служила} хранителем запретных гробниц и биозапечатанных реликвий в Культа Алой Арахны. {PAWN_gender ? Шептался : Шепталась} с мертвыми, {PAWN_gender ? каталогизировал : каталогизировала} реликвии и {PAWN_gender ? обслуживал : обслуживала} то, что не должно быть разбужено.</OE_Cryptkeeper.description>
+
+<!--=============== Zealot ====================-->
+<OE_Zealot.title>фанатик алой арахны</OE_Zealot.title>
+<OE_Zealot.titleFemale>фанатичка алой арахны</OE_Zealot.titleFemale>
+<OE_Zealot.titleShort>фанатик</OE_Zealot.titleShort>
+<OE_Zealot.titleShortFemale>фанатичка</OE_Zealot.titleShortFemale>
+<OE_Zealot.description>{PAWN_nameDef} {PAWN_gender ? проводил : проводила} кровавые ритуалы во имя Культа Алой Арахны. {PAWN_gender ? Движимый : Движима} фанатичной преданностью, {PAWN_gender ? внушал : внушала} страх и благоговение через песнопения, огонь и жертвоприношения.</OE_Zealot.description>
+
+<!--=============== Herald ====================-->
+<OE_Herald.title>глашатай алой арахны</OE_Herald.title>
+<OE_Herald.titleShort>глашатай</OE_Herald.titleShort>
+<OE_Herald.description>{PAWN_nameDef} {PAWN_gender ? был : была} голосом Культа Алой Арахны, неся священное учение в окраинные миры через видения, ритуальные речи и шепчущие откровения. {PAWN_gender ? Его : Её} слова сеют и преданность, и ужас.</OE_Herald.description>
+
+</LanguageData>

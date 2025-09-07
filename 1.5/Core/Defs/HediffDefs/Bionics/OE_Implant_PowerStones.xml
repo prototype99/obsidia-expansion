@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Implant - Evolution Power Stone ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantPowerStone_Evolution</defName>
+    <label>Evolution Power Stone</label>
+    <description>An installed - Evolution Power Stone.</description>
+	<descriptionHyperlinks>
+	  <ResearchProjectDef>ODCGearLeg</ResearchProjectDef>
+	  <RecipeDef>OE_InstallPowerStone_Evolution</RecipeDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.08, 0.40, 0.75)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_UnstableStone</spawnThingOnRemoved>
+	<stages>
+	  <li>
+        <painOffset>-0.25</painOffset>
+		<capMods>
+		  <li>
+		    <capacity>Consciousness</capacity>
+			<offset>0.25</offset>
+		  </li>
+		  <li>
+		    <capacity>Hearing</capacity>
+			<offset>0.25</offset>
+		  </li>
+		  <li>
+		    <capacity>Sight</capacity>
+			<offset>0.25</offset>
+		  </li>
+		  <li>
+		    <capacity>Talking</capacity>
+			<offset>0.25</offset>
+		  </li>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<offset>0.25</offset>
+		  </li>
+		  <li>
+		    <capacity>Moving</capacity>
+			<offset>0.25</offset>
+		  </li>
+        </capMods>
+	  </li>
+	</stages>
+	<tags><li>PowerStone</li></tags>
+  </HediffDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallPowerStone_Evolution</defName>
+    <label>install - Evolution Power Stone</label>
+    <description>Install - Evolution Power Stone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_ImplantPowerStone_Evolution</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing - Evolution Power Stone.</jobString>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Platinum</li>
+		<li>OE_Syntherius</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantPowerStone_Evolution</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>PowerStone</li>
+    </incompatibleWithHediffTags>
+	<researchPrerequisite>ODCGearLeg</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemovePowerStone_Evolution</defName>
+    <label>remove - Evolution Power Stone</label>
+    <description>Remove - Evolution Power Stone.</description>
+    <jobString>Removing - Evolution Power Stone.</jobString>
+    <removesHediff>OE_ImplantPowerStone_Evolution</removesHediff>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Implant - Operator Power Stone ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantPowerStone_Operator</defName>
+    <label>Operator Power Stone</label>
+    <description>An installed - Operator Power Stone.</description>
+	<descriptionHyperlinks>
+	  <ResearchProjectDef>ODCGearLeg</ResearchProjectDef>
+	  <RecipeDef>OE_InstallPowerStone_Operator</RecipeDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.66, 0.47, 0.17)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_UnstableStone</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+		  <CarryingCapacity>50</CarryingCapacity>
+		  <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags><li>PowerStone</li></tags>
+  </HediffDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallPowerStone_Operator</defName>
+    <label>install - Operator Power Stone</label>
+    <description>Install - Operator Power Stone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_ImplantPowerStone_Operator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing - Operator Power Stone.</jobString>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Platinum</li>
+		<li>OE_Syntherius</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantPowerStone_Operator</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>PowerStone</li>
+    </incompatibleWithHediffTags>
+	<researchPrerequisite>ODCGearLeg</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemovePowerStone_Operator</defName>
+    <label>remove - Operator Power Stone</label>
+    <description>Remove - Operator Power Stone.</description>
+    <jobString>Removing - Operator Power Stone.</jobString>
+    <removesHediff>OE_ImplantPowerStone_Operator</removesHediff>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Implant - Champion Power Stone ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantPowerStone_Champion</defName>
+    <label>Champion Power Stone</label>
+    <description>An installed - Champion Power Stone.</description>
+	<descriptionHyperlinks>
+	  <ResearchProjectDef>ODCGearLeg</ResearchProjectDef>
+	  <RecipeDef>OE_InstallPowerStone_Champion</RecipeDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.72, 0.11, 0.11)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_UnstableStone</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+		  <MeleeHitChance>10</MeleeHitChance>
+		  <MeleeDodgeChance>10</MeleeDodgeChance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags><li>PowerStone</li></tags>
+  </HediffDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallPowerStone_Champion</defName>
+    <label>install - Champion Power Stone</label>
+    <description>Install - Champion Power Stone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_ImplantPowerStone_Champion</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing - Champion Power Stone.</jobString>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Platinum</li>
+		<li>OE_Syntherius</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantPowerStone_Champion</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>PowerStone</li>
+    </incompatibleWithHediffTags>
+	<researchPrerequisite>ODCGearLeg</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemovePowerStone_Champion</defName>
+    <label>remove - Champion Power Stone</label>
+    <description>Remove - Champion Power Stone.</description>
+    <jobString>Removing - Champion Power Stone.</jobString>
+    <removesHediff>OE_ImplantPowerStone_Champion</removesHediff>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Implant - Outrider Power Stone ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantPowerStone_Outrider</defName>
+    <label>Outrider Power Stone</label>
+    <description>An installed - Outrider Power Stone.</description>
+	<descriptionHyperlinks>
+	  <ResearchProjectDef>ODCGearLeg</ResearchProjectDef>
+	  <RecipeDef>OE_InstallPowerStone_Outrider</RecipeDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.59, 0.88, 0.45)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_UnstableStone</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+		  <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.5</AimingDelayFactor>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags><li>PowerStone</li></tags>
+  </HediffDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallPowerStone_Outrider</defName>
+    <label>install - Outrider Power Stone</label>
+    <description>Install - Outrider Power Stone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_ImplantPowerStone_Outrider</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing - Outrider Power Stone.</jobString>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Platinum</li>
+		<li>OE_Syntherius</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantPowerStone_Outrider</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>PowerStone</li>
+    </incompatibleWithHediffTags>
+	<researchPrerequisite>ODCGearLeg</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemovePowerStone_Outrider</defName>
+    <label>remove - Outrider Power Stone</label>
+    <description>Remove - Outrider Power Stone.</description>
+    <jobString>Removing - Outrider Power Stone.</jobString>
+    <removesHediff>OE_ImplantPowerStone_Outrider</removesHediff>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Pearlapple ====================-->
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>OE_Pearlapple_Fruit</defName>
+    <label>pearlapple fruit</label>
+    <description>Obsidias juicy crystal fruit that can be used as a meat substitute.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>Plant_OE_TreePearlapple</ThingDef>
+    </descriptionHyperlinks>
+	<soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductPlant/Pearlapple/Pearlapple</texPath>
+    </graphicData>
+	<tradeTags>
+      <li>OEFood</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+	<thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+<!--=============== Jumy ====================-->
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>OE_Jumy_Berries</defName>
+    <label>jumy berries</label>
+    <description>Small Obsidias berries are tasty and sweet.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>Plant_OE_Jumy</ThingDef>
+    </descriptionHyperlinks>
+	<soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductPlant/Jumy/Jumy</texPath>
+    </graphicData>
+	<tradeTags>
+      <li>OEFood</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>0.75</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+<!--=============== Fungal Wood ====================-->
+  <ThingDef ParentName="ResourceVerbBase">
+    <defName>OE_FungalWoodLog</defName>
+    <label>fungal wood</label>
+    <description>Unique wood. More durable and less flammable, while being lighter.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>Plant_OE_TreeFungi</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductPlant/FungalWoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.1</Mass> 
+      <Flammability>0.05</Flammability>
+      <DeteriorationRate>0.65</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>7</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.9</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <burnableByRecipe>false</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <stuffAdjective>fungal wooden</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <color>(190,190,190)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.05</Flammability>
+        <WorkToMake>0.75</WorkToMake>
+        <WorkToBuild>0.75</WorkToBuild>
+		<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <isTechHediff>true</isTechHediff>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+	<tradeTags>
+      <li>ExoticMisc</li>
+	  <li>OEResourcesL</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>log</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+
+<!--=============== Dragonian Wood ====================-->
+  <ThingDef ParentName="ResourceVerbBase">
+    <defName>OE_DragonianWoodLog</defName>
+    <label>dragonian wood</label>
+    <description>Rare type of wood. Very valuable, durable and beautiful, yet heavy.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>Plant_OE_TreeDragonian</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductPlant/DragonianWoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>8.5</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>0.35</Mass> 
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0.65</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.90</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+    </statBases>
+    <burnableByRecipe>false</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <stuffAdjective>dragonian wooden</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <color>(49,52,73)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+	  <statOffsets>
+        <Beauty>30</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>2</MaxHitPoints>
+        <Beauty>20</Beauty>
+        <Flammability>0.5</Flammability>
+        <WorkToMake>1.25</WorkToMake>
+        <WorkToBuild>1.25</WorkToBuild>
+        <DoorOpenSpeed>1.35</DoorOpenSpeed>
+		<BedRestEffectiveness>1.35</BedRestEffectiveness>
+		<MeleeWeapon_CooldownMultiplier>1.20</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+	  <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>1.10</awful>
+          <poor>1.15</poor>
+          <normal>1.20</normal>
+          <good>1.25</good>
+          <excellent>1.30</excellent>
+          <masterwork>1.35</masterwork>
+          <legendary>1.40</legendary>
+        </li>
+      </statFactorsQuality>
+      <statOffsetsQuality>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyMaxOffset</stat>
+          <awful>10</awful>
+          <poor>12</poor>
+          <normal>15</normal>
+          <good>17</good>
+          <excellent>19</excellent>
+          <masterwork>22</masterwork>
+          <legendary>25</legendary>
+        </li>
+        <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+          <stat>PsychicEntropyRecoveryRateOffset</stat>
+          <awful>0.066</awful>
+          <poor>0.066</poor>
+          <normal>0.066</normal>
+          <good>0.083</good>
+          <excellent>0.083</excellent>
+          <masterwork>0.083</masterwork>
+          <legendary>0.091</legendary>
+        </li>
+      </statOffsetsQuality>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <isTechHediff>true</isTechHediff>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+	<tradeTags>
+      <li>ExoticMisc</li>
+	  <li>OEResourcesL</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>log</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>3.0</cooldownTime>
+      </li>
+    </tools>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+
+<!--=============== Syntherius ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Syntherius</defName>
+    <label>syntherius</label>
+    <description>Unique Obsidias resource. Used to synthesize other resources, craft weapons, and other industries in Obsidia.</description>
+	<descriptionHyperlinks>
+      <ThingDef>Plant_OE_TreeSyntherius</ThingDef>
+	  <ThingDef>Plant_OE_SyntheriusRoot</ThingDef>
+	  <ThingDef>OE_Slime_Syntherius</ThingDef>
+	  <ThingDef MayRequire="Ludeon.RimWorld.Ideology">OE_Dryad_Synthesis</ThingDef>
+	  <ThingDef MayRequire="VanillaExpanded.Ideo.Dryads">OE_AwakenedDryad_Synthesis</ThingDef>
+	  <ThingDef>OE_SyntheriusPack</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductPlant/Syntherius</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+      <MarketValue>8</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.05</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+	  <li>OEResourcesL</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardHighFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== EGO Seed ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_EGOSeed</defName>
+    <label>EGO seed</label>
+    <description>The seed of an EGO tree. It can be planted to create a new EGO tree. Also used in genetic experiments or for amalgam gestating.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_AncientPodEGO</ThingDef>
+	  <ThingDef>Plant_OE_EGOTree</ThingDef>
+	  <ThingDef>Plant_OE_EGORoot</ThingDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Resource/ProductPlant/EGOSeed/OE_EGOSeed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6, 0.6)</drawSize>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.3</Mass>
+	  <Flammability>0.2</Flammability>
+      <MarketValue>75</MarketValue>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+	<tradeTags>
+      <li>ExoticMisc</li>
+	  <li>OEResourcesS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Plantable">
+        <plantDefToSpawn>Plant_OE_EGOTree</plantDefToSpawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

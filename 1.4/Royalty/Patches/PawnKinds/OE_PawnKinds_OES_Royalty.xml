@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== OES Eidolons ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OES_Eidolon_Melee" or defName="OES_Eidolon_Ranged" or defName="OES_Undying_Melee" or defName="OES_Undying_Ranged"]</xpath>
+	<order>Prepend</order>
+    <value>
+      <royalTitleChance>0.55</royalTitleChance>
+	  <titleSelectOne>
+      <li>Knight</li>
+      <li>Praetor</li>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+    </value>
+</Operation>
+
+</Patch>

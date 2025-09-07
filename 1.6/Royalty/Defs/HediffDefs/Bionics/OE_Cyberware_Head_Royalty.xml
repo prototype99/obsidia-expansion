@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Head ====================-->
+<!--=============== Cyberware - Psy ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareHead_Psy</defName>
+    <label>cyberware - Psy</label>
+    <labelNoun>a cyberware - Psy</labelNoun>
+    <description>An installed cyberware - Psy.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareHead_Psy</ThingDef></descriptionHyperlinks>
+	<defaultLabelColor>(0.55, 0.73, 0.00)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_CyberwareHead_Psy</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <PsychicSensitivity>0.05</PsychicSensitivity>
+		  <MeditationFocusGain>0.05</MeditationFocusGain>
+          <PsychicEntropyRecoveryRate>0.011</PsychicEntropyRecoveryRate>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <PsychicSensitivity>0.10</PsychicSensitivity>
+		  <MeditationFocusGain>0.10</MeditationFocusGain>
+          <PsychicEntropyRecoveryRate>0.022</PsychicEntropyRecoveryRate>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <PsychicSensitivity>0.15</PsychicSensitivity>
+		  <MeditationFocusGain>0.15</MeditationFocusGain>
+          <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+        </statOffsets>
+      </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareHead_Psy</defName>
+    <label>cyberware - Psy</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in psy abilities.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareHead_Psy</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Psy</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareHead_Psy</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

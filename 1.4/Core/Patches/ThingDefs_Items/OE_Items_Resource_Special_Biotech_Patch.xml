@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Arachna Core ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OE_ArachnaCore"]</xpath>
+    <value>
+	  <isTechHediff>true</isTechHediff>
+      <comps>
+        <li Class="CompProperties_Studiable">
+          <cost>5</cost>
+          <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+          <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+          <completedLetterDef>PositiveEvent</completedLetterDef>
+        </li>
+      </comps>
+    </value>
+</Operation>
+
+<!--=============== EGO Seed ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OE_EGOSeed"]</xpath>
+    <value>
+	  <isTechHediff>true</isTechHediff>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OE_EGOSeed"]/comps</xpath>
+    <value>
+        <li Class="CompProperties_Studiable">
+          <cost>5</cost>
+          <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+          <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+          <completedLetterDef>PositiveEvent</completedLetterDef>
+        </li>
+    </value>
+</Operation>
+
+</Patch>

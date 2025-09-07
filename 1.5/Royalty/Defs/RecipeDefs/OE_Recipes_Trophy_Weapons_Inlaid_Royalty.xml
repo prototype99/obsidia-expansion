@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC - Scepter ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OEC_Trophy_Scepter</defName>
+    <label>Inlay - Ancient Scepter</label>
+    <description>Inlay - Ancient Scepter.</description>
+    <jobString>Inlaying - Ancient Scepter.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Trophy_Scepter</li>
+			<li>OEC_Trophy_Scepter_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Trophy_Scepter</li>
+		<li>OEC_Trophy_Scepter_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Trophy_Scepter_I>1</OEC_Trophy_Scepter_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OECGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== OEC - Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OEC_Trophy_Pistol</defName>
+    <label>Inlay - Divinity</label>
+    <description>Inlay - Divinity.</description>
+    <jobString>Inlaying - Divinity.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Trophy_Pistol</li>
+			<li>OEC_Trophy_Pistol_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Trophy_Pistol</li>
+		<li>OEC_Trophy_Pistol_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Trophy_Pistol_I>1</OEC_Trophy_Pistol_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OECGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

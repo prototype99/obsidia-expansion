@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Armor Base ====================-->
+  <ThingDef Name="OEArmorCore" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <selectable>True</selectable>
+    <pathCost>14</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-3</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+	<comps>
+      <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="OEArmorBase" ParentName="OEArmorCore" Abstract="True">
+    <uiIconScale>1.5</uiIconScale>
+	<thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>600</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Uniform Base ====================-->
+  <ThingDef Name="OEUniformBase" ParentName="OEArmorCore" Abstract="True">
+    <uiIconScale>1.25</uiIconScale>
+	<thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    </recipeMaker>
+	<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	<comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Armor Base(Non-Quality) ====================-->
+  <ThingDef Name="OEArmorCoreNQ" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <selectable>True</selectable>
+    <pathCost>14</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Spacer</techLevel>
+	<graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.35</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.45</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <smeltable>false</smeltable>
+	<comps>
+      <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_Styleable"></li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="OEArmorBaseNQ" ParentName="OEArmorCoreNQ" Abstract="True">
+    <uiIconScale>1.5</uiIconScale>
+	<thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>850</MaxHitPoints>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+</Defs>

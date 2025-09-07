@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Quest - Operation Distraction ====================-->
+  <QuestScriptDef>
+    <defName>OE_Quest_OperationDistraction</defName>
+    <rootSelectionWeight>0.90</rootSelectionWeight>
+    <rootMinPoints>300</rootMinPoints>
+	<canGiveRoyalFavor>true</canGiveRoyalFavor>
+	<expireDaysRange>2~8</expireDaysRange>
+	<everAcceptableInSpace>true</everAcceptableInSpace>
+    <questNameRules>
+      <rulesStrings>
+		<li>questName->[operationAdjective] [operationNoun]</li>
+        <!-- Pieces -->
+		<li>operationAdjective->Covert</li>
+		<li>operationAdjective->Encrypted</li>
+		<li>operationAdjective->Hidden</li>
+		<li>operationAdjective->False</li>
+		<li>operationNoun->Mandate</li>
+		<li>operationNoun->Operation</li>
+		<li>operationNoun->Signal</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription(askerIsNull==true)->A cryptic message reaches your colony - its sender masked, identity unknown. They offer a tempting reward, but in return, you must draw the attention of a dangerous enemy. While you stand in their path, the sender will carry out a task on behalf of a secretive scientist patron… a name left unspoken, but one that echoes with hidden purpose.</li>
+		<li>questDescription(asker_factionLeader==True)->You’ve received a direct message from [asker_nameFull], the [asker_faction_leaderTitle] of [asker_faction_name]. They’re offering a reward if you help distract a hostile force that’s been harassing their faction - all because of their ongoing cooperation with Dr. Alexander Isaacs.</li>
+		<li>questDescription(asker_royalInCurrentFaction==True)->A formal request has arrived from [asker_nameFull], [asker_royalTitleInCurrentFaction] of [asker_faction_name], who humbly introduces themselves as a close ally of Dr. Alexander Isaacs. They offer you a noble reward, should you choose to confront a threat that shadows them - allowing their mission to proceed, uninterrupted.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+		<li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+          <parms>
+			<pointsFactorTwoStar>2.0</pointsFactorTwoStar>
+            <pointsFactorThreeStar>3.0</pointsFactorThreeStar>
+			<selectionWeightOneStar>1.25</selectionWeightOneStar>
+			<selectionWeightTwoStar>1.75</selectionWeightTwoStar>
+			<selectionWeightThreeStar>2.5</selectionWeightThreeStar>
+			<minPointsTwoStar>1000</minPointsTwoStar>
+			<minPointsThreeStar>2500</minPointsThreeStar>
+          </parms>
+        </li>
+		<li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_GetWalkInSpot" />
+		
+		<!-- Choose Asker -->
+		<li Class="QuestNode_SubScript">
+          <def>Util_DecideRandomAsker</def>
+        </li>
+        
+		<!-- Choose Threat -->
+        <li Class="QuestNode_Set">
+          <name>RaidDelayTicks</name>
+          <value>$(roundToTicksRough(randInt(1,4)*60000))</value>
+        </li>
+		<li Class="QuestNode_Delay">
+          <delayTicks>$RaidDelayTicks</delayTicks>
+          <node Class="QuestNode_Sequence">
+		    <nodes>
+			  <li Class="QuestNode_RandomNode">
+			    <nodes>
+				  <!-- Random Raiders -->
+				  <li Class="QuestNode_Sequence">
+					<nodes>
+					  <li Class="QuestNode_GetFaction">
+					    <allowEnemy>true</allowEnemy>
+						<mustBePermanentEnemy>true</mustBePermanentEnemy>
+						<storeAs>enemyFaction</storeAs>
+					  </li>
+					  <li Class="QuestNode_SubScript">
+					    <def>Util_Raid</def>
+						<prefix>raid</prefix>
+						<parms>
+						  <inSignal>$inSignal</inSignal>
+						  <map>$map</map>
+						  <enemyFaction>$enemyFaction</enemyFaction>
+						  <points>$points</points>
+						  <walkInSpot>$walkInSpot</walkInSpot>
+						</parms>
+					  </li>
+					</nodes>
+				  </li>
+				  <!-- Crimson Arachna Cult -->
+				  <li Class="QuestNode_Sequence">
+					<nodes>
+					  <li Class="QuestNode_SubScript">
+					    <def>Util_Raid</def>
+						<prefix>raid</prefix>
+						<parms>
+						  <inSignal>$inSignal</inSignal>
+						  <map>$map</map>
+						  <enemyFaction>ObsidiaCrimsonArachnaCult</enemyFaction>
+						  <points>$points</points>
+						  <walkInSpot>$walkInSpot</walkInSpot>
+						</parms>
+					  </li>
+					</nodes>
+				  </li>
+				  <!-- Manhunter Pack -->
+				  <li Class="QuestNode_SubScript">
+				    <def>Util_ManhunterPack</def>
+				  </li>
+				  <!-- Biotech: Mech Cluster -->
+				  <li MayRequire="Ludeon.RimWorld.Biotech" Class="QuestNode_SubScript">
+				    <def>Util_MechCluster</def>
+				  </li>
+				  <!-- Anomaly: Horax Cult -->
+				  <li MayRequire="Ludeon.RimWorld.Anomaly" Class="QuestNode_Sequence">
+					<nodes>
+					  <li Class="QuestNode_SubScript">
+					    <def>Util_Raid</def>
+						<prefix>raid</prefix>
+						<parms>
+						  <inSignal>$inSignal</inSignal>
+						  <map>$map</map>
+						  <enemyFaction>HoraxCult</enemyFaction>
+						  <points>$points</points>
+						  <walkInSpot>$walkInSpot</walkInSpot>
+						</parms>
+					  </li>
+					</nodes>
+				  </li>  
+				</nodes>
+			  </li>
+			</nodes>
+          </node>
+        </li>        
+
+        <!-- Give reward after delay -->
+        <li Class="QuestNode_Delay">
+        <delayTicks>600</delayTicks>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_GiveRewards">
+                <parms>
+                  <allowGoodwill>true</allowGoodwill>
+                  <allowRoyalFavor>true</allowRoyalFavor>
+                  <thingRewardRequired>true</thingRewardRequired>
+                </parms>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+		<!-- End -->
+		<li Class="QuestNode_Delay">
+          <delayTicks>$($RaidDelayTicks+1200)</delayTicks>
+          <node Class="QuestNode_End" />
+        </li>
+		
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>  

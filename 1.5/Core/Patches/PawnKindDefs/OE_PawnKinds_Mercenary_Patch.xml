@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Mercenary Gunner ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/weaponTags</xpath>
+    <value>
+	  <li>OELightGun</li>
+	  <li>OEBaseGun</li>
+    </value>
+</Operation>
+
+<!--=============== Mercenary Sniper ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags</xpath>
+    <value>
+	  <li>OESniperGun</li>
+    </value>
+</Operation>
+
+<!--=============== Mercenary Slasher ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[@Name="MercenarySlasherBase"]/weaponTags</xpath>
+    <value>
+	  <li>OEBaseMelee</li>
+	  <li>OEHeavyMelee</li>
+    </value>
+</Operation>
+
+<!--=============== Elite Mercenary ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags</xpath>
+    <value>
+	  <li>OEBaseGun</li>
+	  <li>OESniperGun</li>
+    </value>
+</Operation>
+
+</Patch>

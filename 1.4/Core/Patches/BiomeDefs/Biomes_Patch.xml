@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Temperate ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildAnimals</xpath>
+    <value>
+        <OE_Armagon>0.2</OE_Armagon>
+        <OE_Direwolf>0.1</OE_Direwolf>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Astrinx>0.1</OE_Astrinx>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Green>0.1</OE_Arachna_Green>
+		<OE_Arachna_Yellow>0.1</OE_Arachna_Yellow>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateForest"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_Alpine_B>0.001</Plant_OE_Alpine_B>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildAnimals</xpath>
+    <value>
+        <OE_Armagon>0.2</OE_Armagon>
+        <OE_Direwolf>0.1</OE_Direwolf>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Astrinx>0.1</OE_Astrinx>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Green>0.1</OE_Arachna_Green>
+		<OE_Arachna_Yellow>0.1</OE_Arachna_Yellow>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_TreeFungi>0.15</Plant_OE_TreeFungi>
+		<Plant_OE_Oasis_B>0.001</Plant_OE_Oasis_B>
+    </value>
+</Operation>
+
+<!--=============== Warm ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/wildAnimals</xpath>
+    <value>
+        <OE_Armagon>0.2</OE_Armagon>
+        <OE_Raptor>0.1</OE_Raptor>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Green>0.1</OE_Arachna_Green>
+		<OE_Arachna_Yellow>0.1</OE_Arachna_Yellow>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/wildPlants</xpath>
+    <value>
+		<Plant_OE_Alpine_B>0.001</Plant_OE_Alpine_B>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/wildAnimals</xpath>
+    <value>
+        <OE_Armagon>0.2</OE_Armagon>
+        <OE_Raptor>0.1</OE_Raptor>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Green>0.1</OE_Arachna_Green>
+		<OE_Arachna_Yellow>0.1</OE_Arachna_Yellow>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_TreeFungi>0.15</Plant_OE_TreeFungi>
+		<Plant_OE_Oasis_B>0.001</Plant_OE_Oasis_B>
+    </value>
+</Operation>
+
+<!--=============== Warm ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
+    <value>
+        <OE_Armagon>0.2</OE_Armagon>
+        <OE_Direwolf>0.2</OE_Direwolf>
+		<OE_Raptor>0.1</OE_Raptor>
+		<OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Red>0.1</OE_Arachna_Red>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="AridShrubland"]/allowedPackAnimals</xpath>
+    <value>
+        <li>OE_Armagon</li>
+		<li>OE_Ogren</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+    <value>
+		<Plant_OE_Coral_B>0.001</Plant_OE_Coral_B>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Desert"]/wildAnimals</xpath>
+    <value>
+        <OE_Raptor>0.1</OE_Raptor>
+        <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_Coral_B>0.001</Plant_OE_Coral_B>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildAnimals</xpath>
+    <value>
+        <OE_Raptor>0.1</OE_Raptor>
+        <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Ogren>0.07</OE_Ogren>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Red>0.1</OE_Arachna_Red>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_Coral_B>0.001</Plant_OE_Coral_B>
+    </value>
+</Operation>
+
+<!--=============== Cold ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
+    <value>
+        <OE_Direwolf>0.07</OE_Direwolf>
+        <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Astrinx>0.1</OE_Astrinx>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+    <value>
+        <Plant_OE_Tundral_B>0.001</Plant_OE_Tundral_B>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="ColdBog"]/wildAnimals</xpath>
+    <value>
+        <OE_Direwolf>0.07</OE_Direwolf>
+        <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Astrinx>0.1</OE_Astrinx>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
+    <value>
+        <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+		<OE_Tionant_Green>0.07</OE_Tionant_Green>
+		<OE_Tionant_Red>0.07</OE_Tionant_Red>
+		<OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+		<OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+		<OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+		<OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+		<OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+		<OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+		<OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+    </value>
+</Operation>
+
+</Patch>

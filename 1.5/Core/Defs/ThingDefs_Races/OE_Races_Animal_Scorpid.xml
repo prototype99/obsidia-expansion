@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Scorpid Base ====================-->
+  <ThingDef Name="OEBaseScorpid" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+	<statBases>
+      <MoveSpeed>4.5</MoveSpeed>
+      <MarketValue>1050</MarketValue>
+	  <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.25</ArmorRating_Heat>
+	  <ToxicResistance>0</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+      <FilthRate>10</FilthRate>
+    </statBases>
+	<uiIconScale>1.0</uiIconScale>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+	  <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>OELeftInsectClawAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>OELeftInsectClawAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+	  <li>
+        <label>sting</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>OESting</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEScorpidLike</body>
+	  <predator>true</predator>
+	  <herdAnimal>true</herdAnimal>
+	  <packAnimal>false</packAnimal>
+	  <herdMigrationAllowed>true</herdMigrationAllowed>
+      <baseHungerRate>1.0</baseHungerRate>
+	  <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>3.5</baseHealthScale>
+      <foodType>CarnivoreAnimalStrict</foodType>
+	  <fleshType>Insectoid</fleshType>
+	  <bloodDef>Filth_BloodInsect</bloodDef>
+	  <leatherDef>OE_Leather_Raptor</leatherDef>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <trainability>Intermediate</trainability>
+      <wildness>0.75</wildness>
+	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <lifeExpectancy>17</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>OEInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>OEInsectJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>OEBigInsectAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Insectoid_Eat</soundEating>
+	  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+	<ingredient>
+      <mergeCompatibilityTags>
+        <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <tradeTags>
+      <li>OEAnimalExotic</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseScorpid" Abstract="True">
+    <combatPower>300</combatPower>
+    <ecoSystemWeight>1</ecoSystemWeight>
+	<wildGroupSize>2~4</wildGroupSize>
+	<canArriveManhunter>false</canArriveManhunter>
+  </PawnKindDef>
+
+<!--=============== Red Scorpid ====================-->
+  <ThingDef ParentName="OEBaseScorpid">
+    <defName>OE_Scorpid_Red</defName>
+    <label>red scorpid</label>
+    <description>One of the oldest creatures of Obsidia. Scorpid is a huge insectoid with a durable chitinous shell, powerful claws and a poisonous sting.\n\nThis specimen adapted to life at hot temperatures.</description>
+	<statBases>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>65</ComfyTemperatureMax>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseScorpid">
+    <defName>OE_Scorpid_Red</defName>
+    <label>red scorpid</label>
+    <labelPlural>red scorpids</labelPlural>
+    <race>OE_Scorpid_Red</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Red</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Red</texPath>
+          <drawSize>0.8</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>0.8</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Red</texPath>
+          <drawSize>1.45</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Red</texPath>
+          <drawSize>1.45</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>1.45</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>1.45</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Red</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Red</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>2.25</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Blue Scorpid ====================-->
+  <ThingDef ParentName="OEBaseScorpid">
+    <defName>OE_Scorpid_Blue</defName>
+    <label>blue scorpid</label>
+    <description>One of the oldest creatures of Obsidia. Scorpid is a huge insectoid with a durable chitinous shell, powerful claws and a poisonous sting.\n\nThis specimen adapted to life at cold temperatures.</description>
+	<statBases>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseScorpid">
+    <defName>OE_Scorpid_Blue</defName>
+    <label>blue scorpid</label>
+    <labelPlural>blue scorpids</labelPlural>
+    <race>OE_Scorpid_Blue</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Blue</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Blue</texPath>
+          <drawSize>0.8</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>0.8</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Blue</texPath>
+          <drawSize>1.45</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Blue</texPath>
+          <drawSize>1.45</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>1.45</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>1.45</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Blue</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Blue</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>2.25</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidian ====================-->
+  <ThingDef ParentName="RockBase">
+    <defName>MineableOEObsidian</defName>
+    <label>Obsidian ore</label>
+    <description>Rock containing bits of obsidian.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(33,29,46)</color>
+      <colorTwo>(22,18,35)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>OE_Obsidian</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>0.05</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+	  <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+
+<!--=============== Mythril ====================-->
+  <ThingDef ParentName="RockBase">
+    <defName>MineableOEMythril</defName>
+    <label>Mythril ore</label>
+    <description>Rock containing bits of mythril.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(242,253,234)</color>
+      <colorTwo>(241,247,247)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>OE_Mythril</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>0.05</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+	  <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+
+<!--=============== Platinum ====================-->
+  <ThingDef ParentName="RockBase">
+    <defName>MineableOEPlatinum</defName>
+    <label>Platinum ore</label>
+    <description>Rock containing bits of platinum.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(155,133,107)</color>
+      <colorTwo>(229,229,229)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>5500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>OE_Platinum</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>0.05</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+	  <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+
+</Defs>

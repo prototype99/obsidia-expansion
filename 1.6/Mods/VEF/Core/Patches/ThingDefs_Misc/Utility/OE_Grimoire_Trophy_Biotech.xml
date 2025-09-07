@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OE - Trophy Grimoire ====================-->
+<!--=============== Various ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="OEGrimoireBase">
+    <defName>OE_Trophy_Grimoire_Mechanitor</defName>
+    <label>Grimoire of Integration</label>
+	<description>Grimoires are enigmatic artifacts, forged from unknown relics during the final days of Obsidia's Last War. Each was crafted with a singular purpose by a unique mind—some brilliant, some mad, all unforgettable. It's said that those who carry a Grimoire often find themselves speaking to it, unconsciously, as if the book listens. Whispers claim that the soul of each creator remains bound within their work, waiting... watching.\n\nClementine was a recluse who abandoned humanity for machinery, driven by obsession and perhaps something deeper. Her Grimoire was assembled in silence, among machines she called kin, without witnesses or fanfare. It hums with alien logic and devotion to synthetic perfection, rejecting the weakness of flesh.\n\nDoes not emit an aura, but boosting mechanitor stats and enhances control over mechanoids.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grimoire/Mechanitor/OE_Grimiore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<equippedStatOffsets>
+      <MechBandwidth>66</MechBandwidth>
+	  <MechControlGroups>6</MechControlGroups>
+	  <WorkSpeedGlobalOffsetMech>0.66</WorkSpeedGlobalOffsetMech>
+	  <MechRemoteRepairDistance>16.9</MechRemoteRepairDistance>
+	  <MechRemoteShieldDistance>16.9</MechRemoteShieldDistance>
+      <MechRemoteShieldEnergy>160</MechRemoteShieldEnergy>
+	  <MechFormingSpeed>0.66</MechFormingSpeed>
+	  <MechRepairSpeed>0.66</MechRepairSpeed>
+    </equippedStatOffsets>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/Grimoire/Mechanitor/OE_Grimiore</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

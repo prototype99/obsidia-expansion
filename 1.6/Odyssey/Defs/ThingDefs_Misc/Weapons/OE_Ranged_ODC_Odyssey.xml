@@ -1,0 +1,2187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Ranged ====================-->
+  <ThingDef Name="ODCRangedPersonaNC" ParentName="OERangedBaseNC" Abstract="True">
+	<tradeTags>
+      <li>ODCWeapon</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef Name="ODCRangedPersona" ParentName="OERangedBase" Abstract="True">
+	<tradeTags>
+      <li>ODCWeapon</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== ODC - Pistol ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCRangedPersonaNC">
+    <defName>ODC_Pistol_P</defName>
+    <label>Paragon Purpose</label>
+    <description>Paragon common Auto Pistol used bby Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Pistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>990</MarketValue>
+	  <Mass>1.5</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_P</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Purpose</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC - Revolver ====================-->
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Revolver_P</defName>
+    <label>Paragon Trespasser - Emergent</label>
+    <description>Paragon moded Revolver used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Revolver_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1190</MarketValue>
+	  <Mass>1.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Pistol_P>1</ODC_Pistol_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Trespasser - Emergent</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC Elemental Revolver ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Revolver_P_Acid</defName>
+    <label>Paragon Trespasser - Apex(Acid)</label>
+    <description>Paragon specialised Revolver used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/Revolver_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_Acid</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver_P>1</ODC_Revolver_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>PulseCharge</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Trespasser - Apex(Acid)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Revolver_P_Cryo</defName>
+    <label>Paragon Trespasser - Apex(Cryo)</label>
+    <description>Paragon specialised Revolver used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/Revolver_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_Cryo</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver_P>1</ODC_Revolver_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>PulseCharge</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Trespasser - Apex(Cryo)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Revolver_P_Fire</defName>
+    <label>Paragon Trespasser - Apex(Fire)</label>
+    <description>Paragon specialised Revolver used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/Revolver_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_Fire</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver_P>1</ODC_Revolver_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>PulseCharge</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Trespasser - Apex(Fire)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Revolver_P_EMP</defName>
+    <label>Paragon Trespasser - Apex(EMP)</label>
+    <description>Paragon specialised Revolver used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/Revolver_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_EMP</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver_P>1</ODC_Revolver_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>PulseCharge</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Trespasser - Apex(EMP)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC SMG ====================-->
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_SMG_A_P</defName>
+    <label>Paragon Misfit - Emergent</label>
+    <description>Paragon moded SMG used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SMG_A_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1190</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Pistol_P>1</ODC_Pistol_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Misfit - Emergent</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_SMG_B_P</defName>
+    <label>Paragon Misfit - Apex</label>
+    <description>Paragon specialised SMG used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SMG_B_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCLightGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_SMG_A_P>1</ODC_SMG_A_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Misfit - Apex</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC Rifle ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCRangedPersonaNC">
+    <defName>ODC_Rifle_P</defName>
+    <label>Paragon Inheritance</label>
+    <description>Common Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Rifle_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCBaseGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1485</MarketValue>
+	  <Mass>4.0</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RF</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Rifle</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Inheritance</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC Shotgun ====================-->
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Shotgun_P</defName>
+    <label>Paragon Conspirator - Emergent</label>
+    <description>Paragon moded Shotgun used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCShortGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1685</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Rifle_P>1</ODC_Rifle_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Conspirator - Emergent</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC Elemental Shotgun ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Shotgun_P_Acid</defName>
+    <label>Paragon Conspirator - Apex(Acid)</label>
+    <description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCShortGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1885</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_Acid</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun_P>1</ODC_Shotgun_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+		  <li>PulseCharge</li>
+		  <li>Attachable</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Conspirator - Apex(Acid)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Shotgun_P_Cryo</defName>
+    <label>Paragon Conspirator - Apex(Cryo)</label>
+    <description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCShortGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1885</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_Cryo</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun_P>1</ODC_Shotgun_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+		  <li>PulseCharge</li>
+		  <li>Attachable</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Conspirator - Apex(Cryo)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Shotgun_P_Fire</defName>
+    <label>Paragon Conspirator - Apex(Fire)</label>
+    <description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCShortGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1885</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_Fire</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun_P>1</ODC_Shotgun_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+		  <li>PulseCharge</li>
+		  <li>Attachable</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Conspirator - Apex(Fire)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_Shotgun_P_EMP</defName>
+    <label>Paragon Conspirator - Apex(EMP)</label>
+    <description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCShortGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1885</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_EMP</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun_P>1</ODC_Shotgun_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+		  <li>PulseCharge</li>
+		  <li>Attachable</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Conspirator - Apex(EMP)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC AssaultRifle ====================-->
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_AssaultRifle_A_P</defName>
+    <label>Paragon Thoughtless - Emergent</label>
+    <description>Paragon moded Assault Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/AssaultRifle_A_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCBaseGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1685</MarketValue>
+	  <Mass>4.0</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_AR</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>4</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Rifle_P>1</ODC_Rifle_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Thoughtless - Emergent</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_AssaultRifle_B_P</defName>
+    <label>Paragon Thoughtless - Apex</label>
+    <description>Paragon specialised Assault Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/AssaultRifle_B_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCBaseGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1885</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_AR</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>6</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_AssaultRifle_A_P>1</ODC_AssaultRifle_A_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Thoughtless - Apex</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC SniperRifle ====================-->
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_SniperRifle_A_P</defName>
+    <label>Paragon Smuggler - Emergent</label>
+    <description>Paragon moded Sniper Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SniperRifle_A_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCSniperGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1885</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_SR</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>49.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Rifle_P>1</ODC_Rifle_P>
+	  <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Rifle</li>
+		  <li>Scoped</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Smuggler - Emergent</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_SniperRifle_B_P</defName>
+    <label>Paragon Smuggler - Apex</label>
+    <description>Paragon specialised Sniper Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SniperRifle_B_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCSniperGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2285</MarketValue>
+	  <Mass>5.0</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_SR</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>58.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_SniperRifle_A_P>1</ODC_SniperRifle_A_P>
+	  <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Rifle</li>
+		  <li>Scoped</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Smuggler - Apex</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC - Rocket Launcher ====================-->
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedPersonaNC">
+    <defName>ODC_RocketLauncher_P</defName>
+    <label>Paragon Boomshooter - Emergent</label>
+    <description>Paragon moded Rocket Launcher used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/RocketLauncher_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCSniperGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1885</MarketValue>
+	  <Mass>11.5</Mass>
+      <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL</defaultProjectile>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Rifle_P>1</ODC_Rifle_P>
+	  <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Boomshooter - Emergent</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_RocketLauncher_P_Acid</defName>
+    <label>Paragon Boomshooter - Apex(Acid)</label>
+    <description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/RocketLauncher_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCSniperGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>11.5</Mass>
+      <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_Acid</defaultProjectile>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher_P>1</ODC_RocketLauncher_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Boomshooter - Apex(Acid)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_RocketLauncher_P_Cryo</defName>
+    <label>Paragon Boomshooter - Apex(Cryo)</label>
+    <description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/RocketLauncher_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCSniperGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>11.5</Mass>
+      <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_Cryo</defaultProjectile>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher_P>1</ODC_RocketLauncher_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Boomshooter - Apex(Cryo)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_RocketLauncher_P_Fire</defName>
+    <label>Paragon Boomshooter - Apex(Fire)</label>
+    <description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/RocketLauncher_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCSniperGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>11.5</Mass>
+      <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_Fire</defaultProjectile>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher_P>1</ODC_RocketLauncher_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Boomshooter - Apex(Fire)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="ODCRangedPersona">
+    <defName>ODC_RocketLauncher_P_EMP</defName>
+    <label>Paragon Boomshooter - Apex(EMP)</label>
+    <description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/RocketLauncher_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags Inherit="False">
+      <li>ODCSniperGunP</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1390</MarketValue>
+	  <Mass>11.5</Mass>
+      <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_EMP</defaultProjectile>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher_P>1</ODC_RocketLauncher_P>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Boomshooter - Apex(EMP)</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

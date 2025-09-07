@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Torraxin Serum ====================-->
+<OE_TorraxinSerum.label>torraxin serum</OE_TorraxinSerum.label>
+<OE_TorraxinSerum.description>A capsule of thick fluid containing a mixture concentrated combat stimulant Torraxin. Intended for use by melee fighters.\n\nCombat serums are not addictive and have no side effects.</OE_TorraxinSerum.description>
+<OE_TorraxinSerum.comps.CompUsable.useLabel>Use {0_label}</OE_TorraxinSerum.comps.CompUsable.useLabel>
+<OE_TorraxinSerum.ingestible.ingestCommandString>Take {0}</OE_TorraxinSerum.ingestible.ingestCommandString>
+<OE_TorraxinSerum.ingestible.ingestReportString>Taking {0}</OE_TorraxinSerum.ingestible.ingestReportString>
+
+<!--=============== Joltixin Serum ====================-->
+<OE_JoltixinSerum.label>joltixin serum</OE_JoltixinSerum.label>
+<OE_JoltixinSerum.description>A capsule of thick fluid containing a mixture concentrated combat stimulant Joltixin. Intended for use by gunners.\n\nCombat serums are not addictive and have no side effects.</OE_JoltixinSerum.description>
+<OE_JoltixinSerum.comps.CompUsable.useLabel>Use {0_label}</OE_JoltixinSerum.comps.CompUsable.useLabel>
+<OE_JoltixinSerum.ingestible.ingestCommandString>Take {0}</OE_JoltixinSerum.ingestible.ingestCommandString>
+<OE_JoltixinSerum.ingestible.ingestReportString>Taking {0}</OE_JoltixinSerum.ingestible.ingestReportString>
+
+<!--=============== Luraxin Serum ====================-->
+<OE_LuraxinSerum.label>luraxin serum</OE_LuraxinSerum.label>
+<OE_LuraxinSerum.description>A capsule of thick fluid containing a mixture concentrated combat stimulant Luraxin. Intended for use by psy-users.\n\nCombat serums are not addictive and have no side effects.</OE_LuraxinSerum.description>
+<OE_LuraxinSerum.comps.CompUsable.useLabel>Use {0_label}</OE_LuraxinSerum.comps.CompUsable.useLabel>
+<OE_LuraxinSerum.ingestible.ingestCommandString>Take {0}</OE_LuraxinSerum.ingestible.ingestCommandString>
+<OE_LuraxinSerum.ingestible.ingestReportString>Taking {0}</OE_LuraxinSerum.ingestible.ingestReportString>
+
+<!--=============== Alcrexin Serum ====================-->
+<OE_AlcrexinSerum.label>alcrexin serum</OE_AlcrexinSerum.label>
+<OE_AlcrexinSerum.description>A capsule of thick fluid containing a mixture concentrated combat stimulant Alcrexin. Intended for use by mechanitors.\n\nCombat serums are not addictive and have no side effects.</OE_AlcrexinSerum.description>
+<OE_AlcrexinSerum.comps.CompUsable.useLabel>Use {0_label}</OE_AlcrexinSerum.comps.CompUsable.useLabel>
+<OE_AlcrexinSerum.ingestible.ingestCommandString>Take {0}</OE_AlcrexinSerum.ingestible.ingestCommandString>
+<OE_AlcrexinSerum.ingestible.ingestReportString>Taking {0}</OE_AlcrexinSerum.ingestible.ingestReportString>
+
+</LanguageData>

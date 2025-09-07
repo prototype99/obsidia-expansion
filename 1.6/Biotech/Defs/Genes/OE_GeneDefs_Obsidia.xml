@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Acid ====================-->
+<!--=============== Resistant ====================-->
+  <GeneDef>
+    <defName>OE_AcidResistant</defName>
+    <label>acid resistant</label> 
+    <labelShortAdj>acidproof</labelShortAdj> 
+    <description>Carriers of this gene are resistant to acid damage from any source. They only take 25% of the acid damage.</description>
+    <iconPath>UI/Icons/Genes/OE_AcidResistant</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>1700</displayOrderInCategory>
+    <damageFactors>
+      <OTCAcid>0.25</OTCAcid>
+    </damageFactors>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>antitox</symbol></li>
+		<li><symbol>rough</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>AcidDamage</li>
+    </exclusionTags>
+  </GeneDef>
+<!--=============== Weakness ====================-->
+  <GeneDef>
+    <defName>OE_AcidWeakness</defName>
+    <label>acid weakness</label>
+    <labelShortAdj>sensitiveskin</labelShortAdj>
+    <description>Carriers of this gene have biological compounds in their skin that react painfully to acid damage. They are unusually sensitive to acid. Damage from acid is multiplied by 4.</description>
+    <iconPath>UI/Icons/Genes/OE_AcidWeakness</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>1701</displayOrderInCategory>
+    <damageFactors>
+      <OTCAcid>4</OTCAcid>
+    </damageFactors>
+    <biostatMet>2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>sensitive</symbol></li>
+        <li><symbol>thinskin</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>AcidDamage</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Resistant ====================-->
+  <GeneDef>
+    <defName>OE_CryoResistant</defName>
+    <label>cryo resistant</label> 
+    <labelShortAdj>cryoproof</labelShortAdj> 
+    <description>Carriers of this gene have special fast-acting sweat glands and cold-resistant skin. They only take 25% of the сryo damage.</description>
+    <iconPath>UI/Icons/Genes/OE_CryoResistant</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>1702</displayOrderInCategory>
+    <damageFactors>
+      <OTCCryo>0.25</OTCCryo>
+    </damageFactors>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dry</symbol></li>
+        <li><symbol>warm</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>CryoDamage</li>
+    </exclusionTags>
+  </GeneDef>
+<!--=============== Weakness ====================-->
+  <GeneDef>
+    <defName>OE_CryoWeakness</defName>
+    <label>cryo weakness</label>
+    <labelShortAdj>wetskin</labelShortAdj>
+    <description>Carriers have wet, thin skin which freezes easily from сryo damage, and their immune systems react very poorly to this kind of threat. Damage from сryo is multiplied by 4.</description>
+    <iconPath>UI/Icons/Genes/OE_CryoWeakness</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>1703</displayOrderInCategory>
+    <damageFactors>
+      <OTCCryo>4</OTCCryo>
+    </damageFactors>
+    <biostatMet>2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>wet</symbol></li>
+        <li><symbol>freeze</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>CryoDamage</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Blast ====================-->
+<!--=============== Resistant ====================-->
+  <GeneDef>
+    <defName>OE_BlastResistant</defName>
+    <label>blast resistant</label> 
+    <labelShortAdj>blastproof</labelShortAdj> 
+    <description>Carriers of this gene take less injuries than others from the blast damage. They have thickened, densified bones, nearly-solid ribcages, and strengthened binding factors in joints and flesh. They only take 25% of the blast damage.</description>
+    <iconPath>UI/Icons/Genes/OE_BlastResistant</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>1704</displayOrderInCategory>
+    <damageFactors>
+      <OCCBlast>0.25</OCCBlast>
+    </damageFactors>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>tough</symbol></li>
+        <li><symbol>stout</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>BlastDamage</li>
+    </exclusionTags>
+  </GeneDef>
+<!--=============== Weakness ====================-->
+  <GeneDef>
+    <defName>OE_BlastWeakness</defName>
+    <label>blast weakness</label>
+    <labelShortAdj>thinskin</labelShortAdj>
+    <description>Carriers of this gene take greater injuries than others from the blast damage. They have thin, brittle bones and less binding molecules in joints and flesh. Damage from blast is multiplied by 4.</description>
+    <iconPath>UI/Icons/Genes/OE_BlastWeakness</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>1705</displayOrderInCategory>
+    <damageFactors>
+      <OCCBlast>4</OCCBlast>
+    </damageFactors>
+    <biostatMet>2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>frail</symbol></li>
+        <li><symbol>thin</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>BlastDamage</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== MentalBreakThreshold ====================-->
+<!--=============== Resistant ====================-->
+  <GeneDef>
+    <defName>OE_MentalBreakResistant</defName>
+    <label>mental break resistant</label>
+    <labelShortAdj>mental stability</labelShortAdj>
+    <description>Carriers of this gene is mentally tough and won't break down under stresses that would crack most people.</description>
+    <iconPath>UI/Icons/Genes/OE_MentalBreakResistant</iconPath>
+	<displayCategory>Mood</displayCategory>
+    <displayOrderInCategory>1700</displayOrderInCategory>
+    <statOffsets>
+      <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+    </statOffsets>
+	<statFactors>
+      <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>mental</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+	<exclusionTags>
+      <li>MentalBreakThreshold</li>
+    </exclusionTags>
+  </GeneDef>
+<!--=============== Weakness ====================-->
+  <GeneDef>
+    <defName>OE_MentalBreakWeakness</defName>
+    <label>mental break weakness</label>
+    <labelShortAdj>mental instability</labelShortAdj>
+    <description>Carriers of this gene tends to crack under pressure.</description>
+    <iconPath>UI/Icons/Genes/OE_MentalBreakWeakness</iconPath>
+	<displayCategory>Mood</displayCategory>
+    <displayOrderInCategory>1701</displayOrderInCategory>
+    <statOffsets>
+      <MentalBreakThreshold>0.15</MentalBreakThreshold>
+    </statOffsets>
+	<statFactors>
+      <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">2.0</CertaintyLossFactor>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>mental</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+	<exclusionTags>
+      <li>MentalBreakThreshold</li>
+    </exclusionTags>
+  </GeneDef>
+
+</Defs>

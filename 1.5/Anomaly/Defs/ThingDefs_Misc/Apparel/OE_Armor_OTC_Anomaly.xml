@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Turret ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Turret</defName>
+    <label>OTC Engineer Armor(Goblin)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Turret/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>2705</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Turret/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Turret</li>
+      </tags>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy acid turret</label>
+        <defaultProjectile>Grenade_Armor_OTC_TurretPack_Acid</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+	  <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy cryo turret</label>
+        <defaultProjectile>Grenade_Armor_OTC_TurretPack_Cryo</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+	  <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy fire turret</label>
+        <defaultProjectile>Grenade_Armor_OTC_TurretPack_Fire</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+	  <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy EMP turret</label>
+        <defaultProjectile>Grenade_Armor_OTC_TurretPack_EMP</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OTC_TurretPack_Acid</defName>
+    <label>OTC turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_Acid</uiIconPath>
+    <projectile>
+      <explosionRadius>15.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>OTC_Turret_TacticalTurret_Acid</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OTC_TurretPack_Cryo</defName>
+    <label>OTC turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_Cryo</uiIconPath>
+    <projectile>
+      <explosionRadius>15.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>OTC_Turret_TacticalTurret_Cryo</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OTC_TurretPack_Fire</defName>
+    <label>OTC turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_Fire</uiIconPath>
+    <projectile>
+      <explosionRadius>15.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>OTC_Turret_TacticalTurret_Fire</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OTC_TurretPack_EMP</defName>
+    <label>OTC turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_EMP</uiIconPath>
+    <projectile>
+      <explosionRadius>15.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>OTC_Turret_TacticalTurret_EMP</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC Tactical Turret ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OTC_Turret_TacticalTurret_Acid</defName>
+    <label>OTC tactical acid turret</label>
+    <description>An automatic OTC Acid Pistol-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_Syntherius>8</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>65</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>OTC_Gun_TacticalTurret_Acid</turretGunDef>
+      <turretBurstWarmupTime>0.75</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.1</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>OTC_Gun_TacticalTurret_Acid</defName>
+    <label>Celestial Prototype Turret(Acid)</label>
+    <description>Reconstructed OTC Pistol for turrets. Balanced weapon with Acid charges.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_OTC_P_M_Acid</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>7</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OTC_Turret_TacticalTurret_Cryo</defName>
+    <label>OTC tactical cryo turret</label>
+    <description>An automatic OTC Cryo Pistol-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_Syntherius>8</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>65</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>OTC_Gun_TacticalTurret_Cryo</turretGunDef>
+      <turretBurstWarmupTime>0.75</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.1</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>OTC_Gun_TacticalTurret_Cryo</defName>
+    <label>Celestial Prototype Turret(Cryo)</label>
+    <description>Reconstructed OTC Pistol for turrets. Balanced weapon with Cryo charges.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_OTC_P_M_Cryo</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>7</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OTC_Turret_TacticalTurret_Fire</defName>
+    <label>OTC tactical fire turret</label>
+    <description>An automatic OTC Fire Pistol-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_Syntherius>8</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>65</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>OTC_Gun_TacticalTurret_Fire</turretGunDef>
+      <turretBurstWarmupTime>0.75</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.1</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>OTC_Gun_TacticalTurret_Fire</defName>
+    <label>Celestial Prototype Turret(Fire)</label>
+    <description>Reconstructed OTC Pistol for turrets. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_OTC_P_M_Fire</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>7</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OTC_Turret_TacticalTurret_EMP</defName>
+    <label>OTC tactical EMP turret</label>
+    <description>An automatic OTC EMP Pistol-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_Syntherius>8</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>65</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>OTC_Gun_TacticalTurret_EMP</turretGunDef>
+      <turretBurstWarmupTime>0.75</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.1</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>OTC_Gun_TacticalTurret_EMP</defName>
+    <label>Celestial Prototype Turret(EMP)</label>
+    <description>Reconstructed OTC Pistol for turrets. Balanced weapon with EMP charges.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OTC_TacticalTurret_Gun_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_OTC_P_M_EMP</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>7</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

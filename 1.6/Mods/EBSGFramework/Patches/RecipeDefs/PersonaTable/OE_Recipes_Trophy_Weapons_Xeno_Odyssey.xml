@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationFindMod">
+		    <mods>
+			  <li>Vanilla Expanded Framework</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+			  <operations>
+			    				
+				<li Class="PatchOperationFindMod">
+				  <mods>
+				    <li>Odyssey</li>
+				  </mods>
+				  <match Class="PatchOperationSequence">
+				    <operations>
+					  <li Class="PatchOperationAdd">
+					    <xpath>/Defs</xpath>
+						<value>
+<!--=============== Mothoids / Drakonids ====================-->
+<!--=============== Bow ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_Xeno_Bow</defName>
+    <label>Paragon bond Silver Eclipse</label>
+    <description>Paragon bond a Silver Eclipse.</description>
+    <jobString>Paragon bonding a Silver Eclipse.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_Bow</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_Bow</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_Bow_P>1</OE_Trophy_Xeno_Bow_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_Xeno_Bow_P</defName>
+    <label>Reset Paragon Silver Eclipse</label>
+    <description>Reset a Paragon Silver Eclipse.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Silver Eclipse.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_Bow_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_Bow_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_Bow_P>1</OE_Trophy_Xeno_Bow_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Tortle / Ceratons ====================-->
+<!--=============== Minigun ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_ODC_Trophy_Xeno_Minigun</defName>
+    <label>Paragon bond Obsidian Orator</label>
+    <description>Paragon bond an Obsidian Orator.</description>
+    <jobString>Paragon bonding an Obsidian Orator.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ODC_Trophy_Xeno_Minigun</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ODC_Trophy_Xeno_Minigun</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ODC_Trophy_Xeno_Minigun_P>1</ODC_Trophy_Xeno_Minigun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_ODC_Trophy_Xeno_Minigun_P</defName>
+    <label>Reset Paragon Obsidian Orator</label>
+    <description>Reset a Paragon Obsidian Orator.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Obsidian Orator.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ODC_Trophy_Xeno_Minigun_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ODC_Trophy_Xeno_Minigun_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ODC_Trophy_Xeno_Minigun_P>1</ODC_Trophy_Xeno_Minigun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>				
+						
+						</value>
+					  </li>
+					  
+					  <li Class="PatchOperationFindMod">
+					    <mods>
+					      <li>Obsidia Expansion - Nanomorph Xenotype</li>
+					    </mods>
+					    <match Class="PatchOperationSequence">
+					      <operations>
+						    <li Class="PatchOperationAdd">
+						      <xpath>/Defs</xpath>
+							  <value>
+<!--=============== Nanomorph ====================-->
+<!--=============== Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_Xeno_Pistol</defName>
+    <label>Paragon bond Mechfeaster</label>
+    <description>Paragon bond an Mechfeaster.</description>
+    <jobString>Paragon bonding an Mechfeaster.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_Pistol</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_Pistol</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_Pistol_P>1</OE_Trophy_Xeno_Pistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_Xeno_Pistol_P</defName>
+    <label>Reset Paragon Mechfeaster</label>
+    <description>Reset a Paragon Mechfeaster.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Mechfeaster.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_Pistol_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_Pistol_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_Pistol_P>1</OE_Trophy_Xeno_Pistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+							
+							  </value>
+						    </li>
+						  </operations>
+					    </match>
+					  </li>	
+					</operations>
+				  </match>
+				</li>
+			  
+			  </operations>
+			</match>
+		  </li>  
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

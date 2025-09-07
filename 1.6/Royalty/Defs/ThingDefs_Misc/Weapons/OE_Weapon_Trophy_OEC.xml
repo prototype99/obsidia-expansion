@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Scepter ====================-->
+  <ThingDef Name="OECTrophyScepterBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.75</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.125</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.50</MeditationFocusGain>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>ornament</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>OEGearTrophy</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECTrophyScepterBase">
+    <defName>OEC_Trophy_Scepter</defName>
+    <label>Ancient Scepter</label>
+    <description>An ancient scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Scepter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OECTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>2550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECTrophyScepterBase">
+    <defName>OEC_Trophy_Scepter_P</defName>
+    <label>Persona Ancient Scepter</label>
+    <description>An ancient persona scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Scepter_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OECTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>3050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Inlaid ====================-->
+  <ThingDef ParentName="OECTrophyScepterBase">
+    <defName>OEC_Trophy_Scepter_I</defName>
+    <label>Inlaid Ancient Scepter</label>
+    <description>An ancient scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.\n\nInlaid with Insight Power Stone: Weapon bonus stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Scepter_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OECTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>3350</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>1.0</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.155</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.75</MeditationFocusGain>
+    </equippedStatOffsets>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Pistol ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OECTrophyPistolBase" ParentName="OERangedBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+	  <MeleeDodgeChance>5.0</MeleeDodgeChance>
+	  <MeleeHitChance>5.0</MeleeHitChance>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OEC_Trophy_P</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>OEGearTrophy</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OEC_Trophy_P</defName>
+    <label>Divinity bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OEC_Trophy_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.85</armorPenetrationBase>
+	  <stoppingPower>1.5</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OEC_Trophy_P_I</defName>
+    <label>Inlaid Divinity bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OEC_Trophy_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.85</armorPenetrationBase>
+	  <stoppingPower>2.0</stoppingPower>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECTrophyPistolBase">
+    <defName>OEC_Trophy_Pistol</defName>
+    <label>Divinity</label>
+    <description>This antique pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OECTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Inlaid ====================-->
+  <ThingDef ParentName="OECTrophyPistolBase">
+    <defName>OEC_Trophy_Pistol_I</defName>
+    <label>Inlaid Divinity</label>
+    <description>This antique pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.\n\nInlaid with Dexterity Power Stone: Weapon performance stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Pistol_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+	  <li>OECTrophyRanged</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>2350</MarketValue>
+	  <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs Inherit="false">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OEC_Trophy_P_I</defaultProjectile>
+        <warmupTime>0.25</warmupTime>
+        <range>29.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps MayRequire="Ludeon.RimWorld.Odyssey" Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Inlaid Divinity</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

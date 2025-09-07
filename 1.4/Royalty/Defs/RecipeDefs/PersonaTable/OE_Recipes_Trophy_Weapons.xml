@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Shovel ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_Shovel</defName>
+    <label>Persona bond Lloyd's Shovel</label>
+    <description>Persona bond a Lloyd's Shovel.</description>
+    <jobString>Persona bonding a Lloyd's Shovel.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Shovel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Shovel</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Shovel_P>1</OE_Trophy_Shovel_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_Shovel_P</defName>
+    <label>Reset Persona Lloyd's Shovel</label>
+    <description>Reset a Persona Lloyd's Shovel.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Lloyd's Shovel.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Shovel_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Shovel_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Shovel_P>1</OE_Trophy_Shovel_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Broken Sword ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_BrokenSword</defName>
+    <label>Persona bond Black Prince Sword</label>
+    <description>Persona bond a Black Prince Sword.</description>
+    <jobString>Persona bonding a Black Prince Sword.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_BrokenSword</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_BrokenSword</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_BrokenSword_P>1</OE_Trophy_BrokenSword_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_BrokenSword_P</defName>
+    <label>Reset Persona Black Prince Sword</label>
+    <description>Reset a Persona Black Prince Sword.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Black Prince Sword.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_BrokenSword_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_BrokenSword_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_BrokenSword_P>1</OE_Trophy_BrokenSword_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Repair Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_RepairPistol</defName>
+    <label>Persona bond Prototype sX-02a</label>
+    <description>Persona bond a Prototype sX-02a.</description>
+    <jobString>Persona bonding a Prototype sX-02a.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_RepairPistol</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_RepairPistol</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_RepairPistol_P>1</OE_Trophy_RepairPistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_RepairPistol_P</defName>
+    <label>Reset Persona Prototype sX-02a</label>
+    <description>Reset a Persona Prototype sX-02a.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Prototype sX-02a.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_RepairPistol_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_RepairPistol_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_RepairPistol_P>1</OE_Trophy_RepairPistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Unstable Gun ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_UnstableGun</defName>
+    <label>Persona bond Titanstrike</label>
+    <description>Persona bond a Titanstrike.</description>
+    <jobString>Persona bonding a Titanstrike.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_UnstableGun</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_UnstableGun</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_UnstableGun_P>1</OE_Trophy_UnstableGun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_UnstableGun_P</defName>
+    <label>Reset Persona Titanstrike</label>
+    <description>Reset a Persona Titanstrike.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Titanstrike.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_UnstableGun_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_UnstableGun_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_UnstableGun_P>1</OE_Trophy_UnstableGun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Sample Collector ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_SampleCollector</defName>
+    <label>Persona bond Ashisogi Jizō</label>
+    <description>Persona bond an Ashisogi Jizō.</description>
+    <jobString>Persona bonding an Ashisogi Jizō.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_SampleCollector</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_SampleCollector</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_SampleCollector_P>1</OE_Trophy_SampleCollector_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_SampleCollector_P</defName>
+    <label>Reset Persona Ashisogi Jizō</label>
+    <description>Reset a Persona Ashisogi Jizō.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Ashisogi Jizō.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_SampleCollector_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_SampleCollector_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_SampleCollector_P>1</OE_Trophy_SampleCollector_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>

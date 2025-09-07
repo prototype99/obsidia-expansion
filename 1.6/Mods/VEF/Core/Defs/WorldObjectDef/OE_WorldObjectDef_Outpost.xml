@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Syntherius Outpost ====================-->
+  <WorldObjectDef Abstract="True">
+    <defName>OE_Outpost_Syntherius</defName>
+    <label>obsidia syntherius outpost</label>
+    <description>Places a temporary, autonomously-led camp that specializes in collecting syntherius from syntherius trees in the areas, cannot be placed on deserts. Once an ample amount is collected, a delivery will be made at the outskirts of a faction's primary colony.</description>
+    <expandingIconTexture>WorldObjects/OutpostLogging</expandingIconTexture>
+    <modExtensions>
+      <li Class="Outposts.OutpostExtension">
+        <DisallowedBiomes>
+          <li>Desert</li>
+          <li>ExtremeDesert</li>
+        </DisallowedBiomes>
+		<RequiredSkills>
+          <Plants>10</Plants>
+        </RequiredSkills>
+		<TicksPerProduction>750000</TicksPerProduction>
+        <RequiresGrowing>true</RequiresGrowing>
+        <MinPawns>3</MinPawns>
+        <ProvidedFood>MealFine_Veg</ProvidedFood>
+        <ResultOptions>
+          <li>
+            <AmountPerPawn>5</AmountPerPawn>
+            <Thing>OE_Syntherius</Thing>
+          </li>
+        </ResultOptions>
+        <Event>VOE_JoinLoggingOutpost</Event>
+      </li>
+    </modExtensions>
+  </WorldObjectDef>
+
+<!--=============== Obsidia Power Outposts ====================-->
+<!--=============== Obsidia Geothermal Power Grid ====================-->
+  <WorldObjectDef Abstract="True">
+    <defName>OE_Outpost_PowerGrid_Geothermal</defName>
+    <label>obsidia geothermal power grid</label>
+    <description>Places a temporary, autonomously-led camp that specializes in generating power with obsidia geothermal generators. Constantly providing it to faction's primary colony.</description>
+    <worldObjectClass>VOEPowerGrid.Outpost_PowerGrid</worldObjectClass>
+    <expandingIconTexture>WorldObjects/OutpostGeothermalGeneratorGrid</expandingIconTexture>
+    <expandingIconDrawSize>1.25</expandingIconDrawSize>
+    <modExtensions>
+      <li Class="Outposts.OutpostExtension">
+        <RequiredSkills>
+          <Construction>12</Construction>
+        </RequiredSkills>
+        <TicksPerProduction>-1</TicksPerProduction>
+        <TicksToPack>60000</TicksToPack>
+        <TicksToSetUp>60000</TicksToSetUp>
+        <ProvidedFood>MealFine_Veg</ProvidedFood>
+        <DisplaySkills>
+          <li>Construction</li>
+        </DisplaySkills>
+      </li>
+      <li Class="VOEPowerGrid.OutpostExtension_PowerGrid">
+        <ConstructionOptions>
+          <li>
+            <BuildingDef>OE_GeothermalGenerator</BuildingDef>
+            <ConstructionSkillsPerOne>6</ConstructionSkillsPerOne>
+            <MinConstructionSkill>8</MinConstructionSkill>
+          </li>
+        </ConstructionOptions>
+        <HillinessCapacity>
+          <li>
+            <key>Flat</key>
+            <value>0.75</value>
+          </li>
+          <li>
+            <key>SmallHills</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>LargeHills</key>
+            <value>1.25</value>
+          </li>
+          <li>
+            <key>Mountainous</key>
+            <value>1.5</value>
+          </li>
+        </HillinessCapacity>
+      </li>
+    </modExtensions>
+  </WorldObjectDef>
+
+<!--=============== Obsidia Syntherius Power Grid ====================-->
+  <WorldObjectDef Abstract="True">
+    <defName>OE_Outpost_PowerGrid_Syntherius</defName>
+    <label>obsidia syntherius powered power grid</label>
+    <description>Places a temporary, autonomously-led camp that specializes in generating power with syntherius powered generators. Constantly providing it to faction's primary colony.</description>
+    <worldObjectClass>VOEPowerGrid.Outpost_PowerGrid_Refuelable</worldObjectClass>
+    <expandingIconTexture>WorldObjects/OutpostNucleardGeneratorGrid</expandingIconTexture>
+    <modExtensions>
+      <li Class="Outposts.OutpostExtension">
+        <RequiredSkills>
+          <Construction>12</Construction>
+        </RequiredSkills>
+        <TicksPerProduction>-1</TicksPerProduction>
+        <TicksToPack>60000</TicksToPack>
+        <TicksToSetUp>60000</TicksToSetUp>
+        <ProvidedFood>MealFine_Veg</ProvidedFood>
+        <DisplaySkills>
+          <li>Construction</li>
+        </DisplaySkills>
+      </li>
+      <li Class="VOEPowerGrid.OutpostExtension_PowerGrid">
+        <ConstructionOptions>
+          <li>
+            <BuildingDef>OE_SyntheriusGenerator_Medium</BuildingDef>
+            <ConstructionSkillsPerOne>6</ConstructionSkillsPerOne>
+            <MinConstructionSkill>8</MinConstructionSkill>
+          </li>
+		  <li>
+            <BuildingDef>OE_SyntheriusGenerator_Large</BuildingDef>
+            <ConstructionSkillsPerOne>12</ConstructionSkillsPerOne>
+            <MinConstructionSkill>14</MinConstructionSkill>
+          </li>
+        </ConstructionOptions>
+        <fuelFilter>
+          <thingDefs>
+		    <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <HillinessFuel>
+          <li>
+            <key>Flat</key>
+            <value>0</value>
+          </li>
+          <li>
+            <key>SmallHills</key>
+            <value>0</value>
+          </li>
+          <li>
+            <key>LargeHills</key>
+            <value>0</value>
+          </li>
+          <li>
+            <key>Mountainous</key>
+            <value>0.25</value>
+          </li>
+        </HillinessFuel>
+        <BiomeFuelDefault>1</BiomeFuelDefault>
+      </li>
+    </modExtensions>
+  </WorldObjectDef>
+
+<!--=============== Obsidia Quantum Power Grid ====================-->
+  <WorldObjectDef Abstract="True">
+    <defName>OE_Outpost_PowerGrid_Quantum</defName>
+    <label>obsidia quantum power grid</label>
+    <description>Places a temporary, autonomously-led camp that specializes in generating power with quantum generators. Constantly providing it to faction's primary colony.</description>
+    <worldObjectClass>VOEPowerGrid.Outpost_PowerGrid</worldObjectClass>
+    <expandingIconTexture>WorldObjects/OutpostPowerCellGrid</expandingIconTexture>
+    <expandingIconDrawSize>0.8</expandingIconDrawSize>
+    <modExtensions>
+      <li Class="Outposts.OutpostExtension">
+        <RequiredSkills>
+          <Construction>12</Construction>
+        </RequiredSkills>
+        <TicksPerProduction>-1</TicksPerProduction>
+        <TicksToPack>60000</TicksToPack>
+        <TicksToSetUp>60000</TicksToSetUp>
+        <ProvidedFood>MealFine_Veg</ProvidedFood>
+        <DisplaySkills>
+          <li>Construction</li>
+        </DisplaySkills>
+      </li>
+      <li Class="VOEPowerGrid.OutpostExtension_PowerGrid">
+        <ConstructionOptions>
+          <li>
+            <BuildingDef>OE_QuantumGenerator_Medium</BuildingDef>
+            <ConstructionSkillsPerOne>8</ConstructionSkillsPerOne>
+            <MinConstructionSkill>10</MinConstructionSkill>
+          </li>
+		  <li>
+            <BuildingDef>OE_QuantumGenerator_Large</BuildingDef>
+            <ConstructionSkillsPerOne>16</ConstructionSkillsPerOne>
+            <MinConstructionSkill>18</MinConstructionSkill>
+          </li>
+        </ConstructionOptions>
+        <HillinessCapacity>
+          <li>
+            <key>Flat</key>
+            <value>1.5</value>
+          </li>
+        </HillinessCapacity>
+      </li>
+    </modExtensions>
+  </WorldObjectDef>
+
+</Defs>

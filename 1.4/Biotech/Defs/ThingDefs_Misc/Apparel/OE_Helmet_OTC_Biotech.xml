@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OTCHelmetMod">
+	<defName>OTC_Helmet_M_Mechanitor</defName>
+    <label>OTC Engineer Helmet(Overseer)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nModified for improves Mechanoids Control abilities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OTC/Mechanitor/OTCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1525</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>17</MechBandwidth>
+	  <MechRemoteRepairDistance>6.9</MechRemoteRepairDistance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OTC_Helmet_M>1</OTC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OTC/Mechanitor/OTCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OTCEngineer_Mechanitor</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

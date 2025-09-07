@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Melee ====================-->
+<!--=============== ODC Sickle ====================-->
+  <ThingDef Name="ODCTrophySicklePersonaNC" ParentName="ODCTrophySickleBaseNC" Abstract="True">
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ODCTrophySicklePersona" ParentName="ODCTrophySickleBase" Abstract="True">
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophySicklePersonaNC">
+    <defName>ODC_Trophy_Sickle_A_P</defName>
+    <label>Persona Temptation</label>
+    <description>An archaic persona sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_A_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCTrophyMelee</li>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCTrophySicklePersona">
+    <defName>ODC_Trophy_Sickle_B_P</defName>
+    <label>Persona Temptation - Emergent</label>
+    <description>An archaic persona sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_B_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>2250</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <HuntingStealth>0.10</HuntingStealth>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <ODC_Trophy_Sickle_A_P>1</ODC_Trophy_Sickle_A_P>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCTrophySicklePersona">
+    <defName>ODC_Trophy_Sickle_C_P</defName>
+    <label>Persona Temptation - Apex</label>
+    <description>An archaic persona sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_C_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>2450</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <HuntingStealth>0.10</HuntingStealth>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <ODC_Trophy_Sickle_B_P>1</ODC_Trophy_Sickle_B_P>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Ranged ====================-->
+<!--=============== ODC Blade Launcher ====================-->
+  <ThingDef Name="ODCTrophyBladeLauncherPersonaNC" ParentName="ODCTrophyBladeLauncherBaseNC" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ODCTrophyBladeLauncherPersona" ParentName="ODCTrophyBladeLauncherBase" Abstract="True">
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherPersonaNC">
+    <defName>ODC_Trophy_BladeLauncher_A_P</defName>
+    <label>Persona Harvest</label>
+    <description>Rare heavy persona blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_A_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3050</MarketValue>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherPersona">
+    <defName>ODC_Trophy_BladeLauncher_B_P</defName>
+    <label>Persona Harvest - Emergent</label>
+    <description>Rare heavy persona blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_B_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3250</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.10</PlantHarvestYield>
+	  <AnimalGatherYield>0.10</AnimalGatherYield>
+	  <MiningYield>0.10</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_A_P>1</ODC_Trophy_BladeLauncher_A_P>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherPersona">
+    <defName>ODC_Trophy_BladeLauncher_C_P</defName>
+    <label>Persona Harvest - Apex</label>
+    <description>Rare heavy persona blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_C_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3650</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.10</PlantHarvestYield>
+	  <AnimalGatherYield>0.10</AnimalGatherYield>
+	  <MiningYield>0.10</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL_C</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_B_P>1</ODC_Trophy_BladeLauncher_B_P>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

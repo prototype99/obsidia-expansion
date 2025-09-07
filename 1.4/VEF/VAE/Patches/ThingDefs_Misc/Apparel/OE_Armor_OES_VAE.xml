@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Shield ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OES_Armor_Shield"]/statBases</xpath>
+	<order>Prepend</order>
+    <value>
+      <EnergyShieldRechargeRate>0.05</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.55</EnergyShieldEnergyMax>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OES_Armor_Shield"]</xpath>
+    <value>
+      <comps>
+	    <li Class="CompProperties_Shield" />
+	  </comps>
+    </value>
+</Operation>
+
+<!--=============== Barrier ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OES_Armor_Barrier"]/statBases</xpath>
+	<order>Prepend</order>
+    <value>
+      <EnergyShieldRechargeRate>0.05</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OES_Armor_Barrier"]</xpath>
+    <value>
+      <comps>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
+		 <compClass>VFECore.CompShieldBubble</compClass>
+		 <blockRangedAttack>true</blockRangedAttack>
+		 <blockMeleeAttack>false</blockMeleeAttack>
+		 <showWhenDrafted>true</showWhenDrafted>
+		 <showOnHostiles>true</showOnHostiles>
+		 <showOnNeutralInCombat>true</showOnNeutralInCombat>
+		 <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		 <EnergyShieldRechargeRate>0.05</EnergyShieldRechargeRate>
+		 <EnergyShieldEnergyMax>125</EnergyShieldEnergyMax>
+		 <minShieldSize>1.4</minShieldSize>
+		 <maxShieldSize>1.8</maxShieldSize>
+		 <disableRotation>true</disableRotation>
+	  </li>
+	  </comps>
+    </value>
+</Operation>
+
+</Patch>

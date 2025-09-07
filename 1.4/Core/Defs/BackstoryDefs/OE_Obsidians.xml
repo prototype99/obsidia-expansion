@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Civilians ====================-->
+<!--=============== Colonist ====================-->
+  <BackstoryDef>
+    <defName>OE_Colonist</defName>
+    <title>obsidia colonist</title>
+    <titleShort>colonist</titleShort>
+    <baseDesc>[PAWN_nameDef] completed Obsidia Colonists course. Possesses all the necessary skills to support life in the colony.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Animals</li>
+	  <li>Cooking</li>
+	  <li>PlantWork</li>
+    </requiredWorkTags>
+    <skillGains>
+      <li><key>Animals</key><value>3</value></li>
+      <li><key>Cooking</key><value>3</value></li>
+	  <li><key>Plants</key><value>3</value></li>
+	  <li><key>Crafting</key><value>-2</value></li>
+      <li><key>Intellectual</key><value>-2</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECivilian>0</OECivilian>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Worker ====================-->
+  <BackstoryDef>
+    <defName>OE_Worker</defName>
+    <title>obsidia worker</title>
+    <titleShort>worker</titleShort>
+    <baseDesc>[PAWN_nameDef] completed Obsidia Workers course. Possesses all the necessary skills to build a colony and extract useful resources.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Constructing</li>
+	  <li>Crafting</li>
+	  <li>Mining</li>
+    </requiredWorkTags>
+    <skillGains>
+      <li><key>Construction</key><value>3</value></li>
+      <li><key>Crafting</key><value>3</value></li>
+	  <li><key>Mining</key><value>3</value></li>
+	  <li><key>Animals</key><value>-2</value></li>
+      <li><key>Social</key><value>-2</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECivilian>0</OECivilian>
+    </forcedTraits>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Scientist ====================-->
+  <BackstoryDef>
+    <defName>OE_Scientist</defName>
+    <title>obsidia scientist</title>
+    <titleShort>scientist</titleShort>
+    <baseDesc>[PAWN_nameDef] completed Obsidia Scientists course. Possesses all the necessary skills for the development and improvement the colony.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Intellectual</li>
+	  <li>Social</li>
+    </requiredWorkTags>
+    <skillGains>
+      <li><key>Intellectual</key><value>3</value></li>
+      <li><key>Medicine</key><value>3</value></li>
+	  <li><key>Social</key><value>3</value></li>
+	  <li><key>Cooking</key><value>-2</value></li>
+      <li><key>Mining</key><value>-2</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECivilian>0</OECivilian>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Combat ====================-->
+<!--=============== Melee ====================-->
+  <BackstoryDef>
+    <defName>OE_Soldier_Melee</defName>
+    <title>obsidia warrior</title>
+    <titleShort>warrior</titleShort>
+    <baseDesc>[PAWN_nameDef] completed combat Obsidia Warriors course. Trained in close combat and medicine to keep his comrades healthy.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Violent</li>
+    </requiredWorkTags>
+    <skillGains>
+      <li><key>Melee</key><value>5</value></li>
+      <li><key>Medicine</key><value>3</value></li>
+      <li><key>Shooting</key><value>-3</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OEFighters</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OESoldier>0</OESoldier>
+    </forcedTraits>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Ranged ====================-->
+  <BackstoryDef>
+    <defName>OE_Soldier_Ranged</defName>
+    <title>obsidia gunner</title>
+    <titleShort>gunner</titleShort>
+    <baseDesc>[PAWN_nameDef] completed combat Obsidia Gunners courses. Trained in ranged combat and construction skills to maintain vehicles and buildings.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Constructing</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+    <skillGains>
+      <li><key>Shooting</key><value>5</value></li>
+      <li><key>Construction</key><value>3</value></li>
+      <li><key>Melee</key><value>-3</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OEFighters</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OESoldier>0</OESoldier>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Special ====================-->
+<!--=============== Drifter ====================-->
+  <BackstoryDef>
+    <defName>OE_Drifter</defName>
+    <title>obsidia drifter</title>
+    <titleShort>drifter</titleShort>
+    <baseDesc>[PAWN_nameDef] previously led a nomadic lifestyle. Constantly moving acquired useful skills for life in temporary camps.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Animals</li>
+	  <li>Cooking</li>
+	  <li>Hauling</li>
+    </requiredWorkTags>
+    <skillGains>
+      <li><key>Animals</key><value>5</value></li>
+      <li><key>Cooking</key><value>5</value></li>
+      <li><key>Mining</key><value>-2</value></li>
+	  <li><key>Plants</key><value>-2</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OEDrifters</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OENomad>0</OENomad>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Cultist ====================-->
+  <BackstoryDef>
+    <defName>OE_Cultist</defName>
+    <title>crimson arachna cultist</title>
+    <titleShort>cultist</titleShort>
+    <baseDesc>[PAWN_nameDef] as a member of Crimson Arachna Cult has an unwavering faith and the desire to bring their faith to everyone in any way.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Artistic</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+    <skillGains>
+      <li><key>Artistic</key><value>5</value></li>
+      <li><key>Crafting</key><value>5</value></li>
+	  <li><key>Intellectual</key><value>-2</value></li>
+      <li><key>Social</key><value>-2</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OECultist</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECultist>0</OECultist>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Eidolon ====================-->
+  <BackstoryDef>
+    <defName>OE_Eidolon</defName>
+    <title>obsidia empire eidolon</title>
+    <titleShort>eidolon</titleShort>
+    <baseDesc>[PAWN_nameDef] once considered a great Hero of Obsidia but after some events it became forgotten and abandoned by its own people. Has excellent combat skills and the ability to maintain own reputation.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Social</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+	  <li>Hauling</li>
+    </workDisables>
+    <skillGains>
+      <li><key>Melee</key><value>6</value></li>
+      <li><key>Shooting</key><value>6</value></li>
+	  <li><key>Social</key><value>6</value></li>
+	  <li><key>Medicine</key><value>-6</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OESins</li>
+    </spawnCategories>
+	<forcedTraits>
+      <Gourmand>0</Gourmand>
+	  <OEEidolon>0</OEEidolon>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OES - Shields ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OEShieldBaseNQ">
+    <defName>OES_Shield_Small</defName>
+    <label>Heroic Deflector</label>
+	<description>Heroic small Shield used by Eidolons.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/OES/Small/OESShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>4025</MarketValue>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.90</ArmorRating_Heat>
+      <Mass>2.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Empyrium>45</OE_Empyrium>
+	  <OE_Orichalcum>30</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+	  <OE_HeroicKit>2</OE_HeroicKit>
+    </costList>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+	  <ToxicResistance>0.30</ToxicResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">4</MechBandwidth>
+	  <MoveSpeed>0.10</MoveSpeed>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>OESShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/OES/Small/OESShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.0</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OES_Utility</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OEShieldBaseNQ">
+    <defName>OES_Shield_Big</defName>
+    <label>Heroic Bulwark</label>
+	<description>Heroic Big Shield used by Eidolons.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/OES/Big/OESShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>5635</MarketValue>
+	  <MaxHitPoints>350</MaxHitPoints>
+	  <ArmorRating_Sharp>2.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.70</ArmorRating_Heat>
+      <Mass>4.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Empyrium>135</OE_Empyrium>
+	  <OE_Orichalcum>30</OE_Orichalcum>
+	  <OE_Syntherius>20</OE_Syntherius>
+	  <OE_HeroicKit>3</OE_HeroicKit>
+    </costList>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>-2</MeleeDodgeChance>
+	  <ToxicResistance>0.30</ToxicResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">4</MechBandwidth>
+	  <MoveSpeed>-0.05</MoveSpeed>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>OESShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+          <li>Legs</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/OES/Big/OESShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.1</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OES_Utility</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

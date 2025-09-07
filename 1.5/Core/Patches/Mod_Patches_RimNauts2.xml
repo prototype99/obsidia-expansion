@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>RimNauts 2</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== genstep ====================-->
+    <GenStepDef>
+      <defName>RimNauts2_OE_Obsidian_GenStep_RocksFromGrid</defName>
+      <order>10</order>
+      <genStep Class="RimNauts2.AsteroidOre.RocksFromGrid">
+        <rock_def_name>Granite</rock_def_name>
+        <ore_def_name>MineableOEObsidian</ore_def_name>
+        <ore_chance_outer>(0.10, 0.20)</ore_chance_outer>
+        <ore_chance_inner>(0.40, 0.80)</ore_chance_inner>
+        <inner_elevation>0.75</inner_elevation>
+        <roof_elevation>0.55</roof_elevation>
+      </genStep>
+    </GenStepDef>
+    <GenStepDef>
+      <defName>RimNauts2_OE_Mythril_GenStep_RocksFromGrid</defName>
+      <order>10</order>
+      <genStep Class="RimNauts2.AsteroidOre.RocksFromGrid">
+        <rock_def_name>Marble</rock_def_name>
+        <ore_def_name>MineableOEMythril</ore_def_name>
+        <ore_chance_outer>(0.10, 0.20)</ore_chance_outer>
+        <ore_chance_inner>(0.40, 0.80)</ore_chance_inner>
+        <inner_elevation>0.75</inner_elevation>
+        <roof_elevation>0.55</roof_elevation>
+      </genStep>
+    </GenStepDef>
+    <GenStepDef>
+      <defName>RimNauts2_OE_Platinum_GenStep_RocksFromGrid</defName>
+      <order>10</order>
+      <genStep Class="RimNauts2.AsteroidOre.RocksFromGrid">
+        <rock_def_name>Limestone</rock_def_name>
+        <ore_def_name>MineableOEPlatinum</ore_def_name>
+        <ore_chance_outer>(0.10, 0.20)</ore_chance_outer>
+        <ore_chance_inner>(0.40, 0.80)</ore_chance_inner>
+        <inner_elevation>0.75</inner_elevation>
+        <roof_elevation>0.55</roof_elevation>
+      </genStep>
+    </GenStepDef>
+<!--=============== mapgen ====================-->
+    <MapGeneratorDef ParentName="RimNauts2_Ore_MapGen">
+      <defName>RimNauts2_OE_Obsidian_MapGen</defName>
+      <genSteps>
+        <li>RimNauts2_OE_Obsidian_GenStep_RocksFromGrid</li>
+      </genSteps>
+    </MapGeneratorDef>
+    <MapGeneratorDef ParentName="RimNauts2_Ore_MapGen">
+      <defName>RimNauts2_OE_Mythril_MapGen</defName>
+      <genSteps>
+        <li>RimNauts2_OE_Mythril_GenStep_RocksFromGrid</li>
+      </genSteps>
+    </MapGeneratorDef>
+    <MapGeneratorDef ParentName="RimNauts2_Ore_MapGen">
+      <defName>RimNauts2_OE_Platinum_MapGen</defName>
+      <genSteps>
+        <li>RimNauts2_OE_Platinum_GenStep_RocksFromGrid</li>
+      </genSteps>
+    </MapGeneratorDef>
+<!--=============== component ====================-->
+    <Universum.Defs.Component ParentName="RimNauts2_Component_AsteroidOre">
+      <defName>RimNauts2_Component_AsteroidOre_OE_Obsidian</defName>
+      <overwriteText>obsidian</overwriteText>
+      <color>(255,255,255)</color>
+    </Universum.Defs.Component>
+    <Universum.Defs.Component ParentName="RimNauts2_Component_AsteroidOre">
+      <defName>RimNauts2_Component_AsteroidOre_OE_Mythril</defName>
+      <overwriteText>mythril</overwriteText>
+      <color>(255,255,255)</color>
+    </Universum.Defs.Component>
+    <Universum.Defs.Component ParentName="RimNauts2_Component_AsteroidOre">
+      <defName>RimNauts2_Component_AsteroidOre_OE_Platinum</defName>
+      <overwriteText>platinum</overwriteText>
+      <color>(255,255,255)</color>
+    </Universum.Defs.Component>	
+<!--=============== mesh ====================-->
+    <Universum.Defs.Mesh ParentName="RimNauts2_Mesh_Asteroid_2">
+      <defName>RimNauts2_Mesh_AsteroidOre_OE_Obsidian</defName>
+      <materialDefName>RimNauts2_Material_Surface_Metal</materialDefName>
+      <maxElevationColor>(33,29,46)</maxElevationColor>
+      <minElevationColor>(22,18,35)</minElevationColor>
+    </Universum.Defs.Mesh>
+    <Universum.Defs.Mesh ParentName="RimNauts2_Mesh_Asteroid_2">
+      <defName>RimNauts2_Mesh_AsteroidOre_OE_Mythril</defName>
+      <materialDefName>RimNauts2_Material_Surface_Metal</materialDefName>
+      <maxElevationColor>(242,253,234)</maxElevationColor>
+      <minElevationColor>(241,247,247)</minElevationColor>
+    </Universum.Defs.Mesh>
+    <Universum.Defs.Mesh ParentName="RimNauts2_Mesh_Asteroid_2">
+      <defName>RimNauts2_Mesh_AsteroidOre_OE_Platinum</defName>
+      <materialDefName>RimNauts2_Material_Surface_Metal</materialDefName>
+      <maxElevationColor>(155,133,107)</maxElevationColor>
+      <minElevationColor>(229,229,229)</minElevationColor>
+    </Universum.Defs.Mesh>
+<!--=============== object ====================-->
+    <Universum.Defs.CelestialObject ParentName="RimNauts2_CelestialObject_AsteroidOre">
+      <defName>RimNauts2_CelestialObject_AsteroidOre_OE_Obsidian</defName>
+      <objectHolder>
+        <mapGeneratorDef>RimNauts2_OE_Obsidian_MapGen</mapGeneratorDef>
+        <description>obsidian ore asteroid</description>
+      </objectHolder>
+      <components>
+        <li>RimNauts2_Component_AsteroidOre_OE_Obsidian</li>
+      </components>
+      <shape>
+        <meshes>
+          <li>RimNauts2_Mesh_AsteroidOre_OE_Obsidian</li>
+        </meshes>
+      </shape>
+    </Universum.Defs.CelestialObject>
+	<Universum.Defs.CelestialObject ParentName="RimNauts2_CelestialObject_AsteroidOre">
+      <defName>RimNauts2_CelestialObject_AsteroidOre_OE_Mythril</defName>
+      <objectHolder>
+        <mapGeneratorDef>RimNauts2_OE_Mythril_MapGen</mapGeneratorDef>
+        <description>mythril ore asteroid</description>
+      </objectHolder>
+      <components>
+        <li>RimNauts2_Component_AsteroidOre_OE_Mythril</li>
+      </components>
+      <shape>
+        <meshes>
+          <li>RimNauts2_Mesh_AsteroidOre_OE_Mythril</li>
+        </meshes>
+      </shape>
+    </Universum.Defs.CelestialObject>
+	<Universum.Defs.CelestialObject ParentName="RimNauts2_CelestialObject_AsteroidOre">
+      <defName>RimNauts2_CelestialObject_AsteroidOre_OE_Platinum</defName>
+      <objectHolder>
+        <mapGeneratorDef>RimNauts2_OE_Platinum_MapGen</mapGeneratorDef>
+        <description>platinum ore asteroid</description>
+      </objectHolder>
+      <components>
+        <li>RimNauts2_Component_AsteroidOre_OE_Platinum</li>
+      </components>
+      <shape>
+        <meshes>
+          <li>RimNauts2_Mesh_AsteroidOre_OE_Platinum</li>
+        </meshes>
+      </shape>
+    </Universum.Defs.CelestialObject>
+	
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/Universum.Defs.ObjectGeneration[defName="RimNauts2_ObjectGeneration_AsteroidOre"]/objectGroup</xpath>
+			<value>
+			  <li>
+			    <celestialDefName>RimNauts2_CelestialObject_AsteroidOre_OE_Obsidian</celestialDefName>
+				<tickets>450</tickets>
+			  </li>
+			  <li>
+			    <celestialDefName>RimNauts2_CelestialObject_AsteroidOre_OE_Mythril</celestialDefName>
+				<tickets>350</tickets>
+			  </li>
+			  <li>
+			    <celestialDefName>RimNauts2_CelestialObject_AsteroidOre_OE_Platinum</celestialDefName>
+				<tickets>550</tickets>
+			  </li>
+			</value>
+		  </li>		  
+		  
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

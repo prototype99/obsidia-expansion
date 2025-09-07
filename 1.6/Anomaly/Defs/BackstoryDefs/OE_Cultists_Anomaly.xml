@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Special ====================-->
+<!--=============== Zealot ====================-->
+  <BackstoryDef>
+    <defName>OE_Zealot</defName>
+    <title>crimson arachna zealot</title>
+    <titleShort>zealot</titleShort>
+    <description>[PAWN_nameDef] led bloodlit rituals in the name of the Crimson Arachna Cult. Driven by unwavering conviction, they inspired dread and awe through chanting, fire, and sacrifice.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Social</li>
+	  <li>Violent</li>
+	  <li>Artistic</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Social>5</Social>
+      <Melee>3</Melee>
+	  <Artistic>2</Artistic>
+      <Intellectual>-2</Intellectual>
+	  <Mining>-1</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>OECultist</li>
+	  <li>Cult</li>
+	  <li>Madman</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OERitualist>2</OERitualist>
+    </forcedTraits>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

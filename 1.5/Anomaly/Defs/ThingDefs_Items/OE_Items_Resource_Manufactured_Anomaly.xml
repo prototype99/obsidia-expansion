@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Serum Base ====================-->
+  <ThingDef Name="OESerumBase" ParentName="SerumBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+	  <MarketValue>100</MarketValue>
+	  <Flammability>0.5</Flammability>
+    </statBases>
+	<tradeTags Inherit="False">
+      <li>OEDrugExotic</li>
+    </tradeTags>
+    <recipeMaker Inherit="False">
+      <workAmount>1050</workAmount>
+      <researchPrerequisite>CACSerum</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>10</Medicine>
+		<Intellectual>6</Intellectual>
+	  </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef Name="OESerumHediffBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	<isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+  </HediffDef>
+
+<!--=============== Torraxin Serum ====================-->
+  <ThingDef ParentName="OESerumBase">
+    <defName>OE_TorraxinSerum</defName>
+    <label>torraxin serum</label>
+    <description>A capsule of thick fluid containing a mixture concentrated combat stimulant Torraxin. Intended for use by melee fighters.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Serum/OE_Torraxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <hediffDef>OE_TorraxinSerum</hediffDef>
+        <allowRepeatedUse>true</allowRepeatedUse>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+    </comps>
+    <costList>
+      <OE_Torraxin>2</OE_Torraxin>
+	  <Neutroamine>2</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+  <HediffDef ParentName="OESerumHediffBase">
+    <defName>OE_TorraxinSerum</defName>
+    <label>torraxin serum</label>
+    <description>Torraxin Serum in the bloodstream. Boosts melee combat stats.</description>
+    <stages>
+      <li>
+        <painFactor>0.65</painFactor>
+		<capMods>
+		  <li>
+			<capacity>Manipulation</capacity>
+            <offset>0.65</offset>
+		  </li>
+		  <li>
+			<capacity>Sight</capacity>
+            <offset>0.45</offset>
+		  </li>
+		</capMods>
+		<statOffsets>
+          <MeleeHitChance>6</MeleeHitChance>
+          <MeleeDodgeChance>20</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Joltixin Serum ====================-->
+  <ThingDef ParentName="OESerumBase">
+    <defName>OE_JoltixinSerum</defName>
+    <label>joltixin serum</label>
+    <description>A capsule of thick fluid containing a mixture concentrated combat stimulant Joltixin. Intended for use by gunners.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Serum/OE_Joltixin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <hediffDef>OE_JoltixinSerum</hediffDef>
+        <allowRepeatedUse>true</allowRepeatedUse>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+    </comps>
+    <costList>
+      <OE_Joltixin>2</OE_Joltixin>
+	  <Neutroamine>2</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+  <HediffDef ParentName="OESerumHediffBase">
+    <defName>OE_JoltixinSerum</defName>
+    <label>joltixin serum</label>
+    <description>Joltixin Serum in the bloodstream. Boosts ranged combat stats.</description>
+    <stages>
+      <li>
+        <painFactor>0.65</painFactor>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+            <offset>0.65</offset>
+		  </li>
+		  <li>
+			<capacity>Sight</capacity>
+            <offset>0.45</offset>
+		  </li>
+		</capMods>
+		<statOffsets>
+          <AimingDelayFactor>-0.65</AimingDelayFactor>
+          <ShootingAccuracyPawn>7</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Helmet ====================-->
+<!--=============== Exohelm ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="EGOHelmetBase">
+	<defName>EGO_Helmet_Exohelm_Mechanitor</defName>
+    <label>EGO Exohelm(Automancer)</label>
+    <description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve mechanitor stats.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Mechanitor/EGOHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>2400</MarketValue>
+	  <ArmorRating_Sharp>1.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.90</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.90</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.90</VacuumResistance>
+	  <MechBandwidth>24</MechBandwidth>
+	  <MechControlGroups>3</MechControlGroups>
+	  <WorkSpeedGlobalOffsetMech>0.25</WorkSpeedGlobalOffsetMech>
+	  <MechRemoteRepairDistance>9.9</MechRemoteRepairDistance>
+	  <MechRemoteShieldDistance>9.9</MechRemoteShieldDistance>
+      <MechRemoteShieldEnergy>100</MechRemoteShieldEnergy>
+	  <MechFormingSpeed>1</MechFormingSpeed>
+	  <MechRepairSpeed>1</MechRepairSpeed>
+    </equippedStatOffsets>
+    <apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Mechanitor/EGOHelmet</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

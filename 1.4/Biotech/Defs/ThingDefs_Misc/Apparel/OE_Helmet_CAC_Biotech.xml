@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Light ====================-->
+  <ThingDef ParentName="CACHelmetLight">
+	<defName>CAC_LightHelmet_Mechanitor</defName>
+    <label>CAC Cultist Light Helmet(Overseer)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves Mechanoids Control abilities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/CAC/Light/Mechanitor/CACHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2725</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechRemoteRepairDistance>5.9</MechRemoteRepairDistance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_LightHelmet>1</CAC_LightHelmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/CAC/Light/Mechanitor/CACHelmet</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist_Mechanitor</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+  <ThingDef ParentName="CACHelmetHeavy">
+	<defName>CAC_HeavyHelmet_Mechanitor</defName>
+    <label>CAC Cultist Heavy Helmet(Overseer)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves Mechanoids Control abilities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/CAC/Heavy/Mechanitor/CACHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2750</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechRemoteRepairDistance>5.9</MechRemoteRepairDistance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_HeavyHelmet>1</CAC_HeavyHelmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/CAC/Heavy/Mechanitor/CACHelmet</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist_Mechanitor</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

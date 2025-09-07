@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+<!--=============== Mobile Colonial Vihecle ====================-->
+  <ThingDef ParentName="BaseBullet">
+	<defName>Bullet_ODC_MCV_MainTurret</defName>
+	<label>MCV turret bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/ODC_BulletSmall</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+	</graphicData>
+	<projectile>
+	  <damageDef>Bullet</damageDef>
+	  <damageAmountBase>12</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>85</speed>
+	</projectile>
+  </ThingDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+	<defName>ODC_MCV_MainTurret</defName>
+	<label>MCV turret</label>
+	<description>Small turret used by ODC Mobile Colonial Vihecle.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/MCV/ODC_MobileColonialVihecle_TurretTop</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_AssaultRifle</shotSound>
+	<reloadSound>VVE_BulldogReloadSound</reloadSound>
+	<genericAmmo>true</genericAmmo>
+	<autoSnapTargeting>true</autoSnapTargeting>
+	<turretType>Rotatable</turretType>
+	<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+	<hitFlags>IntendedTarget</hitFlags>
+	<rotationSpeed>1.75</rotationSpeed>
+	<projectileOffset>2.0</projectileOffset>
+	<reloadTimer>1.5</reloadTimer>
+	<magazineCapacity>256</magazineCapacity>
+	<chargePerAmmoCount>0.08</chargePerAmmoCount>
+	<warmUpTimer>1.15</warmUpTimer>
+	<maxRange>29.9</maxRange>
+	<projectile>Bullet_ODC_MCV_MainTurret</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>4</shotsPerBurst>
+		<ticksBetweenShots>10</ticksBetweenShots>
+		<ticksBetweenBursts>90</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	</fireModes>
+	<ammunition>
+	  <thingDefs>
+		<li>OE_AmmoKit</li>
+	  </thingDefs>
+	</ammunition>
+  </Vehicles.VehicleTurretDef>
+
+</Defs>

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Helmet ====================-->
+  <ThingDef Name="ODCHelmetBase" ParentName="OEHelmetBase" Abstract="True">
+	<tradeTags>
+      <li>ODCHelmet</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>20000</WorkToMake>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <Mass>1.5</Mass>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>0.15</PainShockThreshold>
+	  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+    </equippedStatOffsets>
+  </ThingDef>
+
+<!--=============== Nomad MK-1 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Nomad</defName>
+    <label>ODC Nomad Mask</label>
+    <description>Power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>825</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>55</OE_Obsidian>
+	  <OE_Platinum>20</OE_Platinum>
+	  <OE_Mooncloth>20</OE_Mooncloth>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCNomad</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGear</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Spacer</defName>
+    <label>ODC Spacer Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Spacer/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+      <MarketValue>1025</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>25</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Mooncloth>5</OE_Mooncloth>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Spacer/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCNomad</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Recon MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Recon</defName>
+    <label>ODC Recon Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves shooting skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Recon/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1025</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <AccuracyLong>0.15</AccuracyLong>
+	  <RangedWeapon_Cooldown>-0.10</RangedWeapon_Cooldown>
+	  <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Leather_Astrinx>5</OE_Leather_Astrinx>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Recon/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCRecon</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Duelist MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Duelist</defName>
+    <label>ODC Duelist Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves melee skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Duelist/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1025</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MeleeWeapon_CooldownMultiplier>-0.10</MeleeWeapon_CooldownMultiplier>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Leather_Direwolf>5</OE_Leather_Direwolf>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Duelist/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCDuelist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Trader MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Trader</defName>
+    <label>ODC Trader Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves trader skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Trader/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1025</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <TradePriceImprovement>0.15</TradePriceImprovement>
+	  <NegotiationAbility>0.10</NegotiationAbility>
+	  <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Platinum>5</OE_Platinum>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Trader/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCTrader</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Beastmaster MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Beastmaster</defName>
+    <label>ODC Beastmaster Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves animal skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Beastmaster/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1025</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <HuntingStealth>0.90</HuntingStealth>
+	  <TameAnimalChance>0.10</TameAnimalChance>
+	  <TrainAnimalChance>0.10</TrainAnimalChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Syntherius>5</OE_Syntherius>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Beastmaster/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCNomad</li>
+		<li>ODCRecon</li>
+		<li>ODCDuelist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Constructor MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Constructor</defName>
+    <label>ODC Constructor Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves crafting skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Constructor/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1025</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+	  <ConstructionSpeed>0.10</ConstructionSpeed>
+	  <ConstructSuccessChance>0.10</ConstructSuccessChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Syntherius>5</OE_Syntherius>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Constructor/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCNomad</li>
+		<li>ODCRecon</li>
+		<li>ODCDuelist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Miner MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Miner</defName>
+    <label>ODC Miner Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves mining skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Miner/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1025</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <DeepDrillingSpeed>0.15</DeepDrillingSpeed>
+	  <MiningYield>0.10</MiningYield>
+	  <MiningSpeed>0.10</MiningSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Obsidian>5</OE_Obsidian>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Miner/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCNomad</li>
+		<li>ODCRecon</li>
+		<li>ODCDuelist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Medic MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Medic</defName>
+    <label>ODC Medic Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves medical skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Medic/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1025</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MedicalTendQuality>0.15</MedicalTendQuality>
+	  <MedicalOperationSpeed>0.10</MedicalOperationSpeed>
+	  <SurgerySuccessChanceFactor>0.10</SurgerySuccessChanceFactor>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Medic/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCNomad</li>
+		<li>ODCRecon</li>
+		<li>ODCDuelist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

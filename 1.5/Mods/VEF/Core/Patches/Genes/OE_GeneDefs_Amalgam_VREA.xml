@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Android</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+
+<!--=============== Amalgam Genes - Android ====================-->
+  <VREAndroids.AndroidGeneDef Name="OE_AmalgamAndroidBase" Abstract="True">
+	<displayCategory>VREA_Subroutine</displayCategory>
+	<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	<modExtensions>
+	  <li Class="VanillaGenesExpanded.GeneExtension">
+		<backgroundPathXenogenes>UI/Icons/Genes/OE_GeneBackground_Amalgam</backgroundPathXenogenes>
+		<backgroundPathEndogenes>UI/Icons/Genes/OE_GeneBackground_Amalgam</backgroundPathEndogenes>
+	  </li>
+	</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Microfibral Muscle ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamMicrofibralMuscle</defName>
+    <label>microfibral muscle</label> 
+    <description>Androids with this amalgam subroutine take less injuries than others from the same damage and feel half as much pain compared to a baseliner gene. They have extra-strong muscle fibers.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamMicrofibralMuscle</iconPath>
+    <displayOrderInCategory>9101</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+	<painFactor>0.5</painFactor>
+	<statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+	<statOffsets>
+      <CarryingCapacity>20</CarryingCapacity>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>Pain</li>
+	  <li>Toughness</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Armored Skeleton ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamArmoredSkeleton</defName>
+    <label>armored skeleton</label> 
+    <description>Androids with this amalgam subroutine are not slowed down when taking damage and do more damage in close-quarters combat. They have thickened, densified bones, nearly-solid ribcages, and strengthened binding factors in joints and flesh.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamArmoredSkeleton</iconPath>
+    <displayOrderInCategory>9102</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+    <statFactors>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+	  <MeleeDamageFactor>1.5</MeleeDamageFactor>
+    </statFactors>
+	<statOffsets>
+      <CarryingCapacity>20</CarryingCapacity>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>-3</biostatMet>
+    <exclusionTags>
+	  <li>MeleeDamage</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Temperature-Tolerant ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamTemperature</defName>
+    <label>amalgam temperature-tolerant</label> 
+    <labelShortAdj>amalgam-tolerant</labelShortAdj> 
+    <description>Androids with this amalgam subroutine are more comfortable in any temperatures. They have shielded temperature resistant skin layer.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamTemperature</iconPath>
+    <displayOrderInCategory>9103</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+    <statOffsets>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>MinTemperature</li>
+	  <li>MaxTemperature</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Plating Skin ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamPlatingSkin</defName>
+    <label>plating skin</label> 
+    <description>Androids with this amalgam subroutine have armored skin and are resistant to blast damage. They have shielded plating skin layer.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamPlatingSkin</iconPath>
+    <displayOrderInCategory>9104</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+    <damageFactors>
+	  <OCCBlast>0.30</OCCBlast>
+    </damageFactors>
+	<statOffsets>
+	  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	</statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>-3</biostatMet>
+    <exclusionTags>
+	  <li>BlastDamage</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Shielded Skin ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamShieldedSkin</defName>
+    <label>shielded skin</label> 
+    <description>Androids with this amalgam subroutine are resistant to environmental toxins, toxic buildup, acid, cryo and flame damages from any sources. They have shielded flexible skin layer.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamShieldedSkin</iconPath>
+    <displayOrderInCategory>9105</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+    <statOffsets>      
+	  <ToxicResistance>0.70</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.70</ToxicEnvironmentResistance>
+    </statOffsets>
+	<damageFactors>
+      <OTCAcid>0.30</OTCAcid>
+	  <OTCCryo>0.30</OTCCryo>
+	  <Flame>0.30</Flame>
+    </damageFactors>
+	<statFactors>
+      <Flammability>0.15</Flammability>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>AcidDamage</li>
+	  <li>CryoDamage</li>
+	  <li>FireDamage</li>
+	  <li>ToxicEnvironmentResistance</li>
+	  <li>ToxResistance</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Healing Factor ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamHealingFactor</defName>
+    <label>healing factor</label> 
+    <description>Androids with this amalgam subroutine gain immunity to diseases considerably faster than normal and heal from wounds four times as fast as normal.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamHealingFactor</iconPath>
+    <displayOrderInCategory>9106</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+	<statFactors>
+      <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+	  <InjuryHealingFactor>4</InjuryHealingFactor>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+	<biostatMet>-3</biostatMet>
+	<exclusionTags>
+      <li>Immunity</li>
+	  <li>WoundHealingRate</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Nervous System ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamNervousSystem</defName>
+    <label>amalgam nervous system</label> 
+    <description>Amalgam nervous system improve the carrier's consciousness capacity and improves negotiating abilities.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamNervousSystem</iconPath>
+    <displayOrderInCategory>9107</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <postFactor>1.25</postFactor>
+      </li>
+    </capMods>
+	<statOffsets>
+      <RestRateMultiplier>0.25</RestRateMultiplier>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <TradePriceImprovement>0.25</TradePriceImprovement>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+	<biostatMet>-4</biostatMet>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Eyes ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamEyes</defName>
+    <label>amalgam eyes</label> 
+    <description>Amalgam eyes improve the carrier's sight capacity and improves accuracy.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamEyes</iconPath>
+    <displayOrderInCategory>9108</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Sight</capacity>
+        <postFactor>1.25</postFactor>
+      </li>
+    </capMods>
+	<statOffsets>
+      <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+	  <MeleeHitChance>8</MeleeHitChance>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+	<biostatMet>-4</biostatMet>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Fingers ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamFingers</defName>
+    <label>amalgam fingers</label> 
+    <description>Amalgam fingers improve the carrier's manipulation capacity. This aids with many tasks, especially crafting and construction.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamFingers</iconPath>
+    <displayOrderInCategory>9109</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <postFactor>1.25</postFactor>
+      </li>
+    </capMods>
+    <biostatCpx>3</biostatCpx>
+	<biostatMet>-4</biostatMet>
+	<exclusionTags>
+      <li>Hands</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Tail ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamTail</defName>
+    <label>amalgam tail</label> 
+    <description>Androids with this amalgam subroutine grow a tail that can act as a dexterous fifth limb.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamTail</iconPath>
+    <displayOrderInCategory>9110</displayOrderInCategory>
+	<marketValueFactor>1.1</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.25</offset>
+      </li>
+    </capMods>
+    <biostatCpx>3</biostatCpx>
+	<biostatMet>-4</biostatMet>
+	<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/Tail/AmalgamTail</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0.2, -0.15)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, -0.1, -0.15)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, -0.1, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, -0.1, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	<exclusionTags>
+      <li>Tail</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+<!--=============== Amalgam Gene Flexibility ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamGeneFlexibility</defName>
+    <label>amalgam power flexibility</label>
+    <description>Androids with this amalgam subroutine have special cellular structure that facilitate and optimize power systems. But increases the market value significantly.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamGeneFlexibility</iconPath>
+    <displayOrderInCategory>9150</displayOrderInCategory>
+	<marketValueFactor>1.5</marketValueFactor>
+    <biostatCpx>4</biostatCpx>
+	<biostatMet>10</biostatMet>
+  </VREAndroids.AndroidGeneDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

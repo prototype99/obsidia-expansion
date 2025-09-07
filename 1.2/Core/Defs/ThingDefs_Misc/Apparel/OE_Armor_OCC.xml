@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC Armor ====================-->
+  <ThingDef Name="OCCArmorBase" ParentName="OEArmorBase" Abstract="True">
+	<statBases>
+      <Insulation_Cold>25</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+	  <WorkToMake>100000</WorkToMake>
+	  <Mass>14</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>0.15</PainShockThreshold>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MoveSpeed>-0.35</MoveSpeed>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCArmorBase">
+	<defName>OCC_Armor</defName>
+    <label>OCC Knight Armor</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed for use by the OCC Knights.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/OCCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OCCKnight</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>3500</MarketValue>
+	  <ArmorRating_Sharp>1.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.60</ArmorRating_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>225</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>40</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/OCCArmor</wornGraphicPath>
+	  <tags>
+		<li>OCCKnight</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OCCArmor</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OCCArmorMod" ParentName="OCCArmorBase">
+	<defName>OCC_Armor_M</defName>
+    <label>OCC Paladin Armor</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nThe hardened version provides more protection to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OCCPaladin</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>3700</MarketValue>
+	  <ArmorRating_Sharp>1.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Armor>1</OCC_Armor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OCCPaladin</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OCCGearMod</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OCCArmorMod">
+	<defName>OCC_Armor_M_Spacer</defName>
+    <label>OCC Paladin Armor(Space Griffin)</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/Spacer/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3950</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Armor_M>1</OCC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/Spacer/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Grenadier ====================-->
+  <ThingDef ParentName="OCCArmorMod">
+	<defName>OCC_Armor_M_Grenadier</defName>
+    <label>OTC Engineer Armor(Exploder)</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified by installing the Blast Grenade Launcher.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/Grenadier/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3950</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Armor_M>1</OCC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/Grenadier/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OCCPaladin_Grenadier</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>Launch Blast Grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>14.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>OCC_Grenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== OCC - Grenades ====================-->
+  <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <defName>OCC_Grenade</defName>
+	<label>Blast Grenade</label>
+	<thingClass>Projectile_Explosive</thingClass>
+	<graphicData>
+      <texPath>Things/Projectile/OCC_Rocket_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierBlast</uiIconPath>
+    <projectile>
+      <explosionRadius>2.9</explosionRadius>
+      <damageDef>OCCBlast</damageDef>
+	  <damageAmountBase>20</damageAmountBase>
+      <explosionDelay>100</explosionDelay>
+	  <speed>35</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>0.4</shadowSize>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Shield ====================-->
+  <ThingDef ParentName="OCCArmorMod">
+	<defName>OCC_Armor_M_Shield</defName>
+    <label>OCC Paladin Armor(Guardian)</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Reinforced Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/Shield/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>ShieldBelt</thingClass>
+    <statBases>
+	  <MarketValue>3950</MarketValue>
+	  <EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.75</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Armor_M>1</OCC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/Shield/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OCCPaladin_Shield</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Barrier ====================-->
+  <ThingDef Name="OCCArmorModBarrier" ParentName="OCCArmorMod" Abstract="True">
+	<!--= OCC_Armor_M_Barrier =-->
+    <label>OCC Paladin Armor(Protector)</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/Barrier/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>D9ASB.RangedShieldBelt</thingClass>
+    <statBases>
+	  <MarketValue>3950</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Armor_M>1</OCC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/Barrier/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OCCPaladin_Barrier</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

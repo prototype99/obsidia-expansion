@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC - BigSword ====================-->
+  <ThingDef Name="OСCBigSwordBase" ParentName="OEMeleeBase" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.10</MoveSpeed>
+	</equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCBigSwordBase">
+    <defName>OCC_BigSword</defName>
+    <label>Shikigami</label>
+    <description>Regular Longsword used by the OCC Knights.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/BigSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1830</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCHeavyMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>165</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>9</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCBigSwordBase">
+    <defName>OCC_BigSword_M</defName>
+    <label>Reforged Shikigami</label>
+    <description>Reforged Longsword used by OCC Paladins.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/BigSword_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2080</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>50</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>50</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_BigSword>1</OCC_BigSword>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OCC - BigHammer ====================-->
+  <ThingDef Name="OСCBigHammerBase" ParentName="OEMeleeBase" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.10</MoveSpeed>
+	</equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCBigHammerBase">
+    <defName>OCC_BigHammer</defName>
+    <label>Oni</label>
+    <description>Regular Big Hammer used by the OCC Knights.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/BigHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1830</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCHeavyMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.3</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>165</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>9</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCBigHammerBase">
+    <defName>OCC_BigHammer_M</defName>
+    <label>Reforged Oni</label>
+    <description>Reforged Big Hammer used by OCC Paladins.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/BigHammer_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2080</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.3</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_BigHammer>1</OCC_BigHammer>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OCC - PowerFist ====================-->
+  <ThingDef Name="OСCPowerFistBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCPowerFistBase">
+    <defName>OCC_PowerFist</defName>
+    <label>Typhon</label>
+    <description>Regular Power Fist used by the OCC Knights.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/PowerFist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>995</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>130</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>9</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCPowerFistBase">
+    <defName>OCC_PowerFist_M</defName>
+    <label>Reforged Typhon</label>
+    <description>Reforged Power Fist used by OCC Paladins.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/PowerFist_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1245</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist>1</OCC_PowerFist>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OСC - Elemental PowerFist ====================-->
+  <ThingDef Name="OСCElemPowerFistBase" ParentName="OСCPowerFistBase" Abstract="True">
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Acid ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_Acid</defName>
+    <label>Typhon(Acid)</label>
+    <description>Regular Power Fist used by the OCC Knights.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Acid/PowerFist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1070</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>130</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>14</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_M_Acid</defName>
+    <label>Reforged Typhon(Acid)</label>
+    <description>Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Acid/PowerFist_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1320</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_Acid>1</OCC_PowerFist_Acid>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_Cryo</defName>
+    <label>Typhon(Cryo)</label>
+    <description>Regular Power Fist used by the OCC Knights.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Cryo/PowerFist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1070</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>130</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>14</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_M_Cryo</defName>
+    <label>Reforged Typhon(Cryo)</label>
+    <description>Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Cryo/PowerFist_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1320</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_Cryo>1</OCC_PowerFist_Cryo>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_Fire</defName>
+    <label>Typhon(Fire)</label>
+    <description>Regular Power Fist used by the OCC Knights.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Fire/PowerFist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1070</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>130</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>14</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_M_Fire</defName>
+    <label>Reforged Typhon(Fire)</label>
+    <description>Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Fire/PowerFist_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1320</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_Fire>1</OCC_PowerFist_Fire>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_EMP</defName>
+    <label>Typhon(EMP)</label>
+    <description>Regular Power Fist used by the OCC Knights.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/EMP/PowerFist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1070</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMelee</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>130</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>14</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_M_EMP</defName>
+    <label>Reforged Typhon(EMP)</label>
+    <description>Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/EMP/PowerFist_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1320</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OCCBaseMeleeM</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_EMP>1</OCC_PowerFist_EMP>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

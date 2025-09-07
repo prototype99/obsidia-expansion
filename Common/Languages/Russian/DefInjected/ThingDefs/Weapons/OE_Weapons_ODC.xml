@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== ODC - Knife ====================-->
+<ODC_Knife.label>Шрам</ODC_Knife.label>
+<ODC_Knife.description>Обычный Нож, используемый Скитальцами Обсидии.</ODC_Knife.description>
+
+<ODC_Knife.tools.handle.label>рукоять</ODC_Knife.tools.handle.label>
+<ODC_Knife.tools.blade.label>клинок</ODC_Knife.tools.blade.label>
+<ODC_Knife.tools.point.label>остриё</ODC_Knife.tools.point.label>
+
+<ODC_Knife_P.label>Синхро Шрам</ODC_Knife_P.label>
+<ODC_Knife_P.description>Обычный синхро Нож, используемый Скитальцами Обсидии.</ODC_Knife_P.description>
+
+<ODC_Knife_P.tools.handle.label>рукоять</ODC_Knife_P.tools.handle.label>
+<ODC_Knife_P.tools.blade.label>клинок</ODC_Knife_P.tools.blade.label>
+<ODC_Knife_P.tools.point.label>остриё</ODC_Knife_P.tools.point.label>
+
+<!--=============== ODC - Sword ====================-->
+<ODC_Sword.label>Милость - Зарождение</ODC_Sword.label>
+<ODC_Sword.description>Модифицированный Меч, используемый Скитальцами Обсидии.</ODC_Sword.description>
+
+<ODC_Sword.tools.handle.label>рукоять</ODC_Sword.tools.handle.label>
+<ODC_Sword.tools.point.label>остриё</ODC_Sword.tools.point.label>
+<ODC_Sword.tools.edge.label>лезвие</ODC_Sword.tools.edge.label>
+
+<ODC_Sword_P.label>Синхро Милость - Зарождение</ODC_Sword_P.label>
+<ODC_Sword_P.description>Модифицированный синхро Меч, используемый Скитальцами Обсидии.</ODC_Sword_P.description>
+
+<ODC_Sword_P.tools.handle.label>рукоять</ODC_Sword_P.tools.handle.label>
+<ODC_Sword_P.tools.point.label>остриё</ODC_Sword_P.tools.point.label>
+<ODC_Sword_P.tools.edge.label>лезвие</ODC_Sword_P.tools.edge.label>
+
+<!--=============== ODC - BigSword ====================-->
+<ODC_BigSword.label>Завещание - Вершина</ODC_BigSword.label>
+<ODC_BigSword.description>Специализированный Большой Меч, используемый Скитальцами Обсидии.</ODC_BigSword.description>
+
+<ODC_BigSword.tools.handle.label>рукоять</ODC_BigSword.tools.handle.label>
+<ODC_BigSword.tools.point.label>остриё</ODC_BigSword.tools.point.label>
+<ODC_BigSword.tools.edge.label>лезвие</ODC_BigSword.tools.edge.label>
+
+<ODC_BigSword_P.label>Синхро Завещание - Вершина</ODC_BigSword_P.label>
+<ODC_BigSword_P.description>Специализированный Большой синхро Меч, используемый Скитальцами Обсидии.</ODC_BigSword_P.description>
+
+<ODC_BigSword_P.tools.handle.label>рукоять</ODC_BigSword_P.tools.handle.label>
+<ODC_BigSword_P.tools.point.label>остриё</ODC_BigSword_P.tools.point.label>
+<ODC_BigSword_P.tools.edge.label>лезвие</ODC_BigSword_P.tools.edge.label>
+
+<!--=============== ODC - DualSword ====================-->
+<ODC_DualSword.label>Гильотина - Вершина</ODC_DualSword.label>
+<ODC_DualSword.description>Специализированный Двойной Меч, используемый Скитальцами Обсидии.</ODC_DualSword.description>
+
+<ODC_DualSword.tools.shaft.label>древко</ODC_DualSword.tools.shaft.label>
+<ODC_DualSword.tools.edge.label>лезвие</ODC_DualSword.tools.edge.label>
+
+<ODC_DualSword_P.label>Синхро Гильотина - Вершина</ODC_DualSword_P.label>
+<ODC_DualSword_P.description>Специализированный Двойной синхро Меч, используемый Скитальцами Обсидии.</ODC_DualSword_P.description>
+
+<ODC_DualSword_P.tools.shaft.label>древко</ODC_DualSword_P.tools.shaft.label>
+<ODC_DualSword_P.tools.edge.label>лезвие</ODC_DualSword_P.tools.edge.label>
+
+<!--=============== ODC - Rapier ====================-->
+<ODC_Rapier.label>Несовершенный - Зарождение</ODC_Rapier.label>
+<ODC_Rapier.description>Модифицированная Рапира, используемая Скитальцами Обсидии.</ODC_Rapier.description>
+
+<ODC_Rapier.tools.handle.label>рукоять</ODC_Rapier.tools.handle.label>
+<ODC_Rapier.tools.point.label>остриё</ODC_Rapier.tools.point.label>
+
+<ODC_Rapier_P.label>Синхро Несовершенный - Зарождение</ODC_Rapier_P.label>
+<ODC_Rapier_P.description>Модифицированная синхро Рапира, используемая Скитальцами Обсидии.</ODC_Rapier_P.description>
+
+<ODC_Rapier_P.tools.handle.label>рукоять</ODC_Rapier_P.tools.handle.label>
+<ODC_Rapier_P.tools.point.label>остриё</ODC_Rapier_P.tools.point.label>
+
+<!--=============== ODC - RapierGuard ====================-->
+<ODC_RapierGuard.label>Непокорный - Вершина</ODC_RapierGuard.label>
+<ODC_RapierGuard.description>Специализированная Рапира, используемая Скитальцами Обсидии.</ODC_RapierGuard.description>
+
+<ODC_RapierGuard.tools.handle.label>рукоять</ODC_RapierGuard.tools.handle.label>
+<ODC_RapierGuard.tools.point.label>остриё</ODC_RapierGuard.tools.point.label>
+
+<ODC_RapierGuard_P.label>Синхро Непокорный - Вершина</ODC_RapierGuard_P.label>
+<ODC_RapierGuard_P.description>Специализированная синхро Рапира, используемая Скитальцами Обсидии.</ODC_RapierGuard_P.description>
+
+<ODC_RapierGuard_P.tools.handle.label>рукоять</ODC_RapierGuard_P.tools.handle.label>
+<ODC_RapierGuard_P.tools.point.label>остриё</ODC_RapierGuard_P.tools.point.label>
+
+<!--=============== ODC - Elemental Rapier ====================-->
+<!--=============== Acid ====================-->
+<ODC_Rapier_Acid.label>Загадка - Вершина(Кислота)</ODC_Rapier_Acid.label>
+<ODC_Rapier_Acid.description>Специализированная Рапира, используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_Rapier_Acid.description>
+
+<ODC_Rapier_Acid.tools.handle.label>рукоять</ODC_Rapier_Acid.tools.handle.label>
+<ODC_Rapier_Acid.tools.point.label>остриё</ODC_Rapier_Acid.tools.point.label>
+
+<ODC_Rapier_P_Acid.label>Синхро Загадка - Вершина(Кислота)</ODC_Rapier_P_Acid.label>
+<ODC_Rapier_P_Acid.description>Специализированная синхро Рапира, используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_Rapier_P_Acid.description>
+
+<ODC_Rapier_P_Acid.tools.handle.label>рукоять</ODC_Rapier_P_Acid.tools.handle.label>
+<ODC_Rapier_P_Acid.tools.point.label>остриё</ODC_Rapier_P_Acid.tools.point.label>
+<!--=============== Cryo ====================-->
+<ODC_Rapier_Cryo.label>Загадка - Вершина(Крио)</ODC_Rapier_Cryo.label>
+<ODC_Rapier_Cryo.description>Специализированная Рапира, используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_Rapier_Cryo.description>
+
+<ODC_Rapier_Cryo.tools.handle.label>рукоять</ODC_Rapier_Cryo.tools.handle.label>
+<ODC_Rapier_Cryo.tools.point.label>остриё</ODC_Rapier_Cryo.tools.point.label>
+
+<ODC_Rapier_P_Cryo.label>Синхро Загадка - Вершина(Крио)</ODC_Rapier_P_Cryo.label>
+<ODC_Rapier_P_Cryo.description>Специализированная синхро Рапира, используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_Rapier_P_Cryo.description>
+
+<ODC_Rapier_P_Cryo.tools.handle.label>рукоять</ODC_Rapier_P_Cryo.tools.handle.label>
+<ODC_Rapier_P_Cryo.tools.point.label>остриё</ODC_Rapier_P_Cryo.tools.point.label>
+<!--=============== Fire ====================-->
+<ODC_Rapier_Fire.label>Загадка - Вершина(Огонь)</ODC_Rapier_Fire.label>
+<ODC_Rapier_Fire.description>Специализированная Рапира, используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_Rapier_Fire.description>
+
+<ODC_Rapier_Fire.tools.handle.label>рукоять</ODC_Rapier_Fire.tools.handle.label>
+<ODC_Rapier_Fire.tools.point.label>остриё</ODC_Rapier_Fire.tools.point.label>
+
+<ODC_Rapier_P_Fire.label>Синхро Загадка - Вершина(Огонь)</ODC_Rapier_P_Fire.label>
+<ODC_Rapier_P_Fire.description>Специализированная синхро Рапира, используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_Rapier_P_Fire.description>
+
+<ODC_Rapier_P_Fire.tools.handle.label>рукоять</ODC_Rapier_P_Fire.tools.handle.label>
+<ODC_Rapier_P_Fire.tools.point.label>остриё</ODC_Rapier_P_Fire.tools.point.label>
+<!--=============== EMP ====================-->
+<ODC_Rapier_EMP.label>Загадка - Вершина(ЭМИ)</ODC_Rapier_EMP.label>
+<ODC_Rapier_EMP.description>Специализированная Рапира, используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_Rapier_EMP.description>
+
+<ODC_Rapier_EMP.tools.handle.label>рукоять</ODC_Rapier_EMP.tools.handle.label>
+<ODC_Rapier_EMP.tools.point.label>остриё</ODC_Rapier_EMP.tools.point.label>
+
+<ODC_Rapier_P_EMP.label>Синхро Загадка - Вершина(ЭМИ)</ODC_Rapier_P_EMP.label>
+<ODC_Rapier_P_EMP.description>Специализированная синхро Рапира, используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_Rapier_P_EMP.description>
+
+<ODC_Rapier_P_EMP.tools.handle.label>рукоять</ODC_Rapier_P_EMP.tools.handle.label>
+<ODC_Rapier_P_EMP.tools.point.label>остриё</ODC_Rapier_P_EMP.tools.point.label>
+
+<!--=============== ODC - Pistol ====================-->
+<Bullet_ODC_P.label>пуля из предназначения</Bullet_ODC_P.label>
+
+<ODC_Pistol.label>Предназначение</ODC_Pistol.label>
+<ODC_Pistol.verbs.Verb_Shoot.label>Предназначение</ODC_Pistol.verbs.Verb_Shoot.label>
+<ODC_Pistol.description>Обычный Авто-Пистолет, используемый Скитальцами Обсидии.</ODC_Pistol.description>
+
+<ODC_Pistol.tools.grip.label>рукоять</ODC_Pistol.tools.grip.label>
+<ODC_Pistol.tools.barrel.label>ствол</ODC_Pistol.tools.barrel.label>
+
+<ODC_Pistol_P.label>Парагон Предназначение</ODC_Pistol_P.label>
+<ODC_Pistol_P.verbs.Verb_Shoot.label>Парагон Предназначение</ODC_Pistol_P.verbs.Verb_Shoot.label>
+<ODC_Pistol_P.description>Обычный парагон Авто-Пистолет, используемый Скитальцами Обсидии.</ODC_Pistol_P.description>
+
+<ODC_Pistol_P.tools.grip.label>рукоять</ODC_Pistol_P.tools.grip.label>
+<ODC_Pistol_P.tools.barrel.label>ствол</ODC_Pistol_P.tools.barrel.label>
+
+<ODC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Предназначение</ODC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Revolver ====================-->
+<Bullet_ODC_R.label>пуля из нарушителя</Bullet_ODC_R.label>
+
+<ODC_Revolver.label>Нарушитель - Зарождение</ODC_Revolver.label>
+<ODC_Revolver.verbs.Verb_Shoot.label>Нарушитель - Зарождение</ODC_Revolver.verbs.Verb_Shoot.label>
+<ODC_Revolver.description>Модифицированный Револьвер, используемый Скитальцами Обсидии.</ODC_Revolver.description>
+
+<ODC_Revolver.tools.grip.label>рукоять</ODC_Revolver.tools.grip.label>
+<ODC_Revolver.tools.barrel.label>ствол</ODC_Revolver.tools.barrel.label>
+
+<ODC_Revolver_P.label>Парагон Нарушитель - Зарождение</ODC_Revolver_P.label>
+<ODC_Revolver_P.verbs.Verb_Shoot.label>Парагон Нарушитель - Зарождение</ODC_Revolver_P.verbs.Verb_Shoot.label>
+<ODC_Revolver_P.description>Модифицированный парагон Револьвер, используемый Скитальцами Обсидии.</ODC_Revolver_P.description>
+
+<ODC_Revolver_P.tools.grip.label>рукоять</ODC_Revolver_P.tools.grip.label>
+<ODC_Revolver_P.tools.barrel.label>ствол</ODC_Revolver_P.tools.barrel.label>
+
+<ODC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Нарушитель - Зарождение</ODC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Elemental Revolver ====================-->
+<!--=============== Acid ====================-->
+<Bullet_ODC_R_Acid.label>кислотная пуля из Нарушителя</Bullet_ODC_R_Acid.label>
+
+<ODC_Revolver_Acid.label>Нарушитель - Вершина(Кислота)</ODC_Revolver_Acid.label>
+<ODC_Revolver_Acid.verbs.Verb_Shoot.label>Нарушитель - Вершина(Кислота)</ODC_Revolver_Acid.verbs.Verb_Shoot.label>
+<ODC_Revolver_Acid.description>Специализированный Револьвер, используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_Revolver_Acid.description>
+
+<ODC_Revolver_Acid.tools.grip.label>рукоять</ODC_Revolver_Acid.tools.grip.label>
+<ODC_Revolver_Acid.tools.barrel.label>ствол</ODC_Revolver_Acid.tools.barrel.label>
+
+<ODC_Revolver_P_Acid.label>Парагон Нарушитель - Вершина(Кислота)</ODC_Revolver_P_Acid.label>
+<ODC_Revolver_P_Acid.verbs.Verb_Shoot.label>Парагон Нарушитель - Вершина(Кислота)</ODC_Revolver_P_Acid.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_Acid.description>Специализированный парагон Револьвер, используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_Revolver_P_Acid.description>
+
+<ODC_Revolver_P_Acid.tools.grip.label>рукоять</ODC_Revolver_P_Acid.tools.grip.label>
+<ODC_Revolver_P_Acid.tools.barrel.label>ствол</ODC_Revolver_P_Acid.tools.barrel.label>
+
+<ODC_Revolver_P_Acid.comps.CompUniqueWeapon.namerLabels.0>Парагон Нарушитель - Вершина(Кислота)</ODC_Revolver_P_Acid.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Cryo ====================-->
+<Bullet_ODC_R_Cryo.label>крио пуля из Нарушителя</Bullet_ODC_R_Cryo.label>
+
+<ODC_Revolver_Cryo.label>Нарушитель - Вершина(Крио)</ODC_Revolver_Cryo.label>
+<ODC_Revolver_Cryo.verbs.Verb_Shoot.label>Нарушитель - Вершина(Крио)</ODC_Revolver_Cryo.verbs.Verb_Shoot.label>
+<ODC_Revolver_Cryo.description>Специализированный Револьвер, используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_Revolver_Cryo.description>
+
+<ODC_Revolver_Cryo.tools.grip.label>рукоять</ODC_Revolver_Cryo.tools.grip.label>
+<ODC_Revolver_Cryo.tools.barrel.label>ствол</ODC_Revolver_Cryo.tools.barrel.label>
+
+<ODC_Revolver_P_Cryo.label>Парагон Нарушитель - Вершина(Крио)</ODC_Revolver_P_Cryo.label>
+<ODC_Revolver_P_Cryo.verbs.Verb_Shoot.label>Парагон Нарушитель - Вершина(Крио)</ODC_Revolver_P_Cryo.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_Cryo.description>Специализированный парагон Револьвер, используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_Revolver_P_Cryo.description>
+
+<ODC_Revolver_P_Cryo.tools.grip.label>рукоять</ODC_Revolver_P_Cryo.tools.grip.label>
+<ODC_Revolver_P_Cryo.tools.barrel.label>ствол</ODC_Revolver_P_Cryo.tools.barrel.label>
+
+<ODC_Revolver_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>Парагон Нарушитель - Вершина(Крио)</ODC_Revolver_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Fire ====================-->
+<Bullet_ODC_R_Fire.label>огненная пуля из Нарушителя</Bullet_ODC_R_Fire.label>
+
+<ODC_Revolver_Fire.label>Нарушитель - Вершина(Огонь)</ODC_Revolver_Fire.label>
+<ODC_Revolver_Fire.verbs.Verb_Shoot.label>Нарушитель - Вершина(Огонь)</ODC_Revolver_Fire.verbs.Verb_Shoot.label>
+<ODC_Revolver_Fire.description>Специализированный Револьвер, используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_Revolver_Fire.description>
+
+<ODC_Revolver_Fire.tools.grip.label>рукоять</ODC_Revolver_Fire.tools.grip.label>
+<ODC_Revolver_Fire.tools.barrel.label>ствол</ODC_Revolver_Fire.tools.barrel.label>
+
+<ODC_Revolver_P_Fire.label>Парагон Нарушитель - Вершина(Огонь)</ODC_Revolver_P_Fire.label>
+<ODC_Revolver_P_Fire.verbs.Verb_Shoot.label>Парагон Нарушитель - Вершина(Огонь)</ODC_Revolver_P_Fire.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_Fire.description>Специализированный парагон Револьвер, используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_Revolver_P_Fire.description>
+
+<ODC_Revolver_P_Fire.tools.grip.label>рукоять</ODC_Revolver_P_Fire.tools.grip.label>
+<ODC_Revolver_P_Fire.tools.barrel.label>ствол</ODC_Revolver_P_Fire.tools.barrel.label>
+
+<ODC_Revolver_P_Fire.comps.CompUniqueWeapon.namerLabels.0>Парагон Нарушитель - Вершина(Огонь)</ODC_Revolver_P_Fire.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== EMP ====================-->
+<Bullet_ODC_R_EMP.label>ЭМИ пуля из Нарушителя</Bullet_ODC_R_EMP.label>
+
+<ODC_Revolver_EMP.label>Нарушитель - Вершина(ЭМИ)</ODC_Revolver_EMP.label>
+<ODC_Revolver_EMP.verbs.Verb_Shoot.label>Нарушитель - Вершина(ЭМИ)</ODC_Revolver_EMP.verbs.Verb_Shoot.label>
+<ODC_Revolver_EMP.description>Специализированный Револьвер, используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_Revolver_EMP.description>
+
+<ODC_Revolver_EMP.tools.grip.label>рукоять</ODC_Revolver_EMP.tools.grip.label>
+<ODC_Revolver_EMP.tools.barrel.label>ствол</ODC_Revolver_EMP.tools.barrel.label>
+
+<ODC_Revolver_P_EMP.label>Парагон Нарушитель - Вершина(ЭМИ)</ODC_Revolver_P_EMP.label>
+<ODC_Revolver_P_EMP.verbs.Verb_Shoot.label>Парагон Нарушитель - Вершина(ЭМИ)</ODC_Revolver_P_EMP.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_EMP.description>Специализированный парагон Револьвер, используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_Revolver_P_EMP.description>
+
+<ODC_Revolver_P_EMP.tools.grip.label>рукоять</ODC_Revolver_P_EMP.tools.grip.label>
+<ODC_Revolver_P_EMP.tools.barrel.label>ствол</ODC_Revolver_P_EMP.tools.barrel.label>
+
+<ODC_Revolver_P_EMP.comps.CompUniqueWeapon.namerLabels.0>Парагон Нарушитель - Вершина(ЭМИ)</ODC_Revolver_P_EMP.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - SMG ====================-->
+<Bullet_ODC_SMG.label>пуля из неудачника</Bullet_ODC_SMG.label>
+
+<ODC_SMG_A.label>Неудачник - Зарождение</ODC_SMG_A.label>
+<ODC_SMG_A.verbs.Verb_Shoot.label>Неудачник - Зарождение</ODC_SMG_A.verbs.Verb_Shoot.label>
+<ODC_SMG_A.description>Модифицированный СМГ, используемый Скитальцами Обсидии.</ODC_SMG_A.description>
+
+<ODC_SMG_A.tools.grip.label>рукоять</ODC_SMG_A.tools.grip.label>
+<ODC_SMG_A.tools.barrel.label>ствол</ODC_SMG_A.tools.barrel.label>
+
+<ODC_SMG_A_P.label>Парагон Неудачник - Зарождение</ODC_SMG_A_P.label>
+<ODC_SMG_A_P.verbs.Verb_Shoot.label>Парагон Неудачник - Зарождение</ODC_SMG_A_P.verbs.Verb_Shoot.label>
+<ODC_SMG_A_P.description>Модифицированный парагон СМГ, используемый Скитальцами Обсидии.</ODC_SMG_A_P.description>
+
+<ODC_SMG_A_P.tools.grip.label>рукоять</ODC_SMG_A_P.tools.grip.label>
+<ODC_SMG_A_P.tools.barrel.label>ствол</ODC_SMG_A_P.tools.barrel.label>
+
+<ODC_SMG_A_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Неудачник - Зарождение</ODC_SMG_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<ODC_SMG_B.label>Неудачник - Вершина</ODC_SMG_B.label>
+<ODC_SMG_B.verbs.Verb_Shoot.label>Неудачник - Вершина</ODC_SMG_B.verbs.Verb_Shoot.label>
+<ODC_SMG_B.description>Специализированный СМГ, используемая Скитальцами Обсидии.</ODC_SMG_B.description>
+
+<ODC_SMG_B.tools.stock.label>приклад</ODC_SMG_B.tools.stock.label>
+<ODC_SMG_B.tools.barrel.label>ствол</ODC_SMG_B.tools.barrel.label>
+
+<ODC_SMG_B_P.label>Парагон Неудачник - Вершина</ODC_SMG_B_P.label>
+<ODC_SMG_B_P.verbs.Verb_Shoot.label>Парагон Неудачник - Вершина</ODC_SMG_B_P.verbs.Verb_Shoot.label>
+<ODC_SMG_B_P.description>Специализированный парагон СМГ, используемая Скитальцами Обсидии.</ODC_SMG_B_P.description>
+
+<ODC_SMG_B_P.tools.stock.label>приклад</ODC_SMG_B_P.tools.stock.label>
+<ODC_SMG_B_P.tools.barrel.label>ствол</ODC_SMG_B_P.tools.barrel.label>
+
+<ODC_SMG_B_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Неудачник - Вершина</ODC_SMG_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Rifle ====================-->
+<Bullet_ODC_RF.label>пуля из наследия</Bullet_ODC_RF.label>
+
+<ODC_Rifle.label>Наследие</ODC_Rifle.label>
+<ODC_Rifle.verbs.Verb_Shoot.label>Наследие</ODC_Rifle.verbs.Verb_Shoot.label>
+<ODC_Rifle.description>Обычная Винтовка, используемый Скитальцами Обсидии.</ODC_Rifle.description>
+
+<ODC_Rifle.tools.stock.label>приклад</ODC_Rifle.tools.stock.label>
+<ODC_Rifle.tools.barrel.label>ствол</ODC_Rifle.tools.barrel.label>
+
+<ODC_Rifle_P.label>Парагон Наследие</ODC_Rifle_P.label>
+<ODC_Rifle_P.verbs.Verb_Shoot.label>Парагон Наследие</ODC_Rifle_P.verbs.Verb_Shoot.label>
+<ODC_Rifle_P.description>Обычная парагон Винтовка, используемый Скитальцами Обсидии.</ODC_Rifle_P.description>
+
+<ODC_Rifle_P.tools.stock.label>приклад</ODC_Rifle_P.tools.stock.label>
+<ODC_Rifle_P.tools.barrel.label>ствол</ODC_Rifle_P.tools.barrel.label>
+
+<ODC_Rifle_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Наследие</ODC_Rifle_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Rifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Rifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Rifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Rifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Shotgun ====================-->
+<Bullet_ODC_S.label>дробь заговорщика</Bullet_ODC_S.label>
+
+<ODC_Shotgun.label>Заговорщик - Зарождение</ODC_Shotgun.label>
+<ODC_Shotgun.verbs.Verb_Shoot.label>Заговорщик - Зарождение</ODC_Shotgun.verbs.Verb_Shoot.label>
+<ODC_Shotgun.description>Модифицированный Дробовик, используемый Скитальцами Обсидии.</ODC_Shotgun.description>
+
+<ODC_Shotgun.tools.stock.label>приклад</ODC_Shotgun.tools.stock.label>
+<ODC_Shotgun.tools.barrel.label>ствол</ODC_Shotgun.tools.barrel.label>
+
+<ODC_Shotgun_P.label>Парагон Заговорщик - Зарождение</ODC_Shotgun_P.label>
+<ODC_Shotgun_P.verbs.Verb_Shoot.label>Парагон Заговорщик - Зарождение</ODC_Shotgun_P.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P.description>Модифицированный Парагон Дробовик, используемый Скитальцами Обсидии.</ODC_Shotgun_P.description>
+
+<ODC_Shotgun_P.tools.stock.label>приклад</ODC_Shotgun_P.tools.stock.label>
+<ODC_Shotgun_P.tools.barrel.label>ствол</ODC_Shotgun_P.tools.barrel.label>
+
+<ODC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Заговорщик - Зарождение</ODC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== ODC - Elemental Shotgun ====================-->
+<!--=============== Acid ====================-->
+<Bullet_ODC_S_Acid.label>кислотная дробь заговорщика</Bullet_ODC_S_Acid.label>
+
+<ODC_Shotgun_Acid.label>Заговорщик - Вершина(Кислота)</ODC_Shotgun_Acid.label>
+<ODC_Shotgun_Acid.verbs.Verb_Shoot.label>Заговорщик - Вершина(Кислота)</ODC_Shotgun_Acid.verbs.Verb_Shoot.label>
+<ODC_Shotgun_Acid.description>Специализированный Дробовик, используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_Shotgun_Acid.description>
+
+<ODC_Shotgun_Acid.tools.stock.label>приклад</ODC_Shotgun_Acid.tools.stock.label>
+<ODC_Shotgun_Acid.tools.barrel.label>ствол</ODC_Shotgun_Acid.tools.barrel.label>
+
+<ODC_Shotgun_P_Acid.label>Парагон Заговорщик - Вершина(Кислота)</ODC_Shotgun_P_Acid.label>
+<ODC_Shotgun_P_Acid.verbs.Verb_Shoot.label>Парагон Заговорщик - Вершина(Кислота)</ODC_Shotgun_P_Acid.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_Acid.description>Специализированный парагон Дробовик, используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_Shotgun_P_Acid.description>
+
+<ODC_Shotgun_P_Acid.tools.stock.label>приклад</ODC_Shotgun_P_Acid.tools.stock.label>
+<ODC_Shotgun_P_Acid.tools.barrel.label>ствол</ODC_Shotgun_P_Acid.tools.barrel.label>
+
+<ODC_Shotgun_P_Acid.comps.CompUniqueWeapon.namerLabels.0>Парагон Заговорщик - Вершина(Кислота)</ODC_Shotgun_P_Acid.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Cryo ====================-->
+<Bullet_ODC_S_Cryo.label>крио дробь заговорщика</Bullet_ODC_S_Cryo.label>
+
+<ODC_Shotgun_Cryo.label>Заговорщик - Вершина(Крио)</ODC_Shotgun_Cryo.label>
+<ODC_Shotgun_Cryo.verbs.Verb_Shoot.label>Заговорщик - Вершина(Крио)</ODC_Shotgun_Cryo.verbs.Verb_Shoot.label>
+<ODC_Shotgun_Cryo.description>Специализированный Дробовик, используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_Shotgun_Cryo.description>
+
+<ODC_Shotgun_Cryo.tools.stock.label>приклад</ODC_Shotgun_Cryo.tools.stock.label>
+<ODC_Shotgun_Cryo.tools.barrel.label>ствол</ODC_Shotgun_Cryo.tools.barrel.label>
+
+<ODC_Shotgun_P_Cryo.label>Парагон Заговорщик - Вершина(Крио)</ODC_Shotgun_P_Cryo.label>
+<ODC_Shotgun_P_Cryo.verbs.Verb_Shoot.label>Парагон Заговорщик - Вершина(Крио)</ODC_Shotgun_P_Cryo.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_Cryo.description>Специализированный парагон Дробовик, используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_Shotgun_P_Cryo.description>
+
+<ODC_Shotgun_P_Cryo.tools.stock.label>приклад</ODC_Shotgun_P_Cryo.tools.stock.label>
+<ODC_Shotgun_P_Cryo.tools.barrel.label>ствол</ODC_Shotgun_P_Cryo.tools.barrel.label>
+
+<ODC_Shotgun_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>Парагон Заговорщик - Вершина(Крио)</ODC_Shotgun_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Fire ====================-->
+<Bullet_ODC_S_Fire.label>огненная дробь заговорщика</Bullet_ODC_S_Fire.label>
+
+<ODC_Shotgun_Fire.label>Заговорщик - Вершина(Огонь)</ODC_Shotgun_Fire.label>
+<ODC_Shotgun_Fire.verbs.Verb_Shoot.label>Заговорщик - Вершина(Огонь)</ODC_Shotgun_Fire.verbs.Verb_Shoot.label>
+<ODC_Shotgun_Fire.description>Специализированный Дробовик, используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_Shotgun_Fire.description>
+
+<ODC_Shotgun_Fire.tools.stock.label>приклад</ODC_Shotgun_Fire.tools.stock.label>
+<ODC_Shotgun_Fire.tools.barrel.label>ствол</ODC_Shotgun_Fire.tools.barrel.label>
+
+<ODC_Shotgun_P_Fire.label>Парагон Заговорщик - Вершина(Огонь)</ODC_Shotgun_P_Fire.label>
+<ODC_Shotgun_P_Fire.verbs.Verb_Shoot.label>Парагон Заговорщик - Вершина(Огонь)</ODC_Shotgun_P_Fire.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_Fire.description>Специализированный парагон Дробовик, используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_Shotgun_P_Fire.description>
+
+<ODC_Shotgun_P_Fire.tools.stock.label>приклад</ODC_Shotgun_P_Fire.tools.stock.label>
+<ODC_Shotgun_P_Fire.tools.barrel.label>ствол</ODC_Shotgun_P_Fire.tools.barrel.label>
+
+<ODC_Shotgun_P_Fire.comps.CompUniqueWeapon.namerLabels.0>Парагон Заговорщик - Вершина(Огонь)</ODC_Shotgun_P_Fire.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== EMP ====================-->
+<Bullet_ODC_S_EMP.label>ЭМИ дробь заговорщика</Bullet_ODC_S_EMP.label>
+
+<ODC_Shotgun_EMP.label>Заговорщик - Вершина(ЭМИ)</ODC_Shotgun_EMP.label>
+<ODC_Shotgun_EMP.verbs.Verb_Shoot.label>Заговорщик - Вершина(ЭМИ)</ODC_Shotgun_EMP.verbs.Verb_Shoot.label>
+<ODC_Shotgun_EMP.description>Специализированный Дробовик, используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_Shotgun_EMP.description>
+
+<ODC_Shotgun_EMP.tools.stock.label>приклад</ODC_Shotgun_EMP.tools.stock.label>
+<ODC_Shotgun_EMP.tools.barrel.label>ствол</ODC_Shotgun_EMP.tools.barrel.label>
+
+<ODC_Shotgun_P_EMP.label>Парагон Заговорщик - Вершина(ЭМИ)</ODC_Shotgun_P_EMP.label>
+<ODC_Shotgun_P_EMP.verbs.Verb_Shoot.label>Парагон Заговорщик - Вершина(ЭМИ)</ODC_Shotgun_P_EMP.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_EMP.description>Специализированный парагон Дробовик, используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_Shotgun_P_EMP.description>
+
+<ODC_Shotgun_P_EMP.tools.stock.label>приклад</ODC_Shotgun_P_EMP.tools.stock.label>
+<ODC_Shotgun_P_EMP.tools.barrel.label>ствол</ODC_Shotgun_P_EMP.tools.barrel.label>
+
+<ODC_Shotgun_P_EMP.comps.CompUniqueWeapon.namerLabels.0>Парагон Заговорщик - Вершина(ЭМИ)</ODC_Shotgun_P_EMP.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - AssaultRifle ====================-->
+<Bullet_ODC_AR.label>пуля из легкомысленного</Bullet_ODC_AR.label>
+
+<ODC_AssaultRifle_A.label>Легкомысленный - Зарождение</ODC_AssaultRifle_A.label>
+<ODC_AssaultRifle_A.verbs.Verb_Shoot.label>Легкомысленный - Зарождение</ODC_AssaultRifle_A.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_A.description>Модифицированная Штурмовая Винтовка, используемый Скитальцами Обсидии.</ODC_AssaultRifle_A.description>
+
+<ODC_AssaultRifle_A.tools.stock.label>приклад</ODC_AssaultRifle_A.tools.stock.label>
+<ODC_AssaultRifle_A.tools.barrel.label>ствол</ODC_AssaultRifle_A.tools.barrel.label>
+
+<ODC_AssaultRifle_A_P.label>Парагон Легкомысленный - Зарождение</ODC_AssaultRifle_A_P.label>
+<ODC_AssaultRifle_A_P.verbs.Verb_Shoot.label>Парагон Легкомысленный - Зарождение</ODC_AssaultRifle_A_P.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_A_P.description>Модифицированная парагон Штурмовая Винтовка, используемый Скитальцами Обсидии.</ODC_AssaultRifle_A_P.description>
+
+<ODC_AssaultRifle_A_P.tools.stock.label>приклад</ODC_AssaultRifle_A_P.tools.stock.label>
+<ODC_AssaultRifle_A_P.tools.barrel.label>ствол</ODC_AssaultRifle_A_P.tools.barrel.label>
+
+<ODC_AssaultRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Легкомысленный - Зарождение</ODC_AssaultRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<ODC_AssaultRifle_B.label>Легкомысленный - Вершина</ODC_AssaultRifle_B.label>
+<ODC_AssaultRifle_B.verbs.Verb_Shoot.label>Легкомысленный - Вершина</ODC_AssaultRifle_B.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_B.description>Специализированная Штурмовая Винтовка, используемый Скитальцами Обсидии.</ODC_AssaultRifle_B.description>
+
+<ODC_AssaultRifle_B.tools.stock.label>приклад</ODC_AssaultRifle_B.tools.stock.label>
+<ODC_AssaultRifle_B.tools.barrel.label>ствол</ODC_AssaultRifle_B.tools.barrel.label>
+
+<ODC_AssaultRifle_B_P.label>Парагон Легкомысленный - Вершина</ODC_AssaultRifle_B_P.label>
+<ODC_AssaultRifle_B_P.verbs.Verb_Shoot.label>Парагон Легкомысленный - Вершина</ODC_AssaultRifle_B_P.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_B_P.description>Специализированная парагон Штурмовая Винтовка, используемый Скитальцами Обсидии.</ODC_AssaultRifle_B_P.description>
+
+<ODC_AssaultRifle_B_P.tools.stock.label>приклад</ODC_AssaultRifle_B_P.tools.stock.label>
+<ODC_AssaultRifle_B_P.tools.barrel.label>ствол</ODC_AssaultRifle_B_P.tools.barrel.label>
+
+<ODC_AssaultRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Легкомысленный - Вершина</ODC_AssaultRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - SniperRifle ====================-->
+<Bullet_ODC_SR.label>пуля из контрабандиста</Bullet_ODC_SR.label>
+
+<ODC_SniperRifle_A.label>Контрабандист - Зарождение</ODC_SniperRifle_A.label>
+<ODC_SniperRifle_A.verbs.Verb_Shoot.label>Контрабандист - Зарождение</ODC_SniperRifle_A.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_A.description>Модифицированная Снайперская Винтовка, используемый Скитальцами Обсидии.</ODC_SniperRifle_A.description>
+
+<ODC_SniperRifle_A.tools.stock.label>приклад</ODC_SniperRifle_A.tools.stock.label>
+<ODC_SniperRifle_A.tools.barrel.label>ствол</ODC_SniperRifle_A.tools.barrel.label>
+
+<ODC_SniperRifle_A_P.label>Парагон Контрабандист - Зарождение</ODC_SniperRifle_A_P.label>
+<ODC_SniperRifle_A_P.verbs.Verb_Shoot.label>Парагон Контрабандист - Зарождение</ODC_SniperRifle_A_P.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_A_P.description>Модифицированная парагон Снайперская Винтовка, используемый Скитальцами Обсидии.</ODC_SniperRifle_A_P.description>
+
+<ODC_SniperRifle_A_P.tools.stock.label>приклад</ODC_SniperRifle_A_P.tools.stock.label>
+<ODC_SniperRifle_A_P.tools.barrel.label>ствол</ODC_SniperRifle_A_P.tools.barrel.label>
+
+<ODC_SniperRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Контрабандист - Зарождение</ODC_SniperRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<ODC_SniperRifle_B.label>Контрабандист - Вершина</ODC_SniperRifle_B.label>
+<ODC_SniperRifle_B.verbs.Verb_Shoot.label>Контрабандист - Вершина</ODC_SniperRifle_B.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_B.description>Специализированная Снайперская Винтовка, используемый Скитальцами Обсидии.</ODC_SniperRifle_B.description>
+
+<ODC_SniperRifle_B.tools.stock.label>приклад</ODC_SniperRifle_B.tools.stock.label>
+<ODC_SniperRifle_B.tools.barrel.label>ствол</ODC_SniperRifle_B.tools.barrel.label>
+
+<ODC_SniperRifle_B_P.label>Парагон Контрабандист - Вершина</ODC_SniperRifle_B_P.label>
+<ODC_SniperRifle_B_P.verbs.Verb_Shoot.label>Парагон Контрабандист - Вершина</ODC_SniperRifle_B_P.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_B_P.description>Специализированная парагон Снайперская Винтовка, используемый Скитальцами Обсидии.</ODC_SniperRifle_B_P.description>
+
+<ODC_SniperRifle_B_P.tools.stock.label>приклад</ODC_SniperRifle_B_P.tools.stock.label>
+<ODC_SniperRifle_B_P.tools.barrel.label>ствол</ODC_SniperRifle_B_P.tools.barrel.label>
+
+<ODC_SniperRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Контрабандист - Вершина</ODC_SniperRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Tonfa ====================-->
+<ODC_Tonfa.label>Крушитель</ODC_Tonfa.label>
+<ODC_Tonfa.description>Обычная Тонфа, используемая Скитальцами Обсидии.</ODC_Tonfa.description>
+
+<ODC_Tonfa.tools.handle.label>рукоять</ODC_Tonfa.tools.handle.label>
+<ODC_Tonfa.tools.head.label>боевая часть</ODC_Tonfa.tools.head.label>
+
+<ODC_Tonfa_P.label>Синхро Крушитель</ODC_Tonfa_P.label>
+<ODC_Tonfa_P.description>Обычная синхро Тонфа, используемая Скитальцами Обсидии.</ODC_Tonfa_P.description>
+
+<ODC_Tonfa_P.tools.handle.label>рукоять</ODC_Tonfa_P.tools.handle.label>
+<ODC_Tonfa_P.tools.head.label>боевая часть</ODC_Tonfa_P.tools.head.label>
+
+<!--=============== ODC - Rocket Launcher ====================-->
+<Bullet_ODC_RL.label>ракета из Бумбабаха</Bullet_ODC_RL.label>
+
+<ODC_RocketLauncher.label>Бумбабах - Зарождение</ODC_RocketLauncher.label>
+<ODC_RocketLauncher.verbs.Verb_Shoot.label>Бумбабах - Зарождение</ODC_RocketLauncher.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher.description>Модифицированная Ракетница используемая Скитальцами Обсидии.</ODC_RocketLauncher.description>
+
+<ODC_RocketLauncher.tools.barrel.label>ствол</ODC_RocketLauncher.tools.barrel.label>
+
+<ODC_RocketLauncher_P.label>Парагон Бумбабах - Зарождение</ODC_RocketLauncher_P.label>
+<ODC_RocketLauncher_P.verbs.Verb_Shoot.label>Парагон Бумбабах - Зарождение</ODC_RocketLauncher_P.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P.description>Парагон модифицированная Ракетница используемая Скитальцами Обсидии.</ODC_RocketLauncher_P.description>
+
+<ODC_RocketLauncher_P.tools.barrel.label>ствол</ODC_RocketLauncher_P.tools.barrel.label>
+
+<ODC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Бумбабах - Зарождение</ODC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Elemental Rocket Launcher ====================-->
+<!--=============== Acid ====================-->
+<Bullet_ODC_RL_Acid.label>ракета из Бумбабаха</Bullet_ODC_RL_Acid.label>
+
+<ODC_RocketLauncher_Acid.label>Бумбабах - Вершина(Кислота)</ODC_RocketLauncher_Acid.label>
+<ODC_RocketLauncher_Acid.verbs.Verb_Shoot.label>Бумбабах - Вершина(Кислота)</ODC_RocketLauncher_Acid.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_Acid.description>Специализированная Ракетница используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_RocketLauncher_Acid.description>
+
+<ODC_RocketLauncher_Acid.tools.barrel.label>ствол</ODC_RocketLauncher_Acid.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Acid.label>Парагон Бумбабах - Вершина(Кислота)</ODC_RocketLauncher_P_Acid.label>
+<ODC_RocketLauncher_P_Acid.verbs.Verb_Shoot.label>Парагон Бумбабах - Вершина(Кислота)</ODC_RocketLauncher_P_Acid.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_Acid.description>Специализированная парагон Ракетница используемая Скитальцами Обсидии. Заряжено Кислотным уроном.</ODC_RocketLauncher_P_Acid.description>
+
+<ODC_RocketLauncher_P_Acid.tools.barrel.label>ствол</ODC_RocketLauncher_P_Acid.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Acid.comps.CompUniqueWeapon.namerLabels.0>Парагон Бумбабах - Вершина(Кислота)</ODC_RocketLauncher_P_Acid.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Cryo ====================-->
+<Bullet_ODC_RL_Cryo.label>ракета из Бумбабаха</Bullet_ODC_RL_Cryo.label>
+
+<ODC_RocketLauncher_Cryo.label>Бумбабах - Вершина(Крио)</ODC_RocketLauncher_Cryo.label>
+<ODC_RocketLauncher_Cryo.verbs.Verb_Shoot.label>Бумбабах - Вершина(Крио)</ODC_RocketLauncher_Cryo.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_Cryo.description>Специализированная Ракетница используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_RocketLauncher_Cryo.description>
+
+<ODC_RocketLauncher_Cryo.tools.barrel.label>ствол</ODC_RocketLauncher_Cryo.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Cryo.label>Парагон Бумбабах - Вершина(Крио)</ODC_RocketLauncher_P_Cryo.label>
+<ODC_RocketLauncher_P_Cryo.verbs.Verb_Shoot.label>Парагон Бумбабах - Вершина(Крио)</ODC_RocketLauncher_P_Cryo.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_Cryo.description>Специализированная парагон Ракетница используемая Скитальцами Обсидии. Заряжено Крио уроном.</ODC_RocketLauncher_P_Cryo.description>
+
+<ODC_RocketLauncher_P_Cryo.tools.barrel.label>ствол</ODC_RocketLauncher_P_Cryo.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>Парагон Бумбабах - Вершина(Крио)</ODC_RocketLauncher_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Fire ====================-->
+<Bullet_ODC_RL_Fire.label>ракета из Бумбабаха</Bullet_ODC_RL_Fire.label>
+
+<ODC_RocketLauncher_Fire.label>Бумбабах - Вершина(Огонь)</ODC_RocketLauncher_Fire.label>
+<ODC_RocketLauncher_Fire.verbs.Verb_Shoot.label>Бумбабах - Вершина(Огонь)</ODC_RocketLauncher_Fire.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_Fire.description>Специализированная Ракетница используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_RocketLauncher_Fire.description>
+
+<ODC_RocketLauncher_Fire.tools.barrel.label>ствол</ODC_RocketLauncher_Fire.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Fire.label>Парагон Бумбабах - Вершина(Огонь)</ODC_RocketLauncher_P_Fire.label>
+<ODC_RocketLauncher_P_Fire.verbs.Verb_Shoot.label>Парагон Бумбабах - Вершина(Огонь)</ODC_RocketLauncher_P_Fire.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_Fire.description>Специализированная парагон Ракетница используемая Скитальцами Обсидии. Заряжено Огненным уроном.</ODC_RocketLauncher_P_Fire.description>
+
+<ODC_RocketLauncher_P_Fire.tools.barrel.label>ствол</ODC_RocketLauncher_P_Fire.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Fire.comps.CompUniqueWeapon.namerLabels.0>Парагон Бумбабах - Вершина(Огонь)</ODC_RocketLauncher_P_Fire.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== EMP ====================-->
+<Bullet_ODC_RL_EMP.label>ракета из Бумбабаха</Bullet_ODC_RL_EMP.label>
+
+<ODC_RocketLauncher_EMP.label>Бумбабах - Вершина(ЭМИ)</ODC_RocketLauncher_EMP.label>
+<ODC_RocketLauncher_EMP.verbs.Verb_Shoot.label>Бумбабах - Вершина(ЭМИ)</ODC_RocketLauncher_EMP.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_EMP.description>Специализированная Ракетница используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_RocketLauncher_EMP.description>
+
+<ODC_RocketLauncher_EMP.tools.barrel.label>ствол</ODC_RocketLauncher_EMP.tools.barrel.label>
+
+<ODC_RocketLauncher_P_EMP.label>Парагон Бумбабах - Вершина(ЭМИ)</ODC_RocketLauncher_P_EMP.label>
+<ODC_RocketLauncher_P_EMP.verbs.Verb_Shoot.label>Парагон Бумбабах - Вершина(ЭМИ)</ODC_RocketLauncher_P_EMP.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_EMP.description>Специализированная парагон Ракетница используемая Скитальцами Обсидии. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</ODC_RocketLauncher_P_EMP.description>
+
+<ODC_RocketLauncher_P_EMP.tools.barrel.label>ствол</ODC_RocketLauncher_P_EMP.tools.barrel.label>
+
+<ODC_RocketLauncher_P_EMP.comps.CompUniqueWeapon.namerLabels.0>Парагон Бумбабах - Вершина(ЭМИ)</ODC_RocketLauncher_P_EMP.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

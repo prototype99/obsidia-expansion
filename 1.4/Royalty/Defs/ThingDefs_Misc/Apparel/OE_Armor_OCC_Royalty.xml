@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Jump ====================-->
+  <ThingDef ParentName="OCCArmorMod">
+	<defName>OCC_Armor_M_Jump</defName>
+    <label>OCC Paladin Armor(Raven)</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Jump pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/Jump/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3950</MarketValue>
+	  <JumpRange>27.9</JumpRange>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Armor_M>1</OCC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/Jump/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OCCPaladin_Jump</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Jump</verbClass>
+        <commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== ForceField ====================-->
+  <ThingDef ParentName="OCCArmorMod">
+	<defName>OCC_Armor_M_ForceField</defName>
+    <label>OCC Paladin Armor(Warden)</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Low-Shield pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/ForceField/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>3950</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Armor_M>1</OCC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/ForceField/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OCCPaladin_ForceField</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>1</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>5</ammoCountPerCharge>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>shield</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+	<verbs>
+      <li>
+		<verbClass>Verb_DeployBroadshield</verbClass>
+		<commandIcon>UI/Abilities/Armor/ForceField</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

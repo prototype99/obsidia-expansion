@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Psycasts Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Eltex ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Eltex</defName>
+    <label>eltex slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nEltex slime production type, produces 5 Eltex every 18 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Eltex</ThingDef>
+	  <ThingDef>VPE_Eltex</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>4050</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+      </willNeverEat>
+    </race>
+	<butcherProducts>
+      <VPE_Eltex>10</VPE_Eltex>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>VPE_Eltex</milkDef>
+        <milkIntervalDays>16</milkIntervalDays>
+        <milkAmount>5</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Eltex</defName>
+    <label>eltex slime</label>
+    <labelPlural>eltex slimes</labelPlural>
+    <race>OE_Slime_Eltex</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Eltex/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Eltex/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Eltex/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Eltex/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Eltex/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Eltex/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Eltex</defName>
+    <label>eltex slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Eltex slime in 7 days. Eltex slime produces 5 Eltex every 18 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Eltex</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Eltex</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3550</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <VPE_Eltex>50</VPE_Eltex>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Eltex</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

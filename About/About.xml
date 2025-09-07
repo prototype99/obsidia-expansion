@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Obsidia Expansion</name>
+	<author>Lored</author>
+	<supportedVersions>
+	  <li>1.2</li>
+	  <li>1.3</li>
+	  <li>1.4</li>
+	  <li>1.5</li>
+	  <li>1.6</li>
+	</supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">ModIconOECore</modIconPath>
+	<packageId>ObsidiaExpansion.Core</packageId>
+	<description>Obsidia Expansion introduces powerful new factions born from the world of Obsidia. The Obsidia Empire, an ultratech military society, stands at the height of its research and has begun its galactic expansion, rejecting all others until their trust is earned. From those who broke away emerged the Obsidia Drifter Clans, splintered into three paths: the Syndicate Clan, thriving on raids and plunder; the Renegade Clan, sworn to protect and restore the free colonies; and the Pilgrim Clan, ruthless traders driven by profit. In the shadows, the Crimson Arachna Cult, long thought destroyed, rises again to worship their Arachnas deities and exterminate all unbelievers. Meanwhile, the Obsidia Mercenary Gangs, once the Empire’s elite, now sell their strength across the galaxy, while the forsaken champions of the Obsidia Empire Sins, known as Eidolons, turn their hatred inward, seeking purpose only in themselves.\n\nThe mod introduces new factions, technologies, weapons, armor, apparel, buildings, resources, plants, animals, quests, royal titles, mechanoids, and mysterious entities. Every addition is designed to deepen the world of RimWorld with a distinct Obsidia flavor - a mix of high technology, mysticism, and raw survival.</description>
+	<loadAfter>
+	  <li>Ludeon.RimWorld</li>
+	  <li>Ludeon.RimWorld.Royalty</li>
+	  <li>Ludeon.RimWorld.Ideology</li>
+	  <li>Ludeon.RimWorld.Biotech</li>
+	  <li>Ludeon.RimWorld.Anomaly</li>
+	  <li>Ludeon.RimWorld.Odyssey</li>
+	  <li>brrainz.harmony</li>
+	  <li>Mlie.ShowMeYourHands</li>
+	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	  <li>VanillaExpanded.VARME</li>
+	  <li>VanillaExpanded.VWEHW</li>
+	  <li>OskarPotocki.VFE.Pirates</li>
+	  <li>VanillaExpanded.VPsycastsE</li>
+	  <li>vanillaexpanded.outposts</li>
+	  <li>VanillaExpanded.VCEF</li>
+	  <li>VanillaExpanded.Ideo.RelicsAndArtifacts</li>
+	  <li>VanillaExpanded.Ideo.Dryads</li>
+	  <li>OskarPotocki.VanillaVehiclesExpanded</li>
+	  <li>OskarPotocki.VanillaVehiclesExpandedUpgrades</li>
+	  <li>VanillaStorytellersExpanded.WinstonWave</li>
+	  <li>VanillaExpanded.VGeneticsE</li>
+	  <li>VanillaExpanded.VanillaAspirationsExpanded</li>
+	  <li>vanillaracesexpanded.saurid</li>
+	  <li>vanillaracesexpanded.hussar</li>
+	  <li>cedaro.hwar</li>
+	  <li>vanillaracesexpanded.phytokin</li>
+	  <li>vanillaracesexpanded.sanguophage</li>
+	  <li>vanillaracesexpanded.android</li>
+	  <li>vanillaracesexpanded.archon</li>
+	  <li>vanillaracesexpanded.lycanthrope</li>
+	  <li>vanillaracesexpanded.pigskin</li>
+	  <li>vanillaracesexpanded.insector</li>
+	  <li>Sov.ElseudPathf</li>
+	  <li>Sovereign.Illithid</li>
+	  <li>ElSov.Beliar</li>
+	  <li>OskarPotocki.VFE.Insectoid2</li>
+	  <li>sarg.alphabiomes</li>
+	  <li>sarg.alphagenes</li>
+	  <li>sarg.alphaimplants</li>
+	  <li>Mlie.AdvancedBiomes</li>
+	  <li>BiomesTeam.BiomesCore</li>
+	  <li>zylle.MoreVanillaBiomes</li>
+	  <li>ReGrowth.BOTR.Core</li>
+	  <li>sindre0830.rimnauts2</li>
+	  <li>kentington.saveourship2</li>
+	  <li>GoGaTio.MechanoidUpgrades</li>
+	  <li>SamBucher.ADogSaidAnimalProsthetics2</li>
+	  <li>imranfish.xmlextensions</li>
+	</loadAfter>
+</ModMetaData>

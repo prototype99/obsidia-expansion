@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC - Sword ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Sword_P</defName>
+    <label>Reset Persona Delimiter MK-II</label>
+    <description>Reset an Persona Delimiter MK-II.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Delimiter MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Sword_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Sword_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Sword_P>1</OMC_Sword_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - Axe ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Axe_P</defName>
+    <label>Reset Persona Furious MK-II</label>
+    <description>Reset an Persona Furious MK-II.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Furious MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Axe_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Axe_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Axe_P>1</OMC_Axe_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - Whip ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Whip_P</defName>
+    <label>Reset Persona Bloodspiller MK-II</label>
+    <description>Reset an Persona Bloodspiller MK-II.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Bloodspiller MK-II.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Whip_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Whip_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Whip_P>1</OMC_Whip_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMC - Elemental Whip ====================-->
+<!--=============== Acid ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Whip_P_Acid</defName>
+    <label>Reset Persona Bloodspiller MK-II(Acid)</label>
+    <description>Reset an Persona Bloodspiller MK-II(Acid).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Bloodspiller MK-II(Acid).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Whip_P_Acid</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Whip_P_Acid</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Whip_P_Acid>1</OMC_Whip_P_Acid>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+<!--=============== Cryo ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Whip_P_Cryo</defName>
+    <label>Reset Persona Bloodspiller MK-II(Cryo)</label>
+    <description>Reset an Persona Bloodspiller MK-II(Cryo).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Bloodspiller MK-II(Cryo).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Whip_P_Cryo</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Whip_P_Cryo</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Whip_P_Cryo>1</OMC_Whip_P_Cryo>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+<!--=============== Fire ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Whip_P_Fire</defName>
+    <label>Reset Persona Bloodspiller MK-II(Fire)</label>
+    <description>Reset an Persona Bloodspiller MK-II(Fire).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Bloodspiller MK-II(Fire).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Whip_P_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Whip_P_Fire</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Whip_P_Fire>1</OMC_Whip_P_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+<!--=============== EMP ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMC_Whip_P_EMP</defName>
+    <label>Reset Persona Bloodspiller MK-II(EMP)</label>
+    <description>Reset an Persona Bloodspiller MK-II(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Bloodspiller MK-II(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Whip_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Whip_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Whip_P_EMP>1</OMC_Whip_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OMCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

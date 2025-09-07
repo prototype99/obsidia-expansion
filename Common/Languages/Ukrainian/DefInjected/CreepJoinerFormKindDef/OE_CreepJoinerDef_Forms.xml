@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Obsidia Escaped Subject ====================-->
+<OMC_EscapedSubject.label>втікший суб'єкт</OMC_EscapedSubject.label>
+<OMC_EscapedSubject.letterLabel>Дуже переляканий солдат Імперії Обсидії наближається до вашої колонії.</OMC_EscapedSubject.letterLabel>
+<OMC_EscapedSubject.letterPrompt>{PAWN_nameDef} {PAWN_gender ? став : стала} волонтером в експериментах щодо вдосконалення жителів Імперії Обсидія, не знаючи, які жахи ховаються за цими експериментами. Не витримавши, {PAWN_pronoun} {PAWN_gender ? вирішив : вирішила} бігти. Вловивши потрібний момент, проникнувши в арсенал охорони, {PAWN_gender ? вкрав : вкрала} екіпірування OMC і втікши з дослідницького комплексу. Рятуючись від переслідувачів, {PAWN_nameDef} {PAWN_gender ? натрапив : натрапила} на ваше поселення.\n\n{PAWN_pronoun} говорить, що {PAWN_possessive} навички тут потрібні і хоче ненадовго залишитися.</OMC_EscapedSubject.letterPrompt>
+
+<OTC_EscapedSubject.label>втікший суб'єкт</OTC_EscapedSubject.label>
+<OTC_EscapedSubject.letterLabel>Дуже переляканий механік Імперії Обсидії наближається до вашої колонії.</OTC_EscapedSubject.letterLabel>
+<OTC_EscapedSubject.letterPrompt>{PAWN_nameDef} {PAWN_gender ? став : стала} волонтером в експериментах щодо вдосконалення жителів Імперії Обсидія, не знаючи, які жахи ховаються за цими експериментами. Не витримавши, {PAWN_pronoun} {PAWN_gender ? вирішив : вирішила} бігти. Вловивши потрібний момент, проникнувши в арсенал охорони, {PAWN_gender ? вкрав : вкрала} екіпірування OTC і втікши з дослідницького комплексу. Рятуючись від переслідувачів, {PAWN_nameDef} {PAWN_gender ? натрапив : натрапила} на ваше поселення.\n\n{PAWN_pronoun} говорить, що {PAWN_possessive} навички тут потрібні і хоче ненадовго залишитися.</OTC_EscapedSubject.letterPrompt>
+
+<OCC_EscapedSubject.label>втікший суб'єкт</OCC_EscapedSubject.label>
+<OCC_EscapedSubject.letterLabel>Дуже переляканий лицар Імперії Обсидії наближається до вашої колонії.</OCC_EscapedSubject.letterLabel>
+<OCC_EscapedSubject.letterPrompt>{PAWN_nameDef} {PAWN_gender ? став : стала} волонтером в експериментах щодо вдосконалення жителів Імперії Обсидія, не знаючи, які жахи ховаються за цими експериментами. Не витримавши, {PAWN_pronoun} {PAWN_gender ? вирішив : вирішила} бігти. Вловивши потрібний момент, проникнувши в арсенал охорони, {PAWN_gender ? вкрав : вкрала} екіпірування OCC і втікши з дослідницького комплексу. Рятуючись від переслідувачів, {PAWN_nameDef} {PAWN_gender ? натрапив : натрапила} на ваше поселення.\n\n{PAWN_pronoun} говорить, що {PAWN_possessive} навички тут потрібні і хоче ненадовго залишитися.</OCC_EscapedSubject.letterPrompt>
+
+<OEC_EscapedSubject.label>втікший суб'єкт</OEC_EscapedSubject.label>
+<OEC_EscapedSubject.letterLabel>Дуже переляканий мисливець Імперії Обсидії наближається до вашої колонії.</OEC_EscapedSubject.letterLabel>
+<OEC_EscapedSubject.letterPrompt>{PAWN_nameDef} {PAWN_gender ? став : стала} волонтером в експериментах щодо вдосконалення жителів Імперії Обсидія, не знаючи, які жахи ховаються за цими експериментами. Не витримавши, {PAWN_pronoun} {PAWN_gender ? вирішив : вирішила} бігти. Вловивши потрібний момент, проникнувши в арсенал охорони, {PAWN_gender ? вкрав : вкрала} екіпірування OEC і втікши з дослідницького комплексу. Рятуючись від переслідувачів, {PAWN_nameDef} {PAWN_gender ? натрапив : натрапила} на ваше поселення.\n\n{PAWN_pronoun} говорить, що {PAWN_possessive} навички тут потрібні і хоче ненадовго залишитися.</OEC_EscapedSubject.letterPrompt>
+
+<!--=============== Obsidia Lost Drifter ====================-->
+<ODC_LostDrifter.label>загублений скиталець</ODC_LostDrifter.label>
+<ODC_LostDrifter.letterLabel>Голодний скиталець наближається до вашої колонії.</ODC_LostDrifter.letterLabel>
+<ODC_LostDrifter.letterPrompt>Після нападу на {PAWN_possessive} торговий караван {PAWN_nameDef} {PAWN_gender ? відокремився : відокремилася} від нього. Після кількох тижнів блукань {PAWN_gender ? голодний : голодна} {PAWN_nameDef} {PAWN_gender ? натрапив : натрапила} на ваше поселення.\n\n{PAWN_pronoun} просить залишитися у вашій колонії на деякий час - хоча б доти, доки не відновить сили.</ODC_LostDrifter.letterPrompt>
+
+<!--=============== Forsaken Cultist ====================-->
+<CAC_ForsakenCultist.label>культист, що зрікся</CAC_ForsakenCultist.label>
+<CAC_ForsakenCultist.letterLabel>Неагресивний культист Алої Арахни наближається до вашої колонії.</CAC_ForsakenCultist.letterLabel>
+<CAC_ForsakenCultist.letterPrompt>{PAWN_nameDef} {PAWN_gender ? був : була} дитиною, яка народилася і прожила все своє життя в Культі Алої Арахни. За словами {PAWN_nameDef}, {PAWN_pronoun} {PAWN_gender ? розчарувався : розчарувалася} у своїх переконаннях та {PAWN_gender ? втік : втекла} з культу, щоб побачити світ.\n\nТепер {PAWN_pronoun} благає приєднатися до вашої колонії.</CAC_ForsakenCultist.letterPrompt>
+
+</LanguageData>

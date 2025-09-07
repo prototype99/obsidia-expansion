@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Scepter ====================-->
+  <ThingDef Name="OECTrophyScepterBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.75</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.125</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>ornament</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECTrophyScepterBase">
+    <defName>OEC_Trophy_Scepter</defName>
+    <label>Ancient Scepter</label>
+    <description>An ancient scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Scepter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OECTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECTrophyScepterBase">
+    <defName>OEC_Trophy_Scepter_P</defName>
+    <label>Persona Ancient Scepter</label>
+    <description>An ancient persona scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Scepter_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OECTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Pistol ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OECTrophyPistolBase" ParentName="OERangedBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+	  <MeleeDodgeChance>10.0</MeleeDodgeChance>
+	  <MeleeHitChance>2</MeleeHitChance>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OEC_Trophy_P</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OEC_Trophy_P</defName>
+    <label>Divinity bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OEC_Trophy_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.85</armorPenetrationBase>
+	  <stoppingPower>1.5</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECTrophyPistolBase">
+    <defName>OEC_Trophy_Pistol</defName>
+    <label>Divinity</label>
+    <description>This antique pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OECTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECTrophyPistolBase">
+    <defName>OEC_Trophy_Pistol_P</defName>
+    <label>Persona Divinity</label>
+    <description>This antique persona pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Pistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OECTrophyRanged</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

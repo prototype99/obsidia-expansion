@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged ====================-->
+<!--=============== Pistol ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OMCTrophyPistolBase">
+    <defName>OMC_Trophy_Pistol_P</defName>
+    <label>Paragon Prototype sX-01a</label>
+    <description>Prototype of a new paragon pistol that uses an AI module to improve accuracy.\n\nThis is a rare trophy weapon.\n\nFeature: built-in accuracy stabilization module.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Trophy_SmartPistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags Inherit="False">
+	  <li>OMCTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+    <possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Prototype sX-01a</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

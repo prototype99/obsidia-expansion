@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Slime Hearts ====================-->
+<!--=============== Liquid Type ====================-->
+<!--=============== Royal Jelly ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_RoyalJelly</defName>
+    <label>royal jelly slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Jelly slime in 5 days. Royal jelly slime produces 15 Royal Jelly every 5 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_RoyalJelly</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_RoyalJelly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>950</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <VFEI2_RoyalInsectJelly>30</VFEI2_RoyalInsectJelly>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_RoyalJelly</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

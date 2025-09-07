@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== CAC ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_CAC</defName>
+    <kindDef>CAC_Vizier</kindDef>
+    <appearAfterTicks>250</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_CAC</defName>
+    <boss>OE_Beaconboss_CAC</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <CAC_Acolyte>3</CAC_Acolyte>
+		  <CAC_Apostle>2</CAC_Apostle>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <CAC_Acolyte>5</CAC_Acolyte>
+		  <CAC_Apostle>5</CAC_Apostle>
+		  <CAC_Mech_Arachna>1</CAC_Mech_Arachna>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <CAC_Acolyte>2</CAC_Acolyte>
+		  <CAC_Apostle>8</CAC_Apostle>
+		  <CAC_Disciple>5</CAC_Disciple>
+		  <CAC_Mech_Arachna>2</CAC_Mech_Arachna>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <CAC_Acolyte>2</CAC_Acolyte>
+		  <CAC_Apostle>3</CAC_Apostle>
+		  <CAC_Disciple>10</CAC_Disciple>
+		  <CAC_Prefect>5</CAC_Prefect>
+		  <CAC_Mech_Arachna>2</CAC_Mech_Arachna>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <CAC_Acolyte>2</CAC_Acolyte>
+		  <CAC_Apostle>3</CAC_Apostle>
+		  <CAC_Disciple>5</CAC_Disciple>
+		  <CAC_Prefect>10</CAC_Prefect>
+		  <CAC_Confessor>5</CAC_Confessor>
+		  <CAC_Mech_Arachna>2</CAC_Mech_Arachna>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <CAC_Apostle>2</CAC_Apostle>
+		  <CAC_Disciple>3</CAC_Disciple>
+		  <CAC_Prefect>10</CAC_Prefect>
+		  <CAC_Confessor>10</CAC_Confessor>
+		  <CAC_Deacon>5</CAC_Deacon>
+		  <CAC_Mech_Arachna>4</CAC_Mech_Arachna>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <CAC_Disciple>3</CAC_Disciple>
+		  <CAC_Prefect>2</CAC_Prefect>
+		  <CAC_Confessor>10</CAC_Confessor>
+		  <CAC_Deacon>15</CAC_Deacon>
+		  <CAC_Pontifex>5</CAC_Pontifex>
+		  <CAC_Mech_Arachna>6</CAC_Mech_Arachna>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <CAC_Prefect>10</CAC_Prefect>
+		  <CAC_Confessor>10</CAC_Confessor>
+		  <CAC_Deacon>10</CAC_Deacon>
+		  <CAC_Pontifex>10</CAC_Pontifex>
+		  <CAC_Mech_Arachna>8</CAC_Mech_Arachna>
+		  <CAC_Mech_CrimsonArachna>1</CAC_Mech_CrimsonArachna>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Cultists squad led by {LEADERKIND_label} armed with CAC gear.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Amalgam Genes ====================-->
+  <GeneCategoryDef>
+    <defName>OE_AmalgamGenes</defName>
+    <label>amalgam</label>
+    <displayPriorityInXenotype>999.666</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+<!--=============== Amalgam Aptitudes Genes ====================-->
+  <GeneCategoryDef>
+    <defName>OE_AmalgamAptitudesGenes</defName>
+    <label>amalgam Aptitudes</label>
+    <displayPriorityInXenotype>999.555</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+</Defs>

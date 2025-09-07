@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC - Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Pistol_P</defName>
+    <label>Reset Paragon Silentsong</label>
+    <description>Reset an Paragon Silentsong.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Silentsong.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Pistol_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Pistol_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Pistol_P>1</CAC_Pistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>CACGearAdv</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Shotgun Sidearm ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_ShotgunS_P</defName>
+    <label>Reset Paragon Heartstriker</label>
+    <description>Reset an Paragon Heartstriker.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Heartstriker.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_ShotgunS_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_ShotgunS_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_ShotgunS_P>1</CAC_ShotgunS_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>CACGearAdv</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - SMG ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_SMG_P</defName>
+    <label>Reset Paragon Echo</label>
+    <description>Reset an Paragon Echo.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Echo.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_SMG_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_SMG_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_SMG_P>1</CAC_SMG_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>CACGearAdv</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Shotgun ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Shotgun_P</defName>
+    <label>Reset Paragon Grieving</label>
+    <description>Reset an Paragon Grieving.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Grieving.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Shotgun_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Shotgun_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Shotgun_P>1</CAC_Shotgun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>CACGearAdv</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - SniperRifle ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_SniperRifle_P</defName>
+    <label>Reset Paragon Widowmaker</label>
+    <description>Reset an Paragon Widowmaker.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Widowmaker.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_SniperRifle_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_SniperRifle_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_SniperRifle_P>1</CAC_SniperRifle_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>CACGearAdv</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Minigun ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Minigun_P</defName>
+    <label>Reset Paragon Blackout</label>
+    <description>Reset an Paragon Blackout.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Blackout.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Minigun_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Minigun_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Minigun_P>1</CAC_Minigun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>CACGearAdv</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== OMG - Ranged ====================-->
+<Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="OMG_Pistol" or defName="OMG_Revolver" or defName="OMG_Shotgun" or defName="OMG_SniperRifle" or defName="OMG_Minigun" or defName="OMG_Trophy_PowerGuitar" or defName="OMG_Trophy_Revolver"]/comps/li[compClass="CompEquippable"]</xpath>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OMG_Pistol" or defName="OMG_Revolver" or defName="OMG_Shotgun" or defName="OMG_SniperRifle" or defName="OMG_Minigun" or defName="OMG_Trophy_PowerGuitar" or defName="OMG_Trophy_Revolver"]/comps</xpath>
+    <value>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+    </value>
+</Operation>
+
+</Patch>

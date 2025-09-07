@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Colonial Gene Bank ====================-->
+  <ThingDef ParentName="GeneBuildingBase">
+    <defName>OE_ColonialGeneBank</defName>
+    <label>obsidia colonial gene bank</label>
+    <description>This obsidia building can store huge amount of genepacks and make them usable to create new xenogerms, when placed near a gene assembler. Large gene libraries require many gene banks.\n\nWhen powered, gene banks prevent genepacks from deteriorating and will slowly repair deterioration.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_ColonialGeneBank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>Genepack</ThingDef>
+      <ThingDef>GeneAssembler</ThingDef>
+	  <ThingDef>OE_ColonialGeneProcessor</ThingDef>
+    </descriptionHyperlinks>
+	<castEdgeShadows>true</castEdgeShadows>
+	<defaultPlacingRot>North</defaultPlacingRot>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<rotatable>false</rotatable>
+	<fillPercent>1.0</fillPercent>
+	<passability>Impassable</passability>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<blockWind>true</blockWind>
+	<tradeTags>
+      <li>OEBuildingExotic</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+	  <MarketValue>2775</MarketValue>
+      <WorkToBuild>20000</WorkToBuild>
+      <Mass>50</Mass>
+      <Flammability>0.05</Flammability>
+    </statBases>
+    <size>(5,5)</size>
+    <costList>
+      <OE_Empyrium>50</OE_Empyrium>
+	  <OE_Orichalcum>50</OE_Orichalcum>
+	  <OE_Syntherius>80</OE_Syntherius>
+    </costList>
+	<thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+	<inspectorTabs>
+      <li>ITab_ContentsGenepackHolder</li>
+    </inspectorTabs>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_GenepackContainer">
+        <maxCapacity>350</maxCapacity>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>100</maxSimultaneous>
+        <maxDistance>24.9</maxDistance>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+	<researchPrerequisites>
+      <li>Xenogermination</li>
+	  <li>OEBioengineeringAdv</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+<!--=============== Colonial Gene Processor ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_ColonialGeneProcessor</defName>
+    <label>obsidia colonial gene processor</label>
+    <description>An advanced genetic analysis and enhancement system developed by the Obsidia Colonies. When positioned near a gene assembler, it boosts the maximum genetic complexity of xenogerms you can create. Installing multiple processors further raises this complexity threshold, enabling the design of more intricate and powerful genetic structures.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_ColonialGeneProcessor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<uiOrder>2100.666</uiOrder>
+	<passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>14</pathCost>
+    <rotatable>false</rotatable>
+	<descriptionHyperlinks>
+      <ThingDef>GeneAssembler</ThingDef>
+      <ThingDef>GeneBank</ThingDef>
+	  <ThingDef>OE_ColonialGeneBank</ThingDef>
+      <ThingDef>Genepack</ThingDef>
+      <ThingDef>Xenogerm</ThingDef>
+    </descriptionHyperlinks>
+	<canOverlapZones>false</canOverlapZones>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <designationCategory>Biotech</designationCategory>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<blockWind>true</blockWind>
+	<tradeTags>
+      <li>OEBuildingExotic</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <MarketValue>1525</MarketValue>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0.05</Flammability>
+	  <GeneticComplexityIncrease>20</GeneticComplexityIncrease>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Platinum>25</OE_Platinum>
+	  <OE_Syntherius>5</OE_Syntherius>
+	  <OE_EGOSeed>5</OE_EGOSeed>
+    </costList>
+	<thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+	<inspectorTabs>
+      <li>ITab_ContentsGenepackHolder</li>
+    </inspectorTabs>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	<building>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+	<placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>15</maxSimultaneous>
+        <maxDistance>24.9</maxDistance>
+		<showMaxSimultaneous>true</showMaxSimultaneous>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringGeneProcessor</compClass>
+        <inspectString>Gene complexity increase</inspectString>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Xenogermination</li>
+	  <li>OEBioengineering</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

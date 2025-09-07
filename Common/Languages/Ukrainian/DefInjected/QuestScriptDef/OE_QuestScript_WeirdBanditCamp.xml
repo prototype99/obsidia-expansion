@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Weird Bandit Camp ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_WeirdBanditCamp.questNameRules.rulesStrings>
+  <li>questName->[bandit] [camp]</li>
+  <li>questName->[asker_nameDef] и [camp]</li>
+  <li>questName->Дивне відкриття</li>
+  <li>questName->Викоренити загрозу</li>
+  <!-- Pieces -->
+  <li>camp->табір</li>
+  <li>camp->аванпост</li>
+  <li>camp->лігво</li>
+  <li>camp->застава</li>
+  <li>bandit->бандитів</li>
+  <li>bandit->рейдерів</li>
+  <li>bandit->розбійників</li>
+  <li>bandit->мародерів</li>
+  <li>bandit->грабіжників</li>
+</OE_Quest_WeirdBanditCamp.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_WeirdBanditCamp.questDescriptionRules.rulesStrings>
+  <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] з [asker_faction_name], повідомляє, що їхня розвідка активності Культу Багряної Арахни виявила щось незвичайне. Їхні розвідники пішли за підозрілими слідами, які привели до дивного табору неподалік від нашого місця розташування, контрольованого [siteFaction_name]\n\n\n[asker_nameDef] просить нашої допомоги в ліквідації табору, знищення всіх ворогів і захисних споруд, щоб зупинити всі плани культу Багряної Арахни. [asker_label] каже, що [sitePart0_description].</li>
+  <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] з [asker_faction_name], ділиться тривожними новинами. Їхня розвідка пересувань Культу Червоної Арахни виявила тіньовий табір, захований неподалік. Сліди, якими вони йшли, привели прямо до [siteFaction_name], який, схоже, замислює щось зловісне.\n\n\n[asker_label] закликає нас завдати удару першими, знищивши табір до того, як у ньому розгориться темрява. [asker_label] каже, що [sitePart0_description].</li>
+</OE_Quest_WeirdBanditCamp.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Raid ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterLabel.value.slateRef>{BASELABEL}: It’s a Trap!</OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterLabel.value.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterText.value.slateRef>{BASETEXT}\n\nЗагін культистів перехопив наші повідомлення, отримав координати нашого табору і тепер прямує до нашого поселення.</OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterText.value.slateRef>
+<!--=============== Bandit camp moved ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Завдання більше не актуальне: [resolvedQuestName]</OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Бандити зібрали свій табір та рушили далі. Завдання "[resolvedQuestName]" більше не актуальне.</OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+<!--=============== Leave, the map ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>Завдання провалено: «[resolvedQuestName]»</OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>Ворожий табір було виявлено та розгромлено. Завдання "[resolvedQuestName]" більше не актуальне.</OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>
+<!--=============== Complete ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterLabel.slateRef>Винагороду отримано</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterLabel.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterText.slateRef>Ви розгромили ворожий табір!\n\nНадійшла винагорода від [asker_faction_name].</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterText.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>[asker_faction_royalFavorLabel]</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>Ці колоністи приймали участь у виконанні завдання "[resolvedQuestName]". [asker_definite] хоче знати, кому належить призначити [royalFavorReward_amount] од. [asker_faction_royalFavorLabel] за свою службу.</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>
+
+</LanguageData>

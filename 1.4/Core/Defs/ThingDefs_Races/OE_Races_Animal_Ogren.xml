@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ogren Base ====================-->
+  <ThingDef Name="OEBaseOgren" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+      <MarketValue>850</MarketValue>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <FilthRate>32</FilthRate>
+	  <CaravanRidingSpeedFactor>1.25</CaravanRidingSpeedFactor>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>Monkey</body>
+	  <packAnimal>true</packAnimal>
+      <maxPreyBodySize>2.0</maxPreyBodySize>
+      <petness>0.2</petness>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHungerRate>0.2</baseHungerRate>
+      <baseHealthScale>3.5</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal, VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+      <leatherDef>OE_Leather_Ogren</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <wildness>0.85</wildness>
+      <manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <gestationPeriodDays>13</gestationPeriodDays>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+      </willNeverEat>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>65</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+          <soundDeath>Pawn_Muffalo_Death</soundDeath>
+          <soundCall>Pawn_Muffalo_Call</soundCall>
+          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>OEAnimalExotic</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseOgren" Abstract="True">
+    <combatPower>300</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+  </PawnKindDef>
+
+<!--=============== Ogren ====================-->
+  <ThingDef ParentName="OEBaseOgren">
+    <defName>OE_Ogren</defName>
+    <label>ogren</label>
+    <description>Obsidia Ogren are huge and very strong creatures. By themselves, they are not aggressive unless disturbed. Their strength allows them to carry huge loads, which makes them excellent pack animals.</description>
+    <race>
+      <meatLabel>ogren meat</meatLabel>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseOgren">
+    <defName>OE_Ogren</defName>
+    <label>Ogren</label>
+    <labelPlural>Ogren</labelPlural>
+    <race>OE_Ogren</race>
+    <lifeStages>
+      <li>
+        <label>ogren baby</label>
+        <labelPlural>ogren babies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Ogren_Grey</texPath>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Dessicated_Ogren_east</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Ogren_Grey</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Dessicated_Ogren_east</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Ogren_Grey</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Dessicated_Ogren_east</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<alternateGraphicChance>0.70</alternateGraphicChance>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Ogren/Ogren_Green</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Ogren/Ogren_Red</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Ogren/Ogren_Brown</texPath>
+	  </li>
+	</alternateGraphics>
+  </PawnKindDef>
+
+</Defs>

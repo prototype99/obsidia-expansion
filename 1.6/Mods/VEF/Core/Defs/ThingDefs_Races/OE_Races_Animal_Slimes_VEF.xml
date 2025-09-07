@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Battle Types ====================-->
+<!--=============== Demon Base ====================-->
+  <ThingDef Name="OEDemonSlime" ParentName="OEBaseSlime" Abstract="True">
+	<statBases>
+      <MoveSpeed>3.75</MoveSpeed>
+	  <MarketValue>975</MarketValue>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ArmorRating_Heat>0.50</ArmorRating_Heat>
+	  <Flammability>0.45</Flammability>
+	  <ToxicResistance>0.45</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.45</ToxicEnvironmentResistance>
+    </statBases>
+	<race>
+	  <predator>true</predator>
+	  <baseBodySize>0.4</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
+      <foodType>CarnivoreAnimal, AnimalProduct</foodType>
+	  <trainability>Advanced</trainability>
+    </race>
+	<butcherProducts>
+      <OE_Platinum>10</OE_Platinum>
+	  <OE_Obsidian>5</OE_Obsidian>
+    </butcherProducts>
+  </ThingDef>
+
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OEDemonSlime">
+    <defName>OE_Slime_Demon_Acid</defName>
+    <label>acid demon slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nAcid demon slime ranged battle type, with increased intelligence for training.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Demon_Acid</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>acid energy ball</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Slime_Acid</defaultProjectile>
+		<forcedMissRadius>0.5</forcedMissRadius>
+        <accuracyTouch>0.75</accuracyTouch>
+		<accuracyShort>0.85</accuracyShort>
+		<accuracyMedium>0.80</accuracyMedium>
+		<accuracyLong>0.70</accuracyLong>
+		<warmupTime>4.0</warmupTime>
+        <minRange>3.9</minRange>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+		<range>19.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Slime_Acid</defName>
+    <label>acid energy ball</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergyBlast_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OTCAcid</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Demon_Acid</defName>
+    <label>acid demon slime</label>
+    <labelPlural>acid demon slimes</labelPlural>
+    <race>OE_Slime_Demon_Acid</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonAcid/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonAcid/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonAcid/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonAcid/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonAcid/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonAcid/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>200</combatPower>
+  </PawnKindDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OEDemonSlime">
+    <defName>OE_Slime_Demon_Cryo</defName>
+    <label>cryo demon slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nCryo demon slime ranged battle type, with increased intelligence for training.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Demon_Cryo</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>cryo energy ball</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Slime_Cryo</defaultProjectile>
+		<forcedMissRadius>0.5</forcedMissRadius>
+        <accuracyTouch>0.75</accuracyTouch>
+		<accuracyShort>0.85</accuracyShort>
+		<accuracyMedium>0.80</accuracyMedium>
+		<accuracyLong>0.70</accuracyLong>
+		<warmupTime>4.0</warmupTime>
+        <minRange>3.9</minRange>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+		<range>19.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Slime_Cryo</defName>
+    <label>cryo energy ball</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergyBlast_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Demon_Cryo</defName>
+    <label>cryo demon slime</label>
+    <labelPlural>cryo demon slimes</labelPlural>
+    <race>OE_Slime_Demon_Cryo</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonCryo/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonCryo/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonCryo/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonCryo/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonCryo/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonCryo/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>200</combatPower>
+  </PawnKindDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OEDemonSlime">
+    <defName>OE_Slime_Demon_Fire</defName>
+    <label>fire demon slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nFire demon slime ranged battle type, with increased intelligence for training.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Demon_Fire</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>fire energy ball</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Slime_Fire</defaultProjectile>
+        <accuracyTouch>0.75</accuracyTouch>
+		<accuracyShort>0.85</accuracyShort>
+		<accuracyMedium>0.80</accuracyMedium>
+		<accuracyLong>0.70</accuracyLong>
+		<warmupTime>4.0</warmupTime>
+        <minRange>3.9</minRange>
+		<range>19.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Slime_Fire</defName>
+    <label>fire energy ball</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergyBlast_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>FireArrow</thingClass>
+	<tickerType>Normal</tickerType>
+	<projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Demon_Fire</defName>
+    <label>fire demon slime</label>
+    <labelPlural>fire demon slimes</labelPlural>
+    <race>OE_Slime_Demon_Fire</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonFire/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonFire/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonFire/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonFire/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonFire/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonFire/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>200</combatPower>
+  </PawnKindDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OEDemonSlime">
+    <defName>OE_Slime_Demon_EMP</defName>
+    <label>EMP demon slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nEMP demon slime ranged battle type, with increased intelligence for training.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Demon_EMP</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.24</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>EMP energy ball</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Slime_EMP</defaultProjectile>
+		<forcedMissRadius>0.5</forcedMissRadius>
+        <accuracyTouch>0.75</accuracyTouch>
+		<accuracyShort>0.85</accuracyShort>
+		<accuracyMedium>0.80</accuracyMedium>
+		<accuracyLong>0.70</accuracyLong>
+		<warmupTime>4.0</warmupTime>
+        <minRange>3.9</minRange>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+		<range>19.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Slime_EMP</defName>
+    <label>EMP energy ball</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergyBlast_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>EMP</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Demon_EMP</defName>
+    <label>EMP demon slime</label>
+    <labelPlural>EMP demon slimes</labelPlural>
+    <race>OE_Slime_Demon_EMP</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonEMP/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonEMP/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonEMP/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonEMP/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonEMP/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonEMP/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>200</combatPower>
+  </PawnKindDef>
+
+<!--=============== Special Types ====================-->
+<!--=============== Companion Base ====================-->
+  <ThingDef Name="OECompanionSlime" ParentName="OEBaseSlime" Abstract="True">
+	<statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+	  <MarketValue>1050</MarketValue>
+	  <LeatherAmount>0</LeatherAmount>
+	  <Flammability>0.15</Flammability>
+	  <ToxicResistance>0.25</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.25</ToxicEnvironmentResistance>
+    </statBases>
+	<race>
+	  <baseBodySize>0.4</baseBodySize>
+      <baseHungerRate>0.4</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal</foodType>
+	  <trainability>Advanced</trainability>
+    </race>
+	<butcherProducts>
+      <OE_DragonianWoodLog>25</OE_DragonianWoodLog>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </butcherProducts>
+	<modExtensions>
+	  <li Class="VEF.AnimalBehaviours.AnimalStatExtension">
+		<statToAdd>
+		  <li>VAERoy_PrimaryRole</li>
+		</statToAdd>
+		<statValues>
+		  <li>VAERoy_UtilityHeat</li>
+		</statValues>
+		<statDescriptions>
+		  <li>VAERoy_UtilityHeatDisipationDesc</li>
+		</statDescriptions>
+	  </li>
+	</modExtensions>
+  </ThingDef>
+
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="OECompanionSlime">
+    <defName>OE_Slime_Companion_Worker</defName>
+    <label>worker companion slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nWorker companion slime special type, that has developed an ability to enhance working skills of anyone they bond with. Unfortunately, as a side effect, it the bonded master of the companion slime dies, the slime will also die.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Companion_Worker</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.12</armorPenetration>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.12</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+	  <li Class="VEF.AnimalBehaviours.CompProperties_ApplyHediffWhenBound">
+		<hediffToApply>OE_Slime_Companion_Worker_Bonded</hediffToApply>
+		<applyHediffToBonded>true</applyHediffToBonded>
+		<hediffToApplyToBonded>OE_Slime_Companion_Worker_BondedPawn</hediffToApplyToBonded>
+		<doJobIfBondedDies>false</doJobIfBondedDies>
+		<dieIfBondedDies>true</dieIfBondedDies>
+	  </li>
+	</comps>
+  </ThingDef>
+
+	<HediffDef>
+	  <defName>OE_Slime_Companion_Worker_Bonded</defName>
+	  <label>worker companion slime bonded</label>
+	  <description>This companion slime has bonded with a colonist. It will provide a psychic connection to that colonist increasing working skills, but the slime will die if the bonded colonist dies.</description>
+	  <hediffClass>HediffWithComps</hediffClass>
+	  <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	  <scenarioCanAdd>false</scenarioCanAdd>
+	  <maxSeverity>1.0</maxSeverity>
+	  <stages>
+		<li/>
+	  </stages>
+	</HediffDef>
+
+	<HediffDef>
+	  <defName>OE_Slime_Companion_Worker_BondedPawn</defName>
+	  <label>worker companion slime bond</label>
+	  <description>Psychic connection with a companion slime that increasing working skills.</description>
+	  <hediffClass>HediffWithComps</hediffClass>
+	  <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	  <scenarioCanAdd>false</scenarioCanAdd>
+	  <maxSeverity>1.0</maxSeverity>
+	  <stages>
+		<li>
+		  <minSeverity>0</minSeverity>
+		  <statOffsets>
+			<WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+			<GlobalLearningFactor>1.0</GlobalLearningFactor>
+		  </statOffsets>
+		</li>
+	  </stages>
+	</HediffDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Companion_Worker</defName>
+    <label>worker companion slime</label>
+    <labelPlural>worker companion slimes</labelPlural>
+    <race>OE_Slime_Companion_Worker</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionWorker/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionWorker/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionWorker/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionWorker/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionWorker/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionWorker/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>20</combatPower>
+  </PawnKindDef>
+
+<!--=============== Battle ====================-->
+  <ThingDef ParentName="OECompanionSlime">
+    <defName>OE_Slime_Companion_Battle</defName>
+    <label>battle companion slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nBattle companion slime special type, that has developed an ability to enhance combat skills of anyone they bond with. Unfortunately, as a side effect, it the bonded master of the companion slime dies, the slime will also die.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Companion_Battle</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.12</armorPenetration>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.12</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+	  <li Class="VEF.AnimalBehaviours.CompProperties_ApplyHediffWhenBound">
+		<hediffToApply>OE_Slime_Companion_Battle_Bonded</hediffToApply>
+		<applyHediffToBonded>true</applyHediffToBonded>
+		<hediffToApplyToBonded>OE_Slime_Companion_Battle_BondedPawn</hediffToApplyToBonded>
+		<doJobIfBondedDies>false</doJobIfBondedDies>
+		<dieIfBondedDies>true</dieIfBondedDies>
+	  </li>
+	</comps>
+  </ThingDef>
+
+	<HediffDef>
+	  <defName>OE_Slime_Companion_Battle_Bonded</defName>
+	  <label>battle companion slime bonded</label>
+	  <description>This companion slime has bonded with a colonist. It will provide a psychic connection to that colonist increasing combat skills, but the slime will die if the bonded colonist dies.</description>
+	  <hediffClass>HediffWithComps</hediffClass>
+	  <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	  <scenarioCanAdd>false</scenarioCanAdd>
+	  <maxSeverity>1.0</maxSeverity>
+	  <stages>
+		<li/>
+	  </stages>
+	</HediffDef>
+
+	<HediffDef>
+	  <defName>OE_Slime_Companion_Battle_BondedPawn</defName>
+	  <label>battle companion slime bond</label>
+	  <description>Psychic connection with a companion slime that increasing combat skills.</description>
+	  <hediffClass>HediffWithComps</hediffClass>
+	  <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	  <scenarioCanAdd>false</scenarioCanAdd>
+	  <maxSeverity>1.0</maxSeverity>
+	  <stages>
+		<li>
+		  <minSeverity>0</minSeverity>
+		  <statOffsets>
+			<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+			<MeleeHitChance>10</MeleeHitChance>
+		  </statOffsets>
+		</li>
+	  </stages>
+	</HediffDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Companion_Battle</defName>
+    <label>battle companion slime</label>
+    <labelPlural>battle companion slimes</labelPlural>
+    <race>OE_Slime_Companion_Battle</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionBattle/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionBattle/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionBattle/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionBattle/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionBattle/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionBattle/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>20</combatPower>
+  </PawnKindDef>
+
+</Defs>

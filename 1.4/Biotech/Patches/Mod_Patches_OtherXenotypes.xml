@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Nephilim Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Nephilim Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<Nephilim MayRequire="Ludeon.RimWorld.Biotech">0.01</Nephilim>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Illithid Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Illithid Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<GS_Illithid MayRequire="Ludeon.RimWorld.Biotech">0.01</GS_Illithid>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

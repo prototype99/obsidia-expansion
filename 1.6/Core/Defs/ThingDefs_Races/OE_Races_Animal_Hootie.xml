@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Hootie Base ====================-->
+  <ThingDef Name="OEBaseHootie" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+      <MarketValue>175</MarketValue>
+      <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>65</ComfyTemperatureMax>
+      <FilthRate>4</FilthRate>
+	  <Wildness>0.75</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.55</cooldownTime>
+		<armorPenetration>0.18</armorPenetration>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.25</cooldownTime>
+		<armorPenetration>0.18</armorPenetration>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.55</cooldownTime>
+		<armorPenetration>0.18</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>Bird</body>
+      <predator>true</predator>
+	  <packAnimal>false</packAnimal>
+      <maxPreyBodySize>1.0</maxPreyBodySize>
+      <petness>0.1</petness>
+      <baseBodySize>0.85</baseBodySize>
+      <baseHungerRate>0.12</baseHungerRate>
+      <baseHealthScale>0.85</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>OE_Leather_Astrinx</leatherDef>
+	  <trainability>None</trainability>
+	  <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+      </specialTrainables>
+	  <useMeatFrom>Cassowary</useMeatFrom>
+      <nameOnTameChance>1</nameOnTameChance>
+	  <roamMtbDays>5</roamMtbDays>
+	  <gestationPeriodDays>10</gestationPeriodDays>
+      <manhunterOnTameFailChance>0.85</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+	  <canFishForFood>true</canFishForFood>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>33</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBabyTiny</def>
+          <minAge>0</minAge>
+		  <soundWounded>Pawn_Chick_Call</soundWounded>
+          <soundDeath>Pawn_Chick_Call</soundDeath>
+          <soundCall>Pawn_Chick_Call</soundCall>
+          <soundAngry>Pawn_Chick_Call</soundAngry>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.12</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>Bird_Eat</soundEating>
+    </race>
+    <tradeTags>
+      <li>OEAnimal</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>OE_EggHootieUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_EggHootieFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>4</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1~3</eggCountRange>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseHootie" Abstract="True">
+    <combatPower>85</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+	<wildGroupSize>2~3</wildGroupSize>
+  </PawnKindDef>
+
+<!--=============== Hootie ====================-->
+  <ThingDef ParentName="OEBaseHootie">
+    <defName>OE_Hootie</defName>
+    <label>hootie</label>
+    <description>A beautiful medium unmodified Obsidia bird species. It is easily angered.</description>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseHootie">
+    <defName>OE_Hootie</defName>
+    <label>hootie</label>
+    <race>OE_Hootie</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hootie/Hootie_White</texPath>
+          <drawSize>0.45</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hootie/Dessicated_Hootie_east</texPath>
+          <drawSize>0.45</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hootie/Hootie_White</texPath>
+          <drawSize>0.85</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hootie/Dessicated_Hootie_east</texPath>
+          <drawSize>0.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hootie/Hootie_White</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hootie/Dessicated_Hootie_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<alternateGraphicChance>0.66</alternateGraphicChance>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Hootie/Hootie_Brown</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Hootie/Hootie_Grey</texPath>
+	  </li>
+	</alternateGraphics>
+  </PawnKindDef>
+
+</Defs>

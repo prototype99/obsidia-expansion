@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Production ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
+    <value>
+      <li>OE_Mech_Maid</li>
+	  <li>OE_Mech_Octo</li>
+	  <li>OE_Mech_OMC_Arachna</li>
+	  <li>OE_Mech_OTC_Arachna_Acid</li>
+	  <li>OE_Mech_OTC_Arachna_Cryo</li>
+	  <li>OE_Mech_OTC_Arachna_Fire</li>
+	  <li>OE_Mech_OTC_Arachna_EMP</li>
+	  <li>OE_Mech_OCC_Arachna</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OE_Mech_OEC_Arachna</li>
+	  <li>OE_Mech_CAC_Arachna</li>
+	  <li>OE_Mech_ArachnaQueen</li>
+	  <li>OE_Mech_CrimsonArachna</li>
+	  <li>OE_Mech_OMC_Dominator</li>
+	  <li>OE_Mech_OTC_Dominator_Acid</li>
+	  <li>OE_Mech_OTC_Dominator_Cryo</li>
+	  <li>OE_Mech_OTC_Dominator_Fire</li>
+	  <li>OE_Mech_OTC_Dominator_EMP</li>
+	  <li>OE_Mech_OCC_Dominator</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OE_Mech_OEC_Dominator</li>
+	  <li>OE_Mech_ODC_Dominator_Light</li>
+	  <li>OE_Mech_ODC_Dominator_Heavy</li>
+	  <li>OE_Mech_ChaosLord</li>
+    </value>
+</Operation>
+<!--=============== Resurrection ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="ResurrectMediumMech"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Corpse_OE_Mech_Maid</li>
+	  <li>Corpse_OE_Mech_Octo</li>
+	  <li>Corpse_OE_Mech_OMC_Arachna</li>
+	  <li>Corpse_OE_Mech_OTC_Arachna_Acid</li>
+	  <li>Corpse_OE_Mech_OTC_Arachna_Cryo</li>
+	  <li>Corpse_OE_Mech_OTC_Arachna_Fire</li>
+	  <li>Corpse_OE_Mech_OTC_Arachna_EMP</li>
+	  <li>Corpse_OE_Mech_OCC_Arachna</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Corpse_OE_Mech_OEC_Arachna</li>
+	  <li>Corpse_OE_Mech_CAC_Arachna</li>
+	  <li>Corpse_OE_Mech_ArachnaQueen</li>
+	  <li>Corpse_OE_Mech_CrimsonArachna</li>
+	  <li>Corpse_OE_Mech_OMC_Dominator</li>
+	  <li>Corpse_OE_Mech_OTC_Dominator_Acid</li>
+	  <li>Corpse_OE_Mech_OTC_Dominator_Cryo</li>
+	  <li>Corpse_OE_Mech_OTC_Dominator_Fire</li>
+	  <li>Corpse_OE_Mech_OTC_Dominator_EMP</li>
+	  <li>Corpse_OE_Mech_OCC_Dominator</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Corpse_OE_Mech_OEC_Dominator</li>
+	  <li>Corpse_OE_Mech_ODC_Dominator_Light</li>
+	  <li>Corpse_OE_Mech_ODC_Dominator_Heavy</li>
+	  <li>OE_Mech_ChaosLord</li>
+    </value>
+</Operation>
+
+</Patch>

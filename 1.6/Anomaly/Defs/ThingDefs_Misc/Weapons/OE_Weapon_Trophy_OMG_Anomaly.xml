@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Range ====================-->
+<!--=============== Trophy OMG - Revolver ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OMG_Trophy_Revolver</defName>
+    <label>Death’s Call</label>
+    <description>Crafted from dark technology, this revolver can turn any victim into a relentless Shambler. With each pull of the trigger, the dead rise again, cursed to walk in unholy servitude.\n\nSpecially modified weapon charged with Necrobane, Deadlife, Stun and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Trophy_Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<techLevel>Archotech</techLevel>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OMGTrophyWeapons</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <MentalBreakThreshold>-0.30</MentalBreakThreshold>
+	  <PainShockThreshold>-0.30</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.30</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.30</WorkSpeedGlobalOffsetMech>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.30</PilotingAbility>
+	</equippedStatOffsets>
+	<statBases>
+      <RoyalFavorValue>1.3</RoyalFavorValue>
+	  <MarketValue>7150</MarketValue>
+	  <Mass>4.0</Mass>
+	  <AccuracyTouch>1.05</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMG_Trophy_R</defaultProjectile>
+        <forcedMissRadius>0.15</forcedMissRadius>
+		<warmupTime>0.75</warmupTime>
+		<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+        <range>20.9</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>OMG_Ignite</abilityDef>
+        <maxCharges>5</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>ignite charge</chargeNoun>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+		  <li>PulseCharge</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Death’s Call</li>
+        </namerLabels>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>OEGearTrophy</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMG_Trophy_R</defName>
+    <label>Death’s Call bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMG_Trophy_Dart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.0</drawSize>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OMGNecrobane</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <armorPenetrationBase>0.75</armorPenetrationBase>
+      <speed>55</speed>
+	  <explosionRadius>0.9</explosionRadius>
+	  <extraDamages>
+	   <li>
+         <def>EMP</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>Stun</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>DeadlifeDust</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+	  <soundExplode>ToxicShellLanded</soundExplode>
+      <postExplosionSpawnThingDef>Shell_OMG_Trophy_R</postExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Shell_OMG_Trophy_R</defName>
+    <label>Death’s Call capsule</label>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Projectile/OMG_Trophy_DartLanded</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <comps>
+      <li Class="CompProperties_ReleaseGas">
+        <gasType>DeadlifeDust</gasType>
+        <cellsToFill>2</cellsToFill>
+        <durationSeconds>7</durationSeconds>
+        <effecterReleasing>DeadlifeReleasing</effecterReleasing>
+      </li>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>300</delayTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

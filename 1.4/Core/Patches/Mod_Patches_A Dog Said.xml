@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>A Dog Said... Animal Prosthetics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+		    	<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallPowerClawAnimal"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or defName = "InstallSimpleProstheticLegAnimal" or defName = "InstallBionicLegAnimal"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal" or defName = "InstallBionicArmAnimal"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Raptor</li>
+					<li>OE_Ogren</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallEarAnimalBionic" or defName = "InstallEarAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic" or defName = "InstallJawAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallSpineAnimalBionic" or defName = "InstallSpineAnimalSimple"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
+				  <value>
+					<li>OE_Armagon</li>
+					<li>OE_Direwolf</li>
+					<li>OE_Raptor</li>
+					<li>OE_Tionant_Blue</li>
+					<li>OE_Tionant_Green</li>
+					<li>OE_Tionant_Red</li>
+					<li>OE_Tionant_Yellow</li>
+					<li>OE_Astrinx</li>
+					<li>OE_Ogren</li>
+					<li>OE_Bruul_Acid</li>
+					<li>OE_Bruul_Cryo</li>
+					<li>OE_Bruul_Fire</li>
+					<li>OE_Bruul_EMP</li>
+					<li>OE_Arachna_Red</li>
+					<li>OE_Arachna_Green</li>
+					<li>OE_Arachna_Blue</li>
+					<li>OE_Arachna_Yellow</li>
+					<li>OE_Arachna_Tox</li>
+				  </value>
+			   </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

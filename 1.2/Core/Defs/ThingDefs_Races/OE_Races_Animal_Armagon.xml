@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Armagon Base ====================-->
+  <ThingDef Name="OEBaseArmagon" ParentName="AnimalThingBase" Abstract="True">
+	<statBases>
+      <MoveSpeed>4.5</MoveSpeed>
+      <MarketValue>850</MarketValue>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.25</ArmorRating_Heat>
+	  <ToxicSensitivity>0</ToxicSensitivity>
+    </statBases>
+	<uiIconScale>1.5</uiIconScale>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+	  <li>
+        <label>horn</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEArmagonLike</body>
+	  <herdAnimal>true</herdAnimal>
+	  <packAnimal>true</packAnimal>
+      <baseHungerRate>1.2</baseHungerRate>
+	  <baseBodySize>4.5</baseBodySize>
+      <baseHealthScale>4.5</baseHealthScale>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <fleshType>Insectoid</fleshType>
+	  <bloodDef>Filth_BloodInsect</bloodDef>
+      <meatColor>(160,168,139)</meatColor>
+      <trainability>Advanced</trainability>
+      <wildness>0.75</wildness>
+      <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
+      <gestationPeriodDays>7</gestationPeriodDays>
+      <willNeverEat>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+      </willNeverEat>
+      <lifeExpectancy>100</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>OEInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>OEInsectJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>OEBigInsectAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>OEAnimal</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseArmagon" Abstract="True">
+    <combatPower>300</combatPower>
+    <ecoSystemWeight>2</ecoSystemWeight>
+	<wildGroupSize>3~5</wildGroupSize>
+	<canArriveManhunter>false</canArriveManhunter>
+  </PawnKindDef>
+
+<!--=============== Armagon ====================-->
+  <ThingDef ParentName="OEBaseArmagon">
+    <defName>OE_Armagon</defName>
+    <label>armagon</label>
+    <description>Obsidia Armagons are huge insectoids with tough obsidian chitin. These insectoids themselves are very peaceful, but they will be able to protect themselves from any predator or hunter without any problems. Their strength allows them to carry huge loads, which makes them excellent pack animals.</description>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseArmagon">
+    <defName>OE_Armagon</defName>
+    <label>armagon</label>
+    <labelPlural>armagons</labelPlural>
+    <race>OE_Armagon</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Armagon/ArmagonMale</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Armagon/ArmagonFemale</texPath>
+          <drawSize>1.2</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Armagon/Dessicated_Armagon_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Armagon/Dessicated_Armagon_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Armagon/ArmagonMale</texPath>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Armagon/ArmagonFemale</texPath>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Armagon/Dessicated_Armagon_east</texPath>
+          <drawSize>2.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Armagon/Dessicated_Armagon_east</texPath>
+          <drawSize>2.0</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Armagon/ArmagonMale</texPath>
+          <drawSize>3.0</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Armagon/ArmagonFemale</texPath>
+          <drawSize>3.0</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Armagon/Dessicated_Armagon_east</texPath>
+          <drawSize>3.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Armagon/Dessicated_Armagon_east</texPath>
+          <drawSize>3.0</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Battle ====================-->
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Spacer</defName>
+    <label>Battle Module - Astronaut</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/B_Spacer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <tags>
+		<li>OEModuleB</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<statBases>
+	  <Insulation_Cold>10</Insulation_Cold>
+	  <Insulation_Heat>10</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+	  <VacuumResistance>1.0</VacuumResistance>
+	  <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+  </ThingDef>	
+
+</Defs>

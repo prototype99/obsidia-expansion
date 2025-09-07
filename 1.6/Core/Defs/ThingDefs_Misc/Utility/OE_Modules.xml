@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Modules ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEModuleBase" ParentName="ApparelNoQualityBase" Abstract="True">
+    <description>The module provides the owner with various bonuses, depending on the model. Designed for use in various areas of Obsidia.</description>
+	<techLevel>Spacer</techLevel>
+	<thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+	  <MarketValue>1155</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+      <Mass>0.2</Mass>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+	  <EquipDelay>4</EquipDelay>
+	  <Beauty>0</Beauty>
+    </statBases>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+	  <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+	<costList>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Obsidian>35</OE_Obsidian>
+	  <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OEModules</li>
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+		<Intellectual>10</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_Modules</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Battle ====================-->
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Warrior</defName>
+    <label>Battle Module - Warrior</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/B_Battle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleB</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.20</AimingDelayFactor>
+	  <MeleeHitChance>4</MeleeHitChance>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Resist</defName>
+    <label>Battle Module - Resist</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/B_Resist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleB</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <PainShockThreshold>0.20</PainShockThreshold>
+	  <PsychicSensitivity>-0.20</PsychicSensitivity>
+	  <Flammability>-0.20</Flammability>
+	  <ToxicResistance>0.20</ToxicResistance>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+<!--=============== Intelligence ====================-->
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Medic</defName>
+    <label>Intelligence Module - Medic</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/I_Medic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleI</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <MedicalOperationSpeed>0.20</MedicalOperationSpeed>
+	  <MedicalPotency>0.20</MedicalPotency>
+	  <SurgerySuccessChanceFactor>0.20</SurgerySuccessChanceFactor>
+	  <MedicalTendQuality>0.20</MedicalTendQuality>
+	  <MedicalTendSpeed>0.20</MedicalTendSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Scientist</defName>
+    <label>Intelligence Module - Scientist</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/I_Scientist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleI</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <GlobalLearningFactor>0.40</GlobalLearningFactor>
+	  <ResearchSpeed>0.20</ResearchSpeed>
+	  <DrugSynthesisSpeed>0.20</DrugSynthesisSpeed>
+	  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.20</EntityStudyRate>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Social</defName>
+    <label>Intelligence Module - Social</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/I_Social</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleI</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <ArrestSuccessChance>0.20</ArrestSuccessChance>
+	  <SocialImpact>0.20</SocialImpact>
+	  <NegotiationAbility>0.20</NegotiationAbility>
+	  <TradePriceImprovement>0.20</TradePriceImprovement>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Builder</defName>
+    <label>Worker Module - Builder</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/W_Builder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <ConstructSuccessChance>0.20</ConstructSuccessChance>
+	  <ConstructionSpeed>0.20</ConstructionSpeed>
+	  <FixBrokenDownBuildingSuccessChance>0.20</FixBrokenDownBuildingSuccessChance>
+	  <SmoothingSpeed>0.20</SmoothingSpeed>
+	  <MiningYield>0.20</MiningYield>
+	  <MiningSpeed>0.20</MiningSpeed>
+	  <DeepDrillingSpeed>0.20</DeepDrillingSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Cook</defName>
+    <label>Worker Module - Cook</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/W_Cook</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <CookSpeed>4</CookSpeed>
+	  <FoodPoisonChance>-0.20</FoodPoisonChance>
+	  <DrugCookingSpeed>0.20</DrugCookingSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Engineer</defName>
+    <label>Worker Module - Engineer</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/W_Engineer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+	  <GeneralLaborSpeed>0.20</GeneralLaborSpeed>
+	  <ButcheryMechanoidEfficiency>0.20</ButcheryMechanoidEfficiency>
+	  <ButcheryMechanoidSpeed>0.20</ButcheryMechanoidSpeed>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Farmer</defName>
+    <label>Worker Module - Farmer</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/W_Farmer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <PlantWorkSpeed>0.20</PlantWorkSpeed>
+	  <PlantHarvestYield>0.40</PlantHarvestYield>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Herdsman</defName>
+    <label>Worker Module - Herdsman</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/W_Herdsman</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <AnimalGatherSpeed>0.20</AnimalGatherSpeed>
+	  <AnimalGatherYield>0.20</AnimalGatherYield>
+	  <TameAnimalChance>0.20</TameAnimalChance>
+	  <TrainAnimalChance>0.20</TrainAnimalChance>
+	  <HuntingStealth>0.20</HuntingStealth>
+	  <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">0.20</FishingSpeed>
+	  <FishingYield MayRequire="Ludeon.RimWorld.Odyssey">0.20</FishingYield>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+</Defs>

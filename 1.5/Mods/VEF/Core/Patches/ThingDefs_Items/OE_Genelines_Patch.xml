@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Factions Expanded - Insectoids 2</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Sorne"]/insects</xpath>
+		  <value>
+			<OE_Infestor_Acid>1</OE_Infestor_Acid>
+			<OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Fire>
+			<OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+			<OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+			<OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Nuchadus"]/insects</xpath>
+		  <value>
+			<OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Fire>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Kemia"]/insects</xpath>
+		  <value>
+			<OE_Infestor_Acid>1</OE_Infestor_Acid>
+			<OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+			<OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/VFEInsectoids.InsectGenelineDef[defName="VFEI_Xanides"]/insects</xpath>
+		  <value>
+			<OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+			<OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+		  </value>
+	    </li>
+	  </operations>	  
+	</match>
+</Operation>
+
+ 
+</Patch>
+

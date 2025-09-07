@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Special ====================-->
+<!--=============== Drifter ====================-->
+  <BackstoryDef>
+    <defName>OE_Drifter</defName>
+    <title>obsidia drifter</title>
+    <titleShort>drifter</titleShort>
+    <description>[PAWN_nameDef] previously led a nomadic lifestyle. Constantly moving acquired useful skills for life in temporary camps.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Animals</li>
+	  <li>Cooking</li>
+	  <li>Hauling</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Animals>5</Animals>
+      <Cooking>5</Cooking>
+      <Mining>-2</Mining>
+	  <Plants>-2</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>OEDrifters</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+	  <li>Pirate</li>
+	  <li>Hunter</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OENomad>0</OENomad>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Exile ====================-->
+  <BackstoryDef>
+    <defName>OE_Exile</defName>
+    <title>obsidia exile</title>
+    <titleShort>exile</titleShort>
+    <description>[PAWN_nameDef] was cast out from an Obsidia enclave under unknown charges-real or fabricated. Survived in the wastes by any means necessary, becoming hard, quiet, and resourceful.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Violent</li>
+	  <li>PlantWork</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Shooting>2</Shooting>
+      <Plants>3</Plants>
+      <Crafting>2</Crafting>
+	  <Social>-2</Social>
+	  <Intellectual>-1</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>OEDrifters</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+	  <li>Pirate</li>
+	  <li>Farmer</li>
+    </spawnCategories>
+	<bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Salvager ====================-->
+  <BackstoryDef>
+    <defName>OE_Salvager</defName>
+    <title>obsidia salvager</title>
+    <titleShort>salvager</titleShort>
+    <description>[PAWN_nameDef] roamed ancient battlefields and collapsed vaults, extracting anything of value. Knows how to strip a ruin clean—but often speaks in fragments and sparks.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Crafting</li>
+	  <li>Intellectual</li>
+	  <li>Mining</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Crafting>4</Crafting>
+      <Intellectual>2</Intellectual>
+      <Mining>2</Mining>
+	  <Social>-2</Social>
+	  <Animals>-1</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>OEDrifters</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+	  <li>Pirate</li>
+	  <li>Miner</li>
+    </spawnCategories>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Scout ====================-->
+  <BackstoryDef>
+    <defName>OE_Scout</defName>
+    <title>obsidia scout</title>
+    <titleShort>scout</titleShort>
+    <description>[PAWN_nameDef] served as a long-range scout for a drifting clan, trained to survive alone and report back unseen. Fast, quiet, and observant—but not one for deep study.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Violent</li>
+	  <li>PlantWork</li>
+	  <li>Animals</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Shooting>3</Shooting>
+      <Plants>2</Plants>
+      <Animals>2</Animals>
+	  <Intellectual>-2</Intellectual>
+	  <Artistic>-1</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>OEDrifters</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+	  <li>Hunter</li>
+	  <li>Farmer</li>
+    </spawnCategories>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

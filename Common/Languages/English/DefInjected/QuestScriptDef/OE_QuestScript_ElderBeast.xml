@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Elder Beast ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_ElderBeast.questNameRules.rulesStrings>
+  <li>questName->[beastAdjective] [beastNoun]</li>
+  <!-- Pieces -->
+  <li>beastAdjective->Bone-chilling</li>
+  <li>beastAdjective->Echoing</li>
+  <li>beastAdjective->Distant</li>
+  <li>beastAdjective->Low</li>
+  <li>beastAdjective->Elder</li>
+  <li>beastNoun->Howl</li>
+  <li>beastNoun->Roar</li>
+</OE_Quest_ElderBeast.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_ElderBeast.questDescriptionRules.rulesStrings>
+  <li>questDescription->Colonists reported hearing something strange nearby — a deep, animalistic sound echoing through the land.\n\nThey couldn’t identify what creature made it, but it sounded large.\n\nVery large.Something is out there... and it might be coming this way.</li>
+  <li>questDescription->It began with a sound — low, primal, and impossibly distant. It echoed across the trees, through rock and bone, as if the land itself remembered the beast.\n\nAnimals have fled. The air is colder. Even the wind seems to avoid the forest now.\n\nSomething ancient is stirring — watching, listening, drawing closer. You don’t know what it is… only that it was never meant to return.</li>
+</OE_Quest_ElderBeast.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Elder Beast Arrive ====================-->
+<!-- Elder Direwolf -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterLabel.slateRef>Elder Beast Approaching</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Raptor -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterLabel.slateRef>Elder Beast Approaching</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Ogren -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterLabel.slateRef>Elder Beast Approaching</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Tionants -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterLabel.slateRef>Elder Beast Approaching</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterText.slateRef>
+
+</LanguageData>

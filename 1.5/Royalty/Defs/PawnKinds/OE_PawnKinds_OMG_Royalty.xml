@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Battlemaster ====================-->
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OMG_Battlemaster</defName>
+    <label>mercenary battlemaster</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>OE_Title_3_Custodian</li>
+      <li>OE_Title_4_Overseer</li>
+      <li>OE_Title_5_HighMaster</li>
+    </titleSelectOne>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+	  <li>OMGMercenary</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>OMGMelee</li>
+	  <li>OMGRanged</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>10</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>215</combatPower>
+	<defaultFactionType>ObsidiaMercenaryGangs</defaultFactionType>
+  </PawnKindDef>
+
+</Defs>

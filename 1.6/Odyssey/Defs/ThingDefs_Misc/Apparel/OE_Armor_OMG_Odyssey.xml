@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Swarmling ====================-->
+  <ThingDef ParentName="OMGArmorBase">
+	<defName>OMG_Armor_Swarmling</defName>
+    <label>Mercenary Armor(Swarmling)</label>
+    <description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with the pack that allows the user to deploy a battery-powered drones and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OMG/Swarmling/OMGArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>7550</MarketValue>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OMG/Swarmling/OMGArmor</wornGraphicPath>
+	  <tags>
+		<li>OMGMercenary</li>
+      </tags>
+	  <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy swarmling drone</label>
+        <defaultProjectile>Grenade_Armor_OMG_SwarmlingPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>4</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OMG_SwarmlingPack</defName>
+    <label>OMG swarmling pack capsule</label> 
+    <thingClass>Projectile_SpawnsPawnZeroAge</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OMG_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/DeploySwarmlingDrone_OMG</uiIconPath>
+    <projectile>
+      <speed>45</speed>
+      <spawnsPawnKind>OMG_Swarmling_Drone</spawnsPawnKind>
+      <tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OMG Swarmling Drone ====================-->
+  <ThingDef ParentName="BaseDrone">
+    <defName>OMG_Swarmling_Drone</defName>
+    <label>Mercenary Swarmling Drone</label>
+    <description>Mercenary Swarmling Drone - small autonomous mechanoid built for efficient elimination. Swarmling Drones are powered by a long-lasting battery.</description>
+    <statBases>
+      <MarketValue>135</MarketValue>
+	  <MoveSpeed>6.0</MoveSpeed>
+	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <MaxFlightTime>30</MaxFlightTime>
+    </statBases>
+    <race>
+      <thinkTreeConstant>WaspDroneConstant</thinkTreeConstant>
+      <baseHealthScale>0.50</baseHealthScale>
+      <baseBodySize>0.25</baseBodySize>
+      <hasCorpse>true</hasCorpse>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Wasp_Wounded</soundWounded>
+          <soundDeath>Pawn_Wasp_Death</soundDeath>
+          <soundCall>Pawn_Wasp_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <butcherProducts>
+      <OE_Syntherius>2</OE_Syntherius>
+    </butcherProducts>
+    <tools Inherit="False">
+      <li>
+        <label>stinger</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>6</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+        <linkedBodyPartsGroup>SpikedShellAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>3</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>3</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseDroneKind">
+    <defName>OMG_Swarmling_Drone</defName>
+    <label>Mercenary Swarmling Drone</label>
+    <labelPlural>Mercenary Swarmling Drones</labelPlural>
+    <race>OMG_Swarmling_Drone</race>
+    <combatPower>45</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/SwarmlingDrone/OMG/SwarmlingDrone</texPath>
+          <drawSize>0.95</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

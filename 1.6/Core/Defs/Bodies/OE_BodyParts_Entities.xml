@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Returned ====================-->
+  <BodyPartDef>
+    <defName>OE_ReturnedLimb</defName>
+    <label>limb</label>
+    <hitPoints>80</hitPoints>
+    <frostbiteVulnerability>0.1</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+<!--=============== Cyber Arachna ====================-->
+  <BodyPartDef>
+    <defName>OEThoraxLarge</defName>
+    <label>thorax</label>
+    <hitPoints>175</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+</Defs>

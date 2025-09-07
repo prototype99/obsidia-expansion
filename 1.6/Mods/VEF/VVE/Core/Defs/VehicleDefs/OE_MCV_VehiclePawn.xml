@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+<!--=============== Mobile Colonial Vihecle ====================-->
+  <Vehicles.VehicleDef ParentName="VehiclePawn_Armored">
+	<defName>ODC_MCV</defName>
+	<label>Mobile Colonial Vehicles</label>
+	<description>Mobile Colonial Vehicles(MCV) are the basis of the Obsidia Empire expansion in the past. Slow and lightly armed, but super-armored vehicle. Excellent for transporting a large number of pawns and cargo over long distances. Nowadays used by ODC.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1 Gunner x2 Passenger x12\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/MCV/ODC_MobileColonialVihecle</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(6, 10)</drawSize>
+	  <color>(216, 209, 190)</color>
+	  <colorTwo>(235, 155, 21)</colorTwo>
+	  <colorThree>(36, 180, 195)</colorThree>
+	</graphicData>
+	<fillPercent>1</fillPercent>
+	<size>(5, 9)</size>
+	<uiIconScale>0.75</uiIconScale>
+	<vehicleCategory>Combat</vehicleCategory>
+	<techLevel>Spacer</techLevel>
+	<vehicleType>Land</vehicleType>
+	<statBases>
+	  <ArmorRating_Blunt>1.75</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+	  <ArmorRating_Heat>1.00</ArmorRating_Heat>
+	  <Flammability>0.05</Flammability>
+	  <MarketValue>15250</MarketValue>
+	</statBases>
+	<vehicleStats>
+	  <Mass>1000</Mass>
+	  <MoveSpeed>5.0</MoveSpeed>
+	  <CargoCapacity>7500</CargoCapacity>
+	  <RepairRate>0.75</RepairRate>
+	  <AccelerationRate>0.025</AccelerationRate>
+	</vehicleStats>
+	<buildDef>ODC_MCV_Blueprint</buildDef>
+	<soundSustainersOnEvent>
+	  <li>
+		<start>IgnitionOn</start>
+		<stop>IgnitionOff</stop>
+		<value>VVE_VehicleEngineHeavy</value>
+	  </li>
+	</soundSustainersOnEvent>
+	<race>
+	  <baseBodySize>10.0</baseBodySize>
+	</race>
+	<properties>
+	  <customRoadCosts AssignDefaults = "0.4" />
+	  <worldSpeedMultiplier>6.5</worldSpeedMultiplier>
+	  <winterSpeedMultiplier>1.5</winterSpeedMultiplier>
+	  <vehicleJobLimitations>
+		<li>(RepairVehicle, 3)</li>
+	  </vehicleJobLimitations>
+	  <roles>
+		<li>
+		  <key>driver</key>
+		  <label>Driver</label>
+		  <slots>1</slots>
+		  <slotsToOperate>1</slotsToOperate>
+		  <handlingTypes>
+			<li>Movement</li>
+		  </handlingTypes>
+		</li>
+		<li>
+		  <key>frontgunner</key>
+		  <label>Front Gunner</label>
+		  <slots>1</slots>
+		  <slotsToOperate>1</slotsToOperate>
+		  <handlingTypes>
+			<li>Turret</li>
+		  </handlingTypes>
+		  <turretIds>
+			<li>FrontTurret</li>
+		  </turretIds>
+		</li>
+		<li>
+		  <key>backgunner</key>
+		  <label>Back Gunner</label>
+		  <slots>1</slots>
+		  <slotsToOperate>1</slotsToOperate>
+		  <handlingTypes>
+			<li>Turret</li>
+		  </handlingTypes>
+		  <turretIds>
+			<li>BackTurret</li>
+		  </turretIds>
+		</li>
+		<li>
+		  <key>passenger</key>
+		  <label>Passenger</label>
+		  <slots>12</slots>
+		</li>
+	  </roles>
+	</properties>
+	<components>
+	  <li>
+		<key>Engine</key>
+		<label>Engine</label>
+		<health>150</health>
+		<priorityStatEfficiency>true</priorityStatEfficiency>
+		<depth>Internal</depth>
+		<reactors>
+		  <li Class = "Vehicles.Reactor_Explosive">
+			<indicator>VF_Explosive</indicator>
+			<chance>0.2</chance>
+			<maxHealth>0.2</maxHealth>
+			<radius>5</radius>
+			<damageDef>Flame</damageDef>
+		  </li>
+		</reactors>
+		<hitbox>
+		  <cells>
+		    <li>(0, 0)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>FirstCore</key>
+		<label>Core</label>
+		<health>75</health>
+		<depth>Internal</depth>
+		<reactors>
+		  <li Class = "Vehicles.Reactor_FuelLeak"/>
+		  <li Class = "Vehicles.Reactor_Explosive">
+			<indicator>VF_Explosive</indicator>
+			<chance>0.2</chance>
+			<maxHealth>0.2</maxHealth>
+			<radius>7</radius>
+			<damageDef>Flame</damageDef>
+		  </li>
+		</reactors>
+		<hitbox>
+		  <cells>
+		    <li>(1, -1)</li>
+		  </cells>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>SecondCore</key>
+		<label>Core</label>
+		<health>75</health>
+		<depth>Internal</depth>
+		<reactors>
+		  <li Class = "Vehicles.Reactor_FuelLeak"/>
+		  <li Class = "Vehicles.Reactor_Explosive">
+			<indicator>VF_Explosive</indicator>
+			<chance>0.2</chance>
+			<maxHealth>0.2</maxHealth>
+			<radius>7</radius>
+			<damageDef>Flame</damageDef>
+		  </li>
+		</reactors>
+		<hitbox>
+		  <cells>
+		    <li>(0, -1)</li>
+		  </cells>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>ThirdCore</key>
+		<label>Core</label>
+		<health>75</health>
+		<depth>Internal</depth>
+		<reactors>
+		  <li Class = "Vehicles.Reactor_FuelLeak"/>
+		  <li Class = "Vehicles.Reactor_Explosive">
+			<indicator>VF_Explosive</indicator>
+			<chance>0.2</chance>
+			<maxHealth>0.2</maxHealth>
+			<radius>7</radius>
+			<damageDef>Flame</damageDef>
+		  </li>
+		</reactors>
+		<hitbox>
+		  <cells>
+		    <li>(-1, -1)</li>
+		  </cells>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>FirstLeftWheel</key>
+		<label>First Left Wheel</label>
+		<health>100</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(-2, 1)</li>
+			<li>(-2, 2)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>SecondLeftWheel</key>
+		<label>Second Left Wheel</label>
+		<health>100</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(-2, -1)</li>
+			<li>(-2, -2)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>ThirdLeftWheel</key>
+		<label>Third Left Wheel</label>
+		<health>100</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(-2, -3)</li>
+			<li>(-2, -4)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>FirstRightWheel</key>
+		<label>First Right Wheel</label>
+		<health>100</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(2, 1)</li>
+			<li>(2, 2)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>SecondRightWheel</key>
+		<label>Second Right Wheel</label>
+		<health>100</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(2, -1)</li>
+			<li>(2, -2)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>ThirdRightWheel</key>
+		<label>Third Right Wheel</label>
+		<health>100</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(2, -3)</li>
+			<li>(2, -4)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>FirstLeftSuspension</key>
+		<label>First Left Suspension</label>
+		<health>25</health>
+		<depth>Internal</depth>
+		<hitbox>
+		  <cells>
+			<li>(-2, 2)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>SecondLeftSuspension</key>
+		<label>Second Left Suspension</label>
+		<health>25</health>
+		<depth>Internal</depth>
+		<hitbox>
+		  <cells>
+			<li>(-2, -1)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>ThirdLeftSuspension</key>
+		<label>Third Left Suspension</label>
+		<health>25</health>
+		<depth>Internal</depth>
+		<hitbox>
+		  <cells>
+			<li>(-2, -3)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>FirstRightSuspension</key>
+		<label>First Right Suspension</label>
+		<health>25</health>
+		<hitbox>
+		  <cells>
+			<li>(2, 2)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>SecondRightSuspension</key>
+		<label>Second Right Suspension</label>
+		<health>25</health>
+		<depth>Internal</depth>
+		<hitbox>
+		  <cells>
+			<li>(2, 1)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>ThirdRightSuspension</key>
+		<label>Third Right Suspension</label>
+		<health>25</health>
+		<depth>Internal</depth>
+		<hitbox>
+		  <cells>
+			<li>(2, 3)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>	  
+	  <li>
+		<key>Gearbox</key>
+		<label>Gearbox</label>
+		<health>50</health>
+		<depth>Internal</depth>
+		<hitWeight>5</hitWeight>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>FrontArmorPlating</key>
+		<label>Front Armor Plating</label>
+		<health>350</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.90</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <side>Front</side>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>LeftArmorPlating</key>
+		<label>Left Armor Plating</label>
+		<health>350</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.90</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <side>Left</side>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>RightArmorPlating</key>
+		<label>Right Armor Plating</label>
+		<health>350</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.90</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <side>Right</side>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>BackArmorPlating</key>
+		<label>Back Armor Plating</label>
+		<health>350</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.90</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <side>Back</side>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>Upholstery</key>
+		<label>Upholstery</label>
+		<health>75</health>
+		<depth>Internal</depth>
+		<hitWeight>5</hitWeight>
+	  </li>
+	  <li>
+		<key>Dashboard</key>
+		<label>Dashboard</label>
+		<health>50</health>
+		<depth>Internal</depth>
+		<hitWeight>3</hitWeight>
+	  </li>
+	  <li>
+		<key>SteeringApparatus</key>
+		<label>Steering Apparatus</label>
+		<health>40</health>
+		<depth>Internal</depth>
+		<hitWeight>2</hitWeight>
+	  </li>
+	  <li>
+		<key>Alternator</key>
+		<label>Alternator</label>
+		<health>50</health>
+		<depth>Internal</depth>
+		<hitWeight>5</hitWeight>
+	  </li>
+	  <li>
+		<key>Roof</key>
+		<label>Roof</label>
+		<health>200</health>
+		<depth>External</depth>
+		<hitWeight>10</hitWeight>
+		<armor>
+		  <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+		</armor>
+	  </li>
+	</components>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>ODC_MCV_MainTurret</turretDef>
+			<gizmoLabel>Front Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 2.60)</north>
+			  <south>(0, -1.80)</south>
+			  <east>(2.10, 0.60)</east>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>FrontTurret</key>
+		  </li>
+		  <li>
+			<turretDef>ODC_MCV_MainTurret</turretDef>
+			<gizmoLabel>Back Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, -2.30)</north>
+			  <south>(0, 3.20)</south>
+			  <east>(-2.85, 0.60)</east>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>BackTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	  <li Class="Vehicles.CompProperties_FueledTravel">
+		<fuelType>OE_Syntherius</fuelType>
+		<leakDef>Filth_Fuel</leakDef>
+		<fuelConsumptionRate>0.025</fuelConsumptionRate>
+		<fuelConsumptionWorldMultiplier>0.55</fuelConsumptionWorldMultiplier>
+		<fuelCapacity>300</fuelCapacity>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+
+</Defs>

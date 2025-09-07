@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Syntherius Of Sin ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_SyntheriusOfSin</defName>
+    <label>Syntherius of Sin</label>
+    <description>A fragment of a strange Syntherius used at the heart of the Fallen Legion.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Syntherius</ThingDef>
+	  <ThingDef>OE_Mech_FallenLegion</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/OE_SyntheriusOfSin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<isTechHediff>true</isTechHediff>
+    <techLevel>Archotech</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>350</MarketValue>
+      <Mass>2.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>900666003</analysisID>
+        <requiresMechanitor>true</requiresMechanitor>
+		<analysisDurationHours>5.0</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the {PARENT_label}, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+		<activateTexPath>UI/Icons/Study</activateTexPath>
+		<activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the Syntherius Of Sin.</activateDescString>
+        <jobString>Analyze Syntherius Of Sin</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+		<targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Syntherius Of Sin ====================-->
+  <RecipeDef>
+    <defName>OE_Synthesis_SyntheriusToSyntheriusOfSin</defName>
+    <label>synthesis Syntherius of Sin</label>
+    <description>Synthesis Syntherius of Sin from Syntherius.</description>
+    <jobString>Synthesis Syntherius of Sin.</jobString>
+	<workAmount>5000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_SyntheriusOfSin>1</OE_SyntheriusOfSin>
+    </products>
+	<recipeUsers>
+      <li>OE_SynthesisPrinter</li>
+    </recipeUsers>
+	<skillRequirements>
+      <Intellectual>10</Intellectual>
+	  <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<researchPrerequisites>
+	  <li>OESynthAdv</li>
+	  <li>OESGear</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Synthesis_SyntheriusFromSyntheriusOfSin</defName>
+    <label>converting Syntherius of Sin</label>
+    <description>Converting Syntherius of Sin into Synthesis.</description>
+    <jobString>Converting.</jobString>
+	<workAmount>5000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_SyntheriusOfSin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_SyntheriusOfSin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Syntherius>10</OE_Syntherius>
+    </products>
+	<recipeUsers>
+      <li>OE_SynthesisPrinter</li>
+    </recipeUsers>
+	<skillRequirements>
+      <Intellectual>10</Intellectual>
+	  <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<researchPrerequisites>
+	  <li>OESynthAdv</li>
+	  <li>OESGear</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== Unstable Stone ====================-->
+  <RecipeDef>
+    <defName>OE_Synthesis_UnstableStoneFromSyntheriusOfSin</defName>
+    <label>converting Ustable Power Stone</label>
+    <description>Converting Syntherius of Sin into Ustable Power Stone.</description>
+    <jobString>Converting.</jobString>
+	<workAmount>5000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_SyntheriusOfSin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Syntherius</li>
+		<li>OE_SyntheriusOfSin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_UnstableStone>1</OE_UnstableStone>
+    </products>
+	<recipeUsers>
+      <li>OE_SynthesisPrinter</li>
+    </recipeUsers>
+	<skillRequirements>
+      <Intellectual>10</Intellectual>
+	  <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<researchPrerequisites>
+	  <li>OESynthAdv</li>
+	  <li>ODCGearLeg</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

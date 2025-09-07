@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="ODC_MCV"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>ODC_MCV_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="OMC_Nightmare"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>OMC_Nightmare_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="OTC_Nightmare_Acid"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>OTC_Nightmare_Acid_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="OTC_Nightmare_Cryo"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>OTC_Nightmare_Cryo_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="OTC_Nightmare_Fire"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>OTC_Nightmare_Fire_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="OTC_Nightmare_EMP"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>OTC_Nightmare_EMP_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="OCC_Nightmare"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>OCC_Nightmare_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="OEC_Nightmare"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>OEC_Nightmare_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/Vehicles.VehicleDef[defName="ODC_Nightmare"]/comps</xpath>
+	  <value>
+	    <li Class="Vehicles.CompProperties_UpgradeTree">
+		  <def>ODC_Nightmare_UpgradeTree</def>
+		</li>
+	  </value>
+	</Operation>
+
+</Patch>

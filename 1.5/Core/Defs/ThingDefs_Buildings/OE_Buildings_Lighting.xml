@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia LED Lights Strip - Base ====================-->
+  <ThingDef ParentName="BuildingBase" Name="OELightsStripBase">
+    <defName>OE_LightsStrip</defName>
+    <label>obsidia LED lights strip</label>
+    <description>A glowing strip of lights, essential for Obsidia's signature design and illumination.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/LightsStrip/OE_LightsStrip_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>MapEdge</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Furniture/Lights/LightsStrip/OE_LightsStrip_Normal</uiIconPath>
+    <building>
+      <isPowerConduit>false</isPowerConduit>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Furniture/Lights/LightsStrip/OE_LightsStrip_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <MaxHitPoints>95</MaxHitPoints>
+      <WorkToBuild>45</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <OE_Platinum>1</OE_Platinum>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<transmitsPower>true</transmitsPower>
+        <basePowerConsumption>1</basePowerConsumption>
+		<powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(214,148,94,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_GlowRadius</li>
+	  <li>PlaceWorker_Conduit</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Furniture</designationCategory>
+	<designatorDropdown>OE_Lighting_Strip</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <designationHotKey>Misc1</designationHotKey>
+	<uiOrder>3700</uiOrder>
+    <researchPrerequisites>
+      <li>OEFurniture</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="OELightsStripBase">
+    <defName>OE_HiddenLightsStrip</defName>
+    <label>hidden obsidia LED lights strip</label>
+    <description>A glowing hidden strip of lights, essential for Obsidia's signature design and illumination. They're tougher than regular strip, but also slower to build and more expensive.</description>
+    <graphicData>
+      <color>(0,0,0,0)</color>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>110</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <uiIconPath>Things/Building/Furniture/Lights/LightsStrip/OE_LightsStrip_Hidden</uiIconPath>
+    <designationHotKey>Misc9</designationHotKey>
+    <costList>
+      <OE_Platinum>2</OE_Platinum>
+    </costList>
+    <constructEffect>ConstructDirt</constructEffect>
+    <building>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <isTargetable>false</isTargetable>
+      <expandHomeArea>false</expandHomeArea>
+      <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+    </building>
+  </ThingDef>
+
+<!--=============== Obsidia Ceiling Lights - Base ====================-->
+  <ThingDef Name="OECeilingLightsBase" ParentName="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+	<thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+	<placeWorkers>
+      <li>PlaceWorker_GlowRadius</li>
+	  <li>PlaceWorker_MustBeIndoors</li>
+    </placeWorkers>
+	<researchPrerequisites>
+      <li>OEFurniture</li>
+    </researchPrerequisites>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	<building>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <isTargetable>false</isTargetable>
+      <expandHomeArea>false</expandHomeArea>
+      <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+	  <isEdifice>false</isEdifice>
+      <canPlaceOverWall>false</canPlaceOverWall>
+    </building>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+	<designationCategory>Furniture</designationCategory>
+	<designatorDropdown>OE_Lighting_Ceiling</designatorDropdown>
+    <rotatable>false</rotatable>
+	<uiOrder>3705</uiOrder>
+  </ThingDef>
+
+<!--=============== Small (1x1) ====================-->
+  <ThingDef ParentName="OECeilingLightsBase">
+    <defName>OE_Lighting_CeilingLamp_Small</defName>
+    <label>small obsidia ceiling lamp</label>
+	<description>This is a ceiling 1x1 lamp providing light, while not using any floor space. Expensive, but well-protected.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/OE_Lighting_CeilingLamp_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+	  <drawOffset>(0, 2.5, 0)</drawOffset>
+    </graphicData>
+    <uiIconScale>0.65</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>125</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>3</Beauty>
+	  <Mass>5</Mass>
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Platinum>2</OE_Platinum>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+		<powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>14</glowRadius>
+        <glowColor>(214,148,94,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+  </ThingDef>
+
+<!--=============== Big (2x2) ====================-->
+  <ThingDef ParentName="OECeilingLightsBase">
+    <defName>OE_Lighting_CeilingLamp_Big</defName>
+    <label>big obsidia ceiling lamp</label>
+	<description>This is a ceiling 2x2 lamp providing light, while not using any floor space. Expensive, but well-protected.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/OE_Lighting_CeilingLamp_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+	  <drawOffset>(0, 2.5, 0)</drawOffset>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <statBases>
+      <MaxHitPoints>125</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>5</Beauty>
+	  <Mass>8</Mass>
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <OE_Platinum>4</OE_Platinum>
+	  <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+		<powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(214,148,94,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+  </ThingDef>
+
+</Defs>

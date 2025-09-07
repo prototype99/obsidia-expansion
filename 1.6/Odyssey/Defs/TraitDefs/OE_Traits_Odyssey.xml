@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Fishing ====================-->
+  <TraitDef>
+    <defName>OEFisherman</defName>
+    <commonality>1</commonality>
+    <degreeDatas>
+      <li>
+        <label>deep catcher</label>
+        <description>{PAWN_nameDef} fishes with care and focus, often reeling in more with every cast.</description>
+        <degree>1</degree>
+		<skillGains>
+          <Animals>3</Animals>
+        </skillGains>
+        <statOffsets>
+          <FishingSpeed>-0.15</FishingSpeed>
+		  <FishingYield>0.25</FishingYield>
+        </statOffsets>
+      </li>
+      <li>
+        <label>quick hook</label>
+        <description>{PAWN_nameDef} casts fast and often, though some fish may slip the hook.</description>
+        <degree>2</degree>
+		<skillGains>
+          <Animals>3</Animals>
+        </skillGains>
+        <statOffsets>
+          <FishingSpeed>0.25</FishingSpeed>
+		  <FishingYield>-0.15</FishingYield>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Violent</li>
+	  <li>Animals</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEFishermanVCEFTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Piloting Ability ====================-->
+  <TraitDef>
+    <defName>OEPilotingGood</defName>
+    <degreeDatas>
+	  <li>
+        <label>ace pilot</label>
+        <description>Born to fly, {PAWN_nameDef} turns even the most stubborn ship into a dancing starbird.</description>
+		<skillGains>
+          <Intellectual>2</Intellectual>
+        </skillGains>
+        <statOffsets>
+          <PilotingAbility>0.30</PilotingAbility>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEPilotingAbilityTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>OEPilotingBad</defName>
+    <degreeDatas>
+      <li>
+        <label>clumsy flier</label>
+        <description>Every time {PAWN_nameDef} touches the controls, someone checks the escape pods-just in case.</description>
+		<skillGains>
+          <Intellectual>-2</Intellectual>
+        </skillGains>
+        <statOffsets>
+          <PilotingAbility>-0.30</PilotingAbility>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEPilotingAbilityTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Wood Floor ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+    <value>
+        <designatorDropdown>OE_Floor_Tile_Wood</designatorDropdown>
+    </value>
+</Operation>
+
+</Patch>

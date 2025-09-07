@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Tree Pearlpeach ====================-->
+  <ThingDef ParentName="PollutionTreeBase">
+    <defName>Plant_OE_TreePearlpeach</defName>
+    <label>Pearlpeach tree</label>
+    <description>Obsidias long-growing toxin-adapted crystal tree bearing pearlpeach. Pearlpeach fruits used as a meat substitute. It can only grow in polluted areas.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Pearlpeach_Fruit</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+		<Beauty>5</Beauty>
+		<BeautyOutdoors>5</BeautyOutdoors>
+		<Flammability>0.2</Flammability>
+	</statBases>
+    <graphicData>
+      <texPath>Things/Plant/Pearlpeach</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+		<volume>(0.15, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<pathCost>14</pathCost>
+    <plant>
+		<dieIfLeafless>false</dieIfLeafless>
+		<sowMinSkill>10</sowMinSkill>
+		<growDays>28</growDays>
+		<sowWork>3500</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>OE_Pearlpeach_Fruit</harvestedThingDef>
+		<harvestYield>50</harvestYield>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarm</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0</topWindExposure>
+		<visualSizeRange>0.8~2.0</visualSizeRange>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<interferesWithRoof>false</interferesWithRoof>
+		<immatureGraphicPath>Things/Plant/Pearlpeach/Pearlpeach_Immature</immatureGraphicPath>
+		<leaflessGraphicPath>Things/Plant/Pearlpeach/Pearlpeach_Leafless</leaflessGraphicPath>
+		<harvestWork>1250</harvestWork>
+		<harvestFailable>true</harvestFailable>
+		<harvestAfterGrowth>0.20</harvestAfterGrowth>
+    </plant>
+  </ThingDef>
+
+<!--=============== OE - Toxi Jumy ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_ToxiJumy</defName>
+    <label>toxi Jumy</label>
+    <description>Small toxin-adapted Obsidias plant inside which grows handfuls tasty and sweet berries. It can only grow in polluted areas.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Jumy_Berries</ThingDef>
+	  <ThingDef>Plant_OE_JumyBush</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>65</MaxHitPoints>
+	  <Nutrition>0.65</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/ToxiJumy</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+    <pathCost>30</pathCost>
+    <plant>
+		<pollution>PollutedOnly</pollution>
+		<dieIfLeafless>true</dieIfLeafless>
+		<sowMinSkill>10</sowMinSkill>
+		<growDays>10</growDays>
+		<sowWork>350</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>OE_Jumy_Berries</harvestedThingDef>
+		<harvestAfterGrowth>0.30</harvestAfterGrowth>
+		<harvestYield>10</harvestYield>
+		<fertilityMin>0.5</fertilityMin>
+		<fertilitySensitivity>0</fertilitySensitivity>
+		<neverBlightable>true</neverBlightable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+			<li>Decorative</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OECore</li>
+		</sowResearchPrerequisites>
+		<maxMeshCount>9</maxMeshCount>
+        <visualSizeRange>0.4~0.65</visualSizeRange>
+		<topWindExposure>0.1</topWindExposure>
+        <harvestFailable>true</harvestFailable>
+		<immatureGraphicPath>Things/Plant/ToxiJumy/ToxiJumy_Immature</immatureGraphicPath>
+    </plant>
+  </ThingDef>
+
+<!--=============== Toxi JumyBush ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_ToxiJumyBush</defName>
+    <label>toxi jumy bush</label>
+    <description>An artificially bred medium toxin-adapted Obsidias plant inside which grows handfuls tasty and sweet berries. It can only grow in polluted areas.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Jumy_Berries</ThingDef>
+	  <ThingDef>Plant_OE_Jumy</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>0.95</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/ToxiJumyBush</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+		<pollution>PollutedOnly</pollution>
+		<fertilityMin>0.5</fertilityMin>
+		<fertilitySensitivity>0</fertilitySensitivity>
+		<sowMinSkill>12</sowMinSkill>
+		<growDays>13</growDays>
+		<sowWork>750</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>OE_Jumy_Berries</harvestedThingDef>
+		<harvestAfterGrowth>0.35</harvestAfterGrowth>
+		<harvestYield>22</harvestYield>
+		<harvestWork>350</harvestWork>
+		<neverBlightable>true</neverBlightable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarmAdv</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0.3</topWindExposure>
+		<visualSizeRange>0.35~1.25</visualSizeRange>
+        <harvestFailable>true</harvestFailable>
+		<leaflessGraphicPath>Things/Plant/ToxiJumyBush/ToxiJumyBush_Leafless</leaflessGraphicPath>
+        <immatureGraphicPath>Things/Plant/ToxiJumyBush/ToxiJumyBush_Immature</immatureGraphicPath>
+		<wildClusterRadius>5</wildClusterRadius>
+        <wildClusterWeight>250</wildClusterWeight>
+		<wildOrder>2</wildOrder>
+		<purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+<!--=============== Succulent of Doom ====================-->
+<!--=============== Flower ====================-->
+  <ThingDef ParentName="PollutionPlantBase">
+    <defName>Plant_OE_SucculentOfDoom_Flower</defName>
+    <label>Succulent of Doom's flower</label>
+    <description>No one expected doom to come in a flowerpot. The digital artist, known online as @LNS_OWL for her adorable illustrations, once bought a charming little succulent set from a group of wandering traders. At first, it was just a bit of greenery to brighten her windowsill. But soon, tiny sprouts began appearing—everywhere. She kept repotting them, one by one, into new pots. Season after season, the pots multiplied, slowly overtaking shelves, desks, and every sunlit surface. Now her cozy studio is a labyrinth of leafy tenants… and the plants are still looking for more space.\n\nFortunately, it only grows in polluted areas.</description>
+    <statBases>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Flammability>2.0</Flammability>
+      <Nutrition>0.90</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/SucculentOfDoom/Flower</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible/>
+    <selectable>true</selectable>
+    <descriptionHyperlinks>
+	  <ThingDef>Plant_OE_SucculentOfDoom_Grass</ThingDef>
+    </descriptionHyperlinks>
+	<plant>
+      <pollution>PollutedOnly</pollution>
+	  <growDays>12.5</growDays>
+      <harvestWork>75</harvestWork>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <topWindExposure>0.15</topWindExposure>
+      <wildOrder>1</wildOrder>
+    </plant>
+	<comps>
+	  <li Class="CompProperties_SpawnSubplant">
+        <compClass>CompSpawnSubplantDuration</compClass>
+        <subplant>Plant_OE_SucculentOfDoom_Grass</subplant>
+        <maxRadius>9.9</maxRadius>
+        <subplantSpawnDays>0.6</subplantSpawnDays>
+        <minGrowthForSpawn>0.65</minGrowthForSpawn>
+        <initialGrowthRange>0.05~0.25</initialGrowthRange>
+        <canSpawnOverPlayerSownPlants>true</canSpawnOverPlayerSownPlants>
+        <plantsToNotOverwrite>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Plant_PodGauranlen</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_GrassAnima</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">Plant_OE_EGORoot</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">Plant_OE_SyntheriusRoot</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_OE_SucculentOfDoom_Flower</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_OE_SucculentOfDoom_Grass</li>
+		  <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+        </plantsToNotOverwrite>
+      </li>
+	  <li Class="CompProperties_SpawnSubplant">
+        <compClass>CompSpawnSubplantDuration</compClass>
+        <subplant>Plant_OE_SucculentOfDoom_Flower</subplant>
+        <maxRadius>11.9</maxRadius>
+        <subplantSpawnDays>12</subplantSpawnDays>
+        <minGrowthForSpawn>0.95</minGrowthForSpawn>
+        <initialGrowthRange>0.05~0.25</initialGrowthRange>
+        <canSpawnOverPlayerSownPlants>true</canSpawnOverPlayerSownPlants>
+        <plantsToNotOverwrite>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Plant_PodGauranlen</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_GrassAnima</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">Plant_OE_EGORoot</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">Plant_OE_SyntheriusRoot</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_OE_SucculentOfDoom_Flower</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_OE_SucculentOfDoom_Grass</li>
+		  <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+        </plantsToNotOverwrite>
+      </li>
+	</comps>
+  </ThingDef>
+
+<!--=============== Grass ====================-->
+  <ThingDef ParentName="PollutionPlantBase">
+    <defName>Plant_OE_SucculentOfDoom_Grass</defName>
+    <label>Succulent of Doom's grass</label>
+    <description>This creeping grass is spread by the flower’s roots—quietly, steadily—like it's helping its potted brethren colonize everything soft and green. By the time you notice it, your home is no longer yours—it’s theirs.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>1.75</Flammability>
+      <Nutrition>0.65</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/SucculentOfDoom/Grass</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible/>
+    <selectable>false</selectable>
+    <plant>
+      <pollution>Any</pollution>
+	  <growDays>3.5</growDays>
+      <harvestWork>45</harvestWork>
+      <maxMeshCount>9</maxMeshCount>
+      <visualSizeRange>0.4~0.6</visualSizeRange>
+      <topWindExposure>0.15</topWindExposure>
+      <wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+
+</Defs>

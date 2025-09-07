@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Recruit ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Recruit</defName>
+    <label>OEC recruit</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Knight</li>
+    </titleSelectOne>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>10000~11000</apparelMoney>
+	<apparelTags>
+      <li>OECHunter</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>3000~6000</weaponMoney>
+	<weaponTags>
+      <li>OECBaseMelee</li>
+	  <li>OECLightGun</li>
+    </weaponTags>
+    <techHediffsMoney>1500~3000</techHediffsMoney>
+	<techHediffsChance>0.25</techHediffsChance>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>100</combatPower>
+  </PawnKindDef>
+
+<!--=============== Hunter ====================-->		
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Hunter_Melee</defName>
+    <label>OEC hunter</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Knight</li>
+      <li>Praetor</li>
+      <li>Baron</li>
+    </titleSelectOne>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OECHunter</li>
+    </apparelTags>
+    <weaponMoney>4000~7000</weaponMoney>
+	<weaponTags>
+      <li>OECBaseMelee</li>
+	  <li>OECHeavyMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>165</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Hunter_RMelee</defName>
+    <label>OEC hunter</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Knight</li>
+      <li>Praetor</li>
+      <li>Baron</li>
+    </titleSelectOne>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OECHunter</li>
+    </apparelTags>
+    <weaponMoney>4000~7000</weaponMoney>
+	<weaponTags>
+      <li>OECRangedMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>165</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Hunter_Ranged</defName>
+    <label>OEC hunter</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Knight</li>
+      <li>Praetor</li>
+      <li>Baron</li>
+    </titleSelectOne>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OECHunter</li>
+    </apparelTags>
+    <weaponMoney>4000~7000</weaponMoney>
+	<weaponTags>
+      <li>OECLightGun</li>
+	  <li>OECShortGun</li>
+	  <li>OECBaseGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>165</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Hunter_Sniper</defName>
+    <label>OEC hunter</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Knight</li>
+      <li>Praetor</li>
+      <li>Baron</li>
+    </titleSelectOne>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OECHunter</li>
+    </apparelTags>
+    <weaponMoney>4000~7000</weaponMoney>
+	<weaponTags>
+      <li>OECSniperGun</li>
+	  <li>OECHeavyGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>165</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Inquisitor ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Inquisitor_Melee</defName>
+    <label>OEC inquisitor</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+      <li>OECInquisitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OECInquisitor_Ranged</li>
+	  <li>OECInquisitor_Grenadier</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~12000</weaponMoney>
+	<weaponTags>
+      <li>OECBaseMeleeM</li>
+	  <li>OECHeavyMeleeM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>215</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Inquisitor_RMelee</defName>
+    <label>OEC inquisitor</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+      <li>OECInquisitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OECInquisitor_Smoker</li>
+	  <li>OECInquisitor_Jump</li>
+    </apparelDisallowTags>
+    <weaponMoney>9000~14000</weaponMoney>
+	<weaponTags>
+      <li>OECRangedMeleeM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>265</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~10</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>7~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Inquisitor_Ranged</defName>
+    <label>OEC inquisitor</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+      <li>OECInquisitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OECInquisitor_Melee</li>
+	  <li>OECInquisitor_Smoker</li>
+	  <li>OECInquisitor_Shield</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~12000</weaponMoney>
+	<weaponTags>
+      <li>OECLightGunM</li>
+	  <li>OECShortGunM</li>
+	  <li>OECBaseGunM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>215</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Inquisitor_Sniper</defName>
+    <label>OEC inquisitor</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+      <li>OECInquisitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OECInquisitor_Melee</li>
+	  <li>OECInquisitor_Smoker</li>
+	  <li>OECInquisitor_Grenadier</li>
+	  <li>OECInquisitor_Shield</li>
+    </apparelDisallowTags>
+    <weaponMoney>9000~14000</weaponMoney>
+	<weaponTags>
+      <li>OECSniperGunM</li>
+	  <li>OECHeavyGunM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	<combatPower>265</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>9~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>

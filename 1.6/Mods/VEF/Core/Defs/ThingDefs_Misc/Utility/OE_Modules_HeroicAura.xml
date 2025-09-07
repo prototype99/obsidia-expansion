@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Heroic Aura Modules ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEHeroicModuleAuraBase" ParentName="OEHeroicModuleBase" Abstract="True">
+    <description>The module provides the owner with various auras with bonuses depending on the model. Designed for use in various areas of Obsidia.</description>
+	<tickerType>Normal</tickerType>
+	<statBases>
+	  <MarketValue>3775</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Heroic Brigadier ====================-->
+  <ThingDef ParentName="OEHeroicModuleAuraBase">
+    <defName>OE_Module_HeroicAuraBrigadier</defName>
+    <label>Heroic Aura Module - Brigadier</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HA_Brigadier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_HeroicAuraBrigadier</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraBrigadier</defName>
+    <label>Heroic Aura Module - Brigadier</label>
+    <description>This person is using a Heroic Aura Module - Brigadier. Everyone within an effect radius gains working stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <GlobalLearningFactor>0.40</GlobalLearningFactor>
+		  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_HeroicAuraBrigadierBuff</hediff>
+		<range>12</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraBrigadierBuff</defName>
+    <label>Heroic Aura Module - Brigadier</label>
+    <description>Someone is using the Heroic Aura Module - Brigadier nearby, boosting this person's working stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <GlobalLearningFactor>0.60</GlobalLearningFactor>
+		  <WorkSpeedGlobal>0.30</WorkSpeedGlobal>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>12</maxDistance>
+		<customMote>Mote_OE_AuraBrigadierLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+<!--=============== Heroic Battle Commander ====================-->
+  <ThingDef ParentName="OEHeroicModuleAuraBase">
+    <defName>OE_Module_HeroicAuraBattleCommander</defName>
+    <label>Heroic Aura Module - Battle Commander</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HA_BattleCommander</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_HeroicAuraBattleCommander</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraBattleCommander</defName>
+    <label>Heroic Aura Module - Battle Commander</label>
+    <description>This person is using a Heroic Aura Module - Battle Commander. Everyone within an effect radius gains combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.20</AimingDelayFactor>
+		  <MeleeHitChance>4</MeleeHitChance>
+		  <MeleeDodgeChance>4</MeleeDodgeChance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_HeroicAuraBattleCommanderBuff</hediff>
+		<range>12</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraBattleCommanderBuff</defName>
+    <label>Heroic Aura Module - Battle Commander</label>
+    <description>Someone is using the Heroic Aura Module - Battle Commander nearby, boosting this person's combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.30</AimingDelayFactor>
+		  <MeleeHitChance>6</MeleeHitChance>
+		  <MeleeDodgeChance>6</MeleeDodgeChance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>12</maxDistance>
+		<customMote>Mote_OE_AuraBattleCommanderLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+<!--=============== Heroic Guard Commander ====================-->
+  <ThingDef ParentName="OEHeroicModuleAuraBase">
+    <defName>OE_Module_HeroicAuraGuardCommander</defName>
+    <label>Heroic Aura Module - Guard Commander</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HA_GuardCommander</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_HeroicAuraGuardCommander</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraGuardCommander</defName>
+    <label>Heroic Aura Module - Guard Commander</label>
+    <description>This person is using a Heroic Aura Module - Guard Commander. Everyone within an effect radius gains defensive stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PainShockThreshold>0.20</PainShockThreshold>
+		  <PsychicSensitivity>-0.20</PsychicSensitivity>
+		  <Flammability>-0.20</Flammability>
+		  <ToxicResistance>0.20</ToxicResistance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_HeroicAuraGuardCommanderBuff</hediff>
+		<range>12</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraGuardCommanderBuff</defName>
+    <label>Heroic Aura Module - Guard Commander</label>
+    <description>Someone is using the Heroic Aura Module - Guard Commander nearby, boosting this person's defensive stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PainShockThreshold>0.30</PainShockThreshold>
+		  <PsychicSensitivity>-0.30</PsychicSensitivity>
+		  <Flammability>-0.30</Flammability>
+		  <ToxicResistance>0.30</ToxicResistance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>12</maxDistance>
+		<customMote>Mote_OE_AuraGuardCommanderLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+</Defs>

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged ====================-->
+<!--=============== Repair Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_RepairPistol</defName>
+    <label>Paragon bond Prototype sX-02a</label>
+    <description>Paragon bond a Prototype sX-02a.</description>
+    <jobString>Paragon bonding a Prototype sX-02a.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_RepairPistol</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_RepairPistol</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_RepairPistol_P>1</OE_Trophy_RepairPistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_RepairPistol_P</defName>
+    <label>Reset Paragon Prototype sX-02a</label>
+    <description>Reset a Paragon Prototype sX-02a.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Prototype sX-02a.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_RepairPistol_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_RepairPistol_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_RepairPistol_P>1</OE_Trophy_RepairPistol_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Unstable Gun ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_UnstableGun</defName>
+    <label>Paragon bond Titanstrike</label>
+    <description>Paragon bond a Titanstrike.</description>
+    <jobString>Paragon bonding a Titanstrike.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_UnstableGun</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_UnstableGun</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_UnstableGun_P>1</OE_Trophy_UnstableGun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_UnstableGun_P</defName>
+    <label>Reset Paragon Titanstrike</label>
+    <description>Reset a Paragon Titanstrike.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Titanstrike.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_UnstableGun_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_UnstableGun_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_UnstableGun_P>1</OE_Trophy_UnstableGun_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Sample Collector ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_SampleCollector</defName>
+    <label>Paragon bond Ashisogi Jizō</label>
+    <description>Paragon bond an Ashisogi Jizō.</description>
+    <jobString>Paragon bonding an Ashisogi Jizō.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_SampleCollector</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_SampleCollector</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_SampleCollector_P>1</OE_Trophy_SampleCollector_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_SampleCollector_P</defName>
+    <label>Reset Paragon Ashisogi Jizō</label>
+    <description>Reset a Paragon Ashisogi Jizō.\n\nWarning! Item Quality and Paragon traits will be changed.</description>
+    <jobString>Resetting a Paragon Ashisogi Jizō.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_SampleCollector_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_SampleCollector_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_SampleCollector_P>1</OE_Trophy_SampleCollector_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>

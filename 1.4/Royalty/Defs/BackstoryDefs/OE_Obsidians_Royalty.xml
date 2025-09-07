@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Psy ====================-->
+  <BackstoryDef>
+    <defName>OE_Psy</defName>
+    <title>obsidia psycaster</title>
+    <titleShort>psycaster</titleShort>
+    <baseDesc>[PAWN_nameDef] representative of one of the ancient genera of Obsidia. Instead of participating in political clashes for power, chose the path of conquering new lands. Has excellent intellectual abilities and a sense of beauty.</baseDesc>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Artistic</li>
+	  <li>Intellectual</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <li><key>Artistic</key><value>4</value></li>
+      <li><key>Intellectual</key><value>4</value></li>
+	  <li><key>Construction</key><value>-4</value></li>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>OEFighters</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEPsyBlood>0</OEPsyBlood>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

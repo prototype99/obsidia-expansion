@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Vanilla ====================-->
+<!--=============== Civilian ====================-->
+<OECivilian.degreeDatas.handyman.label>умелец</OECivilian.degreeDatas.handyman.label>
+<OECivilian.degreeDatas.handyman.description>{PAWN_nameDef} {PAWN_gender ? прирожденный умелец : прирожденная умелица}. {PAWN_nameDef} {PAWN_gender ? умен : умна} и трудится усерднее остальных.</OECivilian.degreeDatas.handyman.description>
+
+<!--=============== Soldier ====================-->
+<OESoldier.degreeDatas.trained.label>натренированность</OESoldier.degreeDatas.trained.label>
+<OESoldier.degreeDatas.trained.description>После огромного кол-ва тренировок, {PAWN_nameDef} {PAWN_gender ? обучен : обучена} использовать абсолютно любое оружие.</OESoldier.degreeDatas.trained.description>
+
+<!--=============== Nomad ====================-->
+<OENomad.degreeDatas.nomad.label>кочевник</OENomad.degreeDatas.nomad.label>
+<OENomad.degreeDatas.nomad.description>Кочевники привыкли обходиться меньшим кол-вом еды и высыпаются гораздо быстрее остальных.</OENomad.degreeDatas.nomad.description>
+
+<!--=============== Cultist ====================-->
+<OECultist.degreeDatas.spiritual.label>духовность</OECultist.degreeDatas.spiritual.label>
+<OECultist.degreeDatas.spiritual.description>{PAWN_nameDef} обладает непоколебимой волей и телом, способным выдержать любые испытания.</OECultist.degreeDatas.spiritual.description>
+
+<!--=============== Eidolon ====================-->
+<OEEidolon.degreeDatas.proudly.label>горделивость</OEEidolon.degreeDatas.proudly.label>
+<OEEidolon.degreeDatas.proudly.description>{PAWN_nameDef} будучи героем купается в лучах славы.</OEEidolon.degreeDatas.proudly.description>
+
+<!--=============== Unstable ====================-->
+<!--=============== Catalyst ====================-->
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.label>нестабильный катализатор</OEUnstableCatalyst.degreeDatas.unstable_catalyst.label>
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.description>Внутри {PAWN_nameDef} бурлит нестабильная сила. На грани срыва {PAWN_pronoun} может вспыхнуть гениальностью — или безумием.\nС вероятностью 75% нервный срыв вызовет случайное вдохновение.</OEUnstableCatalyst.degreeDatas.unstable_catalyst.description>
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.mentalBreakInspirationGainReasonText>Охваченный нестабильной энергией, [PAWN_nameIndef] раскрывает дикий потенциал.</OEUnstableCatalyst.degreeDatas.unstable_catalyst.mentalBreakInspirationGainReasonText>
+
+<!--=============== Laborer ====================-->
+<OEUnstableLaborer.degreeDatas.unstable_laborer.label>нестабильный работяга</OEUnstableLaborer.degreeDatas.unstable_laborer.label>
+<OEUnstableLaborer.degreeDatas.unstable_laborer.description>{PAWN_nameDef} доводит {PAWN_pronoun} себя до предела, гоняясь за мимолётной продуктивностью ценой психики.\nС вероятностью 50% нервный срыв вызовет Трудовой угар.</OEUnstableLaborer.degreeDatas.unstable_laborer.description>
+<OEUnstableLaborer.degreeDatas.unstable_laborer.mentalBreakInspirationGainReasonText>Охваченный внутренним хаосом, [PAWN_nameIndef] впадает в маниакальный трудовой угар.</OEUnstableLaborer.degreeDatas.unstable_laborer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Wanderer ====================-->
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.label>нестабильный странник</OEUnstableWanderer.degreeDatas.unstable_wanderer.label>
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.description>Беспокойный и непредсказуемый, {PAWN_nameDef} находит ясность в стремительном, бессмысленном движении.\nС вероятностью 50% нервный срыв вызовет Угар движения.</OEUnstableWanderer.degreeDatas.unstable_wanderer.description>
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.mentalBreakInspirationGainReasonText>Охваченный бурей эмоций, [PAWN_nameIndef] ощущает непреодолимую тягу к движению.</OEUnstableWanderer.degreeDatas.unstable_wanderer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Marksman ====================-->
+<OEUnstableMarksman.degreeDatas.unstable_marksman.label>нестабильный стрелок</OEUnstableMarksman.degreeDatas.unstable_marksman.label>
+<OEUnstableMarksman.degreeDatas.unstable_marksman.description>В моменты нестабильности сосредоточенность {PAWN_nameDef} обостряется, превращая хаос в смертоносную точность.\nС вероятностью 50% нервный срыв вызовет Стрелковый угар.</OEUnstableMarksman.degreeDatas.unstable_marksman.description>
+<OEUnstableMarksman.degreeDatas.unstable_marksman.mentalBreakInspirationGainReasonText>На грани безумия [PAWN_nameIndef] становится пугающе метким с огнестрельным оружием.</OEUnstableMarksman.degreeDatas.unstable_marksman.mentalBreakInspirationGainReasonText>
+
+<!--=============== Trader ====================-->
+<OEUnstableTrader.degreeDatas.unstable_trader.label>нестабильный торговец</OEUnstableTrader.degreeDatas.unstable_trader.label>
+<OEUnstableTrader.degreeDatas.unstable_trader.description>Разлом в разуме {PAWN_nameDef} временами открывает вспышки торгового гения.\nС вероятностью 50% нервный срыв вызовет Вдохновение торговли.</OEUnstableTrader.degreeDatas.unstable_trader.description>
+<OEUnstableTrader.degreeDatas.unstable_trader.mentalBreakInspirationGainReasonText>Сквозь пелену нестабильности [PAWN_nameIndef] находит момент блестящих переговоров.</OEUnstableTrader.degreeDatas.unstable_trader.mentalBreakInspirationGainReasonText>
+
+<!--=============== Charmer ====================-->
+<OEUnstableCharmer.degreeDatas.unstable_charmer.label>нестабильный обольститель</OEUnstableCharmer.degreeDatas.unstable_charmer.label>
+<OEUnstableCharmer.degreeDatas.unstable_charmer.description>Странная, неустойчивая энергия делает {PAWN_nameDef} неожиданно обаятельным в самые неожиданные моменты.\nС вероятностью 50% нервный срыв вызовет Вдохновение вербовки.</OEUnstableCharmer.degreeDatas.unstable_charmer.description>
+<OEUnstableCharmer.degreeDatas.unstable_charmer.mentalBreakInspirationGainReasonText>С нестабильной уверенностью [PAWN_nameIndef] обретает дар убеждения.</OEUnstableCharmer.degreeDatas.unstable_charmer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Whisperer ====================-->
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.label>нестабильный шептун</OEUnstableWhisperer.degreeDatas.unstable_whisperer.label>
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.description>Волатильная аура {PAWN_nameDef} временами вызывает странный отклик у животных.\nС вероятностью 50% нервный срыв вызовет Вдохновение приручения.</OEUnstableWhisperer.degreeDatas.unstable_whisperer.description>
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.mentalBreakInspirationGainReasonText>Охваченный внутренней бурей, [PAWN_nameIndef] находит временную связь с природой.</OEUnstableWhisperer.degreeDatas.unstable_whisperer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Surgeon ====================-->
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.label>нестабильный хирург</OEUnstableSurgeon.degreeDatas.unstable_surgeon.label>
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.description>Балансируя между безумием и ясностью, {PAWN_nameDef} способен на медицинские чудеса.\nС вероятностью 50% нервный срыв вызовет Вдохновение хирургии.</OEUnstableSurgeon.degreeDatas.unstable_surgeon.description>
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.mentalBreakInspirationGainReasonText>Под давлением отчаяния [PAWN_nameIndef] достигает хирургического совершенства.</OEUnstableSurgeon.degreeDatas.unstable_surgeon.mentalBreakInspirationGainReasonText>
+
+<!--=============== Creator ====================-->
+<OEUnstableCreator.degreeDatas.unstable_creator.label>нестабильный творец</OEUnstableCreator.degreeDatas.unstable_creator.label>
+<OEUnstableCreator.degreeDatas.unstable_creator.description>Из бури в {PAWN_pronoun} голове рождаются вспышки художественного гения.\nС вероятностью 50% нервный срыв вызовет Вдохновение творчества.</OEUnstableCreator.degreeDatas.unstable_creator.description>
+<OEUnstableCreator.degreeDatas.unstable_creator.mentalBreakInspirationGainReasonText>Вдохновлённый внутренним хаосом, [PAWN_nameIndef] становится неудержимым творцом.</OEUnstableCreator.degreeDatas.unstable_creator.mentalBreakInspirationGainReasonText>
+
+<!--=============== Skills Mastery ====================-->
+<OESkillsMastery.degreeDatas.golden_soul.label>золотая душа</OESkillsMastery.degreeDatas.golden_soul.label>
+<OESkillsMastery.degreeDatas.golden_soul.description>У {PAWN_nameDef} есть нечто особенное — золотая искра таланта в каждом деле.</OESkillsMastery.degreeDatas.golden_soul.description>
+
+<OESkillsMastery.degreeDatas.faded_spark.label>угасшая искра</OESkillsMastery.degreeDatas.faded_spark.label>
+<OESkillsMastery.degreeDatas.faded_spark.description>Когда-то полный потенциала, теперь {PAWN_nameDef} будто потерял внутренний свет.</OESkillsMastery.degreeDatas.faded_spark.description>
+
+<!--=============== Skills Quality ====================-->
+<!--=============== Mining ====================-->
+<OEQualityMining.degreeDatas.vein_whisperer.label>шепчущий жилам</OEQualityMining.degreeDatas.vein_whisperer.label>
+<OEQualityMining.degreeDatas.vein_whisperer.description>{PAWN_nameDef} добывает с поразительной точностью, хоть и не торопится.</OEQualityMining.degreeDatas.vein_whisperer.description>
+
+<OEQualityMining.degreeDatas.tunnel_dancer.label>танцующий в тоннелях</OEQualityMining.degreeDatas.tunnel_dancer.label>
+<OEQualityMining.degreeDatas.tunnel_dancer.description>{PAWN_nameDef} копает стремительно и смело, но теряет часть ценного.</OEQualityMining.degreeDatas.tunnel_dancer.description>
+
+<!--=============== Cooking ====================-->
+<OEQualityCooking.degreeDatas.careful_chef.label>аккуратный повар</OEQualityCooking.degreeDatas.careful_chef.label>
+<OEQualityCooking.degreeDatas.careful_chef.description>{PAWN_nameDef} ценит безопасность и качество, даже если это требует больше времени.</OEQualityCooking.degreeDatas.careful_chef.description>
+
+<OEQualityCooking.degreeDatas.blazing_cook.label>пламенный повар</OEQualityCooking.degreeDatas.blazing_cook.label>
+<OEQualityCooking.degreeDatas.blazing_cook.description>{PAWN_nameDef} готовит с огненной скоростью, не заботясь о мелочах.</OEQualityCooking.degreeDatas.blazing_cook.description>
+
+<!--=============== Plants ====================-->
+<OEQualityPlants.degreeDatas.gentle_harvester.label>нежный жнец</OEQualityPlants.degreeDatas.gentle_harvester.label>
+<OEQualityPlants.degreeDatas.gentle_harvester.description>{PAWN_nameDef} заботливо собирает урожай, но работает в умеренном темпе.</OEQualityPlants.degreeDatas.gentle_harvester.description>
+
+<OEQualityPlants.degreeDatas.swift_planter.label>быстрый земледелец</OEQualityPlants.degreeDatas.swift_planter.label>
+<OEQualityPlants.degreeDatas.swift_planter.description>{PAWN_nameDef} трудится быстро, хоть и теряет часть результата.</OEQualityPlants.degreeDatas.swift_planter.description>
+
+<!--=============== Animals ====================-->
+<OEQualityAnimals.degreeDatas.careful_handler.label>тщательный животновод</OEQualityAnimals.degreeDatas.careful_handler.label>
+<OEQualityAnimals.degreeDatas.careful_handler.description>{PAWN_nameDef} уделяет животным больше внимания, получая с них больше пользы.</OEQualityAnimals.degreeDatas.careful_handler.description>
+
+<OEQualityAnimals.degreeDatas.efficient_handler.label>быстрый животновод</OEQualityAnimals.degreeDatas.efficient_handler.label>
+<OEQualityAnimals.degreeDatas.efficient_handler.description>{PAWN_nameDef} быстро управляется с животными, но часть ресурсов теряется.</OEQualityAnimals.degreeDatas.efficient_handler.description>
+
+<!--=============== Fishing - VFE ====================-->
+<OEFishermanVCEF.degreeDatas.deep_catcher.label>глубокий ловец</OEFishermanVCEF.degreeDatas.deep_catcher.label>
+<OEFishermanVCEF.degreeDatas.deep_catcher.description>{PAWN_nameDef} рыбачит сосредоточенно и аккуратно, часто вытаскивая больше с каждой заброски.</OEFishermanVCEF.degreeDatas.deep_catcher.description>
+
+<OEFishermanVCEF.degreeDatas.quick_hook.label>быстрый крючок</OEFishermanVCEF.degreeDatas.quick_hook.label>
+<OEFishermanVCEF.degreeDatas.quick_hook.description>{PAWN_nameDef} забрасывает удочку быстро и часто, хоть часть рыбы и срывается с крючка.</OEFishermanVCEF.degreeDatas.quick_hook.description>
+
+<!--=============== Royalty ====================-->
+<!--=============== Psy Blood ====================-->
+<OEPsyBlood.degreeDatas.noble_blood.label>благородная кровь</OEPsyBlood.degreeDatas.noble_blood.label>
+<OEPsyBlood.degreeDatas.noble_blood.description>{PAWN_nameDef} {PAWN_gender ? наследник : наследница} древнего и благородного рода. Наличие {PAWN_pronoun} дает врожденный талант к пси-способностям.</OEPsyBlood.degreeDatas.noble_blood.description>
+
+<!--=============== Monk ====================-->
+<OEPsyMonk.degreeDatas.monk.label>монах</OEPsyMonk.degreeDatas.monk.label>
+<OEPsyMonk.degreeDatas.monk.description>{PAWN_nameDef} находит необычайную ясность в покое, черпая силу из каждого момента созерцания.</OEPsyMonk.degreeDatas.monk.description>
+
+<!--=============== Psy Warrior ====================-->
+<OEPsyWarrior.degreeDatas.psywarrior.label>пси-воин</OEPsyWarrior.degreeDatas.psywarrior.label>
+<OEPsyWarrior.degreeDatas.psywarrior.description>Битва — естественное состояние для {PAWN_nameDef}, чьи удары несут в себе как физическую мощь, так и псионическую силу.</OEPsyWarrior.degreeDatas.psywarrior.description>
+
+<!--=============== Psy Marksman ====================-->
+<OEPsyMarksman.degreeDatas.psymarksman.label>пси-снайпер</OEPsyMarksman.degreeDatas.psymarksman.label>
+<OEPsyMarksman.degreeDatas.psymarksman.description>Меткость {PAWN_nameDef} направляется как устойчивыми руками, так и обострённым пси-чувством.</OEPsyMarksman.degreeDatas.psymarksman.description>
+
+<!--=============== Ideology ====================-->
+<!--=============== Ideology Spread ====================-->
+<OEIdeoSpread.degreeDatas.ardent_preacher.label>пламенный проповедник</OEIdeoSpread.degreeDatas.ardent_preacher.label>
+<OEIdeoSpread.degreeDatas.ardent_preacher.description>{PAWN_nameDef} распространяет убеждения с горящим рвением — порой слишком пылко, даже для {PAWN_pronoun} самого.</OEIdeoSpread.degreeDatas.ardent_preacher.description>
+
+<OEIdeoSpread.degreeDatas.quiet_soul.label>тихая душа</OEIdeoSpread.degreeDatas.quiet_soul.label>
+<OEIdeoSpread.degreeDatas.quiet_soul.description>Спокойный и уравновешенный, {PAWN_nameDef} редко провоцирует конфликты — но с трудом вдохновляет других на глубокую веру.</OEIdeoSpread.degreeDatas.quiet_soul.description>
+
+<!--=============== Ideology Power ====================-->
+<OEIdeoPower.degreeDatas.lawbringer.label>властитель закона</OEIdeoPower.degreeDatas.lawbringer.label>
+<OEIdeoPower.degreeDatas.lawbringer.description>Взгляд {PAWN_nameDef} подобен заряженной винтовке — {PAWN_pronoun} приносит порядок в хаос, но бремя правосудия тяжело давит на плечи.</OEIdeoPower.degreeDatas.lawbringer.description>
+
+<OEIdeoPower.degreeDatas.softspoken_deputy.label>мягкосердный помощник</OEIdeoPower.degreeDatas.softspoken_deputy.label>
+<OEIdeoPower.degreeDatas.softspoken_deputy.description>{PAWN_nameDef} поддерживает порядок мягко, избегая конфликтов — но ему не хватает решимости, чтобы установить закон.</OEIdeoPower.degreeDatas.softspoken_deputy.description>
+
+<!--=============== Ideology Hacking ====================-->
+<OEIdeoHacking.degreeDatas.netrunner.label>сетевой бегун</OEIdeoHacking.degreeDatas.netrunner.label>
+<OEIdeoHacking.degreeDatas.netrunner.description>{PAWN_nameDef} проходит сквозь файрволы и протоколы, словно вода — быстрее, чем большинство успевает моргнуть.</OEIdeoHacking.degreeDatas.netrunner.description>
+
+<OEIdeoHacking.degreeDatas.cyber_tinker.label>кибер-мастер</OEIdeoHacking.degreeDatas.cyber_tinker.label>
+<OEIdeoHacking.degreeDatas.cyber_tinker.description>Любопытный и изобретательный, {PAWN_nameDef} может разобрать систему и собрать её лучше прежнего — по крайней мере, чаще всего.</OEIdeoHacking.degreeDatas.cyber_tinker.description>
+
+<OEIdeoHacking.degreeDatas.script_kiddie.label>скрипт-детёныш</OEIdeoHacking.degreeDatas.script_kiddie.label>
+<OEIdeoHacking.degreeDatas.script_kiddie.description>{PAWN_nameDef} знает ровно столько, чтобы ковыряться в системах — но не способен взломать по-настоящему сложный код.</OEIdeoHacking.degreeDatas.script_kiddie.description>
+
+<OEIdeoHacking.degreeDatas.terminal_hazard.label>консольная угроза</OEIdeoHacking.degreeDatas.terminal_hazard.label>
+<OEIdeoHacking.degreeDatas.terminal_hazard.description>Когда {PAWN_nameDef} прикасается к консоли, вопрос лишь во времени — и в том, насколько всё плохо сломается.</OEIdeoHacking.degreeDatas.terminal_hazard.description>
+
+<!--=============== Biotech ====================-->
+<!--=============== Mech Love ====================-->
+<OEMechLove.degreeDatas.mech_fan.label>фанат меха</OEMechLove.degreeDatas.mech_fan.label>
+<OEMechLove.degreeDatas.mech_fan.description>{PAWN_nameDef} большой фанат механоидов. И как {PAWN_pronoun} способен контролировать больше механоидов.</OEMechLove.degreeDatas.mech_fan.description>
+
+<!--=============== Mech Instinct ====================-->
+<OEMechInstinct.degreeDatas.mechtech_instinct.label>инстинкт мехтехника</OEMechInstinct.degreeDatas.mechtech_instinct.label>
+<OEMechInstinct.degreeDatas.mechtech_instinct.description>{PAWN_nameDef} обращается с механоидом так, словно родился для этого — быстро собирая, настраивая и чиня любую машину.</OEMechInstinct.degreeDatas.mechtech_instinct.description>
+
+<!--=============== Anomaly ====================-->
+<!--=============== Ritualist ====================-->
+<OERitualist.degreeDatas.ritual_master.label>мастер ритуалов</OERitualist.degreeDatas.ritual_master.label>
+<OERitualist.degreeDatas.ritual_master.description>Ритуалы наполняют {PAWN_nameDef} энергией — {PAWN_pronoun} проводит их с точностью и страстью.</OERitualist.degreeDatas.ritual_master.description>
+
+<OERitualist.degreeDatas.ceremonial_adept.label>церемониальный адепт</OERitualist.degreeDatas.ceremonial_adept.label>
+<OERitualist.degreeDatas.ceremonial_adept.description>{PAWN_nameDef} проводит ритуалы чётко и без колебаний.</OERitualist.degreeDatas.ceremonial_adept.description>
+
+<OERitualist.degreeDatas.unsteady_speaker.label>неуверенный оратор</OERitualist.degreeDatas.unsteady_speaker.label>
+<OERitualist.degreeDatas.unsteady_speaker.description>Ритуалы даются {PAWN_nameDef} с трудом — {PAWN_pronoun} часто сбивается с ритма.</OERitualist.degreeDatas.unsteady_speaker.description>
+
+<OERitualist.degreeDatas.reluctant_vessel.label>неохотный проводник</OERitualist.degreeDatas.reluctant_vessel.label>
+<OERitualist.degreeDatas.reluctant_vessel.description>{PAWN_nameDef} тяготится священными обрядами и проводит их неохотно и неумело.</OERitualist.degreeDatas.reluctant_vessel.description>
+
+<!--=============== Odyssey ====================-->
+<!--=============== Fishing - Odyssey ====================-->
+<OEFisherman.degreeDatas.deep_catcher.label>глубокий ловец</OEFisherman.degreeDatas.deep_catcher.label>
+<OEFisherman.degreeDatas.deep_catcher.description>{PAWN_nameDef} рыбачит сосредоточенно и аккуратно, часто вытаскивая больше с каждой заброски.</OEFisherman.degreeDatas.deep_catcher.description>
+
+<OEFisherman.degreeDatas.quick_hook.label>быстрый крючок</OEFisherman.degreeDatas.quick_hook.label>
+<OEFisherman.degreeDatas.quick_hook.description>{PAWN_nameDef} забрасывает удочку быстро и часто, хоть часть рыбы и срывается с крючка.</OEFisherman.degreeDatas.quick_hook.description>
+
+<!--=============== Piloting Ability ====================-->
+<OEPilotingGood.degreeDatas.ace_pilot.label>ас пилотирования</OEPilotingGood.degreeDatas.ace_pilot.label>
+<OEPilotingGood.degreeDatas.ace_pilot.description>{PAWN_nameDef} словно рождён для полётов, превращая даже самый упрямый корабль в танцующую звёздную птицу.</OEPilotingGood.degreeDatas.ace_pilot.description>
+
+<OEPilotingBad.degreeDatas.clumsy_flier.label>неуклюжий пилот</OEPilotingBad.degreeDatas.clumsy_flier.label>
+<OEPilotingBad.degreeDatas.clumsy_flier.description>Каждый раз, когда {PAWN_nameDef} берётся за управление, кто-то проверяет спасательные капсулы - на всякий случай.</OEPilotingBad.degreeDatas.clumsy_flier.description>
+
+</LanguageData>

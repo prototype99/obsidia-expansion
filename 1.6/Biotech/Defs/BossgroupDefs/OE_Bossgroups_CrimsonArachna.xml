@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Crimson Arachna ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_CrimsonArachna</defName>
+    <kindDef>OE_Mech_ArachnaQueen</kindDef>
+    <appearAfterTicks>1800000</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_CrimsonArachna</defName>
+    <boss>OE_Beaconboss_CrimsonArachna</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OE_Mech_OMC_Arachna>2</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>1</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Fire>1</OE_Mech_OTC_Arachna_Fire>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OE_Mech_OMC_Arachna>2</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>1</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Fire>1</OE_Mech_OTC_Arachna_Fire>
+		  <OE_Mech_OCC_Arachna>2</OE_Mech_OCC_Arachna>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OE_Mech_OMC_Arachna>2</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>1</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Fire>1</OE_Mech_OTC_Arachna_Fire>
+		  <OE_Mech_OCC_Arachna>2</OE_Mech_OCC_Arachna>
+		  <OE_Mech_OEC_Arachna>2</OE_Mech_OEC_Arachna>
+		  <OE_Mech_CAC_Arachna>2</OE_Mech_CAC_Arachna>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OE_Mech_OMC_Arachna>4</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>1</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Cryo>1</OE_Mech_OTC_Arachna_Cryo>
+		  <OE_Mech_OTC_Arachna_Fire>1</OE_Mech_OTC_Arachna_Fire>
+		  <OE_Mech_OTC_Arachna_EMP>1</OE_Mech_OTC_Arachna_EMP>
+		  <OE_Mech_OCC_Arachna>2</OE_Mech_OCC_Arachna>
+		  <OE_Mech_OEC_Arachna>2</OE_Mech_OEC_Arachna>
+		  <OE_Mech_CAC_Arachna>2</OE_Mech_CAC_Arachna>
+		  <OE_Mech_CrimsonArachna>1</OE_Mech_CrimsonArachna>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OE_Mech_OMC_Arachna>4</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>1</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Cryo>1</OE_Mech_OTC_Arachna_Cryo>
+		  <OE_Mech_OTC_Arachna_Fire>1</OE_Mech_OTC_Arachna_Fire>
+		  <OE_Mech_OTC_Arachna_EMP>1</OE_Mech_OTC_Arachna_EMP>
+		  <OE_Mech_OCC_Arachna>4</OE_Mech_OCC_Arachna>
+		  <OE_Mech_OEC_Arachna>4</OE_Mech_OEC_Arachna>
+		  <OE_Mech_CAC_Arachna>2</OE_Mech_CAC_Arachna>
+		  <OE_Mech_CrimsonArachna>1</OE_Mech_CrimsonArachna>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OE_Mech_OMC_Arachna>5</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>2</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Cryo>1</OE_Mech_OTC_Arachna_Cryo>
+		  <OE_Mech_OTC_Arachna_Fire>2</OE_Mech_OTC_Arachna_Fire>
+		  <OE_Mech_OTC_Arachna_EMP>1</OE_Mech_OTC_Arachna_EMP>
+		  <OE_Mech_OCC_Arachna>5</OE_Mech_OCC_Arachna>
+		  <OE_Mech_OEC_Arachna>5</OE_Mech_OEC_Arachna>
+		  <OE_Mech_CAC_Arachna>4</OE_Mech_CAC_Arachna>	  
+		  <OE_Mech_CrimsonArachna>2</OE_Mech_CrimsonArachna>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+	  <li> <!-- 6 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OE_Mech_OMC_Arachna>8</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>4</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Cryo>2</OE_Mech_OTC_Arachna_Cryo>
+		  <OE_Mech_OTC_Arachna_Fire>4</OE_Mech_OTC_Arachna_Fire>
+		  <OE_Mech_OTC_Arachna_EMP>2</OE_Mech_OTC_Arachna_EMP>
+		  <OE_Mech_OCC_Arachna>8</OE_Mech_OCC_Arachna>
+		  <OE_Mech_OEC_Arachna>8</OE_Mech_OEC_Arachna>
+		  <OE_Mech_CAC_Arachna>6</OE_Mech_CAC_Arachna>	  
+		  <OE_Mech_CrimsonArachna>4</OE_Mech_CrimsonArachna>
+		  <OE_Mech_NewChaosLord>2</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+	  <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OE_Mech_OMC_Arachna>12</OE_Mech_OMC_Arachna>
+		  <OE_Mech_OTC_Arachna_Acid>8</OE_Mech_OTC_Arachna_Acid>
+		  <OE_Mech_OTC_Arachna_Cryo>4</OE_Mech_OTC_Arachna_Cryo>
+		  <OE_Mech_OTC_Arachna_Fire>8</OE_Mech_OTC_Arachna_Fire>
+		  <OE_Mech_OTC_Arachna_EMP>4</OE_Mech_OTC_Arachna_EMP>
+		  <OE_Mech_OCC_Arachna>12</OE_Mech_OCC_Arachna>
+		  <OE_Mech_OEC_Arachna>12</OE_Mech_OEC_Arachna>
+		  <OE_Mech_CAC_Arachna>10</OE_Mech_CAC_Arachna>	  
+		  <OE_Mech_CrimsonArachna>6</OE_Mech_CrimsonArachna>
+		  <OE_Mech_NewChaosLord>3</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>The {LEADERKIND_label} is a Crimson Arachna Cult's mechanoid commander with a built-in mech gestator and is capable of deploying arachna drone combat mechs.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

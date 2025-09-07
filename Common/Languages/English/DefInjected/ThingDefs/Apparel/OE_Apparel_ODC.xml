@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== ODC - Helmet ====================-->
+<ODC_Helmet_Nomad.label>ODC Nomad Mask</ODC_Helmet_Nomad.label>
+<ODC_Helmet_Nomad.description>Power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.</ODC_Helmet_Nomad.description>
+
+<ODC_Helmet_Spacer.label>ODC Spacer Mask</ODC_Helmet_Spacer.label>
+<ODC_Helmet_Spacer.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</ODC_Helmet_Spacer.description>
+
+<ODC_Helmet_Recon.label>ODC Recon Mask</ODC_Helmet_Recon.label>
+<ODC_Helmet_Recon.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves shooting skills to the owner.</ODC_Helmet_Recon.description>
+
+<ODC_Helmet_Duelist.label>ODC Duelist Mask</ODC_Helmet_Duelist.label>
+<ODC_Helmet_Duelist.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves melee skills to the owner.</ODC_Helmet_Duelist.description>
+
+<ODC_Helmet_Trader.label>ODC Trader Mask</ODC_Helmet_Trader.label>
+<ODC_Helmet_Trader.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves trader skills to the owner.</ODC_Helmet_Trader.description>
+
+<ODC_Helmet_Beastmaster.label>ODC Beastmaster Mask</ODC_Helmet_Beastmaster.label>
+<ODC_Helmet_Beastmaster.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves animal skills to the owner.</ODC_Helmet_Beastmaster.description>
+
+<ODC_Helmet_Constructor.label>ODC Constructor Mask</ODC_Helmet_Constructor.label>
+<ODC_Helmet_Constructor.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves crafting skills to the owner.</ODC_Helmet_Constructor.description>
+
+<ODC_Helmet_Miner.label>ODC Miner Mask</ODC_Helmet_Miner.label>
+<ODC_Helmet_Miner.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves mining skills to the owner.</ODC_Helmet_Miner.description>
+
+<ODC_Helmet_Medic.label>ODC Medic Mask</ODC_Helmet_Medic.label>
+<ODC_Helmet_Medic.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves medical skills to the owner.</ODC_Helmet_Medic.description>
+
+<ODC_Helmet_Prestige.label>ODC Lord Mask</ODC_Helmet_Prestige.label>
+<ODC_Helmet_Prestige.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves psychic powers to the owner.</ODC_Helmet_Prestige.description>
+
+<ODC_Helmet_Mechanitor.label>ODC Overseer Mask</ODC_Helmet_Mechanitor.label>
+<ODC_Helmet_Mechanitor.description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves Mechanoids Control abilities.</ODC_Helmet_Mechanitor.description>
+
+<!--=============== ODC - Armor ====================-->
+<ODC_Armor_Nomad.label>ODC Nomad Armor</ODC_Armor_Nomad.label>
+<ODC_Armor_Nomad.description>Power armor, good protects the owner. Designed for use by Obsidia Drifters.</ODC_Armor_Nomad.description>
+
+<ODC_Armor_Recon.label>ODC Recon Armor</ODC_Armor_Recon.label>
+<ODC_Armor_Recon.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.</ODC_Armor_Recon.description>
+
+<ODC_Armor_Recon_Spacer.label>ODC Recon Armor(Space Griffin)</ODC_Armor_Recon_Spacer.label>
+<ODC_Armor_Recon_Spacer.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</ODC_Armor_Recon_Spacer.description>
+
+<ODC_Armor_Recon_Smoker.label>ODC Recon Armor(Fogler)</ODC_Armor_Recon_Smoker.label>
+<ODC_Armor_Recon_Smoker.verbs.Verb_SmokePop.label>ODC Recon Armor(Fogler)</ODC_Armor_Recon_Smoker.verbs.Verb_SmokePop.label>
+<ODC_Armor_Recon_Smoker.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Smokepop pack.</ODC_Armor_Recon_Smoker.description>
+<ODC_Armor_Recon_Smoker.comps.CompApparelReloadable.chargeNoun>smokepop</ODC_Armor_Recon_Smoker.comps.CompApparelReloadable.chargeNoun>
+<ODC_Armor_Recon_Smoker.comps.CompApparelReloadable.cooldownGerund>on cooldown</ODC_Armor_Recon_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<ODC_Armor_Recon_Shield.label>ODC Recon Armor(Guardian)</ODC_Armor_Recon_Shield.label>
+<ODC_Armor_Recon_Shield.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Reinforced Barrier.</ODC_Armor_Recon_Shield.description>
+
+<ODC_Armor_Recon_Barrier.label>ODC Recon Armor(Protector)</ODC_Armor_Recon_Barrier.label>
+<ODC_Armor_Recon_Barrier.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of the Universal Barrier.</ODC_Armor_Recon_Barrier.description>
+
+<ODC_Armor_Recon_Jump.label>ODC Recon Armor(Raven)</ODC_Armor_Recon_Jump.label>
+<ODC_Armor_Recon_Jump.verbs.Verb_Jump.label>ODC Recon Armor(Raven)</ODC_Armor_Recon_Jump.verbs.Verb_Jump.label>
+<ODC_Armor_Recon_Jump.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Jump pack.</ODC_Armor_Recon_Jump.description>
+<ODC_Armor_Recon_Jump.comps.CompApparelReloadable.chargeNoun>jump</ODC_Armor_Recon_Jump.comps.CompApparelReloadable.chargeNoun>
+<ODC_Armor_Recon_Jump.comps.CompApparelReloadable.cooldownGerund>on cooldown</ODC_Armor_Recon_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<ODC_Armor_Recon_Prestige.label>ODC Recon Armor(Lord)</ODC_Armor_Recon_Prestige.label>
+<ODC_Armor_Recon_Prestige.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified for improves psychic powers to the owner.</ODC_Armor_Recon_Prestige.description>
+
+<ODC_Armor_Recon_Mechanitor.label>ODC Recon Armor(Overseer)</ODC_Armor_Recon_Mechanitor.label>
+<ODC_Armor_Recon_Mechanitor.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Mechanoids Control pack.</ODC_Armor_Recon_Mechanitor.description>
+
+<ODC_Armor_Recon_Turret.label>ODC Recon Armor(Goblin)</ODC_Armor_Recon_Turret.label>
+<ODC_Armor_Recon_Turret.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</ODC_Armor_Recon_Turret.description>
+<ODC_Armor_Recon_Turret.verbs.deploy_turret.label>deploy turret</ODC_Armor_Recon_Turret.verbs.deploy_turret.label>
+<ODC_Armor_Recon_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</ODC_Armor_Recon_Turret.comps.CompApparelReloadable.chargeNoun>
+<ODC_Armor_Recon_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</ODC_Armor_Recon_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<ODC_Armor_Duelist.label>ODC Duelist Armor</ODC_Armor_Duelist.label>
+<ODC_Armor_Duelist.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.</ODC_Armor_Duelist.description>
+
+<ODC_Armor_Duelist_Spacer.label>ODC Duelist Armor(Space Griffin)</ODC_Armor_Duelist_Spacer.label>
+<ODC_Armor_Duelist_Spacer.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</ODC_Armor_Duelist_Spacer.description>
+
+<ODC_Armor_Duelist_Smoker.label>ODC Duelist Armor(Fogler)</ODC_Armor_Duelist_Smoker.label>
+<ODC_Armor_Duelist_Smoker.verbs.Verb_SmokePop.label>ODC Duelist Armor(Fogler)</ODC_Armor_Duelist_Smoker.verbs.Verb_SmokePop.label>
+<ODC_Armor_Duelist_Smoker.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Smokepop pack.</ODC_Armor_Duelist_Smoker.description>
+<ODC_Armor_Duelist_Smoker.comps.CompApparelReloadable.chargeNoun>smokepop</ODC_Armor_Duelist_Smoker.comps.CompApparelReloadable.chargeNoun>
+<ODC_Armor_Duelist_Smoker.comps.CompApparelReloadable.cooldownGerund>on cooldown</ODC_Armor_Duelist_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<ODC_Armor_Duelist_Shield.label>ODC Duelist Armor(Guardian)</ODC_Armor_Duelist_Shield.label>
+<ODC_Armor_Duelist_Shield.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Reinforced Barrier.</ODC_Armor_Duelist_Shield.description>
+
+<ODC_Armor_Duelist_Barrier.label>ODC Duelist Armor(Protector)</ODC_Armor_Duelist_Barrier.label>
+<ODC_Armor_Duelist_Barrier.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of the Universal Barrier.</ODC_Armor_Duelist_Barrier.description>
+
+<ODC_Armor_Duelist_Jump.label>ODC Duelist Armor(Raven)</ODC_Armor_Duelist_Jump.label>
+<ODC_Armor_Duelist_Jump.verbs.Verb_Jump.label>ODC Duelist Armor(Raven)</ODC_Armor_Duelist_Jump.verbs.Verb_Jump.label>
+<ODC_Armor_Duelist_Jump.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Jump pack.</ODC_Armor_Duelist_Jump.description>
+<ODC_Armor_Duelist_Jump.comps.CompApparelReloadable.chargeNoun>jump</ODC_Armor_Duelist_Jump.comps.CompApparelReloadable.chargeNoun>
+<ODC_Armor_Duelist_Jump.comps.CompApparelReloadable.cooldownGerund>on cooldown</ODC_Armor_Duelist_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<ODC_Armor_Duelist_Prestige.label>ODC Duelist Armor(Lord)</ODC_Armor_Duelist_Prestige.label>
+<ODC_Armor_Duelist_Prestige.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified for improves psychic powers to the owner.</ODC_Armor_Duelist_Prestige.description>
+
+<ODC_Armor_Duelist_Mechanitor.label>ODC Duelist Armor(Overseer)</ODC_Armor_Duelist_Mechanitor.label>
+<ODC_Armor_Duelist_Mechanitor.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Mechanoids Control pack.</ODC_Armor_Duelist_Mechanitor.description>
+
+<ODC_Armor_Duelist_Turret.label>ODC Duelist Armor(Goblin)</ODC_Armor_Duelist_Turret.label>
+<ODC_Armor_Duelist_Turret.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</ODC_Armor_Duelist_Turret.description>
+<ODC_Armor_Duelist_Turret.verbs.deploy_turret.label>deploy turret</ODC_Armor_Duelist_Turret.verbs.deploy_turret.label>
+<ODC_Armor_Duelist_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</ODC_Armor_Duelist_Turret.comps.CompApparelReloadable.chargeNoun>
+<ODC_Armor_Duelist_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</ODC_Armor_Duelist_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== ODC - Grenades ====================-->
+<Grenade_Armor_ODC_TurretPack.label>ODC turret pack capsule</Grenade_Armor_ODC_TurretPack.label>
+
+<!--=============== ODC - Stalker Armor ====================-->
+<ODC_Armor_Stalker_Direwolf.label>ODC Stalker Armor(Elder Direwolf)</ODC_Armor_Stalker_Direwolf.label>
+<ODC_Armor_Stalker_Direwolf.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nStalker version is enhanced with trophies taken from Elder Beasts, empowering the wearer with beast-like power.\n\nModified with the essence of an Elder Direwolf.</ODC_Armor_Stalker_Direwolf.description>
+
+<ODC_Armor_Stalker_Raptor.label>ODC Stalker Armor(Elder Raptor)</ODC_Armor_Stalker_Raptor.label>
+<ODC_Armor_Stalker_Raptor.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nStalker version is enhanced with trophies taken from Elder Beasts, empowering the wearer with beast-like power.\n\nModified with the essence of an Elder Raptor.</ODC_Armor_Stalker_Raptor.description>
+
+<ODC_Armor_Stalker_Ogren.label>ODC Stalker Armor(Elder Ogren)</ODC_Armor_Stalker_Ogren.label>
+<ODC_Armor_Stalker_Ogren.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nStalker version is enhanced with trophies taken from Elder Beasts, empowering the wearer with beast-like power.\n\nModified with the essence of an Elder Direwolf.</ODC_Armor_Stalker_Ogren.description>
+
+<ODC_Armor_Stalker_Tionant.label>ODC Stalker Armor(Elder Tionant)</ODC_Armor_Stalker_Tionant.label>
+<ODC_Armor_Stalker_Tionant.description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nStalker version is enhanced with trophies taken from Elder Beasts, empowering the wearer with beast-like power.\n\nModified with the essence of an Elder Direwolf.</ODC_Armor_Stalker_Tionant.description>
+
+</LanguageData>

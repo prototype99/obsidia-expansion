@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[@Name="TribalBase"]</xpath>
+    <value>
+	  <inventoryOptions>
+        <skipChance>0.97</skipChance>
+        <subOptionsChooseOne>
+          <li>
+            <thingDef>OE_SlimeHeart</thingDef>
+            <countRange>1~2</countRange>
+          </li>
+        </subOptionsChooseOne>
+      </inventoryOptions>
+    </value>
+</Operation>
+
+</Patch>

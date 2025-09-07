@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Biophormids - Geneline ====================-->
+  <VFEInsectoids.InsectGenelineDef>
+	<defName>OE_Biophormids</defName>
+	<hive>OE_BiophormidsHive</hive>
+	<spawnWeight>0.05</spawnWeight>
+	<boss>OE_Monarchid</boss>
+	<insects>
+	  <OE_Labryscid>10</OE_Labryscid>
+	  <OE_Razorsythe>7</OE_Razorsythe>
+	  <OE_Winglance>4</OE_Winglance>
+	  <OE_Brontarok>2</OE_Brontarok>
+	  <OE_Swarmella>1</OE_Swarmella>
+	</insects>
+  </VFEInsectoids.InsectGenelineDef>
+
+</Defs>

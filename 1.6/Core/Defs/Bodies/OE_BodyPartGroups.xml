@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Raptor ====================-->
+  <BodyPartGroupDef>
+    <defName>OELeftFootClawAttackTool</defName>
+    <label>left sickle claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OERightFootClawAttackTool</defName>
+    <label>right sickle claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OELeftArmClawAttackTool</defName>
+    <label>left arm claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OERightArmClawAttackTool</defName>
+    <label>right arm claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+<!--=============== Tionant ====================-->
+  <BodyPartGroupDef>
+    <defName>OELeftInsectClawAttackTool</defName>
+    <label>left insect claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OERightInsectClawAttackTool</defName>
+    <label>right insect claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+<!--=============== Scorpid ====================-->
+  <BodyPartGroupDef>
+    <defName>OESting</defName>
+    <label>sting</label>
+  </BodyPartGroupDef>
+
+<!--=============== Returned ====================-->
+  <BodyPartGroupDef>
+    <defName>OE_ReturnedLeftLimb</defName>
+    <label>left arachna arm</label>
+    <labelShort>arachna arm</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OE_ReturnedRightLimb</defName>
+    <label>right arachna arm</label>
+    <labelShort>arachna arm</labelShort>
+    <listOrder>78</listOrder>
+  </BodyPartGroupDef>
+
+</Defs>

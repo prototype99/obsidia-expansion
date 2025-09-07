@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC - Chainsword ====================-->
+<OMC_Trophy_Chainsword.label>Благословення Імператриці</OMC_Trophy_Chainsword.label>
+<OMC_Trophy_Chainsword.description>Старий добрий пиломеч призначений знищення ворогів Імперії Обсидії.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OMC_Trophy_Chainsword.description>
+
+<OMC_Trophy_Chainsword.tools.handle.label>рукоять</OMC_Trophy_Chainsword.tools.handle.label>
+<OMC_Trophy_Chainsword.tools.chain.label>ланцюг</OMC_Trophy_Chainsword.tools.chain.label>
+
+<OMC_Trophy_Chainsword_P.label>Сінхро Благословення Імператриці</OMC_Trophy_Chainsword_P.label>
+<OMC_Trophy_Chainsword_P.description>Старий добрий cінхро пиломеч призначений знищення ворогів Імперії Обсидії.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OMC_Trophy_Chainsword_P.description>
+
+<OMC_Trophy_Chainsword_P.tools.handle.label>рукоять</OMC_Trophy_Chainsword_P.tools.handle.label>
+<OMC_Trophy_Chainsword_P.tools.chain.label>ланцюг</OMC_Trophy_Chainsword_P.tools.chain.label>
+
+<!--=============== OMC - Pistol ====================-->
+<Bullet_OMC_Trophy_P.label>куля з Прототип sX-01a</Bullet_OMC_Trophy_P.label>
+
+<OMC_Trophy_Pistol.label>Прототип sX-01a</OMC_Trophy_Pistol.label>
+<OMC_Trophy_Pistol.verbs.Verb_Shoot.label>Прототип sX-01a</OMC_Trophy_Pistol.verbs.Verb_Shoot.label>
+<OMC_Trophy_Pistol.description>Тестовий зразок нового пістолета, що використовує модуль ІІ для покращення точності.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: встроенный модуль стабилизации точности.</OMC_Trophy_Pistol.description>
+
+<OMC_Trophy_Pistol.tools.grip.label>рукоять</OMC_Trophy_Pistol.tools.grip.label>
+<OMC_Trophy_Pistol.tools.barrel.label>ствол</OMC_Trophy_Pistol.tools.barrel.label>
+
+<OMC_Trophy_Pistol_P.label>Парагон Прототип sX-01a</OMC_Trophy_Pistol_P.label>
+<OMC_Trophy_Pistol_P.verbs.Verb_Shoot.label>Парагон Прототип sX-01a</OMC_Trophy_Pistol_P.verbs.Verb_Shoot.label>
+<OMC_Trophy_Pistol_P.description>Тестовий зразок нового парагон пістолета, що використовує модуль ІІ для покращення точності.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: встроенный модуль стабилизации точности.</OMC_Trophy_Pistol_P.description>
+
+<OMC_Trophy_Pistol_P.tools.grip.label>рукоять</OMC_Trophy_Pistol_P.tools.grip.label>
+<OMC_Trophy_Pistol_P.tools.barrel.label>ствол</OMC_Trophy_Pistol_P.tools.barrel.label>
+
+<OMC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Прототип sX-01a</OMC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OTC - Elemental Sword ====================-->
+<!--=============== Acid ====================-->
+<OTC_Trophy_Sword_Acid.label>Кислотний Розлом</OTC_Trophy_Sword_Acid.label>
+<OTC_Trophy_Sword_Acid.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Кислотним ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OTC_Trophy_Sword_Acid.description>
+
+<OTC_Trophy_Sword_Acid.tools.handle.label>рукоять</OTC_Trophy_Sword_Acid.tools.handle.label>
+<OTC_Trophy_Sword_Acid.tools.point.label>вістря</OTC_Trophy_Sword_Acid.tools.point.label>
+
+<OTC_Trophy_Sword_P_Acid.label>Сінхро Кислотний Розлом</OTC_Trophy_Sword_P_Acid.label>
+<OTC_Trophy_Sword_P_Acid.description>Унікальний елементальний cінхро меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Кислотним ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OTC_Trophy_Sword_P_Acid.description>
+
+<OTC_Trophy_Sword_P_Acid.tools.handle.label>рукоять</OTC_Trophy_Sword_P_Acid.tools.handle.label>
+<OTC_Trophy_Sword_P_Acid.tools.point.label>вістря</OTC_Trophy_Sword_P_Acid.tools.point.label>
+<!--=============== Cryo ====================-->
+<OTC_Trophy_Sword_Cryo.label>Кріо Розлом</OTC_Trophy_Sword_Cryo.label>
+<OTC_Trophy_Sword_Cryo.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Кріо ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OTC_Trophy_Sword_Cryo.description>
+
+<OTC_Trophy_Sword_Cryo.tools.handle.label>рукоять</OTC_Trophy_Sword_Cryo.tools.handle.label>
+<OTC_Trophy_Sword_Cryo.tools.point.label>вістря</OTC_Trophy_Sword_Cryo.tools.point.label>
+
+<OTC_Trophy_Sword_P_Cryo.label>Сінхро Кріо Розлом</OTC_Trophy_Sword_P_Cryo.label>
+<OTC_Trophy_Sword_P_Cryo.description>Унікальний елементальний cінхро меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Кріо ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OTC_Trophy_Sword_P_Cryo.description>
+
+<OTC_Trophy_Sword_P_Cryo.tools.handle.label>рукоять</OTC_Trophy_Sword_P_Cryo.tools.handle.label>
+<OTC_Trophy_Sword_P_Cryo.tools.point.label>вістря</OTC_Trophy_Sword_P_Cryo.tools.point.label>
+<!--=============== Fire ====================-->
+<OTC_Trophy_Sword_Fire.label>Вогненний Розлом</OTC_Trophy_Sword_Fire.label>
+<OTC_Trophy_Sword_Fire.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Вогненним ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OTC_Trophy_Sword_Fire.description>
+
+<OTC_Trophy_Sword_Fire.tools.handle.label>рукоять</OTC_Trophy_Sword_Fire.tools.handle.label>
+<OTC_Trophy_Sword_Fire.tools.point.label>вістря</OTC_Trophy_Sword_Fire.tools.point.label>
+
+<OTC_Trophy_Sword_P_Fire.label>Сінхро Вогненний Розлом</OTC_Trophy_Sword_P_Fire.label>
+<OTC_Trophy_Sword_P_Fire.description>Унікальний елементальний cінхро меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Вогненним ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</OTC_Trophy_Sword_P_Fire.description>
+
+<OTC_Trophy_Sword_P_Fire.tools.handle.label>рукоять</OTC_Trophy_Sword_P_Fire.tools.handle.label>
+<OTC_Trophy_Sword_P_Fire.tools.point.label>вістря</OTC_Trophy_Sword_P_Fire.tools.point.label>
+<!--=============== EMP ====================-->
+<OTC_Trophy_Sword_EMP.label>ЕМІ Розлом</OTC_Trophy_Sword_EMP.label>
+<OTC_Trophy_Sword_EMP.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено ЕМІ ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OTC_Trophy_Sword_EMP.description>
+
+<OTC_Trophy_Sword_EMP.tools.handle.label>рукоять</OTC_Trophy_Sword_EMP.tools.handle.label>
+<OTC_Trophy_Sword_EMP.tools.point.label>вістря</OTC_Trophy_Sword_EMP.tools.point.label>
+
+<OTC_Trophy_Sword_P_EMP.label>Сінхро ЕМІ Розлом</OTC_Trophy_Sword_P_EMP.label>
+<OTC_Trophy_Sword_P_EMP.description>Уникальный элементальный Сінхро меч из ограниченной серии.\n\nЦе рідкісна трофейна зброя Заряджено ЕМІ ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OTC_Trophy_Sword_P_EMP.description>
+
+<OTC_Trophy_Sword_P_EMP.tools.handle.label>рукоять</OTC_Trophy_Sword_P_EMP.tools.handle.label>
+<OTC_Trophy_Sword_P_EMP.tools.point.label>вістря</OTC_Trophy_Sword_P_EMP.tools.point.label>
+
+<!--=============== OTC - Cards ====================-->
+<Bullet_OTC_Trophy_C.label>карта Ренді</Bullet_OTC_Trophy_C.label>
+
+<OTC_Trophy_Cards.label>Колода Ренді</OTC_Trophy_Cards.label>
+<OTC_Trophy_Cards.verbs.Verb_Shoot.label>Колода Ренді</OTC_Trophy_Cards.verbs.Verb_Shoot.label>
+<OTC_Trophy_Cards.description>Колода бойових метальних карт, розроблена якимось інженером Ренді.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: здатний наносити випадковий додатковий тип шкоди.</OTC_Trophy_Cards.description>
+
+<OTC_Trophy_Cards.tools.pouch.label>кісет</OTC_Trophy_Cards.tools.pouch.label>
+<OTC_Trophy_Cards.tools.card.label>карта</OTC_Trophy_Cards.tools.card.label>
+
+<OTC_Trophy_Cards_P.label>Парагон Колода Ренді</OTC_Trophy_Cards_P.label>
+<OTC_Trophy_Cards_P.verbs.Verb_Shoot.label>Парагон Колода Ренді</OTC_Trophy_Cards_P.verbs.Verb_Shoot.label>
+<OTC_Trophy_Cards_P.description>Парагон колода бойових метальних карт, розроблена якимось інженером Ренді.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: здатний наносити випадковий додатковий тип шкоди.</OTC_Trophy_Cards_P.description>
+
+<OTC_Trophy_Cards_P.tools.pouch.label>кісет</OTC_Trophy_Cards_P.tools.pouch.label>
+<OTC_Trophy_Cards_P.tools.card.label>карта</OTC_Trophy_Cards_P.tools.card.label>
+
+<OTC_Trophy_Cards_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Колода Ренді</OTC_Trophy_Cards_P.comps.CompUniqueWeapon.namerLabels.0>
+<OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OCC - Drillspear ====================-->
+<OCC_Trophy_Drillspear.label>Балор</OCC_Trophy_Drillspear.label>
+<OCC_Trophy_Drillspear.description>Дриль-спис, репліка особистої зброї великого Балора майстра облог.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: конструкція призначена для руйнування будівель.</OCC_Trophy_Drillspear.description>
+
+<OCC_Trophy_Drillspear.tools.handle.label>рукоять</OCC_Trophy_Drillspear.tools.handle.label>
+<OCC_Trophy_Drillspear.tools.drill.label>дриль</OCC_Trophy_Drillspear.tools.drill.label>
+
+<OCC_Trophy_Drillspear_P.label>Сінхро Балор</OCC_Trophy_Drillspear_P.label>
+<OCC_Trophy_Drillspear_P.description>Сінхро Дриль-спис, репліка особистої зброї великого Балора майстра облог.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: конструкція призначена для руйнування будівель.</OCC_Trophy_Drillspear_P.description>
+
+<OCC_Trophy_Drillspear_P.tools.handle.label>рукоять</OCC_Trophy_Drillspear_P.tools.handle.label>
+<OCC_Trophy_Drillspear_P.tools.drill.label>дриль</OCC_Trophy_Drillspear_P.tools.drill.label>
+
+<!--=============== OCC - Railgun ====================-->
+<Bullet_OCC_Trophy_RG.label>заряд із Кроносу</Bullet_OCC_Trophy_RG.label>
+
+<OCC_Trophy_Railgun.label>Кронос</OCC_Trophy_Railgun.label>
+<OCC_Trophy_Railgun.verbs.Verb_Shoot.label>Кронос</OCC_Trophy_Railgun.verbs.Verb_Shoot.label>
+<OCC_Trophy_Railgun.description>Зразок нової експериментальної зброї - рельсотрон.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: надшвидкі вибухові снаряди.</OCC_Trophy_Railgun.description>
+
+<OCC_Trophy_Railgun.tools.stock.label>приклад</OCC_Trophy_Railgun.tools.stock.label>
+<OCC_Trophy_Railgun.tools.barrel.label>ствол</OCC_Trophy_Railgun.tools.barrel.label>
+
+<OCC_Trophy_Railgun_P.label>Парагон Кронос</OCC_Trophy_Railgun_P.label>
+<OCC_Trophy_Railgun_P.verbs.Verb_Shoot.label>Парагон Кронос</OCC_Trophy_Railgun_P.verbs.Verb_Shoot.label>
+<OCC_Trophy_Railgun_P.description>Зразок нової експериментальної зброї - парагон рельсотрон.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: надшвидкі вибухові снаряди.</OCC_Trophy_Railgun_P.description>
+
+<OCC_Trophy_Railgun_P.tools.stock.label>приклад</OCC_Trophy_Railgun_P.tools.stock.label>
+<OCC_Trophy_Railgun_P.tools.barrel.label>ствол</OCC_Trophy_Railgun_P.tools.barrel.label>
+
+<OCC_Trophy_Railgun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Кронос</OCC_Trophy_Railgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - Scepter ====================-->
+<OEC_Trophy_Scepter.label>Стародавній скіпетр</OEC_Trophy_Scepter.label>
+<OEC_Trophy_Scepter.description>Стародавній скіпетр створений на основі інопланетного артефакту.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: посилює псі-здатності носія.</OEC_Trophy_Scepter.description>
+
+<OEC_Trophy_Scepter.tools.ornament.label>орнамент</OEC_Trophy_Scepter.tools.ornament.label>
+
+<OEC_Trophy_Scepter_P.label>Сінхро Стародавній скіпетр</OEC_Trophy_Scepter_P.label>
+<OEC_Trophy_Scepter_P.description>Стародавній сінхро скіпетр створений на основі інопланетного артефакту.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: посилює псі-здатності носія.</OEC_Trophy_Scepter_P.description>
+
+<OEC_Trophy_Scepter_P.tools.ornament.label>орнамент</OEC_Trophy_Scepter_P.tools.ornament.label>
+
+<!--=============== OEC - Pistol ====================-->
+<Bullet_OEC_Trophy_P.label>куля з Божественність</Bullet_OEC_Trophy_P.label>
+
+<OEC_Trophy_Pistol.label>Божественність</OEC_Trophy_Pistol.label>
+<OEC_Trophy_Pistol.verbs.Verb_Shoot.label>Божественність</OEC_Trophy_Pistol.verbs.Verb_Shoot.label>
+<OEC_Trophy_Pistol.description>Цей античний пістолет служить Імперії Обсидії вже кілька століть.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики і псі-здатності.</OEC_Trophy_Pistol.description>
+
+<OEC_Trophy_Pistol.tools.blade.label>клинок</OEC_Trophy_Pistol.tools.blade.label>
+
+<OEC_Trophy_Pistol_P.label>Парагон Божественність</OEC_Trophy_Pistol_P.label>
+<OEC_Trophy_Pistol_P.verbs.Verb_Shoot.label>Парагон Божественність</OEC_Trophy_Pistol_P.verbs.Verb_Shoot.label>
+<OEC_Trophy_Pistol_P.description>Цей античний парагон пістолет служить Імперії Обсидії вже кілька століть.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики і псі-здатності.</OEC_Trophy_Pistol_P.description>
+
+<OEC_Trophy_Pistol_P.tools.blade.label>клинок</OEC_Trophy_Pistol_P.tools.blade.label>
+
+<OEC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Божественність</OEC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Sickle ====================-->
+<!--=============== Normal ====================-->
+<ODC_Trophy_Sickle_A.label>Спокуса</ODC_Trophy_Sickle_A.label>
+<ODC_Trophy_Sickle_A.description>Архаїчний серп створюється найкращими ковалями за спеціальним замовленням еліти Обсидійських Скитальців.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</ODC_Trophy_Sickle_A.description>
+
+<ODC_Trophy_Sickle_A.tools.handle.label>рукоять</ODC_Trophy_Sickle_A.tools.handle.label>
+<ODC_Trophy_Sickle_A.tools.blade.label>клинок</ODC_Trophy_Sickle_A.tools.blade.label>
+
+<ODC_Trophy_Sickle_A_P.label>Сінхро Спокуса</ODC_Trophy_Sickle_A_P.label>
+<ODC_Trophy_Sickle_A_P.description>Архаїчний сінхро серп, створюється кращими ковалями за спеціальним замовленням еліти Обсидійських Скитальців. Це рідкісна трофейна зброя. Особливість: вбудований модуль, що покращує бойові характеристики.</ODC_Trophy_Sickle_A_P.description>
+
+<ODC_Trophy_Sickle_A_P.tools.handle.label>рукоять</ODC_Trophy_Sickle_A_P.tools.handle.label>
+<ODC_Trophy_Sickle_A_P.tools.blade.label>клинок</ODC_Trophy_Sickle_A_P.tools.blade.label>
+<!--=============== Emergent ====================-->
+<ODC_Trophy_Sickle_B.label>Спокуса - Зародження</ODC_Trophy_Sickle_B.label>
+<ODC_Trophy_Sickle_B.description>Архаїчний серп створюється найкращими ковалями за спеціальним замовленням еліти Обсидійських Скитальців.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</ODC_Trophy_Sickle_B.description>
+
+<ODC_Trophy_Sickle_B.tools.handle.label>рукоять</ODC_Trophy_Sickle_B.tools.handle.label>
+<ODC_Trophy_Sickle_B.tools.blade.label>клинок</ODC_Trophy_Sickle_B.tools.blade.label>
+
+<ODC_Trophy_Sickle_B_P.label>Сінхро Спокуса - Зародження</ODC_Trophy_Sickle_B_P.label>
+<ODC_Trophy_Sickle_B_P.description>Архаїчний сінхро серп, створюється кращими ковалями за спеціальним замовленням еліти Обсидійських Скитальців. Це рідкісна трофейна зброя. Особливість: вбудований модуль, що покращує бойові характеристики.</ODC_Trophy_Sickle_B_P.description>
+
+<ODC_Trophy_Sickle_B_P.tools.handle.label>рукоять</ODC_Trophy_Sickle_B_P.tools.handle.label>
+<ODC_Trophy_Sickle_B_P.tools.blade.label>клинок</ODC_Trophy_Sickle_B_P.tools.blade.label>
+<!--=============== Apex ====================-->
+<ODC_Trophy_Sickle_C.label>Спокуса - Вершина</ODC_Trophy_Sickle_C.label>
+<ODC_Trophy_Sickle_C.description>Архаїчний серп створюється найкращими ковалями за спеціальним замовленням еліти Обсидійських Скитальців.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.</ODC_Trophy_Sickle_C.description>
+
+<ODC_Trophy_Sickle_C.tools.handle.label>рукоять</ODC_Trophy_Sickle_C.tools.handle.label>
+<ODC_Trophy_Sickle_C.tools.blade.label>клинок</ODC_Trophy_Sickle_C.tools.blade.label>
+
+<ODC_Trophy_Sickle_C_P.label>Сінхро Спокуса - Вершина</ODC_Trophy_Sickle_C_P.label>
+<ODC_Trophy_Sickle_C_P.description>Архаїчний сінхро серп, створюється кращими ковалями за спеціальним замовленням еліти Обсидійських Скитальців. Це рідкісна трофейна зброя. Особливість: вбудований модуль, що покращує бойові характеристики.</ODC_Trophy_Sickle_C_P.description>
+
+<ODC_Trophy_Sickle_C_P.tools.handle.label>рукоять</ODC_Trophy_Sickle_C_P.tools.handle.label>
+<ODC_Trophy_Sickle_C_P.tools.blade.label>клинок</ODC_Trophy_Sickle_C_P.tools.blade.label>
+
+<!--=============== ODC - Blade Launcher ====================-->
+<Bullet_ODC_Trophy_BL.label>пила Жнива</Bullet_ODC_Trophy_BL.label>
+<Bullet_ODC_Trophy_BL_C.label>пила Жнива</Bullet_ODC_Trophy_BL_C.label>
+<!--=============== Normal ====================-->
+<ODC_Trophy_BladeLauncher_A.label>Жнива</ODC_Trophy_BladeLauncher_A.label>
+<ODC_Trophy_BladeLauncher_A.verbs.Verb_Shoot.label>Жнива</ODC_Trophy_BladeLauncher_A.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_A.description>Рідкісний важкий піломет, зброя використовується Скитальцями Обсидії. Ця зброя була робочим інструментом, але модернізованим для далекого бою.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує робочі вміння.</ODC_Trophy_BladeLauncher_A.description>
+
+<ODC_Trophy_BladeLauncher_A.tools.saw.label>пила</ODC_Trophy_BladeLauncher_A.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_A_P.label>Парагон Жнива</ODC_Trophy_BladeLauncher_A_P.label>
+<ODC_Trophy_BladeLauncher_A_P.verbs.Verb_Shoot.label>Парагон Жнива</ODC_Trophy_BladeLauncher_A_P.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_A_P.description>Рідкісний важкий парагон піломет, зброя використовується Скитальцями Обсидії. Ця зброя була робочим інструментом, але модернізованим для далекого бою.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує робочі вміння.</ODC_Trophy_BladeLauncher_A_P.description>
+
+<ODC_Trophy_BladeLauncher_A_P.tools.saw.label>пила</ODC_Trophy_BladeLauncher_A_P.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_A_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Жнива</ODC_Trophy_BladeLauncher_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Emergent ====================-->
+<ODC_Trophy_BladeLauncher_B.label>Жнива - Зародження</ODC_Trophy_BladeLauncher_B.label>
+<ODC_Trophy_BladeLauncher_B.verbs.Verb_Shoot.label>Жнива - Зародження</ODC_Trophy_BladeLauncher_B.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_B.description>Рідкісний важкий піломет, зброя використовується Скитальцями Обсидії. Ця зброя була робочим інструментом, але модернізованим для далекого бою.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує робочі вміння.</ODC_Trophy_BladeLauncher_B.description>
+
+<ODC_Trophy_BladeLauncher_B.tools.saw.label>пила</ODC_Trophy_BladeLauncher_B.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_B_P.label>Парагон Жнива - Зародження</ODC_Trophy_BladeLauncher_B_P.label>
+<ODC_Trophy_BladeLauncher_B_P.verbs.Verb_Shoot.label>Парагон Жнива - Зародження</ODC_Trophy_BladeLauncher_B_P.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_B_P.description>Рідкісний важкий парагон піломет, зброя використовується Скитальцями Обсидії. Ця зброя була робочим інструментом, але модернізованим для далекого бою.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує робочі вміння.</ODC_Trophy_BladeLauncher_B_P.description>
+
+<ODC_Trophy_BladeLauncher_B_P.tools.saw.label>пила</ODC_Trophy_BladeLauncher_B_P.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_B_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Жнива - Зародження</ODC_Trophy_BladeLauncher_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Apex ====================-->
+<ODC_Trophy_BladeLauncher_C.label>Жнива - Вершина</ODC_Trophy_BladeLauncher_C.label>
+<ODC_Trophy_BladeLauncher_C.verbs.Verb_Shoot.label>Жнива - Вершина</ODC_Trophy_BladeLauncher_C.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_C.description>Рідкісний важкий піломет, зброя використовується Скитальцями Обсидії. Ця зброя була робочим інструментом, але модернізованим для далекого бою.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує робочі вміння.</ODC_Trophy_BladeLauncher_C.description>
+
+<ODC_Trophy_BladeLauncher_C.tools.saw.label>пила</ODC_Trophy_BladeLauncher_C.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_C_P.label>Парагон Жнива - Вершина</ODC_Trophy_BladeLauncher_C_P.label>
+<ODC_Trophy_BladeLauncher_C_P.verbs.Verb_Shoot.label>Парагон Жнива - Вершина</ODC_Trophy_BladeLauncher_C_P.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_C_P.description>Рідкісний важкий парагон піломет, зброя використовується Скитальцями Обсидії. Ця зброя була робочим інструментом, але модернізованим для далекого бою.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує робочі вміння.</ODC_Trophy_BladeLauncher_C_P.description>
+
+<ODC_Trophy_BladeLauncher_C_P.tools.saw.label>пила</ODC_Trophy_BladeLauncher_C_P.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_C_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Жнива - Вершина</ODC_Trophy_BladeLauncher_C_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OE - Shovel ====================-->
+<OE_Trophy_Shovel.label>Лопата Ллойда</OE_Trophy_Shovel.label>
+<OE_Trophy_Shovel.description>Улюблена лопата величезного Ллойда Фронтери, який отримав звання Найбільшого забудовника, відомого у всій Імперії Обсидії.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує шахтарські вміння.</OE_Trophy_Shovel.description>
+
+<OE_Trophy_Shovel.tools.shovel.label>лопата</OE_Trophy_Shovel.tools.shovel.label>
+
+<OE_Trophy_Shovel_P.label>Сінхро Лопата Ллойда</OE_Trophy_Shovel_P.label>
+<OE_Trophy_Shovel_P.description>Улюблена сінхро лопата величезного Ллойда Фронтери, який отримав звання Найбільшого забудовника, відомого у всій Імперії Обсидії.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує шахтарські вміння.</OE_Trophy_Shovel_P.description>
+
+<OE_Trophy_Shovel_P.tools.shovel.label>лопата</OE_Trophy_Shovel_P.tools.shovel.label>
+
+<!--=============== OE - Broken Sword ====================-->
+<OE_Trophy_BrokenSword.label>Меч Чорного Принца</OE_Trophy_BrokenSword.label>
+<OE_Trophy_BrokenSword.description>За легендою, з неба впав невідомий меч, і його першим власником став Чорний принц Лелуш, який розпочав останню війну Обсидії. Але перед закінченням цієї війни меч зламався в момент смерті Лелуша, і до цього дня від нього залишився лише фрагмент.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: покращує соціальний вплив та здатність нанести випадковий додатковий тип шкоди.</OE_Trophy_BrokenSword.description>
+
+<OE_Trophy_BrokenSword.tools.handle.label>рукоять</OE_Trophy_BrokenSword.tools.handle.label>
+<OE_Trophy_BrokenSword.tools.point.label>вістря</OE_Trophy_BrokenSword.tools.point.label>
+<OE_Trophy_BrokenSword.tools.edge.label>лезо</OE_Trophy_BrokenSword.tools.edge.label>
+
+<OE_Trophy_BrokenSword_P.label>Сінхро Меч Чорного Принца</OE_Trophy_BrokenSword_P.label>
+<OE_Trophy_BrokenSword_P.description>За легендою, з неба впав невідомий сінхро меч, і його першим власником став Чорний принц Лелуш, який розпочав останню війну Обсидії. Але перед закінченням цієї війни меч зламався в момент смерті Лелуша, і до цього дня від нього залишився лише фрагмент.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: покращує соціальний вплив та здатність нанести випадковий додатковий тип шкоди.</OE_Trophy_BrokenSword_P.description>
+
+<OE_Trophy_BrokenSword_P.tools.handle.label>рукоять</OE_Trophy_BrokenSword_P.tools.handle.label>
+<OE_Trophy_BrokenSword_P.tools.point.label>вістря</OE_Trophy_BrokenSword_P.tools.point.label>
+<OE_Trophy_BrokenSword_P.tools.edge.label>лезо</OE_Trophy_BrokenSword_P.tools.edge.label>
+
+<!--=============== OE - Mech Hammer ====================-->
+<OE_Trophy_MechHammer.label>Вогонь кузні</OE_Trophy_MechHammer.label>
+<OE_Trophy_MechHammer.description>Молот знаменитого стародавнього коваля Люка Ейнсворта, який передавався і покращувався з покоління в покоління.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує навички механізатора.</OE_Trophy_MechHammer.description>
+
+<OE_Trophy_MechHammer.tools.handle.label>рукоять</OE_Trophy_MechHammer.tools.handle.label>
+<OE_Trophy_MechHammer.tools.head.label>бойова частина</OE_Trophy_MechHammer.tools.head.label>
+
+<OE_Trophy_MechHammer_P.label>Сінхро Вогонь кузні</OE_Trophy_MechHammer_P.label>
+<OE_Trophy_MechHammer_P.description>Сінхро молот знаменитого стародавнього коваля Люка Ейнсворта, який передавався і покращувався з покоління в покоління.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує навички механізатора.</OE_Trophy_MechHammer_P.description>
+
+<OE_Trophy_MechHammer_P.tools.handle.label>рукоять</OE_Trophy_MechHammer_P.tools.handle.label>
+<OE_Trophy_MechHammer_P.tools.head.label>бойова частина</OE_Trophy_MechHammer_P.tools.head.label>
+
+<!--=============== OE - Repair Pistol ====================-->
+<Bullet_OE_Trophy_RP.label>енерго-куля з Прототип sX-02a</Bullet_OE_Trophy_RP.label>
+
+<OE_Trophy_RepairPistol.label>Прототип sX-02a</OE_Trophy_RepairPistol.label>
+<OE_Trophy_RepairPistol.verbs.Verb_Shoot.label>Прототип sX-02a</OE_Trophy_RepairPistol.verbs.Verb_Shoot.label>
+<OE_Trophy_RepairPistol.description>Прототип нового ремонтного пістолета, оснащеного синтезатором інструментів, що полегшує більшість будівельних робіт.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує будівельні вміння.</OE_Trophy_RepairPistol.description>
+
+<OE_Trophy_RepairPistol.tools.grip.label>рукоять</OE_Trophy_RepairPistol.tools.grip.label>
+<OE_Trophy_RepairPistol.tools.barrel.label>ствол</OE_Trophy_RepairPistol.tools.barrel.label>
+
+<OE_Trophy_RepairPistol_P.label>Парагон Прототип sX-02a</OE_Trophy_RepairPistol_P.label>
+<OE_Trophy_RepairPistol_P.verbs.Verb_Shoot.label>Парагон Прототип sX-02a</OE_Trophy_RepairPistol_P.verbs.Verb_Shoot.label>
+<OE_Trophy_RepairPistol_P.description>Прототип нового ремонтного парагон пістолета, оснащеного синтезатором інструментів, що полегшує більшість будівельних робіт.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує будівельні вміння.</OE_Trophy_RepairPistol_P.description>
+
+<OE_Trophy_RepairPistol_P.tools.grip.label>рукоять</OE_Trophy_RepairPistol_P.tools.grip.label>
+<OE_Trophy_RepairPistol_P.tools.barrel.label>ствол</OE_Trophy_RepairPistol_P.tools.barrel.label>
+
+<OE_Trophy_RepairPistol_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Прототип sX-02a</OE_Trophy_RepairPistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OE - Unstable Gun ====================-->
+<Bullet_OE_Trophy_UG.label>енерго-шар з могутності титанів</Bullet_OE_Trophy_UG.label>
+
+<OE_Trophy_UnstableGun.label>Могутність Титанов</OE_Trophy_UnstableGun.label>
+<OE_Trophy_UnstableGun.verbs.Verb_Shoot.label>Могутність Титанов</OE_Trophy_UnstableGun.verbs.Verb_Shoot.label>
+<OE_Trophy_UnstableGun.description>Це заборонена зброя в Імперії Обсидія, і її можна отримати лише незаконним шляхом. Через погано спроектовану систему подачі енергії зброя досить слабка, але є 5% шанс, що зброя зможе випустити відразу величезну кількість енергії, завдавши неймовірних ушкоджень.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: має 5% шанс завдати неймовірних ушкоджень.</OE_Trophy_UnstableGun.description>
+
+<OE_Trophy_UnstableGun.tools.grip.label>рукоять</OE_Trophy_UnstableGun.tools.grip.label>
+<OE_Trophy_UnstableGun.tools.barrel.label>ствол</OE_Trophy_UnstableGun.tools.barrel.label>
+
+<OE_Trophy_UnstableGun_P.label>Парагон Могутність Титанів</OE_Trophy_UnstableGun_P.label>
+<OE_Trophy_UnstableGun_P.verbs.Verb_Shoot.label>Парагон Могутність Титанів</OE_Trophy_UnstableGun_P.verbs.Verb_Shoot.label>
+<OE_Trophy_UnstableGun_P.description>Це заборонена парагон зброя в Імперії Обсидія, і її можна отримати лише незаконним шляхом. Через погано спроектовану систему подачі енергії зброя досить слабка, але є 5% шанс, що зброя зможе випустити відразу величезну кількість енергії, завдавши неймовірних ушкоджень.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: має 5% шанс завдати неймовірних ушкоджень.</OE_Trophy_UnstableGun_P.description>
+
+<OE_Trophy_UnstableGun_P.tools.grip.label>рукоять</OE_Trophy_UnstableGun_P.tools.grip.label>
+<OE_Trophy_UnstableGun_P.tools.barrel.label>ствол</OE_Trophy_UnstableGun_P.tools.barrel.label>
+
+<OE_Trophy_UnstableGun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Могутність Титанів</OE_Trophy_UnstableGun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OE - Sample Collector ====================-->
+<Bullet_OE_Trophy_SC.label>дротик з ашисогі джізо</Bullet_OE_Trophy_SC.label>
+
+<OE_Trophy_SampleCollector.label>Ашисогі Джізо</OE_Trophy_SampleCollector.label>
+<OE_Trophy_SampleCollector.verbs.Verb_Shoot.label>Ашисогі Джізо</OE_Trophy_SampleCollector.verbs.Verb_Shoot.label>
+<OE_Trophy_SampleCollector.description>Один із забутих об'єктів дослідження Маюрі Куротсучі. Дротики цієї зброї містять нестабільний токсин, який випадковим чином впливає на ціль. Не рекомендується використовувати в бою, оскільки ефекти можуть випадково послаблювати або посилювати ціль.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: наносить нестабільне токсичне ушкодження, яка застосовує різні випадкові ефекти.</OE_Trophy_SampleCollector.description>
+
+<OE_Trophy_SampleCollector.tools.grip.label>рукоять</OE_Trophy_SampleCollector.tools.grip.label>
+<OE_Trophy_SampleCollector.tools.barrel.label>ствол</OE_Trophy_SampleCollector.tools.barrel.label>
+
+<OE_Trophy_SampleCollector_P.label>Парагон Ашисогі Джізо</OE_Trophy_SampleCollector_P.label>
+<OE_Trophy_SampleCollector_P.verbs.Verb_Shoot.label>Парагон Ашисогі Джізо</OE_Trophy_SampleCollector_P.verbs.Verb_Shoot.label>
+<OE_Trophy_SampleCollector_P.description>Один із забутих об'єктів дослідження Маюрі Куротсучі. Дротики цієї парагон зброї містять нестабільний токсин, який випадковим чином впливає на ціль. Не рекомендується використовувати в бою, оскільки ефекти можуть випадково послаблювати або посилювати ціль.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: наносить нестабільне токсичне ушкодження, яка застосовує різні випадкові ефекти.</OE_Trophy_SampleCollector_P.description>
+
+<OE_Trophy_SampleCollector_P.tools.grip.label>рукоять</OE_Trophy_SampleCollector_P.tools.grip.label>
+<OE_Trophy_SampleCollector_P.tools.barrel.label>ствол</OE_Trophy_SampleCollector_P.tools.barrel.label>
+
+<OE_Trophy_SampleCollector_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Ашисогі Джізо</OE_Trophy_SampleCollector_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OES - Legion Spear ====================-->
+<!--=============== Core ====================-->
+<Bullet_OES_LS_A.label>енерго-куля зі Списа Легіону</Bullet_OES_LS_A.label>
+
+<OES_LegionSpear_A.label>Спис Легіону</OES_LegionSpear_A.label>
+<OES_LegionSpear_A.verbs.Verb_Shoot.label>Спис Легіону</OES_LegionSpear_A.verbs.Verb_Shoot.label>
+<OES_LegionSpear_A.description>Це спис-пушка - копія основної зброї, створеної для Падшого Легіону. Спеціально модифікована зброя, заряджена Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЗброю можна модернізувати до 5 разів.</OES_LegionSpear_A.description>
+
+<OES_LegionSpear_A.tools.point.label>вістря</OES_LegionSpear_A.tools.point.label>
+<!--=============== Level-1 ====================-->
+<Bullet_OES_LS_B.label>енерго-куля зі Списа Легіону Mk.I</Bullet_OES_LS_B.label>
+
+<OES_LegionSpear_B.label>Спис Легіону Mk.I</OES_LegionSpear_B.label>
+<OES_LegionSpear_B.verbs.Verb_Shoot.label>Спис Легіону Mk.I</OES_LegionSpear_B.verbs.Verb_Shoot.label>
+<OES_LegionSpear_B.description>Це спис-пушка - копія основної зброї, створеної для Падшого Легіону. Спеціально модифікована зброя, заряджена Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЗброю можна модернізувати до 5 разів.\n\nMk.I - ушкодження зброї збільшено.</OES_LegionSpear_B.description>
+
+<OES_LegionSpear_B.tools.point.label>вістря</OES_LegionSpear_B.tools.point.label>
+<!--=============== Level-2 ====================-->
+<Bullet_OES_LS_C.label>енерго-куля зі Списа Легіону Mk.II</Bullet_OES_LS_C.label>
+
+<OES_LegionSpear_C.label>Спис Легіону Mk.II</OES_LegionSpear_C.label>
+<OES_LegionSpear_C.verbs.Verb_Shoot.label>Спис Легіону Mk.II</OES_LegionSpear_C.verbs.Verb_Shoot.label>
+<OES_LegionSpear_C.description>Це спис-пушка - копія основної зброї, створеної для Падшого Легіону. Спеціально модифікована зброя, заряджена Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЗброю можна модернізувати до 5 разів.\n\nMk.I - ушкодження зброї збільшено.\n\nMk.II - дальність стрільби збільшено.</OES_LegionSpear_C.description>
+
+<OES_LegionSpear_C.tools.point.label>вістря</OES_LegionSpear_C.tools.point.label>
+<!--=============== Level-3 ====================-->
+<Bullet_OES_LS_D.label>енерго-куля зі Списа Легіону Mk.III</Bullet_OES_LS_D.label>
+
+<OES_LegionSpear_D.label>Спис Легіону Mk.III</OES_LegionSpear_D.label>
+<OES_LegionSpear_D.verbs.Verb_Shoot.label>Спис Легіону Mk.III</OES_LegionSpear_D.verbs.Verb_Shoot.label>
+<OES_LegionSpear_D.description>Це спис-пушка - копія основної зброї, створеної для Падшого Легіону. Спеціально модифікована зброя, заряджена Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЗброю можна модернізувати до 5 разів.\n\nMk.I - ушкодження зброї збільшено.\n\nMk.II - дальність стрільби збільшено.\n\nMk.III - точність зброї збільшено.</OES_LegionSpear_D.description>
+
+<OES_LegionSpear_D.tools.point.label>вістря</OES_LegionSpear_D.tools.point.label>
+<!--=============== Level-4 ====================-->
+<Bullet_OES_LS_E.label>енерго-куля зі Списа Легіону Mk.IV</Bullet_OES_LS_E.label>
+
+<OES_LegionSpear_E.label>Спис Легіону Mk.IV</OES_LegionSpear_E.label>
+<OES_LegionSpear_E.verbs.Verb_Shoot.label>Спис Легіону Mk.IV</OES_LegionSpear_E.verbs.Verb_Shoot.label>
+<OES_LegionSpear_E.description>Це спис-пушка - копія основної зброї, створеної для Падшого Легіону. Спеціально модифікована зброя, заряджена Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЗброю можна модернізувати до 5 разів.\n\nMk.I - ушкодження зброї збільшено.\n\nMk.II - дальність стрільби збільшено.\n\nMk.III - точність зброї збільшено.\n\nMk.IV - пробивання броні збільшено.</OES_LegionSpear_E.description>
+
+<OES_LegionSpear_E.tools.point.label>вістря</OES_LegionSpear_E.tools.point.label>
+<!--=============== Level-5 ====================-->
+<Bullet_OES_LS_F.label>енерго-куля зі Списа Легіону Mk.V</Bullet_OES_LS_F.label>
+
+<OES_LegionSpear_F.label>Спис Легіону Mk.V</OES_LegionSpear_F.label>
+<OES_LegionSpear_F.verbs.Verb_Shoot.label>Спис Легіону Mk.V</OES_LegionSpear_F.verbs.Verb_Shoot.label>
+<OES_LegionSpear_F.description>Це спис-пушка - копія основної зброї, створеної для Падшого Легіону. Спеціально модифікована зброя, заряджена Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЗброю можна модернізувати до 5 разів.\n\nMk.I - ушкодження зброї збільшено.\n\nMk.II - дальність стрільби збільшено.\n\nMk.III - точність зброї збільшено.\n\nMk.IV - пробивання броні збільшено.\n\nMk.V - усі характеристики значно збільшені.</OES_LegionSpear_F.description>
+
+<OES_LegionSpear_F.tools.point.label>вістря</OES_LegionSpear_F.tools.point.label>
+
+<!--=============== CAC - Lust ====================-->
+<Wave_CAC_Trophy_W.label>Хвиля з Першого гріха Арахни - Блуд</Wave_CAC_Trophy_W.label>
+
+<CAC_Trophy_Whip.label>Перший гріх Арахни - Блуд</CAC_Trophy_Whip.label>
+<CAC_Trophy_Whip.verbs.Verb_Shoot.label>Перший гріх Арахни - Блуд</CAC_Trophy_Whip.verbs.Verb_Shoot.label>
+<CAC_Trophy_Whip.description>Амальгама зброя створена на основі технології ЕГО. Кнут використовується Жерцями CAC. Особливо модифікована зброя з підвищеною потужністю заряджена Кислотним та Вогненним ушкодженням.\n\nЦя зброя символізує Перший гріх Арахни - Блуд. Збільшує соціальні характеристики та дресирування тварин власника за рахунок збільшеної потреби у радості.</CAC_Trophy_Whip.description>
+
+<CAC_Trophy_Whip.tools.handle.label>рукоять</CAC_Trophy_Whip.tools.handle.label>
+
+<!--=============== CAC - Gluttony ====================-->
+<Bullet_CAC_Trophy_MG.label>куля з Другого гріха Арахни - Ненажерливість</Bullet_CAC_Trophy_MG.label>
+
+<CAC_Trophy_Minigun.label>Другий гріх Арахни - Ненажерливість</CAC_Trophy_Minigun.label>
+<CAC_Trophy_Minigun.verbs.Verb_Shoot.label>Другий гріх Арахни - Ненажерливість</CAC_Trophy_Minigun.verbs.Verb_Shoot.label>
+<CAC_Trophy_Minigun.description>Амальгама зброя створена на основі технології ЕГО. Миниган використовується Жерцями CAC. Особливо модифікована зброя з підвищеною потужністю заряджена Кислотним та Вогненним ушкодженням.\n\nЦя зброя символізує Другий гріх Арахни - Ненажерливість. Збільшує показники лікування власника за рахунок підвищеної потреби в харчуванні.</CAC_Trophy_Minigun.description>
+
+<CAC_Trophy_Minigun.tools.fang.label>кіготь</CAC_Trophy_Minigun.tools.fang.label>
+
+<CAC_Trophy_Minigun.comps.CompUniqueWeapon.namerLabels.0>Другий гріх Арахни - Ненажерливість</CAC_Trophy_Minigun.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Greed ====================-->
+<CAC_Trophy_BigScythe.label>Третій гріх Арахни - Жадібність</CAC_Trophy_BigScythe.label>
+<CAC_Trophy_BigScythe.description>Амальгама зброя створена на основі технології ЕГО. Большая Коса використовується Жерцями CAC. Особливо модифікована зброя з підвищеною потужністю заряджена Кислотним та Вогненним ушкодженням.\n\nЦя зброя символізує Третій гріх Арахни - Жадібність. Збільшує характеристики навичок збирання власника за рахунок зниження робочих характеристик.</CAC_Trophy_BigScythe.description>
+
+<CAC_Trophy_BigScythe.tools.handle.label>рукоять</CAC_Trophy_BigScythe.tools.handle.label>
+<CAC_Trophy_BigScythe.tools.edge.label>лезо</CAC_Trophy_BigScythe.tools.edge.label>
+
+<!--=============== CAC - Sloth ====================-->
+<Bullet_CAC_Trophy_P.label>куля з Четвертого гріха Арахни - Зневіра</Bullet_CAC_Trophy_P.label>
+
+<CAC_Trophy_Pistol.label>Четвертий гріх Арахни - Зневіра</CAC_Trophy_Pistol.label>
+<CAC_Trophy_Pistol.verbs.Verb_Shoot.label>Четвертий гріх Арахни - Зневіра</CAC_Trophy_Pistol.verbs.Verb_Shoot.label>
+<CAC_Trophy_Pistol.description>Амальгама зброя створена на основі технології ЕГО. Пистолет використовується Жерцями CAC. Особливо модифікована зброя з підвищеною потужністю заряджена Кислотним та Вогненним ушкодженням.\n\nЦя зброя символізує Четвертий гріх Арахни - Зневіра. Збільшує характеристики механітора власнику за рахунок зниження характеристики швидкості пересування та збільшеної потреби у відпочинку.</CAC_Trophy_Pistol.description>
+
+<CAC_Trophy_Pistol.tools.fang.label>кіготь</CAC_Trophy_Pistol.tools.fang.label>
+
+<CAC_Trophy_Pistol.comps.CompUniqueWeapon.namerLabels.0>Четвертий гріх Арахни - Зневіра</CAC_Trophy_Pistol.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Wrath ====================-->
+<Bullet_CAC_Trophy_S.label>дріб П'ятого гріха Арахни - Гнів</Bullet_CAC_Trophy_S.label>
+
+<CAC_Trophy_Shotgun.label>П'ятий гріх Арахни - Гнів</CAC_Trophy_Shotgun.label>
+<CAC_Trophy_Shotgun.verbs.Verb_Shoot.label>П'ятий гріх Арахни - Гнів</CAC_Trophy_Shotgun.verbs.Verb_Shoot.label>
+<CAC_Trophy_Shotgun.description>Амальгама зброя створена на основі технології ЕГО. Дробовик використовується Жерцями CAC. Особливо модифікована зброя з підвищеною потужністю заряджена Кислотним та Вогненним ушкодженням.\n\nЦя зброя символізує П'ятий гріх Арахни - Гнів. Збільшує шанс власника завдати х2 або х3 ушкодження зброєю за рахунок зниження психічної стійкості.</CAC_Trophy_Shotgun.description>
+
+<CAC_Trophy_Shotgun.tools.fang.label>кіготь</CAC_Trophy_Shotgun.tools.fang.label>
+
+<CAC_Trophy_Shotgun.comps.CompUniqueWeapon.namerLabels.0>П'ятий гріх Арахни - Гнів</CAC_Trophy_Shotgun.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Envy ====================-->
+<CAC_Trophy_Knife.label>Шостий гріх Арахни - Заздрість</CAC_Trophy_Knife.label>
+<CAC_Trophy_Knife.description>Амальгама зброя створена на основі технології ЕГО. Нож використовується Жерцями CAC. Особливо модифікована зброя з підвищеною потужністю заряджена Кислотним та Вогненним ушкодженням.\n\nЦя зброя символізує Шостий гріх Арахни - Заздрість. Збільшує характеристики роботи та навчання власника за рахунок зниження соціальних характеристик.</CAC_Trophy_Knife.description>
+
+<CAC_Trophy_Knife.tools.handle.label>рукоять</CAC_Trophy_Knife.tools.handle.label>
+<CAC_Trophy_Knife.tools.blade.label>клинок</CAC_Trophy_Knife.tools.blade.label>
+<CAC_Trophy_Knife.tools.point.label>вістря</CAC_Trophy_Knife.tools.point.label>
+
+<!--=============== CAC - Pride ====================-->
+<Bullet_CAC_Trophy_SR.label>куля з Сьомого гріха Арахни - Гординя</Bullet_CAC_Trophy_SR.label>
+
+<CAC_Trophy_SniperRifle.label>Сьомий гріх Арахни - Гординя</CAC_Trophy_SniperRifle.label>
+<CAC_Trophy_SniperRifle.verbs.Verb_Shoot.label>Сьомий гріх Арахни - Гординя</CAC_Trophy_SniperRifle.verbs.Verb_Shoot.label>
+<CAC_Trophy_SniperRifle.description>Амальгама зброя створена на основі технології ЕГО. Снайперская Винтовка використовується Жерцями CAC. Особливо модифікована зброя з підвищеною потужністю заряджена Кислотним та Вогненним ушкодженням.\n\nЦя зброя символізує Сьомий гріх Арахни - Гординя. Збільшує псі-характеристики власника за рахунок підвищеної больової чутливості.</CAC_Trophy_SniperRifle.description>
+
+<CAC_Trophy_SniperRifle.tools.fang.label>кіготь</CAC_Trophy_SniperRifle.tools.fang.label>
+
+<CAC_Trophy_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>Сьомий гріх Арахни - Гординя</CAC_Trophy_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - PowerFist ====================-->
+<!--=============== Core ====================-->
+<ODC_Trophy_PowerFist_A.label>Прото Рукавичка</ODC_Trophy_PowerFist_A.label>
+<ODC_Trophy_PowerFist_A.description>Дивна рукавичка сили невідомого походження та творця. Відзначено Скитальцями Обсидії. Схоже, її можна легко покращити.</ODC_Trophy_PowerFist_A.description>
+
+<ODC_Trophy_PowerFist_A.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_A.tools.gauntlet.label>
+<!--=============== Level-1 ====================-->
+<ODC_Trophy_PowerFist_B.label>Рукавичка Вічності</ODC_Trophy_PowerFist_B.label>
+<ODC_Trophy_PowerFist_B.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.</ODC_Trophy_PowerFist_B.description>
+
+<ODC_Trophy_PowerFist_B.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_B.tools.gauntlet.label>
+<!--=============== Level-2 ====================-->
+<ODC_Trophy_PowerFist_C.label>Рукавичка Вічності Mk.I</ODC_Trophy_PowerFist_C.label>
+<ODC_Trophy_PowerFist_C.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.</ODC_Trophy_PowerFist_C.description>
+
+<ODC_Trophy_PowerFist_C.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_C.tools.gauntlet.label>
+<!--=============== Level-3 ====================-->
+<ODC_Trophy_PowerFist_D.label>Рукавичка Вічності Mk.II</ODC_Trophy_PowerFist_D.label>
+<ODC_Trophy_PowerFist_D.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.\n\nMk.II - Камінь сили Паломніков. Соціальні та Переговорні здібності збільшені.</ODC_Trophy_PowerFist_D.description>
+
+<ODC_Trophy_PowerFist_D.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_D.tools.gauntlet.label>
+<!--=============== Level-4 ====================-->
+<ODC_Trophy_PowerFist_E.label>Рукавичка Вічності Mk.III</ODC_Trophy_PowerFist_E.label>
+<ODC_Trophy_PowerFist_E.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.\n\nMk.II - Камінь сили Паломніков. Соціальні та Переговорні здібності збільшені.\n\nMk.III - Камінь сил Синдикатів. Швидкість падіння радості знижена.</ODC_Trophy_PowerFist_E.description>
+
+<ODC_Trophy_PowerFist_E.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_E.tools.gauntlet.label>
+<!--=============== Level-5 ====================-->
+<ODC_Trophy_PowerFist_F.label>Рукавичка Вічності Mk.IV</ODC_Trophy_PowerFist_F.label>
+<ODC_Trophy_PowerFist_F.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.\n\nMk.II - Камінь сили Паломніков. Соціальні та Переговорні здібності збільшені.\n\nMk.III - Камінь сил Синдикатів. Швидкість падіння радості знижена.\n\nMk.IV - Камінь сили Мощі. Втрата від зброї збільшена. Здатний наносити додаткове Вогняне ушкодження.</ODC_Trophy_PowerFist_F.description>
+
+<ODC_Trophy_PowerFist_F.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_F.tools.gauntlet.label>
+<!--=============== Level-6 ====================-->
+<ODC_Trophy_PowerFist_G.label>Рукавичка Вічності Mk.V</ODC_Trophy_PowerFist_G.label>
+<ODC_Trophy_PowerFist_G.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.\n\nMk.II - Камінь сили Паломніков. Соціальні та Переговорні здібності збільшені.\n\nMk.III - Камінь сил Синдикатів. Швидкість падіння радості знижена.\n\nMk.IV - Камінь сили Мощі. Втрата від зброї збільшена. Здатний наносити додаткове Вогняне ушкодження.\n\nMk.V - Камінь сили Спритності. Збільшено шанси на ухилення та попадання у ближньому бою. Здатний наносити додаткове ЕМІ ушкодження.</ODC_Trophy_PowerFist_G.description>
+
+<ODC_Trophy_PowerFist_G.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_G.tools.gauntlet.label>
+<!--=============== Level-7 ====================-->
+<ODC_Trophy_PowerFist_H.label>Рукавичка Вічності Mk.VI</ODC_Trophy_PowerFist_H.label>
+<ODC_Trophy_PowerFist_H.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.\n\nMk.II - Камінь сили Паломніков. Соціальні та Переговорні здібності збільшені.\n\nMk.III - Камінь сил Синдикатів. Швидкість падіння радості знижена.\n\nMk.IV - Камінь сили Мощі. Втрата від зброї збільшена. Здатний наносити додаткове Вогняне ушкодження.\n\nMk.V - Камінь сили Спритності. Збільшено шанси на ухилення та попадання у ближньому бою. Здатний наносити додаткове ЕМІ ушкодження.\n\nMk.VI - Камінь сили Життя. Чинник лікування збільшений. Здатний наносити додаткове Кислотне ушкодження.</ODC_Trophy_PowerFist_H.description>
+
+<ODC_Trophy_PowerFist_H.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_H.tools.gauntlet.label>
+<!--=============== Level-8 ====================-->
+<ODC_Trophy_PowerFist_I.label>Рукавичка Вічності Mk.VII</ODC_Trophy_PowerFist_I.label>
+<ODC_Trophy_PowerFist_I.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.\n\nMk.II - Камінь сили Паломніков. Соціальні та Переговорні здібності збільшені.\n\nMk.III - Камінь сил Синдикатів. Швидкість падіння радості знижена.\n\nMk.IV - Камінь сили Мощі. Втрата від зброї збільшена. Здатний наносити додаткове Вогняне ушкодження.\n\nMk.V - Камінь сили Спритності. Збільшено шанси на ухилення та попадання у ближньому бою. Здатний наносити додаткове ЕМІ ушкодження.\n\nMk.VI - Камінь сили Життя. Чинник лікування збільшений. Здатний наносити додаткове Кислотне ушкодження.\n\nMk.VII - Камінь сили Мудрості. Глобальний фактор навчання збільшено. Здатний наносити додаткове Кріо ушкодження.</ODC_Trophy_PowerFist_I.description>
+
+<ODC_Trophy_PowerFist_I.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_I.tools.gauntlet.label>
+<!--=============== Level-9 ====================-->
+<ODC_Trophy_PowerFist_J.label>Рукавичка Вічності Mk.VIII</ODC_Trophy_PowerFist_J.label>
+<ODC_Trophy_PowerFist_J.description>Модифікована невідома рукавичка сили була розроблена невідомим творцем зі Скитальців Обсидії для використання Каменів Сили.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nMk.I - Камінь сили Відступників. Глобальна швидкість роботи збільшена.\n\nMk.II - Камінь сили Паломніков. Соціальні та Переговорні здібності збільшені.\n\nMk.III - Камінь сил Синдикатів. Швидкість падіння радості знижена.\n\nMk.IV - Камінь сили Мощі. Втрата від зброї збільшена. Здатний наносити додаткове Вогняне ушкодження.\n\nMk.V - Камінь сили Спритності. Збільшено шанси на ухилення та попадання у ближньому бою. Здатний наносити додаткове ЕМІ ушкодження.\n\nMk.VI - Камінь сили Життя. Чинник лікування збільшений. Здатний наносити додаткове Кислотне ушкодження.\n\nMk.VII - Камінь сили Мудрості. Глобальний фактор навчання збільшено. Здатний наносити додаткове Кріо ушкодження.\n\nMk.VIII - Камінь сили Всесвіту. Розкриває приховані сили. Залежить від доступних сил у всесвіті.</ODC_Trophy_PowerFist_J.description>
+
+<ODC_Trophy_PowerFist_J.tools.gauntlet.label>рукавичка</ODC_Trophy_PowerFist_J.tools.gauntlet.label>
+
+<!--=============== Inlaid Trophy ====================-->
+<!--=============== OMC - Chainsword ====================-->
+<OMC_Trophy_Chainsword_I.label>Інкрустоване Благословення Імператриці</OMC_Trophy_Chainsword_I.label>
+<OMC_Trophy_Chainsword_I.description>Старий добрий пиломеч призначений знищення ворогів Імперії Обсидії.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nІнкрустовано Камінь сили Мудрості: бонусні характеристики зброї збільшено.</OMC_Trophy_Chainsword_I.description>
+
+<OMC_Trophy_Chainsword_I.tools.handle.label>рукоять</OMC_Trophy_Chainsword_I.tools.handle.label>
+<OMC_Trophy_Chainsword_I.tools.chain.label>ланцюг</OMC_Trophy_Chainsword_I.tools.chain.label>
+
+<!--=============== OMC - Pistol ====================-->
+<Bullet_OMC_Trophy_P_I.label>куля з Інкрустованого Прототипу sX-01a</Bullet_OMC_Trophy_P_I.label>
+
+<OMC_Trophy_Pistol_I.label>Інкрустований Прототип sX-01a</OMC_Trophy_Pistol_I.label>
+<OMC_Trophy_Pistol_I.verbs.Verb_Shoot.label>Інкрустований Прототип sX-01a</OMC_Trophy_Pistol_I.verbs.Verb_Shoot.label>
+<OMC_Trophy_Pistol_I.description>Тестовий зразок нового пістолета, що використовує модуль ІІ для покращення точності.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: встроенный модуль стабилизации точности.\n\nІнкрустовано Камінь сили Життя: операційні характеристики зброї збільшено.</OMC_Trophy_Pistol_I.description>
+
+<OMC_Trophy_Pistol_I.tools.grip.label>рукоять</OMC_Trophy_Pistol_I.tools.grip.label>
+<OMC_Trophy_Pistol_I.tools.barrel.label>ствол</OMC_Trophy_Pistol_I.tools.barrel.label>
+
+<OMC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>Інкрустований Прототип sX-01a</OMC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OTC - Elemental Sword ====================-->
+<!--=============== Acid ====================-->
+<OTC_Trophy_Sword_I_Acid.label>Інкрустований Кислотний Розлом</OTC_Trophy_Sword_I_Acid.label>
+<OTC_Trophy_Sword_I_Acid.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Кислотним ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nІнкрустовано Камінь сили Життя: операційні характеристики зброї збільшено.</OTC_Trophy_Sword_I_Acid.description>
+
+<OTC_Trophy_Sword_I_Acid.tools.handle.label>рукоять</OTC_Trophy_Sword_I_Acid.tools.handle.label>
+<OTC_Trophy_Sword_I_Acid.tools.point.label>вістря</OTC_Trophy_Sword_I_Acid.tools.point.label>
+<!--=============== Cryo ====================-->
+<OTC_Trophy_Sword_I_Cryo.label>Інкрустований Кріо Розлом</OTC_Trophy_Sword_I_Cryo.label>
+<OTC_Trophy_Sword_I_Cryo.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Кріо ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nІнкрустовано Камінь сили Життя: операційні характеристики зброї збільшено.</OTC_Trophy_Sword_I_Cryo.description>
+
+<OTC_Trophy_Sword_I_Cryo.tools.handle.label>рукоять</OTC_Trophy_Sword_I_Cryo.tools.handle.label>
+<OTC_Trophy_Sword_I_Cryo.tools.point.label>вістря</OTC_Trophy_Sword_I_Cryo.tools.point.label>
+<!--=============== Fire ====================-->
+<OTC_Trophy_Sword_I_Fire.label>Інкрустований Вогненний Розлом</OTC_Trophy_Sword_I_Fire.label>
+<OTC_Trophy_Sword_I_Fire.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено Вогненним ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nІнкрустовано Камінь сили Життя: операційні характеристики зброї збільшено.</OTC_Trophy_Sword_I_Fire.description>
+
+<OTC_Trophy_Sword_I_Fire.tools.handle.label>рукоять</OTC_Trophy_Sword_I_Fire.tools.handle.label>
+<OTC_Trophy_Sword_I_Fire.tools.point.label>вістря</OTC_Trophy_Sword_I_Fire.tools.point.label>
+<!--=============== EMP ====================-->
+<OTC_Trophy_Sword_I_EMP.label>Інкрустований ЕМІ Розлом</OTC_Trophy_Sword_I_EMP.label>
+<OTC_Trophy_Sword_I_EMP.description>Унікальний елементальний меч із обмеженої серії.\n\nЦе рідкісна трофейна зброя Заряджено ЕМІ ушкодженням.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.\n\nІнкрустовано Камінь сили Життя: операційні характеристики зброї збільшено.</OTC_Trophy_Sword_I_EMP.description>
+
+<OTC_Trophy_Sword_I_EMP.tools.handle.label>рукоять</OTC_Trophy_Sword_I_EMP.tools.handle.label>
+<OTC_Trophy_Sword_I_EMP.tools.point.label>вістря</OTC_Trophy_Sword_I_EMP.tools.point.label>
+
+<!--=============== OTC - Cards ====================-->
+<Bullet_OTC_Trophy_C_I.label>карта Ренді</Bullet_OTC_Trophy_C_I.label>
+
+<OTC_Trophy_Cards_I.label>Інкрустована Колода Ренді</OTC_Trophy_Cards_I.label>
+<OTC_Trophy_Cards_I.verbs.Verb_Shoot.label>Інкрустована Колода Ренді</OTC_Trophy_Cards_I.verbs.Verb_Shoot.label>
+<OTC_Trophy_Cards_I.description>Колода бойових метальних карт, розроблена якимось інженером Ренді.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: здатний наносити випадковий додатковий тип шкоди.\n\nІнкрустовано Камінь сили Мощі: бойові характеристики зброї збільшено.</OTC_Trophy_Cards_I.description>
+
+<OTC_Trophy_Cards_I.tools.pouch.label>кісет</OTC_Trophy_Cards_I.tools.pouch.label>
+<OTC_Trophy_Cards_I.tools.card.label>карта</OTC_Trophy_Cards_I.tools.card.label>
+
+<OTC_Trophy_Cards_I.comps.CompUniqueWeapon.namerLabels.0>Інкрустована Колода Ренді</OTC_Trophy_Cards_I.comps.CompUniqueWeapon.namerLabels.0>
+<OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OCC - Drillspear ====================-->
+<OCC_Trophy_Drillspear_I.label>Інкрустований Балор</OCC_Trophy_Drillspear_I.label>
+<OCC_Trophy_Drillspear_I.description>Дриль-спис, репліка особистої зброї великого Балора майстра облог.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: конструкція призначена для руйнування будівель.\n\nІнкрустовано Камінь сили Мощі: бойові характеристики зброї збільшено.</OCC_Trophy_Drillspear_I.description>
+
+<OCC_Trophy_Drillspear_I.tools.handle.label>рукоять</OCC_Trophy_Drillspear_I.tools.handle.label>
+<OCC_Trophy_Drillspear_I.tools.drill.label>дриль</OCC_Trophy_Drillspear_I.tools.drill.label>
+
+<!--=============== OCC - Railgun ====================-->
+<Bullet_OCC_Trophy_RG_I.label>заряд із Інкрустованого Кроносу</Bullet_OCC_Trophy_RG_I.label>
+
+<OCC_Trophy_Railgun_I.label>Інкрустований Кронос</OCC_Trophy_Railgun_I.label>
+<OCC_Trophy_Railgun_I.verbs.Verb_Shoot.label>Інкрустований Кронос</OCC_Trophy_Railgun_I.verbs.Verb_Shoot.label>
+<OCC_Trophy_Railgun_I.description>Зразок нової експериментальної зброї - рельсотрон.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: надшвидкі вибухові снаряди.\n\nІнкрустовано Камінь сили Спритності: характеристики ефективності зброї збільшено.</OCC_Trophy_Railgun_I.description>
+
+<OCC_Trophy_Railgun_I.tools.stock.label>приклад</OCC_Trophy_Railgun_I.tools.stock.label>
+<OCC_Trophy_Railgun_I.tools.barrel.label>ствол</OCC_Trophy_Railgun_I.tools.barrel.label>
+
+<OCC_Trophy_Railgun_I.comps.CompUniqueWeapon.namerLabels.0>Інкрустований Кронос</OCC_Trophy_Railgun_I.comps.CompUniqueWeapon.namerLabels.0>
+<OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - Scepter ====================-->
+<OEC_Trophy_Scepter_I.label>Інкрустований Стародавній скіпетр</OEC_Trophy_Scepter_I.label>
+<OEC_Trophy_Scepter_I.description>Стародавній скіпетр створений на основі інопланетного артефакту.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: посилює псі-здатності носія.\n\nІнкрустовано Камінь сили Мудрості: бонусні характеристики зброї збільшено.</OEC_Trophy_Scepter_I.description>
+
+<OEC_Trophy_Scepter_I.tools.ornament.label>орнамент</OEC_Trophy_Scepter_I.tools.ornament.label>
+
+<!--=============== OEC - Pistol ====================-->
+<Bullet_OEC_Trophy_P_I.label>куля з Інкрустованої Божественності</Bullet_OEC_Trophy_P_I.label>
+
+<OEC_Trophy_Pistol_I.label>Інкрустована Божественність</OEC_Trophy_Pistol_I.label>
+<OEC_Trophy_Pistol_I.verbs.Verb_Shoot.label>Інкрустована Божественність</OEC_Trophy_Pistol_I.verbs.Verb_Shoot.label>
+<OEC_Trophy_Pistol_I.description>Цей античний пістолет служить Імперії Обсидії вже кілька століть.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики і псі-здатності.\n\nІнкрустовано Камінь сили Спритності: характеристики ефективності зброї збільшено.</OEC_Trophy_Pistol_I.description>
+
+<OEC_Trophy_Pistol_I.tools.blade.label>клинок</OEC_Trophy_Pistol_I.tools.blade.label>
+
+<OEC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>Інкрустована Божественність</OEC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Sickle ====================-->
+<!--=============== Apex ====================-->
+<ODC_Trophy_Sickle_C_I.label>Інкрустована Спокуса - Вершина</ODC_Trophy_Sickle_C_I.label>
+<ODC_Trophy_Sickle_C_I.description>Архаїчний серп створюється найкращими ковалями за спеціальним замовленням еліти Обсидійських Скитальців.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує бойові характеристики.\n\nІнкрустовано Камінь сили Мощі: бойові характеристики зброї збільшено.</ODC_Trophy_Sickle_C_I.description>
+
+<ODC_Trophy_Sickle_C_I.tools.handle.label>рукоять</ODC_Trophy_Sickle_C_I.tools.handle.label>
+<ODC_Trophy_Sickle_C_I.tools.blade.label>клинок</ODC_Trophy_Sickle_C_I.tools.blade.label>
+
+<!--=============== ODC - Blade Launcher ====================-->
+<Bullet_ODC_Trophy_BL_C_I.label>пила Інкрустованої Жатвы</Bullet_ODC_Trophy_BL_C_I.label>
+<!--=============== Apex ====================-->
+<ODC_Trophy_BladeLauncher_C_I.label>Інкрустовані Жнива - Вершина</ODC_Trophy_BladeLauncher_C_I.label>
+<ODC_Trophy_BladeLauncher_C_I.verbs.Verb_Shoot.label>Інкрустовані Жнива - Вершина</ODC_Trophy_BladeLauncher_C_I.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_C_I.description>Рідкісний важкий піломет, зброя використовується Скитальцями Обсидії. Ця зброя була робочим інструментом, але модернізованим для далекого бою.\n\nЦе рідкісна трофейна зброя.\n\nОсобливість: вбудований модуль, що покращує робочі вміння.\n\nІнкрустовано Камінь сили Мудрості: бонусні характеристики зброї збільшено.</ODC_Trophy_BladeLauncher_C_I.description>
+
+<ODC_Trophy_BladeLauncher_C_I.tools.saw.label>пила</ODC_Trophy_BladeLauncher_C_I.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_C_I.comps.CompUniqueWeapon.namerLabels.0>Інкрустовані Жнива - Вершина</ODC_Trophy_BladeLauncher_C_I.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Trophy OES - BigHammer ====================-->
+<OES_Trophy_BigHammer.label>Вага зрадника</OES_Trophy_BigHammer.label>
+<OES_Trophy_BigHammer.description>Під руїнами того, що колись шанувалося, руки Волскігге під потемнілим небом створили молот. Кристал, що вінчає зброю, - не просто прикраса, це осколок його розбитої вірності. Як один із залишених, колишній герой Імперії, Волскігге викував цю зброю для нової мети. Вага молота віддзеркалює нищівний тягар зради, його удари відгукуються сумом забутого воїна. Кожен удар - нагадування про його падіння і новий шлях, яким він іде, оповитий тінню.\n\nСпеціально модифікована зброя, заряджена Оглушальним, Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.</OES_Trophy_BigHammer.description>
+
+<OES_Trophy_BigHammer.tools.handle.label>рукоять</OES_Trophy_BigHammer.tools.handle.label>
+<OES_Trophy_BigHammer.tools.head.label>бойова частина</OES_Trophy_BigHammer.tools.head.label>
+
+<!--=============== Trophy OMG - Knife ====================-->
+<OMG_Trophy_Knife.label>Пластинолом</OMG_Trophy_Knife.label>
+<OMG_Trophy_Knife.description>Викуваний з єдиною метою - пробивати обладунки, Пластинолом - це зброя війни, здатна використовувати найслабші місця в будь-якому захисті. Точність і сила кинджала роблять його смертоносним у руках досвідченого воїна.\n\nСпеціально модифікована зброя, заряджена Некробейн, Оглушальним и ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.</OMG_Trophy_Knife.description>
+
+<OMG_Trophy_Knife.tools.handle.label>рукоять</OMG_Trophy_Knife.tools.handle.label>
+<OMG_Trophy_Knife.tools.blade.label>клинок</OMG_Trophy_Knife.tools.blade.label>
+<OMG_Trophy_Knife.tools.point.label>вістря</OMG_Trophy_Knife.tools.point.label>
+
+<!--=============== Trophy OMG - Guitar ====================-->
+<Bullet_OMG_Trophy_PG.label>ноти з Ехо Неон</Bullet_OMG_Trophy_PG.label>
+
+<OMG_Trophy_PowerGuitar.label>Ехо Неон</OMG_Trophy_PowerGuitar.label>
+<OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>Ехо Неон</OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>
+<OMG_Trophy_PowerGuitar.description>Ця кібергітара невідомого походження оточена чутками, передаючись від одного власника до іншого. Згідно з легендами, колись вона жила своїм власним життям і тепер володіє дивним, примарним резонансом.\n\nСпеціально модифікована зброя, заряджена Некробейн, Оглушальним и ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.</OMG_Trophy_PowerGuitar.description>
+
+<OMG_Trophy_PowerGuitar.tools.head.label>голова</OMG_Trophy_PowerGuitar.tools.head.label>
+
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - інферно</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядці</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>Ехо Неон</OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>
+
+<OMG_Trophy_PowerGuitar.comps.CompUniqueWeapon.namerLabels.0>Ехо Неон</OMG_Trophy_PowerGuitar.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.cooldownGerund>перезаряджається</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== Trophy OMG - Revolver ====================-->
+<Bullet_OMG_Trophy_R.label>куля з Поклик Смерті</Bullet_OMG_Trophy_R.label>
+<Shell_OMG_Trophy_R.label>капсула з Поклик Смерті</Shell_OMG_Trophy_R.label>
+
+<OMG_Trophy_Revolver.label>Поклик Смерті</OMG_Trophy_Revolver.label>
+<OMG_Trophy_Revolver.verbs.Verb_Shoot.label>Поклик Смерті</OMG_Trophy_Revolver.verbs.Verb_Shoot.label>
+<OMG_Trophy_Revolver.description>Створений за темною технологією, цей револьвер здатний перетворити будь-яку жертву на невблаганного Шамблера. З кожним натисканням на курок мертві повстають знову, прокляті, щоб ходити в нечестивому рабстві.\n\nСпеціально модифікована зброя, заряджена Некробейн, Мертвим пилом, Оглушальним и ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.</OMG_Trophy_Revolver.description>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - запалити</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядці</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<OMG_Trophy_Revolver.tools.grip.label>рукоять</OMG_Trophy_Revolver.tools.grip.label>
+<OMG_Trophy_Revolver.tools.barrel.label>ствол</OMG_Trophy_Revolver.tools.barrel.label>
+
+<OMG_Trophy_Revolver.comps.CompUniqueWeapon.namerLabels.0>Поклик Смерті</OMG_Trophy_Revolver.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>перезаряджається</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== EGO - Dragonbane ====================-->
+<!--=============== Level-1 ====================-->
+<EGO_Trophy_Dragonbane_A.label>Біч дракона - Укус</EGO_Trophy_Dragonbane_A.label>
+<EGO_Trophy_Dragonbane_A.description>Доктор Александер Айзекс ніколи не збирався вбивати драконів - лише розуміти їх. Однак у глибині його невпинних експериментів з'явилося щось неприродне. Зброя, народжена не майстерністю, а збоченою наукою і забутою волею, що жадає тієї самої сутності, яку вона була покликана знищити.\n\nВирощена Амальгама зброя, заряджена Кріо та Кислотним ушкодженням.\n\nНіж, народжений у результаті нечестивого злиття, що несе в собі потенціал для подальшого розвитку.</EGO_Trophy_Dragonbane_A.description>
+
+<EGO_Trophy_Dragonbane_A.tools.handle.label>рукоять</EGO_Trophy_Dragonbane_A.tools.handle.label>
+<EGO_Trophy_Dragonbane_A.tools.blade.label>клинок</EGO_Trophy_Dragonbane_A.tools.blade.label>
+<EGO_Trophy_Dragonbane_A.tools.point.label>вістря</EGO_Trophy_Dragonbane_A.tools.point.label>
+<!--=============== Level-2 ====================-->
+<EGO_Trophy_Dragonbane_B.label>Біч дракона - Удар </EGO_Trophy_Dragonbane_B.label>
+<EGO_Trophy_Dragonbane_B.description>Доктор Александер Айзекс ніколи не збирався вбивати драконів - лише розуміти їх. Однак у глибині його невпинних експериментів з'явилося щось неприродне. Зброя, народжена не майстерністю, а збоченою наукою і забутою волею, що жадає тієї самої сутності, яку вона була покликана знищити.\n\nВирощена Амальгама зброя, заряджена Кріо та Кислотним ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nНіж із підвищеною бронепробивністю. Його еволюція ще не закінчена.</EGO_Trophy_Dragonbane_B.description>
+
+<EGO_Trophy_Dragonbane_B.tools.handle.label>рукоять</EGO_Trophy_Dragonbane_B.tools.handle.label>
+<EGO_Trophy_Dragonbane_B.tools.blade.label>клинок</EGO_Trophy_Dragonbane_B.tools.blade.label>
+<EGO_Trophy_Dragonbane_B.tools.point.label>вістря</EGO_Trophy_Dragonbane_B.tools.point.label>
+<!--=============== Level-3 ====================-->
+<EGO_Trophy_Dragonbane_C.label>Біч дракона - Розріз</EGO_Trophy_Dragonbane_C.label>
+<EGO_Trophy_Dragonbane_C.description>Доктор Александер Айзекс ніколи не збирався вбивати драконів - лише розуміти їх. Однак у глибині його невпинних експериментів з'явилося щось неприродне. Зброя, народжена не майстерністю, а збоченою наукою і забутою волею, що жадає тієї самої сутності, яку вона була покликана знищити.\n\nВирощена Амальгама зброя, заряджена Кріо та Кислотним ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nМеч став ще потужнішим, хоча його набута вага уповільнює кожен удар. Його еволюція ще не закінчена.</EGO_Trophy_Dragonbane_C.description>
+
+<EGO_Trophy_Dragonbane_C.tools.handle.label>рукоять</EGO_Trophy_Dragonbane_C.tools.handle.label>
+<EGO_Trophy_Dragonbane_C.tools.point.label>вістря</EGO_Trophy_Dragonbane_C.tools.point.label>
+<EGO_Trophy_Dragonbane_C.tools.edge.label>лезо</EGO_Trophy_Dragonbane_C.tools.edge.label>
+<!--=============== Level-4 ====================-->
+<EGO_Trophy_Dragonbane_D.label>Біч дракона - Бойовий клинок</EGO_Trophy_Dragonbane_D.label>
+<EGO_Trophy_Dragonbane_D.description>Доктор Александер Айзекс ніколи не збирався вбивати драконів - лише розуміти їх. Однак у глибині його невпинних експериментів з'явилося щось неприродне. Зброя, народжена не майстерністю, а збоченою наукою і забутою волею, що жадає тієї самої сутності, яку вона була покликана знищити.\n\nВирощена Амальгама зброя, заряджена Кріо, Кислотним та Вогненним ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nМеч, який тепер горить неприродним полум'ям, запалюючи плоть і долю. Його еволюція ще не закінчена.</EGO_Trophy_Dragonbane_D.description>
+
+<EGO_Trophy_Dragonbane_D.tools.handle.label>рукоять</EGO_Trophy_Dragonbane_D.tools.handle.label>
+<EGO_Trophy_Dragonbane_D.tools.point.label>вістря</EGO_Trophy_Dragonbane_D.tools.point.label>
+<EGO_Trophy_Dragonbane_D.tools.edge.label>лезо</EGO_Trophy_Dragonbane_D.tools.edge.label>
+<!--=============== Level-5 ====================-->
+<EGO_Trophy_Dragonbane_E.label>Біч дракона - Тиран </EGO_Trophy_Dragonbane_E.label>
+<EGO_Trophy_Dragonbane_E.description>Доктор Александер Айзекс ніколи не збирався вбивати драконів - лише розуміти їх. Однак у глибині його невпинних експериментів з'явилося щось неприродне. Зброя, народжена не майстерністю, а збоченою наукою і забутою волею, що жадає тієї самої сутності, яку вона була покликана знищити.\n\nВирощена Амальгама зброя, заряджена Кріо, Кислотним та Вогненним ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nВеликий Меч руйнівної сили, уповільнений через свій жахливий розмір. Його еволюція ще не закінчена.</EGO_Trophy_Dragonbane_E.description>
+
+<EGO_Trophy_Dragonbane_E.tools.handle.label>рукоять</EGO_Trophy_Dragonbane_E.tools.handle.label>
+<EGO_Trophy_Dragonbane_E.tools.point.label>вістря</EGO_Trophy_Dragonbane_E.tools.point.label>
+<EGO_Trophy_Dragonbane_E.tools.edge.label>лезо</EGO_Trophy_Dragonbane_E.tools.edge.label>
+<!--=============== Level-6 ====================-->
+<EGO_Trophy_Dragonbane_F.label>Біч дракона - Спустошник</EGO_Trophy_Dragonbane_F.label>
+<EGO_Trophy_Dragonbane_F.description>Доктор Александер Айзекс ніколи не збирався вбивати драконів - лише розуміти їх. Однак у глибині його невпинних експериментів з'явилося щось неприродне. Зброя, народжена не майстерністю, а збоченою наукою і забутою волею, що жадає тієї самої сутності, яку вона була покликана знищити.\n\nВирощена Амальгама зброя, заряджена Кріо, Кислотним та Вогненним ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nСпис, просочений енергією стихій, б'є з неприродною силою. Його еволюція ще не закінчена.</EGO_Trophy_Dragonbane_F.description>
+
+<EGO_Trophy_Dragonbane_F.tools.shaft.label>держак</EGO_Trophy_Dragonbane_F.tools.shaft.label>
+<EGO_Trophy_Dragonbane_F.tools.point.label>вістря</EGO_Trophy_Dragonbane_F.tools.point.label>
+<!--=============== Level-7 ====================-->
+<EGO_Trophy_Dragonbane_G.label>Біч дракона - Вбивця богів</EGO_Trophy_Dragonbane_G.label>
+<EGO_Trophy_Dragonbane_G.description>Доктор Александер Айзекс ніколи не збирався вбивати драконів - лише розуміти їх. Однак у глибині його невпинних експериментів з'явилося щось неприродне. Зброя, народжена не майстерністю, а збоченою наукою і забутою волею, що жадає тієї самої сутності, яку вона була покликана знищити.\n\nВирощена Амальгама зброя, заряджена Кріо, Кислотним та Вогненним ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nСпис, що пробуджує приховані сили, його міць формується самим Всесвітом. Остання еволюція.</EGO_Trophy_Dragonbane_G.description>
+
+<EGO_Trophy_Dragonbane_G.tools.shaft.label>держак</EGO_Trophy_Dragonbane_G.tools.shaft.label>
+<EGO_Trophy_Dragonbane_G.tools.point.label>вістря</EGO_Trophy_Dragonbane_G.tools.point.label>
+
+</LanguageData>

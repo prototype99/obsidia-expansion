@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OEC Armor ====================-->
+<!--=============== Barrier ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Barrier</defName>
+    <label>OEC Inquisitor Armor(Protector)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Barrier/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>4125</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList>
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Barrier/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Barrier</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<comps>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
+		 <compClass>VFECore.CompShieldBubble</compClass>
+		 <blockRangedAttack>true</blockRangedAttack>
+		 <blockMeleeAttack>false</blockMeleeAttack>
+		 <showWhenDrafted>true</showWhenDrafted>
+		 <showOnHostiles>true</showOnHostiles>
+		 <showOnNeutralInCombat>true</showOnNeutralInCombat>
+		 <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		 <EnergyShieldRechargeRate>0.05</EnergyShieldRechargeRate>
+		 <EnergyShieldEnergyMax>125</EnergyShieldEnergyMax>
+		 <minShieldSize>1.4</minShieldSize>
+		 <maxShieldSize>1.8</maxShieldSize>
+		 <disableRotation>true</disableRotation>
+	  </li>
+	</comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

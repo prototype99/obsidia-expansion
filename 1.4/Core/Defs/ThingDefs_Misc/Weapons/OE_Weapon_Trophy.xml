@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Shovel ====================-->
+  <ThingDef Name="OETrophyShovelBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <SmoothingSpeed>0.50</SmoothingSpeed>
+	  <MiningYield>0.50</MiningYield>
+	  <MiningSpeed>0.50</MiningSpeed>
+	  <DeepDrillingSpeed>0.50</DeepDrillingSpeed>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.50</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>shovel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyShovelBase">
+    <defName>OE_Trophy_Shovel</defName>
+    <label>Lloyd's Shovel</label>
+    <description>The favorite shovel used by the greatest Lloyd Frontera, who received his title of The Greatest Estate Developer known throughout the Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves mining skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Shovel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Broken Sword ====================-->
+  <ThingDef Name="OETrophyBrokenSwordBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <SocialImpact>0.50</SocialImpact>
+	  <NegotiationAbility>0.50</NegotiationAbility>
+	  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.50</ConversionPower>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.50</SocialIdeoSpreadFrequencyFactor>
+	  <TradePriceImprovement>-0.50</TradePriceImprovement>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>5</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>OCCBlast</def>
+		    <amount>5</amount>
+            <chance>0.45</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+			<chance>0.45</chance>
+          </li>
+		  <li>
+            <def>OCCBlast</def>
+		    <amount>5</amount>
+            <chance>0.45</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyBrokenSwordBase">
+    <defName>OE_Trophy_BrokenSword</defName>
+    <label>Black Prince Sword</label>
+    <description>According to legend, an unknown sword fell from the skies and its first owner became Black Prince Lelouch, who started Obsidia's Last War. But before the end of this war, the sword broke at the time of Lelouch’s death, and to this day only a fragment of the sword remains.\n\nThis is a rare trophy weapon.\n\nFeature: improves social impact and able to deal a random additional type of damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_BrokenSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Repair Pistol ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OETrophyRepairPistolBase" ParentName="OERangedBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+	  <GeneralLaborSpeed>0.50</GeneralLaborSpeed>
+	  <ConstructSuccessChance>0.50</ConstructSuccessChance>
+	  <ConstructionSpeed>0.50</ConstructionSpeed>
+	  <FixBrokenDownBuildingSuccessChance>0.50</FixBrokenDownBuildingSuccessChance>
+	  <GlobalLearningFactor>-0.50</GlobalLearningFactor>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_Trophy_RP</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>17.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_Trophy_RP</defName>
+    <label>Prototype sX-02a energy bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_Trophy_EnergySmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyRepairPistolBase">
+    <defName>OE_Trophy_RepairPistol</defName>
+    <label>Prototype sX-02a</label>
+    <description>Prototype of a new repair pistol that equipped with a tools synthesizator which make most construction jobs easier.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves construction skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_RepairPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Unstable Gun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OETrophyUnstableGunBase" ParentName="OERangedBaseNC" Abstract="True">
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>6.0</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_Trophy_UG</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>20.9</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_Trophy_UG</defName>
+    <label>Titanstrike energy ball</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.75</armorPenetrationBase>
+      <speed>80</speed>
+	  <extraDamages>
+	    <li>
+         <def>OCCBlast</def>
+		 <amount>999</amount>
+         <chance>0.05</chance>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyUnstableGunBase">
+    <defName>OE_Trophy_UnstableGun</defName>
+    <label>Titanstrike</label>
+    <description>This is a prohibited weapon in Obsidia Empire and can only be obtained illegally. Due to a poorly designed energy delivery system, the weapon is quite weak, but there is a 5% chance that the weapon can release a huge amount of energy at once, causing incredible damage.\n\nThis is a rare trophy weapon.\n\nFeature: has a 5% chance of dealing incredible damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_UnstableGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Sample Collector ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OETrophySampleCollectorBase" ParentName="OERangedBaseNC" Abstract="True">
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <MedicalOperationSpeed>-0.25</MedicalOperationSpeed>
+	  <MedicalTendSpeed>-0.25</MedicalTendSpeed>
+	  <MedicalTendQuality>0.50</MedicalTendQuality>
+	  <SurgerySuccessChanceFactor>0.50</SurgerySuccessChanceFactor>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_Trophy_SC</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>12.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_Trophy_SC</defName>
+    <label>Ashisogi Jizō sting</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_Trophy_Dart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OEUnstableToxins</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+	  <armorPenetrationBase>0.9</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophySampleCollectorBase">
+    <defName>OE_Trophy_SampleCollector</defName>
+    <label>Ashisogi Jizō</label>
+    <description>One of the forgotten research objects of Mayuri Kurotsuchi. The darts of this weapon contain an unstable toxin that randomly affects the target. It is not recommended to use in combat, since the effects can randomly debuff or buff the target.\n\nThis is a rare trophy weapon.\n\nFeature: deals unstable toxin damage that applies various random effects.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_SampleCollector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+</Defs>

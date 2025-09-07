@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OEArmorBase">
+	<defName>OE_Armor_Kid</defName>
+    <label>obsidia kid armor</label>
+    <description>Light armor, well protects the owner with little mobility restriction. Designed for use by Obsidia Empire kids.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OE/Kid/OEArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>20000</WorkToMake>
+	  <Mass>5</Mass>
+	  <MarketValue>2025</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>25</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>10</CarryingCapacity>
+	  <MoveSpeed>-0.05</MoveSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OE_Obsidian>90</OE_Obsidian>
+	  <OE_Mythril>40</OE_Mythril>
+	  <OE_Mooncloth>40</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <apparel>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <developmentalStageFilter>Child</developmentalStageFilter>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OE/Kid/OEArmor</wornGraphicPath>
+	  <tags>
+		<li>OEKid</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+	  <skillRequirements>
+		<Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OEArmorBase">
+	<defName>OE_Armor_Kid_Spacer</defName>
+    <label>obsidia kid armor(Space Griffin)</label>
+    <description>Light armor, well protects the owner with little mobility restriction. Designed for use by Obsidia Empire kids.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OE/Kid/Spacer/OEArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>20000</WorkToMake>
+	  <Mass>5</Mass>
+	  <MarketValue>2375</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>80</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>10</CarryingCapacity>
+	  <MoveSpeed>-0.05</MoveSpeed>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.45</VacuumResistance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OE_Armor_Kid>1</OE_Armor_Kid>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <developmentalStageFilter>Child</developmentalStageFilter>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OE/Kid/Spacer/OEArmor</wornGraphicPath>
+	  <tags>
+		<li>OEKid</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+	  <skillRequirements>
+		<Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

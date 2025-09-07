@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Obsidia Expansion - Tailborne Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== Tailborne ====================-->
+<!--=============== Melee ====================-->
+<!--=============== Sword ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+	<defName>OMG_Trophy_Xeno_TailborneSword</defName>
+    <label>LinkBlade.v2</label>
+    <description>Sword, developed from hacked corp blueprints and repurposed gang tech, it binds its users into a crude neural lattice that hums with static malice. A tale is told of a crew that armed themselves with these blades, each strike feeding the mesh until the network drowned in paranoia, treachery, and blood. Those who survived swore the weapon was less a tool and more a plague—an ugly reminder that in Obsidia, strength is borrowed, but betrayal is owned.\n\nSpecially modified weapon charged with Necrobane, Stun and EMP damages.\n\nThis modification deprives item's quality levels.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Ratscourge Horde, Mousari Kingdom or Amalgam Association.\n\nFeature: melee damage increases depending on the number of allies with the same weapon, up to a maximum of 5.</description>
+	<descriptionHyperlinks>
+	  <GeneDef>OE_Tailborne_RatscourgeHorde</GeneDef>
+	  <GeneDef>OE_Tailborne_MousariKingdom</GeneDef>
+	  <GeneDef>OE_AmalgamAssociation</GeneDef>
+	</descriptionHyperlinks>	
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Trophy_Xeno_TailborneSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Archotech</techLevel>
+	<statBases>
+      <RoyalFavorValue>1.3</RoyalFavorValue>
+	  <MarketValue>7150</MarketValue>
+	  <Mass>1.50</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>0.30</MoveSpeed>
+	  <PainShockThreshold>-0.30</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.30</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.30</WorkSpeedGlobalOffsetMech>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.30</PilotingAbility>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OMGTrophyWeapons</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.95</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>1.5</armorPenetration>
+        <cooldownTime>1.95</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>1.5</armorPenetration>
+        <cooldownTime>1.95</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OE_Tailborne_NeuralMesh_BuffHediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requireOneOfGenesToEquip>
+		  <li>OE_AmalgamAssociation</li>
+		  <li>OE_Tailborne_RatscourgeHorde</li>
+		  <li>OE_Tailborne_MousariKingdom</li>
+		</requireOneOfGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>OEGearTrophy</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

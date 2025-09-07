@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OCC - KnightHelmet ====================-->
+<OCC_Helmet.label>Шолом Рыцаря OCC</OCC_Helmet.label>
+<OCC_Helmet.description>Шолом важкої силової броні чудово захищає власника. Розроблена для використання Лицарями OCC.</OCC_Helmet.description>
+
+<OCC_Helmet_M.label>Шолом Паладина OCC</OCC_Helmet_M.label>
+<OCC_Helmet_M.description>Шолом важкої силової броні чудово захищає власника. Розроблена та модифікована для використання Паладінами OCC.\n\nУкріплена версія надає більше захисту власнику.</OCC_Helmet_M.description>
+
+<OCC_Helmet_M_Spacer.label>Шолом Паладина OCC(Космо-Грифон)</OCC_Helmet_M_Spacer.label>
+<OCC_Helmet_M_Spacer.description>Шолом важкої силової броні чудово захищає власника. Розроблена та модифікована для використання Паладінами OCC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OCC_Helmet_M_Spacer.description>
+
+<OCC_Helmet_M_Melee.label>Шолом Паладина OCC(Гладіатор)</OCC_Helmet_M_Melee.label>
+<OCC_Helmet_M_Melee.description>Шолом важкої силової броні чудово захищає власника. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифікація візора аналізуючим комп'ютером, який допомагає користувачеві у ближньому бою.</OCC_Helmet_M_Melee.description>
+
+<OCC_Helmet_M_Ranged.label>Шолом Паладина OCC(Рейнджер)</OCC_Helmet_M_Ranged.label>
+<OCC_Helmet_M_Ranged.description>Шолом важкої силової броні чудово захищає власника. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифікація візора комп'ютером прицілювання, що допомагає користувачу прицілюватися.</OCC_Helmet_M_Ranged.description>
+
+<OCC_Helmet_M_Mechanitor.label>Шолом Паладина OCC(Контролер)</OCC_Helmet_M_Mechanitor.label>
+<OCC_Helmet_M_Mechanitor.description>Шолом важкої силової броні чудово захищає власника. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифіковано для покращення здібностей Контролю Механоїдів.</OCC_Helmet_M_Mechanitor.description>
+
+<!--=============== OCC - KnightArmor ====================-->
+<OCC_Armor.label>Броня Рыцаря OCC</OCC_Armor.label>
+<OCC_Armor.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена для використання Лицарями OCC.</OCC_Armor.description>
+
+<OCC_Armor_M.label>Броня Паладина OCC</OCC_Armor_M.label>
+<OCC_Armor_M.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nУкріплена версія надає більше захисту власнику.</OCC_Armor_M.description>
+
+<OCC_Armor_M_Spacer.label>Броня Паладина OCC(Космо-Грифон)</OCC_Armor_M_Spacer.label>
+<OCC_Armor_M_Spacer.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OCC_Armor_M_Spacer.description>
+
+<OCC_Armor_M_Jump.label>Броня Паладина OCC(Ворон)</OCC_Armor_M_Jump.label>
+<OCC_Armor_M_Jump.verbs.Verb_Jump.label>Броня Паладина OCC(Ворон)</OCC_Armor_M_Jump.verbs.Verb_Jump.label>
+<OCC_Armor_M_Jump.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифіковано з додаванням Реактивного ранця.</OCC_Armor_M_Jump.description>
+<OCC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>стрибок</OCC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OCC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<OCC_Armor_M_Grenadier.label>Броня Паладина OCC(Підривник)</OCC_Armor_M_Grenadier.label>
+<OCC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>Броня Паладина OCC(Підривник)</OCC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>
+<OCC_Armor_M_Grenadier.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифіковано установкою Вибухового Ракетомету.</OCC_Armor_M_Grenadier.description>
+<OCC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>граната</OCC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OCC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>
+
+<OCC_Armor_M_Shield.label>Броня Паладина OCC(Вартовий)</OCC_Armor_M_Shield.label>
+<OCC_Armor_M_Shield.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифіковано з додаванням Посиленого Бар'єру.</OCC_Armor_M_Shield.description>
+
+<OCC_Armor_M_Barrier.label>Броня Паладина OCC(Захисник)</OCC_Armor_M_Barrier.label>
+<OCC_Armor_M_Barrier.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифіковано з додаванням Універсального Бар'єру.</OCC_Armor_M_Barrier.description>
+
+<OCC_Armor_M_ForceField.label>Броня Паладина OCC(Доглядач)</OCC_Armor_M_ForceField.label>
+<OCC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>Броня Паладина OCC(Доглядач)</OCC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>
+<OCC_Armor_M_ForceField.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифицирован с добавлением Переносного барьерного проектора.</OCC_Armor_M_ForceField.description>
+<OCC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>щит</OCC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OCC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>
+
+<OCC_Armor_M_Mechanitor.label>Броня Паладина OCC(Контролер)</OCC_Armor_M_Mechanitor.label>
+<OCC_Armor_M_Mechanitor.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифіковано з додаванням пакету Управління Механоїдами.</OCC_Armor_M_Mechanitor.description>
+
+<OCC_Armor_M_Turret.label>Броня Паладина OCC(Гоблін)</OCC_Armor_M_Turret.label>
+<OCC_Armor_M_Turret.description>Важка силова броня чудово захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Паладінами OCC.\n\nМодифікований з додаванням портфеля з туреллю, що працює від акумулятора.</OCC_Armor_M_Turret.description>
+<OCC_Armor_M_Turret.verbs.deploy_turret.label>поставити турель</OCC_Armor_M_Turret.verbs.deploy_turret.label>
+<OCC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>заряд</OCC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OCC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OCC - Grenades ====================-->
+<OCC_Grenade.label>Розривна граната</OCC_Grenade.label>
+
+<Grenade_Armor_OCC_TurretPack.label>капсула ранця з OCC туреллю</Grenade_Armor_OCC_TurretPack.label>
+
+</LanguageData>

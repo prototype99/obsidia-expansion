@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Cosmol ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Cosmol</defName>
+    <label>cosmol</label>
+    <description>A special immunostimulant used to enhance immunity and treat various diseases. Obsidia technology, the drug is non-addictive and has no after-effects.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_CosmolHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Medical/Cosmol</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+      <MarketValue>25</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrug</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+	  <baseIngestTicks>240</baseIngestTicks>
+	  <ingestSound>Ingest_Snort</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_CosmolHigh</hediffDef>
+          <severity>0.5</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>4</Medicine>
+		<Intellectual>2</Intellectual>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_CosmolHigh</defName>
+    <label>cosmol effect</label>
+    <description>Active cosmol immunostimulant in the bloodstream. Helps preventing infections before they take hold and fight against general bacterial infections.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.06</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+		    <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+		  </statOffsets>
+		  <makeImmuneTo>
+		    <li>Malaria</li>
+			<li>SleepingSickness</li>
+			<li>Plague</li>
+			<li MayRequire="ObsidiaExpansion.Xenos.Arachnas">OE_ArachnaNeurotoxin</li>
+		  </makeImmuneTo>
+        </li>
+      </stages>
+  </HediffDef>
+
+<!--=============== Slugol ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Slugol</defName>
+    <label>slugol</label>
+    <description>A unique medical specialty, a potent drug based on Luciferium, is used to treat serious wounds and diseases. Obsidia technology, the drug is non-addictive and has no after-effects.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_SlugolHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Medical/Slugol</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MarketValue>150</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrugExotic</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+	  <baseIngestTicks>240</baseIngestTicks>
+	  <ingestSound>Ingest_Snort</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_SlugolHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynthAdv</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>10</Medicine>
+		<Intellectual>4</Intellectual>
+		<Crafting>4</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <OE_Cosmol>1</OE_Cosmol>
+	  <Luciferium>1</Luciferium>
+	  <Neutroamine>4</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_SlugolHigh</defName>
+    <label>slugol effect</label>
+    <description>Unique slugol compounds in the bloodstream. Slowly healing of wounds, removes scar tissue, boosting the metabolism and therefore the immune response.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_HealPermanentWounds"/>
+	  <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.06</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+		  <statOffsets>
+		    <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+		  </statOffsets>
+		  <capMods>
+		    <li>
+			  <capacity>Metabolism</capacity>
+			  <offset>0.35</offset>
+			</li>
+		  </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+
+<!--=============== Sevide ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Sevide</defName>
+    <label>sevide</label>
+    <description>Deadly poison, used by assassins or as a means of execution. Obsidia technology gradually weakens the body, with a minor lethal outcome.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_SevideHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Medical/Sevide</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>35</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.75</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrug</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+	  <baseIngestTicks>240</baseIngestTicks>
+	  <ingestSound>Ingest_Snort</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_SevideHigh</hediffDef>
+          <severity>0.01</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>6</Medicine>
+		<Intellectual>4</Intellectual>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>6</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_SevideHigh</defName>
+    <label>sevide effect</label>
+    <description>Deadly poison sevide compounds in the bloodstream. Causes extreme convulsions, trouble breathing and eventual death.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>8.0</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+		<li>
+          <minSeverity>0.1</minSeverity>
+		  <label>trembling</label>
+		  <painOffset>0.1</painOffset>
+		  <capMods>
+		    <li>
+			  <capacity>Manipulation</capacity>
+			  <offset>-0.15</offset>
+			</li>
+			<li>
+			  <capacity>Moving</capacity>
+			  <offset>-0.15</offset>
+			</li>
+		  </capMods>
+        </li>
+		<li>
+          <minSeverity>0.5</minSeverity>
+		  <label>convulsing</label>
+		  <painOffset>0.7</painOffset>
+		  <vomitMtbDays>0.1</vomitMtbDays>
+		  <capMods>
+		    <li>
+			  <capacity>Consciousness</capacity>
+			  <offset>-0.5</offset>
+			</li>
+			<li>
+			  <capacity>Moving</capacity>
+			  <offset>-0.3</offset>
+			</li>
+			<li>
+			  <capacity>Manipulation</capacity>
+			  <offset>-0.3</offset>
+			</li>
+		  </capMods>
+        </li>
+		<li>
+          <minSeverity>1.0</minSeverity>
+		  <label>death</label>
+		  <painOffset>1.0</painOffset>
+		  <vomitMtbDays>0.01</vomitMtbDays>
+		  <capMods>
+		    <li>
+			  <capacity>Consciousness</capacity>
+			  <offset>-0.95</offset>
+			</li>
+			<li>
+			  <capacity>Moving</capacity>
+			  <offset>-0.95</offset>
+			</li>
+			<li>
+			  <capacity>Manipulation</capacity>
+			  <offset>-0.95</offset>
+			</li>
+		  </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+
+</Defs>

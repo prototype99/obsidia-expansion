@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Tome ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Tome"]/comps/li[@Class="CompProperties_Book"]/doers/li[@Class="BookOutcomeProperties_GainAnomalyResearch"]/tabs</xpath>
+    <value>
+      <ObsidiaExpansion />
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Tome"]/comps/li[@Class="CompProperties_Book"]/doers/li[@Class="BookOutcomeProperties_GainAnomalyResearch"]</xpath>
+    <value>
+      <exclude>
+	    <OECore/>
+		<OEConstruction/>
+		<OEBuilding/>
+		<OEPower/>
+		<OEPowerAdv/>
+		<OEPowerExp/>
+		<OEFurniture/>
+		<OEFarm/>
+		<OEFarmAdv/>
+		<OEFarmExp/>
+		<OESynth/>
+		<OESynthAdv/>
+		<OEGearMod/>
+		<OEModules/>
+		<OEGearCross/>
+		<OMCArmor/>
+		<OMCWeapons/>
+		<OMCGearMod/>
+		<OTCArmor/>
+		<OTCWeapons/>
+		<OTCGearMod/>
+		<OCCArmor/>
+		<OCCWeapons/>
+		<OCCGearMod/>
+		<OECArmor MayRequire="Ludeon.RimWorld.Royalty"/>
+		<OECWeapons MayRequire="Ludeon.RimWorld.Royalty"/>
+		<OECGearMod MayRequire="Ludeon.RimWorld.Royalty"/>
+		<ODCGear/>
+		<ODCGearAdv/>
+		<ODCGearExp/>
+		<CACGear/>
+		<CACGearAdv/>
+		<OEDefence/>
+		<OEDefenceAdv/>
+		<OEBionics/>
+		<OEBionicsAdv/>
+		<OEImplants/>
+		<OECyberwares/>
+		<OECyberwaresAdv/>
+		<OEBioengineering/>
+		<OEMechtech MayRequire="Ludeon.RimWorld.Biotech"/>
+		<OEMechtechAdv MayRequire="Ludeon.RimWorld.Biotech"/>
+		<OEBioengineeringAdv MayRequire="Ludeon.RimWorld.Biotech"/>
+		<OESGear MayRequire="Ludeon.RimWorld.Biotech"/>
+	  </exclude>
+    </value>
+</Operation>
+
+</Patch>

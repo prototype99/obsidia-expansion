@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Civilian ====================-->
+  <TraitDef>
+    <defName>OECivilian</defName>
+    <degreeDatas>
+      <li>
+        <label>handyman</label>
+        <description>{PAWN_nameDef} is a natural {PAWN_pronoun}. {PAWN_nameDef} is smart and work harder than others.</description>
+        <statOffsets>
+          <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+		  <GlobalLearningFactor>0.15</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Soldier ====================-->
+  <TraitDef>
+    <defName>OESoldier</defName>
+    <degreeDatas>
+      <li>
+        <label>trained</label>
+        <description>After many trainings, {PAWN_nameDef} learned how to use any weapon.</description>
+        <statOffsets>
+          <MeleeDodgeChance>8</MeleeDodgeChance>
+		  <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+<!--=============== Nomad ====================-->
+  <TraitDef>
+    <defName>OENomad</defName>
+    <degreeDatas>
+      <li>
+        <label>nomad</label>
+        <description>{PAWN_pronoun}'s are used to eating less food and getting enough sleep faster than others.</description>
+        <statOffsets>
+          <RestRateMultiplier>0.7</RestRateMultiplier>
+        </statOffsets>
+		<hungerRateFactor>0.7</hungerRateFactor>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Cultist ====================-->
+  <TraitDef>
+    <defName>OECultist</defName>
+    <degreeDatas>
+      <li>
+        <label>spiritual</label>
+        <description>{PAWN_nameDef} has an unshakable will and body capable of withstanding any test.</description>
+        <statOffsets>
+          <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		  <PainShockThreshold>0.25</PainShockThreshold>
+		  <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+		  <GlobalLearningFactor>-0.1</GlobalLearningFactor>
+        </statOffsets>
+		<statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Eidolon ====================-->
+  <TraitDef>
+    <defName>OEEidolon</defName>
+    <degreeDatas>
+      <li>
+        <label>proudly</label>
+        <description>{PAWN_nameDef} as a hero bathed in glory.</description>
+        <statOffsets>
+          <PawnBeauty>+5</PawnBeauty>
+        </statOffsets>
+		<statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
+        </statFactors>
+		<marketValueFactorOffset>+0.25</marketValueFactorOffset>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+</Defs>

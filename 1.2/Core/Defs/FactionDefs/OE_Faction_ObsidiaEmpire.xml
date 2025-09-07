@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Empire - Faction ====================-->
+  <FactionDef ParentName="HumanFactionBase" Name="ObsidiaEmpireBase">
+    <defName>ObsidiaEmpire</defName>
+    <label>Obsidia Empire</label>
+	<categoryTag>ObsidiaEmpire</categoryTag>
+    <description>An ultratech colonysts society from Obsidia planet, organized along military lines. They lived for thousands of years in their home solar system, researching and using the rarest materials in their technologies. But having reached a peak in researchment, it was time for them to leave their homeworld and begin a galactic expansion!\n\nThey also reject the rest of the factions, and in order to open trade, you must first gain their trust.</description>
+    <colorSpectrum>
+      <li>(0.33, 0.25, 0.35)</li>
+	  <li>(0.24, 0.19, 0.35)</li>
+	  <li>(0.30, 0.34, 0.45)</li>
+	  <li>(0.27, 0.32, 0.44)</li>
+	  <li>(0.00, 0.00, 0.00)</li><!--= null color =-->  
+	  <li>(0.75, 0.49, 0.69)</li>
+	  <li>(0.76, 0.48, 0.69)</li>	  
+	  <li>(0.96, 0.76, 0.05)</li>
+	  <li>(0.97, 0.76, 0.01)</li>	  
+	  <li>(0.04, 0.44, 0.38)</li>
+	  <li>(0.00, 0.42, 0.36)</li> 
+    </colorSpectrum>
+    <startingGoodwill>-80</startingGoodwill>
+    <naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
+	<pawnSingular>obsidian</pawnSingular>
+    <pawnsPlural>obsidians</pawnsPlural>
+    <listOrderPriority>100</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>consul</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/ObsidiaEmpire</factionIconPath>
+    <factionNameMaker>OENamerFaction</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+	<earliestRaidDays>60</earliestRaidDays>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>ImperialCommon</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
+    </backstoryFilters>
+    <geneticVariance>0.8</geneticVariance>
+	<apparelStuffFilter>
+      <thingDefs>
+		<li>OE_Mooncloth</li>
+		<li>OE_Leather_Direwolf</li>
+		<li>OE_Leather_Raptor</li>
+        <li>OE_Obsidian</li>
+		<li>OE_ObsidianSynthweave</li>
+        <li>OE_Mythril</li>
+		<li>OE_MythrilSynthweave</li>
+		<li>OE_Leather_Bruul</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Cloth</li>
+		<li>Uranium</li>
+      </disallowedThingDefs>
+    </apparelStuffFilter>
+	<hairTags>
+      <li>Urban</li>
+	  <li>Punk</li>
+      <li>Rural</li>
+    </hairTags>
+	<fixedLeaderKinds>
+      <li>OE_Consul</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>Base_ObsidiaEmpire_Common</li>
+    </baseTraderKinds>
+	<caravanTraderKinds>
+      <li>Caravan_ObsidiaEmpire_Standard</li>
+	  <li>Caravan_ObsidiaEmpire_Slaver</li>
+	  <li>Caravan_ObsidiaEmpire_Gunsmith</li>
+	  <li>Caravan_ObsidiaEmpire_Medic</li>
+	  <li>Caravan_ObsidiaEmpire_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_ObsidiaEmpire_Common</li>
+    </visitorTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>ObsidiaEmpireRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+		<li>(1500, 150)</li>
+        <li>(3000, 300)</li>
+        <li>(5000, 500)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+<!--=============== Peaceful ====================-->	
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <OE_Colonist>20</OE_Colonist>
+		  <OE_Laborer>5</OE_Laborer>
+		  <OMC_Recruit>10</OMC_Recruit>
+		  <OMC_Soldier_Melee>10</OMC_Soldier_Melee>
+		  <OMC_Soldier_Ranged>10</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>10</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>5</OMC_Officer_Melee>
+		  <OMC_Officer_Ranged>5</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>5</OMC_Officer_Sniper>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <OE_Colonist>20</OE_Colonist>
+		  <OE_Laborer>5</OE_Laborer>
+		  <OTC_Recruit>10</OTC_Recruit>
+		  <OTC_Mechanic_Melee>10</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>10</OTC_Mechanic_Ranged>
+		  <OTC_Engineer_Acid_Melee>5</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>5</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Cryo_Melee>5</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>5</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Fire_Melee>5</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>5</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_EMP_Melee>5</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>5</OTC_Engineer_EMP_Ranged>
+        </options>
+      </li>	  
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <OE_Colonist>20</OE_Colonist>
+		  <OE_Laborer>5</OE_Laborer>
+		  <OCC_Recruit>10</OCC_Recruit>
+		  <OCC_Knight_Melee>10</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>10</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>10</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>5</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>5</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>5</OCC_Paladin_Heavy>
+        </options>
+      </li> 
+<!--=============== Trader ====================-->	
+	  <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <OE_Trader>1</OE_Trader>
+        </traders>
+        <carriers>
+          <OE_Armagon>5</OE_Armagon>
+        </carriers>
+        <guards>
+          <OE_Colonist>3</OE_Colonist>
+          <OE_Laborer>2</OE_Laborer>
+		  <OMC_Soldier_Melee>5</OMC_Soldier_Melee>
+		  <OMC_Soldier_Ranged>5</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>5</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>3</OMC_Officer_Melee>
+		  <OMC_Officer_Ranged>3</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>3</OMC_Officer_Sniper>
+		  <OTC_Mechanic_Melee>5</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>5</OTC_Mechanic_Ranged>
+		  <OTC_Engineer_Acid_Melee>3</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>3</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Cryo_Melee>3</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>3</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Fire_Melee>3</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>3</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_EMP_Melee>3</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>3</OTC_Engineer_EMP_Ranged>
+		  <OCC_Knight_Melee>5</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>5</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>5</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>3</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>3</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>3</OCC_Paladin_Heavy>
+        </guards>
+      </li>
+<!--=============== Settlement ====================-->	
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <OE_Colonist>5</OE_Colonist>
+          <OE_Laborer>15</OE_Laborer>
+          <OMC_Recruit>10</OMC_Recruit>
+		  <OMC_Soldier_Melee>10</OMC_Soldier_Melee>
+		  <OMC_Soldier_Ranged>10</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>10</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>5</OMC_Officer_Melee>
+		  <OMC_Officer_Ranged>5</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>5</OMC_Officer_Sniper>
+          <OTC_Recruit>10</OTC_Recruit>
+		  <OTC_Mechanic_Melee>10</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>10</OTC_Mechanic_Ranged>
+		  <OTC_Engineer_Acid_Melee>5</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>5</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Cryo_Melee>5</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>5</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Fire_Melee>5</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>5</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_EMP_Melee>5</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>5</OTC_Engineer_EMP_Ranged>
+		  <OCC_Recruit>10</OCC_Recruit>
+		  <OCC_Knight_Melee>10</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>10</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>10</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>5</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>5</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>5</OCC_Paladin_Heavy>
+        </options>
+      </li> 
+<!--=============== Combat ====================-->	  
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <OMC_Recruit>10</OMC_Recruit>
+		  <OMC_Soldier_Melee>25</OMC_Soldier_Melee>
+		  <OMC_Soldier_Ranged>25</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>20</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>15</OMC_Officer_Melee>
+		  <OMC_Officer_Ranged>15</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>10</OMC_Officer_Sniper>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <OTC_Recruit>10</OTC_Recruit>
+		  <OTC_Mechanic_Melee>25</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>25</OTC_Mechanic_Ranged>
+		  <OTC_Engineer_Acid_Melee>15</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>15</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Cryo_Melee>15</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>15</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Fire_Melee>15</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>15</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_EMP_Melee>5</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>5</OTC_Engineer_EMP_Ranged>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <OCC_Recruit>10</OCC_Recruit>
+		  <OCC_Knight_Melee>25</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>25</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>20</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>15</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>15</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>10</OCC_Paladin_Heavy>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <OMC_Recruit>10</OMC_Recruit>
+		  <OMC_Soldier_Melee>25</OMC_Soldier_Melee>
+		  <OMC_Soldier_Ranged>25</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>20</OMC_Soldier_Sniper>
+		  <OTC_Recruit>10</OTC_Recruit>
+		  <OTC_Mechanic_Melee>25</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>25</OTC_Mechanic_Ranged>
+		  <OCC_Recruit>10</OCC_Recruit>
+		  <OCC_Knight_Melee>25</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>25</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>20</OCC_Knight_Heavy>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+		  <OMC_Officer_Melee>15</OMC_Officer_Melee>
+		  <OMC_Officer_Ranged>15</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>10</OMC_Officer_Sniper>
+		  <OTC_Engineer_Acid_Melee>15</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>15</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Cryo_Melee>15</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>15</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Fire_Melee>15</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>15</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_EMP_Melee>5</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>5</OTC_Engineer_EMP_Ranged>
+		  <OCC_Paladin_Melee>15</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>15</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>10</OCC_Paladin_Heavy>
+        </options>
+      </li>	
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <OMC_Recruit>10</OMC_Recruit>
+		  <OMC_Soldier_Melee>25</OMC_Soldier_Melee>
+		  <OMC_Soldier_Ranged>25</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>20</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>15</OMC_Officer_Melee>
+		  <OMC_Officer_Ranged>15</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>10</OMC_Officer_Sniper>
+		  <OTC_Recruit>10</OTC_Recruit>
+		  <OTC_Mechanic_Melee>25</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>25</OTC_Mechanic_Ranged>
+		  <OTC_Engineer_Acid_Melee>15</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>15</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Cryo_Melee>15</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>15</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Fire_Melee>15</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>15</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_EMP_Melee>5</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>5</OTC_Engineer_EMP_Ranged>
+		  <OCC_Recruit>10</OCC_Recruit>
+		  <OCC_Knight_Melee>25</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>25</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>20</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>15</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>15</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>10</OCC_Paladin_Heavy>
+        </options>
+      </li>	
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/Expanding/Colony</settlementTexturePath>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ObsidiaEmpireRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+			<li>OE_Obsidian</li>
+			<li>OE_Mythril</li>
+			<li>OE_Platinum</li>
+			<li>OE_Syntherius</li>
+			<li>OE_DragonianWoodLog</li>
+			<li>OE_Mooncloth</li>
+			<li>OE_Leather_Ogren</li>
+			<li>OE_Leather_Direwolf</li>
+			<li>OE_Leather_Astrinx</li>
+			<li>OE_Leather_Raptor</li>
+			<li>OE_Leather_Bruul</li>
+			<li>OE_ObsidianSynthweave</li>
+			<li>OE_MythrilSynthweave</li>
+			<li>OE_PlatinumSynthweave</li>
+			<li>OE_ModernizationKit</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">OE_PersonaKit</li>
+			<li>OE_DriftersKit</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+  <RulePackDef>
+    <defName>OENamerFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->Obsidia [OEF] of [OES]</li>
+        <li>r_name(p=2)->The [OEF] of [OES]</li>
+		
+        <li>OEF(p=4)->Empire</li>
+        <li>OEF->Imperium</li>
+        <li>OEF->Dominion</li>
+        <li>OEF->Monarchy</li>
+
+        <li>OES(p=4)->the Sun</li>
+        <li>OES->the Moon</li>
+        <li>OES->the Universe</li>
+        <li>OES->Perfection</li>
+        <li>OES->Eternity</li>
+		<li>OES->Conquerors</li>
+		<li>OES->Lords</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

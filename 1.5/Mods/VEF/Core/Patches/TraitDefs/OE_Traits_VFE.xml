@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Vanilla Fishing Expanded - Fishing Treasures AddOn</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+<!--=============== Fishing ====================-->
+  <TraitDef>
+    <defName>OEFishermanVCEF</defName>
+    <commonality>1</commonality>
+    <degreeDatas>
+      <li>
+        <label>deep catcher</label>
+        <description>{PAWN_nameDef} fishes with care and focus, often reeling in more with every cast.</description>
+        <degree>1</degree>
+		<skillGains>
+          <Animals>3</Animals>
+        </skillGains>
+        <statOffsets>
+          <VCEF_FishingSpeedFactor>-0.15</VCEF_FishingSpeedFactor>
+		  <VCEF_FishingYieldFactor>0.25</VCEF_FishingYieldFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <label>quick hook</label>
+        <description>{PAWN_nameDef} casts fast and often, though some fish may slip the hook.</description>
+        <degree>2</degree>
+		<skillGains>
+          <Animals>3</Animals>
+        </skillGains>
+        <statOffsets>
+          <VCEF_FishingSpeedFactor>0.25</VCEF_FishingSpeedFactor>
+		  <VCEF_FishingYieldFactor>-0.15</VCEF_FishingYieldFactor>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Violent</li>
+	  <li>Animals</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEFishermanVCEFTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+				  </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

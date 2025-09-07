@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Blast - Shredded Armor ====================-->
+  <HediffDef>
+    <defName>OCC_BlastShreddedArmor</defName>
+    <label>shredded armor</label>
+    <description>Temporary armor reduction after receiving Blast damage.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+	<maxSeverity>1.5</maxSeverity>
+	<isBad>true</isBad>
+	<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.25</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <minSeverity>0.005</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.10</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.10</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.10</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.20</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.20</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.20</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.30</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.30</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.40</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.40</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.40</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.50</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.50</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.50</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.60</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.60</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.60</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.70</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.70</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.70</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.80</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.80</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.80</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-0.90</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-0.90</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.90</minSeverity>
+        <statOffsets>
+          <ArmorRating_Blunt>-1.00</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>-1.00</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Unstable Toxins ====================-->
+  <HediffDef>
+    <defName>OE_UnstableToxins_Poison</defName>
+    <label>unstable toxins</label>
+    <description>Poisoning with unstable toxins. Causes random negatives or positives side effects.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+    <minSeverity>0.1</minSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<isBad>true</isBad>
+	<comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>5000~10000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<minSeverity>0.01</minSeverity>
+        <capMods>
+		  <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <!--===== Status =====-->
+          <li Class="HediffGiver_Random">
+            <hediff>Hypothermia</hediff>
+            <mtbDays>0.35</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li> 
+		  <li Class="HediffGiver_Random">
+            <hediff>FoodPoisoning</hediff>
+            <mtbDays>0.35</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>Heatstroke</hediff>
+            <mtbDays>1</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>BrainShock</hediff>
+            <mtbDays>1</mtbDays>
+            <partsToAffect>
+              <li>Brain</li>
+            </partsToAffect>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>GutWorms</hediff>
+            <mtbDays>2.5</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>MuscleParasites</hediff>
+            <mtbDays>2.5</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>FibrousMechanites</hediff>
+            <mtbDays>2.5</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>SensoryMechanites</hediff>
+            <mtbDays>2.5</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li>
+		  <!--===== Base =====-->
+		  <li Class="HediffGiver_Random">
+            <hediff>AmbrosiaHigh</hediff>
+            <mtbDays>0.65</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>AlcoholHigh</hediff>
+            <mtbDays>0.65</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>Hangover</hediff>
+            <mtbDays>0.65</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>SmokeleafHigh</hediff>
+            <mtbDays>0.65</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>GoJuiceHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>WakeUpHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li> 
+		  <li Class="HediffGiver_Random">
+            <hediff>PsychiteTeaHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>FlakeHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>YayoHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li> 
+		  <!--===== Obsidia =====-->
+		  <li Class="HediffGiver_Random">
+            <hediff>OE_CosmolHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>OE_SlugolHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>OE_TorraxinHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>OE_TorraxinAftereffect</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>OE_JoltixinHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random">
+            <hediff>OE_JoltixinAftereffect</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random" MayRequire="Ludeon.Rimworld.Royalty">
+            <hediff>OE_LuraxinHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random" MayRequire="Ludeon.Rimworld.Royalty">
+            <hediff>OE_LuraxinAftereffect</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random" MayRequire="Ludeon.Rimworld.Biotech">
+            <hediff>OE_AlcrexinHigh</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+		  <li Class="HediffGiver_Random" MayRequire="Ludeon.Rimworld.Biotech">
+            <hediff>OE_AlcrexinAftereffect</hediff>
+            <mtbDays>1.0</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Necrobane - Necrobane Venom ====================-->
+  <HediffDef>
+    <defName>OMG_NecrobaneVenom</defName>
+    <label>necrobane venom</label>
+    <description>This venom weakens a target’s defenses, increasing incoming damage. Its effects intensify as more accumulates, making the target progressively more vulnerable.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+	<maxSeverity>1.5</maxSeverity>
+	<isBad>true</isBad>
+	<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.25</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <minSeverity>0.005</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.05</IncomingDamageFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.10</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.10</IncomingDamageFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.20</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.15</IncomingDamageFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.20</IncomingDamageFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.40</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.25</IncomingDamageFactor>
+        </statFactors>
+      </li>
+	  <li>
+        <minSeverity>0.50</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.30</IncomingDamageFactor>
+        </statFactors>
+      </li>
+	  <li>
+        <minSeverity>0.60</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.35</IncomingDamageFactor>
+        </statFactors>
+      </li>
+	  <li>
+        <minSeverity>0.70</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.40</IncomingDamageFactor>
+        </statFactors>
+      </li>
+	  <li>
+        <minSeverity>0.80</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.45</IncomingDamageFactor>
+        </statFactors>
+      </li>
+	  <li>
+        <minSeverity>0.90</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>1.50</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

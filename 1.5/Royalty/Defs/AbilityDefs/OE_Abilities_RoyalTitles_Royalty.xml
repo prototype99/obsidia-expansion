@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Royal Target ====================-->
+  <AbilityDef>
+    <defName>OE_RoyalTarget</defName>
+    <label>royal target</label>
+    <description>This ability places a lasting mark on the target, designating them as prey for the nobility of Obsidia Empire. The marked target suffers mental weakening, takes increased damage, and experiences a reduction in movement speed, making escape nearly impossible.</description>
+    <iconPath>UI/Abilities/OE_RoyalTarget</iconPath>
+    <cooldownTicksRange>300000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>14.9</range>
+      <warmupTime>1.5</warmupTime>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetItems>False</canTargetItems>
+        <canTargetPawns>True</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_RoyalTarget_Mark</hediffDef>
+		<goodwillImpact>-15</goodwillImpact>
+      </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_RoyalTarget_Mark</defName>
+    <label>royal mark</label>
+    <description>A sinister emblem branded upon the target, signaling their doom at the hands of Obsidia Empire noble. It drains the target’s mental resilience, making them vulnerable to attacks and slowing their movements, as they falter under the weight of inevitable capture.</description>
+	<hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.8,0.8,0.35)</defaultLabelColor>
+	<makesSickThought>true</makesSickThought>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_RoyalTarget_Mark_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <IncomingDamageFactor>0.25</IncomingDamageFactor>
+		  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+        </statOffsets>
+		<capMods>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<setMax>0.75</setMax>
+		  </li>
+		  <li>
+		    <capacity>Moving</capacity>
+			<setMax>0.75</setMax>
+		  </li>
+		</capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

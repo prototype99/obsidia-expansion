@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Jumyline ====================-->
+<OE_Cook_JumylinePack.label>приготовить конфеты юмилин x5</OE_Cook_JumylinePack.label>
+<OE_Cook_JumylinePack.description>Приготовить 5 конфет юмилин из юми ягод и шоколада.</OE_Cook_JumylinePack.description>
+<OE_Cook_JumylinePack.jobString>Приготовить 5 конфет юмилин.</OE_Cook_JumylinePack.jobString>
+
+<OE_Cook_JumylineBulk.label>приготовить конфеты юмилин x10</OE_Cook_JumylineBulk.label>
+<OE_Cook_JumylineBulk.description>Приготовить 10 конфет юмилин из юми ягод и шоколада.</OE_Cook_JumylineBulk.description>
+<OE_Cook_JumylineBulk.jobString>Приготовить 10 конфет юмилин.</OE_Cook_JumylineBulk.jobString>
+
+<!--=============== Obsidia Can Meal ====================-->
+<!--=============== Normal ====================-->
+<OE_CookCanMeal.label>приготовить консервированное блюдо обсидии</OE_CookCanMeal.label>
+<OE_CookCanMeal.description>Приготовьте изысканное, высококачественное блюдо из сочетания мясных и растительных ингредиентов. Юми ягоды деликатно используются в качестве приправы для усиления вкуса. Хотя большая часть ингредиентов тщательно обрезается, этот процесс гарантирует создание непревзойденного блюда.</OE_CookCanMeal.description>
+<OE_CookCanMeal.jobString>Приготовить консервированное блюдо обсидии.</OE_CookCanMeal.jobString>
+<OE_CookCanMeal.ingredients.0.filter.customSummary>содержит белок</OE_CookCanMeal.ingredients.0.filter.customSummary>
+
+<OE_CookCanMealBulk.label>приготовить консервированное блюдо обсидии x4</OE_CookCanMealBulk.label>
+<OE_CookCanMealBulk.description>Приготовьте 4 изысканных, высококачественных блюд из сочетания мясных и растительных ингредиентов. Юми ягоды деликатно используются в качестве приправы для усиления вкуса. Хотя большая часть ингредиентов тщательно обрезается, этот процесс гарантирует создание непревзойденного блюда.</OE_CookCanMealBulk.description>
+<OE_CookCanMealBulk.jobString>Приготовить 4 консервированных блюда обсидии.</OE_CookCanMealBulk.jobString>
+<OE_CookCanMealBulk.ingredients.0.filter.customSummary>содержит белок</OE_CookCanMealBulk.ingredients.0.filter.customSummary>
+
+<!--=============== Vegetarian ====================-->
+<OE_CookCanMeal_Veg.label>приготовить вегетарианское консервированное блюдо обсидии</OE_CookCanMeal_Veg.label>
+<OE_CookCanMeal_Veg.description>Приготовьте изысканное, высококачественное блюдо из растительных ингредиентов. Юми ягоды деликатно используются в качестве приправы для усиления вкуса. Хотя большая часть ингредиентов тщательно обрезается, этот процесс гарантирует создание непревзойденного блюда.</OE_CookCanMeal_Veg.description>
+<OE_CookCanMeal_Veg.jobString>Приготовить вегетарианское консервированное блюдо обсидии.</OE_CookCanMeal_Veg.jobString>
+<OE_CookCanMeal_Veg.ingredients.0.filter.customSummary>вегетарианские ингредиенты</OE_CookCanMeal_Veg.ingredients.0.filter.customSummary>
+
+<OE_CookCanMealBulk_Veg.label>приготовить вегетарианское консервированное блюдо обсидии x4</OE_CookCanMealBulk_Veg.label>
+<OE_CookCanMealBulk_Veg.description>Приготовьте 4 изысканных, высококачественных блюд из растительных ингредиентов. Юми ягоды деликатно используются в качестве приправы для усиления вкуса. Хотя большая часть ингредиентов тщательно обрезается, этот процесс гарантирует создание непревзойденного блюда.</OE_CookCanMealBulk_Veg.description>
+<OE_CookCanMealBulk_Veg.jobString>Приготовить 4 вегетарианских консервированных блюда обсидии.</OE_CookCanMealBulk_Veg.jobString>
+<OE_CookCanMealBulk_Veg.ingredients.0.filter.customSummary>вегетарианские ингредиенты</OE_CookCanMealBulk_Veg.ingredients.0.filter.customSummary>
+
+<!--=============== Carnivore ====================-->
+<OE_CookCanMeal_Meat.label>приготовить мясное консервированное блюдо обсидии</OE_CookCanMeal_Meat.label>
+<OE_CookCanMeal_Meat.description>Приготовьте изысканное, высококачественное блюдо мясных ингредиентов. Юми ягоды деликатно используются в качестве приправы для усиления вкуса. Хотя большая часть ингредиентов тщательно обрезается, этот процесс гарантирует создание непревзойденного блюда.</OE_CookCanMeal_Meat.description>
+<OE_CookCanMeal_Meat.jobString>Приготовить мясное консервированное блюдо обсидии.</OE_CookCanMeal_Meat.jobString>
+
+<OE_CookCanMealBulk_Meat.label>приготовить мясное консервированное блюдо обсидии x4</OE_CookCanMealBulk_Meat.label>
+<OE_CookCanMealBulk_Meat.description>Приготовьте 4 изысканных, высококачественных блюд мясных ингредиентов. Юми ягоды деликатно используются в качестве приправы для усиления вкуса. Хотя большая часть ингредиентов тщательно обрезается, этот процесс гарантирует создание непревзойденного блюда.</OE_CookCanMealBulk_Meat.description>
+<OE_CookCanMealBulk_Meat.jobString>Приготовить 4 мясных консервированных блюда обсидии.</OE_CookCanMealBulk_Meat.jobString>
+
+</LanguageData>

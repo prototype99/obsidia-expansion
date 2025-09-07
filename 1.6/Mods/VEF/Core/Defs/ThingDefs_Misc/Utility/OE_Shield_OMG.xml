@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OMG - Shields ====================-->
+<!--=============== Medium ====================-->
+  <ThingDef ParentName="OEShieldBaseNQ">
+    <defName>OMG_Shield_Medium</defName>
+    <label>Byte Barricade</label>
+	<description>Modified medium Shield used by OMG Mercenaries.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/OMG/OMGShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>5635</MarketValue>
+	  <MaxHitPoints>350</MaxHitPoints>
+      <ArmorRating_Sharp>1.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.50</ArmorRating_Heat>
+      <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <ToxicResistance>0.30</ToxicResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">4</MechBandwidth>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VEF.Apparels.CompProperties_Shield">
+        <shieldTags>
+          <li>OMGShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/OMG/OMGShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.05</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OMG_Utility</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

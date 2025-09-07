@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Compressed Syntherius ====================-->
+<OE_SyntheriusPack.label>compressed syntherius</OE_SyntheriusPack.label>
+<OE_SyntheriusPack.description>A batch of syntherius hermetically compressed into a special container for safe transportation and storage.\n\nFor further use, be sure to decompresse it.</OE_SyntheriusPack.description>
+
+<OE_SyntheriusPack.comps.CompUsable.useLabel>Decompresse syntherius</OE_SyntheriusPack.comps.CompUsable.useLabel>
+
+<!--=============== Arachna Core ====================-->
+<OE_ArachnaCore.label>arachna core</OE_ArachnaCore.label>
+<OE_ArachnaCore.description>A hyper-advanced computer core containing the AI persona of the Arachne Queen. It's unknown how the Crimson Arachna Cult got it, but with proper tuning it has huge potential.</OE_ArachnaCore.description>
+
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Arachna Core studied: {RESEARCH} unlocked</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Arachna Core, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the arachna core.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.jobString>Analyze arachna core</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Syntherius Of Sin ====================-->
+<OE_SyntheriusOfSin.label>Syntherius of Sin</OE_SyntheriusOfSin.label>
+<OE_SyntheriusOfSin.description>A fragment of a strange Syntherius used at the heart of the Fallen Legion.</OE_SyntheriusOfSin.description>
+
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Syntherius of Sin studied: {RESEARCH} unlocked</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Syntherius of Sin, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Syntherius Of Sin.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.jobString>Analyze Syntherius Of Sin</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Unstable Stone ====================-->
+<OE_UnstableStone.label>ustable power stone</OE_UnstableStone.label>
+<OE_UnstableStone.description>An unstable power stone from legends. By studying it, you can be able to stabilize and use its power.</OE_UnstableStone.description>
+
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Ustable Power Stone studied: {RESEARCH} unlocked</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Ustable Power Stone, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Ustable Power Stone.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.jobString>Analyze Ustable Power Stone</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Biophormids - Pherocore ====================-->
+<OE_PherocoreBiophormids.label>biophormids pherocore</OE_PherocoreBiophormids.label>
+<OE_PherocoreBiophormids.description>A pheromone controlling micro-organ. It is necessary to construct certain types of insectoid hives. Pherocores have been embedded deep into the brains of geneline leaders which allowed ancient civilizations to control the hives.\n\nThis pherocore belongs to the Biophormids geneline, artificially created from a blend of insectoid genes across the galaxy and advanced technologies, known for their humanoid forms and remarkable intelligence.</OE_PherocoreBiophormids.description>
+
+<OE_PherocoreBiophormids.comps.CompUsable.useLabel>Use {0_labelShort} to increase the size of the hive</OE_PherocoreBiophormids.comps.CompUsable.useLabel>
+
+<!--=============== Mutated EGO Seeds ====================-->
+<!--=============== Elder Direwolf ====================-->
+<OE_EGOSeed_Elder_Direwolf.label>mutated EGO seed – Elder Direwolf</OE_EGOSeed_Elder_Direwolf.label>
+<OE_EGOSeed_Elder_Direwolf.description>Once the seed of an EGO tree, this specimen mutated under unknown conditions after entering the body of an Elder Direwolf. It sprouted within the host, forming an amalgam symbiosis. It can no longer be used to grow an EGO tree.</OE_EGOSeed_Elder_Direwolf.description>
+
+<!--=============== Elder Raptor ====================-->
+<OE_EGOSeed_Elder_Raptor.label>mutated EGO seed – Elder Raptor</OE_EGOSeed_Elder_Raptor.label>
+<OE_EGOSeed_Elder_Raptor.description>Once the seed of an EGO tree, this specimen mutated under unknown conditions after entering the body of an Elder Raptor. It sprouted within the host, forming an amalgam symbiosis. It can no longer be used to grow an EGO tree.</OE_EGOSeed_Elder_Raptor.description>
+
+<!--=============== Elder Ogren ====================-->
+<OE_EGOSeed_Elder_Ogren.label>mutated EGO seed – Elder Ogren</OE_EGOSeed_Elder_Ogren.label>
+<OE_EGOSeed_Elder_Ogren.description>Once the seed of an EGO tree, this specimen mutated under unknown conditions after entering the body of an Elder Ogren. It sprouted within the host, forming an amalgam symbiosis. It can no longer be used to grow an EGO tree.</OE_EGOSeed_Elder_Ogren.description>
+
+<!--=============== Elder Tionant ====================-->
+<OE_EGOSeed_Elder_Tionant.label>mutated EGO seed – Elder Tionant</OE_EGOSeed_Elder_Tionant.label>
+<OE_EGOSeed_Elder_Tionant.description>Once the seed of an EGO tree, this specimen mutated under unknown conditions after entering the body of an Elder Tionant. It sprouted within the host, forming an amalgam symbiosis. It can no longer be used to grow an EGO tree.</OE_EGOSeed_Elder_Tionant.description>
+
+</LanguageData>

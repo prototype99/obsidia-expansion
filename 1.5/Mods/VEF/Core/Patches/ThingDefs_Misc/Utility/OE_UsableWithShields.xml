@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== OMC ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OMC_Sword" or defName="OMC_Sword_M" or defName="OMC_Sword_P" or defName="OMC_Axe" or defName="OMC_Axe_M" or defName="OMC_Axe_P" or defName="OMC_Whip" or defName="OMC_Whip_M" or defName="OMC_Whip_P" or defName="OMC_Whip_Acid" or defName="OMC_Whip_M_Acid" or defName="OMC_Whip_P_Acid" or defName="OMC_Whip_Cryo" or defName="OMC_Whip_M_Cryo" or defName="OMC_Whip_P_Cryo" or defName="OMC_Whip_Fire" or defName="OMC_Whip_M_Fire" or defName="OMC_Whip_P_Fire" or defName="OMC_Whip_EMP" or defName="OMC_Whip_M_EMP" or defName="OMC_Whip_P_EMP" or defName="OMC_Pistol" or defName="OMC_Pistol_M" or defName="OMC_Pistol_P" or defName="OMC_ShotgunS" or defName="OMC_ShotgunS_M" or defName="OMC_ShotgunS_P" or defName="OMC_Revolver" or defName="OMC_Revolver_M" or defName="OMC_Revolver_P" or defName="OMC_Trophy_Chainsword" or defName="OMC_Trophy_Chainsword_P" or defName="OMC_Trophy_Pistol" or defName="OMC_Trophy_Pistol_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== OTC ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OTC_Hammer_Acid" or defName="OTC_Hammer_M_Acid" or defName="OTC_Hammer_P_Acid" or defName="OTC_ChainAxe_Acid" or defName="OTC_ChainAxe_M_Acid" or defName="OTC_ChainAxe_P_Acid" or defName="OTC_Pistol_Acid" or defName="OTC_Pistol_M_Acid" or defName="OTC_Pistol_P_Acid" or defName="OTC_SMG_Acid" or defName="OTC_SMG_M_Acid" or defName="OTC_SMG_P_Acid" or defName="OTC_Trophy_Sword_Acid" or defName="OTC_Trophy_Sword_P_Acid" or defName="OTC_Hammer_Cryo" or defName="OTC_Hammer_M_Cryo" or defName="OTC_Hammer_P_Cryo" or defName="OTC_ChainAxe_Cryo" or defName="OTC_ChainAxe_M_Cryo" or defName="OTC_ChainAxe_P_Cryo" or defName="OTC_Pistol_Cryo" or defName="OTC_Pistol_M_Cryo" or defName="OTC_Pistol_P_Cryo" or defName="OTC_SMG_Cryo" or defName="OTC_SMG_M_Cryo" or defName="OTC_SMG_P_Cryo" or defName="OTC_Trophy_Sword_Cryo" or defName="OTC_Trophy_Sword_P_Cryo" or defName="OTC_Hammer_Fire" or defName="OTC_Hammer_M_Fire" or defName="OTC_Hammer_P_Fire" or defName="OTC_ChainAxe_Fire" or defName="OTC_ChainAxe_M_Fire" or defName="OTC_ChainAxe_P_Fire" or defName="OTC_Pistol_Fire" or defName="OTC_Pistol_M_Fire" or defName="OTC_Pistol_P_Fire" or defName="OTC_SMG_Fire" or defName="OTC_SMG_M_Fire" or defName="OTC_SMG_P_Fire" or defName="OTC_Trophy_Sword_Fire" or defName="OTC_Trophy_Sword_P_Fire" or defName="OTC_Hammer_EMP" or defName="OTC_Hammer_M_EMP" or defName="OTC_Hammer_P_EMP" or defName="OTC_ChainAxe_EMP" or defName="OTC_ChainAxe_M_EMP" or defName="OTC_ChainAxe_P_EMP" or defName="OTC_Pistol_EMP" or defName="OTC_Pistol_M_EMP" or defName="OTC_Pistol_P_EMP" or defName="OTC_SMG_EMP" or defName="OTC_SMG_M_EMP" or defName="OTC_SMG_P_EMP" or defName="OTC_Trophy_Sword_EMP" or defName="OTC_Trophy_Sword_P_EMP" or defName="OTC_Trophy_Cards" or defName="OTC_Trophy_Cards_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OTC_BigAxe_Acid" or defName="OTC_BigAxe_M_Acid" or defName="OTC_BigAxe_P_Acid" or defName="OTC_BigAxe_Cryo" or defName="OTC_BigAxe_M_Cryo" or defName="OTC_BigAxe_P_Cryo" or defName="OTC_BigAxe_Fire" or defName="OTC_BigAxe_M_Fire" or defName="OTC_BigAxe_P_Fire" or defName="OTC_BigAxe_EMP" or defName="OTC_BigAxe_M_EMP" or defName="OTC_BigAxe_P_EMP"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== OCC ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OCC_PowerFist" or defName="OCC_PowerFist_M" or defName="OCC_PowerFist_P" or defName="OCC_PowerFist_Acid" or defName="OCC_PowerFist_M_Acid" or defName="OCC_PowerFist_P_Acid" or defName="OCC_PowerFist_Cryo" or defName="OCC_PowerFist_M_Cryo" or defName="OCC_PowerFist_P_Cryo" or defName="OCC_PowerFist_Fire" or defName="OCC_PowerFist_M_Fire" or defName="OCC_PowerFist_P_Fire" or defName="OCC_PowerFist_EMP" or defName="OCC_PowerFist_M_EMP" or defName="OCC_PowerFist_P_EMP" or defName="OCC_Revolver" or defName="OCC_Revolver_M" or defName="OCC_Revolver_P" or defName="OCC_Trophy_Drillspear" or defName="OCC_Trophy_Drillspear_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OCC_BigSword" or defName="OCC_BigSword_M" or defName="OCC_BigSword_P" or defName="OCC_BigHammer" or defName="OCC_BigHammer_M" or defName="OCC_BigHammer_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== OEC ====================-->	 
+<Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationAddModExtension">
+	  <xpath>/Defs/ThingDef[defName="OEC_Knife" or defName="OEC_Knife_M" or defName="OEC_Knife_P" or defName="OEC_Katana" or defName="OEC_Katana_M" or defName="OEC_Katana_P" or defName="OEC_Katana_Acid" or defName="OEC_Katana_M_Acid" or defName="OEC_Katana_P_Acid" or defName="OEC_Katana_Cryo" or defName="OEC_Katana_M_Cryo" or defName="OEC_Katana_P_Cryo" or defName="OEC_Katana_Fire" or defName="OEC_Katana_M_Fire" or defName="OEC_Katana_P_Fire" or defName="OEC_Katana_EMP" or defName="OEC_Katana_M_EMP" or defName="OEC_Katana_P_EMP" or defName="OEC_Claws" or defName="OEC_Claws_M" or defName="OEC_Claws_P" or defName="OEC_Revolver" or defName="OEC_Revolver_M" or defName="OEC_Revolver_P" or defName="OEC_Trophy_Pistol" or defName="OEC_Trophy_Pistol_P"]</xpath>
+      <value>
+        <li Class="VFECore.ThingDefExtension">
+	      <usableWithShields>true</usableWithShields>
+        </li>
+      </value>
+	</match>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationAddModExtension">
+	  <xpath>/Defs/ThingDef[defName="OEC_Spear" or defName="OEC_Spear_M" or defName="OEC_Spear_P" or defName="OEC_Trophy_Scepter" or defName="OEC_Trophy_Scepter_P"]</xpath>
+      <value>
+        <li Class="VFECore.ThingDefExtension">
+	      <usableWithShields>false</usableWithShields>
+        </li>
+      </value>
+	</match>
+</Operation>
+
+<!--=============== ODC ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="ODC_Knife" or defName="ODC_Knife_P" or defName="ODC_Sword" or defName="ODC_Sword_P" or defName="ODC_Rapier" or defName="ODC_Rapier_P" or defName="ODC_RapierGuard" or defName="ODC_RapierGuard_P" or defName="ODC_Rapier_Acid" or defName="ODC_Rapier_P_Acid" or defName="ODC_Rapier_Cryo" or defName="ODC_Rapier_P_Cryo" or defName="ODC_Rapier_Fire" or defName="ODC_Rapier_P_Fire" or defName="ODC_Rapier_EMP" or defName="ODC_Rapier_P_EMP" or defName="ODC_Pistol" or defName="ODC_Pistol_P" or defName="ODC_Revolver" or defName="ODC_Revolver_P" or defName="ODC_Revolver_Acid" or defName="ODC_Revolver_P_Acid" or defName="ODC_Revolver_Cryo" or defName="ODC_Revolver_P_Cryo" or defName="ODC_Revolver_Fire" or defName="ODC_Revolver_P_Fire" or defName="ODC_Revolver_EMP" or defName="ODC_Revolver_P_EMP" or defName="ODC_SMG_A" or defName="ODC_SMG_A_P" or defName="ODC_SMG_B" or defName="ODC_SMG_B_P" or defName="ODC_Trophy_Sickle_A" or defName="ODC_Trophy_Sickle_A_P" or defName="ODC_Trophy_Sickle_B" or defName="ODC_Trophy_Sickle_B_P" or defName="ODC_Trophy_Sickle_C" or defName="ODC_Trophy_Sickle_C_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="ODC_BigSword" or defName="ODC_BigSword_P" or defName="ODC_DualSword" or defName="ODC_DualSword_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== CAC ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="CAC_Scythe" or defName="CAC_Scythe_P" or defName="CAC_Thurible" or defName="CAC_Thurible_P" or defName="CAC_Pistol" or defName="CAC_Pistol_P" or defName="CAC_ShotgunS" or defName="CAC_ShotgunS_P" or defName="CAC_SMG" or defName="CAC_SMG_P" or defName="CAC_Trophy_Knife" or defName="CAC_Trophy_Whip" or defName="CAC_Trophy_Pistol"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="CAC_BigScythe" or defName="CAC_BigScythe_P" or defName="CAC_Trophy_BigScythe"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== EGO ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="EGO_Knife" or defName="EGO_Claws" or defName="EGO_Scepter" or defName="EGO_Whip" or defName="EGO_Pistol" or defName="EGO_Shotgun" or defName="EGO_SMG" or defName="EGO_Trophy_Dragonbane_A" or defName="EGO_Trophy_Dragonbane_B" or defName="EGO_Trophy_Dragonbane_C" or defName="EGO_Trophy_Dragonbane_D"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="EGO_BigSword" or defName="EGO_BigHammer" or defName="EGO_BigScythe" or defName="EGO_SniperRifle" or defName="EGO_GrenadeLauncher" or defName="EGO_RocketLauncher" or defName="EGO_Trophy_Dragonbane_E" or defName="EGO_Trophy_Dragonbane_F" or defName="EGO_Trophy_Dragonbane_G"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== OES ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OES_Sword" or defName="OES_Axe" or defName="OES_Hammer" or defName="OES_PowerFist" or defName="OES_Katana" or defName="OES_Rapier" or defName="OES_Scythe" or defName="OES_ShotgunS" or defName="OES_LegionSpear_A" or defName="OES_LegionSpear_B" or defName="OES_LegionSpear_C" or defName="OES_LegionSpear_D" or defName="OES_LegionSpear_E" or defName="OES_LegionSpear_F"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OES_BigAxe" or defName="OES_BigSword" or defName="OES_Spear" or defName="OES_DualSword"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== OMG ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OMG_Rapier" or defName="OMG_Axe" or defName="OMG_Pistol" or defName="OMG_Revolver" or defName="OMG_Shotgun" or defName="OMG_Trophy_Knife" or defName="OMG_Trophy_Revolver"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OMG_BattleAxe" or defName="OMG_DualSword" or defName="OMG_Scepter" or defName="OMG_SniperRifle" or defName="OMG_Minigun" or defName="OMG_Trophy_PowerGuitar"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== OE ====================-->	 
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OE_Trophy_BrokenSword" or defName="OE_Trophy_BrokenSword_P" or defName="OE_Trophy_RepairPistol" or defName="OE_Trophy_RepairPistol_P" or defName="OE_Trophy_SampleCollector" or defName="OE_Trophy_SampleCollector_P" or defName="OE_Trophy_MechHammer" or defName="OE_Trophy_MechHammer_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>true</usableWithShields>
+      </li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="OE_Trophy_Shovel" or defName="OE_Trophy_Shovel_P" or defName="OE_Trophy_UnstableGun" or defName="OE_Trophy_UnstableGun_P"]</xpath>
+    <value>
+      <li Class="VFECore.ThingDefExtension">
+	    <usableWithShields>false</usableWithShields>
+      </li>
+    </value>
+</Operation>
+
+</Patch>

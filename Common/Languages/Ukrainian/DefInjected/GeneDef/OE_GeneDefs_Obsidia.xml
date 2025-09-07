@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Acid ====================-->
+<!--=============== Resistant ====================-->
+<OE_AcidResistant.label>стійкий до кислоти</OE_AcidResistant.label>
+<OE_AcidResistant.labelShortAdj>кислотривкий</OE_AcidResistant.labelShortAdj>
+<OE_AcidResistant.description>Носії цього гена стійкі до кислотного пошкодження будь-якого джерела. Вони приймають лише 25% шкоди від кислоти.</OE_AcidResistant.description>
+
+<OE_AcidResistant.symbolPack.prefixSymbols.0.symbol>антитокс</OE_AcidResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_AcidResistant.symbolPack.prefixSymbols.1.symbol>грубий</OE_AcidResistant.symbolPack.prefixSymbols.1.symbol>
+<!--=============== Weakness ====================-->
+<OE_AcidWeakness.label>слабкий до кислоти</OE_AcidWeakness.label>
+<OE_AcidWeakness.labelShortAdj>ніжношкірий</OE_AcidWeakness.labelShortAdj>
+<OE_AcidWeakness.description>У носіїв цього гена у шкірі є біологічні сполуки, які болісно реагують на кислотне ушкодження. Вони надзвичайно чутливі до кислоти. Втрата від кислоти множиться на 4.</OE_AcidWeakness.description>
+
+<OE_AcidWeakness.symbolPack.prefixSymbols.0.symbol>чутливий</OE_AcidWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_AcidWeakness.symbolPack.prefixSymbols.1.symbol>тонкошкірий</OE_AcidWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Cryo ====================-->
+<!--=============== Resistant ====================-->
+<OE_CryoResistant.label>стійкий до кріо</OE_CryoResistant.label>
+<OE_CryoResistant.labelShortAdj>Кріоупорний</OE_CryoResistant.labelShortAdj>
+<OE_CryoResistant.description>Носії цього гена мають спеціальні швидкодіючі потові залози та холодостійку шкіру. Вони отримують лише 25% кріо-пошкодження.</OE_CryoResistant.description>
+
+<OE_CryoResistant.symbolPack.prefixSymbols.0.symbol>сухий</OE_CryoResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_CryoResistant.symbolPack.prefixSymbols.1.symbol>теплий</OE_CryoResistant.symbolPack.prefixSymbols.1.symbol>
+<!--=============== Weakness ====================-->
+<OE_CryoWeakness.label>слабкий до кріо</OE_CryoWeakness.label>
+<OE_CryoWeakness.labelShortAdj>вологошкірий</OE_CryoWeakness.labelShortAdj>
+<OE_CryoWeakness.description>У носіїв волога тонка шкіра, яка легко замерзає від кріопошкоджень, а їхня імунна система дуже погано реагує на такі загрози. Втрата від кріо множиться на 4.</OE_CryoWeakness.description>
+
+<OE_CryoWeakness.symbolPack.prefixSymbols.0.symbol>вологий</OE_CryoWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_CryoWeakness.symbolPack.prefixSymbols.1.symbol>морозний</OE_CryoWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Blast ====================-->
+<!--=============== Resistant ====================-->
+<OE_BlastResistant.label>стійкий до вибуху</OE_BlastResistant.label>
+<OE_BlastResistant.labelShortAdj>вибухостійкий</OE_BlastResistant.labelShortAdj>
+<OE_BlastResistant.description>Носії цього гена отримують менше травм від вибухової хвилі, ніж інші. У них потовщені, ущільнені кістки, майже тверді грудні клітини та посилені сполучні фактори у суглобах та плоті. Вони отримують лише 25% збитків від вибуху.</OE_BlastResistant.description>
+
+<OE_BlastResistant.symbolPack.prefixSymbols.0.symbol>міцний</OE_BlastResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_BlastResistant.symbolPack.prefixSymbols.1.symbol>товстий</OE_BlastResistant.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Weakness ====================-->
+<OE_BlastWeakness.label>слабкий до вибуху</OE_BlastWeakness.label>
+<OE_BlastWeakness.labelShortAdj>тонкошкірий</OE_BlastWeakness.labelShortAdj>
+<OE_BlastWeakness.description>Носії цього гена отримують більше травм від вибухової хвилі, ніж інші. У них тонкі, ламкі кістки і менше сполучних молекул у суглобах та плоті. Втрата від вибуху множиться на 4.</OE_BlastWeakness.description>
+
+<OE_BlastWeakness.symbolPack.prefixSymbols.0.symbol>крихкий</OE_BlastWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_BlastWeakness.symbolPack.prefixSymbols.1.symbol>тонкошкірий</OE_BlastWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== MentalBreakThreshold ====================-->
+<!--=============== Resistant ====================-->
+<OE_MentalBreakResistant.label>стійкість до психічного зриву</OE_MentalBreakResistant.label>
+<OE_MentalBreakResistant.labelShortAdj>психічна стійкість</OE_MentalBreakResistant.labelShortAdj>
+<OE_MentalBreakResistant.description>Носії цього гена психічно стійкі і здаються при стресах, які зламали більшість людей.</OE_MentalBreakResistant.description>
+
+<OE_MentalBreakResistant.symbolPack.prefixSymbols.0.symbol>психічний</OE_MentalBreakResistant.symbolPack.prefixSymbols.0.symbol>
+
+<!--=============== Weakness ====================-->
+<OE_MentalBreakWeakness.label>слабкість до психічного зриву</OE_MentalBreakWeakness.label>
+<OE_MentalBreakWeakness.labelShortAdj>психічна нестабільність</OE_MentalBreakWeakness.labelShortAdj>
+<OE_MentalBreakWeakness.description>Носії цього гена схильні ламатися під тиском.</OE_MentalBreakWeakness.description>
+
+<OE_MentalBreakWeakness.symbolPack.prefixSymbols.0.symbol>психічний</OE_MentalBreakWeakness.symbolPack.prefixSymbols.0.symbol>
+
+
+</LanguageData>

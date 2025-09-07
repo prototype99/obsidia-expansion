@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Acolyte ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Acolyte_Prestige</defName>
+    <label>CAC Acolyte</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACBaseMelee</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<combatPower>250</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Apostle ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Apostle_Prestige</defName>
+    <label>CAC Apostle</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACHeavyCultist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACHeavyMelee</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<combatPower>250</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Disciple ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Disciple_Prestige</defName>
+    <label>CAC Disciple</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACRangedMelee</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<combatPower>250</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Prefect ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Prefect_Prestige</defName>
+    <label>CAC Prefect</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACLightGun</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<combatPower>250</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Confessor ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Confessor_Prestige</defName>
+    <label>CAC Confessor</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACHeavyCultist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACBaseGun</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<combatPower>250</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Deacon ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Deacon_Prestige</defName>
+    <label>CAC Deacon</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACSniperGun</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<combatPower>250</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Pontifex ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Pontifex_Prestige</defName>
+    <label>CAC Pontifex</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>Baron</li>
+      <li>Count</li>
+      <li>Duke</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACHeavyCultist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACHeavyGun</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<combatPower>250</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>

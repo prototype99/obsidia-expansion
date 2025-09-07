@@ -1,0 +1,1796 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Slimes Base ====================-->
+  <ThingDef Name="OEBaseSlime" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+	  <MeatAmount>0</MeatAmount>
+	  <ComfyTemperatureMin>-75</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>75</ComfyTemperatureMax>
+	  <InjuryHealingFactor>5</InjuryHealingFactor>
+    </statBases>
+    <race>
+      <body>OESlimeLike</body>
+	  <hasGenders>false</hasGenders>
+	  <packAnimal>false</packAnimal>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
+	  <needsRest>false</needsRest>
+	  <bloodDef>Filth_MachineBits</bloodDef>
+      <nameOnTameChance>0.35</nameOnTameChance>    
+      <wildness>0</wildness>
+      <manhunterOnTameFailChance>0.025</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
+	  <meatColor>(160,168,139)</meatColor>
+      <meatMarketValue>0.5</meatMarketValue>
+      <useMeatFrom>Megaspider</useMeatFrom>
+	  <lifeExpectancy>100</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>OESlimeLarva</def>
+          <minAge>0</minAge>
+        </li>
+		<li>
+          <def>OESlimeJuvenile</def>
+          <minAge>0.05</minAge>
+        </li>
+        <li>
+          <def>OESlimeAdult</def>
+          <minAge>0.20</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+	<ingredient>
+      <mergeCompatibilityTags>
+        <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+	<tradeTags>
+      <li>OEAnimalSlime</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Liquid Type ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEBaseLiquidSlime" ParentName="OEBaseSlime" Abstract="True">
+    <statBases>
+      <MoveSpeed>3.75</MoveSpeed>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ArmorRating_Heat>0.50</ArmorRating_Heat>
+	  <Flammability>0.25</Flammability>
+	  <ToxicResistance>0.25</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.25</ToxicEnvironmentResistance>
+    </statBases>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+	<race>
+	  <baseBodySize>0.4</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+	  <roamMtbDays>5</roamMtbDays>
+      <foodType>CarnivoreAnimal</foodType>
+	  <trainability>None</trainability>
+    </race>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Jelly ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Jelly</defName>
+    <label>jelly slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nJelly slime production type, produces 250 Insect Jelly every 5 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Jelly</ThingDef>
+	  <ThingDef>InsectJelly</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>950</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>OmnivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <InsectJelly>20</InsectJelly>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>InsectJelly</milkDef>
+        <milkIntervalDays>5</milkIntervalDays>
+        <milkAmount>250</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Jelly</defName>
+    <label>jelly slime</label>
+    <labelPlural>jelly slimes</labelPlural>
+    <race>OE_Slime_Jelly</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jelly/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jelly/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jelly/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jelly/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jelly/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jelly/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>25</combatPower>
+  </PawnKindDef>
+
+<!--=============== Chemfuel ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Chemfuel</defName>
+    <label>chemfuel slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChemfuel slime production type, produces 125 Chemfuel every 5 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Chemfuel</ThingDef>
+	  <ThingDef>Chemfuel</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>425</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>OmnivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Chemfuel>20</Chemfuel>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Chemfuel</milkDef>
+        <milkIntervalDays>5</milkIntervalDays>
+        <milkAmount>125</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Chemfuel</defName>
+    <label>chemfuel slime</label>
+    <labelPlural>chemfuel slimes</labelPlural>
+    <race>OE_Slime_Chemfuel</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Chemfuel/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Chemfuel/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Chemfuel/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Chemfuel/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Chemfuel/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Chemfuel/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>25</combatPower>
+  </PawnKindDef>
+
+<!--=============== Neutroamine ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Neutroamine</defName>
+    <label>neutroamine slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nNeutroamine slime production type, produces 5 Neutroamine every 5 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Neutroamine</ThingDef>
+	  <ThingDef>Neutroamine</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>375</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>OmnivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Neutroamine>5</Neutroamine>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Neutroamine</milkDef>
+        <milkIntervalDays>5</milkIntervalDays>
+        <milkAmount>5</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Neutroamine</defName>
+    <label>neutroamine slime</label>
+    <labelPlural>neutroamine slimes</labelPlural>
+    <race>OE_Slime_Neutroamine</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Neutroamine/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Neutroamine/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Neutroamine/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Neutroamine/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Neutroamine/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Neutroamine/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>25</combatPower>
+  </PawnKindDef>
+
+<!--=============== Beer ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Beer</defName>
+    <label>beer slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nBeer slime production type, produces 25 Beer every 5 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Beer</ThingDef>
+	  <ThingDef>Beer</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>OmnivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Beer>10</Beer>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Beer</milkDef>
+        <milkIntervalDays>5</milkIntervalDays>
+        <milkAmount>25</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Beer</defName>
+    <label>beer slime</label>
+    <labelPlural>beer slimes</labelPlural>
+    <race>OE_Slime_Beer</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Beer/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Beer/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Beer/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Beer/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Beer/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Beer/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>25</combatPower>
+  </PawnKindDef>
+
+<!--=============== Rock Type ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEBaseRockSlime" ParentName="OEBaseSlime" Abstract="True">
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+	  <Flammability>0.0</Flammability>
+	  <ToxicResistance>0.5</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.5</ToxicEnvironmentResistance>
+	  <PsychicSensitivity>0.5</PsychicSensitivity>
+    </statBases>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<race>
+	  <baseBodySize>0.4</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+	  <roamMtbDays>5</roamMtbDays>
+      <foodType>CarnivoreAnimal</foodType>
+	  <trainability>None</trainability>
+    </race>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Steel ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Steel</defName>
+    <label>steel slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nSteel slime production type, produces 150 Steel every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Steel</ThingDef>
+	  <ThingDef>Steel</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>400</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Steel>20</Steel>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Steel</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>150</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Steel</defName>
+    <label>steel slime</label>
+    <labelPlural>steel slimes</labelPlural>
+    <race>OE_Slime_Steel</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Gold ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Gold</defName>
+    <label>gold slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nGold slime production type, produces 40 Gold every 18 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Gold</ThingDef>
+	  <ThingDef>Gold</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1095</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+      </willNeverEat>
+    </race>
+	<butcherProducts>
+      <Gold>20</Gold>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Gold</milkDef>
+        <milkIntervalDays>18</milkIntervalDays>
+        <milkAmount>40</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Gold</defName>
+    <label>gold slime</label>
+    <labelPlural>gold slimes</labelPlural>
+    <race>OE_Slime_Gold</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Gold/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Gold/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Gold/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Gold/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Gold/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Gold/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Silver ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Silver</defName>
+    <label>silver slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nSilver slime production type, produces 100 Silver every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Silver</ThingDef>
+	  <ThingDef>Silver</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>325</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Silver>20</Silver>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Silver</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>100</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Silver</defName>
+    <label>silver slime</label>
+    <labelPlural>silver slimes</labelPlural>
+    <race>OE_Slime_Silver</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Silver/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Silver/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Silver/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Silver/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Silver/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Silver/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Uranium ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Uranium</defName>
+    <label>uranium slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nUranium slime production type, produces 45 Uranium every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Uranium</ThingDef>
+	  <ThingDef>Uranium</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Uranium>20</Uranium>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Uranium</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>45</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Uranium</defName>
+    <label>uranium slime</label>
+    <labelPlural>uranium slimes</labelPlural>
+    <race>OE_Slime_Uranium</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Uranium/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Uranium/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Uranium/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Uranium/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Uranium/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Uranium/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Jade ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Jade</defName>
+    <label>jade slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nJade slime production type, produces 30 Jade every 18 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Jade</ThingDef>
+	  <ThingDef>Jade</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>700</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+      </willNeverEat>
+    </race>
+	<butcherProducts>
+      <Jade>20</Jade>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Jade</milkDef>
+        <milkIntervalDays>18</milkIntervalDays>
+        <milkAmount>30</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Jade</defName>
+    <label>jade slime</label>
+    <labelPlural>jade slimes</labelPlural>
+    <race>OE_Slime_Jade</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jade/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jade/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jade/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jade/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jade/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jade/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Obsidian ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Obsidian</defName>
+    <label>obsidian slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nObsidian slime production type, produces 30 Obsidian every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Obsidian</ThingDef>
+	  <ThingDef>OE_Obsidian</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1095</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <OE_Obsidian>20</OE_Obsidian>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Obsidian</milkDef>
+        <milkIntervalDays>9</milkIntervalDays>
+        <milkAmount>30</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Obsidian</defName>
+    <label>obsidian slime</label>
+    <labelPlural>obsidian slimes</labelPlural>
+    <race>OE_Slime_Obsidian</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Obsidian/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Obsidian/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Obsidian/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Obsidian/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Obsidian/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Obsidian/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Mythril ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Mythril</defName>
+    <label>mythril slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nMythril slime production type, produces 20 Mythril every 18 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Mythril</ThingDef>
+	  <ThingDef>OE_Mythril</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1350</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+      </willNeverEat>
+    </race>
+	<butcherProducts>
+      <OE_Mythril>20</OE_Mythril>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Mythril</milkDef>
+        <milkIntervalDays>17</milkIntervalDays>
+        <milkAmount>20</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Mythril</defName>
+    <label>mythril slime</label>
+    <labelPlural>mythril slimes</labelPlural>
+    <race>OE_Slime_Mythril</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Mythril/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Mythril/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Mythril/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Mythril/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Mythril/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Mythril/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Platinum ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Platinum</defName>
+    <label>platinum slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nPlatinum slime production type, produces 30 Platinum every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Platinum</ThingDef>
+	  <ThingDef>OE_Platinum</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1225</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <OE_Platinum>20</OE_Platinum>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Platinum</milkDef>
+        <milkIntervalDays>9</milkIntervalDays>
+        <milkAmount>30</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Platinum</defName>
+    <label>platinum slime</label>
+    <labelPlural>platinum slimes</labelPlural>
+    <race>OE_Slime_Platinum</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Platinum/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Platinum/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Platinum/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Platinum/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Platinum/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Platinum/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Syntherius ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Syntherius</defName>
+    <label>syntherius slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nSyntherius slime production type, produces 3 Syntherius every 12 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Syntherius</ThingDef>
+	  <ThingDef>OE_Syntherius</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>395</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+      </willNeverEat>
+    </race>
+	<butcherProducts>
+      <OE_Syntherius>5</OE_Syntherius>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Syntherius</milkDef>
+        <milkIntervalDays>12</milkIntervalDays>
+        <milkAmount>3</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Syntherius</defName>
+    <label>syntherius slime</label>
+    <labelPlural>syntherius slimes</labelPlural>
+    <race>OE_Slime_Syntherius</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Syntherius/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Syntherius/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Syntherius/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Syntherius/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Syntherius/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Syntherius/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--=============== Floral Type ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEBaseFloralSlime" ParentName="OEBaseSlime" Abstract="True">
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+	  <LeatherAmount>0</LeatherAmount>
+	  <Flammability>0.5</Flammability>
+	  <ToxicResistance>1.0</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <PsychicSensitivity>0.0</PsychicSensitivity>
+    </statBases>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Scratch</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Scratch</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<race>
+	  <baseBodySize>0.4</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+	  <roamMtbDays>5</roamMtbDays>
+      <foodType>CarnivoreAnimal</foodType>
+	  <trainability>None</trainability>
+    </race>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Herbal ====================-->
+  <ThingDef ParentName="OEBaseFloralSlime">
+    <defName>OE_Slime_Herbal</defName>
+    <label>herbal slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nHerbal slime production type, produces 3 Herbal medicine every 12 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Herbal</ThingDef>
+	  <ThingDef>MedicineHerbal</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>650</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <MedicineHerbal>10</MedicineHerbal>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>MedicineHerbal</milkDef>
+        <milkIntervalDays>12</milkIntervalDays>
+        <milkAmount>3</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Herbal</defName>
+    <label>herbal slime</label>
+    <labelPlural>herbal slimes</labelPlural>
+    <race>OE_Slime_Herbal</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Herbal/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Herbal/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Herbal/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Herbal/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Herbal/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Herbal/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+<!--=============== Ambrosia ====================-->
+  <ThingDef ParentName="OEBaseFloralSlime">
+    <defName>OE_Slime_Ambrosia</defName>
+    <label>ambrosia slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nAmbrosia slime production type, produces 15 Ambrosia every 12 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Ambrosia</ThingDef>
+	  <ThingDef>Ambrosia</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>850</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Ambrosia>10</Ambrosia>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Ambrosia</milkDef>
+        <milkIntervalDays>12</milkIntervalDays>
+        <milkAmount>15</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Ambrosia</defName>
+    <label>ambrosia slime</label>
+    <labelPlural>ambrosia slimes</labelPlural>
+    <race>OE_Slime_Ambrosia</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ambrosia/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ambrosia/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ambrosia/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ambrosia/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ambrosia/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ambrosia/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+<!--=============== Fungus ====================-->
+  <ThingDef ParentName="OEBaseFloralSlime">
+    <defName>OE_Slime_Fungus</defName>
+    <label>fungus slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nFungus slime production type, produces 35 Raw Fungus every 12 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Fungus</ThingDef>
+	  <ThingDef>RawFungus</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>265</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <RawFungus>10</RawFungus>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>RawFungus</milkDef>
+        <milkIntervalDays>12</milkIntervalDays>
+        <milkAmount>35</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Fungus</defName>
+    <label>fungus slime</label>
+    <labelPlural>fungus slimes</labelPlural>
+    <race>OE_Slime_Fungus</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Fungus/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Fungus/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Fungus/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Fungus/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Fungus/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Fungus/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+<!--=============== Jumy ====================-->
+  <ThingDef ParentName="OEBaseFloralSlime">
+    <defName>OE_Slime_Jumy</defName>
+    <label>jumy slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nJumy slime production type, produces 15 Jumy Berries every 12 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Jumy</ThingDef>
+	  <ThingDef>OE_Jumy_Berries</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>250</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <OE_Jumy_Berries>10</OE_Jumy_Berries>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Jumy_Berries</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>15</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Jumy</defName>
+    <label>jumy slime</label>
+    <labelPlural>jumy slimes</labelPlural>
+    <race>OE_Slime_Jumy</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jumy/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jumy/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jumy/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jumy/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jumy/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Jumy/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+<!--=============== Battle Types ====================-->
+<!--=============== Bone ====================-->
+  <ThingDef ParentName="OEBaseSlime">
+    <defName>OE_Slime_Bone</defName>
+    <label>bone slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nBone slime battle type, with increased intelligence for training.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Bone</ThingDef>
+    </descriptionHyperlinks>
+	<statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+	  <MarketValue>975</MarketValue>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.25</ArmorRating_Heat>
+	  <Flammability>0.25</Flammability>
+	  <ToxicResistance>0.25</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.25</ToxicEnvironmentResistance>
+	  <PsychicSensitivity>0.50</PsychicSensitivity>
+    </statBases>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<race>
+	  <predator>true</predator>
+	  <baseBodySize>0.4</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>1.0</baseHealthScale>
+      <foodType>CarnivoreAnimal, AnimalProduct</foodType>
+	  <trainability>Advanced</trainability>
+    </race>
+	<butcherProducts>
+      <OE_Platinum>15</OE_Platinum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Bone</defName>
+    <label>bone slime</label>
+    <labelPlural>bone slimes</labelPlural>
+    <race>OE_Slime_Bone</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bone/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bone/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bone/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bone/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bone/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bone/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>200</combatPower>
+  </PawnKindDef>
+
+<!--=============== Special Types ====================-->
+<!--=============== Ancient ====================-->
+  <ThingDef ParentName="OEBaseSlime">
+    <defName>OE_Slime_Ancient</defName>
+    <label>ancient slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nAncient slime - an unconfigured without purpose, perhaps when butchery it, you will be able to find out secrets of Slimes creation.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart</ThingDef>
+    </descriptionHyperlinks>
+	<statBases>
+      <MoveSpeed>3.75</MoveSpeed>
+	  <MarketValue>1000</MarketValue>
+	  <LeatherAmount>0</LeatherAmount>
+	  <Flammability>0.25</Flammability>
+	  <ToxicResistance>0.25</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.25</ToxicEnvironmentResistance>
+    </statBases>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>5</amount>
+            </li>
+            <li>
+              <def>EMP</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<race>
+	  <baseBodySize>0.4</baseBodySize>
+      <baseHungerRate>0.35</baseHungerRate>
+      <baseHealthScale>0.75</baseHealthScale>
+	  <wildness>1.00</wildness>
+	  <manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <foodType>None</foodType>
+	  <trainability>None</trainability>
+    </race>
+	<butcherProducts>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+    </butcherProducts>
+	<killedLeavingsRanges>
+	  <OE_Syntherius>-15~5</OE_Syntherius>
+	  <OE_SlimeHeart>-5~1</OE_SlimeHeart>
+	</killedLeavingsRanges>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Ancient</defName>
+    <label>ancient slime</label>
+    <labelPlural>ancient slimes</labelPlural>
+    <race>OE_Slime_Ancient</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>true</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ancient/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ancient/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ancient/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ancient/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ancient/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ancient/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>150</combatPower>
+  </PawnKindDef>
+
+<!--=============== Hauler ====================-->
+  <ThingDef ParentName="OEBaseSlime">
+    <defName>OE_Slime_Hauler</defName>
+    <label>hauler slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nHauler slime pack type, with high intelligence and exceptional carrying capacity.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Hauler</ThingDef>
+    </descriptionHyperlinks>
+	<statBases>
+      <MoveSpeed>3.25</MoveSpeed>
+	  <MarketValue>625</MarketValue>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ComfyTemperatureMin>-95</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>95</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.20</ArmorRating_Heat>
+	  <Flammability>0.25</Flammability>
+	  <ToxicResistance>0.35</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.35</ToxicEnvironmentResistance>
+	  <CaravanRidingSpeedFactor>1.65</CaravanRidingSpeedFactor>
+    </statBases>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<race>
+	  <packAnimal>true</packAnimal>
+	  <predator>true</predator>
+	  <baseBodySize>5.0</baseBodySize>
+      <baseHungerRate>0.65</baseHungerRate>
+      <baseHealthScale>4.55</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal, VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+      </willNeverEat>
+	  <nameOnTameChance>0.85</nameOnTameChance>
+	  <trainability>Advanced</trainability>
+    </race>
+	<butcherProducts>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Hauler</defName>
+    <label>hauler slime</label>
+    <labelPlural>hauler slimes</labelPlural>
+    <race>OE_Slime_Hauler</race>
+	<ecoSystemWeight>0.20</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hauler/Slime</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hauler/Dessicated_Slime</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hauler/Slime</texPath>
+          <drawSize>1.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hauler/Dessicated_Slime</texPath>
+          <drawSize>1.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hauler/Slime</texPath>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hauler/Dessicated_Slime</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>175</combatPower>
+  </PawnKindDef>
+
+</Defs>

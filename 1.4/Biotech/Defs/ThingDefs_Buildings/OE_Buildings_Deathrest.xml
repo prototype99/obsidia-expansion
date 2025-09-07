@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Battlecraft Pump ====================-->
+  <ThingDef ParentName="DeathrestBuildingHemogenFueled">
+    <defName>OE_BattlecraftPump</defName>
+    <label>obsidia battlecraft pump</label>
+    <description>This device enhances the combat stats of a deathresting person by chemical stimulation of nervous system. It must be connected to a deathrest casket to function.\n\nThis building needs to consume hemogen to function.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_BattlecraftPump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<descriptionHyperlinks>
+      <HediffDef>OE_BattlecraftRush</HediffDef>
+    </descriptionHyperlinks>
+    <rotatable>false</rotatable>
+	<defaultPlacingRot>North</defaultPlacingRot>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+	  <MarketValue>1550</MarketValue>
+      <WorkToBuild>3500</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Empyrium>5</OE_Empyrium>
+      <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+      <HemogenPack>5</HemogenPack>
+    </costList>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_DeathrestBindable">
+        <stackLimit>4</stackLimit>
+        <hediffToApply>OE_BattlecraftRush</hediffToApply>
+        <soundStart>GlucosoidPump_Start</soundStart>
+        <soundEnd>GlucosoidPump_Stop</soundEnd>
+        <soundWorking>GlucosoidPump_Ambience</soundWorking>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Deathrest</li>
+	  <li>OESynth</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <HediffDef ParentName="DeathrestHediffBase">
+    <defName>OE_BattlecraftRush</defName>
+    <label>battlecraft rush</label>
+    <description>Combat stats is enhanced because this person used a battlecraft pump while deathresting. This effect lasts until the next deathrest.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_BattlecraftPump</ThingDef>
+    </descriptionHyperlinks>
+    <stages>
+      <li>
+        <multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
+        <statOffsets>
+          <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+          <MeleeHitChance>2</MeleeHitChance>
+		  <MeleeDodgeChance>2</MeleeDodgeChance>
+		  <PainShockThreshold>0.10</PainShockThreshold>
+		  <AimingDelayFactor>-0.10</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Perfectioning Pump ====================-->
+  <ThingDef ParentName="DeathrestBuildingHemogenFueled">
+    <defName>OE_PerfectioningPump</defName>
+    <label>obsidia perfectioning pump</label>
+    <description>This device enhances the working stats of a deathresting person by chemical stimulation of nervous system. It must be connected to a deathrest casket to function.\n\nThis building needs to consume hemogen to function.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_PerfectioningPump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<descriptionHyperlinks>
+      <HediffDef>OE_PerfectioningRush</HediffDef>
+    </descriptionHyperlinks>
+    <rotatable>false</rotatable>
+	<defaultPlacingRot>North</defaultPlacingRot>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+	  <MarketValue>1550</MarketValue>
+      <WorkToBuild>3500</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Empyrium>5</OE_Empyrium>
+      <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+      <HemogenPack>5</HemogenPack>
+    </costList>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_DeathrestBindable">
+        <stackLimit>4</stackLimit>
+        <hediffToApply>OE_PerfectioningRush</hediffToApply>
+        <soundStart>GlucosoidPump_Start</soundStart>
+        <soundEnd>GlucosoidPump_Stop</soundEnd>
+        <soundWorking>GlucosoidPump_Ambience</soundWorking>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Deathrest</li>
+	  <li>OESynth</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <HediffDef ParentName="DeathrestHediffBase">
+    <defName>OE_PerfectioningRush</defName>
+    <label>perfectioning rush</label>
+    <description>Working stats is enhanced because this person used a perfectioning pump while deathresting. This effect lasts until the next deathrest.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_BattlecraftPump</ThingDef>
+    </descriptionHyperlinks>
+    <stages>
+      <li>
+        <multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
+        <statOffsets>
+		  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+		  <ResearchSpeed>0.10</ResearchSpeed>
+		  <GlobalLearningFactor>0.10</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

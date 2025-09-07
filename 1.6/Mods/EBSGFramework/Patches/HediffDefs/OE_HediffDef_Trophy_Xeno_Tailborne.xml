@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Obsidia Expansion - Tailborne Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== Neural Mesh ====================-->
+  <HediffDef ParentName="OETailborneGroupPackBuff">
+    <defName>OE_Tailborne_NeuralMesh_BuffHediff</defName>
+    <label>neural mesh</label>
+    <description>The blade weaves its wielder into a volatile combat network, feeding strength from shared presence. Each additional ally wielding the same blade increases melee damage for all.</description>
+	<defaultLabelColor>(0.973, 0.929, 0.192)</defaultLabelColor>
+    <stages>
+      <li>
+        <minSeverity>1.0</minSeverity>
+		<label>solo</label>
+		<statOffsets/>
+      </li>
+      <li>
+        <minSeverity>2.0</minSeverity>
+		<label>duo</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.2</MeleeWeapon_DamageMultiplier>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3.0</minSeverity>
+		<label>trio</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.3</MeleeWeapon_DamageMultiplier>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>4.0</minSeverity>
+		<label>pack</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.4</MeleeWeapon_DamageMultiplier>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>5.0</minSeverity>
+		<label>squad</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.5</MeleeWeapon_DamageMultiplier>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

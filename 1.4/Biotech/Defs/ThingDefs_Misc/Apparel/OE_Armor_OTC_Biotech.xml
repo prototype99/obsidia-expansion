@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Mechanitor</defName>
+    <label>OTC Engineer Armor(Overseer)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the addition of a Mechanoids Control pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Mechanitor/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3775</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>17</MechBandwidth>
+	  <MechFormingSpeed>0.8</MechFormingSpeed>
+	  <MechRepairSpeed>0.8</MechRepairSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Mechanitor/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Mechanitor</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

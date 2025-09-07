@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Expanded Framework</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== Moonveil Twins / Silver Eclipse - Effect ====================-->
+  <HediffDef>
+    <defName>OE_Trophy_Xeno_NightHunter_Hediff</defName>
+    <label>Night Hunt</label>
+    <description>The shadows awaken primal instincts, heightening speed and combat focus under cover of night.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+	  <li>
+        <minSeverity>1</minSeverity>
+		<statOffsets>
+	      <AimingDelayFactor>-0.5</AimingDelayFactor>
+		  <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+		  <MeleeHitChance>10</MeleeHitChance>
+	      <MeleeDodgeChance>10</MeleeDodgeChance>
+		  <MoveSpeed>0.25</MoveSpeed>
+	    </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="EBSGFramework.HediffCompProperties_SeverityByLightLevel">
+	    <lightToSeverityCurve>
+		  <points>
+		    <li>(0, 1)</li>
+			<li>(0.6, 0.9)</li>
+		  </points>
+		</lightToSeverityCurve>
+		<timeToSeverityCurve>
+		  <points>
+		    <li>(0, 1)</li>
+			<li>(0.35, 0.9)</li>
+			<li>(0.65, 0.9)</li>
+			<li>(1, 1)</li>
+		  </points>
+		</timeToSeverityCurve>
+      </li>
+    </comps>
+  </HediffDef>
+
+<!--=============== Tyrant’s Edge - Effect ====================-->
+  <HediffDef>
+    <defName>ODC_Trophy_Xeno_BattleFury_Hediff</defName>
+    <label>Battle Fury</label>
+    <description>You shouldn't be able to read this outside devmode.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>0.001</initialSeverity>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+    <comps>
+      <li Class="EBSGFramework.HediffCompProperties_HediffOnKill">
+        <hediff>ODC_Trophy_Xeno_BattleFury_BuffHediff</hediff>
+        <severityForFirstKill>0.125</severityForFirstKill>
+        <severityPerExtraKill>0.125</severityPerExtraKill>
+        <allowHumanoids>True</allowHumanoids>
+		<allowMechanoids>True</allowMechanoids>
+        <allowAnimals>True</allowAnimals>
+        <allowInsects>True</allowInsects>
+		<allowDryads MayRequire="Ludeon.RimWorld.Ideology">True</allowDryads>
+		<allowEntities MayRequire="Ludeon.RimWorld.Anomaly">True</allowEntities>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ODC_Trophy_Xeno_BattleFury_BuffHediff</defName>
+    <label>battle fury</label>
+    <description>A surge of primal rage fuels each strike, turning battle into a frenzy of motion and steel.\n\nEffect: Increases Move Speed and Melee Damage after scoring a kill with Tyrant’s Edge.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+    <minSeverity>0.001</minSeverity>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.2</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>50000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>First Blood</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.05</MeleeWeapon_DamageMultiplier>
+		  <MoveSpeed>0.10</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.20</minSeverity>
+        <label>Double Strike</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.10</MeleeWeapon_DamageMultiplier>
+		  <MoveSpeed>0.20</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.35</minSeverity>
+        <label>Killing Spree</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.15</MeleeWeapon_DamageMultiplier>
+		  <MoveSpeed>0.30</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.50</minSeverity>
+        <label>Rampage</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.20</MeleeWeapon_DamageMultiplier>
+		  <MoveSpeed>0.40</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.65</minSeverity>
+        <label>Unstoppable</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.25</MeleeWeapon_DamageMultiplier>
+		  <MoveSpeed>0.50</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.80</minSeverity>
+        <label>Godlike</label>
+        <statOffsets>
+		  <MeleeWeapon_DamageMultiplier>0.30</MeleeWeapon_DamageMultiplier>
+		  <MoveSpeed>0.60</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Obsidian Orator - Effect ====================-->
+  <HediffDef>
+    <defName>ODC_Trophy_Xeno_GunneryConcentration_Hediff</defName>
+    <label>Gunnery Concentration</label>
+    <description>You shouldn't be able to read this outside devmode.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>0.001</initialSeverity>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+    <comps>
+      <li Class="EBSGFramework.HediffCompProperties_HediffOnKill">
+        <hediff>ODC_Trophy_Xeno_GunneryConcentration_BuffHediff</hediff>
+        <severityForFirstKill>0.125</severityForFirstKill>
+        <severityPerExtraKill>0.125</severityPerExtraKill>
+        <allowHumanoids>True</allowHumanoids>
+		<allowMechanoids>True</allowMechanoids>
+        <allowAnimals>True</allowAnimals>
+        <allowInsects>True</allowInsects>
+		<allowDryads MayRequire="Ludeon.RimWorld.Ideology">True</allowDryads>
+		<allowEntities MayRequire="Ludeon.RimWorld.Anomaly">True</allowEntities>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ODC_Trophy_Xeno_GunneryConcentration_BuffHediff</defName>
+    <label>gunnery concentration</label>
+    <description>Focused firepower sharpens reflexes, driving the wielder into a rhythm of relentless shots.\n\nEffect: Increases Move Speed and reduces Aiming Time after scoring a kill with Obsidian Orator.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+    <minSeverity>0.001</minSeverity>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.2</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>50000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>First Blood</label>
+        <statOffsets>
+		  <AimingDelayFactor>-0.05</AimingDelayFactor>
+		  <MoveSpeed>0.10</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.20</minSeverity>
+        <label>Double Strike</label>
+        <statOffsets>
+		  <AimingDelayFactor>-0.10</AimingDelayFactor>
+		  <MoveSpeed>0.20</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.35</minSeverity>
+        <label>Killing Spree</label>
+        <statOffsets>
+		  <AimingDelayFactor>-0.15</AimingDelayFactor>
+		  <MoveSpeed>0.30</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.50</minSeverity>
+        <label>Rampage</label>
+        <statOffsets>
+		  <AimingDelayFactor>-0.20</AimingDelayFactor>
+		  <MoveSpeed>0.40</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.65</minSeverity>
+        <label>Unstoppable</label>
+        <statOffsets>
+		  <AimingDelayFactor>-0.25</AimingDelayFactor>
+		  <MoveSpeed>0.50</MoveSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>0.80</minSeverity>
+        <label>Godlike</label>
+        <statOffsets>
+		  <AimingDelayFactor>-0.30</AimingDelayFactor>
+		  <MoveSpeed>0.60</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Chaos Blade - Effect ====================-->
+  <HediffDef>
+    <defName>OE_Trophy_Xeno_RandomGiver_Hediff</defName>
+    <label>Random Buff Giver</label>
+    <description>You shouldn't be able to read this outside devmode.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<stages>
+	  <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+	</stages>
+    <comps>
+      <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+	    <hediff>OE_Trophy_Xeno_RandomBuff_Hediff</hediff>
+		<severity>0.1~1.0</severity>
+		<severityCondition>Positive</severityCondition>
+		<interval>60000</interval>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Xeno_RandomBuff_Hediff</defName>
+    <label>echo of chaos</label>
+    <description>A lingering fragment of Rimuru Tempest’s unpredictable craft, pulsing with unstable energy. Once per day, the wielder receives a random positive effect.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>0.05</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<stages Inherit="False">
+	  <li>
+        <label>body</label>
+		<minSeverity>0.1</minSeverity>
+		<capMods>
+		  <li>
+		    <capacity>Consciousness</capacity>
+			<offset>0.1</offset>
+		  </li>
+		  <li>
+		    <capacity>Hearing</capacity>
+			<offset>0.1</offset>
+		  </li>
+		  <li>
+		    <capacity>Sight</capacity>
+			<offset>0.1</offset>
+		  </li>
+		  <li>
+		    <capacity>Talking</capacity>
+			<offset>0.1</offset>
+		  </li>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<offset>0.1</offset>
+		  </li>
+		  <li>
+		    <capacity>Moving</capacity>
+			<offset>0.1</offset>
+		  </li>
+        </capMods>
+	  </li>
+	  <li>
+        <label>hunger</label>
+		<minSeverity>0.2</minSeverity>
+        <hungerRateFactorOffset>-0.25</hungerRateFactorOffset>
+      </li>
+      <li>
+        <label>work</label>
+		<minSeverity>0.3</minSeverity>
+        <statOffsets>
+          <WorkSpeedGlobal>0.35</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+      <li>
+        <label>study</label>
+		<minSeverity>0.4</minSeverity>
+        <statOffsets>
+          <GlobalLearningFactor>0.35</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <label>mind</label>
+		<minSeverity>0.5</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>insulation</label>
+		<minSeverity>0.6</minSeverity>
+        <statOffsets>
+          <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+          <ComfyTemperatureMax>15</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>armor</label>
+		<minSeverity>0.7</minSeverity>
+        <statOffsets>
+		  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.15</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>resistance</label>
+		<minSeverity>0.8</minSeverity>
+        <statOffsets>
+		  <IncomingDamageFactor>-0.25</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>melee</label>
+		<minSeverity>0.9</minSeverity>
+        <statOffsets>
+          <MeleeHitChance>6</MeleeHitChance>
+		  <MeleeDodgeChance>6</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>ranged</label>
+		<minSeverity>1.0</minSeverity>
+        <statOffsets>
+          <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.15</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>59999</disappearsAfterTicks>
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+<!--=============== Deathveil Scepter - Effect ====================-->
+  <HediffDef>
+    <defName>OES_Trophy_Xeno_DeathrestEfficiency_Hediff</defName>
+    <label>Deathrest Efficiency</label>
+    <description>You shouldn't be able to read this outside devmode.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<stages>
+	  <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+	</stages>
+	<stages>
+      <li>
+        <statFactors>
+          <EBSG_DeathrestEfficiency>2.0</EBSG_DeathrestEfficiency>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Sanguine Bloom - Effect ====================-->
+  <HediffDef>
+    <defName>EGO_Trophy_Xeno_HemogenicMelee_Hediff</defName>
+    <label>Hemogen on Kill</label>
+    <description>You shouldn't be able to read this outside devmode.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<stages>
+	  <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+	</stages>
+    <comps>
+      <li Class="EBSGFramework.HediffCompProperties_HemogenOnKill">
+		<staticHemogenGain>0.1</staticHemogenGain>
+		<allowDryads>False</allowDryads>
+		<allowInsects>False</allowInsects>
+		<allowEntities>False</allowEntities>
+      </li>
+    </comps>
+  </HediffDef>
+
+<!--=============== Mechfeaster - Effect ====================-->
+  <HediffDef>
+    <defName>OE_Trophy_Xeno_NanogenicRanged_Hediff</defName>
+    <label>Nanogel on Kill</label>
+    <description>You shouldn't be able to read this outside devmode.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<stages>
+	  <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+	</stages>
+    <comps>
+      <li Class="EBSGFramework.HediffCompProperties_DRGOnKill">
+	    <resourceOffsets>
+		  <li>
+		    <mainResourceGene>OE_NanomorphNanogenic</mainResourceGene>
+			<amount>0.05</amount>
+			<maxDistance>18.9</maxDistance>
+			<allowHumanoids>False</allowHumanoids>
+			<allowDryads>False</allowDryads>
+			<allowInsects>False</allowInsects>
+			<allowAnimals>False</allowAnimals>
+			<allowEntities>False</allowEntities>
+		  </li>
+		</resourceOffsets>
+      </li>
+    </comps>
+  </HediffDef>
+
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

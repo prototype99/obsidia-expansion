@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Acid ====================-->
+<!--=============== Resistant ====================-->
+<OE_AcidResistant.label>acid resistant</OE_AcidResistant.label>
+<OE_AcidResistant.labelShortAdj>acidproof</OE_AcidResistant.labelShortAdj>
+<OE_AcidResistant.description>Carriers of this gene are resistant to acid damage from any source. They only take 25% of the acid damage.</OE_AcidResistant.description>
+
+<OE_AcidResistant.symbolPack.prefixSymbols.0.symbol>antitox</OE_AcidResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_AcidResistant.symbolPack.prefixSymbols.1.symbol>rough</OE_AcidResistant.symbolPack.prefixSymbols.1.symbol>
+<!--=============== Weakness ====================-->
+<OE_AcidWeakness.label>acid weakness</OE_AcidWeakness.label>
+<OE_AcidWeakness.labelShortAdj>sensitiveskin</OE_AcidWeakness.labelShortAdj>
+<OE_AcidWeakness.description>Carriers of this gene have biological compounds in their skin that react painfully to acid damage. They are unusually sensitive to acid. Damage from acid is multiplied by 4.</OE_AcidWeakness.description>
+
+<OE_AcidWeakness.symbolPack.prefixSymbols.0.symbol>sensitive</OE_AcidWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_AcidWeakness.symbolPack.prefixSymbols.1.symbol>thinskin</OE_AcidWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Cryo ====================-->
+<!--=============== Resistant ====================-->
+<OE_CryoResistant.label>cryo resistant</OE_CryoResistant.label>
+<OE_CryoResistant.labelShortAdj>cryoproof</OE_CryoResistant.labelShortAdj>
+<OE_CryoResistant.description>Carriers of this gene have special fast-acting sweat glands and cold-resistant skin. They only take 25% of the сryo damage.</OE_CryoResistant.description>
+
+<OE_CryoResistant.symbolPack.prefixSymbols.0.symbol>dry</OE_CryoResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_CryoResistant.symbolPack.prefixSymbols.1.symbol>warm</OE_CryoResistant.symbolPack.prefixSymbols.1.symbol>
+<!--=============== Weakness ====================-->
+<OE_CryoWeakness.label>cryo weakness</OE_CryoWeakness.label>
+<OE_CryoWeakness.labelShortAdj>wetskin</OE_CryoWeakness.labelShortAdj>
+<OE_CryoWeakness.description>Carriers have wet, thin skin which freezes easily from сryo damage, and their immune systems react very poorly to this kind of threat. Damage from сryo is multiplied by 4.</OE_CryoWeakness.description>
+
+<OE_CryoWeakness.symbolPack.prefixSymbols.0.symbol>wet</OE_CryoWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_CryoWeakness.symbolPack.prefixSymbols.1.symbol>freeze</OE_CryoWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Blast ====================-->
+<!--=============== Resistant ====================-->
+<OE_BlastResistant.label>blast resistant</OE_BlastResistant.label>
+<OE_BlastResistant.labelShortAdj>blastproof</OE_BlastResistant.labelShortAdj>
+<OE_BlastResistant.description>Carriers of this gene take less injuries than others from the blast damage. They have thickened, densified bones, nearly-solid ribcages, and strengthened binding factors in joints and flesh. They only take 25% of the blast damage.</OE_BlastResistant.description>
+
+<OE_BlastResistant.symbolPack.prefixSymbols.0.symbol>tough</OE_BlastResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_BlastResistant.symbolPack.prefixSymbols.1.symbol>stout</OE_BlastResistant.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Weakness ====================-->
+<OE_BlastWeakness.label>blast weakness</OE_BlastWeakness.label>
+<OE_BlastWeakness.labelShortAdj>thinskin</OE_BlastWeakness.labelShortAdj>
+<OE_BlastWeakness.description>Carriers of this gene take greater injuries than others from the blast damage. They have thin, brittle bones and less binding molecules in joints and flesh. Damage from blast is multiplied by 4.</OE_BlastWeakness.description>
+
+<OE_BlastWeakness.symbolPack.prefixSymbols.0.symbol>frail</OE_BlastWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_BlastWeakness.symbolPack.prefixSymbols.1.symbol>thin</OE_BlastWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== MentalBreakThreshold ====================-->
+<!--=============== Resistant ====================-->
+<OE_MentalBreakResistant.label>mental break resistant</OE_MentalBreakResistant.label>
+<OE_MentalBreakResistant.labelShortAdj>mental stability</OE_MentalBreakResistant.labelShortAdj>
+<OE_MentalBreakResistant.description>Carriers of this gene is mentally tough and won't break down under stresses that would crack most people.</OE_MentalBreakResistant.description>
+
+<OE_MentalBreakResistant.symbolPack.prefixSymbols.0.symbol>mental</OE_MentalBreakResistant.symbolPack.prefixSymbols.0.symbol>
+
+<!--=============== Weakness ====================-->
+<OE_MentalBreakWeakness.label>mental break weakness</OE_MentalBreakWeakness.label>
+<OE_MentalBreakWeakness.labelShortAdj>mental instability</OE_MentalBreakWeakness.labelShortAdj>
+<OE_MentalBreakWeakness.description>Carriers of this gene tends to crack under pressure.</OE_MentalBreakWeakness.description>
+
+<OE_MentalBreakWeakness.symbolPack.prefixSymbols.0.symbol>mental</OE_MentalBreakWeakness.symbolPack.prefixSymbols.0.symbol>
+
+</LanguageData>

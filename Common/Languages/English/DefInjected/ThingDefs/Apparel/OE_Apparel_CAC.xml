@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== CAC - Helmet ====================-->
+<!--=============== Light ====================-->
+<CAC_LightHelmet.label>CAC Cultist Light Helmet</CAC_LightHelmet.label>
+<CAC_LightHelmet.description>Light power armor Helmet, well protects the owner. Designed and modified for use by CAC Cultists.</CAC_LightHelmet.description>
+
+<CAC_LightHelmet_Prestige.label>CAC Cultist Light Helmet(Lord)</CAC_LightHelmet_Prestige.label>
+<CAC_LightHelmet_Prestige.description>Light power armor Helmet, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</CAC_LightHelmet_Prestige.description>
+
+<CAC_LightHelmet_Mechanitor.label>CAC Cultist Light Helmet(Overseer)</CAC_LightHelmet_Mechanitor.label>
+<CAC_LightHelmet_Mechanitor.description>Light power armor Helmet, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves Mechanoids Control abilities.</CAC_LightHelmet_Mechanitor.description>
+
+<!--=============== Heavy ====================-->
+<CAC_HeavyHelmet.label>CAC Cultist Heavy Helmet</CAC_HeavyHelmet.label>
+<CAC_HeavyHelmet.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Cultists.</CAC_HeavyHelmet.description>
+
+<CAC_HeavyHelmet_Prestige.label>CAC Cultist Heavy Helmet(Lord)</CAC_HeavyHelmet_Prestige.label>
+<CAC_HeavyHelmet_Prestige.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</CAC_HeavyHelmet_Prestige.description>
+
+<CAC_HeavyHelmet_Mechanitor.label>CAC Cultist Heavy Helmet(Overseer)</CAC_HeavyHelmet_Mechanitor.label>
+<CAC_HeavyHelmet_Mechanitor.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves Mechanoids Control abilities.</CAC_HeavyHelmet_Mechanitor.description>
+
+<!--=============== Priest ====================-->
+<CAC_PriestHelmet.label>CAC Priest Helmet</CAC_PriestHelmet.label>
+<CAC_PriestHelmet.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Priests.</CAC_PriestHelmet.description>
+
+<!--=============== OMC - Armor ====================-->
+<!--=============== Light ====================-->
+<CAC_LightArmor.label>CAC Cultist Light Armor</CAC_LightArmor.label>
+<CAC_LightArmor.description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.</CAC_LightArmor.description>
+
+<CAC_LightArmor_Smoker.label>CAC Cultist Light Armor(Fogler)</CAC_LightArmor_Smoker.label>
+<CAC_LightArmor_Smoker.verbs.Verb_SmokePop.label>CAC Cultist Light Armor(Fogler)</CAC_LightArmor_Smoker.verbs.Verb_SmokePop.label>
+<CAC_LightArmor_Smoker.description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Smokepop pack.</CAC_LightArmor_Smoker.description>
+<CAC_LightArmor_Smoker.comps.CompApparelReloadable.chargeNoun>smokepop</CAC_LightArmor_Smoker.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_LightArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_LightArmor_Jump.label>CAC Cultist Light Armor(Raven)</CAC_LightArmor_Jump.label>
+<CAC_LightArmor_Jump.verbs.Verb_Jump.label>CAC Cultist Light Armor(Raven)</CAC_LightArmor_Jump.verbs.Verb_Jump.label>
+<CAC_LightArmor_Jump.description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Jump pack.</CAC_LightArmor_Jump.description>
+<CAC_LightArmor_Jump.comps.CompApparelReloadable.chargeNoun>jump</CAC_LightArmor_Jump.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Jump.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_LightArmor_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_LightArmor_Prestige.label>CAC Cultist Light Armor(Lord)</CAC_LightArmor_Prestige.label>
+<CAC_LightArmor_Prestige.description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</CAC_LightArmor_Prestige.description>
+
+<CAC_LightArmor_Mechanitor.label>CAC Cultist Light Armor(Overseer)</CAC_LightArmor_Mechanitor.label>
+<CAC_LightArmor_Mechanitor.description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Mechanoids Control pack.</CAC_LightArmor_Mechanitor.description>
+
+<CAC_LightArmor_Turret.label>CAC Cultist Light Armor(Goblin)</CAC_LightArmor_Turret.label>
+<CAC_LightArmor_Turret.description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</CAC_LightArmor_Turret.description>
+<CAC_LightArmor_Turret.verbs.deploy_turret.label>deploy turret</CAC_LightArmor_Turret.verbs.deploy_turret.label>
+<CAC_LightArmor_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</CAC_LightArmor_Turret.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_LightArmor_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_LightArmor_Swarmling.label>CAC Cultist Light Armor(Swarmling)</CAC_LightArmor_Swarmling.label>
+<CAC_LightArmor_Swarmling.description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered drones.</CAC_LightArmor_Swarmling.description>
+<CAC_LightArmor_Swarmling.verbs.deploy_swarmling_drone.label>deploy swarmling drone</CAC_LightArmor_Swarmling.verbs.deploy_swarmling_drone.label>
+<CAC_LightArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>incendiary</CAC_LightArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_LightArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Heavy ====================-->
+<CAC_HeavyArmor.label>CAC Cultist Heavy Armor</CAC_HeavyArmor.label>
+<CAC_HeavyArmor.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.</CAC_HeavyArmor.description>
+
+<CAC_HeavyArmor_Smoker.label>CAC Cultist Heavy Armor(Fogler)</CAC_HeavyArmor_Smoker.label>
+<CAC_HeavyArmor_Smoker.verbs.Verb_SmokePop.label>CAC Cultist Heavy Armor(Fogler)</CAC_HeavyArmor_Smoker.verbs.Verb_SmokePop.label>
+<CAC_HeavyArmor_Smoker.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Smokepop pack.</CAC_HeavyArmor_Smoker.description>
+<CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.chargeNoun>smokepop</CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_HeavyArmor_Jump.label>CAC Cultist Heavy Armor(Raven)</CAC_HeavyArmor_Jump.label>
+<CAC_HeavyArmor_Jump.verbs.Verb_Jump.label>CAC Cultist Heavy Armor(Raven)</CAC_HeavyArmor_Jump.verbs.Verb_Jump.label>
+<CAC_HeavyArmor_Jump.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Jump pack.</CAC_HeavyArmor_Jump.description>
+<CAC_HeavyArmor_Jump.comps.CompApparelReloadable.chargeNoun>jump</CAC_HeavyArmor_Jump.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Jump.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_HeavyArmor_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_HeavyArmor_Prestige.label>CAC Cultist Heavy Armor(Lord)</CAC_HeavyArmor_Prestige.label>
+<CAC_HeavyArmor_Prestige.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</CAC_HeavyArmor_Prestige.description>
+
+<CAC_HeavyArmor_Mechanitor.label>CAC Cultist Heavy Armor(Overseer)</CAC_HeavyArmor_Mechanitor.label>
+<CAC_HeavyArmor_Mechanitor.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Mechanoids Control pack.</CAC_HeavyArmor_Mechanitor.description>
+
+<CAC_HeavyArmor_Turret.label>CAC Cultist Heavy Armor(Goblin)</CAC_HeavyArmor_Turret.label>
+<CAC_HeavyArmor_Turret.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</CAC_HeavyArmor_Turret.description>
+<CAC_HeavyArmor_Turret.verbs.deploy_turret.label>deploy turret</CAC_HeavyArmor_Turret.verbs.deploy_turret.label>
+<CAC_HeavyArmor_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</CAC_HeavyArmor_Turret.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_HeavyArmor_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_HeavyArmor_Swarmling.label>CAC Cultist Heavy Armor(Swarmling)</CAC_HeavyArmor_Swarmling.label>
+<CAC_HeavyArmor_Swarmling.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered drones.</CAC_HeavyArmor_Swarmling.description>
+<CAC_HeavyArmor_Swarmling.verbs.deploy_swarmling_drone.label>deploy swarmling drone</CAC_HeavyArmor_Swarmling.verbs.deploy_swarmling_drone.label>
+<CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>incendiary</CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== CAC - Grenades ====================-->
+<Grenade_Armor_CAC_TurretPack.label>CAC turret pack capsule</Grenade_Armor_CAC_TurretPack.label>
+<Grenade_Armor_CAC_SwarmlingPack.label>CAC swarmling pack capsule</Grenade_Armor_CAC_SwarmlingPack.label>
+
+<!--=============== Priest ====================-->
+<CAC_PriestArmor.label>CAC Priest Armor</CAC_PriestArmor.label>
+<CAC_PriestArmor.description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Priests.\n\nIt has a built-in module with a flare dispenser.</CAC_PriestArmor.description>
+<CAC_PriestArmor.verbs.deploy_flare.label>deploy flare</CAC_PriestArmor.verbs.deploy_flare.label>
+<CAC_PriestArmor.comps.CompApparelReloadable.chargeNoun>flare</CAC_PriestArmor.comps.CompApparelReloadable.chargeNoun>
+<CAC_PriestArmor.comps.CompApparelReloadable.cooldownGerund>on cooldown</CAC_PriestArmor.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_DisruptorFlare.label>disruptor flare</CAC_DisruptorFlare.label>
+
+</LanguageData>

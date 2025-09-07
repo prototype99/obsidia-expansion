@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Storytellers Expanded - Winston Waves</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== Obsidian Resource Drop ====================-->
+<!--=============== Normal ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_NormalResourceDrop</defName>
+    <texPath>UI/Rewards/RewardResourceDrop_Normal</texPath>
+    <category>Normal</category>
+    <label>Obsidia resource drop</label>
+    <description>Cargo pods drop 75 obsidian, 50 mythril, 25 platinum, 1 syntherius pack</description>
+    <items>
+      <li>
+        <thing>OE_Obsidian</thing>
+        <count>75</count>
+      </li>
+      <li>
+        <thing>OE_Mythril</thing>
+        <count>50</count>
+      </li>
+      <li>
+        <thing>OE_Platinum</thing>
+        <count>25</count>
+      </li>
+	  <li>
+        <thing>OE_SyntheriusPack</thing>
+        <count>1</count>
+      </li>
+    </items>
+  </VSEWW.RewardDef>
+<!--=============== Good ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_GoodResourceDrop</defName>
+    <texPath>UI/Rewards/RewardResourceDrop_Good</texPath>
+    <label>Obsidia resource drop</label>
+    <description>Cargo pods drop 150 obsidian, 100 mythril, 50 platinum, 2 syntherius pack</description>
+    <category>Good</category>
+    <items>
+      <li>
+        <thing>OE_Obsidian</thing>
+        <count>150</count>
+      </li>
+      <li>
+        <thing>OE_Mythril</thing>
+        <count>100</count>
+      </li>
+      <li>
+        <thing>OE_Platinum</thing>
+        <count>50</count>
+      </li>
+      <li>
+        <thing>OE_SyntheriusPack</thing>
+        <count>2</count>
+      </li>
+    </items>
+  </VSEWW.RewardDef>
+<!--=============== Excellent ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_ExcellentResourceDrop</defName>
+    <texPath>UI/Rewards/RewardResourceDrop_Excellent</texPath>
+    <label>Obsidia resource drop</label>
+    <description>Cargo pods drop 300 obsidian, 200 mythril, 100 platinum, 3 syntherius pack, 1 arachna core</description>
+    <category>Excellent</category>
+    <items>
+      <li>
+        <thing>OE_Obsidian</thing>
+        <count>300</count>
+      </li>
+      <li>
+        <thing>OE_Mythril</thing>
+        <count>200</count>
+      </li>
+      <li>
+        <thing>OE_Platinum</thing>
+        <count>100</count>
+      </li>
+      <li>
+        <thing>OE_SyntheriusPack</thing>
+        <count>3</count>
+      </li>
+      <li>
+        <thing>OE_ArachnaCore</thing>
+        <count>1</count>
+      </li>
+    </items>
+  </VSEWW.RewardDef>
+<!--=============== Legendary ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_LegendaryResourceDrop</defName>
+    <texPath>UI/Rewards/RewardResourceDrop_Legendary</texPath>
+    <label>Obsidia resource drop</label>
+    <description>Cargo pods drop 750 obsidian, 500 mythril, 250 platinum, 5 syntherius pack, 2 arachna core</description>
+    <category>Legendary</category>
+    <items>
+      <li>
+        <thing>OE_Obsidian</thing>
+        <count>750</count>
+      </li>
+      <li>
+        <thing>OE_Mythril</thing>
+        <count>500</count>
+      </li>
+      <li>
+        <thing>OE_Platinum</thing>
+        <count>250</count>
+      </li>
+      <li>
+        <thing>OE_SyntheriusPack</thing>
+        <count>5</count>
+      </li>
+      <li>
+        <thing>OE_ArachnaCore</thing>
+        <count>2</count>
+      </li>
+    </items>
+  </VSEWW.RewardDef>
+
+<!--=============== Obsidian Slime Drop ====================-->
+<!--=============== Poor ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_PoorSlimeDrop</defName>
+    <texPath>UI/Rewards/RewardSlimeDrop_Poor</texPath>
+    <category>Poor</category>
+    <label>Obsidia slime drop</label>
+    <description>Cargo pod drops 1 random, tamed slime</description>
+    <randomPawns>
+      <li>
+        <tradeTag>OEAnimalSlime</tradeTag>
+        <count>1</count>
+      </li>
+    </randomPawns>
+  </VSEWW.RewardDef>
+<!--=============== Normal ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_NormalSlimeDrop</defName>
+    <texPath>UI/Rewards/RewardSlimeDrop_Normal</texPath>
+    <category>Normal</category>
+    <label>Obsidia slime drop</label>
+    <description>Cargo pod drops 3 random, tamed slimes</description>
+    <randomPawns>
+      <li>
+        <tradeTag>OEAnimalSlime</tradeTag>
+        <count>3</count>
+      </li>
+    </randomPawns>
+  </VSEWW.RewardDef>
+<!--=============== Good ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_GoodSlimeDrop</defName>
+    <texPath>UI/Rewards/RewardSlimeDrop_Good</texPath>
+    <label>Obsidia slime drop</label>
+    <description>Cargo pod drops 5 random, tamed slimes</description>
+    <category>Good</category>
+    <randomPawns>
+      <li>
+        <tradeTag>OEAnimalSlime</tradeTag>
+        <count>5</count>
+      </li>
+    </randomPawns>
+  </VSEWW.RewardDef>
+<!--=============== Excellent ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_ExcellentSlimeDrop</defName>
+    <texPath>UI/Rewards/RewardSlimeDrop_Excellent</texPath>
+    <label>Obsidia slime drop</label>
+    <description>Cargo pod drops 7 random, tamed slimes</description>
+    <category>Excellent</category>
+    <randomPawns>
+      <li>
+        <tradeTag>OEAnimalSlime</tradeTag>
+        <count>7</count>
+      </li>
+    </randomPawns>
+  </VSEWW.RewardDef>
+<!--=============== Legendary ====================-->
+  <VSEWW.RewardDef>
+    <defName>OE_LegendarySlimeDrop</defName>
+    <texPath>UI/Rewards/RewardSlimeDrop_Legendary</texPath>
+    <label>Obsidia slime drop</label>
+    <description>Cargo pod drops 10 random, tamed slimes</description>
+    <category>Legendary</category>
+    <randomPawns>
+      <li>
+        <tradeTag>OEAnimalSlime</tradeTag>
+        <count>10</count>
+      </li>
+    </randomPawns>
+  </VSEWW.RewardDef>
+
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Implant - Undead Power Stone ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantPowerStone_Undead</defName>
+    <label>Undead Power Stone</label>
+    <description>An installed - Undead Power Stone.</description>
+	<descriptionHyperlinks>
+	  <ResearchProjectDef>ODCGearLeg</ResearchProjectDef>
+	  <RecipeDef>OE_InstallPowerStone_Undead</RecipeDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.31, 0.20, 0.18)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_UnstableStone</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>-0.5</hungerRateFactorOffset>
+		<statOffsets>
+		  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.5</ArmorRating_Heat>
+		  <MeleeDamageFactor>1.5</MeleeDamageFactor>
+		</statOffsets>
+		<capMods>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<offset>0.35</offset>
+		  </li>
+		  <li>
+		    <capacity>Moving</capacity>
+			<offset>0.35</offset>
+		  </li>
+        </capMods>
+	  </li>
+	</stages>
+	<tags><li>PowerStone</li></tags>
+  </HediffDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallPowerStone_Undead</defName>
+    <label>install - Undead Power Stone</label>
+    <description>Install - Undead Power Stone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_ImplantPowerStone_Undead</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing - Undead Power Stone.</jobString>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+	<skillRequirements Inherit="false" />
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
+	<mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Platinum</li>
+		<li>OE_Syntherius</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantPowerStone_Undead</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>PowerStone</li>
+    </incompatibleWithHediffTags>
+	<researchPrerequisite>ODCGearLeg</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemovePowerStone_Undead</defName>
+    <label>remove - Undead Power Stone</label>
+    <description>Remove - Undead Power Stone.</description>
+    <jobString>Removing - Undead Power Stone.</jobString>
+    <removesHediff>OE_ImplantPowerStone_Undead</removesHediff>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+  </RecipeDef>
+
+</Defs>

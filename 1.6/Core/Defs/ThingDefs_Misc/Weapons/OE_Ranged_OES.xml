@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OES - Shotgun Sidearm ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OES_ShotgunS</defName>
+    <label>Heroic Hellscream</label>
+    <description>Heroic Shotgun Sidearm used by Eidolons. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/ShotgunSidearm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>OESGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.05</PainShockThreshold>
+	  <MoveSpeed>0.10</MoveSpeed>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.10</PilotingAbility>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4740</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_SS</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>13.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OES_Ranged</li>
+    </thingCategories>
+	<costList>
+      <OE_Empyrium>65</OE_Empyrium>
+	  <OE_Orichalcum>60</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+      <OE_HeroicKit>2</OE_HeroicKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps MayRequire="Ludeon.RimWorld.Odyssey" Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+          <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Shotgun</li>
+		  <li>PulseCharge</li>
+		  <li>Sighted</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Heroic Hellscream</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_SS</defName>
+    <label>Heroic Hellscream blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/OES_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>65</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>15</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OES - Rifle ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OES_Rifle</defName>
+    <label>Heroic Cerberus</label>
+    <description>Heroic Rifle used by Eidolons. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/Rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OESGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <MoveSpeed>0.05</MoveSpeed>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.10</PilotingAbility>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4985</MarketValue>
+	  <Mass>4.0</Mass>
+	  <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>1.10</AccuracyShort>
+      <AccuracyMedium>1.30</AccuracyMedium>
+      <AccuracyLong>1.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_RF</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>31.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OES_Ranged</li>
+    </thingCategories>
+	<costList>
+      <OE_Empyrium>100</OE_Empyrium>
+	  <OE_Orichalcum>50</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+      <OE_HeroicKit>4</OE_HeroicKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps MayRequire="Ludeon.RimWorld.Odyssey" Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+		<weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Rifle</li>
+		  <li>PulseCharge</li>
+		  <li>Scoped</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Heroic Cerberus</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_RF</defName>
+    <label>Heroic Cerberus bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OES_EnergySmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>85</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OES - Bow ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OES_Bow</defName>
+    <label>Heroic Pride</label>
+    <description>Heroic Bow used by Eidolons. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/Bow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>0.85</uiIconScale>
+	<soundInteract>Bow_Large</soundInteract>
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OESGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.05</PainShockThreshold>
+	  <MoveSpeed>0.10</MoveSpeed>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.10</PilotingAbility>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>5990</MarketValue>
+	  <Mass>3.5</Mass>
+	  <AccuracyTouch>1.05</AccuracyTouch>
+      <AccuracyShort>1.25</AccuracyShort>
+      <AccuracyMedium>1.05</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_B</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>32.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OES_Ranged</li>
+    </thingCategories>
+	<costList>
+      <OE_Empyrium>75</OE_Empyrium>
+	  <OE_Orichalcum>100</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+      <OE_HeroicKit>4</OE_HeroicKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps MayRequire="Ludeon.RimWorld.Odyssey" Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+		<weaponCategories>
+          <li>Ranged</li>
+          <li>Bow</li>
+		  <li>PulseCharge</li>
+		  <li>Scoped</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Heroic Pride</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_B</defName>
+    <label>Heroic Pride arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/OES_Arrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.55</armorPenetrationBase>
+      <speed>55</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>15</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OES - Minigun ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OES_Minigun</defName>
+    <label>Heroic Unchained</label>
+    <description>Heroic Minigun used by Eidolons. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/Minigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<soundInteract>Interact_Revolver</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OESGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <MoveSpeed>0.05</MoveSpeed>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.10</PilotingAbility>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4695</MarketValue>
+	  <Mass>9.5</Mass>
+	  <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_MG</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>21.9</range>
+		<burstShotCount>12</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>19</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OES_Ranged</li>
+    </thingCategories>
+	<costList>
+      <OE_Empyrium>165</OE_Empyrium>
+	  <OE_Orichalcum>50</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+      <OE_HeroicKit>4</OE_HeroicKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps MayRequire="Ludeon.RimWorld.Odyssey" Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+		<weaponCategories>
+          <li>Ranged</li>
+		  <li>PelletFiring</li>
+          <li>Gun</li>
+		  <li>PulseCharge</li>
+		  <li>Sighted</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Heroic Unchained</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_MG</defName>
+    <label>Heroic Unchained bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OES_EnergySmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>75</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>5</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Sword ====================-->
+  <ThingDef ParentName="OEMeleeBase">
+    <defName>OE_Sword</defName>
+    <label>Proto Delimiter</label>
+    <description>Proto Sword, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <MarketValue>455</MarketValue>
+	  <WorkToMake>3750</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<weaponTags>
+	  <li>OEBaseMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+	  <OE_Mythril>15</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== OE - Hammer ====================-->
+  <ThingDef ParentName="OEMeleeBase">
+    <defName>OE_Hammer</defName>
+    <label>Proto Nemesis</label>
+    <description>Proto Hammer, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Hammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <MarketValue>455</MarketValue>
+	  <WorkToMake>5000</WorkToMake>
+      <Mass>2.0</Mass>
+    </statBases>
+	<weaponTags>
+	  <li>OEBaseMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+	  <OE_Mythril>15</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== OE - Spear ====================-->
+  <ThingDef ParentName="OEMeleeBase">
+    <defName>OE_Spear</defName>
+    <label>Proto Elitra</label>
+    <description>Proto Spear, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Spear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<statBases>
+      <MarketValue>1345</MarketValue>
+	  <WorkToMake>7500</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+	<weaponTags>
+	  <li>OEHeavyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.35</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+        <armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

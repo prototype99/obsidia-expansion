@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Armor Base ====================-->
+  <ThingDef Name="OEArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
+	<techLevel>Spacer</techLevel>
+    <uiIconScale>1.5</uiIconScale>
+	<thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>600</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Uniform Base ====================-->
+  <ThingDef Name="OEUniformBase" ParentName="ArmorMachineableBase" Abstract="True">
+	<techLevel>Spacer</techLevel>
+    <uiIconScale>1.25</uiIconScale>
+	<thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+    </recipeMaker>
+	<colorGenerator Class="ColorGenerator_StandardApparel"/>
+  </ThingDef>
+
+</Defs>

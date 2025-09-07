@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Arachna Core ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OE_ArachnaCore"]</xpath>
+    <value>
+	  <isTechHediff>true</isTechHediff>
+      <comps>
+        <li Class="CompProperties_CompAnalyzableUnlockResearch">
+          <analysisID>900666001</analysisID>
+          <requiresMechanitor>true</requiresMechanitor>
+		  <analysisDurationHours>1.0</analysisDurationHours>
+          <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+          <completedLetterLabel>Arachna Core studied: {RESEARCH} unlocked</completedLetterLabel>
+          <completedLetter>By studying the Arachna Core, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+          <completedLetterDef>PositiveEvent</completedLetterDef>
+		  <activateTexPath>UI/Icons/Study</activateTexPath>
+		  <activateLabelString>Analyze...</activateLabelString>
+          <activateDescString>Analyze the arachna core.</activateDescString>
+          <jobString>Analyze arachna core</jobString>
+          <guiLabelString>Choose who should analyze this</guiLabelString>
+          <inspectString>Can be analyzed by a colonist.</inspectString>
+		  <targetingParameters>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetAnimals>false</canTargetAnimals>
+            <canTargetMechs>false</canTargetMechs>
+            <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+          </targetingParameters>
+        </li>
+      </comps>
+    </value>
+</Operation>
+
+<!--=============== EGO Seed ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OE_EGOSeed"]</xpath>
+    <value>
+	  <isTechHediff>true</isTechHediff>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OE_EGOSeed"]/comps</xpath>
+    <value>
+        <li Class="CompProperties_CompAnalyzableUnlockResearch">
+          <analysisID>900666002</analysisID>
+          <requiresMechanitor>false</requiresMechanitor>
+		  <analysisDurationHours>2.5</analysisDurationHours>
+          <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+          <completedLetterLabel>EGO Seed studied: {RESEARCH} unlocked</completedLetterLabel>
+          <completedLetter>By studying the EGO Seed, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+          <completedLetterDef>PositiveEvent</completedLetterDef>
+		  <activateTexPath>UI/Icons/Study</activateTexPath>
+		  <activateLabelString>Analyze...</activateLabelString>
+          <activateDescString>Analyze the EGO seed.</activateDescString>
+          <jobString>Analyze EGO seed</jobString>
+          <guiLabelString>Choose who should analyze this</guiLabelString>
+          <inspectString>Can be analyzed by a colonist.</inspectString>
+		  <targetingParameters>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetAnimals>false</canTargetAnimals>
+            <canTargetMechs>false</canTargetMechs>
+            <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+          </targetingParameters>
+        </li>
+    </value>
+</Operation>
+
+<!--=============== Unstable Stone ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OE_UnstableStone"]</xpath>
+    <value>
+	  <isTechHediff>true</isTechHediff>
+	  <comps>
+        <li Class="CompProperties_CompAnalyzableUnlockResearch">
+          <analysisID>900666004</analysisID>
+          <requiresMechanitor>false</requiresMechanitor>
+		  <analysisDurationHours>5.0</analysisDurationHours>
+          <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+          <completedLetterLabel>Ustable Power Stone studied: {RESEARCH} unlocked</completedLetterLabel>
+          <completedLetter>By studying the Ustable Power Stone, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+          <completedLetterDef>PositiveEvent</completedLetterDef>
+		  <activateTexPath>UI/Icons/Study</activateTexPath>
+		  <activateLabelString>Analyze...</activateLabelString>
+          <activateDescString>Analyze the Ustable Power Stone.</activateDescString>
+          <jobString>Analyze Ustable Power Stone</jobString>
+          <guiLabelString>Choose who should analyze this</guiLabelString>
+          <inspectString>Can be analyzed by a colonist.</inspectString>
+		  <targetingParameters>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetAnimals>false</canTargetAnimals>
+            <canTargetMechs>false</canTargetMechs>
+            <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+          </targetingParameters>
+        </li>
+      </comps>
+    </value>
+</Operation>
+
+</Patch>

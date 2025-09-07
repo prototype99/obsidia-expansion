@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Obsidia Expansion - Arachnas Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationFindMod">
+		    <mods>
+			  <li>Vanilla Expanded Framework</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+			  <operations>
+			    
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+<!--=============== Arachnas / Spiderfolk ====================-->
+<!--=============== Thurible ====================-->
+  <ThingDef Name="CACTrophyXenoThuribleBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<descriptionHyperlinks>
+	  <GeneDef>OE_Web</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Spiderfolk">OE_WebTrap</GeneDef>
+	</descriptionHyperlinks>
+	<uiIconScale>0.85</uiIconScale>
+	<statBases>
+      <Mass>1.5</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+	  <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+	  <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_Trophy_Xeno_W</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>6.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OE_Web</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OE_Obsidian>125</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requireOneOfGenesToEquip>
+		  <li>OE_Web</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Spiderfolk">OE_WebTrap</li>
+		</requireOneOfGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_Trophy_Xeno_W</defName>
+    <label>Silken Censer wave</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_MeleeWave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>85</speed>
+	  <extraDamages>
+		<li>
+         <def>OE_Web</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACTrophyXenoThuribleBase">
+    <defName>CAC_Trophy_Xeno_Thurible</defName>
+    <label>Silken Censer</label>
+    <description>Thurible, forged not of incense and smoke but of threads glistening like crimson dawn. Each swing releases strands that cling, binding prey in a dance of stillness and dread.\n\nLegends whisper of the Crimson Arachna Cult, whose devotees wove their rites into strands of living silk. The censer was said to be carried during hushed processions, its chains rattling like whispers of betrayal. Those who felt its touch swore that their limbs grew heavy, as though unseen webs anchored them to the earth, leaving them helpless before the cult’s crimson judgment.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Web weaver or Web spread.\n\nFeature: charged with Web damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Xeno_Thurible</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>CACTrophy</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+				  
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationFindMod">
+				  <mods>
+				    <li>Royalty</li>
+				  </mods>
+				  <match Class="PatchOperationSequence">
+				    <operations>
+					  <li Class="PatchOperationAdd">
+					    <xpath>/Defs</xpath>
+						<value>
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACTrophyXenoThuribleBase">
+    <defName>CAC_Trophy_Xeno_Thurible_P</defName>
+    <label>Persona Silken Censer</label>
+    <description>Persona Thurible, forged not of incense and smoke but of threads glistening like crimson dawn. Each swing releases strands that cling, binding prey in a dance of stillness and dread.\n\nLegends whisper of the Crimson Arachna Cult, whose devotees wove their rites into strands of living silk. The censer was said to be carried during hushed processions, its chains rattling like whispers of betrayal. Those who felt its touch swore that their limbs grew heavy, as though unseen webs anchored them to the earth, leaving them helpless before the cult’s crimson judgment.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Web weaver or Web spread.\n\nFeature: charged with Web damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Xeno_Thurible_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>CACTrophy</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>						
+						
+						</value>
+					  </li>
+					</operations>
+				  </match>
+				</li>
+			  
+			  </operations>
+			</match>
+		  </li>  
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

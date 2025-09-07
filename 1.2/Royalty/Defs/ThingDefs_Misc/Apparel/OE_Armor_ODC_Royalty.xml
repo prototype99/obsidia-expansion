@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Recon MK-3 Various ====================-->
+<!--=============== Jump ====================-->
+  <ThingDef ParentName="ODCArmorRecon">
+    <defName>ODC_Armor_Recon_Jump</defName>
+    <label>ODC Recon Armor(Raven)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Jump pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Jump/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3375</MarketValue>
+	  <SmokepopBeltRadius>6.9</SmokepopBeltRadius>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Jump/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon_Jump</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>jump</label>
+		<verbClass>Verb_Jump</verbClass>
+        <commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Prestige ====================-->
+  <ThingDef ParentName="ODCArmorRecon">
+    <defName>ODC_Armor_Recon_Prestige</defName>
+    <label>ODC Recon Armor(Lord)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified for improves psychic powers to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Prestige/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Prestige/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon_Prestige</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Duelist MK-3 Various ====================-->
+<!--=============== Jump ====================-->
+  <ThingDef ParentName="ODCArmorDuelist">
+    <defName>ODC_Armor_Duelist_Jump</defName>
+    <label>ODC Duelist Armor(Raven)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Jump pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Jump/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3375</MarketValue>
+	  <SmokepopBeltRadius>6.9</SmokepopBeltRadius>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Jump/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist_Jump</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>jump</label>
+		<verbClass>Verb_Jump</verbClass>
+        <commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Prestige ====================-->
+  <ThingDef ParentName="ODCArmorDuelist">
+    <defName>ODC_Armor_Duelist_Prestige</defName>
+    <label>ODC Duelist Armor(Lord)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified for improves psychic powers to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Prestige/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Prestige/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist_Prestige</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO ====================-->
+<!--=============== Tree ====================-->
+  <ThingDef ParentName="TreeBase">
+    <defName>Plant_OE_EGOTree</defName>
+    <label>EGO tree</label>
+    <description>A large alien tree with a fast growing and extensive root system. Over time, the roots break through to the surface and may contain Syntherius or a pod with EGO seed. The tree emits dangerous toxic particles from which it is impossible to defend itself, which makes the EGO tree very dangerous.\n\nProlonged exposure to toxic particles can be fatal.</description>
+    <graphicData>
+      <texPath>Things/Plant/EGO/EGOTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.12, 0.08, 0.1)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<descriptionHyperlinks>
+	  <ThingDef>Plant_OE_SyntheriusRoot</ThingDef>
+	  <ThingDef>Plant_OE_EGORoot</ThingDef>
+      <ThingDef>OE_EGOSeed</ThingDef>
+    </descriptionHyperlinks>
+    <drawGUIOverlay>True</drawGUIOverlay>
+    <minifiedDef IsNull="True" />
+    <statBases>
+      <Beauty>5</Beauty>
+      <BeautyOutdoors>5</BeautyOutdoors>
+      <Flammability>0</Flammability>
+      <MaxHitPoints>400</MaxHitPoints>
+    </statBases>
+    <ingestible />
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+    <canScatterOver>false</canScatterOver>
+    <specialDisplayRadius>8.1</specialDisplayRadius>
+	<plant>
+      <growDays>26</growDays>
+      <visualSizeRange>1.8~2.5</visualSizeRange>
+      <sowMinSkill>0</sowMinSkill>
+      <sowTags Inherit="False"/>
+      <sowWork>300</sowWork>
+      <harvestYield>35</harvestYield>
+      <treeCategory>Super</treeCategory>
+	  <dieIfNoSunlight>False</dieIfNoSunlight>
+      <dieFromToxicFallout>False</dieFromToxicFallout>
+	  <interferesWithRoof>false</interferesWithRoof>
+      <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+      <fertilityMin>0.02</fertilityMin>
+      <fertilitySensitivity>0.85</fertilitySensitivity>
+      <sowResearchPrerequisites Inherit="False" />
+      <allowAutoCut>false</allowAutoCut>
+      <minSpacingBetweenSamePlant>7.9</minSpacingBetweenSamePlant>
+      <warnIfMarkedForCut>true</warnIfMarkedForCut>
+    </plant>
+    <comps>
+      <li Class="CompProperties_SmokeCloudMaker">
+        <sourceStreamEffect>EGO_SmokeColumn</sourceStreamEffect>
+        <cloudRadius>6.9</cloudRadius>
+        <fleckScale>2</fleckScale>
+        <cloudFleck>EGO_SmokeCloud</cloudFleck>
+        <fleckSpawnMTB>80</fleckSpawnMTB>
+      </li>	  
+	  <li Class="CompProperties_GiveHediffSeverity">
+        <hediff>LungRotExposure</hediff>
+        <range>7.9</range>
+        <severityPerSecond>0.005</severityPerSecond>
+        <drugExposure>true</drugExposure>
+        <chemical>OE_GasChemical</chemical>
+        <allowMechs>false</allowMechs>
+      </li>
+	  <li Class="CompProperties_SpawnSubplant">
+        <compClass>CompSpawnSubplantDuration</compClass>
+        <subplant>Plant_OE_SyntheriusRoot</subplant>
+        <maxRadius>7.9</maxRadius>
+        <subplantSpawnDays>0.1</subplantSpawnDays>
+        <minGrowthForSpawn>0.45</minGrowthForSpawn>
+        <initialGrowthRange>0.05~0.25</initialGrowthRange>
+        <canSpawnOverPlayerSownPlants>false</canSpawnOverPlayerSownPlants>
+        <plantsToNotOverwrite>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Plant_PodGauranlen</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_GrassAnima</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">Plant_OE_EGORoot</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+		  <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+		  <li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeArchean</li>
+        </plantsToNotOverwrite>
+      </li>
+	  <li Class="CompProperties_SpawnSubplant">
+        <compClass>CompSpawnSubplantDuration</compClass>
+        <subplant>Plant_OE_EGORoot</subplant>
+        <maxRadius>8.1</maxRadius>
+        <subplantSpawnDays>2.0</subplantSpawnDays>
+        <minGrowthForSpawn>0.85</minGrowthForSpawn>
+        <initialGrowthRange>0.05~0.25</initialGrowthRange>
+        <canSpawnOverPlayerSownPlants>false</canSpawnOverPlayerSownPlants>
+        <plantsToNotOverwrite>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Plant_PodGauranlen</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_GrassAnima</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">Plant_OE_SyntheriusRoot</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+		  <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+		  <li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeArchean</li>
+        </plantsToNotOverwrite>
+      </li>
+      <li Class="CompProperties_PlaySoundOnDestroy" MayRequire="Ludeon.RimWorld.Royalty">
+        <sound>AnimaTreeScream</sound>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>2000</ticksPerHeal>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Roots ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_SyntheriusRoot</defName>
+    <label>syntherius root</label>
+    <description>A large root has broken through to the surface and contains Syntherius. It is part of the EGO tree's extensive root system.</description>
+	<descriptionHyperlinks>
+      <ThingDef>Plant_OE_EGOTree</ThingDef>
+	  <ThingDef>OE_Syntherius</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <Beauty>5</Beauty>
+      <BeautyOutdoors>5</BeautyOutdoors>
+	  <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/EGO/SyntheriusRoot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+	<pathCost>10</pathCost>
+	<ingestible/>
+	<plant> 
+	  <pollution>Any</pollution>
+	  <dieIfLeafless>false</dieIfLeafless>
+	  <dieFromToxicFallout>False</dieFromToxicFallout>
+	  <mustBeWildToSow>false</mustBeWildToSow>
+      <fertilityMin>0.05</fertilityMin>
+	  <fertilitySensitivity>1.1</fertilitySensitivity>
+      <growDays>20</growDays>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>OE_Syntherius</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+	  <harvestWork>200</harvestWork>
+	  <harvestFailable>false</harvestFailable>
+	  <interferesWithRoof>false</interferesWithRoof>
+	  <visualSizeRange>0.3~0.85</visualSizeRange>
+      <topWindExposure>0.001</topWindExposure>
+      <immatureGraphicPath>Things/Plant/EGO/SyntheriusRoot/SyntheriusRoot_Immature</immatureGraphicPath>
+	  <wildOrder>1</wildOrder> 
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_EGORoot</defName>
+    <label>EGO pod</label>
+    <description>A large root has broken through to the surface and contains EGO pod with seed. It is part of the EGO tree's extensive root system.</description>
+	<descriptionHyperlinks>
+      <ThingDef>Plant_OE_EGOTree</ThingDef>
+	  <ThingDef>OE_EGOSeed</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+	  <Beauty>-5</Beauty>
+      <BeautyOutdoors>-5</BeautyOutdoors>
+	  <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/EGO/EGORoot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+	<pathCost>10</pathCost>
+	<plant> 
+	  <pollution>Any</pollution>
+	  <dieIfLeafless>false</dieIfLeafless>
+	  <dieFromToxicFallout>False</dieFromToxicFallout>
+	  <mustBeWildToSow>false</mustBeWildToSow>
+	  <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>1.1</fertilitySensitivity>
+      <growDays>8</growDays>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>OE_EGOSeed</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+	  <harvestWork>400</harvestWork>
+	  <harvestFailable>false</harvestFailable>
+	  <interferesWithRoof>false</interferesWithRoof>
+	  <visualSizeRange>0.3~0.85</visualSizeRange>
+      <topWindExposure>0.001</topWindExposure>
+      <immatureGraphicPath>Things/Plant/EGO/EGORoot/EGORoot_Immature</immatureGraphicPath>
+	  <wildOrder>1</wildOrder> 
+    </plant>
+  </ThingDef>
+
+<!--=============== Gas ====================-->
+  <ChemicalDef>
+    <defName>OE_GasChemical</defName>
+    <label>gas stink</label>
+	<addictionHediff>OE_GasAddiction</addictionHediff>
+	<generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_GasAddiction</defName>
+    <label>gas addiction</label>
+    <description>A chemical addiction to gases.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Chemical_Ambrosia</chemicalNeed>
+	<initialSeverity>0.01</initialSeverity>
+	<maxSeverity>0.01</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+
+</Defs>

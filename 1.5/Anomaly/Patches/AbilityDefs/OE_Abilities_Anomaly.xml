@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Arachnas Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== WebShot ====================-->
+  <AbilityDef>
+    <defName>OE_Entity_WebShot</defName>
+    <label>webshot</label>
+    <description>Spew web on target for stun and slow down it. The web has a cumulative effect.</description>
+	<cooldownTicksRange>400</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_AbilityShoot</verbClass>
+	  <soundCast>PiercingSpine_Launch</soundCast>
+      <range>11.9</range>
+	  <defaultProjectile>OE_WebShot_Bullet</defaultProjectile>
+      <warmupTime>1.0</warmupTime>
+	  <ai_IsWeapon>false</ai_IsWeapon>
+    </verbProperties>
+  </AbilityDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Transmute Steel ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AbilityDef[defName="TransmuteSteel"]/comps/li[@Class="CompProperties_Transmute"]/outcomeStuff</xpath>
+    <value>
+	  <li>OE_Obsidian</li>
+	  <li>OE_Mythril</li>
+	  <li>OE_Platinum</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AbilityDef[defName="TransmuteSteel"]/comps/li[@Class="CompProperties_Transmute"]/outcomeItems</xpath>
+    <value>
+	  <li>OE_Obsidian</li>
+	  <li>OE_Mythril</li>
+	  <li>OE_Platinum</li>
+	  <li>OE_Syntherius</li>
+    </value>
+</Operation>
+
+</Patch>

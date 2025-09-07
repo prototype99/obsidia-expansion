@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Special ====================-->
+<!--=============== Drifter ====================-->
+<OE_Drifter.title>скиталец обсидии</OE_Drifter.title>
+<OE_Drifter.titleFemale>скиталица обсидии</OE_Drifter.titleFemale>
+<OE_Drifter.titleShort>скиталец</OE_Drifter.titleShort>
+<OE_Drifter.titleShortFemale>скиталица</OE_Drifter.titleShortFemale>
+<OE_Drifter.description>{PAWN_nameDef} ранее {PAWN_gender ? вел : вела} кочевой образ жизни. Постоянно перемещаясь приобрел полезные навыки для жизни во временных лагерях.</OE_Drifter.description>
+
+<!--=============== Exile ====================-->
+<OE_Exile.title>изгнанник обсидии</OE_Exile.title>
+<OE_Exile.titleFemale>изгнанница обсидии</OE_Exile.titleFemale>
+<OE_Exile.titleShort>изгнанник</OE_Exile.titleShort>
+<OE_Exile.titleShortFemale>изгнанница</OE_Exile.titleShortFemale>
+<OE_Exile.description>{PAWN_nameDef} {PAWN_gender ? был изгнан : была изгнанна} из анклава Обсидии по неизвестным обвинениям - настоящим или сфабрикованным. {PAWN_gender ? Выжил : Выжила} в пустошах любыми средствами, став {PAWN_gender ? жёстким, молчаливым и находчивым : жёсткой, молчаливой и находчивой}.</OE_Exile.description>
+
+<!--=============== Salvager ====================-->
+<OE_Salvager.title>сборщик обсидии</OE_Salvager.title>
+<OE_Salvager.titleFemale>сборщица обсидии</OE_Salvager.titleFemale>
+<OE_Salvager.titleShort>сборщик</OE_Salvager.titleShort>
+<OE_Salvager.titleShortFemale>сборщица</OE_Salvager.titleShortFemale>
+<OE_Salvager.description>{PAWN_nameDef} {PAWN_gender ? бродил : бродила} по древним полям сражений и обрушенным хранилищам, извлекая всё ценное. Умеет очищать руины до камня - но часто говорит отрывками и искрами.</OE_Salvager.description>
+
+<!--=============== Scout ====================-->
+<OE_Scout.title>разведчик обсидии</OE_Scout.title>
+<OE_Scout.titleFemale>разведчица обсидии</OE_Scout.titleFemale>
+<OE_Scout.titleShort>разведчик</OE_Scout.titleShort>
+<OE_Scout.titleShortFemale>разведчица</OE_Scout.titleShortFemale>
+<OE_Scout.description>{PAWN_nameDef} {PAWN_gender ? служил : служила} дальним разведчиком в кочевом клане, {PAWN_gender ? обучен : обучена} выживанию в одиночку и незаметному возвращению с докладом. {PAWN_gender ? Быстрый, бесшумный и наблюдательный : Быстра, бесшумна и наблюдательна} - но не {PAWN_gender ? склонен : склонна} к глубоким размышлениям.</OE_Scout.description>
+
+</LanguageData>

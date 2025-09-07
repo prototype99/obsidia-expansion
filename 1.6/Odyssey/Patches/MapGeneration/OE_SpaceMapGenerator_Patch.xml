@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+<!--=============== Asteroids with Obsidia Ore ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/GenStepDef[defName="Asteroid"]/genStep/mineableCounts</xpath>
+    <value>
+      <MineableOEMythril>33~42</MineableOEMythril>
+	  <MineableOEObsidian>35~48</MineableOEObsidian>
+	  <MineableOEPlatinum>52~72</MineableOEPlatinum>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/GenStepDef[defName="Asteroid_NoRuins"]/genStep/mineableCounts</xpath>
+    <value>
+      <MineableOEMythril>15~25</MineableOEMythril>
+	  <MineableOEObsidian>20~35</MineableOEObsidian>
+	  <MineableOEPlatinum>50~70</MineableOEPlatinum>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/GenStepDef[defName="AsteroidBasic"]/genStep/mineableCounts</xpath>
+    <value>
+      <MineableOEMythril>15~25</MineableOEMythril>
+	  <MineableOEObsidian>20~35</MineableOEObsidian>
+	  <MineableOEPlatinum>50~70</MineableOEPlatinum>
+    </value>
+</Operation>
+
+</Patch>

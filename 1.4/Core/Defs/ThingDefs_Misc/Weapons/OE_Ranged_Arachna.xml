@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC ====================-->
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>OMC_Arachna_AR</defName>
+    <label>Mech Striker</label>
+    <description>Reconstructed OMC Assault Rifle for use by mechanoids. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Mechanoid_AssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_SMG</soundInteract>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>OMCArachna</li>
+    </weaponTags>
+	<statBases>
+      <Mass>5.0</Mass>
+	  <MarketValue>1250</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_AR</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+<!--=============== OTC ====================-->
+  <ThingDef Name="OTCArachnaShotgun" ParentName="OERangedBaseNC" Abstract="True">
+	<soundInteract>Interact_Rifle</soundInteract>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+      <Mass>5.0</Mass>
+	  <MarketValue>1250</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+    </statBases>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OTCArachnaShotgun">
+    <defName>OTC_Arachna_Shotgun_Acid</defName>
+    <label>Mech Quasar(Acid)</label>
+    <description>Reconstructed OTC Shotgun for use by mechanoids. Balanced weapon with Acid charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Acid/Mechanoid_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCArachna_Acid</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_S_Acid</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>10.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OTCArachnaShotgun">
+    <defName>OTC_Arachna_Shotgun_Cryo</defName>
+    <label>Mech Quasar(Cryo)</label>
+    <description>Reconstructed OTC Shotgun for use by mechanoids. Balanced weapon with Cryo charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/Mechanoid_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCArachna_Cryo</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_S_Cryo</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>10.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OTCArachnaShotgun">
+    <defName>OTC_Arachna_Shotgun_Fire</defName>
+    <label>Mech Quasar(Fire)</label>
+    <description>Reconstructed OTC Shotgun for use by mechanoids. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Mechanoid_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCArachna_Fire</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_S_Fire</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>10.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OTCArachnaShotgun">
+    <defName>OTC_Arachna_Shotgun_EMP</defName>
+    <label>Mech Quasar(EMP)</label>
+    <description>Reconstructed OTC Shotgun for use by mechanoids. Balanced weapon with EMP charges.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/EMP/Mechanoid_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCArachna_EMP</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_S_EMP</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>10.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== OCC ====================-->
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>OCC_Arachna_Rifle</defName>
+    <label>Mech Cerberus</label>
+    <description>Reconstructed OCC Rifle for use by mechanoids. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Mechanoid_Rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>OCCArachna</li>
+    </weaponTags>
+	<statBases>
+      <Mass>5.0</Mass>
+	  <MarketValue>1250</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+<!--=============== CAC ====================-->
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>CAC_Arachna_Minigun</defName>
+    <label>Mech Blackout</label>
+    <description>Reconstructed CAC Minigun for use by mechanoids. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Mechanoid_Minigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Revolver</soundInteract>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACArachna</li>
+    </weaponTags>
+	<statBases>
+      <Mass>15.0</Mass>
+	  <MarketValue>2500</MarketValue>
+	  <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_MG</defaultProjectile>
+        <warmupTime>2.8</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

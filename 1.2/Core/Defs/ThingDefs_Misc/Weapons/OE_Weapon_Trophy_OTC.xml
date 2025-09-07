@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Elemental Sword ====================-->
+  <ThingDef Name="OTCTrophyElemswordBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <Mass>1.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <PainShockThreshold>0.5</PainShockThreshold>
+	  <MeleeDodgeChance>10.0</MeleeDodgeChance>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef Name="OTCTrophyElemswordAcid" ParentName="OTCTrophyElemswordBase" Abstract="True">
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordAcid">
+    <defName>OTC_Trophy_Sword_Acid</defName>
+    <label>Acid Rift</label>
+    <description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Acid charges.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Acid/Trophy_Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+<!--=============== Cryo ====================-->
+  <ThingDef Name="OTCTrophyElemswordCryo" ParentName="OTCTrophyElemswordBase" Abstract="True">
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordCryo">
+    <defName>OTC_Trophy_Sword_Cryo</defName>
+    <label>Cryo Rift</label>
+    <description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Cryo charges.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/Trophy_Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef Name="OTCTrophyElemswordFire" ParentName="OTCTrophyElemswordBase" Abstract="True">
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordFire">
+    <defName>OTC_Trophy_Sword_Fire</defName>
+    <label>Fire Rift</label>
+    <description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Fire charges.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Trophy_Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef Name="OTCTrophyElemswordEMP" ParentName="OTCTrophyElemswordBase" Abstract="True">
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordEMP">
+    <defName>OTC_Trophy_Sword_EMP</defName>
+    <label>EMP Rift</label>
+    <description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with EMP charges.\n\nFeature: a built-in module that improves combat performance.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/EMP/Trophy_Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Cards ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OTCTrophyCardsBase" ParentName="OERangedBaseNC" Abstract="True">
+    <soundInteract>Interact_Autopistol</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<statBases>
+	  <Mass>1.0</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_Trophy_C</defaultProjectile>
+        <warmupTime>0.45</warmupTime>
+        <range>17.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>pouch</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>card</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OTC_Trophy_C</defName>
+    <label>Randy's card</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Trophy_Cards</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>75</speed>
+	  <extraDamages>
+	    <li>
+         <def>Stun</def>
+		 <amount>2</amount>
+         <chance>0.15</chance>
+       </li>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>2</amount>
+         <chance>0.15</chance>
+       </li>
+	   <li>
+         <def>OTCCryo</def>
+		 <amount>2</amount>
+         <chance>0.15</chance>
+       </li>
+	   <li>
+         <def>Flame</def>
+		 <amount>2</amount>
+         <chance>0.15</chance>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>2</amount>
+         <chance>0.15</chance>
+       </li>
+	   <li>
+         <def>OCCBlast</def>
+		 <amount>2</amount>
+         <chance>0.5</chance>
+       </li>
+	   <li>
+         <def>Blunt</def>
+		 <amount>2</amount>
+         <chance>0.10</chance>
+       </li>
+	   <li>
+         <def>Poke</def>
+		 <amount>2</amount>
+         <chance>0.10</chance>
+       </li>
+	   <li>
+         <def>Stab</def>
+		 <amount>2</amount>
+         <chance>0.10</chance>
+       </li>
+	   <li>
+         <def>Cut</def>
+		 <amount>2</amount>
+         <chance>0.5</chance>
+       </li>
+	   <li>
+         <def>Scratch</def>
+		 <amount>2</amount>
+         <chance>0.5</chance>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCTrophyCardsBase">
+    <defName>OTC_Trophy_Cards</defName>
+    <label>Randy's Deck</label>
+    <description>Deck of combat throwing cards designed by a certain engineer, Randy.\n\nThis is a rare trophy weapon.\n\nFeature: able to deal a random additional type of damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Trophy_Cards</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OTCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+</Defs>

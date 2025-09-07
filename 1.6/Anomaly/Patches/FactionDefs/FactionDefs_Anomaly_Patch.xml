@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Horax Cult ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="HoraxCult"]</xpath>
+    <value>
+      <permanentEnemyToEveryoneExcept>
+	    <li>ObsidiaCrimsonArachnaCult</li>
+	  </permanentEnemyToEveryoneExcept>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="HoraxCult"]/pawnGroupMakers</xpath>
+    <value>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <OE_Returned>2</OE_Returned>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <OE_CyberArachna>1</OE_CyberArachna>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <OE_ChaosSlime_Larval>10</OE_ChaosSlime_Larval>
+		  <OE_ChaosSlime_Adult>5</OE_ChaosSlime_Adult>
+		  <OE_ChaosSlime_Badass>5</OE_ChaosSlime_Badass>
+		  <OE_ChaosSlime_SuperBadass>3</OE_ChaosSlime_SuperBadass>
+		  <OE_ChaosSlime_UltimateBadass>2</OE_ChaosSlime_UltimateBadass>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <OE_ChaosSlime_Larval>10</OE_ChaosSlime_Larval>
+		  <OE_ChaosSlime_Adult>5</OE_ChaosSlime_Adult>
+		  <OE_ChaosSlime_Badass>5</OE_ChaosSlime_Badass>
+		  <OE_ChaosSlime_SuperBadass>3</OE_ChaosSlime_SuperBadass>
+		  <OE_ChaosSlime_UltimateBadass>2</OE_ChaosSlime_UltimateBadass>
+		  <OE_ChaosSlime_Invincible>1</OE_ChaosSlime_Invincible>
+        </options>
+      </li>
+    </value>
+</Operation>
+
+<!--=============== Entities ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Entities"]/permanentEnemyToEveryoneExcept</xpath>
+    <value>
+	  <li>ObsidiaCrimsonArachnaCult</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Entities"]/pawnGroupMakers/li[kindDef="Shamblers"]/options</xpath>
+    <value>
+	  <OMC_Soldier_Shambler>2</OMC_Soldier_Shambler>
+	  <OTC_Mechanic_Shambler>2</OTC_Mechanic_Shambler>
+	  <OCC_Knight_Shambler>2</OCC_Knight_Shambler>
+	  <OEC_Hunter_Shambler MayRequire="Ludeon.Rimworld.Royalty">2</OEC_Hunter_Shambler>
+	  <CAC_Cultist_Shambler>1</CAC_Cultist_Shambler>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName="Entities"]/pawnGroupMakers/li[kindDef="SightstealersNoctols"]/options</xpath>
+    <value>
+	  <OE_Returned>1</OE_Returned>
+	  <OE_CyberArachna>1</OE_CyberArachna>
+    </value>
+</Operation>
+
+</Patch>

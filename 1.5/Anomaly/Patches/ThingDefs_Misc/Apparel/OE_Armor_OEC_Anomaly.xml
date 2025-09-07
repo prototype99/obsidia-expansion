@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Various ====================-->
+<!--=============== Turret ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Turret</defName>
+    <label>OEC Inquisitor Armor(Goblin)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Turret/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3605</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Turret/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Turret</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy turret</label>
+        <defaultProjectile>Grenade_Armor_OEC_TurretPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OEC_TurretPack</defName>
+    <label>OEC turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/OEC_TacticalTurret_Gun</uiIconPath>
+    <projectile>
+      <explosionRadius>45.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>OEC_Turret_TacticalTurret</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OEC Tactical Turret ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OEC_Turret_TacticalTurret</defName>
+    <label>OEC tactical turret</label>
+    <description>An automatic OEC Sniper Rifle-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_Syntherius>8</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>65</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>OEC_Gun_TacticalTurret</turretGunDef>
+      <turretBurstWarmupTime>2.7</turretBurstWarmupTime>
+      <turretBurstCooldownTime>4.5</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>OEC_Gun_TacticalTurret</defName>
+    <label>Exalted Judgement Turret</label>
+    <description>Reconstructed OEC Sniper Rifle for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OEC_TacticalTurret_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_OEC_SR_M</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>45.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

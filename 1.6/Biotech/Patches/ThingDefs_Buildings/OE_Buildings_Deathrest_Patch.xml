@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Battlecraft Pump ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="DeathrestCasket"]/building/relatedBuildCommands</xpath>
+    <value>
+      <li>OE_BattlecraftPump</li>
+	  <li>OE_PerfectioningPump</li>
+    </value>
+</Operation>
+
+</Patch>

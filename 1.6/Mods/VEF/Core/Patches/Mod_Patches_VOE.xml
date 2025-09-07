@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Outposts Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Mining Outpost ====================-->	    
+		<li Class="PatchOperationAdd">
+		  <success>Always</success>
+		  <xpath>/Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li/Resources</xpath>
+		    <value>
+			  <OE_Obsidian>60</OE_Obsidian>
+			  <OE_Mythril>75</OE_Mythril>
+			  <OE_Platinum>65</OE_Platinum>
+			</value>
+		</li>
+<!--=============== Obsidia Syntherius Outpost ====================-->		
+		<li Class="PatchOperationAttributeAdd">
+		  <xpath>/Defs/WorldObjectDef[defName="OE_Outpost_Syntherius"]</xpath>
+		  <attribute>ParentName</attribute>
+		  <value>OutpostBase</value>
+	    </li>
+		<li Class="PatchOperationAttributeSet">
+		  <xpath>/Defs/WorldObjectDef[defName="OE_Outpost_Syntherius"]</xpath>
+		  <attribute>Abstract</attribute>
+		  <value>False</value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>	  
+
+<!--=============== Obsidia Power Outposts ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Outposts Expanded: Power Grid</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAttributeAdd">
+		  <xpath>/Defs/WorldObjectDef[defName="OE_Outpost_PowerGrid_Geothermal" or defName="OE_Outpost_PowerGrid_Syntherius" or defName="OE_Outpost_PowerGrid_Quantum"]</xpath>
+		  <attribute>ParentName</attribute>
+		  <value>OutpostBase</value>
+	    </li>
+		<li Class="PatchOperationAttributeSet">
+		  <xpath>/Defs/WorldObjectDef[defName="OE_Outpost_PowerGrid_Geothermal" or defName="OE_Outpost_PowerGrid_Syntherius" or defName="OE_Outpost_PowerGrid_Quantum"]</xpath>
+		  <attribute>Abstract</attribute>
+		  <value>False</value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>	
+
+</Patch>

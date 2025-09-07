@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged ====================-->
+<!--=============== Repair Pistol ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophyRepairPistolBase">
+    <defName>OE_Trophy_RepairPistol_P</defName>
+    <label>Paragon Prototype sX-02a</label>
+    <description>Prototype of a new paragon repair pistol that equipped with a tools synthesizator which make most construction jobs easier.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves construction skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_RepairPistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+	  <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Prototype sX-02a</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Unstable Gun ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophyUnstableGunBase">
+    <defName>OE_Trophy_UnstableGun_P</defName>
+    <label>Paragon Titanstrike</label>
+    <description>This is a prohibited paragon weapon in Obsidia Empire and can only be obtained illegally. Due to a poorly designed energy delivery system, the weapon is quite weak, but there is a 5% chance that the weapon can release a huge amount of energy at once, causing incredible damage.\n\nThis is a rare trophy weapon.\n\nFeature: has a 5% chance of dealing incredible damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_UnstableGun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+	  <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Titanstrike</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Sample Collector ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophySampleCollectorBase">
+    <defName>OE_Trophy_SampleCollector_P</defName>
+    <label>Paragon Ashisogi Jizō</label>
+    <description>One of the forgotten research objects of Mayuri Kurotsuchi. The darts of this paragon weapon contain an unstable toxin that randomly affects the target. It is not recommended to use in combat, since the effects can randomly debuff or buff the target.\n\nThis is a rare trophy weapon.\n\nFeature: deals unstable toxin damage that applies various random effects.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_SampleCollector_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+	  <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Ashisogi Jizō</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Head ====================-->
+<!--=============== Cyberware - Ranger ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareHead_Ranged</defName>
+    <label>cyberware - Ranger</label>
+    <labelNoun>a cyberware - Ranger</labelNoun>
+    <description>An installed cyberware - Ranger.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareHead_Ranged</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareHead_Ranged</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <AimingDelayFactor>-0.05</AimingDelayFactor>
+		  <AccuracyTouch>0.05</AccuracyTouch>
+		  <AccuracyShort>0.05</AccuracyShort>
+		  <AccuracyMedium>0.05</AccuracyMedium>
+		  <AccuracyLong>0.05</AccuracyLong>
+	      <ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+		<statOffsets>
+		  <AimingDelayFactor>-0.10</AimingDelayFactor>
+		  <AccuracyTouch>0.10</AccuracyTouch>
+		  <AccuracyShort>0.10</AccuracyShort>
+		  <AccuracyMedium>0.10</AccuracyMedium>
+		  <AccuracyLong>0.10</AccuracyLong>
+	      <ShootingAccuracyPawn>3.0</ShootingAccuracyPawn>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+		<statOffsets>
+		  <AimingDelayFactor>-0.15</AimingDelayFactor>
+		  <AccuracyTouch>0.15</AccuracyTouch>
+		  <AccuracyShort>0.15</AccuracyShort>
+		  <AccuracyMedium>0.15</AccuracyMedium>
+		  <AccuracyLong>0.15</AccuracyLong>
+	      <ShootingAccuracyPawn>4.0</ShootingAccuracyPawn>
+	    </statOffsets>
+      </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareHead_Ranged</defName>
+    <label>cyberware - Ranger</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in ranged combat.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareHead_Ranged</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Ranger</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareHead_Ranged</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Cyberware - Melee ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareHead_Melee</defName>
+    <label>cyberware - Melee</label>
+    <labelNoun>a cyberware - Melee</labelNoun>
+    <description>An installed cyberware - Melee.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareHead_Melee</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareHead_Melee</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <MeleeHitChance>2.0</MeleeHitChance>
+	      <MeleeDodgeChance>2.0</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+		<statOffsets>
+          <MeleeHitChance>3.0</MeleeHitChance>
+	      <MeleeDodgeChance>3.0</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+		<statOffsets>
+          <MeleeHitChance>4.0</MeleeHitChance>
+	      <MeleeDodgeChance>4.0</MeleeDodgeChance>
+        </statOffsets>
+      </li> 
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareHead_Melee</defName>
+    <label>cyberware - Melee</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in melee combat.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareHead_Melee</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Melee</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareHead_Melee</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Cyberware - Optimist ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareHead_Optimist</defName>
+    <label>cyberware - Optimist</label>
+    <labelNoun>a cyberware - Optimist</labelNoun>
+    <description>An installed cyberware - Optimist.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareHead_Optimist</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareHead_Optimist</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+        <minSeverity>1</minSeverity>
+      </li>
+	  <li>
+        <minSeverity>2</minSeverity>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+      </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareHead_Optimist</defName>
+    <label>cyberware - Optimist</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and improve mood.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareHead_Optimist</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Optimist</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareHead_Optimist</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThoughtDef>
+    <defName>OE_CyberwareHead_Optimist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+	<hediff>OE_CyberwareHead_Optimist</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>quiet melody in my head</label>
+        <description>Nice upbeat melody sounds.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>melody in my head</label>
+        <description>Nice upbeat melody sounds.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+	  <li>
+        <label>loud melody in my head</label>
+        <description>Nice upbeat melody sounds.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+<!--=============== Cyberware - Pessimist ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareHead_Pessimist</defName>
+    <label>cyberware - Pessimist</label>
+    <labelNoun>a cyberware - Pessimist</labelNoun>
+    <description>An installed cyberware - Pessimist.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareHead_Pessimist</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareHead_Pessimist</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+        <minSeverity>1</minSeverity>
+      </li>
+	  <li>
+        <minSeverity>2</minSeverity>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+      </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareHead_Pessimist</defName>
+    <label>cyberware - Pessimist</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and worsens mood.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareHead_Pessimist</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Pessimist</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareHead_Pessimist</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThoughtDef>
+    <defName>OE_CyberwareHead_Pessimist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+	<hediff>OE_CyberwareHead_Pessimist</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>quiet melody in my head</label>
+        <description>Sad gothic melody sounds.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>melody in my head</label>
+        <description>Sad gothic melody sounds.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+	  <li>
+        <label>loud melody in my head</label>
+        <description>Sad gothic melody sounds.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+<!--=============== Cyberware - Workout ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareHead_Workout</defName>
+    <label>cyberware - Workout</label>
+    <labelNoun>a cyberware - Workout</labelNoun>
+    <description>An installed cyberware - Workout.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareHead_Workout</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareHead_Workout</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+        <minSeverity>1</minSeverity>
+		<statOffsets>
+		  <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>2</minSeverity>
+		<statOffsets>
+		  <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+		<statOffsets>
+		  <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+	    </statOffsets>
+      </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareHead_Workout</defName>
+    <label>cyberware - Workout</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and improve work speed.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareHead_Workout</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Workout</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareHead_Workout</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Cyberware - Relaxing ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareHead_Relaxing</defName>
+    <label>cyberware - Relaxing</label>
+    <labelNoun>a cyberware - Relaxing</labelNoun>
+    <description>An installed cyberware - Relaxing.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareHead_Relaxing</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareHead_Relaxing</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+		<statOffsets>
+		  <GlobalLearningFactor>0.1</GlobalLearningFactor>
+		  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.1</EntityStudyRate>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>2</minSeverity>
+		<statOffsets>
+		  <GlobalLearningFactor>0.2</GlobalLearningFactor>
+		  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.2</EntityStudyRate>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+		<statOffsets>
+		  <GlobalLearningFactor>0.3</GlobalLearningFactor>
+		  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.3</EntityStudyRate>
+	    </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareHead_Relaxing</defName>
+    <label>cyberware - Relaxing</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and improve learning speed.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareHead_Relaxing</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Relaxing</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareHead_Relaxing</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Сyberware - Obsidian-will ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareNeck_ObsidianWill</defName>
+    <label>cyberware - Obsidian-will</label>
+    <labelNoun>a cyberware - Obsidian-will</labelNoun>
+    <description>An installed cyberware - Obsidian-will.\n\nThis cyberware can be installed up to 10 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareNeck_ObsidianWill</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareNeck_ObsidianWill</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>10</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <MentalBreakThreshold>-0.03</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.06</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.09</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.12</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>6</minSeverity>
+        <statOffsets>
+		  <MentalBreakThreshold>-0.18</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>7</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.21</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>8</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.24</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>9</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.27</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>10</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.30</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareNeck_ObsidianWill</defName>
+    <label>cyberware - Obsidian-will</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and improve mental break threshold.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 10 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareNeck_ObsidianWill</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_ObsidianWill</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+        <userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareNeck_ObsidianWill</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Neck ====================-->
+<!--=============== Сyberware - Social ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareNeck_Social</defName>
+    <label>cyberware - Social</label>
+    <labelNoun>a cyberware - Social</labelNoun>
+    <description>An installed cyberware - Social.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareNeck_Social</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareNeck_Social</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>5</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+		<statOffsets>  
+		  <SocialImpact>0.05</SocialImpact>
+		  <NegotiationAbility>0.05</NegotiationAbility>
+		  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.05</ConversionPower>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>2</minSeverity>
+		<statOffsets>  
+		  <SocialImpact>0.10</SocialImpact>
+		  <NegotiationAbility>0.10</NegotiationAbility>
+		  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.10</ConversionPower>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+		<statOffsets>  
+		  <SocialImpact>0.15</SocialImpact>
+		  <NegotiationAbility>0.15</NegotiationAbility>
+		  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</ConversionPower>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>4</minSeverity>
+		<statOffsets>  
+		  <SocialImpact>0.20</SocialImpact>
+		  <NegotiationAbility>0.20</NegotiationAbility>
+		  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.20</ConversionPower>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>5</minSeverity>
+		<statOffsets>  
+		  <SocialImpact>0.25</SocialImpact>
+		  <NegotiationAbility>0.25</NegotiationAbility>
+		  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</ConversionPower>
+	    </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareNeck_Social</defName>
+    <label>cyberware - Social</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in social skills.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareNeck_Social</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Social</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareNeck_Social</hediffDef>
+        <bodyPart>Head</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Сyberware - Beastmaster ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareNeck_Beastmaster</defName>
+    <label>cyberware - Beastmaster</label>
+    <labelNoun>a cyberware - Beastmaster</labelNoun>
+    <description>An installed cyberware - Beastmaster.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareNeck_Beastmaster</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareNeck_Beastmaster</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>5</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <TameAnimalChance>0.05</TameAnimalChance>
+	      <TrainAnimalChance>0.05</TrainAnimalChance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <TameAnimalChance>0.10</TameAnimalChance>
+	      <TrainAnimalChance>0.10</TrainAnimalChance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <TameAnimalChance>0.15</TameAnimalChance>
+	      <TrainAnimalChance>0.15</TrainAnimalChance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <TameAnimalChance>0.20</TameAnimalChance>
+	      <TrainAnimalChance>0.20</TrainAnimalChance>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <TameAnimalChance>0.25</TameAnimalChance>
+	      <TrainAnimalChance>0.25</TrainAnimalChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareNeck_Beastmaster</defName>
+    <label>cyberware - Beastmaster</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in animal skills.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareNeck_Beastmaster</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Beastmaster</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+        <userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareNeck_Beastmaster</hediffDef>
+        <bodyPart>Neck</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Сyberware - Trader ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareNeck_Trader</defName>
+    <label>cyberware - Trader</label>
+    <labelNoun>a cyberware - Trader</labelNoun>
+    <description>An installed cyberware - Trader.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareNeck_Trader</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareNeck_Trader</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>5</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <PawnBeauty>1</PawnBeauty>
+		  <TradePriceImprovement>0.05</TradePriceImprovement>
+		  <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">0.05</AnimalProductsSellImprovement>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <PawnBeauty>1</PawnBeauty>
+		  <TradePriceImprovement>0.10</TradePriceImprovement>
+		  <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">0.10</AnimalProductsSellImprovement>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <PawnBeauty>2</PawnBeauty>
+		  <TradePriceImprovement>0.15</TradePriceImprovement>
+		  <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">0.15</AnimalProductsSellImprovement>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <PawnBeauty>2</PawnBeauty>
+		  <TradePriceImprovement>0.20</TradePriceImprovement>
+		  <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">0.20</AnimalProductsSellImprovement>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <PawnBeauty>3</PawnBeauty>
+		  <TradePriceImprovement>0.25</TradePriceImprovement>
+		  <AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">0.25</AnimalProductsSellImprovement>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareNeck_Trader</defName>
+    <label>cyberware - Trader</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in trading skills.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareNeck_Trader</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Trader</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+        <userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareNeck_Trader</hediffDef>
+        <bodyPart>Neck</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Сyberware - Recruiter ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareNeck_Recruiter</defName>
+    <label>cyberware - Recruiter</label>
+    <labelNoun>a cyberware - Recruiter</labelNoun>
+    <description>An installed cyberware - Recruiter.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareNeck_Recruiter</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareNeck_Recruiter</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>5</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <ArrestSuccessChance>0.05</ArrestSuccessChance>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.05</SuppressionPower>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <ArrestSuccessChance>0.10</ArrestSuccessChance>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.10</SuppressionPower>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <ArrestSuccessChance>0.15</ArrestSuccessChance>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.15</SuppressionPower>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <ArrestSuccessChance>0.20</ArrestSuccessChance>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.20</SuppressionPower>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <ArrestSuccessChance>0.25</ArrestSuccessChance>
+          <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</SuppressionPower>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareNeck_Recruiter</defName>
+    <label>cyberware - Recruiter</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements in recruiting skills.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareNeck_Recruiter</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Head/OE_Recruiter</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+        <userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareNeck_Recruiter</hediffDef>
+        <bodyPart>Neck</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Special ====================-->
+<!--=============== Datasplicer ====================-->
+  <BackstoryDef>
+    <defName>OE_Datasplicer</defName>
+    <title>obsidia empire datasplicer</title>
+    <titleShort>datasplicer</titleShort>
+    <description>[PAWN_nameDef] once cracked Obsidia’s sealed data-vaults and rewrote chains of command from the inside. Now drifts between firewalls like a ghost.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Intellectual</li>
+	  <li>Crafting</li>
+	  <li>Social</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+	  <li>Hauling</li>
+    </workDisables>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Crafting>6</Crafting>
+	  <Social>6</Social>
+	  <Animals>-6</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>OESins</li>
+	  <li>ImperialCommon</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEIdeoHacking>2</OEIdeoHacking>
+	  <OEEidolon>0</OEEidolon>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+  
+</Defs>

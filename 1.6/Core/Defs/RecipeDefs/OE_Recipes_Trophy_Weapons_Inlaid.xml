@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC - Chainsword ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OMC_Trophy_Chainsword</defName>
+    <label>Inlay - Empress's Blessing</label>
+    <description>Inlay - Empress's Blessing.</description>
+    <jobString>Inlaying - Empress's Blessing.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Trophy_Chainsword</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">OMC_Trophy_Chainsword_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Trophy_Chainsword</li>
+		<li MayRequire="Ludeon.Rimworld.Royalty">OMC_Trophy_Chainsword_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Trophy_Chainsword_I>1</OMC_Trophy_Chainsword_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OMCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== OMC - Pistol ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OMC_Trophy_Pistol</defName>
+    <label>Inlay - Prototype sX-01a</label>
+    <description>Inlay - Prototype sX-01a.</description>
+    <jobString>Inlaying - Prototype sX-01a.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMC_Trophy_Pistol</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">OMC_Trophy_Pistol_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMC_Trophy_Pistol</li>
+		<li MayRequire="Ludeon.Rimworld.Odyssey">OMC_Trophy_Pistol_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMC_Trophy_Pistol_I>1</OMC_Trophy_Pistol_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OMCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== OTC - Elemental Sword ====================-->
+<!--=============== Acid ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OTC_Trophy_Sword_Acid</defName>
+    <label>Inlay - Acid Rift</label>
+    <description>Inlay - Acid Rift.</description>
+    <jobString>Inlaying - Acid Rift.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_Acid</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_Acid</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_Acid</li>
+		<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_Acid</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_I_Acid>1</OTC_Trophy_Sword_I_Acid>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== Cryo ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OTC_Trophy_Sword_Cryo</defName>
+    <label>Inlay - Cryo Rift</label>
+    <description>Inlay - Cryo Rift.</description>
+    <jobString>Inlaying - Cryo Rift.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_Cryo</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_Cryo</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_Cryo</li>
+		<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_Cryo</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_I_Cryo>1</OTC_Trophy_Sword_I_Cryo>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== Fire ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OTC_Trophy_Sword_Fire</defName>
+    <label>Inlay - Fire Rift</label>
+    <description>Inlay - Fire Rift.</description>
+    <jobString>Inlaying - Fire Rift.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_Fire</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_Fire</li>
+		<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_Fire</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_I_Fire>1</OTC_Trophy_Sword_I_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== EMP ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OTC_Trophy_Sword_EMP</defName>
+    <label>Inlay - EMP Rift</label>
+    <description>Inlay - EMP Rift.</description>
+    <jobString>Inlaying - EMP Rift.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_EMP</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_EMP</li>
+		<li MayRequire="Ludeon.Rimworld.Royalty">OTC_Trophy_Sword_P_EMP</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_I_EMP>1</OTC_Trophy_Sword_I_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== OTC - Cards ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OTC_Trophy_Cards</defName>
+    <label>Inlay - Randy's Deck</label>
+    <description>Inlay - Randy's Deck.</description>
+    <jobString>Inlaying - Randy's Deck.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Cards</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">OTC_Trophy_Cards_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Cards</li>
+		<li MayRequire="Ludeon.Rimworld.Odyssey">OTC_Trophy_Cards_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Cards_I>1</OTC_Trophy_Cards_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== OCC - Drillspear ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OCC_Trophy_Drillspear</defName>
+    <label>Inlay - Balor</label>
+    <description>Inlay - Balor.</description>
+    <jobString>Inlaying - Balor.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OCC_Trophy_Drillspear</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">OCC_Trophy_Drillspear_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OCC_Trophy_Drillspear</li>
+		<li MayRequire="Ludeon.Rimworld.Royalty">OCC_Trophy_Drillspear_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OCC_Trophy_Drillspear_I>1</OCC_Trophy_Drillspear_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OCCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== OCC - Railgun ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_OCC_Trophy_Railgun</defName>
+    <label>Inlay - Cronus</label>
+    <description>Inlay - Cronus.</description>
+    <jobString>Inlaying - Cronus.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OCC_Trophy_Railgun</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">OCC_Trophy_Railgun_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OCC_Trophy_Railgun</li>
+		<li MayRequire="Ludeon.Rimworld.Odyssey">OCC_Trophy_Railgun_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OCC_Trophy_Railgun_I>1</OCC_Trophy_Railgun_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	  <li>OCCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== ODC - Sickle ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_ODC_Trophy_Sickle_C</defName>
+    <label>Inlay - Temptation - Apex</label>
+    <description>Inlay - Temptation - Apex.</description>
+    <jobString>Inlaying - Temptation - Apex.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ODC_Trophy_Sickle_C</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">ODC_Trophy_Sickle_C_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ODC_Trophy_Sickle_C</li>
+		<li MayRequire="Ludeon.Rimworld.Royalty">ODC_Trophy_Sickle_C_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ODC_Trophy_Sickle_C_I>1</ODC_Trophy_Sickle_C_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== ODC - Blade Launcher ====================-->
+  <RecipeDef>
+    <defName>OE_Inlay_ODC_Trophy_BladeLauncher_C</defName>
+    <label>Inlay - Harvest - Apex</label>
+    <description>Inlay - Harvest - Apex.</description>
+    <jobString>Inlaying - Harvest - Apex.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ODC_Trophy_BladeLauncher_C</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">ODC_Trophy_BladeLauncher_C_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ODC_Trophy_BladeLauncher_C</li>
+		<li MayRequire="Ludeon.Rimworld.Odyssey">ODC_Trophy_BladeLauncher_C_P</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ODC_Trophy_BladeLauncher_C_I>1</ODC_Trophy_BladeLauncher_C_I>
+    </products>
+	<recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>ODCGearLeg</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

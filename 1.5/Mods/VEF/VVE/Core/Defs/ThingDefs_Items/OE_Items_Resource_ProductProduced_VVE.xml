@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Syntherius Vehicle Core ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_SyntheriusVehicleCore</defName>
+    <label>syntherius drive</label>
+    <description>This compact core of syntherius circuitry and power cells developed for use in Obsidia vehicles.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_SyntheriusVehicleCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>355</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Mass>10.0</Mass>
+      <Flammability>0.75</Flammability>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEGearMod</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_Syntherius>55</OE_Syntherius>
+	  <OE_Obsidian>15</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_Platinum>5</OE_Platinum>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>VVE_CarParts</li>
+    </thingCategories>
+    <tradeTags>
+      <li>VVE_CarPartAdvanced</li>
+    </tradeTags>
+	<allowedArchonexusCount>-1</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

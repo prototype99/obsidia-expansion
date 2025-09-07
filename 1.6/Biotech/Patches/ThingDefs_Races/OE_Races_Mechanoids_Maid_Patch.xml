@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Surrogate Mechanoid</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationInsert">
+		  <xpath>Defs/ThinkTreeDef/thinkRoot/subNodes/li/subNodes/li/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"]/subNodes/li[@Class="JobGiver_Work" and ./emergency="true"]</xpath>
+		  <order>Append</order>
+		  <value>
+		    <li Class="ThinkNode_ConditionalPawnKind">
+			  <pawnKind>OE_Mech_Maid</pawnKind>
+			  <subNodes>
+			    <li Class="SpecificWorkJobGiver.JobGiver_SpecificWork">
+				  <workGiverDef>BringBabyToSafety</workGiverDef>
+				</li>
+			  </subNodes>
+			</li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationInsert">
+		  <xpath>Defs/ThinkTreeDef/thinkRoot/subNodes/li/subNodes/li/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"]/subNodes/li[@Class="JobGiver_Work" and ./emergency="true"]</xpath>
+		  <order>Append</order>
+		  <value>
+		    <li Class="ThinkNode_ConditionalPawnKind">
+			  <pawnKind>OE_Mech_Maid</pawnKind>
+			  <subNodes>
+			    <li Class="SpecificWorkJobGiver.JobGiver_SpecificWork">
+				  <workGiverDef>PlayWithBaby</workGiverDef>
+				</li>
+			  </subNodes>
+			</li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationInsert">
+		  <xpath>Defs/ThinkTreeDef/thinkRoot/subNodes/li/subNodes/li/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"]/subNodes/li[@Class="JobGiver_Work" and ./emergency="true"]</xpath>
+		  <order>Append</order>
+		  <value>
+		    <li Class="ThinkNode_ConditionalPawnKind">
+			  <pawnKind>OE_Mech_Maid</pawnKind>
+			  <subNodes>
+			    <li Class="SpecificWorkJobGiver.JobGiver_SpecificWork">
+				  <workGiverDef>BottleFeedBaby</workGiverDef>
+				</li>
+			  </subNodes>
+			</li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationInsert">
+		  <xpath>Defs/ThinkTreeDef/thinkRoot/subNodes/li/subNodes/li/subNodes/li[@Class="ThinkNode_ConditionalWorkMode"]/subNodes/li[@Class="JobGiver_Work" and ./emergency="true"]</xpath>
+		  <order>Append</order>
+		  <value>
+		    <li Class="ThinkNode_ConditionalPawnKind">
+			  <pawnKind>OE_Mech_Maid</pawnKind>
+			  <subNodes>
+			    <li Class="SpecificWorkJobGiver.JobGiver_SpecificWork">
+				  <workGiverDef>FightFires</workGiverDef>
+				</li>
+			  </subNodes>
+			</li>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

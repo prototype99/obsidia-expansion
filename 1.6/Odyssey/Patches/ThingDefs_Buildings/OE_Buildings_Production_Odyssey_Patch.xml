@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Obsidia Armament Table and Armament Kit ====================-->
+<Operation Class="PatchOperationAttributeSet">
+    <xpath>/Defs/ThingDef[defName="OE_PersonaTable" or defName="OE_PersonaKit"]</xpath>
+    <attribute>Abstract</attribute>
+	<value>False</value>
+</Operation>
+
+<Operation Class="PatchOperationAttributeSet">
+    <xpath>/Defs/WorkGiverDef[defName="OE_UsePersonaWorkbench"]</xpath>
+    <attribute>Abstract</attribute>
+	<value>False</value>
+</Operation>
+
+</Patch>

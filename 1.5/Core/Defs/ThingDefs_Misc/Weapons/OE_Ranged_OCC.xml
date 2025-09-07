@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC - Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC</defName>
+    <label>Blast bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_BulletBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_M</defName>
+    <label>Reforged blast bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>  
+
+<!--=============== OCC - Revolver ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OСCRevolverBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_Revolver</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>2.5</Mass>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCRevolverBase">
+    <defName>OCC_Revolver</defName>
+    <label>Hornet</label>
+    <description>Regular Revolver used by the OCC Knights. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>790</MarketValue>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>1.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>80</OE_Obsidian>
+	  <OE_Mythril>45</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCRevolverBase">
+    <defName>OCC_Revolver_M</defName>
+    <label>Reforged Hornet</label>
+    <description>Reforged Revolver used by OCC Paladins. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Revolver_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCLightGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1040</MarketValue>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_M</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>1.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OCC_Revolver>1</OCC_Revolver>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OCC - Rifle ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OСCRifleBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>22500</WorkToMake>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCRifleBase">
+    <defName>OCC_Rifle</defName>
+    <label>Cerberus</label>
+    <description>Regular Rifle used by the OCC Knights. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCBaseGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1135</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCRifleBase">
+    <defName>OCC_Rifle_M</defName>
+    <label>Reforged Cerberus</label>
+    <description>Reforged Rifle used by OCC Paladins. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Rifle_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCBaseGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_M</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.50</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_Rifle>1</OCC_Rifle>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OCC - Minigun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OСCMinigunBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+	  <li>RangedHeavy</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>10.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.20</MoveSpeed>
+	</equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCMinigunBase">
+    <defName>OCC_Minigun</defName>
+    <label>Hydra</label>
+    <description>Regular Minigun used by the OCC Knights. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Minigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1845</MarketValue>
+	  <AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>3.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>20.9</range>
+		<burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>165</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCMinigunBase">
+    <defName>OCC_Minigun_M</defName>
+    <label>Reforged Hydra</label>
+    <description>Reforged Minigun used by OCC Paladins. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Minigun_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCHeavyGunM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>2095</MarketValue>
+	  <AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_M</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>3.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>20.9</range>
+		<burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_Minigun>1</OCC_Minigun>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OCC - MultiCannon ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OСCMultiCannonBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+	  <li>RangedHeavy</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>10.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.20</MoveSpeed>
+	</equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCMultiCannonBase">
+    <defName>OCC_MultiCannon</defName>
+    <label>Chimera</label>
+    <description>Regular Multi-Cannon used by the OCC Knights. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/MultiCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1845</MarketValue>
+	  <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>25.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>165</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCMultiCannonBase">
+    <defName>OCC_MultiCannon_M</defName>
+    <label>Reforged Chimera</label>
+    <description>Reforged Multi-Cannon used by OCC Paladins. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/MultiCannon_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCHeavyGunM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>2095</MarketValue>
+	  <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_M</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>25.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_MultiCannon>1</OCC_MultiCannon>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OCC - Rocket Launcher ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OСCRocketLauncherBase" ParentName="OERangedBase" Abstract="True">
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>13.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.30</MoveSpeed>
+	</equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_RL</defName>
+    <label>Behemoth rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_RL_M</defName>
+    <label>Reforged Behemoth rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Rocket_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef> 
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OСCRocketLauncherBase">
+    <defName>OCC_RocketLauncher</defName>
+    <label>Behemoth</label>
+    <description>Regular Rocket Launcher used by the OCC Knights. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2455</MarketValue>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_RL</defaultProjectile>
+		<forcedMissRadius>3.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCWeapons</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>215</OE_Obsidian>
+	  <OE_Mythril>45</OE_Mythril>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>24</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OСCRocketLauncherBase">
+    <defName>OCC_RocketLauncher_M</defName>
+    <label>Reforged Behemoth</label>
+    <description>Reforged Rocket Launcher used by OCC Paladins. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/RocketLauncher_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCHeavyGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2705</MarketValue>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_RL_M</defaultProjectile>
+		<forcedMissRadius>3.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OCC_RocketLauncher>1</OCC_RocketLauncher>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cross ====================-->
+<!--=============== OCC - AssaultRifle ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OCCAssaultRifleBase" ParentName="OERangedBase" Abstract="True">
+    <soundInteract>Interact_SMG</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>22500</WorkToMake>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCAssaultRifleBase">
+    <defName>OCC_AR</defName>
+    <label>Scylla</label>
+    <description>Regular Assault Rifle used by the OCC Knights. Slow weapon are designed to use blast bullets.\n\nIt's remanufactured weapon based on OMC Assault Rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/AssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OСCBaseGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1020</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>1.65</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.50</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>	
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>90</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OCCAssaultRifleBase">
+    <defName>OCC_AR_M</defName>
+    <label>Reforged Scylla</label>
+    <description>Reforged Assault Rifle used by OCC Paladins. Slow weapon are designed to use blast bullets.\n\nIt's remanufactured weapon based on OMC Assault Rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/AssaultRifle_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OСCBaseGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1270</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_M</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>1.65</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.50</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_AR>1</OCC_AR>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OCC - Bow ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OCCBowBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>0.85</uiIconScale>
+	<soundInteract>Bow_Large</soundInteract>
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OCCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>4.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OCC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_B</defName>
+    <label>Wendigo blast arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Arrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>2.9</explosionRadius>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_B_M</defName>
+    <label>Reforged Wendigo blast arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Arrow_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>2.9</explosionRadius>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>  
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCBowBase">
+    <defName>OCC_Bow</defName>
+    <label>Wendigo</label>
+    <description>Regular Bow used by the OCC Knights. Slow weapon are designed to use blast bullets.\n\nIt's remanufactured weapon based on OEC Bow.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Bow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCSniperGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2140</MarketValue>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_B</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>2.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>31.9</range>
+        <soundCast>Bow_Large</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>90</OE_Obsidian>
+	  <OE_Mythril>100</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OCCBowBase">
+    <defName>OCC_Bow_M</defName>
+    <label>Reforged Wendigo</label>
+    <description>Reforged Bow used by OCC Paladins. Slow weapon are designed to use blast bullets.\n\nIt's remanufactured weapon based on OEC Bow.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Bow_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCSniperGunM</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2390</MarketValue>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_B_M</defaultProjectile>
+        <forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>2.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>31.9</range>
+        <soundCast>Bow_Large</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_Bow>1</OCC_Bow>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

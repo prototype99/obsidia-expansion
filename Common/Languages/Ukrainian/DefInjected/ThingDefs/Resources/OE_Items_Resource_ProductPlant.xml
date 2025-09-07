@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Pearlapple ====================-->
+<OE_Pearlapple_Fruit.label>перлияблуко</OE_Pearlapple_Fruit.label>
+<OE_Pearlapple_Fruit.description>Кристальний соковитий фрукт Обсидії, який використовується як замінник м'яса.</OE_Pearlapple_Fruit.description>
+
+<!--=============== Jumy ====================-->
+<OE_Jumy_Berries.label>юмі ягоди</OE_Jumy_Berries.label>
+<OE_Jumy_Berries.description>Маленькі ягоди ягоди дуже смачні та солодкі.</OE_Jumy_Berries.description>
+
+<!--=============== Fungal Wood ====================-->
+<OE_FungalWoodLog.label>грибна деревина</OE_FungalWoodLog.label>
+<OE_FungalWoodLog.description>Унікальна деревина. Більш міцна і палива, при цьому легша.</OE_FungalWoodLog.description>
+<OE_FungalWoodLog.stuffProps.stuffAdjective>грибної деревини</OE_FungalWoodLog.stuffProps.stuffAdjective>
+<OE_FungalWoodLog.tools.log.label>поліно</OE_FungalWoodLog.tools.log.label>
+
+<!--=============== Dragonian Wood ====================-->
+<OE_DragonianWoodLog.label>драконова деревина</OE_DragonianWoodLog.label>
+<OE_DragonianWoodLog.description>Рідкісний вид деревини. Дуже цінна, міцна та красива, але при цьому важка.</OE_DragonianWoodLog.description>
+<OE_DragonianWoodLog.stuffProps.stuffAdjective>драконової деревини</OE_DragonianWoodLog.stuffProps.stuffAdjective>
+<OE_DragonianWoodLog.tools.log.label>поліно</OE_DragonianWoodLog.tools.log.label>
+
+<!--=============== Syntherius ====================-->
+<OE_Syntherius.label>сінтеріус</OE_Syntherius.label>
+<OE_Syntherius.description>Унікальний обсидійський ресурс. Використовується для синтезу інших ресурсів, створення озброєння та інших галузях Обсидії.</OE_Syntherius.description>
+
+<!--=============== EGO Seed ====================-->
+<OE_EGOSeed.label>Насіння ЕГО</OE_EGOSeed.label>
+<OE_EGOSeed.description>Насіння дерева ЕГО. Його можна посадити, щоб створити нове дерево ЕГО. Також використовується в генетичних експериментах або для створення амальгами.</OE_EGOSeed.description>
+
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Насіння ЕГО вивчено: {RESEARCH} розблоковано</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetter>Вивчаючи Насіння ЕГО, {PAWN_labelShort} отримав інформацію, необхідну для дослідницького проєкту {RESEARCH}.\n\nТепер ваші дослідники можуть використовувати дослідницькі стенди, щоб почати досліджувати, як насправді використовувати цю технологію.</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateLabelString>Аналіз...</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateDescString>Аналіз Насіння.</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.jobString>Аналіз Насіння</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.guiLabelString>Вибрати хто має це аналізувати</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.inspectString>Може бути проаналізовано колоністом.</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Pearlpeach ====================-->
+<OE_Pearlpeach_Fruit.label>перлиперсик</OE_Pearlpeach_Fruit.label>
+<OE_Pearlpeach_Fruit.description>Кристальний соковитий фрукт Обсидії, який використовується як замінник м'яса.</OE_Pearlpeach_Fruit.description>
+
+</LanguageData>

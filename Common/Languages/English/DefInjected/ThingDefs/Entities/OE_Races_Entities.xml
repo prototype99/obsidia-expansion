@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Chaos Slimes ====================-->
+<!--=============== Larval Chaos Slime ====================-->
+<OE_ChaosSlime_Larval.label>larval chaos slime</OE_ChaosSlime_Larval.label>
+<OE_ChaosSlime_Larval.description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nThey are the lowest and weakest form of chaos slimes.</OE_ChaosSlime_Larval.description>
+<OE_ChaosSlime_Larval.comps.CompInspectStringEmergence.inspectString>Emerged from {SOURCEPAWN_labelShort}.</OE_ChaosSlime_Larval.comps.CompInspectStringEmergence.inspectString>
+<OE_ChaosSlime_Larval.tools.mouth.label>mouth</OE_ChaosSlime_Larval.tools.mouth.label>
+<OE_ChaosSlime_Larval.tools.head.label>head</OE_ChaosSlime_Larval.tools.head.label>
+
+<!--=============== Adult Chaos Slime ====================-->
+<OE_ChaosSlime_Adult.label>adult chaos slime</OE_ChaosSlime_Adult.label>
+<OE_ChaosSlime_Adult.description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nAdult chaos slimes is the second stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</OE_ChaosSlime_Adult.description>
+<OE_ChaosSlime_Adult.comps.CompInspectStringEmergence.inspectString>Emerged from {SOURCEPAWN_labelShort}.</OE_ChaosSlime_Adult.comps.CompInspectStringEmergence.inspectString>
+<OE_ChaosSlime_Adult.tools.mouth.label>mouth</OE_ChaosSlime_Adult.tools.mouth.label>
+<OE_ChaosSlime_Adult.tools.head.label>head</OE_ChaosSlime_Adult.tools.head.label>
+
+<!--=============== Badass Chaos Slime ====================-->
+<OE_ChaosSlime_Badass.label>Badass chaos slime</OE_ChaosSlime_Badass.label>
+<OE_ChaosSlime_Badass.description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nBadass chaos slimes is the third stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</OE_ChaosSlime_Badass.description>
+<OE_ChaosSlime_Badass.comps.CompInspectStringEmergence.inspectString>Emerged from {SOURCEPAWN_labelShort}.</OE_ChaosSlime_Badass.comps.CompInspectStringEmergence.inspectString>
+<OE_ChaosSlime_Badass.tools.mouth.label>mouth</OE_ChaosSlime_Badass.tools.mouth.label>
+<OE_ChaosSlime_Badass.tools.head.label>head</OE_ChaosSlime_Badass.tools.head.label>
+
+<!--=============== Super Badass Chaos Slime ====================-->
+<OE_ChaosSlime_SuperBadass.label>Super Badass chaos slime</OE_ChaosSlime_SuperBadass.label>
+<OE_ChaosSlime_SuperBadass.description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nSuper Badass chaos slimes is the fourth stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</OE_ChaosSlime_SuperBadass.description>
+<OE_ChaosSlime_SuperBadass.comps.CompInspectStringEmergence.inspectString>Emerged from {SOURCEPAWN_labelShort}.</OE_ChaosSlime_SuperBadass.comps.CompInspectStringEmergence.inspectString>
+<OE_ChaosSlime_SuperBadass.tools.mouth.label>mouth</OE_ChaosSlime_SuperBadass.tools.mouth.label>
+<OE_ChaosSlime_SuperBadass.tools.head.label>head</OE_ChaosSlime_SuperBadass.tools.head.label>
+
+<!--=============== Ultimate Badass Chaos Slime ====================-->
+<OE_ChaosSlime_UltimateBadass.label>Ultimate Badass chaos slime</OE_ChaosSlime_UltimateBadass.label>
+<OE_ChaosSlime_UltimateBadass.description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nUltimate chaos slimes is the fifth stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</OE_ChaosSlime_UltimateBadass.description>
+<OE_ChaosSlime_UltimateBadass.comps.CompInspectStringEmergence.inspectString>Emerged from {SOURCEPAWN_labelShort}.</OE_ChaosSlime_UltimateBadass.comps.CompInspectStringEmergence.inspectString>
+<OE_ChaosSlime_UltimateBadass.tools.mouth.label>mouth</OE_ChaosSlime_UltimateBadass.tools.mouth.label>
+<OE_ChaosSlime_UltimateBadass.tools.head.label>head</OE_ChaosSlime_UltimateBadass.tools.head.label>
+
+<OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageDigested>A chaos slime swallowed {PAWN_nameDef} whole! Kill the chaos slime before it digests {PAWN_nameDef}.</OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageDigested>
+<OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageEmerged>{PAWN_nameDef} emerged from the chaos slime.</OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageEmerged>
+<OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageEmergedCorpse>{PAWN_nameDef} emerged from the chaos slime's corpse.</OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageEmergedCorpse>
+<OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageDigestionCompleted>The chaos slime has regurgitated {PAWN_nameDef}.</OE_ChaosSlime_UltimateBadass.comps.CompDevourer.messageDigestionCompleted>
+<OE_ChaosSlime_UltimateBadass.comps.CompDevourer.digestingInspector>Digesting {PAWN_nameDef}: {SECONDS} seconds left.</OE_ChaosSlime_UltimateBadass.comps.CompDevourer.digestingInspector>
+
+<!--=============== Chaos Slime the Invincible ====================-->
+<OE_ChaosSlime_Invincible.label>chaos slime the Invincible</OE_ChaosSlime_Invincible.label>
+<OE_ChaosSlime_Invincible.description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nChaos slime the Invincible is the ultimate fusion stage of chaos slimes. It possesses unmatched statis and abilities.</OE_ChaosSlime_Invincible.description>
+<OE_ChaosSlime_Invincible.comps.CompInspectStringEmergence.inspectString>Emerged from {SOURCEPAWN_labelShort}.</OE_ChaosSlime_Invincible.comps.CompInspectStringEmergence.inspectString>
+<OE_ChaosSlime_Invincible.tools.mouth.label>mouth</OE_ChaosSlime_Invincible.tools.mouth.label>
+<OE_ChaosSlime_Invincible.tools.head.label>head</OE_ChaosSlime_Invincible.tools.head.label>
+
+<OE_ChaosSlime_Invincible.comps.CompDevourer.messageDigested>A chaos slime swallowed {PAWN_nameDef} whole! Kill the chaos slime before it digests {PAWN_nameDef}.</OE_ChaosSlime_Invincible.comps.CompDevourer.messageDigested>
+<OE_ChaosSlime_Invincible.comps.CompDevourer.messageEmerged>{PAWN_nameDef} emerged from the chaos slime.</OE_ChaosSlime_Invincible.comps.CompDevourer.messageEmerged>
+<OE_ChaosSlime_Invincible.comps.CompDevourer.messageEmergedCorpse>{PAWN_nameDef} emerged from the chaos slime's corpse.</OE_ChaosSlime_Invincible.comps.CompDevourer.messageEmergedCorpse>
+<OE_ChaosSlime_Invincible.comps.CompDevourer.messageDigestionCompleted>The chaos slime has regurgitated {PAWN_nameDef}.</OE_ChaosSlime_Invincible.comps.CompDevourer.messageDigestionCompleted>
+<OE_ChaosSlime_Invincible.comps.CompDevourer.digestingInspector>Digesting {PAWN_nameDef}: {SECONDS} seconds left.</OE_ChaosSlime_Invincible.comps.CompDevourer.digestingInspector>
+
+<!--=============== Returned ====================-->
+<OE_Returned.label>returned</OE_Returned.label>
+<OE_Returned.description>Returned is a resurrected corpse of Crimson Arachna Cultist. This corpse is fused with the armor and prototype of Amalgam Arachna Legs, which makes this creature extremely mobile and armored. It's the result of one of the first unsuccessful experiments of Crimson Arachna Cult in the artificial hybridization of the powers of Crimson Arachna.</OE_Returned.description>
+<OE_Returned.tools.left_spike.label>left spike</OE_Returned.tools.left_spike.label>
+<OE_Returned.tools.left_spike.labelNoLocation>spike</OE_Returned.tools.left_spike.labelNoLocation>
+<OE_Returned.tools.right_spike.label>right spike</OE_Returned.tools.right_spike.label>
+<OE_Returned.tools.right_spike.labelNoLocation>spike</OE_Returned.tools.right_spike.labelNoLocation>
+<OE_Returned.tools.head.label>head</OE_Returned.tools.head.label>
+
+<!--=============== Cyber Arachna ====================-->
+<OE_CyberArachna.label>Cyber Arachna</OE_CyberArachna.label>
+<OE_CyberArachna.description>Cyber Arachna is a hybrid of Crimson Arachna Cultist with a mechanoid body. This creature is extremely durable and armored, but has a low movement speed. It's the result of one of the first unsuccessful experiments of Crimson Arachna Cult in the artificial hybridization of the powers of Crimson Arachna.</OE_CyberArachna.description>
+<OE_CyberArachna.tools.front_left_leg.label>front left leg</OE_CyberArachna.tools.front_left_leg.label>
+<OE_CyberArachna.tools.front_right_leg.label>front right leg</OE_CyberArachna.tools.front_right_leg.label>
+<OE_CyberArachna.tools.head.label>head</OE_CyberArachna.tools.head.label>
+<OE_CyberArachna.comps.CompChimera.simpleAnimalLabel>chimera</OE_CyberArachna.comps.CompChimera.simpleAnimalLabel>
+
+</LanguageData>

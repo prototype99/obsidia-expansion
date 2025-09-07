@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== ReGrowth: Core ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>ReGrowth: Core</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Aspen Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]/wildPlants</xpath>
+			<value>
+			  <Plant_OE_Lotus_S>0.01</Plant_OE_Lotus_S>
+			  <Plant_OE_Jumy>0.05</Plant_OE_Jumy>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Arachna_Green>0.1</OE_Arachna_Green>
+			  <OE_Arachna_Yellow>0.1</OE_Arachna_Yellow>
+			  <OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			  <li>OE_Ogren</li>
+			</value>
+		  </li>
+
+		</operations>
+	</match>
+</Operation>
+
+<!--=============== ReGrowth: Aspen ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>ReGrowth: Aspen</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Aspen Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_AspenForest"]/wildPlants</xpath>
+			<value>
+			  <Plant_OE_Lotus_D>0.01</Plant_OE_Lotus_D>
+			  <Plant_OE_Lotus_S>0.01</Plant_OE_Lotus_S>
+			  <Plant_OE_Jumy>0.05</Plant_OE_Jumy>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_AspenForest"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_AspenForest"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			  <li>OE_Ogren</li>
+			</value>
+		  </li>
+
+		</operations>
+	</match>
+</Operation>
+
+<!--=============== ReGrowth: Boiling ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>ReGrowth: Boiling</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Boiling Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_BoilingForest"]/wildPlants</xpath>
+			<value>
+			  <Plant_OE_Lotus_D>0.01</Plant_OE_Lotus_D>
+			  <Plant_OE_Lotus_S>0.01</Plant_OE_Lotus_S>
+			  <Plant_OE_Jumy>0.05</Plant_OE_Jumy>
+			  <Plant_OE_TreeDragonian>0.025</Plant_OE_TreeDragonian>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_BoilingForest"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Raptor>0.01</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Slime_Ancient>0.05</OE_Slime_Ancient>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_BoilingForest"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			  <li>OE_Ogren</li>
+			</value>
+		  </li>
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Syntherius Outpost ====================-->
+  <WorldObjectDef Abstract="True">
+    <defName>OE_Outpost_Syntherius</defName>
+    <label>obsidia syntherius outpost</label>
+    <description>Places a temporary, autonomously-led camp that specializes in collecting syntherius from syntherius trees in the areas, cannot be placed on deserts. Once an ample amount is collected, a delivery will be made at the outskirts of a faction's primary colony.</description>
+    <expandingIconTexture>WorldObjects/OutpostLogging</expandingIconTexture>
+    <modExtensions>
+      <li Class="Outposts.OutpostExtension">
+        <DisallowedBiomes>
+          <li>Desert</li>
+          <li>ExtremeDesert</li>
+        </DisallowedBiomes>
+		<RequiredSkills>
+          <Plants>10</Plants>
+        </RequiredSkills>
+		<TicksPerProduction>750000</TicksPerProduction>
+        <RequiresGrowing>true</RequiresGrowing>
+        <MinPawns>3</MinPawns>
+        <ProvidedFood>MealFine_Veg</ProvidedFood>
+        <ResultOptions>
+          <li>
+            <AmountPerPawn>5</AmountPerPawn>
+            <Thing>OE_Syntherius</Thing>
+          </li>
+        </ResultOptions>
+        <Event>VOE_JoinLoggingOutpost</Event>
+      </li>
+      <li Class="KCSG.CustomGenOption">
+        <preventBridgeable>True</preventBridgeable>
+        <chooseFromlayouts>
+          <li>Outpost_Struct_Logging</li>
+        </chooseFromlayouts>
+        <fullClear>true</fullClear>
+      </li>
+    </modExtensions>
+  </WorldObjectDef>
+
+</Defs>

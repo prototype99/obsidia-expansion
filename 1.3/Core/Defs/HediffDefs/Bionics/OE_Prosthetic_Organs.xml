@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Stomach ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticStomach</defName>
+    <label>bionic stomach</label>
+    <labelNoun>a bionic stomach</labelNoun>
+    <description>An installed bionic stomach.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticStomach</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticStomach</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+      <li>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <foodPoisoningChanceFactor>-0.25</foodPoisoningChanceFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticStomach</defName>
+    <label>bionic stomach</label>
+    <description>Obsidia bionic stomach. It is better than a biological stomach in almost every way. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticStomach</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Stomach</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticStomach</defName>
+    <label>install bionic stomach</label>
+    <description>Install a bionic stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticStomach</ThingDef>
+      <HediffDef>OE_ProstheticStomach</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticStomach</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticStomach</defName>
+    <label>remove bionic stomach</label>
+    <description>Remove a bionic stomach.</description>
+    <jobString>Removing bionic stomach.</jobString>
+    <removesHediff>OE_ProstheticStomach</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticStomach_M</defName>
+    <label>advanced bionic stomach</label>
+    <labelNoun>an advanced bionic stomach</labelNoun>
+    <description>An installed advanced bionic stomach.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticStomach_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticStomach_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactor>0.50</hungerRateFactor>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticStomach_M</defName>
+    <label>advanced bionic stomach</label>
+    <description>Obsidian advanced bionic stomach. It is much better than a biological stomach in almost every way. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticStomach_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Stomach</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticStomach>1</OE_ProstheticStomach>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticStomach_M</defName>
+    <label>install advanced bionic stomach</label>
+    <description>Install an advanced bionic stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticStomach_M</ThingDef>
+      <HediffDef>OE_ProstheticStomach_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticStomach_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticStomach_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticStomach_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticStomach_M</defName>
+    <label>remove advanced bionic stomach</label>
+    <description>Remove an advanced bionic stomach.</description>
+    <jobString>Removing advanced bionic stomach.</jobString>
+    <removesHediff>OE_ProstheticStomach_M</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticStomach_CAC</defName>
+    <label>cultist bionic stomach</label>
+    <labelNoun>a cultist bionic stomach</labelNoun>
+    <description>An installed cultist bionic stomach.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticStomach_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticStomach_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.05</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactor>0.25</hungerRateFactor>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticStomach_CAC</defName>
+    <label>cultist bionic stomach</label>
+    <description>Obsidia cultist bionic stomach. It is much better than a biological stomach in every way. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticStomach_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Stomach</texPath>
+    </graphicData>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticStomach_CAC</defName>
+    <label>install cultist bionic stomach</label>
+    <description>Install a cultist bionic stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticStomach_CAC</ThingDef>
+      <HediffDef>OE_ProstheticStomach_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticStomach_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticStomach_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticStomach_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticStomach_CAC</defName>
+    <label>remove cultist bionic stomach</label>
+    <description>Remove a cultist bionic stomach.</description>
+    <jobString>Removing cultist bionic stomach.</jobString>
+    <removesHediff>OE_ProstheticStomach_CAC</removesHediff>
+  </RecipeDef>
+
+<!--=============== Heart ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticHeart</defName>
+    <label>bionic heart</label>
+    <labelNoun>a bionic heart</labelNoun>
+    <description>An installed bionic heart.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticHeart</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticHeart</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticHeart</defName>
+    <label>bionic heart</label>
+    <description>Obsidia bionic heart. It is better than a biological heart in almost every way. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticHeart</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Heart</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticHeart</defName>
+    <label>install bionic heart</label>
+    <description>Install a bionic heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticHeart</ThingDef>
+      <HediffDef>OE_ProstheticHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticHeart</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticHeart</defName>
+    <label>remove bionic heart</label>
+    <description>Remove a bionic heart.</description>
+    <jobString>Removing bionic heart.</jobString>
+    <removesHediff>OE_ProstheticHeart</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticHeart_M</defName>
+    <label>advanced bionic heart</label>
+    <labelNoun>an advanced bionic heart</labelNoun>
+    <description>An installed advanced bionic heart.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticHeart_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticHeart_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticHeart_M</defName>
+    <label>advanced bionic heart</label>
+    <description>Obsidian advanced bionic heart. It is much better than a biological heart in almost every way. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticHeart_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Heart</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticHeart>1</OE_ProstheticHeart>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticHeart_M</defName>
+    <label>install advanced bionic heart</label>
+    <description>Install an advanced bionic heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticHeart_M</ThingDef>
+      <HediffDef>OE_ProstheticHeart_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticHeart_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticHeart_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticHeart_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticHeart_M</defName>
+    <label>remove advanced bionic heart</label>
+    <description>Remove an advanced bionic heart.</description>
+    <jobString>Removing advanced bionic heart.</jobString>
+    <removesHediff>OE_ProstheticHeart_M</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticHeart_CAC</defName>
+    <label>cultist bionic heart</label>
+    <labelNoun>a cultist bionic heart</labelNoun>
+    <description>An installed cultist bionic heart.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticHeart_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticHeart_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.05</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticHeart_CAC</defName>
+    <label>cultist bionic heart</label>
+    <description>Obsidia cultist bionic heart. It is much better than a biological heart in every way. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticHeart_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Heart</texPath>
+    </graphicData>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticHeart_CAC</defName>
+    <label>install cultist bionic heart</label>
+    <description>Install a cultist bionic heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticHeart_CAC</ThingDef>
+      <HediffDef>OE_ProstheticHeart_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticHeart_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticHeart_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticHeart_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticHeart_CAC</defName>
+    <label>remove cultist bionic heart</label>
+    <description>Remove a cultist bionic heart.</description>
+    <jobString>Removing cultist bionic heart.</jobString>
+    <removesHediff>OE_ProstheticHeart_CAC</removesHediff>
+  </RecipeDef>
+
+<!--=============== Kidney ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticKidney</defName>
+    <label>bionic kidney</label>
+    <labelNoun>a bionic kidney</labelNoun>
+    <description>An installed bionic kidney.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticKidney</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticKidney</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticKidney</defName>
+    <label>bionic kidney</label>
+    <description>Obsidia bionic kidney. It is better than a biological kidney in almost every way. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticKidney</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Kidney</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticKidney</defName>
+    <label>install bionic kidney</label>
+    <description>Install a bionic kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticKidney</ThingDef>
+      <HediffDef>OE_ProstheticKidney</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticKidney</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticKidney</defName>
+    <label>remove bionic kidney</label>
+    <description>Remove a bionic kidney.</description>
+    <jobString>Removing bionic kidney.</jobString>
+    <removesHediff>OE_ProstheticKidney</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticKidney_M</defName>
+    <label>advanced bionic kidney</label>
+    <labelNoun>an advanced bionic kidney</labelNoun>
+    <description>An installed advanced bionic kidney.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticKidney_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticKidney_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticKidney_M</defName>
+    <label>advanced bionic kidney</label>
+    <description>Obsidian advanced bionic kidney. It is much better than a biological kidney in almost every way. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticKidney_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Kidney</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticKidney>1</OE_ProstheticKidney>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticKidney_M</defName>
+    <label>install advanced bionic kidney</label>
+    <description>Install an advanced bionic kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticKidney_M</ThingDef>
+      <HediffDef>OE_ProstheticKidney_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticKidney_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticKidney_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticKidney_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticKidney_M</defName>
+    <label>remove advanced bionic kidney</label>
+    <description>Remove an advanced bionic kidney.</description>
+    <jobString>Removing advanced bionic kidney.</jobString>
+    <removesHediff>OE_ProstheticKidney_M</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticKidney_CAC</defName>
+    <label>cultist bionic kidney</label>
+    <labelNoun>a cultist bionic kidney</labelNoun>
+    <description>An installed cultist bionic kidney.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticKidney_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticKidney_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.05</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticKidney_CAC</defName>
+    <label>cultist bionic kidney</label>
+    <description>Obsidia cultist bionic kidney. It is much better than a biological kidney in every way. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticKidney_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Kidney</texPath>
+    </graphicData>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticKidney_CAC</defName>
+    <label>install cultist bionic kidney</label>
+    <description>Install a cultist bionic kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticKidney_CAC</ThingDef>
+      <HediffDef>OE_ProstheticKidney_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticKidney_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticKidney_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticKidney_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticKidney_CAC</defName>
+    <label>remove cultist bionic kidney</label>
+    <description>Remove a cultist bionic kidney.</description>
+    <jobString>Removing cultist bionic kidney.</jobString>
+    <removesHediff>OE_ProstheticKidney_CAC</removesHediff>
+  </RecipeDef>
+
+<!--=============== Liver ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticLiver</defName>
+    <label>bionic liver</label>
+    <labelNoun>a bionic liver</labelNoun>
+    <description>An installed bionic liver.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLiver</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLiver</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticLiver</defName>
+    <label>bionic liver</label>
+    <description>Obsidia bionic liver. It is better than a biological liver in almost every way. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLiver</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Liver</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>4.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLiver</defName>
+    <label>install bionic liver</label>
+    <description>Install a bionic liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLiver</ThingDef>
+      <HediffDef>OE_ProstheticLiver</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLiver</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLiver</defName>
+    <label>remove bionic liver</label>
+    <description>Remove a bionic liver.</description>
+    <jobString>Removing bionic liver.</jobString>
+    <removesHediff>OE_ProstheticLiver</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticLiver_M</defName>
+    <label>advanced bionic liver</label>
+    <labelNoun>an advanced bionic liver</labelNoun>
+    <description>An installed advanced bionic liver.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLiver_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLiver_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticLiver_M</defName>
+    <label>advanced bionic liver</label>
+    <description>Obsidian advanced bionic liver. It is much better than a biological liver in almost every way. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLiver_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Liver</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticLiver>1</OE_ProstheticLiver>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>4.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLiver_M</defName>
+    <label>install advanced bionic liver</label>
+    <description>Install an advanced bionic liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLiver_M</ThingDef>
+      <HediffDef>OE_ProstheticLiver_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLiver_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLiver_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLiver_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLiver_M</defName>
+    <label>remove advanced bionic liver</label>
+    <description>Remove an advanced bionic liver.</description>
+    <jobString>Removing advanced bionic liver.</jobString>
+    <removesHediff>OE_ProstheticLiver_M</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticLiver_CAC</defName>
+    <label>cultist bionic liver</label>
+    <labelNoun>a cultist bionic liver</labelNoun>
+    <description>An installed cultist bionic liver.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLiver_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLiver_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.05</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticLiver_CAC</defName>
+    <label>cultist bionic liver</label>
+    <description>Obsidia cultist bionic liver. It is much better than a biological liver in every way. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLiver_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Liver</texPath>
+    </graphicData>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>4.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLiver_CAC</defName>
+    <label>install cultist bionic liver</label>
+    <description>Install a cultist bionic liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLiver_CAC</ThingDef>
+      <HediffDef>OE_ProstheticLiver_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLiver_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLiver_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLiver_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLiver_CAC</defName>
+    <label>remove cultist bionic liver</label>
+    <description>Remove a cultist bionic liver.</description>
+    <jobString>Removing cultist bionic liver.</jobString>
+    <removesHediff>OE_ProstheticLiver_CAC</removesHediff>
+  </RecipeDef>
+
+<!--=============== Lung ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticLung</defName>
+    <label>bionic lung</label>
+    <labelNoun>a bionic lung</labelNoun>
+    <description>An installed bionic lung.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLung</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticLung</defName>
+    <label>bionic lung</label>
+    <description>Obsidia bionic lung. It is better than a biological lung in almost every way. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLung</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Lung</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLung</defName>
+    <label>install bionic lung</label>
+    <description>Install a bionic lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLung</ThingDef>
+      <HediffDef>OE_ProstheticLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLung</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLung</defName>
+    <label>remove bionic lung</label>
+    <description>Remove a bionic lung.</description>
+    <jobString>Removing bionic lung.</jobString>
+    <removesHediff>OE_ProstheticLung</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticLung_M</defName>
+    <label>advanced bionic lung</label>
+    <labelNoun>an advanced bionic lung</labelNoun>
+    <description>An installed advanced bionic lung.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLung_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLung_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticLung_M</defName>
+    <label>advanced bionic lung</label>
+    <description>Obsidian advanced bionic lung. It is much better than a biological lung in almost every way. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLung_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Lung</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticLung>1</OE_ProstheticLung>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLung_M</defName>
+    <label>install advanced bionic lung</label>
+    <description>Install an advanced bionic lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLung_M</ThingDef>
+      <HediffDef>OE_ProstheticLung_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLung_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLung_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLung_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLung_M</defName>
+    <label>remove advanced bionic lung</label>
+    <description>Remove an advanced bionic lung.</description>
+    <jobString>Removing advanced bionic lung.</jobString>
+    <removesHediff>OE_ProstheticLung_M</removesHediff>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticLung_CAC</defName>
+    <label>cultist bionic lung</label>
+    <labelNoun>a cultist bionic lung</labelNoun>
+    <description>An installed cultist bionic lung.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLung_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLung_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.05</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.05</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticLung_CAC</defName>
+    <label>cultist bionic lung</label>
+    <description>Obsidia cultist bionic lung. It is much better than a biological lung in every way. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLung_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Lung</texPath>
+    </graphicData>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLung_CAC</defName>
+    <label>install cultist bionic lung</label>
+    <description>Install a cultist bionic lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLung_CAC</ThingDef>
+      <HediffDef>OE_ProstheticLung_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLung_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLung_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLung_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLung_CAC</defName>
+    <label>remove cultist bionic lung</label>
+    <description>Remove a cultist bionic lung.</description>
+    <jobString>Removing cultist bionic lung.</jobString>
+    <removesHediff>OE_ProstheticLung_CAC</removesHediff>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Factions Expanded - Medieval 2</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Liquid Type ====================-->
+<!--=============== Honey ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Honey</defName>
+    <label>honey slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nHoney slime production type, produces 40 Raw Honey every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Honey</ThingDef>
+	  <ThingDef>VFEM2_Honey</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>850</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>OmnivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <VFEM2_Honey>10</VFEM2_Honey>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>VFEM2_Honey</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>40</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Honey</defName>
+    <label>honey slime</label>
+    <labelPlural>honey slimes</labelPlural>
+    <race>OE_Slime_Honey</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Honey/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Honey/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Honey/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Honey/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Honey/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Honey/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>25</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Honey</defName>
+    <label>honey slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Honey slime in 5 days. Honey slime produces 40 Raw Honey every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Honey</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Honey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>750</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <VFEM2_Honey>50</VFEM2_Honey>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Honey</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Floral Type ====================-->
+<!--=============== Grape ====================-->
+  <ThingDef ParentName="OEBaseFloralSlime">
+    <defName>OE_Slime_Grape</defName>
+    <label>grape slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nGrape slime production type, produces 20 Grapes every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Grape</ThingDef>
+	  <ThingDef>VFEM2_RawGrapes</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>850</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <VFEM2_RawGrapes>10</VFEM2_RawGrapes>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>VFEM2_RawGrapes</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>20</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Grape</defName>
+    <label>grape slime</label>
+    <labelPlural>grape slimes</labelPlural>
+    <race>OE_Slime_Grape</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Grape/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Grape/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Grape/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Ambrosia/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Grape/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Grape/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Grape</defName>
+    <label>grape slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Grape slime in 5 days. Grape slime produces 20 Grapes every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Grape</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Grape</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>750</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <VFEM2_RawGrapes>50</VFEM2_RawGrapes>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Grape</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+
+	  
+	  </operations>	  
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Biophormids Pherocore Buff ====================-->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>OE_AdministerBiophormidsPherocore</defName>
+    <label>administer Biophormids pherocore</label>
+    <description>Administer a concentrated dose of Biophormids pherocore to boost the pawn.</description>
+	<jobString>Administer a concentrated dose of Biophormids pherocore to boost the pawn.</jobString>
+    <uiIconThing>OE_PherocoreBiophormids</uiIconThing>
+	<descriptionHyperlinks>
+      <ThingDef>OE_PherocoreBiophormids</ThingDef>
+      <HediffDef>OE_PherocoreBiophormidsBuff</HediffDef>
+    </descriptionHyperlinks>
+    <workerClass>Recipe_InstallImplant</workerClass>
+	<workAmount>1500</workAmount>
+	<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+	<isViolation>true</isViolation>
+	<surgerySuccessChanceFactor>5</surgerySuccessChanceFactor>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+	<ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PherocoreBiophormids</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_PherocoreBiophormids</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_PherocoreBiophormidsBuff</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>OE_PherocoreBiophormidsBuff</defName>
+    <label>Biophormids strengthening</label>
+    <description>A concentrated dose of Biophormids pherocore grants enhanced physical and mental capabilities, elevating performance to new heights.</description>
+	<hediffClass>Hediff_Implant</hediffClass>
+	<defaultLabelColor>(0.27, 0.32, 0.44)</defaultLabelColor>
+    <descriptionHyperlinks>
+	  <ThingDef>OE_PherocoreBiophormids</ThingDef>
+	</descriptionHyperlinks>
+	<isBad>false</isBad>
+	<priceImpact>true</priceImpact>
+	<stages>
+	  <li>
+        <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+		<statOffsets>
+		  <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</statOffsets>
+		<capMods>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>0.25</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>0.25</offset>
+          </li>
+		  <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+		  <li>
+            <capacity>Talking</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+	  </li>
+	</stages>
+  </HediffDef>
+
+</Defs>

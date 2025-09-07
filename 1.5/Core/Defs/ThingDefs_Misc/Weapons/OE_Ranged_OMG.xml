@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG - Pistol ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OMG_Pistol</defName>
+    <label>Nanofire</label>
+    <description>Highly modified Pistol used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>OMGRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.05</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4740</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>1.10</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <OE_Empyrium>40</OE_Empyrium>
+	  <OE_Orichalcum>20</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_MercenaryKit>2</OE_MercenaryKit>
+    </costList>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMG_P</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+		<soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li Class="CompProperties_EquippableAbilityReloadable" MayRequire="Ludeon.RimWorld.Anomaly">
+        <abilityDef>OMG_Ignite</abilityDef>
+        <maxCharges>5</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>ignite charge</chargeNoun>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMG_P</defName>
+    <label>Nanofire bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <armorPenetrationBase>0.4</armorPenetrationBase>
+      <speed>70</speed>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>5</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OMG - Revolver ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OMG_Revolver</defName>
+    <label>Datashot</label>
+    <description>Highly modified Revolver used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OMGRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4985</MarketValue>
+	  <Mass>4.0</Mass>
+	  <AccuracyTouch>1.15</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <OE_Empyrium>60</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_MercenaryKit>2</OE_MercenaryKit>
+    </costList>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMG_R</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li Class="CompProperties_EquippableAbilityReloadable" MayRequire="Ludeon.RimWorld.Anomaly">
+        <abilityDef>OMG_Ignite</abilityDef>
+        <maxCharges>5</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>ignite charge</chargeNoun>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMG_R</defName>
+    <label>Datashot bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>75</speed>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OMG - Shotgun ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OMG_Shotgun</defName>
+    <label>Bytecrusher</label>
+    <description>Highly modified Shotgun used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OMGRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>5990</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <OE_Empyrium>75</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>25</OE_Syntherius>
+	  <OE_MercenaryKit>3</OE_MercenaryKit>
+    </costList>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMG_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+		<soundCastTail>GunTail_Heavy</soundCastTail>
+		<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li Class="CompProperties_EquippableAbilityReloadable" MayRequire="Ludeon.RimWorld.Anomaly">
+        <abilityDef>OMG_Burner</abilityDef>
+        <maxCharges>5</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>burner charge</chargeNoun>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountPerCharge>4</ammoCountPerCharge>
+        <baseReloadTicks>75</baseReloadTicks>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMG_S</defName>
+    <label>Bytecrusher blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>70</speed>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>15</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OMG - SniperRifle ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OMG_SniperRifle</defName>
+    <label>Etherstrike</label>
+    <description>Highly modified Sniper Rifle used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OMGRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4695</MarketValue>
+	  <Mass>9.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.10</AccuracyShort>
+      <AccuracyMedium>1.15</AccuracyMedium>
+      <AccuracyLong>1.20</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <OE_Empyrium>90</OE_Empyrium>
+	  <OE_Orichalcum>80</OE_Orichalcum>
+      <OE_Syntherius>30</OE_Syntherius>
+	  <OE_MercenaryKit>4</OE_MercenaryKit>
+    </costList>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMG_SR</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>58.9</range>
+		<burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li Class="CompProperties_EquippableAbilityReloadable" MayRequire="Ludeon.RimWorld.Anomaly">
+        <abilityDef>OMG_Burner</abilityDef>
+        <maxCharges>5</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>burner charge</chargeNoun>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountPerCharge>4</ammoCountPerCharge>
+        <baseReloadTicks>75</baseReloadTicks>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMG_SR</defName>
+    <label>Etherstrike bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.75</armorPenetrationBase>
+      <speed>120</speed>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>15</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OMG - Minigun ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OMG_Minigun</defName>
+    <label>Void Shredder</label>
+    <description>Highly modified Minigun used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Minigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OMGRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4695</MarketValue>
+	  <Mass>9.5</Mass>
+	  <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <OE_Empyrium>110</OE_Empyrium>
+	  <OE_Orichalcum>30</OE_Orichalcum>
+      <OE_Syntherius>35</OE_Syntherius>
+	  <OE_MercenaryKit>4</OE_MercenaryKit>
+    </costList>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMG_MG</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li Class="CompProperties_EquippableAbilityReloadable" MayRequire="Ludeon.RimWorld.Anomaly">
+        <abilityDef>OMG_Inferno</abilityDef>
+        <maxCharges>5</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>inferno charge</chargeNoun>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountPerCharge>6</ammoCountPerCharge>
+        <baseReloadTicks>90</baseReloadTicks>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMG_MG</defName>
+    <label>Void Shredder bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>70</speed>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>5</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

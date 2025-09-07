@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Armor ====================-->
+<!--=============== Shell ====================-->
+<!--=============== Mechanitor ====================-->
+  <RecipeDef>
+    <defName>OE_Gestate_EGO_Armor_Shell_Mechanitor</defName>
+    <label>gestate EGO Shell(Automancer)</label>
+    <description>Gestate an amalgam EGO Shell(Automancer).</description>
+    <jobString>Gestating an EGO Shell(Automancer).</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedAmalgama</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Obsidian</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EGO_Armor_Carapace</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_EGOAmalgamationCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+        <li>MeatRaw</li>
+      </categories>  
+	  <thingDefs>
+		<li>OE_Obsidian</li>
+		<li>EGO_Armor_Carapace</li>
+		<li>OE_EGOAmalgamationCore</li>
+      </thingDefs>
+	  <disallowedThingDefs>
+        <li>OE_Pearlapple_Fruit</li>
+		<li>OE_Red_TionantJelly</li>
+        <li>InsectJelly</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EGO_Armor_Shell_Mechanitor>1</EGO_Armor_Shell_Mechanitor>
+    </products>
+	<recipeUsers>
+      <li>OE_AmalgamVat</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>6</Crafting>
+	  <Intellectual>6</Intellectual>
+	  <Medicine>6</Medicine>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineering</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_EGO_Armor_Shell_Mechanitor</defName>
+    <label>Reset EGO Shell(Automancer)</label>
+    <description>Reset an amalgam EGO Shell(Automancer).</description>
+    <jobString>Resetting an EGO Shell(Automancer).</jobString>
+	<workAmount>750</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedAmalgama</unfinishedThingDef>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EGO_Armor_Shell_Mechanitor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_EGOSeed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>EGO_Armor_Shell_Mechanitor</li>
+		<li>OE_EGOSeed</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EGO_Armor_Shell_Mechanitor>1</EGO_Armor_Shell_Mechanitor>
+    </products>
+	<recipeUsers>
+      <li>OE_AmalgamVat</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>6</Crafting>
+	  <Intellectual>6</Intellectual>
+	  <Medicine>6</Medicine>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineering</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== EGO Helmet ====================-->
+<!--=============== Exohelm ====================-->
+<!--=============== Mechanitor ====================-->
+  <RecipeDef>
+    <defName>OE_Gestate_EGO_Helmet_Exohelm_Mechanitor</defName>
+    <label>gestate EGO Automancer Exohelm</label>
+    <description>Gestate an amalgam EGO Automancer Exohelm.</description>
+    <jobString>Gestating an EGO Automancer Exohelm.</jobString>
+	<workAmount>6500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedAmalgama</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Obsidian</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EGO_Helmet_Helm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_EGOAmalgamationCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+        <li>MeatRaw</li>
+      </categories>  
+	  <thingDefs>
+		<li>OE_Obsidian</li>
+		<li>EGO_Helmet_Helm</li>
+		<li>OE_EGOAmalgamationCore</li>
+      </thingDefs>
+	  <disallowedThingDefs>
+        <li>OE_Pearlapple_Fruit</li>
+		<li>OE_Red_TionantJelly</li>
+        <li>InsectJelly</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EGO_Helmet_Exohelm_Mechanitor>1</EGO_Helmet_Exohelm_Mechanitor>
+    </products>
+	<recipeUsers>
+      <li>OE_AmalgamVat</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>6</Crafting>
+	  <Intellectual>6</Intellectual>
+	  <Medicine>6</Medicine>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineering</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_EGO_Helmet_Exohelm_Mechanitor</defName>
+    <label>Reset EGO Automancer Exohelm</label>
+    <description>Reset an amalgam EGO Automancer Exohelm.</description>
+    <jobString>Resetting an EGO Automancer Exohelm.</jobString>
+	<workAmount>750</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedAmalgama</unfinishedThingDef>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>EGO_Helmet_Exohelm_Mechanitor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_EGOSeed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>EGO_Helmet_Exohelm_Mechanitor</li>
+		<li>OE_EGOSeed</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EGO_Helmet_Exohelm_Mechanitor>1</EGO_Helmet_Exohelm_Mechanitor>
+    </products>
+	<recipeUsers>
+      <li>OE_AmalgamVat</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>6</Crafting>
+	  <Intellectual>6</Intellectual>
+	  <Medicine>6</Medicine>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisites>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineering</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

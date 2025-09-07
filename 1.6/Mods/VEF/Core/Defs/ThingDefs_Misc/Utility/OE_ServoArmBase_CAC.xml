@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - ServoArm ====================-->
+<!--=============== Various ====================-->
+<!--=============== CAC ====================-->
+  <ThingDef ParentName="OEServoArmBase">
+    <defName>CAC_ServoArm</defName>
+    <label>CAC Cultist servo-arm</label>
+	<description>Battle servo-arm, well enhances the user’s manipulation. Designed and modified for use by CAC Cultists.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>CAC_ServoArm_Buff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/ServoArm/CAC/OE_ServoArm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>CACGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+	  <WorkToMake>25000</WorkToMake>
+	  <MarketValue>775</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>5.0</Mass>
+	  <Flammability>0.25</Flammability>
+	  <EquipDelay>2</EquipDelay>
+	  <Beauty>-1</Beauty>
+	</statBases>
+	<costList>
+	  <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/ServoArm/CAC/OE_ServoArm</wornGraphicPath>
+	  <tags>
+		<li>CACLightCultist</li>
+		<li>CACHeavyCultist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGear</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_CAC_Utility</li>
+    </thingCategories>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>CAC_ServoArm_Buff</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>CAC_ServoArm_Buff</defName>
+    <label>CAC Cultist servo-arm</label>
+    <description>This person is using a CAC Cultist servo-arm.</description>
+	<defaultLabelColor>(0.74, 0.20, 0.23)</defaultLabelColor>
+	<stages>
+	  <li>
+		<statOffsets>
+		  <RangedWeapon_Cooldown>-0.2</RangedWeapon_Cooldown>
+		  <MeleeHitChance>4</MeleeHitChance>
+		  <GlobalLearningFactor>-0.2</GlobalLearningFactor>
+		</statOffsets>
+		<capMods>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<offset>0.55</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<isBad>false</isBad>
+  </HediffDef>
+
+</Defs>

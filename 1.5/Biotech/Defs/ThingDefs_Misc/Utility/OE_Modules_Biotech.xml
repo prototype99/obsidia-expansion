@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Intelligence ====================-->
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Mechanitor</defName>
+    <label>Intelligence Module - Mechanitor</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/I_Mechanitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleI</li>
+		<li>OEModuleI_Mechanitor</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <MechBandwidth>20</MechBandwidth>
+	  <MechControlGroups>2</MechControlGroups>
+	  <WorkSpeedGlobalOffsetMech>0.20</WorkSpeedGlobalOffsetMech>
+	  <MechRemoteRepairDistance>9.9</MechRemoteRepairDistance>
+	  <MechRemoteShieldDistance>9.9</MechRemoteShieldDistance>
+      <MechRemoteShieldEnergy>100</MechRemoteShieldEnergy>
+	  <MechFormingSpeed>1</MechFormingSpeed>
+	  <MechRepairSpeed>1</MechRepairSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+</Defs>

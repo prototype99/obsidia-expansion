@@ -1,0 +1,1038 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationFindMod">
+		    <mods>
+			  <li>Vanilla Expanded Framework</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+			  <operations>
+			    
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+<!--=============== Mothoids / Drakonids ====================-->
+<!--=============== Melee ====================-->
+<!--=============== Dual Sword ====================-->
+  <ThingDef Name="OETrophyXenoDualSwordBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<descriptionHyperlinks>
+	  <GeneDef>DarkVision</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Drakonids">OE_DrakonidsNightOwl</GeneDef>
+	</descriptionHyperlinks>	
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <PainShockThreshold>0.25</PainShockThreshold>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Platinum>75</OE_Platinum>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OE_Trophy_Xeno_NightHunter_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requireOneOfGenesToEquip>
+		  <li>DarkVision</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Drakonids">OE_DrakonidsNightOwl</li>
+		</requireOneOfGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyXenoDualSwordBase">
+    <defName>OE_Trophy_Xeno_DualSword</defName>
+    <label>Moonveil Twins</label>
+    <description>Dual Sword, perfectly balanced and sharp as moonlight.\n\nForged in devotion to Selene, goddess of the moon, these blades carry whispers of her quiet sorrow. She and her sister Artemis once roamed the night together, but as their paths diverged, Selene’s vigil grew lonely. Legends say the Moonveil Twins shimmer brighter when wielded in solitude, as if echoing her endless longing. Yet, beneath their glow lingers a question - is it Selene’s blessing, or her mourning, that guides the strikes?\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Dark vision or Nocturnal.\n\nFeature: move speed and combat stats increase in the dark or at night.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_DualSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Bow ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OETrophyXenoBowBase" ParentName="OERangedBaseNC" Abstract="True">
+	<descriptionHyperlinks>
+	  <GeneDef>DarkVision</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Drakonids">OE_DrakonidsNightOwl</GeneDef>
+	</descriptionHyperlinks>	
+	<uiIconScale>0.85</uiIconScale>
+	<soundInteract>Bow_Large</soundInteract>
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <Mass>4.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <PainShockThreshold>0.25</PainShockThreshold>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_Trophy_Xeno_B</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>30.9</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <OE_Obsidian>85</OE_Obsidian>
+	  <OE_Platinum>115</OE_Platinum>
+	  <OE_Mooncloth>10</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OE_Trophy_Xeno_NightHunter_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requireOneOfGenesToEquip>
+		  <li>DarkVision</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Drakonids">OE_DrakonidsNightOwl</li>
+		</requireOneOfGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_Trophy_Xeno_B</defName>
+    <label>Silver Eclipse arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_Arrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+	  <damageDef>Arrow</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+      <speed>60</speed>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyXenoBowBase">
+    <defName>OE_Trophy_Xeno_Bow</defName>
+    <label>Silver Eclipse</label>
+    <description>A bow of polished silver, strung with threads of shadow.\n\nThis weapon honors Artemis, goddess of the hunt, who walked beside her sister Selene before turning her gaze fully to the wilds. Tales speak of a night when Artemis loosed an arrow at a beast cloaked in starlight, but the arrow never struck, vanishing into the eclipse. Some hunters claim that when the bow is drawn beneath a darkened sky, the string hums with that same unspent shot - waiting still, for its mark.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Dark vision or Nocturnal.\n\nFeature: move speed and combat stats increase in the dark or at night.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_Bow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Tortle / Ceratons ====================-->
+<!--=============== Melee ====================-->
+<!--=============== Giant Sword ====================-->
+  <ThingDef Name="ODCTrophyXenoGiantSwordBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<descriptionHyperlinks>
+	  <GeneDef>Unstoppable</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Tortle">OE_TortleFingers</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Ceratons">OE_CeratonsFingers</GeneDef>
+	</descriptionHyperlinks>
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <Mass>9</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.30</MoveSpeed>
+	  <NegotiationAbility>0.30</NegotiationAbility>
+	  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.30</ConversionPower>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>75</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3.25</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>75</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3.25</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <OE_Obsidian>200</OE_Obsidian>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>ODC_Trophy_Xeno_BattleFury_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requireOneOfGenesToEquip>
+		  <li>Unstoppable</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Tortle">OE_TortleFingers</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Ceratons">OE_CeratonsFingers</li>
+		</requireOneOfGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophyXenoGiantSwordBase">
+    <defName>ODC_Trophy_Xeno_GiantSword</defName>
+    <label>Tyrant’s Edge</label>
+    <description>This longsword was never meant to be subtle. Its sheer size and weight made it less of a blade and more of a statement piece, often carried into negotiations where words alone proved too fragile. One infamous meeting ended with the sword laid across the table instead of a treaty, leaving all parties equally impressed and unsettled by the “sharpness” of the argument.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Unstoppable, Tortle Fingers or Ceratons Fingers.\n\nFeature: increases move speed and melee damage after scoring a kill with this weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Xeno_GiantSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Minigun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="ODCTrophyXenoMinigunBase" ParentName="OERangedBaseNC" Abstract="True">
+	<descriptionHyperlinks>
+	  <GeneDef>Unstoppable</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Tortle">OE_TortleFingers</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Ceratons">OE_CeratonsFingers</GeneDef>
+	</descriptionHyperlinks>
+	<soundInteract>Interact_Revolver</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1490</MarketValue>
+	  <AccuracyTouch>0.20</AccuracyTouch>
+      <AccuracyShort>0.40</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>4.15</RangedWeapon_Cooldown>
+      <Mass>13</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.30</MoveSpeed>
+	  <NegotiationAbility>0.30</NegotiationAbility>
+	  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.30</ConversionPower>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_Xeno_MG</defaultProjectile>
+        <warmupTime>4.15</warmupTime>
+        <range>19.9</range>
+		<burstShotCount>32</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <OE_Obsidian>195</OE_Obsidian>
+	  <OE_Mythril>40</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>ODC_Trophy_Xeno_GunneryConcentration_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requireOneOfGenesToEquip>
+		  <li>Unstoppable</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Tortle">OE_TortleFingers</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Ceratons">OE_CeratonsFingers</li>
+		</requireOneOfGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_Trophy_Xeno_MG</defName>
+    <label>Obsidian Orator bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+	  <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+      <speed>70</speed>
+	  <armorPenetrationBase>0.24</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophyXenoMinigunBase">
+    <defName>ODC_Trophy_Xeno_Minigun</defName>
+    <label>Obsidian Orator</label>
+    <description>This minigun was originally presented as a demonstration of deterrence, though its bulk made it more comedy than intimidation. At one historic summit, the envoy carrying it stumbled under the weight, sending a burst of warning fire skyward and bringing negotiations to an abrupt conclusion. Since then, its reputation as a more convincing speaker than any diplomat has endured.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Unstoppable, Tortle Fingers or Ceratons Fingers.\n\nFeature: increases move speed and reduces aiming time after scoring a kill with this weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Xeno_GiantMinigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Axotl / Slimes ====================-->
+<!--=============== Melee ====================-->
+<!--=============== Katana ====================-->
+  <ThingDef Name="OETrophyXenoKatanaBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<descriptionHyperlinks>
+	  <GeneDef>Delicate</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Axotl">OE_AxotlGourmand</GeneDef>
+	  <GeneDef MayRequire="ObsidiaExpansion.Xenos.Slimes">OE_SlimesCannibal</GeneDef>
+	</descriptionHyperlinks>
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <Mass>2.5</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_Trophy_Xeno_W</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>4.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.35</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.8</armorPenetration>
+        <cooldownTime>2.35</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.8</armorPenetration>
+        <cooldownTime>2.35</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>75</OE_Mythril>
+	  <OE_Mooncloth>12</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OE_Trophy_Xeno_RandomGiver_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requireOneOfGenesToEquip>
+		  <li>Delicate</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Axotl">OE_AxotlGourmand</li>
+		  <li MayRequire="ObsidiaExpansion.Xenos.Slimes">OE_SlimesCannibal</li>
+		</requireOneOfGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullet ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_Trophy_Xeno_W</defName>
+    <label>Chaos Blade wave</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_Trophy_Xeno_Wave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.55</armorPenetrationBase>
+      <speed>85</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>5</amount>
+         <chance>0.15</chance>
+       </li>
+	   <li>
+         <def>OTCCryo</def>
+		 <amount>5</amount>
+         <chance>0.15</chance>
+       </li>
+	   <li>
+         <def>Flame</def>
+		 <amount>5</amount>
+         <chance>0.15</chance>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>5</amount>
+         <chance>0.15</chance>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyXenoKatanaBase">
+    <defName>OE_Trophy_Xeno_Katana</defName>
+    <label>Chaos Blade</label>
+    <description>Katana, deceptively elegant yet strangely alive with shifting energy, the Chaos Blade is no ordinary weapon. It is a carefully forged replica of an experiment once credited to the eccentric genius known as Rimuru Tempest - a figure equal parts mad scientist and slime master. While the original blade was said to bend reality itself in unpredictable ways, this copy channels only fragments of that chaotic spark. Still, once a day, it rewards its wielder with an unexpected surge of power - a reminder that even a replica of chaos can never be fully tamed.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Delicate, Axotl's Appetite or Slime Cannibalism.\n\nFeature: once per day, the wielder receives a random positive effect.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_Katana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OMCTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Deathrest ====================-->
+<!--=============== Melee ====================-->
+<!--=============== Scepter ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+	<defName>OES_Trophy_Xeno_Scepter</defName>
+    <label>Deathveil Scepter</label>
+    <description>Scepter, wrought in the forges of the Obsidia Empire, carried not as a relic of faith but as a weapon of power. It was entrusted to the Obsidia Eidolon, those chosen to stand at the Empire’s vanguard, where death was certain and glory fleeting. The Deathveil Scepter quickened their recovery from the long shadow of rest, driving them back into battle before their wounds had truly healed. Legends speak of heroes who rose again and again, their triumphs etched into history — until the final time, when neither steel nor will could bring them back.\n\nSpecially modified weapon charged with Stun, Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Deathrest.\n\nFeature: reduces times as much time to complete a period of deathresting by half.</description>
+	<descriptionHyperlinks>
+	  <GeneDef>Deathrest</GeneDef>
+	</descriptionHyperlinks>
+	<uiIconScale>1.2</uiIconScale>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/Trophy_Xeno_DeathrestScepter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<techLevel>Archotech</techLevel>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OESTrophyWeapons</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <Mass>2.5</Mass>
+	  <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>7150</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.15</PainShockThreshold>
+	  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+	  <MoveSpeed>0.15</MoveSpeed>
+	  <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.15</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.15</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.15</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.15</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.15</MechFormingSpeed>
+	  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.15</MechRepairSpeed>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>ornament</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OE_Empyrium>35</OE_Empyrium>
+	  <OE_Orichalcum>150</OE_Orichalcum>
+	  <OE_Syntherius>20</OE_Syntherius>
+      <OE_HeroicKit>2</OE_HeroicKit>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OES_Trophy_Xeno_DeathrestEfficiency_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requiredGenesToEquip>
+		  <li>Deathrest</li>
+		</requiredGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Hemogenic ====================-->
+<!--=============== Melee ====================-->
+<!--=============== Rapier ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+	<defName>EGO_Trophy_Xeno_Rapier</defName>
+    <label>Sanguine Bloom</label>
+    <description>This weapon is no forged blade, but a growth of flesh and sinew, twisted into the shape of an Amalgam rapier. At its core, a crimson rose blossoms, its petals slick with fluids that are not dew. With every thrust, veins along the blade writhe and tighten, forcing blood toward the hungry flower. To wield it is to feed it — and in feeding, to wonder whether the bloom is the parasite, or the wielder has already become its root?\n\nSpecially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Hemogenic.\n\nFeature: killing Humanoids or Animals with this weapon restores 0.1 Hemogen.</description>
+	<descriptionHyperlinks>
+	  <GeneDef>Hemogenic</GeneDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Xeno_HemogenicRapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OMCTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <Mass>1.5</Mass>
+	  <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>4550</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.25</RestRateMultiplier>
+	  <PainShockThreshold>-0.25</PainShockThreshold>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+		<armorPenetration>1.0</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>8</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>8</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>1.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>8</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>8</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+	  <OE_Platinum>50</OE_Platinum>
+	  <OE_Syntherius>50</OE_Syntherius>
+      <OE_EGOSeed>2</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>EGO_Trophy_Xeno_HemogenicMelee_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requiredGenesToEquip>
+		  <li>Hemogenic</li>
+		</requiredGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>				  
+				  
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationFindMod">
+				  <mods>
+				    <li>Royalty</li>
+				  </mods>
+				  <match Class="PatchOperationSequence">
+				    <operations>
+					  <li Class="PatchOperationAdd">
+					    <xpath>/Defs</xpath>
+						<value>
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophyXenoDualSwordBase">
+    <defName>OE_Trophy_Xeno_DualSword_P</defName>
+    <label>Persona Moonveil Twins</label>
+    <description>Persona Dual Sword, perfectly balanced and sharp as moonlight.\n\nForged in devotion to Selene, goddess of the moon, these blades carry whispers of her quiet sorrow. She and her sister Artemis once roamed the night together, but as their paths diverged, Selene’s vigil grew lonely. Legends say the Moonveil Twins shimmer brighter when wielded in solitude, as if echoing her endless longing. Yet, beneath their glow lingers a question - is it Selene’s blessing, or her mourning, that guides the strikes?\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Dark vision or Nocturnal.\n\nFeature: move speed and combat stats increase in the dark or at night.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_DualSword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="ODCTrophyXenoGiantSwordBase">
+    <defName>ODC_Trophy_Xeno_GiantSword_P</defName>
+    <label>Persona Tyrant’s Edge</label>
+    <description>This Persona longsword was never meant to be subtle. Its sheer size and weight made it less of a blade and more of a statement piece, often carried into negotiations where words alone proved too fragile. One infamous meeting ended with the sword laid across the table instead of a treaty, leaving all parties equally impressed and unsettled by the “sharpness” of the argument.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Unstoppable, Tortle Fingers or Ceratons Fingers.\n\nFeature: increases move speed and melee damage after scoring a kill with this weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Xeno_GiantSword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophyXenoKatanaBase">
+    <defName>OE_Trophy_Xeno_Katana_P</defName>
+    <label>Persona Chaos Blade</label>
+    <description>Persona Katana, deceptively elegant yet strangely alive with shifting energy, the Chaos Blade is no ordinary weapon. It is a carefully forged replica of an experiment once credited to the eccentric genius known as Rimuru Tempest - a figure equal parts mad scientist and slime master. While the original blade was said to bend reality itself in unpredictable ways, this copy channels only fragments of that chaotic spark. Still, once a day, it rewards its wielder with an unexpected surge of power - a reminder that even a replica of chaos can never be fully tamed.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Delicate, Axotl's Appetite or Slime Cannibalism.\n\nFeature: once per day, the wielder receives a random positive effect.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_Katana_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OMCTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>						
+						
+						</value>
+					  </li>
+					</operations>
+				  </match>
+				</li>
+				
+				<li Class="PatchOperationFindMod">
+				  <mods>
+				    <li>Odyssey</li>
+				  </mods>
+				  <match Class="PatchOperationSequence">
+				    <operations>
+					  <li Class="PatchOperationAdd">
+					    <xpath>/Defs</xpath>
+						<value>
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophyXenoBowBase">
+    <defName>OE_Trophy_Xeno_Bow_P</defName>
+    <label>Paragon Silver Eclipse</label>
+    <description>A Paragon bow of polished silver, strung with threads of shadow.\n\nThis weapon honors Artemis, goddess of the hunt, who walked beside her sister Selene before turning her gaze fully to the wilds. Tales speak of a night when Artemis loosed an arrow at a beast cloaked in starlight, but the arrow never struck, vanishing into the eclipse. Some hunters claim that when the bow is drawn beneath a darkened sky, the string hums with that same unspent shot - waiting still, for its mark.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Dark vision or Nocturnal.\n\nFeature: move speed and combat stats increase in the dark or at night.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_Bow_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps Inherit="False">
+      <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OE_Trophy_Xeno_NightHunter_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	  <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>Bow</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Silver Eclipse</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="ODCTrophyXenoMinigunBase">
+    <defName>ODC_Trophy_Xeno_Minigun_P</defName>
+    <label>Paragon Obsidian Orator</label>
+    <description>This Paragon minigun was originally presented as a demonstration of deterrence, though its bulk made it more comedy than intimidation. At one historic summit, the envoy carrying it stumbled under the weight, sending a burst of warning fire skyward and bringing negotiations to an abrupt conclusion. Since then, its reputation as a more convincing speaker than any diplomat has endured.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Unstoppable, Tortle Fingers or Ceratons Fingers.\n\nFeature: increases move speed and reduces aiming time after scoring a kill with this weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Xeno_GiantMinigun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps Inherit="False">
+      <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>ODC_Trophy_Xeno_GunneryConcentration_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	  <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Obsidian Orator</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>						
+						
+						</value>
+					  </li>
+					</operations>
+				  </match>
+				</li>
+			  
+			  </operations>
+			</match>
+		  </li>  
+		</operations>
+	</match>
+</Operation>
+
+</Patch>			

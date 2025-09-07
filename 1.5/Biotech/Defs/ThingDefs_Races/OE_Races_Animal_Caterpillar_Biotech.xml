@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Tox Caterpillar ====================-->
+  <ThingDef ParentName="OEBaseCaterpillar">
+    <defName>OE_Caterpillar_Tox</defName>
+    <label>obsidia tox caterpillar</label>
+    <description>Caterpillar is a genetically engineered creature. Scientists planned to create a small, peaceful creature that would serve as a convenient source of meat.\n\nThis specimen adapted to life at pollution areas.</description>
+    <uiIconScale>1.15</uiIconScale>
+	<statBases>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
+	  <ToxicResistance>1</ToxicResistance>
+	  <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseCaterpillar">
+    <defName>OE_Caterpillar_Tox</defName>
+    <label>obsidia tox caterpillar</label>
+    <race>OE_Caterpillar_Tox</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Tox</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Tox</texPath>
+          <drawSize>0.35</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Tox</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Tox</texPath>
+          <drawSize>0.65</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Tox</texPath>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Tox</texPath>
+          <drawSize>1.15</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

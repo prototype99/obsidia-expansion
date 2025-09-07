@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Liquid Type ====================-->
+<!--=============== Various ====================-->
+<!--=============== Hemogen ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Hemogen</defName>
+    <label>hemogen slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nHemogen slime production type, produces 3 Hemogen every 2 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Hemogen</ThingDef>
+	  <ThingDef>HemogenPack</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1125</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimalStrict</foodType>
+    </race>
+	<tradeTags>
+      <li>OEAnimalSlime</li>
+    </tradeTags>
+	<butcherProducts>
+      <HemogenPack>5</HemogenPack>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>HemogenPack</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>3</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Hemogen</defName>
+    <label>hemogen slime</label>
+    <labelPlural>hemogen slimes</labelPlural>
+    <race>OE_Slime_Hemogen</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Hemogen/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+</Defs>

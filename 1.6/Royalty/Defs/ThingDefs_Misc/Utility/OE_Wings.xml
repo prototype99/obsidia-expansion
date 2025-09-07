@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Wings ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEWingsBase" ParentName="ApparelNoQualityBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>8</Mass>
+      <Flammability>0.15</Flammability>
+      <EquipDelay>5</EquipDelay>
+	  <Beauty>0</Beauty>
+    </statBases>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(0.0, -0.1)</offset>
+        </north>
+        <south>
+          <offset>(0.0, 0.0)</offset>
+		  <hulk>
+		    <offset>(0.0, 0.0)</offset>
+		  </hulk>
+		  <fat>
+		    <offset>(0.0, 0.0)</offset>
+		  </fat>
+		  <thin>
+		    <offset>(0.0, 0.0)</offset>
+		  </thin>
+        </south>
+        <east>
+          <offset>(-0.35, 0.0)</offset>
+		  <female>
+		    <offset>(0.08, 0.0)</offset>
+		  </female>
+		  <hulk>
+		    <offset>(-0.10, 0.0)</offset>
+		  </hulk>
+		  <fat>
+		    <offset>(-0.13, 0.0)</offset>
+		  </fat>
+		  <thin>
+		    <offset>(0.1, 0.0)</offset>
+		  </thin>
+        </east>
+        <west>
+          <offset>(0.35, 0.0)</offset>
+		  <female>
+		    <offset>(-0.08, 0.0)</offset>
+		  </female>
+		  <hulk>
+		    <offset>(0.10, 0.0)</offset>
+		  </hulk>
+		  <fat>
+		    <offset>(0.13, 0.0)</offset>
+		  </fat>
+		  <thin>
+		    <offset>(-0.1, 0.0)</offset>
+		  </thin>
+        </west>
+        <male>  
+		  <scale>(1.75,1.75)</scale>
+		</male>
+        <female>
+		  <scale>(1.75,1.75)</scale>
+		</female>
+        <thin>
+		  <scale>(1.7,1.7)</scale>
+		</thin>
+        <hulk>
+		  <scale>(1.9,1.9)</scale>
+		</hulk>
+        <fat>
+		  <scale>(1.9,1.9)</scale>
+		</fat>
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+<!--=============== OES ====================-->
+  <ThingDef ParentName="OEWingsBase">
+    <defName>OES_Wings</defName>
+    <label>Heroic Eidolon Cyber-Wings</label>
+    <description>Heroic Cyber-Wings grant unmatched agility with their sleek, cutting-edge design. Designed for use by Eidolons, once called Heroes! Reveals the full potential of its owner.\n\nThese wings enable the user to perform 5 powerful jumps across vast distances.\n\nCan be reloaded using Syntherius.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Wings/OES/OESWings</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+	  <li>OESGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>4750</MarketValue>
+	  <JumpRange>29.9</JumpRange>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MoveSpeed>0.20</MoveSpeed>
+	  <TrapSpringChance>-1.0</TrapSpringChance>
+    </equippedStatOffsets>
+    <costList>
+	  <OE_Empyrium>50</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+	  <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<verbs>
+      <li>
+        <verbClass>Verb_Jump</verbClass>
+		<commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <label>heroic jump</label>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+        <soundLanding>JumpPackLand</soundLanding>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Wings/OES/OESWings</wornGraphicPath>
+      <tags>
+        <li>OESWings</li>
+      </tags>
+    </apparel>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OES_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OMG ====================-->
+  <ThingDef ParentName="OEWingsBase">
+    <defName>OMG_Wings</defName>
+    <label>Mercenaries Cyber-Wings</label>
+    <description>Highly modified Cyber-Wings grant unmatched agility with their sleek, cutting-edge design. Designed for use by Mercenaries.\n\nThese wings enable the user to perform 10 quick jumps across great distances.\n\nCan be reloaded using Syntherius.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Utility/Wings/OMG/OMGWings</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+	  <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>4750</MarketValue>
+	  <JumpRange>19.9</JumpRange>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MoveSpeed>0.20</MoveSpeed>
+	  <TrapSpringChance>-1.0</TrapSpringChance>
+    </equippedStatOffsets>
+    <costList>
+	  <OE_Empyrium>50</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+	  <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<verbs>
+      <li>
+        <verbClass>Verb_Jump</verbClass>
+		<commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <label>mercenary jump</label>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+        <soundLanding>JumpPackLand</soundLanding>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Utility/Wings/OMG/OMGWings</wornGraphicPath>
+      <tags>
+        <li>OMGWings</li>
+      </tags>
+    </apparel>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OMG_Utility</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>10</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Trophy EGO - Dragonbane ====================-->
+  <ThingDef Name="EGOTrophyDragonbaneBase" ParentName="OEMeleeBaseNQ" Abstract="True">
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Archotech</techLevel>
+	<weaponTags>
+      <li>OETrophyMelee</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Level-1 ====================-->
+  <ThingDef ParentName="EGOTrophyDragonbaneBase">
+    <defName>EGO_Trophy_Dragonbane_A</defName>
+    <label>Dragonbane Bite</label>
+    <description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo and Acid damages.\n\nKnife born from an unholy fusion, carrying the potential to evolve further.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Dragonbane_A</texPath>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<weaponTags>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>0.9</RoyalFavorValue>
+	  <MarketValue>4350</MarketValue>
+	  <Mass>1.25</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- + -->
+	  <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+	  <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.20</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.20</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate> 
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+	  <RestRateMultiplier>-0.10</RestRateMultiplier>
+	  <MentalBreakThreshold>0.05</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.8</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.8</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.8</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<comps>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	</comps>
+  </ThingDef>
+
+<!--=============== Level-2 ====================-->
+  <ThingDef ParentName="EGOTrophyDragonbaneBase">
+    <defName>EGO_Trophy_Dragonbane_B</defName>
+    <label>Dragonbane Strike</label>
+    <description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.\n\nKnife with enhanced armor penetration. Its evolution is not yet over.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Dragonbane_B</texPath>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>4850</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- + -->
+	  <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.30</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicEntropyRecoveryRate> 
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+	  <RestRateMultiplier>-0.15</RestRateMultiplier>
+	  <MentalBreakThreshold>0.05</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>OEBioengineering</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_DragonianWoodLog>5</OE_DragonianWoodLog>
+	  <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_Trophy_Dragonbane_A>1</EGO_Trophy_Dragonbane_A>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-3 ====================-->
+  <ThingDef ParentName="EGOTrophyDragonbaneBase">
+    <defName>EGO_Trophy_Dragonbane_C</defName>
+    <label>Dragonbane Slash</label>
+    <description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.\n\nSword of increased power, though its newfound weight slows each strike. Its evolution is not yet over.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Dragonbane_C</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.1</RoyalFavorValue>
+	  <MarketValue>5350</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- + -->
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+	  <ImmunityGainSpeed>0.20</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.40</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.40</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.066</PsychicEntropyRecoveryRate> 
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+	  <RestRateMultiplier>-0.20</RestRateMultiplier>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>OEBioengineering</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_Trophy_Dragonbane_B>1</EGO_Trophy_Dragonbane_B>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-4 ====================-->
+  <ThingDef ParentName="EGOTrophyDragonbaneBase">
+    <defName>EGO_Trophy_Dragonbane_D</defName>
+    <label>Dragonbane Warblade</label>
+    <description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nSword that now burns with unnatural flame, igniting both flesh and fate. Its evolution is not yet over.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Dragonbane_D</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.2</RoyalFavorValue>
+	  <MarketValue>5850</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- + -->
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate> 
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+	  <RestRateMultiplier>-0.25</RestRateMultiplier>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>OEBioengineering</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_DragonianWoodLog>15</OE_DragonianWoodLog>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_Trophy_Dragonbane_C>1</EGO_Trophy_Dragonbane_C>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-5 ====================-->
+  <ThingDef ParentName="EGOTrophyDragonbaneBase">
+    <defName>EGO_Trophy_Dragonbane_E</defName>
+    <label>Dragonbane Tyrant</label>
+    <description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nBig Sword of devastating force, slowed by its own monstrous size. Its evolution is not yet over.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Dragonbane_E</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.3</RoyalFavorValue>
+	  <MarketValue>6350</MarketValue>
+	  <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- + -->
+	  <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+	  <ImmunityGainSpeed>0.30</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.60</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.60</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.091</PsychicEntropyRecoveryRate> 
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.30</WorkSpeedGlobal>
+	  <RestRateMultiplier>-0.30</RestRateMultiplier>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.65</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.65</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.65</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>OEBioengineering</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_DragonianWoodLog>15</OE_DragonianWoodLog>
+	  <OE_FungalWoodLog>5</OE_FungalWoodLog>
+	  <OE_ModernizationKit>2</OE_ModernizationKit>
+	  <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_Trophy_Dragonbane_D>1</EGO_Trophy_Dragonbane_D>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-6 ====================-->
+  <ThingDef ParentName="EGOTrophyDragonbaneBase">
+    <defName>EGO_Trophy_Dragonbane_F</defName>
+    <label>Dragonbane Obliterator</label>
+    <description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nSpear infused with elemental energy, striking with unnatural force. Its evolution is not yet over.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Dragonbane_F</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.4</RoyalFavorValue>
+	  <MarketValue>6850</MarketValue>
+	  <Mass>4.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- + -->
+	  <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+	  <ImmunityGainSpeed>0.40</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.70</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.70</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate> 
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.40</WorkSpeedGlobal>
+	  <RestRateMultiplier>-0.40</RestRateMultiplier>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.65</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+		  <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.65</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>OEBioengineering</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_DragonianWoodLog>15</OE_DragonianWoodLog>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+	  <OE_ModernizationKit>2</OE_ModernizationKit>
+	  <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_Trophy_Dragonbane_E>1</EGO_Trophy_Dragonbane_E>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-7 ====================-->
+  <ThingDef ParentName="EGOTrophyDragonbaneBase">
+    <defName>EGO_Trophy_Dragonbane_G</defName>
+    <label>Dragonbane Godslayer</label>
+    <description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nSpear that awakens hidden forces, its power shaped by the universe itself. The final evolution.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Trophy_Dragonbane_G</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>7350</MarketValue>
+	  <Mass>4.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- + -->
+	  <IncomingDamageFactor>-0.20</IncomingDamageFactor>
+	  <ImmunityGainSpeed>0.50</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.80</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.80</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.125</PsychicEntropyRecoveryRate> 
+	  <!-- - -->
+	  <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+	  <RestRateMultiplier>-0.20</RestRateMultiplier>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>1.0</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+		  <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>1.0</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	</tools>  
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>OEBioengineering</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+	  <EGO_Trophy_Dragonbane_F>1</EGO_Trophy_Dragonbane_F>
+	  <OE_UnstableStone>2</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+</Defs>

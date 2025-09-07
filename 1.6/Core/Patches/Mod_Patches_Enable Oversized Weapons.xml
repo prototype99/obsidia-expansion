@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Enable Oversized Weapons</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OMC_Whip" or defName="OMC_Whip_M" or defName="OMC_Whip_P" or defName="OMC_Whip_Acid" or defName="OMC_Whip_M_Acid" or defName="OMC_Whip_P_Acid" or defName="OMC_Whip_Cryo" or defName="OMC_Whip_M_Cryo" or defName="OMC_Whip_P_Cryo" or defName="OMC_Whip_Fire" or defName="OMC_Whip_M_Fire" or defName="OMC_Whip_P_Fire" or defName="OMC_Whip_EMP" or defName="OMC_Whip_M_EMP" or defName="OMC_Whip_P_EMP" or defName="CAC_Thurible" or defName="CAC_Thurible_P" or defName="CAC_Trophy_Whip" or defName="EGO_Whip" or defName="OMC_RocketLauncher" or defName="OMC_RocketLauncher_M" or defName="OMC_RocketLauncher_P" or defName="OCC_RocketLauncher" or defName="OCC_RocketLauncher_M" or defName="OCC_RocketLauncher_P" or defName="ODC_RocketLauncher" or defName="ODC_RocketLauncher_P" or defName="ODC_RocketLauncher_Acid" or defName="ODC_RocketLauncher_P_Acid" or defName="ODC_RocketLauncher_Cryo" or defName="ODC_RocketLauncher_P_Cryo" or defName="ODC_RocketLauncher_Fire" or defName="ODC_RocketLauncher_P_Fire" or defName="ODC_RocketLauncher_EMP" or defName="ODC_RocketLauncher_P_EMP" or defName="EGO_RocketLauncher" or defName="OTC_GrenadeLauncher_Acid" or defName="OTC_GrenadeLauncher_M_Acid" or defName="OTC_GrenadeLauncher_P_Acid" or defName="OTC_GrenadeLauncher_Cryo" or defName="OTC_GrenadeLauncher_M_Cryo" or defName="OTC_GrenadeLauncher_P_Cryo" or defName="OTC_GrenadeLauncher_Fire" or defName="OTC_GrenadeLauncher_M_Fire" or defName="OTC_GrenadeLauncher_P_Fire" or defName="OTC_GrenadeLauncher_EMP" or defName="OTC_GrenadeLauncher_M_EMP" or defName="OTC_GrenadeLauncher_P_EMP" or defName="OTC_MultiCannon_Acid" or defName="OTC_MultiCannon_M_Acid" or defName="OTC_MultiCannon_P_Acid" or defName="OTC_MultiCannon_Cryo" or defName="OTC_MultiCannon_M_Cryo" or defName="OTC_MultiCannon_P_Cryo" or defName="OTC_MultiCannon_Fire" or defName="OTC_MultiCannon_M_Fire" or defName="OTC_MultiCannon_P_Fire" or defName="OTC_MultiCannon_EMP" or defName="OTC_MultiCannon_M_EMP" or defName="OTC_MultiCannon_P_EMP" or defName="OCC_Minigun" or defName="OCC_Minigun_M" or defName="OCC_Minigun_P" or defName="OCC_MultiCannon" or defName="OCC_MultiCannon_M" or defName="OCC_MultiCannon_P" or defName="OEC_Minigun" or defName="OEC_Minigun_M" or defName="OEC_Minigun_P" or defName="ODC_Trophy_BladeLauncher_A" or defName="ODC_Trophy_BladeLauncher_A_P" or defName="ODC_Trophy_BladeLauncher_B" or defName="ODC_Trophy_BladeLauncher_B_P" or defName="ODC_Trophy_BladeLauncher_C" or defName="ODC_Trophy_BladeLauncher_C_P" or defName="ODC_Trophy_BladeLauncher_C_I" or defName="CAC_Minigun" or defName="CAC_Minigun_P" or defName="CAC_Trophy_Minigun" or defName="OES_Minigun" or defName="EGO_GrenadeLauncher" or defName="OMG_Minigun" or defName="OMG_Trophy_PowerGuitar"]</xpath>
+			<value>
+			  <rotatable>true</rotatable>
+			</value>
+		  </li>
+		  <!--=============== Whip ====================-->
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OMC_Whip" or defName="OMC_Whip_M" or defName="OMC_Whip_P" or defName="OMC_Whip_Acid" or defName="OMC_Whip_M_Acid" or defName="OMC_Whip_P_Acid" or defName="OMC_Whip_Cryo" or defName="OMC_Whip_M_Cryo" or defName="OMC_Whip_P_Cryo" or defName="OMC_Whip_Fire" or defName="OMC_Whip_M_Fire" or defName="OMC_Whip_P_Fire" or defName="OMC_Whip_EMP" or defName="OMC_Whip_M_EMP" or defName="OMC_Whip_P_EMP" or defName="CAC_Thurible" or defName="CAC_Thurible_P" or defName="CAC_Trophy_Whip" or defName="EGO_Whip"]/graphicData</xpath>
+			<value>
+			  <drawOffsetNorth>(0.0, 0.0, -0.15)</drawOffsetNorth>
+			  <drawOffsetEast>(0.0, 0.0, -0.15)</drawOffsetEast>
+			  <drawOffsetSouth>(0.0, 0.0, -0.15)</drawOffsetSouth>
+			  <drawOffsetWest>(0.0, 0.0, -0.15)</drawOffsetWest>
+			</value>
+		  </li> 
+		  <!--=============== Upper Heavy Guns ====================-->
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OMC_RocketLauncher" or defName="OMC_RocketLauncher_M" or defName="OMC_RocketLauncher_P" or defName="OCC_RocketLauncher" or defName="OCC_RocketLauncher_M" or defName="OCC_RocketLauncher_P" or defName="ODC_RocketLauncher" or defName="ODC_RocketLauncher_P" or defName="ODC_RocketLauncher_Acid" or defName="ODC_RocketLauncher_P_Acid" or defName="ODC_RocketLauncher_Cryo" or defName="ODC_RocketLauncher_P_Cryo" or defName="ODC_RocketLauncher_Fire" or defName="ODC_RocketLauncher_P_Fire" or defName="ODC_RocketLauncher_EMP" or defName="ODC_RocketLauncher_P_EMP" or defName="EGO_RocketLauncher"]/graphicData</xpath>
+			<value>
+			  <drawSize>1.3</drawSize>
+			  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+			  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+			  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+			  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+			</value>
+		  </li>
+		  <!--=============== Lower Heavy Guns ====================-->
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OTC_GrenadeLauncher_Acid" or defName="OTC_GrenadeLauncher_M_Acid" or defName="OTC_GrenadeLauncher_P_Acid" or defName="OTC_GrenadeLauncher_Cryo" or defName="OTC_GrenadeLauncher_M_Cryo" or defName="OTC_GrenadeLauncher_P_Cryo" or defName="OTC_GrenadeLauncher_Fire" or defName="OTC_GrenadeLauncher_M_Fire" or defName="OTC_GrenadeLauncher_P_Fire" or defName="OTC_GrenadeLauncher_EMP" or defName="OTC_GrenadeLauncher_M_EMP" or defName="OTC_GrenadeLauncher_P_EMP" or defName="OTC_MultiCannon_Acid" or defName="OTC_MultiCannon_M_Acid" or defName="OTC_MultiCannon_P_Acid" or defName="OTC_MultiCannon_Cryo" or defName="OTC_MultiCannon_M_Cryo" or defName="OTC_MultiCannon_P_Cryo" or defName="OTC_MultiCannon_Fire" or defName="OTC_MultiCannon_M_Fire" or defName="OTC_MultiCannon_P_Fire" or defName="OTC_MultiCannon_EMP" or defName="OTC_MultiCannon_M_EMP" or defName="OTC_MultiCannon_P_EMP" or defName="OCC_Minigun" or defName="OCC_Minigun_M" or defName="OCC_Minigun_P" or defName="OCC_MultiCannon" or defName="OCC_MultiCannon_M" or defName="OCC_MultiCannon_P" or defName="OEC_Minigun" or defName="OEC_Minigun_M" or defName="OEC_Minigun_P" or defName="ODC_Trophy_BladeLauncher_A" or defName="ODC_Trophy_BladeLauncher_A_P" or defName="ODC_Trophy_BladeLauncher_B" or defName="ODC_Trophy_BladeLauncher_B_P" or defName="ODC_Trophy_BladeLauncher_C" or defName="ODC_Trophy_BladeLauncher_C_P" or defName="ODC_Trophy_BladeLauncher_C_I" or defName="CAC_Minigun" or defName="CAC_Minigun_P" or defName="CAC_Trophy_Minigun" or defName="OES_Minigun" or defName="EGO_GrenadeLauncher" or defName="OMG_Minigun"]/graphicData</xpath>
+			<value> 
+			  <drawSize>1.2</drawSize>
+			  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+			  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+			  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+			  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+			</value>
+		  </li>
+		  <!--=============== Lower Heavy Guns ====================-->
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OMG_Trophy_PowerGuitar"]/graphicData</xpath>
+			<value> 
+			  <drawSize>1.25</drawSize>
+			  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+			  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+			  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+			  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

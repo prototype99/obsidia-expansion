@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Alpha Implants</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallCrude_Mouth" or @Name= "AI_SurgeryInstallProsthetic_Mouth" or @Name="AI_SurgeryInstallBionic_Mouth"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OESlimeMouth</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallProsthetic_Tentacle" or @Name="AI_SurgeryInstallBionic_Tentacle"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OEBruulTentacle</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallProsthetic_Body" or @Name="AI_SurgeryInstallBionic_Body"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OEArachnaThorax</li>
+					<li>OEBruulHood</li>
+					<li>OESlimeGel</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallProsthetic_Shell" or @Name="AI_SurgeryInstallBionic_Shell"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OETionantShell</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallProsthetic_Buoyancy" or @Name="AI_SurgeryInstallBionic_Buoyancy"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OEBruulHydrogenSac</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallProsthetic_Heart" or @Name="AI_SurgeryInstallBionic_Heart"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OESlimeHeart</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallProsthetic_Blade" or @Name="AI_SurgeryInstallBionic_Blade"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OEFootClaw</li>
+					<li>OEClaw</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallCrude_Tail" or @Name="AI_SurgeryInstallProsthetic_Tail" or @Name="AI_SurgeryInstallBionic_Tail" or @Name="AI_SurgeryInstallArchotech_Tail"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OEInsectTail</li>
+				  </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs/RecipeDef[@Name="AI_SurgeryInstallProsthetic_Stinger" or @Name="AI_SurgeryInstallBionic_Stinger"]/appliedOnFixedBodyParts</xpath>
+				  <value>
+					<li>OEInsectSting</li>
+				  </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

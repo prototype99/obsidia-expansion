@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC Dominator ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_OMC_Dominator</defName>
+    <label>OMC Dominator</label>
+    <description>A medium-sized well armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally mounted Rocket Launcher and uses reconstructed OMC Auto Shotgun.</description>
+	<statBases>
+      <MarketValue>1650</MarketValue>
+      <MoveSpeed>2.0</MoveSpeed>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.15</EMPResistance>
+	  <PsychicSensitivity>0.15</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OMCKindBaseMechDominator" ParentName="BaseMechanoidKind">
+    <defName>OE_Mech_OMC_Dominator</defName>
+    <label>OMC Dominator</label>
+    <race>OE_Mech_OMC_Dominator</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OMC/Dominator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OMC/DominatorAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OMCDominator</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+	  <li>OE_MechRocketLauncher</li>
+    </abilities>
+  </PawnKindDef>
+
+<!--=============== OTC Dominator ====================-->
+  <ThingDef Name="OTCBaseMechDominator" ParentName="BaseMechanoidWalker" Abstract="True">
+	<statBases>
+      <MarketValue>1650</MarketValue>
+      <MoveSpeed>2.0</MoveSpeed>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.75</EMPResistance>
+	  <PsychicSensitivity>0.75</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OTCKindBaseMechDominator" ParentName="BaseMechanoidKind" Abstract="True">
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OTC/Dominator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OTC/DominatorAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+	  <li>OE_MechChaos</li>
+    </abilities>
+  </PawnKindDef>
+
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OTCBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_Acid</defName>
+    <label>OTC Dominator(Acid)</label>
+    <description>A medium-sized well armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Chaos program and uses reconstructed OTC Multi-Cannon with Acid charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OTCKindBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_Acid</defName>
+    <label>OTC Dominator(Acid)</label>
+    <race>OE_Mech_OTC_Dominator_Acid</race>
+    <weaponTags>
+      <li>OTCDominator_Acid</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OTCBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_Cryo</defName>
+    <label>OTC Dominator(Cryo)</label>
+    <description>A medium-sized well armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Chaos program and uses reconstructed OTC Multi-Cannon with Cryo charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OTCKindBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_Cryo</defName>
+    <label>OTC Dominator(Cryo)</label>
+    <race>OE_Mech_OTC_Dominator_Cryo</race>
+    <weaponTags>
+      <li>OTCDominator_Cryo</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OTCBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_Fire</defName>
+    <label>OTC Dominator(Fire)</label>
+    <description>A medium-sized well armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Chaos program and uses reconstructed OTC Multi-Cannon with Fire charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OTCKindBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_Fire</defName>
+    <label>OTC Dominator(Fire)</label>
+    <race>OE_Mech_OTC_Dominator_Fire</race>
+    <weaponTags>
+      <li>OTCDominator_Fire</li>
+    </weaponTags>
+  </PawnKindDef>
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OTCBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_EMP</defName>
+    <label>OTC Dominator(EMP)</label>
+    <description>A medium-sized well armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Chaos program and uses reconstructed OTC Multi-Cannon with EMP charges.</description>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="OTCKindBaseMechDominator">
+    <defName>OE_Mech_OTC_Dominator_EMP</defName>
+    <label>OTC Dominator(EMP)</label>
+    <race>OE_Mech_OTC_Dominator_EMP</race>
+    <weaponTags>
+      <li>OTCDominator_EMP</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--=============== OCC Dominator ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_OCC_Dominator</defName>
+    <label>OCC Dominator</label>
+    <description>A medium-sized heavy armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Vanguard program and uses reconstructed OCC Drill.</description>
+	<statBases>
+      <MarketValue>1650</MarketValue>
+      <MoveSpeed>1.75</MoveSpeed>
+	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.15</EMPResistance>
+	  <PsychicSensitivity>0.15</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OCCKindBaseMechDominator" ParentName="BaseMechanoidKind" >
+    <defName>OE_Mech_OCC_Dominator</defName>
+    <label>OCC Dominator</label>
+    <race>OE_Mech_OCC_Dominator</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OCC/Dominator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OCC/DominatorAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OCCDominator</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+	  <li>OE_MechVanguard</li>
+    </abilities>
+  </PawnKindDef>
+
+<!--=============== OEC Dominator ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_OEC_Dominator</defName>
+    <label>OEC Dominator</label>
+    <description>A medium-sized armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Blink device and uses reconstructed OEC Bow.</description>
+	<statBases>
+      <MarketValue>1650</MarketValue>
+      <MoveSpeed>2.25</MoveSpeed>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.15</EMPResistance>
+	  <PsychicSensitivity>0.15</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OECKindBaseMechDominator" ParentName="BaseMechanoidKind" >
+    <defName>OE_Mech_OEC_Dominator</defName>
+    <label>OEC Dominator</label>
+    <race>OE_Mech_OEC_Dominator</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OEC/Dominator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OEC/DominatorAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OECDominator</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+	  <li>OE_MechBlink</li>
+    </abilities>
+  </PawnKindDef>
+
+<!--=============== ODC Dominator ====================-->
+<!--=============== Light ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_ODC_Dominator_Light</defName>
+    <label>ODC Dominator(Light)</label>
+    <description>A medium-sized armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Camouflage device and uses reconstructed ODC Claws.</description>
+	<statBases>
+      <MarketValue>1650</MarketValue>
+      <MoveSpeed>2.25</MoveSpeed>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.15</EMPResistance>
+	  <PsychicSensitivity>0.15</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left claws</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right claws</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="ODCKindBaseMechDominatorLight" ParentName="BaseMechanoidKind" >
+    <defName>OE_Mech_ODC_Dominator_Light</defName>
+    <label>ODC Dominator(Light)</label>
+    <race>OE_Mech_ODC_Dominator_Light</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/ODC/Light/Dominator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/ODC/Light/DominatorAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+	  <li MayRequire="Ludeon.Rimworld.Royalty">OE_MechCamouflage</li>
+    </abilities>
+  </PawnKindDef>
+<!--=============== Heavy ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_ODC_Dominator_Heavy</defName>
+    <label>ODC Dominator(Heavy)</label>
+    <description>A medium-sized heavy armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model with additionally installed Provoke program and uses reconstructed heavy ODC Blade Launcher.</description>
+	<statBases>
+      <MarketValue>1650</MarketValue>
+      <MoveSpeed>1.75</MoveSpeed>
+	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.25</EMPResistance>
+	  <PsychicSensitivity>0.25</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.0</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="ODCKindBaseMechDominatorHeavy" ParentName="BaseMechanoidKind" >
+    <defName>OE_Mech_ODC_Dominator_Heavy</defName>
+    <label>ODC Dominator(Heavy)</label>
+    <race>OE_Mech_ODC_Dominator_Heavy</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/ODC/Heavy/Dominator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/ODC/Heavy/DominatorAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>ODCDominator</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+	  <li>OE_MechProvoke</li>
+    </abilities>
+  </PawnKindDef>
+
+<!--=============== OMG Dominator ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_OMG_Dominator</defName>
+    <label>Mercenary Dominator</label>
+    <description>Highly modified medium-sized heavy armored combat mechanoid. The Dominator series is a modern combat mechanoid designed to sow death and destruction on the battlefield.\n\nThis model uses reconstructed heavy OMG Shotgun, Sniper Rifle or Minigun.</description>
+	<statBases>
+      <MarketValue>2250</MarketValue>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+	  <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.30</EMPResistance>
+	  <PsychicSensitivity>0.15</PsychicSensitivity>
+	  <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">4</BandwidthCost>
+	  <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">20</ControlTakingTime>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>3.5</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.Rimworld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>20</OE_Empyrium>
+      <OE_Orichalcum>15</OE_Orichalcum>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OMGKindBaseMechDominator" ParentName="BaseMechanoidKind">
+    <defName>OE_Mech_OMG_Dominator</defName>
+    <label>Mercenary Dominator</label>
+    <race>OE_Mech_OMG_Dominator</race>
+	<combatPower>225</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.Rimworld.Biotech"> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OMG/Dominator</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Dominator/OMG/DominatorAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OMGDominator</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+    </abilities>
+  </PawnKindDef>
+
+</Defs>

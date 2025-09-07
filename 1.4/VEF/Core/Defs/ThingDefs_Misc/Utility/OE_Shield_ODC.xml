@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== ODC - Shields ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OEShieldBase">
+    <defName>ODC_Shield_Small</defName>
+    <label>Deflector - Emergent</label>
+	<description>Moded small Shield used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/ODC/Small/ODCShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>ODCArmor</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>925</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <WorkToMake>85000</WorkToMake>
+      <Mass>2.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Obsidian>55</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Platinum>20</OE_Platinum>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+	  <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+	  <RangedWeapon_Cooldown>-0.10</RangedWeapon_Cooldown>
+	  <MeleeWeapon_CooldownMultiplier>-0.10</MeleeWeapon_CooldownMultiplier>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>ODCShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/ODC/Small/ODCShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.0</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Medium ====================-->
+  <ThingDef ParentName="OEShieldBase">
+    <defName>ODC_Shield_Medium</defName>
+    <label>Aegis - Emergent</label>
+	<description>Moded medium Shield used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/ODC/Medium/ODCShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>ODCArmor</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1250</MarketValue>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.35</ArmorRating_Heat>
+      <WorkToMake>85000</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Obsidian>85</OE_Obsidian>
+	  <OE_Mythril>40</OE_Mythril>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+	  <RangedWeapon_Cooldown>-0.10</RangedWeapon_Cooldown>
+	  <MeleeWeapon_CooldownMultiplier>-0.10</MeleeWeapon_CooldownMultiplier>
+	  <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>ODCShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/ODC/Medium/ODCShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.05</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

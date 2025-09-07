@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Mines</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== Obsidian ====================-->
+	<RecipeDef ParentName="MiningWork">
+		<defName>OE_Excavate_Obsidian</defName>
+		<label>mining obsidian</label>
+		<description>mining obsidian.</description>
+		<jobString>Mining obsidian.</jobString>
+		<workAmount>3984</workAmount>
+		<products>
+			<OE_Obsidian>10</OE_Obsidian>
+		</products>
+		<recipeUsers>
+		  <li>Mine</li>
+		</recipeUsers>
+	</RecipeDef>
+<!--=============== Mythril ====================-->
+	<RecipeDef ParentName="MiningWork">
+		<defName>OE_Excavate_Mythril</defName>
+		<label>mining mythril</label>
+		<description>mining mythril.</description>
+		<jobString>Mining mythril.</jobString>
+		<workAmount>2905</workAmount>
+		<products>
+			<OE_Mythril>10</OE_Mythril>
+		</products>
+		<recipeUsers>
+		  <li>Mine</li>
+		</recipeUsers>
+	</RecipeDef>
+<!--=============== Platinum ====================-->
+	<RecipeDef ParentName="MiningWork">
+		<defName>OE_Excavate_Platinum</defName>
+		<label>mining platinum</label>
+		<description>mining platinum.</description>
+		<jobString>Mining platinum.</jobString>
+		<workAmount>3984</workAmount>
+		<products>
+			<OE_Platinum>10</OE_Platinum>
+		</products>
+		<recipeUsers>
+		  <li>Mine</li>
+		</recipeUsers>
+	</RecipeDef>	
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

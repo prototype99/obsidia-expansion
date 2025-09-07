@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO - Knife ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+    <defName>EGO_Knife</defName>
+    <label>Lymocyst</label>
+    <description>Amalgam Knife used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+	  <MarketValue>3560</MarketValue>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.25</RestRateMultiplier>
+	  <PainShockThreshold>-0.25</PainShockThreshold>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== EGO - Claws ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+    <defName>EGO_Claws</defName>
+    <label>Devourer</label>
+    <description>Amalgam Claws used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Claws</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+	  <MarketValue>4095</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.25</RestRateMultiplier>
+	  <PainShockThreshold>-0.25</PainShockThreshold>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.85</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== EGO - BigSword ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+    <defName>EGO_BigSword</defName>
+    <label>Bonesword</label>
+    <description>Amalgam Longsword used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/BigSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>4930</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.35</RestRateMultiplier>
+	  <PainShockThreshold>-0.35</PainShockThreshold>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== EGO - BigHammer ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+    <defName>EGO_BigHammer</defName>
+    <label>Batterbone</label>
+    <description>Amalgam Big Hammer used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/BigHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>4930</MarketValue>
+	  <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.35</RestRateMultiplier>
+	  <PainShockThreshold>-0.35</PainShockThreshold>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.3</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== EGO - BigScythe ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+    <defName>EGO_BigScythe</defName>
+    <label>Batterskull</label>
+    <description>Amalgam Big Scythe used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <equippedAngleOffset>-5</equippedAngleOffset>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/BigScythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>4930</MarketValue>
+	  <Mass>4.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.35</RestRateMultiplier>
+	  <PainShockThreshold>-0.35</PainShockThreshold>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>Scratch</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== EGO - Scepter ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+    <defName>EGO_Scepter</defName>
+    <label>Carnifex</label>
+    <description>Amalgam Scepter used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Scepter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>5095</MarketValue>
+	  <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.4</RestRateMultiplier>
+	  <PainShockThreshold>-0.4</PainShockThreshold>
+	  <MentalBreakThreshold>0.20</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.65</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>ornament</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== EGO - Whip ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQE">
+    <defName>EGO_Whip</defName>
+    <label>Proboscis</label>
+    <description>Amalgam Whip used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Whip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawOffsetNorth>(0.0, 0.0, -0.15)</drawOffsetNorth>
+	  <drawOffsetEast>(0.0, 0.0, -0.15)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.15)</drawOffsetSouth>
+	  <drawOffsetWest>(0.0, 0.0, -0.15)</drawOffsetWest>
+    </graphicData>
+	<uiIconScale>0.85</uiIconScale>
+	<statBases>
+	  <MarketValue>3615</MarketValue>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>1.20</AccuracyTouch>
+      <AccuracyShort>1.15</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.25</RestRateMultiplier>
+	  <PainShockThreshold>-0.25</PainShockThreshold>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_EGO_W</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>Pawn_Spelopede_Pain</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Wave_EGO_W</defName>
+    <label>Proboscis wave</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_MeleeWave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>80</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>OTCCryo</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

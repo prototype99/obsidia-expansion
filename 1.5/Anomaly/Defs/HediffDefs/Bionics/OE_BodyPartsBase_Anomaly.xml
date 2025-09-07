@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Base ====================-->
+  <ThingDef Name="OEBodyPartGhoulBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>BodyPartsGhoul</li>
+    </thingCategories>
+	<tradeTags>
+      <li>Bionic</li>
+	  <li>OEBionics</li>
+	  <li>OEBionicsSell</li>
+    </tradeTags>
+	<techHediffsTags>
+      <li>Ghoul</li>
+    </techHediffsTags>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>45000</WorkToMake>
+	  <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	<thingSetMakerTags>
+	  <li>RewardStandardHighFreq</li>
+	</thingSetMakerTags>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+		<Medicine>10</Medicine>
+	    <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <researchPrerequisite>CACGhoulBionics</researchPrerequisite>
+      <recipeUsers>
+        <li>OE_BionicTable</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

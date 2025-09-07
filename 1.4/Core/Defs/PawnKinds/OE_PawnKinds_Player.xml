@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Player Obsidia Colonist ====================-->
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>OE_PlayerColonist</defName>
+    <label>obsidia colonist</label>
+    <defaultFactionType>OE_ObsidiaPlayerColony</defaultFactionType>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+	<apparelTags>
+      <li>OEWorker</li>
+    </apparelTags>
+	<specificApparelRequirements>
+      <li>
+		<requiredTag>OEWorker</requiredTag>
+      </li>
+    </specificApparelRequirements>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>350~600</apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialResistanceRange>13~21</initialResistanceRange>
+  </PawnKindDef>
+
+<!--=============== Player Obsidia Agent ====================-->
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>OE_PlayerAgent</defName>
+    <label>obsidia agent</label>
+    <defaultFactionType>OE_ObsidiaAgentPlayerColony</defaultFactionType>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+	<apparelTags>
+      <li>OEMilitary</li>
+    </apparelTags>
+	<specificApparelRequirements>
+      <li>
+		<requiredTag>OEMilitary</requiredTag>
+      </li>
+    </specificApparelRequirements>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>350~600</apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.05</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+	  <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>13~21</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

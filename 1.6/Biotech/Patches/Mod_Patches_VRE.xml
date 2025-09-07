@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Vanilla Races Expanded - Saurid ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Saurid</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRESaurids_Saurid MayRequire="Ludeon.RimWorld.Biotech">0.01</VRESaurids_Saurid>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRESaurids_Saurid MayRequire="Ludeon.RimWorld.Biotech">0.03</VRESaurids_Saurid>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRESaurids_Saurid MayRequire="Ludeon.RimWorld.Biotech">0.02</VRESaurids_Saurid>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Hussar ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Hussar</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VREH_Uhlan MayRequire="Ludeon.RimWorld.Biotech">0.03</VREH_Uhlan>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaPilgrimClan" or defName="ObsidiaCrimsonArachnaCult" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VREH_Uhlan MayRequire="Ludeon.RimWorld.Biotech">0.01</VREH_Uhlan>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VREH_Uhlan MayRequire="Ludeon.RimWorld.Biotech">0.02</VREH_Uhlan>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Phytokin ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Phytokin</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaCrimsonArachnaCult" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Poluxkin MayRequire="Ludeon.RimWorld.Biotech">0.02</VRE_Poluxkin>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Poluxkin MayRequire="Ludeon.RimWorld.Biotech">0.01</VRE_Poluxkin>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Sanguophage ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Sanguophage</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Strigoi MayRequire="Ludeon.RimWorld.Biotech">0.01</VRE_Strigoi>
+			<VRE_Ekkimian MayRequire="Ludeon.RimWorld.Biotech">0.01</VRE_Ekkimian>
+			<VRE_Bruxa MayRequire="Ludeon.RimWorld.Biotech">0.01</VRE_Bruxa>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Strigoi MayRequire="Ludeon.RimWorld.Biotech">0.02</VRE_Strigoi>
+			<VRE_Ekkimian MayRequire="Ludeon.RimWorld.Biotech">0.02</VRE_Ekkimian>
+			<VRE_Bruxa MayRequire="Ludeon.RimWorld.Biotech">0.02</VRE_Bruxa>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Android ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Android</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaCrimsonArachnaCult" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VREA_AndroidAwakened MayRequire="Ludeon.RimWorld.Biotech">0.005</VREA_AndroidAwakened>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Archon ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Archon</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Archon MayRequire="Ludeon.RimWorld.Biotech">0.002</VRE_Archon>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Lycanthrope ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Lycanthrope</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaMercenaryGangs" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Wolfman MayRequire="Ludeon.RimWorld.Biotech">0.002</VRE_Wolfman>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Pigskin ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Pigskin</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaCrimsonArachnaCult" or defName="ObsidiaEmpireSins" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Boarskin MayRequire="Ludeon.RimWorld.Biotech">0.002</VRE_Boarskin>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Races Expanded - Insector ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Insector</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaSyndicateClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Insector MayRequire="Ludeon.RimWorld.Biotech">0.01</VRE_Insector>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaRenegadeClan" or defName="ObsidiaCrimsonArachnaCult" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<VRE_Insector MayRequire="Ludeon.RimWorld.Biotech">0.03</VRE_Insector>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

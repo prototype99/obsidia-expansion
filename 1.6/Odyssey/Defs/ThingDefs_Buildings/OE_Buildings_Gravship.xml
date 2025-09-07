@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Gravship Hull ====================-->
+  <ThingDef ParentName="OEWallBase">
+    <defName>OE_GravshipHull</defName>
+    <label>obsidia gravship hull</label>
+    <description>Reinforced Obsidia hull segment with layered armor and airtight sealing. Designed for gravship integration, it prevents oxygen leaks in vacuum and connects directly to internal substructure, meaning it can only be built on a gravship.</description>
+    <designationCategory>Odyssey</designationCategory>
+    <uiOrder>1800.666</uiOrder>
+    <uiIconPath>Things/Building/Gravship/OE_GravshipHull_Icon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Gravship/GravshipHull/OE_GravshipHull_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <researchPrerequisites Inherit="False">
+      <li>OEGravtech</li>
+    </researchPrerequisites>
+	<costList>
+      <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+    <building>
+      <isAirtight>true</isAirtight>
+    </building>
+    <stuffCategories Inherit="False">
+      <li>Metallic</li>
+    </stuffCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_OnSubstructure</li>
+    </placeWorkers>
+  </ThingDef>
+
+<!--=============== Obsidia Grav Field Extender ====================-->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>OE_GravFieldExtender</defName>
+    <label>obsidia grav field extender</label>
+    <description>A specialized obsidia device used to increase the size of a gravship. It extends the area in which substructure can be built, and increases the amount of substructure that a gravship can support. Must be built near a grav engine.\n\nA gravship can support up to four obsidia grav field extenders.</description> 
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Gravship/OE_GravFieldExtender</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+	  <MaxHitPoints>300</MaxHitPoints>
+      <Mass>15</Mass>
+      <WorkToBuild>2500</WorkToBuild>
+	  <Beauty>-5</Beauty>
+    </statBases>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <canOverlapZones>false</canOverlapZones>
+    <designationCategory>Odyssey</designationCategory>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    <researchPrerequisites>
+      <li>OEGravtech</li>
+    </researchPrerequisites>
+    <costList>
+      <Gravcore>1</Gravcore>
+      <GravlitePanel>35</GravlitePanel>
+      <OE_Obsidian>10</OE_Obsidian>
+      <OE_Mythril>35</OE_Mythril>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_OnSubstructure</li>
+      <li>PlaceWorker_InRangeOfGravEngine</li>
+    </placeWorkers>
+    <building>
+      <relatedTerrain>
+        <li>Substructure</li>
+      </relatedTerrain>
+    </building>
+    <comps>
+      <li Class="CompProperties_SubstructureFootprint">
+        <radius>22.9</radius>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(0,218,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_GravshipFacility">
+        <statOffsets>
+          <SubstructureSupport>500</SubstructureSupport>
+        </statOffsets>
+        <requiresLOS>false</requiresLOS>
+        <maxSimultaneous>4</maxSimultaneous>
+        <maxDistance>24.9</maxDistance>
+		<onlyRequiresLooseConnection>true</onlyRequiresLooseConnection>
+      </li>
+    </comps>
+    <uiOrder>2300.666</uiOrder>
+  </ThingDef>
+
+<!--=============== Obsidia Pilot Console ====================-->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>OE_PilotConsole</defName>
+    <label>obsidia pilot console</label>
+    <description>A small obsidia pilot console that allows launching and piloting a gravship. It draws power directly from the grav engine.</description>
+    <graphicData>
+      <texPath>Things/Building/Gravship/OE_PilotConsole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.5)</drawSize>
+	  <drawOffset>(0,0,0.5)</drawOffset>
+    </graphicData>
+	<uiIconScale>0.65</uiIconScale>
+	<costList>
+      <OE_Obsidian>30</OE_Obsidian>
+      <OE_Mythril>30</OE_Mythril>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<fillPercent>0.35</fillPercent>
+	<hasInteractionCell>true</hasInteractionCell>
+	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+	<statBases>
+      <MarketValue>675</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>10</Mass>
+	  <Beauty>0</Beauty>
+      <Flammability>0</Flammability>
+	  <WorkToBuild>3500</WorkToBuild>
+    </statBases>
+    <size>(1,1)</size>
+	<rotatable>true</rotatable>
+	<designationCategory>Odyssey</designationCategory>
+	<uiOrder>2100.666</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+	<canOverlapZones>false</canOverlapZones>
+	<placeWorkers>
+      <li>PlaceWorker_OnSubstructure</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>OEGravtech</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_GravshipFacility">
+        <compClass>CompPilotConsole</compClass>
+        <componentTypeDef>Controls</componentTypeDef>
+        <requiresLOS>false</requiresLOS>
+        <showMaxSimultaneous>false</showMaxSimultaneous>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>500</maxDistance>
+      </li>
+	  <li Class="CompProperties_Breakdownable" />
+    </comps>
+  </ThingDef>
+
+<!--=============== Obsidia Repulsorlift Engine ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>OE_RepulsorliftEngine_Small</defName>
+    <label>small obsidia repulsorlift engine</label>
+    <description>A repulsorlift engine uses focused gravitic pulses to reduce planetary drag during flight. This compact Obsidia design is powered by chemfuel and increases the range of a gravship. Requires gravship substructure and an unobstructed, roof-free area.\n\nA gravship can support up to ten small obsidia repulsorlift engines.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Gravship/OE_RepulsorliftEngine_Small</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+	<tickerType>Rare</tickerType>
+    <statBases>
+      <MarketValue>950</MarketValue>
+	  <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-5</Beauty>
+      <WorkToBuild>11500</WorkToBuild>
+      <Mass>25</Mass>
+    </statBases>
+    <size>(1, 1)</size>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+	  <OE_Platinum>25</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+	  <GravlitePanel>10</GravlitePanel>
+    </costList>
+	<fillPercent>0.5</fillPercent>
+	<designationCategory>Odyssey</designationCategory>
+	<uiOrder>2205.666</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+	<canOverlapZones>false</canOverlapZones>
+	<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+	  <li>PlaceWorker_OnSubstructure</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>OEGravtech</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_GravshipThruster">
+        <statOffsets>
+          <GravshipRange>15</GravshipRange>
+        </statOffsets>
+        <componentTypeDef>Thruster</componentTypeDef>
+        <directionInfluence>20</directionInfluence>
+        <requiresLOS>false</requiresLOS>
+        <maxSimultaneous>10</maxSimultaneous>
+        <maxDistance>500</maxDistance>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+  </ThingDef>
+
+<!--=============== Large ====================-->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>OE_RepulsorliftEngine_Large</defName>
+    <label>colonial obsidia repulsorlift engine</label>
+    <description>A repulsorlift engine uses focused gravitic pulses to reduce planetary drag during flight. This massive colonial-era model is powered by chemfuel and greatly increases the range of a gravship. Requires gravship substructure and an unobstructed, roof-free area.\n\nA gravship can support up to four colonial obsidia repulsorlift engine.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Gravship/OE_RepulsorliftEngine_Large</texPath>
+      <drawSize>(3.2, 3.2)</drawSize>
+      <shadowData>
+        <volume>(1, 1, 2)</volume>
+      </shadowData>
+    </graphicData>
+	<tickerType>Rare</tickerType>
+    <statBases>
+      <MarketValue>2050</MarketValue>
+	  <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-5</Beauty>
+      <Mass>45</Mass>
+    </statBases>
+    <size>(3, 3)</size>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <OE_Obsidian>300</OE_Obsidian>
+	  <OE_Platinum>100</OE_Platinum>
+      <OE_Syntherius>100</OE_Syntherius>
+	  <GravlitePanel>25</GravlitePanel>
+    </costList>
+	<fillPercent>0.6</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+	<canOverlapZones>false</canOverlapZones>
+	<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+	  <li>PlaceWorker_OnSubstructure</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_GravshipThruster">
+        <statOffsets>
+          <GravshipRange>50</GravshipRange>
+        </statOffsets>
+        <componentTypeDef>Thruster</componentTypeDef>
+        <directionInfluence>20</directionInfluence>
+        <requiresLOS>false</requiresLOS>
+        <maxSimultaneous>4</maxSimultaneous>
+        <maxDistance>500</maxDistance>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+	<tradeTags>
+      <li>GravshipUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Obsidia Fuel Optimizer ====================-->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>OE_FuelOptimizer</defName>
+    <label>obsidia fuel optimizer</label>
+    <description>An obsidian-engineered gravtech unit that refines and blends chemfuel with reactive compounds, reducing overall fuel consumption during flight. It reduces the fuel needed for gravship flight.\n\nA gravship can support two obsidia fuel optimizers.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Gravship/OE_FuelOptimizer</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>-5</Beauty>
+      <Mass>20</Mass>
+    </statBases>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Platinum>25</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+	  <Chemfuel>100</Chemfuel>
+    </costList>
+    <size>(1, 1)</size>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_OnSubstructure</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_GravshipFacility">
+        <fuelSavingsPercent>0.4</fuelSavingsPercent>
+        <requiresLOS>false</requiresLOS>
+        <maxSimultaneous>2</maxSimultaneous>
+        <maxDistance>500</maxDistance>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <explosiveRadius>0</explosiveRadius>
+        <explosiveExpandPerFuel>0.06</explosiveExpandPerFuel>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>70~150</wickTicks>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>GravshipUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Obsidia Gravship Shield Generator ====================-->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>OE_GravshipShieldTower</defName>
+    <label>obsidia gravship shield tower</label>
+    <description>An obsidia gravship shield tower designed to protect a gravship. It uses modern Obsidia gravtech to project a focused deflection field that repels incoming projectiles with pulsed momentum barriers. It works against normal shots and mortars. Those inside can still shoot out.\n\nIt must be charged before use. One gravship can support five obsidia gravship shield towers.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Gravship/OE_ShieldTower</texPath>
+	  <drawOffset>(0, 0, 0.35)</drawOffset>
+      <drawSize>(1, 1.5)</drawSize>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MarketValue>1575</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>35</Mass>
+	  <Beauty>-5</Beauty>
+    </statBases>
+    <size>(1, 1)</size>
+    <fillPercent>0.6</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+      <GravlitePanel>65</GravlitePanel>
+	  <OE_Mythril>25</OE_Mythril>
+      <OE_Syntherius>75</OE_Syntherius>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_OnSubstructure</li>
+    </placeWorkers>
+    <specialDisplayRadius>19.9</specialDisplayRadius>
+    <comps>
+      <li Class="CompProperties_GravshipFacility">
+        <requiresLOS>false</requiresLOS>
+        <maxSimultaneous>5</maxSimultaneous>
+        <maxDistance>500</maxDistance>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Interactable">
+        <compClass>CompInteractable_GravshipShieldGenerator</compClass>
+        <ticksToActivate>120</ticksToActivate>
+        <jobString>activate</jobString>
+        <activateTexPath>UI/Commands/ActivateGravshipShield</activateTexPath>
+        <soundActivate>GravshipShieldGenerator_Activate</soundActivate>
+        <requiresPower>false</requiresPower>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <compClass>CompGravshipShieldGenerator</compClass>
+        <radius>19.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <interceptAirProjectiles>true</interceptAirProjectiles>
+        <color>(0.992, 0.996, 0.682)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>1000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>false</hitPointsRestoreInstantlyAfterCharge>
+        <startWithMaxHitPoints>false</startWithMaxHitPoints>
+        <chargeDurationTicks>10000</chargeDurationTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>GravshipShieldTip</gizmoTipKey>
+        <alwaysShowHitpointsGizmo>true</alwaysShowHitpointsGizmo>
+        <rechargeHitPointsIntervalTicks>75</rechargeHitPointsIntervalTicks>
+        <activated>true</activated>
+        <activeDuration>6000</activeDuration>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>GravshipUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Hive ====================-->
+<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+	<operations>
+	  <li Class="PatchOperationAdd">
+	    <xpath>/Defs/ThingDef[defName="Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
+		<value>
+		  <li>OE_Infestor_Acid</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">OE_Infestor_Fire</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">OE_Infestor_Tox</li>
+		  <li>OE_Mutalisk_Corrupter</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">OE_Mutalisk_Psy</li>
+		</value>
+	  </li>
+	  <li Class="PatchOperationReplace">
+	    <xpath>/Defs/ThingDef[defName="Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/initialPawnsPoints</xpath>
+		<value>
+		  <initialPawnsPoints>300</initialPawnsPoints>
+		</value>
+	  </li>
+	  <li Class="PatchOperationReplace">
+	    <xpath>/Defs/ThingDef[defName="Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/maxSpawnedPawnsPoints</xpath>
+		<value>
+		  <maxSpawnedPawnsPoints>1000</maxSpawnedPawnsPoints>
+		</value>
+	  </li>
+	</operations>
+</Operation>
+
+</Patch>

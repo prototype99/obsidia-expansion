@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Liquid Type ====================-->
+<!--=============== Hemogen ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Hemogen</defName>
+    <label>hemogen slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Hemogen slime in 7 days. Hemogen slime produces 3 Hemogen every 2 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Hemogen</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Hemogen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>625</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <HemogenPack>25</HemogenPack>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Hemogen</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Elemental Sword ====================-->
+<!--=============== Acid ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OTC_Trophy_Sword_Acid</defName>
+    <label>Persona bond Acid Rift</label>
+    <description>Persona bond an Acid Rift.</description>
+    <jobString>Persona bonding an Acid Rift.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_Acid</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_Acid</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_Acid>1</OTC_Trophy_Sword_P_Acid>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Trophy_Sword_P_Acid</defName>
+    <label>Reset Persona Acid Rift</label>
+    <description>Reset an Acid Rift.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting an Acid Rift.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_P_Acid</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_P_Acid</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_Acid>1</OTC_Trophy_Sword_P_Acid>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Cryo ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OTC_Trophy_Sword_Cryo</defName>
+    <label>Persona bond Cryo Rift</label>
+    <description>Persona bond an Cryo Rift.</description>
+    <jobString>Persona bonding a Cryo Rift.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_Cryo</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_Cryo</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_Cryo>1</OTC_Trophy_Sword_P_Cryo>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Trophy_Sword_P_Cryo</defName>
+    <label>Reset Persona Cryo Rift</label>
+    <description>Reset a Cryo Rift.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Cryo Rift.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_P_Cryo</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_P_Cryo</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_Cryo>1</OTC_Trophy_Sword_P_Cryo>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Fire ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OTC_Trophy_Sword_Fire</defName>
+    <label>Persona bond Fire Rift</label>
+    <description>Persona bond an Fire Rift.</description>
+    <jobString>Persona bonding a Fire Rift.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_Fire</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_Fire>1</OTC_Trophy_Sword_P_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Trophy_Sword_P_Fire</defName>
+    <label>Reset Persona Fire Rift</label>
+    <description>Reset a Fire Rift.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Fire Rift.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_P_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_P_Fire</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_Fire>1</OTC_Trophy_Sword_P_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== EMP ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OTC_Trophy_Sword_EMP</defName>
+    <label>Persona bond EMP Rift</label>
+    <description>Persona bond an EMP Rift.</description>
+    <jobString>Persona bonding an EMP Rift.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_EMP</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_EMP>1</OTC_Trophy_Sword_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Trophy_Sword_P_EMP</defName>
+    <label>Reset Persona EMP Rift</label>
+    <description>Reset an EMP Rift.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting an EMP Rift.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Sword_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Sword_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Sword_P_EMP>1</OTC_Trophy_Sword_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+<!--=============== OTC - Cards ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OTC_Trophy_Cards</defName>
+    <label>Persona bond Randy's Deck</label>
+    <description>Persona bond an Randy's Deck.</description>
+    <jobString>Persona bonding a Randy's Deck.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Cards</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Cards</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Cards_P>1</OTC_Trophy_Cards_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Trophy_Cards_P</defName>
+    <label>Reset Persona Randy's Deck</label>
+    <description>Reset a Randy's Deck.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Randy's Deck.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Trophy_Cards_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Trophy_Cards_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Trophy_Cards_P>1</OTC_Trophy_Cards_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>

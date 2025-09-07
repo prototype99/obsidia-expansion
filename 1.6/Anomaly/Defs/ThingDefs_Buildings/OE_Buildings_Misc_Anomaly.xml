@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Obsidia Holding Platform ====================-->
+  <ThingDef ParentName="HoldingPlatformBase">
+    <defName>OE_HoldingPlatform</defName>
+    <label>obsidia holding platform</label>
+    <description>An obsidia heavy platform for holding dangerous entities. The corners have eyelets where strong chains can be attached.\n\nDowned entities can be captured and secured on a holding platform, where they can be studied for Anomaly knowledge. Increase containment strength by building strong walls and doors, and other special containment devices.\n\nContainment efficiency is 125%.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_HoldingPlatform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+	<uiOrder>100.666</uiOrder>
+    <researchPrerequisites>
+      <li>OEContainment</li>
+    </researchPrerequisites>
+    <statBases>
+      <MarketValue>275</MarketValue>
+	  <MaxHitPoints>1500</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <OE_Obsidian>55</OE_Obsidian>
+      <OE_Platinum>25</OE_Platinum>
+	  <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_EntityHolderPlatform">
+        <containmentFactor>1.25</containmentFactor>
+		<untetheredGraphicTexPath>Things/Building/HoldingPlatform/HoldingPlatform_ChainsUntethered</untetheredGraphicTexPath>
+        <tilingChainTexPath>Things/Building/HoldingPlatform/HoldingPlatform_EntityChain_StrongOutline</tilingChainTexPath>
+        <baseChainFastenerTexPath>Things/Building/HoldingPlatform/HoldingPlatform_ChainFastener</baseChainFastenerTexPath>
+        <targetChainFastenerTexPath>Things/Building/HoldingPlatform/HoldingPlatform_ChainFastener_StrongOutline</targetChainFastenerTexPath>
+        <entityLungeSoundHi>EntityChainHigh</entityLungeSoundHi>
+        <entityLungeSoundLow>EntityChainLow</entityLungeSoundLow>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EGO Inhibitor ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_EGOInhibitor</defName>
+    <label>EGO inhibitor</label>
+    <description>A device that emits a specially tuned field which numbs the neural activity of captured entities. Uses the EGO seed as a catalyst. As long as it is powered, it improves the containment strength of any holding platform that it is pointed at. The electric field does not affect humans or normal animals.</description>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_EGOInhibitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<uiOrder>106.666</uiOrder>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>50</pathCost>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <designationCategory>Anomaly</designationCategory>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MarketValue>445</MarketValue>
+	  <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>7500</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <OE_Empyrium>5</OE_Empyrium>
+      <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	  <OE_EGOSeed>2</OE_EGOSeed>
+    </costList>
+    <researchPrerequisites>
+      <li>OEContainment</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ShowFacilitiesRange</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<blockWind>False</blockWind>
+    <building>
+      <buildingTags>
+        <li>Anomaly</li>
+      </buildingTags>
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>2</maxSimultaneous>
+        <maxDistance>7.9</maxDistance>
+        <requiresLOS>false</requiresLOS>
+        <statOffsets>
+          <ContainmentStrength>35</ContainmentStrength>
+        </statOffsets>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

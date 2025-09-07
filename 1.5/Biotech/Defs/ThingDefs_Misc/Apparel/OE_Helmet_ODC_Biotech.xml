@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Mechanitor MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Mechanitor</defName>
+    <label>ODC Overseer Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves Mechanoids Control abilities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Mechanitor/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>905</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>12</MechBandwidth>
+	  <MechRemoteRepairDistance>4.9</MechRemoteRepairDistance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Platinum>5</OE_Platinum>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Mechanitor/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCRecon_Mechanitor</li>
+		<li>ODCDuelist_Mechanitor</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

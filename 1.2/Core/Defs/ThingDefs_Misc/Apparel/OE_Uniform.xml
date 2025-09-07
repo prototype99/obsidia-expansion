@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Uniform ====================-->
+<!--=============== Military ====================-->
+  <ThingDef ParentName="OEUniformBase">
+    <defName>OE_Uniform_Military</defName>
+    <label>obsidia military uniform</label>
+	<description>Military uniform, perfectly protects and providing advanced skin sense feedback to the wearer. Designed for use by all Obsidia Empire militaries.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Uniform/Military/OEUniform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+	<costList>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>1.0</Mass>
+      <StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <MoveSpeed>0.10</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Uniform/Military/OEUniform</wornGraphicPath>
+      <tags>
+        <li>OEMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="OEUniformBase">
+    <defName>OE_Uniform_Worker</defName>
+    <label>obsidia worker uniform</label>
+	<description>Worker uniform, good protects and providing performance improvement to the wearer. Designed for use by all Obsidia Empire workers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Uniform/Worker/OEUniform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+	<costList>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>1.0</Mass>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Uniform/Worker/OEUniform</wornGraphicPath>
+      <tags>
+        <li>OEWorker</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Remove Death Acidifier ====================-->
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveDeathAcidifier</defName>
+    <label>remove death acidifier</label>
+    <description>Remove a death acidifier.</description>
+	<descriptionHyperlinks>
+      <ThingDef>DeathAcidifier</ThingDef>
+      <HediffDef>DeathAcidifier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing death acidifier.</jobString>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s death acidifier.</successfullyRemovedHediffMessage>
+	<uiIconThing>OE_Cosmol</uiIconThing>
+	<workAmount>5000</workAmount>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Cosmol</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Slugol</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Sevide</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <thingDefs>
+        <li>OE_Cosmol</li>
+		<li>OE_Slugol</li>
+		<li>OE_Sevide</li>
+      </thingDefs> 
+    </fixedIngredientFilter>
+    <removesHediff>DeathAcidifier</removesHediff>
+	<skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+	<researchPrerequisite>OEImplants</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

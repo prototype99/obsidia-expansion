@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Slime Hearts ====================-->
+<!--=============== Battle Types ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Demon_Acid</defName>
+    <label>acid demon slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Acid demon slime in 5 days. Acid demon slime ranged battle type, with increased intelligence for training.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Demon_Acid</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Demon_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>775</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_EGOSeed>1</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Demon_Acid</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Demon_Cryo</defName>
+    <label>cryo demon slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Cryo demon slime in 5 days. Cryo demon slime ranged battle type, with increased intelligence for training.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Demon_Cryo</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Demon_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>775</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_EGOSeed>1</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Demon_Cryo</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Demon_Fire</defName>
+    <label>fire demon slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Fire demon slime in 5 days. Fire demon slime ranged battle type, with increased intelligence for training.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Demon_Fire</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Demon_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>775</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_EGOSeed>1</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Demon_Fire</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Demon_EMP</defName>
+    <label>EMP demon slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into EMP demon slime in 5 days. EMP demon slime ranged battle type, with increased intelligence for training.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Demon_EMP</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Demon_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>775</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_EGOSeed>1</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Demon_EMP</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Special Types ====================-->
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Companion_Worker</defName>
+    <label>worker companion slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Worker companion slime in 5 days. Worker companion slime special type, that has developed an ability to enhance working skills of anyone they bond with.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Companion_Worker</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Companion_Worker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>725</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_DragonianWoodLog>55</OE_DragonianWoodLog>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Companion_Worker</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Battle ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Companion_Battle</defName>
+    <label>battle companion slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Battle companion slime in 5 days. Battle companion slime special type, that has developed an ability to enhance combat skills of anyone they bond with.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Companion_Battle</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Companion_Battle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>725</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_DragonianWoodLog>55</OE_DragonianWoodLog>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Companion_Battle</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

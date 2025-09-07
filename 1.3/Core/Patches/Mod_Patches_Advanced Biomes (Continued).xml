@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Advanced Biomes (Continued)</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Savanna ====================-->   
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Savanna"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Red>0.1</OE_Arachna_Red>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Savanna"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			  <li>OE_Ogren</li>
+			</value>
+		  </li>
+
+<!--=============== Volcano ====================-->   
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Volcano"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Red>0.1</OE_Arachna_Red>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Volcano"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			  <li>OE_Ogren</li>
+			</value>
+		  </li>
+
+<!--=============== Wasteland ====================-->   
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Wasteland"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Wasteland"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			  <li>OE_Ogren</li>
+			</value>
+		  </li>
+
+<!--=============== Wetland ====================-->   
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Wetland"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Green>0.1</OE_Arachna_Green>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="Wetland"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			  <li>OE_Ogren</li>
+			</value>
+		  </li>
+  
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

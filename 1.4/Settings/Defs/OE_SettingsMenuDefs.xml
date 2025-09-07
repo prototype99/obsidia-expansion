@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <XmlExtensions.SettingsMenuDef>
+	<defName>OE_ObsidiaExpansion_Menu</defName>
+	<modId>ObsidiaExpansion.Core</modId>
+	<label>Obsidia Expansion</label>
+	<settings>
+	  <li Class="XmlExtensions.Setting.Text">
+	    <text>Obsidia Expansion Settings</text>
+		<font>Medium</font>
+		<anchor>Middle</anchor>
+	  </li>
+	  <li Class="XmlExtensions.Setting.GapLine"/>
+	  <li Class="XmlExtensions.Setting.SetColor">
+	    <color>(232, 198, 97)</color>
+	  </li>
+	  <li Class="XmlExtensions.Setting.Text">
+	    <text>Restarting game is required to apply any changes.</text>
+		<font>Medium</font>
+		<anchor>Middle</anchor>
+		<tKey>oe_attention_text</tKey>
+	  </li>
+	  <li Class="XmlExtensions.Setting.SetColor"/>
+<!--=============== Syntherius Harvest Yield ====================-->	
+	  <li Class="XmlExtensions.Setting.GapLine"/>
+	  <li Class="XmlExtensions.Setting.SetColor">
+	    <color>(232, 198, 97)</color>
+	  </li>
+	  <li Class="XmlExtensions.Setting.Text">
+	    <text>Syntherius Harvest Yield:</text>
+		<tKey>oe_syntheriusharvestyield_text</tKey>
+	  </li>
+	  <li Class="XmlExtensions.Setting.SetColor"/>
+	  <li Class="XmlExtensions.Setting.SplitColumn">
+	    <leftCol>
+		  <li Class="XmlExtensions.Setting.Slider">
+		    <key>oe_syntheriustree_harvestyield</key>
+			<label>Syntherius Tree: {oe_syntheriustree_harvestyield}</label>
+			<tKey>oe_syntheriustree_text</tKey>
+			<defaultValue>1</defaultValue>
+			<min>1</min>
+			<max>5</max>
+			<decimals>0</decimals>
+		  </li>
+		  <li Class="XmlExtensions.Setting.Slider">
+		    <key>oe_syntheriusslime_milkamount</key>
+			<label>Syntherius Slime: {oe_syntheriusslime_milkamount}</label>
+			<tKey>oe_syntheriusslime_text</tKey>
+			<defaultValue>1</defaultValue>
+			<min>1</min>
+			<max>5</max>
+			<decimals>0</decimals>
+		  </li>
+		  <li Class="XmlExtensions.Setting.Slider" MayRequire="Ludeon.Rimworld.Ideology">
+		    <key>oe_syntheriusdryad_spawncount</key>
+			<label>Synthesis Dryad: {oe_syntheriusdryad_spawncount}</label>
+			<tKey>oe_syntheriusdryad_text</tKey>
+			<defaultValue>1</defaultValue>
+			<min>1</min>
+			<max>5</max>
+			<decimals>0</decimals>
+		  </li>
+		</leftCol>
+		<rightCol>
+		  <li Class="XmlExtensions.Setting.Slider">
+		    <key>oe_syntheriusroot_harvestyield</key>
+			<label>Syntherius Root: {oe_syntheriusroot_harvestyield}</label>
+			<tKey>oe_syntheriusroot_text</tKey>
+			<defaultValue>1</defaultValue>
+			<min>1</min>
+			<max>5</max>
+			<decimals>0</decimals>
+		  </li>
+		  <li Class="XmlExtensions.Setting.Slider">
+		    <key>oe_syntheriuspack_killedleavings</key>
+			<label>Compressed Syntherius: {oe_syntheriuspack_killedleavings}</label>
+			<tKey>oe_syntheriuspack_text</tKey>
+			<defaultValue>15</defaultValue>
+			<min>10</min>
+			<max>50</max>
+			<decimals>0</decimals>
+		  </li>
+		  <li Class="XmlExtensions.Setting.Slider" MayRequire="vanillaexpanded.outposts">
+		    <key>oe_syntheriusoutpost_amountperpawn</key>
+			<label>Obsidia Syntherius Outpost: {oe_syntheriusoutpost_amountperpawn}</label>
+			<tKey>oe_syntheriusoutpost_text</tKey>
+			<defaultValue>5</defaultValue>
+			<min>5</min>
+			<max>25</max>
+			<decimals>0</decimals>
+		  </li>
+		</rightCol> 
+	  </li>
+<!--=============== Research Cost Amount ====================-->
+	  <li Class="XmlExtensions.Setting.GapLine"/>
+	  <li Class="XmlExtensions.Setting.SetColor">
+	    <color>(232, 198, 97)</color>
+	  </li>
+	  <li Class="XmlExtensions.Setting.Text">
+	    <text>Research Cost Amount:</text>
+		<tKey>oe_researchcostamount_text</tKey>
+	  </li>
+	  <li Class="XmlExtensions.Setting.SetColor"/>  
+	  <li Class="XmlExtensions.Setting.RadioButtons">
+	    <key>OE_ResearchCostAmount</key>
+		<defaultValue>0</defaultValue>
+		<buttons>
+		  <li>
+		    <label>Normal cost - 100%</label>
+			<tKey>oe_researchcostamount_large</tKey>
+			<value>0</value>
+		  </li>
+		  <li>
+		    <label>Low cost - 50%</label>
+			<tKey>oe_researchcostamount_medium</tKey>
+			<value>1</value>
+		  </li>
+		  <li>
+		    <label>Kids cost - 20%</label>
+			<tKey>oe_researchcostamount_small</tKey>
+			<value>2</value>
+		  </li>
+		</buttons>
+	  </li>
+	  <li Class="XmlExtensions.Setting.GapLine"/>
+	  <li Class="XmlExtensions.Setting.ResetSettings"/>
+	</settings>
+  </XmlExtensions.SettingsMenuDef>
+
+</Defs>

@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Anomaly</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== CAC - Lust ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_Whip</defName>
+    <label>Reset First Arachna's Sin - Lust</label>
+    <description>Reset a First Arachna's Sin - Lust.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a First Arachna's Sin - Lust.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_Whip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_Whip</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_Whip>1</CAC_Trophy_Whip>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OEContainment</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Gluttony ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_Minigun</defName>
+    <label>Reset Second Arachna's Sin - Gluttony</label>
+    <description>Reset a Second Arachna's Sin - Gluttony.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Second Arachna's Sin - Gluttony.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_Minigun</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_Minigun</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_Minigun>1</CAC_Trophy_Minigun>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OEContainment</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Greed ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_BigScythe</defName>
+    <label>Reset Third Arachna's Sin - Greed</label>
+    <description>Reset a Third Arachna's Sin - Greed.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Third Arachna's Sin - Greed.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_BigScythe</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_BigScythe</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_BigScythe>1</CAC_Trophy_BigScythe>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OEContainment</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Sloth ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_Pistol</defName>
+    <label>Reset Fourth Arachna's Sin - Sloth</label>
+    <description>Reset a Fourth Arachna's Sin - Sloth.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Fourth Arachna's Sin - Sloth.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_Pistol</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_Pistol</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_Pistol>1</CAC_Trophy_Pistol>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OEContainment</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Wrath ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_Shotgun</defName>
+    <label>Reset Fifth Arachna's Sin - Wrath</label>
+    <description>Reset a Fifth Arachna's Sin - Wrath.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Fifth Arachna's Sin - Wrath.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_Shotgun</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_Shotgun</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_Shotgun>1</CAC_Trophy_Shotgun>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OEContainment</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Envy ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_Knife</defName>
+    <label>Reset Sixth Arachna's Sin - Envy</label>
+    <description>Reset a Sixth Arachna's Sin - Envy.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Sixth Arachna's Sin - Envy.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_Knife</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_Knife</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_Knife>1</CAC_Trophy_Knife>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OEContainment</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== CAC - Pride ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_SniperRifle</defName>
+    <label>Reset Seventh Arachna's Sin - Pride</label>
+    <description>Reset a Seventh Arachna's Sin - Pride.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Seventh Arachna's Sin - Pride.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_SniperRifle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_SniperRifle</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_SniperRifle>1</CAC_Trophy_SniperRifle>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OEContainment</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OMG - Revolver ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMG_Trophy_Revolver</defName>
+    <label>Reset Death’s Call</label>
+    <description>Reset a Death’s Call.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Death’s Call.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMG_Trophy_Revolver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMG_Trophy_Revolver</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMG_Trophy_Revolver>1</OMG_Trophy_Revolver>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

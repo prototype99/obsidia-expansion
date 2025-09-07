@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ritualist ====================-->
+  <TraitDef>
+    <defName>OERitualist</defName>
+    <degreeDatas>
+      <li>
+        <label>ritual master</label>
+        <description>Rituals energize {PAWN_nameDef}, who executes them with precision and passion.</description>
+		<degree>2</degree>
+        <statOffsets>
+          <PsychicRitualQualityOffset>0.25</PsychicRitualQualityOffset>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>ceremonial adept</label>
+        <description>{PAWN_nameDef} performs rituals efficiently and without hesitation.</description>
+		<degree>1</degree>
+        <statOffsets>
+          <PsychicRitualQualityOffset>0.15</PsychicRitualQualityOffset>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>unsteady speaker</label>
+        <description>Rituals don’t come naturally to {PAWN_nameDef}, who often falters in rhythm.</description>
+		<degree>-1</degree>
+        <statOffsets>
+          <PsychicRitualQualityOffset>-0.15</PsychicRitualQualityOffset>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>reluctant vessel</label>
+        <description>{PAWN_nameDef} resents the sacred rites and performs them poorly.</description>
+		<degree>-2</degree>
+        <statOffsets>
+          <PsychicRitualQualityOffset>-0.25</PsychicRitualQualityOffset>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<exclusionTags>
+	  <li>OERitualistTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+</Defs>

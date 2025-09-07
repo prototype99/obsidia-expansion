@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Player gettable ====================-->
+<!--=============== Base ====================-->
+  <RoyalTitleDef Abstract="True" Name="OEBaseMercenaryGangsTitle" >
+    <tags>
+      <li>ObsidiaMercenaryGangsTitle</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+  </RoyalTitleDef>
+
+<!--=============== Visitor ====================-->
+  <RoyalTitleDef ParentName="OEBaseMercenaryGangsTitle">
+    <defName>OE_Title_1_Visitor</defName>
+    <label>visitor</label>
+	<labelFemale>visitoress</labelFemale>
+    <description>The starting point for those who have taken their first step toward the Obsidia Mercenary Gangs. As a Visitor, you observe from the fringes, not yet part of the inner workings. Attention on you is minimal, but every move is measured. Trust here is a rare and valuable currency, one that you’ve yet to earn.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+	<permitPointsAwarded>1</permitPointsAwarded>
+	<permits>
+      <li>OMG_TradeCaravan_Standard</li>
+    </permits>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OMG/TitleIcon_01_Visitor</iconPath>
+		<greyIconPath>UI/Icons/Titles/OMG/Grey/TitleIcon_01_Visitor</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+ 
+<!--=============== Member ====================--> 
+  <RoyalTitleDef ParentName="OEBaseMercenaryGangsTitle">
+    <defName>OE_Title_2_Member</defName>
+    <label>member</label>
+    <description>Now part of the circle, as a Member, you’ve gained enough trust to move beyond being an outsider. You’re no longer just a face in the crowd, but your journey toward full involvement has only begun. What you see and hear now is bound by an unspoken code—one that leaves no room for missteps.</description>
+    <seniority>200</seniority>
+    <favorCost>99</favorCost>
+    <changeHeirQuestPoints>1200</changeHeirQuestPoints>
+	<commonality>1</commonality>
+	<permitPointsAwarded>1</permitPointsAwarded>
+	<permits>
+      <li>OMG_TradeCaravan_Standard</li>
+    </permits>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OMG/TitleIcon_02_Member</iconPath>
+		<greyIconPath>UI/Icons/Titles/OMG/Grey/TitleIcon_02_Member</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Sponsor ====================-->
+  <RoyalTitleDef ParentName="OEBaseMercenaryGangsTitle">
+    <defName>OE_Title_3_Sponsor</defName>
+    <label>sponsor</label>
+    <description>As a Sponsor, your status signifies more than mere participation. Your actions and decisions begin to carry weight. You no longer get questioned, for you’ve already proven your loyalty. With each step, you are no longer just trusted—you are someone whose influence is starting to be noticed. But influence brings unseen obligations.</description>
+    <seniority>400</seniority>
+    <favorCost>200</favorCost>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+	<decreeMtbDays>-1</decreeMtbDays>
+	<permitPointsAwarded>1</permitPointsAwarded>
+	<replaceOnRecruited>OE_Title_2_Member</replaceOnRecruited>
+	<permits>
+      <li>OMG_TradeCaravan_Standard</li>
+    </permits>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OMG/TitleIcon_03_Sponsor</iconPath>
+		<greyIconPath>UI/Icons/Titles/OMG/Grey/TitleIcon_03_Sponsor</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== VIP ====================-->
+  <RoyalTitleDef ParentName="OEBaseMercenaryGangsTitle">
+    <defName>OE_Title_4_VIP</defName>
+    <label>VIP</label>
+    <description>At the VIP level, you have achieved true recognition. This rank grants access to what remains hidden from most eyes. Your presence is no longer questioned—you are trusted at a level few reach. However, with this status comes responsibility, one that cannot be taken lightly. Each decision you make now has the power to shift the balance.</description>
+    <seniority>600</seniority>
+    <favorCost>325</favorCost>
+    <changeHeirQuestPoints>3500</changeHeirQuestPoints>
+	<decreeMtbDays>-1</decreeMtbDays>
+	<permitPointsAwarded>2</permitPointsAwarded>
+	<replaceOnRecruited>OE_Title_2_Member</replaceOnRecruited>
+	<permits>
+      <li>OMG_TradeCaravan_Standard</li>
+      <li>OMG_TradeCaravan_Exotic</li>
+    </permits>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OMG/TitleIcon_04_VIP</iconPath>
+		<greyIconPath>UI/Icons/Titles/OMG/Grey/TitleIcon_04_VIP</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+<!--=============== Orichalcum Client ====================-->
+  <RoyalTitleDef ParentName="OEBaseMercenaryGangsTitle">
+    <defName>OE_Title_5_OrichalcumClient</defName>
+    <label>orichalcum client</label>
+	<labelFemale>orichalcum clientess</labelFemale>
+    <description>The highest title — Orichalcum Client — is not merely trust; it’s a symbol that more is available to you than you might expect. You’ve reached a level where no questions are asked, and your decisions are accepted without hesitation. But this status is not only a privilege—it is a test of your ability to walk the fine line where every mistake may cost far more than it seems.</description>
+    <seniority>800</seniority>
+    <favorCost>475</favorCost>
+    <changeHeirQuestPoints>6000</changeHeirQuestPoints>
+    <decreeMtbDays>-1</decreeMtbDays>
+	<permitPointsAwarded>2</permitPointsAwarded>
+	<replaceOnRecruited>OE_Title_2_Member</replaceOnRecruited>
+	<permits>
+      <li>OMG_TradeCaravan_Standard</li>
+      <li>OMG_TradeCaravan_Exotic</li>
+    </permits>
+	<grantedAbilities>
+      <li>OE_RoyalTarget</li>
+    </grantedAbilities>
+	<modExtensions>
+	  <li Class="VFEEmpire.RoyalTitleDefExtension" MayRequire="OskarPotocki.VFE.Empire">
+	    <iconPath>UI/Icons/Titles/OMG/TitleIcon_05_OrichalcumClient</iconPath>
+		<greyIconPath>UI/Icons/Titles/OMG/Grey/TitleIcon_05_OrichalcumClient</greyIconPath>
+	  </li>
+	</modExtensions>
+  </RoyalTitleDef>
+
+</Defs>

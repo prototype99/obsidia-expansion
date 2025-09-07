@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Pearlpeach ====================-->
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>OE_Pearlpeach_Fruit</defName>
+    <label>pearlpeach fruit</label>
+    <description>Obsidias juicy crystal fruit that can be used as a meat substitute.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>Plant_OE_TreePearlpeach</ThingDef>
+    </descriptionHyperlinks>
+	<soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductPlant/Pearlpeach/Pearlpeach</texPath>
+    </graphicData>
+	<tradeTags>
+      <li>OEFood</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+	<thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+</Defs>

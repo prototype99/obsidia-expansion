@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Trophy OMG - Knife ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+    <defName>OMG_Trophy_Knife</defName>
+    <label>Platebreaker</label>
+    <description>Forged with the sole purpose of piercing through armor, Platebreaker is a weapon of war, able to exploit the weakest points in any protection. The dagger’s precision and strength make it lethal in the hands of a skilled warrior.\n\nSpecially modified weapon charged with Necrobane, Stun and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Trophy_Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<techLevel>Archotech</techLevel>
+	<statBases>
+      <RoyalFavorValue>1.3</RoyalFavorValue>
+	  <MarketValue>7150</MarketValue>
+	  <Mass>1.50</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>0.30</MoveSpeed>
+	  <PainShockThreshold>-0.30</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.30</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.30</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OMGTrophyWeapons</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.95</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>3</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>3</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>1.5</armorPenetration>
+        <cooldownTime>1.95</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>1.5</armorPenetration>
+        <cooldownTime>1.95</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Range ====================-->
+<!--=============== Trophy OMG - PowerGuitar ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+    <defName>OMG_Trophy_PowerGuitar</defName>
+    <label>Neon Echo</label>
+    <description>This cyber-guitar of unknown origin is surrounded by rumors, passed from one owner to the next. According to legends, it once had a life of its own and now carries a strange, haunting resonance.\n\nSpecially modified weapon charged with Necrobane, Stun and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Trophy_PowerGuitar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<techLevel>Archotech</techLevel>
+	<weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OMGTrophyWeapons</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <JoyFallRateFactor>-0.30</JoyFallRateFactor>
+	  <StaggerDurationFactor>-0.30</StaggerDurationFactor>
+	  <PainShockThreshold>-0.30</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.30</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.30</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<statBases>
+      <RoyalFavorValue>1.3</RoyalFavorValue>
+	  <MarketValue>7150</MarketValue>
+	  <Mass>3.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMG_Trophy_PG</defaultProjectile>
+        <warmupTime>1.75</warmupTime>
+        <range>14.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+		<soundCast>OE_Shot_PowerGuitar</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+		  <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li Class="CompProperties_EquippableAbilityReloadable" MayRequire="Ludeon.RimWorld.Anomaly">
+        <abilityDef>OMG_Inferno</abilityDef>
+        <maxCharges>5</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>inferno charge</chargeNoun>
+        <ammoDef>OE_AmmoKit</ammoDef>
+        <ammoCountPerCharge>6</ammoCountPerCharge>
+        <baseReloadTicks>90</baseReloadTicks>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMG_Trophy_PG</defName>
+    <label>Neon Echo notes</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMG_Trophy_Notes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>OMGNecrobane</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.7</armorPenetrationBase>
+      <speed>75</speed>
+	  <extraDamages>
+	   <li>
+         <def>EMP</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>Stun</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

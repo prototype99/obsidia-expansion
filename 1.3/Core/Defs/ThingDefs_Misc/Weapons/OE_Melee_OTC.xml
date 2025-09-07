@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Hammer ====================-->
+  <ThingDef Name="OTCHammerBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>2.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== OTC - BigAxe ====================-->
+  <ThingDef Name="OTCBigAxeBase" ParentName="OEMeleeBase" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.10</MoveSpeed>
+	</equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== OTC - ChainAxe ====================-->
+  <ThingDef Name="OTCChainAxeBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

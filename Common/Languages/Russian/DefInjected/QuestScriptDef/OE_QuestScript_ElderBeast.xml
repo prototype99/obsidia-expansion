@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Elder Beast ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_ElderBeast.questNameRules.rulesStrings>
+  <li>questName->[beastAdjective] [beastNoun]</li>
+  <!-- Pieces -->
+  <li>beastAdjective->Леденящий кровь</li>
+  <li>beastAdjective->Леденящий душу</li>
+  <li>beastAdjective->Резонирующий</li>
+  <li>beastAdjective->Далекий</li>
+  <li>beastAdjective->Глухой</li>
+  <li>beastAdjective->Древний</li>
+  <li>beastNoun->Вой</li>
+  <li>beastNoun->Рев</li>
+  <li>beastNoun->Рык</li>
+</OE_Quest_ElderBeast.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_ElderBeast.questDescriptionRules.rulesStrings>
+  <li>questDescription->Колонисты сообщили, что слышали что-то странное поблизости — глубокий, животный звук, раздающийся по всей местности.\n\nОни не смогли определить, какое существо его издавало, но оно, судя по звуку, было большим.\n\nОчень большим. Там что-то есть... и, возможно, оно приближается к нам.</li>
+  <li>questDescription->Все началось с звука — низкого, первобытного и невероятно далекого. Он эхом разносился по деревьям, скалам и костям, как будто сама земля помнила это чудовище. \n\nЖивотные убежали. Воздух стал холоднее. Даже ветер теперь, кажется, обходит лес стороной. \n\nЧто-то древнее шевелится — наблюдает, прислушивается, приближается. Вы не знаете, что это... только то, что оно никогда не должно было вернуться.</li>
+</OE_Quest_ElderBeast.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Elder Beast Arrive ====================-->
+<!-- Elder Direwolf -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterLabel.slateRef>Приближается древний зверь</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] приближается к колонии — оно выглядит чрезвычайно опасным, но не агрессивным… пока что. Вы должны решить, как поступить:\n-оставить зверя в покое;\n-попытаться приручить;\n-охотиться на него ради редких и ценных трофеев.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Raptor -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterLabel.slateRef>Приближается древний зверь</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] приближается к колонии — оно выглядит чрезвычайно опасным, но не агрессивным… пока что. Вы должны решить, как поступить:\n-оставить зверя в покое;\n-попытаться приручить;\n-охотиться на него ради редких и ценных трофеев.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Ogren -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterLabel.slateRef>Приближается древний зверь</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] приближается к колонии — оно выглядит чрезвычайно опасным, но не агрессивным… пока что. Вы должны решить, как поступить:\n-оставить зверя в покое;\n-попытаться приручить;\n-охотиться на него ради редких и ценных трофеев.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Tionants -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterLabel.slateRef>Приближается древний зверь</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] приближается к колонии — оно выглядит чрезвычайно опасным, но не агрессивным… пока что. Вы должны решить, как поступить:\n-оставить зверя в покое;\n-попытаться приручить;\n-охотиться на него ради редких и ценных трофеев.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterText.slateRef>
+
+</LanguageData>

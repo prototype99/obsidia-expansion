@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Obsidia Battery ====================-->
+<OE_Battery_Medium.label>obsidia battery</OE_Battery_Medium.label>
+<OE_Battery_Medium.description>Stores large amounts of electricity for later use. Due to Obsidia technologies, this battery unit is significantly more efficient. Charged large advanced batteries are waterproof and don't explode when exposed to rain.</OE_Battery_Medium.description>
+  
+<!--=============== Large Obsidia Battery ====================-->
+<OE_Battery_Large.label>large obsidia battery</OE_Battery_Large.label>
+<OE_Battery_Large.description>Stores huge amounts of electricity for later use. Due to Obsidia technologies, this battery unit is significantly more efficient. Charged large advanced batteries are waterproof and don't explode when exposed to rain.</OE_Battery_Large.description>
+
+<!--=============== Syntherius Generator ====================-->
+<OE_SyntheriusGenerator_Medium.label>syntherius powered generator</OE_SyntheriusGenerator_Medium.label>
+<OE_SyntheriusGenerator_Medium.description>Produces power by consuming syntherius. Must be periodically loaded with syntherius fuel by hand.</OE_SyntheriusGenerator_Medium.description>
+
+<!--=============== Large Syntherius Generator ====================-->
+<OE_SyntheriusGenerator_Large.label>large syntherius powered generator</OE_SyntheriusGenerator_Large.label>
+<OE_SyntheriusGenerator_Large.description>Produces a large amount of power by consuming syntherius. Must be periodically loaded with syntherius fuel by hand.</OE_SyntheriusGenerator_Large.description>
+
+<!--=============== Portable Obsidia Battery ====================-->
+<OE_QuantumGenerator_Micro.label>portable quantum generator</OE_QuantumGenerator_Micro.label>
+<OE_QuantumGenerator_Micro.description>Generates small amounts of free energy, forever, without using fuel. Due to Obsidia technologies, this generator is extremely fragile.</OE_QuantumGenerator_Micro.description>
+
+<!--=============== Quantum Generator ====================-->
+<OE_QuantumGenerator_Medium.label>quantum generator</OE_QuantumGenerator_Medium.label>
+<OE_QuantumGenerator_Medium.description>Generates free energy, forever, without using fuel. Due to Obsidia technologies, this generator is extremely fragile.</OE_QuantumGenerator_Medium.description>
+  
+<!--=============== Large Quantum Generator ====================-->
+<OE_QuantumGenerator_Large.label>large quantum generator</OE_QuantumGenerator_Large.label>
+<OE_QuantumGenerator_Large.description>Generates large amounts of free energy, forever, without using fuel. Due to Obsidia technologies, this generator is extremely fragile.</OE_QuantumGenerator_Large.description>
+
+<!--=============== Obsidia Geothermal Generator ====================-->
+<OE_GeothermalGenerator.label>obsidia geothermal generator</OE_GeothermalGenerator.label>
+<OE_GeothermalGenerator.description>This small, Obsidia generator produces electricity from geothermal steam geysers. Must be placed on a steam geyser.</OE_GeothermalGenerator.description>
+
+</LanguageData>

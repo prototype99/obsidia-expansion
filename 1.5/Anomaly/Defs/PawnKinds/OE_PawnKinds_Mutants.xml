@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Obsidia Shambler Base ====================-->
+  <PawnKindDef ParentName="ShamblerBase" Name="OEShamblerBase" Abstract="True">
+    <initialWillRange>1~2</initialWillRange>
+	<initialResistanceRange>10~15</initialResistanceRange>
+	<techHediffsDisallowTags>
+      <li>OEBionics_NonBattle</li>
+    </techHediffsDisallowTags>
+	<specificApparelRequirements>
+      <li>
+		<requiredTag>OEMilitary</requiredTag>
+      </li>
+	  <li MayRequire="VanillaExpanded.VARME">
+		<requiredTag>OEMilitaryFootwear</requiredTag>
+      </li>
+	  <li MayRequire="VanillaExpanded.VARME">
+		<requiredTag>OEMilitaryHandwear</requiredTag>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+<!--=============== OMC Soldier ====================-->  
+  <PawnKindDef ParentName="OEShamblerBase">
+    <defName>OMC_Soldier_Shambler</defName>
+    <label>shambler OMC soldier</label>
+    <combatPower>100</combatPower>
+    <gearHealthRange>0.2~0.4</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+    <apparelAllowHeadgearChance>0.55</apparelAllowHeadgearChance>
+    <apparelTags>
+	  <li>OMCSoldier</li>
+    </apparelTags>
+	<techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OMCBionics</li>
+    </techHediffsTags>
+    <meleeAttackInfectionPathways>
+      <li>EntityAttacked</li>
+    </meleeAttackInfectionPathways>
+  </PawnKindDef>
+  
+<!--=============== OTC Mechanic ====================-->  
+  <PawnKindDef ParentName="OEShamblerBase">
+    <defName>OTC_Mechanic_Shambler</defName>
+    <label>shambler OTC mechanic</label>
+    <combatPower>100</combatPower>
+    <gearHealthRange>0.2~0.4</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+    <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+    <apparelTags>
+	  <li>OTCMechanic</li>
+    </apparelTags>
+	<techHediffsMoney>3000~4500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OTCBionics</li>
+    </techHediffsTags>
+    <meleeAttackInfectionPathways>
+      <li>EntityAttacked</li>
+    </meleeAttackInfectionPathways>
+  </PawnKindDef>
+
+<!--=============== OCC Knight ====================-->  
+  <PawnKindDef ParentName="OEShamblerBase">
+    <defName>OCC_Knight_Shambler</defName>
+    <label>shambler OCC knight</label>
+    <combatPower>125</combatPower>
+    <gearHealthRange>0.2~0.4</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+    <apparelAllowHeadgearChance>0.65</apparelAllowHeadgearChance>
+    <apparelTags>
+	  <li>OCCKnight</li>
+    </apparelTags>
+	<techHediffsMoney>2500~4000</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OCCBionics</li>
+    </techHediffsTags>
+    <meleeAttackInfectionPathways>
+      <li>EntityAttacked</li>
+    </meleeAttackInfectionPathways>
+  </PawnKindDef>
+
+<!--=============== CAC Cultist ====================-->  
+  <PawnKindDef ParentName="OEShamblerBase">
+    <defName>CAC_Cultist_Shambler</defName>
+    <label>shambler CAC cultist</label>
+    <combatPower>155</combatPower>
+    <gearHealthRange>0.2~0.4</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+    <apparelAllowHeadgearChance>0.50</apparelAllowHeadgearChance>
+    <apparelTags>
+	  <li>CACLightCultist</li>
+	  <li>CACHeavyCultist</li>
+    </apparelTags>
+	<techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>CACBionics</li>
+    </techHediffsTags>
+    <meleeAttackInfectionPathways>
+      <li>EntityAttacked</li>
+    </meleeAttackInfectionPathways>
+  </PawnKindDef>
+
+</Defs>

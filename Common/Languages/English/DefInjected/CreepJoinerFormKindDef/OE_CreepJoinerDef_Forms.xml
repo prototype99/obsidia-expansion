@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Obsidia Escaped Subject ====================-->
+<OMC_EscapedSubject.label>escaped subject</OMC_EscapedSubject.label>
+<OMC_EscapedSubject.letterLabel>Very scared looking Obsidia Empire Soldier is approaching your colony.</OMC_EscapedSubject.letterLabel>
+<OMC_EscapedSubject.letterPrompt>{PAWN_nameDef} became a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OMC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</OMC_EscapedSubject.letterPrompt>
+
+<OTC_EscapedSubject.label>escaped subject</OTC_EscapedSubject.label>
+<OTC_EscapedSubject.letterLabel>Very scared looking Obsidia Empire Mechanic is approaching your colony.</OTC_EscapedSubject.letterLabel>
+<OTC_EscapedSubject.letterPrompt>{PAWN_nameDef} became a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OTC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</OTC_EscapedSubject.letterPrompt>
+
+<OCC_EscapedSubject.label>escaped subject</OCC_EscapedSubject.label>
+<OCC_EscapedSubject.letterLabel>Very scared looking Obsidia Empire Knight is approaching your colony.</OCC_EscapedSubject.letterLabel>
+<OCC_EscapedSubject.letterPrompt>{PAWN_nameDef} became a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OCC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</OCC_EscapedSubject.letterPrompt>
+
+<OEC_EscapedSubject.label>escaped subject</OEC_EscapedSubject.label>
+<OEC_EscapedSubject.letterLabel>Very scared looking Obsidia Empire Hunter is approaching your colony.</OEC_EscapedSubject.letterLabel>
+<OEC_EscapedSubject.letterPrompt>{PAWN_nameDef} became a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OEC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</OEC_EscapedSubject.letterPrompt>
+
+<!--=============== Obsidia Lost Drifter ====================-->
+<ODC_LostDrifter.label>lost drifter</ODC_LostDrifter.label>
+<ODC_LostDrifter.letterLabel>A hungry drifter is approaching your colony.</ODC_LostDrifter.letterLabel>
+<ODC_LostDrifter.letterPrompt>After the raid on {PAWN_possessive} trade caravan {PAWN_nameDef} separated from it. After several weeks of wandering, the hungry {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} asks to stay in your colony for a while - at least until {PAWN_pronoun} has recovered {PAWN_possessive} strength.</ODC_LostDrifter.letterPrompt>
+
+<!--=============== Forsaken Cultist ====================-->
+<CAC_ForsakenCultist.label>forsaken cultist</CAC_ForsakenCultist.label>
+<CAC_ForsakenCultist.letterLabel>Non-aggressive Crimson Arachna cultist is approaching your colony.</CAC_ForsakenCultist.letterLabel>
+<CAC_ForsakenCultist.letterPrompt>{PAWN_nameDef} was a child who born and lived {PAWN_possessive} entire life in the Crimson Arachna Cult. According to {PAWN_nameDef} words {PAWN_pronoun} became disillusioned with their beliefs and ran away from the cult to see the world.\n\nNow {PAWN_pronoun} begs to join your colony.</CAC_ForsakenCultist.letterPrompt>
+
+</LanguageData>

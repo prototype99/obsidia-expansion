@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Shield Base ====================-->
+  <ThingDef Name="OEShieldBase" ParentName="OEMeleeBase" Abstract="True">
+	<thingCategories Inherit="False">
+      <li>VFEC_Shields</li>
+    </thingCategories>
+	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+	<equippedAngleOffset>-30</equippedAngleOffset>
+	<tickerType>Normal</tickerType>
+	<statBases>
+      <Flammability>0.1</Flammability>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+	  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+	  </defaultOutfitTags>
+	  <bodyPartGroups>
+        <li>LeftHand</li>
+		<li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>VFEC_OuterShell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Shield Base(Non-Quality) ====================-->
+  <ThingDef Name="OEShieldBaseNQ" ParentName="OEMeleeBaseNQ" Abstract="True">
+	<thingCategories Inherit="False">
+      <li>VFEC_Shields</li>
+    </thingCategories>
+	<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+	<equippedAngleOffset>-30</equippedAngleOffset>
+	<tickerType>Normal</tickerType>
+	<statBases>
+      <Flammability>0.1</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <Beauty>5</Beauty>
+	  <SellPriceFactor>0.45</SellPriceFactor>
+    </statBases>
+	<apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+	  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+	  </defaultOutfitTags>
+	  <bodyPartGroups>
+        <li>LeftHand</li>
+		<li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>VFEC_OuterShell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+</Defs>

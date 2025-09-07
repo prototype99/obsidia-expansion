@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Namer - Obsidia Language ====================-->
+  <RulePackDef>
+    <defName>OE_Namer_Obsidia_Language</defName>
+	<rulePack>
+	  <rulesStrings>
+	    <li>r_name(p=0.2)->[anyPrefix][wholeName]</li>
+		<li>r_name(p=0.2)->[anyPrefix]o-[wholeName]</li>
+		<li>r_name(p=1)->[wholeName]</li>
+		<!---->
+		<li>anyPrefix->prot</li>
+		<li>anyPrefix->tri</li>
+		<li>anyPrefix->ex</li>
+		<li>anyPrefix->ne</li>
+		<li>anyPrefix->zer</li>
+		<!---->
+		<li>wholeName->obsidia</li>
+		<li>wholeName->obsidianth</li>
+		<li>wholeName->obsidiate</li>
+		<li>wholeName->obsidict</li>
+		<li>wholeName->obsidiantum</li>
+	  </rulesStrings>
+	</rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arachna Base ====================-->
+  <ThingDef Name="OEBaseArachna" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <MarketValue>1000</MarketValue>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ToxicSensitivity>0.5</ToxicSensitivity>
+	  <PsychicSensitivity>1.0</PsychicSensitivity>
+      <FilthRate>8</FilthRate>
+    </statBases>
+	<uiIconScale>1.0</uiIconScale>
+    <tools>
+      <li>
+        <label>left first leg</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>right first leg</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.75</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>OEArachnaLike</body>
+	  <predator>true</predator>
+	  <packAnimal>false</packAnimal>
+	  <herdAnimal>true</herdAnimal>
+	  <herdMigrationAllowed>true</herdMigrationAllowed>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>3.0</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+	  <fleshType>Insectoid</fleshType>
+	  <bloodDef>Filth_BloodInsect</bloodDef>
+      <meatColor>(160,168,139)</meatColor>
+      <trainability>Intermediate</trainability>
+      <wildness>1</wildness>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+      <gestationPeriodDays>18</gestationPeriodDays>
+      <lifeExpectancy>22</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>OEInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>OEInsectJuvenile</def>
+          <minAge>0.3</minAge>
+        </li>
+        <li>
+          <def>OESmallInsectAdult</def>
+          <minAge>0.65</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>OEAnimal</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseArachna" Abstract="True">
+    <combatPower>175</combatPower>
+    <ecoSystemWeight>0.15</ecoSystemWeight>
+	<wildGroupSize>
+	  <min>2</min>
+	  <max>5</max>
+	</wildGroupSize>
+  </PawnKindDef>
+
+<!--=============== Tundra Arachna ====================-->
+  <ThingDef ParentName="OEBaseArachna">
+    <defName>OE_Arachna_Blue</defName>
+    <label>tundra arachna</label>
+    <description>Obsidia Arachna are huge arthropod. These strong and fast creatures prefer to form small hunting groups. They are very difficult to tame and almost impossible to train. Also, many are mistaken in thinking that Arachnas produce webs.\n\nTundra Arachna prefers cold climates.</description>
+	<statBases>
+	  <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>10</ComfyTemperatureMax>
+	</statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseArachna">
+    <defName>OE_Arachna_Blue</defName>
+    <label>tundra arachna</label>
+    <labelPlural>tundra arachnas</labelPlural>
+    <race>OE_Arachna_Blue</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Blue/ArachnaMale</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Blue/ArachnaFemale</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Blue/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Blue/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Blue/ArachnaMale</texPath>
+          <drawSize>1.0</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Blue/ArachnaFemale</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Blue/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Blue/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.75</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Blue/ArachnaMale</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Blue/ArachnaFemale</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Blue/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Blue/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>2.5</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Jungle Arachna ====================-->
+  <ThingDef ParentName="OEBaseArachna">
+    <defName>OE_Arachna_Green</defName>
+    <label>jungle arachna</label>
+    <description>Obsidia Arachna are huge arthropod. These strong and fast creatures prefer to form small hunting groups. They are very difficult to tame and almost impossible to train. Also, many are mistaken in thinking that Arachnas produce webs.\n\nJungle Arachna prefers temperate climates.</description>
+	<statBases>
+	  <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
+	</statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseArachna">
+    <defName>OE_Arachna_Green</defName>
+    <label>jungle arachna</label>
+    <labelPlural>jungle arachnas</labelPlural>
+    <race>OE_Arachna_Green</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Green/ArachnaMale</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Green/ArachnaFemale</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Green/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Green/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Green/ArachnaMale</texPath>
+          <drawSize>1.0</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Green/ArachnaFemale</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Green/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Green/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.75</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Green/ArachnaMale</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Green/ArachnaFemale</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Green/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Green/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>2.5</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Dune Arachna ====================-->
+  <ThingDef ParentName="OEBaseArachna">
+    <defName>OE_Arachna_Red</defName>
+    <label>dune arachna</label>
+    <description>Obsidia Arachna are huge arthropod. These strong and fast creatures prefer to form small hunting groups. They are very difficult to tame and almost impossible to train. Also, many are mistaken in thinking that Arachnas produce webs.\n\nDune Arachna prefers hot climates.</description>
+	<statBases>
+	  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+	</statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseArachna">
+    <defName>OE_Arachna_Red</defName>
+    <label>dune arachna</label>
+    <labelPlural>dune arachnas</labelPlural>
+    <race>OE_Arachna_Red</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Red/ArachnaMale</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Red/ArachnaFemale</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Red/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Red/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.0</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Red/ArachnaMale</texPath>
+          <drawSize>1.0</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Red/ArachnaFemale</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Red/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Red/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>1.75</drawSize>
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Red/ArachnaMale</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Red/ArachnaFemale</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Arachna/Red/Dessicated_ArachnaMale_east</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Arachna/Red/Dessicated_ArachnaFemale_east</texPath>
+          <drawSize>2.5</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

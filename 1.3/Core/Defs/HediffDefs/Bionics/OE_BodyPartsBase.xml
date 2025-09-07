@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Base ====================-->
+  <ThingDef Name="OEBodyPartBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OEBionics</li>
+    </tradeTags>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef Name="OESurgeryInstallBodyPartBase" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+    <workAmount>7500</workAmount>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef Name="OESurgeryInstalImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
+    <workAmount>7500</workAmount>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef Name="OEBodyParts" ParentName="OEBodyPartBase" Abstract="True">
+    <techHediffsTags>
+      <li>OEBionics</li>
+    </techHediffsTags>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+    </statBases>
+	<thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+		<Medicine>8</Medicine>
+	    <Intellectual>6</Intellectual>
+      </skillRequirements>
+      <researchPrerequisite>OEBionics</researchPrerequisite>
+      <recipeUsers>
+        <li>OE_BionicTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef Name="OEAddBodyParts" ParentName="AddedBodyPartBase" Abstract="True">
+	<hediffClass>Hediff_AddedPart</hediffClass>
+	<defaultLabelColor>(0.27, 0.32, 0.44)</defaultLabelColor>
+	<isBad>false</isBad>
+	<priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+  </HediffDef>
+
+  <HediffDef Name="OEImplantBodyParts" ParentName="ImplantHediffBase" Abstract="True">
+	<hediffClass>Hediff_Implant</hediffClass>
+	<defaultLabelColor>(0.27, 0.32, 0.44)</defaultLabelColor>
+	<isBad>false</isBad>
+	<priceImpact>true</priceImpact>
+  </HediffDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OEBodyPartsM" ParentName="OEBodyPartBase" Abstract="True">
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+	<thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+		<Medicine>10</Medicine>
+	    <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_BionicTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== CAC ====================-->
+  <ThingDef Name="CACBodyParts" ParentName="OEBodyPartBase" Abstract="True">
+    <techHediffsTags>
+      <li>CACBionics</li>
+    </techHediffsTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardHighFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+  <HediffDef Name="CACAddBodyParts" ParentName="AddedBodyPartBase" Abstract="True">
+	<hediffClass>Hediff_AddedPart</hediffClass>
+	<defaultLabelColor>(0.74, 0.20, 0.23)</defaultLabelColor>
+	<isBad>false</isBad>
+	<priceImpact>true</priceImpact>
+    <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+  </HediffDef>
+
+  <HediffDef Name="CACImplantBodyParts" ParentName="ImplantHediffBase" Abstract="True">
+	<hediffClass>Hediff_Implant</hediffClass>
+	<defaultLabelColor>(0.74, 0.20, 0.23)</defaultLabelColor>
+	<isBad>false</isBad>
+	<priceImpact>true</priceImpact>
+  </HediffDef>
+
+</Defs>

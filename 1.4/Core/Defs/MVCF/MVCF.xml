@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+	<MVCF.ModDef>
+		<defName>ObsidiaExpansion</defName>
+		<label>Obsidia Expansion</label>
+		<description>Obsidia Expansion.</description>
+		<ActivateFeatures>
+			<li>Drawing</li>
+			<li>ApparelVerbs</li>
+			<li>RangedAnimals</li>
+			<li>HediffVerbs</li>
+			<li>IndependentFire</li>
+			<li>IntegratedToggle</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+</Defs>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--=============== Obsidia Datapad ====================-->
+  <ThingDef ParentName="BookBase">
+    <defName>OE_Datapad</defName>
+    <label>obsidia datapad</label>
+    <description>A datapad which describes obsidia technology and methods for using it. Reading datapad can help unlock new obsidia technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Book/Datapad/OE_Datapad</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Item/Book/Datapad/OE_Datapad</uiIconPath>
+    <statBases>
+      <MarketValue>225</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Book">
+        <nameMaker>Namer_Schematic</nameMaker>
+        <descriptionMaker>Description_Schematic</descriptionMaker>
+        <ageYearsRange>100~1000</ageYearsRange>
+        <openGraphic>
+          <texPath>Things/Item/Book/Datapad/OE_Datapad_Open</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.7</drawSize>
+        </openGraphic>
+        <verticalGraphic>
+          <texPath>Things/Item/Book/Datapad/OE_Datapad_Vertical</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <addTopAltitudeBias>true</addTopAltitudeBias>
+        </verticalGraphic>
+        <doers>
+          <li Class="BookOutcomeProperties_GainResearch">
+            <tabs>
+              <ObsidiaExpansion />
+            </tabs>
+            <exclude>
+              <OEMechtechAdv MayRequire="Ludeon.RimWorld.Biotech"/>
+              <OEBioengineeringAdv MayRequire="Ludeon.RimWorld.Biotech"/>
+              <OESGear MayRequire="Ludeon.RimWorld.Biotech"/>
+            </exclude>
+          </li>
+        </doers>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

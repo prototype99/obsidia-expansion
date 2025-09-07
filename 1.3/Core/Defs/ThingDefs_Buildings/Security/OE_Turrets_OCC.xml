@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OE_TurretBase_Small">
+    <defName>OCC_Turret_Small</defName>
+    <label>OCC Cerberus Turret</label>
+    <description>An automatic OCC Rifle-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OCC/TurretSmall_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>90</OE_Obsidian>
+      <OE_Mythril>25</OE_Mythril>
+	  <OE_Platinum>15</OE_Platinum>
+	  <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>1175</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>100</combatPower> 
+	  <turretGunDef>OCC_TurretGun_Small</turretGunDef>
+      <turretBurstCooldownTime>2.5</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OCCWeapons</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>50</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1.43</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps>  
+  </ThingDef>
+
+  <ThingDef Name="OCC_TurretGun_Small" ParentName="BaseWeaponTurret">
+    <defName>OCC_TurretGun_Small</defName>
+    <label>Cerberus Turret</label>
+    <description>Reconstructed OCC Rifle for turrets. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OCC/TurretSmall_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OCC_TurretBullet_Small</defaultProjectile>
+        <forcedMissRadius>0.3</forcedMissRadius>
+		<warmupTime>0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OCC_TurretBullet_Small</defName>
+    <label>cerberus turret bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OE_TurretBase_Big">
+    <defName>OCC_Turret_Big</defName>
+    <label>OCC Behemoth Turret</label>
+    <description>An automatic OCC Rocket Launcher-equipped turret. Requires syntherius as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OE_TurretBig_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OCC/TurretBig_Icon</uiIconPath>
+    <costList>
+      <OE_Obsidian>180</OE_Obsidian>
+      <OE_Mythril>50</OE_Mythril>
+	  <OE_Platinum>25</OE_Platinum>
+	  <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>2275</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>225</combatPower> 
+	  <turretGunDef>OCC_TurretGun_Big</turretGunDef>
+      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+	  <li>OCCGearMod</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>280</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>5.6</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs syntherius</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductPlant/Syntherius/Syntherius_c</fuelIconPath>
+      </li>
+	</comps> 
+  </ThingDef>
+
+  <ThingDef Name="OCC_TurretGun_Big" ParentName="BaseWeaponTurret">
+    <defName>OCC_TurretGun_Big</defName>
+    <label>Behemoth Turret</label>
+    <description>Reconstructed OCC Rocket Launcher for turrets. Slow weapon are designed to use blast bullets.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OCC/TurretBig_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OCC_TurretBullet_Big</defaultProjectile>
+        <forcedMissRadius>4.9</forcedMissRadius>
+		<warmupTime>0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <minRange>7.9</minRange>
+		<range>44.9</range>
+        <burstShotCount>8</burstShotCount>
+		<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OCC_TurretBullet_Big</defName>
+    <label>behemoth turret rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

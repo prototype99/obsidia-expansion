@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - ServoArm ====================-->
+<!--=============== Various ====================-->
+<!--=============== OE ====================-->
+  <ThingDef ParentName="OEServoArmBase">
+    <defName>OE_ServoArm</defName>
+    <label>obsidia proto servo-arm</label>
+	<description>Proto servo-arm, perfectly enhances the user’s manipulation. Designed for use by Obsidia Empire warriors several centuries ago.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>OE_ServoArm_Buff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/ServoArm/OE/OE_ServoArm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+	  <WorkToMake>17500</WorkToMake>
+	  <MarketValue>395</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>5.0</Mass>
+	  <Flammability>0.25</Flammability>
+	  <EquipDelay>2</EquipDelay>
+	  <Beauty>-1</Beauty>
+	</statBases>
+	<costList>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>15</OE_Mythril>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/ServoArm/OE/OE_ServoArm</wornGraphicPath>
+	  <tags>
+		<li>OEProto</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_Utility</li>
+    </thingCategories>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_ServoArm_Buff</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_ServoArm_Buff</defName>
+    <label>obsidia proto servo-arm</label>
+    <description>This person is using an Obsidia Proto servo-arm.</description>
+	<defaultLabelColor>(0.27, 0.32, 0.44)</defaultLabelColor>
+	<stages>
+	  <li>
+		<capMods>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<offset>0.3</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<isBad>false</isBad>
+  </HediffDef>
+
+</Defs>

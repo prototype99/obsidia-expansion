@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OES ====================-->
+<OES_Wings.label>Heroic Eidolon Cyber-Wings</OES_Wings.label>
+<OES_Wings.description>Heroic Cyber-Wings grant unmatched agility with their sleek, cutting-edge design. Designed for use by Eidolons, once called Heroes! Reveals the full potential of its owner.\n\nThese wings enable the user to perform 5 powerful jumps across vast distances.\n\nCan be reloaded using Syntherius.</OES_Wings.description>
+<OES_Wings.verbs.heroic_jump.label>heroic jump</OES_Wings.verbs.heroic_jump.label>
+<OES_Wings.comps.CompApparelReloadable.chargeNoun>jump</OES_Wings.comps.CompApparelReloadable.chargeNoun>
+<OES_Wings.comps.CompApparelReloadable.cooldownGerund>on cooldown</OES_Wings.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OMG ====================-->
+<OMG_Wings.label>Mercenaries Cyber-Wings</OMG_Wings.label>
+<OMG_Wings.description>Highly modified Cyber-Wings grant unmatched agility with their sleek, cutting-edge design. Designed for use by Mercenaries.\n\nThese wings enable the user to perform 10 quick jumps across great distances.\n\nCan be reloaded using Syntherius.</OMG_Wings.description>
+<OMG_Wings.verbs.mercenary_jump.label>mercenary jump</OMG_Wings.verbs.mercenary_jump.label>
+<OMG_Wings.comps.CompApparelReloadable.chargeNoun>jump</OMG_Wings.comps.CompApparelReloadable.chargeNoun>
+<OMG_Wings.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Wings.comps.CompApparelReloadable.cooldownGerund>
+
+</LanguageData>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Brain ====================-->
+<!--=============== Cyberware - Psy ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareBrain_Psy</defName>
+    <label>cyberware AI - Psy</label>
+    <labelNoun>a cyberware AI - Psy</labelNoun>
+    <description>An installed cyberware AI - Psy.\n\nThis cyberware can be installed up to 10 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareBrain_Psy</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareBrain_Psy</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>10</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.01</SocialImpact>
+		  <MeditationFocusGain>0.05</MeditationFocusGain>
+		  <PsychicSensitivity>0.05</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.01</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.02</SocialImpact>
+		  <MeditationFocusGain>0.10</MeditationFocusGain>
+		  <PsychicSensitivity>0.10</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.02</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.03</SocialImpact>
+		  <MeditationFocusGain>0.15</MeditationFocusGain>
+		  <PsychicSensitivity>0.15</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.03</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.04</SocialImpact>
+		  <MeditationFocusGain>0.20</MeditationFocusGain>
+		  <PsychicSensitivity>0.20</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.04</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.05</SocialImpact>
+		  <MeditationFocusGain>0.25</MeditationFocusGain>
+		  <PsychicSensitivity>0.25</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>6</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.06</SocialImpact>
+		  <MeditationFocusGain>0.30</MeditationFocusGain>
+		  <PsychicSensitivity>0.30</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.06</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>7</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.07</SocialImpact>
+		  <MeditationFocusGain>0.35</MeditationFocusGain>
+		  <PsychicSensitivity>0.35</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.07</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>8</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.08</SocialImpact>
+		  <MeditationFocusGain>0.40</MeditationFocusGain>
+		  <PsychicSensitivity>0.40</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.08</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>9</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.09</SocialImpact>
+		  <MeditationFocusGain>0.45</MeditationFocusGain>
+		  <PsychicSensitivity>0.45</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.09</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>10</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.10</SocialImpact>
+		  <MeditationFocusGain>0.50</MeditationFocusGain>
+		  <PsychicSensitivity>0.50</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0.10</PsychicEntropyRecoveryRate>
+	    </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareBrain_Psy</defName>
+    <label>cyberware AI - Psy</label>
+    <description>Obsidia cyberware AI assistant is technology installed into the human brain that sometimes has the capability to interface with the nervous system. Its purpose is to achieve higher performance and improvements psychic powers.\n\nInstallation requires - cyberware AI interface.\n\nThis cyberware can be installed up to 10 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantBrain_Interface</ThingDef><HediffDef>OE_CyberwareBrain_Psy</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Brain/OE_Psy</texPath>
+    </graphicData>
+    <costList>
+      <OE_Empyrium>10</OE_Empyrium>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_FungalWoodLog>5</OE_FungalWoodLog>
+      <OE_Syntherius>20</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+        <userMustHaveHediff>OE_ImplantBrain_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareBrain_Psy</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwaresAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

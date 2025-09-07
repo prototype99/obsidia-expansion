@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Arachna ====================-->
+<!--=============== OEC ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_OEC_Arachna</defName>
+    <label>gestate OEC Arachna</label>
+    <description>Gestate an OEC Arachna mechanoid.</description>
+    <products>
+      <OE_Mech_OEC_Arachna>1</OE_Mech_OEC_Arachna>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OEC_Arachna</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>OECGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== Dominator ====================-->
+<!--=============== OEC ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_OEC_Dominator</defName>
+    <label>gestate OEC Dominator</label>
+    <description>Gestate an OEC Dominator mechanoid.</description>
+    <products>
+      <OE_Mech_OEC_Dominator>1</OE_Mech_OEC_Dominator>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OEC_Dominator</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OECGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

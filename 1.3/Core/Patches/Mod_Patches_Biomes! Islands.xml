@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biomes! Islands</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Atoll ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Green>0.1</OE_Arachna_Green>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_Atoll"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			</value>
+		  </li>
+
+<!--=============== Boreal Island ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_BorealIsland"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_BorealIsland"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			</value>
+		  </li>
+
+<!--=============== Desert Island ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Red>0.1</OE_Arachna_Red>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_DesertIslandBase"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			</value>
+		  </li>
+
+<!--=============== Temperate Island ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
+			<value>
+			  <OE_Armagon>0.2</OE_Armagon>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Ogren>0.07</OE_Ogren>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Green>0.1</OE_Arachna_Green>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_TemperateIslandBase"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			</value>
+		  </li>
+
+<!--=============== Tropical Island ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+			<value>
+			  <OE_Raptor>0.1</OE_Raptor>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Red>0.1</OE_Arachna_Red>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_TropicalIslandBase"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			</value>
+		  </li>
+
+<!--=============== Tundra Island ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+			<value>
+			  <OE_Direwolf>0.1</OE_Direwolf>
+			  <OE_Tionant_Blue>0.07</OE_Tionant_Blue>
+			  <OE_Tionant_Green>0.07</OE_Tionant_Green>
+			  <OE_Tionant_Red>0.07</OE_Tionant_Red>
+			  <OE_Tionant_Yellow>0.07</OE_Tionant_Yellow>
+			  <OE_Astrinx>0.1</OE_Astrinx>
+			  <OE_Bruul_Acid>0.05</OE_Bruul_Acid>
+			  <OE_Bruul_Cryo>0.05</OE_Bruul_Cryo>
+			  <OE_Bruul_Fire>0.05</OE_Bruul_Fire>
+			  <OE_Bruul_EMP>0.05</OE_Bruul_EMP>
+			  <OE_Arachna_Blue>0.1</OE_Arachna_Blue>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="BiomesIslands_TundraIslandBase"]/allowedPackAnimals</xpath>
+			<value>
+			  <li>OE_Armagon</li>
+			</value>
+		  </li>
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

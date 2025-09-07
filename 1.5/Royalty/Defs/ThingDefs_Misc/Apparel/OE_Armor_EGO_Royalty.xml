@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Armor ====================-->
+<!--=============== Shell ====================-->
+<!--=============== Psy ====================-->
+  <ThingDef ParentName="EGOArmorBase">
+	<defName>EGO_Armor_Shell_Psy</defName>
+    <label>EGO Shell(Mindweaver)</label>
+    <description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve psy stats and modified with the addition of a Jump pack.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Psy/EGOArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3665</MarketValue>
+	  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+	  <JumpRange>27.9</JumpRange>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>30</CarryingCapacity>
+	  <MoveSpeed>0.3</MoveSpeed>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.2</RawNutritionFactor>
+	  <PsychicSensitivity>0.5</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.25</MeditationFocusGain>
+    </equippedStatOffsets>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Psy/EGOArmor</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>10</maxCharges>
+        <ammoDef>OE_EGOSeed</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Jump</verbClass>
+        <commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

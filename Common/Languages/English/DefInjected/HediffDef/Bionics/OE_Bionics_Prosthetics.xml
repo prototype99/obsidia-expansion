@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Arms ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticArm.label>bionic arm</OE_ProstheticArm.label>
+<OE_ProstheticArm.labelNoun>a bionic arm</OE_ProstheticArm.labelNoun>
+<OE_ProstheticArm.description>An installed bionic arm.</OE_ProstheticArm.description>
+<OE_ProstheticArm.comps.HediffComp_VerbGiver.tools.fist.label>fist</OE_ProstheticArm.comps.HediffComp_VerbGiver.tools.fist.label>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticArm_M.label>advanced bionic arm</OE_ProstheticArm_M.label>
+<OE_ProstheticArm_M.labelNoun>an advanced bionic arm</OE_ProstheticArm_M.labelNoun>
+<OE_ProstheticArm_M.description>An installed advanced bionic arm.</OE_ProstheticArm_M.description>
+<OE_ProstheticArm_M.comps.HediffComp_VerbGiver.tools.fist.label>fist</OE_ProstheticArm_M.comps.HediffComp_VerbGiver.tools.fist.label>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticArm_CAC.label>cultist bionic arm</OE_ProstheticArm_CAC.label>
+<OE_ProstheticArm_CAC.labelNoun>a cultist bionic arm</OE_ProstheticArm_CAC.labelNoun>
+<OE_ProstheticArm_CAC.description>An installed cultist bionic arm.</OE_ProstheticArm_CAC.description>
+<OE_ProstheticArm_CAC.comps.HediffComp_VerbGiver.tools.fist.label>fist</OE_ProstheticArm_CAC.comps.HediffComp_VerbGiver.tools.fist.label>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticArm_OES.label>heroic bionic arm</OE_ProstheticArm_OES.label>
+<OE_ProstheticArm_OES.labelNoun>a heroic bionic arm</OE_ProstheticArm_OES.labelNoun>
+<OE_ProstheticArm_OES.description>An installed heroic bionic arm.</OE_ProstheticArm_OES.description>
+<OE_ProstheticArm_OES.comps.HediffComp_VerbGiver.tools.fist.label>fist</OE_ProstheticArm_OES.comps.HediffComp_VerbGiver.tools.fist.label>
+
+<!--=============== Legs ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticLeg.label>bionic leg</OE_ProstheticLeg.label>
+<OE_ProstheticLeg.labelNoun>a bionic leg</OE_ProstheticLeg.labelNoun>
+<OE_ProstheticLeg.description>An installed bionic leg.</OE_ProstheticLeg.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticLeg_M.label>advanced bionic leg</OE_ProstheticLeg_M.label>
+<OE_ProstheticLeg_M.labelNoun>an advanced bionic leg</OE_ProstheticLeg_M.labelNoun>
+<OE_ProstheticLeg_M.description>An installed advanced bionic leg.</OE_ProstheticLeg_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticLeg_CAC.label>cultist bionic leg</OE_ProstheticLeg_CAC.label>
+<OE_ProstheticLeg_CAC.labelNoun>a cultist bionic leg</OE_ProstheticLeg_CAC.labelNoun>
+<OE_ProstheticLeg_CAC.description>An installed cultist bionic leg.</OE_ProstheticLeg_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticLeg_OES.label>heroic bionic leg</OE_ProstheticLeg_OES.label>
+<OE_ProstheticLeg_OES.labelNoun>a heroic bionic leg</OE_ProstheticLeg_OES.labelNoun>
+<OE_ProstheticLeg_OES.description>An installed heroic bionic leg.</OE_ProstheticLeg_OES.description>
+
+<!--=============== Spine ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticSpine.label>bionic spine</OE_ProstheticSpine.label>
+<OE_ProstheticSpine.labelNoun>a bionic spine</OE_ProstheticSpine.labelNoun>
+<OE_ProstheticSpine.description>An installed bionic spine.</OE_ProstheticSpine.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticSpine_M.label>advanced bionic spine</OE_ProstheticSpine_M.label>
+<OE_ProstheticSpine_M.labelNoun>an advanced bionic spine</OE_ProstheticSpine_M.labelNoun>
+<OE_ProstheticSpine_M.description>An installed advanced bionic spine.</OE_ProstheticSpine_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticSpine_CAC.label>cultist bionic spine</OE_ProstheticSpine_CAC.label>
+<OE_ProstheticSpine_CAC.labelNoun>a cultist bionic spine</OE_ProstheticSpine_CAC.labelNoun>
+<OE_ProstheticSpine_CAC.description>An installed cultist bionic spine.</OE_ProstheticSpine_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticSpine_OES.label>heroic bionic spine</OE_ProstheticSpine_OES.label>
+<OE_ProstheticSpine_OES.labelNoun>a heroic bionic spine</OE_ProstheticSpine_OES.labelNoun>
+<OE_ProstheticSpine_OES.description>An installed heroic bionic spine.</OE_ProstheticSpine_OES.description>
+
+<!--=============== Stomach ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticStomach.label>bionic stomach</OE_ProstheticStomach.label>
+<OE_ProstheticStomach.labelNoun>a bionic stomach</OE_ProstheticStomach.labelNoun>
+<OE_ProstheticStomach.description>An installed bionic stomach.</OE_ProstheticStomach.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticStomach_M.label>advanced bionic stomach</OE_ProstheticStomach_M.label>
+<OE_ProstheticStomach_M.labelNoun>an advanced bionic stomach</OE_ProstheticStomach_M.labelNoun>
+<OE_ProstheticStomach_M.description>An installed advanced bionic stomach.</OE_ProstheticStomach_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticStomach_CAC.label>cultist bionic stomach</OE_ProstheticStomach_CAC.label>
+<OE_ProstheticStomach_CAC.labelNoun>a cultist bionic stomach</OE_ProstheticStomach_CAC.labelNoun>
+<OE_ProstheticStomach_CAC.description>An installed cultist bionic stomach.</OE_ProstheticStomach_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticStomach_OES.label>heroic bionic stomach</OE_ProstheticStomach_OES.label>
+<OE_ProstheticStomach_OES.labelNoun>a heroic bionic stomach</OE_ProstheticStomach_OES.labelNoun>
+<OE_ProstheticStomach_OES.description>An installed heroic bionic stomach.</OE_ProstheticStomach_OES.description>
+
+<!--=============== Heart ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticHeart.label>bionic heart</OE_ProstheticHeart.label>
+<OE_ProstheticHeart.labelNoun>a bionic heart</OE_ProstheticHeart.labelNoun>
+<OE_ProstheticHeart.description>An installed bionic heart.</OE_ProstheticHeart.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticHeart_M.label>advanced bionic heart</OE_ProstheticHeart_M.label>
+<OE_ProstheticHeart_M.labelNoun>an advanced bionic heart</OE_ProstheticHeart_M.labelNoun>
+<OE_ProstheticHeart_M.description>An installed advanced bionic heart.</OE_ProstheticHeart_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticHeart_CAC.label>cultist bionic heart</OE_ProstheticHeart_CAC.label>
+<OE_ProstheticHeart_CAC.labelNoun>a cultist bionic heart</OE_ProstheticHeart_CAC.labelNoun>
+<OE_ProstheticHeart_CAC.description>An installed cultist bionic heart.</OE_ProstheticHeart_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticHeart_OES.label>heroic bionic heart</OE_ProstheticHeart_OES.label>
+<OE_ProstheticHeart_OES.labelNoun>a heroic bionic heart</OE_ProstheticHeart_OES.labelNoun>
+<OE_ProstheticHeart_OES.description>An installed heroic bionic heart.</OE_ProstheticHeart_OES.description>
+
+<!--=============== Kidney ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticKidney.label>bionic kidney</OE_ProstheticKidney.label>
+<OE_ProstheticKidney.labelNoun>a bionic kidney</OE_ProstheticKidney.labelNoun>
+<OE_ProstheticKidney.description>An installed bionic kidney.</OE_ProstheticKidney.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticKidney_M.label>advanced bionic kidney</OE_ProstheticKidney_M.label>
+<OE_ProstheticKidney_M.labelNoun>an advanced bionic kidney</OE_ProstheticKidney_M.labelNoun>
+<OE_ProstheticKidney_M.description>An installed advanced bionic kidney.</OE_ProstheticKidney_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticKidney_CAC.label>cultist bionic kidney</OE_ProstheticKidney_CAC.label>
+<OE_ProstheticKidney_CAC.labelNoun>a cultist bionic kidney</OE_ProstheticKidney_CAC.labelNoun>
+<OE_ProstheticKidney_CAC.description>An installed cultist bionic kidney.</OE_ProstheticKidney_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticKidney_OES.label>heroic bionic kidney</OE_ProstheticKidney_OES.label>
+<OE_ProstheticKidney_OES.labelNoun>a heroic bionic kidney</OE_ProstheticKidney_OES.labelNoun>
+<OE_ProstheticKidney_OES.description>An installed heroic bionic kidney.</OE_ProstheticKidney_OES.description>
+
+<!--=============== Liver ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticLiver.label>bionic liver</OE_ProstheticLiver.label>
+<OE_ProstheticLiver.labelNoun>a bionic liver</OE_ProstheticLiver.labelNoun>
+<OE_ProstheticLiver.description>An installed bionic liver.</OE_ProstheticLiver.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticLiver_M.label>advanced bionic liver</OE_ProstheticLiver_M.label>
+<OE_ProstheticLiver_M.labelNoun>an advanced bionic liver</OE_ProstheticLiver_M.labelNoun>
+<OE_ProstheticLiver_M.description>An installed advanced bionic liver.</OE_ProstheticLiver_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticLiver_CAC.label>cultist bionic liver</OE_ProstheticLiver_CAC.label>
+<OE_ProstheticLiver_CAC.labelNoun>a cultist bionic liver</OE_ProstheticLiver_CAC.labelNoun>
+<OE_ProstheticLiver_CAC.description>An installed cultist bionic liver.</OE_ProstheticLiver_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticLiver_OES.label>heroic bionic liver</OE_ProstheticLiver_OES.label>
+<OE_ProstheticLiver_OES.labelNoun>a heroic bionic liver</OE_ProstheticLiver_OES.labelNoun>
+<OE_ProstheticLiver_OES.description>An installed heroic bionic liver.</OE_ProstheticLiver_OES.description>
+
+<!--=============== Lung ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticLung.label>bionic lung</OE_ProstheticLung.label>
+<OE_ProstheticLung.labelNoun>a bionic lung</OE_ProstheticLung.labelNoun>
+<OE_ProstheticLung.description>An installed bionic lung.</OE_ProstheticLung.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticLung_M.label>advanced bionic lung</OE_ProstheticLung_M.label>
+<OE_ProstheticLung_M.labelNoun>an advanced bionic lung</OE_ProstheticLung_M.labelNoun>
+<OE_ProstheticLung_M.description>An installed advanced bionic lung.</OE_ProstheticLung_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticLung_CAC.label>cultist bionic lung</OE_ProstheticLung_CAC.label>
+<OE_ProstheticLung_CAC.labelNoun>a cultist bionic lung</OE_ProstheticLung_CAC.labelNoun>
+<OE_ProstheticLung_CAC.description>An installed cultist bionic lung.</OE_ProstheticLung_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticLung_OES.label>heroic bionic lung</OE_ProstheticLung_OES.label>
+<OE_ProstheticLung_OES.labelNoun>a heroic bionic lung</OE_ProstheticLung_OES.labelNoun>
+<OE_ProstheticLung_OES.description>An installed heroic bionic lung.</OE_ProstheticLung_OES.description>
+
+<!--=============== Eyes ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticEye.label>bionic eye</OE_ProstheticEye.label>
+<OE_ProstheticEye.labelNoun>a bionic eye</OE_ProstheticEye.labelNoun>
+<OE_ProstheticEye.description>An installed bionic eye.</OE_ProstheticEye.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticEye_M.label>advanced bionic eye</OE_ProstheticEye_M.label>
+<OE_ProstheticEye_M.labelNoun>an advanced bionic eye</OE_ProstheticEye_M.labelNoun>
+<OE_ProstheticEye_M.description>An installed advanced bionic eye.</OE_ProstheticEye_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticEye_CAC.label>cultist bionic eye</OE_ProstheticEye_CAC.label>
+<OE_ProstheticEye_CAC.labelNoun>a cultist bionic eye</OE_ProstheticEye_CAC.labelNoun>
+<OE_ProstheticEye_CAC.description>An installed cultist bionic eye.</OE_ProstheticEye_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticEye_OES.label>heroic bionic eye</OE_ProstheticEye_OES.label>
+<OE_ProstheticEye_OES.labelNoun>a heroic bionic eye</OE_ProstheticEye_OES.labelNoun>
+<OE_ProstheticEye_OES.description>An installed heroic bionic eye.</OE_ProstheticEye_OES.description>
+
+<!--=============== Ears ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticEar.label>bionic ear</OE_ProstheticEar.label>
+<OE_ProstheticEar.labelNoun>a bionic ear</OE_ProstheticEar.labelNoun>
+<OE_ProstheticEar.description>An installed bionic ear.</OE_ProstheticEar.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticEar_M.label>advanced bionic ear</OE_ProstheticEar_M.label>
+<OE_ProstheticEar_M.labelNoun>an advanced bionic ear</OE_ProstheticEar_M.labelNoun>
+<OE_ProstheticEar_M.description>An installed advanced bionic ear.</OE_ProstheticEar_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticEar_CAC.label>cultist bionic ear</OE_ProstheticEar_CAC.label>
+<OE_ProstheticEar_CAC.labelNoun>a cultist bionic ear</OE_ProstheticEar_CAC.labelNoun>
+<OE_ProstheticEar_CAC.description>An installed cultist bionic ear.</OE_ProstheticEar_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticEar_OES.label>heroic bionic ear</OE_ProstheticEar_OES.label>
+<OE_ProstheticEar_OES.labelNoun>a heroic bionic ear</OE_ProstheticEar_OES.labelNoun>
+<OE_ProstheticEar_OES.description>An installed heroic bionic ear.</OE_ProstheticEar_OES.description>
+
+<!--=============== Jaw ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+<OE_ProstheticJaw.label>bionic jaw</OE_ProstheticJaw.label>
+<OE_ProstheticJaw.labelNoun>a bionic jaw</OE_ProstheticJaw.labelNoun>
+<OE_ProstheticJaw.description>An installed bionic jaw.</OE_ProstheticJaw.description>
+<!--=============== Prosthetic - Mod ====================-->
+<OE_ProstheticJaw_M.label>advanced bionic jaw</OE_ProstheticJaw_M.label>
+<OE_ProstheticJaw_M.labelNoun>an advanced bionic jaw</OE_ProstheticJaw_M.labelNoun>
+<OE_ProstheticJaw_M.description>An installed advanced bionic jaw.</OE_ProstheticJaw_M.description>
+<!--=============== Prosthetic - CAC ====================-->
+<OE_ProstheticJaw_CAC.label>cultist bionic jaw</OE_ProstheticJaw_CAC.label>
+<OE_ProstheticJaw_CAC.labelNoun>a cultist bionic jaw</OE_ProstheticJaw_CAC.labelNoun>
+<OE_ProstheticJaw_CAC.description>An installed cultist bionic jaw.</OE_ProstheticJaw_CAC.description>
+<!--=============== Prosthetic - OES ====================-->
+<OE_ProstheticJaw_OES.label>heroic bionic jaw</OE_ProstheticJaw_OES.label>
+<OE_ProstheticJaw_OES.labelNoun>a heroic bionic jaw</OE_ProstheticJaw_OES.labelNoun>
+<OE_ProstheticJaw_OES.description>An installed heroic bionic jaw.</OE_ProstheticJaw_OES.description>
+
+</LanguageData>

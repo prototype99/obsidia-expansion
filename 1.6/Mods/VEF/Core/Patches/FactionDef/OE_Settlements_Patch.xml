@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+<!--=============== Obsidia Empire ====================-->
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaMercenaryGangs"]</xpath>
+    <value>
+      <li Class="KCSG.CustomGenOption">
+        <chooseFromSettlements>
+          <li>OE_Settlement_ObsidiaEmpire</li>
+        </chooseFromSettlements>
+		<preventBridgeable>true</preventBridgeable>
+      </li>
+    </value>
+  </Operation>
+
+<!--=============== Obsidia Drifter Clans ====================-->
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/FactionDef[@Name="ObsidiaDrifterClansBase"]</xpath>
+    <value>
+      <li Class="KCSG.CustomGenOption">
+        <chooseFromSettlements>
+          <li>OE_Settlement_ObsidiaDrifterClans</li>
+        </chooseFromSettlements>
+		<preventBridgeable>true</preventBridgeable>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Temperate ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateForest"]/pollutionWildAnimals</xpath>
+    <value>
+        <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/pollutionWildAnimals</xpath>
+    <value>
+        <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<!--=============== Warm ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/pollutionWildAnimals</xpath>
+    <value>
+		<OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/pollutionWildAnimals</xpath>
+    <value>
+        <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<!--=============== Warm ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="AridShrubland"]/pollutionWildAnimals</xpath>
+    <value>
+		<OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Desert"]/pollutionWildAnimals</xpath>
+    <value>
+        <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/pollutionWildAnimals</xpath>
+    <value>
+        <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<!--=============== Cold ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="BorealForest"]/pollutionWildAnimals</xpath>
+    <value>
+        <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+		<OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+		<OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Alpha Biomes</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Ocular Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="AB_OcularForest"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>More Vanilla Biomes</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Alpine Meadow ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+
+<!--=============== Cloud Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+
+<!--=============== Coastal Dunes ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="ZBiome_CoastalDunes"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+
+<!--=============== Desert Oasis ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="ZBiome_DesertOasis"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+
+<!--=============== Temperate Grasslands ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="ZBiome_Grasslands"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+
+<!--=============== Marsh ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+
+<!--=============== Sandbar ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="ZBiome_Sandbar_NoBeach"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		  </li>
+
+		</operations>
+	</match>
+</Operation>
+
+<!--=============== ReGrowth: Core ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>ReGrowth: Core</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Aspen Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		</li>
+
+		</operations>
+	</match>
+</Operation>
+
+<!--=============== ReGrowth: Aspen ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>ReGrowth: Aspen</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Aspen Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_AspenForest"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		</li>
+
+		</operations>
+	</match>
+</Operation>
+
+<!--=============== ReGrowth: Boiling ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>ReGrowth: Boiling</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Boiling Forest ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/BiomeDef[defName="RG_BoilingForest"]/pollutionWildAnimals</xpath>
+			<value>
+			  <OE_Arachna_Tox>0.45</OE_Arachna_Tox>
+			  <OE_Scorpid_Tox>0.20</OE_Scorpid_Tox>
+			  <OE_Caterpillar_Tox>0.25</OE_Caterpillar_Tox>
+			</value>
+		</li>
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

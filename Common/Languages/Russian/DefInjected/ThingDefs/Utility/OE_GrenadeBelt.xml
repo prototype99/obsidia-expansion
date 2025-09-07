@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<OTC_GrenadeBelt_Acid.label>Пояс-гранат OTC(Кислота)</OTC_GrenadeBelt_Acid.label>
+<OTC_GrenadeBelt_Acid.description>Пояс-гранат со взрывчаткой, наносящей мощный Кислотный урон при взрыве. Их можно бросить на небольшое расстояние, где они взорвутся, повредив все и вся поблизости. Разработанна и модифицирована для использования Инженерами из OTC.\n\nМожет быть перезаряжен с помощью Комплекта Боеприпасов Обсидии.</OTC_GrenadeBelt_Acid.description>
+<OTC_GrenadeBelt_Acid.verbs.throw_acid_grenade.label>бросить кислотную гранату</OTC_GrenadeBelt_Acid.verbs.throw_acid_grenade.label>
+<OTC_GrenadeBelt_Acid.comps.CompApparelReloadable.chargeNoun>граната</OTC_GrenadeBelt_Acid.comps.CompApparelReloadable.chargeNoun>
+<OTC_GrenadeBelt_Acid.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OTC_GrenadeBelt_Acid.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_GrenadeBelt_OTC_Acid.label>Граната OTC(Кислота)</Grenade_GrenadeBelt_OTC_Acid.label>
+<!--=============== Cryo ====================-->
+<OTC_GrenadeBelt_Cryo.label>Пояс-гранат OTC(Крио)</OTC_GrenadeBelt_Cryo.label>
+<OTC_GrenadeBelt_Cryo.description>Пояс-гранат со взрывчаткой, наносящей мощный Крио урон при взрыве. Их можно бросить на небольшое расстояние, где они взорвутся, повредив все и вся поблизости. Разработанна и модифицирована для использования Инженерами из OTC.\n\nМожет быть перезаряжен с помощью Комплекта Боеприпасов Обсидии.</OTC_GrenadeBelt_Cryo.description>
+<OTC_GrenadeBelt_Cryo.verbs.throw_cryo_grenade.label>бросить крио гранату</OTC_GrenadeBelt_Cryo.verbs.throw_cryo_grenade.label>
+<OTC_GrenadeBelt_Cryo.comps.CompApparelReloadable.chargeNoun>граната</OTC_GrenadeBelt_Cryo.comps.CompApparelReloadable.chargeNoun>
+<OTC_GrenadeBelt_Cryo.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OTC_GrenadeBelt_Cryo.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_GrenadeBelt_OTC_Cryo.label>Граната OTC(Крио)</Grenade_GrenadeBelt_OTC_Cryo.label>
+<!--=============== Fire ====================-->
+<OTC_GrenadeBelt_Fire.label>Пояс-гранат OTC(Огонь)</OTC_GrenadeBelt_Fire.label>
+<OTC_GrenadeBelt_Fire.description>Пояс-гранат со взрывчаткой, наносящей мощный Огненный урон при взрыве. Их можно бросить на небольшое расстояние, где они взорвутся, повредив все и вся поблизости. Разработанна и модифицирована для использования Инженерами из OTC.\n\nМожет быть перезаряжен с помощью Комплекта Боеприпасов Обсидии.</OTC_GrenadeBelt_Fire.description>
+<OTC_GrenadeBelt_Fire.verbs.throw_fire_grenade.label>бросить огненную гранату</OTC_GrenadeBelt_Fire.verbs.throw_fire_grenade.label>
+<OTC_GrenadeBelt_Fire.comps.CompApparelReloadable.chargeNoun>граната</OTC_GrenadeBelt_Fire.comps.CompApparelReloadable.chargeNoun>
+<OTC_GrenadeBelt_Fire.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OTC_GrenadeBelt_Fire.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_GrenadeBelt_OTC_Fire.label>Граната OTC(Огонь)</Grenade_GrenadeBelt_OTC_Fire.label>
+<!--=============== EMP ====================-->
+<OTC_GrenadeBelt_EMP.label>Пояс-гранат OTC(ЭМИ)</OTC_GrenadeBelt_EMP.label>
+<OTC_GrenadeBelt_EMP.description>Пояс-гранат со взрывчаткой, наносящей мощный ЭМИ урон при взрыве. Их можно бросить на небольшое расстояние, где они взорвутся, повредив все и вся поблизости. Разработанна и модифицирована для использования Инженерами из OTC.\n\nМожет быть перезаряжен с помощью Комплекта Боеприпасов Обсидии.</OTC_GrenadeBelt_EMP.description>
+<OTC_GrenadeBelt_EMP.verbs.throw_EMP_grenade.label>бросить ЭМИ гранату</OTC_GrenadeBelt_EMP.verbs.throw_EMP_grenade.label>
+<OTC_GrenadeBelt_EMP.comps.CompApparelReloadable.chargeNoun>граната</OTC_GrenadeBelt_EMP.comps.CompApparelReloadable.chargeNoun>
+<OTC_GrenadeBelt_EMP.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OTC_GrenadeBelt_EMP.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_GrenadeBelt_OTC_EMP.label>Граната OTC(ЭМИ)</Grenade_GrenadeBelt_OTC_EMP.label>
+
+<!--=============== OCC ====================-->
+<OCC_GrenadeBelt.label>Пояс-гранат OCC</OCC_GrenadeBelt.label>
+<OCC_GrenadeBelt.description>Пояс-гранат со взрывчаткой, наносящей мощный Взрывной урон при взрыве. Их можно бросить на небольшое расстояние, где они взорвутся, повредив все и вся поблизости. Разработанна и модифицирована для использования Паладинами OCC.\n\nМожет быть перезаряжен с помощью Комплекта Боеприпасов Обсидии.</OCC_GrenadeBelt.description>
+<OCC_GrenadeBelt.verbs.throw_blast_grenade.label>бросить взрывную гранату</OCC_GrenadeBelt.verbs.throw_blast_grenade.label>
+<OCC_GrenadeBelt.comps.CompApparelReloadable.chargeNoun>граната</OCC_GrenadeBelt.comps.CompApparelReloadable.chargeNoun>
+<OCC_GrenadeBelt.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OCC_GrenadeBelt.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_GrenadeBelt_OCC.label>Граната OCC</Grenade_GrenadeBelt_OCC.label>
+
+<!--=============== ODC ====================-->
+<ODC_GrenadeBelt.label>Пояс-гранат ODC</ODC_GrenadeBelt.label>
+<ODC_GrenadeBelt.description>Пояс-гранат со взрывчаткой, наносящей мощный Оглушающий урон при взрыве. Их можно бросить на небольшое расстояние, где они взорвутся, повредив все и вся поблизости. Разработана для Скитальцев Обсидии.\n\nМожет быть перезаряжен с помощью Комплекта Боеприпасов Обсидии.</ODC_GrenadeBelt.description>
+<ODC_GrenadeBelt.verbs.throw_stun_grenade.label>бросить оглушающую гранату</ODC_GrenadeBelt.verbs.throw_stun_grenade.label>
+<ODC_GrenadeBelt.comps.CompApparelReloadable.chargeNoun>граната</ODC_GrenadeBelt.comps.CompApparelReloadable.chargeNoun>
+<ODC_GrenadeBelt.comps.CompApparelReloadable.cooldownGerund>перезаряжается</ODC_GrenadeBelt.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_GrenadeBelt_ODC.label>Граната ODC</Grenade_GrenadeBelt_ODC.label>
+
+<!--=============== OMG ====================-->
+<OMG_GrenadeBelt.label>Пояс-гранат Наемников</OMG_GrenadeBelt.label>
+<OMG_GrenadeBelt.description>Пояс-гранат со взрывчаткой, наносящей мощный Некробейн урон при взрыве. Их можно бросить на небольшое расстояние, где они взорвутся, повредив все и вся поблизости. Предназначена для использования Наемниками.\n\nМожет быть перезаряжен с помощью Комплекта Боеприпасов Обсидии.</OMG_GrenadeBelt.description>
+<OMG_GrenadeBelt.verbs.throw_necrobane_grenade.label>бросить некробейн гранату</OMG_GrenadeBelt.verbs.throw_necrobane_grenade.label>
+<OMG_GrenadeBelt.comps.CompApparelReloadable.chargeNoun>граната</OMG_GrenadeBelt.comps.CompApparelReloadable.chargeNoun>
+<OMG_GrenadeBelt.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OMG_GrenadeBelt.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_GrenadeBelt_OMG.label>Граната OMG</Grenade_GrenadeBelt_OMG.label>
+
+</LanguageData>

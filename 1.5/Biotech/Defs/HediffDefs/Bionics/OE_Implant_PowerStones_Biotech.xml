@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Implant - Techmaster Power Stone ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantPowerStone_Techmaster</defName>
+    <label>Techmaster Power Stone</label>
+    <description>An installed - Techmaster Power Stone.</description>
+	<descriptionHyperlinks>
+	  <ResearchProjectDef>ODCGearLeg</ResearchProjectDef>
+	  <RecipeDef>OE_InstallPowerStone_Techmaster</RecipeDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.30, 0.82, 0.88)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_UnstableStone</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+		  <MechBandwidth>40</MechBandwidth>
+		  <MechControlGroups>4</MechControlGroups>
+		  <MechFormingSpeed>1.0</MechFormingSpeed>
+		  <MechRepairSpeed>1.0</MechRepairSpeed>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags><li>PowerStone</li></tags>
+  </HediffDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallPowerStone_Techmaster</defName>
+    <label>install - Techmaster Power Stone</label>
+    <description>Install - Techmaster Power Stone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_ImplantPowerStone_Techmaster</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing - Techmaster Power Stone.</jobString>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Platinum</li>
+		<li>OE_Syntherius</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantPowerStone_Techmaster</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>PowerStone</li>
+    </incompatibleWithHediffTags>
+	<researchPrerequisite>ODCGearLeg</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemovePowerStone_Techmaster</defName>
+    <label>remove - Techmaster Power Stone</label>
+    <description>Remove - Techmaster Power Stone.</description>
+    <jobString>Removing - Techmaster Power Stone.</jobString>
+    <removesHediff>OE_ImplantPowerStone_Techmaster</removesHediff>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+  </RecipeDef>
+
+</Defs>

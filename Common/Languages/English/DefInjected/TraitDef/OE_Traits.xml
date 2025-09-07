@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Vanilla ====================-->
+<!--=============== Civilian ====================-->
+<OECivilian.degreeDatas.handyman.label>handyman</OECivilian.degreeDatas.handyman.label>
+<OECivilian.degreeDatas.handyman.description>{PAWN_nameDef} is a natural {PAWN_pronoun}. {PAWN_nameDef} is smart and work harder than others.</OECivilian.degreeDatas.handyman.description>
+
+<!--=============== Soldier ====================-->
+<OESoldier.degreeDatas.trained.label>trained</OESoldier.degreeDatas.trained.label>
+<OESoldier.degreeDatas.trained.description>After many trainings, {PAWN_nameDef} learned how to use any weapon.</OESoldier.degreeDatas.trained.description>
+
+<!--=============== Nomad ====================-->
+<OENomad.degreeDatas.nomad.label>nomad</OENomad.degreeDatas.nomad.label>
+<OENomad.degreeDatas.nomad.description>{PAWN_pronoun}'s are used to eating less food and getting enough sleep faster than others.</OENomad.degreeDatas.nomad.description>
+
+<!--=============== Cultist ====================-->
+<OECultist.degreeDatas.spiritual.label>spiritual</OECultist.degreeDatas.spiritual.label>
+<OECultist.degreeDatas.spiritual.description>{PAWN_nameDef} has an unshakable will and body capable of withstanding any test.</OECultist.degreeDatas.spiritual.description>
+
+<!--=============== Eidolon ====================-->
+<OEEidolon.degreeDatas.proudly.label>proudly</OEEidolon.degreeDatas.proudly.label>
+<OEEidolon.degreeDatas.proudly.description>{PAWN_nameDef} as a hero bathed in glory.</OEEidolon.degreeDatas.proudly.description>
+
+<!--=============== Unstable ====================-->
+<!--=============== Catalyst ====================-->
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.label>unstable catalyst</OEUnstableCatalyst.degreeDatas.unstable_catalyst.label>
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.description>A volatile force stirs within {PAWN_nameDef}. When pushed to the edge, {PAWN_pronoun} may erupt with a surge of brilliance—or chaos.\nThere is a 75% chance that a mental break will trigger a random Inspiration.</OEUnstableCatalyst.degreeDatas.unstable_catalyst.description>
+<OEUnstableCatalyst.degreeDatas.unstable_catalyst.mentalBreakInspirationGainReasonText>Driven by unstable energy, [PAWN_nameIndef] unlocks untamed potential.</OEUnstableCatalyst.degreeDatas.unstable_catalyst.mentalBreakInspirationGainReasonText>
+
+<!--=============== Laborer ====================-->
+<OEUnstableLaborer.degreeDatas.unstable_laborer.label>unstable laborer</OEUnstableLaborer.degreeDatas.unstable_laborer.label>
+<OEUnstableLaborer.degreeDatas.unstable_laborer.description>{PAWN_nameDef} pushes {PAWN_pronoun}self to extremes, chasing fleeting sparks of productivity at great mental cost.\nThere is a 50% chance that a mental break will trigger a Work Frenzy.</OEUnstableLaborer.degreeDatas.unstable_laborer.description>
+<OEUnstableLaborer.degreeDatas.unstable_laborer.mentalBreakInspirationGainReasonText>Driven by inner chaos, [PAWN_nameIndef] enters a manic work frenzy.</OEUnstableLaborer.degreeDatas.unstable_laborer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Wanderer ====================-->
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.label>unstable wanderer</OEUnstableWanderer.degreeDatas.unstable_wanderer.label>
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.description>Restless and unpredictable, {PAWN_nameDef} finds moments of clarity in rapid, purposeless motion.\nThere is a 50% chance that a mental break will trigger a Go Frenzy.</OEUnstableWanderer.degreeDatas.unstable_wanderer.description>
+<OEUnstableWanderer.degreeDatas.unstable_wanderer.mentalBreakInspirationGainReasonText>Overwhelmed by turmoil, [PAWN_nameIndef] feels an irresistible urge to move.</OEUnstableWanderer.degreeDatas.unstable_wanderer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Marksman ====================-->
+<OEUnstableMarksman.degreeDatas.unstable_marksman.label>unstable marksman</OEUnstableMarksman.degreeDatas.unstable_marksman.label>
+<OEUnstableMarksman.degreeDatas.unstable_marksman.description>In moments of instability, {PAWN_nameDef}'s focus sharpens, turning chaos into deadly precision.\nThere is a 50% chance that a mental break will trigger a Shooting Frenzy.</OEUnstableMarksman.degreeDatas.unstable_marksman.description>
+<OEUnstableMarksman.degreeDatas.unstable_marksman.mentalBreakInspirationGainReasonText>Riding the edge of madness, [PAWN_nameIndef] becomes unnervingly accurate with ranged weapons.</OEUnstableMarksman.degreeDatas.unstable_marksman.mentalBreakInspirationGainReasonText>
+
+<!--=============== Trader ====================-->
+<OEUnstableTrader.degreeDatas.unstable_trader.label>unstable trader</OEUnstableTrader.degreeDatas.unstable_trader.label>
+<OEUnstableTrader.degreeDatas.unstable_trader.description>{PAWN_nameDef}'s fractured mind occasionally strikes upon strokes of commercial genius.\nThere is a 50% chance that a mental break will trigger a Inspired Trade.</OEUnstableTrader.degreeDatas.unstable_trader.description>
+<OEUnstableTrader.degreeDatas.unstable_trader.mentalBreakInspirationGainReasonText>Through the haze of instability, [PAWN_nameIndef] glimpses a moment of brilliant negotiation.</OEUnstableTrader.degreeDatas.unstable_trader.mentalBreakInspirationGainReasonText>
+
+<!--=============== Charmer ====================-->
+<OEUnstableCharmer.degreeDatas.unstable_charmer.label>unstable charmer</OEUnstableCharmer.degreeDatas.unstable_charmer.label>
+<OEUnstableCharmer.degreeDatas.unstable_charmer.description>{PAWN_nameDef}'s erratic energy makes {PAWN_pronoun} strangely persuasive at the strangest times.\nThere is a 50% chance that a mental break will trigger a Inspired Recruitment.</OEUnstableCharmer.degreeDatas.unstable_charmer.description>
+<OEUnstableCharmer.degreeDatas.unstable_charmer.mentalBreakInspirationGainReasonText>With unstable conviction, [PAWN_nameIndef] gains the charm to sway others.</OEUnstableCharmer.degreeDatas.unstable_charmer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Whisperer ====================-->
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.label>unstable whisperer</OEUnstableWhisperer.degreeDatas.unstable_whisperer.label>
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.description>{PAWN_nameDef}'s volatile aura oddly resonates with animals, if only for a moment.\nThere is a 50% chance that a mental break will trigger a Inspired Taming.</OEUnstableWhisperer.degreeDatas.unstable_whisperer.description>
+<OEUnstableWhisperer.degreeDatas.unstable_whisperer.mentalBreakInspirationGainReasonText>Driven by turmoil, [PAWN_nameIndef] momentarily connects deeply with nature's creatures.</OEUnstableWhisperer.degreeDatas.unstable_whisperer.mentalBreakInspirationGainReasonText>
+
+<!--=============== Surgeon ====================-->
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.label>unstable surgeon</OEUnstableSurgeon.degreeDatas.unstable_surgeon.label>
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.description>In a rare balance between madness and clarity, {PAWN_nameDef} performs medical miracles.\nThere is a 50% chance that a mental break will trigger a Inspired Surgery.</OEUnstableSurgeon.degreeDatas.unstable_surgeon.description>
+<OEUnstableSurgeon.degreeDatas.unstable_surgeon.mentalBreakInspirationGainReasonText>Compelled by desperation, [PAWN_nameIndef] achieves surgical perfection.</OEUnstableSurgeon.degreeDatas.unstable_surgeon.mentalBreakInspirationGainReasonText>
+
+<!--=============== Creator ====================-->
+<OEUnstableCreator.degreeDatas.unstable_creator.label>unstable creator</OEUnstableCreator.degreeDatas.unstable_creator.label>
+<OEUnstableCreator.degreeDatas.unstable_creator.description>From the storm in {PAWN_pronoun} mind, bursts of artistic brilliance emerge.\nThere is a 50% chance that a mental break will trigger a Inspired Creativity.</OEUnstableCreator.degreeDatas.unstable_creator.description>
+<OEUnstableCreator.degreeDatas.unstable_creator.mentalBreakInspirationGainReasonText>Inspired by inner chaos, [PAWN_nameIndef] becomes creatively unstoppable.</OEUnstableCreator.degreeDatas.unstable_creator.mentalBreakInspirationGainReasonText>
+
+<!--=============== Skills Mastery ====================-->
+<OESkillsMastery.degreeDatas.golden_soul.label>golden soul</OESkillsMastery.degreeDatas.golden_soul.label>
+<OESkillsMastery.degreeDatas.golden_soul.description>There’s something exceptional in {PAWN_nameDef} - a golden spark of talent in every endeavor.</OESkillsMastery.degreeDatas.golden_soul.description>
+
+<OESkillsMastery.degreeDatas.faded_spark.label>faded spark</OESkillsMastery.degreeDatas.faded_spark.label>
+<OESkillsMastery.degreeDatas.faded_spark.description>Once full of promise, {PAWN_nameDef} now walks a dimmer path, struggling to meet expectations.</OESkillsMastery.degreeDatas.faded_spark.description>
+
+<!--=============== Skills Quality ====================-->
+<!--=============== Mining ====================-->
+<OEQualityMining.degreeDatas.vein_whisperer.label>vein whisperer</OEQualityMining.degreeDatas.vein_whisperer.label>
+<OEQualityMining.degreeDatas.vein_whisperer.description>{PAWN_nameDef} extracts riches with uncanny precision, though never in a hurry.</OEQualityMining.degreeDatas.vein_whisperer.description>
+
+<OEQualityMining.degreeDatas.tunnel_dancer.label>tunnel dancer</OEQualityMining.degreeDatas.tunnel_dancer.label>
+<OEQualityMining.degreeDatas.tunnel_dancer.description>{PAWN_nameDef} digs fast and fearlessly, but often leaves value behind.</OEQualityMining.degreeDatas.tunnel_dancer.description>
+
+<!--=============== Cooking ====================-->
+<OEQualityCooking.degreeDatas.careful_chef.label>careful chef</OEQualityCooking.degreeDatas.careful_chef.label>
+<OEQualityCooking.degreeDatas.careful_chef.description>{PAWN_nameDef} values safety and quality in every meal, even if it takes a little longer.</OEQualityCooking.degreeDatas.careful_chef.description>
+
+<OEQualityCooking.degreeDatas.blazing_cook.label>blazing cook</OEQualityCooking.degreeDatas.blazing_cook.label>
+<OEQualityCooking.degreeDatas.blazing_cook.description>Quick in the kitchen, {PAWN_nameDef} favors speed over caution.</OEQualityCooking.degreeDatas.blazing_cook.description>
+
+<!--=============== Plants ====================-->
+<OEQualityPlants.degreeDatas.gentle_harvester.label>gentle harvester</OEQualityPlants.degreeDatas.gentle_harvester.label>
+<OEQualityPlants.degreeDatas.gentle_harvester.description>{PAWN_nameDef} nurtures every crop with care, but tends the fields at a measured pace.</OEQualityPlants.degreeDatas.gentle_harvester.description>
+
+<OEQualityPlants.degreeDatas.swift_planter.label>swift planter</OEQualityPlants.degreeDatas.swift_planter.label>
+<OEQualityPlants.degreeDatas.swift_planter.description>{PAWN_nameDef} works the land with swift hands, though some harvests suffer.</OEQualityPlants.degreeDatas.swift_planter.description>
+
+<!--=============== Animals ====================-->
+<OEQualityAnimals.degreeDatas.careful_handler.label>careful handler</OEQualityAnimals.degreeDatas.careful_handler.label>
+<OEQualityAnimals.degreeDatas.careful_handler.description>{PAWN_nameDef} takes time to care for animals properly, often gathering more from each creature.</OEQualityAnimals.degreeDatas.careful_handler.description>
+
+<OEQualityAnimals.degreeDatas.efficient_handler.label>efficient handler</OEQualityAnimals.degreeDatas.efficient_handler.label>
+<OEQualityAnimals.degreeDatas.efficient_handler.description>{PAWN_nameDef} works quickly when gathering from animals, but may leave some resources behind.</OEQualityAnimals.degreeDatas.efficient_handler.description>
+
+<!--=============== Fishing - VFE ====================-->
+<OEFishermanVCEF.degreeDatas.deep_catcher.label>deep catcher</OEFishermanVCEF.degreeDatas.deep_catcher.label>
+<OEFishermanVCEF.degreeDatas.deep_catcher.description>{PAWN_nameDef} fishes with care and focus, often reeling in more with every cast.</OEFishermanVCEF.degreeDatas.deep_catcher.description>
+
+<OEFishermanVCEF.degreeDatas.quick_hook.label>quick hook</OEFishermanVCEF.degreeDatas.quick_hook.label>
+<OEFishermanVCEF.degreeDatas.quick_hook.description>{PAWN_nameDef} casts fast and often, though some fish may slip the hook.</OEFishermanVCEF.degreeDatas.quick_hook.description>
+
+<!--=============== Royalty ====================-->
+<!--=============== Psy Blood ====================-->
+<OEPsyBlood.degreeDatas.noble_blood.label>noble blood</OEPsyBlood.degreeDatas.noble_blood.label>
+<OEPsyBlood.degreeDatas.noble_blood.description>{PAWN_nameDef} heir to an ancient and noble family. The presence of {PAWN_pronoun} gives an innate talent for psy abilities.</OEPsyBlood.degreeDatas.noble_blood.description>
+
+<!--=============== Monk ====================-->
+<OEPsyMonk.degreeDatas.monk.label>monk</OEPsyMonk.degreeDatas.monk.label>
+<OEPsyMonk.degreeDatas.monk.description>{PAWN_nameDef} finds unusual clarity in stillness, drawing power from every moment of reflection.</OEPsyMonk.degreeDatas.monk.description>
+
+<!--=============== Psy Warrior ====================-->
+<OEPsyWarrior.degreeDatas.psywarrior.label>psy-warrior</OEPsyWarrior.degreeDatas.psywarrior.label>
+<OEPsyWarrior.degreeDatas.psywarrior.description>Battle comes naturally to {PAWN_nameDef}, whose strikes carry both physical strength and psychic force.</OEPsyWarrior.degreeDatas.psywarrior.description>
+
+<!--=============== Psy Marksman ====================-->
+<OEPsyMarksman.degreeDatas.psymarksman.label>psy-marksman</OEPsyMarksman.degreeDatas.psymarksman.label>
+<OEPsyMarksman.degreeDatas.psymarksman.description>{PAWN_nameDef}'s aim is guided by both steady hands and a sharpened psychic sense.</OEPsyMarksman.degreeDatas.psymarksman.description>
+
+<!--=============== Ideology ====================-->
+<!--=============== Ideology Spread ====================-->
+<OEIdeoSpread.degreeDatas.ardent_preacher.label>ardent preacher</OEIdeoSpread.degreeDatas.ardent_preacher.label>
+<OEIdeoSpread.degreeDatas.ardent_preacher.description>{PAWN_nameDef} spreads beliefs with burning zeal—but sometimes burns too hot, even for {PAWN_pronoun}self.</OEIdeoSpread.degreeDatas.ardent_preacher.description>
+
+<OEIdeoSpread.degreeDatas.quiet_soul.label>quiet soul</OEIdeoSpread.degreeDatas.quiet_soul.label>
+<OEIdeoSpread.degreeDatas.quiet_soul.description>Calm and steady, {PAWN_nameDef} rarely stirs conflict—but struggles to inspire deep conviction in others.</OEIdeoSpread.degreeDatas.quiet_soul.description>
+
+<!--=============== Ideology Power ====================-->
+<OEIdeoPower.degreeDatas.lawbringer.label>lawbringer</OEIdeoPower.degreeDatas.lawbringer.label>
+<OEIdeoPower.degreeDatas.lawbringer.description>With a gaze like a loaded rifle, {PAWN_nameDef} brings order to chaos—but the burden of justice weighs heavy.</OEIdeoPower.degreeDatas.lawbringer.description>
+
+<OEIdeoPower.degreeDatas.softspoken_deputy.label>soft-spoken deputy</OEIdeoPower.degreeDatas.softspoken_deputy.label>
+<OEIdeoPower.degreeDatas.softspoken_deputy.description>{PAWN_nameDef} keeps the peace with a light touch, avoiding conflict—but lacks the grit to lay down the law.</OEIdeoPower.degreeDatas.softspoken_deputy.description>
+
+<!--=============== Ideology Hacking ====================-->
+<OEIdeoHacking.degreeDatas.netrunner.label>netrunner</OEIdeoHacking.degreeDatas.netrunner.label>
+<OEIdeoHacking.degreeDatas.netrunner.description>{PAWN_nameDef} flows through firewalls and protocols like water—faster than most can blink.</OEIdeoHacking.degreeDatas.netrunner.description>
+
+<OEIdeoHacking.degreeDatas.cyber_tinker.label>cyber tinker</OEIdeoHacking.degreeDatas.cyber_tinker.label>
+<OEIdeoHacking.degreeDatas.cyber_tinker.description>Curious and clever, {PAWN_nameDef} can pull systems apart and put them back better than before—most of the time.</OEIdeoHacking.degreeDatas.cyber_tinker.description>
+
+<OEIdeoHacking.degreeDatas.script_kiddie.label>script kiddie</OEIdeoHacking.degreeDatas.script_kiddie.label>
+<OEIdeoHacking.degreeDatas.script_kiddie.description>{PAWN_nameDef} knows just enough to poke at systems—but lacks the chops to crack the real code.</OEIdeoHacking.degreeDatas.script_kiddie.description>
+
+<OEIdeoHacking.degreeDatas.terminal_hazard.label>terminal hazard</OEIdeoHacking.degreeDatas.terminal_hazard.label>
+<OEIdeoHacking.degreeDatas.terminal_hazard.description>When {PAWN_nameDef} touches a console, it’s only a matter of time before something breaks—badly.</OEIdeoHacking.degreeDatas.terminal_hazard.description>
+
+<!--=============== Biotech ====================-->
+<!--=============== Mech Love ====================-->
+<OEMechLove.degreeDatas.mech_fan.label>mech fan</OEMechLove.degreeDatas.mech_fan.label>
+<OEMechLove.degreeDatas.mech_fan.description>{PAWN_nameDef} is a big fan of mechanoids. As a {PAWN_pronoun} can control a larger number of mechanoids.</OEMechLove.degreeDatas.mech_fan.description>
+
+<!--=============== Mech Instinct ====================-->
+<OEMechInstinct.degreeDatas.mechtech_instinct.label>mechtech instinct</OEMechInstinct.degreeDatas.mechtech_instinct.label>
+<OEMechInstinct.degreeDatas.mechtech_instinct.description>{PAWN_nameDef} works with mechanoids as if born to it, quickly building, tuning, and restoring every mech.</OEMechInstinct.degreeDatas.mechtech_instinct.description>
+
+<!--=============== Anomaly ====================-->
+<!--=============== Ritualist ====================-->
+<OERitualist.degreeDatas.ritual_master.label>ritual master</OERitualist.degreeDatas.ritual_master.label>
+<OERitualist.degreeDatas.ritual_master.description>Rituals energize {PAWN_nameDef}, who executes them with precision and passion.</OERitualist.degreeDatas.ritual_master.description>
+
+<OERitualist.degreeDatas.ceremonial_adept.label>ceremonial adept</OERitualist.degreeDatas.ceremonial_adept.label>
+<OERitualist.degreeDatas.ceremonial_adept.description>{PAWN_nameDef} performs rituals efficiently and without hesitation.</OERitualist.degreeDatas.ceremonial_adept.description>
+
+<OERitualist.degreeDatas.unsteady_speaker.label>unsteady speaker</OERitualist.degreeDatas.unsteady_speaker.label>
+<OERitualist.degreeDatas.unsteady_speaker.description>Rituals don’t come naturally to {PAWN_nameDef}, who often falters in rhythm.</OERitualist.degreeDatas.unsteady_speaker.description>
+
+<OERitualist.degreeDatas.reluctant_vessel.label>reluctant vessel</OERitualist.degreeDatas.reluctant_vessel.label>
+<OERitualist.degreeDatas.reluctant_vessel.description>{PAWN_nameDef} resents the sacred rites and performs them poorly.</OERitualist.degreeDatas.reluctant_vessel.description>
+
+<!--=============== Odyssey ====================-->
+<!--=============== Fishing - Odyssey ====================-->
+<OEFisherman.degreeDatas.deep_catcher.label>deep catcher</OEFisherman.degreeDatas.deep_catcher.label>
+<OEFisherman.degreeDatas.deep_catcher.description>{PAWN_nameDef} fishes with care and focus, often reeling in more with every cast.</OEFisherman.degreeDatas.deep_catcher.description>
+
+<OEFisherman.degreeDatas.quick_hook.label>quick hook</OEFisherman.degreeDatas.quick_hook.label>
+<OEFisherman.degreeDatas.quick_hook.description>{PAWN_nameDef} casts fast and often, though some fish may slip the hook.</OEFisherman.degreeDatas.quick_hook.description>
+
+<!--=============== Piloting Ability ====================-->
+<OEPilotingGood.degreeDatas.ace_pilot.label>ace pilot</OEPilotingGood.degreeDatas.ace_pilot.label>
+<OEPilotingGood.degreeDatas.ace_pilot.description>Born to fly, {PAWN_nameDef} turns even the most stubborn ship into a dancing starbird.</OEPilotingGood.degreeDatas.ace_pilot.description>
+
+<OEPilotingBad.degreeDatas.clumsy_flier.label>clumsy flier</OEPilotingBad.degreeDatas.clumsy_flier.label>
+<OEPilotingBad.degreeDatas.clumsy_flier.description>Every time {PAWN_nameDef} touches the controls, someone checks the escape pods-just in case.</OEPilotingBad.degreeDatas.clumsy_flier.description>
+
+</LanguageData>

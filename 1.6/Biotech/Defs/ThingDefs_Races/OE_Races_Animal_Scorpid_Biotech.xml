@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Tox Scorpid ====================-->
+  <ThingDef ParentName="OEBaseScorpid">
+    <defName>OE_Scorpid_Tox</defName>
+    <label>waste scorpid</label>
+    <description>One of the oldest creatures of Obsidia. Scorpid is a huge insectoid with a durable chitinous shell, powerful claws and a poisonous sting.\n\nThis specimen adapted to life at pollution areas.</description>
+	<statBases>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+	  <ToxicResistance>1</ToxicResistance>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseScorpid">
+    <defName>OE_Scorpid_Tox</defName>
+    <label>waste scorpid</label>
+    <labelPlural>waste scorpids</labelPlural>
+    <race>OE_Scorpid_Tox</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Tox</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Tox</texPath>
+          <drawSize>0.8</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>0.8</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Tox</texPath>
+          <drawSize>1.45</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Tox</texPath>
+          <drawSize>1.45</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>1.45</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>1.45</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/ScorpidMale_Tox</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/ScorpidFemale_Tox</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Scorpid/Dessicated_Scorpid_east</texPath>
+          <drawSize>2.25</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

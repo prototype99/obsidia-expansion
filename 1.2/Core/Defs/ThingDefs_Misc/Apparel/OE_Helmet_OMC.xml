@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC Helmet ====================-->
+  <ThingDef Name="OMCHelmetBase" ParentName="OEHelmetBase" Abstract="True">
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+	  <Mass>2</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCHelmetBase">
+	<defName>OMC_Helmet</defName>
+    <label>OMC Soldier Helmet</label>
+    <description>Medium power armor Helmet, perfectly protects the owner. Designed for use by regular OMC soldiers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMC/OMCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OMCSoldier</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>1075</MarketValue>
+	  <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>65</OE_Obsidian>
+	  <OE_Mythril>20</OE_Mythril>
+	  <OE_Mooncloth>20</OE_Mooncloth>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMC/OMCHelmet</wornGraphicPath>
+	  <tags>
+		<li>OMCSoldier</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OMCArmor</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OMCHelmetMod" ParentName="OMCHelmetBase">
+	<defName>OMC_Helmet_M</defName>
+    <label>OMC Officer Helmet</label>
+    <description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nThe hardened version provides more protection to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMC/OMCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OMCOfficer</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>1275</MarketValue>
+	  <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.60</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OMC_Helmet>1</OMC_Helmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMC/OMCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OMCOfficer</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OMCHelmetMod">
+	<defName>OMC_Helmet_M_Spacer</defName>
+    <label>OMC Officer Helmet(Space Griffin)</label>
+    <description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMC/Spacer/OMCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1525</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <OMC_Helmet_M>1</OMC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMC/Spacer/OMCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OMCHelmetMod">
+	<defName>OMC_Helmet_M_Melee</defName>
+    <label>OMC Officer Helmet(Gladiator)</label>
+    <description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nModified visor with analyzing computer that helps the user close combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMC/Melee/OMCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1525</MarketValue>
+    </statBases>	
+    <equippedStatOffsets>
+      <MeleeHitChance>4</MeleeHitChance>
+      <MeleeDodgeChance>4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OMC_Helmet_M>1</OMC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMC/Melee/OMCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OMCOfficer_Melee</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OMCHelmetMod">
+	<defName>OMC_Helmet_M_Ranged</defName>
+    <label>OMC Officer Helmet(Ranger)</label>
+    <description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nModified visor with targeting computer that helps the user aim.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMC/Ranged/OMCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1525</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.20</AimingDelayFactor>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OMC_Helmet_M>1</OMC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMC/Ranged/OMCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OMCOfficer_Ranged</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+
+</Defs>

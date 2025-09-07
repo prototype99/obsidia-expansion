@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Obsidia Gravship Parts ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="GravEngine"]/building/relatedBuildCommands</xpath>
+    <value>
+      <li>OE_GravshipHull</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <value>
+      <li>OE_GravFieldExtender</li>
+	  <li>OE_PilotConsole</li>
+	  <li>OE_RepulsorliftEngine_Small</li>
+	  <li>OE_RepulsorliftEngine_Large</li>
+	  <li>OE_FuelOptimizer</li>
+	  <li>OE_GravshipShieldTower</li>
+    </value>
+</Operation>
+
+</Patch>

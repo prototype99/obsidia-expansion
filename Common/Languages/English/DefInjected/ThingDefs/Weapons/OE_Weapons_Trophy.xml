@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC - Chainsword ====================-->
+<OMC_Trophy_Chainsword.label>Empress's Blessing</OMC_Trophy_Chainsword.label>
+<OMC_Trophy_Chainsword.description>The good old chainsword is designed to destroy the enemies of Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</OMC_Trophy_Chainsword.description>
+
+<OMC_Trophy_Chainsword.tools.handle.label>handle</OMC_Trophy_Chainsword.tools.handle.label>
+<OMC_Trophy_Chainsword.tools.chain.label>chain</OMC_Trophy_Chainsword.tools.chain.label>
+
+<OMC_Trophy_Chainsword_P.label>Persona Empress's Blessing</OMC_Trophy_Chainsword_P.label>
+<OMC_Trophy_Chainsword_P.description>The good old persona chainsword is designed to destroy the enemies of Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</OMC_Trophy_Chainsword_P.description>
+
+<OMC_Trophy_Chainsword_P.tools.handle.label>handle</OMC_Trophy_Chainsword_P.tools.handle.label>
+<OMC_Trophy_Chainsword_P.tools.chain.label>chain</OMC_Trophy_Chainsword_P.tools.chain.label>
+
+<!--=============== OMC - Pistol ====================-->
+<Bullet_OMC_Trophy_P.label>Prototype sX-01a bullet</Bullet_OMC_Trophy_P.label>
+
+<OMC_Trophy_Pistol.label>Prototype sX-01a</OMC_Trophy_Pistol.label>
+<OMC_Trophy_Pistol.verbs.Verb_Shoot.label>Prototype sX-01a</OMC_Trophy_Pistol.verbs.Verb_Shoot.label>
+<OMC_Trophy_Pistol.description>Prototype of a new pistol that uses an AI module to improve accuracy.\n\nThis is a rare trophy weapon.\n\nFeature: built-in accuracy stabilization module.</OMC_Trophy_Pistol.description>
+
+<OMC_Trophy_Pistol.tools.grip.label>grip</OMC_Trophy_Pistol.tools.grip.label>
+<OMC_Trophy_Pistol.tools.barrel.label>barrel</OMC_Trophy_Pistol.tools.barrel.label>
+
+<OMC_Trophy_Pistol_P.label>Paragon Prototype sX-01a</OMC_Trophy_Pistol_P.label>
+<OMC_Trophy_Pistol_P.verbs.Verb_Shoot.label>Paragon Prototype sX-01a</OMC_Trophy_Pistol_P.verbs.Verb_Shoot.label>
+<OMC_Trophy_Pistol_P.description>Prototype of a new paragon pistol that uses an AI module to improve accuracy.\n\nThis is a rare trophy weapon.\n\nFeature: built-in accuracy stabilization module.</OMC_Trophy_Pistol_P.description>
+
+<OMC_Trophy_Pistol_P.tools.grip.label>grip</OMC_Trophy_Pistol_P.tools.grip.label>
+<OMC_Trophy_Pistol_P.tools.barrel.label>barrel</OMC_Trophy_Pistol_P.tools.barrel.label>
+
+<OMC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Prototype sX-01a</OMC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OTC - Elemental Sword ====================-->
+<!--=============== Acid ====================-->
+<OTC_Trophy_Sword_Acid.label>Acid Rift</OTC_Trophy_Sword_Acid.label>
+<OTC_Trophy_Sword_Acid.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Acid charges.\n\nFeature: a built-in module that improves combat performance.</OTC_Trophy_Sword_Acid.description>
+
+<OTC_Trophy_Sword_Acid.tools.handle.label>handle</OTC_Trophy_Sword_Acid.tools.handle.label>
+<OTC_Trophy_Sword_Acid.tools.point.label>point</OTC_Trophy_Sword_Acid.tools.point.label>
+
+<OTC_Trophy_Sword_P_Acid.label>Persona Acid Rift</OTC_Trophy_Sword_P_Acid.label>
+<OTC_Trophy_Sword_P_Acid.description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with Acid charges.\n\nFeature: a built-in module that improves combat performance.</OTC_Trophy_Sword_P_Acid.description>
+
+<OTC_Trophy_Sword_P_Acid.tools.handle.label>handle</OTC_Trophy_Sword_P_Acid.tools.handle.label>
+<OTC_Trophy_Sword_P_Acid.tools.point.label>point</OTC_Trophy_Sword_P_Acid.tools.point.label>
+<!--=============== Cryo ====================-->
+<OTC_Trophy_Sword_Cryo.label>Cryo Rift</OTC_Trophy_Sword_Cryo.label>
+<OTC_Trophy_Sword_Cryo.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Cryo charges.\n\nFeature: a built-in module that improves combat performance.</OTC_Trophy_Sword_Cryo.description>
+
+<OTC_Trophy_Sword_Cryo.tools.handle.label>handle</OTC_Trophy_Sword_Cryo.tools.handle.label>
+<OTC_Trophy_Sword_Cryo.tools.point.label>point</OTC_Trophy_Sword_Cryo.tools.point.label>
+
+<OTC_Trophy_Sword_P_Cryo.label>Persona Cryo Rift</OTC_Trophy_Sword_P_Cryo.label>
+<OTC_Trophy_Sword_P_Cryo.description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with Cryo charges.\n\nFeature: a built-in module that improves combat performance.</OTC_Trophy_Sword_P_Cryo.description>
+
+<OTC_Trophy_Sword_P_Cryo.tools.handle.label>handle</OTC_Trophy_Sword_P_Cryo.tools.handle.label>
+<OTC_Trophy_Sword_P_Cryo.tools.point.label>point</OTC_Trophy_Sword_P_Cryo.tools.point.label>
+<!--=============== Fire ====================-->
+<OTC_Trophy_Sword_Fire.label>Fire Rift</OTC_Trophy_Sword_Fire.label>
+<OTC_Trophy_Sword_Fire.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Fire charges.\n\nFeature: a built-in module that improves combat performance.</OTC_Trophy_Sword_Fire.description>
+
+<OTC_Trophy_Sword_Fire.tools.handle.label>handle</OTC_Trophy_Sword_Fire.tools.handle.label>
+<OTC_Trophy_Sword_Fire.tools.point.label>point</OTC_Trophy_Sword_Fire.tools.point.label>
+
+<OTC_Trophy_Sword_P_Fire.label>Persona Fire Rift</OTC_Trophy_Sword_P_Fire.label>
+<OTC_Trophy_Sword_P_Fire.description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with Fire charges.\n\nFeature: a built-in module that improves combat performance.</OTC_Trophy_Sword_P_Fire.description>
+
+<OTC_Trophy_Sword_P_Fire.tools.handle.label>handle</OTC_Trophy_Sword_P_Fire.tools.handle.label>
+<OTC_Trophy_Sword_P_Fire.tools.point.label>point</OTC_Trophy_Sword_P_Fire.tools.point.label>
+<!--=============== EMP ====================-->
+<OTC_Trophy_Sword_EMP.label>EMP Rift</OTC_Trophy_Sword_EMP.label>
+<OTC_Trophy_Sword_EMP.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with EMP charges.\n\nFeature: a built-in module that improves combat performance.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OTC_Trophy_Sword_EMP.description>
+
+<OTC_Trophy_Sword_EMP.tools.handle.label>handle</OTC_Trophy_Sword_EMP.tools.handle.label>
+<OTC_Trophy_Sword_EMP.tools.point.label>point</OTC_Trophy_Sword_EMP.tools.point.label>
+
+<OTC_Trophy_Sword_P_EMP.label>Persona EMP Rift</OTC_Trophy_Sword_P_EMP.label>
+<OTC_Trophy_Sword_P_EMP.description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with EMP charges.\n\nFeature: a built-in module that improves combat performance.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OTC_Trophy_Sword_P_EMP.description>
+
+<OTC_Trophy_Sword_P_EMP.tools.handle.label>handle</OTC_Trophy_Sword_P_EMP.tools.handle.label>
+<OTC_Trophy_Sword_P_EMP.tools.point.label>point</OTC_Trophy_Sword_P_EMP.tools.point.label>
+
+<!--=============== OTC - Cards ====================-->
+<Bullet_OTC_Trophy_C.label>Randy's card</Bullet_OTC_Trophy_C.label>
+
+<OTC_Trophy_Cards.label>Randy's Deck</OTC_Trophy_Cards.label>
+<OTC_Trophy_Cards.verbs.Verb_Shoot.label>Randy's Deck</OTC_Trophy_Cards.verbs.Verb_Shoot.label>
+<OTC_Trophy_Cards.description>Deck of combat throwing cards designed by a certain engineer, Randy.\n\nThis is a rare trophy weapon.\n\nFeature: able to deal a random additional type of damage.</OTC_Trophy_Cards.description>
+
+<OTC_Trophy_Cards.tools.pouch.label>pouch</OTC_Trophy_Cards.tools.pouch.label>
+<OTC_Trophy_Cards.tools.card.label>card</OTC_Trophy_Cards.tools.card.label>
+
+<OTC_Trophy_Cards_P.label>Paragon Randy's Deck</OTC_Trophy_Cards_P.label>
+<OTC_Trophy_Cards_P.verbs.Verb_Shoot.label>Paragon Randy's Deck</OTC_Trophy_Cards_P.verbs.Verb_Shoot.label>
+<OTC_Trophy_Cards_P.description>Paragon deck of combat throwing cards designed by a certain engineer, Randy.\n\nThis is a rare trophy weapon.\n\nFeature: able to deal a random additional type of damage.</OTC_Trophy_Cards_P.description>
+
+<OTC_Trophy_Cards_P.tools.pouch.label>pouch</OTC_Trophy_Cards_P.tools.pouch.label>
+<OTC_Trophy_Cards_P.tools.card.label>card</OTC_Trophy_Cards_P.tools.card.label>
+
+<OTC_Trophy_Cards_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Randy's Deck</OTC_Trophy_Cards_P.comps.CompUniqueWeapon.namerLabels.0>
+<OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OTC_Trophy_Cards_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OCC - Drillspear ====================-->
+<OCC_Trophy_Drillspear.label>Balor</OCC_Trophy_Drillspear.label>
+<OCC_Trophy_Drillspear.description>Spear-drill, a replica of the personal weapon of the great siegemaster Balor.\n\nThis is a rare trophy weapon.\n\nFeature: designed to destroy structures.</OCC_Trophy_Drillspear.description>
+
+<OCC_Trophy_Drillspear.tools.handle.label>handle</OCC_Trophy_Drillspear.tools.handle.label>
+<OCC_Trophy_Drillspear.tools.drill.label>drill</OCC_Trophy_Drillspear.tools.drill.label>
+
+<OCC_Trophy_Drillspear_P.label>Persona Balor</OCC_Trophy_Drillspear_P.label>
+<OCC_Trophy_Drillspear_P.description>Persona spear-drill, a replica of the personal weapon of the great siegemaster Balor.\n\nThis is a rare trophy weapon.\n\nFeature: designed to destroy structures.</OCC_Trophy_Drillspear_P.description>
+
+<OCC_Trophy_Drillspear_P.tools.handle.label>handle</OCC_Trophy_Drillspear_P.tools.handle.label>
+<OCC_Trophy_Drillspear_P.tools.drill.label>drill</OCC_Trophy_Drillspear_P.tools.drill.label>
+
+<!--=============== OCC - Railgun ====================-->
+<Bullet_OCC_Trophy_RG.label>Cronus charge</Bullet_OCC_Trophy_RG.label>
+
+<OCC_Trophy_Railgun.label>Cronus</OCC_Trophy_Railgun.label>
+<OCC_Trophy_Railgun.verbs.Verb_Shoot.label>Cronus</OCC_Trophy_Railgun.verbs.Verb_Shoot.label>
+<OCC_Trophy_Railgun.description>Sample weapon of new experimental railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.</OCC_Trophy_Railgun.description>
+
+<OCC_Trophy_Railgun.tools.stock.label>stock</OCC_Trophy_Railgun.tools.stock.label>
+<OCC_Trophy_Railgun.tools.barrel.label>barrel</OCC_Trophy_Railgun.tools.barrel.label>
+
+<OCC_Trophy_Railgun_P.label>Paragon Cronus</OCC_Trophy_Railgun_P.label>
+<OCC_Trophy_Railgun_P.verbs.Verb_Shoot.label>Paragon Cronus</OCC_Trophy_Railgun_P.verbs.Verb_Shoot.label>
+<OCC_Trophy_Railgun_P.description>Sample weapon of new experimental paragon railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.</OCC_Trophy_Railgun_P.description>
+
+<OCC_Trophy_Railgun_P.tools.stock.label>stock</OCC_Trophy_Railgun_P.tools.stock.label>
+<OCC_Trophy_Railgun_P.tools.barrel.label>barrel</OCC_Trophy_Railgun_P.tools.barrel.label>
+
+<OCC_Trophy_Railgun_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Cronus</OCC_Trophy_Railgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OCC_Trophy_Railgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - Scepter ====================-->
+<OEC_Trophy_Scepter.label>Ancient Scepter</OEC_Trophy_Scepter.label>
+<OEC_Trophy_Scepter.description>An ancient scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.</OEC_Trophy_Scepter.description>
+
+<OEC_Trophy_Scepter.tools.ornament.label>ornament</OEC_Trophy_Scepter.tools.ornament.label>
+
+<OEC_Trophy_Scepter_P.label>Persona Ancient Scepter</OEC_Trophy_Scepter_P.label>
+<OEC_Trophy_Scepter_P.description>An ancient persona scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.</OEC_Trophy_Scepter_P.description>
+
+<OEC_Trophy_Scepter_P.tools.ornament.label>ornament</OEC_Trophy_Scepter_P.tools.ornament.label>
+
+<!--=============== OEC - Pistol ====================-->
+<Bullet_OEC_Trophy_P.label>Divinity bullet</Bullet_OEC_Trophy_P.label>
+
+<OEC_Trophy_Pistol.label>Divinity</OEC_Trophy_Pistol.label>
+<OEC_Trophy_Pistol.verbs.Verb_Shoot.label>Divinity</OEC_Trophy_Pistol.verbs.Verb_Shoot.label>
+<OEC_Trophy_Pistol.description>This antique pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.</OEC_Trophy_Pistol.description>
+
+<OEC_Trophy_Pistol.tools.blade.label>blade</OEC_Trophy_Pistol.tools.blade.label>
+
+<OEC_Trophy_Pistol_P.label>Paragon Divinity</OEC_Trophy_Pistol_P.label>
+<OEC_Trophy_Pistol_P.verbs.Verb_Shoot.label>Paragon Divinity</OEC_Trophy_Pistol_P.verbs.Verb_Shoot.label>
+<OEC_Trophy_Pistol_P.description>This antique paragon pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.</OEC_Trophy_Pistol_P.description>
+
+<OEC_Trophy_Pistol_P.tools.blade.label>blade</OEC_Trophy_Pistol_P.tools.blade.label>
+
+<OEC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Divinity</OEC_Trophy_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OEC_Trophy_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Sickle ====================-->
+<!--=============== Normal ====================-->
+<ODC_Trophy_Sickle_A.label>Temptation</ODC_Trophy_Sickle_A.label>
+<ODC_Trophy_Sickle_A.description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</ODC_Trophy_Sickle_A.description>
+
+<ODC_Trophy_Sickle_A.tools.handle.label>handle</ODC_Trophy_Sickle_A.tools.handle.label>
+<ODC_Trophy_Sickle_A.tools.blade.label>blade</ODC_Trophy_Sickle_A.tools.blade.label>
+
+<ODC_Trophy_Sickle_A_P.label>Persona Temptation</ODC_Trophy_Sickle_A_P.label>
+<ODC_Trophy_Sickle_A_P.description>An archaic persona sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</ODC_Trophy_Sickle_A_P.description>
+
+<ODC_Trophy_Sickle_A_P.tools.handle.label>handle</ODC_Trophy_Sickle_A_P.tools.handle.label>
+<ODC_Trophy_Sickle_A_P.tools.blade.label>blade</ODC_Trophy_Sickle_A_P.tools.blade.label>
+<!--=============== Emergent ====================-->
+<ODC_Trophy_Sickle_B.label>Temptation - Emergent</ODC_Trophy_Sickle_B.label>
+<ODC_Trophy_Sickle_B.description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</ODC_Trophy_Sickle_B.description>
+
+<ODC_Trophy_Sickle_B.tools.handle.label>handle</ODC_Trophy_Sickle_B.tools.handle.label>
+<ODC_Trophy_Sickle_B.tools.blade.label>blade</ODC_Trophy_Sickle_B.tools.blade.label>
+
+<ODC_Trophy_Sickle_B_P.label>Persona Temptation - Emergent</ODC_Trophy_Sickle_B_P.label>
+<ODC_Trophy_Sickle_B_P.description>An archaic persona sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</ODC_Trophy_Sickle_B_P.description>
+
+<ODC_Trophy_Sickle_B_P.tools.handle.label>handle</ODC_Trophy_Sickle_B_P.tools.handle.label>
+<ODC_Trophy_Sickle_B_P.tools.blade.label>blade</ODC_Trophy_Sickle_B_P.tools.blade.label>
+<!--=============== Apex ====================-->
+<ODC_Trophy_Sickle_C.label>Temptation - Apex</ODC_Trophy_Sickle_C.label>
+<ODC_Trophy_Sickle_C.description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</ODC_Trophy_Sickle_C.description>
+
+<ODC_Trophy_Sickle_C.tools.handle.label>handle</ODC_Trophy_Sickle_C.tools.handle.label>
+<ODC_Trophy_Sickle_C.tools.blade.label>blade</ODC_Trophy_Sickle_C.tools.blade.label>
+
+<ODC_Trophy_Sickle_C_P.label>Persona Temptation - Apex</ODC_Trophy_Sickle_C_P.label>
+<ODC_Trophy_Sickle_C_P.description>An archaic persona sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</ODC_Trophy_Sickle_C_P.description>
+
+<ODC_Trophy_Sickle_C_P.tools.handle.label>handle</ODC_Trophy_Sickle_C_P.tools.handle.label>
+<ODC_Trophy_Sickle_C_P.tools.blade.label>blade</ODC_Trophy_Sickle_C_P.tools.blade.label>
+
+<!--=============== ODC - Blade Launcher ====================-->
+<Bullet_ODC_Trophy_BL.label>Harvest saw</Bullet_ODC_Trophy_BL.label>
+<Bullet_ODC_Trophy_BL_C.label>Harvest saw</Bullet_ODC_Trophy_BL_C.label>
+<!--=============== Normal ====================-->
+<ODC_Trophy_BladeLauncher_A.label>Harvest</ODC_Trophy_BladeLauncher_A.label>
+<ODC_Trophy_BladeLauncher_A.verbs.Verb_Shoot.label>Harvest</ODC_Trophy_BladeLauncher_A.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_A.description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</ODC_Trophy_BladeLauncher_A.description>
+
+<ODC_Trophy_BladeLauncher_A.tools.saw.label>saw</ODC_Trophy_BladeLauncher_A.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_A_P.label>Paragon Harvest</ODC_Trophy_BladeLauncher_A_P.label>
+<ODC_Trophy_BladeLauncher_A_P.verbs.Verb_Shoot.label>Paragon Harvest</ODC_Trophy_BladeLauncher_A_P.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_A_P.description>Rare heavy paragon blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</ODC_Trophy_BladeLauncher_A_P.description>
+
+<ODC_Trophy_BladeLauncher_A_P.tools.saw.label>saw</ODC_Trophy_BladeLauncher_A_P.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_A_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Harvest</ODC_Trophy_BladeLauncher_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Trophy_BladeLauncher_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Emergent ====================-->
+<ODC_Trophy_BladeLauncher_B.label>Harvest - Emergent</ODC_Trophy_BladeLauncher_B.label>
+<ODC_Trophy_BladeLauncher_B.verbs.Verb_Shoot.label>Harvest - Emergent</ODC_Trophy_BladeLauncher_B.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_B.description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</ODC_Trophy_BladeLauncher_B.description>
+
+<ODC_Trophy_BladeLauncher_B.tools.saw.label>saw</ODC_Trophy_BladeLauncher_B.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_B_P.label>Paragon Harvest - Emergent</ODC_Trophy_BladeLauncher_B_P.label>
+<ODC_Trophy_BladeLauncher_B_P.verbs.Verb_Shoot.label>Paragon Harvest - Emergent</ODC_Trophy_BladeLauncher_B_P.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_B_P.description>Rare heavy paragon blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</ODC_Trophy_BladeLauncher_B_P.description>
+
+<ODC_Trophy_BladeLauncher_B_P.tools.saw.label>saw</ODC_Trophy_BladeLauncher_B_P.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_B_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Harvest - Emergent</ODC_Trophy_BladeLauncher_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Trophy_BladeLauncher_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Apex ====================-->
+<ODC_Trophy_BladeLauncher_C.label>Harvest - Apex</ODC_Trophy_BladeLauncher_C.label>
+<ODC_Trophy_BladeLauncher_C.verbs.Verb_Shoot.label>Harvest - Apex</ODC_Trophy_BladeLauncher_C.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_C.description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</ODC_Trophy_BladeLauncher_C.description>
+
+<ODC_Trophy_BladeLauncher_C.tools.saw.label>saw</ODC_Trophy_BladeLauncher_C.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_C_P.label>Paragon Harvest - Apex</ODC_Trophy_BladeLauncher_C_P.label>
+<ODC_Trophy_BladeLauncher_C_P.verbs.Verb_Shoot.label>Paragon Harvest - Apex</ODC_Trophy_BladeLauncher_C_P.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_C_P.description>Rare heavy paragon blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</ODC_Trophy_BladeLauncher_C_P.description>
+
+<ODC_Trophy_BladeLauncher_C_P.tools.saw.label>saw</ODC_Trophy_BladeLauncher_C_P.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_C_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Harvest - Apex</ODC_Trophy_BladeLauncher_C_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Trophy_BladeLauncher_C_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OE - Shovel ====================-->
+<OE_Trophy_Shovel.label>Lloyd's Shovel</OE_Trophy_Shovel.label>
+<OE_Trophy_Shovel.description>The favorite shovel used by the greatest Lloyd Frontera, who received his title of The Greatest Estate Developer known throughout the Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves mining skills.</OE_Trophy_Shovel.description>
+
+<OE_Trophy_Shovel.tools.shovel.label>shovel</OE_Trophy_Shovel.tools.shovel.label>
+
+<OE_Trophy_Shovel_P.label>Persona Lloyd's Shovel</OE_Trophy_Shovel_P.label>
+<OE_Trophy_Shovel_P.description>The favorite persona shovel used by the greatest Lloyd Frontera, who received his title of The Greatest Estate Developer known throughout the Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves mining skills.</OE_Trophy_Shovel_P.description>
+
+<OE_Trophy_Shovel_P.tools.shovel.label>shovel</OE_Trophy_Shovel_P.tools.shovel.label>
+
+<!--=============== OE - Broken Sword ====================-->
+<OE_Trophy_BrokenSword.label>Black Prince Sword</OE_Trophy_BrokenSword.label>
+<OE_Trophy_BrokenSword.description>According to legend, an unknown sword fell from the skies and its first owner became Black Prince Lelouch, who started Obsidia's Last War. But before the end of this war, the sword broke at the time of Lelouch’s death, and to this day only a fragment of the sword remains.\n\nThis is a rare trophy weapon.\n\nFeature: improves social impact and able to deal a random additional type of damage.</OE_Trophy_BrokenSword.description>
+
+<OE_Trophy_BrokenSword.tools.handle.label>handle</OE_Trophy_BrokenSword.tools.handle.label>
+<OE_Trophy_BrokenSword.tools.point.label>point</OE_Trophy_BrokenSword.tools.point.label>
+<OE_Trophy_BrokenSword.tools.edge.label>edge</OE_Trophy_BrokenSword.tools.edge.label>
+
+<OE_Trophy_BrokenSword_P.label>Persona Black Prince Sword</OE_Trophy_BrokenSword_P.label>
+<OE_Trophy_BrokenSword_P.description>According to legend, an unknown persona sword fell from the skies and its first owner became Black Prince Lelouch, who started Obsidia's Last War. But before the end of this war, the sword broke at the time of Lelouch’s death, and to this day only a fragment of the sword remains.\n\nThis is a rare trophy weapon.\n\nFeature: improves social impact and able to deal a random additional type of damage.</OE_Trophy_BrokenSword_P.description>
+
+<OE_Trophy_BrokenSword_P.tools.handle.label>handle</OE_Trophy_BrokenSword_P.tools.handle.label>
+<OE_Trophy_BrokenSword_P.tools.point.label>point</OE_Trophy_BrokenSword_P.tools.point.label>
+<OE_Trophy_BrokenSword_P.tools.edge.label>edge</OE_Trophy_BrokenSword_P.tools.edge.label>
+
+<!--=============== OE - Mech Hammer ====================-->
+<OE_Trophy_MechHammer.label>Forgestorm</OE_Trophy_MechHammer.label>
+<OE_Trophy_MechHammer.description>The hammer of the famous ancient blacksmith Luke Ainsworth, which was passed on and improved from generation to generation.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves mechanitor skills.</OE_Trophy_MechHammer.description>
+
+<OE_Trophy_MechHammer.tools.handle.label>handle</OE_Trophy_MechHammer.tools.handle.label>
+<OE_Trophy_MechHammer.tools.head.label>head</OE_Trophy_MechHammer.tools.head.label>
+
+<OE_Trophy_MechHammer_P.label>Persona Forgestorm</OE_Trophy_MechHammer_P.label>
+<OE_Trophy_MechHammer_P.description>Persona hammer of the famous ancient blacksmith Luke Ainsworth, which was passed on and improved from generation to generation.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves mechanitor skills.</OE_Trophy_MechHammer_P.description>
+
+<OE_Trophy_MechHammer_P.tools.handle.label>handle</OE_Trophy_MechHammer_P.tools.handle.label>
+<OE_Trophy_MechHammer_P.tools.head.label>head</OE_Trophy_MechHammer_P.tools.head.label>
+
+<!--=============== OE - Repair Pistol ====================-->
+<Bullet_OE_Trophy_RP.label>Prototype sX-02a energy bullet</Bullet_OE_Trophy_RP.label>
+
+<OE_Trophy_RepairPistol.label>Prototype sX-02a</OE_Trophy_RepairPistol.label>
+<OE_Trophy_RepairPistol.verbs.Verb_Shoot.label>Prototype sX-02a</OE_Trophy_RepairPistol.verbs.Verb_Shoot.label>
+<OE_Trophy_RepairPistol.description>Prototype of a new repair pistol that equipped with a tools synthesizator which make most construction jobs easier.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves construction skills.</OE_Trophy_RepairPistol.description>
+
+<OE_Trophy_RepairPistol.tools.grip.label>grip</OE_Trophy_RepairPistol.tools.grip.label>
+<OE_Trophy_RepairPistol.tools.barrel.label>barrel</OE_Trophy_RepairPistol.tools.barrel.label>
+
+<OE_Trophy_RepairPistol_P.label>Paragon Prototype sX-02a</OE_Trophy_RepairPistol_P.label>
+<OE_Trophy_RepairPistol_P.verbs.Verb_Shoot.label>Paragon Prototype sX-02a</OE_Trophy_RepairPistol_P.verbs.Verb_Shoot.label>
+<OE_Trophy_RepairPistol_P.description>Prototype of a new paragon repair pistol that equipped with a tools synthesizator which make most construction jobs easier.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves construction skills.</OE_Trophy_RepairPistol_P.description>
+
+<OE_Trophy_RepairPistol_P.tools.grip.label>grip</OE_Trophy_RepairPistol_P.tools.grip.label>
+<OE_Trophy_RepairPistol_P.tools.barrel.label>barrel</OE_Trophy_RepairPistol_P.tools.barrel.label>
+
+<OE_Trophy_RepairPistol_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Prototype sX-02a</OE_Trophy_RepairPistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OE_Trophy_RepairPistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OE - Unstable Gun ====================-->
+<Bullet_OE_Trophy_UG.label>Titanstrike energy ball</Bullet_OE_Trophy_UG.label>
+
+<OE_Trophy_UnstableGun.label>Titanstrike</OE_Trophy_UnstableGun.label>
+<OE_Trophy_UnstableGun.verbs.Verb_Shoot.label>Titanstrike</OE_Trophy_UnstableGun.verbs.Verb_Shoot.label>
+<OE_Trophy_UnstableGun.description>This is a prohibited weapon in Obsidia Empire and can only be obtained illegally. Due to a poorly designed energy delivery system, the weapon is quite weak, but there is a 5% chance that the weapon can release a huge amount of energy at once, causing incredible damage.\n\nThis is a rare trophy weapon.\n\nFeature: has a 5% chance of dealing incredible damage.</OE_Trophy_UnstableGun.description>
+
+<OE_Trophy_UnstableGun.tools.grip.label>grip</OE_Trophy_UnstableGun.tools.grip.label>
+<OE_Trophy_UnstableGun.tools.barrel.label>barrel</OE_Trophy_UnstableGun.tools.barrel.label>
+
+<OE_Trophy_UnstableGun_P.label>Paragon Titanstrike</OE_Trophy_UnstableGun_P.label>
+<OE_Trophy_UnstableGun_P.verbs.Verb_Shoot.label>Paragon Titanstrike</OE_Trophy_UnstableGun_P.verbs.Verb_Shoot.label>
+<OE_Trophy_UnstableGun_P.description>This is a prohibited paragon weapon in Obsidia Empire and can only be obtained illegally. Due to a poorly designed energy delivery system, the weapon is quite weak, but there is a 5% chance that the weapon can release a huge amount of energy at once, causing incredible damage.\n\nThis is a rare trophy weapon.\n\nFeature: has a 5% chance of dealing incredible damage.</OE_Trophy_UnstableGun_P.description>
+
+<OE_Trophy_UnstableGun_P.tools.grip.label>grip</OE_Trophy_UnstableGun_P.tools.grip.label>
+<OE_Trophy_UnstableGun_P.tools.barrel.label>barrel</OE_Trophy_UnstableGun_P.tools.barrel.label>
+
+<OE_Trophy_UnstableGun_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Titanstrike</OE_Trophy_UnstableGun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OE_Trophy_UnstableGun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OE - Sample Collector ====================-->
+<Bullet_OE_Trophy_SC.label>Ashisogi Jizō sting</Bullet_OE_Trophy_SC.label>
+
+<OE_Trophy_SampleCollector.label>Ashisogi Jizō</OE_Trophy_SampleCollector.label>
+<OE_Trophy_SampleCollector.verbs.Verb_Shoot.label>Ashisogi Jizō</OE_Trophy_SampleCollector.verbs.Verb_Shoot.label>
+<OE_Trophy_SampleCollector.description>One of the forgotten research objects of Mayuri Kurotsuchi. The darts of this weapon contain an unstable toxin that randomly affects the target. It is not recommended to use in combat, since the effects can randomly debuff or buff the target.\n\nThis is a rare trophy weapon.\n\nFeature: deals unstable toxin damage that applies various random effects.</OE_Trophy_SampleCollector.description>
+
+<OE_Trophy_SampleCollector.tools.grip.label>grip</OE_Trophy_SampleCollector.tools.grip.label>
+<OE_Trophy_SampleCollector.tools.barrel.label>barrel</OE_Trophy_SampleCollector.tools.barrel.label>
+
+<OE_Trophy_SampleCollector_P.label>Paragon Ashisogi Jizō</OE_Trophy_SampleCollector_P.label>
+<OE_Trophy_SampleCollector_P.verbs.Verb_Shoot.label>Paragon Ashisogi Jizō</OE_Trophy_SampleCollector_P.verbs.Verb_Shoot.label>
+<OE_Trophy_SampleCollector_P.description>One of the forgotten research objects of Mayuri Kurotsuchi. The darts of this paragon weapon contain an unstable toxin that randomly affects the target. It is not recommended to use in combat, since the effects can randomly debuff or buff the target.\n\nThis is a rare trophy weapon.\n\nFeature: deals unstable toxin damage that applies various random effects.</OE_Trophy_SampleCollector_P.description>
+
+<OE_Trophy_SampleCollector_P.tools.grip.label>grip</OE_Trophy_SampleCollector_P.tools.grip.label>
+<OE_Trophy_SampleCollector_P.tools.barrel.label>barrel</OE_Trophy_SampleCollector_P.tools.barrel.label>
+
+<OE_Trophy_SampleCollector_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Ashisogi Jizō</OE_Trophy_SampleCollector_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OE_Trophy_SampleCollector_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OES - Legion Spear ====================-->
+<!--=============== Core ====================-->
+<Bullet_OES_LS_A.label>Legion Spear energy bullet</Bullet_OES_LS_A.label>
+
+<OES_LegionSpear_A.label>Legion Spear</OES_LegionSpear_A.label>
+<OES_LegionSpear_A.verbs.Verb_Shoot.label>Legion Spear</OES_LegionSpear_A.verbs.Verb_Shoot.label>
+<OES_LegionSpear_A.description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.</OES_LegionSpear_A.description>
+
+<OES_LegionSpear_A.tools.point.label>point</OES_LegionSpear_A.tools.point.label>
+<!--=============== Level-1 ====================-->
+<Bullet_OES_LS_B.label>Legion Spear Mk.I energy bullet</Bullet_OES_LS_B.label>
+
+<OES_LegionSpear_B.label>Legion Spear Mk.I</OES_LegionSpear_B.label>
+<OES_LegionSpear_B.verbs.Verb_Shoot.label>Legion Spear Mk.I</OES_LegionSpear_B.verbs.Verb_Shoot.label>
+<OES_LegionSpear_B.description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.</OES_LegionSpear_B.description>
+
+<OES_LegionSpear_B.tools.point.label>point</OES_LegionSpear_B.tools.point.label>
+<!--=============== Level-2 ====================-->
+<Bullet_OES_LS_C.label>Legion Spear Mk.II energy bullet</Bullet_OES_LS_C.label>
+
+<OES_LegionSpear_C.label>Legion Spear Mk.II</OES_LegionSpear_C.label>
+<OES_LegionSpear_C.verbs.Verb_Shoot.label>Legion Spear Mk.II</OES_LegionSpear_C.verbs.Verb_Shoot.label>
+<OES_LegionSpear_C.description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.</OES_LegionSpear_C.description>
+
+<OES_LegionSpear_C.tools.point.label>point</OES_LegionSpear_C.tools.point.label>
+<!--=============== Level-3 ====================-->
+<Bullet_OES_LS_D.label>Legion Spear Mk.III energy bullet</Bullet_OES_LS_D.label>
+
+<OES_LegionSpear_D.label>Legion Spear Mk.III</OES_LegionSpear_D.label>
+<OES_LegionSpear_D.verbs.Verb_Shoot.label>Legion Spear Mk.III</OES_LegionSpear_D.verbs.Verb_Shoot.label>
+<OES_LegionSpear_D.description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.\n\nMk.III - weapon accuracy increased.</OES_LegionSpear_D.description>
+
+<OES_LegionSpear_D.tools.point.label>point</OES_LegionSpear_D.tools.point.label>
+<!--=============== Level-4 ====================-->
+<Bullet_OES_LS_E.label>Legion Spear Mk.IV energy bullet</Bullet_OES_LS_E.label>
+
+<OES_LegionSpear_E.label>Legion Spear Mk.IV</OES_LegionSpear_E.label>
+<OES_LegionSpear_E.verbs.Verb_Shoot.label>Legion Spear Mk.IV</OES_LegionSpear_E.verbs.Verb_Shoot.label>
+<OES_LegionSpear_E.description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.\n\nMk.III - weapon accuracy increased.\n\nMk.IV - armor penetration increased.</OES_LegionSpear_E.description>
+
+<OES_LegionSpear_E.tools.point.label>point</OES_LegionSpear_E.tools.point.label>
+<!--=============== Level-5 ====================-->
+<Bullet_OES_LS_F.label>Legion Spear Mk.V energy bullet</Bullet_OES_LS_F.label>
+
+<OES_LegionSpear_F.label>Legion Spear Mk.V</OES_LegionSpear_F.label>
+<OES_LegionSpear_F.verbs.Verb_Shoot.label>Legion Spear Mk.V</OES_LegionSpear_F.verbs.Verb_Shoot.label>
+<OES_LegionSpear_F.description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.\n\nMk.III - weapon accuracy increased.\n\nMk.IV - armor penetration increased.\n\nMk.V - all stats significantly increased.</OES_LegionSpear_F.description>
+
+<OES_LegionSpear_F.tools.point.label>point</OES_LegionSpear_F.tools.point.label>
+
+<!--=============== CAC - Lust ====================-->
+<Wave_CAC_Trophy_W.label>First Arachna's Sin - Lust wave</Wave_CAC_Trophy_W.label>
+
+<CAC_Trophy_Whip.label>First Arachna's Sin - Lust</CAC_Trophy_Whip.label>
+<CAC_Trophy_Whip.verbs.Verb_Shoot.label>First Arachna's Sin - Lust</CAC_Trophy_Whip.verbs.Verb_Shoot.label>
+<CAC_Trophy_Whip.description>Amalgam weapon created on the basis of EGO technology. Whip used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents First Arachna's Sin - Lust. Increases the owner's social and animal training stats at the expense of increased joy reduction.</CAC_Trophy_Whip.description>
+
+<CAC_Trophy_Whip.tools.handle.label>handle</CAC_Trophy_Whip.tools.handle.label>
+
+<!--=============== CAC - Gluttony ====================-->
+<Bullet_CAC_Trophy_MG.label>Second Arachna's Sin - Gluttony bullet</Bullet_CAC_Trophy_MG.label>
+
+<CAC_Trophy_Minigun.label>Second Arachna's Sin - Gluttony</CAC_Trophy_Minigun.label>
+<CAC_Trophy_Minigun.verbs.Verb_Shoot.label>Second Arachna's Sin - Gluttony</CAC_Trophy_Minigun.verbs.Verb_Shoot.label>
+<CAC_Trophy_Minigun.description>Amalgam weapon created on the basis of EGO technology. Minigun used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Second Arachna's Sin - Gluttony. Increases the owner's healing stats at the expense of increased nutrition reduction.</CAC_Trophy_Minigun.description>
+
+<CAC_Trophy_Minigun.tools.fang.label>fang</CAC_Trophy_Minigun.tools.fang.label>
+
+<CAC_Trophy_Minigun.comps.CompUniqueWeapon.namerLabels.0>Second Arachna's Sin - Gluttony</CAC_Trophy_Minigun.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_Trophy_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Greed ====================-->
+<CAC_Trophy_BigScythe.label>Third Arachna's Sin - Greed</CAC_Trophy_BigScythe.label>
+<CAC_Trophy_BigScythe.description>Amalgam weapon created on the basis of EGO technology. Big Scythe used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Third Arachna's Sin - Greed. Increases the owner's gathering stats at the expense of working stats.</CAC_Trophy_BigScythe.description>
+
+<CAC_Trophy_BigScythe.tools.handle.label>handle</CAC_Trophy_BigScythe.tools.handle.label>
+<CAC_Trophy_BigScythe.tools.edge.label>edge</CAC_Trophy_BigScythe.tools.edge.label>
+
+<!--=============== CAC - Sloth ====================-->
+<Bullet_CAC_Trophy_P.label>Fourth Arachna's Sin - Sloth bullet</Bullet_CAC_Trophy_P.label>
+
+<CAC_Trophy_Pistol.label>Fourth Arachna's Sin - Sloth</CAC_Trophy_Pistol.label>
+<CAC_Trophy_Pistol.verbs.Verb_Shoot.label>Fourth Arachna's Sin - Sloth</CAC_Trophy_Pistol.verbs.Verb_Shoot.label>
+<CAC_Trophy_Pistol.description>Amalgam weapon created on the basis of EGO technology. Pistol used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Fourth Arachna's Sin - Sloth. Increases the owner's mechanitor stats at the expense of move speed stat and increased rest reduction.</CAC_Trophy_Pistol.description>
+
+<CAC_Trophy_Pistol.tools.fang.label>fang</CAC_Trophy_Pistol.tools.fang.label>
+
+<CAC_Trophy_Pistol.comps.CompUniqueWeapon.namerLabels.0>Fourth Arachna's Sin - Sloth</CAC_Trophy_Pistol.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_Trophy_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Wrath ====================-->
+<Bullet_CAC_Trophy_S.label>Fifth Arachna's Sin - Wrath blast</Bullet_CAC_Trophy_S.label>
+
+<CAC_Trophy_Shotgun.label>Fifth Arachna's Sin - Wrath</CAC_Trophy_Shotgun.label>
+<CAC_Trophy_Shotgun.verbs.Verb_Shoot.label>Fifth Arachna's Sin - Wrath</CAC_Trophy_Shotgun.verbs.Verb_Shoot.label>
+<CAC_Trophy_Shotgun.description>Amalgam weapon created on the basis of EGO technology. Shotgun used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Fifth Arachna's Sin - Wrath. Increases the owner's chance to deal x2 or x3 damage with a weapon at the expense of mental stability.</CAC_Trophy_Shotgun.description>
+
+<CAC_Trophy_Shotgun.tools.fang.label>fang</CAC_Trophy_Shotgun.tools.fang.label>
+
+<CAC_Trophy_Shotgun.comps.CompUniqueWeapon.namerLabels.0>Fifth Arachna's Sin - Wrath</CAC_Trophy_Shotgun.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_Trophy_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Envy ====================-->
+<CAC_Trophy_Knife.label>Sixth Arachna's Sin - Envy</CAC_Trophy_Knife.label>
+<CAC_Trophy_Knife.description>Amalgam weapon created on the basis of EGO technology. Knife used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Sixth Arachna's Sin - Envy. Increases the owner's working and learning stats at the expense of social stats.</CAC_Trophy_Knife.description>
+
+<CAC_Trophy_Knife.tools.handle.label>handle</CAC_Trophy_Knife.tools.handle.label>
+<CAC_Trophy_Knife.tools.blade.label>blade</CAC_Trophy_Knife.tools.blade.label>
+<CAC_Trophy_Knife.tools.point.label>point</CAC_Trophy_Knife.tools.point.label>
+
+<!--=============== CAC - Pride ====================-->
+<Bullet_CAC_Trophy_SR.label>Seventh Arachna's Sin - Pride bullet</Bullet_CAC_Trophy_SR.label>
+
+<CAC_Trophy_SniperRifle.label>Seventh Arachna's Sin - Pride</CAC_Trophy_SniperRifle.label>
+<CAC_Trophy_SniperRifle.verbs.Verb_Shoot.label>Seventh Arachna's Sin - Pride</CAC_Trophy_SniperRifle.verbs.Verb_Shoot.label>
+<CAC_Trophy_SniperRifle.description>Amalgam weapon created on the basis of EGO technology. Sniper Rifle used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Seventh Arachna's Sin - Pride. Increases the owner's psy stats at the expense of increased pain sensitivity.</CAC_Trophy_SniperRifle.description>
+
+<CAC_Trophy_SniperRifle.tools.fang.label>fang</CAC_Trophy_SniperRifle.tools.fang.label>
+
+<CAC_Trophy_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>Seventh Arachna's Sin - Pride</CAC_Trophy_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_Trophy_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - PowerFist ====================-->
+<!--=============== Core ====================-->
+<ODC_Trophy_PowerFist_A.label>Proto Gauntlet</ODC_Trophy_PowerFist_A.label>
+<ODC_Trophy_PowerFist_A.description>A strange power gauntlet of unknown origin and creator. Marked by Obsidia Drifters. Looks like it could be easily upgraded.</ODC_Trophy_PowerFist_A.description>
+
+<ODC_Trophy_PowerFist_A.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_A.tools.gauntlet.label>
+<!--=============== Level-1 ====================-->
+<ODC_Trophy_PowerFist_B.label>Eternal Gauntlet</ODC_Trophy_PowerFist_B.label>
+<ODC_Trophy_PowerFist_B.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.</ODC_Trophy_PowerFist_B.description>
+
+<ODC_Trophy_PowerFist_B.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_B.tools.gauntlet.label>
+<!--=============== Level-2 ====================-->
+<ODC_Trophy_PowerFist_C.label>Eternal Gauntlet Mk.I</ODC_Trophy_PowerFist_C.label>
+<ODC_Trophy_PowerFist_C.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.</ODC_Trophy_PowerFist_C.description>
+
+<ODC_Trophy_PowerFist_C.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_C.tools.gauntlet.label>
+<!--=============== Level-3 ====================-->
+<ODC_Trophy_PowerFist_D.label>Eternal Gauntlet Mk.II</ODC_Trophy_PowerFist_D.label>
+<ODC_Trophy_PowerFist_D.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.</ODC_Trophy_PowerFist_D.description>
+
+<ODC_Trophy_PowerFist_D.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_D.tools.gauntlet.label>
+<!--=============== Level-4 ====================-->
+<ODC_Trophy_PowerFist_E.label>Eternal Gauntlet Mk.III</ODC_Trophy_PowerFist_E.label>
+<ODC_Trophy_PowerFist_E.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.</ODC_Trophy_PowerFist_E.description>
+
+<ODC_Trophy_PowerFist_E.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_E.tools.gauntlet.label>
+<!--=============== Level-5 ====================-->
+<ODC_Trophy_PowerFist_F.label>Eternal Gauntlet Mk.IV</ODC_Trophy_PowerFist_F.label>
+<ODC_Trophy_PowerFist_F.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.</ODC_Trophy_PowerFist_F.description>
+
+<ODC_Trophy_PowerFist_F.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_F.tools.gauntlet.label>
+<!--=============== Level-6 ====================-->
+<ODC_Trophy_PowerFist_G.label>Eternal Gauntlet Mk.V</ODC_Trophy_PowerFist_G.label>
+<ODC_Trophy_PowerFist_G.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.</ODC_Trophy_PowerFist_G.description>
+
+<ODC_Trophy_PowerFist_G.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_G.tools.gauntlet.label>
+<!--=============== Level-7 ====================-->
+<ODC_Trophy_PowerFist_H.label>Eternal Gauntlet Mk.VI</ODC_Trophy_PowerFist_H.label>
+<ODC_Trophy_PowerFist_H.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.\n\nMk.VI - Vitality Power Stone. Healing factor increased. Able to deal additional Acid damage.</ODC_Trophy_PowerFist_H.description>
+
+<ODC_Trophy_PowerFist_H.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_H.tools.gauntlet.label>
+<!--=============== Level-8 ====================-->
+<ODC_Trophy_PowerFist_I.label>Eternal Gauntlet Mk.VII</ODC_Trophy_PowerFist_I.label>
+<ODC_Trophy_PowerFist_I.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.\n\nMk.VI - Vitality Power Stone. Healing factor increased. Able to deal additional Acid damage.\n\nMk.VII - Wisdom Power Stone. Global learning factor increased. Able to deal additional Cryo damage.</ODC_Trophy_PowerFist_I.description>
+
+<ODC_Trophy_PowerFist_I.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_I.tools.gauntlet.label>
+<!--=============== Level-9 ====================-->
+<ODC_Trophy_PowerFist_J.label>Eternal Gauntlet Mk.VIII</ODC_Trophy_PowerFist_J.label>
+<ODC_Trophy_PowerFist_J.description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.\n\nMk.VI - Vitality Power Stone. Healing factor increased. Able to deal additional Acid damage.\n\nMk.VII - Wisdom Power Stone. Global learning factor increased. Able to deal additional Cryo damage.\n\nMk.VIII - Universe Power Stone. Unleashed hidden power. Depends on the available forces in the universe.</ODC_Trophy_PowerFist_J.description>
+
+<ODC_Trophy_PowerFist_J.tools.gauntlet.label>gauntlet</ODC_Trophy_PowerFist_J.tools.gauntlet.label>
+
+<!--=============== Inlaid Trophy ====================-->
+<!--=============== OMC - Chainsword ====================-->
+<OMC_Trophy_Chainsword_I.label>Inlaid Empress's Blessing</OMC_Trophy_Chainsword_I.label>
+<OMC_Trophy_Chainsword_I.description>The good old chainsword is designed to destroy the enemies of Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.\n\nInlaid with Insight Power Stone: Weapon bonus stats increased.</OMC_Trophy_Chainsword_I.description>
+
+<OMC_Trophy_Chainsword_I.tools.handle.label>handle</OMC_Trophy_Chainsword_I.tools.handle.label>
+<OMC_Trophy_Chainsword_I.tools.chain.label>chain</OMC_Trophy_Chainsword_I.tools.chain.label>
+
+<!--=============== OMC - Pistol ====================-->
+<Bullet_OMC_Trophy_P_I.label>Inlaid Prototype sX-01a bullet</Bullet_OMC_Trophy_P_I.label>
+
+<OMC_Trophy_Pistol_I.label>Inlaid Prototype sX-01a</OMC_Trophy_Pistol_I.label>
+<OMC_Trophy_Pistol_I.verbs.Verb_Shoot.label>Inlaid Prototype sX-01a</OMC_Trophy_Pistol_I.verbs.Verb_Shoot.label>
+<OMC_Trophy_Pistol_I.description>Prototype of a new pistol that uses an AI module to improve accuracy.\n\nThis is a rare trophy weapon.\n\nFeature: built-in accuracy stabilization module.\n\nInlaid with Vitality Power Stone: Weapon operational stats increased.</OMC_Trophy_Pistol_I.description>
+
+<OMC_Trophy_Pistol_I.tools.grip.label>grip</OMC_Trophy_Pistol_I.tools.grip.label>
+<OMC_Trophy_Pistol_I.tools.barrel.label>barrel</OMC_Trophy_Pistol_I.tools.barrel.label>
+
+<OMC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>Inlaid Prototype sX-01a</OMC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OTC - Elemental Sword ====================-->
+<!--=============== Acid ====================-->
+<OTC_Trophy_Sword_I_Acid.label>Inlaid Acid Rift</OTC_Trophy_Sword_I_Acid.label>
+<OTC_Trophy_Sword_I_Acid.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Acid charges.\n\nFeature: a built-in module that improves combat performance.\n\nInlaid with Vitality Power Stone: Weapon operational stats increased.</OTC_Trophy_Sword_I_Acid.description>
+
+<OTC_Trophy_Sword_I_Acid.tools.handle.label>handle</OTC_Trophy_Sword_I_Acid.tools.handle.label>
+<OTC_Trophy_Sword_I_Acid.tools.point.label>point</OTC_Trophy_Sword_I_Acid.tools.point.label>
+<!--=============== Cryo ====================-->
+<OTC_Trophy_Sword_I_Cryo.label>Inlaid Cryo Rift</OTC_Trophy_Sword_I_Cryo.label>
+<OTC_Trophy_Sword_I_Cryo.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Cryo charges.\n\nFeature: a built-in module that improves combat performance.\n\nInlaid with Vitality Power Stone: Weapon operational stats increased.</OTC_Trophy_Sword_I_Cryo.description>
+
+<OTC_Trophy_Sword_I_Cryo.tools.handle.label>handle</OTC_Trophy_Sword_I_Cryo.tools.handle.label>
+<OTC_Trophy_Sword_I_Cryo.tools.point.label>point</OTC_Trophy_Sword_I_Cryo.tools.point.label>
+<!--=============== Fire ====================-->
+<OTC_Trophy_Sword_I_Fire.label>Inlaid Fire Rift</OTC_Trophy_Sword_I_Fire.label>
+<OTC_Trophy_Sword_I_Fire.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with Fire charges.\n\nFeature: a built-in module that improves combat performance.\n\nInlaid with Vitality Power Stone: Weapon operational stats increased.</OTC_Trophy_Sword_I_Fire.description>
+
+<OTC_Trophy_Sword_I_Fire.tools.handle.label>handle</OTC_Trophy_Sword_I_Fire.tools.handle.label>
+<OTC_Trophy_Sword_I_Fire.tools.point.label>point</OTC_Trophy_Sword_I_Fire.tools.point.label>
+<!--=============== EMP ====================-->
+<OTC_Trophy_Sword_I_EMP.label>Inlaid EMP Rift</OTC_Trophy_Sword_I_EMP.label>
+<OTC_Trophy_Sword_I_EMP.description>Limited edition unique elemental sword.\n\nThis is a rare trophy weapon with EMP charges.\n\nFeature: a built-in module that improves combat performance.\n\nWarning! EMP damage isn't intended to destroy meatbags.\n\nInlaid with Vitality Power Stone: Weapon operational stats increased.</OTC_Trophy_Sword_I_EMP.description>
+
+<OTC_Trophy_Sword_I_EMP.tools.handle.label>handle</OTC_Trophy_Sword_I_EMP.tools.handle.label>
+<OTC_Trophy_Sword_I_EMP.tools.point.label>point</OTC_Trophy_Sword_I_EMP.tools.point.label>
+
+<!--=============== OTC - Cards ====================-->
+<Bullet_OTC_Trophy_C_I.label>Inlaid Randy's card</Bullet_OTC_Trophy_C_I.label>
+
+<OTC_Trophy_Cards_I.label>Inlaid Randy's Deck</OTC_Trophy_Cards_I.label>
+<OTC_Trophy_Cards_I.verbs.Verb_Shoot.label>Inlaid Randy's Deck</OTC_Trophy_Cards_I.verbs.Verb_Shoot.label>
+<OTC_Trophy_Cards_I.description>Deck of combat throwing cards designed by a certain engineer, Randy.\n\nThis is a rare trophy weapon.\n\nFeature: able to deal a random additional type of damage.\n\nInlaid with Might Power Stone: Weapon combat stats increased.</OTC_Trophy_Cards_I.description>
+
+<OTC_Trophy_Cards_I.tools.pouch.label>pouch</OTC_Trophy_Cards_I.tools.pouch.label>
+<OTC_Trophy_Cards_I.tools.card.label>card</OTC_Trophy_Cards_I.tools.card.label>
+
+<OTC_Trophy_Cards_I.comps.CompUniqueWeapon.namerLabels.0>Inlaid Randy's Deck</OTC_Trophy_Cards_I.comps.CompUniqueWeapon.namerLabels.0>
+<OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OTC_Trophy_Cards_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OCC - Drillspear ====================-->
+<OCC_Trophy_Drillspear_I.label>Inlaid Balor</OCC_Trophy_Drillspear_I.label>
+<OCC_Trophy_Drillspear_I.description>Spear-drill, a replica of the personal weapon of the great siegemaster Balor.\n\nThis is a rare trophy weapon.\n\nFeature: designed to destroy structures.\n\nInlaid with Might Power Stone: Weapon combat stats increased.</OCC_Trophy_Drillspear_I.description>
+
+<OCC_Trophy_Drillspear_I.tools.handle.label>handle</OCC_Trophy_Drillspear_I.tools.handle.label>
+<OCC_Trophy_Drillspear_I.tools.drill.label>drill</OCC_Trophy_Drillspear_I.tools.drill.label>
+
+<!--=============== OCC - Railgun ====================-->
+<Bullet_OCC_Trophy_RG_I.label>Inlaid Cronus charge</Bullet_OCC_Trophy_RG_I.label>
+
+<OCC_Trophy_Railgun_I.label>Inlaid Cronus</OCC_Trophy_Railgun_I.label>
+<OCC_Trophy_Railgun_I.verbs.Verb_Shoot.label>Inlaid Cronus</OCC_Trophy_Railgun_I.verbs.Verb_Shoot.label>
+<OCC_Trophy_Railgun_I.description>Sample weapon of new experimental railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.\n\nInlaid with Dexterity Power Stone: Weapon performance stats increased.</OCC_Trophy_Railgun_I.description>
+
+<OCC_Trophy_Railgun_I.tools.stock.label>stock</OCC_Trophy_Railgun_I.tools.stock.label>
+<OCC_Trophy_Railgun_I.tools.barrel.label>barrel</OCC_Trophy_Railgun_I.tools.barrel.label>
+
+<OCC_Trophy_Railgun_I.comps.CompUniqueWeapon.namerLabels.0>Inlaid Cronus</OCC_Trophy_Railgun_I.comps.CompUniqueWeapon.namerLabels.0>
+<OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OCC_Trophy_Railgun_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - Scepter ====================-->
+<OEC_Trophy_Scepter_I.label>Inlaid Ancient Scepter</OEC_Trophy_Scepter_I.label>
+<OEC_Trophy_Scepter_I.description>An ancient scepter based on an alien artifact.\n\nThis is a rare trophy weapon.\n\nFeature: enhance the wielder's psychic powers.\n\nInlaid with Insight Power Stone: Weapon bonus stats increased.</OEC_Trophy_Scepter_I.description>
+
+<OEC_Trophy_Scepter_I.tools.ornament.label>ornament</OEC_Trophy_Scepter_I.tools.ornament.label>
+
+<!--=============== OEC - Pistol ====================-->
+<Bullet_OEC_Trophy_P_I.label>Inlaid Divinity bullet</Bullet_OEC_Trophy_P_I.label>
+
+<OEC_Trophy_Pistol_I.label>Inlaid Divinity</OEC_Trophy_Pistol_I.label>
+<OEC_Trophy_Pistol_I.verbs.Verb_Shoot.label>Inlaid Divinity</OEC_Trophy_Pistol_I.verbs.Verb_Shoot.label>
+<OEC_Trophy_Pistol_I.description>This antique pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.\n\nInlaid with Dexterity Power Stone: Weapon performance stats increased.</OEC_Trophy_Pistol_I.description>
+
+<OEC_Trophy_Pistol_I.tools.blade.label>blade</OEC_Trophy_Pistol_I.tools.blade.label>
+
+<OEC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>Inlaid Divinity</OEC_Trophy_Pistol_I.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OEC_Trophy_Pistol_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Sickle ====================-->
+<!--=============== Apex ====================-->
+<ODC_Trophy_Sickle_C_I.label>Inlaid Temptation - Apex</ODC_Trophy_Sickle_C_I.label>
+<ODC_Trophy_Sickle_C_I.description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.\n\nInlaid with Might Power Stone: Weapon combat stats increased.</ODC_Trophy_Sickle_C_I.description>
+
+<ODC_Trophy_Sickle_C_I.tools.handle.label>handle</ODC_Trophy_Sickle_C_I.tools.handle.label>
+<ODC_Trophy_Sickle_C_I.tools.blade.label>blade</ODC_Trophy_Sickle_C_I.tools.blade.label>
+
+<!--=============== ODC - Blade Launcher ====================-->
+<Bullet_ODC_Trophy_BL_C_I.label>Inlaid Harvest saw</Bullet_ODC_Trophy_BL_C_I.label>
+<!--=============== Apex ====================-->
+<ODC_Trophy_BladeLauncher_C_I.label>Inlaid Harvest - Apex</ODC_Trophy_BladeLauncher_C_I.label>
+<ODC_Trophy_BladeLauncher_C_I.verbs.Verb_Shoot.label>Inlaid Harvest - Apex</ODC_Trophy_BladeLauncher_C_I.verbs.Verb_Shoot.label>
+<ODC_Trophy_BladeLauncher_C_I.description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.\n\nInlaid with Insight Power Stone: Weapon bonus stats increased.</ODC_Trophy_BladeLauncher_C_I.description>
+
+<ODC_Trophy_BladeLauncher_C_I.tools.saw.label>saw</ODC_Trophy_BladeLauncher_C_I.tools.saw.label>
+
+<ODC_Trophy_BladeLauncher_C_I.comps.CompUniqueWeapon.namerLabels.0>Inlaid Harvest - Apex</ODC_Trophy_BladeLauncher_C_I.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Trophy_BladeLauncher_C_I.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Trophy OES - BigHammer ====================-->
+<OES_Trophy_BigHammer.label>Betrayer's Weight</OES_Trophy_BigHammer.label>
+<OES_Trophy_BigHammer.description>Beneath the ruins of what was once revered, Volskygge’s hands shaped the hammer under a darkened sky. The crystal that crowns the weapon is no mere ornament—it is the shard of his broken allegiance. As one of the forsaken, a former hero of the Empire, Volskygge forged this weapon for a new purpose. The hammer's weight mirrors the crushing burden of betrayal, its blows resonating with the sorrow of a forgotten warrior. Each strike is a reminder of his fall from grace, and the new path he walks, shrouded in shadow.\n\nSpecially modified weapon charged with Stun, Fire and EMP damages.\n\nThis modification deprives item's quality levels.</OES_Trophy_BigHammer.description>
+
+<OES_Trophy_BigHammer.tools.handle.label>handle</OES_Trophy_BigHammer.tools.handle.label>
+<OES_Trophy_BigHammer.tools.head.label>head</OES_Trophy_BigHammer.tools.head.label>
+
+<!--=============== Trophy OMG - Knife ====================-->
+<OMG_Trophy_Knife.label>Platebreaker</OMG_Trophy_Knife.label>
+<OMG_Trophy_Knife.description>Forged with the sole purpose of piercing through armor, Platebreaker is a weapon of war, able to exploit the weakest points in any protection. The dagger’s precision and strength make it lethal in the hands of a skilled warrior.\n\nSpecially modified weapon charged with Necrobane, Stun and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Knife.description>
+
+<OMG_Trophy_Knife.tools.handle.label>handle</OMG_Trophy_Knife.tools.handle.label>
+<OMG_Trophy_Knife.tools.blade.label>blade</OMG_Trophy_Knife.tools.blade.label>
+<OMG_Trophy_Knife.tools.point.label>point</OMG_Trophy_Knife.tools.point.label>
+
+<!--=============== Trophy OMG - Guitar ====================-->
+<Bullet_OMG_Trophy_PG.label>Neon Echo notes</Bullet_OMG_Trophy_PG.label>
+
+<OMG_Trophy_PowerGuitar.label>Neon Echo</OMG_Trophy_PowerGuitar.label>
+<OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>Neon Echo</OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>
+<OMG_Trophy_PowerGuitar.description>This cyber-guitar of unknown origin is surrounded by rumors, passed from one owner to the next. According to legends, it once had a life of its own and now carries a strange, haunting resonance.\n\nSpecially modified weapon charged with Necrobane, Stun and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Trophy_PowerGuitar.description>
+
+<OMG_Trophy_PowerGuitar.tools.head.label>head</OMG_Trophy_PowerGuitar.tools.head.label>
+
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.chargeNoun>inferno charge</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>Neon Echo</OMG_Trophy_PowerGuitar.verbs.Verb_Shoot.label>
+
+<OMG_Trophy_PowerGuitar.comps.CompUniqueWeapon.namerLabels.0>Neon Echo</OMG_Trophy_PowerGuitar.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_Trophy_PowerGuitar.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== Trophy OMG - Revolver ====================-->
+<Bullet_OMG_Trophy_R.label>Death’s Call bullet</Bullet_OMG_Trophy_R.label>
+<Shell_OMG_Trophy_R.label>Death’s Call capsule</Shell_OMG_Trophy_R.label>
+
+<OMG_Trophy_Revolver.label>Death’s Call</OMG_Trophy_Revolver.label>
+<OMG_Trophy_Revolver.verbs.Verb_Shoot.label>Death’s Call</OMG_Trophy_Revolver.verbs.Verb_Shoot.label>
+<OMG_Trophy_Revolver.description>Crafted from dark technology, this revolver can turn any victim into a relentless Shambler. With each pull of the trigger, the dead rise again, cursed to walk in unholy servitude.\n\nSpecially modified weapon charged with Necrobane, Deadlife, Stun and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Revolver.description>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>ignite charge</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<OMG_Trophy_Revolver.tools.grip.label>grip</OMG_Trophy_Revolver.tools.grip.label>
+<OMG_Trophy_Revolver.tools.barrel.label>barrel</OMG_Trophy_Revolver.tools.barrel.label>
+
+<OMG_Trophy_Revolver.comps.CompUniqueWeapon.namerLabels.0>Death’s Call</OMG_Trophy_Revolver.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_Trophy_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== EGO - Dragonbane ====================-->
+<!--=============== Level-1 ====================-->
+<EGO_Trophy_Dragonbane_A.label>Dragonbane Bite</EGO_Trophy_Dragonbane_A.label>
+<EGO_Trophy_Dragonbane_A.description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo and Acid damages.\n\nKnife born from an unholy fusion, carrying the potential to evolve further.</EGO_Trophy_Dragonbane_A.description>
+
+<EGO_Trophy_Dragonbane_A.tools.handle.label>handle</EGO_Trophy_Dragonbane_A.tools.handle.label>
+<EGO_Trophy_Dragonbane_A.tools.blade.label>blade</EGO_Trophy_Dragonbane_A.tools.blade.label>
+<EGO_Trophy_Dragonbane_A.tools.point.label>point</EGO_Trophy_Dragonbane_A.tools.point.label>
+<!--=============== Level-2 ====================-->
+<EGO_Trophy_Dragonbane_B.label>Dragonbane Strike</EGO_Trophy_Dragonbane_B.label>
+<EGO_Trophy_Dragonbane_B.description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.\n\nKnife with enhanced armor penetration. Its evolution is not yet over.</EGO_Trophy_Dragonbane_B.description>
+
+<EGO_Trophy_Dragonbane_B.tools.handle.label>handle</EGO_Trophy_Dragonbane_B.tools.handle.label>
+<EGO_Trophy_Dragonbane_B.tools.blade.label>blade</EGO_Trophy_Dragonbane_B.tools.blade.label>
+<EGO_Trophy_Dragonbane_B.tools.point.label>point</EGO_Trophy_Dragonbane_B.tools.point.label>
+<!--=============== Level-3 ====================-->
+<EGO_Trophy_Dragonbane_C.label>Dragonbane Slash</EGO_Trophy_Dragonbane_C.label>
+<EGO_Trophy_Dragonbane_C.description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.\n\nSword of increased power, though its newfound weight slows each strike. Its evolution is not yet over.</EGO_Trophy_Dragonbane_C.description>
+
+<EGO_Trophy_Dragonbane_C.tools.handle.label>handle</EGO_Trophy_Dragonbane_C.tools.handle.label>
+<EGO_Trophy_Dragonbane_C.tools.point.label>point</EGO_Trophy_Dragonbane_C.tools.point.label>
+<EGO_Trophy_Dragonbane_C.tools.edge.label>edge</EGO_Trophy_Dragonbane_C.tools.edge.label>
+<!--=============== Level-4 ====================-->
+<EGO_Trophy_Dragonbane_D.label>Dragonbane Warblade</EGO_Trophy_Dragonbane_D.label>
+<EGO_Trophy_Dragonbane_D.description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nSword that now burns with unnatural flame, igniting both flesh and fate. Its evolution is not yet over.</EGO_Trophy_Dragonbane_D.description>
+
+<EGO_Trophy_Dragonbane_D.tools.handle.label>handle</EGO_Trophy_Dragonbane_D.tools.handle.label>
+<EGO_Trophy_Dragonbane_D.tools.point.label>point</EGO_Trophy_Dragonbane_D.tools.point.label>
+<EGO_Trophy_Dragonbane_D.tools.edge.label>edge</EGO_Trophy_Dragonbane_D.tools.edge.label>
+<!--=============== Level-5 ====================-->
+<EGO_Trophy_Dragonbane_E.label>Dragonbane Tyrant</EGO_Trophy_Dragonbane_E.label>
+<EGO_Trophy_Dragonbane_E.description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nBig Sword of devastating force, slowed by its own monstrous size. Its evolution is not yet over.</EGO_Trophy_Dragonbane_E.description>
+
+<EGO_Trophy_Dragonbane_E.tools.handle.label>handle</EGO_Trophy_Dragonbane_E.tools.handle.label>
+<EGO_Trophy_Dragonbane_E.tools.point.label>point</EGO_Trophy_Dragonbane_E.tools.point.label>
+<EGO_Trophy_Dragonbane_E.tools.edge.label>edge</EGO_Trophy_Dragonbane_E.tools.edge.label>
+<!--=============== Level-6 ====================-->
+<EGO_Trophy_Dragonbane_F.label>Dragonbane Obliterator</EGO_Trophy_Dragonbane_F.label>
+<EGO_Trophy_Dragonbane_F.description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nSpear infused with elemental energy, striking with unnatural force. Its evolution is not yet over.</EGO_Trophy_Dragonbane_F.description>
+
+<EGO_Trophy_Dragonbane_F.tools.shaft.label>shaft</EGO_Trophy_Dragonbane_F.tools.shaft.label>
+<EGO_Trophy_Dragonbane_F.tools.point.label>point</EGO_Trophy_Dragonbane_F.tools.point.label>
+<!--=============== Level-7 ====================-->
+<EGO_Trophy_Dragonbane_G.label>Dragonbane Godslayer</EGO_Trophy_Dragonbane_G.label>
+<EGO_Trophy_Dragonbane_G.description>Dr. Alexander Isaacs never intended to slay dragons—only to understand them. Yet, in the depths of his relentless experiments, something unnatural took shape. A weapon born not of craftsmanship, but of twisted science and forgotten wills, thirsting for the very essence it was made to destroy.\n\nGestated Amalgam weapon charged with Cryo, Acid and Flame damages.\n\nThis modification deprives item's quality levels.\n\nSpear that awakens hidden forces, its power shaped by the universe itself. The final evolution.</EGO_Trophy_Dragonbane_G.description>
+
+<EGO_Trophy_Dragonbane_G.tools.shaft.label>shaft</EGO_Trophy_Dragonbane_G.tools.shaft.label>
+<EGO_Trophy_Dragonbane_G.tools.point.label>point</EGO_Trophy_Dragonbane_G.tools.point.label>
+
+</LanguageData>

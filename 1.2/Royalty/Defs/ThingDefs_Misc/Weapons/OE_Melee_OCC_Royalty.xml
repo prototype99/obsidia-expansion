@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC - BigSword ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OСCBigSwordBase">
+    <defName>OCC_BigSword_P</defName>
+    <label>Persona Reforged Shikigami</label>
+    <description>Persona Reforged Longsword used by OCC Paladins.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/BigSword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2580</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OCCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>50</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>50</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_BigSword_M>1</OCC_BigSword_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OCC - BigHammer ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OСCBigHammerBase">
+    <defName>OCC_BigHammer_P</defName>
+    <label>Persona Reforged Oni</label>
+    <description>Persona Reforged Big Hammer used by OCC Paladins.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/BigHammer_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2580</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OCCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.3</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_BigHammer_M>1</OCC_BigHammer_M>
+      <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OCC - PowerFist ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OСCPowerFistBase">
+    <defName>OCC_PowerFist_P</defName>
+    <label>Persona Reforged Typhon</label>
+    <description>Persona Reforged Power Fist used by OCC Paladins.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/PowerFist_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1745</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OCCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_M>1</OCC_PowerFist_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OCC - Elemental PowerFist ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_P_Acid</defName>
+    <label>Persona Reforged Typhon(Acid)</label>
+    <description>Persona Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Acid/PowerFist_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1820</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OCCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_M_Acid>1</OCC_PowerFist_M_Acid>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_P_Cryo</defName>
+    <label>Persona Reforged Typhon(Cryo)</label>
+    <description>Persona Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Cryo/PowerFist_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1820</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OCCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_M_Cryo>1</OCC_PowerFist_M_Cryo>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_P_Fire</defName>
+    <label>Persona Reforged Typhon(Fire)</label>
+    <description>Persona Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Fire/PowerFist_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1820</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OCCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_M_Fire>1</OCC_PowerFist_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OСCElemPowerFistBase">
+    <defName>OCC_PowerFist_P_EMP</defName>
+    <label>Persona Reforged Typhon(EMP)</label>
+    <description>Persona Reforged Power Fist used by OCC Paladins.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/EMP/PowerFist_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1820</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OCCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>25</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OCCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OCC_PowerFist_M_EMP>1</OCC_PowerFist_M_EMP>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

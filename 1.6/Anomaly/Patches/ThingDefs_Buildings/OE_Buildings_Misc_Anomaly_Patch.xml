@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Holding Platforms ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="HoldingPlatformBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <value>
+	  <li>OE_EGOInhibitor</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="HoldingPlatformBase"]/descriptionHyperlinks</xpath>
+    <value>
+	  <ThingDef>OE_HoldingPlatform</ThingDef>
+	  <ThingDef>OE_EGOInhibitor</ThingDef>
+    </value>
+</Operation>
+
+</Patch>

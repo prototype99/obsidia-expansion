@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC - Pistol ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="CACPistolBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACLightGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>2.5</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_P</defaultProjectile>
+        <warmupTime>0.55</warmupTime>
+        <range>24.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_P</defName>
+    <label>Silentsong bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACPistolBase">
+    <defName>CAC_Pistol</defName>
+    <label>Silentsong</label>
+    <description>Regular Pistol used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1225</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>35</OE_Empyrium>
+	  <OE_Orichalcum>20</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== CAC - Shotgun Sidearm ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="CACShotgunSBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_Shotgun</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>CACShortGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>3.0</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_SS</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>12.9</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_SS</defName>
+    <label>Heartstriker blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>38</damageAmountBase>
+      <stoppingPower>5.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACShotgunSBase">
+    <defName>CAC_ShotgunS</defName>
+    <label>Heartstriker</label>
+    <description>Regular Shotgun Sidearm used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/ShotgunSidearm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1975</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>55</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== CAC - SMG ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="CACSMGBase" ParentName="OERangedBase" Abstract="True">
+    <soundInteract>Interact_SMG</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACBaseGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>22500</WorkToMake>
+      <Mass>4.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_SMG</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>	
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_SMG</defName>
+    <label>Echo bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACSMGBase">
+    <defName>CAC_SMG</defName>
+    <label>Echo</label>
+    <description>Regular SMG used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/SMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2075</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>45</OE_Empyrium>
+	  <OE_Orichalcum>35</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== CAC - Shotgun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="CACShotgunBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Shotgun</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACShortGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>6</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_S</defaultProjectile>
+        <warmupTime>1.05</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_S</defName>
+    <label>Grieving blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <extraDamages>
+	    <li>
+         <def>Stun</def>
+		 <amount>12.5</amount>
+         <chance>1</chance>
+       </li>
+	  </extraDamages>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACShotgunBase">
+    <defName>CAC_Shotgun</defName>
+    <label>Grieving</label>
+    <description>Regular Shotgun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2300</MarketValue>  
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>65</OE_Empyrium>
+	  <OE_Orichalcum>25</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== CAC - SniperRifle ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="CACSniperRifleBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponClasses>
+	  <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACSniperGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>7</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+	  <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_SR</defaultProjectile>
+        <warmupTime>2.3</warmupTime>
+        <range>45.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_SR</defName>
+    <label>Widowmaker bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.95</armorPenetrationBase>
+      <speed>110</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACSniperRifleBase">
+    <defName>CAC_SniperRifle</defName>
+    <label>Widowmaker</label>
+    <description>Regular Sniper Rifle used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<statBases>
+      <MarketValue>5600</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>80</OE_Empyrium>
+	  <OE_Orichalcum>80</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_ModernizationKit>2</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== CAC - Minigun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="CACMinigunBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_Revolver</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACHeavyGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>12.0</Mass>
+	  <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+	  <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_MG</defaultProjectile>
+        <warmupTime>2.8</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_MG</defName>
+    <label>Blackout bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>23</damageAmountBase>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACMinigunBase">
+    <defName>CAC_Minigun</defName>
+    <label>Blackout</label>
+    <description>Regular Minigun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Minigun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>4425</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>100</OE_Empyrium>
+	  <OE_Orichalcum>30</OE_Orichalcum>
+      <OE_Syntherius>25</OE_Syntherius>
+	  <OE_ModernizationKit>2</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC - Knife ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Knife_P</defName>
+    <label>Reset Persona Exalted Shard</label>
+    <description>Reset an Persona Exalted Shard.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Shard.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Knife_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Knife_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Knife_P>1</OEC_Knife_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OEC - Katana ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Katana_P</defName>
+    <label>Reset Persona Exalted Reaper</label>
+    <description>Reset an Persona Exalted Reaper.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Reaper.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Katana_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Katana_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Katana_P>1</OEC_Katana_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OEC - Elemental Katana ====================-->
+<!--=============== Acid ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Katana_P_Acid</defName>
+    <label>Reset Persona Exalted Reaper(Acid)</label>
+    <description>Reset an Persona Exalted Reaper(Acid).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Reaper(Acid).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Katana_P_Acid</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Katana_P_Acid</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Katana_P_Acid>1</OEC_Katana_P_Acid>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+<!--=============== Cryo ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Katana_P_Cryo</defName>
+    <label>Reset Persona Exalted Reaper(Cryo)</label>
+    <description>Reset an Persona Exalted Reaper(Cryo).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Reaper(Cryo).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Katana_P_Cryo</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Katana_P_Cryo</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Katana_P_Cryo>1</OEC_Katana_P_Cryo>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+<!--=============== Fire ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Katana_P_Fire</defName>
+    <label>Reset Persona Exalted Reaper(Fire)</label>
+    <description>Reset an Persona Exalted Reaper(Fire).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Reaper(Fire).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Katana_P_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Katana_P_Fire</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Katana_P_Fire>1</OEC_Katana_P_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+<!--=============== EMP ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Katana_P_EMP</defName>
+    <label>Reset Persona Exalted Reaper(EMP)</label>
+    <description>Reset an Persona Exalted Reaper(EMP).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Reaper(EMP).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Katana_P_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Katana_P_EMP</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Katana_P_EMP>1</OEC_Katana_P_EMP>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OEC - Spear ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Spear_P</defName>
+    <label>Reset Persona Exalted Elitra</label>
+    <description>Reset an Persona Exalted Elitra.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Elitra.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Spear_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Spear_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Spear_P>1</OEC_Spear_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OEC - Claws ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OEC_Claws_P</defName>
+    <label>Reset Persona Exalted Truth</label>
+    <description>Reset an Persona Exalted Truth.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Exalted Truth.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OEC_Claws_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OEC_Claws_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OEC_Claws_P>1</OEC_Claws_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OECGearMod</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

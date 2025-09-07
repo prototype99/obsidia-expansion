@@ -1,0 +1,1220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Obsidia Empire Traders ====================-->
+<!--=============== Core ====================-->
+  <TraderKindDef Name="OETradersBase" Abstract="True">
+    <stockGenerators>
+	  <!-- Resources -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2500~10000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>25~90</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>500~750</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>150~450</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>35~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>150~350</countRange>
+      </li>
+	  <li MayRequire="OskarPotocki.VanillaVehiclesExpanded" Class="StockGenerator_Tag">
+        <tradeTag>VVE_CarPartBasic</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>2~4</countRange>
+      </li>
+	  <li MayRequire="OskarPotocki.VanillaVehiclesExpanded" Class="StockGenerator_Tag">
+        <tradeTag>VVE_CarPartAdvanced</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Category">
+        <categoryDef>Textiles</categoryDef>
+        <thingDefCountRange>4~6</thingDefCountRange>
+        <totalPriceRange>750~1500</totalPriceRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+        </excludedThingDefs>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>ResourcesRaw</categoryDef>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <totalPriceRange>500~1200</totalPriceRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        </excludedThingDefs>
+      </li>
+	  <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <totalPriceRange>500~1200</totalPriceRange>
+        <excludedCategories>
+          <li>EggsFertilized</li>
+        </excludedCategories>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodMeals</categoryDef>
+        <thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>24~75</countRange>
+      </li>
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Kibble</li>
+          <li>Pemmican</li>
+        </thingDefs>
+      </li>
+	  
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEFood</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>15~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>150~300</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesS</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~5</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesM</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>10~20</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesL</tradeTag>
+		<thingDefCountRange>5~8</thingDefCountRange>
+        <countRange>100~300</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesExoticS</tradeTag>
+		<thingDefCountRange>-1~2</thingDefCountRange>
+        <countRange>1~5</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesExoticM</tradeTag>
+		<thingDefCountRange>-1~2</thingDefCountRange>
+        <countRange>10~20</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesExoticL</tradeTag>
+		<thingDefCountRange>-1~2</thingDefCountRange>
+        <countRange>100~300</countRange>
+      </li>
+
+      <!-- Obs.Meds -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrug</tradeTag>
+		<thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>10~20</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrugExotic</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>10~20</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBionics</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBionicsStacking</tradeTag>
+		<thingDefCountRange>3~8</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+
+	  <!-- Obs.Gear -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEGear</tradeTag>
+		<thingDefCountRange>5~10</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>	  
+	  
+	  <!-- Techprints -->
+	  <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>2</count>
+            <chance>0.5</chance>
+          </li>
+          <li>
+            <count>3</count>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <count>4</count>
+            <chance>0.15</chance>
+          </li>
+		  <li>
+            <count>5</count>
+            <chance>0.10</chance>
+          </li>
+        </countChances>
+      </li>
+	  
+	  <!-- Buying -->
+	  <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ResourcesRaw</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>WeaponsMelee</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>BasicClothing</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBionicsSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearTrophySell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBuildingSell</tag></li>
+	  
+    </stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Various ====================-->
+<!--=============== Base ====================-->
+  <TraderKindDef ParentName="OETradersBase">
+    <defName>Base_ObsidiaEmpire_Common</defName>
+    <stockGenerators>
+	  <!-- Obs.Meds -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>CACBionics</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOBionics</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OESBionics</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  
+	  <!-- Obs.Gear -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMCGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OTCGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OCCGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Tag">
+        <tradeTag>OECGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ODCGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOGear</tradeTag>
+		<thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>CACGear</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OESGear</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMGGear</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEGearTrophy</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+
+	  <!-- Books -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Datapad</thingDef>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>TextBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Novel</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Tome</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="DimonSever000.FactionLanguages" Class="StockGenerator_SingleDef">
+        <thingDef>LanguageBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <!-- Plants -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>PoluxSeed</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOSeed</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+      </li>
+	  
+	  <!-- Obs.Buildings -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuilding</tradeTag>
+		<thingDefCountRange>2~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+		<thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingExotic</tradeTag>
+		<thingDefCountRange>-1~3</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  
+	  <!-- Slaves -->
+	  <li Class="StockGenerator_Slaves">
+        <respectPopulationIntent>true</respectPopulationIntent>
+        <countRange>2~8</countRange>
+      </li>
+	  
+	  <!-- Animals -->
+	  <li Class="StockGenerator_Animals">
+        <maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalSlime</li>
+		  <li>OEAnimalExotic</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>OEAnimalSell</li>
+		  <li>AnimalUncommon</li>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>1~3</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+	  
+	  <!-- Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>5~8</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="sumghai.Medpod" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearProcessor</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+	  <li MayRequire="sumghai.Replimat" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearModule</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li MayRequire="GoGaTio.MechanoidUpgrades" Class="StockGenerator_Tag">
+        <tradeTag>MU_Upgrade_TraderSells</tradeTag>
+		<thingDefCountRange>4~6</thingDefCountRange>
+        <countRange>4~8</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ExoticMisc</tradeTag>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+        <excludedThingDefs>
+          <li>Luciferium</li>
+          <li>ComponentSpacer</li>
+        </excludedThingDefs>
+        <customCountRanges>
+          <MedicineUltratech>2~15</MedicineUltratech>
+          <Hyperweave>50~200</Hyperweave>
+        </customCountRanges>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  
+<!--=============== Visitor ====================-->
+  <TraderKindDef>
+    <defName>Visitor_ObsidiaEmpire_Common</defName>
+    <stockGenerators>
+	  <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~5000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>15~25</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>-5~10</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>100~250</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>5~25</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>15~25</countRange>
+      </li>
+	  
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEFood</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>15~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>150~300</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesS</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~5</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesM</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>10~20</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesL</tradeTag>
+		<thingDefCountRange>5~8</thingDefCountRange>
+        <countRange>50~100</countRange>
+      </li>
+	  
+	  <!-- Obs.Armor -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>OEGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMCGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OTCGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OCCGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Tag">
+        <tradeTag>OECGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <!-- Exotic -->
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>PsychicAmplifier</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>-2~3</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li MayRequire="sumghai.Medpod" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearProcessor</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+	  <li MayRequire="sumghai.Replimat" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearModule</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ResourcesRaw</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>WeaponsMelee</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExosuitModule</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExoticExosuitModule</tag></li>
+	</stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Caravan Standard ====================-->
+  <TraderKindDef ParentName="OETradersBase">
+    <defName>Caravan_ObsidiaEmpire_Standard</defName>
+	<label>obsidia empire goods trader</label>
+    <stockGenerators>
+	  <!-- Obs.Meds -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>CACBionics</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOBionics</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OESBionics</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  
+	  <!-- Obs.Gear -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMCGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OTCGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OCCGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Tag">
+        <tradeTag>OECGear</tradeTag>
+		<thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ODCGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOGear</tradeTag>
+		<thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>CACGear</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OESGear</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMGGear</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEGearTrophy</tradeTag>
+		<thingDefCountRange>0~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <!-- Books -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Datapad</thingDef>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>TextBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Novel</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Tome</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="DimonSever000.FactionLanguages" Class="StockGenerator_SingleDef">
+        <thingDef>LanguageBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <!-- Plants -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>PoluxSeed</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOSeed</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+      </li>
+	  
+	  <!-- Obs.Buildings -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuilding</tradeTag>
+		<thingDefCountRange>2~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+		<thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingExotic</tradeTag>
+		<thingDefCountRange>-1~3</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  
+	  <!-- Slaves -->
+	  <li Class="StockGenerator_Slaves">
+        <respectPopulationIntent>true</respectPopulationIntent>
+        <countRange>2~8</countRange>
+      </li>
+	  
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalExotic</li>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalFarm</li>
+          <li>AnimalPet</li>
+        </tradeTagsSell>
+        <kindCountRange>1~2</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+	  <li Class="StockGenerator_Animals">
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalSlime</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+		  <li>OEAnimalExotic</li>
+		  <li>OEAnimalSell</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~4</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>OEAnimal</li>
+        </createMatingPair>
+      </li>
+	  
+	  <!-- Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>5~8</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="sumghai.Medpod" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearProcessor</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+	  <li MayRequire="sumghai.Replimat" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearModule</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li MayRequire="GoGaTio.MechanoidUpgrades" Class="StockGenerator_Tag">
+        <tradeTag>MU_Upgrade_TraderSells</tradeTag>
+		<thingDefCountRange>4~6</thingDefCountRange>
+        <countRange>4~8</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ExoticMisc</tradeTag>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+        <excludedThingDefs>
+          <li>Luciferium</li>
+          <li>ComponentSpacer</li>
+        </excludedThingDefs>
+        <customCountRanges>
+          <MedicineUltratech>2~15</MedicineUltratech>
+          <Hyperweave>50~200</Hyperweave>
+        </customCountRanges>
+      </li> 
+	</stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Caravan Slaver ====================-->
+  <TraderKindDef ParentName="OETradersBase">
+    <defName>Caravan_ObsidiaEmpire_Slaver</defName>
+	<label>obsidia empire slaver</label>
+	<category>Slaver</category>
+    <commonalityMultFromPopulationIntent>
+      <points>
+        <li>(0.2, 0)</li>
+        <li>(1,   1)</li>
+        <li>(2,   3)</li>
+      </points>
+    </commonalityMultFromPopulationIntent>
+    <stockGenerators>
+	  <!-- Obs.Buildings -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <!-- Slaves -->
+	  <li Class="StockGenerator_Slaves">
+        <respectPopulationIntent>true</respectPopulationIntent>
+        <countRange>2~8</countRange>
+      </li>
+	  
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalExotic</li>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalFarm</li>
+          <li>AnimalPet</li>
+        </tradeTagsSell>
+        <kindCountRange>2~4</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+	  <li Class="StockGenerator_Animals">
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalSlime</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+		  <li>OEAnimalExotic</li>
+		  <li>OEAnimalSell</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~4</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>OEAnimal</li>
+        </createMatingPair>
+      </li>
+	  
+	  <!-- Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ExoticMisc</tradeTag>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+        <excludedThingDefs>
+          <li>Luciferium</li>
+          <li>ComponentSpacer</li>
+        </excludedThingDefs>
+        <customCountRanges>
+          <MedicineUltratech>2~15</MedicineUltratech>
+          <Hyperweave>50~200</Hyperweave>
+        </customCountRanges>
+      </li>
+	</stockGenerators>
+  </TraderKindDef>
+  
+<!--=============== Caravan Gunsmith ====================-->
+  <TraderKindDef ParentName="OETradersBase">
+    <defName>Caravan_ObsidiaEmpire_Gunsmith</defName>
+	<label>obsidia empire combat supplier</label>
+    <stockGenerators>
+	  <!-- Obs.Gear -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMCGear</tradeTag>
+		<thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OTCGear</tradeTag>
+		<thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OCCGear</tradeTag>
+		<thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Tag">
+        <tradeTag>OECGear</tradeTag>
+		<thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ODCGear</tradeTag>
+		<thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOGear</tradeTag>
+		<thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>CACGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OESGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMGGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEGearTrophy</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <!-- Obs.Buildings -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <!-- Exotic -->
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>5~8</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="GoGaTio.MechanoidUpgrades" Class="StockGenerator_Tag">
+        <tradeTag>MU_Upgrade_TraderSells</tradeTag>
+		<thingDefCountRange>4~6</thingDefCountRange>
+        <countRange>4~8</countRange>
+      </li>
+	</stockGenerators>
+  </TraderKindDef>
+  
+<!--=============== Caravan Medic ====================-->
+  <TraderKindDef ParentName="OETradersBase">
+    <defName>Caravan_ObsidiaEmpire_Medic</defName>
+	<label>obsidia empire medical trader</label>
+    <stockGenerators>
+	  <!-- Obs.Meds -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrug</tradeTag>
+		<thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>10~20</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrugExotic</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>10~20</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBionics</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBionicsStacking</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBionicsExotic</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  
+	  <!-- Books -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Datapad</thingDef>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>TextBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Novel</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Tome</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="DimonSever000.FactionLanguages" Class="StockGenerator_SingleDef">
+        <thingDef>LanguageBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <!-- Plants -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>PoluxSeed</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOSeed</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+      </li>
+	  
+	  <!-- Obs.Buildings -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <!-- Exotic -->
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>PsychicAmplifier</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>5~8</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>DeathrestCapacitySerum</thingDef>
+        <countRange>-1~1</countRange>
+      </li>
+	  <li MayRequire="sumghai.Medpod" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearProcessor</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+	  <li MayRequire="sumghai.Replimat" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearModule</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	</stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Caravan Exotic ====================-->
+  <TraderKindDef ParentName="OETradersBase">
+    <defName>Caravan_ObsidiaEmpire_Exotic</defName>
+	<label>obsidia empire exotic goods trader</label>
+	<category>Slaver</category>
+    <commonalityMultFromPopulationIntent>
+      <points>
+        <li>(0.2, 0)</li>
+        <li>(1,   1)</li>
+        <li>(2,   3)</li>
+      </points>
+    </commonalityMultFromPopulationIntent>
+    <stockGenerators>
+	  <!-- Obs.Meds -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBionicsExotic</tradeTag>
+		<thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  
+	  <!-- Obs.Gear -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMCGear</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OTCGear</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OCCGear</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Tag">
+        <tradeTag>OECGear</tradeTag>
+		<thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ODCGear</tradeTag>
+		<thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOGear</tradeTag>
+		<thingDefCountRange>3~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>CACGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OESGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OMGGear</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEGearTrophy</tradeTag>
+		<thingDefCountRange>1~5</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  	  
+	  <!-- Books -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Datapad</thingDef>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>TextBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Novel</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Tome</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="DimonSever000.FactionLanguages" Class="StockGenerator_SingleDef">
+        <thingDef>LanguageBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <!-- Plants -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>PoluxSeed</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>EGOSeed</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+      </li>
+	  
+	  <!-- Obs.Buildings -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuilding</tradeTag>
+		<thingDefCountRange>2~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+		<thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingExotic</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  
+	  <!-- Slaves -->
+	  <li Class="StockGenerator_Slaves">
+        <respectPopulationIntent>true</respectPopulationIntent>
+        <countRange>2~8</countRange>
+      </li>
+	  
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalExotic</li>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalFarm</li>
+          <li>AnimalPet</li>
+        </tradeTagsSell>
+        <kindCountRange>2~4</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+	  <li Class="StockGenerator_Animals">
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalSlime</li>
+		  <li>OEAnimalExotic</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+		  <li>OEAnimalSell</li>
+        </tradeTagsBuy>
+        <kindCountRange>3~6</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>OEAnimal</li>
+        </createMatingPair>
+      </li>	 
+	  
+	  <!-- Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>PsychicAmplifier</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>AnimusStone</thingDef>
+        <countRange>-3~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>5~8</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>DeathrestCapacitySerum</thingDef>
+        <countRange>-1~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>SignalChip</thingDef>
+        <countRange>-1~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>PowerfocusChip</thingDef>
+        <countRange>-1~1</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>NanostructuringChip</thingDef>
+        <countRange>-1~1</countRange>
+      </li>
+	  <li MayRequire="sumghai.Medpod" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearProcessor</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+	  <li MayRequire="sumghai.Replimat" Class="StockGenerator_SingleDef">
+        <thingDef>IsolinearModule</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li MayRequire="GoGaTio.MechanoidUpgrades" Class="StockGenerator_Tag">
+        <tradeTag>MU_Upgrade_TraderSells</tradeTag>
+		<thingDefCountRange>4~6</thingDefCountRange>
+        <countRange>4~8</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ExoticMisc</tradeTag>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+        <excludedThingDefs>
+          <li>Luciferium</li>
+          <li>ComponentSpacer</li>
+        </excludedThingDefs>
+        <customCountRanges>
+          <MedicineUltratech>2~15</MedicineUltratech>
+          <Hyperweave>50~200</Hyperweave>
+        </customCountRanges>
+      </li>
+	</stockGenerators>
+  </TraderKindDef>
+  
+</Defs>  

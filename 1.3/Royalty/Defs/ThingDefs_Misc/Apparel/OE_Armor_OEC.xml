@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC Armor ====================-->
+  <ThingDef Name="OECArmorBase" ParentName="OEArmorBase" Abstract="True">
+	<statBases>
+      <Insulation_Cold>25</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+	  <WorkToMake>100000</WorkToMake>
+	  <Mass>10</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+	  <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECArmorBase">
+	<defName>OEC_Armor</defName>
+    <label>OEC Hunter Armor</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed for use by Hunters representing the OEC.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/OECArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OECHunter</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>3675</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>185</OE_Obsidian>
+	  <OE_Mythril>75</OE_Mythril>
+	  <OE_Mooncloth>50</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/OECArmor</wornGraphicPath>
+	  <tags>
+		<li>OECHunter</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OECArmor</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OECArmorMod" ParentName="OECArmorBase">
+	<defName>OEC_Armor_M</defName>
+    <label>OEC Inquisitor Armor</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nThe hardened version provides more protection to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OECInquisitor</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>3875</MarketValue>
+	  <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+	  <Beauty>3</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor>1</OEC_Armor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OECGearMod</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Spacer</defName>
+    <label>OEC Inquisitor Armor(Space Griffin)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Spacer/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>4125</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>60</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Spacer/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Smoker ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Smoker</defName>
+    <label>OEC Officer Armor(Fogler)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Smokepop pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Smoker/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>4125</MarketValue>
+	  <SmokepopBeltRadius>6.9</SmokepopBeltRadius>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Smoker/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Smoker</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smokepop</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Smokepop</verbClass>
+		<commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Jump ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Jump</defName>
+    <label>OEC Inquisitor Armor(Raven)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Jump pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Jump/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>4125</MarketValue>
+	  <JumpRange>27.9</JumpRange>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Jump/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Jump</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Jump</verbClass>
+        <commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Grenadier ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Grenadier</defName>
+    <label>OEC Inquisitor Armor(Huntsman)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified by installing the Stun Cannon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Grenadier/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>4125</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Grenadier/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Grenadier</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+		<onlyManualCast>True</onlyManualCast>
+        <defaultProjectile>Bullet_OEC_Stun</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>19.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== OEC - StunBullet ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OEC_Stun</defName>
+    <label>Stun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OEC_Dart_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierStun</uiIconPath>
+    <projectile>
+      <damageDef>Stun</damageDef>
+	  <damageAmountBase>35</damageAmountBase>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Shield ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Shield</defName>
+    <label>OEC Inquisitor Armor(Guardian)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Reinforced Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Shield/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>ShieldBelt</thingClass>
+    <statBases>
+	  <MarketValue>4125</MarketValue>
+	  <EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.75</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Shield/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Shield</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Barrier ====================-->
+  <ThingDef Name="OECArmorModBarrier" ParentName="OECArmorMod" Abstract="True">
+	<!--= OEC_Armor_M_Barrier =-->
+    <label>OEC Inquisitor Armor(Protector)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Barrier/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>VFECore.Apparel_ShieldBubble</thingClass>
+    <statBases>
+	  <MarketValue>4125</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Barrier/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Barrier</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<comps>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
+		 <compClass>VFECore.CompShieldBubble</compClass>
+		 <blockRangedAttack>true</blockRangedAttack>
+		 <blockMeleeAttack>false</blockMeleeAttack>
+		 <showWhenDrafted>true</showWhenDrafted>
+		 <showOnHostiles>true</showOnHostiles>
+		 <showOnNeutralInCombat>true</showOnNeutralInCombat>
+		 <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		 <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+		 <EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+		 <minShieldSize>1.4</minShieldSize>
+		 <maxShieldSize>1.8</maxShieldSize>
+		 <disableRotation>true</disableRotation>
+	  </li>
+	</comps>
+  </ThingDef>
+
+</Defs>

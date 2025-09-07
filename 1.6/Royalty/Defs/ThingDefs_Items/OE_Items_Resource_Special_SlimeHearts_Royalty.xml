@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Exotic Types ====================-->
+<!--=============== Luraxin ====================-->
+  <ThingDef ParentName="OEExoticSlimeHeartBase">
+    <defName>OE_SlimeHeart_Luraxin</defName>
+    <label>luraxin slime heart (Сonf.)</label>
+    <description>A hyper-advanced exotic slime core with configuration to grow up into Luraxin slime in 5 days. Luraxin slime produces 3 Luraxin every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Luraxin</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Luraxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>777</MarketValue>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Luraxin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

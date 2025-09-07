@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Expansion - Containment ====================-->
+  <EntityCodexEntryDef>
+    <defName>OE_ChaosSlimeDiscovered</defName>
+    <label>Chaos slimes</label>
+    <description>Chaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.</description>
+    <uiIconPath>UI/CodexEntries/ChaosSlimes</uiIconPath>
+    <category>Basic</category>
+    <linkedThings>
+      <li>OE_ChaosSlimeHive_Core</li>
+	  <li>OE_ChaosSlime_Larval</li>
+	  <li>OE_ChaosSlime_Adult</li>
+	  <li>OE_ChaosSlime_Badass</li>
+	  <li>OE_ChaosSlime_SuperBadass</li>
+	  <li>OE_ChaosSlime_UltimateBadass</li>
+	  <li>OE_ChaosSlime_Invincible</li>
+    </linkedThings>
+	<provocationIncidents>
+      <li>FleshbeastAttack</li>
+    </provocationIncidents>
+    <discoveredResearchProjects>
+      <li>OEContainment</li>
+    </discoveredResearchProjects>
+    <orderInCategory>9100</orderInCategory>
+  </EntityCodexEntryDef>
+
+<!--=============== Crimson Arachna Cult - Ghoul Bionics ====================-->
+  <EntityCodexEntryDef>
+    <defName>OE_ReturnedDiscovered</defName>
+    <label>Returned</label>
+    <useDescriptionFrom>OE_Returned</useDescriptionFrom>
+    <uiIconPath>UI/CodexEntries/Returned</uiIconPath>
+    <category>Advanced</category>
+    <linkedThings>
+      <li>OE_Returned</li>
+    </linkedThings>
+	<provocationIncidents>
+      <li>UnnaturalDarkness</li>
+    </provocationIncidents>
+    <discoveredResearchProjects>
+      <li>CACGhoulBionics</li>
+    </discoveredResearchProjects>
+    <orderInCategory>9100</orderInCategory>
+  </EntityCodexEntryDef>
+
+<!--=============== Crimson Arachna Cult - Nano Technologies ====================-->
+  <EntityCodexEntryDef>
+    <defName>OE_CyberArachnaDiscovered</defName>
+    <label>Cyber Arachna</label>
+    <useDescriptionFrom>OE_CyberArachna</useDescriptionFrom>
+    <uiIconPath>UI/CodexEntries/CyberArachna</uiIconPath>
+    <category>Advanced</category>
+    <linkedThings>
+      <li>OE_CyberArachna</li>
+    </linkedThings>
+	<provocationIncidents>
+      <li>Revenant</li>
+    </provocationIncidents>
+    <discoveredResearchProjects>
+      <li>CACSerum</li>
+    </discoveredResearchProjects>
+    <orderInCategory>9200</orderInCategory>
+  </EntityCodexEntryDef>
+
+</Defs>

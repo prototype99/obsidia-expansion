@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OES - Legion Spear ====================-->
+  <ThingDef Name="OESLegionSpearBase" ParentName="OEMeleeBaseNQ" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<techLevel>Archotech</techLevel>
+	<statBases>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+	<weaponTags>
+	  <li>OETrophyMelee</li>
+	  <li>OESTrophyWeapons</li>
+    </weaponTags>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>OESGear</researchPrerequisite>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Core ====================-->
+  <ThingDef ParentName="OESLegionSpearBase">
+    <defName>OES_LegionSpear_A</defName>
+    <label>Legion Spear</label>
+    <description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OES_LegionSpear_A</ThingDef>
+	  <ThingDef>OES_LegionSpear_B</ThingDef>
+	  <ThingDef>OES_LegionSpear_C</ThingDef>
+	  <ThingDef>OES_LegionSpear_D</ThingDef>
+	  <ThingDef>OES_LegionSpear_E</ThingDef>
+	  <ThingDef>OES_LegionSpear_F</ThingDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/LegionSpear_A</texPath>
+    </graphicData>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>5000</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>-0.15</PainShockThreshold>
+	  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.15</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.15</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.15</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.15</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.15</MechFormingSpeed>
+	  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.15</MechRepairSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_LS_A</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>9.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OE_Empyrium>40</OE_Empyrium>
+      <OE_Orichalcum>20</OE_Orichalcum>
+	  <OE_Mooncloth>5</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_SyntheriusOfSin>10</OE_SyntheriusOfSin>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_LS_A</defName>
+	<label>Legion Spear energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>0.85</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>75</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>5</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+  
+<!--=============== Level-1 ====================-->
+  <ThingDef ParentName="OESLegionSpearBase">
+    <defName>OES_LegionSpear_B</defName>
+    <label>Legion Spear Mk.I</label>
+    <description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OES_LegionSpear_A</ThingDef>
+	  <ThingDef>OES_LegionSpear_B</ThingDef>
+	  <ThingDef>OES_LegionSpear_C</ThingDef>
+	  <ThingDef>OES_LegionSpear_D</ThingDef>
+	  <ThingDef>OES_LegionSpear_E</ThingDef>
+	  <ThingDef>OES_LegionSpear_F</ThingDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/LegionSpear_B</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <RoyalFavorValue>1.1</RoyalFavorValue>
+	  <MarketValue>6050</MarketValue>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>1.00</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>-0.20</PainShockThreshold>
+	  <MentalBreakThreshold>-0.20</MentalBreakThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.20</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.066</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.20</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.20</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.20</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.20</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.20</MechFormingSpeed>
+	  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.20</MechRepairSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_LS_B</defaultProjectile>
+        <warmupTime>2.4</warmupTime>
+        <range>11.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.50</armorPenetration>
+        <cooldownTime>1.95</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>12</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>12</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OES_LegionSpear_A>1</OES_LegionSpear_A>
+	  <OE_Empyrium>5</OE_Empyrium>
+      <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Mooncloth>5</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+	  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_LS_B</defName>
+	<label>Legion Spear Mk.I energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>0.90</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <armorPenetrationBase>0.40</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>80</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>7</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>7</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Level-2 ====================-->
+  <ThingDef ParentName="OESLegionSpearBase">
+    <defName>OES_LegionSpear_C</defName>
+    <label>Legion Spear Mk.II</label>
+    <description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OES_LegionSpear_A</ThingDef>
+	  <ThingDef>OES_LegionSpear_B</ThingDef>
+	  <ThingDef>OES_LegionSpear_C</ThingDef>
+	  <ThingDef>OES_LegionSpear_D</ThingDef>
+	  <ThingDef>OES_LegionSpear_E</ThingDef>
+	  <ThingDef>OES_LegionSpear_F</ThingDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/LegionSpear_C</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <RoyalFavorValue>1.2</RoyalFavorValue>
+	  <MarketValue>7150</MarketValue>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>1.05</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>-0.25</PainShockThreshold>
+	  <MentalBreakThreshold>-0.25</MentalBreakThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.25</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.25</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.25</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.25</MechFormingSpeed>
+	  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.25</MechRepairSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_LS_C</defaultProjectile>
+        <warmupTime>2.3</warmupTime>
+        <range>21.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>1.90</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>14</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>14</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OES_LegionSpear_B>1</OES_LegionSpear_B>
+	  <OE_Empyrium>5</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+	  <OE_Mooncloth>5</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+	  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_LS_C</defName>
+	<label>Legion Spear Mk.II energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>0.95</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <armorPenetrationBase>0.40</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>85</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>7</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>7</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Level-3 ====================-->
+  <ThingDef ParentName="OESLegionSpearBase">
+    <defName>OES_LegionSpear_D</defName>
+    <label>Legion Spear Mk.III</label>
+    <description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.\n\nMk.III - weapon accuracy increased.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OES_LegionSpear_A</ThingDef>
+	  <ThingDef>OES_LegionSpear_B</ThingDef>
+	  <ThingDef>OES_LegionSpear_C</ThingDef>
+	  <ThingDef>OES_LegionSpear_D</ThingDef>
+	  <ThingDef>OES_LegionSpear_E</ThingDef>
+	  <ThingDef>OES_LegionSpear_F</ThingDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/LegionSpear_D</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <RoyalFavorValue>1.3</RoyalFavorValue>
+	  <MarketValue>8300</MarketValue>
+	  <Mass>3.0</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>1.10</AccuracyShort>
+      <AccuracyMedium>1.30</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>-0.30</PainShockThreshold>
+	  <MentalBreakThreshold>-0.30</MentalBreakThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.30</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.091</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.30</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.30</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.30</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.30</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.30</MechFormingSpeed>
+	  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.30</MechRepairSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_LS_D</defaultProjectile>
+        <warmupTime>2.2</warmupTime>
+        <range>22.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.70</armorPenetration>
+        <cooldownTime>1.85</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>16</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>16</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OES_LegionSpear_C>1</OES_LegionSpear_C>
+	  <OE_Empyrium>5</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_LS_D</defName>
+	<label>Legion Spear Mk.III energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.00</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <armorPenetrationBase>0.50</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>90</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>8</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>8</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Level-4 ====================-->
+  <ThingDef ParentName="OESLegionSpearBase">
+    <defName>OES_LegionSpear_E</defName>
+    <label>Legion Spear Mk.IV</label>
+    <description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.\n\nMk.III - weapon accuracy increased.\n\nMk.IV - armor penetration increased.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OES_LegionSpear_A</ThingDef>
+	  <ThingDef>OES_LegionSpear_B</ThingDef>
+	  <ThingDef>OES_LegionSpear_C</ThingDef>
+	  <ThingDef>OES_LegionSpear_D</ThingDef>
+	  <ThingDef>OES_LegionSpear_E</ThingDef>
+	  <ThingDef>OES_LegionSpear_F</ThingDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/LegionSpear_E</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <RoyalFavorValue>1.4</RoyalFavorValue>
+	  <MarketValue>9500</MarketValue>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>1.20</AccuracyShort>
+      <AccuracyMedium>1.40</AccuracyMedium>
+      <AccuracyLong>1.00</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>-0.35</PainShockThreshold>
+	  <MentalBreakThreshold>-0.35</MentalBreakThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.35</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.35</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.35</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.35</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.35</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.35</MechFormingSpeed>
+	  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.35</MechRepairSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_LS_E</defaultProjectile>
+        <warmupTime>2.1</warmupTime>
+        <range>23.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>1.00</armorPenetration>
+        <cooldownTime>1.80</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>18</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>18</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OES_LegionSpear_D>1</OES_LegionSpear_D>
+	  <OE_Empyrium>10</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_LS_E</defName>
+	<label>Legion Spear Mk.IV energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.05</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+	  <armorPenetrationBase>0.80</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>95</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>9</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>9</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Level-5 ====================-->
+  <ThingDef ParentName="OESLegionSpearBase">
+    <defName>OES_LegionSpear_F</defName>
+    <label>Legion Spear Mk.V</label>
+    <description>A gun-spear is a replica of the main weapon designed for the Fallen Legion. Specially modified weapon charged with Fire and EMP damages.\n\nThis modification deprives item's quality levels.\n\nWeapons can be upgraded up to 5 times.\n\nMk.I - weapon damage increased.\n\nMk.II - increased firing range.\n\nMk.III - weapon accuracy increased.\n\nMk.IV - armor penetration increased.\n\nMk.V - all stats significantly increased.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OES_LegionSpear_A</ThingDef>
+	  <ThingDef>OES_LegionSpear_B</ThingDef>
+	  <ThingDef>OES_LegionSpear_C</ThingDef>
+	  <ThingDef>OES_LegionSpear_D</ThingDef>
+	  <ThingDef>OES_LegionSpear_E</ThingDef>
+	  <ThingDef>OES_LegionSpear_F</ThingDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OES/LegionSpear_F</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>10750</MarketValue>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>1.30</AccuracyShort>
+      <AccuracyMedium>1.50</AccuracyMedium>
+      <AccuracyLong>1.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>-0.40</PainShockThreshold>
+	  <MentalBreakThreshold>-0.40</MentalBreakThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.40</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.125</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.40</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.40</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.40</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.40</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">0.40</MechFormingSpeed>
+	  <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">0.40</MechRepairSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OES_LS_F</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>24.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>40</power>
+		<armorPenetration>1.10</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <OES_LegionSpear_E>1</OES_LegionSpear_E>
+	  <OE_Empyrium>10</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_SyntheriusOfSin>10</OE_SyntheriusOfSin>
+    </costList>	
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OES_LS_F</defName>
+	<label>Legion Spear Mk.V energy bullet</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.10</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <armorPenetrationBase>0.90</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>100</speed>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

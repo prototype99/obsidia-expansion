@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Tionant Base ====================-->
+  <ThingDef Name="OEBaseTionant" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>2.0</MoveSpeed>
+      <MarketValue>5500</MarketValue>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.55</ArmorRating_Heat>
+	  <ToxicResistance>0.5</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+      <FilthRate>8</FilthRate>
+	  <Wildness>0.95</Wildness>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+    </statBases>
+	<uiIconScale>1.2</uiIconScale>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>OELeftInsectClawAttackTool</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>OERightInsectClawAttackTool</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OETionantLike</body>
+	  <packAnimal>false</packAnimal>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
+      <baseBodySize>0.75</baseBodySize>
+      <baseHealthScale>12.0</baseHealthScale>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+      <leatherDef>OE_Obsidian</leatherDef>
+	  <fleshType>Insectoid</fleshType>
+	  <bloodDef>Filth_BloodInsect</bloodDef>
+	  <meatColor>(160,168,139)</meatColor>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <trainability>Intermediate</trainability>
+	  <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
+      </specialTrainables>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <roamMtbDays>5</roamMtbDays>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeArchean</li>
+      </willNeverEat>
+      <lifeExpectancy>200</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>OEInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>OEInsectJuvenile</def>
+          <minAge>0.3</minAge>
+        </li>
+        <li>
+          <def>OESmallInsectAdult</def>
+          <minAge>0.666</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Insectoid_Eat</soundEating>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+	<ingredient>
+      <mergeCompatibilityTags>
+        <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <tradeTags>
+      <li>OEAnimalExotic</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseTionant" Abstract="True">
+    <combatPower>500</combatPower>
+    <ecoSystemWeight>1</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+  </PawnKindDef>
+
+<!--=============== Tionant Blue ====================-->
+  <ThingDef ParentName="OEBaseTionant">
+    <defName>OE_Tionant_Blue</defName>
+    <label>tionant (blue)</label>
+    <description>Tionants are the scourge of Obsidia. In ancient times, these creatures terrorized the entire planet, the ancient Obsidia humans worshiped them as gods, but several thousand years ago they disappeared without a trace ... But suddenly, a hundred years ago, these creatures again declared themselves. Continuing their terror on the planet. The reason for their disappearance and reappearance is not yet clear, since the Tionantes are very difficult to study.\n\nBut despite all this, Tionants have one useful feature. Blue Tionants produce a healing jelly with their bodies.</description>
+	<race>
+	  <canCrossBreedWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Blue</li>
+      </canCrossBreedWith>
+      <crossAggroWith>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Green</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Red</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Yellow</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Blue</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Green</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Red</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Yellow</li>
+      </crossAggroWith>
+	</race>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Blue_TionantJelly</milkDef>
+        <milkIntervalDays>4</milkIntervalDays>
+        <milkAmount>16</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_EggTionantUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_EggBlueTionantFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>20</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseTionant">
+    <defName>OE_Tionant_Blue</defName>
+    <label>blue tionant</label>
+    <labelPlural>blue tionants</labelPlural>
+    <race>OE_Tionant_Blue</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Blue</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Blue</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Blue</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Blue</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Blue</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Blue</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Tionant Green ====================-->
+  <ThingDef ParentName="OEBaseTionant">
+    <defName>OE_Tionant_Green</defName>
+    <label>tionant (green)</label>
+    <description>Tionants are the scourge of Obsidia. In ancient times, these creatures terrorized the entire planet, the ancient Obsidia humans worshiped them as gods, but several thousand years ago they disappeared without a trace ... But suddenly, a hundred years ago, these creatures again declared themselves. Continuing their terror on the planet. The reason for their disappearance and reappearance is not yet clear, since the Tionantes are very difficult to study.\n\nBut despite all this, Tionants have one useful feature. Green Tionants produce a nutritious vegetable jelly with their bodies.</description>
+	<race>
+	  <canCrossBreedWith>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Green</li>
+      </canCrossBreedWith>
+      <crossAggroWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Blue</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Red</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Yellow</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Blue</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Green</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Red</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Yellow</li>
+      </crossAggroWith>
+	</race>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Green_TionantJelly</milkDef>
+        <milkIntervalDays>4</milkIntervalDays>
+        <milkAmount>40</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_EggTionantUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_EggGreenTionantFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>20</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseTionant">
+    <defName>OE_Tionant_Green</defName>
+    <label>green tionant</label>
+    <labelPlural>green tionants</labelPlural>
+    <race>OE_Tionant_Green</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Green</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Green</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Green</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Green</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Green</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Green</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Tionant Red ====================-->
+  <ThingDef ParentName="OEBaseTionant">
+    <defName>OE_Tionant_Red</defName>
+    <label>tionant (red)</label>
+    <description>Tionants are the scourge of Obsidia. In ancient times, these creatures terrorized the entire planet, the ancient Obsidia humans worshiped them as gods, but several thousand years ago they disappeared without a trace ... But suddenly, a hundred years ago, these creatures again declared themselves. Continuing their terror on the planet. The reason for their disappearance and reappearance is not yet clear, since the Tionantes are very difficult to study.\n\nBut despite all this, Tionants have one useful feature. Red Tionantes produce nutritious meat-based jelly with their bodies.</description>
+	<race>
+	  <canCrossBreedWith>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Red</li>
+      </canCrossBreedWith>
+      <crossAggroWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Blue</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Green</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Yellow</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Blue</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Green</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Red</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Yellow</li>
+      </crossAggroWith>
+	</race>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Red_TionantJelly</milkDef>
+        <milkIntervalDays>4</milkIntervalDays>
+        <milkAmount>40</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_EggTionantUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_EggRedTionantFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>20</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseTionant">
+    <defName>OE_Tionant_Red</defName>
+    <label>red tionant</label>
+    <labelPlural>red tionants</labelPlural>
+    <race>OE_Tionant_Red</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Red</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Red</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Red</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Red</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Red</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Red</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Tionant Yellow ====================-->
+  <ThingDef ParentName="OEBaseTionant">
+    <defName>OE_Tionant_Yellow</defName>
+    <label>tionant (yellow)</label>
+    <description>Tionants are the scourge of Obsidia. In ancient times, these creatures terrorized the entire planet, the ancient Obsidia humans worshiped them as gods, but several thousand years ago they disappeared without a trace ... But suddenly, a hundred years ago, these creatures again declared themselves. Continuing their terror on the planet. The reason for their disappearance and reappearance is not yet clear, since the Tionantes are very difficult to study.\n\nBut despite all this, Tionants have one useful feature. Yellow Thionants produce a nutritious animal jelly with their bodies.</description>
+	<race>
+	  <canCrossBreedWith>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Yellow</li>
+      </canCrossBreedWith>
+      <crossAggroWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Blue</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Green</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Tionant_Red</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Blue</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Green</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Red</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_Elder_Tionant_Yellow</li>
+      </crossAggroWith>
+	</race>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Yellow_TionantJelly</milkDef>
+        <milkIntervalDays>4</milkIntervalDays>
+        <milkAmount>40</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_EggTionantUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_EggYellowTionantFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>20</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseTionant">
+    <defName>OE_Tionant_Yellow</defName>
+    <label>yellow tionant</label>
+    <labelPlural>yellow tionants</labelPlural>
+    <race>OE_Tionant_Yellow</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Yellow</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Yellow</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Yellow</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Yellow</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/TionantMale_Yellow</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/TionantFemale_Yellow</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Tionant/Dessicated_Tionant_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

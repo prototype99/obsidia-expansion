@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Races Expanded - Sanguophage</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Hemogen Animal ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_HemogenAnimal</defName>
+    <label>animal hemogen slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nAnimal hemogen slime production type, produces 4 Animal hemogen every 2 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_HemogenAnimal</ThingDef>
+	  <ThingDef>VRE_HemogenPack_Animal</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>350</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimalStrict</foodType>
+    </race>
+	<butcherProducts>
+      <VRE_HemogenPack_Animal>5</VRE_HemogenPack_Animal>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>VRE_HemogenPack_Animal</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>4</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_HemogenAnimal</defName>
+    <label>animal hemogen slime</label>
+    <labelPlural>animal hemogen slimes</labelPlural>
+    <race>OE_Slime_HemogenAnimal</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenAnimal/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenAnimal/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenAnimal/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenAnimal/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenAnimal/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenAnimal/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_HemogenAnimal</defName>
+    <label>animal hemogen slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Animal hemogen slime in 5 days. Animal hemogen slime produces 4 Animal hemogen every 2 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_HemogenAnimal</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_HemogenAnimal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>250</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <VRE_HemogenPack_Animal>25</VRE_HemogenPack_Animal>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_HemogenAnimal</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Hemogen Corpse ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_HemogenCorpse</defName>
+    <label>corpse hemogen slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nCorpse hemogen slime production type, produces 5 Corpse hemogen every 2 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_HemogenCorpse</ThingDef>
+	  <ThingDef>VRE_HemogenPack_Corpse</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>350</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimalStrict</foodType>
+    </race>
+	<butcherProducts>
+      <VRE_HemogenPack_Corpse>5</VRE_HemogenPack_Corpse>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>VRE_HemogenPack_Corpse</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>5</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_HemogenCorpse</defName>
+    <label>corpse hemogen slime</label>
+    <labelPlural>corpse hemogen slimes</labelPlural>
+    <race>OE_Slime_HemogenCorpse</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenCorpse/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenCorpse/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenCorpse/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenCorpse/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenCorpse/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenCorpse/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_HemogenCorpse</defName>
+    <label>corpse hemogen slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Corpse hemogen slime in 5 days. Corpse hemogen slime produces 5 Corpse hemogen every 2 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_HemogenCorpse</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_HemogenCorpse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>250</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <VRE_HemogenPack_Corpse>25</VRE_HemogenPack_Corpse>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_HemogenCorpse</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Hemogen Sanguophage ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_HemogenSanguophage</defName>
+    <label>sanguophage hemogen slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nSanguophage hemogen slime production type, produces 3 Sanguophage hemogen every 2 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_HemogenSanguophage</ThingDef>
+	  <ThingDef>VRE_HemogenPack_Sanguophage</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>350</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimalStrict</foodType>
+    </race>
+	<butcherProducts>
+      <VRE_HemogenPack_Sanguophage>5</VRE_HemogenPack_Sanguophage>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>VRE_HemogenPack_Sanguophage</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>3</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_HemogenSanguophage</defName>
+    <label>sanguophage hemogen slime</label>
+    <labelPlural>sanguophage hemogen slimes</labelPlural>
+    <race>OE_Slime_HemogenSanguophage</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenSanguophage/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenSanguophage/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenSanguophage/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenSanguophage/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenSanguophage/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/HemogenSanguophage/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_HemogenSanguophage</defName>
+    <label>sanguophage hemogen slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Sanguophage hemogen slime in 5 days. Sanguophage hemogen slime produces 3 Sanguophage hemogen every 2 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_HemogenSanguophage</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_HemogenSanguophage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>250</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <VRE_HemogenPack_Sanguophage>25</VRE_HemogenPack_Sanguophage>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_HemogenSanguophage</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Nanomorph Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Nanogel ====================-->
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Nanogel</defName>
+    <label>nanogel slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nNanogel slime production type, produces 4 Nanogel every 2 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Nanogel</ThingDef>
+	  <ThingDef>OE_Nanogel</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>550</MarketValue>
+    </statBases>
+	<race>
+      <predator>true</predator>
+      <foodType>CarnivoreAnimalStrict</foodType>
+    </race>
+	<butcherProducts>
+      <OE_Nanogel>5</OE_Nanogel>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>OE_Nanogel</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>4</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Nanogel</defName>
+    <label>nanogel slime</label>
+    <labelPlural>nanogel slimes</labelPlural>
+    <race>OE_Slime_Nanogel</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Nanogel/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Nanogel/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Nanogel/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Nanogel/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Nanogel/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Nanogel/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>35</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Nanogel</defName>
+    <label>nanogel slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Nanogel slime in 5 days. Nanogel slime produces 4 Nanogel every 2 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Nanogel</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Nanogel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Nanogel>25</OE_Nanogel>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Nanogel</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

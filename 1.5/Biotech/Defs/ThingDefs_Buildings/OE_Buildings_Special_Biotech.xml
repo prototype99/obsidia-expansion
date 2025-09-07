@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Gene Grower ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_GeneGrower</defName>
+    <label>obsidia gene grower</label>
+    <description>The Gene grower is an advanced experimental equipment that allows you to passively produce random Genepacks. This is very delicate and poorly shielded equipment which causes cold air.</description>
+    <graphicData>
+      <texPath>Things/Building/Special/OE_GeneGrower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+      <OE_Empyrium>50</OE_Empyrium>
+	  <OE_Orichalcum>50</OE_Orichalcum>
+	  <OE_Syntherius>50</OE_Syntherius>
+	  <OE_ArachnaCore>4</OE_ArachnaCore>
+	  <OE_EGOSeed>4</OE_EGOSeed>
+    </costList>
+	<building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+	<statBases>
+      <WorkToBuild>5500</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <MarketValue>3500</MarketValue>
+      <Flammability>1.0</Flammability>
+	  <Mass>35</Mass>
+    </statBases>
+	<altitudeLayer>Building</altitudeLayer>
+	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	<designationCategory>Biotech</designationCategory>
+	<tickerType>Normal</tickerType>
+    <size>(3, 3)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+      <li>OEBuildingExotic</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>Genepack</thingToSpawn>
+        <spawnCount>1</spawnCount>
+		<spawnIntervalRange>
+		  <min>600000</min>
+		  <max>1200000</max>
+		</spawnIntervalRange>
+		<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+		<showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+	  <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>ArchiteCapsule</thingToSpawn>
+        <spawnCount>1</spawnCount>
+		<spawnIntervalRange>
+		  <min>900000</min>
+		  <max>2400000</max>
+		</spawnIntervalRange>
+		<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+		<showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-5</heatPerSecond>
+        <heatPushMinTemperature>-5</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>OEBioengineeringAdv</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

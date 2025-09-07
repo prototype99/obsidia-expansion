@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO - Pistol ====================-->
+  <ThingDef ParentName="OERangedBaseNQE">
+    <defName>EGO_Pistol</defName>
+    <label>Humunculus</label>
+    <description>Amalgam Pistol used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.25</RestRateMultiplier>
+	  <PainShockThreshold>-0.25</PainShockThreshold>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>3690</MarketValue>
+	  <Mass>1.5</Mass>
+	  <AccuracyTouch>1.20</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_P</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>22.9</range>
+        <soundCast>Pawn_Megascarab_Angry</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_P</defName>
+    <label>Humunculus bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+      <speed>70</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>OTCCryo</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EGO - Shotgun ====================-->
+  <ThingDef ParentName="OERangedBaseNQE">
+    <defName>EGO_Shotgun</defName>
+    <label>Corrupter</label>
+    <description>Amalgam Shotgun used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.1</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.35</RestRateMultiplier>
+	  <PainShockThreshold>-0.35</PainShockThreshold>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4135</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Pawn_Spelopede_Angry</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_S</defName>
+    <label>Corrupter blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>70</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>OTCCryo</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EGO - SMG ====================-->
+  <ThingDef ParentName="OERangedBaseNQE">
+    <defName>EGO_SMG</defName>
+    <label>Toxocyst</label>
+    <description>Amalgam SMG used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/SMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.25</RestRateMultiplier>
+	  <PainShockThreshold>-0.25</PainShockThreshold>
+	  <MentalBreakThreshold>0.10</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4120</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>1.3</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.95</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_SMG</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>18.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Pawn_Megascarab_Death</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_SMG</defName>
+    <label>Toxocyst bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+      <speed>65</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>OTCCryo</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EGO - SniperRifle ====================-->
+  <ThingDef ParentName="OERangedBaseNQE">
+    <defName>EGO_SniperRifle</defName>
+    <label>Patagius</label>
+    <description>Amalgam Sniper Rifle used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</description>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.1</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.4</RestRateMultiplier>
+	  <PainShockThreshold>-0.4</PainShockThreshold>
+	  <MentalBreakThreshold>0.20</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.65</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>	
+	<statBases>
+      <MarketValue>5415</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.20</AccuracyShort>
+      <AccuracyMedium>1.30</AccuracyMedium>
+      <AccuracyLong>1.40</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_SR</defaultProjectile>
+        <warmupTime>2.50</warmupTime>
+        <range>49.9</range>
+        <soundCast>Pawn_Spelopede_Pain</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_SR</defName>
+    <label>Patagius bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.50</armorPenetrationBase>
+      <speed>110</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>OTCCryo</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

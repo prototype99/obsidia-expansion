@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OCC - KnightHelmet ====================-->
+<OCC_Helmet.label>OCC Knight Helmet</OCC_Helmet.label>
+<OCC_Helmet.description>Heavy power armor Helmet, excellent protects the owner. Designed for use by the OCC Knights.</OCC_Helmet.description>
+
+<OCC_Helmet_M.label>OCC Paladin Helmet</OCC_Helmet_M.label>
+<OCC_Helmet_M.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nThe hardened version provides more protection to the owner.</OCC_Helmet_M.description>
+
+<OCC_Helmet_M_Spacer.label>OCC Paladin Helmet(Space Griffin)</OCC_Helmet_M_Spacer.label>
+<OCC_Helmet_M_Spacer.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OCC_Helmet_M_Spacer.description>
+
+<OCC_Helmet_M_Melee.label>OCC Paladin Helmet(Gladiator)</OCC_Helmet_M_Melee.label>
+<OCC_Helmet_M_Melee.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nModified visor with analyzing computer that helps the user close combat.</OCC_Helmet_M_Melee.description>
+
+<OCC_Helmet_M_Ranged.label>OCC Paladin Helmet(Ranger)</OCC_Helmet_M_Ranged.label>
+<OCC_Helmet_M_Ranged.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nModified visor with targeting computer that helps the user aim.</OCC_Helmet_M_Ranged.description>
+
+<OCC_Helmet_M_Mechanitor.label>OCC Paladin Helmet(Overseer)</OCC_Helmet_M_Mechanitor.label>
+<OCC_Helmet_M_Mechanitor.description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nModified for improves Mechanoids Control abilities.</OCC_Helmet_M_Mechanitor.description>
+
+<!--=============== OCC - KnightArmor ====================-->
+<OCC_Armor.label>OCC Knight Armor</OCC_Armor.label>
+<OCC_Armor.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed for use by the OCC Knights.</OCC_Armor.description>
+
+<OCC_Armor_M.label>OCC Paladin Armor</OCC_Armor_M.label>
+<OCC_Armor_M.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nThe hardened version provides more protection to the owner.</OCC_Armor_M.description>
+
+<OCC_Armor_M_Spacer.label>OCC Paladin Armor(Space Griffin)</OCC_Armor_M_Spacer.label>
+<OCC_Armor_M_Spacer.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OCC_Armor_M_Spacer.description>
+
+<OCC_Armor_M_Jump.label>OCC Paladin Armor(Raven)</OCC_Armor_M_Jump.label>
+<OCC_Armor_M_Jump.verbs.Verb_Jump.label>OCC Paladin Armor(Raven)</OCC_Armor_M_Jump.verbs.Verb_Jump.label>
+<OCC_Armor_M_Jump.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Jump pack.</OCC_Armor_M_Jump.description>
+<OCC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>jump</OCC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>on cooldown</OCC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<OCC_Armor_M_Grenadier.label>OCC Paladin Armor(Exploder)</OCC_Armor_M_Grenadier.label>
+<OCC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>OCC Paladin Armor(Exploder)</OCC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>
+<OCC_Armor_M_Grenadier.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified by installing the Blast Grenade Launcher.</OCC_Armor_M_Grenadier.description>
+<OCC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>grenade</OCC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>on cooldown</OCC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>
+
+<OCC_Armor_M_Shield.label>OCC Paladin Armor(Guardian)</OCC_Armor_M_Shield.label>
+<OCC_Armor_M_Shield.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Reinforced Barrier.</OCC_Armor_M_Shield.description>
+
+<OCC_Armor_M_Barrier.label>OCC Paladin Armor(Protector)</OCC_Armor_M_Barrier.label>
+<OCC_Armor_M_Barrier.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of the Universal Barrier.</OCC_Armor_M_Barrier.description>
+
+<OCC_Armor_M_ForceField.label>OCC Paladin Armor(Warden)</OCC_Armor_M_ForceField.label>
+<OCC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>OCC Paladin Armor(Warden)</OCC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>
+<OCC_Armor_M_ForceField.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Low-Shield pack.</OCC_Armor_M_ForceField.description>
+<OCC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>shield</OCC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>on cooldown</OCC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>
+
+<OCC_Armor_M_Mechanitor.label>OCC Paladin Armor(Overseer)</OCC_Armor_M_Mechanitor.label>
+<OCC_Armor_M_Mechanitor.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Mechanoids Control pack.</OCC_Armor_M_Mechanitor.description>
+
+<OCC_Armor_M_Turret.label>OCC Paladin Armor(Goblin)</OCC_Armor_M_Turret.label>
+<OCC_Armor_M_Turret.description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</OCC_Armor_M_Turret.description>
+<OCC_Armor_M_Turret.verbs.deploy_turret.label>deploy turret</OCC_Armor_M_Turret.verbs.deploy_turret.label>
+<OCC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</OCC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OCC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</OCC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OCC - Grenades ====================-->
+<OCC_Grenade.label>Blast Grenade</OCC_Grenade.label>
+
+<Grenade_Armor_OCC_TurretPack.label>OCC turret pack capsule</Grenade_Armor_OCC_TurretPack.label>
+
+</LanguageData>

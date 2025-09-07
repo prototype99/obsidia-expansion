@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Raptor ====================-->
+  <BodyPartGroupDef>
+    <defName>OELeftFootClawAttackTool</defName>
+    <label>left sickle claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OERightFootClawAttackTool</defName>
+    <label>right sickle claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OELeftArmClawAttackTool</defName>
+    <label>left arm claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OERightArmClawAttackTool</defName>
+    <label>right arm claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+<!--=============== Tionant ====================-->
+  <BodyPartGroupDef>
+    <defName>OELeftInsectClawAttackTool</defName>
+    <label>left insect claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>OERightInsectClawAttackTool</defName>
+    <label>right insect claws</label>
+	<labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>

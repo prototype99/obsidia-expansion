@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Extra Uniform Base ====================-->
+  <ThingDef Name="OEUniformExtraBase" ParentName="OEArmorCore" Abstract="True">
+    <uiIconScale>1.25</uiIconScale>
+	<thingCategories Inherit="False">
+	  <li>VAE_BootsAndGloves</li>
+	</thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+	<tradeTags>
+      <li>OEGear</li>
+    </tradeTags>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+    </recipeMaker>
+	<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	<comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

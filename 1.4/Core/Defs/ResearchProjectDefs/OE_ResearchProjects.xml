@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Empire ====================-->
+	<ResearchProjectDef Name="OEResearchProject10" Abstract="True">
+		<baseCost>10000</baseCost>
+	</ResearchProjectDef>
+	<ResearchProjectDef Name="OEResearchProject15" Abstract="True">
+		<baseCost>15000</baseCost>
+	</ResearchProjectDef>
+	<ResearchProjectDef Name="OEResearchProject20" Abstract="True">
+		<baseCost>20000</baseCost>
+	</ResearchProjectDef>
+	<ResearchProjectDef Name="OEResearchProject25" Abstract="True">
+		<baseCost>25000</baseCost>
+	</ResearchProjectDef>
+	<ResearchProjectDef Name="OEResearchProject30" Abstract="True">
+		<baseCost>30000</baseCost>
+	</ResearchProjectDef>
+	<ResearchProjectDef Name="OEResearchProject35" Abstract="True">
+		<baseCost>35000</baseCost>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Core ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OECore</defName>
+		<label>OE - Core</label>
+		<description>Research basics of Obsidia technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Construction ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OEConstruction</defName>
+		<label>OE - Construction</label>
+		<description>Research basics of Obsidia construction technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OECore</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Building ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OEBuilding</defName>
+		<label>OE - Building</label>
+		<description>Research basics of Obsidia building technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OECore</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Power ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OEPower</defName>
+		<label>OE - Power</label>
+		<description>Research basics of Obsidia power technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OECore</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Advanced Power ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OEPowerAdv</defName>
+		<label>OE - Adv. Power</label>
+		<description>Research advanced of Obsidia power technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEPower</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Experimental Power ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject20">
+		<defName>OEPowerExp</defName>
+		<label>OE - Exp. Power</label>
+		<description>Research experimental of Obsidia power technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEPowerAdv</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Furniture ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OEFurniture</defName>
+		<label>OE - Furniture</label>
+		<description>Research basics of Obsidia furniture technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEBuilding</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Farming ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OEFarm</defName>
+		<label>OE - Farm</label>
+		<description>Research basics of Obsidia farming technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OECore</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Advanced Farming ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OEFarmAdv</defName>
+		<label>OE - Adv. Farm</label>
+		<description>Research advanced of Obsidia farming technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEFarm</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Experimental Farming ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject20">
+		<defName>OEFarmExp</defName>
+		<label>OE - Exp. Farm</label>
+		<description>Research experimental of Obsidia farming technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEFarmAdv</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Basic Synthesis ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OESynth</defName>
+		<label>OE - Synthesis</label>
+		<description>Research basics of Obsidia synthesis technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEFarm</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Advanced Synthesis ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject30">
+		<defName>OESynthAdv</defName>
+		<label>OE - Adv. Synthesis</label>
+		<description>Research advanced of Obsidia synthesis technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OESynth</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Modernization ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject20">
+		<defName>OEGearMod</defName>
+		<label>OE - Modernization</label>
+		<description>Research advanced of Obsidia gear modernization technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEConstruction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Chip Modules ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject35">
+		<defName>OEModules</defName>
+		<label>OE - Modules</label>
+		<description>Craft module provides the owner with various bonuses, depending on the model.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>	
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+	</ResearchProjectDef>	
+
+<!--=============== Obsidia Expansion - Cross Technologies ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject20">
+		<defName>OEGearCross</defName>
+		<label>OE - Cross Technologies</label>
+		<description>Research Cross Technologies of Obsidia gear.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OMCWeapons</li>
+			<li>OTCWeapons</li>
+			<li>OCCWeapons</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== OMС - Obsidia Military Corpus ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OMCArmor</defName>
+		<label>OMC - Regular Armor</label>
+		<description>Craft regular Obsidia Military Corpus soldiers medium power armor.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEConstruction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OMCWeapons</defName>
+		<label>OMC - Regular Weapons</label>
+		<description>Craft regular Obsidia Military Corpus soldiers weapons.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OMCArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="OEResearchProject20">
+		<defName>OMCGearMod</defName>
+		<label>OMC - Modified Equipment</label>
+		<description>Modification Obsidia Military Corpus officers equipment.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>	
+
+<!--=============== OTС - Obsidia Tech Corpus ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OTCArmor</defName>
+		<label>OTC - Regular Armor</label>
+		<description>Craft regular Obsidia Tech Corpus mechanics light power armor.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEConstruction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OTCWeapons</defName>
+		<label>OTC - Regular Weapons</label>
+		<description>Craft regular Obsidia Tech Corpus mechanics weapons.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OTCArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="OEResearchProject25">
+		<defName>OTCGearMod</defName>
+		<label>OTC - Experimental Equipment</label>
+		<description>Craft experimental Obsidia Tech Corpus equipment.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>	
+		
+<!--=============== OCC - Obsidia Crusaders Corpus ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OCCArmor</defName>
+		<label>OCC - Regular Armor</label>
+		<description>Craft regular Obsidia Crusaders Corpus knights medium power armor.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEConstruction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OCCWeapons</defName>
+		<label>OCC - Regular Weapons</label>
+		<description>Craft regular Obsidia Crusaders Corpus knights weapons.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OCCArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="OEResearchProject25">
+		<defName>OCCGearMod</defName>
+		<label>OCC - Reforged Equipment</label>
+		<description>Reforge Obsidia Crusaders Corpus paladins equipment.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>	
+
+<!--=============== Drifter Clans ====================-->
+<!--=============== Drifters Clans - Core ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>ODCGear</defName>
+		<label>ODC - Core</label>
+		<description>Research basics of Drifter Clans technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEConstruction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Drifters Clans - Emergent ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>ODCGearAdv</defName>
+		<label>ODC - Emergent</label>
+		<description>Research Emergent technology of Drifter Clans.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ODCGear</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Drifters Clans - Apex ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject20">
+		<defName>ODCGearExp</defName>
+		<label>ODC - Apex</label>
+		<description>Research Apex technology of Drifter Clans.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ODCGearAdv</li>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>2.10</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Crimson Arachna Cult ====================-->
+<!--=============== Crimson Arachna Cult - Initiation ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>CACGear</defName>
+		<label>CAC - Initiation</label>
+		<description>Research Initiation technology of Crimson Arachna Cult.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEGearMod</li>
+			<li>OESynthAdv</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Crimson Arachna Cult - Enlightenment ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>CACGearAdv</defName>
+		<label>CAC - Enlightenment</label>
+		<description>Research Enlightenment technology of Crimson Arachna Cult.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>CACGear</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Defence ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OEDefence</defName>
+		<label>OE - Defence</label>
+		<description>Research basics of Obsidia defence technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEBuilding</li>
+			<li>OESynth</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Adv. Defence ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject30">
+		<defName>OEDefenceAdv</defName>
+		<label>OE - Adv. Defence</label>
+		<description>Research advanced of Obsidia defence technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEDefence</li>
+			<li>OESynthAdv</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Bionics ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject10">
+		<defName>OEBionics</defName>
+		<label>OE - Bionics</label>
+		<description>Research basics of Obsidia bionics technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OESynth</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Adv. Bionics ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OEBionicsAdv</defName>
+		<label>OE - Adv. Bionics</label>
+		<description>Research advanced of Obsidia bionics technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEBionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Implants ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OEImplants</defName>
+		<label>OE - Implants</label>
+		<description>Research basics of Obsidia implanting technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEBionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Cyberwares ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OECyberwares</defName>
+		<label>OE - Cyberwares</label>
+		<description>Research basics of Obsidia cyberwares technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEImplants</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Adv. Cyberwares ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject30">
+		<defName>OECyberwaresAdv</defName>
+		<label>OE - Adv. Cyberwares</label>
+		<description>Research advanced of Obsidia cyberwares technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OECyberwares</li>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Obsidia Expansion - Bioengineering ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject15">
+		<defName>OEBioengineering</defName>
+		<label>OE - Bioengineering</label>
+		<description>Research basics of Obsidia bioengineering technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEBionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

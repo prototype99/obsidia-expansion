@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Base Obsidia Colony ====================-->
+  <FactionDef ParentName="PlayerFactionBase" Abstract="True" Name="OEPlayerFactionBase">
+    <isPlayer>true</isPlayer>
+    <techLevel>Ultra</techLevel>
+	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	<allowedCultures>
+	  <li>Astropolitan</li>
+	</allowedCultures>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>OECivilians</li>
+		  <li>OEFighters</li>
+		  <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>OE_Mooncloth</li>
+		<li>OE_Leather_Direwolf</li>
+		<li>OE_Leather_Raptor</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+<!--=============== Obsidia Player Colony ====================-->
+  <FactionDef ParentName="OEPlayerFactionBase">
+    <defName>OE_ObsidiaPlayerColony</defName>
+    <label>Obsidia Colony</label>
+    <description>A colony of recently-arrived Obsidia Empire colonists.</description>
+    <basicMemberKind>OE_PlayerColonist</basicMemberKind>
+    <pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+  </FactionDef>
+
+<!--=============== Obsidia Agent Player Colony ====================-->
+  <FactionDef ParentName="OEPlayerFactionBase">
+    <defName>OE_ObsidiaAgentPlayerColony</defName>
+    <label>Obsidia Agent Colony</label>
+    <description>A colony of recently-crashed Obsidia Empire agents.</description>
+    <basicMemberKind>OE_PlayerAgent</basicMemberKind>
+    <pawnSingular>agent</pawnSingular>
+    <pawnsPlural>agents</pawnsPlural>
+  </FactionDef>
+ 
+</Defs>

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC ====================-->
+<!--=============== Small ====================-->
+<OMC_Turret_Small.label>OMC Турель Гибель</OMC_Turret_Small.label>
+<OMC_Turret_Small.description>Автоматическая турель использующая OMC Дробовик. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OMC_Turret_Small.description>
+<OMC_Turret_Small.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OMC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OMC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OMC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OMC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OMC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OMC_Turret_SmallPowered.label>OMC Запитанная Турель Гибель</OMC_Turret_SmallPowered.label>
+<OMC_Turret_SmallPowered.description>Автоматическая турель использующая OMC Дробовик. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OMC_Turret_SmallPowered.description>
+<OMC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OMC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OMC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OMC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OMC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OMC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OMC_TurretGun_Small.label>Турель Гибель</OMC_TurretGun_Small.label>
+<OMC_TurretGun_Small.verbs.Verb_Shoot.label>Турель Гибель</OMC_TurretGun_Small.verbs.Verb_Shoot.label>
+<OMC_TurretGun_Small.description>Реконструированный OMC Дробовик для турелей. Скорострельное и многозарядное оружие с пониженным уроном.</OMC_TurretGun_Small.description>
+
+<OMC_TurretBullet_Small.label>дробь турели гибель</OMC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OMC_Turret_Big.label>OMC Турель Нападающий</OMC_Turret_Big.label>
+<OMC_Turret_Big.description>Автоматическая турель использующая OMC Штурмовая Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OMC_Turret_Big.description>
+<OMC_Turret_Big.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OMC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OMC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OMC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OMC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OMC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OMC_TurretGun_Big.label>Турель Нападающий</OMC_TurretGun_Big.label>
+<OMC_TurretGun_Big.verbs.Verb_Shoot.label>Турель Нападающий</OMC_TurretGun_Big.verbs.Verb_Shoot.label>
+<OMC_TurretGun_Big.description>Реконструированный OMC Штурмовая Винтовка для турелей. Скорострельное и многозарядное оружие с пониженным уроном.</OMC_TurretGun_Big.description>
+
+<OMC_TurretBullet_Big.label>пуля из турели нападающий</OMC_TurretBullet_Big.label>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_Acid.label>OTC Турель Эквалайзер(Кислота)</OTC_Turret_Small_Acid.label>
+<OTC_Turret_Small_Acid.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Small_Acid.description>
+<OTC_Turret_Small_Acid.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Small_Acid.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_Acid.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Small_Acid.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_Acid.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Small_Acid.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_Acid.label>OTC Запитанная Турель Эквалайзер(Кислота)</OTC_Turret_SmallPowered_Acid.label>
+<OTC_Turret_SmallPowered_Acid.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OTC_Turret_SmallPowered_Acid.description>
+<OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_SmallPowered_Acid.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_Acid.label>Турель Эквалайзер(Кислота)</OTC_TurretGun_Small_Acid.label>
+<OTC_TurretGun_Small_Acid.verbs.Verb_Shoot.label>Турель Эквалайзер(Кислота)</OTC_TurretGun_Small_Acid.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_Acid.description>Реконструированный OTC СМГ для турелей. Сбалансированное оружие с Кислотными зарядами.</OTC_TurretGun_Small_Acid.description>
+
+<OTC_TurretBullet_Small_Acid.label>кислотная энерго-пуля из турели эквалайзер</OTC_TurretBullet_Small_Acid.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_Acid.label>OTC Турель Метеор(Кислота)</OTC_Turret_Big_Acid.label>
+<OTC_Turret_Big_Acid.description>Автоматическая турель использующая OTC Гранатомёт. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Big_Acid.description>
+<OTC_Turret_Big_Acid.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Big_Acid.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_Acid.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Big_Acid.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_Acid.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Big_Acid.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_Acid.label>Турель Метеор(Кислота)</OTC_TurretGun_Big_Acid.label>
+<OTC_TurretGun_Big_Acid.verbs.Verb_Shoot.label>Турель Метеор(Кислота)</OTC_TurretGun_Big_Acid.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_Acid.description>Реконструированный OTC Гранатомёт для турелей. Сбалансированное оружие с Кислотными зарядами.</OTC_TurretGun_Big_Acid.description>
+
+<OTC_TurretBullet_Big_Acid.label>кислотная граната из турели метеор</OTC_TurretBullet_Big_Acid.label>
+<!--=============== Cryo ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_Cryo.label>OTC Турель Эквалайзер(Крио)</OTC_Turret_Small_Cryo.label>
+<OTC_Turret_Small_Cryo.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Small_Cryo.description>
+<OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Small_Cryo.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_Cryo.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Small_Cryo.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_Cryo.label>OTC Запитанная Турель Эквалайзер(Крио)</OTC_Turret_SmallPowered_Cryo.label>
+<OTC_Turret_SmallPowered_Cryo.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OTC_Turret_SmallPowered_Cryo.description>
+<OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_SmallPowered_Cryo.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_Cryo.label>Турель Эквалайзер(Крио)</OTC_TurretGun_Small_Cryo.label>
+<OTC_TurretGun_Small_Cryo.verbs.Verb_Shoot.label>Турель Эквалайзер(Крио)</OTC_TurretGun_Small_Cryo.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_Cryo.description>Реконструированный OTC СМГ для турелей. Сбалансированное оружие с Крио зарядами.</OTC_TurretGun_Small_Cryo.description>
+
+<OTC_TurretBullet_Small_Cryo.label>крио энерго-пуля из турели эквалайзер</OTC_TurretBullet_Small_Cryo.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_Cryo.label>OTC Турель Метеор(Крио)</OTC_Turret_Big_Cryo.label>
+<OTC_Turret_Big_Cryo.description>Автоматическая турель использующая OTC Гранатомёт. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Big_Cryo.description>
+<OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Big_Cryo.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_Cryo.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Big_Cryo.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_Cryo.label>Турель Метеор(Крио)</OTC_TurretGun_Big_Cryo.label>
+<OTC_TurretGun_Big_Cryo.verbs.Verb_Shoot.label>Турель Метеор(Крио)</OTC_TurretGun_Big_Cryo.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_Cryo.description>Реконструированный OTC Гранатомёт для турелей. Сбалансированное оружие с Крио зарядами.</OTC_TurretGun_Big_Cryo.description>
+
+<OTC_TurretBullet_Big_Cryo.label>крио граната из турели метеор</OTC_TurretBullet_Big_Cryo.label>
+<!--=============== Fire ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_Fire.label>OTC Турель Эквалайзер(Огонь)</OTC_Turret_Small_Fire.label>
+<OTC_Turret_Small_Fire.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Small_Fire.description>
+<OTC_Turret_Small_Fire.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Small_Fire.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_Fire.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Small_Fire.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_Fire.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Small_Fire.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_Fire.label>OTC Запитанная Турель Эквалайзер(Огонь)</OTC_Turret_SmallPowered_Fire.label>
+<OTC_Turret_SmallPowered_Fire.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OTC_Turret_SmallPowered_Fire.description>
+<OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_SmallPowered_Fire.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_Fire.label>Турель Эквалайзер(Огонь)</OTC_TurretGun_Small_Fire.label>
+<OTC_TurretGun_Small_Fire.verbs.Verb_Shoot.label>Турель Эквалайзер(Огонь)</OTC_TurretGun_Small_Fire.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_Fire.description>Реконструированный OTC СМГ для турелей. Сбалансированное оружие с Огненными зарядами.</OTC_TurretGun_Small_Fire.description>
+
+<OTC_TurretBullet_Small_Fire.label>огненная энерго-пуля из турели эквалайзер</OTC_TurretBullet_Small_Fire.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_Fire.label>OTC Турель Метеор(Огонь)</OTC_Turret_Big_Fire.label>
+<OTC_Turret_Big_Fire.description>Автоматическая турель использующая OTC Гранатомёт. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Big_Fire.description>
+<OTC_Turret_Big_Fire.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Big_Fire.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_Fire.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Big_Fire.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_Fire.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Big_Fire.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_Fire.label>Турель Метеор(Огонь)</OTC_TurretGun_Big_Fire.label>
+<OTC_TurretGun_Big_Fire.verbs.Verb_Shoot.label>Турель Метеор(Огонь)</OTC_TurretGun_Big_Fire.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_Fire.description>Реконструированный OTC Гранатомёт для турелей. Сбалансированное оружие с Огненными зарядами.</OTC_TurretGun_Big_Fire.description>
+
+<OTC_TurretBullet_Big_Fire.label>огненная граната из турели метеор</OTC_TurretBullet_Big_Fire.label>
+<!--=============== EMP ====================-->
+<!--=============== Small ====================-->
+<OTC_Turret_Small_EMP.label>OTC Турель Эквалайзер(ЭМИ)</OTC_Turret_Small_EMP.label>
+<OTC_Turret_Small_EMP.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Small_EMP.description>
+<OTC_Turret_Small_EMP.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Small_EMP.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Small_EMP.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Small_EMP.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Small_EMP.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Small_EMP.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_Turret_SmallPowered_EMP.label>OTC Запитанная Турель Эквалайзер(ЭМИ)</OTC_Turret_SmallPowered_EMP.label>
+<OTC_Turret_SmallPowered_EMP.description>Автоматическая турель использующая OTC СМГ. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OTC_Turret_SmallPowered_EMP.description>
+<OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_SmallPowered_EMP.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Small_EMP.label>Турель Эквалайзер(ЭМИ)</OTC_TurretGun_Small_EMP.label>
+<OTC_TurretGun_Small_EMP.verbs.Verb_Shoot.label>Турель Эквалайзер(ЭМИ)</OTC_TurretGun_Small_EMP.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Small_EMP.description>Реконструированный OTC СМГ для турелей. Сбалансированное оружие с ЭМИ зарядами.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</OTC_TurretGun_Small_EMP.description>
+
+<OTC_TurretBullet_Small_EMP.label>ЭМИ энерго-пуля из турели эквалайзер</OTC_TurretBullet_Small_EMP.label>
+<!--=============== Big ====================-->
+<OTC_Turret_Big_EMP.label>OTC Турель Метеор(ЭМИ)</OTC_Turret_Big_EMP.label>
+<OTC_Turret_Big_EMP.description>Автоматическая турель использующая OTC Гранатомёт. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OTC_Turret_Big_EMP.description>
+<OTC_Turret_Big_EMP.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OTC_Turret_Big_EMP.comps.CompRefuelable.fuelLabel>
+<OTC_Turret_Big_EMP.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OTC_Turret_Big_EMP.comps.CompRefuelable.fuelGizmoLabel>
+<OTC_Turret_Big_EMP.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OTC_Turret_Big_EMP.comps.CompRefuelable.outOfFuelMessage>
+
+<OTC_TurretGun_Big_EMP.label>Турель Метеор(ЭМИ)</OTC_TurretGun_Big_EMP.label>
+<OTC_TurretGun_Big_EMP.verbs.Verb_Shoot.label>Турель Метеор(ЭМИ)</OTC_TurretGun_Big_EMP.verbs.Verb_Shoot.label>
+<OTC_TurretGun_Big_EMP.description>Реконструированный OTC Гранатомёт для турелей. Сбалансированное оружие с ЭМИ зарядами.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</OTC_TurretGun_Big_EMP.description>
+
+<OTC_TurretBullet_Big_EMP.label>ЭМИ граната из турели метеор</OTC_TurretBullet_Big_EMP.label>
+
+<!--=============== OCC ====================-->
+<!--=============== Small ====================-->
+<OCC_Turret_Small.label>OCC Турель Цербер</OCC_Turret_Small.label>
+<OCC_Turret_Small.description>Автоматическая турель использующая OCC Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OCC_Turret_Small.description>
+<OCC_Turret_Small.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OCC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OCC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OCC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OCC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OCC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OCC_Turret_SmallPowered.label>OCC Запитанная Турель Цербер</OCC_Turret_SmallPowered.label>
+<OCC_Turret_SmallPowered.description>Автоматическая турель использующая OCC Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OCC_Turret_SmallPowered.description>
+<OCC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OCC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OCC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OCC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OCC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OCC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OCC_TurretGun_Small.label>Турель Цербер</OCC_TurretGun_Small.label>
+<OCC_TurretGun_Small.verbs.Verb_Shoot.label>Турель Цербер</OCC_TurretGun_Small.verbs.Verb_Shoot.label>
+<OCC_TurretGun_Small.description>Реконструированный OCC Винтовка для турелей. Медлительное оружие предназначено для использования разрывных пуль.</OCC_TurretGun_Small.description>
+
+<OCC_TurretBullet_Small.label>пуля из турели цербер</OCC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OCC_Turret_Big.label>OCC Турель Бегемот</OCC_Turret_Big.label>
+<OCC_Turret_Big.description>Автоматическая турель использующая OCC Ракетница. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OCC_Turret_Big.description>
+<OCC_Turret_Big.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OCC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OCC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OCC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OCC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OCC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OCC_TurretGun_Big.label>Турель Бегемот</OCC_TurretGun_Big.label>
+<OCC_TurretGun_Big.verbs.Verb_Shoot.label>Турель Бегемот</OCC_TurretGun_Big.verbs.Verb_Shoot.label>
+<OCC_TurretGun_Big.description>Реконструированный OCC Ракетница для турелей. Медлительное оружие предназначено для использования разрывных пуль.</OCC_TurretGun_Big.description>
+
+<OCC_TurretBullet_Big.label>ракета из турели бегемот</OCC_TurretBullet_Big.label>
+
+<!--=============== OEC ====================-->
+<!--=============== Small ====================-->
+<OEC_Turret_Small.label>OEC Турель Миротворец</OEC_Turret_Small.label>
+<OEC_Turret_Small.description>Автоматическая турель использующая OEC Револьвер. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OEC_Turret_Small.description>
+<OEC_Turret_Small.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OEC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OEC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OEC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OEC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OEC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OEC_Turret_SmallPowered.label>OEC Запитанная Турель Миротворец</OEC_Turret_SmallPowered.label>
+<OEC_Turret_SmallPowered.description>Автоматическая турель использующая OEC Револьвер. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OEC_Turret_SmallPowered.description>
+<OEC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OEC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OEC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OEC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OEC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OEC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OEC_TurretGun_Small.label>Турель Миротворец</OEC_TurretGun_Small.label>
+<OEC_TurretGun_Small.verbs.Verb_Shoot.label>Турель Миротворец</OEC_TurretGun_Small.verbs.Verb_Shoot.label>
+<OEC_TurretGun_Small.description>Реконструированный OEC Револьвер для турелей. Крайне бронебойное.</OEC_TurretGun_Small.description>
+
+<OEC_TurretBullet_Small.label>пуля из турели миротворец</OEC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OEC_Turret_Big.label>OEC Турель Правосудие</OEC_Turret_Big.label>
+<OEC_Turret_Big.description>Автоматическая турель использующая OEC Снайперская Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OEC_Turret_Big.description>
+<OEC_Turret_Big.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OEC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OEC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OEC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OEC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OEC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OEC_TurretGun_Big.label>Турель Правосудие</OEC_TurretGun_Big.label>
+<OEC_TurretGun_Big.verbs.Verb_Shoot.label>Турель Правосудие</OEC_TurretGun_Big.verbs.Verb_Shoot.label>
+<OEC_TurretGun_Big.description>Реконструированный OEC Снайперская Винтовка для турелей. Крайне бронебойное.</OEC_TurretGun_Big.description>
+
+<OEC_TurretBullet_Big.label>пуля из турели правосудие</OEC_TurretBullet_Big.label>
+
+<!--=============== ODC ====================-->
+<!--=============== Small ====================-->
+<ODC_Turret_Small.label>ODC Турель Легкомысленный</ODC_Turret_Small.label>
+<ODC_Turret_Small.description>Автоматическая турель использующая ODC Штурмовая Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</ODC_Turret_Small.description>
+<ODC_Turret_Small.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</ODC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<ODC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</ODC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<ODC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</ODC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<ODC_Turret_SmallPowered.label>ODC Запитанная Турель Легкомысленный</ODC_Turret_SmallPowered.label>
+<ODC_Turret_SmallPowered.description>Автоматическая турель использующая ODC Штурмовая Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</ODC_Turret_SmallPowered.description>
+<ODC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</ODC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<ODC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</ODC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<ODC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</ODC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<ODC_TurretGun_Small.label>Турель Легкомысленный</ODC_TurretGun_Small.label>
+<ODC_TurretGun_Small.verbs.Verb_Shoot.label>Турель Легкомысленный</ODC_TurretGun_Small.verbs.Verb_Shoot.label>
+<ODC_TurretGun_Small.description>Реконструированный ODC Штурмовая Винтовка для турелей. Специально модифицированное оружие с несмертельными пулями.</ODC_TurretGun_Small.description>
+
+<ODC_TurretBullet_Small.label>пуля из турели легкомысленный</ODC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<ODC_Turret_Big.label>Ц.Н.А.Р.Г.П.</ODC_Turret_Big.label>
+<ODC_Turret_Big.description>Циклонная Нео Армстронг Реактивная Генераторная Пушка запрещенное, но легендарное оружие Обсидии. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</ODC_Turret_Big.description>
+<ODC_Turret_Big.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</ODC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<ODC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</ODC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<ODC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</ODC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<ODC_TurretGun_Big.label>Ц.Н.А.Р.Г.П.</ODC_TurretGun_Big.label>
+<ODC_TurretGun_Big.verbs.Verb_Shoot.label>Ц.Н.А.Р.Г.П.</ODC_TurretGun_Big.verbs.Verb_Shoot.label>
+<ODC_TurretGun_Big.description>Циклонная Нео Армстронг Реактивная Генераторная Пушка запрещенное, но легендарное оружие Обсидии.</ODC_TurretGun_Big.description>
+
+<ODC_TurretBullet_Big.label>заряд Ц.Н.А.Р.Г.П.</ODC_TurretBullet_Big.label>
+
+<!--=============== CAC ====================-->
+<!--=============== Small ====================-->
+<CAC_Turret_Small.label>CAC Турель Роковая вдова</CAC_Turret_Small.label>
+<CAC_Turret_Small.description>Автоматическая турель использующая CAC Снайперская Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</CAC_Turret_Small.description>
+<CAC_Turret_Small.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</CAC_Turret_Small.comps.CompRefuelable.fuelLabel>
+<CAC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</CAC_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<CAC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</CAC_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<CAC_Turret_SmallPowered.label>CAC Запитанная Турель Роковая вдова</CAC_Turret_SmallPowered.label>
+<CAC_Turret_SmallPowered.description>Автоматическая турель использующая CAC Снайперская Винтовка. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</CAC_Turret_SmallPowered.description>
+<CAC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</CAC_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<CAC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</CAC_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<CAC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</CAC_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<CAC_TurretGun_Small.label>Турель Роковая вдова</CAC_TurretGun_Small.label>
+<CAC_TurretGun_Small.verbs.Verb_Shoot.label>Турель Роковая вдова</CAC_TurretGun_Small.verbs.Verb_Shoot.label>
+<CAC_TurretGun_Small.description>Реконструированный CAC Снайперская Винтовка для турелей. Особо модифицированное оружие с повышеной мощью.</CAC_TurretGun_Small.description>
+
+<CAC_TurretBullet_Small.label>пуля из турели роковая вдова</CAC_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<CAC_Turret_Big.label>CAC Турель Блэкаут</CAC_Turret_Big.label>
+<CAC_Turret_Big.description>Автоматическая турель использующая CAC Миниган. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</CAC_Turret_Big.description>
+<CAC_Turret_Big.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</CAC_Turret_Big.comps.CompRefuelable.fuelLabel>
+<CAC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</CAC_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<CAC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</CAC_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<CAC_TurretGun_Big.label>Турель Блэкаут</CAC_TurretGun_Big.label>
+<CAC_TurretGun_Big.verbs.Verb_Shoot.label>Турель Блэкаут</CAC_TurretGun_Big.verbs.Verb_Shoot.label>
+<CAC_TurretGun_Big.description>Реконструированный CAC Миниган для турелей. Особо модифицированное оружие с повышеной мощью.</CAC_TurretGun_Big.description>
+
+<CAC_TurretBullet_Big.label>пуля из турели блэкаут</CAC_TurretBullet_Big.label>
+
+<!--=============== OMG ====================-->
+<!--=============== Small ====================-->
+<OMG_Turret_Small.label>OMG Турель Крушитель байтов</OMG_Turret_Small.label>
+<OMG_Turret_Small.description>Автоматическая турель использующая OMG Дробовик. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OMG_Turret_Small.description>
+<OMG_Turret_Small.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OMG_Turret_Small.comps.CompRefuelable.fuelLabel>
+<OMG_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OMG_Turret_Small.comps.CompRefuelable.fuelGizmoLabel>
+<OMG_Turret_Small.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OMG_Turret_Small.comps.CompRefuelable.outOfFuelMessage>
+
+<OMG_Turret_SmallPowered.label>OMG Запитанная Турель Крушитель байтов</OMG_Turret_SmallPowered.label>
+<OMG_Turret_SmallPowered.description>Автоматическая турель использующая OMG Дробовик. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.\n\nЭта турель имеет встроенный генератор.</OMG_Turret_SmallPowered.description>
+<OMG_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OMG_Turret_SmallPowered.comps.CompRefuelable.fuelLabel>
+<OMG_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OMG_Turret_SmallPowered.comps.CompRefuelable.fuelGizmoLabel>
+<OMG_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OMG_Turret_SmallPowered.comps.CompRefuelable.outOfFuelMessage>
+
+<OMG_TurretGun_Small.label>Турель Крушитель байтов</OMG_TurretGun_Small.label>
+<OMG_TurretGun_Small.verbs.Verb_Shoot.label>Турель Крушитель байтов</OMG_TurretGun_Small.verbs.Verb_Shoot.label>
+<OMG_TurretGun_Small.description>Реконструированный OMG Дробовик для турелей. Особо модифицированное оружие заряженное Некробейн и ЭМИ уроном.</OMG_TurretGun_Small.description>
+
+<OMG_TurretBullet_Small.label>дробь из турели Крушитель байтов</OMG_TurretBullet_Small.label>
+<!--=============== Big ====================-->
+<OMG_Turret_Big.label>OMG Турель Эфирный удар</OMG_Turret_Big.label>
+<OMG_Turret_Big.description>Автоматическая турель использующая OMG Снайперскую Винтовку. Необходимо топливо - комплект боеприпасов обсидии. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</OMG_Turret_Big.description>
+<OMG_Turret_Big.comps.CompRefuelable.fuelLabel>Стреляет, пока не закончатся заряды</OMG_Turret_Big.comps.CompRefuelable.fuelLabel>
+<OMG_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>Вместимость топлива</OMG_Turret_Big.comps.CompRefuelable.fuelGizmoLabel>
+<OMG_Turret_Big.comps.CompRefuelable.outOfFuelMessage>Стрельба невозможна: Нужен комплект боеприпасов обсидии</OMG_Turret_Big.comps.CompRefuelable.outOfFuelMessage>
+
+<OMG_TurretGun_Big.label>Турель Эфирный удар</OMG_TurretGun_Big.label>
+<OMG_TurretGun_Big.verbs.Verb_Shoot.label>Турель Эфирный удар</OMG_TurretGun_Big.verbs.Verb_Shoot.label>
+<OMG_TurretGun_Big.description>Реконструированная OMG Снайперская Винтовка для турелей. Особо модифицированное оружие заряженное Некробейн и ЭМИ уроном.</OMG_TurretGun_Big.description>
+
+<OMG_TurretBullet_Big.label>пуля из турели Эфирный удар</OMG_TurretBullet_Big.label>
+
+<!--=============== EGO ====================-->
+<!--=============== Shotgun ====================-->
+<EGO_Turret_Small_Shotgun.label>ЭГО Турель Осквернитель</EGO_Turret_Small_Shotgun.label>
+<EGO_Turret_Small_Shotgun.description>Автоматическая турель использующая Амальгама Дробовик. Полностью автономна, не требует энергии и боеприпасов. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</EGO_Turret_Small_Shotgun.description>
+
+<EGO_TurretGun_Small_Shotgun.label>Турель Осквернитель</EGO_TurretGun_Small_Shotgun.label>
+<EGO_TurretGun_Small_Shotgun.verbs.Verb_Shoot.label>Турель Осквернитель</EGO_TurretGun_Small_Shotgun.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_Shotgun.description>Амальгама Дробовик для турелей.</EGO_TurretGun_Small_Shotgun.description>
+
+<!--=============== SMG ====================-->
+<EGO_Turret_Small_SMG.label>ЭГО Турель Токсоцист</EGO_Turret_Small_SMG.label>
+<EGO_Turret_Small_SMG.description>Автоматическая турель использующая Амальгама СМГ. Полностью автономна, не требует энергии и боеприпасов. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</EGO_Turret_Small_SMG.description>
+
+<EGO_TurretGun_Small_SMG.label>Турель Токсоцист</EGO_TurretGun_Small_SMG.label>
+<EGO_TurretGun_Small_SMG.verbs.Verb_Shoot.label>Турель Токсоцист</EGO_TurretGun_Small_SMG.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_SMG.description>Амальгама СМГ для турелей.</EGO_TurretGun_Small_SMG.description>
+
+<!--=============== SniperRifle ====================-->
+<EGO_Turret_Small_SniperRifle.label>ЭГО Турель Патагий</EGO_Turret_Small_SniperRifle.label>
+<EGO_Turret_Small_SniperRifle.description>Автоматическая турель использующая Амальгама Снайперскую Винтовку. Полностью автономна, не требует энергии и боеприпасов. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</EGO_Turret_Small_SniperRifle.description>
+
+<EGO_TurretGun_Small_SniperRifle.label>Турель Патагий</EGO_TurretGun_Small_SniperRifle.label>
+<EGO_TurretGun_Small_SniperRifle.verbs.Verb_Shoot.label>Турель Патагий</EGO_TurretGun_Small_SniperRifle.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_SniperRifle.description>Амальгама Снайперская Винтовка для турелей.</EGO_TurretGun_Small_SniperRifle.description>
+
+<!--=============== GrenadeLauncher ====================-->
+<EGO_Turret_Small_GrenadeLauncher.label>ЭГО Турель Споротрикс</EGO_Turret_Small_GrenadeLauncher.label>
+<EGO_Turret_Small_GrenadeLauncher.description>Автоматическая турель использующая Амальгама Гранатомёт. Полностью автономна, не требует энергии и боеприпасов. ИИ турели не особо продвинут и не поддерживает прямого управления, так что берегитесь огня по своим.</EGO_Turret_Small_GrenadeLauncher.description>
+
+<EGO_TurretGun_Small_GrenadeLauncher.label>Турель Споротрикс</EGO_TurretGun_Small_GrenadeLauncher.label>
+<EGO_TurretGun_Small_GrenadeLauncher.verbs.Verb_Shoot.label>Турель Споротрикс</EGO_TurretGun_Small_GrenadeLauncher.verbs.Verb_Shoot.label>
+<EGO_TurretGun_Small_GrenadeLauncher.description>Амальгама Гранатомёт для турелей.</EGO_TurretGun_Small_GrenadeLauncher.description>
+
+</LanguageData>

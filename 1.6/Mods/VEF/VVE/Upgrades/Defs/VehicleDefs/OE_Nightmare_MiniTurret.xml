@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+<!--=============== Vehicles Turret Base ====================-->
+  <Vehicles.VehicleTurretDef Name="OEVehicleMiniTurretBase" ParentName="OEVehicleTurretBase" Abstract="True">
+	<reloadSound>VVE_BulldogReloadSound</reloadSound>
+	<autoSnapTargeting>true</autoSnapTargeting>
+	<projectileOffset>1.0</projectileOffset>
+	<reloadTimer>3.0</reloadTimer>
+	<projectileShifting>
+	  <li>0.0</li>
+	  <li>-0.75</li>
+	</projectileShifting>
+	<ammunition>
+	  <thingDefs>
+		<li>OE_AmmoKit</li>
+	  </thingDefs>
+	</ammunition>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OMC ====================--> 
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase">
+	<defName>OMC_Nightmare_MiniTurret</defName>
+	<label>Sutherland mini-turret</label>
+	<description>A small mounted Auto Pistol turret used by OMC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OE_Nightmare_MiniTurret</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_Autopistol</shotSound>
+	<magazineCapacity>85</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>0.75</warmUpTimer>
+	<maxRange>20.9</maxRange>
+	<projectile>Bullet_OMC_P_M</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>5</shotsPerBurst>
+		<ticksBetweenShots>4</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OTC ====================--> 
+<!--=============== Acid ====================-->
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase">
+	<defName>OTC_Nightmare_Acid_MiniTurret</defName>
+	<label>Glasgow mini-turret(Acid)</label>
+	<description>A small mounted Pistol turret used by OTC nightmare. Charged with Acid damage.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OTC_Nightmare_MiniTurret_Acid</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_ChargeRifle</shotSound>
+	<magazineCapacity>60</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>0.75</warmUpTimer>
+	<maxRange>15.9</maxRange>
+	<projectile>Bullet_OTC_P_Acid</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>3</shotsPerBurst>
+		<ticksBetweenShots>7</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+<!--=============== Cryo ====================-->
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase">
+	<defName>OTC_Nightmare_Cryo_MiniTurret</defName>
+	<label>Glasgow mini-turret(Cryo)</label>
+	<description>A small mounted Pistol turret used by OTC nightmare. Charged with Cryo damage.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OTC_Nightmare_MiniTurret_Cryo</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_ChargeRifle</shotSound>
+	<magazineCapacity>60</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>0.75</warmUpTimer>
+	<maxRange>15.9</maxRange>
+	<projectile>Bullet_OTC_P_Cryo</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>3</shotsPerBurst>
+		<ticksBetweenShots>7</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+<!--=============== Fire ====================-->
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase">
+	<defName>OTC_Nightmare_Fire_MiniTurret</defName>
+	<label>Glasgow mini-turret(Fire)</label>
+	<description>A small mounted Pistol turret used by OTC nightmare. Charged with Fire damage.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OTC_Nightmare_MiniTurret_Fire</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_ChargeRifle</shotSound>
+	<magazineCapacity>60</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>0.75</warmUpTimer>
+	<maxRange>15.9</maxRange>
+	<projectile>Bullet_OTC_P_Fire</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>3</shotsPerBurst>
+		<ticksBetweenShots>7</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+<!--=============== EMP ====================-->
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase">
+	<defName>OTC_Nightmare_EMP_MiniTurret</defName>
+	<label>Glasgow mini-turret(EMP)</label>
+	<description>A small mounted Pistol turret used by OTC nightmare. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OTC_Nightmare_MiniTurret_EMP</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_ChargeRifle</shotSound>
+	<magazineCapacity>60</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>0.75</warmUpTimer>
+	<maxRange>15.9</maxRange>
+	<projectile>Bullet_OTC_P_EMP</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>3</shotsPerBurst>
+		<ticksBetweenShots>7</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OCC ====================--> 
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase">
+	<defName>OCC_Nightmare_MiniTurret</defName>
+	<label>Gloucester mini-turret</label>
+	<description>A small mounted Revolver turret used by OCC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OE_Nightmare_MiniTurret</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_Autopistol</shotSound>
+	<magazineCapacity>25</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>1.0</warmUpTimer>
+	<maxRange>25.9</maxRange>
+	<projectile>Bullet_OCC_M</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>1</shotsPerBurst>
+		<ticksBetweenShots>10</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== OEC ====================--> 
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase" Abstract="True">
+	<defName>OEC_Nightmare_MiniTurret</defName>
+	<label>Akatsuki mini-turret</label>
+	<description>A small mounted Revolver turret used by OEC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OE_Nightmare_MiniTurret</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_Revolver</shotSound>
+	<magazineCapacity>20</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>0.7</warmUpTimer>
+	<maxRange>25.9</maxRange>
+	<projectile>Bullet_OEC_R_M</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>1</shotsPerBurst>
+		<ticksBetweenShots>10</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Single</label>
+		<texPath>UI/Gizmos/FireRate_Single</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+<!--=============== ODC ====================-->
+  <Vehicles.VehicleTurretDef ParentName="OEVehicleMiniTurretBase">
+	<defName>ODC_Nightmare_MiniTurret</defName>
+	<label>Burai mini-turret</label>
+	<description>A small mounted Auto Pistol turret used by OEC nightmare.</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/MiniTurret/OE_Nightmare_MiniTurret</texPath>
+	  <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	</graphicData>
+	<shotSound>Shot_Autopistol</shotSound>
+	<magazineCapacity>75</magazineCapacity>
+	<chargePerAmmoCount>0.315</chargePerAmmoCount>
+	<warmUpTimer>0.75</warmUpTimer>
+	<maxRange>20.9</maxRange>
+	<projectile>Bullet_ODC_P</projectile>
+	<fireModes>
+	  <li>
+		<shotsPerBurst>3</shotsPerBurst>
+		<ticksBetweenShots>7</ticksBetweenShots>
+		<ticksBetweenBursts>200</ticksBetweenBursts>
+		<label>Burst</label>
+		<texPath>UI/Gizmos/FireRate_Burst</texPath>
+	  </li>
+	</fireModes>
+  </Vehicles.VehicleTurretDef>
+
+</Defs>

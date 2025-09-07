@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+		  <li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+<!--=============== Ranged ====================-->
+<!--=============== Pistol ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECTrophyPistolBase">
+    <defName>OEC_Trophy_Pistol_P</defName>
+    <label>Paragon Divinity</label>
+    <description>This antique paragon pistol has served Obsidia Empire for centuries.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance and psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Trophy_Pistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags Inherit="False">
+	  <li>OECTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+    <possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Divinity</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+				  </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Temperature Base ====================-->
+  <ThingDef Name="OETemp" ParentName="FurnitureWithQualityBase" Abstract="True">
+    <category>Building</category>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+	  <shadowData>
+        <volume>(0.55, 0.35, 0.3)</volume>
+        <offset>(0, 0, -0.28)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.40</fillPercent>
+	<tickerType>Normal</tickerType>
+	<thingCategories>
+      <li>BuildingsTemperature</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>125</MaxHitPoints>
+      <WorkToBuild>1250</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <OE_Obsidian>35</OE_Obsidian>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+	<designationCategory>Temperature</designationCategory>
+	<researchPrerequisites>
+      <li>OEFurniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Cooler ====================-->
+  <ThingDef ParentName="OETemp">
+    <defName>OE_Cooler</defName>
+    <label>obsidia cooler</label>
+	<description>An Obsidia device that converts electricity into cool air. Can be used to cool down rooms during summer, or to create a walk-in freezer.</description>
+	<graphicData>
+      <texPath>Things/Building/Temperature/OE_Cooler</texPath>
+    </graphicData>
+	<placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <comps>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-15</heatPerSecond>
+        <heatPushMinTemperature>-10</heatPushMinTemperature>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-35</heatPerSecond>
+        <heatPushMinTemperature>0</heatPushMinTemperature>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Heater ====================-->
+  <ThingDef ParentName="OETemp">
+    <defName>OE_Heater</defName>
+    <label>obsidia heater</label>
+    <thingClass>Building_Heater</thingClass>
+	<description>An Obsidia device that converts electricity into heat. Can be used to heat rooms during winter.</description>
+	<graphicData>
+      <texPath>Things/Building/Temperature/OE_Heater</texPath>
+    </graphicData>
+	<placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>15</heatPerSecond>
+        <heatPushMaxTemperature>30</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>35</heatPerSecond>
+        <heatPushMaxTemperature>10</heatPushMaxTemperature>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

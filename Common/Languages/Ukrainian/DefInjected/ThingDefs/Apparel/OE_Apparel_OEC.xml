@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OEC - HunterHelmet ====================-->
+<OEC_Helmet.label>Шолом Мисливця OEC</OEC_Helmet.label>
+<OEC_Helmet.description>Шолом легкої силової броні, що добре захищає власника. Розроблена для використання Мисливцями які представляють OEC.</OEC_Helmet.description>
+
+<OEC_Helmet_M.label>Шолом Інквізитора OEC</OEC_Helmet_M.label>
+<OEC_Helmet_M.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nУкріплена версія надає більше захисту власнику.</OEC_Helmet_M.description>
+
+<OEC_Helmet_M_Spacer.label>Шолом Інквізитора OEC(Космо-Грифон)</OEC_Helmet_M_Spacer.label>
+<OEC_Helmet_M_Spacer.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OEC_Helmet_M_Spacer.description>
+
+<OEC_Helmet_M_Melee.label>Шолом Інквізитора OEC(Гладіатор)</OEC_Helmet_M_Melee.label>
+<OEC_Helmet_M_Melee.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифікація візора аналізуючим комп'ютером, який допомагає користувачеві у ближньому бою.</OEC_Helmet_M_Melee.description>
+
+<OEC_Helmet_M_Ranged.label>Шолом Інквізитора OEC(Рейнджер)</OEC_Helmet_M_Ranged.label>
+<OEC_Helmet_M_Ranged.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифікація візора комп'ютером прицілювання, що допомагає користувачу прицілюватися.</OEC_Helmet_M_Ranged.description>
+
+<OEC_Helmet_M_Mechanitor.label>Шолом Інквізитора OEC(Контролер)</OEC_Helmet_M_Mechanitor.label>
+<OEC_Helmet_M_Mechanitor.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифіковано для покращення здібностей Контролю Механоїдів.</OEC_Helmet_M_Mechanitor.description>
+
+<!--=============== OEC - HunterArmor ====================-->
+<OEC_Armor.label>Броня Мисливця OEC</OEC_Armor.label>
+<OEC_Armor.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена для використання Мисливцями які представляють OEC.</OEC_Armor.description>
+
+<OEC_Armor_M.label>Броня Інквізитора OEC</OEC_Armor_M.label>
+<OEC_Armor_M.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nУкріплена версія надає більше захисту власнику.</OEC_Armor_M.description>
+
+<OEC_Armor_M_Spacer.label>Броня Інквізитора OEC(Космо-Грифон)</OEC_Armor_M_Spacer.label>
+<OEC_Armor_M_Spacer.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OEC_Armor_M_Spacer.description>
+
+<OEC_Armor_M_Smoker.label>Броня Інквізитора OEC(Туманник)</OEC_Armor_M_Smoker.label>
+<OEC_Armor_M_Smoker.verbs.Verb_SmokePop.label>Броня Інквізитора OEC(Туманник)</OEC_Armor_M_Smoker.verbs.Verb_SmokePop.label>
+<OEC_Armor_M_Smoker.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифіковано з додаванням Димової шашки.</OEC_Armor_M_Smoker.description>
+<OEC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>димова завіса</OEC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OEC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<OEC_Armor_M_Jump.label>Броня Інквізитора OEC(Ворон)</OEC_Armor_M_Jump.label>
+<OEC_Armor_M_Jump.verbs.Verb_Jump.label>Броня Інквізитора OEC(Ворон)</OEC_Armor_M_Jump.verbs.Verb_Jump.label>
+<OEC_Armor_M_Jump.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифіковано з додаванням Реактивного ранця.</OEC_Armor_M_Jump.description>
+<OEC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>стрибок</OEC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OEC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<OEC_Armor_M_Grenadier.label>Броня Інквізитора OEC(Єгер)</OEC_Armor_M_Grenadier.label>
+<OEC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>Броня Інквізитора OEC(Єгер)</OEC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>
+<OEC_Armor_M_Grenadier.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифіковано установкою Оглушальної гармати.</OEC_Armor_M_Grenadier.description>
+<OEC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>граната</OEC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OEC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>
+
+<OEC_Armor_M_Shield.label>Броня Інквізитора OEC(Вартовий)</OEC_Armor_M_Shield.label>
+<OEC_Armor_M_Shield.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифіковано з додаванням Посиленого Бар'єру.</OEC_Armor_M_Shield.description>
+
+<OEC_Armor_M_Barrier.label>Броня Інквізитора OEC(Захисник)</OEC_Armor_M_Barrier.label>
+<OEC_Armor_M_Barrier.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифіковано з додаванням Посиленого Бар'єру.</OEC_Armor_M_Barrier.description>
+
+<OEC_Armor_M_Mechanitor.label>Броня Інквізитора OEC(Контролер)</OEC_Armor_M_Mechanitor.label>
+<OEC_Armor_M_Mechanitor.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифіковано з додаванням пакету Управління Механоїдами.</OEC_Armor_M_Mechanitor.description>
+
+<OEC_Armor_M_Turret.label>Броня Інквізитора OEC(Гоблін)</OEC_Armor_M_Turret.label>
+<OEC_Armor_M_Turret.description>Легка силова броня, що добре захищає власника без обмеженням мобільності. Розроблена та модифікована для використання Інквізиторами які представляють OEC.\n\nМодифікований з додаванням портфеля з туреллю, що працює від акумулятора.</OEC_Armor_M_Turret.description>
+<OEC_Armor_M_Turret.verbs.deploy_turret.label>поставити турель</OEC_Armor_M_Turret.verbs.deploy_turret.label>
+<OEC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>заряд</OEC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OEC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OEC - StunBullet ====================-->
+<Bullet_OEC_Stun.label>Оглушальна куля</Bullet_OEC_Stun.label>
+
+<Grenade_Armor_OEC_TurretPack.label>капсула ранця з OEC туреллю</Grenade_Armor_OEC_TurretPack.label>
+
+</LanguageData>

@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Trophy Grimoire ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEGrimoireBase" ParentName="ApparelNoQualityBase" Abstract="True">
+	<techLevel>Archotech</techLevel>
+	<thingClass>Apparel</thingClass>
+	<tickerType>Normal</tickerType>
+	<tradeTags>
+	  <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+	</tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardHighFreq</li>
+	  <li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+	<costList>
+	  <OE_EmpyriumSynthweave>40</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>40</OE_OrichalcumSynthweave>
+	  <OE_Syntherius>25</OE_Syntherius>
+	  <OE_UnstableStone>5</OE_UnstableStone>
+    </costList>
+	<apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <ignoredByNonViolent>true</ignoredByNonViolent>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+	  <tags>
+		<li>OETreasureHound</li>
+	  </tags>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+		<north>
+          <offset>(0, -0.20)</offset>
+		  <scale>(0.35, 0.35)</scale>
+		  <thin>
+            <offset>(0, -0.10)</offset>
+          </thin>
+          <hulk>
+            <offset>(0, -0.20)</offset>
+          </hulk>
+          <fat>
+            <offset>(0, -0.15)</offset>
+          </fat>
+          <male>
+            <offset>(0, -0.10)</offset>
+          </male>
+		  <female>
+            <offset>(0, -0.12)</offset>
+          </female>
+        </north> 
+		<south>
+          <offset>(0, -0.15)</offset>
+          <scale>(0.35, 0.35)</scale>
+		  <thin>
+            <offset>(0, 0.0)</offset>
+          </thin>
+          <hulk>
+            <offset>(0, -0.10)</offset>
+          </hulk>
+          <fat>
+            <offset>(0, -0.15)</offset>
+          </fat>
+          <male>
+            <offset>(0, -0.10)</offset>
+          </male>
+		  <female>
+            <offset>(0, -0.12)</offset>
+          </female>
+        </south>
+		<east>
+          <offset>(-0.25, -0.20)</offset>
+          <scale>(0.40, 0.40)</scale>
+          <thin>
+            <offset>(0, 0.0)</offset>
+          </thin>
+          <hulk>
+            <offset>(-0.18, -0.10)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.22, -0.10)</offset>
+          </fat>
+          <male>
+            <offset>(-0.05, -0.05)</offset>
+          </male>
+		  <female>
+            <offset>(-0.10, -0.10)</offset>
+          </female>
+        </east>
+		<west>
+          <offset>(0.25, -0.20)</offset>
+          <scale>(0.40, 0.40)</scale>
+          <thin>
+            <offset>(0, -0.10)</offset>
+          </thin>
+          <hulk>
+            <offset>(0.18, -0.10)</offset>
+          </hulk>
+          <fat>
+            <offset>(0.22, -0.10)</offset>
+          </fat>
+          <male>
+            <offset>(0.05, -0.05)</offset>
+          </male>
+		  <female>
+            <offset>(0.10, -0.10)</offset>
+          </female>
+        </west>
+      </wornGraphicData>
+    </apparel>
+	<statBases>
+	  <RoyalFavorValue>2.0</RoyalFavorValue>
+	  <MarketValue>9669</MarketValue>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <Mass>3.33</Mass>
+	  <Flammability>0.25</Flammability>
+	  <EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
+	  <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <EquipDelay>2</EquipDelay>
+	  <Beauty>2</Beauty>
+	</statBases>
+	<tradeability>Sellable</tradeability>
+	<smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <drawGUIOverlay>false</drawGUIOverlay>
+	<generateAllowChance>0.15</generateAllowChance>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_Utility</li>
+    </thingCategories>
+	<comps>
+	  <li Class="CompProperties_Shield">
+		<blocksRangedWeapons>false</blocksRangedWeapons>
+	  </li>
+	</comps>
+	<allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="OEGrimoireBase">
+    <defName>OE_Trophy_Grimoire_Worker</defName>
+    <label>Grimoire of Reconstruction</label>
+	<description>Grimoires are enigmatic artifacts, forged from unknown relics during the final days of Obsidia's Last War. Each was crafted with a singular purpose by a unique mind—some brilliant, some mad, all unforgettable. It's said that those who carry a Grimoire often find themselves speaking to it, unconsciously, as if the book listens. Whispers claim that the soul of each creator remains bound within their work, waiting... watching.\n\nCrafted by Sophie Neuenmuller, the chief architect responsible for rebuilding Obsidia’s shattered capital. When given access to relic technology, she saw not a weapon, but an opportunity to hasten healing and progress. Her Grimoire became a blueprint of her unwavering dedication to restoration, encoded with the will to rebuild what was lost.\n\nGrants an energy shield for protection. Emits an aura working stats for allies and the owner within 24 tiles.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>OE_Trophy_Grimoire_Worker_Aura</HediffDef>
+	  <HediffDef>OE_Trophy_Grimoire_Worker_AuraBuff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grimoire/Worker/OE_Grimiore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>0.66</WorkSpeedGlobal>
+	  <GeneralLaborSpeed>0.66</GeneralLaborSpeed>
+	  <AnimalGatherYield>0.66</AnimalGatherYield>
+	  <PlantHarvestYield>0.66</PlantHarvestYield>
+	  <MiningYield>0.66</MiningYield>
+	  <ButcheryMechanoidEfficiency>0.66</ButcheryMechanoidEfficiency>
+    </equippedStatOffsets>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/Grimoire/Worker/OE_Grimiore</wornGraphicPath>
+    </apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_Trophy_Grimoire_Worker_Aura</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Worker_Aura</defName>
+    <label>Aura of Reconstruction</label>
+    <description>This person is using a Grimoire of Reconstruction. Everyone within an effect radius gains working stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+		<statOffsets/>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_Trophy_Grimoire_Worker_AuraBuff</hediff>
+		<range>24</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Worker_AuraBuff</defName>
+    <label>Aura of Reconstruction</label>
+    <description>Someone is using the Grimoire of Reconstruction nearby, boosting this person's working stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <WorkSpeedGlobal>0.66</WorkSpeedGlobal>
+		  <GeneralLaborSpeed>0.66</GeneralLaborSpeed>
+		  <AnimalGatherYield>0.66</AnimalGatherYield>
+		  <PlantHarvestYield>0.66</PlantHarvestYield>
+		  <MiningYield>0.66</MiningYield>
+		  <ButcheryMechanoidEfficiency>0.66</ButcheryMechanoidEfficiency>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+	    <disappearsAfterTicks>30</disappearsAfterTicks>
+		<showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OEGrimoireBase">
+    <defName>OE_Trophy_Grimoire_Ranged</defName>
+    <label>Grimoire of the Marksman</label>
+	<description>Grimoires are enigmatic artifacts, forged from unknown relics during the final days of Obsidia's Last War. Each was crafted with a singular purpose by a unique mind—some brilliant, some mad, all unforgettable. It's said that those who carry a Grimoire often find themselves speaking to it, unconsciously, as if the book listens. Whispers claim that the soul of each creator remains bound within their work, waiting... watching.\n\nForged by Varric Tethras, a legendary marksman and the soul of his recon squad. He poured his battlefield instincts and leadership into the tome, embedding strategies, formations, and wisdom learned in blood. To hold it is to hear the calm voice of a commander watching over your shoulder.\n\nGrants an energy shield for protection. Emits an aura boosting ranged combat stats for allies and the owner within 24 tiles.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>OE_Trophy_Grimoire_Ranged_Aura</HediffDef>
+	  <HediffDef>OE_Trophy_Grimoire_Ranged_AuraBuff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grimoire/Ranged/OE_Grimiore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>12</ShootingAccuracyPawn>
+	  <AimingDelayFactor>0.66</AimingDelayFactor>
+	  <MoveSpeed>0.66</MoveSpeed>
+    </equippedStatOffsets>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/Grimoire/Ranged/OE_Grimiore</wornGraphicPath>
+    </apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_Trophy_Grimoire_Ranged_Aura</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Ranged_Aura</defName>
+    <label>Aura of the Marksman</label>
+    <description>This person is using a Grimoire of the Marksman. Everyone within an effect radius gains ranged combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets/>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_Trophy_Grimoire_Ranged_AuraBuff</hediff>
+		<range>24</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Ranged_AuraBuff</defName>
+    <label>Aura of the Marksman</label>
+    <description>Someone is using the Grimoire of the Marksman nearby, boosting this person's ranged combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ShootingAccuracyPawn>12</ShootingAccuracyPawn>
+		  <AimingDelayFactor>0.66</AimingDelayFactor>
+		  <MoveSpeed>0.66</MoveSpeed>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+	    <disappearsAfterTicks>30</disappearsAfterTicks>
+		<showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OEGrimoireBase">
+    <defName>OE_Trophy_Grimoire_Melee</defName>
+    <label>Grimoire of the Steel Soul</label>
+	<description>Grimoires are enigmatic artifacts, forged from unknown relics during the final days of Obsidia's Last War. Each was crafted with a singular purpose by a unique mind—some brilliant, some mad, all unforgettable. It's said that those who carry a Grimoire often find themselves speaking to it, unconsciously, as if the book listens. Whispers claim that the soul of each creator remains bound within their work, waiting... watching.\n\nAsta, once a nameless labor slave, rose through sheer tenacity to become a melee legend. He forged his Grimoire not in a lab, but on the battlefield, tempering it with every wound and victory. It is not a record of power, but a testament to a will that refused to break.\n\nGrants an energy shield for protection. Emits an aura boosting melee combat stats for allies and the owner within 24 tiles.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>OE_Trophy_Grimoire_Melee_Aura</HediffDef>
+	  <HediffDef>OE_Trophy_Grimoire_Melee_AuraBuff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grimoire/Melee/OE_Grimiore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<equippedStatOffsets>
+      <MeleeHitChance>12</MeleeHitChance>
+	  <MeleeDodgeChance>12</MeleeDodgeChance>
+	  <StaggerDurationFactor>-0.66</StaggerDurationFactor>
+    </equippedStatOffsets>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/Grimoire/Melee/OE_Grimiore</wornGraphicPath>
+    </apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_Trophy_Grimoire_Melee_Aura</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Melee_Aura</defName>
+    <label>Aura of the Steel Soul</label>
+    <description>This person is using a Grimoire of the Steel Soul. Everyone within an effect radius gains melee combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets/>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_Trophy_Grimoire_Melee_AuraBuff</hediff>
+		<range>24</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Melee_AuraBuff</defName>
+    <label>Aura of the Steel Soul</label>
+    <description>Someone is using the Grimoire of the Steel Soul nearby, boosting this person's melee combat stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <MeleeHitChance>12</MeleeHitChance>
+		  <MeleeDodgeChance>12</MeleeDodgeChance>
+		  <StaggerDurationFactor>-0.66</StaggerDurationFactor>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+	    <disappearsAfterTicks>30</disappearsAfterTicks>
+		<showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+<!--=============== Defender ====================-->
+  <ThingDef ParentName="OEGrimoireBase">
+    <defName>OE_Trophy_Grimoire_Defender</defName>
+    <label>Grimoire of Sanctum</label>
+	<description>Grimoires are enigmatic artifacts, forged from unknown relics during the final days of Obsidia's Last War. Each was crafted with a singular purpose by a unique mind—some brilliant, some mad, all unforgettable. It's said that those who carry a Grimoire often find themselves speaking to it, unconsciously, as if the book listens. Whispers claim that the soul of each creator remains bound within their work, waiting... watching.\n\nThe Winchester brothers, twin hunters of the dark, discovered the means to create a Grimoire during a grim expedition. What they found disturbed them—rituals too close to soulbinding, too intimate with death. Yet together, they made their Grimoire, sealing within it a legacy of protection, sacrifice, and brotherhood.\n\nGrants an energy shield for protection. Emits an aura boosting defensive stats for allies and the owner within 24 tiles.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>OE_Trophy_Grimoire_Defender_Aura</HediffDef>
+	  <HediffDef>OE_Trophy_Grimoire_Defender_AuraBuff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Grimoire/Defender/OE_Grimiore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<equippedStatOffsets>
+      <ToxicResistance>0.66</ToxicResistance>
+	  <PainShockThreshold>0.66</PainShockThreshold>
+	  <IncomingDamageFactor>-0.66</IncomingDamageFactor>
+	  <Flammability>-0.66</Flammability>
+    </equippedStatOffsets>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/Grimoire/Defender/OE_Grimiore</wornGraphicPath>
+    </apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_Trophy_Grimoire_Defender_Aura</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Defender_Aura</defName>
+    <label>Aura of Sanctum</label>
+    <description>This person is using a Grimoire of Sanctum. Everyone within an effect radius gains defensive stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets/>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_Trophy_Grimoire_Defender_AuraBuff</hediff>
+		<range>24</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_Trophy_Grimoire_Defender_AuraBuff</defName>
+    <label>Aura of Sanctum</label>
+    <description>Someone is using the Grimoire of Sanctum nearby, boosting this person's defensive stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <ToxicResistance>0.66</ToxicResistance>
+		  <PainShockThreshold>0.66</PainShockThreshold>
+		  <IncomingDamageFactor>-0.66</IncomingDamageFactor>
+		  <Flammability>-0.66</Flammability>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+	    <disappearsAfterTicks>30</disappearsAfterTicks>
+		<showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+</Defs>

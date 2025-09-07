@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Beacon Base ====================-->
+  <ThingDef ParentName="BuildingBase" Name="OEBeaconBase" Abstract="True">
+    <label>ancient obsidia beacon</label>
+    <description>The Ancient Obsidia Beacon was previously used in the old wars to call for reinforcements. This very old device is running at an unknown frequency and all serial numbers have been erased. So it's impossible to determine who will respond to this beacon.\n\nMechanitor is required to use this device.</description>
+    <graphicData>
+      <texPath>Things/Building/Beacon/AncientObsidiaBeacon</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<costList>
+      <OE_Obsidian>50</OE_Obsidian>
+      <OE_Mythril>50</OE_Mythril>
+	  <OE_Syntherius>75</OE_Syntherius>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<blockWind>False</blockWind>
+    <fillPercent>0.3</fillPercent>
+	<rotatable>false</rotatable>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<tradeTags>
+      <li>OEBuildingBeacons</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <statBases>
+      <MarketValue>665</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <killedLeavings>
+      <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </killedLeavings>
+    <tickerType>Normal</tickerType>
+    <filthLeaving>Filth_MachineBits</filthLeaving>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+
+<!--=============== OMC ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_OMC</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaEmpire</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_OMC</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_OTC</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaEmpire</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_OTC</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OCC ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_OCC</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaEmpire</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_OCC</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_ODC</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaSyndicateClan</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_ODC</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_CAC</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaCrimsonArachnaCult</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_CAC</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OES ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_OES</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaEmpireSins</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_OES</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Beacon - Crimson Arachna ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_Beacon_CrimsonArachna</defName>
+    <label>crimson arachna beacon</label>
+    <description>Crimson Arachna beacon used to imitate the call signal of the Crimson Arachna Cult mech army. Signal will attract an ultra-heavy Arachna Queen mechanoid with its Arachna escorts, in the worst case, a Crimson Arachna can react to the signal. The signal pulse burns out the transmitter, so this building can only be used once.\n\nMechanitor is required to use this device.</description>
+    <graphicData>
+      <texPath>Things/Building/Beacon/CrimsonArachnaBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.1, 0.75, 1.1</volume>
+      </shadowData>
+    </graphicData>   
+    <rotatable>false</rotatable>
+	<altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<fillPercent>0.3</fillPercent>
+	<tradeTags>
+      <li>OEBeacons</li>
+	  <li>OEExoticBuilding</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+	<building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2460.555</uiOrder>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0.05</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <OE_Empyrium>20</OE_Empyrium>
+      <OE_Orichalcum>20</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+    </costList>
+    <killedLeavings>
+      <OE_Empyrium>10</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </killedLeavings>
+    <researchPrerequisites>
+      <li>OEMechtech</li>
+	  <li>CACGear</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon Crimson Arachna Cult's mechanoids army</useLabel>
+        <useDuration>900</useDuration>
+        <floatMenuFactionIcon>ObsidiaCrimsonArachnaCult</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_CrimsonArachna</bossgroupDef>
+        <effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
+        <prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <filthLeaving>Filth_MachineBits</filthLeaving>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+
+<!--=============== Beacon - Fallen Legion ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_Beacon_FallenLegion</defName>
+    <label>Fallen Legion beacon</label>
+    <description>Fallen Legion beacon used to imitate the call signal of the Obsidia Empire Sins mech army. Signal will attract an ultra-tech, fortress-sized mechanoid Fallen Legion mechanoid with its escorts. The signal pulse burns out the transmitter, so this building can only be used once.\n\nMechanitor is required to use this device.</description>
+    <graphicData>
+      <texPath>Things/Building/Beacon/FallenLegionBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.1, 0.75, 1.1</volume>
+      </shadowData>
+    </graphicData>   
+    <rotatable>false</rotatable>
+	<altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<fillPercent>0.3</fillPercent>
+	<tradeTags>
+      <li>OEBeacons</li>
+	  <li>OEExoticBuilding</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+	<building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+	<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2460.777</uiOrder>
+    <statBases>
+      <MarketValue>2250</MarketValue>
+	  <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.05</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <OE_Empyrium>40</OE_Empyrium>
+      <OE_Orichalcum>40</OE_Orichalcum>
+	  <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+    <killedLeavings>
+      <OE_Empyrium>20</OE_Empyrium>
+      <OE_Orichalcum>20</OE_Orichalcum>
+	  <OE_Syntherius>20</OE_Syntherius>
+    </killedLeavings>
+    <researchPrerequisites>
+	  <li>OEGearCross</li>
+	  <li>OEGearMod</li>
+	  <li>OEMechtechAdv</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon Fallen Legion</useLabel>
+        <useDuration>900</useDuration>
+        <floatMenuFactionIcon>ObsidiaEmpireSins</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_FallenLegion</bossgroupDef>
+        <effecterDef>BurnoutMechlinkBoosterUsed</effecterDef>
+        <prepareEffecterDef>MechBandAntennaPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <filthLeaving>Filth_MachineBits</filthLeaving>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO - GrenadeLauncher ====================-->
+  <ThingDef ParentName="OERangedBaseNQE">
+    <defName>EGO_GrenadeLauncher</defName>
+    <label>Sporothrix</label>
+    <description>Amalgam Grenade Launcher used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Toxic-Gas damages.\n\nThis modification deprives item's quality levels.</description>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>60</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/GrenadeLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<soundInteract>Interact_ChargeLance</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOWeapon</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.35</RestRateMultiplier>
+	  <PainShockThreshold>-0.35</PainShockThreshold>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>4945</MarketValue>
+	  <Mass>5.5</Mass>
+	  <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_GL</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+        <range>24.9</range>
+		<forcedMissRadius>1.9</forcedMissRadius>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Pawn_BigInsect_Angry</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_GL</defName>
+    <label>Sporothrix grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+	  <explosionRadius>0.9</explosionRadius>
+	  <explosionRadiusDisplayPadding>1.1</explosionRadiusDisplayPadding>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+	  <postExplosionGasType>ToxGas</postExplosionGasType>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <screenShakeFactor>0.25</screenShakeFactor>
+      <shadowSize>0.6</shadowSize>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EGO - RocketLauncher ====================-->
+  <ThingDef ParentName="OERangedBaseNQE">
+    <defName>EGO_RocketLauncher</defName>
+    <label>Ulcerated</label>
+    <description>Amalgam Rocket Launcher used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially gestated weapon charged with Cryo and Toxic-Gas damages.\n\nThis modification deprives item's quality levels.</description>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<soundInteract>Interact_ChargeLance</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>EGOWeapon</li>
+    </tradeTags>
+	<equippedStatOffsets>
+	  <RestRateMultiplier>-0.4</RestRateMultiplier>
+	  <PainShockThreshold>-0.4</PainShockThreshold>
+	  <MentalBreakThreshold>0.20</MentalBreakThreshold>
+	  <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.65</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<statBases>
+      <MarketValue>5555</MarketValue>
+	  <Mass>12.5</Mass>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_RL</defaultProjectile>
+        <forcedMissRadius>3.9</forcedMissRadius>
+        <warmupTime>5.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>35.9</range>
+        <soundCast>Pawn_BigInsect_Death</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_EGO_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_RL</defName>
+    <label>Ulcerated rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+      <damageAmountBase>55</damageAmountBase>
+	  <explosionRadius>3.9</explosionRadius>
+	  <explosionRadiusDisplayPadding>4</explosionRadiusDisplayPadding>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+	  <postExplosionGasType>ToxGas</postExplosionGasType>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <screenShakeFactor>0.5</screenShakeFactor>
+      <shadowSize>0.6</shadowSize>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

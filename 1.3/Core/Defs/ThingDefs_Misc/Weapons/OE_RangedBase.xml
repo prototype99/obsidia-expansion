@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged Base ====================-->
+  <ThingDef Name="OERangedBase" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+    <smeltable>true</smeltable>
+	<relicChance>0.2</relicChance>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged Base(Non-Crafted) ====================-->
+  <ThingDef Name="OERangedBaseNC" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+    <smeltable>false</smeltable>
+	<relicChance>0</relicChance>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+  </ThingDef>
+
+</Defs>

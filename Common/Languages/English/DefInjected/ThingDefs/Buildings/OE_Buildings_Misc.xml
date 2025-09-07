@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Obsidia Comms Console ====================-->
+<OE_CommsConsole.label>obsidia comms console</OE_CommsConsole.label>
+<OE_CommsConsole.description>Small Obsidia communications console. Allows radio contact with other factions and orbital traders.</OE_CommsConsole.description>
+<OE_CommsConsole.comps.CompUsable.useLabel>Summon diabolus threat</OE_CommsConsole.comps.CompUsable.useLabel>
+
+<!--=============== Obsidia Holding Platform ====================-->
+<OE_HoldingPlatform.label>obsidia holding platform</OE_HoldingPlatform.label>
+<OE_HoldingPlatform.description>An obsidia heavy platform for holding dangerous entities. The corners have eyelets where strong chains can be attached.\n\nDowned entities can be captured and secured on a holding platform, where they can be studied for Anomaly knowledge. Increase containment strength by building strong walls and doors, and other special containment devices.\n\nContainment efficiency is 125%.</OE_HoldingPlatform.description>
+
+<!--=============== EGO Inhibitor ====================-->
+<OE_EGOInhibitor.label>EGO inhibitor</OE_EGOInhibitor.label>
+<OE_EGOInhibitor.description>A device that emits a specially tuned field which numbs the neural activity of captured entities. Uses the EGO seed as a catalyst. As long as it is powered, it improves the containment strength of any holding platform that it is pointed at. The electric field does not affect humans or normal animals.</OE_EGOInhibitor.description>
+
+</LanguageData>

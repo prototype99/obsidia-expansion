@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Obsidia Empire - Tribute Collector ====================-->
+  <TraderKindDef>
+    <defName>Base_ObsidiaEmpire_TributeCollector</defName>
+	<label>obsidia empire tribute collector</label>
+    <requestable>False</requestable>
+    <commonality>1</commonality>
+    <category>TributeCollector</category>
+    <tradeCurrency>Favor</tradeCurrency>
+    <faction>ObsidiaEmpire</faction>
+    <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    <stockGenerators>
+      <!-- Buying -->
+      <li Class="StockGenerator_BuySlaves" />
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>OE_Obsidian</thingDef>
+      </li>
+	  <li Class="StockGenerator_BuySingleDef">
+        <thingDef>OE_Mythril</thingDef>
+      </li>
+	  <li Class="StockGenerator_BuySingleDef">
+        <thingDef>OE_Platinum</thingDef>
+      </li>
+	  <li Class="StockGenerator_BuySingleDef">
+        <thingDef>OE_Empyrium</thingDef>
+      </li>
+	  <li Class="StockGenerator_BuySingleDef">
+        <thingDef>OE_Orichalcum</thingDef>
+      </li>
+	  <li Class="StockGenerator_BuySingleDef">
+        <thingDef>OE_Syntherius</thingDef>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

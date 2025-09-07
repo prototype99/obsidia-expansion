@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Expansion Category - Weapons ====================-->
+  <ThingCategoryDef>
+    <defName>OE_Category_Weapons</defName>
+    <label>obsidia weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+	<!-- OMC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_OMC</defName>
+      <label>OMC weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OMC_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_OMC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OMC_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_OMC</parent>
+      </ThingCategoryDef>
+	
+	<!-- OTC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_OTC</defName>
+      <label>OTC weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OTC_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_OTC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OTC_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_OTC</parent>
+      </ThingCategoryDef>	
+	
+	<!-- OCC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_OCC</defName>
+      <label>OCC weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OCC_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_OCC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OCC_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_OCC</parent>
+      </ThingCategoryDef>
+	
+	<!-- OEC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_OEC</defName>
+      <label>OEC weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OEC_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_OEC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OEC_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_OEC</parent>
+      </ThingCategoryDef>	
+	
+	<!-- ODC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_ODC</defName>
+      <label>ODC weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_ODC_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_ODC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_ODC_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_ODC</parent>
+      </ThingCategoryDef>
+	
+	<!-- CAC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_CAC</defName>
+      <label>CAC weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_CAC_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_CAC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_CAC_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_CAC</parent>
+      </ThingCategoryDef>
+	
+	<!-- OES -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_OES</defName>
+      <label>OES weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OES_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_OES</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OES_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_OES</parent>
+      </ThingCategoryDef>	
+	
+	<!-- OMG -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_OMG</defName>
+      <label>OMG weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OMG_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_OMG</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OMG_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_OMG</parent>
+      </ThingCategoryDef>	
+	
+	<!-- EGO -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_EGO</defName>
+      <label>EGO weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_EGO_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_EGO</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_EGO_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_EGO</parent>
+      </ThingCategoryDef>	
+
+	<!-- Trophy -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_Trophy</defName>
+      <label>trophy weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_Trophy_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_Trophy</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_Trophy_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_Trophy</parent>
+      </ThingCategoryDef>
+
+	<!-- OE -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Weapons_OE</defName>
+      <label>other weapons</label>
+      <parent>OE_Category_Weapons</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OE_Melee</defName>
+        <label>melee weapons</label>
+        <parent>OE_Category_Weapons_OE</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Weapons_OE_Ranged</defName>
+        <label>ranged weapons</label>
+        <parent>OE_Category_Weapons_OE</parent>
+      </ThingCategoryDef>
+
+<!--=============== Obsidia Expansion Category - Gear ====================-->
+  <ThingCategoryDef>
+    <defName>OE_Category_Gear</defName>
+    <label>obsidia gear</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+	<!-- OMC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_OMC</defName>
+      <label>OMC gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OMC_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_OMC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OMC_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_OMC</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_OMC_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_OMC</parent>
+      </ThingCategoryDef>
+	
+	<!-- OTC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_OTC</defName>
+      <label>OTC gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OTC_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_OTC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OTC_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_OTC</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_OTC_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_OTC</parent>
+      </ThingCategoryDef>
+	
+	<!-- OCC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_OCC</defName>
+      <label>OCC gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OCC_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_OCC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OCC_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_OCC</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_OCC_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_OCC</parent>
+      </ThingCategoryDef>
+	
+	<!-- OEC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_OEC</defName>
+      <label>OEC gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OEC_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_OEC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OEC_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_OEC</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_OEC_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_OEC</parent>
+      </ThingCategoryDef>
+
+	<!-- ODC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_ODC</defName>
+      <label>ODC gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_ODC_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_ODC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_ODC_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_ODC</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_ODC_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_ODC</parent>
+      </ThingCategoryDef>
+
+	<!-- CAC -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_CAC</defName>
+      <label>CAC gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_CAC_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_CAC</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_CAC_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_CAC</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_CAC_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_CAC</parent>
+      </ThingCategoryDef>
+
+	<!-- OES -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_OES</defName>
+      <label>OES gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OES_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_OES</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OES_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_OES</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_OES_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_OES</parent>
+      </ThingCategoryDef>
+
+	<!-- OMG -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_OMG</defName>
+      <label>OMG gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OMG_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_OMG</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_OMG_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_OMG</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_OMG_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_OMG</parent>
+      </ThingCategoryDef>
+    
+	<!-- EGO -->
+    <ThingCategoryDef>
+      <defName>OE_Category_Gear_EGO</defName>
+      <label>EGO gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_EGO_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_EGO</parent>
+      </ThingCategoryDef>
+      <ThingCategoryDef>
+        <defName>OE_Category_Gear_EGO_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_EGO</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_EGO_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_EGO</parent>
+      </ThingCategoryDef>
+	
+	<!-- OE -->
+	<ThingCategoryDef>
+      <defName>OE_Category_Gear_OE</defName>
+      <label>other gear</label>
+      <parent>OE_Category_Gear</parent>
+    </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_Headgear</defName>
+        <label>headgear</label>
+        <parent>OE_Category_Gear_OE</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_Armor</defName>
+        <label>armor</label>
+        <parent>OE_Category_Gear_OE</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_Apparel</defName>
+        <label>apparel</label>
+        <parent>OE_Category_Gear_OE</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_Modules</defName>
+        <label>modules</label>
+        <parent>OE_Category_Gear_OE</parent>
+      </ThingCategoryDef>
+	  <ThingCategoryDef>
+        <defName>OE_Category_Gear_Utility</defName>
+        <label>utility</label>
+        <parent>OE_Category_Gear_OE</parent>
+      </ThingCategoryDef>
+
+<!--=============== Obsidia Expansion Category - BodyParts ====================-->
+  <ThingCategoryDef>
+    <defName>OE_Category_BodyParts</defName>
+    <label>obsidia bionics</label>
+    <parent>BodyParts</parent>
+  </ThingCategoryDef>
+	<!-- Normal Bionic -->
+    <ThingCategoryDef>
+      <defName>OE_Category_BodyParts_N</defName>
+      <label>bionic</label>
+      <parent>OE_Category_BodyParts</parent>
+    </ThingCategoryDef>
+	<!-- Advanced Bionic -->
+    <ThingCategoryDef>
+      <defName>OE_Category_BodyParts_M</defName>
+      <label>advanced bionic</label>
+      <parent>OE_Category_BodyParts</parent>
+    </ThingCategoryDef>
+	<!-- Cultist Bionic -->
+    <ThingCategoryDef>
+      <defName>OE_Category_BodyParts_CAC</defName>
+      <label>cultist bionic</label>
+      <parent>OE_Category_BodyParts</parent>
+    </ThingCategoryDef>
+	<!-- Heroic Bionic -->
+    <ThingCategoryDef>
+      <defName>OE_Category_BodyParts_OES</defName>
+      <label>heroic bionic</label>
+      <parent>OE_Category_BodyParts</parent>
+    </ThingCategoryDef>
+	<!-- Cyberware -->
+    <ThingCategoryDef>
+      <defName>OE_Category_BodyParts_Cyberware</defName>
+      <label>cyberware</label>
+      <parent>OE_Category_BodyParts</parent>
+    </ThingCategoryDef>
+
+</Defs>

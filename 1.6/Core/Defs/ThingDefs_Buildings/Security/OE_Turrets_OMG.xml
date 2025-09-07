@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OE_TurretBase_Small">
+    <defName>OMG_Turret_Small</defName>
+    <label>OMG Bytecrusher Turret</label>
+    <description>An automatic OMG Shotgun-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OMG/TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OMG/TurretSmall_Icon</uiIconPath>
+    <costList>
+      <OE_Empyrium>150</OE_Empyrium>
+      <OE_Orichalcum>25</OE_Orichalcum>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>2100</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>100</combatPower> 
+	  <turretGunDef>OMG_TurretGun_Small</turretGunDef>
+      <turretBurstCooldownTime>1.25</turretBurstCooldownTime>
+    </building>
+	<researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OMGGear</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_AmmoKit</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>250</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>5.75</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductProduced/OE_AmmoKit</fuelIconPath>
+      </li>
+	</comps>  
+  </ThingDef>
+
+  <ThingDef ParentName="OE_TurretBase_SmallPowered">
+    <defName>OMG_Turret_SmallPowered</defName>
+    <label>OMG Bytecrusher Powered Turret</label>
+    <description>An automatic OMG Shotgun-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.\n\nThis turret has a built-in generator.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OMG/TurretSmallPowered_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OMG/TurretSmall_Icon</uiIconPath>
+    <costList>
+      <OE_Empyrium>150</OE_Empyrium>
+      <OE_Orichalcum>25</OE_Orichalcum>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Syntherius>30</OE_Syntherius>
+	  <OE_QuantumGenerator_Micro>1</OE_QuantumGenerator_Micro>
+    </costList>
+	<statBases>
+      <MarketValue>2650</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>100</combatPower> 
+	  <turretGunDef>OMG_TurretGun_Small</turretGunDef>
+      <turretBurstCooldownTime>1.25</turretBurstCooldownTime>
+    </building>
+	<researchPrerequisites>
+      <li>OEDefenceAdv</li>
+	  <li>OMGGear</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_AmmoKit</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>250</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>5.75</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductProduced/OE_AmmoKit</fuelIconPath>
+      </li>
+	</comps>  
+  </ThingDef>
+
+  <ThingDef Name="OMG_TurretGun_Small" ParentName="BaseWeaponTurret">
+    <defName>OMG_TurretGun_Small</defName>
+    <label>Bytecrusher Turret</label>
+    <description>Reconstructed OMG Shotgun for turrets. Specially modified weapon charged with Necrobane and EMP damages.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OMG/TurretSmall_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OMG_TurretBullet_Small</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+		<soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OMG_TurretBullet_Small</defName>
+    <label>Bytecrusher turret blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>23</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>70</speed>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>15</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+  
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OE_TurretBase_Big">
+    <defName>OMG_Turret_Big</defName>
+    <label>OMG Etherstrike Turret</label>
+    <description>An automatic OMG Sniper Rifle-equipped turret. Requires obsidia ammo kit as fuel. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OMG/TurretBig_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/OMG/TurretBig_Icon</uiIconPath>
+    <costList>
+      <OE_Empyrium>300</OE_Empyrium>
+      <OE_Orichalcum>50</OE_Orichalcum>
+	  <OE_Platinum>50</OE_Platinum>
+	  <OE_Syntherius>50</OE_Syntherius>
+    </costList>
+	<statBases>
+      <MarketValue>3625</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>225</combatPower> 
+	  <turretGunDef>OMG_TurretGun_Big</turretGunDef>
+      <turretBurstCooldownTime>1.15</turretBurstCooldownTime>
+    </building>
+	<researchPrerequisites>
+      <li>OEDefenceAdv</li>
+	  <li>OMGGear</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shoots until run out of charges</fuelLabel>
+        <fuelGizmoLabel>Fuel capacity</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>OE_AmmoKit</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>375</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>0.7</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs obsidia ammo kit</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Resource/ProductProduced/OE_AmmoKit</fuelIconPath>
+      </li>
+	</comps> 
+  </ThingDef>
+
+  <ThingDef Name="OMG_TurretGun_Big" ParentName="BaseWeaponTurret">
+    <defName>OMG_TurretGun_Big</defName>
+    <label>Etherstrike Turret</label>
+    <description>Reconstructed OMG Sniper Rifle for turrets. Specially modified weapon charged with Necrobane and EMP damages.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/OMG/TurretBig_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.10</AccuracyShort>
+      <AccuracyMedium>1.15</AccuracyMedium>
+      <AccuracyLong>1.20</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>15</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>OMG_TurretBullet_Big</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>7.9</minRange>
+		<range>45.9</range>
+        <burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>OMG_TurretBullet_Big</defName>
+    <label>Etherstrike turret bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.75</armorPenetrationBase>
+      <speed>120</speed>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>15</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

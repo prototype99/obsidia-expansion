@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Psycasts Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Obsidia Empire - Faction ====================-->		
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire"]/pawnGroupMakers</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<OEC_Recruit>10</OEC_Recruit>
+				<OEC_Hunter_Melee>25</OEC_Hunter_Melee>
+				<OEC_Hunter_RMelee>20</OEC_Hunter_RMelee>
+				<OEC_Hunter_Ranged>25</OEC_Hunter_Ranged>
+				<OEC_Hunter_Sniper>20</OEC_Hunter_Sniper>
+				<OEC_Inquisitor_Melee>15</OEC_Inquisitor_Melee>
+		        <OEC_Inquisitor_RMelee>10</OEC_Inquisitor_RMelee>
+		        <OEC_Inquisitor_Ranged>15</OEC_Inquisitor_Ranged>
+		        <OEC_Inquisitor_Sniper>10</OEC_Inquisitor_Sniper>	
+              </options>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire"]/pawnGroupMakers</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<OMC_Officer_Melee>15</OMC_Officer_Melee>
+				<OMC_Officer_RMelee>15</OMC_Officer_RMelee>
+				<OMC_Officer_Ranged>15</OMC_Officer_Ranged>
+				<OMC_Officer_Sniper>10</OMC_Officer_Sniper>
+				<OTC_Engineer_Acid_Melee>15</OTC_Engineer_Acid_Melee>
+				<OTC_Engineer_Acid_Ranged>15</OTC_Engineer_Acid_Ranged>
+				<OTC_Engineer_Acid_Heavy>10</OTC_Engineer_Acid_Heavy>
+				<OTC_Engineer_Cryo_Melee>15</OTC_Engineer_Cryo_Melee>
+				<OTC_Engineer_Cryo_Ranged>15</OTC_Engineer_Cryo_Ranged>
+				<OTC_Engineer_Cryo_Heavy>10</OTC_Engineer_Cryo_Heavy>
+				<OTC_Engineer_Fire_Melee>15</OTC_Engineer_Fire_Melee>
+				<OTC_Engineer_Fire_Ranged>15</OTC_Engineer_Fire_Ranged>
+				<OTC_Engineer_Fire_Heavy>10</OTC_Engineer_Fire_Heavy>
+				<OTC_Engineer_EMP_Melee>5</OTC_Engineer_EMP_Melee>
+				<OTC_Engineer_EMP_Ranged>5</OTC_Engineer_EMP_Ranged>
+				<OTC_Engineer_EMP_Heavy>5</OTC_Engineer_EMP_Heavy>
+				<OCC_Paladin_Melee>15</OCC_Paladin_Melee>
+				<OCC_Paladin_Ranged>15</OCC_Paladin_Ranged>
+				<OCC_Paladin_Heavy>10</OCC_Paladin_Heavy>
+				<OEC_Recruit>10</OEC_Recruit>
+				<OEC_Hunter_Melee>25</OEC_Hunter_Melee>
+				<OEC_Hunter_RMelee>20</OEC_Hunter_RMelee>
+				<OEC_Hunter_Ranged>25</OEC_Hunter_Ranged>
+				<OEC_Hunter_Sniper>20</OEC_Hunter_Sniper>
+				<OEC_Inquisitor_Melee>15</OEC_Inquisitor_Melee>
+		        <OEC_Inquisitor_RMelee>10</OEC_Inquisitor_RMelee>
+		        <OEC_Inquisitor_Ranged>15</OEC_Inquisitor_Ranged>
+		        <OEC_Inquisitor_Sniper>10</OEC_Inquisitor_Sniper>	
+              </options>
+            </li>
+		  </value>
+	    </li>	
+<!--=============== Obsidia Drifter Clans - Factions ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[@Name="ObsidiaDrifterClansBase"]/pawnGroupMakers</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<ODC_Nomad>20</ODC_Nomad>
+				<ODC_Recon_Melee>15</ODC_Recon_Melee>
+				<ODC_Recon_Ranged>15</ODC_Recon_Ranged>
+				<ODC_Recon_Sniper>10</ODC_Recon_Sniper>
+				<ODC_Recon_Prestige>10</ODC_Recon_Prestige>
+				<ODC_Duelist_Melee>15</ODC_Duelist_Melee>
+				<ODC_Duelist_HeavyMelee>10</ODC_Duelist_HeavyMelee>
+				<ODC_Duelist_Ranged>15</ODC_Duelist_Ranged>
+		        <ODC_Duelist_Prestige>10</ODC_Duelist_Prestige>
+				<ODC_Mech_Dominator_Light>2</ODC_Mech_Dominator_Light>
+				<ODC_Mech_Dominator_Heavy>2</ODC_Mech_Dominator_Heavy>
+              </options>
+            </li>
+		  </value>
+	    </li>
+<!--=============== Crimson Arachna Cult - Faction ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/pawnGroupMakers</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<CAC_Acolyte>25</CAC_Acolyte>
+				<CAC_Apostle>25</CAC_Apostle>
+				<CAC_Disciple>25</CAC_Disciple>
+				<CAC_Prefect>25</CAC_Prefect>
+				<CAC_Confessor>25</CAC_Confessor>
+				<CAC_Deacon>25</CAC_Deacon>
+				<CAC_Pontifex>25</CAC_Pontifex>
+				<CAC_Acolyte_Prestige>15</CAC_Acolyte_Prestige>
+		        <CAC_Apostle_Prestige>10</CAC_Apostle_Prestige>
+				<CAC_Disciple_Prestige>15</CAC_Disciple_Prestige>
+		        <CAC_Prefect_Prestige>15</CAC_Prefect_Prestige>
+				<CAC_Confessor_Prestige>15</CAC_Confessor_Prestige>
+		        <CAC_Deacon_Prestige>15</CAC_Deacon_Prestige>
+				<CAC_Pontifex_Prestige>15</CAC_Pontifex_Prestige>
+				<CAC_Vizier>5</CAC_Vizier>
+              </options>
+            </li>
+		  </value>
+	    </li>
+<!--=============== Obsidia Empire Sins - Faction ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins"]/pawnGroupMakers</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<OES_Eidolon_Melee>15</OES_Eidolon_Melee>
+				<OES_Eidolon_Ranged>5</OES_Eidolon_Ranged>
+				<OES_Undying_Melee>10</OES_Undying_Melee>
+				<OES_Undying_Ranged>3</OES_Undying_Ranged>
+              </options>
+            </li>
+			<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<OES_Eidolon_Melee>5</OES_Eidolon_Melee>
+				<OES_Eidolon_Ranged>15</OES_Eidolon_Ranged>
+				<OES_Undying_Melee>10</OES_Undying_Melee>
+				<OES_Undying_Ranged>3</OES_Undying_Ranged>
+              </options>
+            </li>
+			<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<OES_Special_A_Melee>10</OES_Special_A_Melee>
+				<OES_Special_A_Ranged>10</OES_Special_A_Ranged>
+              </options>
+            </li>
+			<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<OES_Special_B_Melee>10</OES_Special_B_Melee>
+				<OES_Special_B_Ranged>10</OES_Special_B_Ranged>
+              </options>
+            </li>
+			<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid">
+              <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+				<OES_Special_A_Melee>10</OES_Special_A_Melee>
+				<OES_Special_A_Ranged>10</OES_Special_A_Ranged>
+				<OES_Special_B_Melee>10</OES_Special_B_Melee>
+				<OES_Special_B_Ranged>10</OES_Special_B_Ranged>
+              </options>
+            </li>
+		  </value>
+	    </li>
+
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

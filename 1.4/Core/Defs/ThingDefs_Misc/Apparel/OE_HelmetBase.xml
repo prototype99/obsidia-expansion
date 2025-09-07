@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Helmet Base ====================-->
+  <ThingDef Name="OEHelmetBase" ParentName="OEArmorCore" Abstract="True">
+	<thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Helmet Base(Non-Quality) ====================-->
+  <ThingDef Name="OEHelmetBaseNQ" ParentName="OEArmorCoreNQ" Abstract="True">
+	<thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<statBases>
+	  <MaxHitPoints>450</MaxHitPoints>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+	<generateCommonality>2</generateCommonality>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+</Defs>

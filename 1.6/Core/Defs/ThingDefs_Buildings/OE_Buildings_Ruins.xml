@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ancient Pod EGO ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_AncientPodEGO</defName>
+    <label>weird pod</label>
+    <description>A weird pod containing an unknown bio-substance.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_EGOSeed</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientPodEGO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<rotatable>false</rotatable>
+	<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+	<size>(1,1)</size>
+    <fillPercent>0.15</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+	<statBases>
+	  <Flammability>0</Flammability>
+	  <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToBuild>300</WorkToBuild>
+	</statBases>
+	<passability>PassThroughOnly</passability>
+	<blockWind>true</blockWind>
+    <pathCost>50</pathCost>
+	<building>
+      <claimable>false</claimable>
+    </building>
+	<killedLeavings>
+      <OE_EGOSeed>1</OE_EGOSeed>
+    </killedLeavings>
+	<damageMultipliers>
+      <li>
+        <damageDef>OTCAcid</damageDef>
+        <multiplier>4</multiplier>
+      </li>
+	  <li>
+        <damageDef>OTCCryo</damageDef>
+        <multiplier>4</multiplier>
+      </li>
+    </damageMultipliers>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<comps>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>2.9</glowRadius>
+        <glowColor>(196, 247, 67)</glowColor>
+      </li>
+	</comps>
+  </ThingDef>
+
+  <GenStepDef>
+    <defName>OE_AncientPodEGO</defName>
+	<order>1000</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>OE_AncientPodEGO</thingDef>
+	  <allowInWaterBiome>false</allowInWaterBiome>
+      <minSpacing>25</minSpacing>
+      <extraNoBuildEdgeDist>3</extraNoBuildEdgeDist>
+	  <countPer10kCellsRange>0.25~0.35</countPer10kCellsRange>
+      <clearSpaceSize>15</clearSpaceSize>
+	  <terrainValidationRadius>3</terrainValidationRadius>
+	  <terrainValidationDisallowed>
+        <li>Road</li>
+      </terrainValidationDisallowed>
+	  <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+		<li Class="ScattererValidator_NoNonNaturalEdifices">
+          <radius>3</radius>
+        </li>
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

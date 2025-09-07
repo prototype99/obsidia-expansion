@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>SeedsPlease</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Tree Pearlapple ====================-->
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seed_OE_TreePearlapple</defName>
+    <label>pearlapple tree seeds</label>
+    <sources>
+      <li>Plant_OE_TreePearlapple</li>
+    </sources>
+	<seed>
+      <baseChance>0.70</baseChance>
+      <extraChance>0.20</extraChance>
+    </seed>
+    <graphicData>
+	  <texPath>Things/Item/Seeds/OE_Seed_Pearlapple</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  </SeedsPlease.SeedDef>
+
+  <RecipeDef ParentName="ExtractSeed">
+    <defName>ExtractSeed_OE_TreePearlapple</defName>
+    <label>Extract pearlapple tree seeds</label>
+    <description>Extract seeds from pearlapple fruit.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Pearlapple_Fruit</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Pearlapple_Fruit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Seed_OE_TreePearlapple>2</Seed_OE_TreePearlapple>
+    </products>
+  </RecipeDef>
+
+<!--=============== Tree Syntherius ====================-->
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seed_OE_TreeSyntherius</defName>
+    <label>syntherius tree seeds</label>
+    <sources>
+      <li>Plant_OE_TreeSyntherius</li>
+    </sources>
+	<seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.10</extraChance>
+    </seed>
+    <graphicData>
+	  <texPath>Things/Item/Seeds/OE_Seed_Syntherius</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  </SeedsPlease.SeedDef>
+
+<!--=============== Tree Fungi ====================-->
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seed_OE_TreeFungi</defName>
+    <label>fungi tree seeds</label>
+    <sources>
+      <li>Plant_OE_TreeFungi</li>
+    </sources>
+	<seed>
+      <baseChance>0.80</baseChance>
+      <extraChance>0.20</extraChance>
+    </seed>
+    <graphicData>
+	  <texPath>Things/Item/Seeds/OE_Seed_Fungi</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  </SeedsPlease.SeedDef>
+
+<!--=============== Tree Dragonian ====================-->
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seed_OE_TreeDragonian</defName>
+    <label>dragonian tree seeds</label>
+    <sources>
+      <li>Plant_OE_TreeDragonian</li>
+    </sources>
+	<seed>
+      <baseChance>0.65</baseChance>
+      <extraChance>0.20</extraChance>
+    </seed>
+    <graphicData>
+	  <texPath>Things/Item/Seeds/OE_Seed_Dragonian</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  </SeedsPlease.SeedDef>
+
+<!--=============== Moonplant ====================-->
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seed_OE_Moonplant</defName>
+    <label>moonplant seeds</label>
+    <sources>
+      <li>Plant_OE_Moonplant</li>
+    </sources>
+	<seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.15</extraChance>
+    </seed>
+    <graphicData>
+	  <texPath>Things/Item/Seeds/OE_Seed_Moonplant</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  </SeedsPlease.SeedDef>
+
+  <RecipeDef ParentName="ExtractSeed">
+    <defName>ExtractSeed_OE_Moonplant</defName>
+    <label>Extract moonplant seeds</label>
+    <description>Extract seeds from mooncloth.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Mooncloth</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Seed_OE_Moonplant>2</Seed_OE_Moonplant>
+    </products>
+  </RecipeDef>
+
+<!--=============== Jumy ====================-->
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seed_OE_Jumy</defName>
+    <label>jumy seeds</label>
+    <sources>
+      <li>Plant_OE_Jumy</li>
+    </sources>
+	<seed>
+      <baseChance>0.75</baseChance>
+      <extraChance>0.15</extraChance>
+    </seed>
+    <graphicData>
+	  <texPath>Things/Item/Seeds/OE_Seed_Jumy</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  </SeedsPlease.SeedDef>
+
+  <RecipeDef ParentName="ExtractSeed">
+    <defName>ExtractSeed_OE_Jumy</defName>
+    <label>Extract jumy seeds</label>
+    <description>Extract seeds from jumy berries.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Jumy_Berries</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Seed_OE_Jumy>2</Seed_OE_Jumy>
+    </products>
+  </RecipeDef>
+
+<!--=============== Pellashroom ====================-->
+  <SeedsPlease.SeedDef ParentName="SeedBase">
+    <defName>Seed_OE_Pellashroom</defName>
+    <label>pellashroom seeds</label>
+    <sources>
+      <li>Plant_OE_Pellashroom</li>
+    </sources>
+	<seed>
+      <baseChance>0.80</baseChance>
+      <extraChance>0.10</extraChance>
+    </seed>
+    <graphicData>
+	  <texPath>Things/Item/Seeds/OE_Seed_Pellashroom</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  </SeedsPlease.SeedDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Ammo Net ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_AmmoStorage_System</defName>
+    <label>Obsidia ammo storage system</label>
+  </DesignatorDropdownGroupDef>
+
+  <PipeSystem.PipeNetDef>
+    <defName>OE_AmmoNet</defName>
+    <resource>
+      <name>obsidia ammo</name>
+      <color>(92, 60, 122)</color>
+      <onlyShowStored>True</onlyShowStored>
+      <offTexPath>UI/TurretPipeline/OE_Ammo_OutOff</offTexPath>
+    </resource>
+    <pipeDefs>
+      <li>OE_AmmoPipe_Normal</li>
+	  <li>OE_AmmoPipe_Hidden</li>
+    </pipeDefs>
+    <designator>
+      <deconstructIconPath>Things/Building/TurretPipeline/Pipes/OE_TurretPipe_Deconstruct</deconstructIconPath>
+      <designationCategoryDef>Misc</designationCategoryDef>
+    </designator>
+    <overlayOptions>
+      <overlayColor>(92, 60, 122)</overlayColor>
+    </overlayOptions>
+    <linkToRefuelables>
+      <li>
+        <thing>OE_AmmoKit</thing>
+        <ratio>1</ratio>
+      </li>
+    </linkToRefuelables>
+  </PipeSystem.PipeNetDef>
+
+<!--=============== Ammo Pipes ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_AmmoPipe_Normal</defName>
+    <label>obsidia ammo pipe</label>
+    <description>Obsidian pipes built to efficiently transport obsidia ammo from storage directly to connected turrets, ensuring a steady supply during combat.</description>
+    <thingClass>PipeSystem.Building_Pipe</thingClass>
+    <category>Building</category>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>Things/Building/TurretPipeline/Pipes/OE_TurretPipe_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom7</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiOrder>1</uiOrder>
+	<uiIconPath>Things/Building/TurretPipeline/Pipes/OE_TurretPipe_Normal</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/TurretPipeline/Pipes/OE_TurretPipeBlueprint_Atlas</texPath>
+      </blueprintGraphicData>
+	  <relatedBuildCommands>
+        <li>OE_AmmoPipe_Hidden</li>
+        <li>OE_AmmoStorage</li>
+        <li>OE_AmmoSorting_Input</li>
+        <li>OE_AmmoSorting_Output</li>
+      </relatedBuildCommands>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>50</WorkToBuild>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <drawStyleCategory>Conduits</drawStyleCategory>
+    <costList>
+      <OE_Obsidian>2</OE_Obsidian>
+    </costList>
+    <placeWorkers>
+      <li>PipeSystem.PlaceWorker_Pipe</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>OE_AmmoNet</pipeNet>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_AmmoPipe_Hidden</defName>
+    <label>hidden obsidia ammo pipe</label>
+    <description>Obsidian pipes built to efficiently transport obsidia ammo from storage directly to connected turrets, ensuring a steady supply during combat. This pipe is hidden from view. More expensive to build than regular pipes.</description>
+    <thingClass>PipeSystem.Building_Pipe</thingClass>
+    <category>Building</category>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>UI/CSG/IConduit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom8</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+	<uiOrder>2</uiOrder>
+    <uiIconPath>Things/Building/TurretPipeline/Pipes/OE_TurretPipe_Hidden</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/TurretPipeline/Pipes/OE_TurretPipeBlueprint_Atlas</texPath>
+      </blueprintGraphicData>
+	  <relatedBuildCommands>
+        <li>OE_AmmoPipe_Normal</li>
+        <li>OE_AmmoStorage</li>
+        <li>OE_AmmoSorting_Input</li>
+        <li>OE_AmmoSorting_Output</li>
+      </relatedBuildCommands>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <isTargetable>false</isTargetable>
+      <expandHomeArea>false</expandHomeArea>
+      <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <drawStyleCategory>Conduits</drawStyleCategory>
+    <costList>
+      <OE_Obsidian>2</OE_Obsidian>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <placeWorkers>
+      <li>PipeSystem.PlaceWorker_Pipe</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>OE_AmmoNet</pipeNet>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ammo Storage ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_AmmoStorage</defName>
+    <label>obsidia ammo storage</label>
+    <description>The core of your colony’s obsidia-based defense logistics, the Obsidia Ammo Storage secures and organizes vast quantities of specialized munitions. Built with reinforced containment and high-capacity shelving, it guarantees a steady supply to the network, keeping your turrets locked, loaded, and prepared for the longest sieges.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TurretPipeline/OE_AmmoStorage</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.0, 3.0)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<uiOrder>3</uiOrder>
+	<building>
+	  <relatedBuildCommands>
+        <li>OE_AmmoPipe_Normal</li>
+        <li>OE_AmmoPipe_Hidden</li>
+        <li>OE_AmmoSorting_Input</li>
+        <li>OE_AmmoSorting_Output</li>
+      </relatedBuildCommands>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <WorkToBuild>2400</WorkToBuild>
+      <Mass>50</Mass>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <size>(3, 3)</size>
+    <costList>
+	  <OE_Obsidian>250</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+	<designatorDropdown>OE_AmmoStorage_System</designatorDropdown>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+    </researchPrerequisites>
+	<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+	<comps>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>OE_AmmoNet</pipeNet>
+        <storageCapacity>5000</storageCapacity>
+        <barSize>(0.78, 0.28)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(-0.95, 0, 0.405)</centerOffset>
+        <extractOptions>
+          <texPath>Things/Item/Resource/ProductProduced/OE_AmmoKit</texPath>
+          <labelKey>OE_AmmoStorage_ExtractAmmo</labelKey>
+          <descKey>OE_AmmoStorage_ExtractAmmoDesc</descKey>
+          <extractAmount>25</extractAmount>
+          <thing>OE_AmmoKit</thing>
+          <ratio>1</ratio>
+        </extractOptions>
+      </li>
+	  <li Class="CompProperties_Explosive">
+		<explosiveRadius>5.1</explosiveRadius>
+		<explosiveDamageType>Bomb</explosiveDamageType>
+		<wickTicks>
+		  <min>40</min>
+		  <max>140</max>
+		</wickTicks>
+	  </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ammo Sorting ====================-->
+  <ThingDef ParentName="FurnitureBase">
+    <defName>OE_AmmoSorting_Output</defName>
+    <label>obsidia ammo dispenser</label>
+    <description>A critical link in your colony’s obsidia-based defense logistics, the Obsidia Ammo Dispenser channels high-density munitions from the obsidia pipeline directly into turret systems. Optimized for speed and efficiency, it ensures seamless resupply under fire, maintaining peak combat readiness at all times.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TurretPipeline/OE_AmmoOutput</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+	<uiOrder>4</uiOrder>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>5</Mass>
+      <WorkToBuild>750</WorkToBuild>
+      <Flammability>0.25</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+            <li>OE_AmmoKit</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+            <li>OE_AmmoKit</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+	  <relatedBuildCommands>
+        <li>OE_AmmoPipe_Normal</li>
+        <li>OE_AmmoPipe_Hidden</li>
+        <li>OE_AmmoStorage</li>
+        <li>OE_AmmoSorting_Output</li>
+      </relatedBuildCommands>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Misc</designationCategory>
+	<designatorDropdown>OE_AmmoStorage_System</designatorDropdown>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ConvertResourceToThing">
+        <pipeNet>OE_AmmoNet</pipeNet>
+        <thing>OE_AmmoKit</thing>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FurnitureBase">
+    <defName>OE_AmmoSorting_Input</defName>
+    <label>obsidia ammo injector</label>
+    <description>The starting point of your obsidia-based defense logistics, the Obsidia Ammo Injector loads high-powered rounds into the pipe network with precision and force. Engineered for consistency and volume, it fuels your colony’s turret grid with relentless reliability, empowering your defenses against even the most persistent threats.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TurretPipeline/OE_AmmoInput</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+	<uiOrder>5</uiOrder>
+    <rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>5</Mass>
+      <WorkToBuild>750</WorkToBuild>
+      <Flammability>0.25</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+            <li>OE_AmmoKit</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+            <li>OE_AmmoKit</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+	  <relatedBuildCommands>
+        <li>OE_AmmoPipe_Normal</li>
+        <li>OE_AmmoPipe_Hidden</li>
+        <li>OE_AmmoStorage</li>
+        <li>OE_AmmoSorting_Input</li>
+      </relatedBuildCommands>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Misc</designationCategory>
+	<designatorDropdown>OE_AmmoStorage_System</designatorDropdown>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ConvertThingToResource">
+        <pipeNet>OE_AmmoNet</pipeNet>
+        <thing>OE_AmmoKit</thing>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>OEDefenceAdv</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

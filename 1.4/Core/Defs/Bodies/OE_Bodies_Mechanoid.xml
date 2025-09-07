@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arachna ====================-->
+  <BodyDef>
+    <defName>OEMechanicalArachna</defName>
+    <label>mechanical arachna</label>
+    <corePart>
+      <def>OEMechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+		<li>
+          <def>Reactor</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>FluidReprocessor</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>MechanicalNeck</def>
+          <coverage>0.05</coverage>
+		  <height>Top</height>
+          <parts>
+		    <li>
+              <def>OEMechanicalHead</def>
+              <coverage>0.60</coverage>
+              <groups>
+				<li>HeadAttackTool</li>
+			  </groups>
+			  <parts>
+			    <li>
+				  <def>ArtificialBrain</def>
+				  <coverage>0.2</coverage>
+				  <depth>Inside</depth>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>left first sight sensor</customLabel>
+				  <coverage>0.1</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>left second sight sensor</customLabel>
+				  <coverage>0.05</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>right first sight sensor</customLabel>
+				  <coverage>0.1</coverage>
+				</li>
+				<li>
+				  <def>SightSensor</def>
+				  <customLabel>right second sight sensor</customLabel>
+				  <coverage>0.05</coverage>
+				</li>
+				<li>
+				  <def>HearingSensor</def>
+				  <coverage>0.05</coverage>
+				  <customLabel>left hearing sensor</customLabel>
+				</li>
+				<li>
+				  <def>HearingSensor</def>
+				  <coverage>0.05</coverage>
+				  <customLabel>right hearing sensor</customLabel>
+				</li>
+				<li>
+				  <def>SmellSensor</def>
+				  <coverage>0.05</coverage>
+				</li>
+			  </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>OEMechanicalLeg</def>
+          <customLabel>left first leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontLeftLeg</li>
+		  </groups>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFoot</def>
+			  <customLabel>left first foot</customLabel>
+			  <coverage>0.05</coverage>
+			</li>
+		  </parts>
+        </li>
+		<li>
+          <def>OEMechanicalLeg</def>
+          <customLabel>left second leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFoot</def>
+			  <customLabel>left second foot</customLabel>
+			  <coverage>0.05</coverage>
+			</li>
+		  </parts>
+        </li>
+		<li>
+          <def>OEMechanicalLeg</def>
+          <customLabel>right first leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+		  <groups>
+			<li>FrontRightLeg</li>
+		  </groups>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFoot</def>
+			  <customLabel>right first foot</customLabel>
+			  <coverage>0.05</coverage>
+			</li>
+		  </parts>
+        </li>
+		<li>
+          <def>OEMechanicalLeg</def>
+          <customLabel>right second leg</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+		  <parts>
+		    <li>
+			  <def>OEMechanicalFoot</def>
+			  <customLabel>right first foot</customLabel>
+			  <coverage>0.05</coverage>
+			</li>
+		  </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+<!--=============== Dominator ====================-->
+  <BodyDef>
+    <defName>OEDominator</defName>
+    <label>dominator</label>
+    <corePart>
+      <def>OEMechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>OEMechanicalHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>OEMechanicalShoulder</def>
+          <customLabel>left mechanical shoulder</customLabel>
+          <coverage>0.17</coverage>
+          <parts>
+            <li>
+              <def>OEMechanicalArm</def>
+              <customLabel>left arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>OEMechanicalHand</def>
+                  <customLabel>left hand</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <parts>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>left pinky</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>left middle finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>left index finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>left thumb</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>OEMechanicalShoulder</def>
+          <customLabel>right mechanical shoulder</customLabel>
+          <coverage>0.17</coverage>
+          <parts>
+            <li>
+              <def>OEMechanicalArm</def>
+              <customLabel>right arm</customLabel>
+              <coverage>0.85</coverage>
+              <parts>
+                <li>
+                  <def>OEMechanicalHand</def>
+                  <customLabel>right hand</customLabel>
+                  <coverage>0.2</coverage>
+                  <height>Bottom</height>
+                  <parts>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>right pinky</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>right middle finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>right index finger</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>OEMechanicalFinger</def>
+                      <customLabel>right thumb</customLabel>
+                      <coverage>0.15</coverage>
+                      <groups>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>OEMechanicalLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>OEMechanicalFoot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>OEMechanicalLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>OEMechanicalFoot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+</Defs>

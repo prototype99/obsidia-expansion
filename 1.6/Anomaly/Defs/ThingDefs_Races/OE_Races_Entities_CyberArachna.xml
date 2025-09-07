@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Cyber Arachna ====================-->
+  <ThingDef Name="OECyberArachna" ParentName="BasePawn">
+    <defName>OE_CyberArachna</defName>
+    <label>Cyber Arachna</label>
+    <description>Cyber Arachna is a hybrid of Crimson Arachna Cultist with a mechanoid body. This creature is extremely durable and armored, but has a low movement speed. It's the result of one of the first unsuccessful experiments of Crimson Arachna Cult in the artificial hybridization of the powers of Crimson Arachna.</description>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <statBases>
+	  <MoveSpeed>3.5</MoveSpeed>
+	  <MeatAmount>45</MeatAmount>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+      <ComfyTemperatureMax>300</ComfyTemperatureMax>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.10</ArmorRating_Heat>
+      <PsychicSensitivity>2</PsychicSensitivity>
+      <MinimumContainmentStrength>250</MinimumContainmentStrength>
+      <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+	  <FilthRate>2</FilthRate>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hideStats>true</hideStats>
+    <race>
+      <thinkTreeMain>OE_CyberArachna</thinkTreeMain>
+      <thinkTreeConstant>OE_CyberArachnaConstant</thinkTreeConstant>
+	  <alwaysViolent>true</alwaysViolent>
+      <body>OECyberArachnaLike</body>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>15</baseHealthScale>
+      <intelligence>ToolUser</intelligence>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+	  <bloodDef IsNull="True"/>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+	  <fleshType>EntityFlesh</fleshType>
+      <foodType>None</foodType>
+      <lifeExpectancy>250</lifeExpectancy>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundCallIntervalRange>120~240</soundCallIntervalRange>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <trainability>None</trainability>
+      <isImmuneToInfections>true</isImmuneToInfections>
+	  <canBecomeShambler>true</canBecomeShambler>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundCall>Pawn_Noctol_Call</soundCall>
+          <soundWounded>Pawn_Noctol_Wounded</soundWounded>
+          <soundDeath>Pawn_Noctol_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+	  <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+	  <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+    <comps>
+	  <li>
+        <compClass>CompAttachBase</compClass>
+      </li>
+	  <li Class="CompProperties_Chimera">
+        <simpleAnimalLabel>chimera</simpleAnimalLabel>
+      </li>
+	  <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>30</baseEscapeIntervalMtbDays>
+        <lookForTargetOnEscape>false</lookForTargetOnEscape>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.6, 0, .6)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.6, 0, .6)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.6, 0, -.7)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.6, 0, -.7)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>6</bioferriteDensity>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>3</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>front left leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>front right leg</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20.0</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+			  <chance>0.55</chance>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<butcherProducts>
+      <OE_Empyrium>12</OE_Empyrium>
+	  <OE_Orichalcum>12</OE_Orichalcum>
+	  <OE_EGOSeed>2</OE_EGOSeed>
+	  <Shard>2</Shard>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OECyberArachnaKind">
+    <defName>OE_CyberArachna</defName>
+    <label>Cyber Arachna</label>
+    <race>OE_CyberArachna</race>
+    <defaultFactionType>Entities</defaultFactionType>
+    <immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+	<preventIdeo>true</preventIdeo>
+	<aiAvoidCover>true</aiAvoidCover>
+    <immuneToTraps>true</immuneToTraps>
+	<ignoresPainShock>true</ignoresPainShock>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/CyberArachna/CyberArachna</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <combatPower>500</combatPower>
+	<forceNormalGearQuality>true</forceNormalGearQuality>
+	<destroyGearOnDrop>true</destroyGearOnDrop>
+    <canStrip>false</canStrip>
+	<weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OECyberArachnaGun</li>
+    </weaponTags>
+	<abilities>
+      <li MayRequire="ObsidiaExpansion.Xenos.Arachnas">OE_Entity_WebShot</li>
+	  <li MayRequire="Ludeon.Rimworld.Biotech">OE_MechQueenCurse</li>
+    </abilities>
+  </PawnKindDef>
+
+</Defs>

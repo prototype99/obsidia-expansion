@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Obsidia Expansion - Experimental Power ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OEPowerExp"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>1</techprintCommonality>
+	  <techprintMarketValue>2000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Expansion - Experimental Farming ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OEFarmExp"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>1</techprintCommonality>
+	  <techprintMarketValue>1000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Expansion - Advanced Synthesis ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OESynthAdv"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>2000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Expansion - Modernization ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OEGearMod"]</xpath>
+    <value>
+	  <techprintCount>2</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>1000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Expansion - Chip Modules ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OEModules"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>2000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== OMС - Obsidia Military Corpus ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OMCGearMod"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>1500</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== OTС - Obsidia Tech Corpus ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OTCGearMod"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>1500</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== OCC - Obsidia Crusaders Corpus ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OCCGearMod"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>1500</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Drifters Clans - Core ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="ODCGear"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>1</techprintCommonality>
+	  <techprintMarketValue>1500</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaDrifterClans</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Drifters Clans - Emergent ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="ODCGearAdv"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>1</techprintCommonality>
+	  <techprintMarketValue>2000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaDrifterClans</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Drifters Clans - Apex ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="ODCGearExp"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>1</techprintCommonality>
+	  <techprintMarketValue>3000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaDrifterClans</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Crimson Arachna Cult - Initiation ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="CACGear"]</xpath>
+    <value>
+	  <techprintCount>2</techprintCount>
+	  <techprintCommonality>1</techprintCommonality>
+	  <techprintMarketValue>4500</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaCult</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Crimson Arachna Cult - Enlightenment ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="CACGearAdv"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>1</techprintCommonality>
+	  <techprintMarketValue>5000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaCult</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Expansion - Adv. Defence ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OEDefenceAdv"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>2000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Expansion - Cyberwares ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OECyberwares"]</xpath>
+    <value>
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>1500</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Expansion - Adv. Cyberwares ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OECyberwaresAdv"]</xpath>
+    <value>
+	  <techprintCount>2</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>2000</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+	  </heldByFactionCategoryTags>
+    </value>
+</Operation>
+
+</Patch>

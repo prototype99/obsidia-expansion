@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Special ====================-->
+<!--=============== Eidolon ====================-->
+  <BackstoryDef>
+    <defName>OE_Eidolon</defName>
+    <title>obsidia empire eidolon</title>
+    <titleShort>eidolon</titleShort>
+    <description>[PAWN_nameDef] once considered a great Hero of Obsidia but after some events it became forgotten and abandoned by its own people. Has excellent combat skills and the ability to maintain own reputation.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Social</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+	  <li>Hauling</li>
+    </workDisables>
+    <skillGains>
+      <Melee>6</Melee>
+      <Shooting>6</Shooting>
+	  <Social>6</Social>
+	  <Medicine>-6</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>OESins</li>
+	  <li>ImperialCommon</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<forcedTraits>
+      <Gourmand>0</Gourmand>
+	  <OEEidolon>0</OEEidolon>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Tactician ====================-->
+  <BackstoryDef>
+    <defName>OE_Tactician</defName>
+    <title>obsidia empire tactician</title>
+    <titleShort>tactician</titleShort>
+    <description>[PAWN_nameDef] once served as a strategic mastermind of the Obsidia command corps. After a failed campaign, vanished from records-yet still fights with clarity and resolve.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Social</li>
+	  <li>Intellectual</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+	  <li>Hauling</li>
+    </workDisables>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Shooting>6</Shooting>
+	  <Social>6</Social>
+	  <Artistic>-6</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>OESins</li>
+	  <li>ImperialCommon</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<forcedTraits>
+      <Greedy>0</Greedy>
+	  <OEEidolon>0</OEEidolon>
+    </forcedTraits>
+	<bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Soulforger ====================-->
+  <BackstoryDef>
+    <defName>OE_Soulforger</defName>
+    <title>obsidia empire soulforger</title>
+    <titleShort>soulforger</titleShort>
+    <description>[PAWN_nameDef] once shaped synthetic souls and psionic engines in secret halls of the Empire. Some called it brilliance, others-blasphemy.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Artistic</li>
+	  <li>Crafting</li>
+	  <li>Intellectual</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+	  <li>Hauling</li>
+    </workDisables>
+    <skillGains>
+      <Artistic>6</Artistic>
+      <Crafting>6</Crafting>
+	  <Intellectual>6</Intellectual>
+	  <Social>-6</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>OESins</li>
+	  <li>ImperialCommon</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<forcedTraits>
+      <Nerves>-1</Nerves>
+	  <OEEidolon>0</OEEidolon>
+    </forcedTraits>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Armor ====================-->
+  <ThingDef Name="OMGArmorBase" ParentName="OEArmorBaseNQ" Abstract="True">
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+    <statBases>
+	  <WorkToMake>115000</WorkToMake>
+	  <Mass>10</Mass>
+	  <ArmorRating_Sharp>1.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.50</ArmorRating_Heat>
+      <Insulation_Cold>150</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+	<costList>
+      <OE_Empyrium>125</OE_Empyrium>
+	  <OE_Orichalcum>35</OE_Orichalcum>
+      <OE_Syntherius>30</OE_Syntherius>
+	  <OE_MercenaryKit>4</OE_MercenaryKit>
+    </costList>
+	<equippedStatOffsets>
+	  <MeleeHitChance>4</MeleeHitChance>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <ToxicResistance>0.20</ToxicResistance>
+	  <PainShockThreshold>0.20</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.20</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+	  <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">2</MechControlGroups>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">12</MechBandwidth>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.5</VacuumResistance>
+    </equippedStatOffsets>
+	<burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+      <unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OMG_Armor</li>
+    </thingCategories>
+	<comps>
+	  <li Class="CompProperties_Shield">
+		<blocksRangedWeapons>false</blocksRangedWeapons>
+	  </li>
+	</comps>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Corsair ====================-->
+  <ThingDef ParentName="OMGArmorBase">
+	<defName>OMG_Armor_Corsair</defName>
+    <label>Mercenary Armor(Corsair)</label>
+    <description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with the addition of a Smokepop pack and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OMG/Corsair/OMGArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>7550</MarketValue>
+	  <PackRadius>7.9</PackRadius>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OMG/Corsair/OMGArmor</wornGraphicPath>
+	  <tags>
+		<li>OMGMercenary</li>
+      </tags>
+	  <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smokepop</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Smokepop</verbClass>
+		<commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Demolition ====================-->
+  <ThingDef ParentName="OMGArmorBase">
+	<defName>OMG_Armor_Demolition</defName>
+    <label>Mercenary Armor(Demolition)</label>
+    <description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with installing a Grenade Launcher and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OMG/Demolition/OMGArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>7550</MarketValue>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OMG/Demolition/OMGArmor</wornGraphicPath>
+	  <tags>
+		<li>OMGMercenary</li>
+      </tags>
+	  <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>OMG_Grenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== OMG - Grenades ====================-->
+  <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <defName>OMG_Grenade</defName>
+	<label>Mercenary Blast Grenade</label>
+	<thingClass>Projectile_Explosive</thingClass>
+	<graphicData>
+      <texPath>Things/Projectile/OMG_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierBlast</uiIconPath>
+    <projectile>
+      <explosionRadius>3.9</explosionRadius>
+      <damageDef>OCCBlast</damageDef>
+	  <damageAmountBase>25</damageAmountBase>
+      <explosionDelay>100</explosionDelay>
+	  <speed>35</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>0.4</shadowSize>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+	  <extraDamages>
+		<li>
+         <def>OMGNecrobane</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>EMP</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

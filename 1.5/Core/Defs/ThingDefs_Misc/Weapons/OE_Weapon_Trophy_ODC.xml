@@ -1,0 +1,1310 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Melee ====================-->
+<!--=============== ODC Sickle ====================-->
+  <ThingDef Name="ODCTrophySickleBaseNC" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>5.0</MeleeDodgeChance>
+	  <MeleeHitChance>5.0</MeleeHitChance>
+	  <MoveSpeed>0.25</MoveSpeed>
+    </equippedStatOffsets>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="ODCTrophySickleBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>8.0</MeleeDodgeChance>
+	  <MeleeHitChance>4</MeleeHitChance>
+	  <MoveSpeed>0.25</MoveSpeed>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophySickleBaseNC">
+    <defName>ODC_Trophy_Sickle_A</defName>
+    <label>Temptation</label>
+    <description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>0.9</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCTrophySickleBase">
+    <defName>ODC_Trophy_Sickle_B</defName>
+    <label>Temptation - Emergent</label>
+    <description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1750</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <HuntingStealth>0.15</HuntingStealth>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <ODC_Trophy_Sickle_A>1</ODC_Trophy_Sickle_A>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCTrophySickleBase">
+    <defName>ODC_Trophy_Sickle_C</defName>
+    <label>Temptation - Apex</label>
+    <description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.1</RoyalFavorValue>
+	  <MarketValue>1950</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <HuntingStealth>0.20</HuntingStealth>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <ODC_Trophy_Sickle_B>1</ODC_Trophy_Sickle_B>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Inlaid-Apex ====================-->
+  <ThingDef ParentName="ODCTrophySickleBaseNC">
+    <defName>ODC_Trophy_Sickle_C_I</defName>
+    <label>Inlaid Temptation - Apex</label>
+    <description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.\n\nInlaid with Might Power Stone: Weapon combat stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_C_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li MayRequire="Ludeon.Rimworld.Royalty">Bladelink</li>
+	  <li>ODCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>2750</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <HuntingStealth>0.20</HuntingStealth>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== ODC Ranged ====================-->
+<!--=============== ODC Blade Launcher ====================-->
+  <ThingDef Name="ODCTrophyBladeLauncherBaseNC" ParentName="OERangedBaseNC" Abstract="True">
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>8.5</Mass>
+	  <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+	  <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>saw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="ODCTrophyBladeLauncherBase" ParentName="OERangedBase" Abstract="True">
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>8.5</Mass>
+	  <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+	  <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>saw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_Trophy_BL</defName>
+    <label>Harvest saw</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_Trophy_Saw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>2.5</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_Trophy_BL_C</defName>
+    <label>Harvest saw</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_Trophy_Saw_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Scratch</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <stoppingPower>2.5</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_Trophy_BL_C_I</defName>
+    <label>Inlaid Harvest saw</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_Trophy_Saw_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Scratch</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <stoppingPower>2.5</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>  
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBaseNC">
+    <defName>ODC_Trophy_BladeLauncher_A</defName>
+    <label>Harvest</label>
+    <description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>0.9</RoyalFavorValue>
+	  <MarketValue>2550</MarketValue>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBase">
+    <defName>ODC_Trophy_BladeLauncher_B</defName>
+    <label>Harvest - Emergent</label>
+    <description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>2750</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.15</PlantHarvestYield>
+	  <AnimalGatherYield>0.15</AnimalGatherYield>
+	  <MiningYield>0.15</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_A>1</ODC_Trophy_BladeLauncher_A>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBase">
+    <defName>ODC_Trophy_BladeLauncher_C</defName>
+    <label>Harvest - Apex</label>
+    <description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.1</RoyalFavorValue>
+	  <MarketValue>3150</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.30</PlantHarvestYield>
+	  <AnimalGatherYield>0.30</AnimalGatherYield>
+	  <MiningYield>0.30</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL_C</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_B>1</ODC_Trophy_BladeLauncher_B>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Inlaid Apex ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBaseNC">
+    <defName>ODC_Trophy_BladeLauncher_C_I</defName>
+    <label>Inlaid Harvest - Apex</label>
+    <description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.\n\nInlaid with Insight Power Stone: Weapon bonus stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_C_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">Bladelink</li>
+	  <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>3950</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.50</PlantHarvestYield>
+	  <AnimalGatherYield>0.50</AnimalGatherYield>
+	  <MiningYield>0.50</MiningYield>
+    </equippedStatOffsets>
+	<verbs Inherit="false">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL_C</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== ODC PowerFist ====================-->
+  <ThingDef Name="ODCTrophyPowerFistBase" ParentName="OEMeleeBaseNQ" Abstract="True">
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>
+    </graphicData>
+	<uiIconScale>1.25</uiIconScale>
+	<techLevel>Archotech</techLevel>
+	<weaponTags>
+      <li>OETrophyMelee</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Core ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_A</defName>
+    <label>Proto Gauntlet</label>
+    <description>A strange power gauntlet of unknown origin and creator. Marked by Obsidia Drifters. Looks like it could be easily upgraded.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_A</texPath>
+    </graphicData>
+	<weaponTags>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>0.8</RoyalFavorValue>
+	  <MarketValue>750</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<comps>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	</comps>
+  </ThingDef>
+
+<!--=============== Level-1 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_B</defName>
+    <label>Eternal Gauntlet</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_B</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>0.9</RoyalFavorValue>
+	  <WorkToMake>10000</WorkToMake>
+	  <MarketValue>1750</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_A>1</ODC_Trophy_PowerFist_A>
+	  <OE_ModernizationKit>3</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-2 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_C</defName>
+    <label>Eternal Gauntlet Mk.I</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_C</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <WorkToMake>5500</WorkToMake>
+	  <MarketValue>2250</MarketValue>
+	  <Mass>2.05</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_B>1</ODC_Trophy_PowerFist_B>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-3 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_D</defName>
+    <label>Eternal Gauntlet Mk.II</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_D</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.1</RoyalFavorValue>
+	  <WorkToMake>5500</WorkToMake>
+	  <MarketValue>2750</MarketValue>
+	  <Mass>2.1</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+	  <!-- Pilgrim Stone -->
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_C>1</ODC_Trophy_PowerFist_C>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-4 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_E</defName>
+    <label>Eternal Gauntlet Mk.III</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_E</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.2</RoyalFavorValue>
+	  <WorkToMake>5500</WorkToMake>
+	  <MarketValue>3250</MarketValue>
+	  <Mass>2.15</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+	  <!-- Pilgrim Stone -->
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <!-- Syndicate Stone -->
+	  <JoyFallRateFactor>-0.25</JoyFallRateFactor>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_D>1</ODC_Trophy_PowerFist_D>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-5 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_F</defName>
+    <label>Eternal Gauntlet Mk.IV</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_F</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.3</RoyalFavorValue>
+	  <WorkToMake>8500</WorkToMake>
+	  <MarketValue>3500</MarketValue>
+	  <Mass>2.2</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+	  <!-- Pilgrim Stone -->
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <!-- Syndicate Stone -->
+	  <JoyFallRateFactor>-0.25</JoyFallRateFactor>
+	  <!-- Might Stone -->
+	  <StaggerDurationFactor>-0.25</StaggerDurationFactor>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_E>1</ODC_Trophy_PowerFist_E>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-6 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_G</defName>
+    <label>Eternal Gauntlet Mk.V</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_G</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.4</RoyalFavorValue>
+	  <WorkToMake>8500</WorkToMake>
+	  <MarketValue>3750</MarketValue>
+	  <Mass>2.25</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+	  <!-- Pilgrim Stone -->
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <!-- Syndicate Stone -->
+	  <JoyFallRateFactor>-0.25</JoyFallRateFactor>
+	  <!-- Might Stone -->
+	  <StaggerDurationFactor>-0.25</StaggerDurationFactor>
+	  <!-- Dexterity Stone -->
+	  <MeleeDodgeChance>4.0</MeleeDodgeChance>
+	  <MeleeHitChance>4.0</MeleeHitChance>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_F>1</ODC_Trophy_PowerFist_F>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-7 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_H</defName>
+    <label>Eternal Gauntlet Mk.VI</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.\n\nMk.VI - Vitality Power Stone. Healing factor increased. Able to deal additional Acid damage.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_H</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <WorkToMake>8500</WorkToMake>
+	  <MarketValue>4000</MarketValue>
+	  <Mass>2.3</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+	  <!-- Pilgrim Stone -->
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <!-- Syndicate Stone -->
+	  <JoyFallRateFactor>-0.25</JoyFallRateFactor>
+	  <!-- Might Stone -->
+	  <StaggerDurationFactor>-0.25</StaggerDurationFactor>
+	  <!-- Dexterity Stone -->
+	  <MeleeDodgeChance>4.0</MeleeDodgeChance>
+	  <MeleeHitChance>4.0</MeleeHitChance>
+	  <!-- Vitality Stone -->
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <InjuryHealingFactor>0.25</InjuryHealingFactor>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_G>1</ODC_Trophy_PowerFist_G>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-8 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_I</defName>
+    <label>Eternal Gauntlet Mk.VII</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.\n\nMk.VI - Vitality Power Stone. Healing factor increased. Able to deal additional Acid damage.\n\nMk.VII - Wisdom Power Stone. Global learning factor increased. Able to deal additional Cryo damage.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_I</texPath>
+    </graphicData>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.6</RoyalFavorValue>
+	  <WorkToMake>8500</WorkToMake>
+	  <MarketValue>4250</MarketValue>
+	  <Mass>2.35</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+	  <!-- Pilgrim Stone -->
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <!-- Syndicate Stone -->
+	  <JoyFallRateFactor>-0.25</JoyFallRateFactor>
+	  <!-- Might Stone -->
+	  <StaggerDurationFactor>-0.25</StaggerDurationFactor>
+	  <!-- Dexterity Stone -->
+	  <MeleeDodgeChance>4.0</MeleeDodgeChance>
+	  <MeleeHitChance>4.0</MeleeHitChance>
+	  <!-- Vitality Stone -->
+	  <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+	  <InjuryHealingFactor>0.25</InjuryHealingFactor>
+	  <!-- Insight Stone -->
+	  <GlobalLearningFactor>0.25</GlobalLearningFactor>
+	  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.25</EntityStudyRate>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_H>1</ODC_Trophy_PowerFist_H>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+<!--=============== Level-9 ====================-->
+  <ThingDef ParentName="ODCTrophyPowerFistBase">
+    <defName>ODC_Trophy_PowerFist_J</defName>
+    <label>Eternal Gauntlet Mk.VIII</label>
+    <description>Modified strange power gauntlet was designed by unknown creator from Obsidia Drifters to channel the power of Power Stones.\n\nThis modification deprives item's quality levels.\n\nMk.I - Renegade Power Stone. Global work speed increased.\n\nMk.II - Pilgrim Power Stone. Social and Negotiation abilities increased.\n\nMk.III - Syndicate Power Stone. Joy fall rate reduced.\n\nMk.IV - Might Power Stone. Weapon damage increased. Able to deal additional Fire damage.\n\nMk.V - Dexterity Power Stone. Melee dodge and hit chances increased. Able to deal additional EMP damage.\n\nMk.VI - Vitality Power Stone. Healing factor increased. Able to deal additional Acid damage.\n\nMk.VII - Wisdom Power Stone. Global learning factor increased. Able to deal additional Cryo damage.\n\nMk.VIII - Universe Power Stone. Unleashed hidden power. Depends on the available forces in the universe.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_UnstableStone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_PowerFist_J</texPath>
+    </graphicData>
+	<weaponTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">Bladelink</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.7</RoyalFavorValue>
+	  <WorkToMake>10000</WorkToMake>
+	  <MarketValue>5500</MarketValue>
+	  <Mass>2.4</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <MentalBreakThreshold>0.35</MentalBreakThreshold>
+	  <!-- Renegade Stone -->
+	  <WorkSpeedGlobal>0.35</WorkSpeedGlobal>
+	  <!-- Pilgrim Stone -->
+	  <SocialImpact>0.35</SocialImpact>
+	  <NegotiationAbility>0.35</NegotiationAbility>
+	  <!-- Syndicate Stone -->
+	  <JoyFallRateFactor>-0.35</JoyFallRateFactor>
+	  <!-- Might Stone -->
+	  <StaggerDurationFactor>-0.35</StaggerDurationFactor>
+	  <!-- Dexterity Stone -->
+	  <MeleeDodgeChance>6.0</MeleeDodgeChance>
+	  <MeleeHitChance>6.0</MeleeHitChance>
+	  <!-- Vitality Stone -->
+	  <ImmunityGainSpeed>0.35</ImmunityGainSpeed>
+	  <InjuryHealingFactor>0.35</InjuryHealingFactor>
+	  <!-- Insight Stone -->
+	  <GlobalLearningFactor>0.35</GlobalLearningFactor>
+	  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.35</EntityStudyRate>
+	  <!-- Universe Stone -->
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.35</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.35</MeditationFocusGain>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.35</SlaveSuppressionOffset>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.35</SocialIdeoSpreadFrequencyFactor>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">8</MechBandwidth>
+	  <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">1</MechControlGroups>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>gauntlet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OCCBlast</def>
+            <amount>5</amount>
+            <chance>0.33</chance>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>5</amount>
+            <chance>0.33</chance>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+            <chance>0.33</chance>
+          </li>
+		  <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+            <chance>0.33</chance>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>5</amount>
+            <chance>0.33</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>ODCGearLeg</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Trophy_PowerFist_I>1</ODC_Trophy_PowerFist_I>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_UnstableStone>1</OE_UnstableStone>
+    </costList>
+  </ThingDef>
+
+</Defs>

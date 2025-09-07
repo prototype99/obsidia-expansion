@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Trophy Modules ====================-->
+<!--=============== Special ====================-->
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_Camouflage</defName>
+    <label>Special Module - Camouflage</label>
+	<description>The module provides the owner camouflage. Unique designed to resemble the environment.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_Camouflage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleS</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+    <comps>
+      <li Class="VEF.Apparels.CompProperties_Camouflage">
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

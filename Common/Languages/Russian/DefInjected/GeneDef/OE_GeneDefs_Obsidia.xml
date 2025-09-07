@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Acid ====================-->
+<!--=============== Resistant ====================-->
+<OE_AcidResistant.label>стойкий к кислоте</OE_AcidResistant.label>
+<OE_AcidResistant.labelShortAdj>кислотоупорный</OE_AcidResistant.labelShortAdj>
+<OE_AcidResistant.description>Носители этого гена устойчивы к кислотному повреждению любого источника. Они принимают только 25% урона от кислоты..</OE_AcidResistant.description>
+
+<OE_AcidResistant.symbolPack.prefixSymbols.0.symbol>антитокс</OE_AcidResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_AcidResistant.symbolPack.prefixSymbols.1.symbol>грубый</OE_AcidResistant.symbolPack.prefixSymbols.1.symbol>
+<!--=============== Weakness ====================-->
+<OE_AcidWeakness.label>слаб к кислоте</OE_AcidWeakness.label>
+<OE_AcidWeakness.labelShortAdj>нежнокожий</OE_AcidWeakness.labelShortAdj>
+<OE_AcidWeakness.description>У носителей этого гена в коже есть биологические соединения, которые болезненно реагируют на кислотное повреждение. Они необычайно чувствительны к кислоте. Урон от кислоты умножается на 4.</OE_AcidWeakness.description>
+
+<OE_AcidWeakness.symbolPack.prefixSymbols.0.symbol>чувствительный</OE_AcidWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_AcidWeakness.symbolPack.prefixSymbols.1.symbol>тонкокожий</OE_AcidWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Cryo ====================-->
+<!--=============== Resistant ====================-->
+<OE_CryoResistant.label>стойкий к крио</OE_CryoResistant.label>
+<OE_CryoResistant.labelShortAdj>криоупорный</OE_CryoResistant.labelShortAdj>
+<OE_CryoResistant.description>Носители этого гена имеют специальные быстродействующие потовые железы и холодостойкую кожу. Они получают только 25% крио-повреждения.</OE_CryoResistant.description>
+
+<OE_CryoResistant.symbolPack.prefixSymbols.0.symbol>сухой</OE_CryoResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_CryoResistant.symbolPack.prefixSymbols.1.symbol>теплый</OE_CryoResistant.symbolPack.prefixSymbols.1.symbol>
+<!--=============== Weakness ====================-->
+<OE_CryoWeakness.label>слаб к крио</OE_CryoWeakness.label>
+<OE_CryoWeakness.labelShortAdj>влажнокожий</OE_CryoWeakness.labelShortAdj>
+<OE_CryoWeakness.description>У носителей влажная тонкая кожа, которая легко замерзает от криоповреждений, а их иммунная система очень плохо реагирует на такого рода угрозы. Урон от крио умножается на 4.</OE_CryoWeakness.description>
+
+<OE_CryoWeakness.symbolPack.prefixSymbols.0.symbol>влажный</OE_CryoWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_CryoWeakness.symbolPack.prefixSymbols.1.symbol>морозный</OE_CryoWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Blast ====================-->
+<!--=============== Resistant ====================-->
+<OE_BlastResistant.label>стойкий к взрыву</OE_BlastResistant.label>
+<OE_BlastResistant.labelShortAdj>взрывостойкий</OE_BlastResistant.labelShortAdj>
+<OE_BlastResistant.description>Носители этого гена получают меньше травм от взрывной волны, чем другие. У них утолщенные, уплотненные кости, почти твердые грудные клетки и усиленные связующие факторы в суставах и плоти. Они получают только 25% урона от взрыва.</OE_BlastResistant.description>
+
+<OE_BlastResistant.symbolPack.prefixSymbols.0.symbol>крепкий</OE_BlastResistant.symbolPack.prefixSymbols.0.symbol>
+<OE_BlastResistant.symbolPack.prefixSymbols.1.symbol>толстый</OE_BlastResistant.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Weakness ====================-->
+<OE_BlastWeakness.label>слаб к взрыву</OE_BlastWeakness.label>
+<OE_BlastWeakness.labelShortAdj>тонкокожий</OE_BlastWeakness.labelShortAdj>
+<OE_BlastWeakness.description>Носители этого гена получают больше травм от взрывной волны, чем другие. У них тонкие, ломкие кости и меньше связывающих молекул в суставах и плоти. Урон от взрыва умножается на 4.</OE_BlastWeakness.description>
+
+<OE_BlastWeakness.symbolPack.prefixSymbols.0.symbol>хрупкий</OE_BlastWeakness.symbolPack.prefixSymbols.0.symbol>
+<OE_BlastWeakness.symbolPack.prefixSymbols.1.symbol>тонкокожий</OE_BlastWeakness.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== MentalBreakThreshold ====================-->
+<!--=============== Resistant ====================-->
+<OE_MentalBreakResistant.label>устойчивость к психическому срыву</OE_MentalBreakResistant.label>
+<OE_MentalBreakResistant.labelShortAdj>психическая устойчивость</OE_MentalBreakResistant.labelShortAdj>
+<OE_MentalBreakResistant.description>Носители этого гена психически устойчивы и не сдаются при стрессах, которые сломали бы большинство людей.</OE_MentalBreakResistant.description>
+
+<OE_MentalBreakResistant.symbolPack.prefixSymbols.0.symbol>психический</OE_MentalBreakResistant.symbolPack.prefixSymbols.0.symbol>
+
+<!--=============== Weakness ====================-->
+<OE_MentalBreakWeakness.label>слабость к психическому срыву</OE_MentalBreakWeakness.label>
+<OE_MentalBreakWeakness.labelShortAdj>психическая нестабильность</OE_MentalBreakWeakness.labelShortAdj>
+<OE_MentalBreakWeakness.description>Носители этого гена склонны ломаться под давлением.</OE_MentalBreakWeakness.description>
+
+<OE_MentalBreakWeakness.symbolPack.prefixSymbols.0.symbol>психический</OE_MentalBreakWeakness.symbolPack.prefixSymbols.0.symbol>
+
+</LanguageData>

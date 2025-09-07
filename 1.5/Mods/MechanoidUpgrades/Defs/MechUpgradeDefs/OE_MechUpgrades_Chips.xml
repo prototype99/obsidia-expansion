@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Overclocked Chip Base ====================-->
+  <ThingDef ParentName="MU_MechChipItemBase" Name="OEOverclockedChipItemBase" Abstract="True">
+	<statBases>
+      <Flammability>0</Flammability>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_Empyrium>10</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+	  <OE_Syntherius>20</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+	<recipeMaker>
+      <displayPriority>240</displayPriority>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisite Inherit="false" />
+	  <researchPrerequisites>
+	    <li>OEMechtechAdv</li>
+		<li>MU_AdvancedChips</li>
+	  </researchPrerequisites>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_AdvancedUpgrades</li>
+	  <li>MU_AdvancedMechChips</li>
+    </thingSetMakerTags>
+	<techLevel>Ultra</techLevel>
+	<tradeTags>
+	  <li>MU_AdvancedUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Melee Chip ====================-->
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Melee_O</defName>
+    <label>overclocked melee chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large melee hit chance increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Melee</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Melee</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Melee_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MeleeChipBase">
+    <defName>OE_MechUpgrade_MechChip_Melee_O</defName>
+    <label>overclocked melee chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large melee hit chance increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Melee</uiIconPath>
+    <statOffsets>
+	  <MeleeHitChance>21</MeleeHitChance>
+	</statOffsets>
+	<statFactors>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Melee_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Dodge ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Dodge_O</defName>
+    <label>overclocked dodge chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large melee dodge chance increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Dodge</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Dodge</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Dodge_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_DodgeChipBase">
+    <defName>OE_MechUpgrade_MechChip_Dodge_O</defName>
+    <label>overclocked dodge chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large melee dodge chance increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Dodge</uiIconPath>
+    <statOffsets>
+	  <MeleeDodgeChance>24</MeleeDodgeChance>
+	</statOffsets>
+	<statFactors>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Dodge_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ranged Chip ====================-->
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Ranged_O</defName>
+    <label>overclocked accuracy chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large shooting accuracy increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Ranged</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Ranged</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Ranged_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_RangedChipBase">
+    <defName>OE_MechUpgrade_MechChip_Ranged_O</defName>
+    <label>overclocked accuracy chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large shooting accuracy increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Ranged</uiIconPath>
+    <statOffsets>
+	  <ShootingAccuracyPawn>18</ShootingAccuracyPawn>
+	</statOffsets>
+	<statFactors>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Ranged_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Reload ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Reload_O</defName>
+    <label>overclocked reload chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large reload speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Reload</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Reload</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Reload_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ReloadChipBase">
+    <defName>OE_MechUpgrade_MechChip_Reload_O</defName>
+    <label>overclocked reload chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large reload speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Reload</uiIconPath>
+    <statFactors>
+	  <RangedCooldownFactor>0.3</RangedCooldownFactor>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Reload_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Aiming ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Aiming_O</defName>
+    <label>overclocked aiming chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large aiming speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Aiming</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Aiming</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Aiming_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_AimingChipBase">
+    <defName>OE_MechUpgrade_MechChip_Aiming_O</defName>
+    <label>overclocked aiming chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large aiming speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Aiming</uiIconPath>
+    <statFactors>
+	  <AimingDelayFactor>0.3</AimingDelayFactor>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Aiming_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Work Chip ====================-->
+<!--=============== Work ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Work_O</defName>
+    <label>overclocked work chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large work speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Work</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Work</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Work_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_WorkChipBase">
+    <defName>OE_MechUpgrade_MechChip_Work_O</defName>
+    <label>overclocked work chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large work speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Work</uiIconPath>
+    <statOffsets>
+	  <WorkSpeedGlobal>0.75</WorkSpeedGlobal>
+	</statOffsets>
+	<statFactors>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Work_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Speed ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Speed_O</defName>
+    <label>overclocked speed chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large movement speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Speed</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Speed</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Speed_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SpeedChipBase">
+    <defName>OE_MechUpgrade_MechChip_Speed_O</defName>
+    <label>overclocked speed chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large movement speed increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Speed</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.5</MoveSpeed>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Speed_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Energy ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Energy_O</defName>
+    <label>overclocked energy chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large energy usage decrease.\n\nThis Obsidia modification has improved efficiency.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Energy</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Energy</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Energy_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_EnergyChipBase">
+    <defName>OE_MechUpgrade_MechChip_Energy_O</defName>
+    <label>overclocked energy chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large energy usage decrease.\n\nThis Obsidia modification has improved efficiency.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Energy</uiIconPath>
+    <statFactors>
+	  <MechEnergyUsageFactor>0.20</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Energy_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Misk Chip ====================-->
+<!--=============== Gastro-analize ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_GastroAnalize_O</defName>
+    <label>overclocked gastro-analize chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives cooking speed increase and prevents food poisoning.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_GastroAnalize</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_GastroAnalize</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_GastroAnalize_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_GastroAnalizeChipBase">
+    <defName>OE_MechUpgrade_MechChip_GastroAnalize_O</defName>
+    <label>overclocked gastro-analize chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives cooking speed increase and prevent food poisoning.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_GastroAnalize</uiIconPath>
+    <statFactors>
+	  <FoodPoisonChance>0</FoodPoisonChance>
+	  <CookSpeed>1.75</CookSpeed>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_MechChip_GastroAnalize_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Production ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Production_O</defName>
+    <label>overclocked production chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a work speed increase and increases quality of things created by mechanoid.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Production</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Production</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Production_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ProductionChipBase">
+    <defName>OE_MechUpgrade_MechChip_Production_O</defName>
+    <label>overclocked production chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a work speed increase and increases quality of things created by mechanoid.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Production</uiIconPath>
+    <statFactors>
+	  <GeneralLaborSpeed>1.75</GeneralLaborSpeed>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+    <statOffsets>
+	  <ConstructionSpeed>0.75</ConstructionSpeed>
+	</statOffsets>
+	<comps>
+	 <li Class="MU.UpgradeCompProperties_QualityOffset" >
+	   <offset>1</offset>
+	 </li>
+	</comps>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Production_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Medical ====================-->
+  <ThingDef ParentName="OEOverclockedChipItemBase">
+    <defName>OE_MechUpgrade_MechChip_Medical_O</defName>
+    <label>overclocked medical chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large increase to all medical characteristics.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Medical</texPath>
+    </graphicData>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Medical</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_MechChip_Medical_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MedicalChipBase">
+    <defName>OE_MechUpgrade_MechChip_Medical_O</defName>
+    <label>overclocked medical chip</label>
+	<description>A small overclocked chip, that can be installed into mechanoid brain. Gives a large increase to all medical characteristics.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MechChips/OE_Overclocked_MechChip_Medical</uiIconPath>
+    <statFactors>
+	  <MedicalOperationSpeed>1.65</MedicalOperationSpeed>
+	  <MedicalTendSpeed>1.75</MedicalTendSpeed>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<statOffsets>
+	  <MedicalTendQuality>1.0</MedicalTendQuality>
+	  <MedicalSurgerySuccessChance>0.40</MedicalSurgerySuccessChance>
+	</statOffsets>
+	<linkedThingDef>OE_MechUpgrade_MechChip_Medical_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

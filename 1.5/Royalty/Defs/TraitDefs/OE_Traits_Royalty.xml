@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Psy Blood ====================-->
+  <TraitDef>
+    <defName>OEPsyBlood</defName>
+    <degreeDatas>
+      <li>
+        <label>noble blood</label>
+        <description>{PAWN_nameDef} heir to an ancient and noble family. The presence of {PAWN_pronoun} gives an innate talent for psy abilities.</description>
+        <statOffsets>
+          <PsychicSensitivity>0.3</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Monk ====================-->
+  <TraitDef>
+    <defName>OEPsyMonk</defName>
+    <degreeDatas>
+	  <li>
+        <label>monk</label>
+        <description>{PAWN_nameDef} finds unusual clarity in stillness, drawing power from every moment of reflection.</description>
+        <statOffsets>
+          <PsychicSensitivity>0.3</PsychicSensitivity>
+		  <MeditationFocusGain>0.3</MeditationFocusGain>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Psy Warrior ====================-->
+  <TraitDef>
+    <defName>OEPsyWarrior</defName>
+    <degreeDatas>
+      <li>
+        <label>psy-warrior</label>
+        <description>Battle comes naturally to {PAWN_nameDef}, whose strikes carry both physical strength and psychic force.</description>
+        <statOffsets>
+          <MeleeHitChance>4</MeleeHitChance>
+		  <PsychicSensitivity>0.3</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+<!--=============== Psy Marksman ====================-->
+  <TraitDef>
+    <defName>OEPsyMarksman</defName>
+    <degreeDatas>
+	  <li>
+        <label>psy-marksman</label>
+        <description>{PAWN_nameDef}'s aim is guided by both steady hands and a sharpened psychic sense.</description>
+        <statOffsets>
+          <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+		  <PsychicSensitivity>0.3</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+</Defs>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ideology Spread ====================-->
+  <TraitDef>
+    <defName>OEIdeoSpread</defName>
+    <degreeDatas>
+      <li>
+        <label>ardent preacher</label>
+        <description>{PAWN_nameDef} spreads beliefs with burning zeal—but sometimes burns too hot, even for {PAWN_pronoun}self.</description>
+        <degree>1</degree>
+        <statOffsets>
+          <ConversionPower>0.25</ConversionPower>
+		  <SocialIdeoSpreadFrequencyFactor>0.25</SocialIdeoSpreadFrequencyFactor>
+		  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <label>quiet soul</label>
+        <description>Calm and steady, {PAWN_nameDef} rarely stirs conflict—but struggles to inspire deep conviction in others.</description>
+        <degree>2</degree>
+        <statOffsets>
+          <ConversionPower>-0.25</ConversionPower>
+		  <SocialIdeoSpreadFrequencyFactor>-0.25</SocialIdeoSpreadFrequencyFactor>
+		  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEIdeoSpreadTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Ideology Power ====================-->
+  <TraitDef>
+    <defName>OEIdeoPower</defName>
+    <degreeDatas>
+      <li>
+        <label>lawbringer</label>
+        <description>With a gaze like a loaded rifle, {PAWN_nameDef} brings order to chaos—but the burden of justice weighs heavy.</description>
+        <degree>1</degree>
+        <statOffsets>
+          <ArrestSuccessChance>0.25</ArrestSuccessChance>
+		  <SuppressionPower>0.25</SuppressionPower>
+		  <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <label>soft-spoken deputy</label>
+        <description>{PAWN_nameDef} keeps the peace with a light touch, avoiding conflict—but lacks the grit to lay down the law.</description>
+        <degree>2</degree>
+        <statOffsets>
+          <ArrestSuccessChance>-0.25</ArrestSuccessChance>
+		  <SuppressionPower>-0.25</SuppressionPower>
+		  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEIdeoPowerTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Ideology Hacking ====================-->
+  <TraitDef>
+    <defName>OEIdeoHacking</defName>
+    <degreeDatas>
+      <li>
+        <label>netrunner</label>
+        <description>{PAWN_nameDef} flows through firewalls and protocols like water—faster than most can blink.</description>
+        <degree>2</degree>
+        <statOffsets>
+          <HackingSpeed>1.0</HackingSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>cyber tinker</label>
+        <description>Curious and clever, {PAWN_nameDef} can pull systems apart and put them back better than before—most of the time.</description>
+        <degree>1</degree>
+        <statOffsets>
+          <HackingSpeed>0.5</HackingSpeed>
+        </statOffsets>
+      </li>
+      <li>
+        <label>script kiddie</label>
+        <description>{PAWN_nameDef} knows just enough to poke at systems—but lacks the chops to crack the real code.</description>
+        <degree>-1</degree>
+        <statOffsets>
+          <HackingSpeed>-0.5</HackingSpeed>
+        </statOffsets>
+      </li>
+	  <li>
+        <label>terminal hazard</label>
+        <description>When {PAWN_nameDef} touches a console, it’s only a matter of time before something breaks—badly.</description>
+        <degree>-2</degree>
+        <statOffsets>
+          <HackingSpeed>-1.0</HackingSpeed>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEIdeoHackingTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+</Defs>

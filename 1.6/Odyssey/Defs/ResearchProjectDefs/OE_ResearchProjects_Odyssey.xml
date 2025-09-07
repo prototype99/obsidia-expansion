@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Expansion - Gravtech ====================-->
+	<ResearchProjectDef ParentName="OEResearchProject30">
+		<defName>OEGravtech</defName>
+		<label>OE - Gravtech</label>
+		<description>Research Obsidia gravship technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>BasicGravtech</li>
+			<li>OEConstruction</li>
+			<li>OEBuilding</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

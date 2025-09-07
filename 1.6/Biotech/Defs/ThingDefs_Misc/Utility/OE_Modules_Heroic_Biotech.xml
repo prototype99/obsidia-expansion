@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Intelligence ====================-->
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicMechanitor</defName>
+    <label>Heroic Intelligence Module - Mechanitor</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HI_Mechanitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<costList>
+	  <OE_Module_Mechanitor>1</OE_Module_Mechanitor>
+	  <OE_SyntheriusOfSin>2</OE_SyntheriusOfSin>
+    </costList>
+	<apparel>
+	  <tags>
+		<li>OEModuleHI</li>
+		<li>OEModuleHI_Mechanitor</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <MechBandwidth>30</MechBandwidth>
+	  <MechControlGroups>3</MechControlGroups>
+	  <WorkSpeedGlobalOffsetMech>0.30</WorkSpeedGlobalOffsetMech>
+	  <MechRemoteRepairDistance>14.9</MechRemoteRepairDistance>
+	  <MechRemoteShieldDistance>14.9</MechRemoteShieldDistance>
+      <MechRemoteShieldEnergy>150</MechRemoteShieldEnergy>
+	  <MechFormingSpeed>1.5</MechFormingSpeed>
+	  <MechRepairSpeed>1.5</MechRepairSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+</Defs>

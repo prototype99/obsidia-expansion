@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Mini-Gestator ====================-->
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>OE_MechUpgrade_ArachnaDroneSpawner</defName>
+    <label>arachna drone mini-gestator</label>
+    <description>A mini-gestator unit which can create small Arachna Drones. Require Syntherius for gestation.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/OE_ArachnaDroneSpawner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Empyrium>10</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+	  <OE_Syntherius>20</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_ArachnaDroneSpawner</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>55</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <WorkToMake>55000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+	  <researchPrerequisites>
+	    <li>CACGear</li>
+		<li>MU_AdvancedUpgrades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>OE_MechUpgrade_ArachnaDroneSpawner</defName>
+    <label>arachna drone mini-gestator</label>
+    <description>A mini-gestator unit which can create small Arachna Drones. Require Syntherius for gestation.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/OE_ArachnaDroneSpawner</uiIconPath>
+	<linkedThingDef>OE_MechUpgrade_ArachnaDroneSpawner</linkedThingDef>
+	<exclusionTags>
+	  <li>Spawner</li>
+	</exclusionTags>
+	<upgradePoints>5</upgradePoints>
+	<minBodySize>3</minBodySize>
+	<commonality>0</commonality>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_MechCarrier">
+        <spawnPawnKind>OE_Mech_ArachnaDrone</spawnPawnKind>
+		<gizmoKey>MU_MechCarrier</gizmoKey>
+        <ammoDef>OE_Syntherius</ammoDef>
+		<barColor>(0.34, 0.42, 0.43, 1)</barColor>
+		<barHighlightColor>(0.43, 0.54, 0.55, 1)</barHighlightColor>
+        <costPerPawn>4</costPerPawn>
+        <startingResource>48</startingResource>
+        <maxResource>48</maxResource>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+
+</Defs>

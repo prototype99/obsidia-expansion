@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Rimopoly Table ====================-->
+  <JobDef>
+    <defName>OE_UseJoyTable</defName>
+    <driverClass>JobDriver_PlayPoker</driverClass>
+    <reportString>playing rimopoly.</reportString>
+    <joyDuration>5000</joyDuration>
+    <joyMaxParticipants>8</joyMaxParticipants>
+    <joySkill>Intellectual</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>Gaming_Cerebral</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+<!--=============== Rimotroops Arcade Machine ====================-->
+  <JobDef>
+    <defName>OE_UseJoyArcadeMachine</defName>
+    <driverClass>JobDriver_WatchBuilding</driverClass>
+    <reportString>playing rimotroops.</reportString>
+    <joyDuration>5000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joySkill>Intellectual</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>Gaming_Dexterity</joyKind>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

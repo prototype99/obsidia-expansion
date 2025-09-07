@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== CAC - Pride ====================-->
+<!--=============== Base ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+	<defName>CAC_Trophy_SniperRifle</defName>
+    <label>Seventh Arachna's Sin - Pride</label>
+    <description>Amalgam weapon created on the basis of EGO technology. Sniper Rifle used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Seventh Arachna's Sin - Pride. Increases the owner's psy stats at the expense of increased pain sensitivity.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Sin_Pride</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+	  <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACTrophy</li>
+	  <li>CACTrophyPride</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>5600</MarketValue>
+      <Mass>4.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.20</AccuracyShort>
+      <AccuracyMedium>1.30</AccuracyMedium>
+      <AccuracyLong>1.40</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <!-- + -->
+	  <PsychicSensitivity>1.0</PsychicSensitivity>
+	  <PsychicEntropyRecoveryRate>0.125</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>1.0</MeditationFocusGain>
+	  <!-- - -->
+	  <PainShockThreshold>-0.55</PainShockThreshold>
+	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_Trophy_SR</defaultProjectile>
+        <warmupTime>2.50</warmupTime>
+        <range>49.9</range>
+        <soundCast>Pawn_Spelopede_Pain</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_Trophy_SR</defName>
+    <label>Seventh Arachna's Sin - Pride bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.50</armorPenetrationBase>
+      <speed>110</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>Flame</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Ranged ====================-->
+<!--=============== CAC - Sloth ====================-->
+  <ThingDef ParentName="OERangedBaseNQ">
+	<defName>CAC_Trophy_Pistol</defName>
+    <label>Fourth Arachna's Sin - Sloth</label>
+    <description>Amalgam weapon created on the basis of EGO technology. Pistol used by CAC Priest. Specially modified weapon with increased power and charged with Acid and Fire damages.\n\nThis weapon represents Fourth Arachna's Sin - Sloth. Increases the owner's mechanitor stats at the expense of move speed stat and increased rest reduction.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Trophy_Sin_Sloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>CACTrophy</li>
+	  <li>CACTrophySloth</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>1225</MarketValue>
+      <Mass>1.5</Mass>
+	  <AccuracyTouch>1.20</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <!-- + -->
+	  <MechBandwidth>50</MechBandwidth>
+	  <MechControlGroups>5</MechControlGroups>
+	  <WorkSpeedGlobalOffsetMech>1.0</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed>1.0</MechFormingSpeed>
+	  <MechRepairSpeed>1.0</MechRepairSpeed>
+	  <!-- - -->
+	  <RestRateMultiplier>-1.5</RestRateMultiplier>
+	  <RestFallRateFactor>1.5</RestFallRateFactor>
+	  <MoveSpeed>-0.75</MoveSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CAC_Trophy_P</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>22.9</range>
+        <soundCast>Pawn_Megascarab_Angry</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CAC_Trophy_P</defName>
+    <label>Fourth Arachna's Sin - Sloth bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+      <speed>70</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	   <li>
+         <def>Flame</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

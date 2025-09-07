@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Namer - Obsidia Dialects ====================-->
+<!--=============== Standard ====================-->
+  <RulePackDef>
+    <defName>OE_Namer_Obsidia_Dialect_Standard</defName>
+	<rulePack>
+	  <rulesStrings>
+	    <li>r_name(p=0.2)->[anyPrefix][wholeName]</li>
+		<li>r_name(p=0.2)->[anyPrefix]-[wholeName]</li>
+		<li>r_name(p=1)->[wholeName]</li>
+		<!---->
+		<li>anyPrefix->zer</li>
+		<li>anyPrefix->magna</li>
+		<li>anyPrefix->vox</li>
+		<li>anyPrefix->imper</li>
+		<li>anyPrefix->strato</li>
+		<li>anyPrefix->ordi</li>
+		<li>anyPrefix->domina</li>
+		<!---->
+		<li>wholeName->obsilog</li>
+		<li>wholeName->domingloss</li>
+		<li>wholeName->corevox</li>
+		<li>wholeName->lexidra</li>
+		<li>wholeName->formantra</li>
+		<li>wholeName->codentum</li>
+		<li>wholeName->dictaryn</li>
+		<li>wholeName->codivox</li>
+		<li>wholeName->imperix</li>
+		<li>wholeName->reglexia</li>
+	  </rulesStrings>
+	</rulePack>
+  </RulePackDef>
+
+<!--=============== Outerworld ====================-->
+  <RulePackDef>
+    <defName>OE_Namer_Obsidia_Dialect_Outerworld</defName>
+	<rulePack>
+	  <rulesStrings>
+	    <li>r_name(p=0.02)->[anyPrefix][wholeName]</li>
+		<li>r_name(p=0.2)->[anyPrefix]-[wholeName]</li>
+		<li>r_name(p=1)->[wholeName]</li>
+		<!---->
+		<li>anyPrefix->zer</li>
+		<li>anyPrefix->magna</li>
+		<li>anyPrefix->vox</li>
+		<li>anyPrefix->fringe</li>
+		<li>anyPrefix->dust</li>
+		<li>anyPrefix->edge</li>
+		<li>anyPrefix->star</li>
+		<!---->
+		<li>wholeName->driftongue</li>
+		<li>wholeName->exilect</li>
+		<li>wholeName->nomaglossa</li>
+		<li>wholeName->waydial</li>
+		<li>wholeName->outlinth</li>
+		<li>wholeName->roametic</li>
+		<li>wholeName->diasphex</li>
+		<li>wholeName->stellax</li>
+		<li>wholeName->glitchling</li>
+		<li>wholeName->aerolune</li>
+	  </rulesStrings>
+	</rulePack>
+  </RulePackDef>
+
+<!--=============== Ancient ====================-->
+  <RulePackDef>
+    <defName>OE_Namer_Obsidia_Dialect_Ancient</defName>
+	<rulePack>
+	  <rulesStrings>
+	    <li>r_name(p=0.02)->[anyPrefix][wholeName]</li>
+		<li>r_name(p=0.2)->[anyPrefix]-[wholeName]</li>
+		<li>r_name(p=1)->[wholeName]</li>
+		<!---->
+		<li>anyPrefix->zer</li>
+		<li>anyPrefix->magna</li>
+		<li>anyPrefix->vox</li>
+		<li>anyPrefix->mytho</li>
+		<li>anyPrefix->prime</li>
+		<li>anyPrefix->crypta</li>
+		<li>anyPrefix->elder</li>
+		<!---->
+		<li>wholeName->relicant</li>
+		<li>wholeName->archanex</li>
+		<li>wholeName->vexthral</li>
+		<li>wholeName->primagloss</li>
+		<li>wholeName->gramnulith</li>
+		<li>wholeName->obsinara</li>
+		<li>wholeName->mythirune</li>
+		<li>wholeName->kaldralith</li>
+		<li>wholeName->noctalingua</li>
+		<li>wholeName->incantra</li>
+	  </rulesStrings>
+	</rulePack>
+  </RulePackDef>
+
+</Defs>

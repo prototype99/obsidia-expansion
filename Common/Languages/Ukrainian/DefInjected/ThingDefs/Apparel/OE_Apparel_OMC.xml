@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC - Helmet ====================-->
+<OMC_Helmet.label>Шолом Солдата OMC</OMC_Helmet.label>
+<OMC_Helmet.description>Шолом середньої силової броні, що відмінно захищає власника. Розроблена для використання Солдатами регулярних військ OMC.</OMC_Helmet.description>
+
+<OMC_Helmet_M.label>Шолом Офицера OMC</OMC_Helmet_M.label>
+<OMC_Helmet_M.description>Шолом середньої силової броні, що відмінно захищає власника. Розроблена та модифікована для використання Офіцерами регулярних військ OMC.\n\nУкріплена версія надає більше захисту власнику.</OMC_Helmet_M.description>
+
+<OMC_Helmet_M_Spacer.label>Шолом Офицера OMC(Космо-Грифон)</OMC_Helmet_M_Spacer.label>
+<OMC_Helmet_M_Spacer.description>Шолом середньої силової броні, що відмінно захищає власника. Розроблена та модифікована для використання Офіцерами регулярних військ OMC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OMC_Helmet_M_Spacer.description>
+
+<OMC_Helmet_M_Melee.label>Шолом Офицера OMC(Гладіатор)</OMC_Helmet_M_Melee.label>
+<OMC_Helmet_M_Melee.description>Шолом середньої силової броні, що відмінно захищає власника. Розроблена та модифікована для використання Офіцерами регулярних військ OMC.\n\nМодифікація візора аналізуючим комп'ютером, який допомагає користувачеві у ближньому бою.</OMC_Helmet_M_Melee.description>
+
+<OMC_Helmet_M_Ranged.label>Шолом Офицера OMC(Рейнджер)</OMC_Helmet_M_Ranged.label>
+<OMC_Helmet_M_Ranged.description>Шолом середньої силової броні, що відмінно захищає власника. Розроблена та модифікована для використання Офіцерами регулярних військ OMC.\n\nМодифікація візора комп'ютером прицілювання, що допомагає користувачу прицілюватися.</OMC_Helmet_M_Ranged.description>
+
+<OMC_Helmet_M_Mechanitor.label>Шолом Офицера OMC(Контролер)</OMC_Helmet_M_Mechanitor.label>
+<OMC_Helmet_M_Mechanitor.description>Шолом середньої силової броні, що відмінно захищає власника. Розроблена та модифікована для використання Офіцерами регулярних військ OMC.\n\nМодифіковано для покращення здібностей Контролю Механоїдів.</OMC_Helmet_M_Mechanitor.description>
+
+<!--=============== OMC - Armor ====================-->
+<OMC_Armor.label>Броня Солдата OMC</OMC_Armor.label>
+<OMC_Armor.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Солдатами регулярних військ OMC.</OMC_Armor.description>
+
+<OMC_Armor_M.label>Броня Офицера OMC</OMC_Armor_M.label>
+<OMC_Armor_M.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nУкріплена версія надає більше захисту власнику.</OMC_Armor_M.description>
+
+<OMC_Armor_M_Spacer.label>Броня Офицера OMC(Космо-Грифон)</OMC_Armor_M_Spacer.label>
+<OMC_Armor_M_Spacer.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OMC_Armor_M_Spacer.description>
+
+<OMC_Armor_M_Smoker.label>Броня Офицера OMC(Туманник)</OMC_Armor_M_Smoker.label>
+<OMC_Armor_M_Smoker.verbs.Verb_SmokePop.label>Броня Офицера OMC(Туманник)</OMC_Armor_M_Smoker.verbs.Verb_SmokePop.label>
+<OMC_Armor_M_Smoker.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nМодифіковано з додаванням Димової шашки.</OMC_Armor_M_Smoker.description>
+<OMC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>димова завіса</OMC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<OMC_Armor_M_Jump.label>Броня Офицера OMC(Ворон)</OMC_Armor_M_Jump.label>
+<OMC_Armor_M_Jump.verbs.Verb_Jump.label>Броня Офицера OMC(Ворон)</OMC_Armor_M_Jump.verbs.Verb_Jump.label>
+<OMC_Armor_M_Jump.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nМодифіковано з додаванням Реактивного ранця.</OMC_Armor_M_Jump.description>
+<OMC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>стрибок</OMC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<OMC_Armor_M_Shield.label>Броня Офицера OMC(Вартовий)</OMC_Armor_M_Shield.label>
+<OMC_Armor_M_Shield.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nМодифіковано з додаванням Посиленого Бар'єру.</OMC_Armor_M_Shield.description>
+
+<OMC_Armor_M_Barrier.label>Броня Офицера OMC(Захисник)</OMC_Armor_M_Barrier.label>
+<OMC_Armor_M_Barrier.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nМодифіковано з додаванням Універсального Бар'єру.</OMC_Armor_M_Barrier.description>
+
+<OMC_Armor_M_ForceField.label>Броня Офицера OMC(Доглядач)</OMC_Armor_M_ForceField.label>
+<OMC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>Броня Офицера OMC(Доглядач)</OMC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>
+<OMC_Armor_M_ForceField.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nМодифицирован с добавлением Переносного барьерного проектора.</OMC_Armor_M_ForceField.description>
+<OMC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>щит</OMC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>
+
+<OMC_Armor_M_Mechanitor.label>Броня Офицера OMC(Контролер)</OMC_Armor_M_Mechanitor.label>
+<OMC_Armor_M_Mechanitor.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nМодифіковано з додаванням пакету Управління Механоїдами.</OMC_Armor_M_Mechanitor.description>
+
+<OMC_Armor_M_Turret.label>Броня Офицера OMC(Гоблін)</OMC_Armor_M_Turret.label>
+<OMC_Armor_M_Turret.description>Середня силова броня відмінно захищає власника з невеликим обмеженням мобільності. Розроблена для використання Офіцерами регулярних військ OMC.\n\nМодифікований з додаванням портфеля з туреллю, що працює від акумулятора.</OMC_Armor_M_Turret.description>
+<OMC_Armor_M_Turret.verbs.deploy_turret.label>поставити турель</OMC_Armor_M_Turret.verbs.deploy_turret.label>
+<OMC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>заряд</OMC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OMC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OМC - Grenades ====================-->
+<Grenade_Armor_OMC_TurretPack.label>капсула ранця з OMC туреллю</Grenade_Armor_OMC_TurretPack.label>
+
+</LanguageData>

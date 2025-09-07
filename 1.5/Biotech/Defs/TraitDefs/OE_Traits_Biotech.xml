@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Mech Love ====================-->
+  <TraitDef>
+    <defName>OEMechLove</defName>
+    <degreeDatas>
+      <li>
+        <label>mech fan</label>
+        <description>{PAWN_nameDef} is a big fan of mechanoids. As a {PAWN_pronoun} can control a larger number of mechanoids.</description>
+        <statOffsets>
+          <MechControlGroups>1</MechControlGroups>
+		  <MechBandwidth>3</MechBandwidth>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Mech Instinct ====================-->
+  <TraitDef>
+    <defName>OEMechInstinct</defName>
+    <degreeDatas>
+      <li>
+        <label>mechtech instinct</label>
+        <description>{PAWN_nameDef} works with mechanoids as if born to it, quickly building, tuning, and restoring every mech.</description>
+        <statOffsets>
+          <WorkSpeedGlobalOffsetMech>0.25</WorkSpeedGlobalOffsetMech>
+		  <MechFormingSpeed>0.25</MechFormingSpeed>
+		  <MechRepairSpeed>0.25</MechRepairSpeed>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

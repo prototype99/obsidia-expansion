@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Arachna Core ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SteamGeyser"]/building/relatedBuildCommands</xpath>
+    <value>
+	  <li>OE_GeothermalGenerator</li>
+    </value>
+</Operation>
+
+</Patch>

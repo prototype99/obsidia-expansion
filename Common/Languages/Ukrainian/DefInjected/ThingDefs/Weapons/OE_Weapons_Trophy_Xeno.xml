@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Nanomorph ====================-->
+<!--=============== Pistol ====================-->
+<Bullet_OE_Trophy_Xeno_P.label>дротик з Мехожору</Bullet_OE_Trophy_Xeno_P.label>
+
+<OE_Trophy_Xeno_Pistol.label>Мехожор</OE_Trophy_Xeno_Pistol.label>
+<OE_Trophy_Xeno_Pistol.verbs.Verb_Shoot.label>Мехожор</OE_Trophy_Xeno_Pistol.verbs.Verb_Shoot.label>
+<OE_Trophy_Xeno_Pistol.description>Цей пістолет був розроблений з єдиною метою: дати його власникові перевагу в боротьбі з невблаганним наступом механоїдів. Кожне підтверджене вбивство витягує фрагменти синтетичної речовини, перетворюючи її в наногель для підтримки життя його власника.\n\nХодять чутки, що Дж. К. Дентон, який одного разу перетворився на наноморфа, вижив на самоті у світі, поглинутому сталевими хижаками. Щоб продовжити своє виживання, він розробив і виготовив запас цих пістолетів - практичного інструменту, народженого скоріше відчаєм, ніж амбіціями.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Наногенічність.\n\nОсобливість: вбивство Механоїдів цією зброєю відновлює 0,05 Наногелю.</OE_Trophy_Xeno_Pistol.description>
+
+<OE_Trophy_Xeno_Pistol.tools.grip.label>рукоять</OE_Trophy_Xeno_Pistol.tools.grip.label>
+<OE_Trophy_Xeno_Pistol.tools.barrel.label>ствол</OE_Trophy_Xeno_Pistol.tools.barrel.label>
+
+<OE_Trophy_Xeno_Pistol_P.label>Парагон Мехожор</OE_Trophy_Xeno_Pistol_P.label>
+<OE_Trophy_Xeno_Pistol_P.verbs.Verb_Shoot.label>Парагон Мехожор</OE_Trophy_Xeno_Pistol_P.verbs.Verb_Shoot.label>
+<OE_Trophy_Xeno_Pistol_P.description>Цей Парагон пістолет був розроблений з єдиною метою: дати його власникові перевагу в боротьбі з невблаганним наступом механоїдів. Кожне підтверджене вбивство витягує фрагменти синтетичної речовини, перетворюючи її в наногель для підтримки життя його власника.\n\nХодять чутки, що Дж. К. Дентон, який одного разу перетворився на наноморфа, вижив на самоті у світі, поглинутому сталевими хижаками. Щоб продовжити своє виживання, він розробив і виготовив запас цих пістолетів - практичного інструменту, народженого скоріше відчаєм, ніж амбіціями.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Наногенічність.\n\nОсобливість: вбивство Механоїдів цією зброєю відновлює 0,05 Наногелю.</OE_Trophy_Xeno_Pistol_P.description>
+
+<OE_Trophy_Xeno_Pistol_P.tools.grip.label>рукоять</OE_Trophy_Xeno_Pistol_P.tools.grip.label>
+<OE_Trophy_Xeno_Pistol_P.tools.barrel.label>ствол</OE_Trophy_Xeno_Pistol_P.tools.barrel.label>
+
+<OE_Trophy_Xeno_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Мехожор</OE_Trophy_Xeno_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_Xeno_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OE_Trophy_Xeno_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_Xeno_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OE_Trophy_Xeno_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Mothoids / Drakonids ====================-->
+<!--=============== Dual Sword ====================-->
+<OE_Trophy_Xeno_DualSword.label>Близнюки Місячної вуалі</OE_Trophy_Xeno_DualSword.label>
+<OE_Trophy_Xeno_DualSword.description>Подвійний меч, ідеально збалансований і гострий, як місячне світло.\n\nВикувані в знак відданості Селені, богині Місяця, ці мечі несуть в собі шепіт її тихої печалі. Колись вона та її сестра Артеміда разом блукали ніччю, але коли їхні шляхи розійшлися, Селені стало самотньо. Легенди кажуть, що Близнюки Місячної вуалі сяють яскравіше, коли ними користуються на самоті, ніби відгукуючись на її нескінченну тугу. Однак під їхнім сяйвом залишається питання: чи це благословення Селени, чи її скорбота керує ударами?\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нічний зір або Житель ночі.\n\nОсобливість: швидкість пересування та бойові характеристики збільшуються в темряві або вночі.</OE_Trophy_Xeno_DualSword.description>
+
+<OE_Trophy_Xeno_DualSword.tools.shaft.label>держак</OE_Trophy_Xeno_DualSword.tools.shaft.label>
+<OE_Trophy_Xeno_DualSword.tools.edge.label>лезо</OE_Trophy_Xeno_DualSword.tools.edge.label>
+
+<OE_Trophy_Xeno_DualSword_P.label>Сінхро Близнюки Місячної вуалі</OE_Trophy_Xeno_DualSword_P.label>
+<OE_Trophy_Xeno_DualSword_P.description>Сінхро Подвійний меч, ідеально збалансований і гострий, як місячне світло.\n\nВикувані в знак відданості Селені, богині Місяця, ці мечі несуть в собі шепіт її тихої печалі. Колись вона та її сестра Артеміда разом блукали ніччю, але коли їхні шляхи розійшлися, Селені стало самотньо. Легенди кажуть, що Близнюки Місячної вуалі сяють яскравіше, коли ними користуються на самоті, ніби відгукуючись на її нескінченну тугу. Однак під їхнім сяйвом залишається питання: чи це благословення Селени, чи її скорбота керує ударами?\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нічний зір або Житель ночі.\n\nОсобливість: швидкість пересування та бойові характеристики збільшуються в темряві або вночі.</OE_Trophy_Xeno_DualSword_P.description>
+
+<OE_Trophy_Xeno_DualSword_P.tools.shaft.label>держак</OE_Trophy_Xeno_DualSword_P.tools.shaft.label>
+<OE_Trophy_Xeno_DualSword_P.tools.edge.label>лезо</OE_Trophy_Xeno_DualSword_P.tools.edge.label>
+
+<!--=============== Bow ====================-->
+<Bullet_OE_Trophy_Xeno_B.label>стріла з Срібного затемнення</Bullet_OE_Trophy_Xeno_B.label>
+
+<OE_Trophy_Xeno_Bow.label>Срібне затемнення</OE_Trophy_Xeno_Bow.label>
+<OE_Trophy_Xeno_Bow.verbs.Verb_Shoot.label>Срібне затемнення</OE_Trophy_Xeno_Bow.verbs.Verb_Shoot.label>
+<OE_Trophy_Xeno_Bow.description>Лук з полірованого срібла, натягнутий нитками тіні.\n\nЦя зброя вшановує Артеміду, богиню полювання, яка ходила поруч зі своєю сестрою Селеною, перш ніж повністю звернути свій погляд на дику природу. Легенди розповідають про ніч, коли Артеміда випустила стрілу в звіра, оповитого світлом зірок, але стріла так і не влучила в ціль, зникнувши в затемненні. Деякі мисливці стверджують, що коли лук натягується під темним небом, тятива гуде тим самим невитраченим пострілом, все ще чекаючи своєї цілі.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нічний зір або Житель ночі.\n\nОсобливість: швидкість пересування та бойові характеристики збільшуються в темряві або вночі.</OE_Trophy_Xeno_Bow.description>
+
+<OE_Trophy_Xeno_Bow.tools.limb.label>плече</OE_Trophy_Xeno_Bow.tools.limb.label>
+
+<OE_Trophy_Xeno_Bow_P.label>Парагон Срібне затемнення</OE_Trophy_Xeno_Bow_P.label>
+<OE_Trophy_Xeno_Bow_P.verbs.Verb_Shoot.label>Парагон Срібне затемнення</OE_Trophy_Xeno_Bow_P.verbs.Verb_Shoot.label>
+<OE_Trophy_Xeno_Bow_P.description>Парагон Лук з полірованого срібла, натягнутий нитками тіні.\n\nЦя зброя вшановує Артеміду, богиню полювання, яка ходила поруч зі своєю сестрою Селеною, перш ніж повністю звернути свій погляд на дику природу. Легенди розповідають про ніч, коли Артеміда випустила стрілу в звіра, оповитого світлом зірок, але стріла так і не влучила в ціль, зникнувши в затемненні. Деякі мисливці стверджують, що коли лук натягується під темним небом, тятива гуде тим самим невитраченим пострілом, все ще чекаючи своєї цілі.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нічний зір або Житель ночі.\n\nОсобливість: швидкість пересування та бойові характеристики збільшуються в темряві або вночі.</OE_Trophy_Xeno_Bow_P.description>
+
+<OE_Trophy_Xeno_Bow_P.tools.limb.label>плече</OE_Trophy_Xeno_Bow_P.tools.limb.label>
+
+<OE_Trophy_Xeno_Bow_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Срібне затемнення</OE_Trophy_Xeno_Bow_P.comps.CompUniqueWeapon.namerLabels.0>
+<OE_Trophy_Xeno_Bow_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OE_Trophy_Xeno_Bow_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OE_Trophy_Xeno_Bow_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OE_Trophy_Xeno_Bow_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Axotl / Slimes ====================-->
+<!--=============== Katana ====================-->
+<Bullet_OE_Trophy_Xeno_W.label>хвиля з Леза Хаосу</Bullet_OE_Trophy_Xeno_W.label>
+
+<OE_Trophy_Xeno_Katana.label>Лезо Хаосу</OE_Trophy_Xeno_Katana.label>
+<OE_Trophy_Xeno_Katana.verbs.Verb_Shoot.label>Лезо Хаосу</OE_Trophy_Xeno_Katana.verbs.Verb_Shoot.label>
+<OE_Trophy_Xeno_Katana.description>Катана, оманливо елегантна, але дивно жива завдяки мінливій енергії, Лезо Хаосу - це не звичайна зброя. Це ретельно викувана копія експерименту, який колись приписували ексцентричному генію на ім'я Рімуру Темпест - постаті, яка була водночас божевільним вченим і майстром слизу. Хоча оригінальний меч, як кажуть, міг непередбачувано змінювати саму реальність, ця копія передає лише фрагменти того хаотичного спалаху. Проте раз на день вона винагороджує свого власника несподіваним припливом сили — нагадуванням про те, що навіть копія хаосу ніколи не може бути повністю приборкана.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Делікатність, Апетит Аксотля або Слаймовий канібалізм.\n\nОсобливість: один раз на день, користувач отримує випадковий позитивний ефект.</OE_Trophy_Xeno_Katana.description>
+
+<OE_Trophy_Xeno_Katana.tools.handle.label>рукоять</OE_Trophy_Xeno_Katana.tools.handle.label>
+<OE_Trophy_Xeno_Katana.tools.point.label>вістря</OE_Trophy_Xeno_Katana.tools.point.label>
+<OE_Trophy_Xeno_Katana.tools.edge.label>лезо</OE_Trophy_Xeno_Katana.tools.edge.label>
+
+<OE_Trophy_Xeno_Katana_P.label>Сінхро Лезо Хаосу</OE_Trophy_Xeno_Katana_P.label>
+<OE_Trophy_Xeno_Katana_P.verbs.Verb_Shoot.label>Сінхро Лезо Хаосу</OE_Trophy_Xeno_Katana_P.verbs.Verb_Shoot.label>
+<OE_Trophy_Xeno_Katana_P.description>Сінхро Катана, оманливо елегантна, але дивно жива завдяки мінливій енергії, Лезо Хаосу - це не звичайна зброя. Це ретельно викувана копія експерименту, який колись приписували ексцентричному генію на ім'я Рімуру Темпест - постаті, яка була водночас божевільним вченим і майстром слизу. Хоча оригінальний меч, як кажуть, міг непередбачувано змінювати саму реальність, ця копія передає лише фрагменти того хаотичного спалаху. Проте раз на день вона винагороджує свого власника несподіваним припливом сили — нагадуванням про те, що навіть копія хаосу ніколи не може бути повністю приборкана.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Делікатність, Апетит Аксотля або Слаймовий канібалізм.\n\nОсобливість: один раз на день, користувач отримує випадковий позитивний ефект.</OE_Trophy_Xeno_Katana_P.description>
+
+<OE_Trophy_Xeno_Katana_P.tools.handle.label>рукоять</OE_Trophy_Xeno_Katana_P.tools.handle.label>
+<OE_Trophy_Xeno_Katana_P.tools.point.label>вістря</OE_Trophy_Xeno_Katana_P.tools.point.label>
+<OE_Trophy_Xeno_Katana_P.tools.edge.label>лезо</OE_Trophy_Xeno_Katana_P.tools.edge.label>
+
+<!--=============== Tortle / Ceratons ====================-->
+<!--=============== Giant Sword ====================-->
+<ODC_Trophy_Xeno_GiantSword.label>Грань Тирана</ODC_Trophy_Xeno_GiantSword.label>
+<ODC_Trophy_Xeno_GiantSword.description>Цей довгий меч ніколи не мав бути витонченим. Його розміри та вага робили його не стільки зброєю, скільки символом, який часто брали з собою на переговори, де слова виявлялися занадто крихкими. Одна з найвідоміших зустрічей закінчилася тим, що замість договору на столі лежав меч, а всі сторони були однаково вражені та збентежені «гостротою» аргументів.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нестримність, Тортлові пальці або Пальці Цератону.\n\nОсобливість: збільшує швидкість руху та ушкодження в ближньому бою після вбивства цією зброєю.</ODC_Trophy_Xeno_GiantSword.description>
+
+<ODC_Trophy_Xeno_GiantSword.tools.handle.label>рукоять</ODC_Trophy_Xeno_GiantSword.tools.handle.label>
+<ODC_Trophy_Xeno_GiantSword.tools.point.label>вістря</ODC_Trophy_Xeno_GiantSword.tools.point.label>
+<ODC_Trophy_Xeno_GiantSword.tools.edge.label>лезо</ODC_Trophy_Xeno_GiantSword.tools.edge.label>
+
+<ODC_Trophy_Xeno_GiantSword_P.label>Сінхро Грань Тирана</ODC_Trophy_Xeno_GiantSword_P.label>
+<ODC_Trophy_Xeno_GiantSword_P.description>Цей Сінхро довгий меч ніколи не мав бути витонченим. Його розміри та вага робили його не стільки зброєю, скільки символом, який часто брали з собою на переговори, де слова виявлялися занадто крихкими. Одна з найвідоміших зустрічей закінчилася тим, що замість договору на столі лежав меч, а всі сторони були однаково вражені та збентежені «гостротою» аргументів.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нестримність, Тортлові пальці або Пальці Цератону.\n\nОсобливість: збільшує швидкість руху та ушкодження в ближньому бою після вбивства цією зброєю.</ODC_Trophy_Xeno_GiantSword_P.description>
+
+<ODC_Trophy_Xeno_GiantSword_P.tools.handle.label>рукоять</ODC_Trophy_Xeno_GiantSword_P.tools.handle.label>
+<ODC_Trophy_Xeno_GiantSword_P.tools.point.label>вістря</ODC_Trophy_Xeno_GiantSword_P.tools.point.label>
+<ODC_Trophy_Xeno_GiantSword_P.tools.edge.label>лезо</ODC_Trophy_Xeno_GiantSword_P.tools.edge.label>
+
+<!--=============== Minigun ====================-->
+<Bullet_OE_P.label>куля з Обсидіанового оратору</Bullet_OE_P.label>
+
+<ODC_Trophy_Xeno_Minigun.label>Обсидіановий оратор</ODC_Trophy_Xeno_Minigun.label>
+<ODC_Trophy_Xeno_Minigun.verbs.Verb_Shoot.label>Обсидіановий оратор</ODC_Trophy_Xeno_Minigun.verbs.Verb_Shoot.label>
+<ODC_Trophy_Xeno_Minigun.description>Цей мініган спочатку був представлений як засіб стримування, хоча його громіздкість робила його скоріше комічним, ніж загрозливим. На одному історичному саміті посланець, який його ніс, спіткнувся під його вагою, вистріливши в повітря попереджувальну серію і раптово завершивши переговори. З того часу його репутація як більш переконливого оратора, ніж будь-який дипломат, збереглася.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нестримність, Тортлові пальці або Пальці Цератону.\n\nОсобливість: збільшує швидкість руху та скорочує час прицілювання після вбивства цією зброєю.</ODC_Trophy_Xeno_Minigun.description>
+
+<ODC_Trophy_Xeno_Minigun.tools.barrels.label>стволи</ODC_Trophy_Xeno_Minigun.tools.barrels.label>
+
+<ODC_Trophy_Xeno_Minigun_P.label>Парагон Обсидіановий оратор</ODC_Trophy_Xeno_Minigun_P.label>
+<ODC_Trophy_Xeno_Minigun_P.verbs.Verb_Shoot.label>Парагон Обсидіановий оратор</ODC_Trophy_Xeno_Minigun_P.verbs.Verb_Shoot.label>
+<ODC_Trophy_Xeno_Minigun_P.description>Цей Парагон мініган спочатку був представлений як засіб стримування, хоча його громіздкість робила його скоріше комічним, ніж загрозливим. На одному історичному саміті посланець, який його ніс, спіткнувся під його вагою, вистріливши в повітря попереджувальну серію і раптово завершивши переговори. З того часу його репутація як більш переконливого оратора, ніж будь-який дипломат, збереглася.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Нестримність, Тортлові пальці або Пальці Цератону.\n\nОсобливість: збільшує швидкість руху та скорочує час прицілювання після вбивства цією зброєю.</ODC_Trophy_Xeno_Minigun_P.description>
+
+<ODC_Trophy_Xeno_Minigun_P.tools.barrels.label>стволи</ODC_Trophy_Xeno_Minigun_P.tools.barrels.label>
+
+<ODC_Trophy_Xeno_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Обсидіановий оратор</ODC_Trophy_Xeno_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Trophy_Xeno_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</ODC_Trophy_Xeno_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Trophy_Xeno_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</ODC_Trophy_Xeno_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Arachnas / Spiderfolk ====================-->
+<!--=============== Thurible ====================-->
+<Bullet_CAC_Trophy_Xeno_W.label>хвиля з Шовкового кадила</Bullet_CAC_Trophy_Xeno_W.label>
+
+<CAC_Trophy_Xeno_Thurible.label>Шовковий кадило</CAC_Trophy_Xeno_Thurible.label>
+<CAC_Trophy_Xeno_Thurible.verbs.Verb_Shoot.label>Шовковий кадило</CAC_Trophy_Xeno_Thurible.verbs.Verb_Shoot.label>
+<CAC_Trophy_Xeno_Thurible.description>Кадило, викувене не з ладану і диму, а з ниток, що виблискують, як багряний світанок. Кожен помах випускає нитки, які чіпляються, зв'язуючи здобич у танці тиші і страху.\n\nЛегенди оповідають про Культ Алої Арахни, прихильники якого вплітали свої обряди в нитки живого шовку. Кажуть, що кадильницю несли під час тихих процесій, а її ланцюги бряжчали, наче шепотіння зради. Ті, хто відчув її дотик, клялися, що їхні кінцівки ставали важкими, наче невидимі павутини прив'язували їх до землі, залишаючи безпорадними перед кривавим судом культу.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Ткач павутиння або Поширення павутини.\n\nОсобливість: заряджено ушкодженням Павутини.</CAC_Trophy_Xeno_Thurible.description>
+
+<CAC_Trophy_Xeno_Thurible.tools.handle.label>рукоять</CAC_Trophy_Xeno_Thurible.tools.handle.label>
+
+<CAC_Trophy_Xeno_Thurible_P.label>Сінхро Шовковий кадило</CAC_Trophy_Xeno_Thurible_P.label>
+<CAC_Trophy_Xeno_Thurible_P.verbs.Verb_Shoot.label>Сінхро Шовковий кадило</CAC_Trophy_Xeno_Thurible_P.verbs.Verb_Shoot.label>
+<CAC_Trophy_Xeno_Thurible_P.description>Сінхро Кадило, викувене не з ладану і диму, а з ниток, що виблискують, як багряний світанок. Кожен помах випускає нитки, які чіпляються, зв'язуючи здобич у танці тиші і страху.\n\nЛегенди оповідають про Культ Алої Арахни, прихильники якого вплітали свої обряди в нитки живого шовку. Кажуть, що кадильницю несли під час тихих процесій, а її ланцюги бряжчали, наче шепотіння зради. Ті, хто відчув її дотик, клялися, що їхні кінцівки ставали важкими, наче невидимі павутини прив'язували їх до землі, залишаючи безпорадними перед кривавим судом культу.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Ткач павутиння або Поширення павутини.\n\nОсобливість: заряджено ушкодженням Павутини.</CAC_Trophy_Xeno_Thurible_P.description>
+
+<CAC_Trophy_Xeno_Thurible_P.tools.handle.label>рукоять</CAC_Trophy_Xeno_Thurible_P.tools.handle.label>
+
+<!--=============== Hemogenic ====================-->
+<!--=============== Rapier ====================-->
+<EGO_Trophy_Xeno_Rapier.label>Кривава квітка</EGO_Trophy_Xeno_Rapier.label>
+<EGO_Trophy_Xeno_Rapier.description>Ця зброя - не коване лезо, а наріст з плоті і сухожиль, скручений у формі Амальгама рапіри. У його центрі розквітає червона троянда, пелюстки якої вкриті рідиною, не схожою на росу. При кожному ударі вени вздовж леза звиваються і стискаються, направляючи кров до спраглої квітки. Використовувати його - значить живити його, а живлячи, задаватися питанням: хто ж тут паразит - квітка або той, хто ним володіє, вже ставши його коренем?\n\nСпеціально вирощена зброя, заряджена Кріо та Кислотним ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Гемогенність.\n\nОсобливість: вбивство Гуманоїдів або Тварин цією зброєю відновлює 0,1 гемогену.</EGO_Trophy_Xeno_Rapier.description>
+
+<EGO_Trophy_Xeno_Rapier.tools.handle.label>рукоять</EGO_Trophy_Xeno_Rapier.tools.handle.label>
+<EGO_Trophy_Xeno_Rapier.tools.point.label>вістря</EGO_Trophy_Xeno_Rapier.tools.point.label>
+
+<!--=============== Tailborne ====================-->
+<!--=============== Sword ====================-->
+<OMG_Trophy_Xeno_TailborneSword.label>ЛінкБлейд.v2</OMG_Trophy_Xeno_TailborneSword.label>
+<OMG_Trophy_Xeno_TailborneSword.description>Меч, розроблений на основі зламаних корпоративних креслень і переробленої технології банди, він пов'язує своїх користувачів у грубу нейронну сітку, яка гуде статичною злобою. Існує легенда про команду, яка озброїлася цими мечами, і кожен удар живив мережу, поки вона не потонула в параної, зраді та крові. Ті, хто вижив, клялися, що ця зброя була не стільки інструментом, скільки чумою - потворним нагадуванням про те, що в Обсідії сила є запозиченою, а зрада - власною.\n\nСпеціально модифікована зброя, заряджена Некробейн, Оглушальним и ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Орда Чумощурів, Королівство Мишеродних або Асоціація Амальгам.\n\nОсобливість: ушкодження в ближньому бою зростає залежно від кількості союзників з такою самою зброєю, максимум до 5.</OMG_Trophy_Xeno_TailborneSword.description>
+
+<OMG_Trophy_Xeno_TailborneSword.tools.handle.label>рукоять</OMG_Trophy_Xeno_TailborneSword.tools.handle.label>
+<OMG_Trophy_Xeno_TailborneSword.tools.point.label>вістря</OMG_Trophy_Xeno_TailborneSword.tools.point.label>
+<OMG_Trophy_Xeno_TailborneSword.tools.edge.label>лезо</OMG_Trophy_Xeno_TailborneSword.tools.edge.label>
+
+<!--=============== Deathrest ====================-->
+<!--=============== Scepter ====================-->
+<OES_Trophy_Xeno_Scepter.label>Скіпетр Вуалі Смерті</OES_Trophy_Xeno_Scepter.label>
+<OES_Trophy_Xeno_Scepter.description>Скіпетр, викуваний у кузнях Імперії Обсідія, носили не як реліквію віри, а як зброю влади. Його довірили Обсідійським Ейдолонам - обраним, які стояли на передовій Імперії, де смерть була неминучою, а слава швидкоплинною. Скіпетр Смерті прискорював їхнє відновлення після довгого відпочинку, змушуючи їх повертатися в бій, ще до того, як їхні рани повністю зажили. Легенди розповідають про героїв, які знову і знову піднімалися, а їхні перемоги увійшли в історію — аж до останнього разу, коли ні сталь, ні воля не могли повернути їх назад.\n\nСпеціально модифікована зброя, заряджена Оглушальним, Вогненним та ЕМІ ушкодженням.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЦе рідкісна трофейна зброя.\n\nЗброя може використовуватися тільки носіями цих генів: Летаргія.\n\nОсобливість: скорочує час, необхідний для завершення періоду летаргічний сну, удвічі.</OES_Trophy_Xeno_Scepter.description>
+
+<OES_Trophy_Xeno_Scepter.tools.ornament.label>орнамент</OES_Trophy_Xeno_Scepter.tools.ornament.label>
+
+</LanguageData>

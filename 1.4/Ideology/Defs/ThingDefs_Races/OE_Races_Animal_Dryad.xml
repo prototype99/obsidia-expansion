@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Synthesis Dryad ====================-->
+  <ThingDef ParentName="DryadBase">
+    <defName>OE_Dryad_Synthesis</defName>
+    <label>synthesis dryad</label>
+    <description>An insect-like caste of dryad which specializes in syntherius production. Together with its crystal growing from the body, this dryad can generate a syntherius on an ongoing basis. However, it is slow and ineffective at work or combat.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+    <statBases>
+      <MoveSpeed>3</MoveSpeed>
+    </statBases>
+    <uiIconScale>1.25</uiIconScale>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Syntherius</ThingDef>
+    </descriptionHyperlinks>
+    <race>
+      <useMeatFrom>Dryad_Basic</useMeatFrom>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+          <soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.18)</li>
+        <li>(0.22, 0, 0.08)</li>
+        <li>(0, 0, 0.05)</li>
+        <li>(-0.22, 0, 0.08)</li>
+      </headPosPerRotation>
+    </race>
+    <comps>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>OE_Syntherius</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>1200000</spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="DryadKindBase">
+    <defName>OE_Dryad_Synthesis</defName>
+    <label>synthesis dryad</label>
+    <race>OE_Dryad_Synthesis</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad/Synthesis/DryadSynthesis</texPath>
+          <drawSize>1.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad/Synthesis/Dessicated_DryadSynthesis</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Synthesis Awakened Dryad ====================-->
+  <ThingDef ParentName="AnimalThingBase" Abstract="True">
+    <defName>OE_AwakenedDryad_Synthesis</defName>
+    <label>awakened synthesis dryad</label>
+    <description>An insect-like caste of dryad which specializes in syntherius production. Its awakening has accelerated the syntherius production and made chitin more durable with almost no increase in creature size..\n\nAwakened dryads have both advantages and disadvantages compared to their bound relatives. While more proficient, specialized and unshackled, they can neither morph nor receive nourishment from a queen, resulting in a very limited lifespan.</description>
+    <tradeTags>
+	  <li>VDE_Dryad</li>
+	</tradeTags>
+	<statBases>
+	  <MoveSpeed>3</MoveSpeed>
+	  <MarketValue>300</MarketValue>
+	  <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.40</ArmorRating_Heat>
+	  <ToxicResistance>0.5</ToxicResistance>
+	  <FilthRate>1</FilthRate>
+    </statBases>
+    <uiIconScale>1.25</uiIconScale>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Syntherius</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+	  <li>
+	    <label>left claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>8</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+	    <label>right claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>8</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>9</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.9</chanceFactor>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>4</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	</tools>
+    <race>
+      <herdAnimal>true</herdAnimal>
+	  <body>QuadrupedAnimalWithPawsAndTail</body>
+	  <baseBodySize>2.0</baseBodySize>
+	  <canBePredatorPrey>false</canBePredatorPrey>
+	  <baseHealthScale>1.65</baseHealthScale>
+	  <baseHungerRate>0.001</baseHungerRate>
+	  <hediffGiverSets Inherit="False"/>
+	  <foodType>OmnivoreRoughAnimal</foodType>
+	  <useMeatFrom>Dryad_Basic</useMeatFrom>
+	  <giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
+	  <useLeatherFrom>Dryad_Basic</useLeatherFrom>
+	  <mateMtbHours>100000</mateMtbHours>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
+	  <wildness>0.5</wildness>
+	  <petness>0</petness>
+	  <trainability>None</trainability>
+	  <lifeExpectancy>2</lifeExpectancy>
+	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+		  <minAge>0</minAge>
+          <soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+          <soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>OE_Syntherius</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>600000</spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+	  <li Class="AnimalBehaviours.CompProperties_DiseasesAfterPeriod">
+		<timeToApplyInTicks>7200000</timeToApplyInTicks>
+		<hediffsToApply>
+		  <li>VDE_SeparationSickness</li>
+		</hediffsToApply>
+		<percentageOfMaxToReapply>0.95</percentageOfMaxToReapply>
+	  </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

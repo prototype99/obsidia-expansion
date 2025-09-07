@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Weird Bandit Camp ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_WeirdBanditCamp.questNameRules.rulesStrings>
+  <li>questName->The [bandit] [camp]</li>
+  <li>questName->[bandit] [camp]</li>
+  <li>questName->[asker_nameDef] and the [camp]</li>
+  <li>questName->Strange Discoveries</li>
+  <li>questName->Eradicate the Threat</li>
+  <!-- Pieces -->
+  <li>camp->Camp</li>
+  <li>camp->Outpost</li>
+  <li>camp->Lair</li>
+  <li>camp->Encampment</li>
+  <li>bandit->Bandit</li>
+  <li>bandit->Raider</li>
+  <li>bandit->Outlaw</li>
+  <li>bandit->Marauder</li>
+  <li>bandit->Robber</li>
+</OE_Quest_WeirdBanditCamp.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_WeirdBanditCamp.questDescriptionRules.rulesStrings>
+  <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], reports that their reconnaissance on Crimson Arachna Cult activity has uncovered something unusual. Their scouts followed suspicious tracks that led to a strange camp near our location, controlled by [siteFaction_name].\n\n[asker_nameDef] requests our help to eliminate the camp, destroying all enemies and defenses to stop whatever the Crimson Arachna Cult may be planning. [asker_label] says that [sitePart0_description].</li>
+  <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has shared disturbing news. Their reconnaissance of the Crimson Arachna Cult's movements uncovered a shadowy camp hidden nearby. The tracks they followed led straight to [siteFaction_name], who seems to be plotting something sinister.\n\n[asker_label] urges us to strike first, eradicating the camp before whatever darkness stirs there can be unleashed. [asker_label] says that [sitePart0_description].</li>
+</OE_Quest_WeirdBanditCamp.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Raid ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterLabel.value.slateRef>{BASELABEL}: It’s a Trap!</OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterLabel.value.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterText.value.slateRef>{BASETEXT}\n\nA cultist squad intercepted our messages, obtained our camp’s coordinates, and is now heading toward our settlement.</OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterText.value.slateRef>
+<!--=============== Bandit camp moved ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Quest expired: [resolvedQuestName]</OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired.</OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+<!--=============== Leave, the map ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>Quest failed: [resolvedQuestName]</OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended.</OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>
+<!--=============== Complete ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterLabel.slateRef>Payment arrived</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterLabel.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterText.slateRef>You have defeated the bandit camp!\n\nThe payment from [asker_faction_name] has arrived.</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterText.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>[asker_faction_royalFavorLabel]</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service.</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>
+
+</LanguageData>

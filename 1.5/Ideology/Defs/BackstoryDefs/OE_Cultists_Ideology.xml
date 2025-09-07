@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Special ====================-->
+<!--=============== Herald ====================-->
+  <BackstoryDef>
+    <defName>OE_Herald</defName>
+    <title>crimson arachna herald</title>
+    <titleShort>herald</titleShort>
+    <description>[PAWN_nameDef] served as a voice of Crimson Arachna Cult, delivering sacred doctrine to fringe worlds through visions, ritual oratory, and whispered revelations. Their words sow both devotion and dread.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Social</li>
+	  <li>Intellectual</li>
+	  <li>Artistic</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Social>5</Social>
+      <Intellectual>3</Intellectual>
+	  <Artistic>2</Artistic>
+      <Melee>-3</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>OECultist</li>
+	  <li>Cult</li>
+	  <li>Madman</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEIdeoSpread>1</OEIdeoSpread>
+    </forcedTraits>
+	<bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

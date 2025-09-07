@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+<oe_attention_text>Для применения любых изменений требуется перезапуск игры.</oe_attention_text>
+
+<!--=============== Syntherius Harvest Yield ====================-->
+<oe_syntheriusharvestyield_text>Кол-во добычи Синтериуса:</oe_syntheriusharvestyield_text>
+
+<oe_syntheriustree_text>Дерево Синтериуса: {oe_syntheriustree_harvestyield}</oe_syntheriustree_text>
+<oe_syntheriusslime_text>Синтериусный Слайм: {oe_syntheriusslime_milkamount}</oe_syntheriusslime_text>
+<oe_syntheriusdryad_text>Дриада Синтеза: {oe_syntheriusdryad_spawncount}</oe_syntheriusdryad_text>
+<oe_syntheriusroot_text>Корень Синтериуса: {oe_syntheriusroot_harvestyield}</oe_syntheriusroot_text>
+<oe_syntheriuspack_text>Сжатый Синтериус: {oe_syntheriuspack_killedleavings}</oe_syntheriuspack_text>
+<oe_syntheriusdryadawakened_text>Пробуждённая Дриада Синтеза: {oe_syntheriusdryadawakened_spawncount}</oe_syntheriusdryadawakened_text>
+<oe_syntheriusoutpost_text>Обсидийский аванпост Синтериуса: {oe_syntheriusoutpost_amountperpawn}</oe_syntheriusoutpost_text>
+
+<!--=============== Research Cost Amount ====================-->
+<oe_researchcostamount_text>Стоимость очков исследований:</oe_researchcostamount_text>
+
+<oe_researchcostamount_large>Нормальная стоимость - 100%</oe_researchcostamount_large>
+<oe_researchcostamount_medium>Низкая стоимость - 50%</oe_researchcostamount_medium>
+<oe_researchcostamount_small>Детская стоимость - 20%</oe_researchcostamount_small>
+
+<!--=============== Misk Settings ====================-->
+<oe_misksettings_text>Прочие настройки:</oe_misksettings_text>
+<OE_ChaosSlimeHiveGen_text>Ульи хаос слаймов — только на карте игрока</OE_ChaosSlimeHiveGen_text>
+<OE_ChaosSlimeHiveGen_tip>Если включено(true), ульи хаос слаймов будут появляться только на картах поселений игрока и не будут генерироваться на вражеских или нейтральных картах. Если отключено(false), ульи могут появляться при генерации мира или во время рейдов на любые карты фракций.</OE_ChaosSlimeHiveGen_tip>
+
+</LanguageData>

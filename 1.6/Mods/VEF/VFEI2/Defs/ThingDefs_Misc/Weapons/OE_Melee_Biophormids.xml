@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Biophormids - Knife ====================-->
+  <ThingDef ParentName="BaseWeapon">
+    <defName>EGO_Biophormids_Knife</defName>
+    <label>Venomtip</label>
+    <description>Amalgam Knife used by Razorsythe.</description>
+	<tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+	<relicChance>0</relicChance>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Biophormids/Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+	  <MarketValue>500</MarketValue>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<weaponTags>
+	  <li>EGOBiophormidsRazorsythe</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Biophormids - BigScythe ====================-->
+  <ThingDef ParentName="BaseWeapon">
+    <defName>EGO_Biophormids_BigScythe</defName>
+    <label>Carapace Cleave</label>
+    <description>Amalgam Big Scythe used by Brontarok.</description>
+    <equippedAngleOffset>-5</equippedAngleOffset>
+	<tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+	<relicChance>0</relicChance>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Biophormids/BigScythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+	  <MarketValue>500</MarketValue>
+	  <Mass>4.0</Mass>
+    </statBases>
+	<weaponTags>
+	  <li>EGOBiophormidsBrontarok</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>20</amount>
+          </li>
+		  <li>
+            <def>Scratch</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Biophormids - Scepter ====================-->
+  <ThingDef ParentName="BaseWeapon">
+    <defName>EGO_Biophormids_Scepter</defName>
+    <label>Hive Call</label>
+    <description>Amalgam Scepter used by Swarmella.</description>
+	<tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+	<relicChance>0</relicChance>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Biophormids/Scepter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+	  <MarketValue>500</MarketValue>
+	  <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.65</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>EGOBiophormidsSwarmella</li>
+    </weaponTags>
+	<tools>
+      <li>
+        <label>ornament</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>3.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

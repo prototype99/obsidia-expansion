@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Amalgam Psy-Sensitive ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamPsychicAbility</defName>
+    <label>amalgam psy-sensitive</label> 
+    <labelShortAdj>psy-amalgam</labelShortAdj> 
+    <description>Carriers of this amalgam gene has the greatest psychically-sensitive. With great power comes great responsibility.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamPsychicAbility</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>7</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+	<statOffsets>
+      <PsychicSensitivity>0.8</PsychicSensitivity>
+      <MeditationFocusGain>0.4</MeditationFocusGain>
+      <PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+	<biostatArc>2</biostatArc>
+	<exclusionTags>
+      <li>PsychicAbility</li>
+    </exclusionTags>
+  </GeneDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

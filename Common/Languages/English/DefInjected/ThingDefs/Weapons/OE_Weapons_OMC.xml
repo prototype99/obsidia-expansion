@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC - Sword ====================-->
+<OMC_Sword.label>Delimiter</OMC_Sword.label>
+<OMC_Sword.description>Regular Sword used by OMC Soldiers.</OMC_Sword.description>
+
+<OMC_Sword.tools.handle.label>handle</OMC_Sword.tools.handle.label>
+<OMC_Sword.tools.point.label>point</OMC_Sword.tools.point.label>
+<OMC_Sword.tools.edge.label>edge</OMC_Sword.tools.edge.label>
+
+<OMC_Sword_M.label>Delimiter MK-II</OMC_Sword_M.label>
+<OMC_Sword_M.description>Modified Sword used by OMC Officers.</OMC_Sword_M.description>
+
+<OMC_Sword_M.tools.handle.label>handle</OMC_Sword_M.tools.handle.label>
+<OMC_Sword_M.tools.point.label>point</OMC_Sword_M.tools.point.label>
+<OMC_Sword_M.tools.edge.label>edge</OMC_Sword_M.tools.edge.label>
+
+<OMC_Sword_P.label>Persona Delimiter MK-II</OMC_Sword_P.label>
+<OMC_Sword_P.description>Persona Modified Sword used by OMC Officers.</OMC_Sword_P.description>
+
+<OMC_Sword_P.tools.handle.label>handle</OMC_Sword_P.tools.handle.label>
+<OMC_Sword_P.tools.point.label>point</OMC_Sword_P.tools.point.label>
+<OMC_Sword_P.tools.edge.label>edge</OMC_Sword_P.tools.edge.label>
+
+<!--=============== OMC - Axe ====================-->
+<OMC_Axe.label>Furious</OMC_Axe.label>
+<OMC_Axe.description>Regular Axe used by OMC Soldiers.</OMC_Axe.description>
+
+<OMC_Axe.tools.handle.label>handle</OMC_Axe.tools.handle.label>
+<OMC_Axe.tools.edge.label>edge</OMC_Axe.tools.edge.label>
+
+<OMC_Axe_M.label>Furious MK-II</OMC_Axe_M.label>
+<OMC_Axe_M.description>Modified Axe used by OMC Officers.</OMC_Axe_M.description>
+
+<OMC_Axe_M.tools.handle.label>handle</OMC_Axe_M.tools.handle.label>
+<OMC_Axe_M.tools.edge.label>edge</OMC_Axe_M.tools.edge.label>
+
+<OMC_Axe_P.label>Persona Furious MK-II</OMC_Axe_P.label>
+<OMC_Axe_P.description>Persona Modified Axe used by OMC Officers.</OMC_Axe_P.description>
+
+<OMC_Axe_P.tools.handle.label>handle</OMC_Axe_P.tools.handle.label>
+<OMC_Axe_P.tools.edge.label>edge</OMC_Axe_P.tools.edge.label>
+
+<!--=============== OMC - Whip ====================-->
+<Wave_OMC_W.label>Bloodspiller wave</Wave_OMC_W.label>
+<Wave_OMC_W_M.label>Bloodspiller MK-II wave</Wave_OMC_W_M.label>
+
+<OMC_Whip.label>Bloodspiller</OMC_Whip.label>
+<OMC_Whip.verbs.Verb_Shoot.label>Bloodspiller</OMC_Whip.verbs.Verb_Shoot.label>
+<OMC_Whip.description>Regular Whip used by OMC Soldiers.</OMC_Whip.description>
+
+<OMC_Whip.tools.handle.label>handle</OMC_Whip.tools.handle.label>
+
+<OMC_Whip_M.label>Bloodspiller MK-II</OMC_Whip_M.label>
+<OMC_Whip_M.verbs.Verb_Shoot.label>Bloodspiller MK-II</OMC_Whip_M.verbs.Verb_Shoot.label>
+<OMC_Whip_M.description>Modified Whip used by OMC Officers.</OMC_Whip_M.description>
+
+<OMC_Whip_M.tools.handle.label>handle</OMC_Whip_M.tools.handle.label>
+
+<OMC_Whip_P.label>Persona Bloodspiller MK-II</OMC_Whip_P.label>
+<OMC_Whip_P.verbs.Verb_Shoot.label>Persona Bloodspiller MK-II</OMC_Whip_P.verbs.Verb_Shoot.label>
+<OMC_Whip_P.description>Persona Modified Whip used by OMC Officers.</OMC_Whip_P.description>
+
+<OMC_Whip_P.tools.handle.label>handle</OMC_Whip_P.tools.handle.label>
+
+<!--=============== OMC - Elemental Whip ====================-->
+<!--=============== Acid ====================-->
+<Wave_OMC_W_Acid.label>Bloodspiller Acid wave</Wave_OMC_W_Acid.label>
+<Wave_OMC_W_M_Acid.label>Bloodspiller MK-II Acid wave</Wave_OMC_W_M_Acid.label>
+
+<OMC_Whip_Acid.label>Bloodspiller(Acid)</OMC_Whip_Acid.label>
+<OMC_Whip_Acid.verbs.Verb_Shoot.label>Bloodspiller(Acid)</OMC_Whip_Acid.verbs.Verb_Shoot.label>
+<OMC_Whip_Acid.description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</OMC_Whip_Acid.description>
+
+<OMC_Whip_Acid.tools.handle.label>handle</OMC_Whip_Acid.tools.handle.label>
+
+<OMC_Whip_M_Acid.label>Bloodspiller MK-II(Acid)</OMC_Whip_M_Acid.label>
+<OMC_Whip_M_Acid.verbs.Verb_Shoot.label>Bloodspiller MK-II(Acid)</OMC_Whip_M_Acid.verbs.Verb_Shoot.label>
+<OMC_Whip_M_Acid.description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</OMC_Whip_M_Acid.description>
+
+<OMC_Whip_M_Acid.tools.handle.label>handle</OMC_Whip_M_Acid.tools.handle.label>
+
+<OMC_Whip_P_Acid.label>Persona Bloodspiller MK-II(Acid)</OMC_Whip_P_Acid.label>
+<OMC_Whip_P_Acid.verbs.Verb_Shoot.label>Persona Bloodspiller MK-II(Acid)</OMC_Whip_P_Acid.verbs.Verb_Shoot.label>
+<OMC_Whip_P_Acid.description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</OMC_Whip_P_Acid.description>
+
+<OMC_Whip_P_Acid.tools.handle.label>handle</OMC_Whip_P_Acid.tools.handle.label>
+<!--=============== Cryo ====================-->
+<Wave_OMC_W_Cryo.label>Bloodspiller Cryo wave</Wave_OMC_W_Cryo.label>
+<Wave_OMC_W_M_Cryo.label>Bloodspiller MK-II Cryo wave</Wave_OMC_W_M_Cryo.label>
+
+<OMC_Whip_Cryo.label>Bloodspiller(Cryo)</OMC_Whip_Cryo.label>
+<OMC_Whip_Cryo.verbs.Verb_Shoot.label>Bloodspiller(Cryo)</OMC_Whip_Cryo.verbs.Verb_Shoot.label>
+<OMC_Whip_Cryo.description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</OMC_Whip_Cryo.description>
+
+<OMC_Whip_Cryo.tools.handle.label>handle</OMC_Whip_Cryo.tools.handle.label>
+
+<OMC_Whip_M_Cryo.label>Bloodspiller MK-II(Cryo)</OMC_Whip_M_Cryo.label>
+<OMC_Whip_M_Cryo.verbs.Verb_Shoot.label>Bloodspiller MK-II(Cryo)</OMC_Whip_M_Cryo.verbs.Verb_Shoot.label>
+<OMC_Whip_M_Cryo.description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</OMC_Whip_M_Cryo.description>
+
+<OMC_Whip_M_Cryo.tools.handle.label>handle</OMC_Whip_M_Cryo.tools.handle.label>
+
+<OMC_Whip_P_Cryo.label>Persona Bloodspiller MK-II(Cryo)</OMC_Whip_P_Cryo.label>
+<OMC_Whip_P_Cryo.verbs.Verb_Shoot.label>Persona Bloodspiller MK-II(Cryo)</OMC_Whip_P_Cryo.verbs.Verb_Shoot.label>
+<OMC_Whip_P_Cryo.description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</OMC_Whip_P_Cryo.description>
+
+<OMC_Whip_P_Cryo.tools.handle.label>handle</OMC_Whip_P_Cryo.tools.handle.label>
+<!--=============== Fire ====================-->
+<Wave_OMC_W_Fire.label>Bloodspiller Fire wave</Wave_OMC_W_Fire.label>
+<Wave_OMC_W_M_Fire.label>Bloodspiller MK-II Fire wave</Wave_OMC_W_M_Fire.label>
+
+<OMC_Whip_Fire.label>Bloodspiller(Fire)</OMC_Whip_Fire.label>
+<OMC_Whip_Fire.verbs.Verb_Shoot.label>Bloodspiller(Fire)</OMC_Whip_Fire.verbs.Verb_Shoot.label>
+<OMC_Whip_Fire.description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</OMC_Whip_Fire.description>
+
+<OMC_Whip_Fire.tools.handle.label>handle</OMC_Whip_Fire.tools.handle.label>
+
+<OMC_Whip_M_Fire.label>Bloodspiller MK-II(Fire)</OMC_Whip_M_Fire.label>
+<OMC_Whip_M_Fire.verbs.Verb_Shoot.label>Bloodspiller MK-II(Fire)</OMC_Whip_M_Fire.verbs.Verb_Shoot.label>
+<OMC_Whip_M_Fire.description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</OMC_Whip_M_Fire.description>
+
+<OMC_Whip_M_Fire.tools.handle.label>handle</OMC_Whip_M_Fire.tools.handle.label>
+
+<OMC_Whip_P_Fire.label>Persona Bloodspiller MK-II(Fire)</OMC_Whip_P_Fire.label>
+<OMC_Whip_P_Fire.verbs.Verb_Shoot.label>Persona Bloodspiller MK-II(Fire)</OMC_Whip_P_Fire.verbs.Verb_Shoot.label>
+<OMC_Whip_P_Fire.description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</OMC_Whip_P_Fire.description>
+
+<OMC_Whip_P_Fire.tools.handle.label>handle</OMC_Whip_P_Fire.tools.handle.label>
+<!--=============== EMP ====================-->
+<Wave_OMC_W_EMP.label>Bloodspiller EMP wave</Wave_OMC_W_EMP.label>
+<Wave_OMC_W_M_EMP.label>Bloodspiller MK-II EMP wave</Wave_OMC_W_M_EMP.label>
+
+<OMC_Whip_EMP.label>Bloodspiller(EMP)</OMC_Whip_EMP.label>
+<OMC_Whip_EMP.verbs.Verb_Shoot.label>Bloodspiller(EMP)</OMC_Whip_EMP.verbs.Verb_Shoot.label>
+<OMC_Whip_EMP.description>Regular Whip used by OMC Soldiers.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OMC_Whip_EMP.description>
+
+<OMC_Whip_EMP.tools.handle.label>handle</OMC_Whip_EMP.tools.handle.label>
+
+<OMC_Whip_M_EMP.label>Bloodspiller MK-II(EMP)</OMC_Whip_M_EMP.label>
+<OMC_Whip_M_EMP.verbs.Verb_Shoot.label>Bloodspiller MK-II(EMP)</OMC_Whip_M_EMP.verbs.Verb_Shoot.label>
+<OMC_Whip_M_EMP.description>Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OMC_Whip_M_EMP.description>
+
+<OMC_Whip_M_EMP.tools.handle.label>handle</OMC_Whip_M_EMP.tools.handle.label>
+
+<OMC_Whip_P_EMP.label>Persona Bloodspiller MK-II(EMP)</OMC_Whip_P_EMP.label>
+<OMC_Whip_P_EMP.verbs.Verb_Shoot.label>Persona Bloodspiller MK-II(EMP)</OMC_Whip_P_EMP.verbs.Verb_Shoot.label>
+<OMC_Whip_P_EMP.description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OMC_Whip_P_EMP.description>
+
+<OMC_Whip_P_EMP.tools.handle.label>handle</OMC_Whip_P_EMP.tools.handle.label>
+
+<!--=============== OMC - Pistol ====================-->
+<Bullet_OMC_P.label>Impaler bullet</Bullet_OMC_P.label>
+<Bullet_OMC_P_M.label>Impaler MK-II bullet</Bullet_OMC_P_M.label>
+
+<OMC_Pistol.label>Impaler</OMC_Pistol.label>
+<OMC_Pistol.verbs.Verb_Shoot.label>Impaler</OMC_Pistol.verbs.Verb_Shoot.label>
+<OMC_Pistol.description>Regular Auto Pistol used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_Pistol.description>
+
+<OMC_Pistol.tools.grip.label>grip</OMC_Pistol.tools.grip.label>
+<OMC_Pistol.tools.barrel.label>barrel</OMC_Pistol.tools.barrel.label>
+
+<OMC_Pistol_M.label>Impaler MK-II</OMC_Pistol_M.label>
+<OMC_Pistol_M.verbs.Verb_Shoot.label>Impaler MK-II</OMC_Pistol_M.verbs.Verb_Shoot.label>
+<OMC_Pistol_M.description>Modified Auto Pistol used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_Pistol_M.description>
+
+<OMC_Pistol_M.tools.grip.label>grip</OMC_Pistol_M.tools.grip.label>
+<OMC_Pistol_M.tools.barrel.label>barrel</OMC_Pistol_M.tools.barrel.label>
+
+<OMC_Pistol_P.label>Paragon Impaler MK-II</OMC_Pistol_P.label>
+<OMC_Pistol_P.verbs.Verb_Shoot.label>Paragon Impaler MK-II</OMC_Pistol_P.verbs.Verb_Shoot.label>
+<OMC_Pistol_P.description>Paragon Modified Auto Pistol used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_Pistol_P.description>
+
+<OMC_Pistol_P.tools.grip.label>grip</OMC_Pistol_P.tools.grip.label>
+<OMC_Pistol_P.tools.barrel.label>barrel</OMC_Pistol_P.tools.barrel.label>
+
+<OMC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Impaler MK-II</OMC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - Shotgun Sidearm ====================-->
+<Bullet_OMC_SS.label>Hellscream blast</Bullet_OMC_SS.label>
+<Bullet_OMC_SS_M.label>Hellscream MK-II blast</Bullet_OMC_SS_M.label>
+
+<OMC_ShotgunS.label>Hellscream</OMC_ShotgunS.label>
+<OMC_ShotgunS.verbs.Verb_Shoot.label>Hellscream</OMC_ShotgunS.verbs.Verb_Shoot.label>
+<OMC_ShotgunS.description>Regular Shotgun Sidearm used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_ShotgunS.description>
+
+<OMC_ShotgunS.tools.grip.label>grip</OMC_ShotgunS.tools.grip.label>
+<OMC_ShotgunS.tools.barrel.label>barrel</OMC_ShotgunS.tools.barrel.label>
+
+<OMC_ShotgunS_M.label>Hellscream MK-II</OMC_ShotgunS_M.label>
+<OMC_ShotgunS_M.verbs.Verb_Shoot.label>Hellscream MK-II</OMC_ShotgunS_M.verbs.Verb_Shoot.label>
+<OMC_ShotgunS_M.description>Modified Shotgun Sidearm used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_ShotgunS_M.description>
+
+<OMC_ShotgunS_M.tools.grip.label>grip</OMC_ShotgunS_M.tools.grip.label>
+<OMC_ShotgunS_M.tools.barrel.label>barrel</OMC_ShotgunS_M.tools.barrel.label>
+
+<OMC_ShotgunS_P.label>Paragon Hellscream MK-II</OMC_ShotgunS_P.label>
+<OMC_ShotgunS_P.verbs.Verb_Shoot.label>Paragon Hellscream MK-II</OMC_ShotgunS_P.verbs.Verb_Shoot.label>
+<OMC_ShotgunS_P.description>Paragon Modified Shotgun Sidearm used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_ShotgunS_P.description>
+
+<OMC_ShotgunS_P.tools.grip.label>grip</OMC_ShotgunS_P.tools.grip.label>
+<OMC_ShotgunS_P.tools.barrel.label>barrel</OMC_ShotgunS_P.tools.barrel.label>
+
+<OMC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Hellscream MK-II</OMC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - AssaultRifle ====================-->
+<Bullet_OMC_AR.label>Striker bullet</Bullet_OMC_AR.label>
+<Bullet_OMC_AR_M.label>Striker MK-II bullet</Bullet_OMC_AR_M.label>
+
+<OMC_AR.label>Striker</OMC_AR.label>
+<OMC_AR.verbs.Verb_Shoot.label>Striker</OMC_AR.verbs.Verb_Shoot.label>
+<OMC_AR.description>Regular Assault Rifle used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_AR.description>
+
+<OMC_AR.tools.stock.label>stock</OMC_AR.tools.stock.label>
+<OMC_AR.tools.barrel.label>barrel</OMC_AR.tools.barrel.label>
+
+<OMC_AR_M.label>Striker MK-II</OMC_AR_M.label>
+<OMC_AR_M.verbs.Verb_Shoot.label>Striker MK-II</OMC_AR_M.verbs.Verb_Shoot.label>
+<OMC_AR_M.description>Modified Assault Rifle used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_AR_M.description>
+
+<OMC_AR_M.tools.stock.label>stock</OMC_AR_M.tools.stock.label>
+<OMC_AR_M.tools.barrel.label>barrel</OMC_AR_M.tools.barrel.label>
+
+<OMC_AR_P.label>Paragon Striker MK-II</OMC_AR_P.label>
+<OMC_AR_P.verbs.Verb_Shoot.label>Paragon Striker MK-II</OMC_AR_P.verbs.Verb_Shoot.label>
+<OMC_AR_P.description>Modified Paragon Assault Rifle used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_AR_P.description>
+
+<OMC_AR_P.tools.stock.label>stock</OMC_AR_P.tools.stock.label>
+<OMC_AR_P.tools.barrel.label>barrel</OMC_AR_P.tools.barrel.label>
+
+<OMC_AR_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Striker MK-II</OMC_AR_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_AR_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_AR_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_AR_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_AR_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - Shotgun ====================-->
+<Bullet_OMC_S.label>Doom blast</Bullet_OMC_S.label>
+<Bullet_OMC_S_M.label>Doom MK-II blast</Bullet_OMC_S_M.label>
+
+<OMC_Shotgun.label>Doom</OMC_Shotgun.label>
+<OMC_Shotgun.verbs.Verb_Shoot.label>Doom</OMC_Shotgun.verbs.Verb_Shoot.label>
+<OMC_Shotgun.description>Regular Auto Shotgun used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_Shotgun.description>
+
+<OMC_Shotgun.tools.stock.label>stock</OMC_Shotgun.tools.stock.label>
+<OMC_Shotgun.tools.barrel.label>barrel</OMC_Shotgun.tools.barrel.label>
+
+<OMC_Shotgun_M.label>Doom MK-II</OMC_Shotgun_M.label>
+<OMC_Shotgun_M.verbs.Verb_Shoot.label>Doom MK-II</OMC_Shotgun_M.verbs.Verb_Shoot.label>
+<OMC_Shotgun_M.description>Modified Auto Shotgun used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_Shotgun_M.description>
+
+<OMC_Shotgun_M.tools.stock.label>stock</OMC_Shotgun_M.tools.stock.label>
+<OMC_Shotgun_M.tools.barrel.label>barrel</OMC_Shotgun_M.tools.barrel.label>
+
+<OMC_Shotgun_P.label>Paragon Doom MK-II</OMC_Shotgun_P.label>
+<OMC_Shotgun_P.verbs.Verb_Shoot.label>Paragon Doom MK-II</OMC_Shotgun_P.verbs.Verb_Shoot.label>
+<OMC_Shotgun_P.description>Paragon Modified Auto Shotgun used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_Shotgun_P.description>
+
+<OMC_Shotgun_P.tools.stock.label>stock</OMC_Shotgun_P.tools.stock.label>
+<OMC_Shotgun_P.tools.barrel.label>barrel</OMC_Shotgun_P.tools.barrel.label>
+
+<OMC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Doom MK-II</OMC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - SniperRifle ====================-->
+<Bullet_OMC_SR.label>Skullmasher bullet</Bullet_OMC_SR.label>
+<Bullet_OMC_SR_M.label>Skullmasher MK-II bullet</Bullet_OMC_SR_M.label>
+
+<OMC_SniperRifle.label>Skullmasher</OMC_SniperRifle.label>
+<OMC_SniperRifle.verbs.Verb_Shoot.label>Skullmasher</OMC_SniperRifle.verbs.Verb_Shoot.label>
+<OMC_SniperRifle.description>Regular Auto Sniper Rifle used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_SniperRifle.description>
+
+<OMC_SniperRifle.tools.stock.label>stock</OMC_SniperRifle.tools.stock.label>
+<OMC_SniperRifle.tools.barrel.label>barrel</OMC_SniperRifle.tools.barrel.label>
+
+<OMC_SniperRifle_M.label>Skullmasher MK-II</OMC_SniperRifle_M.label>
+<OMC_SniperRifle_M.verbs.Verb_Shoot.label>Skullmasher MK-II</OMC_SniperRifle_M.verbs.Verb_Shoot.label>
+<OMC_SniperRifle_M.description>Modified Auto Sniper Rifle used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_SniperRifle_M.description>
+
+<OMC_SniperRifle_M.tools.stock.label>stock</OMC_SniperRifle_M.tools.stock.label>
+<OMC_SniperRifle_M.tools.barrel.label>barrel</OMC_SniperRifle_M.tools.barrel.label>
+
+<OMC_SniperRifle_P.label>Paragon Skullmasher MK-II</OMC_SniperRifle_P.label>
+<OMC_SniperRifle_P.verbs.Verb_Shoot.label>Paragon Skullmasher MK-II</OMC_SniperRifle_P.verbs.Verb_Shoot.label>
+<OMC_SniperRifle_P.description>Paragon Modified Auto Sniper Rifle used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.</OMC_SniperRifle_P.description>
+
+<OMC_SniperRifle_P.tools.stock.label>stock</OMC_SniperRifle_P.tools.stock.label>
+<OMC_SniperRifle_P.tools.barrel.label>barrel</OMC_SniperRifle_P.tools.barrel.label>
+
+<OMC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Skullmasher MK-II</OMC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Cross ====================-->
+<!--=============== OMC - Rocket Launcher ====================-->
+<Bullet_OMC_RL.label>Giant's Bane rocket</Bullet_OMC_RL.label>
+<Bullet_OMC_RL_M.label>Giant's Bane MK-II rocket</Bullet_OMC_RL_M.label>
+
+<OMC_RocketLauncher.label>Giant's Bane</OMC_RocketLauncher.label>
+<OMC_RocketLauncher.verbs.Verb_Shoot.label>Giant's Bane</OMC_RocketLauncher.verbs.Verb_Shoot.label>
+<OMC_RocketLauncher.description>Regular Rocket Launcher used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OCC Rocket Launcher.</OMC_RocketLauncher.description>
+
+<OMC_RocketLauncher.tools.barrel.label>barrel</OMC_RocketLauncher.tools.barrel.label>
+
+<OMC_RocketLauncher_M.label>Giant's Bane MK-II</OMC_RocketLauncher_M.label>
+<OMC_RocketLauncher_M.verbs.Verb_Shoot.label>Giant's Bane MK-II</OMC_RocketLauncher_M.verbs.Verb_Shoot.label>
+<OMC_RocketLauncher_M.description>Modified Rocket Launcher used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OCC Rocket Launcher.</OMC_RocketLauncher_M.description>
+
+<OMC_RocketLauncher_M.tools.barrel.label>barrel</OMC_RocketLauncher_M.tools.barrel.label>
+
+<OMC_RocketLauncher_P.label>Paragon Giant's Bane MK-II</OMC_RocketLauncher_P.label>
+<OMC_RocketLauncher_P.verbs.Verb_Shoot.label>Paragon Giant's Bane MK-II</OMC_RocketLauncher_P.verbs.Verb_Shoot.label>
+<OMC_RocketLauncher_P.description>Paragon Modified Rocket Launcher used by OMC Officers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OCC Rocket Launcher.</OMC_RocketLauncher_P.description>
+
+<OMC_RocketLauncher_P.tools.barrel.label>barrel</OMC_RocketLauncher_P.tools.barrel.label>
+
+<OMC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Giant's Bane MK-II</OMC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - Revolver ====================-->
+<Bullet_OMC_R.label>Merciless bullet</Bullet_OMC_R.label>
+<Bullet_OMC_R_M.label>Merciless MK-II bullet</Bullet_OMC_R_M.label>
+
+<OMC_Revolver.label>Merciless</OMC_Revolver.label>
+<OMC_Revolver.verbs.Verb_Shoot.label>Merciless</OMC_Revolver.verbs.Verb_Shoot.label>
+<OMC_Revolver.description>Regular Revolver used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OEC Revolver.</OMC_Revolver.description>
+
+<OMC_Revolver.tools.grip.label>grip</OMC_Revolver.tools.grip.label>
+<OMC_Revolver.tools.barrel.label>barrel</OMC_Revolver.tools.barrel.label>
+
+<OMC_Revolver_M.label>Merciless MK-II</OMC_Revolver_M.label>
+<OMC_Revolver_M.verbs.Verb_Shoot.label>Merciless MK-II</OMC_Revolver_M.verbs.Verb_Shoot.label>
+<OMC_Revolver_M.description>Modified Revolver used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OEC Revolver.</OMC_Revolver_M.description>
+
+<OMC_Revolver_M.tools.grip.label>grip</OMC_Revolver_M.tools.grip.label>
+<OMC_Revolver_M.tools.barrel.label>barrel</OMC_Revolver_M.tools.barrel.label>
+
+<OMC_Revolver_P.label>Paragon Merciless MK-II</OMC_Revolver_P.label>
+<OMC_Revolver_P.verbs.Verb_Shoot.label>Paragon Merciless MK-II</OMC_Revolver_P.verbs.Verb_Shoot.label>
+<OMC_Revolver_P.description>Paragon Modified Revolver used by OMC Soldiers. Rapid-fire and multiple-charge weapons with reduced damage.\n\nIt's remanufactured weapon based on OEC Revolver.</OMC_Revolver_P.description>
+
+<OMC_Revolver_P.tools.grip.label>grip</OMC_Revolver_P.tools.grip.label>
+<OMC_Revolver_P.tools.barrel.label>barrel</OMC_Revolver_P.tools.barrel.label>
+
+<OMC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Merciless MK-II</OMC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</OMC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

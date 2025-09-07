@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Chaos Lord ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_ChaosLord</defName>
+    <label>Chaos Lord</label>
+    <description>Chaos Lord is a prototype based on the Dominator, a medium-sized well-armored mechanoid. Originally designed as a combat mechandroid, tests revealed significantly improved results, leading to their use as assassins. Additionally, they can use the enhanced abilities of the Dominators.\n\nUses specially designed unique Grand Proton Rifle.</description>
+	<statBases>
+      <MarketValue>4500</MarketValue>
+      <MoveSpeed>3.5</MoveSpeed>
+	  <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+	  <EMPResistance>0.85</EMPResistance>
+	  <PsychicSensitivity>0.45</PsychicSensitivity>
+	  <BandwidthCost>4</BandwidthCost>
+	  <ControlTakingTime>20</ControlTakingTime>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>3.5</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <soundAmbience>Pawn_Mech_Apocriton_Ambience</soundAmbience>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>15</OE_Orichalcum>
+	  <OE_SyntheriusPack>2</OE_SyntheriusPack>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OEKindBaseMechBossDominator" ParentName="BaseMechanoidKind">
+    <defName>OE_Mech_ChaosLord</defName>
+    <label>Chaos Lord</label>
+    <race>OE_Mech_ChaosLord</race>
+	<combatPower>450</combatPower>
+	<maxPerGroup>5</maxPerGroup>
+	<allowInMechClusters>true</allowInMechClusters>
+    <lifeStages>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ChaosLord/ChaosLord</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/ChaosLord/ChaosLordAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/Dominator/AllegianceOverlays/Mech_Dominator</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OEChaosLord</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li MayRequire="Ludeon.Rimworld.Royalty">OE_MechLordCamouflage</li>
+	  <li>OE_MechLordRedline</li>
+	  <li>OE_MechLordVanguard</li>
+	  <li>OE_MechLordBlink</li>  
+    </abilities>
+	<startingHediffs>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">
+        <def>HoraxianInvisibility</def>
+      </li>
+    </startingHediffs>
+	<skipResistant>true</skipResistant>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEKindBaseMechBossDominator">
+    <defName>OE_Mech_NewChaosLord</defName>
+    <label>Chaos Lord</label>
+    <race>OE_Mech_ChaosLord</race>
+	<allowInMechClusters>false</allowInMechClusters>
+	<minGenerationAge>1</minGenerationAge>
+	<maxGenerationAge>98</maxGenerationAge>
+	<startingHediffs Inherit="False" />
+  </PawnKindDef>
+
+</Defs>

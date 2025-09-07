@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ghoul Skin ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_GhoulImplantSkin</defName>
+    <label>ghoul skin implant - Carapace</label>
+    <labelNoun>a ghoul skin implant - Carapace</labelNoun>
+    <description>An installed ghoul skin implant - Carapace.</description>
+    <descriptionHyperlinks><ThingDef>OE_GhoulImplantSkin</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_GhoulImplantSkin</spawnThingOnRemoved>
+	<stages>
+	  <li>
+        <statOffsets>
+		  <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.6</ArmorRating_Heat>
+        </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartGhoulBase">
+    <defName>OE_GhoulImplantSkin</defName>
+    <label>ghoul skin implant - Carapace</label>
+    <description>Obsidia cultist skin implant for ghouls releases chemicals and nanomachines that toughen the skin and add flexible subdermal empyrium and orichalcum plates at strategic points. This makes the ghoul more resistant to damage across their whole body.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this implant.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallGhoulImplantSkin</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/CAC/OE_GhoulSkin</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+      <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+	  <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>10</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_EmpyriumSynthweave>2</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>2</OE_OrichalcumSynthweave>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+      <OE_Syntherius>5</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>7.5</Mass>
+	  <MarketValue>875</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallGhoulImplantSkin</defName>
+    <label>install ghoul skin implant - Carapace</label>
+    <description>Install a ghoul skin implant - Carapace.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_GhoulImplantSkin</ThingDef>
+      <HediffDef>OE_GhoulImplantSkin</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing ghoul skin implant - Carapace.</jobString>
+	<uiIconThing>OE_GhoulImplantSkin</uiIconThing>
+	<skillRequirements Inherit="false" />
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
+	<mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_GhoulImplantSkin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_GhoulImplantSkin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_GhoulImplantSkin</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveGhoulImplantSkin</defName>
+    <label>remove ghoul skin implant - Carapace</label>
+    <description>Remove a ghoul skin implant - Carapace.</description>
+    <jobString>Removing ghoul skin implant - Carapace.</jobString>
+    <removesHediff>OE_GhoulImplantSkin</removesHediff>
+	<uiIconThing>OE_GhoulImplantSkin</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Ghoul Stomach ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_GhoulImplantStomach</defName>
+    <label>ghoul stomach implant - Larva</label>
+    <labelNoun>a ghoul stomach implant - Larva</labelNoun>
+    <description>An installed ghoul stomach implant - Larva.</description>
+    <descriptionHyperlinks><ThingDef>OE_GhoulImplantStomach</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_GhoulImplantStomach</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>-0.5</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartGhoulBase">
+    <defName>OE_GhoulImplantStomach</defName>
+    <label>ghoul stomach implant - Larva</label>
+    <description>Obsidia cultist stomach implant for ghouls is installed under the stomach and integrated into the digestive system. Helps digest food more efficiently. This slightly reduces the ghoul's metabolism, causing it to eat less.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this implant.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallGhoulImplantStomach</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/CAC/OE_GhoulStomach</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+      <OE_Platinum>10</OE_Platinum>
+	  <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>10</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Platinum>5</OE_Platinum>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+      <OE_Syntherius>5</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>3.5</Mass>
+	  <MarketValue>875</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallGhoulImplantStomach</defName>
+    <label>install ghoul stomach implant - Larva</label>
+    <description>Install a ghoul stomach implant - Larva.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_GhoulImplantStomach</ThingDef>
+      <HediffDef>OE_GhoulImplantStomach</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing ghoul stomach implant - Larva.</jobString>
+	<uiIconThing>OE_GhoulImplantStomach</uiIconThing>
+	<skillRequirements Inherit="false" />
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
+	<mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_GhoulImplantStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_GhoulImplantStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_GhoulImplantStomach</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveGhoulImplantStomach</defName>
+    <label>remove ghoul stomach implant - Larva</label>
+    <description>Remove a ghoul stomach implant - Larva.</description>
+    <jobString>Removing ghoul stomach implant - Larva.</jobString>
+    <removesHediff>OE_GhoulImplantStomach</removesHediff>
+	<uiIconThing>OE_GhoulImplantStomach</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Ghoul Skeleton ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_GhoulImplantSkeleton</defName>
+    <label>ghoul skeleton implant - Scarab</label>
+    <labelNoun>a ghoul skeleton implant - Scarab</labelNoun>
+    <description>An installed ghoul skeleton implant - Scarab.</description>
+    <descriptionHyperlinks><ThingDef>OE_GhoulImplantSkeleton</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_GhoulImplantSkeleton</spawnThingOnRemoved>
+	<stages>
+	  <li>
+        <statFactors>
+		  <MeleeDamageFactor>1.5</MeleeDamageFactor>
+		  <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartGhoulBase">
+    <defName>OE_GhoulImplantSkeleton</defName>
+    <label>ghoul skeleton implant - Scarab</label>
+    <description>Obsidia cultist skeleton implant for ghouls replaces all the bones in the body with stronger ones. This makes the ghoul unstoppable and more effective in melee combat.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this implant.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallGhoulImplantSkeleton</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/CAC/OE_GhoulSkeleton</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Empyrium>15</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+      <OE_Syntherius>5</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>10.0</Mass>
+	  <MarketValue>875</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallGhoulImplantSkeleton</defName>
+    <label>install ghoul skeleton implant - Scarab</label>
+    <description>Install a ghoul skeleton implant - Scarab.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_GhoulImplantSkeleton</ThingDef>
+      <HediffDef>OE_GhoulImplantSkeleton</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing ghoul skeleton implant - Scarab.</jobString>
+	<uiIconThing>OE_GhoulImplantSkeleton</uiIconThing>
+	<skillRequirements Inherit="false" />
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
+	<mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_GhoulImplantSkeleton</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_GhoulImplantSkeleton</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_GhoulImplantSkeleton</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveGhoulImplantSkeleton</defName>
+    <label>remove ghoul skeleton implant - Scarab</label>
+    <description>Remove a ghoul skeleton implant - Scarab.</description>
+    <jobString>Removing ghoul skeleton implant - Scarab.</jobString>
+    <removesHediff>OE_GhoulImplantSkeleton</removesHediff>
+	<uiIconThing>OE_GhoulImplantSkeleton</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Ghoul Head Prosthetic ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>CAC_GhoulProstheticHelmet</defName>
+    <label>ghoul skull prosthetic - Crusader's Helmet</label>
+    <labelNoun>a ghoul skull prosthetic - Crusader's Helmet</labelNoun>
+    <description>An installed ghoul skull prosthetic - Crusader's Helmet.</description>
+    <descriptionHyperlinks><ThingDef>CAC_GhoulProstheticHelmet</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>CAC_GhoulProstheticHelmet</spawnThingOnRemoved>
+	<defaultLabelColor>(0.74, 0.20, 0.23)</defaultLabelColor>
+	<stages>
+	  <li>
+        <statOffsets>
+		  <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.75</ArmorRating_Heat>
+		  <MeleeHitChance>4</MeleeHitChance>
+		  <MeleeDodgeChance>4</MeleeDodgeChance>
+        </statOffsets>
+	  </li>
+	</stages>
+	<defaultInstallPart>Head</defaultInstallPart>
+	<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_Head</workerClass>
+        <texPaths>
+          <li>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulHelmet/CACGhoulHelmet</li>
+        </texPaths>
+        <baseLayer>265</baseLayer>
+        <texSeed>1</texSeed>
+		<drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+          <childScale>0.7</childScale>
+          <bodyTypeScales>
+            <Thin>0.9</Thin>
+          </bodyTypeScales>
+          <defaultData>
+            <layer>265</layer>
+          </defaultData>
+          <dataNorth>
+            <rotationOffset>0</rotationOffset>
+            <flip>true</flip>
+          </dataNorth>
+          <dataEast>
+            <rotationOffset>0</rotationOffset>
+          </dataEast>
+          <dataSouth>
+            <rotationOffset>0</rotationOffset>
+          </dataSouth>
+          <dataWest>
+            <rotationOffset>0</rotationOffset>
+			<flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartGhoulBase">
+    <defName>CAC_GhoulProstheticHelmet</defName>
+    <label>ghoul skull prosthetic - Crusader's Helmet</label>
+    <description>Obsidia cultist skull prosthetic for ghouls integrates brutally into the cranium and neural core, enhancing close-combat potential and significantly reinforcing the head against incoming damage.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this prosthetic.</description>
+    <descriptionHyperlinks><RecipeDef>CAC_InstallGhoulProstheticHelmet</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulHelmet/CACGhoulHelmet</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+    <costList>
+      <OE_Empyrium>20</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+	<butcherProducts>
+	  <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+      <OE_Syntherius>5</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>1055</MarketValue>
+	  <Mass>7.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>CAC_InstallGhoulProstheticHelmet</defName>
+    <label>install ghoul skull prosthetic - Crusader's Helmet</label>
+    <description>Install a ghoul skull prosthetic - Crusader's Helmet.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CAC_GhoulProstheticHelmet</ThingDef>
+      <HediffDef>CAC_GhoulProstheticHelmet</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing ghoul skull prosthetic - Crusader's Helmet.</jobString>
+	<uiIconThing>CAC_GhoulProstheticHelmet</uiIconThing>
+	<skillRequirements Inherit="false" />
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
+	<mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_GhoulProstheticHelmet</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_GhoulProstheticHelmet</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Head</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CAC_GhoulProstheticHelmet</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>CAC_RemoveGhoulProstheticHelmet</defName>
+    <label>remove ghoul skull prosthetic - Crusader's Helmet</label>
+    <description>Remove a ghoul skull prosthetic - Crusader's Helmet.</description>
+    <jobString>Removing ghoul skull prosthetic - Crusader's Helmet.</jobString>
+    <removesHediff>CAC_GhoulProstheticHelmet</removesHediff>
+	<uiIconThing>CAC_GhoulProstheticHelmet</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Ghoul Shoulder Prosthetic ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>CAC_GhoulProstheticClaws</defName>
+    <label>ghoul arm prosthetic - Crusader's Claws</label>
+    <labelNoun>a ghoul arm prosthetic - Crusader's Claws</labelNoun>
+    <description>An installed ghoul arm prosthetic - Crusader's Claws.</description>
+    <descriptionHyperlinks><ThingDef>CAC_GhoulProstheticClaws</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>CAC_GhoulProstheticClaws</spawnThingOnRemoved>
+	<defaultLabelColor>(0.74, 0.20, 0.23)</defaultLabelColor>
+	<stages>
+	  <li>
+        <statOffsets>
+		  <MoveSpeed>-0.1</MoveSpeed>
+        </statOffsets>
+	  </li>
+	</stages>
+	<defaultInstallPart>Shoulder</defaultInstallPart>
+	<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPaths>
+          <li>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulClaws/CACGhoulClaws</li>
+        </texPaths>
+        <baseLayer>66</baseLayer>
+        <texSeed>1</texSeed>
+		<drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+		  <scale>0.45</scale>
+          <childScale>0.25</childScale>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+          <dataNorth>
+            <rotationOffset>25</rotationOffset>
+			<offset>(-0.05, 0, -0.2)</offset>
+            <layer>0</layer>
+			<flip>true</flip>
+          </dataNorth>
+          <dataEast>
+            <rotationOffset>35</rotationOffset>
+			<offset>(0, 0, -0.35)</offset>
+          </dataEast>
+          <dataSouth>
+            <rotationOffset>25</rotationOffset>
+			<offset>(-0.05, 0, -0.3)</offset>
+          </dataSouth>
+          <dataWest>
+            <rotationOffset>35</rotationOffset>
+			<offset>(0, 0, -0.35)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>claws</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>35</power>
+			<armorPenetration>0.6</armorPenetration>
+            <cooldownTime>2.35</cooldownTime>
+			<extraMeleeDamages>
+			  <li>
+			    <def>Scratch</def>
+				<amount>5</amount>
+			  </li>
+			</extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartGhoulBase">
+    <defName>CAC_GhoulProstheticClaws</defName>
+    <label>ghoul arm prosthetic - Crusader's Claws</label>
+    <description>Obsidia cultist arm prosthetic for ghouls replaces part of the arm with a massive mechanized combat claw, enabling the wearer to deliver devastating melee strikes and overwhelm most organic opponents.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this prosthetic.</description>
+    <descriptionHyperlinks><RecipeDef>CAC_InstallGhoulProstheticClaws</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulClaws/CACGhoulClaws</texPath>
+	  <drawSize>0.9</drawSize>
+    </graphicData>
+    <costList>
+      <OE_Empyrium>30</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+	<butcherProducts>
+	  <OE_Empyrium>15</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+      <OE_Syntherius>5</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>1055</MarketValue>
+	  <Mass>9.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>CAC_InstallGhoulProstheticClaws</defName>
+    <label>install ghoul arm prosthetic - Crusader's Claws</label>
+    <description>Install a ghoul arm prosthetic - Crusader's Claws.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CAC_GhoulProstheticClaws</ThingDef>
+      <HediffDef>CAC_GhoulProstheticClaws</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing ghoul arm prosthetic - Crusader's Claws.</jobString>
+	<uiIconThing>CAC_GhoulProstheticClaws</uiIconThing>
+	<skillRequirements Inherit="false" />
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
+	<mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_GhoulProstheticClaws</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_GhoulProstheticClaws</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CAC_GhoulProstheticClaws</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>CAC_RemoveGhoulProstheticClaws</defName>
+    <label>remove ghoul arm prosthetic - Crusader's Claws</label>
+    <description>Remove a ghoul arm prosthetic - Crusader's Claws.</description>
+    <jobString>Removing ghoul arm prosthetic - Crusader's Claws.</jobString>
+    <removesHediff>CAC_GhoulProstheticClaws</removesHediff>
+	<uiIconThing>CAC_GhoulProstheticClaws</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Ghoul Torso Prosthetic ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>CAC_GhoulProstheticChamber</defName>
+    <label>ghoul body prosthetic - Crusader's Drive</label>
+    <labelNoun>a ghoul body prosthetic - Crusader's Drive</labelNoun>
+    <description>An installed ghoul body prosthetic - Crusader's Drive.</description>
+    <descriptionHyperlinks><ThingDef>CAC_GhoulProstheticChamber</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>CAC_GhoulProstheticChamber</spawnThingOnRemoved>
+	<defaultLabelColor>(0.74, 0.20, 0.23)</defaultLabelColor>
+	<stages>
+	  <li>
+        <statOffsets>
+		  <MoveSpeed>-0.15</MoveSpeed>
+        </statOffsets>
+	  </li>
+	</stages>
+	<abilities>
+	  <li>OE_Ghoul_KineticDrive</li>
+	  <li>OE_Ghoul_BastionDrive</li>
+    </abilities>
+	<defaultInstallPart>Torso</defaultInstallPart>
+	<renderNodeProperties>
+      <!--=== Hulk ===-->
+	  <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <bodyTypeGraphicPaths>
+          <Hulk>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</Hulk>
+        </bodyTypeGraphicPaths>
+        <baseLayer>66</baseLayer>
+		<drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+		  <scale>0.9</scale>
+          <defaultData>
+            <layer>65</layer>
+          </defaultData>
+          <dataNorth>
+			<offset>(0.0, 0, 0.05)</offset>
+          </dataNorth>
+          <dataEast>
+			<rotationOffset>10</rotationOffset>
+			<offset>(-0.45, 0, 0.25)</offset>
+			<layer>25</layer>
+          </dataEast>
+          <dataSouth>
+			<offset>(0, -1, 0.32)</offset>
+          </dataSouth>
+          <dataWest>
+			<rotationOffset>-10</rotationOffset>
+			<offset>(0.45, 0, 0.25)</offset>
+			<layer>25</layer>
+          </dataWest>
+        </drawData>
+      </li>
+	  <!--=== Fat ===-->
+	  <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <bodyTypeGraphicPaths>
+          <Fat>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</Fat>
+        </bodyTypeGraphicPaths>
+        <baseLayer>66</baseLayer>
+		<drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+		  <scale>0.8</scale>
+          <defaultData>
+            <layer>65</layer>
+          </defaultData>
+          <dataNorth>
+			<offset>(0.0, 0, 0.1)</offset>
+          </dataNorth>
+          <dataEast>
+			<rotationOffset>5</rotationOffset>
+			<offset>(-0.43, 0, 0.15)</offset>
+			<layer>25</layer>
+          </dataEast>
+          <dataSouth>
+			<offset>(0, -1, 0.25)</offset>
+          </dataSouth>
+          <dataWest>
+			<rotationOffset>-5</rotationOffset>
+			<offset>(0.43, 0, 0.15)</offset>
+			<layer>25</layer>
+          </dataWest>
+        </drawData>
+      </li>
+	  <!--=== Thin ===-->
+	  <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <bodyTypeGraphicPaths>
+          <Thin>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</Thin>
+        </bodyTypeGraphicPaths>
+        <baseLayer>66</baseLayer>
+		<drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+		  <scale>0.75</scale>
+          <defaultData>
+            <layer>65</layer>
+          </defaultData>
+          <dataNorth>
+			<offset>(0.0, 0, 0.1)</offset>
+          </dataNorth>
+          <dataEast>
+			<rotationOffset>-5</rotationOffset>
+			<offset>(-0.35, 0, 0.15)</offset>
+			<layer>25</layer>
+          </dataEast>
+          <dataSouth>
+			<offset>(0, -1, 0.2)</offset>
+          </dataSouth>
+          <dataWest>
+			<rotationOffset>5</rotationOffset>
+			<offset>(0.35, 0, 0.15)</offset>
+			<layer>25</layer>
+          </dataWest>
+        </drawData>
+      </li>
+	  <!--=== Female ===-->
+	  <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <bodyTypeGraphicPaths>
+          <Female>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</Female>
+        </bodyTypeGraphicPaths>
+        <baseLayer>66</baseLayer>
+		<drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+		  <scale>0.8</scale>
+          <defaultData>
+            <layer>65</layer>
+          </defaultData>
+          <dataNorth>
+			<offset>(0.0, 0, 0.05)</offset>
+          </dataNorth>
+          <dataEast>
+			<rotationOffset>-10</rotationOffset>
+			<offset>(-0.35, 0, 0.15)</offset>
+			<layer>25</layer>
+          </dataEast>
+          <dataSouth>
+			<offset>(0, -1, 0.1)</offset>
+          </dataSouth>
+          <dataWest>
+			<rotationOffset>10</rotationOffset>
+			<offset>(0.35, 0, 0.15)</offset>
+			<layer>25</layer>
+          </dataWest>
+        </drawData>
+      </li>
+	  <!--=== Male ===-->
+	  <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <bodyTypeGraphicPaths>
+          <Male>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</Male>
+		  <Child>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</Child>
+		  <Baby>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</Baby>
+        </bodyTypeGraphicPaths>
+        <baseLayer>66</baseLayer>
+		<drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+		  <childScale>0.5</childScale>
+		  <scale>1.0</scale>
+          <defaultData>
+            <layer>65</layer>
+          </defaultData>
+          <dataNorth>
+			<offset>(0.0, 0, 0.2)</offset>
+          </dataNorth>
+          <dataEast>
+			<rotationOffset>-5</rotationOffset>
+			<offset>(-0.45, 0, 0.2)</offset>
+			<layer>25</layer>
+          </dataEast>
+          <dataSouth>
+			<offset>(0, -1, 0.30)</offset>
+          </dataSouth>
+          <dataWest>
+			<rotationOffset>5</rotationOffset>
+			<offset>(0.45, 0, 0.2)</offset>
+			<layer>25</layer>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartGhoulBase">
+    <defName>CAC_GhoulProstheticChamber</defName>
+    <label>ghoul body prosthetic - Crusader's Drive</label>
+    <description>Obsidia cultist body prosthetic for ghouls integrates a system of pumps and chemical reservoirs into the torso via spinal implantation, enabling the user to deploy two distinct chemical enhancers - one that accelerates movement and boosts melee damage, and another that reduces incoming damage and lowers susceptibility to fire.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this prosthetic.</description>
+    <descriptionHyperlinks><RecipeDef>CAC_InstallGhoulProstheticChamber</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/GhoulProsthetic/GhoulChamber/CACGhoulChamber</texPath>
+	  <drawSize>0.9</drawSize>
+    </graphicData>
+    <costList>
+      <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <Neutroamine>20</Neutroamine>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+	<butcherProducts>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <Neutroamine>5</Neutroamine>
+      <OE_Syntherius>5</OE_Syntherius>
+	  <OE_CultistKit>1</OE_CultistKit>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+	  <Mass>9.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>CAC_InstallGhoulProstheticChamber</defName>
+    <label>install ghoul body prosthetic - Crusader's Drive</label>
+    <description>Install a ghoul body prosthetic - Crusader's Drive.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CAC_GhoulProstheticChamber</ThingDef>
+      <HediffDef>CAC_GhoulProstheticChamber</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing ghoul body prosthetic - Crusader's Drive.</jobString>
+	<uiIconThing>CAC_GhoulProstheticChamber</uiIconThing>
+	<skillRequirements Inherit="false" />
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
+	<mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_GhoulProstheticChamber</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_GhoulProstheticChamber</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CAC_GhoulProstheticChamber</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>CAC_RemoveGhoulProstheticChamber</defName>
+    <label>remove ghoul body prosthetic - Crusader's Drive</label>
+    <description>Remove a ghoul body prosthetic - Crusader's Drive.</description>
+    <jobString>Removing ghoul body prosthetic - Crusader's Drive.</jobString>
+    <removesHediff>CAC_GhoulProstheticChamber</removesHediff>
+	<uiIconThing>CAC_GhoulProstheticChamber</uiIconThing>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Elder Direwolf Powers ====================-->
+  <TrainableDef>
+    <defName>OE_ElderPower_Direwolf</defName>
+    <label>elder direwolf power</label>
+    <description>Unleash the power of the elder direwolf, empowering your strikes and lending supernatural speed to your movements.</description>
+    <listPriority>0</listPriority>
+    <difficulty>200</difficulty>
+    <steps>3</steps>
+    <specialTrainable>true</specialTrainable>
+    <enablesAbility>OE_ElderPower_Direwolf</enablesAbility>
+  </TrainableDef>
+
+<!--=============== Elder Raptor Powers ====================-->
+  <TrainableDef>
+    <defName>OE_ElderPower_Raptor</defName>
+    <label>elder raptor power</label>
+    <description>Unleash the power of the elder raptor, gaining deadly precision, blinding speed, and brutal efficiency in close combat.</description>
+    <listPriority>0</listPriority>
+    <difficulty>200</difficulty>
+    <steps>3</steps>
+    <specialTrainable>true</specialTrainable>
+    <enablesAbility>OE_ElderPower_Raptor</enablesAbility>
+  </TrainableDef>
+
+<!--=============== Elder Ogren Powers ====================-->
+  <TrainableDef>
+    <defName>OE_ElderPower_Ogren</defName>
+    <label>elder ogren power</label>
+    <description>Unleash the power of the elder ogren, empowering each blow and hardening flesh like stone.</description>
+    <listPriority>0</listPriority>
+    <difficulty>200</difficulty>
+    <steps>3</steps>
+    <specialTrainable>true</specialTrainable>
+    <enablesAbility>OE_ElderPower_Ogren</enablesAbility>
+  </TrainableDef>
+
+<!--=============== Elder Tionant Powers ====================-->
+  <TrainableDef>
+    <defName>OE_ElderPower_Tionant</defName>
+    <label>elder tionant power</label>
+    <description>Unleash the power of the elder tionant, amplifying your strength and accelerating the mending of wounds.</description>
+    <listPriority>0</listPriority>
+    <difficulty>200</difficulty>
+    <steps>3</steps>
+    <specialTrainable>true</specialTrainable>
+    <enablesAbility>OE_ElderPower_Tionant</enablesAbility>
+  </TrainableDef>
+
+<!--=============== Elder Provoke ====================-->
+  <TrainableDef>
+    <defName>OE_ElderProvoke</defName>
+    <label>elder provoke</label>
+    <description>A thunderous roar compels nearby creatures to turn their focus toward the source, drawn by an overwhelming, primal force.</description>
+    <listPriority>0</listPriority>
+    <difficulty>200</difficulty>
+    <steps>2</steps>
+    <specialTrainable>true</specialTrainable>
+    <enablesAbility>OE_ElderProvoke</enablesAbility>
+  </TrainableDef>
+
+<!--=============== Elder Raptor Powers ====================-->
+  <TrainableDef>
+    <defName>OE_ElderJump</defName>
+    <label>elder jump</label>
+    <description>Jumps towards its target.</description>
+    <listPriority>0</listPriority>
+    <difficulty>200</difficulty>
+    <steps>2</steps>
+    <specialTrainable>true</specialTrainable>
+    <enablesAbility>OE_ElderJump</enablesAbility>
+  </TrainableDef>
+
+</Defs>

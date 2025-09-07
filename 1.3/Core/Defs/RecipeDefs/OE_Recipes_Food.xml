@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Jumyline ====================-->
+  <RecipeDef>
+    <defName>OE_Cook_JumylinePack</defName>
+    <label>cook jumyline candies x5</label>
+    <description>Cook 5 jumyline candies from jumy berries and chocolate.</description>
+    <jobString>Cooking 5 jumyline candies.</jobString>
+	<workAmount>250</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Jumyline_Candies>5</OE_Jumyline_Candies>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Cooking>6</Cooking>
+	</skillRequirements>
+    <workSkill>Cooking</workSkill>
+	<researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Cook_JumylineBulk</defName>
+    <label>cook jumyline candies x10</label>
+    <description>Cook 10 jumyline candies from jumy berries and chocolate.</description>
+    <jobString>Cooking 10 jumyline candies.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Jumyline_Candies>10</OE_Jumyline_Candies>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+    </recipeUsers>
+    <skillRequirements>
+	  <Cooking>6</Cooking>
+	</skillRequirements>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="OCCArmorMod">
+	<defName>OCC_Armor_M_Mechanitor</defName>
+    <label>OCC Paladin Armor(Overseer)</label>
+    <description>Heavy power armor, excellent protects the owner with little mobility restriction. Designed and modified for use by OCC Paladins.\n\nModified with the addition of a Mechanoids Control pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OCC/Mechanitor/OCCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3305</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechFormingSpeed>0.75</MechFormingSpeed>
+	  <MechRepairSpeed>0.75</MechRepairSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OCC_Armor_M>1</OCC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OCC/Mechanitor/OCCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OCCPaladin_Mechanitor</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

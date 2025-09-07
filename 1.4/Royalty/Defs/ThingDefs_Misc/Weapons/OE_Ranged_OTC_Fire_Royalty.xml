@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Pistol ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCPistolBase">
+    <defName>OTC_Pistol_P_Fire</defName>
+    <label>Persona Celestial Prototype(Fire)</label>
+    <description>Persona Experimental Pistol used by OTC Engineers. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Pistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCLightGunP_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1265</MarketValue>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_P_M_Fire</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_Pistol_M_Fire>1</OTC_Pistol_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC - SMG ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCSMGBase">
+    <defName>OTC_SMG_P_Fire</defName>
+    <label>Persona Equalizer Prototype(Fire)</label>
+    <description>Persona Experimental SMG used by OTC Engineers. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/SMG_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCBaseGunP_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1695</MarketValue>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_SMG_M_Fire</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.50</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_SMG_M_Fire>1</OTC_SMG_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC - Shotgun ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCShotgunBase">
+    <defName>OTC_Shotgun_P_Fire</defName>
+    <label>Persona Quasar Prototype(Fire)</label>
+    <description>Persona Experimental Shotgun used by OTC Engineers. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCShortGunP_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1710</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_S_M_Fire</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>10.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_Shotgun_M_Fire>1</OTC_Shotgun_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC - GrenadeLauncher ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCGrenadeLauncherBase">
+    <defName>OTC_GrenadeLauncher_P_Fire</defName>
+    <label>Persona Meteor Prototype(Fire)</label>
+    <description>Persona Experimental Grenade Launcher used by OTC Engineers. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/GrenadeLauncher_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCHeavyGunM_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2520</MarketValue>
+	  <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_GL_M_Fire</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+        <range>20.9</range>
+		<forcedMissRadius>1.9</forcedMissRadius>
+        <noiseRadius>4</noiseRadius>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_GrenadeLauncher_M_Fire>1</OTC_GrenadeLauncher_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cross ====================-->
+<!--=============== OTC - SniperRifle ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCSniperRifleBase">
+    <defName>OTC_SniperRifle_P_Fire</defName>
+    <label>Persona Nova Prototype(Fire)</label>
+    <description>Persona Experimental Sniper Rifle used by OTC Engineers. Balanced weapon with Fire charges.\n\nIt's remanufactured weapon based on OMC Sniper Rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/SniperRifle_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCSniperGunM_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2990</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_SR_M_Fire</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>40.9</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.50</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_SniperRifle_M_Fire>1</OTC_SniperRifle_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC - MultiCannon ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCMultiCannonBase">
+    <defName>OTC_MultiCannon_P_Fire</defName>
+    <label>Persona Pulsar Prototype(Fire)</label>
+    <description>Persona Experimental Multi-Cannon used by OTC Engineers. Balanced weapon with Fire charges.\n\nIt's remanufactured weapon based on OCC Multi-Cannon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/MultiCannon_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCHeavyGunM_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2520</MarketValue>
+	  <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_MC_M_Fire</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_MultiCannon_M_Fire>1</OTC_MultiCannon_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC - Bow ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCBowBase">
+    <defName>OTC_Bow_P_Fire</defName>
+    <label>Persona Nimbus Prototype(Fire)</label>
+    <description>Persona Experimental Bow used by OTC Engineers. Balanced weapon with Fire charges.\n\nIt's remanufactured weapon based on OEC Bow.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Bow_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCSniperGunM_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2815</MarketValue>
+	  <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_B_M_Fire</defaultProjectile>
+        <forcedMissRadius>0.3</forcedMissRadius>
+		<warmupTime>1.5</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>26.9</range>
+        <soundCast>Bow_Large</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_Bow_M_Fire>1</OTC_Bow_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Enforcer ====================-->
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OMG_Enforcer</defName>
+    <label>mercenary enforcer</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+	  <li>OMGMercenary</li>
+	  <li>OMGGrenadeBelt</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OMGWings</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>OMGMelee</li>
+	  <li>OMGRanged</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>195</combatPower>
+	<defaultFactionType>ObsidiaMercenaryGangs</defaultFactionType>
+  </PawnKindDef>
+
+<!--=============== OMG Treasure Hound ====================-->
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OMG_TreasureHound</defName>
+    <label>mercenary treasure hound</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li MayRequire="Ludeon.RimWorld.Royalty">OE_Title_3_Sponsor</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OE_Title_4_VIP</li>
+    </titleSelectOne>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+	  <li>OMGMercenary</li>
+	  <li>OMGGrenadeBelt</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OMGWings</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OETreasureHound</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~20000</weaponMoney>
+	<weaponTags>
+      <li>OMGMelee</li>
+	  <li>OMGRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>245</combatPower>
+	<defaultFactionType>ObsidiaMercenaryGangs</defaultFactionType>
+  </PawnKindDef>
+
+<!--=============== OMG Kingpin ====================-->
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OMG_Kingpin</defName>
+    <label>kingpin</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+	  <li>OMGMercenary</li>
+	  <li>OMGGrenadeBelt</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OMGWings</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>OMGMelee</li>
+	  <li>OMGRanged</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>245</combatPower>
+	<defaultFactionType>ObsidiaMercenaryGangs</defaultFactionType>
+  </PawnKindDef>
+
+<!--=============== OMG Dominator ====================-->
+  <PawnKindDef ParentName="OMGKindBaseMechDominator">
+    <defName>OMG_Mech_Dominator</defName>
+    <label>Mercenary Dominator</label>
+    <race>OE_Mech_OMG_Dominator</race>
+	<defaultFactionType>ObsidiaMercenaryGangs</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+	<minGenerationAge>1</minGenerationAge>
+	<maxGenerationAge>98</maxGenerationAge>
+  </PawnKindDef>
+
+</Defs>

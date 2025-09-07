@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Cosmol ====================-->
+<OE_Cosmol.label>cosmol</OE_Cosmol.label>
+<OE_Cosmol.description>A special immunostimulant used to enhance immunity and treat various diseases. Obsidia technology, the drug is non-addictive and has no after-effects.</OE_Cosmol.description>
+<OE_Cosmol.ingestible.ingestCommandString>Take {0}</OE_Cosmol.ingestible.ingestCommandString>
+<OE_Cosmol.ingestible.ingestReportString>Taking {0}</OE_Cosmol.ingestible.ingestReportString>
+
+<!--=============== Slugol ====================-->
+<OE_Slugol.label>slugol</OE_Slugol.label>
+<OE_Slugol.description>A unique medical specialty, a potent drug based on Luciferium, is used to treat serious wounds and diseases. Obsidia technology, the drug is non-addictive and has no after-effects.</OE_Slugol.description>
+<OE_Slugol.ingestible.ingestCommandString>Take {0}</OE_Slugol.ingestible.ingestCommandString>
+<OE_Slugol.ingestible.ingestReportString>Taking {0}</OE_Slugol.ingestible.ingestReportString>
+
+<!--=============== Sevide ====================-->
+<OE_Sevide.label>sevide</OE_Sevide.label>
+<OE_Sevide.description>Deadly poison, used by assassins or as a means of execution. Obsidia technology gradually weakens the body, with a minor lethal outcome.</OE_Sevide.description>
+<OE_Sevide.ingestible.ingestCommandString>Take deadly {0}</OE_Sevide.ingestible.ingestCommandString>
+<OE_Sevide.ingestible.ingestReportString>Taking deadly {0}</OE_Sevide.ingestible.ingestReportString>
+
+</LanguageData>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Base - Obsidia Can Meal ====================-->
+  <ThingDef Name="ObsidiaCanMealBase" ParentName="MealBaseIngredientless" Abstract="True">
+    <description>A true culinary masterpiece, this dish captivates the senses and brings pure joy to the soul.</description>
+    <tradeability>Buyable</tradeability>
+	<tradeTags>
+      <li>OEFood</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+	<statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+	  <MarketValue>50</MarketValue>
+      <WorkToMake>850</WorkToMake>
+      <Nutrition>1.25</Nutrition>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>OE_AteObsidiaCanMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ObsidiaCanMealBase">
+    <defName>OE_CanMeal</defName>
+    <label>obsidia can meal</label>
+    <graphicData>
+      <texPath>Things/Item/Meal/CanMeal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+<!--=============== Vegetarian ====================-->
+  <ThingDef ParentName="ObsidiaCanMealBase">
+    <defName>OE_CanMeal_Veg</defName>
+    <label>vegetarian obsidia can meal</label>
+    <graphicData>
+      <texPath>Things/Item/Meal/CanMealVeg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+<!--=============== Carnivore ====================-->
+  <ThingDef ParentName="ObsidiaCanMealBase">
+    <defName>OE_CanMeal_Meat</defName>
+    <label>carnivore obsidia can meal</label>
+    <graphicData>
+      <texPath>Things/Item/Meal/CanMealMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+    <li Class="CompProperties_Ingredients">
+      <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+    </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ate Obsidia Can Meal ====================-->
+  <ThoughtDef>
+    <defName>OE_AteObsidiaCanMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate obsidia can meal</label>
+        <description>That obsidia can meal was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+    <replaceThoughts>
+      <li>AteLavishMeal</li>
+    </replaceThoughts>
+  </ThoughtDef>
+
+</Defs>

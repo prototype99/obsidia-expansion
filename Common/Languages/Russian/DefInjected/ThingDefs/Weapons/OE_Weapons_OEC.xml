@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OEC - Knife ====================-->
+<OEC_Knife.label>Осколок</OEC_Knife.label>
+<OEC_Knife.description>Стандартный пси Нож используемый Охотниками OEC.</OEC_Knife.description>
+
+<OEC_Knife.tools.handle.label>рукоять</OEC_Knife.tools.handle.label>
+<OEC_Knife.tools.blade.label>клинок</OEC_Knife.tools.blade.label>
+<OEC_Knife.tools.point.label>остриё</OEC_Knife.tools.point.label>
+
+<OEC_Knife_M.label>Величественный Осколок</OEC_Knife_M.label>
+<OEC_Knife_M.description>Величественный пси Нож используемый Инквизиторами OEC.</OEC_Knife_M.description>
+
+<OEC_Knife_M.tools.handle.label>рукоять</OEC_Knife_M.tools.handle.label>
+<OEC_Knife_M.tools.blade.label>клинок</OEC_Knife_M.tools.blade.label>
+<OEC_Knife_M.tools.point.label>остриё</OEC_Knife_M.tools.point.label>
+
+<OEC_Knife_P.label>Синхро Величественный Осколок</OEC_Knife_P.label>
+<OEC_Knife_P.description>Синхро величественный пси Нож используемый Инквизиторами OEC.</OEC_Knife_P.description>
+
+<OEC_Knife_P.tools.handle.label>рукоять</OEC_Knife_P.tools.handle.label>
+<OEC_Knife_P.tools.blade.label>клинок</OEC_Knife_P.tools.blade.label>
+<OEC_Knife_P.tools.point.label>остриё</OEC_Knife_P.tools.point.label>
+
+<!--=============== OEC - Katana ====================-->
+<Wave_OEC_K.label>Волна из жнеца</Wave_OEC_K.label>
+<Wave_OEC_K_M.label>Волна из величественного жнеца</Wave_OEC_K_M.label>
+
+<OEC_Katana.label>Жнец</OEC_Katana.label>
+<OEC_Katana.verbs.Verb_Shoot.label>Жнец</OEC_Katana.verbs.Verb_Shoot.label>
+<OEC_Katana.description>Стандартная пси Катана используемая Охотниками OEC.</OEC_Katana.description>
+
+<OEC_Katana.tools.handle.label>рукоять</OEC_Katana.tools.handle.label>
+<OEC_Katana.tools.point.label>остриё</OEC_Katana.tools.point.label>
+<OEC_Katana.tools.edge.label>лезвие</OEC_Katana.tools.edge.label>
+
+<OEC_Katana_M.label>Величественный Жнец</OEC_Katana_M.label>
+<OEC_Katana_M.verbs.Verb_Shoot.label>Величественный Жнец</OEC_Katana_M.verbs.Verb_Shoot.label>
+<OEC_Katana_M.description>Величественная пси Катана используемая Инквизиторами OEC.</OEC_Katana_M.description>
+
+<OEC_Katana_M.tools.handle.label>рукоять</OEC_Katana_M.tools.handle.label>
+<OEC_Katana_M.tools.point.label>остриё</OEC_Katana_M.tools.point.label>
+<OEC_Katana_M.tools.edge.label>лезвие</OEC_Katana_M.tools.edge.label>
+
+<OEC_Katana_P.label>Синхро Величественный Жнец</OEC_Katana_P.label>
+<OEC_Katana_P.verbs.Verb_Shoot.label>Синхро Величественный Жнец</OEC_Katana_P.verbs.Verb_Shoot.label>
+<OEC_Katana_P.description>Синхро величественная пси Катана используемая Инквизиторами OEC.</OEC_Katana_P.description>
+
+<OEC_Katana_P.tools.handle.label>рукоять</OEC_Katana_P.tools.handle.label>
+<OEC_Katana_P.tools.point.label>остриё</OEC_Katana_P.tools.point.label>
+<OEC_Katana_P.tools.edge.label>лезвие</OEC_Katana_P.tools.edge.label>
+
+<!--=============== OEC - Elemental Katana ====================-->
+<!--=============== Acid ====================-->
+<Wave_OEC_K_Acid.label>Кислотный-волна из жнеца</Wave_OEC_K_Acid.label>
+<Wave_OEC_K_M_Acid.label>Кислотный-волна из величественного жнеца</Wave_OEC_K_M_Acid.label>
+
+<OEC_Katana_Acid.label>Жнец(Кислота)</OEC_Katana_Acid.label>
+<OEC_Katana_Acid.verbs.Verb_Shoot.label>Жнец(Кислота)</OEC_Katana_Acid.verbs.Verb_Shoot.label>
+<OEC_Katana_Acid.description>Стандартная пси Катана используемая Охотниками OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Кислотным уроном.</OEC_Katana_Acid.description>
+
+<OEC_Katana_Acid.tools.handle.label>рукоять</OEC_Katana_Acid.tools.handle.label>
+<OEC_Katana_Acid.tools.point.label>остриё</OEC_Katana_Acid.tools.point.label>
+<OEC_Katana_Acid.tools.edge.label>лезвие</OEC_Katana_Acid.tools.edge.label>
+
+<OEC_Katana_M_Acid.label>Величественный Жнец(Кислота)</OEC_Katana_M_Acid.label>
+<OEC_Katana_M_Acid.verbs.Verb_Shoot.label>Величественный Жнец(Кислота)</OEC_Katana_M_Acid.verbs.Verb_Shoot.label>
+<OEC_Katana_M_Acid.description>Величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Кислотным уроном.</OEC_Katana_M_Acid.description>
+
+<OEC_Katana_M_Acid.tools.handle.label>рукоять</OEC_Katana_M_Acid.tools.handle.label>
+<OEC_Katana_M_Acid.tools.point.label>остриё</OEC_Katana_M_Acid.tools.point.label>
+<OEC_Katana_M_Acid.tools.edge.label>лезвие</OEC_Katana_M_Acid.tools.edge.label>
+
+<OEC_Katana_P_Acid.label>Синхро Величественный Жнец(Кислота)</OEC_Katana_P_Acid.label>
+<OEC_Katana_P_Acid.verbs.Verb_Shoot.label>Синхро Величественный Жнец(Кислота)</OEC_Katana_P_Acid.verbs.Verb_Shoot.label>
+<OEC_Katana_P_Acid.description>Синхро величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Кислотным уроном.</OEC_Katana_P_Acid.description>
+
+<OEC_Katana_P_Acid.tools.handle.label>рукоять</OEC_Katana_P_Acid.tools.handle.label>
+<OEC_Katana_P_Acid.tools.point.label>остриё</OEC_Katana_P_Acid.tools.point.label>
+<OEC_Katana_P_Acid.tools.edge.label>лезвие</OEC_Katana_P_Acid.tools.edge.label>
+<!--=============== Cryo ====================-->
+<Wave_OEC_K_Cryo.label>Крио-волна из жнеца</Wave_OEC_K_Cryo.label>
+<Wave_OEC_K_M_Cryo.label>Крио-волна из величественного жнеца</Wave_OEC_K_M_Cryo.label>
+
+<OEC_Katana_Cryo.label>Жнец(Крио)</OEC_Katana_Cryo.label>
+<OEC_Katana_Cryo.verbs.Verb_Shoot.label>Жнец(Крио)</OEC_Katana_Cryo.verbs.Verb_Shoot.label>
+<OEC_Katana_Cryo.description>Стандартная пси Катана используемая Охотниками OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Крио уроном.</OEC_Katana_Cryo.description>
+
+<OEC_Katana_Cryo.tools.handle.label>рукоять</OEC_Katana_Cryo.tools.handle.label>
+<OEC_Katana_Cryo.tools.point.label>остриё</OEC_Katana_Cryo.tools.point.label>
+<OEC_Katana_Cryo.tools.edge.label>лезвие</OEC_Katana_Cryo.tools.edge.label>
+
+<OEC_Katana_M_Cryo.label>Величественный Жнец(Крио)</OEC_Katana_M_Cryo.label>
+<OEC_Katana_M_Cryo.verbs.Verb_Shoot.label>Величественный Жнец(Крио)</OEC_Katana_M_Cryo.verbs.Verb_Shoot.label>
+<OEC_Katana_M_Cryo.description>Величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Крио уроном.</OEC_Katana_M_Cryo.description>
+
+<OEC_Katana_M_Cryo.tools.handle.label>рукоять</OEC_Katana_M_Cryo.tools.handle.label>
+<OEC_Katana_M_Cryo.tools.point.label>остриё</OEC_Katana_M_Cryo.tools.point.label>
+<OEC_Katana_M_Cryo.tools.edge.label>лезвие</OEC_Katana_M_Cryo.tools.edge.label>
+
+<OEC_Katana_P_Cryo.label>Синхро Величественный Жнец(Крио)</OEC_Katana_P_Cryo.label>
+<OEC_Katana_P_Cryo.verbs.Verb_Shoot.label>Синхро Величественный Жнец(Крио)</OEC_Katana_P_Cryo.verbs.Verb_Shoot.label>
+<OEC_Katana_P_Cryo.description>Синхро величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Крио уроном.</OEC_Katana_P_Cryo.description>
+
+<OEC_Katana_P_Cryo.tools.handle.label>рукоять</OEC_Katana_P_Cryo.tools.handle.label>
+<OEC_Katana_P_Cryo.tools.point.label>остриё</OEC_Katana_P_Cryo.tools.point.label>
+<OEC_Katana_P_Cryo.tools.edge.label>лезвие</OEC_Katana_P_Cryo.tools.edge.label>
+<!--=============== Fire ====================-->
+<Wave_OEC_K_Fire.label>Огне-волна из жнеца</Wave_OEC_K_Fire.label>
+<Wave_OEC_K_M_Fire.label>Огне-волна из величественного жнеца</Wave_OEC_K_M_Fire.label>
+
+<OEC_Katana_Fire.label>Жнец(Огонь)</OEC_Katana_Fire.label>
+<OEC_Katana_Fire.verbs.Verb_Shoot.label>Жнец(Огонь)</OEC_Katana_Fire.verbs.Verb_Shoot.label>
+<OEC_Katana_Fire.description>Стандартная пси Катана используемая Охотниками OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Огненным уроном.</OEC_Katana_Fire.description>
+
+<OEC_Katana_Fire.tools.handle.label>рукоять</OEC_Katana_Fire.tools.handle.label>
+<OEC_Katana_Fire.tools.point.label>остриё</OEC_Katana_Fire.tools.point.label>
+<OEC_Katana_Fire.tools.edge.label>лезвие</OEC_Katana_Fire.tools.edge.label>
+
+<OEC_Katana_M_Fire.label>Величественный Жнец(Огонь)</OEC_Katana_M_Fire.label>
+<OEC_Katana_M_Fire.verbs.Verb_Shoot.label>Величественный Жнец(Огонь)</OEC_Katana_M_Fire.verbs.Verb_Shoot.label>
+<OEC_Katana_M_Fire.description>Величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Огненным уроном.</OEC_Katana_M_Fire.description>
+
+<OEC_Katana_M_Fire.tools.handle.label>рукоять</OEC_Katana_M_Fire.tools.handle.label>
+<OEC_Katana_M_Fire.tools.point.label>остриё</OEC_Katana_M_Fire.tools.point.label>
+<OEC_Katana_M_Fire.tools.edge.label>лезвие</OEC_Katana_M_Fire.tools.edge.label>
+
+<OEC_Katana_P_Fire.label>Синхро Величественный Жнец(Огонь)</OEC_Katana_P_Fire.label>
+<OEC_Katana_P_Fire.verbs.Verb_Shoot.label>Синхро Величественный Жнец(Огонь)</OEC_Katana_P_Fire.verbs.Verb_Shoot.label>
+<OEC_Katana_P_Fire.description>Синхро величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено Огненным уроном.</OEC_Katana_P_Fire.description>
+
+<OEC_Katana_P_Fire.tools.handle.label>рукоять</OEC_Katana_P_Fire.tools.handle.label>
+<OEC_Katana_P_Fire.tools.point.label>остриё</OEC_Katana_P_Fire.tools.point.label>
+<OEC_Katana_P_Fire.tools.edge.label>лезвие</OEC_Katana_P_Fire.tools.edge.label>
+<!--=============== EMP ====================-->
+<Wave_OEC_K_EMP.label>ЭМИ-волна из жнеца</Wave_OEC_K_EMP.label>
+<Wave_OEC_K_M_EMP.label>ЭМИ-волна из величественного жнеца</Wave_OEC_K_M_EMP.label>
+
+<OEC_Katana_EMP.label>Жнец(ЭМИ)</OEC_Katana_EMP.label>
+<OEC_Katana_EMP.verbs.Verb_Shoot.label>Жнец(ЭМИ)</OEC_Katana_EMP.verbs.Verb_Shoot.label>
+<OEC_Katana_EMP.description>Стандартная пси Катана используемая Охотниками OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</OEC_Katana_EMP.description>
+
+<OEC_Katana_EMP.tools.handle.label>рукоять</OEC_Katana_EMP.tools.handle.label>
+<OEC_Katana_EMP.tools.point.label>остриё</OEC_Katana_EMP.tools.point.label>
+<OEC_Katana_EMP.tools.edge.label>лезвие</OEC_Katana_EMP.tools.edge.label>
+
+<OEC_Katana_M_EMP.label>Величественный Жнец(ЭМИ)</OEC_Katana_M_EMP.label>
+<OEC_Katana_M_EMP.verbs.Verb_Shoot.label>Величественный Жнец(ЭМИ)</OEC_Katana_M_EMP.verbs.Verb_Shoot.label>
+<OEC_Katana_M_EMP.description>Величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</OEC_Katana_M_EMP.description>
+
+<OEC_Katana_M_EMP.tools.handle.label>рукоять</OEC_Katana_M_EMP.tools.handle.label>
+<OEC_Katana_M_EMP.tools.point.label>остриё</OEC_Katana_M_EMP.tools.point.label>
+<OEC_Katana_M_EMP.tools.edge.label>лезвие</OEC_Katana_M_EMP.tools.edge.label>
+
+<OEC_Katana_P_EMP.label>Синхро Величественный Жнец(ЭМИ)</OEC_Katana_P_EMP.label>
+<OEC_Katana_P_EMP.verbs.Verb_Shoot.label>Синхро Величественный Жнец(ЭМИ)</OEC_Katana_P_EMP.verbs.Verb_Shoot.label>
+<OEC_Katana_P_EMP.description>Синхро величественная пси Катана используемая Инквизиторами OEC.\n\nЭто реконструированное оружие с использованием технологий OTC. Заряжено ЭМИ уроном.\n\nПредупреждение! ЭМИ урон не предназначен для уничтожения мясных мешков.</OEC_Katana_P_EMP.description>
+
+<OEC_Katana_P_EMP.tools.handle.label>рукоять</OEC_Katana_P_EMP.tools.handle.label>
+<OEC_Katana_P_EMP.tools.point.label>остриё</OEC_Katana_P_EMP.tools.point.label>
+<OEC_Katana_P_EMP.tools.edge.label>лезвие</OEC_Katana_P_EMP.tools.edge.label>
+
+<!--=============== OEC - Spear ====================-->
+<OEC_Spear.label>Элитра</OEC_Spear.label>
+<OEC_Spear.description>Стандартное пси Копье используемое Охотниками OEC.</OEC_Spear.description>
+
+<OEC_Spear.tools.shaft.label>древко</OEC_Spear.tools.shaft.label>
+<OEC_Spear.tools.point.label>остриё</OEC_Spear.tools.point.label>
+
+<OEC_Spear_M.label>Величественная Элитра</OEC_Spear_M.label>
+<OEC_Spear_M.description>Величественное пси Копье используемое Инквизиторами OEC.</OEC_Spear_M.description>
+
+<OEC_Spear_M.tools.shaft.label>древко</OEC_Spear_M.tools.shaft.label>
+<OEC_Spear_M.tools.point.label>остриё</OEC_Spear_M.tools.point.label>
+
+<OEC_Spear_P.label>Синхро Величественная Элитра</OEC_Spear_P.label>
+<OEC_Spear_P.description>Синхро величественное пси Копье используемое Инквизиторами OEC.</OEC_Spear_P.description>
+
+<OEC_Spear_P.tools.shaft.label>древко</OEC_Spear_P.tools.shaft.label>
+<OEC_Spear_P.tools.point.label>остриё</OEC_Spear_P.tools.point.label>
+
+<!--=============== OEC - Claws ====================-->
+<OEC_Claws.label>Правда</OEC_Claws.label>
+<OEC_Claws.description>Стандартные пси Когти используемая Охотниками OEC.</OEC_Claws.description>
+
+<OEC_Claws.tools.claws.label>когти</OEC_Claws.tools.claws.label>
+
+<OEC_Claws_M.label>Величественная Правда</OEC_Claws_M.label>
+<OEC_Claws_M.description>Величественные пси Когти используемая Инквизиторами OEC.</OEC_Claws_M.description>
+
+<OEC_Claws_M.tools.claws.label>когти</OEC_Claws_M.tools.claws.label>
+
+<OEC_Claws_P.label>Синхро Величественная Правда</OEC_Claws_P.label>
+<OEC_Claws_P.description>Синхро величественные пси Когти используемая Инквизиторами OEC.</OEC_Claws_P.description>
+
+<OEC_Claws_P.tools.claws.label>когти</OEC_Claws_P.tools.claws.label>
+
+<!--=============== OEC - Revolver ====================-->
+<Bullet_OEC_R.label>пуля из миротворца</Bullet_OEC_R.label>
+<Bullet_OEC_R_M.label>пуля из величественного миротворца</Bullet_OEC_R_M.label>
+
+<OEC_Revolver.label>Миротворец</OEC_Revolver.label>
+<OEC_Revolver.verbs.Verb_Shoot.label>Миротворец</OEC_Revolver.verbs.Verb_Shoot.label>
+<OEC_Revolver.description>Стандартный пси Револьвер используемый Охотниками OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Revolver.description>
+
+<OEC_Revolver.tools.grip.label>рукоять</OEC_Revolver.tools.grip.label>
+<OEC_Revolver.tools.blade.label>клинок</OEC_Revolver.tools.blade.label>
+
+<OEC_Revolver_M.label>Величественный Миротворец</OEC_Revolver_M.label>
+<OEC_Revolver_M.verbs.Verb_Shoot.label>Величественный Миротворец</OEC_Revolver_M.verbs.Verb_Shoot.label>
+<OEC_Revolver_M.description>Величественный пси Револьвер используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Revolver_M.description>
+
+<OEC_Revolver_M.tools.grip.label>рукоять</OEC_Revolver_M.tools.grip.label>
+<OEC_Revolver_M.tools.blade.label>клинок</OEC_Revolver_M.tools.blade.label>
+
+<OEC_Revolver_P.label>Парагон Величественный Миротворец</OEC_Revolver_P.label>
+<OEC_Revolver_P.verbs.Verb_Shoot.label>Парагон Величественный Миротворец</OEC_Revolver_P.verbs.Verb_Shoot.label>
+<OEC_Revolver_P.description>Парагон величественный пси Револьвер используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Revolver_P.description>
+
+<OEC_Revolver_P.tools.grip.label>рукоять</OEC_Revolver_P.tools.grip.label>
+<OEC_Revolver_P.tools.blade.label>клинок</OEC_Revolver_P.tools.blade.label>
+
+<OEC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Величественный Миротворец</OEC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OEC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - Shotgun ====================-->
+<Bullet_OEC_S.label>дробь избавителя</Bullet_OEC_S.label>
+<Bullet_OEC_S_M.label>дробь величественного избавителя</Bullet_OEC_S_M.label>
+
+<OEC_Shotgun.label>Избавитель</OEC_Shotgun.label>
+<OEC_Shotgun.verbs.Verb_Shoot.label>Избавитель</OEC_Shotgun.verbs.Verb_Shoot.label>
+<OEC_Shotgun.description>Стандартный пси Дробовик используемый Охотниками OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Shotgun.description>
+
+<OEC_Shotgun.tools.stock.label>приклад</OEC_Shotgun.tools.stock.label>
+<OEC_Shotgun.tools.blade.label>клинок</OEC_Shotgun.tools.blade.label>
+
+<OEC_Shotgun_M.label>Величественный Избавитель</OEC_Shotgun_M.label>
+<OEC_Shotgun_M.verbs.Verb_Shoot.label>Величественный Избавитель</OEC_Shotgun_M.verbs.Verb_Shoot.label>
+<OEC_Shotgun_M.description>Величественный пси Дробовик используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Shotgun_M.description>
+
+<OEC_Shotgun_M.tools.stock.label>приклад</OEC_Shotgun_M.tools.stock.label>
+<OEC_Shotgun_M.tools.blade.label>клинок</OEC_Shotgun_M.tools.blade.label>
+
+<OEC_Shotgun_P.label>Парагон Величественный Избавитель</OEC_Shotgun_P.label>
+<OEC_Shotgun_P.verbs.Verb_Shoot.label>Парагон Величественный Избавитель</OEC_Shotgun_P.verbs.Verb_Shoot.label>
+<OEC_Shotgun_P.description>Парагон величественный пси Дробовик используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Shotgun_P.description>
+
+<OEC_Shotgun_P.tools.stock.label>приклад</OEC_Shotgun_P.tools.stock.label>
+<OEC_Shotgun_P.tools.blade.label>клинок</OEC_Shotgun_P.tools.blade.label>
+
+<OEC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Цепеш MK-II</OEC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OEC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - SniperRifle ====================-->
+<Bullet_OEC_SR.label>пуля из правосудия</Bullet_OEC_SR.label>
+<Bullet_OEC_SR_M.label>пуля из величественного правосудия</Bullet_OEC_SR_M.label>
+
+<OEC_SniperRifle.label>Правосудие</OEC_SniperRifle.label>
+<OEC_SniperRifle.verbs.Verb_Shoot.label>Правосудие</OEC_SniperRifle.verbs.Verb_Shoot.label>
+<OEC_SniperRifle.description>Стандартная пси Снайперская Винтовка используемая Охотниками OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_SniperRifle.description>
+
+<OEC_SniperRifle.tools.stock.label>приклад</OEC_SniperRifle.tools.stock.label>
+<OEC_SniperRifle.tools.blade.label>клинок</OEC_SniperRifle.tools.blade.label>
+
+<OEC_SniperRifle_M.label>Величественное Правосудие</OEC_SniperRifle_M.label>
+<OEC_SniperRifle_M.verbs.Verb_Shoot.label>Величественное Правосудие</OEC_SniperRifle_M.verbs.Verb_Shoot.label>
+<OEC_SniperRifle_M.description>Величественная пси Снайперская Винтовка используемая Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_SniperRifle_M.description>
+
+<OEC_SniperRifle_M.tools.stock.label>приклад</OEC_SniperRifle_M.tools.stock.label>
+<OEC_SniperRifle_M.tools.blade.label>клинок</OEC_SniperRifle_M.tools.blade.label>
+
+<OEC_SniperRifle_P.label>Парагон Величественное Правосудие</OEC_SniperRifle_P.label>
+<OEC_SniperRifle_P.verbs.Verb_Shoot.label>Парагон Величественное Правосудие</OEC_SniperRifle_P.verbs.Verb_Shoot.label>
+<OEC_SniperRifle_P.description>Парагон величественная пси Снайперская Винтовка используемая Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_SniperRifle_P.description>
+
+<OEC_SniperRifle_P.tools.stock.label>приклад</OEC_SniperRifle_P.tools.stock.label>
+<OEC_SniperRifle_P.tools.blade.label>клинок</OEC_SniperRifle_P.tools.blade.label>
+
+<OEC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Величественное Правосудие</OEC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OEC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - Bow ====================-->
+<Bullet_OEC_B.label>стрела из гордыни</Bullet_OEC_B.label>
+<Bullet_OEC_B_M.label>стрела из величественной гордыни</Bullet_OEC_B_M.label>
+
+<OEC_Bow.label>Гордыня</OEC_Bow.label>
+<OEC_Bow.verbs.Verb_Shoot.label>Гордыня</OEC_Bow.verbs.Verb_Shoot.label>
+<OEC_Bow.description>Стандартный пси Лук используемый Охотниками OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Bow.description>
+
+<OEC_Bow.tools.limb.label>плечо</OEC_Bow.tools.limb.label>
+<OEC_Bow.tools.blade.label>клинок</OEC_Bow.tools.blade.label>
+
+<OEC_Bow_M.label>Величественная Гордыня</OEC_Bow_M.label>
+<OEC_Bow_M.verbs.Verb_Shoot.label>Величественная Гордыня</OEC_Bow_M.verbs.Verb_Shoot.label>
+<OEC_Bow_M.description>Величественный пси Лук используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Bow_M.description>
+
+<OEC_Bow_M.tools.limb.label>плечо</OEC_Bow_M.tools.limb.label>
+<OEC_Bow_M.tools.blade.label>клинок</OEC_Bow_M.tools.blade.label>
+
+<OEC_Bow_P.label>Парагон Величественная Гордыня</OEC_Bow_P.label>
+<OEC_Bow_P.verbs.Verb_Shoot.label>Парагон Величественная Гордыня</OEC_Bow_P.verbs.Verb_Shoot.label>
+<OEC_Bow_P.description>Парагон величественный пси Лук используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.</OEC_Bow_P.description>
+
+<OEC_Bow_P.tools.limb.label>плечо</OEC_Bow_P.tools.limb.label>
+<OEC_Bow_P.tools.blade.label>клинок</OEC_Bow_P.tools.blade.label>
+
+<OEC_Bow_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Величественная Гордыня</OEC_Bow_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Bow_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_Bow_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Bow_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OEC_Bow_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Cross ====================-->
+<!--=============== OEC - AssaultRifle ====================-->
+<Bullet_OEC_AR.label>пуля из вердикта</Bullet_OEC_AR.label>
+<Bullet_OEC_AR_M.label>пуля из величественного вердикта</Bullet_OEC_AR_M.label>
+
+<OEC_AR.label>Вердикт</OEC_AR.label>
+<OEC_AR.verbs.Verb_Shoot.label>Вердикт</OEC_AR.verbs.Verb_Shoot.label>
+<OEC_AR.description>Стандартная пси Штурмовая Винтовка используемый Охотниками OEC. Крайне бронебойное и оснащено клинком для ближнего боя.\n\nЭто реконструированное оружие основано на Винтовке OMC.</OEC_AR.description>
+
+<OEC_AR.tools.stock.label>приклад</OEC_AR.tools.stock.label>
+<OEC_AR.tools.blade.label>клинок</OEC_AR.tools.blade.label>
+
+<OEC_AR_M.label>Величественный Вердикт</OEC_AR_M.label>
+<OEC_AR_M.verbs.Verb_Shoot.label>Величественный Вердикт</OEC_AR_M.verbs.Verb_Shoot.label>
+<OEC_AR_M.description>Величественная пси Штурмовая Винтовка используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.\n\nЭто реконструированное оружие основано на Винтовке OMC.</OEC_AR_M.description>
+
+<OEC_AR_M.tools.stock.label>приклад</OEC_AR_M.tools.stock.label>
+<OEC_AR_M.tools.blade.label>клинок</OEC_AR_M.tools.blade.label>
+
+<OEC_AR_P.label>Парагон Величественный Вердикт</OEC_AR_P.label>
+<OEC_AR_P.verbs.Verb_Shoot.label>Парагон Величественный Вердикт</OEC_AR_P.verbs.Verb_Shoot.label>
+<OEC_AR_P.description>Парагон величественная пси Штурмовая Винтовка используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.\n\nЭто реконструированное оружие основано на Винтовке OMC.</OEC_AR_P.description>
+
+<OEC_AR_P.tools.stock.label>приклад</OEC_AR_P.tools.stock.label>
+<OEC_AR_P.tools.blade.label>клинок</OEC_AR_P.tools.blade.label>
+
+<OEC_AR_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Величественный Вердикт</OEC_AR_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_AR_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_AR_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_AR_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OEC_AR_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OEC - Minigun ====================-->
+<Bullet_OEC_MG.label>пуля из освобожденного</Bullet_OEC_MG.label>
+<Bullet_OEC_MG_M.label>пуля из величественного освобожденного</Bullet_OEC_MG_M.label>
+
+<OEC_Minigun.label>Освобожденный</OEC_Minigun.label>
+<OEC_Minigun.verbs.Verb_Shoot.label>Освобожденный</OEC_Minigun.verbs.Verb_Shoot.label>
+<OEC_Minigun.description>Стандартный пси Миниган используемый Охотниками OEC. Крайне бронебойное и оснащено клинком для ближнего боя.\n\nЭто реконструированное оружие основано на Минигане OCC.</OEC_Minigun.description>
+
+<OEC_Minigun.tools.blade.label>клинок</OEC_Minigun.tools.blade.label>
+
+<OEC_Minigun_M.label>Величественный Освобожденный</OEC_Minigun_M.label>
+<OEC_Minigun_M.verbs.Verb_Shoot.label>Величественный Освобожденный</OEC_Minigun_M.verbs.Verb_Shoot.label>
+<OEC_Minigun_M.description>Величественный пси Миниган используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.\n\nЭто реконструированное оружие основано на Минигане OCC.</OEC_Minigun_M.description>
+
+<OEC_Minigun_M.tools.blade.label>клинок</OEC_Minigun_M.tools.blade.label>
+
+<OEC_Minigun_P.label>Парагон Величественный Освобожденный</OEC_Minigun_P.label>
+<OEC_Minigun_P.verbs.Verb_Shoot.label>Парагон Величественный Освобожденный</OEC_Minigun_P.verbs.Verb_Shoot.label>
+<OEC_Minigun_P.description>Парагон величественный пси Миниган используемый Инквизиторами OEC. Крайне бронебойное и оснащено клинком для ближнего боя.\n\nЭто реконструированное оружие основано на Минигане OCC.</OEC_Minigun_P.description>
+
+<OEC_Minigun_P.tools.blade.label>клинок</OEC_Minigun_P.tools.blade.label>
+
+<OEC_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Величественный Освобожденный</OEC_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OEC_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OEC_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OEC_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OEC_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

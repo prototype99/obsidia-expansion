@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Psy ====================-->
+  <TraitDef>
+    <defName>OEPsyBlood</defName>
+    <degreeDatas>
+      <li>
+        <label>noble blood</label>
+        <description>{PAWN_nameDef} heir to an ancient and noble family. The presence of {PAWN_pronoun} gives an innate talent for psy abilities.</description>
+        <statOffsets>
+          <PsychicSensitivity>0.3</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

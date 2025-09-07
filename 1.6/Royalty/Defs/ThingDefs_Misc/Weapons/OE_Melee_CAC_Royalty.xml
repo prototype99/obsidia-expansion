@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC - Scythe ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACScytheBase">
+    <defName>CAC_Scythe_P</defName>
+    <label>Persona Souldrinker</label>
+    <description>Persona Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Scythe_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3675</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_Scythe>1</CAC_Scythe>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - BigScythe ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACBigScytheBase">
+    <defName>CAC_BigScythe_P</defName>
+    <label>Persona Souleater</label>
+    <description>Persona Big Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/BigScythe_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>6200</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_BigScythe>1</CAC_BigScythe>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - Thurible ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACThuribleBase">
+    <defName>CAC_Thurible_P</defName>
+    <label>Persona Apathy</label>
+    <description>Persona Thurible used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Thurible_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>4675</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <CAC_Thurible>1</CAC_Thurible>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

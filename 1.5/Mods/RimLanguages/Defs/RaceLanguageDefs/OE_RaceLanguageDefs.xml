@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Language ====================-->
+  <FactionLanguages.RaceLanguageDef>
+    <defName>OE_Language_Obsidia</defName>
+	<label>Obsidia language</label>
+	<description>A synthetic and adaptive communication system that originated on the planet Obsidia during the era of Obsidia’s Last War. Formed through the unification and assimilation of numerous cultures, dialects, and ideologies, it reflects both the violent collapse and strategic convergence of once-fragmented nations. The language combines rigid hierarchical syntax with flexible contextual modulation, allowing it to convey military precision, philosophical abstraction, and deep emotional undercurrents. Its lexicon is rich with remnants of extinct cultures, and its structure embodies the legacy of survival, control, and forced unity that defines Obsidia history.</description>
+	<nameMaker>OE_Namer_Obsidia_Language</nameMaker>
+  </FactionLanguages.RaceLanguageDef>
+
+</Defs>

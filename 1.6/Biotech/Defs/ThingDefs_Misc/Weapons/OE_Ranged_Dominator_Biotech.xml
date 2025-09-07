@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Chaos Lord ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_ChaosLord_Cannon</defName>
+    <label>Grand Proton Rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+	  <armorPenetrationBase>1.0</armorPenetrationBase>
+      <stoppingPower>2.0</stoppingPower>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>  
+
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>OE_ChaosLord_Cannon</defName>
+    <label>Grand Proton Rifle</label>
+    <description>Unique Rifle specially designed for the Chaos Lord.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Mechanoid_Cannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.35</drawSize>
+    </graphicData>
+	<uiIconScale>0.78</uiIconScale>
+	<soundInteract>Interact_Revolver</soundInteract>
+    <equippedAngleOffset>45</equippedAngleOffset>
+	<tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>OEChaosLord</li>
+    </weaponTags>
+	<statBases>
+      <Mass>15.0</Mass>
+	  <MarketValue>3000</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_ChaosLord_Cannon</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+        <range>64.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

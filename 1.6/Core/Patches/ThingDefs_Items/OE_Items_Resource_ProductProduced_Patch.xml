@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Jumyline ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/JoyGiverDef[defName="EatChocolate"]/thingDefs</xpath>
+    <value>
+	  <li>OE_Jumyline_Candies</li>
+    </value>
+</Operation>
+
+</Patch>

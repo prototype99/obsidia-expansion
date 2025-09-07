@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Biophormids - Thumper ====================-->
+  <ThingDef ParentName="VFEI2_ThumperBase">
+    <defName>OE_Thumper_Monarchid</defName>
+    <label>monarchid thumper</label>
+    <description>A vibration-producing thumper device. When activated, it starts emitting powerful thump pulses, which will attract an insectoid monarchid to attack with its escorts. If you can defeat him, you can collect a special pherocore from his corpse. The thumps destabilise the thumper, so this building can only be used once.</description>
+    <graphicData>
+      <texPath>Things/Building/Beacon/Thumpers/MonarchidThumper_Base</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Beacon/Thumpers/MonarchidThumper_MenuIcon</uiIconPath>
+	<tradeTags>
+      <li>OEBuildingBeacons</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+    <costList>
+      <OE_Obsidian>45</OE_Obsidian>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <researchPrerequisites>
+      <li>VFEI2_StandardHivetech</li>
+	  <li>OESynth</li>
+    </researchPrerequisites>
+	<killedLeavings>
+      <OE_Obsidian>3</OE_Obsidian>
+	  <OE_Mythril>1</OE_Mythril>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </killedLeavings>
+    <comps>
+      <li Class="VFEInsectoids.CompProperties_Thumper">
+		<topGraphic>
+		  <texPath>Things/Building/Beacon/Thumpers/MonarchidThumper_Top</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(2,2)</drawSize>
+		</topGraphic>
+		<wave>OE_Thumper_Monarchid</wave>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <VFEInsectoids.InsectWaveDef>
+	<defName>OE_Thumper_Monarchid</defName>
+	<minWaveRepeatIndex>2</minWaveRepeatIndex>
+	<waves>
+	  <li>
+		<insects>
+		  <OE_Monarchid>1</OE_Monarchid>
+		  <OE_Razorsythe>4</OE_Razorsythe>
+		  <OE_Labryscid>6</OE_Labryscid>
+		  <OE_Infestor_Acid>1</OE_Infestor_Acid>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>1</OE_Monarchid>
+		  <OE_Razorsythe>6</OE_Razorsythe>
+		  <OE_Labryscid>8</OE_Labryscid>
+		  <OE_Infestor_Acid>1</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Fire>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>1</OE_Monarchid>
+		  <OE_Winglance>2</OE_Winglance>
+		  <OE_Razorsythe>8</OE_Razorsythe>
+		  <OE_Labryscid>10</OE_Labryscid>
+		  <OE_Infestor_Acid>1</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Fire>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>2</OE_Monarchid>
+		  <OE_Winglance>4</OE_Winglance>
+		  <OE_Razorsythe>10</OE_Razorsythe>
+		  <OE_Labryscid>10</OE_Labryscid>
+		  <OE_Infestor_Acid>1</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>2</OE_Monarchid>
+		  <OE_Brontarok>4</OE_Brontarok>
+		  <OE_Winglance>6</OE_Winglance>
+		  <OE_Razorsythe>12</OE_Razorsythe>
+		  <OE_Labryscid>10</OE_Labryscid>
+		  <OE_Infestor_Acid>2</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>2</OE_Monarchid>
+		  <OE_Brontarok>6</OE_Brontarok>
+		  <OE_Winglance>8</OE_Winglance>
+		  <OE_Razorsythe>14</OE_Razorsythe>
+		  <OE_Labryscid>8</OE_Labryscid>
+		  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+		  <OE_Infestor_Acid>2</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>2</OE_Monarchid>
+		  <OE_Swarmella>2</OE_Swarmella>
+		  <OE_Brontarok>8</OE_Brontarok>
+		  <OE_Winglance>10</OE_Winglance>
+		  <OE_Razorsythe>18</OE_Razorsythe>
+		  <OE_Labryscid>8</OE_Labryscid>
+		  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+		  <OE_Infestor_Acid>2</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">3</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">1</OE_Infestor_Tox>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>2</OE_Monarchid>
+		  <OE_Swarmella>2</OE_Swarmella>
+		  <OE_Brontarok>12</OE_Brontarok>
+		  <OE_Winglance>14</OE_Winglance>
+		  <OE_Razorsythe>20</OE_Razorsythe>
+		  <OE_Labryscid>8</OE_Labryscid>
+		  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+		  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+		  <OE_Infestor_Acid>2</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">3</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Tox>
+		</insects>
+	  </li>
+	  <li>
+		<insects>
+		  <OE_Monarchid>3</OE_Monarchid>
+		  <OE_Swarmella>4</OE_Swarmella>
+		  <OE_Brontarok>16</OE_Brontarok>
+		  <OE_Winglance>16</OE_Winglance>
+		  <OE_Razorsythe>22</OE_Razorsythe>
+		  <OE_Labryscid>10</OE_Labryscid>
+		  <OE_Mutalisk_Psy MayRequire="Ludeon.Rimworld.Royalty">1</OE_Mutalisk_Psy>
+		  <OE_Mutalisk_Corrupter>1</OE_Mutalisk_Corrupter>
+		  <OE_Infestor_Acid>2</OE_Infestor_Acid>
+		  <OE_Infestor_Fire MayRequire="Ludeon.Rimworld.Biotech">3</OE_Infestor_Fire>
+		  <OE_Infestor_Tox MayRequire="Ludeon.Rimworld.Biotech">2</OE_Infestor_Tox>
+		</insects>
+	  </li>  
+	</waves>
+  </VFEInsectoids.InsectWaveDef>
+
+</Defs>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== CAC - Scythe ====================-->
+<CAC_Scythe.label>Спиваючий душі</CAC_Scythe.label>
+<CAC_Scythe.description>Стандартна Коса використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Scythe.description>
+
+<CAC_Scythe.tools.handle.label>рукоять</CAC_Scythe.tools.handle.label>
+<CAC_Scythe.tools.edge.label>лезо</CAC_Scythe.tools.edge.label>
+
+<CAC_Scythe_P.label>Сінхро Спиваючий душі</CAC_Scythe_P.label>
+<CAC_Scythe_P.description>Сінхро Коса використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Scythe_P.description>
+
+<CAC_Scythe_P.tools.handle.label>рукоять</CAC_Scythe_P.tools.handle.label>
+<CAC_Scythe_P.tools.edge.label>лезо</CAC_Scythe_P.tools.edge.label>
+
+<!--=============== CAC - BigScythe ====================-->
+<CAC_BigScythe.label>Пожирач душ</CAC_BigScythe.label>
+<CAC_BigScythe.description>Стандартна Велика Коса використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_BigScythe.description>
+
+<CAC_BigScythe.tools.handle.label>рукоять</CAC_BigScythe.tools.handle.label>
+<CAC_BigScythe.tools.edge.label>лезо</CAC_BigScythe.tools.edge.label>
+
+<CAC_BigScythe_P.label>Сінхро Пожирач душ</CAC_BigScythe_P.label>
+<CAC_BigScythe_P.description>Сінхро Велика Коса використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_BigScythe_P.description>
+
+<CAC_BigScythe_P.tools.handle.label>рукоять</CAC_BigScythe_P.tools.handle.label>
+<CAC_BigScythe_P.tools.edge.label>лезо</CAC_BigScythe_P.tools.edge.label>
+
+<!--=============== CAC - Thurible ====================-->
+<Wave_CAC_W.label>Хвиля з апатії</Wave_CAC_W.label>
+
+<CAC_Thurible.label>Апатія</CAC_Thurible.label>
+<CAC_Thurible.verbs.Verb_Shoot.label>Апатія</CAC_Thurible.verbs.Verb_Shoot.label>
+<CAC_Thurible.description>Стандартне Кадило використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Thurible.description>
+
+<CAC_Thurible.tools.handle.label>рукоять</CAC_Thurible.tools.handle.label>
+
+<CAC_Thurible_P.label>Сінхро Апатія</CAC_Thurible_P.label>
+<CAC_Thurible_P.verbs.Verb_Shoot.label>Сінхро Апатія</CAC_Thurible_P.verbs.Verb_Shoot.label>
+<CAC_Thurible_P.description>Сінхро Кадило використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Thurible_P.description>
+
+<CAC_Thurible_P.tools.handle.label>рукоять</CAC_Thurible_P.tools.handle.label>
+
+<!--=============== CAC - Pistol ====================-->
+<Bullet_CAC_P.label>куля з тихої пісні</Bullet_CAC_P.label>
+
+<CAC_Pistol.label>Тиха пісня</CAC_Pistol.label>
+<CAC_Pistol.verbs.Verb_Shoot.label>Тиха пісня</CAC_Pistol.verbs.Verb_Shoot.label>
+<CAC_Pistol.description>Стандартний Пістолет використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Pistol.description>
+
+<CAC_Pistol.tools.grip.label>рукоять</CAC_Pistol.tools.grip.label>
+<CAC_Pistol.tools.barrel.label>ствол</CAC_Pistol.tools.barrel.label>
+
+<CAC_Pistol_P.label>Парагон Тиха пісня</CAC_Pistol_P.label>
+<CAC_Pistol_P.verbs.Verb_Shoot.label>Парагон Тиха пісня</CAC_Pistol_P.verbs.Verb_Shoot.label>
+<CAC_Pistol_P.description>Парагон Пістолет використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Pistol_P.description>
+
+<CAC_Pistol_P.tools.grip.label>рукоять</CAC_Pistol_P.tools.grip.label>
+<CAC_Pistol_P.tools.barrel.label>ствол</CAC_Pistol_P.tools.barrel.label>
+
+<CAC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Тиха пісня</CAC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Shotgun Sidearm ====================-->
+<Bullet_CAC_SS.label>дріб серцеїда</Bullet_CAC_SS.label>
+
+<CAC_ShotgunS.label>Серцеїд</CAC_ShotgunS.label>
+<CAC_ShotgunS.verbs.Verb_Shoot.label>Серцеїд</CAC_ShotgunS.verbs.Verb_Shoot.label>
+<CAC_ShotgunS.description>Стандартний Пістолет-Дробовик використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_ShotgunS.description>
+
+<CAC_ShotgunS.tools.grip.label>рукоять</CAC_ShotgunS.tools.grip.label>
+<CAC_ShotgunS.tools.barrel.label>ствол</CAC_ShotgunS.tools.barrel.label>
+
+<CAC_ShotgunS_P.label>Парагон Серцеїд</CAC_ShotgunS_P.label>
+<CAC_ShotgunS_P.verbs.Verb_Shoot.label>Парагон Серцеїд</CAC_ShotgunS_P.verbs.Verb_Shoot.label>
+<CAC_ShotgunS_P.description>Парагон Пістолет-Дробовик використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_ShotgunS_P.description>
+
+<CAC_ShotgunS_P.tools.grip.label>рукоять</CAC_ShotgunS_P.tools.grip.label>
+<CAC_ShotgunS_P.tools.barrel.label>ствол</CAC_ShotgunS_P.tools.barrel.label>
+
+<CAC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Серцеїд</CAC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - SMG ====================-->
+<Bullet_CAC_SMG.label>куля з ехо</Bullet_CAC_SMG.label>
+
+<CAC_SMG.label>Ехо</CAC_SMG.label>
+<CAC_SMG.verbs.Verb_Shoot.label>Ехо</CAC_SMG.verbs.Verb_Shoot.label>
+<CAC_SMG.description>Стандартне СМГ використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_SMG.description>
+
+<CAC_SMG.tools.stock.label>приклад</CAC_SMG.tools.stock.label>
+<CAC_SMG.tools.barrel.label>ствол</CAC_SMG.tools.barrel.label>
+
+<CAC_SMG_P.label>Парагон Ехо</CAC_SMG_P.label>
+<CAC_SMG_P.verbs.Verb_Shoot.label>Парагон Ехо</CAC_SMG_P.verbs.Verb_Shoot.label>
+<CAC_SMG_P.description>Парагон СМГ використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_SMG_P.description>
+
+<CAC_SMG_P.tools.stock.label>приклад</CAC_SMG_P.tools.stock.label>
+<CAC_SMG_P.tools.barrel.label>ствол</CAC_SMG_P.tools.barrel.label>
+
+<CAC_SMG_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Ехо</CAC_SMG_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_SMG_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_SMG_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_SMG_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_SMG_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Shotgun ====================-->
+<Bullet_CAC_S.label>дріб скорботного</Bullet_CAC_S.label>
+
+<CAC_Shotgun.label>Скорботний</CAC_Shotgun.label>
+<CAC_Shotgun.verbs.Verb_Shoot.label>Скорботний</CAC_Shotgun.verbs.Verb_Shoot.label>
+<CAC_Shotgun.description>Стандартний Дробовик використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Shotgun.description>
+
+<CAC_Shotgun.tools.stock.label>приклад</CAC_Shotgun.tools.stock.label>
+<CAC_Shotgun.tools.barrel.label>ствол</CAC_Shotgun.tools.barrel.label>
+
+<CAC_Shotgun_P.label>Парагон Скорботний</CAC_Shotgun_P.label>
+<CAC_Shotgun_P.verbs.Verb_Shoot.label>Парагон Скорботний</CAC_Shotgun_P.verbs.Verb_Shoot.label>
+<CAC_Shotgun_P.description>Парагон Дробовик використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Shotgun_P.description>
+
+<CAC_Shotgun_P.tools.stock.label>приклад</CAC_Shotgun_P.tools.stock.label>
+<CAC_Shotgun_P.tools.barrel.label>ствол</CAC_Shotgun_P.tools.barrel.label>
+
+<CAC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Скорботний</CAC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - SniperRifle ====================-->
+<Bullet_CAC_SR.label>куля з фатальний вдови</Bullet_CAC_SR.label>
+
+<CAC_SniperRifle.label>Фатальна вдова</CAC_SniperRifle.label>
+<CAC_SniperRifle.verbs.Verb_Shoot.label>Фатальна вдова</CAC_SniperRifle.verbs.Verb_Shoot.label>
+<CAC_SniperRifle.description>Стандартна Снайперська гвинтівка використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_SniperRifle.description>
+
+<CAC_SniperRifle.tools.stock.label>приклад</CAC_SniperRifle.tools.stock.label>
+<CAC_SniperRifle.tools.barrel.label>ствол</CAC_SniperRifle.tools.barrel.label>
+
+<CAC_SniperRifle_P.label>Парагон Фатальна вдова</CAC_SniperRifle_P.label>
+<CAC_SniperRifle_P.verbs.Verb_Shoot.label>Парагон Фатальна вдова</CAC_SniperRifle_P.verbs.Verb_Shoot.label>
+<CAC_SniperRifle_P.description>Парагон Снайперська гвинтівка використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_SniperRifle_P.description>
+
+<CAC_SniperRifle_P.tools.stock.label>приклад</CAC_SniperRifle_P.tools.stock.label>
+<CAC_SniperRifle_P.tools.barrel.label>ствол</CAC_SniperRifle_P.tools.barrel.label>
+
+<CAC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Фатальна вдова</CAC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Minigun ====================-->
+<Bullet_CAC_MG.label>куля з блекауту</Bullet_CAC_MG.label>
+
+<CAC_Minigun.label>Блекаут</CAC_Minigun.label>
+<CAC_Minigun.verbs.Verb_Shoot.label>Блекаут</CAC_Minigun.verbs.Verb_Shoot.label>
+<CAC_Minigun.description>Стандартний Мініган використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Minigun.description>
+
+<CAC_Minigun.tools.barrels.label>стволи</CAC_Minigun.tools.barrels.label>
+
+<CAC_Minigun_P.label>Парагон Блекаут</CAC_Minigun_P.label>
+<CAC_Minigun_P.verbs.Verb_Shoot.label>Парагон Блекаут</CAC_Minigun_P.verbs.Verb_Shoot.label>
+<CAC_Minigun_P.description>Парагон Мініган використовується Культистами CAC. Особливо модифікована зброя з підвищеною потужністю, але складною в обігу.</CAC_Minigun_P.description>
+
+<CAC_Minigun_P.tools.barrels.label>стволи</CAC_Minigun_P.tools.barrels.label>
+
+<CAC_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Блекаут</CAC_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</CAC_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</CAC_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

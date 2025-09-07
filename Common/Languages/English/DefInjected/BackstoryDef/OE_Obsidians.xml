@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Civilians ====================-->
+<!--=============== Colonist ====================-->
+<OE_Colonist.title>obsidia colonist</OE_Colonist.title>
+<OE_Colonist.titleShort>colonist</OE_Colonist.titleShort>
+<OE_Colonist.description>[PAWN_nameDef] completed Obsidia Colonists course. Possesses all the necessary skills to support life in the colony.</OE_Colonist.description>
+
+<!--=============== Worker ====================-->
+<OE_Worker.title>obsidia worker</OE_Worker.title>
+<OE_Worker.titleShort>worker</OE_Worker.titleShort>
+<OE_Worker.description>[PAWN_nameDef] completed course Obsidia Workers course. Possesses all the necessary skills to build a colony and extract useful resources.</OE_Worker.description>
+
+<!--=============== Scientist ====================-->
+<OE_Scientist.title>obsidia scientist</OE_Scientist.title>
+<OE_Scientist.titleShort>scientist</OE_Scientist.titleShort>
+<OE_Scientist.description>[PAWN_nameDef] completed Obsidia Scientists course. Possesses all the necessary skills for the development and improvement the colony.</OE_Scientist.description>
+
+<!--=============== Artisan ====================-->
+<OE_Artisan.title>obsidia artisan</OE_Artisan.title>
+<OE_Artisan.titleShort>artisan</OE_Artisan.titleShort>
+<OE_Artisan.description>[PAWN_nameDef] mastered the arts of form and function in Obsidia’s creative guilds. Able to turn even discarded scrap into breathtaking works. Has an eye for beauty, but little interest in fieldwork.</OE_Artisan.description>
+
+<!--=============== Trader ====================-->
+<OE_Trader.title>obsidia trader</OE_Trader.title>
+<OE_Trader.titleShort>trader</OE_Trader.titleShort>
+<OE_Trader.description>[PAWN_nameDef] traveled between scattered Obsidia enclaves, negotiating deals and uncovering rare goods. Learned to read people well—but rarely touched a tool or weapon.</OE_Trader.description>
+
+<!--=============== Caretaker ====================-->
+<OE_Caretaker.title>obsidia caretaker</OE_Caretaker.title>
+<OE_Caretaker.titleShort>caretaker</OE_Caretaker.titleShort>
+<OE_Caretaker.description>[PAWN_nameDef] devoted years to caring for Obsidia’s wounded, orphans, and beasts of burden. Soft-spoken and patient, but ill-suited for combat roles.</OE_Caretaker.description>
+
+<!--=============== Scholar ====================-->
+<OE_Scholar.title>obsidia scholar</OE_Scholar.title>
+<OE_Scholar.titleShort>scholar</OE_Scholar.titleShort>
+<OE_Scholar.description>[PAWN_nameDef] spent countless hours in databanks and echo-archives, studying Obsidia’s forgotten legacies. Brilliant with theory—awkward with social and tools.</OE_Scholar.description>
+
+<!--=============== Engineer ====================-->
+<OE_Engineer.title>obsidia engineer</OE_Engineer.title>
+<OE_Engineer.titleShort>engineer</OE_Engineer.titleShort>
+<OE_Engineer.description>[PAWN_nameDef] worked on critical infrastructure during the collapse of the Obsidia core systems. Skilled at building and repairing, but tends to avoid social entanglements.</OE_Engineer.description>
+
+<!--=============== Psycaster ====================-->
+<OE_Psy.title>obsidia psycaster</OE_Psy.title>
+<OE_Psy.titleShort>psycaster</OE_Psy.titleShort>
+<OE_Psy.description>[PAWN_nameDef] representative of one of the ancient genera of Obsidia. Instead of participating in political clashes for power, chose the path of conquering new lands. Has excellent intellectual abilities and a sense of beauty.</OE_Psy.description>
+
+<!--=============== Mindseeker ====================-->
+<OE_Mindseeker.title>obsidia mindseeker</OE_Mindseeker.title>
+<OE_Mindseeker.titleShort>mindseeker</OE_Mindseeker.titleShort>
+<OE_Mindseeker.description>[PAWN_nameDef] representative of Obsidia spiritual circles. Dedicated their life to inner harmony, healing, and understanding the unseen. Gifted in speech and medicine.</OE_Mindseeker.description>
+
+<!--=============== Mechanitor ====================-->
+<OE_Mechanitor.title>obsidia mechanitor</OE_Mechanitor.title>
+<OE_Mechanitor.titleShort>mechanitor</OE_Mechanitor.titleShort>
+<OE_Mechanitor.description>[PAWN_nameDef] representative of one of the most popular Obsidia mecha fan clubs. Becoming a full-fledged mechanitor is able to reveal hiden potential. Possesses excellent creative skills.</OE_Mechanitor.description>
+
+<!--=============== Mech-architect ====================-->
+<OE_Mecharchitect.title>obsidia mech-architect</OE_Mecharchitect.title>
+<OE_Mecharchitect.titleShort>mech-architect</OE_Mecharchitect.titleShort>
+<OE_Mecharchitect.description>[PAWN_nameDef] former employee of Obsidia robotics foundries. Specialized in chassis design and autonomous systems. Possesses outstanding artistic talent.</OE_Mecharchitect.description>
+
+<!--=============== Combat ====================-->
+<!--=============== Melee ====================-->
+<OE_Soldier_Melee.title>obsidia warrior</OE_Soldier_Melee.title>
+<OE_Soldier_Melee.titleShort>warrior</OE_Soldier_Melee.titleShort>
+<OE_Soldier_Melee.description>[PAWN_nameDef] completed combat Obsidia Warriors courses. Trained in close combat and medicine to keep his comrades healthy.</OE_Soldier_Melee.description>
+
+<!--=============== Psy-Melee ====================-->
+<OE_Soldier_MeleePsy.title>obsidia warpriest</OE_Soldier_MeleePsy.title>
+<OE_Soldier_MeleePsy.titleShort>warpriest</OE_Soldier_MeleePsy.titleShort>
+<OE_Soldier_MeleePsy.description>[PAWN_nameDef] underwent intensive combat and psi-training under the Obsidia Inquisition. Trained to inspire allies and eliminate enemies with righteous fury. Skilled in melee combat and social influence.</OE_Soldier_MeleePsy.description>
+
+<!--=============== Ranged ====================-->
+<OE_Soldier_Ranged.title>obsidia gunner</OE_Soldier_Ranged.title>
+<OE_Soldier_Ranged.titleShort>gunner</OE_Soldier_Ranged.titleShort>
+<OE_Soldier_Ranged.description>[PAWN_nameDef] completed combat Obsidia Gunners courses. Trained in ranged combat and construction skills to maintain vehicles and buildings.</OE_Soldier_Ranged.description>
+
+<!--=============== Psy-Ranged ====================-->
+<OE_Soldier_RangedPsy.title>obsidia reaver</OE_Soldier_RangedPsy.title>
+<OE_Soldier_RangedPsy.titleShort>reaver</OE_Soldier_RangedPsy.titleShort>
+<OE_Soldier_RangedPsy.description>[PAWN_nameDef] descendant of Obsidia nobility who chose the path of a psi-warrior. Completed specialized military training focused on precision and tactical superiority. Highly skilled in ranged combat and intellectual pursuits.</OE_Soldier_RangedPsy.description>
+
+</LanguageData>

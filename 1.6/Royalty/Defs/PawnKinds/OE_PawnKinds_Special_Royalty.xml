@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Quest Hunted Messenger ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OEC_Quest_HuntedMessenger</defName>
+    <label>obsidia messenger</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>OE_Title_6_ChiefAdvisor</li>
+	  <li>OE_Title_7_GrandExecutor</li>
+	  <li>OE_Title_8_SupremeRegent</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+      <li>OECHunter</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <techHediffsMoney>1500~3000</techHediffsMoney>
+	<techHediffsChance>0.25</techHediffsChance>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+    </techHediffsTags>
+	<combatPower>50</combatPower>
+  </PawnKindDef>
+
+<!--=============== Quest Hunted Agent ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMG_Quest_HuntedAgent</defName>
+    <label>mercenary agent</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>OE_Title_3_Sponsor</li>
+	  <li>OE_Title_4_VIP</li>
+    </titleSelectOne>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>17000~23000</apparelMoney>
+	<apparelTags>
+	  <li>OMGMercenary</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <techHediffsMoney>5000~12000</techHediffsMoney>
+	<techHediffsChance>0.35</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<combatPower>100</combatPower>
+  </PawnKindDef>
+
+</Defs>

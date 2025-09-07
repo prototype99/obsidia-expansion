@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== EGO - Shields ====================-->
+<!--=============== Medium ====================-->
+  <ThingDef ParentName="OEShieldBaseNQ">
+    <defName>EGO_Shield_Medium</defName>
+    <label>EGO Aegis</label>
+	<description>Specially gestated amalgam shield.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/EGO/EGOShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3050</MarketValue>
+	  <MaxHitPoints>300</MaxHitPoints>
+      <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <Flammability>-0.30</Flammability>
+	  <ToxicResistance>0.30</ToxicResistance>
+	  <MoveSpeed>0.10</MoveSpeed>
+	  <ForagedNutritionPerDay>-2</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RawNutritionFactor>
+    </equippedStatOffsets>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>EGOShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/EGO/EGOShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.05</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_EGO_Utility</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

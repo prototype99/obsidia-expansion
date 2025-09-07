@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Special ====================-->
+<!--=============== Cultist ====================-->
+  <BackstoryDef>
+    <defName>OE_Cultist</defName>
+    <title>crimson arachna cultist</title>
+    <titleShort>cultist</titleShort>
+    <description>[PAWN_nameDef] as a member of Crimson Arachna Cult has an unwavering faith and the desire to bring their faith to everyone in any way.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Artistic</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Artistic>5</Artistic>
+      <Crafting>5</Crafting>
+	  <Intellectual>-2</Intellectual>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>OECultist</li>
+	  <li>Cult</li>
+	  <li>Madman</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECultist>0</OECultist>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<possessions>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+    </possessions>
+  </BackstoryDef>
+
+<!--=============== Cryptkeeper ====================-->
+  <BackstoryDef>
+    <defName>OE_Cryptkeeper</defName>
+    <title>crimson arachna cryptkeeper</title>
+    <titleShort>cryptkeeper</titleShort>
+    <description>[PAWN_nameDef] served as a guardian of forbidden tombs and bio-sealed reliquaries within the Crimson Arachna Cult. Whispered to the dead, catalogued relics, and performed maintenance on what should never be awoken.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Intellectual</li>
+	  <li>Caring</li>
+	  <li>Crafting</li>
+	  <li>Cleaning</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Intellectual>5</Intellectual>
+      <Medicine>3</Medicine>
+	  <Crafting>2</Crafting>
+      <Social>-2</Social>
+	  <Plants>-1</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>OECultist</li>
+	  <li>Cult</li>
+	  <li>Madman</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OECultist>0</OECultist>
+    </forcedTraits>
+	<bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+	<possessions>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+    </possessions>
+  </BackstoryDef>
+
+</Defs>

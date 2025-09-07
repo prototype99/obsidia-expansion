@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC Drone ====================-->
+<OMC_Drone.label>Місті</OMC_Drone.label>
+<OMC_Drone.description>Персональний дрон-компаньйон розроблений OMC як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЯк зброю використовує реконструйований Дробовик OMC.</OMC_Drone.description>
+<OMC_Drone.verbs.0.label>Загибель</OMC_Drone.verbs.0.label>
+<OMC_Drone.comps.Comp_VerbGiver.verbProps.0.label>Загибель</OMC_Drone.comps.Comp_VerbGiver.verbProps.0.label>
+<OMC_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Загибель</OMC_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OMC_Drone.comps.Comp_VerbGiver.verbProps.0.description>Реконструйований для використання дроном Дробовик OMC.</OMC_Drone.comps.Comp_VerbGiver.verbProps.0.description>
+
+<!--=============== OMC Drone ====================-->
+<!--=============== Acid ====================-->
+<OTC_Drone_Acid.label>Бурестріан(Кислота)</OTC_Drone_Acid.label>
+<OTC_Drone_Acid.description>Персональний дрон-компаньйон розроблений OTC як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЯк зброю використовує реконструйований Пістолет OTC. Заряджено Кислотним ушкодженням.</OTC_Drone_Acid.description>
+<OTC_Drone_Acid.verbs.0.label>Небесний</OTC_Drone_Acid.verbs.0.label>
+<OTC_Drone_Acid.comps.Comp_VerbGiver.verbProps.0.label>Небесний</OTC_Drone_Acid.comps.Comp_VerbGiver.verbProps.0.label>
+<OTC_Drone_Acid.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Небесний</OTC_Drone_Acid.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OTC_Drone_Acid.comps.Comp_VerbGiver.verbProps.0.description>Реконструйований для використання дроном Пістолет OTC. Заряджено Кислотним ушкодженням.</OTC_Drone_Acid.comps.Comp_VerbGiver.verbProps.0.description>
+<!--=============== Cryo ====================-->
+<OTC_Drone_Cryo.label>Бурестріан(Кріо)</OTC_Drone_Cryo.label>
+<OTC_Drone_Cryo.description>Персональний дрон-компаньйон розроблений OTC як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЯк зброю використовує реконструйований Пістолет OTC. Заряджено Кріо ушкодженням.</OTC_Drone_Cryo.description>
+<OTC_Drone_Cryo.verbs.0.label>Небесний</OTC_Drone_Cryo.verbs.0.label>
+<OTC_Drone_Cryo.comps.Comp_VerbGiver.verbProps.0.label>Небесний</OTC_Drone_Cryo.comps.Comp_VerbGiver.verbProps.0.label>
+<OTC_Drone_Cryo.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Небесний</OTC_Drone_Cryo.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OTC_Drone_Cryo.comps.Comp_VerbGiver.verbProps.0.description>Реконструйований для використання дроном Пістолет OTC. Заряджено Кріо ушкодженням.</OTC_Drone_Cryo.comps.Comp_VerbGiver.verbProps.0.description>
+<!--=============== Fire ====================-->
+<OTC_Drone_Fire.label>Бурестріан(Вогонь)</OTC_Drone_Fire.label>
+<OTC_Drone_Fire.description>Персональний дрон-компаньйон розроблений OTC як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЯк зброю використовує реконструйований Пістолет OTC. Заряджено Кріо ушкодженням.</OTC_Drone_Fire.description>
+<OTC_Drone_Fire.verbs.0.label>Небесний</OTC_Drone_Fire.verbs.0.label>
+<OTC_Drone_Fire.comps.Comp_VerbGiver.verbProps.0.label>Небесний</OTC_Drone_Fire.comps.Comp_VerbGiver.verbProps.0.label>
+<OTC_Drone_Fire.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Небесний</OTC_Drone_Fire.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OTC_Drone_Fire.comps.Comp_VerbGiver.verbProps.0.description>Реконструйований для використання дроном Пістолет OTC. Заряджено Кріо ушкодженням.</OTC_Drone_Fire.comps.Comp_VerbGiver.verbProps.0.description>
+<!--=============== EMP ====================-->
+<OTC_Drone_EMP.label>Бурестріан(ЕМІ)</OTC_Drone_EMP.label>
+<OTC_Drone_EMP.description>Персональний дрон-компаньйон розроблений OTC як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЯк зброю використовує реконструйований Пістолет OTC. Заряджено ЕМІ ушкодженням.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OTC_Drone_EMP.description>
+<OTC_Drone_EMP.verbs.0.label>Небесний</OTC_Drone_EMP.verbs.0.label>
+<OTC_Drone_EMP.comps.Comp_VerbGiver.verbProps.0.label>Небесний</OTC_Drone_EMP.comps.Comp_VerbGiver.verbProps.0.label>
+<OTC_Drone_EMP.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Небесний</OTC_Drone_EMP.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OTC_Drone_EMP.comps.Comp_VerbGiver.verbProps.0.description>Реконструйований для використання дроном Пістолет OTC. Заряджено ЕМІ ушкодженням.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OTC_Drone_EMP.comps.Comp_VerbGiver.verbProps.0.description>
+
+<!--=============== OCC Drone ====================-->
+<OCC_Drone.label>Шинмару</OCC_Drone.label>
+<OCC_Drone.description>Персональний дрон-компаньйон розроблений OCC як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЯк зброю використовує реконструйований Револьвер OCC.</OCC_Drone.description>
+<OCC_Drone.verbs.0.label>Шершень</OCC_Drone.verbs.0.label>
+<OCC_Drone.comps.Comp_VerbGiver.verbProps.0.label>Шершень</OCC_Drone.comps.Comp_VerbGiver.verbProps.0.label>
+<OCC_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Шершень</OCC_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OCC_Drone.comps.Comp_VerbGiver.verbProps.0.description>Реконструйований для використання дроном Револьвер OCC.</OCC_Drone.comps.Comp_VerbGiver.verbProps.0.description>
+
+<!--=============== OEC Drone ====================-->
+<OEC_Drone.label>Зенот</OEC_Drone.label>
+<OEC_Drone.description>Персональний дрон-компаньйон розроблений OEC як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЯк зброю використовує реконструйована Снайперська гвинтівка OEC.</OEC_Drone.description>
+<OEC_Drone.verbs.0.label>Правосуддя</OEC_Drone.verbs.0.label>
+<OEC_Drone.comps.Comp_VerbGiver.verbProps.0.label>Правосуддя</OEC_Drone.comps.Comp_VerbGiver.verbProps.0.label>
+<OEC_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Правосуддя</OEC_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OEC_Drone.comps.Comp_VerbGiver.verbProps.0.description>Реконструйована для використання дроном Снайперська гвинтівка OEC.</OEC_Drone.comps.Comp_VerbGiver.verbProps.0.description>
+
+<!--=============== OES Drone ====================-->
+<OES_Drone.label>Делі</OES_Drone.label>
+<OES_Drone.description>Персональний героїчний дрон-компаньйон розроблений OES як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЯк зброю використовує реконструйований Лук OES.</OES_Drone.description>
+<OES_Drone.verbs.0.label>Героїчна Гординя</OES_Drone.verbs.0.label>
+<OES_Drone.comps.Comp_VerbGiver.verbProps.0.label>Героїчна Гординя</OES_Drone.comps.Comp_VerbGiver.verbProps.0.label>
+<OES_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>Героїчна міні-Гординя</OES_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OES_Drone.comps.Comp_VerbGiver.verbProps.0.description>Реконструйований для використання дроном Лук OES.</OES_Drone.comps.Comp_VerbGiver.verbProps.0.description>
+
+<!--=============== OMG Drone ====================-->
+<OMG_Drone.label>Лумінаріс</OMG_Drone.label>
+<OMG_Drone.description>Персональний дрон-компаньйон розроблений OMG як бойовий помічник, покращує характеристики власника і може вести вогонь самостійно.\n\nЦя модифікація позбавляє предмет рівня якості.\n\nЯк зброю використовує реконструйований Пістолет OMG.</OMG_Drone.description>
+<OMG_Drone.verbs.0.label>Нано-вогонь</OMG_Drone.verbs.0.label>
+<OMG_Drone.comps.Comp_VerbGiver.verbProps.0.label>Нано-вогонь</OMG_Drone.comps.Comp_VerbGiver.verbProps.0.label>
+<OMG_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>міні-Нано-вогонь</OMG_Drone.comps.Comp_VerbGiver.verbProps.0.visualLabel>
+<OMG_Drone.comps.Comp_VerbGiver.verbProps.0.description>Реконструйована для використання дроном Пістолет OMG.</OMG_Drone.comps.Comp_VerbGiver.verbProps.0.description>
+
+</LanguageData>

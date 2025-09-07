@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Monarchid - DeathCry ====================-->
+  <DamageDef>
+	<defName>OEMonarchidCry</defName>
+	<label>monarchid's death cry</label>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+	<externalViolence>true</externalViolence>
+	<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+	<impactSoundType MayRequire="Ludeon.RimWorld.Biotech">MechBandShockwave</impactSoundType>
+	<deathMessage>{0} has been shocked to death.</deathMessage>
+	<hediff>Frostbite</hediff>
+	<additionalHediffs>
+      <li>
+        <hediff>OE_MonarchidDeathCry</hediff>
+        <severityPerDamageDealt>0.15</severityPerDamageDealt>
+        <victimSeverityScaling>PsychicSensitivity</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+	<harmsHealth>true</harmsHealth>
+	<defaultDamage>10</defaultDamage>
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCenterEffecter MayRequire="Ludeon.RimWorld.Biotech">BlastMechBandShockwave</explosionCenterEffecter>
+    <explosionCellEffecter MayRequire="Ludeon.RimWorld.Biotech">MechBandElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>45</explosionCellEffecterMaxRadius>
+    <soundExplosion MayRequire="Ludeon.RimWorld.Biotech">Explosion_MechBandShockwave</soundExplosion>
+    <combatLogRules MayRequire="Ludeon.RimWorld.Biotech">Damage_MechBandShockwave</combatLogRules>
+  </DamageDef> 
+
+  <HediffDef>
+    <defName>OE_MonarchidDeathCry</defName>
+    <label>monarchid's death cry</label>
+    <labelNoun>monarchid's cry</labelNoun>
+    <description>Upon death, Monarchid releases a final cry, scattering its pheromones. Surprisingly, these pheromones have a positive effect on those who come into contact with them.</description>
+	<hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+	<makesSickThought>true</makesSickThought>
+    <maxSeverity>10.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <PawnBeauty>2</PawnBeauty>
+		  <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+		  <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

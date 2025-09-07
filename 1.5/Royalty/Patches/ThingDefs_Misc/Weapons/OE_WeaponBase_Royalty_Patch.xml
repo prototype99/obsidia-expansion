@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Obsidia Expansion - Cross Technologies ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="OEMeleeBaseNQE" or @Name="OERangedBaseNQE" or @Name="OESLegionSpearBase" or defName="ODC_Trophy_PowerFist_J" or defName="OMC_Trophy_Chainsword_I" or defName="OMC_Trophy_Pistol_I" or defName="OTC_Trophy_Sword_I_Acid" or defName="OTC_Trophy_Sword_I_Cryo" or defName="OTC_Trophy_Sword_I_Fire" or defName="OTC_Trophy_Sword_I_EMP" or defName="OTC_Trophy_Cards" or defName="OCC_Trophy_Drillspear_I" or defName="OCC_Trophy_Railgun_I" or defName="ODC_Trophy_Sickle_C_I" or defName="ODC_Trophy_BladeLauncher_C_I" or defName="OMG_Trophy_Knife"]</xpath>
+    <value>
+	  <comps>
+        <li Class="CompProperties_BladelinkWeapon">
+          <biocodeOnEquip>true</biocodeOnEquip>
+        </li>
+        <li Class="CompProperties_GeneratedName">
+          <nameMaker>NamerWeaponBladelink</nameMaker>
+        </li>
+      </comps>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="OMG_Trophy_PowerGuitar" or defName="OMG_Trophy_Revolver"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </value>
+</Operation>
+
+</Patch>

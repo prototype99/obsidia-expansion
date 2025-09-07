@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Trophy Helmet ====================-->
+  <ThingDef Name="OMGTrophyHelmetBase" ParentName="OEHelmetBaseNQ" Abstract="True">
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+    <statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>5750</MarketValue>
+	  <Mass>2</Mass>
+	  <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.55</ArmorRating_Heat>
+      <Insulation_Cold>150</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OMG_Headgear</li>
+    </thingCategories>
+	<thingSetMakerTags>
+      <li>OEGearTrophy</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Forgemind ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Forgemind</defName>
+    <label>Mercenary Helmet(Forgemind)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital of weather-control satellites.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Forgemind/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <MentalBreakThreshold>0.50</MentalBreakThreshold>
+	  <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Forgemind/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+      </tags>
+	  <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_Spawn</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+        <spawnDef>Tornado</spawnDef>
+        <colonyWideTaleDef>TornadoFromItem</colonyWideTaleDef>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <useableInPocketMaps>false</useableInPocketMaps>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Hellrain ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Hellrain</defName>
+    <label>Mercenary Helmet(Hellrain)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital bombardment targeter.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Hellrain/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <MeleeHitChance>8.0</MeleeHitChance>
+	  <MeleeDodgeChance>8.0</MeleeDodgeChance>
+	  <ShootingAccuracyPawn>8.0</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.25</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Hellrain/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+      </tags>
+	  <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_Bombardment</verbClass>
+		<commandIcon>UI/Abilities/Armor/Bombardment</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <useableInPocketMaps>false</useableInPocketMaps>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Orbicore ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Orbicore</defName>
+    <label>Mercenary Helmet(Orbicore)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital power beam targeter.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Orbicore/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <MeleeHitChance>8.0</MeleeHitChance>
+	  <MeleeDodgeChance>8.0</MeleeDodgeChance>
+	  <ShootingAccuracyPawn>8.0</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.25</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Orbicore/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+      </tags>
+	  <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_PowerBeam</verbClass>
+		<commandIcon>UI/Abilities/Armor/PowerBeam</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <useableInPocketMaps>false</useableInPocketMaps>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>15</ai_AvoidFriendlyFireRadius>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

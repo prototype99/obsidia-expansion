@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Jumyline ====================-->
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>OE_Jumyline_Candies</defName>
+    <label>jumyline candies</label>
+    <description>These small but very sweet candies are coocked from selected Jumy berries and delicious chocolate.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Jumy_Berries</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Food/Jumyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>8</MarketValue>
+	  <WorkToMake>200</WorkToMake>
+      <Mass>0.025</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.15</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>6</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+<!--=============== Modernization Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_ModernizationKit</defName>
+    <label>modernization kit</label>
+    <description>Universal set of components for upgrading Obsidia gear from a simple to an modded version.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_ModernizationKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2.0</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEGearMod</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>30</OE_Obsidian>
+	  <OE_Mythril>20</OE_Mythril>
+	  <OE_Mooncloth>20</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEModKits</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Drifters Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_DriftersKit</defName>
+    <label>Drifters modernization kit</label>
+    <description>Universal set of components for upgrading Obsidia Drifters Clans gear from a simple to an modded version.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_DriftersKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2.0</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Platinum>15</OE_Platinum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	  <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEModKits</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Obsidia Ammo Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_AmmoKit</defName>
+    <label>obsidia ammo kit</label>
+    <description>Universal set of ammo used in Obsidia weaponry.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_AmmoKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>250</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>9.5</MarketValue>
+	  <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.15</Mass>
+      <Flammability>0.45</Flammability>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

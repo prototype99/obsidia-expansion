@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Resources Drops ====================-->
+<!--=============== Base ====================-->
+  <RoyalTitlePermitDef Name="OEDropResourcesBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+<!--=============== Syntherius Drop ====================-->
+  <RoyalTitlePermitDef ParentName="OEDropResourcesBase">
+    <defName>OE_SyntheriusDrop</defName>
+    <label>syntherius drop</label>
+    <description>Call for a drop of 100 syntherius.</description>
+    <minTitle>OE_Title_1_Aspirant</minTitle>
+    <uiPosition>(0,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <OE_Syntherius>100</OE_Syntherius>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+	<cooldownDays>45</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Tionant Jelly Bundle Drop ====================-->
+  <RoyalTitlePermitDef ParentName="OEDropResourcesBase">
+    <defName>OE_TionantJellyBundleDrop</defName>
+    <label>tionant jelly bundle drop</label>
+    <description>Call for a drop of 10 blue tionant jelly, 10 green tionant jelly, 10 red tionant jelly and 10 yellow tionant jelly.</description>
+    <minTitle>OE_Title_1_Aspirant</minTitle>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <OE_Blue_TionantJelly>10</OE_Blue_TionantJelly>
+		<OE_Green_TionantJelly>10</OE_Green_TionantJelly>
+		<OE_Red_TionantJelly>10</OE_Red_TionantJelly>
+		<OE_Yellow_TionantJelly>10</OE_Yellow_TionantJelly>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+	<cooldownDays>45</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Obsidia Metal Bundle Drop ====================-->
+  <RoyalTitlePermitDef ParentName="OEDropResourcesBase">
+    <defName>OE_MetalBundleDrop</defName>
+    <label>obsidia metals bundle drop</label>
+    <description>Call for a drop of 250 obsidian, 150 mythril and 150 platinum.</description>
+    <minTitle>OE_Title_3_Custodian</minTitle>
+    <uiPosition>(0,2)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <OE_Obsidian>250</OE_Obsidian>
+		<OE_Mythril>150</OE_Mythril>
+		<OE_Platinum>150</OE_Platinum>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+	<cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Slime Heart Drop ====================-->
+  <RoyalTitlePermitDef ParentName="OEDropResourcesBase">
+    <defName>OE_SlimeHeartDrop</defName>
+    <label>slime hearts drop</label>
+    <description>Call for a drop of 8 unconfigured slime heart.</description>
+    <minTitle>OE_Title_5_HighMaster</minTitle>
+    <uiPosition>(0,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <OE_SlimeHeart>8</OE_SlimeHeart>
+      </itemsToDrop>
+      <favorCost>6</favorCost>
+    </royalAid>
+	<cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Workers Support ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OE_LaborerCallTeam</defName>
+    <label>call obsidia laborer team</label>
+    <description>Call a group of 6 obsidia laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>OE_Title_2_Arbiter</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,4)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>OE_Laborer</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <aidDurationDays>4</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Combat Support ====================-->
+<!--=============== OMC ====================-->
+<!--=============== Recruit ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMC_Recruit_CallAid</defName>
+    <label>call OMC recruits squad</label>
+    <description>Call a group of 6 OMC recruits to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_2_Arbiter</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,0)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>OMC_Recruit</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Basic ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMC_Basic_CallAid</defName>
+    <label>call OMC soldiers squad</label>
+    <description>Call a group of 6 OMC soldiers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_4_Overseer</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>OMC_Recruit_CallAid</prerequisite>
+    <uiPosition>(2,0)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef>OMC_Soldier_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMC_Elite_CallAid</defName>
+    <label>call OMC officers squad</label>
+    <description>Call a group of 6 OMC officers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_6_ChiefAdvisor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OMC_Basic_CallAid</prerequisite>
+    <uiPosition>(3,0)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+      <pawnKindDef>OMC_Officer_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>75</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite Big ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMC_Elite_CallAidBig</defName>
+    <label>call OMC officers big squad</label>
+    <description>Call a group of 10 OMC officers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_7_GrandExecutor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OMC_Elite_CallAid</prerequisite>
+    <uiPosition>(4,0)</uiPosition>
+    <royalAid>
+      <favorCost>16</favorCost>
+      <pawnKindDef>OMC_Officer_CallAid</pawnKindDef>
+      <pawnCount>10</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>90</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== OTC ====================-->
+<!--=============== Recruit ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OTC_Recruit_CallAid</defName>
+    <label>call OTC recruits squad</label>
+    <description>Call a group of 6 OTC recruits to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_2_Arbiter</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>OTC_Recruit</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Basic ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OTC_Basic_CallAid</defName>
+    <label>call OTC mechanics squad</label>
+    <description>Call a group of 6 OTC mechanics to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_4_Overseer</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>OTC_Recruit_CallAid</prerequisite>
+    <uiPosition>(2,1)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef>OTC_Mechanic_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OTC_Elite_CallAid</defName>
+    <label>call OTC engineers squad</label>
+    <description>Call a group of 6 OTC engineers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_6_ChiefAdvisor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OTC_Basic_CallAid</prerequisite>
+    <uiPosition>(3,1)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+      <pawnKindDef>OTC_Engineer_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>75</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite Big ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OTC_Elite_CallAidBig</defName>
+    <label>call OTC engineers big squad</label>
+    <description>Call a group of 10 OTC engineers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_7_GrandExecutor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OTC_Elite_CallAid</prerequisite>
+    <uiPosition>(4,1)</uiPosition>
+    <royalAid>
+      <favorCost>16</favorCost>
+      <pawnKindDef>OTC_Engineer_CallAid</pawnKindDef>
+      <pawnCount>10</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>90</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== OCC ====================-->
+<!--=============== Recruit ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OCC_Recruit_CallAid</defName>
+    <label>call OCC recruits squad</label>
+    <description>Call a group of 6 OCC recruits to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_2_Arbiter</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,2)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>OCC_Recruit</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Basic ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OCC_Basic_CallAid</defName>
+    <label>call OCC knights squad</label>
+    <description>Call a group of 6 OCC knights to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_4_Overseer</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>OCC_Recruit_CallAid</prerequisite>
+    <uiPosition>(2,2)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef>OCC_Knight_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OCC_Elite_CallAid</defName>
+    <label>call OCC paladins squad</label>
+    <description>Call a group of 6 OCC paladins to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_6_ChiefAdvisor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OCC_Basic_CallAid</prerequisite>
+    <uiPosition>(3,2)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+      <pawnKindDef>OCC_Paladin_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>75</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite Big ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OCC_Elite_CallAidBig</defName>
+    <label>call OCC paladins big squad</label>
+    <description>Call a group of 10 OCC paladins to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_7_GrandExecutor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OCC_Elite_CallAid</prerequisite>
+    <uiPosition>(4,2)</uiPosition>
+    <royalAid>
+      <favorCost>16</favorCost>
+      <pawnKindDef>OCC_Paladin_CallAid</pawnKindDef>
+      <pawnCount>10</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>90</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== OEC ====================-->
+<!--=============== Recruit ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OEC_Recruit_CallAid</defName>
+    <label>call OEC recruits squad</label>
+    <description>Call a group of 6 OEC recruits to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_2_Arbiter</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,3)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>OEC_Recruit</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Basic ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OEC_Basic_CallAid</defName>
+    <label>call OEC hunters squad</label>
+    <description>Call a group of 6 OEC hunters to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_4_Overseer</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>OEC_Recruit_CallAid</prerequisite>
+    <uiPosition>(2,3)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef>OEC_Hunter_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OEC_Elite_CallAid</defName>
+    <label>call OEC inquisitors squad</label>
+    <description>Call a group of 6 OEC inquisitors to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_6_ChiefAdvisor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OEC_Basic_CallAid</prerequisite>
+    <uiPosition>(3,3)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+      <pawnKindDef>OEC_Inquisitor_CallAid</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>75</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Elite Big ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OEC_Elite_CallAidBig</defName>
+    <label>call OEC inquisitors big squad</label>
+    <description>Call a group of 10 OEC inquisitors to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_7_GrandExecutor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OEC_Elite_CallAid</prerequisite>
+    <uiPosition>(4,3)</uiPosition>
+    <royalAid>
+      <favorCost>16</favorCost>
+      <pawnKindDef>OEC_Inquisitor_CallAid</pawnKindDef>
+      <pawnCount>10</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>90</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Bombardment ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OE_CallOrbitalSalvo</defName>
+    <label>call orbital salvo</label>
+    <description>Call a salvo of orbital strikes around a target position.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>OE_Title_6_ChiefAdvisor</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>90</cooldownDays>
+    <uiPosition>(0,6)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>9.9</radius>
+      <explosionRadiusRange>7.9</explosionRadiusRange>
+      <explosionCount>10</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+<!--=============== Misc ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OE_CallTransportShuttle</defName>
+    <label>call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <minTitle>OE_Title_4_Overseer</minTitle>
+    <faction>ObsidiaEmpire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <uiPosition>(0,5)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+</Defs>

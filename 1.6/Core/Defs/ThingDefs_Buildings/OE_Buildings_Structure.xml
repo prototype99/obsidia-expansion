@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Walls Base ====================-->
+  <ThingDef ParentName="Wall" Name="OEWallBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+	<noRightClickDraftAttack>true</noRightClickDraftAttack>
+	<graphicData>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<uiOrder>2000.666</uiOrder>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <WorkToBuild>550</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <costList>
+      <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+	<costStuffCount>25</costStuffCount>
+	<stuffCategories Inherit="False">
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <coversFloor>true</coversFloor>
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <building>
+      <isPowerConduit>true</isPowerConduit>
+	  <paintable>true</paintable>
+	  <isInert>true</isInert>
+	  <isWall>true</isWall>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+	  <supportsWallAttachments>true</supportsWallAttachments>
+	  <isStuffableAirtight>true</isStuffableAirtight>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>Door</li>
+        <li>Autodoor</li>
+		<li>OrnateDoor</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+		<li>OE_Door</li>
+		<li>OE_Autodoor</li>
+		<li>OE_Petdoor</li>
+		<li>OE_ArmoredDoor</li>
+		<li>OE_ArmoredAutodoor</li>
+		<li>OE_ArmoredPetdoor</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <damageMultipliers Inherit="False">
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+    </damageMultipliers>
+	<replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Wall ====================-->
+  <ThingDef ParentName="OEWallBase">
+    <defName>OE_Wall</defName>
+    <label>obsidia wall</label>
+    <description>Reinforced Obsidia heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools. Capable of holding up a roof.</description>
+    <graphicData>
+      <texPath>Things/Building/Structure/Walls/OE_Wall</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Structure/Walls/OE_Wall_Smooth_Icon</uiIconPath>
+	<uiIconPathsStuff Inherit="False">
+      <li>
+        <appearance>Bricks</appearance>
+        <iconPath>Things/Building/Structure/Walls/OE_Wall_Bricks_Icon</iconPath>
+      </li>
+    </uiIconPathsStuff>
+	<fillPercent>1.0</fillPercent>
+  </ThingDef>
+
+<!--=============== Embrasure ====================-->
+  <ThingDef ParentName="OEWallBase">
+    <defName>OE_Embrasure</defName>
+    <label>obsidia embrasure</label>
+    <description>Reinforced Obsidia heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools. Capable of holding up a roof. Designed with tactical holes to see and fire through.</description>
+    <graphicData>
+      <texPath>Things/Building/Structure/Walls/OE_Embrasure</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/Structure/Walls/OE_Embrasure_Smooth_Icon</uiIconPath>
+	<uiIconPathsStuff Inherit="False">
+      <li>
+        <appearance>Bricks</appearance>
+        <iconPath>Things/Building/Structure/Walls/OE_Embrasure_Bricks_Icon</iconPath>
+      </li>
+    </uiIconPathsStuff>
+	<fillPercent>0.75</fillPercent>
+	<ignoreConfigErrors>true</ignoreConfigErrors>
+  </ThingDef>
+
+<!--=============== Doors Base ====================-->
+  <ThingDef ParentName="BuildingBase" Name="OEDoorBase" Abstract="True">
+    <thingClass>Building_Door</thingClass>
+    <category>Building</category>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+	<uiOrder>2010.666</uiOrder>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+      <paintable>true</paintable>
+	  <isInert>true</isInert>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Structure/Doors/OE_Doors_Blueprint</texPath>
+      </blueprintGraphicData>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+	<costStuffCount>35</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Forbiddable">
+        <allowNonPlayer>true</allowNonPlayer>
+      </li>
+    </comps>
+	<damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+    </damageMultipliers>
+	<replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <placeWorkers>
+      <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+    </placeWorkers>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+<!--=============== Armored Doors Base ====================-->
+  <ThingDef ParentName="OEDoorBase" Name="OEArmoredDoorBase" Abstract="True">
+	<thingClass>Building_MultiTileDoor</thingClass>
+    <statBases>
+	  <MaxHitPoints>3500</MaxHitPoints>
+    </statBases>
+    <graphicData>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1.005, 1.005)</drawSize>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+	<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+	<size>(2, 1)</size>
+    <rotatable>true</rotatable>
+	<costStuffCount>90</costStuffCount>
+	<building>
+      <blueprintClass>Blueprint_Build</blueprintClass>
+      <blueprintGraphicData>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>EdgeDetect</shaderType>
+        <drawSize>(2.6, 3.1)</drawSize>
+      </blueprintGraphicData>
+      <doorTopGraphic>
+        <texPath>Things/Building/Structure/Doors/OE_ArmoredDoors2x1_Top</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3.1, 2.3)</drawSize>
+      </doorTopGraphic>
+      <doorSupportGraphic>
+        <texPath>Things/Building/Structure/Doors/OE_ArmoredDoors2x1_Support</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3.1, 2.3)</drawSize>
+      </doorSupportGraphic>
+    </building>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Simple Door ====================-->
+  <ThingDef ParentName="OEDoorBase">
+    <defName>OE_Door</defName>
+    <label>obsidia door</label>
+    <description>Reinforced Obsidia heavy doorway. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Structure/Doors/OE_Door/OE_Door_Mover</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Structure/Doors/OE_Door/OE_Door_MenuIcon</uiIconPath>
+	<costList>
+      <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Autodoor ====================-->
+  <ThingDef ParentName="OEDoorBase">
+    <defName>OE_Autodoor</defName>
+    <label>obsidia autodoor</label>
+    <description>Reinforced Obsidia heavy doorway. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>1750</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Structure/Doors/OE_Autodoor/OE_Autodoor_Mover</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Structure/Doors/OE_Autodoor/OE_Autodoor_MenuIcon</uiIconPath>
+    <costList>
+      <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<transmitsPower>true</transmitsPower>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+  </ThingDef>
+
+<!--=============== Animal Flap ====================-->
+  <ThingDef ParentName="OEDoorBase">
+    <defName>OE_Petdoor</defName>
+    <label>obsidia animal door</label>
+    <description>Reinforced Obsidia heavy doorway. Allows animals to pass while insulating the temperature. Animal flaps are commonly used as barn doors to give penned animals a sheltered place to sleep.</description>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Structure/Doors/OE_Petdoor/OE_Petdoor_Mover</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Structure/Doors/OE_Petdoor/OE_Petdoor_MenuIcon</uiIconPath>
+	<costList>
+      <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+    <building>
+      <roamerCanOpen>true</roamerCanOpen>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+	<comps>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Armored Door ====================-->
+  <ThingDef ParentName="OEArmoredDoorBase">
+    <defName>OE_ArmoredDoor</defName>
+    <label>armored obsidia door</label>
+    <description>Armored Obsidia heavy double doorway. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.\n\nThis large, heavy door requires adjacent walls to function.</description>
+	<thingClass>Building_MultiTileDoor</thingClass>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Structure/Doors/OE_Door/OE_ArmoredDoor2x1_Mover</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Structure/Doors/OE_Door/OE_ArmoredDoor_MenuIcon_south</uiIconPath>
+	<costList>
+	  <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+	<building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Structure/Doors/OE_Door/OE_ArmoredDoor_MenuIcon</texPath>
+      </blueprintGraphicData>
+    </building>
+	<comps>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Armored Autodoor ====================-->
+  <ThingDef ParentName="OEArmoredDoorBase">
+    <defName>OE_ArmoredAutodoor</defName>
+    <label>armored obsidia autodoor</label>
+    <description>Armored Obsidia heavy double doorway. Powered operation allows people to move through the door without slowing down.\n\nThis large, heavy door requires adjacent walls to function.</description>
+	<thingClass>Building_MultiTileDoor</thingClass>
+    <statBases>
+      <WorkToBuild>3500</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Structure/Doors/OE_Autodoor/OE_ArmoredAutodoor2x1_Mover</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Structure/Doors/OE_Autodoor/OE_ArmoredAutodoor_MenuIcon_south</uiIconPath>
+	<costList>
+	  <OE_Syntherius>4</OE_Syntherius>
+    </costList>
+	<building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Structure/Doors/OE_Autodoor/OE_ArmoredAutodoor_MenuIcon</texPath>
+      </blueprintGraphicData>
+    </building>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<transmitsPower>true</transmitsPower>
+        <basePowerConsumption>55</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+  </ThingDef>
+
+<!--=============== Armored Animal Flap ====================-->
+  <ThingDef ParentName="OEArmoredDoorBase">
+    <defName>OE_ArmoredPetdoor</defName>
+    <label>armored obsidia animal door</label>
+    <description>Armored Obsidia heavy double doorway. Allows animals to pass while insulating the temperature. Animal flaps are commonly used as barn doors to give penned animals a sheltered place to sleep.\n\nThis large, heavy door requires adjacent walls to function.</description>
+	<thingClass>Building_MultiTileDoor</thingClass>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Structure/Doors/OE_Petdoor/OE_ArmoredPetdoor2x1_Mover</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Structure/Doors/OE_Petdoor/OE_ArmoredPetdoor_MenuIcon_south</uiIconPath>
+	<costList>
+	  <OE_Syntherius>4</OE_Syntherius>
+    </costList>
+	<building>
+      <roamerCanOpen>true</roamerCanOpen>
+      <ai_chillDestination>false</ai_chillDestination>
+	  <blueprintGraphicData>
+        <texPath>Things/Building/Structure/Doors/OE_Petdoor/OE_ArmoredPetdoor_MenuIcon</texPath>
+      </blueprintGraphicData>
+    </building>
+	<comps>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Columns Base ====================-->
+  <ThingDef ParentName="BuildingBase" Name="OEColumnBase" Abstract="True">
+	<designationCategory>Structure</designationCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <holdsRoof>true</holdsRoof>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <fertility>0</fertility>
+    <specialDisplayRadius>6.9</specialDisplayRadius>
+    <building>
+      <paintable>true</paintable>
+	  <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <uiOrder>2040.666</uiOrder>
+	<graphicData>
+      <drawSize>(1,1.25)</drawSize>
+      <drawOffset>(0,0,0.2)</drawOffset>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+	<damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.2</multiplier>
+      </li>
+    </damageMultipliers>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Armored ====================-->
+  <ThingDef ParentName="OEColumnBase">
+    <defName>OE_Column_Armored</defName>
+    <label>obsidia column</label>
+    <description>Reinforced Obsidia heavy column. Capable of holding up a roof. Does not block sight or movement and looks quite nice.</description>
+    <graphicData>
+      <texPath>Things/Building/Structure/Columns/OE_Column</texPath>
+    </graphicData>
+	<costList>
+      <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Light ====================-->
+  <ThingDef ParentName="OEColumnBase">
+    <defName>OE_Column_Light</defName>
+    <label>obsidia light column</label>
+    <description>Reinforced Obsidia heavy column. Capable of holding up a roof. Does not block sight or movement and looks quite nice, also lights the area.</description>
+    <graphicData>
+      <texPath>Things/Building/Structure/Columns/OE_Column_Light</texPath>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<costList>
+      <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>35</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>11</glowRadius>
+        <glowColor>(80,112,180,0)</glowColor>
+		<colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+	  <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+</Defs>

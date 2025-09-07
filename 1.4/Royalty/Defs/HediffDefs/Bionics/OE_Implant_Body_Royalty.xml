@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Skin ====================-->
+<!--=============== Implant - Mythril ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantSkin_Mythril</defName>
+    <label>skin implant - Mythril</label>
+    <labelNoun>a skin implant - Mythril</labelNoun>
+    <description>An installed skin implant - Mythril.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantSkin_Mythril</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantSkin_Mythril</spawnThingOnRemoved>
+	<stages>
+	  <li>
+	    <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.2</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.75</ArmorRating_Heat>
+		  <PawnBeauty>3</PawnBeauty>
+        </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>ArmorGland</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantSkin_Mythril</defName>
+    <label>skin implant - Mythril</label>
+    <description>Obsidia skin implant releases chemicals and nanomachines that toughen the skin and add flexible subdermal mythril plates at strategic points. This makes the user more resistant to damage across their whole body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantSkin_Mythril</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OEC/OE_Skin</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OECBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_MythrilSynthweave>25</OE_MythrilSynthweave>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>30</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_MythrilSynthweave>10</OE_MythrilSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantSkin_Mythril</defName>
+    <label>install skin implant - Mythril</label>
+    <description>Install a skin implant - Mythril.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantSkin_Mythril</ThingDef>
+      <HediffDef>OE_ImplantSkin_Mythril</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing skin implant - Mythril.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantSkin_Mythril</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantSkin_Mythril</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantSkin_Mythril</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmorGland</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantSkin_Mythril</defName>
+    <label>remove skin implant - Mythril</label>
+    <description>Remove a skin implant - Mythril.</description>
+    <jobString>Removing skin implant - Mythril.</jobString>
+    <removesHediff>OE_ImplantSkin_Mythril</removesHediff>
+  </RecipeDef>
+
+</Defs>

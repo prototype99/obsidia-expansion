@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Recruit ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Recruit</defName>
+    <label>OMC recruit</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>9000~10000</apparelMoney>
+	<apparelTags>
+	  <li>OMCSoldier</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>3000~4000</weaponMoney>
+	<weaponTags>
+      <li>OMCBaseMelee</li>
+	  <li>OMCLightGun</li>
+    </weaponTags>
+    <techHediffsMoney>1500~3000</techHediffsMoney>
+	<techHediffsChance>0.25</techHediffsChance>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+    </techHediffsTags>
+	<combatPower>100</combatPower>
+  </PawnKindDef>
+
+<!--=============== Soldier ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Soldier_Melee</defName>
+    <label>OMC soldier</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+	  <li>OMCSoldier</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>OMCBaseMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OMCBionics</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Soldier_RMelee</defName>
+    <label>OMC soldier</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+	  <li>OMCSoldier</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>OMCRangedMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OMCBionics</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>4~6</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Soldier_Ranged</defName>
+    <label>OMC soldier</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+	<apparelTags>
+	  <li>OMCSoldier</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>OMCLightGun</li>
+	  <li>OMCBaseGun</li>
+	  <li>OMCShortGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OMCBionics</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Soldier_Sniper</defName>
+    <label>OMC soldier</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>11000~13000</apparelMoney>
+    <apparelTags>
+	  <li>OMCSoldier</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+	<weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+	  <li>OMCSniperGun</li>
+	  <li>OMCHeavyGun</li>
+    </weaponTags>
+	<techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OMCBionics</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Officer ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Officer_Melee</defName>
+    <label>OMC officer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OMCOfficer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OMCOfficer_Ranged</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OMCOfficer_ForceField</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OMCBaseMeleeM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+	
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Officer_RMelee</defName>
+    <label>OMC officer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OMCOfficer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OMCOfficer_Ranged</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OMCOfficer_ForceField</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OMCRangedMeleeM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Officer_Ranged</defName>
+    <label>OMC officer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OMCOfficer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OMCOfficer_Melee</li>
+	  <li>OMCOfficer_Smoker</li>
+	  <li>OMCOfficer_Shield</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~10000</weaponMoney>
+	<weaponTags>
+      <li>OMCLightGunM</li>
+	  <li>OMCBaseGunM</li>
+	  <li>OMCShortGunM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OMC_Officer_Sniper</defName>
+    <label>OMC officer</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+      <li>OMCOfficer</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OMCOfficer_Melee</li>
+	  <li>OMCOfficer_Smoker</li>
+	  <li>OMCOfficer_Shield</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>9000~12000</weaponMoney>
+	<weaponTags>
+      <li>OMCSniperGunM</li>
+	  <li>OMCHeavyGunM</li>
+    </weaponTags>
+    <techHediffsMoney>3000~5000</techHediffsMoney>
+	<techHediffsChance>0.75</techHediffsChance>
+	<techHediffsMaxAmount>5</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>175</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Arachna ====================-->
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OMC_Mech_Arachna</defName>
+    <label>OMC Arachna</label>
+    <race>OE_Mech_OMC_Arachna</race>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+    <weaponTags>
+      <li>OMCArachna</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--=============== Dominator ====================-->
+  <PawnKindDef ParentName="OMCKindBaseMechDominator">
+    <defName>OMC_Mech_Dominator</defName>
+    <label>OMC Dominator</label>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+  </PawnKindDef>
+
+</Defs>

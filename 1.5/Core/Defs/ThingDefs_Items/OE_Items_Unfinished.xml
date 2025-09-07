@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Unfinished Gear ====================-->
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>OE_UnfinishedGear</defName>
+    <label>unfinished obsidia gear</label>
+    <description>An unfinished obsidia gear.</description>
+    <statBases>
+      <Flammability>0.35</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/OE_UnfinishedGear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+<!--=============== Unfinished Melee ====================-->
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>OE_UnfinishedMelee</defName>
+    <label>unfinished obsidia melee</label>
+    <description>An unfinished obsidia melee.</description>
+    <statBases>
+      <Flammability>0.35</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/OE_UnfinishedMelee</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+<!--=============== Unfinished Ranged ====================-->
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>OE_UnfinishedRanged</defName>
+    <label>unfinished obsidia gun</label>
+    <description>An unfinished obsidia gun.</description>
+    <statBases>
+      <Flammability>0.35</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/OE_UnfinishedRanged</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+<!--=============== Unfinished Mods ====================-->
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>OE_UnfinishedMods</defName>
+    <label>unfinished obsidia high-tech</label>
+    <description>An unfinished piece of obsidia high-tech.</description>
+    <statBases>
+      <Flammability>0.35</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/OE_UnfinishedMods</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+<!--=============== Unfinished Amalgama ====================-->
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>OE_UnfinishedAmalgama</defName>
+    <label>unfinished amalgam obsidia gear</label>
+    <description>An unfinished amalgam obsidia gear.</description>
+    <statBases>
+      <Flammability>0.35</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/OE_UnfinishedAmalgama</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+</Defs>

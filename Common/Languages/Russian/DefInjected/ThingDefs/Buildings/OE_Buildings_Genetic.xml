@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Colonial Gene Bank ====================-->
+<OE_ColonialGeneBank.label>колониальное хранилище генов обсидии</OE_ColonialGeneBank.label>
+<OE_ColonialGeneBank.description>Место для хранения огромного количества генных пакетов. В случае размещения рядом с генетическим сборщиком, генные пакеты могут быть использованы для создания новых ксеносемян.\n\nГенные банки предотвращают ветшание генных пакетов, а также медленно восстанавливают их, если подключены к электросети.</OE_ColonialGeneBank.description>
+
+<!--=============== Colonial Gene Processor ====================-->
+<OE_ColonialGeneProcessor.label>колониальный генетический обработчик обсидии</OE_ColonialGeneProcessor.label>
+<OE_ColonialGeneProcessor.description>Передовая система анализа и улучшения генетического материала, разработанная колониями Обсидии. При размещении рядом с генным ассемблером увеличивает максимальную генетическую сложность ксеногенов, которые вы можете создать. Установка нескольких обработчиков дополнительно повышает этот порог, позволяя разрабатывать более сложные и мощные генетические структуры.</OE_ColonialGeneProcessor.description>
+<OE_ColonialGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>Увеличение генетической сложности</OE_ColonialGeneProcessor.comps.CompInspectStringGeneProcessor.inspectString>
+
+</LanguageData>

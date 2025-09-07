@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearTrophySell</tag></li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_CombatSupplier" or defName="Visitor_Outlander_Standard"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearTrophySell</tag></li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearTrophySell</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+		<countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_PirateMerchant"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearTrophySell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBionicsSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBuildingSell</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+		<countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+	  <li Class="StockGenerator_Animals">
+        <checkTemperature>false</checkTemperature>
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalSlime</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>OEAnimalExotic</li>
+		  <li>OEAnimalSell</li>
+        </tradeTagsBuy>
+        <kindCountRange>0~4</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>OEAnimal</li>
+        </createMatingPair>
+      </li>	  	  
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Base_Outlander_Standard" or defName="Orbital_Empire" or defName="Empire_Caravan_TraderGeneral" or defName="Base_Empire_Standard"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearTrophySell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBionicsSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBuildingSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSell</tag></li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>50~150</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesS</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesM</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>5~10</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesL</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+		<countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Animals">
+        <checkTemperature>false</checkTemperature>
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalSlime</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>OEAnimalExotic</li>
+		  <li>OEAnimalSell</li>
+        </tradeTagsBuy>
+        <kindCountRange>0~4</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>OEAnimal</li>
+        </createMatingPair>
+      </li>	 
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_BulkGoods" or defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBuildingSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSell</tag></li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>50~150</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesS</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesM</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>5~10</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesL</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Datapad</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Visitor_Neolithic_Standard" or defName="Caravan_Neolithic_BulkGoods" or defName="Caravan_Neolithic_WarMerchant" or defName="Caravan_Neolithic_ShamanMerchant" or defName="Base_Neolithic_Standard"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSell</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OE_SlimeHeart</tradeTag>
+        <thingDefCountRange>0~2</thingDefCountRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_Exotic" or defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEResourcesSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGearTrophySell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBionicsSell</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBuildingSell</tag></li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>50~150</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesS</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesM</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>5~10</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesL</tradeTag>
+		<thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesExoticS</tradeTag>
+		<thingDefCountRange>-1~2</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesExoticM</tradeTag>
+		<thingDefCountRange>-1~2</thingDefCountRange>
+        <countRange>5~10</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEResourcesExoticL</tradeTag>
+		<thingDefCountRange>-1~2</thingDefCountRange>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OE_SlimeHeart</tradeTag>
+        <thingDefCountRange>-1~1</thingDefCountRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBuildingBeacons</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+		<countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Datapad</thingDef>
+        <countRange>-2~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Animals">
+        <checkTemperature>false</checkTemperature>
+		<maxWildness>1.00</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalSlime</li>
+		  <li>OEAnimalExotic</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+		  <li>OEAnimalSell</li>
+        </tradeTagsBuy>
+        <kindCountRange>1~4</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>OEAnimal</li>
+        </createMatingPair>
+      </li>	 
+    </value>
+</Operation>
+
+</Patch>

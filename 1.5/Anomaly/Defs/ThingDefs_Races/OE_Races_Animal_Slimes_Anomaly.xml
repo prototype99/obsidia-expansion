@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Bioferrite ====================-->
+  <ThingDef ParentName="OEBaseRockSlime">
+    <defName>OE_Slime_Bioferrite</defName>
+    <label>bioferrite slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nBioferrite slime production type, produces 50 Bioferrite every 10 days.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Bioferrite</ThingDef>
+	  <ThingDef>Bioferrite</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>300</MarketValue>
+    </statBases>
+	<race>
+      <predator>false</predator>
+      <foodType>VegetarianRoughAnimal</foodType>
+    </race>
+	<butcherProducts>
+      <Bioferrite>20</Bioferrite>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Bioferrite</milkDef>
+        <milkIntervalDays>10</milkIntervalDays>
+        <milkAmount>100</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Bioferrite</defName>
+    <label>bioferrite slime</label>
+    <labelPlural>bioferrite slimes</labelPlural>
+    <race>OE_Slime_Bioferrite</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bioferrite/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bioferrite/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bioferrite/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Bioferrite/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Steel/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>30</combatPower>
+  </PawnKindDef>
+
+</Defs>

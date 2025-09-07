@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Arachnas Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Cure - Arachna Neurotoxin ====================-->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>OE_CureArachnaNeurotoxin</defName>
+    <label>cure arachna neurotoxin</label>
+    <description>This special medical operation cures arachna neurotoxin by a massive infusion of cosmol immunostimulant.</description>
+	<uiIconThing>OE_Cosmol</uiIconThing>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Curing arachna neurotoxin.</jobString>
+    <workAmount>1500</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+    <removesHediff>OE_ArachnaNeurotoxin</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully cured {1}'s arachna neurotoxin.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Cosmol</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+		  </value>
+	    </li>
+		
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/ThingDef[defName="Human"]/recipes</xpath>
+		  <value>
+			<li MayRequire="Ludeon.RimWorld.Biotech">OE_CureArachnaNeurotoxin</li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+		  <value>
+			<li MayRequire="Ludeon.RimWorld.Biotech">OE_CureArachnaNeurotoxin</li>
+		  </value>
+	    </li>
+		
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

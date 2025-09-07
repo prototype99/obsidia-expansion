@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Namer - Obsidia Language ====================-->
+  <OE_Namer_Obsidia_Language.rulePack.rulesStrings>
+    <li>r_name(p=0.2)->[anyPrefix][wholeName]</li>
+    <li>r_name(p=0.2)->[anyPrefix]о-[wholeName]</li>
+	<li>r_name(p=1)->[wholeName]</li>
+	<!---->
+	<li>anyPrefix->прот</li>
+	<li>anyPrefix->три</li>
+	<li>anyPrefix->экс</li>
+	<li>anyPrefix->не</li>
+	<li>anyPrefix->зер</li>
+	<!---->
+	<li>wholeName->обсидиа</li>
+	<li>wholeName->обсидиант</li>
+	<li>wholeName->обсидиат</li>
+	<li>wholeName->обсидикт</li>
+	<li>wholeName->обсидиантум</li>
+  </OE_Namer_Obsidia_Language.rulePack.rulesStrings>
+
+</LanguageData>

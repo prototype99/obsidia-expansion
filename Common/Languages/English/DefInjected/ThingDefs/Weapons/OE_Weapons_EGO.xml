@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== EGO - Knife ====================-->
+<EGO_Knife.label>Lymocyst</EGO_Knife.label>
+<EGO_Knife.description>Amalgam Knife used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_Knife.description>
+
+<EGO_Knife.tools.handle.label>handle</EGO_Knife.tools.handle.label>
+<EGO_Knife.tools.blade.label>blade</EGO_Knife.tools.blade.label>
+<EGO_Knife.tools.point.label>point</EGO_Knife.tools.point.label>
+
+<!--=============== EGO - Claws ====================-->
+<EGO_Claws.label>Devourer</EGO_Claws.label>
+<EGO_Claws.description>Amalgam Claws used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_Claws.description>
+
+<EGO_Claws.tools.claws.label>claws</EGO_Claws.tools.claws.label>
+
+<!--=============== EGO - BigSword ====================-->
+<EGO_BigSword.label>Bonesword</EGO_BigSword.label>
+<EGO_BigSword.description>Amalgam Longsword used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_BigSword.description>
+
+<EGO_BigSword.tools.handle.label>handle</EGO_BigSword.tools.handle.label>
+<EGO_BigSword.tools.point.label>point</EGO_BigSword.tools.point.label>
+<EGO_BigSword.tools.edge.label>edge</EGO_BigSword.tools.edge.label>
+
+<!--=============== EGO - BigHammer ====================-->
+<EGO_BigHammer.label>Batterbone</EGO_BigHammer.label>
+<EGO_BigHammer.description>Amalgam Big Hammer used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_BigHammer.description>
+
+<EGO_BigHammer.tools.handle.label>handle</EGO_BigHammer.tools.handle.label>
+<EGO_BigHammer.tools.head.label>head</EGO_BigHammer.tools.head.label>
+
+<!--=============== EGO - BigScythe ====================-->
+<EGO_BigScythe.label>Batterskull</EGO_BigScythe.label>
+<EGO_BigScythe.description>Amalgam Big Scythe used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_BigScythe.description>
+
+<EGO_BigScythe.tools.handle.label>handle</EGO_BigScythe.tools.handle.label>
+<EGO_BigScythe.tools.edge.label>edge</EGO_BigScythe.tools.edge.label>
+
+<!--=============== EGO - Scepter ====================-->
+<EGO_Scepter.label>Carnifex</EGO_Scepter.label>
+<EGO_Scepter.description>Amalgam Scepter used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_Scepter.description>
+
+<EGO_Scepter.tools.ornament.label>ornament</EGO_Scepter.tools.ornament.label>
+
+<!--=============== EGO - Whip ====================-->
+<Wave_EGO_W.label>Proboscis wave</Wave_EGO_W.label>
+
+<EGO_Whip.label>Proboscis</EGO_Whip.label>
+<EGO_Whip.verbs.Verb_Shoot.label>Proboscis</EGO_Whip.verbs.Verb_Shoot.label>
+<EGO_Whip.description>Amalgam Whip used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_Whip.description>
+
+<EGO_Whip.tools.handle.label>handle</EGO_Whip.tools.handle.label>
+
+<!--=============== EGO - Pistol ====================-->
+<Bullet_EGO_P.label>Humunculus bullet</Bullet_EGO_P.label>
+
+<EGO_Pistol.label>Humunculus</EGO_Pistol.label>
+<EGO_Pistol.verbs.Verb_Shoot.label>Humunculus</EGO_Pistol.verbs.Verb_Shoot.label>
+<EGO_Pistol.description>Amalgam Pistol used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_Pistol.description>
+
+<EGO_Pistol.tools.fang.label>fang</EGO_Pistol.tools.fang.label>
+
+<EGO_Pistol.comps.CompUniqueWeapon.namerLabels.0>Humunculus</EGO_Pistol.comps.CompUniqueWeapon.namerLabels.0>
+<EGO_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>charge</EGO_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>
+<EGO_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</EGO_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== EGO - Shotgun ====================-->
+<Bullet_EGO_S.label>Corrupter blast</Bullet_EGO_S.label>
+
+<EGO_Shotgun.label>Corrupter</EGO_Shotgun.label>
+<EGO_Shotgun.verbs.Verb_Shoot.label>Corrupter</EGO_Shotgun.verbs.Verb_Shoot.label>
+<EGO_Shotgun.description>Amalgam Shotgun used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_Shotgun.description>
+
+<EGO_Shotgun.tools.fang.label>fang</EGO_Shotgun.tools.fang.label>
+
+<EGO_Shotgun.comps.CompUniqueWeapon.namerLabels.0>Corrupter</EGO_Shotgun.comps.CompUniqueWeapon.namerLabels.0>
+<EGO_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>charge</EGO_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<EGO_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</EGO_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== EGO - SMG ====================-->
+<Bullet_EGO_SMG.label>Toxocyst bullet</Bullet_EGO_SMG.label>
+
+<EGO_SMG.label>Toxocyst</EGO_SMG.label>
+<EGO_SMG.verbs.Verb_Shoot.label>Toxocyst</EGO_SMG.verbs.Verb_Shoot.label>
+<EGO_SMG.description>Amalgam SMG used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_SMG.description>
+
+<EGO_SMG.tools.fang.label>fang</EGO_SMG.tools.fang.label>
+
+<EGO_SMG.comps.CompUniqueWeapon.namerLabels.0>Toxocyst</EGO_SMG.comps.CompUniqueWeapon.namerLabels.0>
+<EGO_SMG.comps.CompEquippableAbilityReloadable.chargeNoun>charge</EGO_SMG.comps.CompEquippableAbilityReloadable.chargeNoun>
+<EGO_SMG.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</EGO_SMG.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== EGO - SniperRifle ====================-->
+<Bullet_EGO_SR.label>Patagius bullet</Bullet_EGO_SR.label>
+
+<EGO_SniperRifle.label>Patagius</EGO_SniperRifle.label>
+<EGO_SniperRifle.verbs.Verb_Shoot.label>Patagius</EGO_SniperRifle.verbs.Verb_Shoot.label>
+<EGO_SniperRifle.description>Amalgam Sniper Rifle used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Acid damages.\n\nThis modification deprives item's quality levels.</EGO_SniperRifle.description>
+
+<EGO_SniperRifle.tools.fang.label>fang</EGO_SniperRifle.tools.fang.label>
+
+<EGO_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>Patagius</EGO_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>
+<EGO_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>charge</EGO_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>
+<EGO_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</EGO_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== EGO - GrenadeLauncher ====================-->
+<Bullet_EGO_GL.label>Sporothrix grenade</Bullet_EGO_GL.label>
+
+<EGO_GrenadeLauncher.label>Sporothrix</EGO_GrenadeLauncher.label>
+<EGO_GrenadeLauncher.verbs.Verb_Shoot.label>Sporothrix</EGO_GrenadeLauncher.verbs.Verb_Shoot.label>
+<EGO_GrenadeLauncher.description>Amalgam Grenade Launcher used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Toxic-Gas damages.\n\nThis modification deprives item's quality levels.</EGO_GrenadeLauncher.description>
+
+<EGO_GrenadeLauncher.tools.fang.label>fang</EGO_GrenadeLauncher.tools.fang.label>
+
+<EGO_GrenadeLauncher.comps.CompUniqueWeapon.namerLabels.0>Sporothrix</EGO_GrenadeLauncher.comps.CompUniqueWeapon.namerLabels.0>
+<EGO_GrenadeLauncher.comps.CompEquippableAbilityReloadable.chargeNoun>charge</EGO_GrenadeLauncher.comps.CompEquippableAbilityReloadable.chargeNoun>
+<EGO_GrenadeLauncher.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</EGO_GrenadeLauncher.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== EGO - RocketLauncher ====================-->
+<Bullet_EGO_RL.label>Ulcerated rocket</Bullet_EGO_RL.label>
+
+<EGO_RocketLauncher.label>Ulcerated</EGO_RocketLauncher.label>
+<EGO_RocketLauncher.verbs.Verb_Shoot.label>Ulcerated</EGO_RocketLauncher.verbs.Verb_Shoot.label>
+<EGO_RocketLauncher.description>Amalgam Rocket Launcher used by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology. Specially modified weapon charged with Cryo and Toxic-Gas damages.\n\nThis modification deprives item's quality levels.</EGO_RocketLauncher.description>
+
+<EGO_RocketLauncher.tools.fang.label>fang</EGO_RocketLauncher.tools.fang.label>
+
+<EGO_RocketLauncher.comps.CompUniqueWeapon.namerLabels.0>Ulcerated</EGO_RocketLauncher.comps.CompUniqueWeapon.namerLabels.0>
+<EGO_RocketLauncher.comps.CompEquippableAbilityReloadable.chargeNoun>charge</EGO_RocketLauncher.comps.CompEquippableAbilityReloadable.chargeNoun>
+<EGO_RocketLauncher.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</EGO_RocketLauncher.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

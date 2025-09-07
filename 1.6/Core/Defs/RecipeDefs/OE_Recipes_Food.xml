@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Jumyline ====================-->
+  <RecipeDef>
+    <defName>OE_Cook_JumylinePack</defName>
+    <label>cook jumyline candies x5</label>
+    <description>Cook 5 jumyline candies from jumy berries and chocolate.</description>
+    <jobString>Cooking 5 jumyline candies.</jobString>
+	<workAmount>250</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Jumyline_Candies>5</OE_Jumyline_Candies>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Cooking>6</Cooking>
+	</skillRequirements>
+    <workSkill>Cooking</workSkill>
+	<researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Cook_JumylineBulk</defName>
+    <label>cook jumyline candies x10</label>
+    <description>Cook 10 jumyline candies from jumy berries and chocolate.</description>
+    <jobString>Cooking 10 jumyline candies.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Jumyline_Candies>10</OE_Jumyline_Candies>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+    <skillRequirements>
+	  <Cooking>6</Cooking>
+	</skillRequirements>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== Obsidia Can Meal ====================-->
+<!--=============== Normal ====================-->
+  <RecipeDef ParentName="CookMealLavishBase">
+    <defName>OE_CookCanMeal</defName>
+    <label>cook obsidia can meal</label>
+    <description>Cook an exquisite, high-quality meal from a combination of meat and plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</description>
+    <jobString>Cooking obsidia can meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_CanMeal>1</OE_CanMeal>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+	<researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBulkBase">
+    <defName>OE_CookCanMealBulk</defName>
+    <label>cook obsidia can meal x4</label>
+    <description>Cook 4 an exquisite, high-quality meals from a combination of meat and plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</description>
+    <jobString>Cooking 4 obsidia can meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_CanMeal>4</OE_CanMeal>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+    <researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== Vegetarian ====================-->
+  <RecipeDef ParentName="CookMealLavishBase">
+    <defName>OE_CookCanMeal_Veg</defName>
+    <label>cook vegetarian obsidia can meal</label>
+    <description>Cook an exquisite, high-quality meal from plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</description>
+    <jobString>Cooking vegetarian obsidia can meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>vegetarian ingredients</customSummary>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>1.0</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <OE_CanMeal_Veg>1</OE_CanMeal_Veg>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+	<researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBulkBase">
+    <defName>OE_CookCanMealBulk_Veg</defName>
+    <label>cook vegetarian obsidia can meal x4</label>
+    <description>Cook 4 an exquisite, high-quality meals from plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</description>
+    <jobString>Cooking 4 vegetarian obsidia can meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>vegetarian ingredients</customSummary>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>4.0</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <OE_CanMeal_Veg>4</OE_CanMeal_Veg>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+    <researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== Carnivore ====================-->
+  <RecipeDef ParentName="CookMealLavishBase">
+    <defName>OE_CookCanMeal_Meat</defName>
+    <label>cook carnivore obsidia can meal</label>
+    <description>Cook an exquisite, high-quality meal from meat ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</description>
+    <jobString>Cooking carnivore obsidia can meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>1.0</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <disallowedCategories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <OE_CanMeal_Meat>1</OE_CanMeal_Meat>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+	<researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBulkBase">
+    <defName>OE_CookCanMealBulk_Meat</defName>
+    <label>cook carnivore obsidia can meal x4</label>
+    <description>Cook 4 an exquisite, high-quality meals from meat ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</description>
+    <jobString>Cooking 4 carnivore obsidia can meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>4.0</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Jumy_Berries</li>
+          </thingDefs>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <disallowedCategories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <OE_CanMeal_Meat>4</OE_CanMeal_Meat>
+    </products>
+	<recipeUsers>
+      <li>FueledStove</li>
+	  <li>ElectricStove</li>
+	  <li MayRequire="VanillaExpanded.VFEProduction">VFE_TableStoveLarge</li>
+    </recipeUsers>
+    <researchPrerequisite>OECore</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

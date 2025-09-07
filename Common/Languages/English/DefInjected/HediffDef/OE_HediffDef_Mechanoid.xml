@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Arachna Queen ====================-->
+<!--=============== Queen's Curse ====================-->
+<OE_QueenCurse.label>cursed</OE_QueenCurse.label>
+<OE_QueenCurse.labelNoun>cursed</OE_QueenCurse.labelNoun>
+<OE_QueenCurse.description>The curse fully disarms the target and increases incoming damage. The curse has a very long duration.</OE_QueenCurse.description>
+
+<!--=============== Dominator ====================-->
+<!--=============== Redline ====================-->
+<OE_Redline.label>Redline</OE_Redline.label>
+<OE_Redline.labelNoun>redline</OE_Redline.labelNoun>
+<OE_Redline.description>A special Dominator's mode that raises their combat potential and movespeed.</OE_Redline.description>
+<OE_Redline.stages.reboot.label>reboot</OE_Redline.stages.reboot.label>
+
+<OE_RedlineAftereffect.label>Reboot</OE_RedlineAftereffect.label>
+<OE_RedlineAftereffect.description>Rebooting Dominator's core systems after using the Redline ability.</OE_RedlineAftereffect.description>
+
+<!--=============== Chaos ====================-->
+<OE_Chaos.label>Chaos</OE_Chaos.label>
+<OE_Chaos.labelNoun>chaos</OE_Chaos.labelNoun>
+<OE_Chaos.description>Mental debuffs from the effects of the Chaos.</OE_Chaos.description>
+
+<!--=============== Vanguard ====================-->
+<OE_Vanguard.label>Vanguard</OE_Vanguard.label>
+<OE_Vanguard.labelNoun>vanguard</OE_Vanguard.labelNoun>
+<OE_Vanguard.description>A special Dominator's program that reducing incoming damage with small reducing movespeed.</OE_Vanguard.description>
+
+<!--=============== Camouflage ====================-->
+<OE_MechCamouflage.label>camouflage</OE_MechCamouflage.label>
+<OE_MechCamouflage.description>Active inner stealth module which renders Dominator invisible.</OE_MechCamouflage.description>
+
+<!--=============== Chaos Lord ====================-->
+<!--=============== Grand Redline ====================-->
+<OE_LordRedline.label>grand Redline</OE_LordRedline.label>
+<OE_LordRedline.labelNoun>grand redline</OE_LordRedline.labelNoun>
+<OE_LordRedline.description>A special Chaos Lord's mode that raises their combat potential and movespeed.</OE_LordRedline.description>
+
+<!--=============== Shadow Walk ====================-->
+<OE_MechLordCamouflage.label>shadow walk</OE_MechLordCamouflage.label>
+<OE_MechLordCamouflage.description>Active inner stealth module which renders Chaos Lord invisible.</OE_MechLordCamouflage.description>
+
+</LanguageData>

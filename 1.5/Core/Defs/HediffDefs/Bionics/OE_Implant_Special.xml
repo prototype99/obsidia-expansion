@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Krekeros Curse ====================-->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>OE_Implant_Special_A</defName>
+    <label>Krekeros Curse</label>
+    <description>One of the field officers, Krekeros, sought to enhance the fighting skills of soldiers by stimulating the mind and body. Unfortunately, his project did not pass testing and was rejected. However, due to a labeling error by an intern named Slikstep, a shipment of defective products was mistakenly sent to the former Hero Corpus, now known as Obsidia Empire Sins.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.87, 0.53, 0.11)</defaultLabelColor>
+	<initialSeverity>1</initialSeverity>
+	<isBad>true</isBad>
+	<priceImpact>false</priceImpact>
+    <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+    <allowMothballIfLowPriorityWorldPawn>false</allowMothballIfLowPriorityWorldPawn>
+	<stages>
+	  <li>
+        <capMods>
+		  <li>
+			<capacity>Moving</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Sight</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Hearing</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Breathing</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>BloodFiltration</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>BloodPumping</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Metabolism</capacity>
+            <offset>0.2</offset>
+		  </li>
+		</capMods>
+		<statOffsets>
+		  <AimingDelayFactor>-0.2</AimingDelayFactor>
+		  <MeleeHitChance>4</MeleeHitChance>
+        </statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Implant_Special_A_Effect</stateEffecter>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef>
+    <defName>OE_Implant_Special_A</defName>
+    <label>Krekeros Curse</label>
+    <description>One of the field officers, Krekeros, sought to enhance the fighting skills of soldiers by stimulating the mind and body. Unfortunately, his project did not pass testing and was rejected. However, due to a labeling error by an intern named Slikstep, a shipment of defective products was mistakenly sent to the former Hero Corpus, now known as Obsidia Empire Sins.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantSkin_CAC</RecipeDef></descriptionHyperlinks>
+	<thingClass>ThingWithComps</thingClass>
+	<category>Item</category>
+	<techLevel>Spacer</techLevel>
+	<destroyOnDrop>True</destroyOnDrop>
+	<tradeability>None</tradeability>
+	<thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+	<graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <drawSize>0.80</drawSize>
+      <color>(222,134,27)</color>
+    </graphicData>
+    <drawerType>MapMeshOnly</drawerType>
+	<altitudeLayer>Item</altitudeLayer>
+	<tickerType>Never</tickerType>
+	<useHitPoints>true</useHitPoints>
+	<isTechHediff>true</isTechHediff>
+    <pathCost>14</pathCost>
+	<statBases>
+      <MarketValue>100</MarketValue>
+	  <MaxHitPoints>1</MaxHitPoints>
+	  <Flammability>1</Flammability>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<allowedArchonexusCount>0</allowedArchonexusCount>
+	<comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallIImplant_Special_A</defName>
+    <label>install Krekeros Curse</label>
+    <description>Install a Krekeros Curse.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Implant_Special_A</ThingDef>
+      <HediffDef>OE_Implant_Special_A</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Krekeros Curse.</jobString>
+	<uiIconThing>OE_Implant_Special_A</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Implant_Special_A</li>
+          </thingDefs>
+        </filter>
+        <count>999</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Implant_Special_A</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_Implant_Special_A</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplant_Special_A</defName>
+    <label>remove Krekeros Curse</label>
+    <description>Remove a Krekeros Curse.</description>
+    <jobString>Removing Krekeros Curse.</jobString>
+    <removesHediff>OE_Implant_Special_A</removesHediff>
+	<uiIconThing>OE_Implant_Special_A</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Krekeros Curse - Visual Effect ====================-->
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OE_Implant_Special_A_Fleck</defName>
+	<altitudeLayer>MoteLow</altitudeLayer>
+	<fadeInTime>0.1</fadeInTime>
+	<fadeOutTime>0.1</fadeOutTime>
+	<solidTime>0.1</solidTime>
+	<growthRate>0</growthRate>
+	<acceleration>(0, 0, 0)</acceleration>
+	<graphicData>
+	  <texPath>Things/Mote/SpecialVisual/OE_Implant_Special_A</texPath>
+	  <shaderType>MoteGlow</shaderType>
+	</graphicData>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>OE_Implant_Special_A_Effect</defName>
+    <children>
+    <li>
+	  <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+	  <fleckDef>OE_Implant_Special_A_Fleck</fleckDef>
+	  <scale>1.45~1.85</scale>
+	  <rotation>0</rotation>
+	  <ticksBetweenMotes>8</ticksBetweenMotes>
+	  <spawnLocType>OnSource</spawnLocType>
+	</li>
+    </children>
+  </EffecterDef>
+
+<!--=============== Kokoplays MB Arcane ====================-->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>OE_Implant_Special_B</defName>
+    <label>Kokoplays MB Arcane</label>
+    <description>Agent Kokoplays MB, the top operative of the former Hero Corpus, now known as Obsidia Empire Sins, create a secret implant enhancing already legendary skills. As he embarked on high-stakes missions, Kokoplays MB uncovered a conspiracy that threatened Hero Corpus and the entire Obsidia Empire.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.87, 0.53, 0.11)</defaultLabelColor>
+	<initialSeverity>1</initialSeverity>
+	<isBad>true</isBad>
+	<priceImpact>false</priceImpact>
+    <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+    <allowMothballIfLowPriorityWorldPawn>false</allowMothballIfLowPriorityWorldPawn>
+	<stages>
+	  <li>
+        <capMods>
+		  <li>
+			<capacity>Moving</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Sight</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Hearing</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Breathing</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>BloodFiltration</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>BloodPumping</capacity>
+            <offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Metabolism</capacity>
+            <offset>0.2</offset>
+		  </li>
+		</capMods>
+		<statOffsets>
+		  <MentalBreakThreshold>-0.5</MentalBreakThreshold>
+        </statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Implant_Special_B_Effect</stateEffecter>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef>
+    <defName>OE_Implant_Special_B</defName>
+    <label>Kokoplays MB Arcane</label>
+    <description>Agent Kokoplays MB, the top operative of the former Hero Corpus, now known as Obsidia Empire Sins, create a secret implant enhancing already legendary skills. As he embarked on high-stakes missions, Kokoplays MB uncovered a conspiracy that threatened Hero Corpus and the entire Obsidia Empire.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantSkin_CAC</RecipeDef></descriptionHyperlinks>
+	<thingClass>ThingWithComps</thingClass>
+	<category>Item</category>
+	<techLevel>Spacer</techLevel>
+	<destroyOnDrop>True</destroyOnDrop>
+	<tradeability>None</tradeability>
+	<thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+	<graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <drawSize>0.80</drawSize>
+      <color>(222,134,27)</color>
+    </graphicData>
+    <drawerType>MapMeshOnly</drawerType>
+	<altitudeLayer>Item</altitudeLayer>
+	<tickerType>Never</tickerType>
+	<useHitPoints>true</useHitPoints>
+	<isTechHediff>true</isTechHediff>
+    <pathCost>14</pathCost>
+	<statBases>
+      <MarketValue>100</MarketValue>
+	  <MaxHitPoints>1</MaxHitPoints>
+	  <Flammability>1</Flammability>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<allowedArchonexusCount>0</allowedArchonexusCount>
+	<comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallIImplant_Special_B</defName>
+    <label>install Kokoplays MB Arcane</label>
+    <description>Install a Kokoplays MB Arcane.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Implant_Special_B</ThingDef>
+      <HediffDef>OE_Implant_Special_B</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Kokoplays MB Arcane.</jobString>
+	<uiIconThing>OE_Implant_Special_B</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Implant_Special_B</li>
+          </thingDefs>
+        </filter>
+        <count>999</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Implant_Special_B</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_Implant_Special_B</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplant_Special_B</defName>
+    <label>remove Kokoplays MB Arcane</label>
+    <description>Remove a Kokoplays MB Arcane.</description>
+    <jobString>Removing Kokoplays MB Arcane.</jobString>
+    <removesHediff>OE_Implant_Special_B</removesHediff>
+	<uiIconThing>OE_Implant_Special_B</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Kokoplays MB Arcane - Visual Effect ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OE_Implant_Special_B_Mote</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.35</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/SpecialVisual/OE_Implant_Special_B</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>3</_NumFrames>
+        <_FramesPerSec>6</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(0.4, 0.4)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_Implant_Special_B_Effect</defName>
+    <children>
+    <li>
+	  <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+	  <moteDef>OE_Implant_Special_B_Mote</moteDef>
+	  <burstCount>1~4</burstCount>
+	  <chancePerTick>0.035</chancePerTick>
+	  <rotation>-150~-150</rotation>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <scale>0.8~1.2</scale>
+	  <positionRadius>0.95</positionRadius>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+	  <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+	</li>
+    </children>
+  </EffecterDef>
+
+</Defs>

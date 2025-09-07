@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Azulium ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Azulium</defName>
+    <label>azulium</label>
+    <description>A common antipsychotic medicine used to prevent mental breakdowns and improve overall mood. Obsidia technology, the drug is non-addictive and has no after-effects.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_AzuliumHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Azulium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.005</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrug</li>
+    </tradeTags>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>1.0</joy>
+      <drugCategory>Social</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_AzuliumHigh</hediffDef>
+          <severity>0.35</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>4</Medicine>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+	  <PsychoidLeaves>2</PsychoidLeaves>
+	  <SmokeleafLeaves>2</SmokeleafLeaves>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1668</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AzuliumHigh</defName>
+    <label>azulium effect</label>
+    <description>Active anti-psychotic azulium compounds in the bloodstream, helps control extreme mental breaks and impulsive behaviour.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.7</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+		  <label>weak</label>
+		  <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+		  <statOffsets>
+		    <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+		  </statOffsets>
+        </li>
+		<li>
+          <minSeverity>0.4</minSeverity>
+		  <label>moderate</label>
+		  <hungerRateFactorOffset>0.10</hungerRateFactorOffset>
+		  <vomitMtbDays>40</vomitMtbDays>
+		  <statOffsets>
+		    <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		  </statOffsets>
+        </li>
+		<li>
+          <minSeverity>0.8</minSeverity>
+		  <label>strong</label>
+		  <hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+		  <vomitMtbDays>20</vomitMtbDays>
+		  <statOffsets>
+		    <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+		  </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>OE_AzuliumHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OE_AzuliumHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>relaxed from azulium</label>
+        <description>That azulium makes me feel more relaxed, and gives me energy at the same time.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!--=============== Timbium ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Timbium</defName>
+    <label>timbium</label>
+    <description>Hard stimpack for workers, used by Obsidia workers to increase productivity. Obsidia technology, a stimpack can be addictive but has no after-effects.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_TimbiumHigh</HediffDef>
+	  <HediffDef>OE_TimbiumAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Timbium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>15</MarketValue>
+      <Mass>0.005</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrug</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_TimbiumHigh</hediffDef>
+          <severity>0.35</severity>
+		  <toleranceChemical>OE_Timbium</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>6</Medicine>
+		<Crafting>2</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <OE_Jumy_Berries>5</OE_Jumy_Berries>
+	  <Neutroamine>1</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_Drug">
+        <chemical>OE_Timbium</chemical>
+        <addictiveness>0.1</addictiveness>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>1669</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_TimbiumHigh</defName>
+    <label>timbium effect</label>
+    <description>Active timbium in the bloodstream. Improves mobility, speed of work and learning.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.7</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+		  <minSeverity>0</minSeverity>
+		  <label>weak</label>
+		  <hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+		  <statOffsets>
+			<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+			<GlobalLearningFactor>0.25</GlobalLearningFactor>
+			<MoveSpeed>0.15</MoveSpeed>
+		  </statOffsets>
+        </li>
+		<li>
+		  <minSeverity>0.4</minSeverity>
+		  <label>moderate</label>
+		  <restFallFactorOffset>-0.1</restFallFactorOffset>
+		  <hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+		  <statOffsets>
+		    <CarryingCapacity>25</CarryingCapacity>
+			<WorkSpeedGlobal>0.35</WorkSpeedGlobal>
+			<GlobalLearningFactor>0.35</GlobalLearningFactor>
+			<MoveSpeed>0.2</MoveSpeed>
+		  </statOffsets>
+        </li>
+		<li>
+		  <minSeverity>0.8</minSeverity>
+		  <label>strong</label>
+		  <painFactor>0.75</painFactor>
+		  <restFallFactorOffset>-0.2</restFallFactorOffset>
+		  <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+		  <statOffsets>
+		    <CarryingCapacity>35</CarryingCapacity>
+			<WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+			<GlobalLearningFactor>0.50</GlobalLearningFactor>
+			<MoveSpeed>0.25</MoveSpeed>
+		  </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>OE_Timbium</defName>
+    <label>timbium</label>
+    <addictionHediff>OE_TimbiumAddiction</addictionHediff>
+    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>OE_Chemical_Timbium</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>timbium addiction</label>
+    <description>Because of an timbium addiction, this person needs to regularly consume timbium to avoid withdrawal symptoms.</description>
+    <listPriority>20</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_TimbiumAddiction</defName>
+    <label>timbium addiction</label>
+    <description>A chemical addiction to timbium.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+	<chemicalNeed>OE_Chemical_Timbium</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>withdrawal</label>
+		  <painFactor>2</painFactor>
+		  <restFallFactorOffset>0.5</restFallFactorOffset>
+		  <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+		  <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>OE_TimbiumWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OE_TimbiumAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+	  <li>
+        <label>timbium withdrawal</label>
+        <description>I feel my weakness. I never thought it was so hard to work without drugs.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!--=============== Garganadol ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Garganadol</defName>
+    <label>garganadol</label>
+    <description>A unique medical specialty, a potent drug based on Luciferium, is used a concoction of mechanites that dramatically improve the body's functioning.\n\nDisables need: Food.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_GarganadolHigh</HediffDef>
+	  <HediffDef>OE_GarganadolAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Garganadol</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>750</WorkToMake>
+      <MarketValue>100</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<minRewardCount>8</minRewardCount>
+	<tradeTags>
+      <li>OEDrugExotic</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_GarganadolHigh</hediffDef>
+          <severity>1</severity>
+		  <toleranceChemical>OE_Garganadol</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>10</Medicine>
+		<Intellectual>6</Intellectual>
+		<Crafting>4</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <OE_Cosmol>1</OE_Cosmol>
+	  <Luciferium>1</Luciferium>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_Drug">
+        <chemical>OE_Garganadol</chemical>
+        <addictiveness>0.55</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1670</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_GarganadolHigh</defName>
+    <label>garganadol effect</label>
+    <description>Garganadol in the bloodstream. Disables need: Food.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.54,0.92,0.91)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+	<stages>
+      <li>
+        <disablesNeeds>
+          <li>Food</li>
+        </disablesNeeds>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>OE_Garganadol</defName>
+    <label>garganadol</label>
+    <addictionHediff>OE_GarganadolAddiction</addictionHediff>
+	<canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>OE_Chemical_Garganadol</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>garganadol addiction</label>
+    <description>This person's body is enhanced by garganadol mechanites.\n\nWithout regular doses of garganadol, the mechanites will lose cohesion. If this happens, the user eventually dies.\n\nThis addiction never goes away.</description>
+    <listPriority>18</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_GarganadolAddiction</defName>
+    <label>garganadol need</label>
+    <description>Garganadol mechanites in the body. Garganadol mechanites decohere over time; only regular doses of fresh garganadol can prevent this process.\n\nWithout garganadol, the mechanite decoherence will reach a critical state, causing the victim die in 7 days.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+	<chemicalNeed>OE_Chemical_Garganadol</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>unmet</label>
+		  <lifeThreatening>true</lifeThreatening>
+          <deathMtbDays>7</deathMtbDays>
+          <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+        </li>
+      </stages>
+  </HediffDef>
+
+<!--=============== Cofagradol ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Cofagradol</defName>
+    <label>cofagradol</label>
+    <description>A unique medical specialty, a potent drug based on Luciferium, is used a concoction of mechanites that dramatically improve the body's functioning.\n\nDisables need: Rest.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_CofagradolHigh</HediffDef>
+	  <HediffDef>OE_CofagradolAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Cofagradol</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>750</WorkToMake>
+      <MarketValue>100</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<minRewardCount>8</minRewardCount>
+	<tradeTags>
+      <li>OEDrugExotic</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_CofagradolHigh</hediffDef>
+          <severity>1</severity>
+		  <toleranceChemical>OE_Cofagradol</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>10</Medicine>
+		<Intellectual>6</Intellectual>
+		<Crafting>4</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <OE_Cosmol>1</OE_Cosmol>
+	  <Luciferium>1</Luciferium>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_Drug">
+        <chemical>OE_Cofagradol</chemical>
+        <addictiveness>0.55</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1671</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_CofagradolHigh</defName>
+    <label>cofagradol effect</label>
+    <description>Cofagradol in the bloodstream. Disables need: Rest.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+	<stages>
+      <li>
+        <disablesNeeds>
+          <li>Rest</li>
+        </disablesNeeds>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>OE_Cofagradol</defName>
+    <label>cofagradol</label>
+    <addictionHediff>OE_CofagradolAddiction</addictionHediff>
+	<canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>OE_Chemical_Cofagradol</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>cofagradol addiction</label>
+    <description>This person's body is enhanced by cofagradol mechanites.\n\nWithout regular doses of cofagradol, the mechanites will lose cohesion. If this happens, the user eventually dies.\n\nThis addiction never goes away.</description>
+    <listPriority>18</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_CofagradolAddiction</defName>
+    <label>cofagradol need</label>
+    <description>Cofagradol mechanites in the body. Cofagradol mechanites decohere over time; only regular doses of fresh cofagradol can prevent this process.\n\nWithout cofagradol, the mechanite decoherence will reach a critical state, causing the victim die in 7 days.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+	<chemicalNeed>OE_Chemical_Cofagradol</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>unmet</label>
+		  <lifeThreatening>true</lifeThreatening>
+          <deathMtbDays>7</deathMtbDays>
+          <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+        </li>
+      </stages>
+  </HediffDef>
+
+<!--=============== Cressadol ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Cressadol</defName>
+    <label>cressadol</label>
+    <description>A unique medical specialty, a potent drug based on Luciferium, is used a concoction of mechanites that dramatically improve the body's functioning.\n\nDisables need: Recreation.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_CressadolHigh</HediffDef>
+	  <HediffDef>OE_CressadolAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Cressadol</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>750</WorkToMake>
+      <MarketValue>100</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<minRewardCount>8</minRewardCount>
+	<tradeTags>
+      <li>OEDrugExotic</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_CressadolHigh</hediffDef>
+          <severity>1</severity>
+		  <toleranceChemical>OE_Cressadol</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>10</Medicine>
+		<Intellectual>6</Intellectual>
+		<Crafting>4</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <OE_Cosmol>1</OE_Cosmol>
+	  <Luciferium>1</Luciferium>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_Drug">
+        <chemical>OE_Cressadol</chemical>
+        <addictiveness>0.55</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1672</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_CressadolHigh</defName>
+    <label>cressadol effect</label>
+    <description>Cressadol in the bloodstream. Disables need: Recreation.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+	<stages>
+      <li>
+        <disablesNeeds>
+          <li>Joy</li>
+        </disablesNeeds>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>OE_Cressadol</defName>
+    <label>cressadol</label>
+    <addictionHediff>OE_CressadolAddiction</addictionHediff>
+	<canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>OE_Chemical_Cressadol</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>cressadol addiction</label>
+    <description>This person's body is enhanced by cressadol mechanites.\n\nWithout regular doses of cressadol, the mechanites will lose cohesion. If this happens, the user eventually dies.\n\nThis addiction never goes away.</description>
+    <listPriority>18</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_CressadolAddiction</defName>
+    <label>cressadol need</label>
+    <description>Cressadol mechanites in the body. Cressadol mechanites decohere over time; only regular doses of fresh cressadol can prevent this process.\n\nWithout cressadol, the mechanite decoherence will reach a critical state, causing the victim die in 7 days.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+	<chemicalNeed>OE_Chemical_Cressadol</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>unmet</label>
+		  <lifeThreatening>true</lifeThreatening>
+          <deathMtbDays>7</deathMtbDays>
+          <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+        </li>
+      </stages>
+  </HediffDef>
+
+<!--=============== Florgadol ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Florgadol</defName>
+    <label>florgadol</label>
+    <description>A unique medical specialty, a potent drug based on Luciferium, is used a concoction of mechanites that dramatically improve the body's functioning.\n\nDisables need: Mood.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_FlorgadolHigh</HediffDef>
+	  <HediffDef>OE_FlorgadolAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Florgadol</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>750</WorkToMake>
+      <MarketValue>100</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<minRewardCount>8</minRewardCount>
+	<tradeTags>
+      <li>OEDrugExotic</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_FlorgadolHigh</hediffDef>
+          <severity>1</severity>
+		  <toleranceChemical>OE_Florgadol</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>10</Medicine>
+		<Intellectual>6</Intellectual>
+		<Crafting>4</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <OE_Cosmol>1</OE_Cosmol>
+	  <Luciferium>1</Luciferium>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_Drug">
+        <chemical>OE_Florgadol</chemical>
+        <addictiveness>0.55</addictiveness>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1673</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_FlorgadolHigh</defName>
+    <label>florgadol effect</label>
+    <description>Florgadol in the bloodstream. Disables need: Mood.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+	<stages>
+      <li>
+        <disablesNeeds>
+          <li>Mood</li>
+        </disablesNeeds>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>OE_Florgadol</defName>
+    <label>florgadol</label>
+    <addictionHediff>OE_FlorgadolAddiction</addictionHediff>
+	<canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>OE_Chemical_Florgadol</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>florgadol addiction</label>
+    <description>This person's body is enhanced by florgadol mechanites.\n\nWithout regular doses of florgadol, the mechanites will lose cohesion. If this happens, the user eventually dies.\n\nThis addiction never goes away.</description>
+    <listPriority>18</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_FlorgadolAddiction</defName>
+    <label>florgadol need</label>
+    <description>Florgadol mechanites in the body. Florgadol mechanites decohere over time; only regular doses of fresh florgadol can prevent this process.\n\nWithout florgadol, the mechanite decoherence will reach a critical state, causing the victim die in 7 days.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+	<chemicalNeed>OE_Chemical_Florgadol</chemicalNeed>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>unmet</label>
+		<lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>7</deathMtbDays>
+        <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

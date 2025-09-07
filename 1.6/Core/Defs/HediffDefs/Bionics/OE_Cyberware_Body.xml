@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Torso ====================-->
+<!--=============== Cyberware - Drugfilter-Basic ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareTorso_Drugfilter_Basic</defName>
+    <label>cyberware - Drug filter(Basic)</label>
+    <labelNoun>an cyberware - Drug filter(Basic)</labelNoun>
+    <description>An installed cyberware - Drug filter(Basic).\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareTorso_Drugfilter_Basic</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareTorso_Drugfilter_Basic</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+		<minSeverity>1</minSeverity>
+		<hungerRateFactorOffset>0.40</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li>Chemical_Alcohol</li>
+          <li>Chemical_Ambrosia</li>
+		  <li>Chemical_GoJuice</li>
+		  <li>Chemical_Psychite</li>
+		  <li>Chemical_Smokeleaf</li>
+		  <li>Chemical_WakeUp</li>
+        </disablesNeeds>
+	  </li>
+	  <li>
+		<minSeverity>2</minSeverity>
+		<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li>Chemical_Alcohol</li>
+          <li>Chemical_Ambrosia</li>
+		  <li>Chemical_GoJuice</li>
+		  <li>Chemical_Psychite</li>
+		  <li>Chemical_Smokeleaf</li>
+		  <li>Chemical_WakeUp</li>
+        </disablesNeeds>
+	  </li>
+	  <li>
+		<minSeverity>3</minSeverity>
+		<hungerRateFactorOffset>0.10</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li>Chemical_Alcohol</li>
+          <li>Chemical_Ambrosia</li>
+		  <li>Chemical_GoJuice</li>
+		  <li>Chemical_Psychite</li>
+		  <li>Chemical_Smokeleaf</li>
+		  <li>Chemical_WakeUp</li>
+        </disablesNeeds>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareTorso_Drugfilter_Basic</defName>
+    <label>cyberware - Drug filter(Basic)</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and preventing the host from feeling any negative side effects from not indulging in their addictions. Works only with basic drugs.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareTorso_Drugfilter_Basic</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Torso/OE_Drugfilter_Basic</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareTorso_Drugfilter_Basic</hediffDef>
+        <bodyPart>Torso</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Cyberware - Drugfilter-Obsidia ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareTorso_Drugfilter_Obsidia</defName>
+    <label>cyberware - Drug filter(Obsidia)</label>
+    <labelNoun>an cyberware - Drug filter(Obsidia)</labelNoun>
+    <description>An installed cyberware - Drug filter(Obsidia).\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareTorso_Drugfilter_Obsidia</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareTorso_Drugfilter_Obsidia</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+		<minSeverity>1</minSeverity>
+		<hungerRateFactorOffset>0.40</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li>OE_Chemical_Torraxin</li>
+		  <li>OE_Chemical_Joltixin</li>
+		  <li MayRequire="Ludeon.Rimworld.Royalty">OE_Chemical_Luraxin</li>
+		  <li MayRequire="Ludeon.Rimworld.Biotech">OE_Chemical_Alcrexin</li>
+		  <li>OE_Chemical_Timbium</li>
+		  <li>OE_Chemical_Garganadol</li>
+		  <li>OE_Chemical_Cofagradol</li>
+		  <li>OE_Chemical_Cressadol</li>
+		  <li>OE_Chemical_Florgadol</li>
+        </disablesNeeds>
+	  </li>
+	  <li>
+		<minSeverity>2</minSeverity>
+		<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li>OE_Chemical_Torraxin</li>
+		  <li>OE_Chemical_Joltixin</li>
+		  <li MayRequire="Ludeon.Rimworld.Royalty">OE_Chemical_Luraxin</li>
+		  <li MayRequire="Ludeon.Rimworld.Biotech">OE_Chemical_Alcrexin</li>
+		  <li>OE_Chemical_Timbium</li>
+		  <li>OE_Chemical_Garganadol</li>
+		  <li>OE_Chemical_Cofagradol</li>
+		  <li>OE_Chemical_Cressadol</li>
+		  <li>OE_Chemical_Florgadol</li>
+        </disablesNeeds>
+	  </li>
+	  <li>
+		<minSeverity>3</minSeverity>
+		<hungerRateFactorOffset>0.10</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li>OE_Chemical_Torraxin</li>
+		  <li>OE_Chemical_Joltixin</li>
+		  <li MayRequire="Ludeon.Rimworld.Royalty">OE_Chemical_Luraxin</li>
+		  <li MayRequire="Ludeon.Rimworld.Biotech">OE_Chemical_Alcrexin</li>
+		  <li>OE_Chemical_Timbium</li>
+		  <li>OE_Chemical_Garganadol</li>
+		  <li>OE_Chemical_Cofagradol</li>
+		  <li>OE_Chemical_Cressadol</li>
+		  <li>OE_Chemical_Florgadol</li>
+        </disablesNeeds>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareTorso_Drugfilter_Obsidia</defName>
+    <label>cyberware - Drug filter(Obsidia)</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and preventing the host from feeling any negative side effects from not indulging in their addictions. Works only with obsidia drugs.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareTorso_Drugfilter_Obsidia</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Torso/OE_Drugfilter_Obsidia</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareTorso_Drugfilter_Obsidia</hediffDef>
+        <bodyPart>Torso</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Cyberware - Drugfilter-Exotic ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareTorso_Drugfilter_Exotic</defName>
+    <label>cyberware - Drug filter(Exotic)</label>
+    <labelNoun>an cyberware - Drug filter(Exotic)</labelNoun>
+    <description>An installed cyberware - Drug filter(Exotic).\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareTorso_Drugfilter_Exotic</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareTorso_Drugfilter_Exotic</spawnThingOnRemoved>
+	<minSeverity>0</minSeverity>
+    <maxSeverity>3</maxSeverity>
+	<stages>
+	  <li>
+		<minSeverity>1</minSeverity>
+		<hungerRateFactorOffset>0.40</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li MayRequire="vanillaracesexpanded.genie">VRE_Chemical_Antibiotics</li>
+		  <li MayRequire="OskarPotocki.VFE.Insectoid2">VFEI2_Chemical_RoyalJelly</li>
+		  <li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Caffeine</li>
+		  <li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Tobacco</li>
+		  <li MayRequire="VanillaExpanded.VGeneticsE">GR_Chemical_Featherdust</li>
+		  <li MayRequire="VanillaExpanded.VGeneticsE">GR_ElectroEgg</li>
+		  <li MayRequire="sarg.alphabiomes">Chemical_AB_PsychotropicFungus</li>
+		  <li MayRequire="BiomesTeam.BiomesCaverns">Chemical_Salve</li>
+		  <li MayRequire="Van.Beasts">DA_Chemical_RedInk</li>
+		  <li MayRequire="Van.Beasts">DA_Chemical_Milk</li>
+        </disablesNeeds>
+	  </li>
+	  <li>
+		<minSeverity>2</minSeverity>
+		<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li MayRequire="vanillaracesexpanded.genie">VRE_Chemical_Antibiotics</li>
+		  <li MayRequire="OskarPotocki.VFE.Insectoid2">VFEI2_Chemical_RoyalJelly</li>
+		  <li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Caffeine</li>
+		  <li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Tobacco</li>
+		  <li MayRequire="VanillaExpanded.VGeneticsE">GR_Chemical_Featherdust</li>
+		  <li MayRequire="VanillaExpanded.VGeneticsE">GR_ElectroEgg</li>
+		  <li MayRequire="sarg.alphabiomes">Chemical_AB_PsychotropicFungus</li>
+		  <li MayRequire="BiomesTeam.BiomesCaverns">Chemical_Salve</li>
+		  <li MayRequire="Van.Beasts">DA_Chemical_RedInk</li>
+		  <li MayRequire="Van.Beasts">DA_Chemical_Milk</li>
+        </disablesNeeds>
+	  </li>
+	  <li>
+		<minSeverity>3</minSeverity>
+		<hungerRateFactorOffset>0.10</hungerRateFactorOffset>
+		<disablesNeeds>
+          <li>DrugDesire</li>
+          <li MayRequire="vanillaracesexpanded.genie">VRE_Chemical_Antibiotics</li>
+		  <li MayRequire="OskarPotocki.VFE.Insectoid2">VFEI2_Chemical_RoyalJelly</li>
+		  <li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Caffeine</li>
+		  <li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Tobacco</li>
+		  <li MayRequire="VanillaExpanded.VGeneticsE">GR_Chemical_Featherdust</li>
+		  <li MayRequire="VanillaExpanded.VGeneticsE">GR_ElectroEgg</li>
+		  <li MayRequire="sarg.alphabiomes">Chemical_AB_PsychotropicFungus</li>
+		  <li MayRequire="BiomesTeam.BiomesCaverns">Chemical_Salve</li>
+		  <li MayRequire="Van.Beasts">DA_Chemical_RedInk</li>
+		  <li MayRequire="Van.Beasts">DA_Chemical_Milk</li>
+        </disablesNeeds>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareTorso_Drugfilter_Exotic</defName>
+    <label>cyberware - Drug filter(Exotic)</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and preventing the host from feeling any negative side effects from not indulging in their addictions. Works only with rare exotic drugs.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 3 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareTorso_Drugfilter_Exotic</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Torso/OE_Drugfilter_Exotic</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareTorso_Drugfilter_Exotic</hediffDef>
+        <bodyPart>Torso</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Cyberware - Temperature ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareTorso_Temperature</defName>
+    <label>cyberware - Temperature protector</label>
+    <labelNoun>a cyberware - Temperature protector</labelNoun>
+    <description>An installed cyberware - Temperature protector.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareTorso_Temperature</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareTorso_Temperature</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>5</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+          <ComfyTemperatureMax>10</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+          <ComfyTemperatureMax>15</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+          <ComfyTemperatureMax>20</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+          <ComfyTemperatureMax>25</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareTorso_Temperature</defName>
+    <label>cyberware - Temperature protector</label>
+    <description>Obsidia cyberware is technology installed into the human flesh that sometimes has the capability to interface with the nervous system. Its goal is to achieve higher performance and bring new enhancements comfortable temperature.\n\nInstallation requires - cyberware interface.\n\nThis cyberware can be installed up to 5 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantTorso_Interface</ThingDef><HediffDef>OE_CyberwareTorso_Temperature</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Torso/OE_Temperature</texPath>
+    </graphicData>
+    <costList>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>35</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+		<userMustHaveHediff>OE_ImplantTorso_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareTorso_Temperature</hediffDef>
+        <bodyPart>Torso</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwares</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Vanilla Psycasts Expanded - Eltex ====================-->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Ideology</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_BrokenDrill"]/comps</xpath>
+      <value>
+        <li Class="CompProperties_Spawner">
+          <requiresPower>true</requiresPower>
+          <thingToSpawn>Skull</thingToSpawn>
+          <spawnCount>1</spawnCount>
+		  <spawnIntervalRange>
+		    <min>300000</min>
+		    <max>720000</max>
+		  </spawnIntervalRange>
+		  <writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+		  <showMessageIfOwned>false</showMessageIfOwned>
+        </li>
+      </value>
+	</match>
+</Operation>
+
+<!--=============== Vanilla Psycasts Expanded - Eltex ====================-->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Vanilla Psycasts Expanded</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	  <xpath>/Defs/ThingDef[defName="OE_BrokenDrill"]/comps</xpath>
+      <value>
+        <li Class="CompProperties_Spawner">
+          <requiresPower>true</requiresPower>
+          <thingToSpawn>VPE_Eltex</thingToSpawn>
+          <spawnCount>1</spawnCount>
+		  <spawnIntervalRange>
+		    <min>1050000</min>
+		    <max>2700000</max>
+		  </spawnIntervalRange>
+		  <writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+		  <showMessageIfOwned>true</showMessageIfOwned>
+        </li>
+      </value>
+	</match>
+</Operation>
+
+</Patch>

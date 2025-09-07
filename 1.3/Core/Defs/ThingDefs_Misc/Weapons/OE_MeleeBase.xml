@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee Base ====================-->
+  <ThingDef Name="OEMeleeBase" ParentName="BaseWeapon" Abstract="True">
+    <techLevel>Spacer</techLevel>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<smeltable>true</smeltable>
+	<relicChance>0.2</relicChance>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+	<weaponClasses>
+	  <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    </recipeMaker>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Melee Base(Non-Crafted) ====================-->
+  <ThingDef Name="OEMeleeBaseNC" ParentName="BaseWeapon" Abstract="True">
+    <techLevel>Spacer</techLevel>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<smeltable>false</smeltable>
+	<relicChance>0</relicChance>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+	<weaponClasses>
+	  <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

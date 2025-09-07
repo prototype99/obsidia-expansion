@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC ====================-->
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>OEC_Dominator_Bow</defName>
+    <label>Mech Pride</label>
+    <description>Reconstructed OEC Bow for use by mechanoids. Extremely armor-piercing and equipped with a melee blade.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Mechanoid_Bow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Bow_Large</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>OECDominator</li>
+    </weaponTags>
+	<statBases>
+      <Mass>10.0</Mass>
+	  <MarketValue>2500</MarketValue>
+	  <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OEC_B_M</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>31.9</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

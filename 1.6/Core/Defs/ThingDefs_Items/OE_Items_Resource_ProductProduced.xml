@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Modernization Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_ModernizationKit</defName>
+    <label>modernization kit</label>
+    <description>Universal set of components for upgrading Obsidia gear from a simple to an modded version.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_ModernizationKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <WorkToMake>350</WorkToMake>
+	  <MarketValue>125</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2.0</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEGearMod</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>30</OE_Obsidian>
+	  <OE_Mythril>20</OE_Mythril>
+	  <OE_Mooncloth>20</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesM</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Drifters Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_DriftersKit</defName>
+    <label>Drifters modernization kit</label>
+    <description>Universal set of components for upgrading Obsidia Drifters Clans gear from a simple to an modded version.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_DriftersKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <WorkToMake>250</WorkToMake>
+	  <MarketValue>105</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2.0</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Platinum>15</OE_Platinum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	  <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesM</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Persona Kit ====================-->
+  <ThingDef ParentName="ResourceBase" Abstract="True">
+    <defName>OE_PersonaKit</defName>
+    <label>persona kit</label>
+    <description>Advanced set of components to Persona upgrading Obsidia weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_PersonaKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <WorkToMake>350</WorkToMake>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>4150</MarketValue>
+      <Mass>2.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEGearMod</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <AIPersonaCore>1</AIPersonaCore>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Obsidia Ammo Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_AmmoKit</defName>
+    <label>obsidia ammo kit</label>
+    <description>Universal set of ammo used in Obsidia weaponry.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_AmmoKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>250</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>6.5</MarketValue>
+	  <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.15</Mass>
+      <Flammability>0.45</Flammability>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<tradeTags>
+	  <li>OEResourcesL</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Mercenaries Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_MercenaryKit</defName>
+    <label>mercenaries modernization kit</label>
+    <description>Universal set of highly modified components for building and upgrading Obsidia Mercenary Gangs gear.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_MercenaryKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.25</drawSize>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+	  <WorkToMake>500</WorkToMake>
+	  <MarketValue>225</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>1.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OMGGear</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_Platinum>5</OE_Platinum>
+	  <OE_Syntherius>5</OE_Syntherius>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Cultist Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_CultistKit</defName>
+    <label>cultist kit</label>
+    <description>Universal set of strange resources and components from cultists gear. Can be used in cultist technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_CultistKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <WorkToMake>350</WorkToMake>
+	  <MarketValue>175</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>1.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>CACGear</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>10</OE_Orichalcum>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Heroic Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_HeroicKit</defName>
+    <label>heroic kit</label>
+    <description>Universal set of rare resources and components from the heroic gear. Can be used to restore lost heroic technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_HeroicKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MarketValue>275</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>1.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== EGO Amalgamation Core ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_EGOAmalgamationCore</defName>
+    <label>EGO amalgamation core</label>
+    <description>Universal seed infused with advanced symbiotic properties. Can be used to create amalgam technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_EGOAmalgamationCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+	  <MarketValue>100</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>5.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+	  <researchPrerequisites>
+	    <li>OEGearMod</li>
+	    <li>OEBioengineering</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_AmalgamVat</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+      <OE_ModernizationKit>1</OE_ModernizationKit>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_EGOSeed>10</OE_EGOSeed>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

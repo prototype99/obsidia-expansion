@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Alpha Genes</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationReplace">
+		  <xpath>/Defs/AbilityDef[defName="OE_MechCamouflage"]</xpath>
+		    <value>
+
+  <AbilityDef>
+    <defName>OE_MechCamouflage</defName>
+    <label>camouflage</label>
+    <description>Camouflage device grant the Dominator an ability to activate the inner stealth module which renders the user invisible.</description>
+	<iconPath>UI/Abilities/OE_MechCamouflage</iconPath>
+    <cooldownTicksRange>25000</cooldownTicksRange>
+	<charges>3</charges>
+	<aiCanUse>true</aiCanUse>
+	<targetRequired>False</targetRequired>
+	<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+	<stunTargetWhileCasting>True</stunTargetWhileCasting>
+	<showPsycastEffects>False</showPsycastEffects>
+	<writeCombatLog>True</writeCombatLog>
+	<verbProperties>
+	  <verbClass>Verb_CastAbility</verbClass>
+	  <drawAimPie>False</drawAimPie>
+      <warmupTime>0.1</warmupTime>
+	  <requireLineOfSight>False</requireLineOfSight>
+	  <targetParams>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetBuildings>false</canTargetBuildings>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+      <li Class="AlphaGenes.CompProperties_GiveHediff">
+        <hediffDef>OE_MechCamouflage</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+	<jobDef>CastAbilityOnThing</jobDef>
+  </AbilityDef>
+
+			</value>
+		</li>
+	    <li Class="PatchOperationReplace">
+		  <xpath>/Defs/AbilityDef[defName="OE_MechLordCamouflage"]</xpath>
+		    <value>
+
+  <AbilityDef>
+    <defName>OE_MechLordCamouflage</defName>
+    <label>shadow walk</label>
+    <description>Camouflage device grant the Chaos Lord an ability to activate the inner stealth module which renders the user invisible.</description>
+	<iconPath>UI/Abilities/OE_MechLordCamouflage</iconPath>
+    <cooldownTicksRange>45000</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+	<targetRequired>False</targetRequired>
+	<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+	<stunTargetWhileCasting>True</stunTargetWhileCasting>
+	<showPsycastEffects>False</showPsycastEffects>
+	<writeCombatLog>True</writeCombatLog>
+	<verbProperties>
+	  <verbClass>Verb_CastAbility</verbClass>
+	  <drawAimPie>False</drawAimPie>
+      <warmupTime>0.1</warmupTime>
+	  <requireLineOfSight>False</requireLineOfSight>
+	  <targetParams>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetPawns>false</canTargetPawns>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetBuildings>false</canTargetBuildings>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+      <li Class="AlphaGenes.CompProperties_GiveHediff">
+        <hediffDef>OE_MechLordCamouflage</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+	<jobDef>CastAbilityOnThing</jobDef>
+  </AbilityDef>
+
+			</value>
+		</li>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		    <value>
+
+  <HediffDef>
+	<defName>OE_MechCamouflage</defName>
+	<label>camouflage</label>
+	<description>Active inner stealth module which renders Dominator invisible.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<maxSeverity>1.0</maxSeverity>
+	<isBad>false</isBad>
+	<comps>
+	  <li Class="HediffCompProperties">
+		<compClass>HediffComp_Invisibility</compClass>
+	  </li>
+	  <li Class="HediffCompProperties_SeverityPerDay">
+		<severityPerDay>-6</severityPerDay>
+		<showHoursToRecover>true</showHoursToRecover>
+	  </li>
+	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+  </HediffDef>
+
+  <HediffDef>
+	<defName>OE_MechLordCamouflage</defName>
+	<label>shadow walk</label>
+	<description>Active inner stealth module which renders Chaos Lord invisible.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<maxSeverity>1.0</maxSeverity>
+	<isBad>false</isBad>
+	<comps>
+	  <li Class="HediffCompProperties">
+		<compClass>HediffComp_Invisibility</compClass>
+	  </li>
+	  <li Class="HediffCompProperties_SeverityPerDay">
+		<severityPerDay>-0.975</severityPerDay>
+		<showHoursToRecover>true</showHoursToRecover>
+	  </li>
+	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+	</comps>
+  </HediffDef>  	
+	
+			</value>
+		</li>		
+		
+	  </operations>
+	</match>
+</Operation>	  
+
+</Patch>

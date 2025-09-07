@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Hammer ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCHammerBase">
+    <defName>OTC_Hammer_P_Fire</defName>
+    <label>Persona Nemesis Prototype(Fire)</label>
+    <description>Persona Experimental Hammer used by OTC Engineers. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Hammer_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1430</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCBaseMeleeM_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_Hammer_M_Fire>1</OTC_Hammer_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC - BigAxe ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCBigAxeBase">
+    <defName>OTC_BigAxe_P_Fire</defName>
+    <label>Persona Genesis Prototype(Fire)</label>
+    <description>Persona Experimental Big Axe used by OTC Engineers. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/BigAxe_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2505</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCHeavyMeleeM_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>Flame</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_BigAxe_M_Fire>1</OTC_BigAxe_M_Fire>
+      <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OTC - ChainAxe ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCChainAxeBase">
+    <defName>OTC_ChainAxe_P_Fire</defName>
+    <label>Persona Nemesis Prototype(Fire)</label>
+    <description>Persona Experimental ChainAxe used by OTC Engineers. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/ChainAxe_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1510</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCBaseMeleeM_Fire</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_ChainAxe_M_Fire>1</OTC_ChainAxe_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

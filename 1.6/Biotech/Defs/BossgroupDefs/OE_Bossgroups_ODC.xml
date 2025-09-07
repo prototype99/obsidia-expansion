@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== ODC ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_ODC</defName>
+    <kindDef>ODC_Leader_Boss</kindDef>
+    <appearAfterTicks>100</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_ODC</defName>
+    <boss>OE_Beaconboss_ODC</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <ODC_Nomad>5</ODC_Nomad>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <ODC_Nomad>5</ODC_Nomad>
+		  <ODC_Recon_Ranged>2</ODC_Recon_Ranged>
+		  <ODC_Duelist_Melee>2</ODC_Duelist_Melee>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <ODC_Nomad>12</ODC_Nomad>
+		  <ODC_Recon_Ranged>1</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>1</ODC_Recon_Sniper>
+		  <ODC_Duelist_Melee>1</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>1</ODC_Duelist_HeavyMelee>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <ODC_Nomad>8</ODC_Nomad>
+		  <ODC_Recon_Melee>1</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>3</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>2</ODC_Recon_Sniper>
+		  <ODC_Duelist_Melee>3</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>2</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>1</ODC_Duelist_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <ODC_Nomad>6</ODC_Nomad>
+		  <ODC_Recon_Melee>1</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>4</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>3</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Recon_Prestige>
+		  <ODC_Recon_Mechanitor>1</ODC_Recon_Mechanitor>
+		  <ODC_Duelist_Melee>4</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>3</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>1</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Duelist_Prestige>
+		  <ODC_Duelist_Mechanitor>1</ODC_Duelist_Mechanitor>
+		  <ODC_Mech_Dominator_Light>1</ODC_Mech_Dominator_Light>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <ODC_Recon_Melee>2</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>4</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>4</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Recon_Prestige>
+		  <ODC_Recon_Mechanitor>1</ODC_Recon_Mechanitor>
+		  <ODC_Duelist_Melee>4</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>4</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>2</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Duelist_Prestige>
+		  <ODC_Duelist_Mechanitor>1</ODC_Duelist_Mechanitor>
+		  <ODC_Mech_Dominator_Light>1</ODC_Mech_Dominator_Light>
+		  <ODC_Mech_Dominator_Heavy>1</ODC_Mech_Dominator_Heavy>
+        </escorts>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <ODC_Recon_Melee>3</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>6</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>4</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Recon_Prestige>
+		  <ODC_Recon_Mechanitor>1</ODC_Recon_Mechanitor>
+		  <ODC_Duelist_Melee>6</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>4</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>3</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Duelist_Prestige>
+		  <ODC_Duelist_Mechanitor>1</ODC_Duelist_Mechanitor>
+		  <ODC_Mech_Dominator_Light>1</ODC_Mech_Dominator_Light>
+		  <ODC_Mech_Dominator_Heavy>2</ODC_Mech_Dominator_Heavy>
+        </escorts>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <ODC_Recon_Melee>4</ODC_Recon_Melee>
+		  <ODC_Recon_Ranged>8</ODC_Recon_Ranged>
+		  <ODC_Recon_Sniper>6</ODC_Recon_Sniper>
+		  <ODC_Recon_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Recon_Prestige>
+		  <ODC_Recon_Mechanitor>1</ODC_Recon_Mechanitor>
+		  <ODC_Duelist_Melee>8</ODC_Duelist_Melee>
+		  <ODC_Duelist_HeavyMelee>6</ODC_Duelist_HeavyMelee>
+		  <ODC_Duelist_Ranged>4</ODC_Duelist_Ranged>
+		  <ODC_Duelist_Prestige MayRequire="Ludeon.RimWorld.Royalty">1</ODC_Duelist_Prestige>
+		  <ODC_Duelist_Mechanitor>1</ODC_Duelist_Mechanitor>
+		  <ODC_Mech_Dominator_Light>2</ODC_Mech_Dominator_Light>
+		  <ODC_Mech_Dominator_Heavy>2</ODC_Mech_Dominator_Heavy>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Nomads squad led by {LEADERKIND_label} armed with ODC gear.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

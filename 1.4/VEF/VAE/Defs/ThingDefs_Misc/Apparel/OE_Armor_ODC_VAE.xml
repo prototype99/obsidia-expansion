@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Armor ====================-->
+<!--=============== Recon MK-3 Various ====================-->
+<!--=============== Barrier ====================-->
+  <ThingDef ParentName="ODCArmorRecon">
+    <defName>ODC_Armor_Recon_Barrier</defName>
+    <label>ODC Recon Armor(Protector)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Barrier/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Barrier/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon_Barrier</li>
+      </tags>
+    </apparel>
+	<comps>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
+		 <compClass>VFECore.CompShieldBubble</compClass>
+		 <blockRangedAttack>true</blockRangedAttack>
+		 <blockMeleeAttack>false</blockMeleeAttack>
+		 <showWhenDrafted>true</showWhenDrafted>
+		 <showOnHostiles>true</showOnHostiles>
+		 <showOnNeutralInCombat>true</showOnNeutralInCombat>
+		 <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		 <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+		 <EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+		 <minShieldSize>1.4</minShieldSize>
+		 <maxShieldSize>1.8</maxShieldSize>
+		 <disableRotation>true</disableRotation>
+	  </li>
+	</comps>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Duelist MK-3 Various ====================-->
+<!--=============== Barrier ====================-->
+  <ThingDef ParentName="ODCArmorDuelist">
+    <defName>ODC_Armor_Duelist_Barrier</defName>
+    <label>ODC Duelist Armor(Protector)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Barrier/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Duelist>1</ODC_Armor_Duelist>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Barrier/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist_Barrier</li>
+      </tags>
+    </apparel>
+	<comps>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
+		 <compClass>VFECore.CompShieldBubble</compClass>
+		 <blockRangedAttack>true</blockRangedAttack>
+		 <blockMeleeAttack>false</blockMeleeAttack>
+		 <showWhenDrafted>true</showWhenDrafted>
+		 <showOnHostiles>true</showOnHostiles>
+		 <showOnNeutralInCombat>true</showOnNeutralInCombat>
+		 <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		 <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+		 <EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+		 <minShieldSize>1.4</minShieldSize>
+		 <maxShieldSize>1.8</maxShieldSize>
+		 <disableRotation>true</disableRotation>
+	  </li>
+	</comps>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

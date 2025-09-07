@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG - Rapier ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+    <defName>OMG_Rapier</defName>
+    <label>Pulseblade</label>
+    <description>Highly modified Rapier used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Rapier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<weaponTags>
+	  <li>OMGMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>4845</MarketValue>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Empyrium>75</OE_Empyrium>
+	  <OE_Orichalcum>20</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_MercenaryKit>2</OE_MercenaryKit>
+    </costList>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.05</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+		<armorPenetration>1.05</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>1.50</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedMelee</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== OMG - Axe ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+    <defName>OMG_Axe</defName>
+    <label>Nanoblade</label>
+    <description>Highly modified Axe used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <MarketValue>4605</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<costList>
+      <OE_Empyrium>85</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_MercenaryKit>2</OE_MercenaryKit>
+    </costList>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.05</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.25</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.04</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>OMGMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+		  <li>
+            <def>OMGNecrobane</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>OMGNecrobane</def>
+            <amount>10</amount>
+			<chance>0.3</chance>
+          </li>
+		  <li>
+            <def>OMGNecrobane</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedMelee</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== OMG - BattleAxe ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+    <defName>OMG_BattleAxe</defName>
+    <label>Datacrush</label>
+    <description>Highly modified Battle Axe used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/BattleAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<statBases>
+      <MarketValue>5680</MarketValue>
+	  <Mass>3.5</Mass>
+    </statBases>
+	<costList>
+      <OE_Empyrium>110</OE_Empyrium>
+	  <OE_Orichalcum>40</OE_Orichalcum>
+      <OE_Syntherius>25</OE_Syntherius>
+	  <OE_MercenaryKit>4</OE_MercenaryKit>
+    </costList>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<weaponTags>
+	  <li>OMGMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.60</armorPenetration>
+        <cooldownTime>3.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>3.0</cooldownTime>
+		<extraMeleeDamages>
+		  <li>
+            <def>Scratch</def>
+            <amount>15</amount>
+			<chance>0.3</chance>
+          </li>
+		  <li>
+            <def>OMGNecrobane</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>3.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>15</amount>
+            <chance>0.3</chance>
+          </li>
+		  <li>
+            <def>OMGNecrobane</def>
+            <amount>15</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedMelee</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== OMG - Dual Sword ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+    <defName>OMG_DualSword</defName>
+    <label>Twin Glitch</label>
+    <description>Highly modified Dual Sword used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/DualSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<weaponTags>
+	  <li>OMGMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>5680</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Empyrium>90</OE_Empyrium>
+	  <OE_Orichalcum>50</OE_Orichalcum>
+      <OE_Syntherius>25</OE_Syntherius>
+	  <OE_MercenaryKit>4</OE_MercenaryKit>
+    </costList>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.10</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>3.0</cooldownTime>
+		<extraMeleeDamages>
+		  <li>
+            <def>OMGNecrobane</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.95</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Cut</def>
+            <amount>15</amount>
+			<chance>0.3</chance>
+          </li>
+		  <li>
+            <def>OMGNecrobane</def>
+            <amount>12</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>12</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedMelee</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== OMG - Scepter ====================-->
+  <ThingDef ParentName="OEMeleeBaseNQ">
+    <defName>OMG_Scepter</defName>
+    <label>Pulsecaster</label>
+    <description>Highly modified Scepter used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMG/Scepter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<weaponTags>
+	  <li>OMGMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OMGGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>5085</MarketValue>
+	  <Mass>3.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Empyrium>65</OE_Empyrium>
+	  <OE_Orichalcum>65</OE_Orichalcum>
+      <OE_Syntherius>25</OE_Syntherius>
+	  <OE_MercenaryKit>4</OE_MercenaryKit>
+    </costList>
+	<equippedStatOffsets>
+	  <PainShockThreshold>-0.15</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.75</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.114</PsychicEntropyRecoveryRate>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	  <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">0.10</WorkSpeedGlobalOffsetMech>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>ornament</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OMGNecrobane</def>
+            <amount>10</amount>
+          </li>
+		  <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMGGear</researchPrerequisite>
+	  <unfinishedThingDef>OE_UnfinishedMelee</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OMG_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

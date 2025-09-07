@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Trooper ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[@Name="ImperialTrooperBase"]/weaponTags</xpath>
+    <value>
+	  <li>OELightGun</li>
+	  <li>OEBaseGun</li>
+    </value>
+</Operation>
+
+<!--=============== Janissary ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags</xpath>
+    <value>
+	  <li>OESniperGun</li>
+    </value>
+</Operation>
+
+<!--=============== Champion ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags</xpath>
+    <value>
+	  <li>OEBaseMelee</li>
+	  <li>OEHeavyMelee</li>
+    </value>
+</Operation>
+
+</Patch>

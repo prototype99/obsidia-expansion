@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arms ====================-->
+<!--=============== Implant - Sting ====================-->
+<!--=============== Acid ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantArm_Sting_Acid</defName>
+    <label>arm implant - Sting(Acid)</label>
+    <labelNoun>an arm implant - Sting</labelNoun>
+    <description>An installed arm implant - Sting.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantArm_Sting_Acid</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantArm_Sting_Acid</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.5</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>OTCAcid</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<tags><li>ArmImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantArm_Sting_Acid</defName>
+    <label>arm implant - Sting(Acid)</label>
+    <description>Obsidia arm implant combat-oriented mechanical sting installing into arm. Charged with Acid damage.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantArm_Sting_Acid</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OTC/OE_Arm</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OTCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantArm_Sting_Acid</defName>
+    <label>install arm implant - Sting(Acid)</label>
+    <description>Install an arm implant - Sting.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantArm_Sting_Acid</ThingDef>
+      <HediffDef>OE_ImplantArm_Sting_Acid</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing arm implant - Sting.</jobString>
+	<uiIconThing>OE_ImplantArm_Sting_Acid</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantArm_Sting_Acid</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantArm_Sting_Acid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantArm_Sting_Acid</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantArm_Sting_Acid</defName>
+    <label>remove arm implant - Sting(Acid)</label>
+    <description>Remove an arm implant - Sting.</description>
+    <jobString>Removing arm implant - Sting.</jobString>
+    <removesHediff>OE_ImplantArm_Sting_Acid</removesHediff>
+	<uiIconThing>OE_ImplantArm_Sting_Acid</uiIconThing>
+  </RecipeDef>
+<!--=============== Cryo ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantArm_Sting_Cryo</defName>
+    <label>arm implant - Sting(Cryo)</label>
+    <labelNoun>an arm implant - Sting</labelNoun>
+    <description>An installed arm implant - Sting.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantArm_Sting_Cryo</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantArm_Sting_Cryo</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.50</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>OTCCryo</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<tags><li>ArmImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantArm_Sting_Cryo</defName>
+    <label>arm implant - Sting(Cryo)</label>
+    <description>Obsidia arm implant combat-oriented mechanical sting installing into arm. Charged with Cryo damage.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantArm_Sting_Cryo</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OTC/OE_Arm</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OTCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantArm_Sting_Cryo</defName>
+    <label>install arm implant - Sting(Cryo)</label>
+    <description>Install an arm implant - Sting.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantArm_Sting_Cryo</ThingDef>
+      <HediffDef>OE_ImplantArm_Sting_Cryo</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing arm implant - Sting.</jobString>
+	<uiIconThing>OE_ImplantArm_Sting_Cryo</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantArm_Sting_Cryo</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantArm_Sting_Cryo</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantArm_Sting_Cryo</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantArm_Sting_Cryo</defName>
+    <label>remove arm implant - Sting(Cryo)</label>
+    <description>Remove an arm implant - Sting.</description>
+    <jobString>Removing arm implant - Sting.</jobString>
+    <removesHediff>OE_ImplantArm_Sting_Cryo</removesHediff>
+	<uiIconThing>OE_ImplantArm_Sting_Cryo</uiIconThing>
+  </RecipeDef>
+<!--=============== Fire ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantArm_Sting_Fire</defName>
+    <label>arm implant - Sting(Fire)</label>
+    <labelNoun>an arm implant - Sting</labelNoun>
+    <description>An installed arm implant - Sting.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantArm_Sting_Fire</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantArm_Sting_Fire</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.50</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>Flame</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<tags><li>ArmImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantArm_Sting_Fire</defName>
+    <label>arm implant - Sting(Fire)</label>
+    <description>Obsidia arm implant combat-oriented mechanical sting installing into arm. Charged with Fire damage.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantArm_Sting_Fire</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OTC/OE_Arm</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OTCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantArm_Sting_Fire</defName>
+    <label>install arm implant - Sting(Fire)</label>
+    <description>Install an arm implant - Sting.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantArm_Sting_Fire</ThingDef>
+      <HediffDef>OE_ImplantArm_Sting_Fire</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing arm implant - Sting.</jobString>
+	<uiIconThing>OE_ImplantArm_Sting_Fire</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantArm_Sting_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantArm_Sting_Fire</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantArm_Sting_Fire</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantArm_Sting_Fire</defName>
+    <label>remove arm implant - Sting(Fire)</label>
+    <description>Remove an arm implant - Sting.</description>
+    <jobString>Removing arm implant - Sting.</jobString>
+    <removesHediff>OE_ImplantArm_Sting_Fire</removesHediff>
+	<uiIconThing>OE_ImplantArm_Sting_Fire</uiIconThing>
+  </RecipeDef>
+<!--=============== EMP ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantArm_Sting_EMP</defName>
+    <label>arm implant - Sting(EMP)</label>
+    <labelNoun>an arm implant - Sting</labelNoun>
+    <description>An installed arm implant - Sting.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantArm_Sting_EMP</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantArm_Sting_EMP</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.50</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>EMP</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<tags><li>ArmImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantArm_Sting_EMP</defName>
+    <label>arm implant - Sting(EMP)</label>
+    <description>Obsidia arm implant combat-oriented mechanical sting installing into arm. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantArm_Sting_EMP</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OTC/OE_Arm</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OTCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantArm_Sting_EMP</defName>
+    <label>install arm implant - Sting(EMP)</label>
+    <description>Install an arm implant - Sting.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantArm_Sting_EMP</ThingDef>
+      <HediffDef>OE_ImplantArm_Sting_EMP</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing arm implant - Sting.</jobString>
+	<uiIconThing>OE_ImplantArm_Sting_EMP</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantArm_Sting_EMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantArm_Sting_EMP</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantArm_Sting_EMP</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantArm_Sting_EMP</defName>
+    <label>remove arm implant - Sting(EMP)</label>
+    <description>Remove an arm implant - Sting.</description>
+    <jobString>Removing arm implant - Sting.</jobString>
+    <removesHediff>OE_ImplantArm_Sting_EMP</removesHediff>
+	<uiIconThing>OE_ImplantArm_Sting_EMP</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Demolisher ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantArm_Demolisher</defName>
+    <label>arm implant - Demolisher</label>
+    <labelNoun>an arm implant - Demolisher</labelNoun>
+    <description>An installed arm implant - Demolisher.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantArm_Demolisher</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantArm_Demolisher</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>drill</label>
+            <capacities>
+              <li>Demolish</li>
+            </capacities>
+            <power>30</power>
+            <armorPenetration>0.65</armorPenetration>
+            <cooldownTime>2.0</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<tags><li>ArmImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantArm_Demolisher</defName>
+    <label>arm implant - Demolisher</label>
+    <description>Obsidia arm implant combat-oriented mechanical drill installing into arm. Designed for breaching.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantArm_Demolisher</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OCC/OE_Arm</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OCCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantArm_Demolisher</defName>
+    <label>install arm implant - Demolisher</label>
+    <description>Install an arm implant - Demolisher.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantArm_Demolisher</ThingDef>
+      <HediffDef>OE_ImplantArm_Demolisher</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing arm implant - Demolisher.</jobString>
+	<uiIconThing>OE_ImplantArm_Demolisher</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantArm_Demolisher</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantArm_Demolisher</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantArm_Demolisher</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantArm_Demolisher</defName>
+    <label>remove arm implant - Demolisher</label>
+    <description>Remove an arm implant - Demolisher.</description>
+    <jobString>Removing arm implant - Demolisher.</jobString>
+    <removesHediff>OE_ImplantArm_Demolisher</removesHediff>
+	<uiIconThing>OE_ImplantArm_Demolisher</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Duelist ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantArm_Duelist</defName>
+    <label>arm implant - Duelist</label>
+    <labelNoun>an arm implant - Duelist</labelNoun>
+    <description>An installed arm implant - Duelist.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantArm_Duelist</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantArm_Duelist</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.75</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+            <soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>30</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<tags><li>ArmImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantArm_Duelist</defName>
+    <label>arm implant - Duelist</label>
+    <description>Obsidia arm implant combat-oriented mechanical fist installing into arm. Designed for stunning.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantArm_Duelist</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/ODC/OE_Arm</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>ODCBionics</li>
+    </techHediffsTags>	
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>5.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantArm_Duelist</defName>
+    <label>install arm implant - Duelist</label>
+    <description>Install an arm implant - Duelist.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantArm_Duelist</ThingDef>
+      <HediffDef>OE_ImplantArm_Duelist</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing arm implant - Duelist.</jobString>
+	<uiIconThing>OE_ImplantArm_Duelist</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantArm_Duelist</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantArm_Duelist</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantArm_Duelist</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantArm_Duelist</defName>
+    <label>remove arm implant - Duelist</label>
+    <description>Remove an arm implant - Duelist.</description>
+    <jobString>Removing arm implant - Duelist.</jobString>
+    <removesHediff>OE_ImplantArm_Duelist</removesHediff>
+	<uiIconThing>OE_ImplantArm_Duelist</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Hands ====================-->
+<!--=============== Implant - Builder ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantHand_Builder</defName>
+    <label>hand implant - Builder</label>
+    <labelNoun>a hand implant - Builder</labelNoun>
+    <description>An installed hand implant - Builder.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantHand_Builder</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantHand_Builder</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+		<statOffsets>
+		  <GeneralLaborSpeed>1.0</GeneralLaborSpeed>
+		  <ConstructionSpeed>1.0</ConstructionSpeed>
+		  <SmoothingSpeed>1.0</SmoothingSpeed>
+		  <MiningSpeed>1.0</MiningSpeed>
+		  <DeepDrillingSpeed>1.0</DeepDrillingSpeed>
+		  <ButcheryMechanoidSpeed>1.0</ButcheryMechanoidSpeed>
+	    </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>HandImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantHand_Builder</defName>
+    <label>hand implant - Builder</label>
+    <description>Obsidia hand implant non-combat-oriented mechanical hand replacement for improvements building and construction skills.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantHand_Builder</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OMC/OE_Hand</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OMCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantHand_Builder</defName>
+    <label>install hand implant - Builder</label>
+    <description>Install a hand implant - Builder.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantHand_Builder</ThingDef>
+      <HediffDef>OE_ImplantHand_Builder</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing hand implant - Builder.</jobString>
+	<uiIconThing>OE_ImplantHand_Builder</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantHand_Builder</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantHand_Builder</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantHand_Builder</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>HandImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantHand_Builder</defName>
+    <label>remove hand implant - Builder</label>
+    <description>Remove a hand implant - Builder.</description>
+    <jobString>Removing hand implant - Builder.</jobString>
+    <removesHediff>OE_ImplantHand_Builder</removesHediff>
+	<uiIconThing>OE_ImplantHand_Builder</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Agronomist ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantHand_Agronomist</defName>
+    <label>hand implant - Agronomist</label>
+    <labelNoun>a hand implant - Agronomist</labelNoun>
+    <description>An installed hand implant - Agronomist.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantHand_Agronomist</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantHand_Agronomist</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+		<statOffsets>
+		  <PlantWorkSpeed>1.0</PlantWorkSpeed>
+		  <AnimalGatherSpeed>1.0</AnimalGatherSpeed>
+		  <CookSpeed>6</CookSpeed>
+		  <ButcheryFleshSpeed>1.0</ButcheryFleshSpeed>
+	    </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>HandImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantHand_Agronomist</defName>
+    <label>hand implant - Agronomist</label>
+    <description>Obsidia hand implant non-combat-oriented mechanical hand replacement for improvements animal and plant skills.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantHand_Agronomist</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OMC/OE_Hand</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OMCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantHand_Agronomist</defName>
+    <label>install hand implant - Agronomist</label>
+    <description>Install a hand implant - Agronomist.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantHand_Agronomist</ThingDef>
+      <HediffDef>OE_ImplantHand_Agronomist</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing hand implant - Agronomist.</jobString>
+	<uiIconThing>OE_ImplantHand_Agronomist</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantHand_Agronomist</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantHand_Agronomist</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantHand_Agronomist</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>HandImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantHand_Agronomist</defName>
+    <label>remove hand implant - Agronomist</label>
+    <description>Remove a hand implant - Agronomist.</description>
+    <jobString>Removing hand implant - Agronomist.</jobString>
+    <removesHediff>OE_ImplantHand_Agronomist</removesHediff>
+	<uiIconThing>OE_ImplantHand_Agronomist</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Doctor ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantHand_Doctor</defName>
+    <label>hand implant - Doctor</label>
+    <labelNoun>a hand implant - Doctor</labelNoun>
+    <description>An installed hand implant - Doctor.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantHand_Doctor</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantHand_Doctor</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+		<statOffsets>
+		  <MedicalOperationSpeed>1.0</MedicalOperationSpeed>
+		  <MedicalTendSpeed>1.0</MedicalTendSpeed>
+		  <DrugSynthesisSpeed>1.0</DrugSynthesisSpeed>
+		  <DrugCookingSpeed>1.0</DrugCookingSpeed>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1.0</HackingSpeed>
+	    </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>HandImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantHand_Doctor</defName>
+    <label>hand implant - Doctor</label>
+    <description>Obsidia hand implant non-combat-oriented mechanical hand replacement for improvements medical and intellectual.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantHand_Doctor</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OTC/OE_Hand</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OTCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantHand_Doctor</defName>
+    <label>install hand implant - Doctor</label>
+    <description>Install a hand implant - Doctor.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantHand_Doctor</ThingDef>
+      <HediffDef>OE_ImplantHand_Doctor</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing hand implant - Doctor.</jobString>
+	<uiIconThing>OE_ImplantHand_Doctor</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantHand_Doctor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantHand_Doctor</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantHand_Doctor</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>HandImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantHand_Doctor</defName>
+    <label>remove hand implant - Doctor</label>
+    <description>Remove a hand implant - Doctor.</description>
+    <jobString>Removing hand implant - Doctor.</jobString>
+    <removesHediff>OE_ImplantHand_Doctor</removesHediff>
+	<uiIconThing>OE_ImplantHand_Doctor</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Harvester ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantHand_Harvester</defName>
+    <label>hand implant - Harvester</label>
+    <labelNoun>a hand implant - Harvester</labelNoun>
+    <description>An installed hand implant - Harvester.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantHand_Harvester</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantHand_Harvester</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+		<statOffsets>
+		  <MiningYield>0.75</MiningYield>
+		  <PlantHarvestYield>0.75</PlantHarvestYield>
+		  <AnimalGatherYield>0.75</AnimalGatherYield>
+		  <ButcheryMechanoidEfficiency>0.75</ButcheryMechanoidEfficiency>
+		  <DrugHarvestYield>0.75</DrugHarvestYield>
+	    </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>HandImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantHand_Harvester</defName>
+    <label>hand implant - Harvester</label>
+    <description>Obsidia hand implant non-combat-oriented mechanical hand replacement for increase gather yield.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantHand_Harvester</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/ODC/OE_Hand</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>ODCBionics</li>
+    </techHediffsTags>	
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantHand_Harvester</defName>
+    <label>install hand implant - Harvester</label>
+    <description>Install a hand implant - Harvester.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantHand_Harvester</ThingDef>
+      <HediffDef>OE_ImplantHand_Harvester</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing hand implant - Harvester.</jobString>
+	<uiIconThing>OE_ImplantHand_Harvester</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantHand_Harvester</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantHand_Harvester</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantHand_Harvester</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>HandImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantHand_Harvester</defName>
+    <label>remove hand implant - Harvester</label>
+    <description>Remove a hand implant - Harvester.</description>
+    <jobString>Removing hand implant - Harvester.</jobString>
+    <removesHediff>OE_ImplantHand_Harvester</removesHediff>
+	<uiIconThing>OE_ImplantHand_Harvester</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Soldier ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantHand_Soldier</defName>
+    <label>hand implant - Soldier</label>
+    <labelNoun>a hand implant - Soldier</labelNoun>
+    <description>An installed hand implant - Soldier.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantHand_Soldier</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantHand_Soldier</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+		<statOffsets>
+		  <MortarMissRadiusFactor>-0.5</MortarMissRadiusFactor>
+	      <ShootingAccuracyPawn>8.0</ShootingAccuracyPawn>
+		  <MeleeHitChance>8.0</MeleeHitChance>
+	      <MeleeDodgeChance>8.0</MeleeDodgeChance>
+	    </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>HandImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantHand_Soldier</defName>
+    <label>hand implant - Soldier</label>
+    <description>Obsidia hand implant non-combat-oriented mechanical hand replacement for improvements melee and shooting skills.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantHand_Soldier</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OCC/OE_Hand</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OCCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantHand_Soldier</defName>
+    <label>install hand implant - Soldier</label>
+    <description>Install a hand implant - Soldier.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantHand_Soldier</ThingDef>
+      <HediffDef>OE_ImplantHand_Soldier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing hand implant - Soldier.</jobString>
+	<uiIconThing>OE_ImplantHand_Soldier</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantHand_Soldier</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantHand_Soldier</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantHand_Soldier</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>HandImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantHand_Soldier</defName>
+    <label>remove hand implant - Soldier</label>
+    <description>Remove a hand implant - Soldier.</description>
+    <jobString>Removing hand implant - Soldier.</jobString>
+    <removesHediff>OE_ImplantHand_Soldier</removesHediff>
+	<uiIconThing>OE_ImplantHand_Soldier</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Legs ====================-->
+<!--=============== Implant - Ninja ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantLeg_Ninja</defName>
+    <label>leg implant - Ninja</label>
+    <labelNoun>a leg implant - Ninja</labelNoun>
+    <description>An installed leg implant - Ninja.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantLeg_Ninja</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantLeg_Ninja</spawnThingOnRemoved>
+	<addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+		<statOffsets>
+		  <TrapSpringChance>-0.6</TrapSpringChance>
+	    </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>LegImplant</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantLeg_Ninja</defName>
+    <label>leg implant - Ninja</label>
+    <description>Obsidia leg implant non-combat-oriented mechanical leg replacement for improvements stealth abilities.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantLeg_Ninja</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OMC/OE_Leg</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OMCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_DragonianWoodLog>20</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>10</OE_DragonianWoodLog>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantLeg_Ninja</defName>
+    <label>install leg implant - Ninja</label>
+    <description>Install a leg implant - Ninja.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantLeg_Ninja</ThingDef>
+      <HediffDef>OE_ImplantLeg_Ninja</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing leg implant - Ninja.</jobString>
+	<uiIconThing>OE_ImplantLeg_Ninja</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantLeg_Ninja</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantLeg_Ninja</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantLeg_Ninja</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>LegImplant</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantLeg_Ninja</defName>
+    <label>remove leg implant - Ninja</label>
+    <description>Remove a leg implant - Ninja.</description>
+    <jobString>Removing leg implant - Ninja.</jobString>
+    <removesHediff>OE_ImplantLeg_Ninja</removesHediff>
+	<uiIconThing>OE_ImplantLeg_Ninja</uiIconThing>
+  </RecipeDef>
+
+</Defs>

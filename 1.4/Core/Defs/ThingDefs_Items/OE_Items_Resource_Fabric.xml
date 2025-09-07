@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Textile ====================-->
+<!--=============== Mooncloth ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Mooncloth</defName>
+    <label>Mooncloth</label>
+    <description>Fabric spun from microfibers extracted from Moonplants. It is tough, light, strong, luxurious and insulates well.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>Plant_OE_Moonplant</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Textile</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(90,49,121)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.5</MarketValue>
+      <Mass>0.03</Mass>
+	  <StuffPower_Armor_Sharp>1.75</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>2.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(196,152,232)</color>
+      <statFactors>
+        <Flammability>0.4</Flammability>
+        <MaxHitPoints>2.0</MaxHitPoints>
+        <Beauty>4.0</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Ogren ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Leather_Ogren</defName>
+    <label>Ogren skin</label>
+    <description>Tanned, dried, scraped ogren skin. It is tough, strong, but insulates bad.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Textile</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(89,92,45)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Ogren</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>3.0</MarketValue>
+      <Mass>0.06</Mass>
+	  <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(89,92,45)</color>
+      <statFactors>
+        <Flammability>0.5</Flammability>
+        <MaxHitPoints>2.25</MaxHitPoints>
+        <Beauty>1.0</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Bruul ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Leather_Bruul</defName>
+    <label>Bruul skin</label>
+    <description>Lightweight, thin bruul skin. It is very fragile and weak, but at the same time it perfectly protects against temperature and is incredibly beautiful.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Textile</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(230,230,250)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Bruul_Acid</ThingDef>
+	  <ThingDef>OE_Bruul_Cryo</ThingDef>
+	  <ThingDef>OE_Bruul_Fire</ThingDef>
+	  <ThingDef>OE_Bruul_EMP</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>25.0</MarketValue>
+      <Mass>0.03</Mass>
+	  <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.25</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>55</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>55</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>65</MaxHitPoints>
+      <Flammability>0.05</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(230,230,250)</color>
+      <statOffsets>
+        <Beauty>35</Beauty>
+      </statOffsets>
+	  <statFactors>
+        <Flammability>0.05</Flammability>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>12.5</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Fur ====================-->
+<!--=============== Direwolf ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Leather_Direwolf</defName>
+    <label>Direwolffur</label>
+    <description>A soft furry pelt harvested from direwolfs creature. It is beautiful, very durable and insulates well against cold.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Fur</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(61,61,61)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Direwolf</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>4.5</MarketValue>
+      <Mass>0.03</Mass>
+	  <StuffPower_Armor_Sharp>1.3</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.28</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>38</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(61,61,61)</color>
+      <statFactors>
+        <Flammability>1.0</Flammability>
+        <MaxHitPoints>1.75</MaxHitPoints>
+        <Beauty>3.5</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Astrinx ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Leather_Astrinx</defName>
+    <label>Astrinx fur</label>
+    <description>A soft furry pelt harvested from astrinx. It is very beautiful, durable and insulates well against heat.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Fur</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(66,77,107)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Astrinx</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>6.5</MarketValue>
+      <Mass>0.03</Mass>
+	  <StuffPower_Armor_Sharp>1.05</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.75</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(66,77,107)</color>
+      <statFactors>
+        <Flammability>1.0</Flammability>
+        <MaxHitPoints>1.75</MaxHitPoints>
+        <Beauty>6.5</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Scales ====================-->
+<!--=============== Raptor ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Leather_Raptor</defName>
+    <label>Raptorskin</label>
+    <description>Tanned raptor leather. Very beautiful, strong and protects well from the heat.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Scales</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(98,93,89)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Raptor</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <Mass>0.03</Mass>
+	  <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>38</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(98,93,89)</color>
+      <statFactors>
+        <Flammability>1.0</Flammability>
+        <MaxHitPoints>1.75</MaxHitPoints>
+        <Beauty>5.0</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Synthweave ====================-->
+<!--=============== Obsidian Synthweave ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_ObsidianSynthweave</defName>
+    <label>obsidian synthweave</label>
+    <description>Fabric synthesized from Obsidian. Synthweave is similar in properties to the original.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Synthweave</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(33,29,44)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Obsidian</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>12.5</MarketValue>
+      <Mass>0.1</Mass>
+      <StuffPower_Armor_Sharp>1.25</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.20</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+		<li>Leathery</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(33,29,44)</color>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>5</Beauty>
+        <Flammability>0.25</Flammability>
+        <WorkToMake>2.5</WorkToMake>
+        <WorkToBuild>2.5</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Mythril Synthweave ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_MythrilSynthweave</defName>
+    <label>mythril synthweave</label>
+    <description>Fabric synthesized from Mythril. Synthweave is similar in properties to the original.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Synthweave</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(242,253,234)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Mythril</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>22.5</MarketValue>
+      <Mass>0.05</Mass>
+      <StuffPower_Armor_Sharp>0.70</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.45</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+		<li>Leathery</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(242,253,234)</color>
+      <statOffsets>
+        <Beauty>30</Beauty>
+      </statOffsets>
+	  <statFactors>
+        <Beauty>10</Beauty>
+        <Flammability>0.25</Flammability>
+        <WorkToMake>2</WorkToMake>
+        <WorkToBuild>2</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Platinum Synthweave ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_PlatinumSynthweave</defName>
+    <label>platinum synthweave</label>
+    <description>Fabric synthesized from Platinum. Synthweave is similar in properties to the original.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Synthweave</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(229,229,229)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Platinum</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>17.5</MarketValue>
+      <Mass>0.05</Mass>
+      <StuffPower_Armor_Sharp>0.65</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+		<li>Leathery</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(229,229,229)</color>
+      <statOffsets>
+        <Beauty>25</Beauty>
+      </statOffsets>
+	  <statFactors>
+        <Beauty>8</Beauty>
+        <Flammability>0.25</Flammability>
+        <WorkToMake>2</WorkToMake>
+        <WorkToBuild>2</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Empyrium Synthweave ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_EmpyriumSynthweave</defName>
+    <label>empyrium synthweave</label>
+    <description>Fabric synthesized from Empyrium. Synthweave is similar in properties to the original.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Synthweave</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(120, 41, 112)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Empyrium</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>27.5</MarketValue>
+      <Mass>0.1</Mass>
+      <StuffPower_Armor_Sharp>1.45</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.95</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.30</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+		<li>Leathery</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(120,41,112)</color>
+      <statFactors>
+        <MaxHitPoints>2.5</MaxHitPoints>
+        <Beauty>7</Beauty>
+        <Flammability>0.25</Flammability>
+        <WorkToMake>3</WorkToMake>
+        <WorkToBuild>3</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+<!--=============== Orichalcum Synthweave ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_OrichalcumSynthweave</defName>
+    <label>orichalcum synthweave</label>
+    <description>Fabric synthesized from Orichalcum. Synthweave is similar in properties to the original.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Fabric/Synthweave</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <color>(21,173,122)</color>
+    </graphicData>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Orichalcum</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>37.5</MarketValue>
+      <Mass>0.05</Mass>
+      <StuffPower_Armor_Sharp>0.80</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+		<li>Leathery</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(21,173,122)</color>
+      <statOffsets>
+        <Beauty>45</Beauty>
+      </statOffsets>
+	  <statFactors>
+        <Beauty>12</Beauty>
+        <Flammability>0.25</Flammability>
+        <WorkToMake>2.25</WorkToMake>
+        <WorkToBuild>2.25</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Compressed Syntherius ====================-->
+<OE_SyntheriusPack.label>стислий сінтеріус</OE_SyntheriusPack.label>
+<OE_SyntheriusPack.description>Партія герметично стисненого сінтеріуса в спеціальну тару для безпечного транспортування та зберігання.\n\nДля подальшого використання обов'язково необхідно розпакувати.</OE_SyntheriusPack.description>
+
+<OE_SyntheriusPack.comps.CompUsable.useLabel>Розпакування сінтеріуса</OE_SyntheriusPack.comps.CompUsable.useLabel>
+
+<!--=============== Arachna Core ====================-->
+<OE_ArachnaCore.label>ядро арахни</OE_ArachnaCore.label>
+<OE_ArachnaCore.description>Надсучасне комп'ютерне ядро, що містить ІІ-особу Королеви Арахни. Невідомо, як він з'явився у Культа Алої Арахни, але при правильному налаштуванні він має величезний потенціал.</OE_ArachnaCore.description>
+
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Ядро Арахни вивчено: {RESEARCH} розблоковано</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetter>Вивчаючи Ядро Арахни, {PAWN_labelShort} отримав інформацію, необхідну для дослідницького проєкту {RESEARCH}.\n\nТепер ваші дослідники можуть використовувати дослідницькі стенди, щоб почати досліджувати, як насправді використовувати цю технологію.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateLabelString>Аналіз...</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateDescString>Аналіз ядра арахни.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.jobString>Аналіз ядра арахни</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.guiLabelString>Вибрати хто має це аналізувати</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.inspectString>Може бути проаналізовано колоністом.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Syntherius Of Sin ====================-->
+<OE_SyntheriusOfSin.label>Сінтеріус Гріха</OE_SyntheriusOfSin.label>
+<OE_SyntheriusOfSin.description>Фрагмент дивного Сінтеріуса, що використовувався в серці Занепалого Легіону.</OE_SyntheriusOfSin.description>
+
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Сінтеріус Гріха вивчено: {RESEARCH} розблоковано</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetter>Вивчаючи Сінтеріус Гріха, {PAWN_labelShort} отримав інформацію, необхідну для дослідницького проєкту {RESEARCH}.\n\nТепер ваші дослідники можуть використовувати дослідницькі стенди, щоб почати досліджувати, як насправді використовувати цю технологію.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateLabelString>Аналіз...</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateDescString>Аналіз Сінтеріус Гріха.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.jobString>Аналіз Сінтеріус Гріха</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.guiLabelString>Вибрати хто має це аналізувати</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.inspectString>Може бути проаналізовано колоністом.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Unstable Stone ====================-->
+<OE_UnstableStone.label>нестабільний камінь сили</OE_UnstableStone.label>
+<OE_UnstableStone.description>Нестабільний камінь сили із легенд. Вивчаючи його, ви зможете стабілізувати та використовувати його силу.</OE_UnstableStone.description>
+
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Нестабільний Камінь Сили вивчено: {RESEARCH} розблоковано</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetter>Вивчаючи Нестабільний Камінь Сили, {PAWN_labelShort} отримав інформацію, необхідну для дослідницького проєкту {RESEARCH}.\n\nТепер ваші дослідники можуть використовувати дослідницькі стенди, щоб почати досліджувати, як насправді використовувати цю технологію.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateLabelString>Аналіз...</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateDescString>Аналіз Нестабільний Камінь Сили.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.jobString>Аналіз Нестабільний Камінь Сили</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.guiLabelString>Вибрати хто має це аналізувати</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.inspectString>Може бути проаналізовано колоністом.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Biophormids - Pherocore ====================-->
+<OE_PherocoreBiophormids.label>фероядро Біоформіди</OE_PherocoreBiophormids.label>
+<OE_PherocoreBiophormids.description>Мікроорган, що контролює вироблення феромонів. Він необхідний для створення певних типів вуликів інсектоїдів. Фероядра колись були впроваджені глибоко в мозок лідерів геномів, що давало змогу стародавнім цивілізаціям контролювати вулики.\n\nЦе фероядро належить до генома Біоформідів, штучно створених із суміші генів інсектоїдів з усієї галактики й передових технологій, відомих своїми гуманоїдними формами та вражаючим інтелектом.</OE_PherocoreBiophormids.description>
+
+<OE_PherocoreBiophormids.comps.CompUsable.useLabel>Використовуйте {0_labelShort}, щоб збільшити розмір вулика</OE_PherocoreBiophormids.comps.CompUsable.useLabel>
+
+<!--=============== Mutated EGO Seeds ====================-->
+<!--=============== Elder Direwolf ====================-->
+<OE_EGOSeed_Elder_Direwolf.label>мутоване насіння ЕГО – Архаїчний Лютововк</OE_EGOSeed_Elder_Direwolf.label>
+<OE_EGOSeed_Elder_Direwolf.description>Колись цей екземпляр був насінням дерева ЕГО, але після потрапляння в тіло Архаїчного Лютововка він мутував за невідомих обставин. Він проріс всередині господаря, утворивши амальгамний симбіоз. Тепер його не можна використовувати для вирощування дерева ЕГО.</OE_EGOSeed_Elder_Direwolf.description>
+
+<!--=============== Elder Raptor ====================-->
+<OE_EGOSeed_Elder_Raptor.label>мутоване насіння ЕГО – Архаїчний Раптор</OE_EGOSeed_Elder_Raptor.label>
+<OE_EGOSeed_Elder_Raptor.description>Колись цей екземпляр був насінням дерева ЕГО, але після потрапляння в тіло Архаїчного Раптора він мутував за невідомих обставин. Він проріс всередині господаря, утворивши амальгамний симбіоз. Тепер його не можна використовувати для вирощування дерева ЕГО.</OE_EGOSeed_Elder_Raptor.description>
+
+<!--=============== Elder Ogren ====================-->
+<OE_EGOSeed_Elder_Ogren.label>мутоване насіння ЕГО – Архаїчний Огрен</OE_EGOSeed_Elder_Ogren.label>
+<OE_EGOSeed_Elder_Ogren.description>Колись цей екземпляр був насінням дерева ЕГО, але після потрапляння в тіло Архаїчного Огрена він мутував за невідомих обставин. Він проріс всередині господаря, утворивши амальгамний симбіоз. Тепер його не можна використовувати для вирощування дерева ЕГО.</OE_EGOSeed_Elder_Ogren.description>
+
+<!--=============== Elder Tionant ====================-->
+<OE_EGOSeed_Elder_Tionant.label>мутоване насіння ЕГО – Архаїчний Тіонант</OE_EGOSeed_Elder_Tionant.label>
+<OE_EGOSeed_Elder_Tionant.description>Колись цей екземпляр був насінням дерева ЕГО, але після потрапляння в тіло Архаїчного Тіонанта він мутував за невідомих обставин. Він проріс всередині господаря, утворивши амальгамний симбіоз. Тепер його не можна використовувати для вирощування дерева ЕГО.</OE_EGOSeed_Elder_Tionant.description>
+
+</LanguageData>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Helmet ====================-->
+  <ThingDef Name="EGOHelmetBase" ParentName="OEHelmetBaseNQ" Abstract="True">
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>20000</WorkToMake>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<apparel Inherit="False">
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<comps>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_EGO_Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Mask ====================-->
+  <ThingDef ParentName="EGOHelmetBase">
+	<defName>EGO_Helmet_Mask</defName>
+    <label>EGO Mask</label>
+    <description>Specially gestated amalgam Mask, well protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/EGO/Mask/EGOHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1850</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.60</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.60</ToxicEnvironmentResistance>
+	  <ForagedNutritionPerDay>-1</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.05</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.60</VacuumResistance>
+    </equippedStatOffsets>
+    <apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/EGO/Mask/EGOHelmet</wornGraphicPath>
+	  <tags>
+		<li>EGOGear</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Helm ====================-->
+  <ThingDef ParentName="EGOHelmetBase">
+	<defName>EGO_Helmet_Helm</defName>
+    <label>EGO Helm</label>
+    <description>Specially gestated amalgam Helm, perfectly protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/EGO/Helm/EGOHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>2075</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+	  <ForagedNutritionPerDay>-2</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.1</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.75</VacuumResistance>
+    </equippedStatOffsets>
+    <apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/EGO/Helm/EGOHelmet</wornGraphicPath>
+	  <tags>
+		<li>EGOGear</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Exohelm ====================-->
+<!--=============== Various ====================-->
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="EGOHelmetBase">
+	<defName>EGO_Helmet_Exohelm_Worker</defName>
+    <label>EGO Exohelm(Constructor)</label>
+    <description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve working stats.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Worker/EGOHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>2400</MarketValue>
+	  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.90</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.90</VacuumResistance>
+	  <WorkSpeedGlobal>0.30</WorkSpeedGlobal>
+	  <GlobalLearningFactor>0.30</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Worker/EGOHelmet</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="EGOHelmetBase">
+	<defName>EGO_Helmet_Exohelm_Melee</defName>
+    <label>EGO Exohelm(Berserker)</label>
+    <description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve melee combat stats.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Melee/EGOHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>2400</MarketValue>
+	  <ArmorRating_Sharp>1.75</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.90</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.90</VacuumResistance>
+	  <MeleeHitChance>5</MeleeHitChance>
+	  <MeleeDodgeChance>5</MeleeDodgeChance>
+	  <MeleeWeapon_DamageMultiplier>0.20</MeleeWeapon_DamageMultiplier>
+    </equippedStatOffsets>
+    <apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Melee/EGOHelmet</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+		<li>OESUndying_Melee</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="EGOHelmetBase">
+	<defName>EGO_Helmet_Exohelm_Ranged</defName>
+    <label>EGO Exohelm(Ballista)</label>
+    <description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve ranged combat stats.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Ranged/EGOHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>2400</MarketValue>
+	  <ArmorRating_Sharp>1.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.90</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.90</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.90</VacuumResistance>
+	  <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.20</AimingDelayFactor>
+	  <RangedWeapon_Cooldown>-0.20</RangedWeapon_Cooldown>
+    </equippedStatOffsets>
+    <apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Ranged/EGOHelmet</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+		<li>OESUndying_Ranged</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

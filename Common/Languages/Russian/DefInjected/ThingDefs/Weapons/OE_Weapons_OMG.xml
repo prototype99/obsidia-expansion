@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMG - Rapier ====================-->
+<OMG_Rapier.label>Импульсный Клинок</OMG_Rapier.label>
+<OMG_Rapier.description>Сильно модифицированная Рапира используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Rapier.description>
+
+<OMG_Rapier.tools.handle.label>рукоять</OMG_Rapier.tools.handle.label>
+<OMG_Rapier.tools.point.label>остриё</OMG_Rapier.tools.point.label>
+
+<!--=============== OMG - Axe ====================-->
+<OMG_Axe.label>Нано-Клинок</OMG_Axe.label>
+<OMG_Axe.description>Сильно модифицированный Топор используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Axe.description>
+
+<OMG_Axe.tools.handle.label>рукоять</OMG_Axe.tools.handle.label>
+<OMG_Axe.tools.edge.label>лезвие</OMG_Axe.tools.edge.label>
+
+<!--=============== OMG - BattleAxe ====================-->
+<OMG_BattleAxe.label>Дробитель данных</OMG_BattleAxe.label>
+<OMG_BattleAxe.description>Сильно модифицированный Боевой Топор используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_BattleAxe.description>
+
+<OMG_BattleAxe.tools.handle.label>рукоять</OMG_BattleAxe.tools.handle.label>
+<OMG_BattleAxe.tools.edge.label>лезвие</OMG_BattleAxe.tools.edge.label>
+<OMG_BattleAxe.tools.head.label>боевая часть</OMG_BattleAxe.tools.head.label>
+
+<!--=============== OMG - Dual Sword ====================-->
+<OMG_DualSword.label>Твин Глитч</OMG_DualSword.label>
+<OMG_DualSword.description>Сильно модифицированный Двойной Меч используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_DualSword.description>
+
+<OMG_DualSword.tools.shaft.label>древко</OMG_DualSword.tools.shaft.label>
+<OMG_DualSword.tools.edge.label>лезвие</OMG_DualSword.tools.edge.label>
+
+<!--=============== OMG - Scepter ====================-->
+<OMG_Scepter.label>Пульсатор</OMG_Scepter.label>
+<OMG_Scepter.description>Сильно модифицированный Скипетр используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Scepter.description>
+
+<OMG_Scepter.tools.ornament.label>орнамент</OMG_Scepter.tools.ornament.label>
+
+<!--=============== OMG - Pistol ====================-->
+<Bullet_OMG_P.label>пуля из Нано-Огонь</Bullet_OMG_P.label>
+
+<OMG_Pistol.label>Нано-Огонь</OMG_Pistol.label>
+<OMG_Pistol.verbs.Verb_Shoot.label>Нано-Огонь</OMG_Pistol.verbs.Verb_Shoot.label>
+<OMG_Pistol.description>Сильно модифицированный Пистолет используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Pistol.description>
+
+<OMG_Pistol.tools.grip.label>рукоять</OMG_Pistol.tools.grip.label>
+<OMG_Pistol.tools.barrel.label>ствол</OMG_Pistol.tools.barrel.label>
+
+<OMG_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - воспламенить</OMG_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OMG_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Pistol.verbs.Verb_Shoot.label>Нано-Огонь</OMG_Pistol.verbs.Verb_Shoot.label>
+
+<OMG_Pistol.comps.CompUniqueWeapon.namerLabels.0>Нано-Огонь</OMG_Pistol.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Pistol.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_Pistol.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Pistol.comps.CompEquippableAbilityReloadable-1.cooldownGerund>на перезарядке</OMG_Pistol.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Revolver ====================-->
+<Bullet_OMG_R.label>пуля из Даташот</Bullet_OMG_R.label>
+
+<OMG_Revolver.label>Даташот</OMG_Revolver.label>
+<OMG_Revolver.verbs.Verb_Shoot.label>Даташот</OMG_Revolver.verbs.Verb_Shoot.label>
+<OMG_Revolver.description>Сильно модифицированный Револьвер используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Revolver.description>
+
+<OMG_Revolver.tools.grip.label>рукоять</OMG_Revolver.tools.grip.label>
+<OMG_Revolver.tools.barrel.label>ствол</OMG_Revolver.tools.barrel.label>
+
+<OMG_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - воспламенить</OMG_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OMG_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Revolver.verbs.Verb_Shoot.label>Даташот</OMG_Revolver.verbs.Verb_Shoot.label>
+
+<OMG_Revolver.comps.CompUniqueWeapon.namerLabels.0>Даташот</OMG_Revolver.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>на перезарядке</OMG_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Shotgun ====================-->
+<Bullet_OMG_S.label>дробь из Крушитель байтов</Bullet_OMG_S.label>
+
+<OMG_Shotgun.label>Крушитель байтов</OMG_Shotgun.label>
+<OMG_Shotgun.verbs.Verb_Shoot.label>Крушитель байтов</OMG_Shotgun.verbs.Verb_Shoot.label>
+<OMG_Shotgun.description>Сильно модифицированный Дробовик используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Shotgun.description>
+
+<OMG_Shotgun.tools.stock.label>приклад</OMG_Shotgun.tools.stock.label>
+<OMG_Shotgun.tools.barrel.label>ствол</OMG_Shotgun.tools.barrel.label>
+
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - сжечь</OMG_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OMG_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Shotgun.verbs.Verb_Shoot.label>Крушитель байтов</OMG_Shotgun.verbs.Verb_Shoot.label>
+
+<OMG_Shotgun.comps.CompUniqueWeapon.namerLabels.0>Крушитель байтов</OMG_Shotgun.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>на перезарядке</OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - SniperRifle ====================-->
+<Bullet_OMG_SR.label>пуля из Эфирный удар</Bullet_OMG_SR.label>
+
+<OMG_SniperRifle.label>Эфирный удар</OMG_SniperRifle.label>
+<OMG_SniperRifle.verbs.Verb_Shoot.label>Эфирный удар</OMG_SniperRifle.verbs.Verb_Shoot.label>
+<OMG_SniperRifle.description>Сильно модифицированная Снайперская Винтовка используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_SniperRifle.description>
+
+<OMG_SniperRifle.tools.stock.label>приклад</OMG_SniperRifle.tools.stock.label>
+<OMG_SniperRifle.tools.barrel.label>ствол</OMG_SniperRifle.tools.barrel.label>
+
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - сжечь</OMG_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OMG_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_SniperRifle.verbs.Verb_Shoot.label>Эфирный удар</OMG_SniperRifle.verbs.Verb_Shoot.label>
+
+<OMG_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>Эфирный удар</OMG_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.cooldownGerund>на перезарядке</OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Minigun ====================-->
+<Bullet_OMG_MG.label>пуля из Измельчитель пустоты</Bullet_OMG_MG.label>
+
+<OMG_Minigun.label>Измельчитель пустоты</OMG_Minigun.label>
+<OMG_Minigun.verbs.Verb_Shoot.label>Измельчитель пустоты</OMG_Minigun.verbs.Verb_Shoot.label>
+<OMG_Minigun.description>Сильно модифицированный Миниган используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Minigun.description>
+
+<OMG_Minigun.tools.barrels.label>стволы</OMG_Minigun.tools.barrels.label>
+
+<OMG_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - инферно</OMG_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OMG_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Minigun.verbs.Verb_Shoot.label>Измельчитель пустоты</OMG_Minigun.verbs.Verb_Shoot.label>
+
+<OMG_Minigun.comps.CompUniqueWeapon.namerLabels.0>Измельчитель пустоты</OMG_Minigun.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Minigun.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_Minigun.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Minigun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>на перезарядке</OMG_Minigun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Lancecaster ====================-->
+<Bullet_OMG_L_Beam.label>луч из Оптик//Деструкто beam</Bullet_OMG_L_Beam.label>
+
+<OMG_Lancecaster.label>Оптик//Деструкто</OMG_Lancecaster.label>
+<OMG_Lancecaster.verbs.Verb_Shoot.label>Оптик//Деструкто</OMG_Lancecaster.verbs.Verb_Shoot.label>
+<OMG_Lancecaster.description>Сильно модифицированный Лэнскастер используется Наемниками. Специально модифицированное оружие, заряженное Некробейн и ЭМИ уроном.\n\nЭта модификация лишает предмет уровня качества.</OMG_Lancecaster.description>
+
+<OMG_Lancecaster.tools.stock.label>приклад</OMG_Lancecaster.tools.stock.label>
+<OMG_Lancecaster.tools.barrel.label>ствол</OMG_Lancecaster.tools.barrel.label>
+
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable.chargeNoun>заряд - сжечь</OMG_Lancecaster.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable.cooldownGerund>на перезарядке</OMG_Lancecaster.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Lancecaster.verbs.Verb_Shoot.label>Оптик//Деструкто</OMG_Lancecaster.verbs.Verb_Shoot.label>
+
+<OMG_Lancecaster.comps.CompUniqueWeapon.namerLabels.0>Оптик//Деструкто</OMG_Lancecaster.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.chargeNoun>заряд</OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.cooldownGerund>на перезарядке</OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+</LanguageData>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Compressed Syntherius ====================-->
+<OE_SyntheriusPack.label>сжатый синтериус</OE_SyntheriusPack.label>
+<OE_SyntheriusPack.description>Партия герметично сжатого синтериуса в специальную тару для безопасной транспортировки и хранения.\n\nДля дальнейшего использования обязательно необходимо распаковать.</OE_SyntheriusPack.description>
+
+<OE_SyntheriusPack.comps.CompUsable.useLabel>Распаковка синтериуса</OE_SyntheriusPack.comps.CompUsable.useLabel>
+
+<!--=============== Arachna Core ====================-->
+<OE_ArachnaCore.label>ядро арахны</OE_ArachnaCore.label>
+<OE_ArachnaCore.description>Сверхсовременное компьютерное ядро, содержащее ИИ-личность Королевы Арахны. Неизвестно, как он появился у Культа Алой Арахны, но при правильной настройке у него огромный потенциал.</OE_ArachnaCore.description>
+
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Ядро Арахны {PARENT_gender ? изучен : изучена : изучено}. Доступны новые технологии: {RESEARCH}</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetter>Изучив Ядро Арахны, {PAWN_labelShort} {STUDIER_gender ? получил : получила} ценные данные, необходимые для исследования {RESEARCH}.\n\nЭти данные позволят вашим учёным проводить новые исследования.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateLabelString>Анализ...</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateDescString>Анализ ядра арахны.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.jobString>Анализ ядра арахны</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.guiLabelString>Выбрать кто должен это анализировать</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.inspectString>Может быть проанализировано колонистом.</OE_ArachnaCore.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Syntherius Of Sin ====================-->
+<OE_SyntheriusOfSin.label>Синтериус Греха</OE_SyntheriusOfSin.label>
+<OE_SyntheriusOfSin.description>Фрагмент странного Синтериуса, использовавшегося в сердце Падшего Легиона.</OE_SyntheriusOfSin.description>
+
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Синтериус Греха {PARENT_gender ? изучен : изучена : изучено}. Доступны новые технологии: {RESEARCH}</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetter>Изучив Синтериус Греха, {PAWN_labelShort} {STUDIER_gender ? получил : получила} ценные данные, необходимые для исследования {RESEARCH}.\n\nЭти данные позволят вашим учёным проводить новые исследования.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateLabelString>Анализ...</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateDescString>Анализ Синтериус Греха.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.jobString>Анализ Синтериус Греха</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.guiLabelString>Выбрать кто должен это анализировать</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.inspectString>Может быть проанализировано колонистом.</OE_SyntheriusOfSin.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Unstable Stone ====================-->
+<OE_UnstableStone.label>нестабильный камень силы</OE_UnstableStone.label>
+<OE_UnstableStone.description>Нестабильный камень силы из легенд. Изучая его, вы сможете стабилизировать и использовать его силу.</OE_UnstableStone.description>
+
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Нестабильный Камень Силы {PARENT_gender ? изучен : изучена : изучено}. Доступны новые технологии: {RESEARCH}</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetter>Изучив Нестабильный Камень Силы, {PAWN_labelShort} {STUDIER_gender ? получил : получила} ценные данные, необходимые для исследования {RESEARCH}.\n\nЭти данные позволят вашим учёным проводить новые исследования.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateLabelString>Анализ...</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateDescString>Анализ Нестабильный Камень Силы.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.jobString>Анализ Нестабильный Камень Силы</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.guiLabelString>Выбрать кто должен это анализировать</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_UnstableStone.comps.CompAnalyzableUnlockResearch.inspectString>Может быть проанализировано колонистом.</OE_UnstableStone.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Biophormids - Pherocore ====================-->
+<OE_PherocoreBiophormids.label>фероядро Биоформиды</OE_PherocoreBiophormids.label>
+<OE_PherocoreBiophormids.description>Микроорган, контролирующий выработку феромонов. Он необходим для создания определённых типов ульев инсектоидов. Фероядра когда-то были внедрены глубоко в мозг лидеров геномов, что позволяло древним цивилизациям контролировать ульи.\n\nЭто фероядро принадлежит к геному Биоформидов, искусственно созданных из смеси генов инсектоидов по всей галактике и передовых технологий, известных своими гуманоидными формами и поразительным интеллектом.</OE_PherocoreBiophormids.description>
+
+<OE_PherocoreBiophormids.comps.CompUsable.useLabel>Используйте {0_labelShort}, чтобы увеличить размер улья</OE_PherocoreBiophormids.comps.CompUsable.useLabel>
+
+<!--=============== Mutated EGO Seeds ====================-->
+<!--=============== Elder Direwolf ====================-->
+<OE_EGOSeed_Elder_Direwolf.label>мутировавшее семя ЭГО – Древний Лютоволк</OE_EGOSeed_Elder_Direwolf.label>
+<OE_EGOSeed_Elder_Direwolf.description>Когда-то этот экземпляр был семенем дерева ЭГО, но после попадания в тело Древнего Лютоволка он мутировал при неизвестных обстоятельствах. Он пророс внутри хозяина, образовав амальгамный симбиоз. Теперь его нельзя использовать для выращивания древа ЭГО.</OE_EGOSeed_Elder_Direwolf.description>
+
+<!--=============== Elder Raptor ====================-->
+<OE_EGOSeed_Elder_Raptor.label>мутировавшее семя ЭГО – Древний Раптор</OE_EGOSeed_Elder_Raptor.label>
+<OE_EGOSeed_Elder_Raptor.description>Когда-то этот экземпляр был семенем дерева ЭГО, но после попадания в тело Древнего Раптора он мутировал при неизвестных обстоятельствах. Он пророс внутри хозяина, образовав амальгамный симбиоз. Теперь его нельзя использовать для выращивания древа ЭГО.</OE_EGOSeed_Elder_Raptor.description>
+
+<!--=============== Elder Ogren ====================-->
+<OE_EGOSeed_Elder_Ogren.label>мутировавшее семя ЭГО – Древний Огрэн</OE_EGOSeed_Elder_Ogren.label>
+<OE_EGOSeed_Elder_Ogren.description>Когда-то этот экземпляр был семенем дерева ЭГО, но после попадания в тело Древнего Огрэна он мутировал при неизвестных обстоятельствах. Он пророс внутри хозяина, образовав амальгамный симбиоз. Теперь его нельзя использовать для выращивания древа ЭГО.</OE_EGOSeed_Elder_Ogren.description>
+
+<!--=============== Elder Tionant ====================-->
+<OE_EGOSeed_Elder_Tionant.label>мутировавшее семя ЭГО – Древний Тионант</OE_EGOSeed_Elder_Tionant.label>
+<OE_EGOSeed_Elder_Tionant.description>Когда-то этот экземпляр был семенем дерева ЭГО, но после попадания в тело Древнего Тионанта он мутировал при неизвестных обстоятельствах. Он пророс внутри хозяина, образовав амальгамный симбиоз. Теперь его нельзя использовать для выращивания древа ЭГО.</OE_EGOSeed_Elder_Tionant.description>
+
+</LanguageData>

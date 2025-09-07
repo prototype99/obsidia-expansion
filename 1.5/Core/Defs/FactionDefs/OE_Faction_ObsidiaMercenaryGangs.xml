@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Mercenary Gangs - Faction ====================-->
+  <FactionDef ParentName="FactionBase">
+    <defName>ObsidiaMercenaryGangs</defName>
+    <label>Obsidia Mercenary Gangs</label>
+	<categoryTag>ObsidiaMercenaryGangs</categoryTag>
+    <description>The Obsidia Mercenary Gangs were once the elite force of the Obsidia Empire Heroes. Forsaking vengeance, they splintered into gangs, embracing the life of mercenaries far from the heart of Obsidia. Centuries later, their influence can no longer be ignored, even by the Empire that discarded them. They employ any means necessary—technological, tactical, or raw power—to serve their trusted clientele, securing their place among the galaxy’s most feared and reliable soldiers of fortune.</description>
+    <colorSpectrum>
+	  <li>(0.03, 0.96, 0.36)</li>
+	  <li>(1.00, 1.00, 0.20)</li>
+	  <li>(0.90, 0.40, 0.98)</li>  
+	  <li>(0.69, 0.77, 0.33)</li>
+	  <li>(0.54, 0.13, 0.17)</li>
+	  <li>(0.09, 0.29, 0.35)</li>
+	  <li>(0.04, 1.00, 0.83)</li>
+	  <li>(0.56, 0.27, 0.61)</li>
+	  <li>(0.95, 0.64, 0.09)</li>
+	  <li>(0.95, 0.27, 0.09)</li>
+    </colorSpectrum>
+	<pawnSingular>mercenary</pawnSingular>
+    <pawnsPlural>mercenaries</pawnsPlural>
+    <listOrderPriority>106</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>5</maxConfigurableAtWorldCreation>
+	<canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<naturalEnemy>false</naturalEnemy>
+    <leaderTitle>kingpin</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/ObsidiaMercenaryGangs</factionIconPath>
+    <factionNameMaker>ObsidiaMercenaryGangsNamerFaction</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+	<earliestRaidDays>110</earliestRaidDays>
+	<allowedCultures>
+	  <li MayRequire="ObsidiaExpansion.Ideology.StylePack">OE_Culture_Obsidia</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Sophian</li>
+	  <li>Astropolitan</li>
+	</allowedCultures>
+	<allowedMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Scrapper</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Egalitarian</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Emancipation</li>
+	</allowedMemes>
+	<xenotypeSet>
+      <xenotypeChances>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.02</Dirtmole>
+		<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.02</Hussar>
+		<Waster MayRequire="Ludeon.RimWorld.Biotech">0.02</Waster>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.02</Neanderthal>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.02</Genie>
+		<Impid MayRequire="Ludeon.RimWorld.Biotech">0.02</Impid>
+		<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.02</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.02</Yttakin>
+		<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.02</Sanguophage>
+      </xenotypeChances>
+    </xenotypeSet>
+	<structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+	<royalFavorLabel>chips</royalFavorLabel>
+	<royalFavorIconPath>UI/Icons/OE_Chips_Icon</royalFavorIconPath>
+	<royalTitleTags>
+      <li>ObsidiaMercenaryGangsTitle</li>
+    </royalTitleTags>
+	<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+	<royalTitleInheritanceRelations>
+	  <li>Child</li>
+	  <li>Grandchild</li>
+	  <li>GreatGrandchild</li>
+	  <li>NephewOrNiece</li>
+	  <li>Spouse</li>
+	  <li>Sibling</li>
+	  <li>HalfSibling</li>
+	  <li>Cousin</li>
+	  <li>Parent</li>
+	  <li>UncleOrAunt</li>
+	</royalTitleInheritanceRelations>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>OECultist</li>
+		  <li>OECivilians</li>
+		  <li>OEFighters</li>
+		  <li>Outlander</li>
+        </categories>
+        <commonality>0.6</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>ImperialCommon</li>
+		  <li>ImperialFighter</li>
+        </categories>
+        <commonality>0.2</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Pirate</li>
+		  <li>Offworld</li>
+        </categories>
+        <commonality>0.2</commonality>
+      </li>
+    </backstoryFilters>
+	<apparelStuffFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+		<li>OE_ObsidianSynthweave</li>
+        <li>OE_Mythril</li>
+		<li>OE_MythrilSynthweave</li>
+		<li>OE_Platinum</li>
+		<li>OE_PlatinumSynthweave</li>
+		<li>OE_Empyrium</li>
+		<li>OE_EmpyriumSynthweave</li>
+		<li>OE_Orichalcum</li>
+		<li>OE_OrichalcumSynthweave</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Cloth</li>
+		<li>Uranium</li>
+      </disallowedThingDefs>
+    </apparelStuffFilter>
+	<fixedLeaderKinds>
+      <li>OMG_Kingpin</li>
+    </fixedLeaderKinds>
+	<baseTraderKinds>
+	  <li>Base_ObsidiaMercenaryGangs_Standard</li>
+	  <li>Base_ObsidiaMercenaryGangs_Exotic</li>
+	  <li MayRequire="Ludeon.Rimworld.Royalty">Base_ObsidiaMercenaryGangs_TributeCollector</li>
+    </baseTraderKinds>
+	<caravanTraderKinds>
+      <li>Caravan_ObsidiaMercenaryGangs_Standard</li>
+	  <li>Caravan_ObsidiaMercenaryGangs_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+	  <li MayRequire="Ludeon.Rimworld.Royalty">Base_ObsidiaMercenaryGangs_TributeCollector</li>
+    </visitorTraderKinds>
+    <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+    <raidLootMaker>ObsidiaMercenaryGangsRaidLootMaker</raidLootMaker>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+		<li>(1500, 150)</li>
+        <li>(3000, 300)</li>
+        <li>(5000, 500)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+<!--=============== Peaceful ====================-->	
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <OMG_Enforcer>20</OMG_Enforcer>
+		  <OMG_Battlemaster MayRequire="Ludeon.RimWorld.Royalty">12</OMG_Battlemaster>
+		  <OMG_Mech_Dominator>10</OMG_Mech_Dominator>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <OMG_Enforcer>20</OMG_Enforcer>
+		  <OMG_Battlemaster MayRequire="Ludeon.RimWorld.Royalty">12</OMG_Battlemaster>
+		  <OMG_Mech_Dominator>10</OMG_Mech_Dominator>
+        </options>
+      </li>	  
+<!--=============== Trader ====================-->	
+	  <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <OE_Trader>1</OE_Trader>
+        </traders>
+        <carriers>
+          <OE_Slime_Hauler>12</OE_Slime_Hauler>
+		  <OE_Armagon>7</OE_Armagon>
+		  <OE_Sharkaradon>5</OE_Sharkaradon>
+		  <OE_Rosner>5</OE_Rosner>
+		  <Dromedary>3</Dromedary>
+		  <Muffalo>2</Muffalo>
+        </carriers>
+        <guards>
+          <OMG_Enforcer>20</OMG_Enforcer>
+		  <OMG_Battlemaster MayRequire="Ludeon.RimWorld.Royalty">12</OMG_Battlemaster>
+		  <OMG_Mech_Dominator>10</OMG_Mech_Dominator>
+        </guards>
+      </li>
+<!--=============== Settlement ====================-->	
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+		  <OMG_Enforcer>20</OMG_Enforcer>
+		  <OMG_Battlemaster MayRequire="Ludeon.RimWorld.Royalty">12</OMG_Battlemaster>
+		  <OMG_Mech_Dominator>10</OMG_Mech_Dominator>
+        </options>
+      </li> 
+<!--=============== Combat ====================-->	  
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+		  <OMG_Enforcer>20</OMG_Enforcer>
+		  <OMG_Mech_Dominator>10</OMG_Mech_Dominator>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+		  <OMG_Enforcer>20</OMG_Enforcer>
+		  <OMG_Battlemaster MayRequire="Ludeon.RimWorld.Royalty">12</OMG_Battlemaster>
+		  <OMG_Mech_Dominator>10</OMG_Mech_Dominator>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+		  <OMG_Enforcer>20</OMG_Enforcer>
+		  <OMG_Battlemaster MayRequire="Ludeon.RimWorld.Royalty">12</OMG_Battlemaster>
+		  <OMG_TreasureHound>2</OMG_TreasureHound>
+		  <OMG_Mech_Dominator>10</OMG_Mech_Dominator>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/Expanding/Colony</settlementTexturePath>
+	<disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ObsidiaMercenaryGangsRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+			<li>OE_Obsidian</li>
+			<li>OE_Mythril</li>
+			<li>OE_Platinum</li>
+			<li>OE_Empyrium</li>
+			<li>OE_Orichalcum</li>
+			<li>OE_Syntherius</li>
+			<li>OE_DragonianWoodLog</li>
+			<li>OE_Mooncloth</li>
+			<li>OE_Leather_Ogren</li>
+			<li>OE_Leather_Direwolf</li>
+			<li>OE_Leather_Astrinx</li>
+			<li>OE_Leather_Raptor</li>
+			<li>OE_Leather_Bruul</li>
+			<li>OE_ObsidianSynthweave</li>
+			<li>OE_MythrilSynthweave</li>
+			<li>OE_PlatinumSynthweave</li>
+			<li>OE_EmpyriumSynthweave</li>
+			<li>OE_OrichalcumSynthweave</li>
+			<li>OE_ModernizationKit</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">OE_PersonaKit</li>
+			<li>OE_DriftersKit</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+  <RulePackDef>
+    <defName>ObsidiaMercenaryGangsNamerFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->[MGF] [MGS] [MGT]</li>
+        <li>r_name(p=2)->The [MGF] [MGS] [MGT]</li>
+		<li>r_name(p=2)->[MGT] of The [MGF] [MGS]</li>
+		
+        <li>MGF->Void</li>
+        <li>MGF->Starfall</li>
+        <li>MGF->Nebula</li>
+        <li>MGF->Dark Horizon</li>
+		<li>MGF->Celestial</li>
+		<li>MGF->Quantum</li>
+		<li>MGF->Stellar</li>
+		<li>MGF->Phantom</li>
+		<li>MGF->Nova</li>
+		<li>MGF->Starshade</li>
+		<li>MGF->Black Sun</li>
+		<li>MGF->Deep Void</li>
+		<li>MGF->Spectral</li>
+		<li>MGF->Galactic</li>
+		<li>MGF->Eclipse</li>
+		<li>MGF->Solar</li>
+		<li>MGF->Astral</li>
+		<li>MGF->Riftborn</li>
+		<li>MGF->Solarwind</li>
+		<li>MGF->Voidborn</li>
+		<li>MGF->Wraith</li>
+		<li>MGF->Starforge</li>
+		<li>MGF->Cosmic</li>
+		<li>MGF->Dusk</li>
+		<li>MGF->Dark Star</li>
+		<li>MGF->Pulsar</li>
+		<li>MGF->Abyssal</li>
+		<li>MGF->Stardust</li>
+		<li>MGF->Darklight</li>
+		<li>MGF->Solar Phantom</li>
+
+        <li>MGS->Reapers</li>
+		<li>MGS->Legion</li>
+		<li>MGS->Wolves</li>
+		<li>MGS->Syndicate</li>
+		<li>MGS->Marauders</li>
+		<li>MGS->Corsairs</li>
+		<li>MGS->Outriders</li>
+		<li>MGS->Strikers</li>
+        <li>MGS->Exiles</li>
+        <li>MGS->Blades</li>
+		<li>MGS->Operatives</li>
+		<li>MGS->Mercs</li>
+		<li>MGS->Hunters</li>
+		<li>MGS->Raiders</li>
+		<li>MGS->Outcasts</li>
+		<li>MGS->Drifters</li>
+		<li>MGS->Crew</li>
+		<li>MGS->Enforcers</li>
+		<li>MGS->Revenants</li>
+		<li>MGS->Rogues</li>
+		<li>MGS->Nomads</li>
+		<li>MGS->Vanguards</li>
+		<li>MGS->Assassins</li>
+		<li>MGS->Company</li>
+		<li>MGS->Reavers</li>
+		<li>MGS->Renegades</li>
+		<li>MGS->Command</li>
+		<li>MGS->Brigands</li>
+        <li>MGS->Shadows</li>
+		
+		<li>MGT->Gang</li>
+		<li>MGT->Clan</li>
+		<li>MGT->Cartel</li>
+		<li>MGT->Outfit</li>
+		<li>MGT->Cabal</li>
+		<li>MGT->Band</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

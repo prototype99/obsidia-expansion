@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC Helmet ====================-->
+  <ThingDef Name="OCCHelmetBase" ParentName="OEHelmetBase" Abstract="True">
+	<statBases>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+	  <WorkToMake>25000</WorkToMake>
+	  <Mass>3</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PainShockThreshold>0.10</PainShockThreshold>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCHelmetBase">
+	<defName>OCC_Helmet</defName>
+    <label>OCC Knight Helmet</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed for use by the OCC Knights.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OCC/OCCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OCCKnight</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+	  <ArmorRating_Sharp>1.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.60</ArmorRating_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>90</OE_Obsidian>
+	  <OE_Mythril>20</OE_Mythril>
+	  <OE_Mooncloth>10</OE_Mooncloth>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OCC/OCCHelmet</wornGraphicPath>
+	  <tags>
+		<li>OCCKnight</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OCCArmor</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OСCHelmetMod" ParentName="OCCHelmetBase">
+	<defName>OCC_Helmet_M</defName>
+    <label>OCC Paladin Helmet</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nThe hardened version provides more protection to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OCC/OCCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OCCPaladin</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>1450</MarketValue>
+	  <ArmorRating_Sharp>1.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Helmet>1</OCC_Helmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OCC/OCCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OCCPaladin</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OCCGearMod</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OСCHelmetMod">
+	<defName>OCC_Helmet_M_Spacer</defName>
+    <label>OCC Paladin Helmet(Space Griffin)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OCC/Spacer/OCCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1700</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>25</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <OCC_Helmet_M>1</OCC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OCC/Spacer/OCCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OСCHelmetMod">
+	<defName>OCC_Helmet_M_Melee</defName>
+    <label>OCC Paladin Helmet(Gladiator)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nModified visor with analyzing computer that helps the user close combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OCC/Melee/OCCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1700</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>4</MeleeHitChance>
+      <MeleeDodgeChance>4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OCC_Helmet_M>1</OCC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OCC/Melee/OCCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OCCPaladin_Melee</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OСCHelmetMod">
+	<defName>OCC_Helmet_M_Ranged</defName>
+    <label>OCC Paladin Helmet(Ranger)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by OCC Paladins.\n\nModified visor with targeting computer that helps the user aim.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OCC/Ranged/OCCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1700</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.20</AimingDelayFactor>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OCC_Helmet_M>1</OCC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OCC/Ranged/OCCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OCCPaladin_Ranged</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Armor ====================-->
+<!--=============== Shell ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="EGOArmorBase">
+	<defName>EGO_Armor_Shell_Mechanitor</defName>
+    <label>EGO Shell(Automancer)</label>
+    <description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve mechanitor stats and modified with the pack that allows the user to deploy a battery-powered turret.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Mechanitor/EGOArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3665</MarketValue>
+	  <ArmorRating_Sharp>1.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.90</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+	  <PackRadius>6.9</PackRadius>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>35</CarryingCapacity>
+	  <MoveSpeed>0.25</MoveSpeed>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.2</RawNutritionFactor>
+	  <MechBandwidth>24</MechBandwidth>
+	  <MechControlGroups>3</MechControlGroups>
+	  <WorkSpeedGlobalOffsetMech>0.25</WorkSpeedGlobalOffsetMech>
+	  <MechRemoteRepairDistance>9.9</MechRemoteRepairDistance>
+	  <MechRemoteShieldDistance>9.9</MechRemoteShieldDistance>
+      <MechRemoteShieldEnergy>100</MechRemoteShieldEnergy>
+	  <MechFormingSpeed>1</MechFormingSpeed>
+	  <MechRepairSpeed>1</MechRepairSpeed>
+    </equippedStatOffsets>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Mechanitor/EGOArmor</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+      </tags>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy turret</label>
+        <defaultProjectile>Grenade_Armor_EGO_TurretPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_EGOSeed</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_EGO_TurretPack</defName>
+    <label>EGO turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/EGO_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/EGO_TacticalTurret_Gun</uiIconPath>
+    <projectile>
+      <explosionRadius>20.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>EGO_Turret_TacticalTurret</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EGO Tactical Turret ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>EGO_Turret_TacticalTurret</defName>
+    <label>EGO Automancer turret</label>
+    <description>An automatic EGO Amalgam Pistol-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/EGO_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_EGOSeed>2</OE_EGOSeed>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>65</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>EGO_Gun_TacticalTurret</turretGunDef>
+      <turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.9</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>EGO_Gun_TacticalTurret</defName>
+    <label>EGO Automancer Turret</label>
+    <description>Reconstructed EGO Amalgam Pistol for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/EGO_TacticalTurret_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_EGO_P</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>22.9</range>
+        <soundCast>Pawn_Megascarab_Angry</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

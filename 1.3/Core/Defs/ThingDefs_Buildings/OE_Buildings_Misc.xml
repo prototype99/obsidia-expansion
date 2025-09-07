@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Comms Console ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_CommsConsole</defName>
+    <label>obsidia comms console</label>
+    <description>Small Obsidia communications console. Allows radio contact with other factions and orbital traders.</description>
+    <thingClass>Building_CommsConsole</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_CommsConsole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<costList>
+      <OE_Obsidian>50</OE_Obsidian>
+      <OE_Mythril>25</OE_Mythril>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+	<hasInteractionCell>true</hasInteractionCell>
+	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<castEdgeShadows>false</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+	<building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+	<designationCategory>Misc</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	<placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>OEFurniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>550</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Persona Kit ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_PersonaKit</defName>
+    <label>persona kit</label>
+    <description>Advanced set of components to Persona upgrading Obsidia weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductProduced/OE_PersonaKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>5500</MarketValue>
+      <Mass>2.0</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEGearMod</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+    </recipeMaker>
+	<costList>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <AIPersonaCore>1</AIPersonaCore>
+    </costList>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEModKits</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

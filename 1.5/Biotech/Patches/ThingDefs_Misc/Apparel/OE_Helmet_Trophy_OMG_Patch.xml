@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Dronefather ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Dronefather</defName>
+    <label>Mercenary Helmet(Dronefather)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital mech cluster targeter.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Dronefather/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <!-- Unique -->
+	  <MechBandwidth>30</MechBandwidth>
+	  <MechControlGroups>3</MechControlGroups>
+	  <WorkSpeedGlobalOffsetMech>0.30</WorkSpeedGlobalOffsetMech>
+	  <MechRemoteRepairDistance>14.9</MechRemoteRepairDistance>
+	  <MechRemoteShieldDistance>14.9</MechRemoteShieldDistance>
+      <MechRemoteShieldEnergy>150</MechRemoteShieldEnergy>
+	  <MechFormingSpeed>1.5</MechFormingSpeed>
+	  <MechRepairSpeed>1.5</MechRepairSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Dronefather/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_MechCluster</verbClass>
+		<commandIcon>UI/Abilities/Armor/AnimalTamer</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <useableInPocketMaps>false</useableInPocketMaps>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <requiresFactionToAcquire>Mechanoid</requiresFactionToAcquire>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

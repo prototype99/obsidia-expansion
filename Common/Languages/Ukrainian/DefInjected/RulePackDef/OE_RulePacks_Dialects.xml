@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Namer - Obsidia Dialects ====================-->
+<!--=============== Standard ====================-->
+  <OE_Namer_Obsidia_Dialect_Standard.rulePack.rulesStrings>
+    <li>r_name(p=0.2)->[anyPrefix][wholeName]</li>
+    <li>r_name(p=0.2)->[anyPrefix]-[wholeName]</li>
+	<li>r_name(p=1)->[wholeName]</li>
+	<!---->
+	<li>anyPrefix->зер</li>
+	<li>anyPrefix->магна</li>
+	<li>anyPrefix->вок</li>
+	<li>anyPrefix->імпе</li>
+	<li>anyPrefix->страто</li>
+	<li>anyPrefix->орди</li>
+	<li>anyPrefix->доміна</li>
+	<!---->
+	<li>wholeName->обсілог</li>
+	<li>wholeName->домінглос</li>
+	<li>wholeName->корвокс</li>
+	<li>wholeName->лексидра</li>
+	<li>wholeName->формінтра</li>
+	<li>wholeName->кодентум</li>
+	<li>wholeName->диктарін</li>
+	<li>wholeName->кодивокс</li>
+	<li>wholeName->імперикс</li>
+	<li>wholeName->реглексія</li>
+  </OE_Namer_Obsidia_Dialect_Standard.rulePack.rulesStrings>
+
+<!--=============== Outerworld ====================-->
+  <OE_Namer_Obsidia_Dialect_Outerworld.rulePack.rulesStrings>
+    <li>r_name(p=0.2)->[anyPrefix][wholeName]</li>
+    <li>r_name(p=0.2)->[anyPrefix]-[wholeName]</li>
+	<li>r_name(p=1)->[wholeName]</li>
+	<!---->
+	<li>anyPrefix->зер</li>
+	<li>anyPrefix->магна</li>
+	<li>anyPrefix->вок</li>
+	<li>anyPrefix->гране</li>
+	<li>anyPrefix->пило</li>
+	<li>anyPrefix->краї</li>
+	<li>anyPrefix->зоряно</li>
+	<!---->
+	<li>wholeName->дрифтонг</li>
+	<li>wholeName->ексілект</li>
+	<li>wholeName->номаглоса</li>
+	<li>wholeName->вейдіал</li>
+	<li>wholeName->аутлайт</li>
+	<li>wholeName->роаметік</li>
+	<li>wholeName->діасфлекс</li>
+	<li>wholeName->стелакс</li>
+	<li>wholeName->глічлінг</li>
+	<li>wholeName->аеролуна</li>
+  </OE_Namer_Obsidia_Dialect_Outerworld.rulePack.rulesStrings>
+
+<!--=============== Ancient ====================-->
+  <OE_Namer_Obsidia_Dialect_Ancient.rulePack.rulesStrings>
+    <li>r_name(p=0.2)->[anyPrefix][wholeName]</li>
+    <li>r_name(p=0.2)->[anyPrefix]-[wholeName]</li>
+	<li>r_name(p=1)->[wholeName]</li>
+	<!---->
+	<li>anyPrefix->зер</li>
+	<li>anyPrefix->магна</li>
+	<li>anyPrefix->вок</li>
+	<li>anyPrefix->міфо</li>
+	<li>anyPrefix->праймо</li>
+	<li>anyPrefix->кріпто</li>
+	<li>anyPrefix->старо</li>
+	<!---->
+	<li>wholeName->релікант</li>
+	<li>wholeName->арханекс</li>
+	<li>wholeName->векстрал</li>
+	<li>wholeName->прімаглосс</li>
+	<li>wholeName->грамнуліт</li>
+	<li>wholeName->обсинара</li>
+	<li>wholeName->міфирун</li>
+	<li>wholeName->калдраліт</li>
+	<li>wholeName->нокталінг</li>
+	<li>wholeName->інкантра</li>
+  </OE_Namer_Obsidia_Dialect_Ancient.rulePack.rulesStrings>
+
+</LanguageData>

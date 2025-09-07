@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Metals Hex ====================-->
+  <TerrainDef ParentName="FloorBase">
+    <defName>OE_ObsidianHexTile</defName>
+    <label>obsidian hex tile</label>
+    <description>Standard obsidian hex tile is beautiful and clean. Very difficult to lay.</description>
+    <texturePath>Terrain/Surfaces/HexTile</texturePath>
+	<designatorDropdown>OE_Floor_Tile_MetalHex</designatorDropdown>
+    <renderPrecedence>228</renderPrecedence>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <color>(33,29,44)</color>
+    <costList>
+      <OE_Obsidian>12</OE_Obsidian>
+    </costList>
+    <statBases>
+      <WorkToBuild>6250</WorkToBuild>
+      <Beauty>8</Beauty>
+	  <Cleanliness>0.3</Cleanliness>
+      <StyleDominance>1</StyleDominance>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>OE_MythrilHexTile</defName>
+    <label>mythril hex tile</label>
+    <description>Mythril hex tile is the most luxurious of the bunch and provides a cleanliness bonus. Highly prized by Obsidia nobility.</description>
+    <texturePath>Terrain/Surfaces/HexTile</texturePath>
+	<designatorDropdown>OE_Floor_Tile_MetalHex</designatorDropdown>
+    <renderPrecedence>228</renderPrecedence>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <color>(242,253,234)</color>
+    <costList>
+      <OE_Mythril>12</OE_Mythril>
+    </costList>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>18</Beauty>
+	  <Cleanliness>0.5</Cleanliness>
+      <StyleDominance>1</StyleDominance>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>OE_PlatinumHexTile</defName>
+    <label>platinum hex tile</label>
+    <description>Sterile platinum hex tile with special cleanliness-enhancing properties. Extra-clean rooms improve outcomes in hospitals and research labs. This tile is very slow to build, but quick to clean.</description>
+    <texturePath>Terrain/Surfaces/HexTile</texturePath>
+	<designatorDropdown>OE_Floor_Tile_MetalHex</designatorDropdown>
+    <renderPrecedence>228</renderPrecedence>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <color>(229,229,229)</color>
+    <costList>
+      <OE_Platinum>12</OE_Platinum>
+    </costList>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>13</Beauty>
+	  <Cleanliness>0.8</Cleanliness>
+      <StyleDominance>1</StyleDominance>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>OE_EmpyriumHexTile</defName>
+    <label>empyrium hex tile</label>
+    <description>Empyrium hex tile is the most luxurious of the bunch and provides a cleanliness bonus. Highly prized by Obsidia nobility.</description>
+    <texturePath>Terrain/Surfaces/HexTile</texturePath>
+	<designatorDropdown>OE_Floor_Tile_MetalHex</designatorDropdown>
+    <renderPrecedence>228</renderPrecedence>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <color>(120,41,112)</color>
+    <costList>
+      <OE_Empyrium>12</OE_Empyrium>
+    </costList>
+    <statBases>
+      <WorkToBuild>5500</WorkToBuild>
+      <Beauty>18</Beauty>
+	  <Cleanliness>0.8</Cleanliness>
+      <StyleDominance>1</StyleDominance>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>OE_OrichalcumHexTile</defName>
+    <label>orichalcum hex tile</label>
+    <description>Orichalcum hex tile is the most luxurious of the bunch and provides a cleanliness bonus. Highly prized by Obsidia nobility.</description>
+    <texturePath>Terrain/Surfaces/HexTile</texturePath>
+	<designatorDropdown>OE_Floor_Tile_MetalHex</designatorDropdown>
+    <renderPrecedence>228</renderPrecedence>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <color>(21,173,122)</color>
+    <costList>
+      <OE_Orichalcum>12</OE_Orichalcum>
+    </costList>
+    <statBases>
+      <WorkToBuild>6000</WorkToBuild>
+      <Beauty>23</Beauty>
+	  <Cleanliness>0.8</Cleanliness>
+      <StyleDominance>1</StyleDominance>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+	<researchPrerequisites>
+      <li>OEBuilding</li>
+    </researchPrerequisites>
+	<designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>
+
+</Defs>

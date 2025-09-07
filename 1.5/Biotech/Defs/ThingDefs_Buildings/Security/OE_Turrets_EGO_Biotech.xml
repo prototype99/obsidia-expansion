@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO ====================-->
+<!--=============== GrenadeLauncher ====================-->
+  <ThingDef ParentName="OE_TurretBase_SmallPowered">
+    <defName>EGO_Turret_Small_GrenadeLauncher</defName>
+    <label>EGO Sporothrix Turret</label>
+    <description>Amalgam Grenade Launcher-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/EGO/TurretSmall_GrenadeLauncher_Icon</uiIconPath>
+	<designatorDropdown>OE_Turrets_EGO</designatorDropdown>
+    <costList>
+	  <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_GrenadeLauncher>1</EGO_GrenadeLauncher>
+    </costList>
+	<statBases>
+      <MarketValue>4945</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>175</combatPower> 
+	  <turretGunDef>EGO_TurretGun_Small_GrenadeLauncher</turretGunDef>
+      <turretBurstCooldownTime>1.25</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineeringAdv</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>EGO_TurretGun_Small_GrenadeLauncher</defName>
+    <label>Sporothrix Turret</label>
+    <description>Amalgam Grenade Launcher for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_GrenadeLauncher_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.20</AccuracyShort>
+      <AccuracyMedium>1.30</AccuracyMedium>
+      <AccuracyLong>1.40</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_GL</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>34.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Pawn_BigInsect_Angry</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

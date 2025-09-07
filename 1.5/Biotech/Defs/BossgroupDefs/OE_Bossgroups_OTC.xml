@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OTC ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_OTC</defName>
+    <kindDef>OTC_Engineer_EMP_Mechanitor</kindDef>
+    <appearAfterTicks>100</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_OTC</defName>
+    <boss>OE_Beaconboss_OTC</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OTC_Recruit>3</OTC_Recruit>
+		  <OTC_Mechanic_Melee>1</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>1</OTC_Mechanic_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OTC_Recruit>5</OTC_Recruit>
+		  <OTC_Mechanic_Melee>2</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>1</OTC_Mechanic_Ranged>
+		  <OTC_Mechanic_Heavy>1</OTC_Mechanic_Heavy>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OTC_Mechanic_Melee>6</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>4</OTC_Mechanic_Ranged>
+		  <OTC_Mechanic_Heavy>2</OTC_Mechanic_Heavy>
+		  <OTC_Engineer_Cryo_Melee>1</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>1</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Fire_Melee>1</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>1</OTC_Engineer_Fire_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OTC_Mechanic_Melee>3</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>3</OTC_Mechanic_Ranged>
+		  <OTC_Mechanic_Heavy>2</OTC_Mechanic_Heavy>
+		  <OTC_Engineer_Acid_Melee>1</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>1</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Cryo_Melee>1</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>2</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Cryo_Heavy>1</OTC_Engineer_Cryo_Heavy>
+		  <OTC_Engineer_Fire_Melee>1</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>2</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_Fire_Heavy>1</OTC_Engineer_Fire_Heavy>
+		  <OTC_Engineer_EMP_Melee>1</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>1</OTC_Engineer_EMP_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OTC_Mechanic_Melee>3</OTC_Mechanic_Melee>
+		  <OTC_Mechanic_Ranged>2</OTC_Mechanic_Ranged>
+		  <OTC_Mechanic_Heavy>1</OTC_Mechanic_Heavy>
+		  <OTC_Engineer_Acid_Melee>1</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>2</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Acid_Heavy>1</OTC_Engineer_Acid_Heavy>
+		  <OTC_Engineer_Cryo_Melee>1</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>2</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Cryo_Heavy>1</OTC_Engineer_Cryo_Heavy>
+		  <OTC_Engineer_Fire_Melee>1</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>2</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_Fire_Heavy>1</OTC_Engineer_Fire_Heavy>
+		  <OTC_Engineer_EMP_Melee>1</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>2</OTC_Engineer_EMP_Ranged>
+		  <OTC_Engineer_EMP_Heavy>1</OTC_Engineer_EMP_Heavy>
+		  <OTC_Mech_Arachna_Cryo>2</OTC_Mech_Arachna_Cryo>
+		  <OTC_Mech_Arachna_Fire>2</OTC_Mech_Arachna_Fire>
+		  <OTC_Mech_Dominator_Cryo>1</OTC_Mech_Dominator_Cryo>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OTC_Engineer_Acid_Melee>2</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>2</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Acid_Heavy>1</OTC_Engineer_Acid_Heavy>
+		  <OTC_Engineer_Cryo_Melee>2</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>2</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Cryo_Heavy>1</OTC_Engineer_Cryo_Heavy>
+		  <OTC_Engineer_Fire_Melee>2</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>2</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_Fire_Heavy>1</OTC_Engineer_Fire_Heavy>
+		  <OTC_Engineer_EMP_Melee>2</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>2</OTC_Engineer_EMP_Ranged>
+		  <OTC_Engineer_EMP_Heavy>1</OTC_Engineer_EMP_Heavy>
+		  <OTC_Mech_Arachna_Acid>1</OTC_Mech_Arachna_Acid>
+		  <OTC_Mech_Arachna_Cryo>1</OTC_Mech_Arachna_Cryo>
+		  <OTC_Mech_Arachna_Fire>1</OTC_Mech_Arachna_Fire>
+		  <OTC_Mech_Arachna_EMP>1</OTC_Mech_Arachna_EMP>
+		  <OTC_Mech_Dominator_Acid>1</OTC_Mech_Dominator_Acid>
+		  <OTC_Mech_Dominator_Cryo>1</OTC_Mech_Dominator_Cryo>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OTC_Engineer_Acid_Melee>3</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>2</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Acid_Heavy>1</OTC_Engineer_Acid_Heavy>
+		  <OTC_Engineer_Cryo_Melee>2</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>3</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Cryo_Heavy>1</OTC_Engineer_Cryo_Heavy>
+		  <OTC_Engineer_Fire_Melee>2</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>3</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_Fire_Heavy>1</OTC_Engineer_Fire_Heavy>
+		  <OTC_Engineer_EMP_Melee>2</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>2</OTC_Engineer_EMP_Ranged>
+		  <OTC_Engineer_EMP_Heavy>2</OTC_Engineer_EMP_Heavy>
+		  <OTC_Mech_Arachna_Acid>1</OTC_Mech_Arachna_Acid>
+		  <OTC_Mech_Arachna_Cryo>2</OTC_Mech_Arachna_Cryo>
+		  <OTC_Mech_Arachna_Fire>2</OTC_Mech_Arachna_Fire>
+		  <OTC_Mech_Arachna_EMP>1</OTC_Mech_Arachna_EMP>
+		  <OTC_Mech_Dominator_Acid>1</OTC_Mech_Dominator_Acid>
+		  <OTC_Mech_Dominator_Cryo>1</OTC_Mech_Dominator_Cryo>
+		  <OTC_Mech_Dominator_EMP>1</OTC_Mech_Dominator_EMP>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OTC_Engineer_Acid_Melee>2</OTC_Engineer_Acid_Melee>
+		  <OTC_Engineer_Acid_Ranged>3</OTC_Engineer_Acid_Ranged>
+		  <OTC_Engineer_Acid_Heavy>2</OTC_Engineer_Acid_Heavy>
+		  <OTC_Engineer_Cryo_Melee>2</OTC_Engineer_Cryo_Melee>
+		  <OTC_Engineer_Cryo_Ranged>4</OTC_Engineer_Cryo_Ranged>
+		  <OTC_Engineer_Cryo_Heavy>2</OTC_Engineer_Cryo_Heavy>
+		  <OTC_Engineer_Fire_Melee>2</OTC_Engineer_Fire_Melee>
+		  <OTC_Engineer_Fire_Ranged>4</OTC_Engineer_Fire_Ranged>
+		  <OTC_Engineer_Fire_Heavy>2</OTC_Engineer_Fire_Heavy>
+		  <OTC_Engineer_EMP_Melee>2</OTC_Engineer_EMP_Melee>
+		  <OTC_Engineer_EMP_Ranged>3</OTC_Engineer_EMP_Ranged>
+		  <OTC_Engineer_EMP_Heavy>2</OTC_Engineer_EMP_Heavy>
+		  <OTC_Mech_Arachna_Acid>2</OTC_Mech_Arachna_Acid>
+		  <OTC_Mech_Arachna_Cryo>2</OTC_Mech_Arachna_Cryo>
+		  <OTC_Mech_Arachna_Fire>2</OTC_Mech_Arachna_Fire>
+		  <OTC_Mech_Arachna_EMP>2</OTC_Mech_Arachna_EMP>
+		  <OTC_Mech_Dominator_Acid>1</OTC_Mech_Dominator_Acid>
+		  <OTC_Mech_Dominator_Cryo>1</OTC_Mech_Dominator_Cryo>
+		  <OTC_Mech_Dominator_Fire>1</OTC_Mech_Dominator_Fire>
+		  <OTC_Mech_Dominator_EMP>1</OTC_Mech_Dominator_EMP>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Combat squad led by {LEADERKIND_label} armed with OTC gear.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

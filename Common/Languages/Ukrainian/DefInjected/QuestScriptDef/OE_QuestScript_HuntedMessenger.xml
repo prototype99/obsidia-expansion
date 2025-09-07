@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Hunted Messenger ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_HuntedMessenger.questNameRules.rulesStrings>
+  <li>questName->Порятунок [askerIndefA]</li>
+  <li>questName->Допомога [askerIndefB]</li>
+  <li>questName->[askerAdj] [askerIndefC]</li>
+  <li>questName->[askerIndefC] у втечі від [enemyFaction_pawnsPlural]</li>
+  <li>questName->[enemyFaction_pawnsPlural] переслідують [askerIndefA]</li>
+  <li>questName->Тіні в Погоні</li>
+  <!-- Pieces -->
+  <li>askerAdj->переслідування</li>
+  <li>askerAdj(asker_gender==Male)->останній</li>
+  <li>askerAdj(asker_gender==Male)->той, що біжить</li>
+  <li>askerAdj(asker_gender==Male)->врятований</li>
+  <li>askerAdj(asker_gender==Female)->остання</li>
+  <li>askerAdj(asker_gender==Female)->та, що біжить</li>
+  <li>askerAdj(asker_gender==Female)->врятована</li>
+
+  <li>askerIndefA->кур'єра</li>
+  <li>askerIndefA(asker_gender==Male)->вісника</li>
+  <li>askerIndefA(asker_gender==Male)->вцілілого</li>
+  <li>askerIndefA(asker_gender==Female)->вісницю</li>
+  <li>askerIndefA(asker_gender==Female)->вцілілу</li>
+  <li>askerIndefA->[asker_nameFull]</li>
+  <li>askerIndefA->[asker_royalTitleInCurrentFaction]</li>
+
+  <li>askerIndefB->кур'єру</li>
+  <li>askerIndefB(asker_gender==Male)->віснику</li>
+  <li>askerIndefB(asker_gender==Male)->вцілілому</li>
+  <li>askerIndefB(asker_gender==Female)->вісниці</li>
+  <li>askerIndefB(asker_gender==Female)->вцілілій</li>
+  <li>askerIndefB->[asker_nameFull]</li>
+  <li>askerIndefB->[asker_royalTitleInCurrentFaction]</li>
+
+  <li>askerIndefC->кур'єр</li>
+  <li>askerIndefC(asker_gender==Male)->вісник</li>
+  <li>askerIndefC(asker_gender==Male)->вцілілий</li>
+  <li>askerIndefC(asker_gender==Female)->вісниця</li>
+  <li>askerIndefC(asker_gender==Female)->вціліла</li>
+  <li>askerIndefC->[asker_nameFull]</li>
+  <li>askerIndefC->[asker_royalTitleInCurrentFaction]</li>
+</OE_Quest_HuntedMessenger.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_HuntedMessenger.questDescriptionRules.rulesStrings>
+  <li>questDescription->[asker_nameFull], [asker_royalTitleInCurrentFaction] з [asker_faction_name], ледве [asker_escaped_oe] засідки. [asker_possessive] охоронці були вбиті, і тепер [asker_pronoun] переслідують. [asker_nameDef] потребує вашої допомоги, щоб сховатися на [map_definite] на кілька годин до прибуття шатла. В обмін на це [asker_pronoun] обіцяє нагороду у розмірі [royalFavorReward] [asker_faction_royalFavorLabel].\nГрупа [enemyFaction_pawnsPlural] складається з:\n[raid/raidPawnKinds]\n\n[asker_nameDef] занадто [asker_very_scared_oe], щоб надати більше інформації.</li>
+  <li>questDescription->[asker_nameFull], найщасливіший [asker_royalTitleInCurrentFaction] з [asker_faction_name], якимось дивом [asker_managed_oe] уникнути смертельної засідки, у якій загинули всі [asker_possessive] охоронці. Тепер за [asker_pronoun] женуться, і [asker_pronoun_oe] потрібен герой (або просто хтось, хто зможе постояти кілька годин). Якщо ви зможете захистити [asker_objective] на [map_definite] до прибуття шатла, ви отримаєте [royalFavorReward] [asker_faction_royalFavorLabel].\nГрупа [enemyFaction_pawnsPlural] складається з:\n[raid/raidPawnKinds]\n\n[asker_nameDef] занадто [asker_very_scared_oe], щоб надати більше інформації.</li>
+  <li>questDescription->[asker_nameFull], [asker_broken_oe] [asker_royalTitleInCurrentFaction] з [asker_faction_name], [asker_fled_oe] з кривавої бійні, у якій загинули [asker_possessive] охоронці. [asker_very_bad_oe] криками загиблих, [asker_pronoun] шукає притулку. Переслідувачі наближаються. Сховайте [asker_nameDef] на [map_definite] до прибуття шатла, і в обмін вам буде обіцяно нагороду у розмірі [royalFavorReward] [asker_faction_royalFavorLabel].\nГрупа [enemyFaction_pawnsPlural] складається з:\n[raid/raidPawnKinds]\n\n[asker_nameDef] занадто [asker_very_scared_oe], щоб надати більше інформації.</li>
+  <li>asker_escaped_oe(asker_gender==Male)->уникнув</li>
+  <li>asker_escaped_oe(asker_gender==Female)->уникнула</li>
+  <li>asker_lucky_oe(asker_gender==Male)->найщасливіший</li>
+  <li>asker_lucky_oe(asker_gender==Female)->найщасливіша</li>
+  <li>asker_managed_oe(asker_gender==Male)->умудрився</li>
+  <li>asker_managed_oe(asker_gender==Female)->умудрилася</li>
+  <li>asker_pronoun_oe(asker_gender==Male)->йому</li>
+  <li>asker_pronoun_oe(asker_gender==Female)->їй</li>
+  <li>asker_broken_oe(asker_gender==Male)->зламаний і розпачливий</li>
+  <li>asker_broken_oe(asker_gender==Female)->зламана і розпачлива</li>
+  <li>asker_fled_oe(asker_gender==Male)->втік</li>
+  <li>asker_fled_oe(asker_gender==Female)->втекла</li>
+  <li>asker_very_bad_oe(asker_gender==Male)->Одинокий, переслідуваний і мучений</li>
+  <li>asker_very_bad_oe(asker_gender==Female)->Одинока, переслідувана і мучена</li>
+  <li>asker_very_scared_oe(asker_gender==Male)->наляканий</li>
+  <li>asker_very_scared_oe(asker_gender==Female)->налякана</li>
+</OE_Quest_HuntedMessenger.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Raid arrives ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterLabel.value.slateRef>{BASELABEL} наздоганяє [../asker_nameDef]</OE_Quest_HuntedMessenger.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterLabel.value.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterText.value.slateRef>{BASETEXT}\n\n[enemyFaction_pawnsPlural] прийшов за [../asker_nameDef].</OE_Quest_HuntedMessenger.root.nodes.Delay.node.nodes.Util_Raid.parms.customLetterText.value.slateRef>
+<!--=============== Shuttle ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>Має відправитись на шаттлі</OE_Quest_HuntedMessenger.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>Шаттл прибув</OE_Quest_HuntedMessenger.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>Шаттл прибув забрати [asker_nameDef].</OE_Quest_HuntedMessenger.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>
+<!--=============== Asker died ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>Гість загинув: {SUBJECT_definite}</OE_Quest_HuntedMessenger.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гість, якого ви повинні були захищати, загинув. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>
+<!--=============== Surgery Violation ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.askerSurgeryViolation.node.nodes.Letter.label.slateRef>Заборонена операція: {SUBJECT_definite}</OE_Quest_HuntedMessenger.root.nodes.askerSurgeryViolation.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.askerSurgeryViolation.node.nodes.Letter.text.slateRef>Несанкціонована, жорстока хірургічна операція була проведена на {SUBJECT_definite}, на гості, якого ви повинні були захищати. По цій причині [asker_pronoun] спробує покинути ваше поселення. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.askerSurgeryViolation.node.nodes.Letter.text.slateRef>
+<!--=============== Lodger's xenogerm absorbed ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>Поглинання ксеногену: {SUBJECT_definite}</OE_Quest_HuntedMessenger.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, кого вам доручено захищати, насильно поглинає ксеноген. Через це порушення {SUBJECT_pronoun} тепер спробує покинути поселення. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.text.slateRef>
+<!--=============== Lodger arrested ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>Ув'язнено: {SUBJECT_definite}</OE_Quest_HuntedMessenger.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гість, якого ви були повинні захищати, ув'язнений. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>
+<!--=============== Asker left map ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>Гість зник: {SUBJECT_definite}</OE_Quest_HuntedMessenger.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>{SUBJECT_definite} гість, якого ви повинні були захищати, зник. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>
+<!--=============== Lodger ran wild ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.askerRanWild.node.nodes.Letter.label.slateRef>Гість зник: {SUBJECT_definite}</OE_Quest_HuntedMessenger.root.nodes.askerRanWild.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.askerRanWild.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, гість, якого ви повинні були захищати, тав диким. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.askerRanWild.node.nodes.Letter.text.slateRef>
+<!--=============== Shuttle destroyed ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef>Шаттл зруйновано</OE_Quest_HuntedMessenger.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef> 
+<OE_Quest_HuntedMessenger.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>Шаттл, відправлений забрати [asker_nameDef], був знищений. [asker_pronoun] покине поселення пішечком. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>
+<!--=============== Shuttle sent ====================-->
+<OE_Quest_HuntedMessenger.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>Завдання провалене: «[resolvedQuestName]»</OE_Quest_HuntedMessenger.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>
+<OE_Quest_HuntedMessenger.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>Шаттл, відправлений забрати [asker_nameDef], відлетів без пасажира [asker_objective]. [asker_pronoun] покине поселення пішечком. [failLetterEndingCommon]</OE_Quest_HuntedMessenger.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>
+
+</LanguageData>

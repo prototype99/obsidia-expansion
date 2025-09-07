@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Arachna Core ====================-->
+<OE_ArachnaCore.comps.CompStudiable.completedLetterTitle>{PARENT_label} {PARENT_gender ? изучен : изучена : изучено}. Доступны новые технологии: {RESEARCH}</OE_ArachnaCore.comps.CompStudiable.completedLetterTitle>
+<OE_ArachnaCore.comps.CompStudiable.completedLetterText>Изучив {lookup: {PARENT_label}; Case; 3}, {PAWN_labelShort} {STUDIER_gender ? получил : получила} ценные данные, необходимые для исследования {RESEARCH}.\n\nЭти данные позволят вашим учёным проводить новые исследования.</OE_ArachnaCore.comps.CompStudiable.completedLetterText>
+
+</LanguageData>

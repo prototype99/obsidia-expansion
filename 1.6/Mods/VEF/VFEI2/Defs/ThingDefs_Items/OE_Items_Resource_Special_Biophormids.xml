@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Biophormids - Pherocore ====================-->
+  <ThingDef ParentName="VFEI2_PherocoreBase">
+	<defName>OE_PherocoreBiophormids</defName>
+	<label>biophormids pherocore</label>
+	<description>A pheromone controlling micro-organ. It is necessary to construct certain types of insectoid hives. Pherocores have been embedded deep into the brains of geneline leaders which allowed ancient civilizations to control the hives.\n\nThis pherocore belongs to the Biophormids geneline, artificially created from a blend of insectoid genes across the galaxy and advanced technologies, known for their humanoid forms and remarkable intelligence.</description>
+	<graphicData>
+	  <texPath>Things/Item/Resource/Special/OE_Pherocore_Biophormids</texPath>
+	</graphicData>
+	<statBases>
+	  <MarketValue>1000</MarketValue>
+	</statBases>
+	<comps>
+	  <li Class="VFEInsectoids.CompProperties_TargetableHive">
+		<hive>OE_ArtificialBiophormidsHive</hive>
+	  </li>
+	  <li>
+		<compClass>VFEInsectoids.CompTargetEffect_UpgradeHive</compClass>
+	  </li>
+	</comps>
+  </ThingDef>
+
+</Defs>

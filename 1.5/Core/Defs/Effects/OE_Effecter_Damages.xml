@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== AcidCloud ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_AcidCloud</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+      <color>(211, 184, 253)</color>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>3</solidTime>
+      <fadeOutTime>3</fadeOutTime>
+      <growthRate>0.025</growthRate>
+    </mote>
+  </ThingDef>
+
+<!--=============== CryoCloud ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_CryoCloud</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+      <color>(218, 247, 253)</color>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>3</solidTime>
+      <fadeOutTime>3</fadeOutTime>
+      <growthRate>0.025</growthRate>
+    </mote>
+  </ThingDef>
+
+<!--=============== NecrobaneCloud ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_NecrobaneCloud</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+      <color>(40, 36, 45)</color>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>3</solidTime>
+      <fadeOutTime>3</fadeOutTime>
+      <growthRate>0.025</growthRate>
+    </mote>
+  </ThingDef>
+
+</Defs>

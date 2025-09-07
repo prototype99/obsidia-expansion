@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arms ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticArm</defName>
+    <label>bionic arm</label>
+    <labelNoun>a bionic arm</labelNoun>
+    <description>An installed bionic arm.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>15</power>
+			<armorPenetration>0.2</armorPenetration>
+            <cooldownTime>1.5</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>OE_ProstheticArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+		<statOffsets>
+          <MeleeDoorDamageFactor MayRequire="Ludeon.Rimworld.Biotech">1.25</MeleeDoorDamageFactor>
+        </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticArm</defName>
+    <label>bionic arm</label>
+    <description>Obsidia bionic arm. It is better than a biological arm in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticArm</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Arm</texPath>
+    </graphicData>
+    <costList>
+      <OE_DragonianWoodLog>35</OE_DragonianWoodLog>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>25</OE_DragonianWoodLog>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>7.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticArm</defName>
+    <label>install bionic arm</label>
+    <description>Install a bionic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticArm</ThingDef>
+      <HediffDef>OE_ProstheticArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic arm.</jobString>
+	<uiIconThing>OE_ProstheticArm</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticArm</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticArm</defName>
+    <label>remove bionic arm</label>
+    <description>Remove a bionic arm.</description>
+    <jobString>Removing bionic arm.</jobString>
+    <removesHediff>OE_ProstheticArm</removesHediff>
+	<uiIconThing>OE_ProstheticArm</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticArm_M</defName>
+    <label>advanced bionic arm</label>
+    <labelNoun>an advanced bionic arm</labelNoun>
+    <description>An installed advanced bionic arm.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticArm_M</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>20</power>
+			<armorPenetration>0.3</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>OE_ProstheticArm_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <MeleeDoorDamageFactor MayRequire="Ludeon.Rimworld.Biotech">1.5</MeleeDoorDamageFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticArm_M</defName>
+    <label>advanced bionic arm</label>
+    <description>Obsidian advanced bionic arm. It is much better than a biological arm in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticArm_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Arm</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+    <costList>
+      <OE_ProstheticArm>1</OE_ProstheticArm>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>25</OE_DragonianWoodLog>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>7.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticArm_M</defName>
+    <label>install advanced bionic arm</label>
+    <description>Install an advanced bionic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticArm_M</ThingDef>
+      <HediffDef>OE_ProstheticArm_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing advanced prosthetic arm.</jobString>
+	<uiIconThing>OE_ProstheticArm_M</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticArm_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticArm_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticArm_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticArm_M</defName>
+    <label>remove advanced bionic arm</label>
+    <description>Remove an advanced bionic arm.</description>
+    <jobString>Removing advanced bionic arm.</jobString>
+    <removesHediff>OE_ProstheticArm_M</removesHediff>
+	<uiIconThing>OE_ProstheticArm_M</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticArm_CAC</defName>
+    <label>cultist bionic arm</label>
+    <labelNoun>a cultist bionic arm</labelNoun>
+    <description>An installed cultist bionic arm.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticArm_CAC</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>25</power>
+			<armorPenetration>0.4</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>OE_ProstheticArm_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <MeleeDoorDamageFactor MayRequire="Ludeon.Rimworld.Biotech">1.75</MeleeDoorDamageFactor>
+		  <GlobalLearningFactor>-0.02</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticArm_CAC</defName>
+    <label>cultist bionic arm</label>
+    <description>Obsidia cultist bionic arm. It is much better than a biological arm in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticArm_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Arm</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticArm_M>1</OE_ProstheticArm_M>
+	  <OE_CultistKit>1</OE_CultistKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <butcherProducts>
+	  <OE_DragonianWoodLog>30</OE_DragonianWoodLog>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>7.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticArm_CAC</defName>
+    <label>install cultist bionic arm</label>
+    <description>Install a cultist bionic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticArm_CAC</ThingDef>
+      <HediffDef>OE_ProstheticArm_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cultist bionic arm.</jobString>
+	<uiIconThing>OE_ProstheticArm_CAC</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticArm_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticArm_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticArm_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticArm_CAC</defName>
+    <label>remove cultist bionic arm</label>
+    <description>Remove a cultist bionic arm.</description>
+    <jobString>Removing cultist bionic arm.</jobString>
+    <removesHediff>OE_ProstheticArm_CAC</removesHediff>
+	<uiIconThing>OE_ProstheticArm_CAC</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - OES ====================-->
+  <HediffDef ParentName="OESAddBodyParts">
+    <defName>OE_ProstheticArm_OES</defName>
+    <label>heroic bionic arm</label>
+    <labelNoun>a heroic bionic arm</labelNoun>
+    <description>An installed heroic bionic arm.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticArm_OES</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>25</power>
+			<armorPenetration>0.55</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>OE_ProstheticArm_OES</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <MeleeDoorDamageFactor MayRequire="Ludeon.Rimworld.Biotech">1.75</MeleeDoorDamageFactor>
+		  <GlobalLearningFactor>-0.03</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.03</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.03</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OESBodyParts">
+    <defName>OE_ProstheticArm_OES</defName>
+    <label>heroic bionic arm</label>
+    <description>Obsidia heroic bionic arm. It is much better than a biological arm in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticArm_OES</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OES/OE_Arm</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticArm_M>1</OE_ProstheticArm_M>
+	  <OE_HeroicKit>1</OE_HeroicKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <butcherProducts>
+	  <OE_DragonianWoodLog>30</OE_DragonianWoodLog>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>4750</MarketValue>
+	  <Mass>7.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticArm_OES</defName>
+    <label>install heroic bionic arm</label>
+    <description>Install a heroic bionic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticArm_OES</ThingDef>
+      <HediffDef>OE_ProstheticArm_OES</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing heroic bionic arm.</jobString>
+	<uiIconThing>OE_ProstheticArm_OES</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticArm_OES</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticArm_OES</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticArm_OES</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticArm_OES</defName>
+    <label>remove heroic bionic arm</label>
+    <description>Remove a heroic bionic arm.</description>
+    <jobString>Removing heroic bionic arm.</jobString>
+    <removesHediff>OE_ProstheticArm_OES</removesHediff>
+	<uiIconThing>OE_ProstheticArm_OES</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Legs ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticLeg</defName>
+    <label>bionic leg</label>
+    <labelNoun>a bionic leg</labelNoun>
+    <description>An installed bionic leg.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticLeg</defName>
+    <label>bionic leg</label>
+    <description>Obsidia bionic leg. It is better than a biological leg in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLeg</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Leg</texPath>
+    </graphicData>
+    <costList>
+      <OE_DragonianWoodLog>35</OE_DragonianWoodLog>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>25</OE_DragonianWoodLog>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>10</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLeg</defName>
+    <label>install bionic leg</label>
+    <description>Install a bionic leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLeg</ThingDef>
+      <HediffDef>OE_ProstheticLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic leg.</jobString>
+	<uiIconThing>OE_ProstheticLeg</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLeg</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLeg</defName>
+    <label>remove bionic leg</label>
+    <description>Remove a bionic leg.</description>
+    <jobString>Removing bionic leg.</jobString>
+    <removesHediff>OE_ProstheticLeg</removesHediff>
+	<uiIconThing>OE_ProstheticLeg</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticLeg_M</defName>
+    <label>advanced bionic leg</label>
+    <labelNoun>an advanced bionic leg</labelNoun>
+    <description>An installed advanced bionic leg.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLeg_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLeg_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticLeg_M</defName>
+    <label>advanced bionic leg</label>
+    <description>Obsidian advanced bionic leg. It is much better than a biological leg in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLeg_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Leg</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+    <costList>
+      <OE_ProstheticLeg>1</OE_ProstheticLeg>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_DragonianWoodLog>25</OE_DragonianWoodLog>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>10</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLeg_M</defName>
+    <label>install advanced bionic leg</label>
+    <description>Install an advanced bionic leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLeg_M</ThingDef>
+      <HediffDef>OE_ProstheticLeg_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing advanced bionic leg.</jobString>
+	<uiIconThing>OE_ProstheticLeg_M</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLeg_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLeg_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLeg_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLeg_M</defName>
+    <label>remove advanced bionic leg</label>
+    <description>Remove an advanced bionic leg.</description>
+    <jobString>Removing advanced bionic leg.</jobString>
+    <removesHediff>OE_ProstheticLeg_M</removesHediff>
+	<uiIconThing>OE_ProstheticLeg_M</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticLeg_CAC</defName>
+    <label>cultist bionic leg</label>
+    <labelNoun>a cultist bionic leg</labelNoun>
+    <description>An installed cultist bionic leg.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLeg_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLeg_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.02</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticLeg_CAC</defName>
+    <label>cultist bionic leg</label>
+    <description>Obsidia cultist bionic leg. It is much better than a biological leg in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLeg_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Leg</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticLeg_M>1</OE_ProstheticLeg_M>
+	  <OE_CultistKit>1</OE_CultistKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <butcherProducts>
+	  <OE_DragonianWoodLog>30</OE_DragonianWoodLog>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>10</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLeg_CAC</defName>
+    <label>install cultist bionic leg</label>
+    <description>Install a cultist bionic leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLeg_CAC</ThingDef>
+      <HediffDef>OE_ProstheticLeg_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cultist bionic leg.</jobString>
+	<uiIconThing>OE_ProstheticLeg_CAC</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLeg_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLeg_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLeg_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLeg_CAC</defName>
+    <label>remove cultist bionic leg</label>
+    <description>Remove a cultist bionic leg.</description>
+    <jobString>Removing cultist bionic leg.</jobString>
+    <removesHediff>OE_ProstheticLeg_CAC</removesHediff>
+	<uiIconThing>OE_ProstheticLeg_CAC</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - OES ====================-->
+  <HediffDef ParentName="OESAddBodyParts">
+    <defName>OE_ProstheticLeg_OES</defName>
+    <label>heroic bionic leg</label>
+    <labelNoun>a heroic bionic leg</labelNoun>
+    <description>An installed heroic bionic leg.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticLeg_OES</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticLeg_OES</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.03</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.03</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.03</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OESBodyParts">
+    <defName>OE_ProstheticLeg_OES</defName>
+    <label>heroic bionic leg</label>
+    <description>Obsidia heroic bionic leg. It is much better than a biological leg in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticLeg_OES</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OES/OE_Leg</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticLeg_M>1</OE_ProstheticLeg_M>
+	  <OE_HeroicKit>1</OE_HeroicKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <butcherProducts>
+	  <OE_DragonianWoodLog>30</OE_DragonianWoodLog>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>4750</MarketValue>
+	  <Mass>10</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticLeg_OES</defName>
+    <label>install heroic bionic leg</label>
+    <description>Install a heroic bionic leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticLeg_OES</ThingDef>
+      <HediffDef>OE_ProstheticLeg_OES</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing heroic bionic leg.</jobString>
+	<uiIconThing>OE_ProstheticLeg_OES</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticLeg_OES</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticLeg_OES</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticLeg_OES</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticLeg_OES</defName>
+    <label>remove heroic bionic leg</label>
+    <description>Remove a heroic bionic leg.</description>
+    <jobString>Removing heroic bionic leg.</jobString>
+    <removesHediff>OE_ProstheticLeg_OES</removesHediff>
+	<uiIconThing>OE_ProstheticLeg_OES</uiIconThing>
+  </RecipeDef>
+
+</Defs>

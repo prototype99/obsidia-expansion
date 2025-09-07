@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Slime Hearts ====================-->
+<!--=============== UnСonfigured ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_SlimeHeart</defName>
+    <label>slime heart (Unconf.)</label>
+    <description>A hyper-advanced slime core with correct configuration and the addition of materials it is able to grow a real slime. It's a lost technology from Obsidia, developed by mad scientist and slime master Rimuru Tempest.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Ancient</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VFE.Medieval2">OE_SlimeHeart_Honey</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Jelly</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VFE.Insectoid2">OE_SlimeHeart_RoyalJelly</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Chemfuel</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Neutroamine</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Beer</ThingDef>
+	  <ThingDef MayRequire="Ludeon.Rimworld.Biotech">OE_SlimeHeart_Hemogen</ThingDef>
+	  <ThingDef MayRequire="vanillaracesexpanded.sanguophage">OE_SlimeHeart_HemogenAnimal</ThingDef>
+	  <ThingDef MayRequire="vanillaracesexpanded.sanguophage">OE_SlimeHeart_HemogenCorpse</ThingDef>
+	  <ThingDef MayRequire="vanillaracesexpanded.sanguophage">OE_SlimeHeart_HemogenSanguophage</ThingDef>
+	  <ThingDef MayRequire="ObsidiaExpansion.Xenos.Nanomorph">OE_SlimeHeart_Nanogel</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Steel</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Gold</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Silver</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Uranium</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Jade</ThingDef>
+	  <ThingDef MayRequire="Ludeon.Rimworld.Anomaly">OE_SlimeHeart_Bioferrite</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Obsidian</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Mythril</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Platinum</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Syntherius</ThingDef>
+	  <ThingDef MayRequire="Ludeon.Rimworld.Biotech">OE_SlimeHeart_SyntheriusOfSin</ThingDef>
+	  <ThingDef MayRequire="VanillaExpanded.VPsycastsE">OE_SlimeHeart_Eltex</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Herbal</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Ambrosia</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Fungus</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Jumy</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VFE.Medieval2">OE_SlimeHeart_Grape</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Bone</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Hauler</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OE_SlimeHeart_Demon_Acid</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OE_SlimeHeart_Demon_Cryo</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OE_SlimeHeart_Demon_Fire</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OE_SlimeHeart_Demon_EMP</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OE_SlimeHeart_Companion_Worker</ThingDef>
+	  <ThingDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">OE_SlimeHeart_Companion_Battle</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Luciferium</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Torraxin</ThingDef>
+	  <ThingDef>OE_SlimeHeart_Joltixin</ThingDef>
+	  <ThingDef MayRequire="Ludeon.Rimworld.Royalty">OE_SlimeHeart_Luraxin</ThingDef>
+	  <ThingDef MayRequire="Ludeon.Rimworld.Biotech">OE_SlimeHeart_Alcrexin</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+      <MarketValue>135</MarketValue>
+      <Mass>2.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
+
+<!--=============== Сonfigured Base ====================-->
+  <ThingDef Name="OESlimeHeartBase" ParentName="ResourceBase" Abstract="True">
+    <tickerType>Normal</tickerType>
+	<techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+      <Mass>2.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>EggsFertilized</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>BurnDrug</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>OE_AmalgamVat</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Intellectual>6</Intellectual>
+	  </skillRequirements>
+	  <researchPrerequisite>OEBioengineering</researchPrerequisite>
+    </recipeMaker>
+	<comps>
+	  <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>0</minSafeTemperature>
+        <maxSafeTemperature>75</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+      </li>
+    </comps>
+	<allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+<!--=============== Exotic Base ====================-->
+  <ThingDef Name="OEExoticSlimeHeartBase" ParentName="ResourceBase" Abstract="True">
+    <tickerType>Normal</tickerType>
+	<techLevel>Ultra</techLevel>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>true</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+      <Mass>2.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>EggsFertilized</li>
+    </thingCategories>
+    <tradeTags>
+      <li>OEResourcesExoticS</li>
+	  <li>OEResourcesSell</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<comps>
+	  <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>0</minSafeTemperature>
+        <maxSafeTemperature>75</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+      </li>
+    </comps>
+	<allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+<!--=============== Liquid Type ====================-->
+<!--=============== Jelly ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Jelly</defName>
+    <label>jelly slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Jelly slime in 5 days. Jelly slime produces 400 Insect Jelly every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Jelly</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Jelly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>850</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <InsectJelly>200</InsectJelly>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Jelly</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Chemfuel ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Chemfuel</defName>
+    <label>chemfuel slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Chemfuel slime in 5 days. Chemfuel slime produces 145 Chemfuel every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Chemfuel</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Chemfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>325</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Chemfuel>100</Chemfuel>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Chemfuel</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Neutroamine ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Neutroamine</defName>
+    <label>neutroamine slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Neutroamine slime in 5 days. Neutroamine slime produces 15 Neutroamine every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Neutroamine</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Neutroamine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>275</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Neutroamine>25</Neutroamine>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Neutroamine</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Beer ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Beer</defName>
+    <label>beer slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Beer slime in 5 days. Beer slime produces 40 Beer every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Beer</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Beer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>700</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Beer>50</Beer>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Beer</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Rock Type ====================-->
+<!--=============== Steel ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Steel</defName>
+    <label>steel slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Steel slime in 5 days. Steel slime produces 150 Steel every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Steel</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Steel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>300</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Steel>100</Steel>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Steel</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Gold ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Gold</defName>
+    <label>gold slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Gold slime in 5 days. Gold slime produces 40 Gold every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Gold</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Gold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>995</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Gold>100</Gold>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Gold</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Silver ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Silver</defName>
+    <label>silver slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Silver slime in 5 days. Silver slime produces 1000 Silver every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Silver</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Silver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>225</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Silver>500</Silver>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Silver</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Uranium ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Uranium</defName>
+    <label>uranium slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Uranium slime in 5 days. Uranium slime produces 45 Uranium every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Uranium</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Uranium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>700</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Uranium>100</Uranium>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Uranium</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Jade ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Jade</defName>
+    <label>jade slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Jade slime in 5 days. Jade slime produces 30 Jade every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Jade</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Jade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>600</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Jade>100</Jade>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Jade</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Obsidian ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Obsidian</defName>
+    <label>obsidian slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Obsidian slime in 5 days. Obsidian slime produces 50 Obsidian every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Obsidian</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Obsidian</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>995</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Obsidian>100</OE_Obsidian>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Obsidian</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Mythril ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Mythril</defName>
+    <label>mythril slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Mythril slime in 5 days. Mythril slime produces 40 Mythril every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Mythril</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Mythril</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1250</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Mythril>100</OE_Mythril>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Mythril</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Platinum ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Platinum</defName>
+    <label>platinum slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Platinum slime in 5 days. Platinum slime produces 50 Platinum every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Platinum</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Platinum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1125</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>100</OE_Platinum>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Platinum</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Syntherius ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Syntherius</defName>
+    <label>syntherius slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Syntherius slime in 5 days. Syntherius slime produces 3 Syntherius every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Syntherius</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Syntherius</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>295</MarketValue>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Syntherius</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Floral Type ====================-->
+<!--=============== Herbal ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Herbal</defName>
+    <label>herbal slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Herbal slime in 5 days. Herbal slime produces 10 Herbal medicine every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Herbal</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Herbal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>550</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <MedicineHerbal>50</MedicineHerbal>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Herbal</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ambrosia ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Ambrosia</defName>
+    <label>ambrosia slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Ambrosia slime in 5 days. Ambrosia slime produces 15 Ambrosia every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Ambrosia</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Ambrosia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>750</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <Ambrosia>50</Ambrosia>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Ambrosia</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fungus ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Fungus</defName>
+    <label>fungus slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Fungus slime in 5 days. Fungus slime produces 70 Raw Fungus every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Fungus</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Fungus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>165</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <RawFungus>50</RawFungus>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Fungus</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Jumy ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Jumy</defName>
+    <label>jumy slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Jumy slime in 5 days. Jumy slime produces 30 Jumy Berries every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Jumy</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Jumy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>150</MarketValue>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Jumy_Berries>50</OE_Jumy_Berries>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Jumy</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Special Types ====================-->
+<!--=============== Hauler ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Hauler</defName>
+    <label>hauler slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Hauler slime in 5 days. Hauler slime pack type, with high intelligence and exceptional carrying capacity.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Hauler</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Hauler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>375</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_DragonianWoodLog>100</OE_DragonianWoodLog>
+	  <OE_EGOSeed>2</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Hauler</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Battle Types ====================-->
+<!--=============== Bone ====================-->
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Bone</defName>
+    <label>bone slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Bone slime in 5 days. Bone slime battle type, with increased intelligence for training.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Bone</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Bone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>775</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>50</OE_Platinum>
+	  <OE_EGOSeed>1</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Bone</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Exotic Types ====================-->
+<!--=============== Luciferium ====================-->
+  <ThingDef ParentName="OEExoticSlimeHeartBase">
+    <defName>OE_SlimeHeart_Luciferium</defName>
+    <label>luciferium slime heart (Сonf.)</label>
+    <description>A hyper-advanced exotic slime core with configuration to grow up into Luciferium slime in 5 days. Luciferium slime produces 2 Luciferium every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Luciferium</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Luciferium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>666</MarketValue>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Luciferium</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<!--=============== Torraxin ====================-->
+  <ThingDef ParentName="OEExoticSlimeHeartBase">
+    <defName>OE_SlimeHeart_Torraxin</defName>
+    <label>torraxin slime heart (Сonf.)</label>
+    <description>A hyper-advanced exotic slime core with configuration to grow up into Torraxin slime in 5 days. Torraxin slime produces 3 Torraxin every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Torraxin</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Torraxin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>777</MarketValue>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Torraxin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Joltixin ====================-->
+  <ThingDef ParentName="OEExoticSlimeHeartBase">
+    <defName>OE_SlimeHeart_Joltixin</defName>
+    <label>joltixin slime heart (Сonf.)</label>
+    <description>A hyper-advanced exotic slime core with configuration to grow up into Joltixin slime in 5 days. Joltixin slime produces 3 Joltixin every 10 days.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Joltixin</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Joltixin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>777</MarketValue>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Joltixin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

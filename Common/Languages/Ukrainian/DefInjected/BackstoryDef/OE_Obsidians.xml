@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Civilians ====================-->
+<!--=============== Colonist ====================-->
+<OE_Colonist.title>колоніст обсидії</OE_Colonist.title>
+<OE_Colonist.titleFemale>колоністка обсидії</OE_Colonist.titleFemale>
+<OE_Colonist.titleShort>колоніст</OE_Colonist.titleShort>
+<OE_Colonist.titleShortFemale>колоністка</OE_Colonist.titleShortFemale>
+<OE_Colonist.description>{PAWN_nameDef} {PAWN_gender ? закінчив : закінчила} курс Колоністів Обсидії. Має всі необхідні навички для підтримки життя в колонії.</OE_Colonist.description>
+
+<!--=============== Worker ====================-->
+<OE_Worker.title>робочий обсидії</OE_Worker.title>
+<OE_Worker.titleShort>робочий</OE_Worker.titleShort>
+<OE_Worker.description>{PAWN_nameDef} {PAWN_gender ? закінчив : закінчила} курс Робітників Обсидії. Має всі необхідні навички для будівництва колонії та видобутку корисних ресурсів.</OE_Worker.description>
+
+<!--=============== Scientist ====================-->
+<OE_Scientist.title>вчений обсидії</OE_Scientist.title>
+<OE_Scientist.titleFemale>вчена обсидії</OE_Scientist.titleFemale>
+<OE_Scientist.titleShort>вчений</OE_Scientist.titleShort>
+<OE_Scientist.titleShortFemale>вчена</OE_Scientist.titleShortFemale>
+<OE_Scientist.description>{PAWN_nameDef} {PAWN_gender ? закінчив : закінчила} курс Вчених Обсидії. Має всі необхідні навички для розвитку та поліпшення колонії.</OE_Scientist.description>
+
+<!--=============== Artisan ====================-->
+<OE_Artisan.title>ремісник обсидії</OE_Artisan.title>
+<OE_Artisan.titleFemale>ремісниця обсидії</OE_Artisan.titleFemale>
+<OE_Artisan.titleShort>ремісник</OE_Artisan.titleShort>
+<OE_Artisan.titleShortFemale>ремісниця</OE_Artisan.titleShortFemale>
+<OE_Artisan.description>{PAWN_nameDef} {PAWN_gender ? опанував : опанувала} мистецтво форми й функції в творчих гільдіях Обсидії. Уміє перетворювати навіть покинуті обрізки на захопливі витвори. Цінує красу, але мало цікавиться польовою працею.</OE_Artisan.description>
+
+<!--=============== Trader ====================-->
+<OE_Trader.title>торговець обсидії</OE_Trader.title>
+<OE_Trader.titleFemale>торговка обсидії</OE_Trader.titleFemale>
+<OE_Trader.titleShort>торговець</OE_Trader.titleShort>
+<OE_Trader.titleShortFemale>торговка</OE_Trader.titleShortFemale>
+<OE_Trader.description>{PAWN_nameDef} {PAWN_gender ? подорожував : подорожувала} між розкиданими анклавами Обсидії, укладаючи угоди й шукаючи рідкісні товари. {PAWN_gender ? Навчився : Навчилася} добре розуміти людей, але рідко {PAWN_gender ? торкався : торкалася} інструментів чи зброї.</OE_Trader.description>
+
+<!--=============== Caretaker ====================-->
+<OE_Caretaker.title>вихователь обсидії</OE_Caretaker.title>
+<OE_Caretaker.titleFemale>вихователька обсидії</OE_Caretaker.titleFemale>
+<OE_Caretaker.titleShort>вихователь</OE_Caretaker.titleShort>
+<OE_Caretaker.titleShortFemale>вихователька</OE_Caretaker.titleShortFemale>
+<OE_Caretaker.description>{PAWN_nameDef} багато років {PAWN_gender ? присвятив : присвятила} догляду за пораненими, сиротами та вагітними тваринами Обсидії. М’який і терплячий, але погано пристосований до бойових дій.</OE_Caretaker.description>
+
+<!--=============== Scholar ====================-->
+<OE_Scholar.title>вчений обсидії</OE_Scholar.title>
+<OE_Scholar.titleFemale>вчена обсидії</OE_Scholar.titleFemale>
+<OE_Scholar.titleShort>вчений</OE_Scholar.titleShort>
+<OE_Scholar.titleShortFemale>вчена</OE_Scholar.titleShortFemale>
+<OE_Scholar.description>{PAWN_nameDef} {PAWN_gender ? провів : провела} незліченні години в дата-сховищах і ехо-архівах, вивчаючи забуту спадщину Обсидії. Блискучий теоретик, {PAWN_gender ? незграбний : незграбна} у спілкуванні й поводженні з інструментами.</OE_Scholar.description>
+
+<!--=============== Engineer ====================-->
+<OE_Engineer.title>інженер обсидії</OE_Engineer.title>
+<OE_Engineer.titleShort>інженер</OE_Engineer.titleShort>
+<OE_Engineer.description>{PAWN_nameDef} {PAWN_gender ? працював : працювала} над критичною інфраструктурою під час краху ключових систем Обсидії. Уміє будувати й ремонтувати, але прагне уникати соціальних зв’язків.</OE_Engineer.description>
+
+<!--=============== Psycaster ====================-->
+<OE_Psy.title>псі-кастер обсидії</OE_Psy.title>
+<OE_Psy.titleShort>псі-кастер</OE_Psy.titleShort>
+<OE_Psy.description>{PAWN_nameDef} {PAWN_gender ? представник : представниця} одного з стародавніх родів Обсидії. Замість участі у полотичних сутичках за владу {PAWN_gender ? обрав : обрала} шлях скорення нових земель. Володіє відмінними інтелектуальними здібностями та почуттям прекрасного.</OE_Psy.description>
+
+<!--=============== Mindseeker ====================-->
+<OE_Mindseeker.title>шукач розуму обсидії</OE_Mindseeker.title>
+<OE_Mindseeker.titleShort>шукач розуму</OE_Mindseeker.titleShort>
+<OE_Mindseeker.description>[PAWN_nameDef] {PAWN_gender ? представник : представниця} духовних кіл Обсидії. {PAWN_gender ? Присвятив : Присвятила} життя внутрішній гармонії, цілительству й розумінню невидимого. {PAWN_gender ? Обдарований : Обдарована} у соціальній сфері та медицині.</OE_Mindseeker.description>
+
+<!--=============== Mechanitor ====================-->
+<OE_Mechanitor.title>механітор обсидії</OE_Mechanitor.title>
+<OE_Mechanitor.titleShort>механітор</OE_Mechanitor.titleShort>
+<OE_Mechanitor.description>{PAWN_nameDef} {PAWN_gender ? представник : представниця} одного із найпопулярніших клубів фанатів меха на Обсидії. Ставши повноцінним механітором {PAWN_gender ? здатний : здатна} розкрити прихований потенціал. Володіє відмінними навичками творення.</OE_Mechanitor.description>
+
+<!--=============== Mech-architect ====================-->
+<OE_Mecharchitect.title>мех-архітектор обсидії</OE_Mecharchitect.title>
+<OE_Mecharchitect.titleShort>мех-архітектор</OE_Mecharchitect.titleShort>
+<OE_Mecharchitect.description>{PAWN_nameDef} {PAWN_gender ? колишній працівник : колишня працівниця} робототехнічного ливарного заводу Обсидії. Спеціалізується на розробці шасі та автономних систем. Має видатний художній талант.</OE_Mecharchitect.description>
+
+<!--=============== Combat ====================-->
+<!--=============== Melee ====================-->
+<OE_Soldier_Melee.title>воїтель обсидії</OE_Soldier_Melee.title>
+<OE_Soldier_Melee.titleFemale>войовниця обсидії</OE_Soldier_Melee.titleFemale>
+<OE_Soldier_Melee.titleShort>воїтель</OE_Soldier_Melee.titleShort>
+<OE_Soldier_Melee.titleShortFemale>войовниця</OE_Soldier_Melee.titleShortFemale>
+<OE_Soldier_Melee.description>{PAWN_nameDef} {PAWN_gender ? завершив : завершила} бойові курси Воїнів Обсидії. {PAWN_gender ? Навчений : Навчена} ближньому бою та медицині для підтримки здоров'я своїх товаришів.</OE_Soldier_Melee.description>
+
+<!--=============== Psy-Melee ====================-->
+<OE_Soldier_MeleePsy.title>бойовий жрець обсидії</OE_Soldier_MeleePsy.title>
+<OE_Soldier_MeleePsy.titleFemale>бойова жриця обсидії</OE_Soldier_MeleePsy.titleFemale>
+<OE_Soldier_MeleePsy.titleShort>бойовий жрець</OE_Soldier_MeleePsy.titleShort>
+<OE_Soldier_MeleePsy.titleShortFemale>бойова жриця</OE_Soldier_MeleePsy.titleShortFemale>
+<OE_Soldier_MeleePsy.description>{PAWN_nameDef} {PAWN_gender ? завершив : завершила} інтенсивну бойову та псі-тренування під наглядом інквізиції Обсидії. {PAWN_gender ? Навчений : Навчена} надихати союзників і знищувати ворогів із праведним гнівом. {PAWN_gender ? Досвідчений : Досвідчена} у ближньому бою та соціальному впливі.</OE_Soldier_MeleePsy.description>
+
+<!--=============== Ranged ====================-->
+<OE_Soldier_Ranged.title>стрілок обсидії</OE_Soldier_Ranged.title>
+<OE_Soldier_Ranged.titleShort>стрілок</OE_Soldier_Ranged.titleShort>
+<OE_Soldier_Ranged.description>{PAWN_nameDef} {PAWN_gender ? завершив : завершила} бойові курси Стрілків Обсидії. {PAWN_gender ? Навчений : Навчена} дальньому бою та будівництву для підтримки техніки та споруд.</OE_Soldier_Ranged.description>
+
+<!--=============== Psy-Ranged ====================-->
+<OE_Soldier_RangedPsy.title>жнець обсидії</OE_Soldier_RangedPsy.title>
+<OE_Soldier_RangedPsy.titleShort>жнець</OE_Soldier_RangedPsy.titleShort>
+<OE_Soldier_RangedPsy.description>{PAWN_nameDef} нащадок знаті Обсидії, {PAWN_gender ? обрав : обрала} шлях псі-{PAWN_gender ? воїна : воїтельки}. {PAWN_gender ? Завершив : Завершила} спеціальну військову підготовку, зосереджену на точності й тактичній перевазі. Володіє високими навичками у дальньому бою та розумовій діяльності.</OE_Soldier_RangedPsy.description>
+
+</LanguageData>

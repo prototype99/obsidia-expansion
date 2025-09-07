@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+<oe_attention_text>Recommended to restart the game to apply new settings.</oe_attention_text>
+
+<!--=============== Syntherius Harvest Yield ====================-->	
+<oe_syntheriusharvestyield_text>Syntherius Harvest Yield:</oe_syntheriusharvestyield_text>
+
+<oe_syntheriustree_text>Syntherius Tree: {oe_syntheriustree_harvestyield}</oe_syntheriustree_text>
+<oe_syntheriusslime_text>Syntherius Slime: {oe_syntheriusslime_milkamount}</oe_syntheriusslime_text>
+<oe_syntheriusdryad_text>Synthesis Dryad: {oe_syntheriusdryad_spawncount}</oe_syntheriusdryad_text>
+<oe_syntheriusroot_text>Syntherius Root: {oe_syntheriusroot_harvestyield}</oe_syntheriusroot_text>
+<oe_syntheriuspack_text>Compressed Syntherius: {oe_syntheriuspack_killedleavings}</oe_syntheriuspack_text>
+<oe_syntheriusdryadawakened_text>Awakened Synthesis Dryad: {oe_syntheriusdryadawakened_spawncount}</oe_syntheriusdryadawakened_text>
+<oe_syntheriusoutpost_text>Obsidia Syntherius Outpost: {oe_syntheriusoutpost_amountperpawn}</oe_syntheriusoutpost_text>
+
+<!--=============== Research Cost Amount ====================-->
+<oe_researchcostamount_text>Research Cost Amount:</oe_researchcostamount_text>
+
+<oe_researchcostamount_large>Normal cost - 100%</oe_researchcostamount_large>
+<oe_researchcostamount_medium>Low cost - 50%</oe_researchcostamount_medium>
+<oe_researchcostamount_small>Kids cost - 20%</oe_researchcostamount_small>
+
+<!--=============== Misk Settings ====================-->
+<oe_misksettings_text>Misk Settings:</oe_misksettings_text>
+<OE_ChaosSlimeHiveGen_text>Chaos Slimes Hives – Player Map Only</OE_ChaosSlimeHiveGen_text>
+<OE_ChaosSlimeHiveGen_tip>When enabled(true), Chaos Slimes Hives will only spawn on player home maps, never on enemy or neutral maps. When disabled(false), Hives may appear during world generation or raids on any faction map.</OE_ChaosSlimeHiveGen_tip>
+
+</LanguageData>

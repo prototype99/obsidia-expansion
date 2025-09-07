@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Fallen Legion ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_FallenLegion</defName>
+    <kindDef>OES_Mech_NewFallenLegion</kindDef>
+    <appearAfterTicks>1800000</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_FallenLegion</defName>
+    <boss>OE_Beaconboss_FallenLegion</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>4</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>4</OES_Eidolon_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>8</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>8</OES_Eidolon_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>10</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>10</OES_Eidolon_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>10</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>10</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>4</OES_Undying_Melee>
+		  <OES_Undying_Ranged>4</OES_Undying_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>12</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>12</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>8</OES_Undying_Melee>
+		  <OES_Undying_Ranged>8</OES_Undying_Ranged>
+		  <OES_Special_A_Melee>2</OES_Special_A_Melee>
+		  <OES_Special_A_Ranged>2</OES_Special_A_Ranged>
+		  <OES_Special_B_Melee>2</OES_Special_B_Melee>
+		  <OES_Special_B_Ranged>2</OES_Special_B_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>14</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>14</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>10</OES_Undying_Melee>
+		  <OES_Undying_Ranged>10</OES_Undying_Ranged>
+		  <OES_Special_A_Melee>3</OES_Special_A_Melee>
+		  <OES_Special_A_Ranged>3</OES_Special_A_Ranged>
+		  <OES_Special_B_Melee>3</OES_Special_B_Melee>
+		  <OES_Special_B_Ranged>3</OES_Special_B_Ranged>
+        </escorts>
+      </li>
+	  <li> <!-- 6 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>20</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>20</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>12</OES_Undying_Melee>
+		  <OES_Undying_Ranged>12</OES_Undying_Ranged>
+		  <OES_Special_A_Melee>4</OES_Special_A_Melee>
+		  <OES_Special_A_Ranged>4</OES_Special_A_Ranged>
+		  <OES_Special_B_Melee>4</OES_Special_B_Melee>
+		  <OES_Special_B_Ranged>4</OES_Special_B_Ranged>
+        </escorts>
+      </li>
+	  <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>30</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>30</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>20</OES_Undying_Melee>
+		  <OES_Undying_Ranged>20</OES_Undying_Ranged>
+		  <OES_Special_A_Melee>5</OES_Special_A_Melee>
+		  <OES_Special_A_Ranged>5</OES_Special_A_Ranged>
+		  <OES_Special_B_Melee>5</OES_Special_B_Melee>
+		  <OES_Special_B_Ranged>5</OES_Special_B_Ranged>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>The {LEADERKIND_label} is a Obsidia Empire Sins fortress-sized mechanoid commander designed for suppression of enemies and total control of the battlefield.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

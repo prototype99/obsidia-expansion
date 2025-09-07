@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMG - Helmet ====================-->
+<OMG_Helmet_Classic.label>Mercenary Helmet(Classic)</OMG_Helmet_Classic.label>
+<OMG_Helmet_Classic.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification deprives item's quality levels.</OMG_Helmet_Classic.description>
+
+<!--=============== OMG - Armor ====================-->
+<OMG_Armor_Corsair.label>Mercenary Armor(Corsair)</OMG_Armor_Corsair.label>
+<OMG_Armor_Corsair.verbs.Verb_SmokePop.label>Mercenary Armor(Corsair)</OMG_Armor_Corsair.verbs.Verb_SmokePop.label>
+<OMG_Armor_Corsair.description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with the addition of a Smokepop pack and deprives item's quality levels.</OMG_Armor_Corsair.description>
+<OMG_Armor_Corsair.comps.CompApparelReloadable.chargeNoun>smokepop</OMG_Armor_Corsair.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Corsair.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Armor_Corsair.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_Armor_Demolition.label>Mercenary Armor(Demolition)</OMG_Armor_Demolition.label>
+<OMG_Armor_Demolition.verbs.Verb_LaunchProjectileStatic.label>Mercenary Armor(Demolition)</OMG_Armor_Demolition.verbs.Verb_LaunchProjectileStatic.label>
+<OMG_Armor_Demolition.description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with installing a Grenade Launcher and deprives item's quality levels.</OMG_Armor_Demolition.description>
+<OMG_Armor_Demolition.comps.CompApparelReloadable.chargeNoun>grenade</OMG_Armor_Demolition.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Demolition.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Armor_Demolition.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_Armor_Commando.label>Mercenary Armor(Commando)</OMG_Armor_Commando.label>
+<OMG_Armor_Commando.description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with the pack that allows the user to deploy a battery-powered turret and deprives item's quality levels.</OMG_Armor_Commando.description>
+<OMG_Armor_Commando.verbs.deploy_turret.label>deploy turret</OMG_Armor_Commando.verbs.deploy_turret.label>
+<OMG_Armor_Commando.comps.CompApparelReloadable.chargeNoun>incendiary</OMG_Armor_Commando.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Commando.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Armor_Commando.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_Armor_Swarmling.label>Mercenary Armor(Swarmling)</OMG_Armor_Swarmling.label>
+<OMG_Armor_Swarmling.description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with the pack that allows the user to deploy a battery-powered drones and deprives item's quality levels.</OMG_Armor_Swarmling.description>
+<OMG_Armor_Swarmling.verbs.deploy_swarmling_drone.label>deploy swarmling drone</OMG_Armor_Swarmling.verbs.deploy_swarmling_drone.label>
+<OMG_Armor_Swarmling.comps.CompApparelReloadable.chargeNoun>incendiary</OMG_Armor_Swarmling.comps.CompApparelReloadable.chargeNoun>
+<OMG_Armor_Swarmling.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Armor_Swarmling.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OМG - Grenades ====================-->
+<OMG_Grenade.label>Mercenary Blast Grenade</OMG_Grenade.label>
+
+<Grenade_Armor_OMG_TurretPack.label>OMG turret pack capsule</Grenade_Armor_OMG_TurretPack.label>
+<Grenade_Armor_OMG_SwarmlingPack.label>OMG swarmling pack capsule</Grenade_Armor_OMG_SwarmlingPack.label>
+
+<!--=============== OMG Trophy Helmet ====================-->
+<!--=============== Forgemind ====================-->
+<OMG_Trophy_Helmet_Forgemind.label>Mercenary Helmet(Forgemind)</OMG_Trophy_Helmet_Forgemind.label>
+<OMG_Trophy_Helmet_Forgemind.verbs.Verb_Spawn.label>Mercenary Helmet(Forgemind)</OMG_Trophy_Helmet_Forgemind.verbs.Verb_Spawn.label>
+<OMG_Trophy_Helmet_Forgemind.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital of weather-control satellites.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Forgemind.description>
+<OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Forgemind.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Hellrain ====================-->
+<OMG_Trophy_Helmet_Hellrain.label>Mercenary Helmet(Hellrain)</OMG_Trophy_Helmet_Hellrain.label>
+<OMG_Trophy_Helmet_Hellrain.verbs.Verb_Bombardment.label>Mercenary Helmet(Hellrain)</OMG_Trophy_Helmet_Hellrain.verbs.Verb_Bombardment.label>
+<OMG_Trophy_Helmet_Hellrain.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital bombardment targeter.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Hellrain.description>
+<OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Hellrain.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Orbicore ====================-->
+<OMG_Trophy_Helmet_Orbicore.label>Mercenary Helmet(Orbicore)</OMG_Trophy_Helmet_Orbicore.label>
+<OMG_Trophy_Helmet_Orbicore.verbs.Verb_PowerBeam.label>Mercenary Helmet(Orbicore)</OMG_Trophy_Helmet_Orbicore.verbs.Verb_PowerBeam.label>
+<OMG_Trophy_Helmet_Orbicore.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital power beam targeter.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Orbicore.description>
+<OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Orbicore.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Neuroflash ====================-->
+<OMG_Trophy_Helmet_Neuroflash.label>Mercenary Helmet(Neuroflash)</OMG_Trophy_Helmet_Neuroflash.label>
+<OMG_Trophy_Helmet_Neuroflash.verbs.Verb_CastTargetEffect.label>Mercenary Helmet(Neuroflash)</OMG_Trophy_Helmet_Neuroflash.verbs.Verb_CastTargetEffect.label>
+<OMG_Trophy_Helmet_Neuroflash.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner with power of Psychic shock lance.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Neuroflash.description>
+<OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Neuroflash.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Mindtwister ====================-->
+<OMG_Trophy_Helmet_Mindtwister.label>Mercenary Helmet(Mindtwister)</OMG_Trophy_Helmet_Mindtwister.label>
+<OMG_Trophy_Helmet_Mindtwister.verbs.Verb_CastTargetEffect.label>Mercenary Helmet(Mindtwister)</OMG_Trophy_Helmet_Mindtwister.verbs.Verb_CastTargetEffect.label>
+<OMG_Trophy_Helmet_Mindtwister.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner with power of Psychic insanity lance.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Mindtwister.description>
+<OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Mindtwister.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Gasveil ====================-->
+<OMG_Trophy_Helmet_Gasveil.label>Mercenary Helmet(Gasveil)</OMG_Trophy_Helmet_Gasveil.label>
+<OMG_Trophy_Helmet_Gasveil.verbs.Verb_DeployToxPack.label>Mercenary Helmet(Gasveil)</OMG_Trophy_Helmet_Gasveil.verbs.Verb_DeployToxPack.label>
+<OMG_Trophy_Helmet_Gasveil.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides a built-in module with a tox pack.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Gasveil.description>
+<OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Gasveil.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Dronefather ====================-->
+<OMG_Trophy_Helmet_Dronefather.label>Mercenary Helmet(Dronefather)</OMG_Trophy_Helmet_Dronefather.label>
+<OMG_Trophy_Helmet_Dronefather.verbs.Verb_MechCluster.label>Mercenary Helmet(Dronefather)</OMG_Trophy_Helmet_Dronefather.verbs.Verb_MechCluster.label>
+<OMG_Trophy_Helmet_Dronefather.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner acess to orbital mech cluster targeter.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Dronefather.description>
+<OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Dronefather.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Firemark ====================-->
+<OMG_Trophy_Helmet_Firemark.label>Mercenary Helmet(Firemark)</OMG_Trophy_Helmet_Firemark.label>
+<OMG_Trophy_Helmet_Firemark.verbs.Verb_LaunchProjectileStaticPsychic.label>Mercenary Helmet(Firemark)</OMG_Trophy_Helmet_Firemark.verbs.Verb_LaunchProjectileStaticPsychic.label>
+<OMG_Trophy_Helmet_Firemark.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides a built-in module with a flyer dispenser.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Firemark.description>
+<OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Firemark.comps.CompApparelReloadable.cooldownGerund>
+
+<OMG_DisruptorFlare.label>disruptor flare</OMG_DisruptorFlare.label>
+
+<!--=============== Fleshcrafter ====================-->
+<OMG_Trophy_Helmet_Fleshcrafter.label>Mercenary Helmet(Fleshcrafter)</OMG_Trophy_Helmet_Fleshcrafter.label>
+<OMG_Trophy_Helmet_Fleshcrafter.verbs.Verb_CastTargetEffectBiomutationLance.label>Mercenary Helmet(Fleshcrafter)</OMG_Trophy_Helmet_Fleshcrafter.verbs.Verb_CastTargetEffectBiomutationLance.label>
+<OMG_Trophy_Helmet_Fleshcrafter.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner with power of Biomutation lance.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Fleshcrafter.description>
+<OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Fleshcrafter.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Necrospark ====================-->
+<OMG_Trophy_Helmet_Necrospark.label>Mercenary Helmet(Necrospark)</OMG_Trophy_Helmet_Necrospark.label>
+<OMG_Trophy_Helmet_Necrospark.verbs.Verb_LaunchProjectileStatic.label>Mercenary Helmet(Necrospark)</OMG_Trophy_Helmet_Necrospark.verbs.Verb_LaunchProjectileStatic.label>
+<OMG_Trophy_Helmet_Necrospark.description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides a built-in module with a deadlife pack.\n\nThis modification deprives item's quality levels.</OMG_Trophy_Helmet_Necrospark.description>
+<OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.chargeNoun>charge</OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.chargeNoun>
+<OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMG_Trophy_Helmet_Necrospark.comps.CompApparelReloadable.cooldownGerund>
+
+<Grenade_OMG_Deadlife.label>deadlife capsule</Grenade_OMG_Deadlife.label>
+<Shell_OMG_Deadlife.label>deadlife capsule</Shell_OMG_Deadlife.label>
+
+</LanguageData>

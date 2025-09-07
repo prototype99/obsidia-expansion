@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Armor ====================-->
+  <ThingDef ParentName="OECArmorMod">
+	<defName>OEC_Armor_M_Mechanitor</defName>
+    <label>OEC Inquisitor Armor(Overseer)</label>
+    <description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Mechanoids Control pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OEC/Mechanitor/OECArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3605</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechFormingSpeed>0.75</MechFormingSpeed>
+	  <MechRepairSpeed>0.75</MechRepairSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OEC_Armor_M>1</OEC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OEC/Mechanitor/OECArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OECInquisitor_Mechanitor</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Helmet ====================-->
+  <ThingDef ParentName="OECHelmetMod">
+	<defName>OEC_Helmet_M_Mechanitor</defName>
+    <label>OEC Inquisitor Helmet(Overseer)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nModified for improves Mechanoids Control abilities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OEC/Mechanitor/OECHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1630</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechRemoteRepairDistance>5.9</MechRemoteRepairDistance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OEC_Helmet_M>1</OEC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OEC/Mechanitor/OECHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OECInquisitor_Mechanitor</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

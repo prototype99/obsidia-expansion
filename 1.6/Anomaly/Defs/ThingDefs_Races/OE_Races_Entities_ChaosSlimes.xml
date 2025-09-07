@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Chaos Slimes ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEBaseChaosSlime" ParentName="BasePawn" Abstract="True">
+    <statBases>
+      <Flammability>1.5</Flammability>
+	  <ToxicResistance>0.5</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.5</ToxicEnvironmentResistance>
+      <MeatAmount>0</MeatAmount>
+	  <ComfyTemperatureMin>-75</ComfyTemperatureMin>
+      <ComfyTemperatureMax>75</ComfyTemperatureMax> 
+	  <InjuryHealingFactor>5</InjuryHealingFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+	  <FilthRate>9</FilthRate>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <body>OESlimeLike</body>
+	  <thinkTreeMain>OE_ChaosSlime</thinkTreeMain>
+      <thinkTreeConstant>OE_ChaosSlimeConstant</thinkTreeConstant>
+      <intelligence>ToolUser</intelligence>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <canOpenFactionlessDoors>false</canOpenFactionlessDoors>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <bloodDef>Filth_BloodInsect</bloodDef>
+      <bloodSmearDef>Filth_Slime</bloodSmearDef>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <trainability>None</trainability>
+      <fleshType>Fleshbeast</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <bleedRateFactor>0.5</bleedRateFactor>
+      <hediffGiverSets>
+        <li>Fleshbeast</li>
+      </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+	<receivesSignals>true</receivesSignals>
+    <comps>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+      </li>
+	  <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>75</baseEscapeIntervalMtbDays>
+        <getsColdContainmentBonus>true</getsColdContainmentBonus>
+      </li>
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringEmergence</compClass>
+        <inspectString>Emerged from {SOURCEPAWN_labelShort}.</inspectString>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef Name="OEBaseChaosSlimeKind" Abstract="True">
+    <defaultFactionType>Entities</defaultFactionType>
+	<preventIdeo>true</preventIdeo>
+	<ignoresPainShock>true</ignoresPainShock>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <meleeAttackInfectionPathways>
+      <li>EntityAttacked</li>
+    </meleeAttackInfectionPathways>
+  </PawnKindDef>
+
+<!--=============== Larval Chaos Slime ====================-->
+  <ThingDef ParentName="OEBaseChaosSlime">
+    <defName>OE_ChaosSlime_Larval</defName>
+    <label>larval chaos slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nThey are the lowest and weakest form of chaos slimes.</description>
+    <statBases>
+      <MoveSpeed>7.0</MoveSpeed>
+      <MinimumContainmentStrength>15</MinimumContainmentStrength>
+    </statBases>
+    <race>
+      <baseBodySize>0.25</baseBodySize>
+      <baseHealthScale>0.30</baseHealthScale>
+      <lifeExpectancy>3</lifeExpectancy>
+      <deathAction Class="DeathActionProperties_Vanish">
+        <workerClass>DeathActionWorker_Vanish</workerClass>
+        <filth>Filth_TwistedFlesh</filth>
+        <filthCountRange>1~3</filthCountRange>
+        <meatExplosionSize>Small</meatExplosionSize>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Fingerspike_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Fingerspike_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Fingerspike_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<killedLeavingsRanges>
+	  <OE_SlimeHeart>-12~1</OE_SlimeHeart>
+	</killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.13, 0, .11)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.13, 0, .11)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.2, 0, -.2)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.2, 0, -.2)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>1</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>1</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>mouth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>2</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>2</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="OEBaseChaosSlimeLarval" ParentName="OEBaseChaosSlimeKind">
+    <defName>OE_ChaosSlime_Larval</defName>
+    <label>larval chaos slime</label>
+    <race>OE_ChaosSlime_Larval</race>
+	<overrideDeathOnDownedChance>0.75</overrideDeathOnDownedChance>
+    <combatPower>35</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/ChaosSlime/Larval/Slime</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.55</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Adult Chaos Slime ====================-->
+  <ThingDef ParentName="OEBaseChaosSlime">
+    <defName>OE_ChaosSlime_Adult</defName>
+    <label>adult chaos slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nAdult chaos slimes is the second stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <MinimumContainmentStrength>35</MinimumContainmentStrength>
+    </statBases>
+    <race>
+      <baseBodySize>0.55</baseBodySize>
+      <baseHealthScale>0.75</baseHealthScale>
+      <lifeExpectancy>5</lifeExpectancy>
+      <deathAction Class="DeathActionProperties_Divide">
+        <divideBloodFilthCountRange>1~2</divideBloodFilthCountRange>
+        <dividePawnCount>3</dividePawnCount>
+        <dividePawnKindOptions>
+          <li>OE_ChaosSlime_Larval</li>
+        </dividePawnKindOptions>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Trispike_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Trispike_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Trispike_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<killedLeavingsRanges>
+	  <OE_Syntherius>-5~5</OE_Syntherius>
+	  <OE_SlimeHeart>-10~1</OE_SlimeHeart>
+	</killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.21, 0, .11)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.21, 0, .11)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.23, 0, -.34)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.23, 0, -.34)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>1.5</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>1.5</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>mouth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>3</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>3</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="OEBaseChaosSlimeAdult" ParentName="BaseFleshbeastKind">
+    <defName>OE_ChaosSlime_Adult</defName>
+    <label>adult chaos slime</label>
+    <race>OE_ChaosSlime_Adult</race>
+	<overrideDeathOnDownedChance>0.5</overrideDeathOnDownedChance>
+    <combatPower>65</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/ChaosSlime/Adult/Slime</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Badass Chaos Slime ====================-->
+  <ThingDef ParentName="OEBaseChaosSlime">
+    <defName>OE_ChaosSlime_Badass</defName>
+    <label>Badass chaos slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nBadass chaos slimes is the third stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</description>
+    <statBases>
+      <MoveSpeed>4.25</MoveSpeed>
+	  <ArmorRating_Heat>0.60</ArmorRating_Heat>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <MinimumContainmentStrength>45</MinimumContainmentStrength>
+    </statBases>
+    <race>
+      <baseBodySize>1.10</baseBodySize>
+      <baseHealthScale>1.50</baseHealthScale>
+      <lifeExpectancy>10</lifeExpectancy>
+      <deathAction Class="DeathActionProperties_Divide">
+        <divideBloodFilthCountRange>1~2</divideBloodFilthCountRange>
+        <dividePawnCount>2</dividePawnCount>
+        <dividePawnKindOptions>
+          <li>OE_ChaosSlime_Adult</li>
+        </dividePawnKindOptions>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Trispike_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Trispike_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Trispike_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<killedLeavingsRanges>
+	  <OE_Syntherius>-5~10</OE_Syntherius>
+	  <OE_SlimeHeart>-8~1</OE_SlimeHeart>
+	</killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.40, 0, .05)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.40, 0, .05)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.40, 0, -.48)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.40, 0, -.48)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>2</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>mouth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="OEBaseChaosSlimeBadass" ParentName="OEBaseChaosSlimeKind">
+    <defName>OE_ChaosSlime_Badass</defName>
+    <label>Badass chaos slime</label>
+    <race>OE_ChaosSlime_Badass</race>
+	<overrideDeathOnDownedChance>0.65</overrideDeathOnDownedChance>
+    <combatPower>100</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/ChaosSlime/Badass/Slime</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.55</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Super Badass Chaos Slime ====================-->
+  <ThingDef ParentName="OEBaseChaosSlime">
+    <defName>OE_ChaosSlime_SuperBadass</defName>
+    <label>Super Badass chaos slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nSuper Badass chaos slimes is the fourth stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</description>
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+	  <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <MinimumContainmentStrength>55</MinimumContainmentStrength>
+    </statBases>
+    <race>
+      <baseBodySize>1.65</baseBodySize>
+      <baseHealthScale>2.00</baseHealthScale>
+      <lifeExpectancy>20</lifeExpectancy>
+      <deathAction Class="DeathActionProperties_Divide">
+        <divideBloodFilthCountRange>1~2</divideBloodFilthCountRange>
+        <dividePawnCount>4</dividePawnCount>
+        <dividePawnKindOptions>
+          <li>OE_ChaosSlime_Adult</li>
+		  <li>OE_ChaosSlime_Badass</li>
+        </dividePawnKindOptions>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Trispike_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Trispike_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Trispike_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<killedLeavingsRanges>
+	  <OE_Syntherius>-5~15</OE_Syntherius>
+	  <OE_SlimeHeart>-6~1</OE_SlimeHeart>
+	</killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.45, 0, .0)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.45, 0, .0)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.50, 0, -.60)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.50, 0, -.60)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>2.5</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2.5</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>mouth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="OEBaseChaosSlimeSuperBadass" ParentName="OEBaseChaosSlimeKind">
+    <defName>OE_ChaosSlime_SuperBadass</defName>
+    <label>Super Badass chaos slime</label>
+    <race>OE_ChaosSlime_SuperBadass</race>
+	<overrideDeathOnDownedChance>0.35</overrideDeathOnDownedChance>
+    <combatPower>175</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/ChaosSlime/SuperBadass/Slime</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Ultimate Badass Chaos Slime ====================-->
+  <ThingDef ParentName="OEBaseChaosSlime">
+    <defName>OE_ChaosSlime_UltimateBadass</defName>
+    <label>Ultimate Badass chaos slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nUltimate chaos slimes is the fifth stage in the chaos slimes fusion chain which yields a much larger, stronger and more resilient foe.</description>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+	  <ArmorRating_Heat>0.95</ArmorRating_Heat>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <MinimumContainmentStrength>85</MinimumContainmentStrength>
+    </statBases>
+    <race>
+      <thinkTreeMain>OE_ChaosSlimeBig</thinkTreeMain>
+	  <baseBodySize>2.00</baseBodySize>
+      <baseHealthScale>3.00</baseHealthScale>
+      <lifeExpectancy>30</lifeExpectancy>
+      <deathAction Class="DeathActionProperties_Divide">
+        <divideBloodFilthCountRange>1~2</divideBloodFilthCountRange>
+        <dividePawnCount>6</dividePawnCount>
+        <dividePawnKindOptions>
+		  <li>OE_ChaosSlime_Badass</li>
+		  <li>OE_ChaosSlime_SuperBadass</li>
+        </dividePawnKindOptions>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Trispike_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Trispike_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Trispike_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<killedLeavingsRanges>
+	  <OE_Syntherius>-5~20</OE_Syntherius>
+	  <OE_SlimeHeart>-4~1</OE_SlimeHeart>
+	  <Shard>-1~1</Shard>
+	</killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_Devourer">
+        <messageDigested>A chaos slime swallowed {PAWN_nameDef} whole! Kill the chaos slime before it digests {PAWN_nameDef}.</messageDigested>
+        <messageEmerged>{PAWN_nameDef} emerged from the chaos slime.</messageEmerged>
+        <messageEmergedCorpse>{PAWN_nameDef} emerged from the chaos slime's corpse.</messageEmergedCorpse>
+        <messageDigestionCompleted>The chaos slime has regurgitated {PAWN_nameDef}.</messageDigestionCompleted>
+        <digestingInspector>Digesting {PAWN_nameDef}: {SECONDS} seconds left</digestingInspector>
+        <completeDigestionDamage>200</completeDigestionDamage>
+        <bodySizeDigestTimeCurve>
+          <points>
+            <li>(0.2, 10)</li>
+            <li>(1, 30)</li>
+            <li>(3.5, 60)</li>
+          </points>
+        </bodySizeDigestTimeCurve>
+        <timeDamageCurve>
+          <points>
+            <li>(0, 10)</li>
+            <li>(60, 40)</li>
+          </points>
+        </timeDamageCurve>
+      </li>
+	  <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.80, 0, .05)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.80, 0, .05)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.65, 0, -.75)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.65, 0, -.75)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>3</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>3</bioferriteDensity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>mouth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>2.1</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>2.1</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="OEBaseChaosSlimeUltimateBadass" ParentName="OEBaseChaosSlimeKind">
+    <defName>OE_ChaosSlime_UltimateBadass</defName>
+    <label>Ultimate Badass chaos slime</label>
+    <race>OE_ChaosSlime_UltimateBadass</race>
+	<overrideDeathOnDownedChance>0.25</overrideDeathOnDownedChance>
+    <combatPower>250</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/ChaosSlime/UltimateBadass/Slime</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.55</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<abilities>
+      <li>ConsumeLeap_Devourer</li>
+    </abilities>
+  </PawnKindDef>
+
+<!--=============== Chaos Slime the Invincible ====================-->
+  <ThingDef ParentName="OEBaseChaosSlime">
+    <defName>OE_ChaosSlime_Invincible</defName>
+    <label>chaos slime the Invincible</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nChaos slime - under the influence of an unknown force from the outside, they began to fuse their bodies into something single.\n\nChaos slime the Invincible is the ultimate fusion stage of chaos slimes. It possesses unmatched statis and abilities.</description>
+    <statBases>
+      <MoveSpeed>2.55</MoveSpeed>
+	  <ArmorRating_Heat>1.15</ArmorRating_Heat>
+      <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <thinkTreeMain>OE_ChaosSlimeBig</thinkTreeMain>
+	  <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>7.5</baseHealthScale>
+      <lifeExpectancy>500</lifeExpectancy>
+      <deathAction Class="DeathActionProperties_Divide">
+        <divideBloodFilthCountRange>3~5</divideBloodFilthCountRange>
+        <dividePawnCount>12</dividePawnCount>
+        <dividePawnKindOptions>
+		  <li>OE_ChaosSlime_Badass</li>
+		  <li>OE_ChaosSlime_SuperBadass</li>
+		  <li>OE_ChaosSlime_UltimateBadass</li>
+        </dividePawnKindOptions>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Fleshbeast_Trispike_Wounded</soundWounded>
+          <soundDeath>Pawn_Fleshbeast_Trispike_Death</soundDeath>
+          <soundCall>Pawn_Fleshbeast_Trispike_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<killedLeavingsRanges>
+	  <OE_Syntherius>-5~35</OE_Syntherius>
+	  <OE_SlimeHeart>0~1</OE_SlimeHeart>
+	  <Shard>-1~3</Shard>
+	</killedLeavingsRanges>
+	<comps>
+      <li Class="CompProperties_Devourer">
+        <messageDigested>A chaos slime swallowed {PAWN_nameDef} whole! Kill the chaos slime before it digests {PAWN_nameDef}.</messageDigested>
+        <messageEmerged>{PAWN_nameDef} emerged from the chaos slime.</messageEmerged>
+        <messageEmergedCorpse>{PAWN_nameDef} emerged from the chaos slime's corpse.</messageEmergedCorpse>
+        <messageDigestionCompleted>The chaos slime has regurgitated {PAWN_nameDef}.</messageDigestionCompleted>
+        <digestingInspector>Digesting {PAWN_nameDef}: {SECONDS} seconds left</digestingInspector>
+        <completeDigestionDamage>200</completeDigestionDamage>
+        <bodySizeDigestTimeCurve>
+          <points>
+            <li>(0.2, 10)</li>
+            <li>(1, 30)</li>
+            <li>(3.5, 60)</li>
+          </points>
+        </bodySizeDigestTimeCurve>
+        <timeDamageCurve>
+          <points>
+            <li>(0, 10)</li>
+            <li>(60, 40)</li>
+          </points>
+        </timeDamageCurve>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>mouth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>55</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>55</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef Name="OEBaseChaosSlimeInvincible" ParentName="OEBaseChaosSlimeKind">
+    <defName>OE_ChaosSlime_Invincible</defName>
+    <label>chaos slime the Invincible</label>
+    <race>OE_ChaosSlime_Invincible</race>
+	<forceDeathOnDowned>true</forceDeathOnDowned>
+    <combatPower>700</combatPower>
+	<isBoss>true</isBoss>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/ChaosSlime/Invincible/Slime</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<abilities>
+      <li>ConsumeLeap_Devourer</li>
+    </abilities>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Genetics Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+<!--=============== Canine T-1 ====================-->				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_OE_TierOneAnimalsCanine</defName>
+							<tier>1</tier>
+							<itemProduced>GR_CanineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>OE_Direwolf</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+<!--=============== Feline T-1 ====================-->				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_OE_TierOneAnimalsFeline</defName>
+							<tier>1</tier>
+							<itemProduced>GR_FelineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>OE_Astrinx</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+<!--=============== Human T-1 ====================-->				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_OE_TierOneHumanoid</defName>
+							<tier>1</tier>
+							<itemProduced>GR_HumanoidGenetic</itemProduced>
+							<extractableAnimals>
+								<li>OE_Ogren</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>				
+<!--=============== Reptile T-2 ====================-->	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_OE_TierTwoAnimalsReptile</defName>
+							<tier>2</tier>
+							<itemProduced>GR_ReptileGenetic</itemProduced>
+							<extractableAnimals>
+								<li>OE_Raptor</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+<!--=============== Insectoid T-2 ====================-->	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_OE_TierTwoInsectoid</defName>
+							<tier>2</tier>
+							<itemProduced>GR_InsectoidGenetic</itemProduced>
+							<extractableAnimals>
+								<li>OE_Armagon</li>
+								<li>OE_Tionant_Blue</li>
+								<li>OE_Tionant_Green</li>
+								<li>OE_Tionant_Red</li>
+								<li>OE_Tionant_Yellow</li>
+								<li>OE_Arachna_Green</li>
+								<li>OE_Arachna_Red</li>
+								<li>OE_Arachna_Blue</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>				
+<!--=============== Colossal T-3 ====================-->				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_OE_TierThreeAnimalsColossal</defName>
+							<tier>3</tier>
+							<itemProduced>GR_ThrumboGenetic</itemProduced>
+							<extractableAnimals>
+								<li>OE_Bruul_Acid</li>
+								<li>OE_Bruul_Cryo</li>
+								<li>OE_Bruul_Fire</li>
+								<li>OE_Bruul_EMP</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>		
+			</operations>
+		</match>
+	</Operation>
+</Patch>

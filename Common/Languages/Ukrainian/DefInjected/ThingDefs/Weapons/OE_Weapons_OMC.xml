@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC - Sword ====================-->
+<OMC_Sword.label>Розділювач</OMC_Sword.label>
+<OMC_Sword.description>Стандартний Меч використовується Солдатами OMC.</OMC_Sword.description>
+
+<OMC_Sword.tools.handle.label>рукоять</OMC_Sword.tools.handle.label>
+<OMC_Sword.tools.point.label>вістря</OMC_Sword.tools.point.label>
+<OMC_Sword.tools.edge.label>лезо</OMC_Sword.tools.edge.label>
+
+<OMC_Sword_M.label>Розділювач MK-II</OMC_Sword_M.label>
+<OMC_Sword_M.description>Модифікований Меч використовується Офіцерами OMC.</OMC_Sword_M.description>
+
+<OMC_Sword_M.tools.handle.label>рукоять</OMC_Sword_M.tools.handle.label>
+<OMC_Sword_M.tools.point.label>вістря</OMC_Sword_M.tools.point.label>
+<OMC_Sword_M.tools.edge.label>лезо</OMC_Sword_M.tools.edge.label>
+
+<OMC_Sword_P.label>Сінхро Розділювач MK-II</OMC_Sword_P.label>
+<OMC_Sword_P.description>Сінхро модифікований Меч використовується Офіцерами OMC.</OMC_Sword_P.description>
+
+<OMC_Sword_P.tools.handle.label>рукоять</OMC_Sword_P.tools.handle.label>
+<OMC_Sword_P.tools.point.label>вістря</OMC_Sword_P.tools.point.label>
+<OMC_Sword_P.tools.edge.label>лезо</OMC_Sword_P.tools.edge.label>
+
+<!--=============== OMC - Axe ====================-->
+<OMC_Axe.label>Шалений</OMC_Axe.label>
+<OMC_Axe.description>Стандартна Сокира використовується Солдатами OMC.</OMC_Axe.description>
+
+<OMC_Axe.tools.handle.label>рукоять</OMC_Axe.tools.handle.label>
+<OMC_Axe.tools.edge.label>лезо</OMC_Axe.tools.edge.label>
+
+<OMC_Axe_M.label>Шалений MK-II</OMC_Axe_M.label>
+<OMC_Axe_M.description>Модифікована Сокира використовується Офіцерами OMC.</OMC_Axe_M.description>
+
+<OMC_Axe_M.tools.handle.label>рукоять</OMC_Axe_M.tools.handle.label>
+<OMC_Axe_M.tools.edge.label>лезо</OMC_Axe_M.tools.edge.label>
+
+<OMC_Axe_P.label>Сінхро Шалений MK-II</OMC_Axe_P.label>
+<OMC_Axe_P.description>Сінхро модифікована Сокира використовується Офіцерами OMC.</OMC_Axe_P.description>
+
+<OMC_Axe_P.tools.handle.label>рукоять</OMC_Axe_P.tools.handle.label>
+<OMC_Axe_P.tools.edge.label>лезо</OMC_Axe_P.tools.edge.label>
+
+<!--=============== OMC - Whip ====================-->
+<Wave_OMC_W.label>Хвиля з кровопролиття</Wave_OMC_W.label>
+<Wave_OMC_W_M.label>Хвиля з кровопролиття MK-II</Wave_OMC_W_M.label>
+
+<OMC_Whip.label>Кровопролиття</OMC_Whip.label>
+<OMC_Whip.verbs.Verb_Shoot.label>Кровопролиття</OMC_Whip.verbs.Verb_Shoot.label>
+<OMC_Whip.description>Стандартний Батіг використовується Солдатами OMC.</OMC_Whip.description>
+
+<OMC_Whip.tools.handle.label>рукоять</OMC_Whip.tools.handle.label>
+
+<OMC_Whip_M.label>Кровопролиття MK-II</OMC_Whip_M.label>
+<OMC_Whip_M.verbs.Verb_Shoot.label>Кровопролиття MK-II</OMC_Whip_M.verbs.Verb_Shoot.label>
+<OMC_Whip_M.description>Модифікований Батіг використовується Офіцерами OMC.</OMC_Whip_M.description>
+
+<OMC_Whip_M.tools.handle.label>рукоять</OMC_Whip_M.tools.handle.label>
+
+<OMC_Whip_P.label>Сінхро Кровопролиття MK-II</OMC_Whip_P.label>
+<OMC_Whip_P.verbs.Verb_Shoot.label>Сінхро Кровопролиття MK-II</OMC_Whip_P.verbs.Verb_Shoot.label>
+<OMC_Whip_P.description>Сінхро Модифікований Батіг використовується Офіцерами OMC.</OMC_Whip_P.description>
+
+<OMC_Whip_P.tools.handle.label>рукоять</OMC_Whip_P.tools.handle.label>
+
+<!--=============== OMC - Elemental Whip ====================-->
+<!--=============== Acid ====================-->
+<Wave_OMC_W_Acid.label>Кислотна-хвиля з кровопролиття</Wave_OMC_W_Acid.label>
+<Wave_OMC_W_M_Acid.label>Кислотна-хвиля з кровопролиття MK-II</Wave_OMC_W_M_Acid.label>
+
+<OMC_Whip_Acid.label>Кровопролиття(Кислота)</OMC_Whip_Acid.label>
+<OMC_Whip_Acid.verbs.Verb_Shoot.label>Кровопролиття(Кислота)</OMC_Whip_Acid.verbs.Verb_Shoot.label>
+<OMC_Whip_Acid.description>Стандартний Батіг використовується Солдатами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Кислотним ушкодженням.</OMC_Whip_Acid.description>
+
+<OMC_Whip_Acid.tools.handle.label>рукоять</OMC_Whip_Acid.tools.handle.label>
+
+<OMC_Whip_M_Acid.label>Кровопролиття MK-II(Кислота)</OMC_Whip_M_Acid.label>
+<OMC_Whip_M_Acid.verbs.Verb_Shoot.label>Кровопролиття MK-II(Кислота)</OMC_Whip_M_Acid.verbs.Verb_Shoot.label>
+<OMC_Whip_M_Acid.description>Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Кислотним ушкодженням.</OMC_Whip_M_Acid.description>
+
+<OMC_Whip_M_Acid.tools.handle.label>рукоять</OMC_Whip_M_Acid.tools.handle.label>
+
+<OMC_Whip_P_Acid.label>Сінхро Кровопролиття MK-II(Кислота)</OMC_Whip_P_Acid.label>
+<OMC_Whip_P_Acid.verbs.Verb_Shoot.label>Сінхро Кровопролиття MK-II(Кислота)</OMC_Whip_P_Acid.verbs.Verb_Shoot.label>
+<OMC_Whip_P_Acid.description>Сінхро Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Кислотним ушкодженням.</OMC_Whip_P_Acid.description>
+
+<OMC_Whip_P_Acid.tools.handle.label>рукоять</OMC_Whip_P_Acid.tools.handle.label>
+<!--=============== Cryo ====================-->
+<Wave_OMC_W_Cryo.label>Кріо-хвиля з кровопролиття</Wave_OMC_W_Cryo.label>
+<Wave_OMC_W_M_Cryo.label>Кріо-хвиля з кровопролиття MK-II</Wave_OMC_W_M_Cryo.label>
+
+<OMC_Whip_Cryo.label>Кровопролиття(Кріо)</OMC_Whip_Cryo.label>
+<OMC_Whip_Cryo.verbs.Verb_Shoot.label>Кровопролиття(Кріо)</OMC_Whip_Cryo.verbs.Verb_Shoot.label>
+<OMC_Whip_Cryo.description>Стандартний Батіг використовується Солдатами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Кріо ушкодженням.</OMC_Whip_Cryo.description>
+
+<OMC_Whip_Cryo.tools.handle.label>рукоять</OMC_Whip_Cryo.tools.handle.label>
+
+<OMC_Whip_M_Cryo.label>Кровопролиття MK-II(Кріо)</OMC_Whip_M_Cryo.label>
+<OMC_Whip_M_Cryo.verbs.Verb_Shoot.label>Кровопролиття MK-II(Кріо)</OMC_Whip_M_Cryo.verbs.Verb_Shoot.label>
+<OMC_Whip_M_Cryo.description>Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Кріо ушкодженням.</OMC_Whip_M_Cryo.description>
+
+<OMC_Whip_M_Cryo.tools.handle.label>рукоять</OMC_Whip_M_Cryo.tools.handle.label>
+
+<OMC_Whip_P_Cryo.label>Сінхро Кровопролиття MK-II(Кріо)</OMC_Whip_P_Cryo.label>
+<OMC_Whip_P_Cryo.verbs.Verb_Shoot.label>Сінхро Кровопролиття MK-II(Кріо)</OMC_Whip_P_Cryo.verbs.Verb_Shoot.label>
+<OMC_Whip_P_Cryo.description>Сінхро Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Кріо ушкодженням.</OMC_Whip_P_Cryo.description>
+
+<OMC_Whip_P_Cryo.tools.handle.label>рукоять</OMC_Whip_P_Cryo.tools.handle.label>
+<!--=============== Fire ====================-->
+<Wave_OMC_W_Fire.label>Вогне-хвиля з кровопролиття</Wave_OMC_W_Fire.label>
+<Wave_OMC_W_M_Fire.label>Вогне-хвиля з кровопролиття MK-II</Wave_OMC_W_M_Fire.label>
+
+<OMC_Whip_Fire.label>Кровопролиття(Вогонь)</OMC_Whip_Fire.label>
+<OMC_Whip_Fire.verbs.Verb_Shoot.label>Кровопролиття(Вогонь)</OMC_Whip_Fire.verbs.Verb_Shoot.label>
+<OMC_Whip_Fire.description>Стандартний Батіг використовується Солдатами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Вогненним ушкодженням.</OMC_Whip_Fire.description>
+
+<OMC_Whip_Fire.tools.handle.label>рукоять</OMC_Whip_Fire.tools.handle.label>
+
+<OMC_Whip_M_Fire.label>Кровопролиття MK-II(Вогонь)</OMC_Whip_M_Fire.label>
+<OMC_Whip_M_Fire.verbs.Verb_Shoot.label>Кровопролиття MK-II(Вогонь)</OMC_Whip_M_Fire.verbs.Verb_Shoot.label>
+<OMC_Whip_M_Fire.description>Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Вогненним ушкодженням.</OMC_Whip_M_Fire.description>
+
+<OMC_Whip_M_Fire.tools.handle.label>рукоять</OMC_Whip_M_Fire.tools.handle.label>
+
+<OMC_Whip_P_Fire.label>Сінхро Кровопролиття MK-II(Вогонь)</OMC_Whip_P_Fire.label>
+<OMC_Whip_P_Fire.verbs.Verb_Shoot.label>Сінхро Кровопролиття MK-II(Вогонь)</OMC_Whip_P_Fire.verbs.Verb_Shoot.label>
+<OMC_Whip_P_Fire.description>Сінхро Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено Вогненним ушкодженням.</OMC_Whip_P_Fire.description>
+
+<OMC_Whip_P_Fire.tools.handle.label>рукоять</OMC_Whip_P_Fire.tools.handle.label>
+<!--=============== EMP ====================-->
+<Wave_OMC_W_EMP.label>ЕМІ-хвиля з кровопролиття</Wave_OMC_W_EMP.label>
+<Wave_OMC_W_M_EMP.label>ЕМІ-хвиля з кровопролиття MK-II</Wave_OMC_W_M_EMP.label>
+
+<OMC_Whip_EMP.label>Кровопролиття(ЕМІ)</OMC_Whip_EMP.label>
+<OMC_Whip_EMP.verbs.Verb_Shoot.label>Кровопролиття(ЕМІ)</OMC_Whip_EMP.verbs.Verb_Shoot.label>
+<OMC_Whip_EMP.description>Стандартний Батіг використовується Солдатами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено ЕМІ ушкодженням.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OMC_Whip_EMP.description>
+
+<OMC_Whip_EMP.tools.handle.label>рукоять</OMC_Whip_EMP.tools.handle.label>
+
+<OMC_Whip_M_EMP.label>Кровопролиття MK-II(ЕМІ)</OMC_Whip_M_EMP.label>
+<OMC_Whip_M_EMP.verbs.Verb_Shoot.label>Кровопролиття MK-II(ЕМІ)</OMC_Whip_M_EMP.verbs.Verb_Shoot.label>
+<OMC_Whip_M_EMP.description>Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено ЕМІ ушкодженням.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OMC_Whip_M_EMP.description>
+
+<OMC_Whip_M_EMP.tools.handle.label>рукоять</OMC_Whip_M_EMP.tools.handle.label>
+
+<OMC_Whip_P_EMP.label>Сінхро Кровопролиття MK-II(ЕМІ)</OMC_Whip_P_EMP.label>
+<OMC_Whip_P_EMP.verbs.Verb_Shoot.label>Сінхро Кровопролиття MK-II(ЕМІ)</OMC_Whip_P_EMP.verbs.Verb_Shoot.label>
+<OMC_Whip_P_EMP.description>Сінхро Модифікований Батіг використовується Офіцерами OMC.\n\nЦе реконструйована зброя з використанням технологій OTC. Заряджено ЕМІ ушкодженням.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OMC_Whip_P_EMP.description>
+
+<OMC_Whip_P_EMP.tools.handle.label>рукоять</OMC_Whip_P_EMP.tools.handle.label>
+
+<!--=============== OMC - Pistol ====================-->
+<Bullet_OMC_P.label>куля з цепешу</Bullet_OMC_P.label>
+<Bullet_OMC_P_M.label>куля з цепешу MK-II</Bullet_OMC_P_M.label>
+
+<OMC_Pistol.label>Цепеш</OMC_Pistol.label>
+<OMC_Pistol.verbs.Verb_Shoot.label>Цепеш</OMC_Pistol.verbs.Verb_Shoot.label>
+<OMC_Pistol.description>Стандартний Авто-Пістолет використовується Солдатами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_Pistol.description>
+
+<OMC_Pistol.tools.grip.label>рукоять</OMC_Pistol.tools.grip.label>
+<OMC_Pistol.tools.barrel.label>ствол</OMC_Pistol.tools.barrel.label>
+
+<OMC_Pistol_M.label>Цепеш MK-II</OMC_Pistol_M.label>
+<OMC_Pistol_M.verbs.Verb_Shoot.label>Цепеш MK-II</OMC_Pistol_M.verbs.Verb_Shoot.label>
+<OMC_Pistol_M.description>Модифікований Авто-Пістолет використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_Pistol_M.description>
+
+<OMC_Pistol_M.tools.grip.label>рукоять</OMC_Pistol_M.tools.grip.label>
+<OMC_Pistol_M.tools.barrel.label>ствол</OMC_Pistol_M.tools.barrel.label>
+
+<OMC_Pistol_P.label>Парагон Цепеш MK-II</OMC_Pistol_P.label>
+<OMC_Pistol_P.verbs.Verb_Shoot.label>Парагон Цепеш MK-II</OMC_Pistol_P.verbs.Verb_Shoot.label>
+<OMC_Pistol_P.description>Парагон модифікований Авто-Пістолет використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_Pistol_P.description>
+
+<OMC_Pistol_P.tools.grip.label>рукоять</OMC_Pistol_P.tools.grip.label>
+<OMC_Pistol_P.tools.barrel.label>ствол</OMC_Pistol_P.tools.barrel.label>
+
+<OMC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Цепеш MK-II</OMC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - Shotgun Sidearm ====================-->
+<Bullet_OMC_SS.label>дріб пекельний крику</Bullet_OMC_SS.label>
+<Bullet_OMC_SS_M.label>дріб пекельний крику MK-II</Bullet_OMC_SS_M.label>
+
+<OMC_ShotgunS.label>Пекельний Крик</OMC_ShotgunS.label>
+<OMC_ShotgunS.verbs.Verb_Shoot.label>Пекельний Крик</OMC_ShotgunS.verbs.Verb_Shoot.label>
+<OMC_ShotgunS.description>Стандартний Пістолет-Дробовик використовується Солдатами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_ShotgunS.description>
+
+<OMC_ShotgunS.tools.grip.label>рукоять</OMC_ShotgunS.tools.grip.label>
+<OMC_ShotgunS.tools.barrel.label>ствол</OMC_ShotgunS.tools.barrel.label>
+
+<OMC_ShotgunS_M.label>Пекельний Крик MK-II</OMC_ShotgunS_M.label>
+<OMC_ShotgunS_M.verbs.Verb_Shoot.label>Пекельний Крик MK-II</OMC_ShotgunS_M.verbs.Verb_Shoot.label>
+<OMC_ShotgunS_M.description>Модифікований Пістолет-Дробовик використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_ShotgunS_M.description>
+
+<OMC_ShotgunS_M.tools.grip.label>рукоять</OMC_ShotgunS_M.tools.grip.label>
+<OMC_ShotgunS_M.tools.barrel.label>ствол</OMC_ShotgunS_M.tools.barrel.label>
+
+<OMC_ShotgunS_P.label>Парагон Пекельний Крик MK-II</OMC_ShotgunS_P.label>
+<OMC_ShotgunS_P.verbs.Verb_Shoot.label>Парагон Пекельний Крик MK-II</OMC_ShotgunS_P.verbs.Verb_Shoot.label>
+<OMC_ShotgunS_P.description>Парагон модифікований Пістолет-Дробовик використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_ShotgunS_P.description>
+
+<OMC_ShotgunS_P.tools.grip.label>рукоять</OMC_ShotgunS_P.tools.grip.label>
+<OMC_ShotgunS_P.tools.barrel.label>ствол</OMC_ShotgunS_P.tools.barrel.label>
+
+<OMC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Пекельний Крик MK-II</OMC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - AssaultRifle ====================-->
+<Bullet_OMC_AR.label>куля з нападаючого</Bullet_OMC_AR.label>
+<Bullet_OMC_AR_M.label>куля з нападаючого MK-II</Bullet_OMC_AR_M.label>
+
+<OMC_AR.label>Нападаючий</OMC_AR.label>
+<OMC_AR.verbs.Verb_Shoot.label>Нападаючий</OMC_AR.verbs.Verb_Shoot.label>
+<OMC_AR.description>Стандартна Штурмова гвинтівка використовується Солдатами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_AR.description>
+
+<OMC_AR.tools.stock.label>приклад</OMC_AR.tools.stock.label>
+<OMC_AR.tools.barrel.label>ствол</OMC_AR.tools.barrel.label>
+
+<OMC_AR_M.label>Нападаючий MK-II</OMC_AR_M.label>
+<OMC_AR_M.verbs.Verb_Shoot.label>Нападаючий MK-II</OMC_AR_M.verbs.Verb_Shoot.label>
+<OMC_AR_M.description>Модифікована Штурмова гвинтівка використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_AR_M.description>
+
+<OMC_AR_M.tools.stock.label>приклад</OMC_AR_M.tools.stock.label>
+<OMC_AR_M.tools.barrel.label>ствол</OMC_AR_M.tools.barrel.label>
+
+<OMC_AR_P.label>Парагон Нападаючий MK-II</OMC_AR_P.label>
+<OMC_AR_P.verbs.Verb_Shoot.label>Парагон Нападаючий MK-II</OMC_AR_P.verbs.Verb_Shoot.label>
+<OMC_AR_P.description>Парагон модифицированная Штурмова гвинтівка використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_AR_P.description>
+
+<OMC_AR_P.tools.stock.label>приклад</OMC_AR_P.tools.stock.label>
+<OMC_AR_P.tools.barrel.label>ствол</OMC_AR_P.tools.barrel.label>
+
+<OMC_AR_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Нападаючий MK-II</OMC_AR_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_AR_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_AR_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_AR_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_AR_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - Shotgun ====================-->
+<Bullet_OMC_S.label>дріб загибелі</Bullet_OMC_S.label>
+<Bullet_OMC_S_M.label>дріб загибелі MK-II</Bullet_OMC_S_M.label>
+
+<OMC_Shotgun.label>Загибель</OMC_Shotgun.label>
+<OMC_Shotgun.verbs.Verb_Shoot.label>Загибель</OMC_Shotgun.verbs.Verb_Shoot.label>
+<OMC_Shotgun.description>Стандартний Дробовик використовується Солдатами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_Shotgun.description>
+
+<OMC_Shotgun.tools.stock.label>приклад</OMC_Shotgun.tools.stock.label>
+<OMC_Shotgun.tools.barrel.label>ствол</OMC_Shotgun.tools.barrel.label>
+
+<OMC_Shotgun_M.label>Загибель MK-II</OMC_Shotgun_M.label>
+<OMC_Shotgun_M.verbs.Verb_Shoot.label>Загибель MK-II</OMC_Shotgun_M.verbs.Verb_Shoot.label>
+<OMC_Shotgun_M.description>Модифікований Дробовик використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_Shotgun_M.description>
+
+<OMC_Shotgun_M.tools.stock.label>приклад</OMC_Shotgun_M.tools.stock.label>
+<OMC_Shotgun_M.tools.barrel.label>ствол</OMC_Shotgun_M.tools.barrel.label>
+
+<OMC_Shotgun_P.label>Парагон Загибель MK-II</OMC_Shotgun_P.label>
+<OMC_Shotgun_P.verbs.Verb_Shoot.label>Парагон Загибель MK-II</OMC_Shotgun_P.verbs.Verb_Shoot.label>
+<OMC_Shotgun_P.description>Парагон Модифікований Дробовик використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_Shotgun_P.description>
+
+<OMC_Shotgun_P.tools.stock.label>приклад</OMC_Shotgun_P.tools.stock.label>
+<OMC_Shotgun_P.tools.barrel.label>ствол</OMC_Shotgun_P.tools.barrel.label>
+
+<OMC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Загибель MK-II</OMC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - SniperRifle ====================-->
+<Bullet_OMC_SR.label>куля з череполому</Bullet_OMC_SR.label>
+<Bullet_OMC_SR_M.label>куля з череполому MK-II</Bullet_OMC_SR_M.label>
+
+<OMC_SniperRifle.label>Череполом</OMC_SniperRifle.label>
+<OMC_SniperRifle.verbs.Verb_Shoot.label>Череполом</OMC_SniperRifle.verbs.Verb_Shoot.label>
+<OMC_SniperRifle.description>Стандартна Снайперська гвинтівка використовується Солдатами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_SniperRifle.description>
+
+<OMC_SniperRifle.tools.stock.label>приклад</OMC_SniperRifle.tools.stock.label>
+<OMC_SniperRifle.tools.barrel.label>ствол</OMC_SniperRifle.tools.barrel.label>
+
+<OMC_SniperRifle_M.label>Череполом MK-II</OMC_SniperRifle_M.label>
+<OMC_SniperRifle_M.verbs.Verb_Shoot.label>Череполом MK-II</OMC_SniperRifle_M.verbs.Verb_Shoot.label>
+<OMC_SniperRifle_M.description>Модифікована Снайперська гвинтівка використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_SniperRifle_M.description>
+
+<OMC_SniperRifle_M.tools.stock.label>приклад</OMC_SniperRifle_M.tools.stock.label>
+<OMC_SniperRifle_M.tools.barrel.label>ствол</OMC_SniperRifle_M.tools.barrel.label>
+
+<OMC_SniperRifle_P.label>Парагон Череполом MK-II</OMC_SniperRifle_P.label>
+<OMC_SniperRifle_P.verbs.Verb_Shoot.label>Парагон Череполом MK-II</OMC_SniperRifle_P.verbs.Verb_Shoot.label>
+<OMC_SniperRifle_P.description>Парагон модифицированная Снайперська гвинтівка використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.</OMC_SniperRifle_P.description>
+
+<OMC_SniperRifle_P.tools.stock.label>приклад</OMC_SniperRifle_P.tools.stock.label>
+<OMC_SniperRifle_P.tools.barrel.label>ствол</OMC_SniperRifle_P.tools.barrel.label>
+
+<OMC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Череполом MK-II</OMC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== Cross ====================-->
+<!--=============== OMC - Rocket Launcher ====================-->
+<Bullet_OMC_RL.label>ракета зі смерті велетнів</Bullet_OMC_RL.label>
+<Bullet_OMC_RL_M.label>ракета зі смерті велетнів MK-II</Bullet_OMC_RL_M.label>
+
+<OMC_RocketLauncher.label>Смерть велетнів</OMC_RocketLauncher.label>
+<OMC_RocketLauncher.verbs.Verb_Shoot.label>Смерть велетнів</OMC_RocketLauncher.verbs.Verb_Shoot.label>
+<OMC_RocketLauncher.description>Стандартна Ракетниця використовується Солдатами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.\n\nЦя реконструйована зброя заснована на Ракетниці OCC.</OMC_RocketLauncher.description>
+
+<OMC_RocketLauncher.tools.barrel.label>ствол</OMC_RocketLauncher.tools.barrel.label>
+
+<OMC_RocketLauncher_M.label>Смерть велетнів MK-II</OMC_RocketLauncher_M.label>
+<OMC_RocketLauncher_M.verbs.Verb_Shoot.label>Смерть велетнів MK-II</OMC_RocketLauncher_M.verbs.Verb_Shoot.label>
+<OMC_RocketLauncher_M.description>Модифікована Ракетниця використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.\n\nЦя реконструйована зброя заснована на Ракетниці OCC.</OMC_RocketLauncher_M.description>
+
+<OMC_RocketLauncher_M.tools.barrel.label>ствол</OMC_RocketLauncher_M.tools.barrel.label>
+
+<OMC_RocketLauncher_P.label>Парагон Смерть велетнів MK-II</OMC_RocketLauncher_P.label>
+<OMC_RocketLauncher_P.verbs.Verb_Shoot.label>Парагон Смерть велетнів MK-II</OMC_RocketLauncher_P.verbs.Verb_Shoot.label>
+<OMC_RocketLauncher_P.description>Парагон модифицированная Ракетниця використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.\n\nЦя реконструйована зброя заснована на Ракетниці OCC.</OMC_RocketLauncher_P.description>
+
+<OMC_RocketLauncher_P.tools.barrel.label>ствол</OMC_RocketLauncher_P.tools.barrel.label>
+
+<OMC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Смерть велетнів MK-II</OMC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== OMC - Revolver ====================-->
+<Bullet_OMC_R.label>куля з безжального</Bullet_OMC_R.label>
+<Bullet_OMC_R_M.label>куля з безжального MK-II</Bullet_OMC_R_M.label>
+
+<OMC_Revolver.label>Безжальний</OMC_Revolver.label>
+<OMC_Revolver.verbs.Verb_Shoot.label>Безжальний</OMC_Revolver.verbs.Verb_Shoot.label>
+<OMC_Revolver.description>Стандартний Револьвер використовується Солдатами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.\n\nЦя реконструйована зброя заснована на Револьвері OEC.</OMC_Revolver.description>
+
+<OMC_Revolver.tools.grip.label>приклад</OMC_Revolver.tools.grip.label>
+<OMC_Revolver.tools.barrel.label>ствол</OMC_Revolver.tools.barrel.label>
+
+<OMC_Revolver_M.label>Безжальний MK-II</OMC_Revolver_M.label>
+<OMC_Revolver_M.verbs.Verb_Shoot.label>Безжальний MK-II</OMC_Revolver_M.verbs.Verb_Shoot.label>
+<OMC_Revolver_M.description>Модифікований Револьвер використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.\n\nЦя реконструйована зброя заснована на Револьвері OEC.</OMC_Revolver_M.description>
+
+<OMC_Revolver_M.tools.grip.label>приклад</OMC_Revolver_M.tools.grip.label>
+<OMC_Revolver_M.tools.barrel.label>ствол</OMC_Revolver_M.tools.barrel.label>
+
+<OMC_Revolver_P.label>Парагон Безжальний MK-II</OMC_Revolver_P.label>
+<OMC_Revolver_P.verbs.Verb_Shoot.label>Парагон Безжальний MK-II</OMC_Revolver_P.verbs.Verb_Shoot.label>
+<OMC_Revolver_P.description>Парагон модифікований Револьвер використовується Офіцерами OMC. Швидкострілельна та багатозарядна зброя зі зниженою шкодою.\n\nЦя реконструйована зброя заснована на Револьвері OEC.</OMC_Revolver_P.description>
+
+<OMC_Revolver_P.tools.grip.label>приклад</OMC_Revolver_P.tools.grip.label>
+<OMC_Revolver_P.tools.barrel.label>ствол</OMC_Revolver_P.tools.barrel.label>
+
+<OMC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>Парагон Безжальний MK-II</OMC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>
+<OMC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>заряд</OMC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>перезаряджається</OMC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

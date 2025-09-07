@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Special ====================-->
+<!--=============== Eidolon ====================-->
+<OE_Eidolon.title>фантом імперії обсидії</OE_Eidolon.title>
+<OE_Eidolon.titleShort>фантом</OE_Eidolon.titleShort>
+<OE_Eidolon.description>{PAWN_nameDef} колись {PAWN_gender ? вважався великим Героєм : вважалася великою Героїнею} Обсидії, але після деяких подій {PAWN_gender ? став забутий і кинутий : стала забутою і кинутою} власним народом. Має відмінні бойові здібності та вміння підтримувати власну репутацію.</OE_Eidolon.description>
+
+<!--=============== Tactician ====================-->
+<OE_Tactician.title>тактик імперії обсидії</OE_Tactician.title>
+<OE_Tactician.titleShort>тактик</OE_Tactician.titleShort>
+<OE_Tactician.description>{PAWN_nameDef} колись {PAWN_gender ? був : була} стратегічним генієм командного корпусу Обсидії. Після невдалої кампанії {PAWN_gender ? зник : зникла} з усіх записів — але досі воює холоднокровно й точно.</OE_Tactician.description>
+
+<!--=============== Soulforger ====================-->
+<OE_Soulforger.title>кузнець душ імперії обсидії</OE_Soulforger.title>
+<OE_Soulforger.titleShort>кузнець душ</OE_Soulforger.titleShort>
+<OE_Soulforger.description>{PAWN_nameDef} {PAWN_gender ? створював : створювала} синтетичні душі та пси-механізми в таємних залах Імперії. Одні називали це геніальністю, інші — єрессю.</OE_Soulforger.description>
+
+<!--=============== Datasplicer ====================-->
+<OE_Datasplicer.title>зламник даних імперії обсидії</OE_Datasplicer.title>
+<OE_Datasplicer.titleShort>зламник даних</OE_Datasplicer.titleShort>
+<OE_Datasplicer.description>{PAWN_nameDef} одного разу {PAWN_gender ? зламав : зламала} запечатані дата-сховища Обсидії й {PAWN_gender ? переписав : переписала} ланцюги командування зсередини. Тепер ковзає між цифровими бар'єрами, як привид.</OE_Datasplicer.description>
+
+</LanguageData>

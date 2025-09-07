@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Light ====================-->
+<!--=============== Jump ====================-->
+  <ThingDef ParentName="CACArmorLight">
+	<defName>CAC_LightArmor_Jump</defName>
+    <label>CAC Cultist Light Armor(Raven)</label>
+    <description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Jump pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Prestige/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5550</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_LightArmor>1</CAC_LightArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Prestige/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Jump</verbClass>
+        <commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Prestige ====================-->
+  <ThingDef ParentName="CACArmorLight">
+	<defName>CAC_LightArmor_Prestige</defName>
+    <label>CAC Cultist Light Armor(Lord)</label>
+    <description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Prestige/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5550</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_LightArmor>1</CAC_LightArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Prestige/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist_Prestige</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+<!--=============== Jump ====================-->
+  <ThingDef ParentName="CACArmorHeavy">
+	<defName>CAC_HeavyArmor_Jump</defName>
+    <label>CAC Cultist Heavy Armor(Raven)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Jump pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Prestige/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5925</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_HeavyArmor>1</CAC_HeavyArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Prestige/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Jump</verbClass>
+        <commandIcon>UI/Abilities/Armor/Jump</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+<!--=============== Prestige ====================-->
+  <ThingDef ParentName="CACArmorHeavy">
+	<defName>CAC_HeavyArmor_Prestige</defName>
+    <label>CAC Cultist Heavy Armor(Lord)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Prestige/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5925</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_HeavyArmor>1</CAC_HeavyArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Prestige/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist_Prestige</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Cosmol ====================-->
+<OE_Cosmol.label>космол</OE_Cosmol.label>
+<OE_Cosmol.description>Особый иммуностимулятор, используется для усиления иммунитета и лечений различных заболеваний. Обсидийская технология, препарат не вызывает привыкания и не имеет побочных эффектов.</OE_Cosmol.description>
+<OE_Cosmol.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Cosmol.ingestible.ingestCommandString>
+<OE_Cosmol.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Cosmol.ingestible.ingestReportString>
+
+<!--=============== Slugol ====================-->
+<OE_Slugol.label>слагол</OE_Slugol.label>
+<OE_Slugol.description>Уникальная медецинская спецразработка, сильнодействующий препарат на базе Люциферия используется для лечения серьезных ран и заболеваний. Обсидийская технология, препарат не вызывает привыкания и не имеет побочных эффектов.</OE_Slugol.description>
+<OE_Slugol.ingestible.ingestCommandString>Принять {lookup: {0}; Case; 3}</OE_Slugol.ingestible.ingestCommandString>
+<OE_Slugol.ingestible.ingestReportString>Принимает {lookup: {0}; Case; 3}</OE_Slugol.ingestible.ingestReportString>
+
+<!--=============== Sevide ====================-->
+<OE_Sevide.label>сэвайд</OE_Sevide.label>
+<OE_Sevide.description>Смертельный яд, используется ассасинами или как средство для казни. Обсидийская технология, постепенно ослабляет организм, с подальшим летальным исходом.</OE_Sevide.description>
+<OE_Sevide.ingestible.ingestCommandString>Принять смертельный {lookup: {0}; Case; 3}</OE_Sevide.ingestible.ingestCommandString>
+<OE_Sevide.ingestible.ingestReportString>Принимает смертельный {lookup: {0}; Case; 3}</OE_Sevide.ingestible.ingestReportString>
+
+</LanguageData>

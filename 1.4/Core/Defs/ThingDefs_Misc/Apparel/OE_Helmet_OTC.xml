@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC Helmet ====================-->
+  <ThingDef Name="OTCHelmetBase" ParentName="OEHelmetBase" Abstract="True">
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivity>-1</PsychicSensitivity>
+	  <ToxicResistance>0.70</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.70</ToxicEnvironmentResistance>
+	  <ImmunityGainSpeed>0.10</ImmunityGainSpeed>
+    </equippedStatOffsets>
+	<apparel>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+    </apparel>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCHelmetBase">
+	<defName>OTC_Helmet</defName>
+    <label>OTC Mechanic Helmet</label>
+    <description>Light power armor Helmet, well protects the owner. Designed for use by OTC Mechanics.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OTC/OTCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OTCMechanic</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1075</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.70</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>20</OE_Mythril>
+	  <OE_Mooncloth>40</OE_Mooncloth>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OTC/OTCHelmet</wornGraphicPath>
+	  <tags>
+		<li>OTCMechanic</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCArmor</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OTCHelmetMod" ParentName="OTCHelmetBase">
+	<defName>OTC_Helmet_M</defName>
+    <label>OTC Engineer Helmet</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nThe hardened version provides more protection to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OTC/OTCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OTCEngineer</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>1275</MarketValue>
+	  <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <Insulation_Cold>15</Insulation_Cold>
+      <Insulation_Heat>25</Insulation_Heat>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Helmet>1</OTC_Helmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OTC/OTCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OTCEngineer</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCGearMod</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OTCHelmetMod">
+	<defName>OTC_Helmet_M_Spacer</defName>
+    <label>OTC Engineer Helmet(Space Griffin)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OTC/Spacer/OTCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+	  <MarketValue>1525</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Helmet_M>1</OTC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OTC/Spacer/OTCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OTCHelmetMod">
+	<defName>OTC_Helmet_M_Melee</defName>
+    <label>OTC Engineer Helmet(Gladiator)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nModified visor with analyzing computer that helps the user close combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OTC/Melee/OTCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1525</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>4</MeleeHitChance>
+      <MeleeDodgeChance>4</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OTC_Helmet_M>1</OTC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OTC/Melee/OTCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OTCEngineer_Melee</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="OTCHelmetMod">
+	<defName>OTC_Helmet_M_Ranged</defName>
+    <label>OTC Engineer Helmet(Ranger)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nModified visor with targeting computer that helps the user aim.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OTC/Ranged/OTCHelmet_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>1525</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.20</AimingDelayFactor>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OTC_Helmet_M>1</OTC_Helmet_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OTC/Ranged/OTCHelmet_M</wornGraphicPath>
+      <tags>
+		<li>OTCEngineer_Ranged</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+
+</Defs>

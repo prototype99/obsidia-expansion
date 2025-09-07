@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Comms Console ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_CommsConsole</defName>
+    <label>obsidia comms console</label>
+    <description>Small Obsidia communications console. Allows radio contact with other factions and orbital traders.</description>
+    <thingClass>Building_CommsConsole</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_CommsConsole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<uiOrder>2099.666</uiOrder>
+	<costList>
+      <OE_Obsidian>30</OE_Obsidian>
+      <OE_Mythril>15</OE_Mythril>
+	  <OE_Syntherius>15</OE_Syntherius>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.35</fillPercent>
+	<hasInteractionCell>true</hasInteractionCell>
+	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<castEdgeShadows>false</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+	<building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+	<statBases>
+      <MarketValue>475</MarketValue>
+	  <Mass>10</Mass>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+	  <WorkToBuild>4500</WorkToBuild>
+    </statBases>
+    <size>(1,1)</size>
+	<designationCategory>Misc</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>False</blockWind>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	<placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>OEFurniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+	  <li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon diabolus threat</useLabel>
+        <useDuration>900</useDuration>
+        <floatMenuOptionPriority>SummonThreat</floatMenuOptionPriority>
+        <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
+        <ignoreOtherReservations>true</ignoreOtherReservations>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup" MayRequire="Ludeon.RimWorld.Biotech">
+        <bossgroupDef>Diabolus</bossgroupDef>
+        <spawnLetterLabelKey>LetterLabelCommsConsoleSpawned</spawnLetterLabelKey>
+        <spawnLetterTextKey>LetterCommsConsoleSpawned</spawnLetterTextKey>
+        <effecterDef>CommsConsoleBossgroupSummoned</effecterDef>
+        <delayTicks>120</delayTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

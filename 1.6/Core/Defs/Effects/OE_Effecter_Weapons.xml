@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE ====================-->
+<!--=============== Laser ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OE_Mote_BeamLaser</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OE_Beam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== OTC ====================-->
+<!--=============== Laser ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OTC_Mote_BeamLaser_Acid</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OTC_Beam_Acid</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OTC_Mote_BeamLaser_Cryo</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OTC_Beam_Cryo</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OTC_Mote_BeamLaser_Fire</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OTC_Beam_Fire</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OTC_Mote_BeamLaser_EMP</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OTC_Beam_EMP</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== OMG ====================-->
+<!--=============== Laser ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OMG_Mote_BeamLaser</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OES_Beam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== OES ====================-->
+<!--=============== Beam ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>OES_Mote_GraserBeamBase</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OES_Beam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_A</_ExtraTexA>
+		<_ExtraTexB>/Things/Mote/Weapon/Laserbeam/OE_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>-5</_ScrollSpeedA>
+		<_ScrollSpeedB>2</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OES_Fleck_BeamSpark</defName>
+    <fadeInTime>0.03</fadeInTime>
+    <solidTime>0.1</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Mote/Weapon/Laserbeam/OES_SparkThrown</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.1</drawSize>
+    </graphicData>
+    <acceleration>(0, 0, 0.5)</acceleration>
+    <speedPerTime>0.2~0.5</speedPerTime>
+  </FleckDef>
+
+</Defs>

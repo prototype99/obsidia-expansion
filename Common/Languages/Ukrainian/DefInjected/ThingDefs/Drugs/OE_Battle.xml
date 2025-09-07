@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Torraxin ====================-->
+<OE_Torraxin.label>торраксін</OE_Torraxin.label>
+<OE_Torraxin.description>Спеціалізований бойовий стимулятор, що має 3 стадії ефекту (згодом ефект слабшає), призначений для використання бійцями ближнього бою. Обсидійська технологія стимулятор може викликати звикання і має неприємні побічні ефекти.</OE_Torraxin.description>
+<OE_Torraxin.ingestible.ingestCommandString>Прийняти {lookup: {0}; Case; 3}</OE_Torraxin.ingestible.ingestCommandString>
+<OE_Torraxin.ingestible.ingestReportString>Приймає {lookup: {0}; Case; 3}</OE_Torraxin.ingestible.ingestReportString>
+
+<!--=============== Joltixin ====================-->
+<OE_Joltixin.label>йолтиксін</OE_Joltixin.label>
+<OE_Joltixin.description>Спеціалізований бойовий стимулятор, що має 3 стадії ефекту (згодом ефект слабшає), призначений для використання стрілками. Обсидійська технологія стимулятор може викликати звикання і має неприємні побічні ефекти.</OE_Joltixin.description>
+<OE_Joltixin.ingestible.ingestCommandString>Прийняти {lookup: {0}; Case; 3}</OE_Joltixin.ingestible.ingestCommandString>
+<OE_Joltixin.ingestible.ingestReportString>Приймає {lookup: {0}; Case; 3}</OE_Joltixin.ingestible.ingestReportString>
+
+<!--=============== Luraxin ====================-->
+<OE_Luraxin.label>лураксін</OE_Luraxin.label>
+<OE_Luraxin.description>Спеціалізований бойовий стимулятор, що має 3 стадії ефекту (згодом ефект слабшає), призначений для використання псі-бійцями. Обсидійська технологія стимулятор може викликати звикання і має неприємні побічні ефекти.</OE_Luraxin.description>
+<OE_Luraxin.ingestible.ingestCommandString>Прийняти {lookup: {0}; Case; 3}</OE_Luraxin.ingestible.ingestCommandString>
+<OE_Luraxin.ingestible.ingestReportString>Приймає {lookup: {0}; Case; 3}</OE_Luraxin.ingestible.ingestReportString>
+
+<!--=============== Alcrexin ====================-->
+<OE_Alcrexin.label>алкрексін</OE_Alcrexin.label>
+<OE_Alcrexin.description>Спеціалізований бойовий стимулятор, що має 3 стадії ефекту (згодом ефект слабшає), призначений для використання механіторами. Обсидійська технологія стимулятор може викликати звикання і має неприємні побічні ефекти.</OE_Alcrexin.description>
+<OE_Alcrexin.ingestible.ingestCommandString>Прийняти {lookup: {0}; Case; 3}</OE_Alcrexin.ingestible.ingestCommandString>
+<OE_Alcrexin.ingestible.ingestReportString>Приймає {lookup: {0}; Case; 3}</OE_Alcrexin.ingestible.ingestReportString>
+
+</LanguageData>

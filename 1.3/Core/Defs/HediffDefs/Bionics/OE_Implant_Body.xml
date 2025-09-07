@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Skin ====================-->
+<!--=============== Implant - Obsidian ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantSkin_Obsidian</defName>
+    <label>skin implant - Obsidian</label>
+    <labelNoun>a skin implant - Obsidian</labelNoun>
+    <description>An installed skin implant - Obsidian.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantSkin_Obsidian</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantSkin_Obsidian</spawnThingOnRemoved>
+	<stages>
+	  <li>
+        <statOffsets>
+		  <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.35</ArmorRating_Heat>
+		  <PawnBeauty>1</PawnBeauty>
+        </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>ArmorGland</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantSkin_Obsidian</defName>
+    <label>skin implant - Obsidian</label>
+    <description>Obsidia skin implant releases chemicals and nanomachines that toughen the skin and add flexible subdermal obsidian plates at strategic points. This makes the user more resistant to damage across their whole body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantSkin_Obsidian</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OCC/OE_Skin</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OCCBionics</li>
+    </techHediffsTags>
+    <costList>
+      <OE_ObsidianSynthweave>25</OE_ObsidianSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>10</OE_Platinum>
+      <OE_Syntherius>30</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_ObsidianSynthweave>10</OE_ObsidianSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+	  <OE_Platinum>5</OE_Platinum>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>7.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEImplants</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantSkin_Obsidian</defName>
+    <label>install skin implant - Obsidian</label>
+    <description>Install a skin implant - Obsidian.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantSkin_Obsidian</ThingDef>
+      <HediffDef>OE_ImplantSkin_Obsidian</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing skin implant - Obsidian.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantSkin_Obsidian</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantSkin_Obsidian</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantSkin_Obsidian</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmorGland</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantSkin_Obsidian</defName>
+    <label>remove skin implant - Obsidian</label>
+    <description>Remove a skin implant - Obsidian.</description>
+    <jobString>Removing skin implant - Obsidian.</jobString>
+    <removesHediff>OE_ImplantSkin_Obsidian</removesHediff>
+  </RecipeDef>
+<!--=============== Implant - CAC ====================-->
+  <HediffDef ParentName="CACImplantBodyParts">
+    <defName>OE_ImplantSkin_CAC</defName>
+    <label>skin implant - Cultist</label>
+    <labelNoun>a skin implant - Cultist</labelNoun>
+    <description>An installed skin implant - Cultist.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantSkin_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantSkin_CAC</spawnThingOnRemoved>
+	<stages>
+	  <li>
+	    <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.2</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <IncomingDamageFactor>0.2</IncomingDamageFactor>
+		  <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.8</ArmorRating_Heat>
+		  <PawnBeauty>-3</PawnBeauty>
+        </statOffsets>
+	  </li>
+	</stages>
+	<tags><li>ArmorGland</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ImplantSkin_CAC</defName>
+    <label>skin implant - Cultist</label>
+    <description>Obsidia cultist skin implant releases chemicals and nanomachines that toughen the skin and add flexible subdermal empyrium and orichalcum plates at strategic points. This makes the user more resistant to damage across their whole body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantSkin_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/CAC/OE_Skin</texPath>
+    </graphicData>
+	<butcherProducts>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+	  <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>10</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	</butcherProducts>	
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>10.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantSkin_CAC</defName>
+    <label>install skin implant - Cultist</label>
+    <description>Install a skin implant - Cultist.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantSkin_CAC</ThingDef>
+      <HediffDef>OE_ImplantSkin_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing skin implant - Cultist.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantSkin_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantSkin_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantSkin_CAC</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>ArmorGland</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantSkin_CAC</defName>
+    <label>remove skin implant - Cultist</label>
+    <description>Remove a skin implant - Cultist.</description>
+    <jobString>Removing skin implant - Cultist.</jobString>
+    <removesHediff>OE_ImplantSkin_CAC</removesHediff>
+  </RecipeDef>
+
+</Defs>

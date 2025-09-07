@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Overcharged Module Base ====================-->
+  <ThingDef ParentName="MU_MechModuleItemBase" Name="OEOverchargedModuleItemBase" Abstract="True">
+    <statBases>
+      <Flammability>0</Flammability>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_Empyrium>15</OE_Empyrium>
+      <OE_Orichalcum>10</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+	<recipeMaker>
+      <displayPriority>245</displayPriority>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisite Inherit="false" />
+	  <researchPrerequisites>
+	    <li>OEMechtechAdv</li>
+		<li>MU_AdvancedModules</li>
+	  </researchPrerequisites>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_AdvancedUpgrades</li>
+	  <li>MU_AdvancedModules</li>
+    </thingSetMakerTags>
+	<techLevel>Ultra</techLevel>
+	<tradeTags>
+	  <li>MU_AdvancedUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Repair ====================-->
+  <ThingDef ParentName="OEOverchargedModuleItemBase">
+    <defName>OE_MechUpgrade_Module_Repair_O</defName>
+    <label>overcharged repair module</label>
+	<description>Overcharged module, that can be installed into mechanoid repair system, making it more efficient.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Repair</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Repair</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_Module_Repair_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_RepairModuleBase">
+    <defName>OE_MechUpgrade_Module_Repair_O</defName>
+    <label>overcharged repair module</label>
+	<description>Overcharged module, that can be installed into mechanoid repair system, making it more efficient.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Repair</uiIconPath>
+    <statFactors>
+	  <MechEnergyLossPerHP>0.25</MechEnergyLossPerHP>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_Module_Repair_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="OEOverchargedModuleItemBase">
+    <defName>OE_MechUpgrade_Module_Melee_O</defName>
+    <label>overcharged melee damage module</label>
+	<description>Overcharged module, that can be installed into mechanoid, giving a large melee damage increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Melee</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Melee</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_Module_Melee_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MeleeModuleBase">
+    <defName>OE_MechUpgrade_Module_Melee_O</defName>
+    <label>overcharged melee damage module</label>
+	<description>Overcharged module, that can be installed into mechanoid, giving a large melee damage increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Melee</uiIconPath>
+    <statFactors>
+	  <MeleeDamageFactor>1.75</MeleeDamageFactor>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_Module_Melee_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ranged ====================-->   
+  <ThingDef ParentName="OEOverchargedModuleItemBase">
+    <defName>OE_MechUpgrade_Module_Ranged_O</defName>
+    <label>overcharged ranged damage module</label>
+	<description>Overcharged module, that can be installed into mechanoid ammo control system, giving a large ranged damage increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Ranged</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Ranged</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_Module_Ranged_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_RangedModuleBase">
+    <defName>OE_MechUpgrade_Module_Ranged_O</defName>
+    <label>overcharged ranged damage module</label>
+	<description>Overcharged module, that can be installed into mechanoid ammo control system, giving a large ranged damage increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Ranged</uiIconPath>
+    <statFactors>
+	  <MU_RangedDamageFactor>1.75</MU_RangedDamageFactor>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_Module_Ranged_O</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+<!--=============== Shield ====================-->    
+  <ThingDef ParentName="OEOverchargedModuleItemBase">
+    <defName>OE_MechUpgrade_Module_Shield_O</defName>
+    <label>overcharged shield module</label>
+	<description>Overcharged module, that can be installed into mechanoid shield core, giving a large max energy increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Shield</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Shield</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OE_MechUpgrade_Module_Shield_O</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ShieldModuleBase">
+    <defName>OE_MechUpgrade_Module_Shield_O</defName>
+    <label>overcharged shield module</label>
+	<description>Overcharged module, that can be installed into mechanoid shield core, giving a large max energy increase.\n\nThis Obsidia modification has improved efficiency but increases power consumption.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Modules/OE_Overcharged_Module_Shield</uiIconPath>
+    <statFactors>
+	  <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>OE_MechUpgrade_Module_Shield_O</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_ShieldUpgrade">
+        <factor>2.5</factor>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+</Defs>

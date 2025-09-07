@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Biophormids - Hive ====================-->
+<OE_BiophormidsHive.label>улей Биоформид</OE_BiophormidsHive.label>
+<OE_BiophormidsHive.description>Улей гигантских насекомых из генома Биоформид. В активном состоянии будет плодить как насекомых и новые ульи, так и ценное желе.</OE_BiophormidsHive.description>
+
+<!--=============== Biophormids - Artificial Hive ====================-->
+<OE_ArtificialBiophormidsHive.label>искусственный улей Биоформид</OE_ArtificialBiophormidsHive.label>
+<OE_ArtificialBiophormidsHive.description>Искусственно созданный улей гигантских насекомых. Со временем из него могут появляться инсектоиды генома Биоформид, а также небольшое количество ценного желе насекомых. Требует регулярного обслуживания. Если построить слишком много ульев рядом друг с другом, потребность в обслуживании возрастёт.</OE_ArtificialBiophormidsHive.description>
+
+<OE_ArtificialBiophormidsHive_Royal.label>искусственный королевский улей Биоформид</OE_ArtificialBiophormidsHive_Royal.label>
+<OE_ArtificialBiophormidsHive_Royal.description>Искусственно созданный королевский улей инсектоидов генома Биоформид. В отличие от стандартных ульев, со временем в нем рождаются исключительно Монархиды, а также некоторое количество желе насекомых. Требует регулярного обслуживания. Если построить слишком много ульев рядом друг с другом, потребность в обслуживании возрастёт.</OE_ArtificialBiophormidsHive_Royal.description>
+
+<!--=============== Biophormids - Thumper ====================-->
+<OE_Thumper_Monarchid.label>импульсная приманка на Монархида</OE_Thumper_Monarchid.label>
+<OE_Thumper_Monarchid.description>Устройство для создания вибраций. При активации оно начинает испускать мощные импульсы, привлекающие монархида инсектоидов, которая атакует вас вместе со своей свитой. Если вам удастся победить, вы сможете собрать с её трупа особое фероядро. Ударные импульсы дестабилизируют приманку, поэтому это сооружение можно использовать только один раз.</OE_Thumper_Monarchid.description>
+
+<OE_Thumper_Monarchid.comps.0.useLabel>Активировать импульсную приманку</OE_Thumper_Monarchid.comps.0.useLabel>
+
+</LanguageData>

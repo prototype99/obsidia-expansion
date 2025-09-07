@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC Tactical Turret ====================-->
+<OMC_Turret_TacticalTurret.label>OMC тактическая турель</OMC_Turret_TacticalTurret.label>
+<OMC_Turret_TacticalTurret.description>Автоматическая турель использующая OMC Авто-Пистолет. Перестаёт работать, когда разряжается аккумулятор.</OMC_Turret_TacticalTurret.description>
+<OMC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>аккумулятор</OMC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OMC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OMC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OMC_Gun_TacticalTurret.label>Цепеш MK-II - Турель</OMC_Gun_TacticalTurret.label>
+<OMC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Цепеш MK-II - Турель</OMC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OMC_Gun_TacticalTurret.description>Реконструированный OMC Авто-Пистолет для турелей.</OMC_Gun_TacticalTurret.description>
+
+<!--=============== OTC Tactical Turret ====================-->
+<!--=============== Acid ====================-->
+<OTC_Turret_TacticalTurret_Acid.label>OTC кислотная тактическая турель</OTC_Turret_TacticalTurret_Acid.label>
+<OTC_Turret_TacticalTurret_Acid.description>Автоматическая турель использующая OTC Кислотный Пистолет. Перестаёт работать, когда разряжается аккумулятор.</OTC_Turret_TacticalTurret_Acid.description>
+<OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.labelOverride>аккумулятор</OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_Acid.label>Прототип Небесный - Турель(Кислота)</OTC_Gun_TacticalTurret_Acid.label>
+<OTC_Gun_TacticalTurret_Acid.verbs.Verb_Shoot.label>Прототип Небесный - Турель(Кислота)</OTC_Gun_TacticalTurret_Acid.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_Acid.description>Реконструированный OTC Пистолет для турелей. Сбалансированное оружие с Кислотными зарядами.</OTC_Gun_TacticalTurret_Acid.description>
+<!--=============== Cryo ====================-->
+<OTC_Turret_TacticalTurret_Cryo.label>OTC крио тактическая турель</OTC_Turret_TacticalTurret_Cryo.label>
+<OTC_Turret_TacticalTurret_Cryo.description>Автоматическая турель использующая OTC Крио Пистолет. Перестаёт работать, когда разряжается аккумулятор.</OTC_Turret_TacticalTurret_Cryo.description>
+<OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.labelOverride>аккумулятор</OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_Cryo.label>Прототип Небесный - Турель(Крио)</OTC_Gun_TacticalTurret_Cryo.label>
+<OTC_Gun_TacticalTurret_Cryo.verbs.Verb_Shoot.label>Прототип Небесный - Турель(Крио)</OTC_Gun_TacticalTurret_Cryo.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_Cryo.description>Реконструированный OTC Пистолет для турелей. Сбалансированное оружие с Крио зарядами.</OTC_Gun_TacticalTurret_Cryo.description>
+<!--=============== Fire ====================-->
+<OTC_Turret_TacticalTurret_Fire.label>OTC огненная тактическая турель</OTC_Turret_TacticalTurret_Fire.label>
+<OTC_Turret_TacticalTurret_Fire.description>Автоматическая турель использующая OTC Огненный Пистолет. Перестаёт работать, когда разряжается аккумулятор.</OTC_Turret_TacticalTurret_Fire.description>
+<OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.labelOverride>аккумулятор</OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_Fire.label>Прототип Небесный - Турель(Огонь)</OTC_Gun_TacticalTurret_Fire.label>
+<OTC_Gun_TacticalTurret_Fire.verbs.Verb_Shoot.label>Прототип Небесный - Турель(Огонь)</OTC_Gun_TacticalTurret_Fire.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_Fire.description>Реконструированный OTC Пистолет для турелей. Сбалансированное оружие с Огненными зарядами.</OTC_Gun_TacticalTurret_Fire.description>
+<!--=============== EMP ====================-->
+<OTC_Turret_TacticalTurret_EMP.label>OTC ЭМИ тактическая турель</OTC_Turret_TacticalTurret_EMP.label>
+<OTC_Turret_TacticalTurret_EMP.description>Автоматическая турель использующая OTC ЭМИ Пистолет. Перестаёт работать, когда разряжается аккумулятор.</OTC_Turret_TacticalTurret_EMP.description>
+<OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.labelOverride>аккумулятор</OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_EMP.label>Прототип Небесный - Турель(ЭМИ)</OTC_Gun_TacticalTurret_EMP.label>
+<OTC_Gun_TacticalTurret_EMP.verbs.Verb_Shoot.label>Прототип Небесный - Турель(ЭМИ)</OTC_Gun_TacticalTurret_EMP.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_EMP.description>Реконструированный OTC Пистолет для турелей. Сбалансированное оружие с ЭМИ зарядами.</OTC_Gun_TacticalTurret_EMP.description>
+
+<!--=============== OCC Tactical Turret ====================-->
+<OCC_Turret_TacticalTurret.label>OCC тактическая турель</OCC_Turret_TacticalTurret.label>
+<OCC_Turret_TacticalTurret.description>Автоматическая турель использующая OCC Револьвер. Перестаёт работать, когда разряжается аккумулятор.</OCC_Turret_TacticalTurret.description>
+<OCC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>аккумулятор</OCC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OCC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OCC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OCC_Gun_TacticalTurret.label>Перекованный Шершень - Турель</OCC_Gun_TacticalTurret.label>
+<OCC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Перекованный Шершень - Турель</OCC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OCC_Gun_TacticalTurret.description>Реконструированный OCC Револьвер для турелей.</OCC_Gun_TacticalTurret.description>
+
+<!--=============== OEC Tactical Turret ====================-->
+<OEC_Turret_TacticalTurret.label>OEC тактическая турель</OEC_Turret_TacticalTurret.label>
+<OEC_Turret_TacticalTurret.description>Автоматическая турель использующая OEC Снайперскую Винтовку. Перестаёт работать, когда разряжается аккумулятор.</OEC_Turret_TacticalTurret.description>
+<OEC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>аккумулятор</OEC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OEC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OEC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OEC_Gun_TacticalTurret.label>Величественное Правосудие - Турель</OEC_Gun_TacticalTurret.label>
+<OEC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Величественное Правосудие - Турель</OEC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OEC_Gun_TacticalTurret.description>Реконструированная OEC Снайперская Винтовка для турелей.</OEC_Gun_TacticalTurret.description>
+
+<!--=============== ODC Tactical Turret ====================-->
+<ODC_Turret_TacticalTurret.label>ODC тактическая турель</ODC_Turret_TacticalTurret.label>
+<ODC_Turret_TacticalTurret.description>Автоматическая турель использующая ODC СМГ. Перестаёт работать, когда разряжается аккумулятор.</ODC_Turret_TacticalTurret.description>
+<ODC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>аккумулятор</ODC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<ODC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</ODC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<ODC_Gun_TacticalTurret.label>Неудачник - Турель</ODC_Gun_TacticalTurret.label>
+<ODC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Неудачник - Турель</ODC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<ODC_Gun_TacticalTurret.description>Реконструированное ODC СМГ для турелей.</ODC_Gun_TacticalTurret.description>
+
+<!--=============== CAC Tactical Turret ====================-->
+<CAC_Turret_TacticalTurret.label>CAC тактическая турель</CAC_Turret_TacticalTurret.label>
+<CAC_Turret_TacticalTurret.description>Автоматическая турель использующая CAC Дробовик. Перестаёт работать, когда разряжается аккумулятор.</CAC_Turret_TacticalTurret.description>
+<CAC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>аккумулятор</CAC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<CAC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</CAC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<CAC_Gun_TacticalTurret.label>Скорбящий - Турель</CAC_Gun_TacticalTurret.label>
+<CAC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Скорбящий - Турель</CAC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<CAC_Gun_TacticalTurret.description>Реконструированный CAC Дробовик для турелей.</CAC_Gun_TacticalTurret.description>
+
+<!--=============== OMG Tactical Turret ====================-->
+<OMG_Turret_TacticalTurret.label>OMG тактическая турель</OMG_Turret_TacticalTurret.label>
+<OMG_Turret_TacticalTurret.description>Автоматическая турель использующая OMG Револьвер. Перестаёт работать, когда разряжается аккумулятор.</OMG_Turret_TacticalTurret.description>
+<OMG_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>аккумулятор</OMG_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OMG_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</OMG_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OMG_Gun_TacticalTurret.label>Даташот - Турель</OMG_Gun_TacticalTurret.label>
+<OMG_Gun_TacticalTurret.verbs.Verb_Shoot.label>Даташот - Турель</OMG_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OMG_Gun_TacticalTurret.description>Реконструированный OMG Револьвер для турелей.</OMG_Gun_TacticalTurret.description>
+
+<!--=============== EGO Tactical Turret ====================-->
+<EGO_Turret_TacticalTurret.label>турель ЭГО Автомансера</EGO_Turret_TacticalTurret.label>
+<EGO_Turret_TacticalTurret.description>Автоматическая турель использующая ЭГО Амальгама Пистолет. Перестаёт работать, когда разряжается аккумулятор.</EGO_Turret_TacticalTurret.description>
+<EGO_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>аккумулятор</EGO_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<EGO_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>У этой турели ограниченный заряд аккумулятора. Когда он иссякает, турель прекращает работать.</EGO_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<EGO_Gun_TacticalTurret.label>турель ЭГО Автомансера</EGO_Gun_TacticalTurret.label>
+<EGO_Gun_TacticalTurret.verbs.Verb_Shoot.label>турель ЭГО Автомансера</EGO_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<EGO_Gun_TacticalTurret.description>Реконструированный ЭГО Амальгама Пистолет для турелей.</EGO_Gun_TacticalTurret.description>
+
+</LanguageData>

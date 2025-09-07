@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMG - Rapier ====================-->
+<OMG_Rapier.label>Pulseblade</OMG_Rapier.label>
+<OMG_Rapier.description>Highly modified Rapier used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Rapier.description>
+
+<OMG_Rapier.tools.handle.label>handle</OMG_Rapier.tools.handle.label>
+<OMG_Rapier.tools.point.label>point</OMG_Rapier.tools.point.label>
+
+<!--=============== OMG - Axe ====================-->
+<OMG_Axe.label>Nanoblade</OMG_Axe.label>
+<OMG_Axe.description>Highly modified Axe used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Axe.description>
+
+<OMG_Axe.tools.handle.label>handle</OMG_Axe.tools.handle.label>
+<OMG_Axe.tools.edge.label>edge</OMG_Axe.tools.edge.label>
+
+<!--=============== OMG - BattleAxe ====================-->
+<OMG_BattleAxe.label>Datacrush</OMG_BattleAxe.label>
+<OMG_BattleAxe.description>Highly modified Battle Axe used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_BattleAxe.description>
+
+<OMG_BattleAxe.tools.handle.label>handle</OMG_BattleAxe.tools.handle.label>
+<OMG_BattleAxe.tools.edge.label>edge</OMG_BattleAxe.tools.edge.label>
+<OMG_BattleAxe.tools.head.label>head</OMG_BattleAxe.tools.head.label>
+
+<!--=============== OMG - Dual Sword ====================-->
+<OMG_DualSword.label>Twin Glitch</OMG_DualSword.label>
+<OMG_DualSword.description>Highly modified Dual Sword used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_DualSword.description>
+
+<OMG_DualSword.tools.shaft.label>shaft</OMG_DualSword.tools.shaft.label>
+<OMG_DualSword.tools.edge.label>edge</OMG_DualSword.tools.edge.label>
+
+<!--=============== OMG - Scepter ====================-->
+<OMG_Scepter.label>Pulsecaster</OMG_Scepter.label>
+<OMG_Scepter.description>Highly modified Scepter used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Scepter.description>
+
+<OMG_Scepter.tools.ornament.label>ornament</OMG_Scepter.tools.ornament.label>
+
+<!--=============== OMG - Pistol ====================-->
+<Bullet_OMG_P.label>Nanofire bullet</Bullet_OMG_P.label>
+
+<OMG_Pistol.label>Nanofire</OMG_Pistol.label>
+<OMG_Pistol.verbs.Verb_Shoot.label>Nanofire</OMG_Pistol.verbs.Verb_Shoot.label>
+<OMG_Pistol.description>Highly modified Pistol used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Pistol.description>
+
+<OMG_Pistol.tools.grip.label>grip</OMG_Pistol.tools.grip.label>
+<OMG_Pistol.tools.barrel.label>barrel</OMG_Pistol.tools.barrel.label>
+
+<OMG_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>ignite charge</OMG_Pistol.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_Pistol.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Pistol.verbs.Verb_Shoot.label>Nanofire</OMG_Pistol.verbs.Verb_Shoot.label>
+
+<OMG_Pistol.comps.CompUniqueWeapon.namerLabels.0>Nanofire</OMG_Pistol.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Pistol.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_Pistol.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Pistol.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_Pistol.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Revolver ====================-->
+<Bullet_OMG_R.label>Datashot bullet</Bullet_OMG_R.label>
+
+<OMG_Revolver.label>Datashot</OMG_Revolver.label>
+<OMG_Revolver.verbs.Verb_Shoot.label>Datashot</OMG_Revolver.verbs.Verb_Shoot.label>
+<OMG_Revolver.description>Highly modified Revolver used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Revolver.description>
+
+<OMG_Revolver.tools.grip.label>grip</OMG_Revolver.tools.grip.label>
+<OMG_Revolver.tools.barrel.label>barrel</OMG_Revolver.tools.barrel.label>
+
+<OMG_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>ignite charge</OMG_Revolver.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_Revolver.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Revolver.verbs.Verb_Shoot.label>Datashot</OMG_Revolver.verbs.Verb_Shoot.label>
+
+<OMG_Revolver.comps.CompUniqueWeapon.namerLabels.0>Datashot</OMG_Revolver.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_Revolver.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_Revolver.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Shotgun ====================-->
+<Bullet_OMG_S.label>Bytecrusher blast</Bullet_OMG_S.label>
+
+<OMG_Shotgun.label>Bytecrusher</OMG_Shotgun.label>
+<OMG_Shotgun.verbs.Verb_Shoot.label>Bytecrusher</OMG_Shotgun.verbs.Verb_Shoot.label>
+<OMG_Shotgun.description>Highly modified Shotgun used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Shotgun.description>
+
+<OMG_Shotgun.tools.stock.label>stock</OMG_Shotgun.tools.stock.label>
+<OMG_Shotgun.tools.barrel.label>barrel</OMG_Shotgun.tools.barrel.label>
+
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>burner charge</OMG_Shotgun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_Shotgun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Shotgun.verbs.Verb_Shoot.label>Bytecrusher</OMG_Shotgun.verbs.Verb_Shoot.label>
+
+<OMG_Shotgun.comps.CompUniqueWeapon.namerLabels.0>Bytecrusher</OMG_Shotgun.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_Shotgun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - SniperRifle ====================-->
+<Bullet_OMG_SR.label>Etherstrike bullet</Bullet_OMG_SR.label>
+
+<OMG_SniperRifle.label>Etherstrike</OMG_SniperRifle.label>
+<OMG_SniperRifle.verbs.Verb_Shoot.label>Etherstrike</OMG_SniperRifle.verbs.Verb_Shoot.label>
+<OMG_SniperRifle.description>Highly modified Sniper Rifle used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_SniperRifle.description>
+
+<OMG_SniperRifle.tools.stock.label>stock</OMG_SniperRifle.tools.stock.label>
+<OMG_SniperRifle.tools.barrel.label>barrel</OMG_SniperRifle.tools.barrel.label>
+
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>burner charge</OMG_SniperRifle.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_SniperRifle.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_SniperRifle.verbs.Verb_Shoot.label>Etherstrike</OMG_SniperRifle.verbs.Verb_Shoot.label>
+
+<OMG_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>Etherstrike</OMG_SniperRifle.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_SniperRifle.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Minigun ====================-->
+<Bullet_OMG_MG.label>Void Shredder bullet</Bullet_OMG_MG.label>
+
+<OMG_Minigun.label>Void Shredder</OMG_Minigun.label>
+<OMG_Minigun.verbs.Verb_Shoot.label>Void Shredder</OMG_Minigun.verbs.Verb_Shoot.label>
+<OMG_Minigun.description>Highly modified Minigun used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Minigun.description>
+
+<OMG_Minigun.tools.barrels.label>barrels</OMG_Minigun.tools.barrels.label>
+
+<OMG_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>inferno charge</OMG_Minigun.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_Minigun.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Minigun.verbs.Verb_Shoot.label>Void Shredder</OMG_Minigun.verbs.Verb_Shoot.label>
+
+<OMG_Minigun.comps.CompUniqueWeapon.namerLabels.0>Void Shredder</OMG_Minigun.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Minigun.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_Minigun.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Minigun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_Minigun.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+<!--=============== OMG - Lancecaster ====================-->
+<Bullet_OMG_L_Beam.label>Optic//Destructo beam</Bullet_OMG_L_Beam.label>
+
+<OMG_Lancecaster.label>Optic//Destructo</OMG_Lancecaster.label>
+<OMG_Lancecaster.verbs.Verb_Shoot.label>Optic//Destructo</OMG_Lancecaster.verbs.Verb_Shoot.label>
+<OMG_Lancecaster.description>Highly modified Lancecaster used by Mercenaries. Specially modified weapon charged with Necrobane and EMP damages.\n\nThis modification deprives item's quality levels.</OMG_Lancecaster.description>
+
+<OMG_Lancecaster.tools.stock.label>stock</OMG_Lancecaster.tools.stock.label>
+<OMG_Lancecaster.tools.barrel.label>barrel</OMG_Lancecaster.tools.barrel.label>
+
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable.chargeNoun>burner charge</OMG_Lancecaster.comps.CompEquippableAbilityReloadable.chargeNoun>
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</OMG_Lancecaster.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<OMG_Lancecaster.verbs.Verb_Shoot.label>Optic//Destructo</OMG_Lancecaster.verbs.Verb_Shoot.label>
+
+<OMG_Lancecaster.comps.CompUniqueWeapon.namerLabels.0>Optic//Destructo</OMG_Lancecaster.comps.CompUniqueWeapon.namerLabels.0>
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.chargeNoun>charge</OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.chargeNoun>
+<OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.cooldownGerund>on cooldown</OMG_Lancecaster.comps.CompEquippableAbilityReloadable-1.cooldownGerund>
+
+</LanguageData>

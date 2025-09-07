@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== ODC - Knife ====================-->
+<ODC_Knife.label>Scar</ODC_Knife.label>
+<ODC_Knife.description>Common Knife used by Obsidia Drifters.</ODC_Knife.description>
+
+<ODC_Knife.tools.handle.label>handle</ODC_Knife.tools.handle.label>
+<ODC_Knife.tools.blade.label>blade</ODC_Knife.tools.blade.label>
+<ODC_Knife.tools.point.label>point</ODC_Knife.tools.point.label>
+
+<ODC_Knife_P.label>Persona Scar</ODC_Knife_P.label>
+<ODC_Knife_P.description>Persona common Knife used by Obsidia Drifters.</ODC_Knife_P.description>
+
+<ODC_Knife_P.tools.handle.label>handle</ODC_Knife_P.tools.handle.label>
+<ODC_Knife_P.tools.blade.label>blade</ODC_Knife_P.tools.blade.label>
+<ODC_Knife_P.tools.point.label>point</ODC_Knife_P.tools.point.label>
+
+<!--=============== ODC - Sword ====================-->
+<ODC_Sword.label>Mercy - Emergent</ODC_Sword.label>
+<ODC_Sword.description>Moded Sword used by Obsidia Drifters.</ODC_Sword.description>
+
+<ODC_Sword.tools.handle.label>handle</ODC_Sword.tools.handle.label>
+<ODC_Sword.tools.point.label>point</ODC_Sword.tools.point.label>
+<ODC_Sword.tools.edge.label>edge</ODC_Sword.tools.edge.label>
+
+<ODC_Sword_P.label>Persona Mercy - Emergent</ODC_Sword_P.label>
+<ODC_Sword_P.description>Persona moded Sword used by Obsidia Drifters.</ODC_Sword_P.description>
+
+<ODC_Sword_P.tools.handle.label>handle</ODC_Sword_P.tools.handle.label>
+<ODC_Sword_P.tools.point.label>point</ODC_Sword_P.tools.point.label>
+<ODC_Sword_P.tools.edge.label>edge</ODC_Sword_P.tools.edge.label>
+
+<!--=============== ODC - BigSword ====================-->
+<ODC_BigSword.label>Bequest - Apex</ODC_BigSword.label>
+<ODC_BigSword.description>Specialised Big Sword used by Obsidia Drifters.</ODC_BigSword.description>
+
+<ODC_BigSword.tools.handle.label>handle</ODC_BigSword.tools.handle.label>
+<ODC_BigSword.tools.point.label>point</ODC_BigSword.tools.point.label>
+<ODC_BigSword.tools.edge.label>edge</ODC_BigSword.tools.edge.label>
+
+<ODC_BigSword_P.label>Persona Bequest - Apex</ODC_BigSword_P.label>
+<ODC_BigSword_P.description>Persona specialised Big Sword used by Obsidia Drifters.</ODC_BigSword_P.description>
+
+<ODC_BigSword_P.tools.handle.label>handle</ODC_BigSword_P.tools.handle.label>
+<ODC_BigSword_P.tools.point.label>point</ODC_BigSword_P.tools.point.label>
+<ODC_BigSword_P.tools.edge.label>edge</ODC_BigSword_P.tools.edge.label>
+
+<!--=============== ODC - DualSword ====================-->
+<ODC_DualSword.label>Guillotine - Apex</ODC_DualSword.label>
+<ODC_DualSword.description>Specialised Dual Sword used by Obsidia Drifters.</ODC_DualSword.description>
+
+<ODC_DualSword.tools.shaft.label>shaft</ODC_DualSword.tools.shaft.label>
+<ODC_DualSword.tools.edge.label>edge</ODC_DualSword.tools.edge.label>
+
+<ODC_DualSword_P.label>Persona Guillotine - Apex</ODC_DualSword_P.label>
+<ODC_DualSword_P.description>Persona specialised Dual Sword used by Obsidia Drifters.</ODC_DualSword_P.description>
+
+<ODC_DualSword_P.tools.shaft.label>shaft</ODC_DualSword_P.tools.shaft.label>
+<ODC_DualSword_P.tools.edge.label>edge</ODC_DualSword_P.tools.edge.label>
+
+<!--=============== ODC - Rapier ====================-->
+<ODC_Rapier.label>Imperfect - Emergent</ODC_Rapier.label>
+<ODC_Rapier.description>Moded Rapier used by Obsidia Drifters.</ODC_Rapier.description>
+
+<ODC_Rapier.tools.handle.label>handle</ODC_Rapier.tools.handle.label>
+<ODC_Rapier.tools.point.label>point</ODC_Rapier.tools.point.label>
+
+<ODC_Rapier_P.label>Persona Imperfect - Emergent</ODC_Rapier_P.label>
+<ODC_Rapier_P.description>Persona moded Rapier used by Obsidia Drifters.</ODC_Rapier_P.description>
+
+<ODC_Rapier_P.tools.handle.label>handle</ODC_Rapier_P.tools.handle.label>
+<ODC_Rapier_P.tools.point.label>point</ODC_Rapier_P.tools.point.label>
+
+<!--=============== ODC - RapierGuard ====================-->
+<ODC_RapierGuard.label>Defiant - Apex</ODC_RapierGuard.label>
+<ODC_RapierGuard.description>Specialised Rapier used by Obsidia Drifters.</ODC_RapierGuard.description>
+
+<ODC_RapierGuard.tools.handle.label>handle</ODC_RapierGuard.tools.handle.label>
+<ODC_RapierGuard.tools.point.label>point</ODC_RapierGuard.tools.point.label>
+
+<ODC_RapierGuard_P.label>Persona Defiant - Apex</ODC_RapierGuard_P.label>
+<ODC_RapierGuard_P.description>Persona specialised Rapier used by Obsidia Drifters.</ODC_RapierGuard_P.description>
+
+<ODC_RapierGuard_P.tools.handle.label>handle</ODC_RapierGuard_P.tools.handle.label>
+<ODC_RapierGuard_P.tools.point.label>point</ODC_RapierGuard_P.tools.point.label>
+
+<!--=============== ODC - Elemental Rapier ====================-->
+<!--=============== Acid ====================-->
+<ODC_Rapier_Acid.label>Enigma - Apex(Acid)</ODC_Rapier_Acid.label>
+<ODC_Rapier_Acid.description>Specialised Rapier used by Obsidia Drifters. Charged with Acid damage.</ODC_Rapier_Acid.description>
+
+<ODC_Rapier_Acid.tools.handle.label>handle</ODC_Rapier_Acid.tools.handle.label>
+<ODC_Rapier_Acid.tools.point.label>point</ODC_Rapier_Acid.tools.point.label>
+
+<ODC_Rapier_P_Acid.label>Persona Enigma - Apex(Acid)</ODC_Rapier_P_Acid.label>
+<ODC_Rapier_P_Acid.description>Persona specialised Rapier used by Obsidia Drifters. Charged with Acid damage.</ODC_Rapier_P_Acid.description>
+
+<ODC_Rapier_P_Acid.tools.handle.label>handle</ODC_Rapier_P_Acid.tools.handle.label>
+<ODC_Rapier_P_Acid.tools.point.label>point</ODC_Rapier_P_Acid.tools.point.label>
+<!--=============== Cryo ====================-->
+<ODC_Rapier_Cryo.label>Enigma - Apex(Cryo)</ODC_Rapier_Cryo.label>
+<ODC_Rapier_Cryo.description>Specialised Rapier used by Obsidia Drifters. Charged with Cryo damage.</ODC_Rapier_Cryo.description>
+
+<ODC_Rapier_Cryo.tools.handle.label>handle</ODC_Rapier_Cryo.tools.handle.label>
+<ODC_Rapier_Cryo.tools.point.label>point</ODC_Rapier_Cryo.tools.point.label>
+
+<ODC_Rapier_P_Cryo.label>Persona Enigma - Apex(Cryo)</ODC_Rapier_P_Cryo.label>
+<ODC_Rapier_P_Cryo.description>Persona specialised Rapier used by Obsidia Drifters. Charged with Cryo damage.</ODC_Rapier_P_Cryo.description>
+
+<ODC_Rapier_P_Cryo.tools.handle.label>handle</ODC_Rapier_P_Cryo.tools.handle.label>
+<ODC_Rapier_P_Cryo.tools.point.label>point</ODC_Rapier_P_Cryo.tools.point.label>
+<!--=============== Fire ====================-->
+<ODC_Rapier_Fire.label>Enigma - Apex(Fire)</ODC_Rapier_Fire.label>
+<ODC_Rapier_Fire.description>Specialised Rapier used by Obsidia Drifters. Charged with Fire damage.</ODC_Rapier_Fire.description>
+
+<ODC_Rapier_Fire.tools.handle.label>handle</ODC_Rapier_Fire.tools.handle.label>
+<ODC_Rapier_Fire.tools.point.label>point</ODC_Rapier_Fire.tools.point.label>
+
+<ODC_Rapier_P_Fire.label>Persona Enigma - Apex(Fire)</ODC_Rapier_P_Fire.label>
+<ODC_Rapier_P_Fire.description>Persona specialised Rapier used by Obsidia Drifters. Charged with Fire damage.</ODC_Rapier_P_Fire.description>
+
+<ODC_Rapier_P_Fire.tools.handle.label>handle</ODC_Rapier_P_Fire.tools.handle.label>
+<ODC_Rapier_P_Fire.tools.point.label>point</ODC_Rapier_P_Fire.tools.point.label>
+<!--=============== EMP ====================-->
+<ODC_Rapier_EMP.label>Enigma - Apex(EMP)</ODC_Rapier_EMP.label>
+<ODC_Rapier_EMP.description>Specialised Rapier used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_Rapier_EMP.description>
+
+<ODC_Rapier_EMP.tools.handle.label>handle</ODC_Rapier_EMP.tools.handle.label>
+<ODC_Rapier_EMP.tools.point.label>point</ODC_Rapier_EMP.tools.point.label>
+
+<ODC_Rapier_P_EMP.label>Persona Enigma - Apex(EMP)</ODC_Rapier_P_EMP.label>
+<ODC_Rapier_P_EMP.description>Persona specialised Rapier used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_Rapier_P_EMP.description>
+
+<ODC_Rapier_P_EMP.tools.handle.label>handle</ODC_Rapier_P_EMP.tools.handle.label>
+<ODC_Rapier_P_EMP.tools.point.label>point</ODC_Rapier_P_EMP.tools.point.label>
+
+<!--=============== ODC - Pistol ====================-->
+<Bullet_ODC_P.label>Purpose bullet</Bullet_ODC_P.label>
+
+<ODC_Pistol.label>Purpose</ODC_Pistol.label>
+<ODC_Pistol.verbs.Verb_Shoot.label>Purpose</ODC_Pistol.verbs.Verb_Shoot.label>
+<ODC_Pistol.description>Common Auto Pistol used bby Obsidia Drifters.</ODC_Pistol.description>
+
+<ODC_Pistol.tools.grip.label>grip</ODC_Pistol.tools.grip.label>
+<ODC_Pistol.tools.barrel.label>barrel</ODC_Pistol.tools.barrel.label>
+
+<ODC_Pistol_P.label>Paragon Purpose</ODC_Pistol_P.label>
+<ODC_Pistol_P.verbs.Verb_Shoot.label>Paragon Purpose</ODC_Pistol_P.verbs.Verb_Shoot.label>
+<ODC_Pistol_P.description>Paragon common Auto Pistol used bby Obsidia Drifters.</ODC_Pistol_P.description>
+
+<ODC_Pistol_P.tools.grip.label>grip</ODC_Pistol_P.tools.grip.label>
+<ODC_Pistol_P.tools.barrel.label>barrel</ODC_Pistol_P.tools.barrel.label>
+
+<ODC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Purpose</ODC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Revolver ====================-->
+<Bullet_ODC_R.label>Trespasser bullet</Bullet_ODC_R.label>
+
+<ODC_Revolver.label>Trespasser - Emergent</ODC_Revolver.label>
+<ODC_Revolver.verbs.Verb_Shoot.label>Trespasser - Emergent</ODC_Revolver.verbs.Verb_Shoot.label>
+<ODC_Revolver.description>Moded Revolver used by Obsidia Drifters.</ODC_Revolver.description>
+
+<ODC_Revolver.tools.grip.label>grip</ODC_Revolver.tools.grip.label>
+<ODC_Revolver.tools.barrel.label>barrel</ODC_Revolver.tools.barrel.label>
+
+<ODC_Revolver_P.label>Paragon Trespasser - Emergent</ODC_Revolver_P.label>
+<ODC_Revolver_P.verbs.Verb_Shoot.label>Paragon Trespasser - Emergent</ODC_Revolver_P.verbs.Verb_Shoot.label>
+<ODC_Revolver_P.description>Paragon moded Revolver used by Obsidia Drifters.</ODC_Revolver_P.description>
+
+<ODC_Revolver_P.tools.grip.label>grip</ODC_Revolver_P.tools.grip.label>
+<ODC_Revolver_P.tools.barrel.label>barrel</ODC_Revolver_P.tools.barrel.label>
+
+<ODC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Trespasser - Emergent</ODC_Revolver_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Revolver_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Revolver_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Elemental Revolver ====================-->
+<!--=============== Acid ====================-->
+<Bullet_ODC_R_Acid.label>Trespasser Acid bullet</Bullet_ODC_R_Acid.label>
+
+<ODC_Revolver_Acid.label>Trespasser - Apex(Acid)</ODC_Revolver_Acid.label>
+<ODC_Revolver_Acid.verbs.Verb_Shoot.label>Trespasser - Apex(Acid)</ODC_Revolver_Acid.verbs.Verb_Shoot.label>
+<ODC_Revolver_Acid.description>Specialised Revolver used by Obsidia Drifters. Charged with Acid damage.</ODC_Revolver_Acid.description>
+
+<ODC_Revolver_Acid.tools.grip.label>grip</ODC_Revolver_Acid.tools.grip.label>
+<ODC_Revolver_Acid.tools.barrel.label>barrel</ODC_Revolver_Acid.tools.barrel.label>
+
+<ODC_Revolver_P_Acid.label>Paragon Trespasser - Apex(Acid)</ODC_Revolver_P_Acid.label>
+<ODC_Revolver_P_Acid.verbs.Verb_Shoot.label>Paragon Trespasser - Apex(Acid)</ODC_Revolver_P_Acid.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_Acid.description>Persona specialised Revolver used by Obsidia Drifters. Charged with Acid damage.</ODC_Revolver_P_Acid.description>
+
+<ODC_Revolver_P_Acid.tools.grip.label>grip</ODC_Revolver_P_Acid.tools.grip.label>
+<ODC_Revolver_P_Acid.tools.barrel.label>barrel</ODC_Revolver_P_Acid.tools.barrel.label>
+
+<ODC_Revolver_P_Acid.comps.CompUniqueWeapon.namerLabels.0>Paragon Trespasser - Apex(Acid)</ODC_Revolver_P_Acid.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Revolver_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Cryo ====================-->
+<Bullet_ODC_R_Cryo.label>Trespasser Cryo bullet</Bullet_ODC_R_Cryo.label>
+
+<ODC_Revolver_Cryo.label>Trespasser - Apex(Cryo)</ODC_Revolver_Cryo.label>
+<ODC_Revolver_Cryo.verbs.Verb_Shoot.label>Trespasser - Apex(Cryo)</ODC_Revolver_Cryo.verbs.Verb_Shoot.label>
+<ODC_Revolver_Cryo.description>Specialised Revolver used by Obsidia Drifters. Charged with Cryo damage.</ODC_Revolver_Cryo.description>
+
+<ODC_Revolver_Cryo.tools.grip.label>grip</ODC_Revolver_Cryo.tools.grip.label>
+<ODC_Revolver_Cryo.tools.barrel.label>barrel</ODC_Revolver_Cryo.tools.barrel.label>
+
+<ODC_Revolver_P_Cryo.label>Paragon Trespasser - Apex(Cryo)</ODC_Revolver_P_Cryo.label>
+<ODC_Revolver_P_Cryo.verbs.Verb_Shoot.label>Paragon Trespasser - Apex(Cryo)</ODC_Revolver_P_Cryo.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_Cryo.description>Paragon specialised Revolver used by Obsidia Drifters. Charged with Cryo damage.</ODC_Revolver_P_Cryo.description>
+
+<ODC_Revolver_P_Cryo.tools.grip.label>grip</ODC_Revolver_P_Cryo.tools.grip.label>
+<ODC_Revolver_P_Cryo.tools.barrel.label>barrel</ODC_Revolver_P_Cryo.tools.barrel.label>
+
+<ODC_Revolver_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>Paragon Trespasser - Apex(Cryo)</ODC_Revolver_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Revolver_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Fire ====================-->
+<Bullet_ODC_R_Fire.label>Trespasser Fire bullet</Bullet_ODC_R_Fire.label>
+
+<ODC_Revolver_Fire.label>Trespasser - Apex(Fire)</ODC_Revolver_Fire.label>
+<ODC_Revolver_Fire.verbs.Verb_Shoot.label>Trespasser - Apex(Fire)</ODC_Revolver_Fire.verbs.Verb_Shoot.label>
+<ODC_Revolver_Fire.description>Specialised Revolver used by Obsidia Drifters. Charged with Fire damage.</ODC_Revolver_Fire.description>
+
+<ODC_Revolver_Fire.tools.grip.label>grip</ODC_Revolver_Fire.tools.grip.label>
+<ODC_Revolver_Fire.tools.barrel.label>barrel</ODC_Revolver_Fire.tools.barrel.label>
+
+<ODC_Revolver_P_Fire.label>Paragon Trespasser - Apex(Fire)</ODC_Revolver_P_Fire.label>
+<ODC_Revolver_P_Fire.verbs.Verb_Shoot.label>Paragon Trespasser - Apex(Fire)</ODC_Revolver_P_Fire.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_Fire.description>Paragon specialised Revolver used by Obsidia Drifters. Charged with Fire damage.</ODC_Revolver_P_Fire.description>
+
+<ODC_Revolver_P_Fire.tools.grip.label>grip</ODC_Revolver_P_Fire.tools.grip.label>
+<ODC_Revolver_P_Fire.tools.barrel.label>barrel</ODC_Revolver_P_Fire.tools.barrel.label>
+
+<ODC_Revolver_P_Fire.comps.CompUniqueWeapon.namerLabels.0>Paragon Trespasser - Apex(Fire)</ODC_Revolver_P_Fire.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Revolver_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== EMP ====================-->
+<Bullet_ODC_R_EMP.label>Trespasser EMP bullet</Bullet_ODC_R_EMP.label>
+
+<ODC_Revolver_EMP.label>Trespasser - Apex(EMP)</ODC_Revolver_EMP.label>
+<ODC_Revolver_EMP.verbs.Verb_Shoot.label>Trespasser - Apex(EMP)</ODC_Revolver_EMP.verbs.Verb_Shoot.label>
+<ODC_Revolver_EMP.description>Specialised Revolver used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_Revolver_EMP.description>
+
+<ODC_Revolver_EMP.tools.grip.label>grip</ODC_Revolver_EMP.tools.grip.label>
+<ODC_Revolver_EMP.tools.barrel.label>barrel</ODC_Revolver_EMP.tools.barrel.label>
+
+<ODC_Revolver_P_EMP.label>Paragon Trespasser - Apex(EMP)</ODC_Revolver_P_EMP.label>
+<ODC_Revolver_P_EMP.verbs.Verb_Shoot.label>Paragon Trespasser - Apex(EMP)</ODC_Revolver_P_EMP.verbs.Verb_Shoot.label>
+<ODC_Revolver_P_EMP.description>Paragon specialised Revolver used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_Revolver_P_EMP.description>
+
+<ODC_Revolver_P_EMP.tools.grip.label>grip</ODC_Revolver_P_EMP.tools.grip.label>
+<ODC_Revolver_P_EMP.tools.barrel.label>barrel</ODC_Revolver_P_EMP.tools.barrel.label>
+
+<ODC_Revolver_P_EMP.comps.CompUniqueWeapon.namerLabels.0>Paragon Trespasser - Apex(EMP)</ODC_Revolver_P_EMP.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Revolver_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - SMG ====================-->
+<Bullet_ODC_SMG.label>Misfit bullet</Bullet_ODC_SMG.label>
+
+<ODC_SMG_A.label>Misfit - Emergent</ODC_SMG_A.label>
+<ODC_SMG_A.verbs.Verb_Shoot.label>Misfit - Emergent</ODC_SMG_A.verbs.Verb_Shoot.label>
+<ODC_SMG_A.description>Moded SMG used by Obsidia Drifters.</ODC_SMG_A.description>
+
+<ODC_SMG_A.tools.grip.label>grip</ODC_SMG_A.tools.grip.label>
+<ODC_SMG_A.tools.barrel.label>barrel</ODC_SMG_A.tools.barrel.label>
+
+<ODC_SMG_A_P.label>Paragon Misfit - Emergent</ODC_SMG_A_P.label>
+<ODC_SMG_A_P.verbs.Verb_Shoot.label>Paragon Misfit - Emergent</ODC_SMG_A_P.verbs.Verb_Shoot.label>
+<ODC_SMG_A_P.description>Paragon moded SMG used by Obsidia Drifters.</ODC_SMG_A_P.description>
+
+<ODC_SMG_A_P.tools.grip.label>grip</ODC_SMG_A_P.tools.grip.label>
+<ODC_SMG_A_P.tools.barrel.label>barrel</ODC_SMG_A_P.tools.barrel.label>
+
+<ODC_SMG_A_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Misfit - Emergent</ODC_SMG_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_SMG_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<ODC_SMG_B.label>Misfit - Apex</ODC_SMG_B.label>
+<ODC_SMG_B.verbs.Verb_Shoot.label>Misfit - Apex</ODC_SMG_B.verbs.Verb_Shoot.label>
+<ODC_SMG_B.description>Specialised SMG used by Obsidia Drifters.</ODC_SMG_B.description>
+
+<ODC_SMG_B.tools.stock.label>stock</ODC_SMG_B.tools.stock.label>
+<ODC_SMG_B.tools.barrel.label>barrel</ODC_SMG_B.tools.barrel.label>
+
+<ODC_SMG_B_P.label>Paragon Misfit - Apex</ODC_SMG_B_P.label>
+<ODC_SMG_B_P.verbs.Verb_Shoot.label>Paragon Misfit - Apex</ODC_SMG_B_P.verbs.Verb_Shoot.label>
+<ODC_SMG_B_P.description>Paragon specialised SMG used by Obsidia Drifters.</ODC_SMG_B_P.description>
+
+<ODC_SMG_B_P.tools.stock.label>stock</ODC_SMG_B_P.tools.stock.label>
+<ODC_SMG_B_P.tools.barrel.label>barrel</ODC_SMG_B_P.tools.barrel.label>
+
+<ODC_SMG_B_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Misfit - Apex</ODC_SMG_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_SMG_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Rifle ====================-->
+<Bullet_ODC_RF.label>Inheritance bullet</Bullet_ODC_RF.label>
+
+<ODC_Rifle.label>Inheritance</ODC_Rifle.label>
+<ODC_Rifle.verbs.Verb_Shoot.label>Inheritance</ODC_Rifle.verbs.Verb_Shoot.label>
+<ODC_Rifle.description>Common Rifle used bby Obsidia Drifters.</ODC_Rifle.description>
+
+<ODC_Rifle.tools.stock.label>stock</ODC_Rifle.tools.stock.label>
+<ODC_Rifle.tools.barrel.label>barrel</ODC_Rifle.tools.barrel.label>
+
+<ODC_Rifle_P.label>Paragon Inheritance</ODC_Rifle_P.label>
+<ODC_Rifle_P.verbs.Verb_Shoot.label>Paragon Inheritance</ODC_Rifle_P.verbs.Verb_Shoot.label>
+<ODC_Rifle_P.description>Paragon common Rifle used bby Obsidia Drifters.</ODC_Rifle_P.description>
+
+<ODC_Rifle_P.tools.stock.label>stock</ODC_Rifle_P.tools.stock.label>
+<ODC_Rifle_P.tools.barrel.label>barrel</ODC_Rifle_P.tools.barrel.label>
+
+<ODC_Rifle_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Inheritance</ODC_Rifle_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Rifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Rifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Rifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Rifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Shotgun ====================-->
+<Bullet_ODC_S.label>Conspirator blast</Bullet_ODC_S.label>
+
+<ODC_Shotgun.label>Conspirator - Emergent</ODC_Shotgun.label>
+<ODC_Shotgun.verbs.Verb_Shoot.label>Conspirator - Emergent</ODC_Shotgun.verbs.Verb_Shoot.label>
+<ODC_Shotgun.description>Moded Shotgun used by Obsidia Drifters.</ODC_Shotgun.description>
+
+<ODC_Shotgun.tools.stock.label>stock</ODC_Shotgun.tools.stock.label>
+<ODC_Shotgun.tools.barrel.label>barrel</ODC_Shotgun.tools.barrel.label>
+
+<ODC_Shotgun_P.label>Paragon Conspirator - Emergent</ODC_Shotgun_P.label>
+<ODC_Shotgun_P.verbs.Verb_Shoot.label>Paragon Conspirator - Emergent</ODC_Shotgun_P.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P.description>Paragon moded Shotgun used by Obsidia Drifters.</ODC_Shotgun_P.description>
+
+<ODC_Shotgun_P.tools.stock.label>stock</ODC_Shotgun_P.tools.stock.label>
+<ODC_Shotgun_P.tools.barrel.label>barrel</ODC_Shotgun_P.tools.barrel.label>
+
+<ODC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Conspirator - Emergent</ODC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== ODC - Elemental Shotgun ====================-->
+<!--=============== Acid ====================-->
+<Bullet_ODC_S_Acid.label>Conspirator Acid blast</Bullet_ODC_S_Acid.label>
+
+<ODC_Shotgun_Acid.label>Conspirator - Apex(Acid)</ODC_Shotgun_Acid.label>
+<ODC_Shotgun_Acid.verbs.Verb_Shoot.label>Conspirator - Apex(Acid)</ODC_Shotgun_Acid.verbs.Verb_Shoot.label>
+<ODC_Shotgun_Acid.description>Specialised Shotgun used by Obsidia Drifters. Charged with Acid damage.</ODC_Shotgun_Acid.description>
+
+<ODC_Shotgun_Acid.tools.stock.label>stock</ODC_Shotgun_Acid.tools.stock.label>
+<ODC_Shotgun_Acid.tools.barrel.label>barrel</ODC_Shotgun_Acid.tools.barrel.label>
+
+<ODC_Shotgun_P_Acid.label>Paragon Conspirator - Apex(Acid)</ODC_Shotgun_P_Acid.label>
+<ODC_Shotgun_P_Acid.verbs.Verb_Shoot.label>Paragon Conspirator - Apex(Acid)</ODC_Shotgun_P_Acid.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_Acid.description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with Acid damage.</ODC_Shotgun_P_Acid.description>
+
+<ODC_Shotgun_P_Acid.tools.stock.label>stock</ODC_Shotgun_P_Acid.tools.stock.label>
+<ODC_Shotgun_P_Acid.tools.barrel.label>barrel</ODC_Shotgun_P_Acid.tools.barrel.label>
+
+<ODC_Shotgun_P_Acid.comps.CompUniqueWeapon.namerLabels.0>Paragon Conspirator - Apex(Acid)</ODC_Shotgun_P_Acid.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Shotgun_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Cryo ====================-->
+<Bullet_ODC_S_Cryo.label>Conspirator Cryo blast</Bullet_ODC_S_Cryo.label>
+
+<ODC_Shotgun_Cryo.label>Conspirator - Apex(Cryo)</ODC_Shotgun_Cryo.label>
+<ODC_Shotgun_Cryo.verbs.Verb_Shoot.label>Conspirator - Apex(Cryo)</ODC_Shotgun_Cryo.verbs.Verb_Shoot.label>
+<ODC_Shotgun_Cryo.description>Specialised Shotgun used by Obsidia Drifters. Charged with Cryo damage.</ODC_Shotgun_Cryo.description>
+
+<ODC_Shotgun_Cryo.tools.stock.label>stock</ODC_Shotgun_Cryo.tools.stock.label>
+<ODC_Shotgun_Cryo.tools.barrel.label>barrel</ODC_Shotgun_Cryo.tools.barrel.label>
+
+<ODC_Shotgun_P_Cryo.label>Paragon Conspirator - Apex(Cryo)</ODC_Shotgun_P_Cryo.label>
+<ODC_Shotgun_P_Cryo.verbs.Verb_Shoot.label>Paragon Conspirator - Apex(Cryo)</ODC_Shotgun_P_Cryo.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_Cryo.description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with Cryo damage.</ODC_Shotgun_P_Cryo.description>
+
+<ODC_Shotgun_P_Cryo.tools.stock.label>stock</ODC_Shotgun_P_Cryo.tools.stock.label>
+<ODC_Shotgun_P_Cryo.tools.barrel.label>barrel</ODC_Shotgun_P_Cryo.tools.barrel.label>
+
+<ODC_Shotgun_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>Paragon Conspirator - Apex(Cryo)</ODC_Shotgun_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Shotgun_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Fire ====================-->
+<Bullet_ODC_S_Fire.label>Conspirator Fire blast</Bullet_ODC_S_Fire.label>
+
+<ODC_Shotgun_Fire.label>Conspirator - Apex(Fire)</ODC_Shotgun_Fire.label>
+<ODC_Shotgun_Fire.verbs.Verb_Shoot.label>Conspirator - Apex(Fire)</ODC_Shotgun_Fire.verbs.Verb_Shoot.label>
+<ODC_Shotgun_Fire.description>Specialised Shotgun used by Obsidia Drifters. Charged with Fire damage.</ODC_Shotgun_Fire.description>
+
+<ODC_Shotgun_Fire.tools.stock.label>stock</ODC_Shotgun_Fire.tools.stock.label>
+<ODC_Shotgun_Fire.tools.barrel.label>barrel</ODC_Shotgun_Fire.tools.barrel.label>
+
+<ODC_Shotgun_P_Fire.label>Paragon Conspirator - Apex(Fire)</ODC_Shotgun_P_Fire.label>
+<ODC_Shotgun_P_Fire.verbs.Verb_Shoot.label>Paragon Conspirator - Apex(Fire)</ODC_Shotgun_P_Fire.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_Fire.description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with Fire damage.</ODC_Shotgun_P_Fire.description>
+
+<ODC_Shotgun_P_Fire.tools.stock.label>stock</ODC_Shotgun_P_Fire.tools.stock.label>
+<ODC_Shotgun_P_Fire.tools.barrel.label>barrel</ODC_Shotgun_P_Fire.tools.barrel.label>
+
+<ODC_Shotgun_P_Fire.comps.CompUniqueWeapon.namerLabels.0>Paragon Conspirator - Apex(Fire)</ODC_Shotgun_P_Fire.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Shotgun_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== EMP ====================-->
+<Bullet_ODC_S_EMP.label>Conspirator EMP blast</Bullet_ODC_S_EMP.label>
+
+<ODC_Shotgun_EMP.label>Conspirator - Apex(EMP)</ODC_Shotgun_EMP.label>
+<ODC_Shotgun_EMP.verbs.Verb_Shoot.label>Conspirator - Apex(EMP)</ODC_Shotgun_EMP.verbs.Verb_Shoot.label>
+<ODC_Shotgun_EMP.description>Specialised Shotgun used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_Shotgun_EMP.description>
+
+<ODC_Shotgun_EMP.tools.stock.label>stock</ODC_Shotgun_EMP.tools.stock.label>
+<ODC_Shotgun_EMP.tools.barrel.label>barrel</ODC_Shotgun_EMP.tools.barrel.label>
+
+<ODC_Shotgun_P_EMP.label>Paragon Conspirator - Apex(EMP)</ODC_Shotgun_P_EMP.label>
+<ODC_Shotgun_P_EMP.verbs.Verb_Shoot.label>Paragon Conspirator - Apex(EMP)</ODC_Shotgun_P_EMP.verbs.Verb_Shoot.label>
+<ODC_Shotgun_P_EMP.description>Paragon specialised Shotgun used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_Shotgun_P_EMP.description>
+
+<ODC_Shotgun_P_EMP.tools.stock.label>stock</ODC_Shotgun_P_EMP.tools.stock.label>
+<ODC_Shotgun_P_EMP.tools.barrel.label>barrel</ODC_Shotgun_P_EMP.tools.barrel.label>
+
+<ODC_Shotgun_P_EMP.comps.CompUniqueWeapon.namerLabels.0>Paragon Conspirator - Apex(EMP)</ODC_Shotgun_P_EMP.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_Shotgun_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - AssaultRifle ====================-->
+<Bullet_ODC_AR.label>Thoughtless bullet</Bullet_ODC_AR.label>
+
+<ODC_AssaultRifle_A.label>Thoughtless - Emergent</ODC_AssaultRifle_A.label>
+<ODC_AssaultRifle_A.verbs.Verb_Shoot.label>Thoughtless - Emergent</ODC_AssaultRifle_A.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_A.description>Moded Assault Rifle used by Obsidia Drifters.</ODC_AssaultRifle_A.description>
+
+<ODC_AssaultRifle_A.tools.stock.label>stock</ODC_AssaultRifle_A.tools.stock.label>
+<ODC_AssaultRifle_A.tools.barrel.label>barrel</ODC_AssaultRifle_A.tools.barrel.label>
+
+<ODC_AssaultRifle_A_P.label>Paragon Thoughtless - Emergent</ODC_AssaultRifle_A_P.label>
+<ODC_AssaultRifle_A_P.verbs.Verb_Shoot.label>Paragon Thoughtless - Emergent</ODC_AssaultRifle_A_P.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_A_P.description>Paragon moded Assault Rifle used by Obsidia Drifters.</ODC_AssaultRifle_A_P.description>
+
+<ODC_AssaultRifle_A_P.tools.stock.label>stock</ODC_AssaultRifle_A_P.tools.stock.label>
+<ODC_AssaultRifle_A_P.tools.barrel.label>barrel</ODC_AssaultRifle_A_P.tools.barrel.label>
+
+<ODC_AssaultRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Thoughtless - Emergent</ODC_AssaultRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_AssaultRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<ODC_AssaultRifle_B.label>Thoughtless - Apex</ODC_AssaultRifle_B.label>
+<ODC_AssaultRifle_B.verbs.Verb_Shoot.label>Thoughtless - Apex</ODC_AssaultRifle_B.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_B.description>Specialised Assault Rifle used by Obsidia Drifters.</ODC_AssaultRifle_B.description>
+
+<ODC_AssaultRifle_B.tools.stock.label>stock</ODC_AssaultRifle_B.tools.stock.label>
+<ODC_AssaultRifle_B.tools.barrel.label>barrel</ODC_AssaultRifle_B.tools.barrel.label>
+
+<ODC_AssaultRifle_B_P.label>Paragon Thoughtless - Apex</ODC_AssaultRifle_B_P.label>
+<ODC_AssaultRifle_B_P.verbs.Verb_Shoot.label>Paragon Thoughtless - Apex</ODC_AssaultRifle_B_P.verbs.Verb_Shoot.label>
+<ODC_AssaultRifle_B_P.description>Paragon specialised Assault Rifle used by Obsidia Drifters.</ODC_AssaultRifle_B_P.description>
+
+<ODC_AssaultRifle_B_P.tools.stock.label>stock</ODC_AssaultRifle_B_P.tools.stock.label>
+<ODC_AssaultRifle_B_P.tools.barrel.label>barrel</ODC_AssaultRifle_B_P.tools.barrel.label>
+
+<ODC_AssaultRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Thoughtless - Apex</ODC_AssaultRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_AssaultRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - SniperRifle ====================-->
+<Bullet_ODC_SR.label>Smuggler bullet</Bullet_ODC_SR.label>
+
+<ODC_SniperRifle_A.label>Smuggler - Emergent</ODC_SniperRifle_A.label>
+<ODC_SniperRifle_A.verbs.Verb_Shoot.label>Smuggler - Emergent</ODC_SniperRifle_A.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_A.description>Moded Sniper Rifle used by Obsidia Drifters.</ODC_SniperRifle_A.description>
+
+<ODC_SniperRifle_A.tools.stock.label>stock</ODC_SniperRifle_A.tools.stock.label>
+<ODC_SniperRifle_A.tools.barrel.label>barrel</ODC_SniperRifle_A.tools.barrel.label>
+
+<ODC_SniperRifle_A_P.label>Paragon Smuggler - Emergent</ODC_SniperRifle_A_P.label>
+<ODC_SniperRifle_A_P.verbs.Verb_Shoot.label>Paragon Smuggler - Emergent</ODC_SniperRifle_A_P.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_A_P.description>Paragon moded Sniper Rifle used by Obsidia Drifters.</ODC_SniperRifle_A_P.description>
+
+<ODC_SniperRifle_A_P.tools.stock.label>stock</ODC_SniperRifle_A_P.tools.stock.label>
+<ODC_SniperRifle_A_P.tools.barrel.label>barrel</ODC_SniperRifle_A_P.tools.barrel.label>
+
+<ODC_SniperRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Smuggler - Emergent</ODC_SniperRifle_A_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_SniperRifle_A_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<ODC_SniperRifle_B.label>Smuggler - Apex</ODC_SniperRifle_B.label>
+<ODC_SniperRifle_B.verbs.Verb_Shoot.label>Smuggler - Apex</ODC_SniperRifle_B.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_B.description>Specialised Sniper Rifle used by Obsidia Drifters.</ODC_SniperRifle_B.description>
+
+<ODC_SniperRifle_B.tools.stock.label>stock</ODC_SniperRifle_B.tools.stock.label>
+<ODC_SniperRifle_B.tools.barrel.label>barrel</ODC_SniperRifle_B.tools.barrel.label>
+
+<ODC_SniperRifle_B_P.label>Paragon Smuggler - Apex</ODC_SniperRifle_B_P.label>
+<ODC_SniperRifle_B_P.verbs.Verb_Shoot.label>Paragon Smuggler - Apex</ODC_SniperRifle_B_P.verbs.Verb_Shoot.label>
+<ODC_SniperRifle_B_P.description>Paragon specialised Sniper Rifle used by Obsidia Drifters.</ODC_SniperRifle_B_P.description>
+
+<ODC_SniperRifle_B_P.tools.stock.label>stock</ODC_SniperRifle_B_P.tools.stock.label>
+<ODC_SniperRifle_B_P.tools.barrel.label>barrel</ODC_SniperRifle_B_P.tools.barrel.label>
+
+<ODC_SniperRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Smuggler - Apex</ODC_SniperRifle_B_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_SniperRifle_B_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Tonfa ====================-->
+<ODC_Tonfa.label>Basher</ODC_Tonfa.label>
+<ODC_Tonfa.description>Common Tonfa used by Obsidia Drifters.</ODC_Tonfa.description>
+
+<ODC_Tonfa.tools.handle.label>handle</ODC_Tonfa.tools.handle.label>
+<ODC_Tonfa.tools.head.label>head</ODC_Tonfa.tools.head.label>
+
+<ODC_Tonfa_P.label>Persona Basher</ODC_Tonfa_P.label>
+<ODC_Tonfa_P.description>Persona common Tonfa used by Obsidia Drifters.</ODC_Tonfa_P.description>
+
+<ODC_Tonfa_P.tools.handle.label>handle</ODC_Tonfa_P.tools.handle.label>
+<ODC_Tonfa_P.tools.head.label>head</ODC_Tonfa_P.tools.head.label>
+
+<!--=============== ODC - Rocket Launcher ====================-->
+<Bullet_ODC_RL.label>Boomshooter rocket</Bullet_ODC_RL.label>
+
+<ODC_RocketLauncher.label>Boomshooter - Emergent</ODC_RocketLauncher.label>
+<ODC_RocketLauncher.verbs.Verb_Shoot.label>Boomshooter - Emergent</ODC_RocketLauncher.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher.description>Moded Rocket Launcher used by Obsidia Drifters.</ODC_RocketLauncher.description>
+
+<ODC_RocketLauncher.tools.barrel.label>barrel</ODC_RocketLauncher.tools.barrel.label>
+
+<ODC_RocketLauncher_P.label>Paragon Boomshooter - Emergent</ODC_RocketLauncher_P.label>
+<ODC_RocketLauncher_P.verbs.Verb_Shoot.label>Paragon Boomshooter - Emergent</ODC_RocketLauncher_P.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P.description>Paragon moded Rocket Launcher used by Obsidia Drifters.</ODC_RocketLauncher_P.description>
+
+<ODC_RocketLauncher_P.tools.barrel.label>barrel</ODC_RocketLauncher_P.tools.barrel.label>
+
+<ODC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Boomshooter - Emergent</ODC_RocketLauncher_P.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_RocketLauncher_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== ODC - Elemental Rocket Launcher ====================-->
+<!--=============== Acid ====================-->
+<Bullet_ODC_RL_Acid.label>Boomshooter rocket</Bullet_ODC_RL_Acid.label>
+
+<ODC_RocketLauncher_Acid.label>Boomshooter - Apex(Acid)</ODC_RocketLauncher_Acid.label>
+<ODC_RocketLauncher_Acid.verbs.Verb_Shoot.label>Boomshooter - Apex(Acid)</ODC_RocketLauncher_Acid.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_Acid.description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with Acid damage.</ODC_RocketLauncher_Acid.description>
+
+<ODC_RocketLauncher_Acid.tools.barrel.label>barrel</ODC_RocketLauncher_Acid.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Acid.label>Paragon Boomshooter - Apex(Acid)</ODC_RocketLauncher_P_Acid.label>
+<ODC_RocketLauncher_P_Acid.verbs.Verb_Shoot.label>Paragon Boomshooter - Apex(Acid)</ODC_RocketLauncher_P_Acid.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_Acid.description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with Acid damage.</ODC_RocketLauncher_P_Acid.description>
+
+<ODC_RocketLauncher_P_Acid.tools.barrel.label>barrel</ODC_RocketLauncher_P_Acid.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Acid.comps.CompUniqueWeapon.namerLabels.0>Paragon Boomshooter - Apex(Acid)</ODC_RocketLauncher_P_Acid.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_RocketLauncher_P_Acid.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Cryo ====================-->
+<Bullet_ODC_RL_Cryo.label>Boomshooter rocket</Bullet_ODC_RL_Cryo.label>
+
+<ODC_RocketLauncher_Cryo.label>Boomshooter - Apex(Cryo)</ODC_RocketLauncher_Cryo.label>
+<ODC_RocketLauncher_Cryo.verbs.Verb_Shoot.label>Boomshooter - Apex(Cryo)</ODC_RocketLauncher_Cryo.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_Cryo.description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with Cryo damage.</ODC_RocketLauncher_Cryo.description>
+
+<ODC_RocketLauncher_Cryo.tools.barrel.label>barrel</ODC_RocketLauncher_Cryo.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Cryo.label>Paragon Boomshooter - Apex(Cryo)</ODC_RocketLauncher_P_Cryo.label>
+<ODC_RocketLauncher_P_Cryo.verbs.Verb_Shoot.label>Paragon Boomshooter - Apex(Cryo)</ODC_RocketLauncher_P_Cryo.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_Cryo.description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with Cryo damage.</ODC_RocketLauncher_P_Cryo.description>
+
+<ODC_RocketLauncher_P_Cryo.tools.barrel.label>barrel</ODC_RocketLauncher_P_Cryo.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>Paragon Boomshooter - Apex(Cryo)</ODC_RocketLauncher_P_Cryo.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_RocketLauncher_P_Cryo.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== Fire ====================-->
+<Bullet_ODC_RL_Fire.label>Boomshooter rocket</Bullet_ODC_RL_Fire.label>
+
+<ODC_RocketLauncher_Fire.label>Boomshooter - Apex(Fire)</ODC_RocketLauncher_Fire.label>
+<ODC_RocketLauncher_Fire.verbs.Verb_Shoot.label>Boomshooter - Apex(Fire)</ODC_RocketLauncher_Fire.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_Fire.description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with Fire damage.</ODC_RocketLauncher_Fire.description>
+
+<ODC_RocketLauncher_Fire.tools.barrel.label>barrel</ODC_RocketLauncher_Fire.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Fire.label>Paragon Boomshooter - Apex(Fire)</ODC_RocketLauncher_P_Fire.label>
+<ODC_RocketLauncher_P_Fire.verbs.Verb_Shoot.label>Paragon Boomshooter - Apex(Fire)</ODC_RocketLauncher_P_Fire.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_Fire.description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with Fire damage.</ODC_RocketLauncher_P_Fire.description>
+
+<ODC_RocketLauncher_P_Fire.tools.barrel.label>barrel</ODC_RocketLauncher_P_Fire.tools.barrel.label>
+
+<ODC_RocketLauncher_P_Fire.comps.CompUniqueWeapon.namerLabels.0>Paragon Boomshooter - Apex(Fire)</ODC_RocketLauncher_P_Fire.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_RocketLauncher_P_Fire.comps.CompEquippableAbilityReloadable.cooldownGerund>
+<!--=============== EMP ====================-->
+<Bullet_ODC_RL_EMP.label>Boomshooter rocket</Bullet_ODC_RL_EMP.label>
+
+<ODC_RocketLauncher_EMP.label>Boomshooter - Apex(EMP)</ODC_RocketLauncher_EMP.label>
+<ODC_RocketLauncher_EMP.verbs.Verb_Shoot.label>Boomshooter - Apex(EMP)</ODC_RocketLauncher_EMP.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_EMP.description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_RocketLauncher_EMP.description>
+
+<ODC_RocketLauncher_EMP.tools.barrel.label>barrel</ODC_RocketLauncher_EMP.tools.barrel.label>
+
+<ODC_RocketLauncher_P_EMP.label>Paragon Boomshooter - Apex(EMP)</ODC_RocketLauncher_P_EMP.label>
+<ODC_RocketLauncher_P_EMP.verbs.Verb_Shoot.label>Paragon Boomshooter - Apex(EMP)</ODC_RocketLauncher_P_EMP.verbs.Verb_Shoot.label>
+<ODC_RocketLauncher_P_EMP.description>Paragon specialised Rocket Launcher used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</ODC_RocketLauncher_P_EMP.description>
+
+<ODC_RocketLauncher_P_EMP.tools.barrel.label>barrel</ODC_RocketLauncher_P_EMP.tools.barrel.label>
+
+<ODC_RocketLauncher_P_EMP.comps.CompUniqueWeapon.namerLabels.0>Paragon Boomshooter - Apex(EMP)</ODC_RocketLauncher_P_EMP.comps.CompUniqueWeapon.namerLabels.0>
+<ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>charge</ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.chargeNoun>
+<ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</ODC_RocketLauncher_P_EMP.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

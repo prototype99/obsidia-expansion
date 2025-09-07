@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Raptor ====================-->
+  <BodyPartDef ParentName="ClawBase">
+    <defName>OEFootClaw</defName>
+    <label>sickle claw</label>
+    <labelShort>claw</labelShort>
+    <tags>
+      <li>MovingLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+<!--=============== Tionant ====================-->
+  <BodyPartDef>
+    <defName>OETionantShell</defName>
+    <label>shell</label>
+    <hitPoints>75</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="ClawBase">
+    <defName>OEClaw</defName>
+    <label>insect claw</label>
+    <labelShort>claw</labelShort>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+<!--=============== Bruul ====================-->
+  <BodyPartDef>
+    <defName>OEBruulHood</defName>
+    <label>hood</label>
+    <hitPoints>35</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+	  <li>MovingLimbCore</li>	
+	</tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>OEBruulTentacle</defName>
+    <label>tentacle</label>
+	<hitPoints>5</hitPoints>
+	<frostbiteVulnerability>0.1</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	<skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+	  <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>OEBruulHydrogenSac</defName>
+    <label>hydrogen sac</label>
+    <hitPoints>25</hitPoints>
+	<bleedRate>5</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+	  <li>BreathingSource</li>
+	  <li>BloodPumpingSource</li>
+	  <li>BloodFiltrationSource</li>
+	  <li>MetabolismSource</li>
+	</tags>
+  </BodyPartDef>
+
+<!--=============== Arachna ====================-->
+  <BodyPartDef>
+    <defName>OEArachnaThorax</defName>
+    <label>thorax</label>
+    <hitPoints>65</hitPoints>
+    <skinCovered>false</skinCovered>
+    <frostbiteVulnerability>0.8</frostbiteVulnerability>
+  </BodyPartDef>
+
+<!--=============== Slime ====================-->
+  <BodyPartDef>
+    <defName>OESlimeGel</defName>
+    <label>slime gel</label>
+	<hitPoints>100</hitPoints>
+	<frostbiteVulnerability>0.01</frostbiteVulnerability>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>OESlimeHeart</defName>
+    <label>slime heart</label>
+	<hitPoints>150</hitPoints>
+	<bleedRate>0</bleedRate>
+	<skinCovered>true</skinCovered>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>OESlimeMouth</defName>
+    <label>slime mouth</label>
+    <hitPoints>45</hitPoints>
+	<bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+	  <li>ManipulationLimbCore</li>
+	  <li>EatingSource</li>
+	  <li>TalkingSource</li>
+	</tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>OESlimeFloater</defName>
+    <label>slime floater</label>
+    <hitPoints>100</hitPoints>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+	  <li>ManipulationLimbCore</li>
+	  <li>MovingLimbCore</li>
+	</tags>
+  </BodyPartDef>
+
+</Defs>

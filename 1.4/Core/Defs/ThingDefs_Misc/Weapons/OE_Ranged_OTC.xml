@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Pistol ====================-->
+  <ThingDef Name="OTCPistolBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OTCPistolBullet" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageAmountBase>8</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC - SMG ====================-->
+  <ThingDef Name="OTCSMGBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+      <WorkToMake>22500</WorkToMake>
+      <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OTCSMGBullet" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC - Shotgun ====================-->
+  <ThingDef Name="OTCShotgunBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OTCShotgunBullet" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC - GrenadeLauncher ====================-->
+  <ThingDef Name="OTCGrenadeLauncherBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.20</MoveSpeed>
+	</equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OTCGrenadeLauncherBullet" ParentName="BaseBullet" Abstract="True">
+    <thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageAmountBase>35</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+	  <explosionRadius>2.9</explosionRadius>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <shadowSize>0.6</shadowSize>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Cross ====================-->
+<!--=============== OTC - SniperRifle ====================-->
+  <ThingDef Name="OTCSniperRifleBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OTCSniperRifleBullet" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageAmountBase>30</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>110</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC - MultiCannon ====================-->
+  <ThingDef Name="OTCMultiCannonBase" ParentName="OERangedBase" Abstract="True">
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>9.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.20</MoveSpeed>
+	</equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OTCMultiCannonBullet" ParentName="BaseBullet" Abstract="True">
+	<graphicData>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC - Bow ====================-->
+  <ThingDef Name="OTCBowBase" ParentName="OERangedBase" Abstract="True">
+	<uiIconScale>0.85</uiIconScale>
+	<soundInteract>Bow_Large</soundInteract>
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OTCBowBullet" ParentName="BaseBullet" Abstract="True">
+    <thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageAmountBase>20</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

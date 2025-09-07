@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC - Blast ====================-->
+  <DamageDef ParentName="Bomb">
+    <defName>OCCBlast</defName>
+    <label>blast</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+	<isExplosive>true</isExplosive>
+    <deathMessage>{0} has been blasted to death.</deathMessage>
+    <hediff>Shredded</hediff>
+	<hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+	<minDamageToFragment>10</minDamageToFragment>
+	<defaultDamage>10</defaultDamage>
+    <buildingDamageFactor>2</buildingDamageFactor>
+    <plantDamageFactor>2</plantDamageFactor>
+	<defaultStoppingPower>1.5</defaultStoppingPower>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>	
+	<combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+<!--=============== OTC - Acid ====================-->
+  <DamageDef>
+	<defName>OTCAcid</defName>
+	<label>acid</label>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+	<externalViolence>true</externalViolence>
+	<impactSoundType>Slice</impactSoundType>
+	<hediff>ChemicalBurn</hediff>
+	<additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+	<harmsHealth>true</harmsHealth>
+	<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<armorCategory>Heat</armorCategory>
+	<defaultArmorPenetration>0</defaultArmorPenetration>
+	<explosionCellMote>Mote_OE_AcidCloud</explosionCellMote>
+    <explosionColorCenter>(211, 184, 253)</explosionColorCenter>
+    <explosionColorEdge>(208, 255, 54)</explosionColorEdge>
+    <soundExplosion>DeathAcidifier</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+	<buildingDamageFactor>4</buildingDamageFactor>
+  </DamageDef> 
+
+<!--=============== OTC - Cryo ====================-->
+  <DamageDef>
+    <defName>OTCCryo</defName>
+    <label>cryo</label>
+	<workerClass>DamageWorker_Frostbite</workerClass>	
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has succumbed to frostbite.</deathMessage>
+    <hediff>Frostbite</hediff>
+	<additionalHediffs>
+	  <li>
+	    <hediff>Hypothermia</hediff>
+	    <severityPerDamageDealt>0.005</severityPerDamageDealt>
+		<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+	  </li>
+	</additionalHediffs>
+	<harmsHealth>true</harmsHealth>
+	<defaultArmorPenetration>0</defaultArmorPenetration>
+	<explosionCellMote>Mote_OE_CryoCloud</explosionCellMote>
+    <explosionColorCenter>(218, 247, 253)</explosionColorCenter>
+    <explosionColorEdge>(253, 253, 253)</explosionColorEdge>
+    <soundExplosion>DeathAcidifier</soundExplosion>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<impactSoundType>Tornado</impactSoundType>
+    <armorCategory>Heat</armorCategory>	
+  </DamageDef>
+
+</Defs>

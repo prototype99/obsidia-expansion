@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Chainsword ====================-->
+  <ThingDef Name="OMCTrophyChainswordBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <MentalBreakThreshold>-0.25</MentalBreakThreshold>
+	  <MeleeDodgeChance>4.0</MeleeDodgeChance>
+	  <MeleeHitChance>6.0</MeleeHitChance>
+	  <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCTrophyChainswordBase">
+    <defName>OMC_Trophy_Chainsword</defName>
+    <label>Empress's Blessing</label>
+    <description>The good old chainsword is designed to destroy the enemies of Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Trophy_ChainSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OMCTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Inlaid ====================-->
+  <ThingDef ParentName="OMCTrophyChainswordBase">
+    <defName>OMC_Trophy_Chainsword_I</defName>
+    <label>Inlaid Empress's Blessing</label>
+    <description>The good old chainsword is designed to destroy the enemies of Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.\n\nInlaid with Insight Power Stone: Weapon bonus stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Trophy_ChainSword_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li MayRequire="Ludeon.Rimworld.Royalty">Bladelink</li>
+	  <li>OMCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>2350</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MentalBreakThreshold>-0.4</MentalBreakThreshold>
+	  <MeleeDodgeChance>6.0</MeleeDodgeChance>
+	  <MeleeHitChance>9.0</MeleeHitChance>
+	  <MoveSpeed>0.15</MoveSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Pistol ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OMCTrophyPistolBase" ParentName="OERangedBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>1.5</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_Trophy_P</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>21.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMC_Trophy_P</defName>
+    <label>Prototype sX-01a bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletBig_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMC_Trophy_P_I</defName>
+    <label>Inlaid Prototype sX-01a bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMC_BulletBig_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OMCTrophyPistolBase">
+    <defName>OMC_Trophy_Pistol</defName>
+    <label>Prototype sX-01a</label>
+    <description>Prototype of a new pistol that uses an AI module to improve accuracy.\n\nThis is a rare trophy weapon.\n\nFeature: built-in accuracy stabilization module.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Trophy_SmartPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OMCTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Inlaid ====================-->
+  <ThingDef ParentName="OMCTrophyPistolBase">
+    <defName>OMC_Trophy_Pistol_I</defName>
+    <label>Inlaid Prototype sX-01a</label>
+    <description>Prototype of a new pistol that uses an AI module to improve accuracy.\n\nThis is a rare trophy weapon.\n\nFeature: built-in accuracy stabilization module.\n\nInlaid with Vitality Power Stone: Weapon operational stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Trophy_SmartPistol_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">Bladelink</li>
+	  <li>OMCTrophyRanged</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>2350</MarketValue>
+	  <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs Inherit="false">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_Trophy_P_I</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Implant - Monarch Power Stone ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantPowerStone_Monarch</defName>
+    <label>Monarch Power Stone</label>
+    <description>An installed - Monarch Power Stone.</description>
+	<descriptionHyperlinks>
+	  <ResearchProjectDef>ODCGearLeg</ResearchProjectDef>
+	  <RecipeDef>OE_InstallPowerStone_Monarch</RecipeDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.82, 0.77, 0.91)</defaultLabelColor>
+    <spawnThingOnRemoved>OE_UnstableStone</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+		  <PsychicSensitivityOffset>0.75</PsychicSensitivityOffset>
+		  <PsychicEntropyRecoveryRate>0.125</PsychicEntropyRecoveryRate>
+		  <MeditationFocusGain>0.75</MeditationFocusGain>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags><li>PowerStone</li></tags>
+  </HediffDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallPowerStone_Monarch</defName>
+    <label>install - Monarch Power Stone</label>
+    <description>Install - Monarch Power Stone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_ImplantPowerStone_Monarch</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing - Monarch Power Stone.</jobString>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Mythril</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_UnstableStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Mythril</li>
+		<li>OE_Syntherius</li>
+		<li>OE_UnstableStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantPowerStone_Monarch</addsHediff>
+	<incompatibleWithHediffTags>
+      <li>PowerStone</li>
+    </incompatibleWithHediffTags>
+	<researchPrerequisite>ODCGearLeg</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemovePowerStone_Monarch</defName>
+    <label>remove - Monarch Power Stone</label>
+    <description>Remove - Monarch Power Stone.</description>
+    <jobString>Removing - Monarch Power Stone.</jobString>
+    <removesHediff>OE_ImplantPowerStone_Monarch</removesHediff>
+	<uiIconThing>OE_UnstableStone</uiIconThing>
+  </RecipeDef>
+
+</Defs>

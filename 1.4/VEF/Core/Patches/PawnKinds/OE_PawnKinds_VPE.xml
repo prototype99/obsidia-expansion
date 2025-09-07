@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Psycasts Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>   
+<!--=============== OEC ====================-->
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Recruit"]/royalTitleChance</xpath>
+		  <value>
+		    <royalTitleChance>0.1</royalTitleChance>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Recruit"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>1~4</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>		
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Hunter_Melee" or defName="OEC_Hunter_RMelee" or defName="OEC_Hunter_Ranged" or defName="OEC_Hunter_Sniper"]/royalTitleChance</xpath>
+		  <value>
+		    <royalTitleChance>0.25</royalTitleChance>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Hunter_Melee"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>2~6</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Frostshaper>1~4|2~5</VPE_Frostshaper>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Hunter_RMelee"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>2~6</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Conflagrator>1~4|2~5</VPE_Conflagrator>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Hunter_Ranged"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>2~6</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Staticlord>1~4|2~5</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Hunter_Sniper"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>2~6</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Nightstalker>1~4|2~5</VPE_Nightstalker>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Inquisitor_Melee" or defName="OEC_Inquisitor_RMelee" or defName="OEC_Inquisitor_Ranged" or defName="OEC_Inquisitor_Sniper" or defName="OEC_Inquisitor_Mechanitor"]/royalTitleChance</xpath>
+		  <value>
+		    <royalTitleChance>0.35</royalTitleChance>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Inquisitor_Melee"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Frostshaper>1~4|2~8</VPE_Frostshaper>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Inquisitor_RMelee"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Conflagrator>1~4|2~8</VPE_Conflagrator>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Inquisitor_Ranged"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Staticlord>1~4|2~8</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OEC_Inquisitor_Sniper" or defName="OEC_Inquisitor_Mechanitor"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~4</VPE_Protector>
+				<VPE_Nightstalker>1~4|2~8</VPE_Nightstalker>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+<!--=============== ODC ====================-->
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/PawnKindDef[defName="ODC_Recon_Prestige" or defName="ODC_Duelist_Prestige"]/royalTitleChance</xpath>
+		  <value>
+		    <royalTitleChance>0</royalTitleChance>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="ODC_Recon_Prestige" or defName="ODC_Duelist_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>2~4</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~4</VPE_Warlord>
+				<VPE_Wildspeaker>1~4|1~10</VPE_Wildspeaker>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+<!--=============== CAC ====================-->
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Acolyte_Prestige" or defName="CAC_Apostle_Prestige" or defName="CAC_Disciple_Prestige" or defName="CAC_Prefect_Prestige" or defName="CAC_Confessor_Prestige" or defName="CAC_Deacon_Prestige" or defName="CAC_Pontifex_Prestige"]/royalTitleChance</xpath>
+		  <value>
+		    <royalTitleChance>0</royalTitleChance>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Acolyte_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Nightstalker>1~4|2~8</VPE_Nightstalker>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Apostle_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Protector>1~4|2~8</VPE_Protector>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Disciple_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Conflagrator>1~4|2~8</VPE_Conflagrator>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Prefect_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Staticlord>1~4|2~8</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Confessor_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Frostshaper>1~4|2~8</VPE_Frostshaper>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Deacon_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Nightstalker>1~4|2~8</VPE_Nightstalker>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="CAC_Pontifex_Prestige"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>4~8</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Protector>1~4|2~8</VPE_Protector>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+<!--=============== OES ====================-->
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OES_Eidolon_Melee"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>6~12</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Conflagrator>1~4|2~4</VPE_Conflagrator>
+				<VPE_Frostshaper>1~4|2~4</VPE_Frostshaper>
+				<VPE_Staticlord>1~4|2~4</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OES_Eidolon_Ranged"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>6~12</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Protector>1~4|2~8</VPE_Protector>
+				<VPE_Conflagrator>1~4|2~4</VPE_Conflagrator>
+				<VPE_Frostshaper>1~4|2~4</VPE_Frostshaper>
+				<VPE_Staticlord>1~4|2~4</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OES_Undying_Melee"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>6~12</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Nightstalker>1~4|2~8</VPE_Nightstalker>
+				<VPE_Conflagrator>1~4|2~4</VPE_Conflagrator>
+				<VPE_Frostshaper>1~4|2~4</VPE_Frostshaper>
+				<VPE_Staticlord>1~4|2~4</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OES_Undying_Ranged"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>6~12</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Warlord>1~4|2~8</VPE_Warlord>
+				<VPE_Conflagrator>1~4|2~4</VPE_Conflagrator>
+				<VPE_Frostshaper>1~4|2~4</VPE_Frostshaper>
+				<VPE_Staticlord>1~4|2~4</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OES_Special_A_Melee"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>8~14</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Harmonist>1~3|2~5</VPE_Harmonist>
+				<VPE_Archotechist>1~3|2~5</VPE_Archotechist>
+				<VPE_Nightstalker>1~5|4~8</VPE_Nightstalker>
+				<VPE_Conflagrator>1~5|6~10</VPE_Conflagrator>
+				<VPE_Frostshaper>1~5|6~10</VPE_Frostshaper>
+				<VPE_Staticlord>1~5|6~10</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAddModExtension">
+		  <xpath>/Defs/PawnKindDef[defName="OES_Special_A_Ranged"]</xpath>
+		  <value>
+		    <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+              <implantDef>VPE_PsycastAbilityImplant</implantDef>
+              <initialLevel>1</initialLevel>
+              <statUpgradePoints>8~14</statUpgradePoints>
+              <unlockedPaths>
+                <VPE_Harmonist>1~3|2~5</VPE_Harmonist>
+				<VPE_Archotechist>1~3|2~5</VPE_Archotechist>
+				<VPE_Warlord>1~5|4~8</VPE_Warlord>
+				<VPE_Conflagrator>1~5|6~10</VPE_Conflagrator>
+				<VPE_Frostshaper>1~5|6~10</VPE_Frostshaper>
+				<VPE_Staticlord>1~5|6~10</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+		  </value>
+	    </li>
+
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

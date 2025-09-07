@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Acolyte ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Acolyte_Mechanitor</defName>
+    <label>CAC Acolyte</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Mechanitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACBaseMelee</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>Mechlink</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Apostle ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Apostle_Mechanitor</defName>
+    <label>CAC Apostle</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACHeavyCultist_Mechanitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACHeavyMelee</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>Mechlink</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Disciple ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Disciple_Mechanitor</defName>
+    <label>CAC Disciple</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Mechanitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACRangedMelee</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>Mechlink</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Prefect ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Prefect_Mechanitor</defName>
+    <label>CAC Prefect</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Mechanitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACLightGun</li>
+	  <li>CACLightGunP</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>Mechlink</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Confessor ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Confessor_Mechanitor</defName>
+    <label>CAC Confessor</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACHeavyCultist_Mechanitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACBaseGun</li>
+	  <li>CACBaseGunP</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>Mechlink</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Deacon ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Deacon_Mechanitor</defName>
+    <label>CAC Deacon</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACLightCultist_Mechanitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACSniperGun</li>
+	  <li>CACSniperGunP</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>Mechlink</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Pontifex ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_Pontifex_Mechanitor</defName>
+    <label>CAC Pontifex</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>20000~25000</apparelMoney>
+	<apparelTags>
+	  <li>CACHeavyCultist_Mechanitor</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>10000~15000</weaponMoney>
+	<weaponTags>
+      <li>CACHeavyGun</li>
+	  <li>CACHeavyGunP</li>
+    </weaponTags>
+    <techHediffsMoney>20000~35000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>7</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>Mechlink</li>
+    </techHediffsTags>
+	<combatPower>235</combatPower>
+	<skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Crimson Arachna ====================-->
+  <PawnKindDef ParentName="OEKindBaseMechCrimsonArachnaQueen">
+    <defName>CAC_Mech_CrimsonArachna</defName>
+    <label>Crimson Arachna</label>
+    <race>OE_Mech_CrimsonArachna</race>
+	<defaultFactionType>ObsidiaCrimsonArachnaCult</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+	<minGenerationAge>1</minGenerationAge>
+	<maxGenerationAge>98</maxGenerationAge>
+  </PawnKindDef>
+
+</Defs>

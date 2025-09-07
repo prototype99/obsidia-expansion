@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Bruul Base ====================-->
+  <ThingDef Name="OEBaseBruul" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>2.0</MoveSpeed>
+      <MarketValue>4000</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.35</ArmorRating_Heat>
+      <FilthRate>5</FilthRate>
+    </statBases>
+    <race>
+      <body>OEBruulLike</body>
+      <maxPreyBodySize>2.0</maxPreyBodySize>
+      <petness>0.2</petness>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.2</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal, VegetarianRoughAnimal</foodType>
+      <leatherDef>OE_Leather_Bruul</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <wildness>0.95</wildness>
+      <manhunterOnTameFailChance>0.65</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
+      <gestationPeriodDays>13</gestationPeriodDays>
+	  <roamMtbDays>5</roamMtbDays>
+      <lifeExpectancy>20</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+          <soundDeath>Pawn_Rodent_Death</soundDeath>
+          <soundCall>Pawn_Rodent_Call</soundCall>
+          <soundAngry>Pawn_Rodent_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>OEAnimalExotic</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseBruul" Abstract="True">
+    <combatPower>400</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+  </PawnKindDef>
+
+<!--=============== Acid Bruul ====================-->
+  <ThingDef ParentName="OEBaseBruul">
+    <defName>OE_Bruul_Acid</defName>
+    <label>Acid Bruul</label>
+    <description>Bruul is a genetically engineered creature similar to a cephalopod, the design was made using the genes of an unknown creature on Obsidia. Scientists planned to create a living weapon and they succeeded. Bruul is an excellent fighting unit, having the ability to secrete dangerous ink... However, their rather weak and fragile body, as the difficulty in taming and training them, didn't live up to expectations. All test samples had to be disposed of.\n\nThis specimen emits Acid ink.</description>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_CaviarBruulUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_CaviarBruulAcidFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>16</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+	</comps>
+	<race>
+	  <meatLabel>Obsidia synthmeat</meatLabel>
+	  <meatMarketValue>1.1</meatMarketValue>
+	</race>
+	<tools>
+      <li>
+        <label>tentacle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>acid inc</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Bruul_Acid</defaultProjectile>
+        <accuracyTouch>0.9</accuracyTouch>
+		<accuracyShort>1.0</accuracyShort>
+		<accuracyMedium>1.0</accuracyMedium>
+		<accuracyLong>0.9</accuracyLong>
+		<warmupTime>1.0</warmupTime>
+        <minRange>2.0</minRange>
+		<range>23.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Bruul_Acid</defName>
+    <label>acid inc</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCAcid</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseBruul">
+    <defName>OE_Bruul_Acid</defName>
+    <label>acid bruul</label>
+    <labelPlural>acid bruul</labelPlural>
+    <race>OE_Bruul_Acid</race>
+    <lifeStages>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Acid</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Acid</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Acid</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Acid</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Acid</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Acid</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Cryo Bruul ====================-->
+  <ThingDef ParentName="OEBaseBruul">
+    <defName>OE_Bruul_Cryo</defName>
+    <label>Cryo Bruul</label>
+    <description>Bruul is a genetically engineered creature similar to a cephalopod, the design was made using the genes of an unknown creature on Obsidia. Scientists planned to create a living weapon and they succeeded. Bruul is an excellent fighting unit, having the ability to secrete dangerous ink... However, their rather weak and fragile body, as the difficulty in taming and training them, didn't live up to expectations. All test samples had to be disposed of.\n\nThis specimen emits Cryo ink.</description>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_CaviarBruulUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_CaviarBruulCryoFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>16</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+	</comps>
+	<race>
+	  <useMeatFrom>OE_Bruul_Acid</useMeatFrom>
+	</race>
+	<tools>
+      <li>
+        <label>tentacle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>cryo inc</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Bruul_Cryo</defaultProjectile>
+        <accuracyTouch>0.9</accuracyTouch>
+		<accuracyShort>1.0</accuracyShort>
+		<accuracyMedium>1.0</accuracyMedium>
+		<accuracyLong>0.9</accuracyLong>
+		<warmupTime>1.0</warmupTime>
+        <minRange>2.0</minRange>
+		<range>23.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Bruul_Cryo</defName>
+    <label>Cryo inc</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseBruul">
+    <defName>OE_Bruul_Cryo</defName>
+    <label>Cryo bruul</label>
+    <labelPlural>Cryo bruul</labelPlural>
+    <race>OE_Bruul_Cryo</race>
+    <lifeStages>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Cryo</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Cryo</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Cryo</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Cryo</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Cryo</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Cryo</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Fire Bruul ====================-->
+  <ThingDef ParentName="OEBaseBruul">
+    <defName>OE_Bruul_Fire</defName>
+    <label>Fire Bruul</label>
+    <description>Bruul is a genetically engineered creature similar to a cephalopod, the design was made using the genes of an unknown creature on Obsidia. Scientists planned to create a living weapon and they succeeded. Bruul is an excellent fighting unit, having the ability to secrete dangerous ink... However, their rather weak and fragile body, as the difficulty in taming and training them, didn't live up to expectations. All test samples had to be disposed of.\n\nThis specimen emits Fire ink.</description>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_CaviarBruulUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_CaviarBruulFireFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>16</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+	</comps>
+	<race>
+	  <useMeatFrom>OE_Bruul_Acid</useMeatFrom>
+	</race>
+	<tools>
+      <li>
+        <label>tentacle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>fire inc</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Bruul_Fire</defaultProjectile>
+        <accuracyTouch>0.9</accuracyTouch>
+		<accuracyShort>1.0</accuracyShort>
+		<accuracyMedium>1.0</accuracyMedium>
+		<accuracyLong>0.9</accuracyLong>
+		<warmupTime>1.0</warmupTime>
+        <minRange>2.0</minRange>
+		<range>23.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Bruul_Fire</defName>
+    <label>Fire inc</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseBruul">
+    <defName>OE_Bruul_Fire</defName>
+    <label>Fire bruul</label>
+    <labelPlural>Fire bruul</labelPlural>
+    <race>OE_Bruul_Fire</race>
+    <lifeStages>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Fire</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Fire</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Fire</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Fire</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_Fire</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_Fire</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== EMP Bruul ====================-->
+  <ThingDef ParentName="OEBaseBruul">
+    <defName>OE_Bruul_EMP</defName>
+    <label>EMP Bruul</label>
+    <description>Bruul is a genetically engineered creature similar to a cephalopod, the design was made using the genes of an unknown creature on Obsidia. Scientists planned to create a living weapon and they succeeded. Bruul is an excellent fighting unit, having the ability to secrete dangerous ink... However, their rather weak and fragile body, as the difficulty in taming and training them, didn't live up to expectations. All test samples had to be disposed of.\n\nThis specimen emits EMP ink.</description>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_CaviarBruulUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_CaviarBruulEMPFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>16</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1</eggCountRange>
+	  </li>
+	</comps>
+	<race>
+	  <useMeatFrom>OE_Bruul_Acid</useMeatFrom>
+	</race>
+	<tools>
+      <li>
+        <label>tentacle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>EMP inc</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Bruul_EMP</defaultProjectile>
+        <accuracyTouch>0.9</accuracyTouch>
+		<accuracyShort>1.0</accuracyShort>
+		<accuracyMedium>1.0</accuracyMedium>
+		<accuracyLong>0.9</accuracyLong>
+		<warmupTime>1.0</warmupTime>
+        <minRange>2.0</minRange>
+		<range>23.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Bruul_EMP</defName>
+    <label>EMP inc</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergySmall_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>EMP</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseBruul">
+    <defName>OE_Bruul_EMP</defName>
+    <label>EMP bruul</label>
+    <labelPlural>EMP bruul</labelPlural>
+    <race>OE_Bruul_EMP</race>
+    <lifeStages>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_EMP</texPath>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_EMP</texPath>
+          <drawSize>0.75</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.75</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_EMP</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_EMP</texPath>
+          <drawSize>0.95</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>0.95</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/BruulMale_EMP</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/BruulFemale_EMP</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Bruul/Dessicated_Bruul_east</texPath>
+          <drawSize>1.2</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/ResearchProjectDef[defName="OEMechtech"]</xpath>
+		  <value>
+<!--=============== Obsidia Expansion - Mechtech ====================-->
+	  <techprintCount>1</techprintCount>
+	  <techprintCommonality>2</techprintCommonality>
+	  <techprintMarketValue>1500</techprintMarketValue>
+	  <heldByFactionCategoryTags>
+		  <li>ObsidiaEmpire</li>
+		  <li>ObsidiaMercenaryGangs</li>
+	  </heldByFactionCategoryTags>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

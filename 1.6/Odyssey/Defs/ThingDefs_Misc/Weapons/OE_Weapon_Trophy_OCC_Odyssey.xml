@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged ====================-->
+<!--=============== Railgun ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OCCTrophyRifleBase">
+    <defName>OCC_Trophy_Railgun_P</defName>
+    <label>Paragon Cronus</label>
+    <description>Sample weapon of new experimental paragon railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_Railgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags Inherit="False">
+	  <li>OCCTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>3050</MarketValue>
+    </statBases>
+    <possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Rifle</li>
+		  <li>PulseCharge</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Cronus</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

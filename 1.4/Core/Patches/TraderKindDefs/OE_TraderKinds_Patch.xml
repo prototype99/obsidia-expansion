@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGear</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCSoldier</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCOfficer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCMechanic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCEngineer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCKnight</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCPaladin</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECHunter</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECInquisitor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCHelmet</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACCultist</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>EGOWeapon</tag></li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_CombatSupplier" or defName="Visitor_Outlander_Standard"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGear</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEModules</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCSoldier</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCOfficer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCMechanic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCEngineer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCKnight</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCPaladin</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECHunter</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECInquisitor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCHelmet</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACCultist</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>EGOWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETrophyWeapons</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>EGOWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSlime</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBeacons</tradeTag>
+        <thingDefCountRange>-2~2</thingDefCountRange>
+		<countRange>-2~2</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_PirateMerchant"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGear</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEModules</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCSoldier</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCOfficer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCMechanic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCEngineer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCKnight</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCPaladin</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECHunter</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECInquisitor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETrophyWeapons</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCHelmet</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACCultist</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>EGOWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBionics</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSlime</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>EGOSeed</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESlimeHeartСonf</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBeacons</tradeTag>
+        <thingDefCountRange>-2~2</thingDefCountRange>
+		<countRange>-2~2</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Base_Outlander_Standard" or defName="Orbital_Empire" or defName="Empire_Caravan_TraderGeneral" or defName="Base_Empire_Standard"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGear</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEModules</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCSoldier</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCOfficer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCMechanic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCEngineer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCKnight</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCPaladin</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECHunter</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECInquisitor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETrophyWeapons</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCHelmet</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACCultist</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>EGOWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBionics</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETionantGel</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExoticRes</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExoticBuilding</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSlime</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBeacons</tradeTag>
+        <thingDefCountRange>-2~2</thingDefCountRange>
+		<countRange>-2~2</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_BulkGoods" or defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExoticRes</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETionantGel</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExoticBuilding</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSlime</tag></li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Visitor_Neolithic_Standard" or defName="Caravan_Neolithic_BulkGoods" or defName="Caravan_Neolithic_WarMerchant" or defName="Caravan_Neolithic_ShamanMerchant" or defName="Base_Neolithic_Standard"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETionantGel</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalSlime</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESlimeHeartСonf</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OE_SlimeHeart</tradeTag>
+        <thingDefCountRange>0~2</thingDefCountRange>
+      </li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_Exotic" or defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+    <value>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEGear</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEModules</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCSoldier</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCOfficer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OMCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCMechanic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCEngineer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OTCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCKnight</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCPaladin</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OCCWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECHunter</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECInquisitor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OECWeaponMod</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETrophyWeapons</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCHelmet</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ODCWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACCultist</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>CACWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>EGOWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrug</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEDrugExotic</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEBionics</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OETionantGel</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExoticRes</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESArmor</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESWeapon</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEExoticBuilding</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OESlimeHeartСonf</tag></li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OE_SlimeHeart</tradeTag>
+        <thingDefCountRange>-1~1</thingDefCountRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEBeacons</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+		<countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_AmmoKit</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+    </value>
+</Operation>
+
+</Patch>

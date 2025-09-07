@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO ====================-->
+<!--=============== Shotgun ====================-->
+  <ThingDef ParentName="OE_TurretBase_SmallPowered">
+    <defName>EGO_Turret_Small_Shotgun</defName>
+    <label>EGO Corrupter Turret</label>
+    <description>Amalgam Shotgun-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/EGO/TurretSmall_Shotgun_Icon</uiIconPath>
+	<designatorDropdown>OE_Turrets_EGO</designatorDropdown>
+    <costList>
+	  <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_Shotgun>1</EGO_Shotgun>
+    </costList>
+	<statBases>
+      <MarketValue>4135</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>150</combatPower> 
+	  <turretGunDef>EGO_TurretGun_Small_Shotgun</turretGunDef>
+      <turretBurstCooldownTime>1.25</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineering</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>EGO_TurretGun_Small_Shotgun</defName>
+    <label>Corrupter Turret</label>
+    <description>Amalgam Shotgun for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_Shotgun_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>1.00</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_S</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Pawn_Spelopede_Angry</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+<!--=============== SMG ====================-->
+  <ThingDef ParentName="OE_TurretBase_SmallPowered">
+    <defName>EGO_Turret_Small_SMG</defName>
+    <label>EGO Toxocyst Turret</label>
+    <description>Amalgam SMG-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/EGO/TurretSmall_SMG_Icon</uiIconPath>
+	<designatorDropdown>OE_Turrets_EGO</designatorDropdown>
+    <costList>
+      <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_SMG>1</EGO_SMG>
+    </costList>
+	<statBases>
+      <MarketValue>4120</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>125</combatPower> 
+	  <turretGunDef>EGO_TurretGun_Small_SMG</turretGunDef>
+      <turretBurstCooldownTime>1.25</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineering</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>EGO_TurretGun_Small_SMG</defName>
+    <label>Toxocyst Turret</label>
+    <description>Amalgam SMG for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_SMG_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <AccuracyTouch>1.3</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.95</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_SMG</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>28.9</range>
+        <burstShotCount>4</burstShotCount>
+		<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Pawn_Megascarab_Death</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+<!--=============== SniperRifle ====================-->
+  <ThingDef ParentName="OE_TurretBase_SmallPowered">
+    <defName>EGO_Turret_Small_SniperRifle</defName>
+    <label>EGO Patagius Turret</label>
+    <description>Amalgam Sniper Rifle-equipped turret. Completely self-contained and does not require power or ammunition. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_Base</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/EGO/TurretSmall_SniperRifle_Icon</uiIconPath>
+	<designatorDropdown>OE_Turrets_EGO</designatorDropdown>
+    <costList>
+      <OE_EGOAmalgamationCore>1</OE_EGOAmalgamationCore>
+	  <EGO_SniperRifle>1</EGO_SniperRifle>
+    </costList>
+	<statBases>
+      <MarketValue>5415</MarketValue>
+    </statBases>
+    <building>
+      <combatPower>175</combatPower> 
+	  <turretGunDef>EGO_TurretGun_Small_SniperRifle</turretGunDef>
+      <turretBurstCooldownTime>1.25</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>OEDefence</li>
+	  <li>OEGearCross</li>
+	  <li>OEBioengineering</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>EGO_TurretGun_Small_SniperRifle</defName>
+    <label>Patagius Turret</label>
+    <description>Amalgam Sniper Rifle for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/EGO/TurretSmall_SniperRifle_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.20</AccuracyShort>
+      <AccuracyMedium>1.30</AccuracyMedium>
+      <AccuracyLong>1.40</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_SR</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>59.9</range>
+        <soundCast>Pawn_Spelopede_Pain</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

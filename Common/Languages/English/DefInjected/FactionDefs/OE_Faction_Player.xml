@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Obsidia Player Colony ====================-->
+<OE_ObsidiaPlayerColony.label>Obsidia Colony</OE_ObsidiaPlayerColony.label>
+<OE_ObsidiaPlayerColony.description>A colony of recently-arrived Obsidia Empire colonists.</OE_ObsidiaPlayerColony.description>
+<OE_ObsidiaPlayerColony.pawnSingular>colonist</OE_ObsidiaPlayerColony.pawnSingular>
+<OE_ObsidiaPlayerColony.pawnsPlural>colonists</OE_ObsidiaPlayerColony.pawnsPlural>
+<OE_ObsidiaPlayerColony.leaderTitle>consul</OE_ObsidiaPlayerColony.leaderTitle>
+<OE_ObsidiaPlayerColony.messageDefendersAttacking>{0} from {1} are attacking your {2}.</OE_ObsidiaPlayerColony.messageDefendersAttacking>
+
+<!--=============== Obsidia Agent Player Colony ====================-->
+<OE_ObsidiaAgentPlayerColony.label>Obsidia Agents Colony</OE_ObsidiaAgentPlayerColony.label>
+<OE_ObsidiaAgentPlayerColony.description>A colony of recently-crashed Obsidia Empire agents.</OE_ObsidiaAgentPlayerColony.description>
+<OE_ObsidiaAgentPlayerColony.pawnSingular>agent</OE_ObsidiaAgentPlayerColony.pawnSingular>
+<OE_ObsidiaAgentPlayerColony.pawnsPlural>agents</OE_ObsidiaAgentPlayerColony.pawnsPlural>
+<OE_ObsidiaAgentPlayerColony.leaderTitle>consul</OE_ObsidiaAgentPlayerColony.leaderTitle>
+<OE_ObsidiaAgentPlayerColony.messageDefendersAttacking>{0} from {1} are attacking your {2}.</OE_ObsidiaAgentPlayerColony.messageDefendersAttacking>
+
+</LanguageData>

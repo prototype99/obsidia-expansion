@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Obsidia Expansion - Mothoids Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Mothoids Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Mothoid MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Mothoid>
+			<OE_MothoidPrime MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_MothoidPrime>
+			<OE_MothoidAtlant MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_MothoidAtlant>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_MothoidPrime MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_MothoidPrime>
+			<OE_MothoidAtlant MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_MothoidAtlant>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaRenegadeClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Mothoid MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Mothoid>
+			<OE_MothoidAtlant MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_MothoidAtlant>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Mothoid MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Mothoid>
+			<OE_MothoidPrime MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_MothoidPrime>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Mothoid MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Mothoid>
+			<OE_MothoidPrime MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_MothoidPrime>
+			<OE_MothoidAtlant MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_MothoidAtlant>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Mothoid MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Mothoid>
+			<OE_MothoidPrime MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_MothoidPrime>
+			<OE_MothoidAtlant MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_MothoidAtlant>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Tortle Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Tortle Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Tortle MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Tortle>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Tortle MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Tortle>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaRenegadeClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Tortle MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Tortle>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Tortle MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Tortle>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Tortle MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Tortle>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Tortle MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Tortle>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Tortle MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Tortle>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Arachnas Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Arachnas Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_GoliathArachna MayRequire="Ludeon.RimWorld.Biotech">0.01</OE_GoliathArachna>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaRenegadeClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_WolfArachna MayRequire="Ludeon.RimWorld.Biotech">0.01</OE_WolfArachna>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_WidowArachna MayRequire="Ludeon.RimWorld.Biotech">0.01</OE_WidowArachna>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_WidowArachna MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_WidowArachna>
+			<OE_WolfArachna MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_WolfArachna>
+			<OE_GoliathArachna MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_GoliathArachna>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_WidowArachna MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_WidowArachna>
+			<OE_WolfArachna MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_WolfArachna>
+			<OE_GoliathArachna MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_GoliathArachna>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Ceratons Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Ceratons Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Protoceraton MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_Protoceraton>
+			<OE_Styracodon MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Styracodon>
+			<OE_Triceraton MayRequire="Ludeon.RimWorld.Biotech">0.01</OE_Triceraton>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Triceraton MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Triceraton>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaRenegadeClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Styracodon MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Styracodon>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Protoceraton MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Protoceraton>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Protoceraton MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_Protoceraton>
+			<OE_Styracodon MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_Styracodon>
+			<OE_Triceraton MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_Triceraton>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Protoceraton MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Protoceraton>
+			<OE_Styracodon MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Styracodon>
+			<OE_Triceraton MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Triceraton>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Axotle Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Axotle Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Axotl MayRequire="Ludeon.RimWorld.Biotech">0.01</OE_Axotl>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Axotl MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_Axotl>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins" or defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Axotl MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Axotl>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Slimes Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Slimes Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Slime MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Slime>
+			<OE_SlimeWaste MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_SlimeWaste>
+			<OE_SlimeBloody MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_SlimeBloody>
+			<OE_SlimePrime MayRequire="Ludeon.RimWorld.Biotech">0.01</OE_SlimePrime>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Slime MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Slime>
+			<OE_SlimeWaste MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_SlimeWaste>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Slime MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_Slime>
+			<OE_SlimeBloody MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_SlimeBloody>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Slime MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Slime>
+			<OE_SlimeWaste MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_SlimeWaste>
+			<OE_SlimeBloody MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_SlimeBloody>
+			<OE_SlimePrime MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_SlimePrime>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Drakonids Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Drakonids Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_HalfDrakonid MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_HalfDrakonid>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_HalfDrakonid MayRequire="Ludeon.RimWorld.Biotech">0.03</OE_HalfDrakonid>
+			<OE_Drakonid MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Drakonid>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_HalfDrakonid MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_HalfDrakonid>
+			<OE_Drakonid MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Drakonid>
+			<OE_DrakonidPrime MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_DrakonidPrime>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Spiderfolk Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Spiderfolk Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan" or defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Spiderfolk MayRequire="Ludeon.RimWorld.Biotech">0.01</OE_Spiderfolk>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Spiderfolk MayRequire="Ludeon.RimWorld.Biotech">0.05</OE_Spiderfolk>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Spiderfolk MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Spiderfolk>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Tailborne Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Tailborne Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Mousari MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Mousari>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Ratscourge MayRequire="Ludeon.RimWorld.Biotech">0.02</OE_Ratscourge>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<!--=============== Obsidia Expansion - Amalgams Xenotype ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion - Amalgams Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpire"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Amalgams_Obsidian MayRequire="Ludeon.RimWorld.Biotech">0.25</OE_Amalgams_Obsidian>
+			<OE_Amalgams_Mothoid MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.01</OE_Amalgams_Mothoid>
+			<OE_Amalgams_Tortle MayRequire="ObsidiaExpansion.Xenos.Tortle">0.01</OE_Amalgams_Tortle>
+			<OE_Amalgams_Axotl MayRequire="ObsidiaExpansion.Xenos.Axotl">0.01</OE_Amalgams_Axotl>
+			<OE_Amalgams_Slime MayRequire="ObsidiaExpansion.Xenos.Slimes">0.01</OE_Amalgams_Slime>
+			<OE_Amalgams_Drakonid MayRequire="ObsidiaExpansion.Xenos.Drakonids">0.01</OE_Amalgams_Drakonid>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaSyndicateClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Amalgams_Obsidian MayRequire="Ludeon.RimWorld.Biotech">0.20</OE_Amalgams_Obsidian>
+			<OE_Amalgams_Mothoid MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.01</OE_Amalgams_Mothoid>
+			<OE_Amalgams_Tortle MayRequire="ObsidiaExpansion.Xenos.Tortle">0.01</OE_Amalgams_Tortle>
+			<OE_Amalgams_Ceraton MayRequire="ObsidiaExpansion.Xenos.Ceratons">0.01</OE_Amalgams_Ceraton>
+			<OE_Amalgams_Axotl MayRequire="ObsidiaExpansion.Xenos.Axotl">0.01</OE_Amalgams_Axotl>
+			<OE_Amalgams_Slime MayRequire="ObsidiaExpansion.Xenos.Slimes">0.01</OE_Amalgams_Slime>
+			<OE_Amalgams_Tailborne MayRequire="ObsidiaExpansion.Xenos.Tailborne">0.01</OE_Amalgams_Tailborne>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaRenegadeClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Amalgams_Obsidian MayRequire="Ludeon.RimWorld.Biotech">0.20</OE_Amalgams_Obsidian>
+			<OE_Amalgams_Mothoid MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.01</OE_Amalgams_Mothoid>
+			<OE_Amalgams_Tortle MayRequire="ObsidiaExpansion.Xenos.Tortle">0.01</OE_Amalgams_Tortle>
+			<OE_Amalgams_Ceraton MayRequire="ObsidiaExpansion.Xenos.Ceratons">0.01</OE_Amalgams_Ceraton>
+			<OE_Amalgams_Axotl MayRequire="ObsidiaExpansion.Xenos.Axotl">0.01</OE_Amalgams_Axotl>
+			<OE_Amalgams_Slime MayRequire="ObsidiaExpansion.Xenos.Slimes">0.01</OE_Amalgams_Slime>
+			<OE_Amalgams_Tailborne MayRequire="ObsidiaExpansion.Xenos.Tailborne">0.01</OE_Amalgams_Tailborne>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Amalgams_Obsidian MayRequire="Ludeon.RimWorld.Biotech">0.20</OE_Amalgams_Obsidian>
+			<OE_Amalgams_Mothoid MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.01</OE_Amalgams_Mothoid>
+			<OE_Amalgams_Tortle MayRequire="ObsidiaExpansion.Xenos.Tortle">0.01</OE_Amalgams_Tortle>
+			<OE_Amalgams_Ceraton MayRequire="ObsidiaExpansion.Xenos.Ceratons">0.01</OE_Amalgams_Ceraton>
+			<OE_Amalgams_Axotl MayRequire="ObsidiaExpansion.Xenos.Axotl">0.01</OE_Amalgams_Axotl>
+			<OE_Amalgams_Slime MayRequire="ObsidiaExpansion.Xenos.Slimes">0.01</OE_Amalgams_Slime>
+			<OE_Amalgams_Tailborne MayRequire="ObsidiaExpansion.Xenos.Tailborne">0.01</OE_Amalgams_Tailborne>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaCrimsonArachnaCult"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Amalgams_Obsidian MayRequire="Ludeon.RimWorld.Biotech">0.15</OE_Amalgams_Obsidian>
+			<OE_Amalgams_Arachna MayRequire="ObsidiaExpansion.Xenos.Arachnas">0.01</OE_Amalgams_Arachna>
+			<OE_Amalgams_Axotl MayRequire="ObsidiaExpansion.Xenos.Axotl">0.01</OE_Amalgams_Axotl>
+			<OE_Amalgams_Slime MayRequire="ObsidiaExpansion.Xenos.Slimes">0.01</OE_Amalgams_Slime>
+			<OE_Amalgams_Lich MayRequire="ObsidiaExpansion.Xenos.Liches">0.01</OE_Amalgams_Lich>
+			<OE_Amalgams_Spiderfolk MayRequire="ObsidiaExpansion.Xenos.Spiderfolk">0.01</OE_Amalgams_Spiderfolk>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaEmpireSins"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Amalgams_Obsidian MayRequire="Ludeon.RimWorld.Biotech">0.25</OE_Amalgams_Obsidian>
+			<OE_Amalgams_Mothoid MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.01</OE_Amalgams_Mothoid>
+			<OE_Amalgams_Ceraton MayRequire="ObsidiaExpansion.Xenos.Ceratons">0.01</OE_Amalgams_Ceraton>
+			<OE_Amalgams_Axotl MayRequire="ObsidiaExpansion.Xenos.Axotl">0.01</OE_Amalgams_Axotl>
+			<OE_Amalgams_Slime MayRequire="ObsidiaExpansion.Xenos.Slimes">0.01</OE_Amalgams_Slime>
+			<OE_Amalgams_Drakonid MayRequire="ObsidiaExpansion.Xenos.Drakonids">0.01</OE_Amalgams_Drakonid>
+			<OE_Amalgams_Lich MayRequire="ObsidiaExpansion.Xenos.Liches">0.01</OE_Amalgams_Lich>
+			<OE_Amalgams_Spiderfolk MayRequire="ObsidiaExpansion.Xenos.Spiderfolk">0.01</OE_Amalgams_Spiderfolk>
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<OE_Amalgams_Obsidian MayRequire="Ludeon.RimWorld.Biotech">0.15</OE_Amalgams_Obsidian>
+			<OE_Amalgams_Mothoid MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.01</OE_Amalgams_Mothoid>
+			<OE_Amalgams_Tortle MayRequire="ObsidiaExpansion.Xenos.Tortle">0.01</OE_Amalgams_Tortle>
+			<OE_Amalgams_Arachna MayRequire="ObsidiaExpansion.Xenos.Arachnas">0.01</OE_Amalgams_Arachna>
+			<OE_Amalgams_Slime MayRequire="ObsidiaExpansion.Xenos.Slimes">0.01</OE_Amalgams_Slime>
+			<OE_Amalgams_Drakonid MayRequire="ObsidiaExpansion.Xenos.Drakonids">0.01</OE_Amalgams_Drakonid>
+			<OE_Amalgams_Lich MayRequire="ObsidiaExpansion.Xenos.Liches">0.01</OE_Amalgams_Lich>
+			<OE_Amalgams_Spiderfolk MayRequire="ObsidiaExpansion.Xenos.Spiderfolk">0.01</OE_Amalgams_Spiderfolk>
+			<OE_Amalgams_Tailborne MayRequire="ObsidiaExpansion.Xenos.Tailborne">0.01</OE_Amalgams_Tailborne>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

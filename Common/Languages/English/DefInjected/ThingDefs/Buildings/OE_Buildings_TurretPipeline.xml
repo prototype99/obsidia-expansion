@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Ammo Pipes ====================-->
+<OE_AmmoPipe_Normal.label>obsidia ammo pipe</OE_AmmoPipe_Normal.label>
+<OE_AmmoPipe_Normal.description>Obsidian pipes built to efficiently transport obsidia ammo from storage directly to connected turrets, ensuring a steady supply during combat.</OE_AmmoPipe_Normal.description>
+
+<OE_AmmoPipe_Hidden.label>hidden obsidia ammo pipe</OE_AmmoPipe_Hidden.label>
+<OE_AmmoPipe_Hidden.description>Obsidian pipes built to efficiently transport obsidia ammo from storage directly to connected turrets, ensuring a steady supply during combat. This pipe is hidden from view. More expensive to build than regular pipes.</OE_AmmoPipe_Hidden.description>
+
+<!--=============== Ammo Storage ====================-->
+<OE_AmmoStorage.label>obsidia ammo storage</OE_AmmoStorage.label>
+<OE_AmmoStorage.description>The core of your colony’s obsidia-based defense logistics, the Obsidia Ammo Storage secures and organizes vast quantities of specialized munitions. Built with reinforced containment and high-capacity shelving, it guarantees a steady supply to the network, keeping your turrets locked, loaded, and prepared for the longest sieges.</OE_AmmoStorage.description>
+
+<!--=============== Ammo Sorting ====================-->
+<OE_AmmoSorting_Output.label>obsidia ammo dispenser</OE_AmmoSorting_Output.label>
+<OE_AmmoSorting_Output.description>A critical link in your colony’s obsidia-based defense logistics, the Obsidia Ammo Dispenser channels high-density munitions from the obsidia pipeline directly into turret systems. Optimized for speed and efficiency, it ensures seamless resupply under fire, maintaining peak combat readiness at all times.</OE_AmmoSorting_Output.description>
+
+<OE_AmmoSorting_Input.label>obsidia ammo injector</OE_AmmoSorting_Input.label>
+<OE_AmmoSorting_Input.description>The starting point of your obsidia-based defense logistics, the Obsidia Ammo Injector loads high-powered rounds into the pipe network with precision and force. Engineered for consistency and volume, it fuels your colony’s turret grid with relentless reliability, empowering your defenses against even the most persistent threats.</OE_AmmoSorting_Input.description>
+
+</LanguageData>

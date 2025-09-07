@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <!--=============== Spacer Gear ====================-->
+		  <li Class="PatchOperationConditional">
+		    <xpath>/Defs/ThingDef[defName="OMC_Helmet_M_Spacer" or defName="OMC_Armor_M_Spacer" or defName="OTC_Helmet_M_Spacer" or defName="OTC_Armor_M_Spacer" or defName="OCC_Helmet_M_Spacer" or defName="OCC_Armor_M_Spacer" or defName="OEC_Helmet_M_Spacer" or defName="OEC_Armor_M_Spacer" or defName="ODC_Helmet_Spacer" or defName="ODC_Armor_Recon_Spacer" or defName="ODC_Armor_Duelist_Spacer" or defName="OE_Helmet_Kid_Spacer" or defName="OE_Armor_Kid_Spacer" or @Name="CACHelmetBase" or @Name="CACArmorBase" or @Name="OESHelmetBase" or @Name="OESArmorBase" or @Name="EGOHelmetBase" or @Name="EGOArmorBase"][not(comps)]</xpath>
+			<match Class="PatchOperationAdd">
+			  <xpath>/Defs/ThingDef[defName="OMC_Helmet_M_Spacer" or defName="OMC_Armor_M_Spacer" or defName="OTC_Helmet_M_Spacer" or defName="OTC_Armor_M_Spacer" or defName="OCC_Helmet_M_Spacer" or defName="OCC_Armor_M_Spacer" or defName="OEC_Helmet_M_Spacer" or defName="OEC_Armor_M_Spacer" or defName="ODC_Helmet_Spacer" or defName="ODC_Armor_Recon_Spacer" or defName="ODC_Armor_Duelist_Spacer" or defName="OE_Helmet_Kid_Spacer" or defName="OE_Armor_Kid_Spacer" or @Name="CACHelmetBase" or @Name="CACArmorBase" or @Name="OESHelmetBase" or @Name="OESArmorBase" or @Name="EGOHelmetBase" or @Name="EGOArmorBase"][not(comps)]</xpath>
+			  <value>
+			    <comps />
+			  </value>
+			</match>
+		  </li>
+		  <li Class="PatchOperationConditional">
+		    <xpath>/Defs/ThingDef[defName="OMC_Helmet_M_Spacer" or defName="OMC_Armor_M_Spacer" or defName="OTC_Helmet_M_Spacer" or defName="OTC_Armor_M_Spacer" or defName="OCC_Helmet_M_Spacer" or defName="OCC_Armor_M_Spacer" or defName="OEC_Helmet_M_Spacer" or defName="OEC_Armor_M_Spacer" or defName="ODC_Helmet_Spacer" or defName="ODC_Armor_Recon_Spacer" or defName="ODC_Armor_Duelist_Spacer" or defName="OE_Helmet_Kid_Spacer" or defName="OE_Armor_Kid_Spacer" or @Name="CACHelmetBase" or @Name="CACArmorBase" or @Name="OESHelmetBase" or @Name="OESArmorBase" or @Name="EGOHelmetBase" or @Name="EGOArmorBase"]/comps[not(li/compClass="SaveOurShip2.CompEVA")]</xpath>
+			<match Class="PatchOperationAdd">
+			  <xpath>/Defs/ThingDef[defName="OMC_Helmet_M_Spacer" or defName="OMC_Armor_M_Spacer" or defName="OTC_Helmet_M_Spacer" or defName="OTC_Armor_M_Spacer" or defName="OCC_Helmet_M_Spacer" or defName="OCC_Armor_M_Spacer" or defName="OEC_Helmet_M_Spacer" or defName="OEC_Armor_M_Spacer" or defName="ODC_Helmet_Spacer" or defName="ODC_Armor_Recon_Spacer" or defName="ODC_Armor_Duelist_Spacer" or defName="OE_Helmet_Kid_Spacer" or defName="OE_Armor_Kid_Spacer" or @Name="CACHelmetBase" or @Name="CACArmorBase" or @Name="OESHelmetBase" or @Name="OESArmorBase" or @Name="EGOHelmetBase" or @Name="EGOArmorBase"]/comps[not(li/compClass="SaveOurShip2.CompEVA")]</xpath>
+			  <value>
+			    <li>
+				  <compClass>SaveOurShip2.CompEVA</compClass>
+				</li>
+			  </value>
+			</match>
+		  </li>
+		  <li Class="PatchOperationConditional">
+		    <xpath>/Defs/ThingDef[defName="OMC_Helmet_M_Spacer" or defName="OMC_Armor_M_Spacer" or defName="OTC_Helmet_M_Spacer" or defName="OTC_Armor_M_Spacer" or defName="OCC_Helmet_M_Spacer" or defName="OCC_Armor_M_Spacer" or defName="OEC_Helmet_M_Spacer" or defName="OEC_Armor_M_Spacer" or defName="ODC_Helmet_Spacer" or defName="ODC_Armor_Recon_Spacer" or defName="ODC_Armor_Duelist_Spacer" or defName="OE_Helmet_Kid_Spacer" or defName="OE_Armor_Kid_Spacer" or @Name="CACHelmetBase" or @Name="CACArmorBase" or @Name="OESHelmetBase" or @Name="OESArmorBase" or @Name="EGOHelmetBase" or @Name="EGOArmorBase"][not(equippedStatOffsets)]</xpath>
+			<match Class="PatchOperationAdd">
+			  <xpath>/Defs/ThingDef[defName="OMC_Helmet_M_Spacer" or defName="OMC_Armor_M_Spacer" or defName="OTC_Helmet_M_Spacer" or defName="OTC_Armor_M_Spacer" or defName="OCC_Helmet_M_Spacer" or defName="OCC_Armor_M_Spacer" or defName="OEC_Helmet_M_Spacer" or defName="OEC_Armor_M_Spacer" or defName="ODC_Helmet_Spacer" or defName="ODC_Armor_Recon_Spacer" or defName="ODC_Armor_Duelist_Spacer" or defName="OE_Helmet_Kid_Spacer" or defName="OE_Armor_Kid_Spacer" or @Name="CACHelmetBase" or @Name="CACArmorBase" or @Name="OESHelmetBase" or @Name="OESArmorBase" or @Name="EGOHelmetBase" or @Name="EGOArmorBase"][not(equippedStatOffsets)]</xpath>
+			  <value>
+			    <equippedStatOffsets />
+			  </value>
+			</match>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OMC_Armor_M_Spacer" or defName="OTC_Armor_M_Spacer" or defName="OCC_Armor_M_Spacer" or defName="OEC_Armor_M_Spacer" or defName="ODC_Armor_Recon_Spacer" or defName="ODC_Armor_Duelist_Spacer" or defName="OE_Armor_Kid_Spacer" or @Name="CACArmorBase" or @Name="OESArmorBase" or @Name="EGOArmorBase"]/equippedStatOffsets</xpath>
+			<value>
+			  <DecompressionResistance>0.75</DecompressionResistance>
+			  <VacuumSpeedMultiplier>4</VacuumSpeedMultiplier>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OMC_Helmet_M_Spacer" or defName="OTC_Helmet_M_Spacer" or defName="OCC_Helmet_M_Spacer" or defName="OEC_Helmet_M_Spacer" or defName="ODC_Helmet_Spacer" or defName="OE_Helmet_Kid_Spacer" or @Name="CACHelmetBase" or @Name="OESHelmetBase" or @Name="EGOHelmetBase"]/equippedStatOffsets</xpath>
+			<value>
+			  <HypoxiaResistance>1</HypoxiaResistance>
+			  <DecompressionResistance>0.25</DecompressionResistance>
+			</value>
+		  </li>
+		  <li Class="PatchOperationAdd">
+		    <xpath>/Defs</xpath>
+			<value>
+<!--=============== OE - Modules ====================-->
+<!--=============== Various ====================-->
+<!--=============== Battle ====================-->
+  <ThingDef ParentName="OEModuleBase">
+    <defName>OE_Module_Spacer</defName>
+    <label>Battle Module - Astronaut</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/B_Spacer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleB</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<statBases>
+	  <Insulation_Cold>100</Insulation_Cold>
+	</statBases>
+	<equippedStatOffsets>
+	  <HypoxiaResistance>1.0</HypoxiaResistance>
+	  <DecompressionResistance>1.0</DecompressionResistance>
+	  <VacuumSpeedMultiplier>2.0</VacuumSpeedMultiplier>
+    </equippedStatOffsets>
+	<comps>
+	  <li>
+		<compClass>SaveOurShip2.CompEVA</compClass>
+	  </li>
+	</comps>
+  </ThingDef>			
+			
+			</value>
+		  </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

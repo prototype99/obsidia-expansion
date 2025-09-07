@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Elder Beast ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_ElderBeast.questNameRules.rulesStrings>
+  <li>questName->[beastAdjective] [beastNoun]</li>
+  <!-- Pieces -->
+  <li>beastAdjective->Леденячий кров</li>
+  <li>beastAdjective->Моторошний</li>
+  <li>beastAdjective->Резонуючий</li>
+  <li>beastAdjective->Далекий</li>
+  <li>beastAdjective->Глухий</li>
+  <li>beastAdjective->Архаїчний</li>
+  <li>beastNoun->Вій</li>
+  <li>beastNoun->Рев</li>
+  <li>beastNoun->Рик</li>
+</OE_Quest_ElderBeast.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_ElderBeast.questDescriptionRules.rulesStrings>
+  <li>questDescription->Колоністи повідомили, що чули щось дивне поблизу — глибокий, тваринний звук, що лунав по всій місцевості.\n\nВони не змогли визначити, яка істота його видавала, але, судячи зі звуку, вона була великою.\n\nДуже великою. Там щось є... і, можливо, воно наближається до нас.</li>
+  <li>questDescription->Все почалося зі звуку — низького, первісного і неймовірно далекого. Він луною розносився по деревах, скелях і кістках, ніби сама земля пам'ятала це чудовисько. \n\nТварини втекли. Повітря стало холоднішим. Навіть вітер тепер, здається, обходить ліс стороною. \n\nЩось древнє ворушиться — спостерігає, прислухається, наближається. Ви не знаєте, що це... тільки те, що воно ніколи не повинно було повернутися.</li>
+</OE_Quest_ElderBeast.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Elder Beast Arrive ====================-->
+<!-- Elder Direwolf -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterLabel.slateRef>Наближається архаїчний звір</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] наближається до колонії — воно виглядає надзвичайно небезпечним, але не агресивним... поки що. Ви повинні вирішити, як вчинити:\n-залишити звіра в спокої;\n-спробувати приручити;\n-полювати на нього заради рідкісних і цінних трофеїв.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-0.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Raptor -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterLabel.slateRef>Наближається архаїчний звір</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] наближається до колонії — воно виглядає надзвичайно небезпечним, але не агресивним... поки що. Ви повинні вирішити, як вчинити:\n-залишити звіра в спокої;\n-спробувати приручити;\n-полювати на нього заради рідкісних і цінних трофеїв.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-1.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Ogren -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterLabel.slateRef>Наближається архаїчний звір</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] наближається до колонії — воно виглядає надзвичайно небезпечним, але не агресивним... поки що. Ви повинні вирішити, як вчинити:\n-залишити звіра в спокої;\n-спробувати приручити;\n-полювати на нього заради рідкісних і цінних трофеїв.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-2.nodes.PawnsArrive.customLetterText.slateRef>
+<!-- Elder Tionants -->
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterLabel.slateRef>Наближається архаїчний звір</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterLabel.slateRef>
+<OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterText.slateRef>[elderbeast_label] наближається до колонії — воно виглядає надзвичайно небезпечним, але не агресивним... поки що. Ви повинні вирішити, як вчинити:\n-залишити звіра в спокої;\n-спробувати приручити;\n-полювати на нього заради рідкісних і цінних трофеїв.</OE_Quest_ElderBeast.root.nodes.Delay-0.node.nodes.RandomNode.nodes.Sequence-3.nodes.PawnsArrive.customLetterText.slateRef>
+
+</LanguageData>

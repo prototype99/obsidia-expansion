@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Drillspear ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OCCTrophyDrillspearBase">
+    <defName>OCC_Trophy_Drillspear_P</defName>
+    <label>Persona Balor</label>
+    <description>Persona spear-drill, a replica of the personal weapon of the great siegemaster Balor.\n\nThis is a rare trophy weapon.\n\nFeature: designed to destroy structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_DrillSpear_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OCCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Railgun ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OCCTrophyRifleBase">
+    <defName>OCC_Trophy_Railgun_P</defName>
+    <label>Persona Cronus</label>
+    <description>Sample weapon of new experimental persona railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_Railgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OCCTrophyRanged</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

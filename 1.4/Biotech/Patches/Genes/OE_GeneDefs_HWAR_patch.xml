@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Hussar Weapon Aptitude Remake</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OMC ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OMC_WeaponMelee</defName>
+	<label>OMC melee weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OMC_WeaponMelee</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OMCBaseMelee</li>
+		<li>OMCBaseMeleeM</li>
+		<li>OMCRangedMelee</li>
+		<li>OMCRangedMeleeM</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OMC_WeaponRanged</defName>
+	<label>OMC ranged weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OMC_WeaponRanged</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OMCLightGun</li>
+		<li>OMCLightGunM</li>
+		<li>OMCShortGun</li>
+		<li>OMCShortGunM</li>
+		<li>OMCBaseGun</li>
+		<li>OMCBaseGunM</li>
+		<li>OMCSniperGun</li>
+		<li>OMCSniperGunM</li>
+		<li>OMCHeavyGun</li>
+		<li>OMCHeavyGunM</li>	
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+<!--=============== OTC ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OTC_WeaponMelee</defName>
+	<label>OTC melee weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OTC_WeaponMelee</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OTCBaseMelee_Acid</li>
+		<li>OTCBaseMeleeM_Acid</li>
+		<li>OTCBaseMelee_Cryo</li>
+		<li>OTCBaseMeleeM_Cryo</li>
+		<li>OTCBaseMelee_Fire</li>
+		<li>OTCBaseMeleeM_Fire</li>
+		<li>OTCBaseMelee_EMP</li>
+		<li>OTCBaseMeleeM_EMP</li>
+		<li>OTCHeavyMelee_Acid</li>
+		<li>OTCHeavyMeleeM_Acid</li>
+		<li>OTCHeavyMelee_Cryo</li>
+		<li>OTCHeavyMeleeM_Cryo</li>
+		<li>OTCHeavyMelee_Fire</li>
+		<li>OTCHeavyMeleeM_Fire</li>
+		<li>OTCHeavyMelee_EMP</li>
+		<li>OTCHeavyMeleeM_EMP</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OTC_WeaponRanged</defName>
+	<label>OTC ranged weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OTC_WeaponRanged</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OTCLightGun_Acid</li>
+		<li>OTCLightGunM_Acid</li>
+		<li>OTCLightGun_Cryo</li>
+		<li>OTCLightGunM_Cryo</li>
+		<li>OTCLightGun_Fire</li>
+		<li>OTCLightGunM_Fire</li>
+		<li>OTCLightGun_EMP</li>
+		<li>OTCLightGunM_EMP</li>
+		<li>OTCBaseGun_Acid</li>
+		<li>OTCBaseGunM_Acid</li>
+		<li>OTCBaseGun_Cryo</li>
+		<li>OTCBaseGunM_Cryo</li>
+		<li>OTCBaseGun_Fire</li>
+		<li>OTCBaseGunM_Fire</li>
+		<li>OTCBaseGun_EMP</li>
+		<li>OTCBaseGunM_EMP</li>
+		<li>OTCHeavyGun_Acid</li>
+		<li>OTCHeavyGunM_Acid</li>
+		<li>OTCHeavyGun_Cryo</li>
+		<li>OTCHeavyGunM_Cryo</li>
+		<li>OTCHeavyGun_Fire</li>
+		<li>OTCHeavyGunM_Fire</li>
+		<li>OTCHeavyGun_EMP</li>
+		<li>OTCHeavyGunM_EMP</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+<!--=============== OCC ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OCC_WeaponMelee</defName>
+	<label>OCC melee weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OCC_WeaponMelee</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OCCBaseMelee</li>
+		<li>OCCBaseMeleeM</li>
+		<li>OCCHeavyMelee</li>
+		<li>OCCHeavyMeleeM</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OCC_WeaponRanged</defName>
+	<label>OCC ranged weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OCC_WeaponRanged</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OCCLightGun</li>
+		<li>OCCLightGunM</li>
+		<li>OCCBaseGun</li>
+		<li>OCCBaseGunM</li>
+		<li>OCCSniperGun</li>
+		<li>OCCSniperGunM</li>
+		<li>OCCHeavyGun</li>
+		<li>OCCHeavyGunM</li>	
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+<!--=============== ODC ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OEC_WeaponMelee</defName>
+	<label>OEC melee weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/ODC_WeaponMelee</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>ODCBaseMelee</li>
+		<li>ODCHeavyMelee</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OEC_WeaponRanged</defName>
+	<label>OEC ranged weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/ODC_WeaponRanged</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>ODCLightGun</li>
+		<li>ODCShortGun</li>
+		<li>ODCBaseGun</li>
+		<li>ODCSniperGun</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+<!--=============== CAC ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_CAC_WeaponMelee</defName>
+	<label>CAC melee weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/CAC_WeaponMelee</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>CACBaseMelee</li>
+		<li>CACHeavyMelee</li>
+		<li>CACRangedMelee</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_CAC_WeaponRanged</defName>
+	<label>CAC ranged weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/CAC_WeaponRanged</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>CACLightGun</li>
+		<li>CACBaseGun</li>
+		<li>CACSniperGun</li>
+		<li>CACHeavyGun</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+<!--=============== OES ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OES_WeaponMelee</defName>
+	<label>OES melee weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OES_WeaponMelee</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OESMelee</li>
+		<li>EGOMelee</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OES_WeaponRanged</defName>
+	<label>OES ranged weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OES_WeaponRanged</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OESGun</li>
+		<li>EGOGun</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+<!--=============== OE ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_WeaponMaster</defName>
+	<label>all obsidia weapons</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OE_WeaponMaster</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OETrophyMelee</li>
+		<li>OETrophyRanged</li>
+		<!-- OMC -->
+		<li>OMCBaseMelee</li>
+		<li>OMCBaseMeleeM</li>
+		<li>OMCRangedMelee</li>
+		<li>OMCRangedMeleeM</li>
+		<li>OMCLightGun</li>
+		<li>OMCLightGunM</li>
+		<li>OMCShortGun</li>
+		<li>OMCShortGunM</li>
+		<li>OMCBaseGun</li>
+		<li>OMCBaseGunM</li>
+		<li>OMCSniperGun</li>
+		<li>OMCSniperGunM</li>
+		<li>OMCHeavyGun</li>
+		<li>OMCHeavyGunM</li>
+		<li>OMCTrophyMelee</li>
+		<li>OMCTrophyRanged</li>
+		<!-- OTC -->
+		<li>OTCBaseMelee_Acid</li>
+		<li>OTCBaseMeleeM_Acid</li>
+		<li>OTCBaseMelee_Cryo</li>
+		<li>OTCBaseMeleeM_Cryo</li>
+		<li>OTCBaseMelee_Fire</li>
+		<li>OTCBaseMeleeM_Fire</li>
+		<li>OTCBaseMelee_EMP</li>
+		<li>OTCBaseMeleeM_EMP</li>
+		<li>OTCHeavyMelee_Acid</li>
+		<li>OTCHeavyMeleeM_Acid</li>
+		<li>OTCHeavyMelee_Cryo</li>
+		<li>OTCHeavyMeleeM_Cryo</li>
+		<li>OTCHeavyMelee_Fire</li>
+		<li>OTCHeavyMeleeM_Fire</li>
+		<li>OTCHeavyMelee_EMP</li>
+		<li>OTCHeavyMeleeM_EMP</li>
+		<li>OTCLightGun_Acid</li>
+		<li>OTCLightGunM_Acid</li>
+		<li>OTCLightGun_Cryo</li>
+		<li>OTCLightGunM_Cryo</li>
+		<li>OTCLightGun_Fire</li>
+		<li>OTCLightGunM_Fire</li>
+		<li>OTCLightGun_EMP</li>
+		<li>OTCLightGunM_EMP</li>
+		<li>OTCBaseGun_Acid</li>
+		<li>OTCBaseGunM_Acid</li>
+		<li>OTCBaseGun_Cryo</li>
+		<li>OTCBaseGunM_Cryo</li>
+		<li>OTCBaseGun_Fire</li>
+		<li>OTCBaseGunM_Fire</li>
+		<li>OTCBaseGun_EMP</li>
+		<li>OTCBaseGunM_EMP</li>
+		<li>OTCHeavyGun_Acid</li>
+		<li>OTCHeavyGunM_Acid</li>
+		<li>OTCHeavyGun_Cryo</li>
+		<li>OTCHeavyGunM_Cryo</li>
+		<li>OTCHeavyGun_Fire</li>
+		<li>OTCHeavyGunM_Fire</li>
+		<li>OTCHeavyGun_EMP</li>
+		<li>OTCHeavyGunM_EMP</li>
+		<li>OTCTrophyMelee</li>
+		<li>OTCTrophyRanged</li>
+		<!-- OCC -->
+		<li>OCCBaseMelee</li>
+		<li>OCCBaseMeleeM</li>
+		<li>OCCHeavyMelee</li>
+		<li>OCCHeavyMeleeM</li>
+		<li>OCCLightGun</li>
+		<li>OCCLightGunM</li>
+		<li>OCCBaseGun</li>
+		<li>OCCBaseGunM</li>
+		<li>OCCSniperGun</li>
+		<li>OCCSniperGunM</li>
+		<li>OCCHeavyGun</li>
+		<li>OCCHeavyGunM</li>
+		<li>OCCTrophyMelee</li>
+		<li>OCCTrophyRanged</li>
+		<!-- OEC -->
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECBaseMelee</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECBaseMeleeM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECHeavyMelee</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECHeavyMeleeM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECRangedMelee</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECRangedMeleeM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECLightGun</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECLightGunM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECShortGun</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECShortGunM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECBaseGun</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECBaseGunM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECSniperGun</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECSniperGunM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECHeavyGun</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECHeavyGunM</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECTrophyMelee</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">OECTrophyRanged</li>
+		<!-- ODC -->
+		<li>ODCBaseMelee</li>
+		<li>ODCHeavyMelee</li>
+		<li>ODCLightGun</li>
+		<li>ODCShortGun</li>
+		<li>ODCBaseGun</li>
+		<li>ODCSniperGun</li>
+		<li>ODCTrophyMelee</li>
+		<li>ODCTrophyRanged</li>
+		<!-- CAC -->
+		<li>CACBaseMelee</li>
+		<li>CACHeavyMelee</li>
+		<li>CACRangedMelee</li>
+		<li>CACLightGun</li>
+		<li>CACBaseGun</li>
+		<li>CACSniperGun</li>
+		<li>CACHeavyGun</li>
+		<!-- OES -->
+		<li>OESMelee</li>
+		<li>EGOMelee</li>
+		<li>OESGun</li>
+		<li>EGOGun</li>
+	  </weaponTags>
+	</allow>
+	<modExtensions>
+	  <li Class="WeaponEquipedGene.GeneExtension">
+	    <geneLabel>obsidia master of weaponry</geneLabel>
+		<biostatArc>1</biostatArc>
+	  </li>
+	</modExtensions>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+		  </value>
+	    </li>
+	    <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OEC ====================-->
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OEC_WeaponMelee</defName>
+	<label>OEC melee weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OEC_WeaponMelee</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OECBaseMelee</li>
+		<li>OECBaseMeleeM</li>
+		<li>OECHeavyMelee</li>
+		<li>OECHeavyMeleeM</li>
+		<li>OECRangedMelee</li>
+		<li>OECRangedMeleeM</li>
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+  <WeaponEquipedGene.WeaponGroupDef>
+	<defName>OE_OEC_WeaponRanged</defName>
+	<label>OEC ranged weapon</label>
+	<iconPath>UI/Icons/Genes/WeaponGroup/OEC_WeaponRanged</iconPath>
+	<allow>
+	  <weaponTags>
+	    <li>OECLightGun</li>
+		<li>OECLightGunM</li>
+		<li>OECShortGun</li>
+		<li>OECShortGunM</li>
+		<li>OECBaseGun</li>
+		<li>OECBaseGunM</li>
+		<li>OECSniperGun</li>
+		<li>OECSniperGunM</li>
+		<li>OECHeavyGun</li>
+		<li>OECHeavyGunM</li>	
+	  </weaponTags>
+	</allow>
+  </WeaponEquipedGene.WeaponGroupDef>
+
+		  </value>
+	    </li>		  
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

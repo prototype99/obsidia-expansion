@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OEC ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_OEC</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaEmpire</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_OEC</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnLeavings>true</spawnLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

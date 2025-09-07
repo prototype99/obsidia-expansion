@@ -1,0 +1,2037 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC - Knife ====================-->
+  <ThingDef Name="OECKnifeBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.25</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.04</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OEC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECKnifeBase">
+    <defName>OEC_Knife</defName>
+    <label>Shard</label>
+    <description>Regular Psy Knife used by OEC Hunters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>610</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECBaseMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+	  <OE_Mythril>40</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>2</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECKnifeBase">
+    <defName>OEC_Knife_M</defName>
+    <label>Exalted Shard</label>
+    <description>Exalted Psy Knife used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Knife_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>860</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECBaseMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Knife>1</OEC_Knife>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECKnifeBase">
+    <defName>OEC_Knife_P</defName>
+    <label>Persona Exalted Shard</label>
+    <description>Persona Exalted Psy Knife used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Knife_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1360</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECBaseMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Knife_M>1</OEC_Knife_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OEC - Katana ====================-->
+  <ThingDef Name="OECKatanaBase" ParentName="OEMeleeBase" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>2.0</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.25</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.04</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OEC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OECKatanaWave" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OECKatanaWave">
+    <defName>Wave_OEC_K</defName>
+    <label>Reaper wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OECKatanaWave">
+    <defName>Wave_OEC_K_M</defName>
+    <label>Exalted Reaper wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana</defName>
+    <label>Reaper</label>
+    <description>Regular Psy Katana used by OEC Hunters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Katana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>125</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_M</defName>
+    <label>Exalted Reaper</label>
+    <description>Exalted Psy Katana used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Katana_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1635</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana>1</OEC_Katana>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_P</defName>
+    <label>Persona Exalted Reaper</label>
+    <description>Persona Exalted Psy Katana used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Katana_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2135</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_M>1</OEC_Katana_M>
+      <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OEC - Elemental Katana ====================-->
+  <ThingDef Name="OECElemKatanaBase" ParentName="OECKatanaBase" Abstract="True">
+	<statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef Name="OECElemKatanaWave" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<projectile>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Acid ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_Acid</defName>
+    <label>Reaper Acid wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCAcid</damageDef>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_M_Acid</defName>
+    <label>Exalted Reaper Acid wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCAcid</damageDef>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_Acid</defName>
+    <label>Reaper(Acid)</label>
+    <description>Regular Psy Katana used by OEC Hunters.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Acid/Katana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1460</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_Acid</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>125</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_M_Acid</defName>
+    <label>Exalted Reaper(Acid)</label>
+    <description>Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Acid/Katana_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1710</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_Acid</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_Acid>1</OEC_Katana_Acid>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_P_Acid</defName>
+    <label>Persona Exalted Reaper(Acid)</label>
+    <description>Persona Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Acid/Katana_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2210</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_Acid</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_M_Acid>1</OEC_Katana_M_Acid>
+      <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_Cryo</defName>
+    <label>Reaper Cryo wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_M_Cryo</defName>
+    <label>Exalted Reaper Cryo wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCCryo</damageDef>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_Cryo</defName>
+    <label>Reaper(Cryo)</label>
+    <description>Regular Psy Katana used by OEC Hunters.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Cryo/Katana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1460</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_Cryo</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>125</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_M_Cryo</defName>
+    <label>Exalted Reaper(Cryo)</label>
+    <description>Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Cryo/Katana_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1710</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_Cryo</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_Cryo>1</OEC_Katana_Cryo>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_P_Cryo</defName>
+    <label>Persona Exalted Reaper(Cryo)</label>
+    <description>Persona Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Cryo/Katana_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2210</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_Cryo</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_M_Cryo>1</OEC_Katana_M_Cryo>
+      <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_Fire</defName>
+    <label>Reaper Fire wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Flame</damageDef>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_M_Fire</defName>
+    <label>Exalted Reaper Fire wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Flame</damageDef>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_Fire</defName>
+    <label>Reaper(Fire)</label>
+    <description>Regular Psy Katana used by OEC Hunters.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Fire/Katana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1460</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_Fire</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>125</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_M_Fire</defName>
+    <label>Exalted Reaper(Fire)</label>
+    <description>Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Fire/Katana_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1710</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_Fire</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_Fire>1</OEC_Katana_Fire>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_P_Fire</defName>
+    <label>Persona Exalted Reaper(Fire)</label>
+    <description>Persona Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Fire/Katana_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2210</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_Fire</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_M_Fire>1</OEC_Katana_M_Fire>
+      <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_EMP</defName>
+    <label>Reaper EMP wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>EMP</damageDef>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="OMCElemWhipWave">
+    <defName>Wave_OEC_K_M_EMP</defName>
+    <label>Exalted Reaper EMP wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_MeleeWave_M_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>EMP</damageDef>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
+	</projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_EMP</defName>
+    <label>Reaper(EMP)</label>
+    <description>Regular Psy Katana used by OEC Hunters.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/EMP/Katana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1460</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_EMP</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.7</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEGearCross</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>125</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_M_EMP</defName>
+    <label>Exalted Reaper(EMP)</label>
+    <description>Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/EMP/Katana_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1710</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_EMP</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_EMP>1</OEC_Katana_EMP>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECKatanaBase">
+    <defName>OEC_Katana_P_EMP</defName>
+    <label>Persona Exalted Reaper(EMP)</label>
+    <description>Persona Exalted Psy Katana used by the OEC Inquisitors.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/EMP/Katana_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2210</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECRangedMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OEC_K_M_EMP</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>3.9</range>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Katana_M_EMP>1</OEC_Katana_M_EMP>
+      <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OEC - Spear ====================-->
+  <ThingDef Name="OECSpearBase" ParentName="OEMeleeBase" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+	  <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OEC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECSpearBase">
+    <defName>OEC_Spear</defName>
+    <label>Elitra</label>
+    <description>Regular Psy Spear used by OEC Hunters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Spear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2145</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECHeavyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>35</power>
+        <armorPenetration>0.55</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>135</OE_Obsidian>
+	  <OE_Mythril>80</OE_Mythril>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECSpearBase">
+    <defName>OEC_Spear_M</defName>
+    <label>Exalted Elitra</label>
+    <description>Exalted Psy Spear used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Spear_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2395</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECHeavyMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>35</power>
+        <armorPenetration>0.75</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Spear>1</OEC_Spear>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECSpearBase">
+    <defName>OEC_Spear_P</defName>
+    <label>Persona Exalted Elitra</label>
+    <description>Persona Exalted Psy Spear used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Spear_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2895</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECHeavyMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>35</power>
+        <armorPenetration>0.75</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Spear_M>1</OEC_Spear_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OEC - Claws ====================-->
+  <ThingDef Name="OECClawsBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <PsychicSensitivityOffset>0.25</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.04</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OEC_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OECClawsBase">
+    <defName>OEC_Claws</defName>
+    <label>Truth</label>
+    <description>Regular Psy Claws used by OEC Hunters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Claws</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1145</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECBaseMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeapon</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>115</OE_Obsidian>
+	  <OE_Mythril>40</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>9</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OECClawsBase">
+    <defName>OEC_Claws_M</defName>
+    <label>Exalted Truth</label>
+    <description>Exalted Psy Claws used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Claws_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1395</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECBaseMeleeM</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.85</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Claws>1</OEC_Claws>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OECClawsBase">
+    <defName>OEC_Claws_P</defName>
+    <label>Persona Exalted Truth</label>
+    <description>Persona Exalted Psy Claws used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Claws_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1895</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OECBaseMeleeM</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OECWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.85</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OECGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OEC_Claws_M>1</OEC_Claws_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

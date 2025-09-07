@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC ====================-->
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>OEC_Arachna_SniperRifle</defName>
+    <label>Mech Judgement</label>
+    <description>Reconstructed OEC Sniper Rifle for use by mechanoids. Extremely armor-piercing and equipped with a melee blade.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OEC/Mechanoid_SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Revolver</soundInteract>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>OECArachna</li>
+    </weaponTags>
+	<statBases>
+      <Mass>5.0</Mass>
+	  <MarketValue>1250</MarketValue>
+	  <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OEC_SR</defaultProjectile>
+        <warmupTime>2.7</warmupTime>
+        <range>49.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Expansion - Containment ====================-->
+	<ResearchProjectDef>
+		<defName>OEContainment</defName>
+		<label>OE - Containment</label>
+		<description>Research basics of Obsidia сontainment technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OESynth</li>
+		</prerequisites>
+		<knowledgeCost>40</knowledgeCost>
+		<knowledgeCategory>Basic</knowledgeCategory>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Crimson Arachna Cult - Ghoul Bionics ====================-->
+	<ResearchProjectDef>
+		<defName>CACGhoulBionics</defName>
+		<label>CAC - Ghoul Bionics</label>
+		<description>Research advanced of Crimson Arachna Cult ghoul's bionics technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEContainment</li>
+		</prerequisites>
+		<knowledgeCost>60</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+	</ResearchProjectDef>
+
+<!--=============== Crimson Arachna Cult - Nano Technologies ====================-->
+	<ResearchProjectDef>
+		<defName>CACSerum</defName>
+		<label>CAC - Nano Technologies</label>
+		<description>Research experimental of Crimson Arachna Cult serum's technology.</description>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>CACGhoulBionics</li>
+		</prerequisites>
+		<knowledgeCost>100</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

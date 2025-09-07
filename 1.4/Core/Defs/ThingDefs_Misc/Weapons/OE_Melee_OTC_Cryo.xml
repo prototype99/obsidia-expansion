@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Hammer ====================-->
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCHammerBase">
+    <defName>OTC_Hammer_Cryo</defName>
+    <label>Nemesis(Cryo)</label>
+    <description>Regular Hammer used by OTC Mechanics. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/Hammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>680</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCBaseMelee_Cryo</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OTCWeapon</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OTCHammerBase">
+    <defName>OTC_Hammer_M_Cryo</defName>
+    <label>Nemesis Prototype(Cryo)</label>
+    <description>Experimental Hammer used by OTC Engineers. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/Hammer_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>930</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCBaseMeleeM_Cryo</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_Hammer_Cryo>1</OTC_Hammer_Cryo>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OTC - BigAxe ====================-->
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCBigAxeBase">
+    <defName>OTC_BigAxe_Cryo</defName>
+    <label>Genesis(Cryo)</label>
+    <description>Regular Big Axe used by OTC Mechanics. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/BigAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1755</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCHeavyMelee_Cryo</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OTCWeapon</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>150</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>14</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OTCBigAxeBase">
+    <defName>OTC_BigAxe_M_Cryo</defName>
+    <label>Genesis Prototype(Cryo)</label>
+    <description>Experimental Big Axe used by OTC Engineers. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/BigAxe_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2005</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCHeavyMeleeM_Cryo</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+		  <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_BigAxe_Cryo>1</OTC_BigAxe_Cryo>
+      <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== OTC - ChainAxe ====================-->
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCChainAxeBase">
+    <defName>OTC_ChainAxe_Cryo</defName>
+    <label>Netherbane(Cryo)</label>
+    <description>Regular ChainAxe used by OTC Mechanics. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/ChainAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>760</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCBaseMelee_Cryo</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OTCWeapon</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>15</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCWeapons</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>75</OE_Obsidian>
+	  <OE_Mythril>40</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef ParentName="OTCChainAxeBase">
+    <defName>OTC_ChainAxe_M_Cryo</defName>
+    <label>Netherbane Prototype(Cryo)</label>
+    <description>Experimental ChainAxe used by OTC Engineers. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/ChainAxe_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1010</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>OTCBaseMeleeM_Cryo</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OTCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OTCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OTC_ChainAxe_Cryo>1</OTC_ChainAxe_Cryo>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

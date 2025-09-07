@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAttributeSet">
+		  <xpath>/Defs/Vehicles.VehicleDef[defName="OEC_Nightmare"]</xpath>
+		  <attribute>Abstract</attribute>
+		  <value>False</value>
+	    </li>
+		<li Class="PatchOperationAttributeSet">
+		  <xpath>/Defs/Vehicles.VehicleTurretDef[defName="OEC_Nightmare_MainTurret"]</xpath>
+		  <attribute>Abstract</attribute>
+		  <value>False</value>
+	    </li>
+		<li Class="PatchOperationAttributeSet">
+		  <xpath>/Defs/Vehicles.VehicleBuildDef[defName="OEC_Nightmare_Blueprint"]</xpath>
+		  <attribute>Abstract</attribute>
+		  <value>False</value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>	
+
+</Patch>

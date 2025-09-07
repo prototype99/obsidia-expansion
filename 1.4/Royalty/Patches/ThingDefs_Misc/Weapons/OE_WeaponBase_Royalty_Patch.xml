@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Obsidia Expansion - Cross Technologies ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="OEMeleeBaseNQE" or @Name="OERangedBaseNQE"]</xpath>
+    <value>
+	  <comps>
+        <li Class="CompProperties_BladelinkWeapon">
+          <biocodeOnEquip>true</biocodeOnEquip>
+        </li>
+        <li Class="CompProperties_GeneratedName">
+          <nameMaker>NamerWeaponBladelink</nameMaker>
+        </li>
+      </comps>
+    </value>
+</Operation>
+
+</Patch>

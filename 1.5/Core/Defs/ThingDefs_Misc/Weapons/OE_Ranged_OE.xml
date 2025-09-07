@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Pistol ====================-->
+  <ThingDef ParentName="OERangedBase">
+    <defName>OE_Pistol</defName>
+    <label>Proto Impaler</label>
+    <description>Proto Pistol, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_Autopistol</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OELightGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>290</MarketValue>
+	  <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+	  <WorkToMake>6250</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_P</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>40</OE_Obsidian>
+	  <OE_Mythril>20</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_P</defName>
+    <label>Proto Impaler bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <armorPenetrationBase>0.12</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OE - SMG ====================-->
+  <ThingDef ParentName="OERangedBase">
+    <defName>OE_SMG</defName>
+    <label>Proto Equalizer</label>
+    <description>Proto SMG, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/SMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <weaponTags>
+	  <li>OEBaseGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>720</MarketValue>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+	  <WorkToMake>11250</WorkToMake>
+      <Mass>2.5</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_SMG</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>21.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.50</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>50</OE_Obsidian>
+	  <OE_Mythril>35</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_SMG</defName>
+    <label>Proto Equalizer bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OE - Shotgun ====================-->
+  <ThingDef ParentName="OERangedBase">
+    <defName>OE_Shotgun</defName>
+    <label>Proto Doom</label>
+    <description>Proto Shotgun, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_Shotgun</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OEBaseGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>735</MarketValue>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+	  <WorkToMake>12500</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>16.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>70</OE_Obsidian>
+	  <OE_Mythril>25</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_S</defName>
+    <label>Proto Doom blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>21</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.17</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OE - Rifle ====================-->
+  <ThingDef ParentName="OERangedBase">
+    <defName>OE_Rifle</defName>
+    <label>Proto Cerberus</label>
+    <description>Proto Rifle, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OESniperGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>835</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+	  <WorkToMake>11250</WorkToMake>
+      <Mass>5.0</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_R</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>31.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>70</OE_Obsidian>
+	  <OE_Mythril>30</OE_Mythril>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_R</defName>
+    <label>Proto Cerberus bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/CAC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.32</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OE - Bow ====================-->
+  <ThingDef ParentName="OERangedBase">
+    <defName>OE_Bow</defName>
+    <label>Proto Pride</label>
+    <description>Proto Bow, designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Bow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>0.85</uiIconScale>
+	<soundInteract>Bow_Large</soundInteract>
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>OESniperGun</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1490</MarketValue>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+	  <WorkToMake>12500</WorkToMake>
+      <Mass>4.0</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_B</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>30.9</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>OEConstruction</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>60</OE_Obsidian>
+	  <OE_Mythril>80</OE_Mythril>
+	  <OE_Mooncloth>8</OE_Mooncloth>
+      <OE_Syntherius>12</OE_Syntherius>
+    </costList>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_OE_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_B</defName>
+    <label>Proto Pride arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_Arrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+	  <damageDef>Arrow</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>55</speed>
+	  <armorPenetrationBase>0.22</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+</Defs>

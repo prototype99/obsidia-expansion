@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== CAC - Scythe ====================-->
+<CAC_Scythe.label>Souldrinker</CAC_Scythe.label>
+<CAC_Scythe.description>Regular Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Scythe.description>
+
+<CAC_Scythe.tools.handle.label>handle</CAC_Scythe.tools.handle.label>
+<CAC_Scythe.tools.edge.label>edge</CAC_Scythe.tools.edge.label>
+
+<CAC_Scythe_P.label>Persona Souldrinker</CAC_Scythe_P.label>
+<CAC_Scythe_P.description>Persona Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Scythe_P.description>
+
+<CAC_Scythe_P.tools.handle.label>handle</CAC_Scythe_P.tools.handle.label>
+<CAC_Scythe_P.tools.edge.label>edge</CAC_Scythe_P.tools.edge.label>
+
+<!--=============== CAC - BigScythe ====================-->
+<CAC_BigScythe.label>Souleater</CAC_BigScythe.label>
+<CAC_BigScythe.description>Regular Big Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_BigScythe.description>
+
+<CAC_BigScythe.tools.handle.label>handle</CAC_BigScythe.tools.handle.label>
+<CAC_BigScythe.tools.edge.label>edge</CAC_BigScythe.tools.edge.label>
+
+<CAC_BigScythe_P.label>Persona Souleater</CAC_BigScythe_P.label>
+<CAC_BigScythe_P.description>Persona Big Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_BigScythe_P.description>
+
+<CAC_BigScythe_P.tools.handle.label>handle</CAC_BigScythe_P.tools.handle.label>
+<CAC_BigScythe_P.tools.edge.label>edge</CAC_BigScythe_P.tools.edge.label>
+
+<!--=============== CAC - Thurible ====================-->
+<Wave_CAC_W.label>Apathy wave</Wave_CAC_W.label>
+
+<CAC_Thurible.label>Apathy</CAC_Thurible.label>
+<CAC_Thurible.verbs.Verb_Shoot.label>Apathy</CAC_Thurible.verbs.Verb_Shoot.label>
+<CAC_Thurible.description>Regular Thurible used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Thurible.description>
+
+<CAC_Thurible.tools.handle.label>handle</CAC_Thurible.tools.handle.label>
+
+<CAC_Thurible_P.label>Persona Apathy</CAC_Thurible_P.label>
+<CAC_Thurible_P.verbs.Verb_Shoot.label>Persona Apathy</CAC_Thurible_P.verbs.Verb_Shoot.label>
+<CAC_Thurible_P.description>Persona Thurible used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Thurible_P.description>
+
+<CAC_Thurible_P.tools.handle.label>handle</CAC_Thurible_P.tools.handle.label>
+
+<!--=============== CAC - Pistol ====================-->
+<Bullet_CAC_P.label>Silentsong bullet</Bullet_CAC_P.label>
+
+<CAC_Pistol.label>Silentsong</CAC_Pistol.label>
+<CAC_Pistol.verbs.Verb_Shoot.label>Silentsong</CAC_Pistol.verbs.Verb_Shoot.label>
+<CAC_Pistol.description>Regular Pistol used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Pistol.description>
+
+<CAC_Pistol.tools.grip.label>grip</CAC_Pistol.tools.grip.label>
+<CAC_Pistol.tools.barrel.label>barrel</CAC_Pistol.tools.barrel.label>
+
+<CAC_Pistol_P.label>Paragon Silentsong</CAC_Pistol_P.label>
+<CAC_Pistol_P.verbs.Verb_Shoot.label>Paragon Silentsong</CAC_Pistol_P.verbs.Verb_Shoot.label>
+<CAC_Pistol_P.description>Paragon Pistol used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Pistol_P.description>
+
+<CAC_Pistol_P.tools.grip.label>grip</CAC_Pistol_P.tools.grip.label>
+<CAC_Pistol_P.tools.barrel.label>barrel</CAC_Pistol_P.tools.barrel.label>
+
+<CAC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Silentsong</CAC_Pistol_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_Pistol_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_Pistol_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Shotgun Sidearm ====================-->
+<Bullet_CAC_SS.label>Heartstriker blast</Bullet_CAC_SS.label>
+
+<CAC_ShotgunS.label>Heartstriker</CAC_ShotgunS.label>
+<CAC_ShotgunS.verbs.Verb_Shoot.label>Heartstriker</CAC_ShotgunS.verbs.Verb_Shoot.label>
+<CAC_ShotgunS.description>Regular Shotgun Sidearm used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_ShotgunS.description>
+
+<CAC_ShotgunS.tools.grip.label>grip</CAC_ShotgunS.tools.grip.label>
+<CAC_ShotgunS.tools.barrel.label>barrel</CAC_ShotgunS.tools.barrel.label>
+
+<CAC_ShotgunS_P.label>Paragon Heartstriker</CAC_ShotgunS_P.label>
+<CAC_ShotgunS_P.verbs.Verb_Shoot.label>Paragon Heartstriker</CAC_ShotgunS_P.verbs.Verb_Shoot.label>
+<CAC_ShotgunS_P.description>Paragon Shotgun Sidearm used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_ShotgunS_P.description>
+
+<CAC_ShotgunS_P.tools.grip.label>grip</CAC_ShotgunS_P.tools.grip.label>
+<CAC_ShotgunS_P.tools.barrel.label>barrel</CAC_ShotgunS_P.tools.barrel.label>
+
+<CAC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Heartstriker</CAC_ShotgunS_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_ShotgunS_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - SMG ====================-->
+<Bullet_CAC_SMG.label>Echo bullet</Bullet_CAC_SMG.label>
+
+<CAC_SMG.label>Echo</CAC_SMG.label>
+<CAC_SMG.verbs.Verb_Shoot.label>Echo</CAC_SMG.verbs.Verb_Shoot.label>
+<CAC_SMG.description>Regular SMG used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_SMG.description>
+
+<CAC_SMG.tools.stock.label>stock</CAC_SMG.tools.stock.label>
+<CAC_SMG.tools.barrel.label>barrel</CAC_SMG.tools.barrel.label>
+
+<CAC_SMG_P.label>Paragon Echo</CAC_SMG_P.label>
+<CAC_SMG_P.verbs.Verb_Shoot.label>Paragon Echo</CAC_SMG_P.verbs.Verb_Shoot.label>
+<CAC_SMG_P.description>Paragon SMG used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_SMG_P.description>
+
+<CAC_SMG_P.tools.stock.label>stock</CAC_SMG_P.tools.stock.label>
+<CAC_SMG_P.tools.barrel.label>barrel</CAC_SMG_P.tools.barrel.label>
+
+<CAC_SMG_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Echo</CAC_SMG_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_SMG_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_SMG_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_SMG_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_SMG_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Shotgun ====================-->
+<Bullet_CAC_S.label>Grieving blast</Bullet_CAC_S.label>
+
+<CAC_Shotgun.label>Grieving</CAC_Shotgun.label>
+<CAC_Shotgun.verbs.Verb_Shoot.label>Grieving</CAC_Shotgun.verbs.Verb_Shoot.label>
+<CAC_Shotgun.description>Regular Shotgun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Shotgun.description>
+
+<CAC_Shotgun.tools.stock.label>stock</CAC_Shotgun.tools.stock.label>
+<CAC_Shotgun.tools.barrel.label>barrel</CAC_Shotgun.tools.barrel.label>
+
+<CAC_Shotgun_P.label>Paragon Grieving</CAC_Shotgun_P.label>
+<CAC_Shotgun_P.verbs.Verb_Shoot.label>Paragon Grieving</CAC_Shotgun_P.verbs.Verb_Shoot.label>
+<CAC_Shotgun_P.description>Paragon Shotgun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Shotgun_P.description>
+
+<CAC_Shotgun_P.tools.stock.label>stock</CAC_Shotgun_P.tools.stock.label>
+<CAC_Shotgun_P.tools.barrel.label>barrel</CAC_Shotgun_P.tools.barrel.label>
+
+<CAC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Grieving</CAC_Shotgun_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_Shotgun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - SniperRifle ====================-->
+<Bullet_CAC_SR.label>Widowmaker bullet</Bullet_CAC_SR.label>
+
+<CAC_SniperRifle.label>Widowmaker</CAC_SniperRifle.label>
+<CAC_SniperRifle.verbs.Verb_Shoot.label>Widowmaker</CAC_SniperRifle.verbs.Verb_Shoot.label>
+<CAC_SniperRifle.description>Regular Sniper Rifle used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_SniperRifle.description>
+
+<CAC_SniperRifle.tools.stock.label>stock</CAC_SniperRifle.tools.stock.label>
+<CAC_SniperRifle.tools.barrel.label>barrel</CAC_SniperRifle.tools.barrel.label>
+
+<CAC_SniperRifle_P.label>Paragon Widowmaker</CAC_SniperRifle_P.label>
+<CAC_SniperRifle_P.verbs.Verb_Shoot.label>Paragon Widowmaker</CAC_SniperRifle_P.verbs.Verb_Shoot.label>
+<CAC_SniperRifle_P.description>Paragon Sniper Rifle used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_SniperRifle_P.description>
+
+<CAC_SniperRifle_P.tools.stock.label>stock</CAC_SniperRifle_P.tools.stock.label>
+<CAC_SniperRifle_P.tools.barrel.label>barrel</CAC_SniperRifle_P.tools.barrel.label>
+
+<CAC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Widowmaker</CAC_SniperRifle_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_SniperRifle_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+<!--=============== CAC - Minigun ====================-->
+<Bullet_CAC_MG.label>Blackout bullet</Bullet_CAC_MG.label>
+
+<CAC_Minigun.label>Blackout</CAC_Minigun.label>
+<CAC_Minigun.verbs.Verb_Shoot.label>Blackout</CAC_Minigun.verbs.Verb_Shoot.label>
+<CAC_Minigun.description>Regular Minigun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Minigun.description>
+
+<CAC_Minigun.tools.barrels.label>barrels</CAC_Minigun.tools.barrels.label>
+
+<CAC_Minigun_P.label>Paragon Blackout</CAC_Minigun_P.label>
+<CAC_Minigun_P.verbs.Verb_Shoot.label>Paragon Blackout</CAC_Minigun_P.verbs.Verb_Shoot.label>
+<CAC_Minigun_P.description>Paragon Minigun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</CAC_Minigun_P.description>
+
+<CAC_Minigun_P.tools.barrels.label>barrels</CAC_Minigun_P.tools.barrels.label>
+
+<CAC_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>Paragon Blackout</CAC_Minigun_P.comps.CompUniqueWeapon.namerLabels.0>
+<CAC_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>charge</CAC_Minigun_P.comps.CompEquippableAbilityReloadable.chargeNoun>
+<CAC_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>on cooldown</CAC_Minigun_P.comps.CompEquippableAbilityReloadable.cooldownGerund>
+
+</LanguageData>

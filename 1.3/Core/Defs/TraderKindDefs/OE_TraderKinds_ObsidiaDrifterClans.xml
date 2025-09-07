@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Obsidia Drifter Clans - Base ====================-->
+  <TraderKindDef>
+    <defName>Base_ObsidiaDrifterClans_Common</defName>
+    <stockGenerators>
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~5000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>25~90</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>500~750</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>150~450</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>35~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>150~350</countRange>
+      </li>
+	  
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Obsidian</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mythril</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Platinum</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Empyrium</thingDef>
+        <countRange>20~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Orichalcum</thingDef>
+        <countRange>20~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Syntherius</thingDef>
+        <countRange>-25~20</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mooncloth</thingDef>
+        <countRange>75~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Direwolf</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Raptor</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Ogren</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Astrinx</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Bruul</thingDef>
+        <countRange>10~25</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_DriftersKit</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+      
+	  <!-- Obs.Drugs -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrug</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>350~1000</totalPriceRange>
+      </li>
+	  
+	  <!-- Obs.Drugs Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrugExotic</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>1000~2000</totalPriceRange>
+      </li>
+	  
+	  <!-- Obs.Tionant Gele -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OETionantGel</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <totalPriceRange>150~500</totalPriceRange>
+      </li>
+	  
+	  <!-- Obs.Armor -->
+      <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCArmor</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+	  <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCHelmet</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+	  
+	  <!-- Obs.Armor Mod -->
+      <li Class="StockGenerator_Clothes">
+        <apparelTag>OEModules</apparelTag>
+        <countRange>-1~2</countRange>
+      </li>
+	  
+	  <!-- Obs.Weapon -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>ODCWeapon</tradeTag>
+        <countRange>2~6</countRange>
+      </li>
+	  
+	  <!-- Obs.Weapon Trophy -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OETrophyWeapons</tradeTag>
+        <countRange>-1~1</countRange>
+      </li>
+	  
+	  <!-- Obs.Animals -->
+	  <li Class="StockGenerator_Animals">
+        <maxWildness>0.70</maxWildness>
+        <tradeTagsSell>
+          <li>OEAnimal</li>
+          <li>OEAnimalExotic</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>OEAnimal</li>
+		  <li>OEAnimalExotic</li>
+		  <li>AnimalUncommon</li>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>1~3</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+	  
+      <!-- Techprints -->
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>2</count>
+            <chance>0.5</chance>
+          </li>
+          <li>
+            <count>3</count>
+            <chance>0.5</chance>
+          </li>
+        </countChances>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Obsidia Drifter Clans - Visitor ====================-->
+  <TraderKindDef>
+    <defName>Visitor_ObsidiaDrifterClans_Common</defName>
+    <stockGenerators>
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~5000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>25~90</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>500~750</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>150~450</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>35~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>150~350</countRange>
+      </li>
+	  
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Obsidian</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mythril</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Platinum</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Syntherius</thingDef>
+        <countRange>-25~20</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mooncloth</thingDef>
+        <countRange>75~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Direwolf</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Raptor</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Ogren</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Astrinx</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Bruul</thingDef>
+        <countRange>10~25</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_DriftersKit</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+	  
+	  <!-- Obs.Armor -->
+      <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCArmor</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+	  <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCHelmet</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+	  
+	  <!-- Obs.Weapon -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>ODCWeapon</tradeTag>
+        <countRange>2~6</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  
+    </stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Obsidia Drifter Clans - Caravan Standard ====================-->
+  <TraderKindDef>
+    <defName>Caravan_ObsidiaDrifterClans_Standard</defName>
+	<label>obsidia drifters goods trader</label>
+    <stockGenerators>
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~5000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>25~90</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>500~750</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>150~450</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>35~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>150~350</countRange>
+      </li>
+	  
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000~7500</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Obsidian</thingDef>
+        <countRange>250~450</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mythril</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Platinum</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Empyrium</thingDef>
+        <countRange>20~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Orichalcum</thingDef>
+        <countRange>20~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Syntherius</thingDef>
+        <countRange>-25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mooncloth</thingDef>
+        <countRange>150~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Direwolf</thingDef>
+        <countRange>100~150</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Raptor</thingDef>
+        <countRange>100~150</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Ogren</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Astrinx</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Bruul</thingDef>
+        <countRange>10~25</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_DriftersKit</thingDef>
+        <countRange>-1~2</countRange>
+      </li>
+
+      <!-- Obs.Drugs -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrug</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>350~1000</totalPriceRange>
+      </li>	  
+
+	  <!-- Obs.Tionant Gele -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OETionantGel</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <totalPriceRange>150~500</totalPriceRange>
+      </li>
+
+	  <!-- Obs.Armor -->
+      <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCArmor</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+	  <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCHelmet</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+	  
+	  <!-- Obs.Weapon -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>ODCWeapon</tradeTag>
+        <countRange>2~6</countRange>
+      </li>
+
+      <!-- Techprints -->
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>2</count>
+            <chance>0.5</chance>
+          </li>
+          <li>
+            <count>3</count>
+            <chance>0.5</chance>
+          </li>
+        </countChances>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Obsidia Drifter Clans - Caravan Syndicate ====================-->
+  <TraderKindDef>
+    <defName>Caravan_ObsidiaDrifterClans_Slaver</defName>
+	<label>obsidia syndicate slaver</label>
+	<category>Slaver</category>
+    <commonalityMultFromPopulationIntent>
+      <points>
+        <li>(0.2, 0)</li>
+        <li>(1,   1)</li>
+        <li>(2,   3)</li>
+      </points>
+    </commonalityMultFromPopulationIntent>
+    <stockGenerators>
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000~7500</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Obsidian</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mythril</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Platinum</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Syntherius</thingDef>
+        <countRange>-25~20</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mooncloth</thingDef>
+        <countRange>75~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Direwolf</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Raptor</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Ogren</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Astrinx</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Bruul</thingDef>
+        <countRange>10~25</countRange>
+      </li>
+	  
+      <!-- Obs.Drugs -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrug</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>350~1000</totalPriceRange>
+      </li>
+	  
+	  <!-- Obs.Drugs Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrugExotic</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>1000~2000</totalPriceRange>
+      </li>
+
+	  <!-- Obs.Tionant Gele -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OETionantGel</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <totalPriceRange>150~500</totalPriceRange>
+      </li>
+
+	  <!-- Slaves -->
+	  <li Class="StockGenerator_Slaves">
+        <respectPopulationIntent>true</respectPopulationIntent>
+        <countRange>5~10</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+	  
+    </stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Obsidia Drifter Clans - Caravan Renegade ====================-->
+  <TraderKindDef>
+    <defName>Caravan_ObsidiaDrifterClans_Animals</defName>
+	<label>obsidia renegade pet shop</label>
+    <stockGenerators>
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000~7500</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Obsidian</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mythril</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Platinum</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Syntherius</thingDef>
+        <countRange>-25~20</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Mooncloth</thingDef>
+        <countRange>75~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Direwolf</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Raptor</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Ogren</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Astrinx</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Bruul</thingDef>
+        <countRange>10~25</countRange>
+      </li>
+	  
+      <!-- Obs.Drugs -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrug</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>350~1000</totalPriceRange>
+      </li>
+	  
+	  <!-- Obs.Drugs Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrugExotic</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>1000~2000</totalPriceRange>
+      </li>
+
+	  <!-- Obs.Tionant Gele -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OETionantGel</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <totalPriceRange>150~500</totalPriceRange>
+      </li>
+
+      <!-- Animals -->
+	  <li Class="StockGenerator_Animals">
+        <maxWildness>0.70</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalCommon</li>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalInsect</li>
+		  <li>AnimalExotic</li>
+		  <li>AnimalCommon</li>
+		  <li>OEAnimal</li>
+          <li>OEAnimalExotic</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalCommon</li>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalInsect</li>
+		  <li>AnimalExotic</li>
+		  <li>AnimalCommon</li>
+		  <li>OEAnimal</li>
+          <li>OEAnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>3~9</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimal</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+	  
+    </stockGenerators>
+  </TraderKindDef>
+
+<!--=============== Obsidia Drifter Clans - Caravan Exotic ====================-->
+  <TraderKindDef>
+    <defName>Caravan_ObsidiaDrifterClans_Exotic</defName>
+	<label>obsidia drifters exotic goods trader</label>
+    <stockGenerators>
+	  <!-- Obs.Resources -->
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~9500</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Empyrium</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Orichalcum</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_ObsidianSynthweave</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_MythrilSynthweave</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_PlatinumSynthweave</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_EmpyriumSynthweave</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_OrichalcumSynthweave</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>OE_Leather_Bruul</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEModKits</tradeTag>
+        <countRange>-1~3</countRange>
+      </li>
+      
+	  <!-- Obs.Drugs Exotic -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEDrugExotic</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <totalPriceRange>1000~2000</totalPriceRange>
+      </li>
+
+      <!-- Obs.Tionant Gele -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OETionantGel</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <totalPriceRange>150~500</totalPriceRange>
+      </li>
+
+	  <!-- Obs.Armor -->
+      <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCArmor</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+	  <li Class="StockGenerator_Clothes">
+        <apparelTag>ODCHelmet</apparelTag>
+        <countRange>-1~5</countRange>
+      </li>
+
+	  <!-- Obs.Armor Mod -->
+      <li Class="StockGenerator_Clothes">
+        <apparelTag>OEModules</apparelTag>
+        <countRange>-1~2</countRange>
+      </li>
+
+	  <!-- Obs.Weapon -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>ODCWeapon</tradeTag>
+        <countRange>2~6</countRange>
+      </li>
+	  
+	  <!-- Obs.Weapon Trophy -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OETrophyWeapons</tradeTag>
+        <countRange>-1~1</countRange>
+      </li>
+	  
+      <!-- Obs.Animals -->
+	  <li Class="StockGenerator_Animals">
+        <maxWildness>0.70</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalCommon</li>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalInsect</li>
+		  <li>AnimalExotic</li>
+		  <li>AnimalCommon</li>
+		  <li>OEAnimal</li>
+          <li>OEAnimalExotic</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalCommon</li>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalInsect</li>
+		  <li>AnimalExotic</li>
+		  <li>AnimalCommon</li>
+		  <li>OEAnimal</li>
+          <li>OEAnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>3~9</kindCountRange>
+        <countRange>2~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+	  
+      <!-- Techprints -->
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>2</count>
+            <chance>0.5</chance>
+          </li>
+          <li>
+            <count>3</count>
+            <chance>0.5</chance>
+          </li>
+        </countChances>
+      </li>
+
+      <!-- Exotic -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>OEExoticBuilding</tradeTag>
+		<thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>AnimusStone</thingDef>
+        <countRange>-3~1</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>OEAnimalExotic</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

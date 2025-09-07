@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Redline ====================-->
+<!--=============== Effect ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_Redline_Effect</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.35</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Redline/OE_Redline_Effect</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>5</_NumFrames>
+        <_FramesPerSec>10</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(0.5, 0.5)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_Redline_Effect</defName>
+    <children>
+    <li>
+      <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+      <moteDef>Mote_OE_Redline_Effect</moteDef>
+	  <burstCount>1~2</burstCount>
+	  <chancePerTick>0.035</chancePerTick>
+	  <rotation>-150~-150</rotation>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <scale>0.8~1.2</scale>
+	  <positionRadius>0.95</positionRadius>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+	  <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+    </li>
+    </children>
+  </EffecterDef>
+
+<!--=============== Aftereffect ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_Redline_AfterEffect</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.35</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Redline/OE_Redline_AfterEffect</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>3</_NumFrames>
+        <_FramesPerSec>6</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(0.35, 0.35)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_Redline_AfterEffect</defName>
+    <children>
+    <li>
+      <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+      <moteDef>Mote_OE_Redline_AfterEffect</moteDef>
+	  <burstCount>1~4</burstCount>
+	  <chancePerTick>0.035</chancePerTick>
+	  <rotation>-150~-150</rotation>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <scale>0.8~1.2</scale>
+	  <positionRadius>0.95</positionRadius>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+	  <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+    </li>
+    </children>
+  </EffecterDef>
+
+<!--=============== Chaos ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_Chaos_Effect</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.35</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Chaos/OE_Chaos_Effect</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>5</_NumFrames>
+        <_FramesPerSec>10</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(1.0, 1.0)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_Chaos_Effect</defName>
+    <children>
+    <li>
+      <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+      <moteDef>Mote_OE_Chaos_Effect</moteDef>
+	  <burstCount>1~1</burstCount>
+      <ticksBetweenMotes>60</ticksBetweenMotes>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+      <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+    </li>
+    </children>
+  </EffecterDef>
+
+<!--=============== Vanguard ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_Vanguard_Effect</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>3.85</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Vanguard/OE_Vanguard_Effect</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>4</_NumFrames>
+        <_FramesPerSec>2</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(2.2, 2.2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_Vanguard_Effect</defName>
+    <children>
+	<li>
+      <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+      <moteDef>Mote_OE_Vanguard_Effect</moteDef>
+	  <burstCount>1~1</burstCount>
+      <ticksBetweenMotes>240</ticksBetweenMotes>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+      <rotateTowardsTargetCenter>false</rotateTowardsTargetCenter>
+    </li>
+    </children>
+  </EffecterDef>
+
+<!--=============== Queen Curse ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_Curse_Effect</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.35</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Curse/OE_Curse_Effect</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>3</_NumFrames>
+        <_FramesPerSec>6</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(0.35, 0.35)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_Curse_Effect</defName>
+    <children>
+    <li>
+      <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+      <moteDef>Mote_OE_Curse_Effect</moteDef>
+	  <burstCount>2~5</burstCount>
+	  <chancePerTick>0.035</chancePerTick>
+	  <rotation>-150~-150</rotation>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <scale>0.5~0.9</scale>
+	  <positionRadiusMin>0.4</positionRadiusMin>
+	  <positionRadius>0.5</positionRadius>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+	  <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+    </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

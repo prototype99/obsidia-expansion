@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC Tactical Turret ====================-->
+<OMC_Turret_TacticalTurret.label>OMC tactical turret</OMC_Turret_TacticalTurret.label>
+<OMC_Turret_TacticalTurret.description>An automatic OMC Auto Pistol-equipped turret. It will stop functioning once its battery runs out.</OMC_Turret_TacticalTurret.description>
+<OMC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>Battery power</OMC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OMC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OMC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OMC_Gun_TacticalTurret.label>Impaler MK-II Turret</OMC_Gun_TacticalTurret.label>
+<OMC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Impaler MK-II Turret</OMC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OMC_Gun_TacticalTurret.description>Reconstructed OMC Auto Pistol for turrets.</OMC_Gun_TacticalTurret.description>
+
+<!--=============== OTC Tactical Turret ====================-->
+<!--=============== Acid ====================-->
+<OTC_Turret_TacticalTurret_Acid.label>OTC tactical acid turret</OTC_Turret_TacticalTurret_Acid.label>
+<OTC_Turret_TacticalTurret_Acid.description>An automatic OTC Acid Pistol-equipped turret. It will stop functioning once its battery runs out.</OTC_Turret_TacticalTurret_Acid.description>
+<OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.labelOverride>Battery power</OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OTC_Turret_TacticalTurret_Acid.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_Acid.label>Celestial Prototype Turret(Acid)</OTC_Gun_TacticalTurret_Acid.label>
+<OTC_Gun_TacticalTurret_Acid.verbs.Verb_Shoot.label>Celestial Prototype Turret(Acid)</OTC_Gun_TacticalTurret_Acid.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_Acid.description>Reconstructed OTC Pistol for turrets. Balanced weapon with Acid charges.</OTC_Gun_TacticalTurret_Acid.description>
+<!--=============== Cryo ====================-->
+<OTC_Turret_TacticalTurret_Cryo.label>OTC tactical cryo turret</OTC_Turret_TacticalTurret_Cryo.label>
+<OTC_Turret_TacticalTurret_Cryo.description>An automatic OTC Cryo Pistol-equipped turret. It will stop functioning once its battery runs out.</OTC_Turret_TacticalTurret_Cryo.description>
+<OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.labelOverride>Battery power</OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OTC_Turret_TacticalTurret_Cryo.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_Cryo.label>Celestial Prototype Turret(Cryo)</OTC_Gun_TacticalTurret_Cryo.label>
+<OTC_Gun_TacticalTurret_Cryo.verbs.Verb_Shoot.label>Celestial Prototype Turret(Cryo)</OTC_Gun_TacticalTurret_Cryo.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_Cryo.description>Reconstructed OTC Pistol for turrets. Balanced weapon with Cryo charges.</OTC_Gun_TacticalTurret_Cryo.description>
+<!--=============== Fire ====================-->
+<OTC_Turret_TacticalTurret_Fire.label>OTC tactical fire turret</OTC_Turret_TacticalTurret_Fire.label>
+<OTC_Turret_TacticalTurret_Fire.description>An automatic OTC Fire Pistol-equipped turret. It will stop functioning once its battery runs out.</OTC_Turret_TacticalTurret_Fire.description>
+<OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.labelOverride>Battery power</OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OTC_Turret_TacticalTurret_Fire.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_Fire.label>Celestial Prototype Turret(Fire)</OTC_Gun_TacticalTurret_Fire.label>
+<OTC_Gun_TacticalTurret_Fire.verbs.Verb_Shoot.label>Celestial Prototype Turret(Fire)</OTC_Gun_TacticalTurret_Fire.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_Fire.description>Reconstructed OTC Pistol for turrets. Balanced weapon with Fire charges.</OTC_Gun_TacticalTurret_Fire.description>
+<!--=============== EMP ====================-->
+<OTC_Turret_TacticalTurret_EMP.label>OTC tactical EMP turret</OTC_Turret_TacticalTurret_EMP.label>
+<OTC_Turret_TacticalTurret_EMP.description>An automatic OTC EMP Pistol-equipped turret. It will stop functioning once its battery runs out.</OTC_Turret_TacticalTurret_EMP.description>
+<OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.labelOverride>Battery power</OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.labelOverride>
+<OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OTC_Turret_TacticalTurret_EMP.comps.CompMechPowerCell.tooltipOverride>
+
+<OTC_Gun_TacticalTurret_EMP.label>Celestial Prototype Turret(EMP)</OTC_Gun_TacticalTurret_EMP.label>
+<OTC_Gun_TacticalTurret_EMP.verbs.Verb_Shoot.label>Celestial Prototype Turret(EMP)</OTC_Gun_TacticalTurret_EMP.verbs.Verb_Shoot.label>
+<OTC_Gun_TacticalTurret_EMP.description>Reconstructed OTC Pistol for turrets. Balanced weapon with EMP charges.</OTC_Gun_TacticalTurret_EMP.description>
+
+<!--=============== OCC Tactical Turret ====================-->
+<OCC_Turret_TacticalTurret.label>OCC tactical turret</OCC_Turret_TacticalTurret.label>
+<OCC_Turret_TacticalTurret.description>An automatic OCC Revolver-equipped turret. It will stop functioning once its battery runs out.</OCC_Turret_TacticalTurret.description>
+<OCC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>Battery power</OCC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OCC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OCC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OCC_Gun_TacticalTurret.label>Reforged Hornet Turret</OCC_Gun_TacticalTurret.label>
+<OCC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Reforged Hornet Turret</OCC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OCC_Gun_TacticalTurret.description>Reconstructed OCC Revolver for turrets.</OCC_Gun_TacticalTurret.description>
+
+<!--=============== OEC Tactical Turret ====================-->
+<OEC_Turret_TacticalTurret.label>OEC tactical turret</OEC_Turret_TacticalTurret.label>
+<OEC_Turret_TacticalTurret.description>An automatic OEC Sniper Rifle-equipped turret. It will stop functioning once its battery runs out.</OEC_Turret_TacticalTurret.description>
+<OEC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>Battery power</OEC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OEC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OEC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OEC_Gun_TacticalTurret.label>Exalted Judgement Turret</OEC_Gun_TacticalTurret.label>
+<OEC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Exalted Judgement Turret</OEC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OEC_Gun_TacticalTurret.description>Reconstructed OEC Sniper Rifle for turrets.</OEC_Gun_TacticalTurret.description>
+
+<!--=============== ODC Tactical Turret ====================-->
+<ODC_Turret_TacticalTurret.label>ODC tactical turret</ODC_Turret_TacticalTurret.label>
+<ODC_Turret_TacticalTurret.description>An automatic ODC SMG-equipped turret. It will stop functioning once its battery runs out.</ODC_Turret_TacticalTurret.description>
+<ODC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>Battery power</ODC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<ODC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</ODC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<ODC_Gun_TacticalTurret.label>Misfit Turret</ODC_Gun_TacticalTurret.label>
+<ODC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Misfit Turret</ODC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<ODC_Gun_TacticalTurret.description>Reconstructed ODC SMG for turrets.</ODC_Gun_TacticalTurret.description>
+
+<!--=============== CAC Tactical Turret ====================-->
+<CAC_Turret_TacticalTurret.label>CAC tactical turret</CAC_Turret_TacticalTurret.label>
+<CAC_Turret_TacticalTurret.description>An automatic CAC Shotgun-equipped turret. It will stop functioning once its battery runs out.</CAC_Turret_TacticalTurret.description>
+<CAC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>Battery power</CAC_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<CAC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</CAC_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<CAC_Gun_TacticalTurret.label>Grieving Turret</CAC_Gun_TacticalTurret.label>
+<CAC_Gun_TacticalTurret.verbs.Verb_Shoot.label>Grieving Turret</CAC_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<CAC_Gun_TacticalTurret.description>Reconstructed CAC Shotgun for turrets.</CAC_Gun_TacticalTurret.description>
+
+<!--=============== OMG Tactical Turret ====================-->
+<OMG_Turret_TacticalTurret.label>OMG tactical turret</OMG_Turret_TacticalTurret.label>
+<OMG_Turret_TacticalTurret.description>An automatic OMG Revolver-equipped turret. It will stop functioning once its battery runs out.</OMG_Turret_TacticalTurret.description>
+<OMG_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>Battery power</OMG_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<OMG_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</OMG_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<OMG_Gun_TacticalTurret.label>Datashot Turret</OMG_Gun_TacticalTurret.label>
+<OMG_Gun_TacticalTurret.verbs.Verb_Shoot.label>Datashot Turret</OMG_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<OMG_Gun_TacticalTurret.description>Reconstructed OMG Revolver for turrets.</OMG_Gun_TacticalTurret.description>
+
+<!--=============== EGO Tactical Turret ====================-->
+<EGO_Turret_TacticalTurret.label>EGO Automancer turret</EGO_Turret_TacticalTurret.label>
+<EGO_Turret_TacticalTurret.description>An automatic EGO Amalgam Pistol-equipped turret. It will stop functioning once its battery runs out.</EGO_Turret_TacticalTurret.description>
+<EGO_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>Battery power</EGO_Turret_TacticalTurret.comps.CompMechPowerCell.labelOverride>
+<EGO_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</EGO_Turret_TacticalTurret.comps.CompMechPowerCell.tooltipOverride>
+
+<EGO_Gun_TacticalTurret.label>EGO Automancer Turret</EGO_Gun_TacticalTurret.label>
+<EGO_Gun_TacticalTurret.verbs.Verb_Shoot.label>EGO Automancer Turret</EGO_Gun_TacticalTurret.verbs.Verb_Shoot.label>
+<EGO_Gun_TacticalTurret.description>Reconstructed EGO Amalgam Pistol for turrets.</EGO_Gun_TacticalTurret.description>
+
+</LanguageData>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Uniform ====================-->
+<!--=============== Child ====================-->
+  <ThingDef ParentName="OEUniformBase">
+    <defName>OE_Uniform_Kid</defName>
+    <label>obsidia kid uniform</label>
+	<description>Uniform sized for kids, well protects and providing advanced skin sense feedback to the wearer. Designed for use by Obsidia Empire kids.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Uniform/Kid/OEUniform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>35</costStuffCount>
+	<costList Inherit="False">
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>1.5</Mass>
+      <StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+	  <MoveSpeed>0.10</MoveSpeed>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.1</VacuumResistance>
+    </equippedStatOffsets>
+    <apparel>
+      <developmentalStageFilter>Child</developmentalStageFilter>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Uniform/Kid/OEUniform</wornGraphicPath>
+      <tags>
+        <li>OEKid</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_Apparel</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OEC - HunterHelmet ====================-->
+<OEC_Helmet.label>OEC Hunter Helmet</OEC_Helmet.label>
+<OEC_Helmet.description>Light power armor Helmet, well protects the owner. Designed for use by Hunters representing the OEC.</OEC_Helmet.description>
+
+<OEC_Helmet_M.label>OEC Inquisitor Helmet</OEC_Helmet_M.label>
+<OEC_Helmet_M.description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nThe hardened version provides more protection to the owner.</OEC_Helmet_M.description>
+
+<OEC_Helmet_M_Spacer.label>OEC Inquisitor Helmet(Space Griffin)</OEC_Helmet_M_Spacer.label>
+<OEC_Helmet_M_Spacer.description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OEC_Helmet_M_Spacer.description>
+
+<OEC_Helmet_M_Melee.label>OEC Inquisitor Helmet(Gladiator)</OEC_Helmet_M_Melee.label>
+<OEC_Helmet_M_Melee.description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nModified visor with analyzing computer that helps the user close combat.</OEC_Helmet_M_Melee.description>
+
+<OEC_Helmet_M_Ranged.label>OEC Inquisitor Helmet(Ranger)</OEC_Helmet_M_Ranged.label>
+<OEC_Helmet_M_Ranged.description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nModified visor with targeting computer that helps the user aim.</OEC_Helmet_M_Ranged.description>
+
+<OEC_Helmet_M_Mechanitor.label>OEC Inquisitor Helmet(Overseer)</OEC_Helmet_M_Mechanitor.label>
+<OEC_Helmet_M_Mechanitor.description>Light power armor Helmet, well protects the owner. Designed and modified for use by Inquisitors representing the OEC.\n\nModified for improves Mechanoids Control abilities.</OEC_Helmet_M_Mechanitor.description>
+
+<!--=============== OEC - HunterArmor ====================-->
+<OEC_Armor.label>OEC Hunter Armor</OEC_Armor.label>
+<OEC_Armor.description>Light power armor, well protects the owner without mobility restriction. Designed for use by Hunters representing the OEC.</OEC_Armor.description>
+
+<OEC_Armor_M.label>OEC Inquisitor Armor</OEC_Armor_M.label>
+<OEC_Armor_M.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nThe hardened version provides more protection to the owner.</OEC_Armor_M.description>
+
+<OEC_Armor_M_Spacer.label>OEC Inquisitor Armor(Space Griffin)</OEC_Armor_M_Spacer.label>
+<OEC_Armor_M_Spacer.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OEC_Armor_M_Spacer.description>
+
+<OEC_Armor_M_Smoker.label>OEC Inquisitor Armor(Fogler)</OEC_Armor_M_Smoker.label>
+<OEC_Armor_M_Smoker.verbs.Verb_SmokePop.label>OEC Inquisitor Armor(Fogler)</OEC_Armor_M_Smoker.verbs.Verb_SmokePop.label>
+<OEC_Armor_M_Smoker.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Smokepop pack.</OEC_Armor_M_Smoker.description>
+<OEC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>smokepop</OEC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>on cooldown</OEC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<OEC_Armor_M_Jump.label>OEC Inquisitor Armor(Raven)</OEC_Armor_M_Jump.label>
+<OEC_Armor_M_Jump.verbs.Verb_Jump.label>OEC Inquisitor Armor(Raven)</OEC_Armor_M_Jump.verbs.Verb_Jump.label>
+<OEC_Armor_M_Jump.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Jump pack.</OEC_Armor_M_Jump.description>
+<OEC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>jump</OEC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>on cooldown</OEC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<OEC_Armor_M_Grenadier.label>OEC Inquisitor Armor(Huntsman)</OEC_Armor_M_Grenadier.label>
+<OEC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>OEC Inquisitor Armor(Huntsman)</OEC_Armor_M_Grenadier.verbs.Verb_LaunchProjectileStatic.label>
+<OEC_Armor_M_Grenadier.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified by installing the Stun Cannon.</OEC_Armor_M_Grenadier.description>
+<OEC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>grenade</OEC_Armor_M_Grenadier.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>on cooldown</OEC_Armor_M_Grenadier.comps.CompApparelReloadable.cooldownGerund>
+
+<OEC_Armor_M_Shield.label>OEC Inquisitor Armor(Guardian)</OEC_Armor_M_Shield.label>
+<OEC_Armor_M_Shield.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Reinforced Barrier.</OEC_Armor_M_Shield.description>
+
+<OEC_Armor_M_Barrier.label>OEC Inquisitor Armor(Protector)</OEC_Armor_M_Barrier.label>
+<OEC_Armor_M_Barrier.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of the Universal Barrier.</OEC_Armor_M_Barrier.description>
+
+<OEC_Armor_M_Mechanitor.label>OEC Inquisitor Armor(Overseer)</OEC_Armor_M_Mechanitor.label>
+<OEC_Armor_M_Mechanitor.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the addition of a Mechanoids Control pack.</OEC_Armor_M_Mechanitor.description>
+
+<OEC_Armor_M_Turret.label>OEC Inquisitor Armor(Goblin)</OEC_Armor_M_Turret.label>
+<OEC_Armor_M_Turret.description>Light power armor, well protects the owner without mobility restriction. Designed and modified for use by Inquisitors representing the OEC.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</OEC_Armor_M_Turret.description>
+<OEC_Armor_M_Turret.verbs.deploy_turret.label>deploy turret</OEC_Armor_M_Turret.verbs.deploy_turret.label>
+<OEC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</OEC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OEC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</OEC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OEC - StunBullet ====================-->
+<Bullet_OEC_Stun.label>Stun bullet</Bullet_OEC_Stun.label>
+
+<Grenade_Armor_OEC_TurretPack.label>OEC turret pack capsule</Grenade_Armor_OEC_TurretPack.label>
+
+</LanguageData>

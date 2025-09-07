@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Implant - Sting ====================-->
+<!--=============== Acid ====================-->
+<Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName="OE_ImplantArm_Sting_Acid"]/comps</xpath>
+    <value>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.35</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>OTCAcid</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    </value>
+</Operation>
+<!--=============== Cryo ====================-->
+<Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName="OE_ImplantArm_Sting_Cryo"]/comps</xpath>
+    <value>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.35</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>OTCCryo</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    </value>
+</Operation>
+<!--=============== Fire ====================-->
+<Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName="OE_ImplantArm_Sting_Fire"]/comps</xpath>
+    <value>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.35</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>Flame</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    </value>
+</Operation>
+<!--=============== EMP ====================-->
+<Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName="OE_ImplantArm_Sting_EMP"]/comps</xpath>
+    <value>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.35</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>EMP</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    </value>
+</Operation>
+<!--=============== Implant - Demolisher ====================-->
+<Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName="OE_ImplantArm_Sting_Acid"]/comps</xpath>
+    <value>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>sting</label>
+            <capacities>
+              <li>Poke</li>
+            </capacities>
+            <power>5</power>
+            <armorPenetration>0.35</armorPenetration>
+            <cooldownTime>1.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_DrillArm</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_DrillArm</soundMeleeMiss>
+			<extraMeleeDamages>
+              <li>
+                <def>OTCAcid</def>
+                <amount>15</amount>
+              </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    </value>
+</Operation>
+
+</Patch>

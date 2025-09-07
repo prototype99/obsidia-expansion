@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Crimson Arachna ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="OEBaseMechCrimsonArachna"]/statBases</xpath>
+    <value>
+      <EnergyShieldRechargeRate>0.25</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="OEBaseMechCrimsonArachna"]</xpath>
+    <value>
+      <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+          <radius>4</radius>
+          <interceptGroundProjectiles>true</interceptGroundProjectiles>
+          <color>(0.74, 0.20, 0.23)</color>
+          <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+          <activeSound>BulletShield_Ambience</activeSound>
+          <hitPoints>250</hitPoints>
+          <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+          <chargeDurationTicks>5400</chargeDurationTicks>
+          <drawWithNoSelection>True</drawWithNoSelection>
+          <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+          <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+        </li>
+      </comps>
+    </value>
+</Operation>
+
+</Patch>

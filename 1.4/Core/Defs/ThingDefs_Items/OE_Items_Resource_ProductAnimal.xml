@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Raptors Egg ====================-->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>OE_EggRaptorUnfertilized</defName>
+    <label>raptor egg (unfert.)</label>
+    <description>An unfertilized raptor egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Raptor</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/EggRaptor</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(55,54,52)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.0</Mass>
+      <MaxHitPoints>20</MaxHitPoints>
+	  <MarketValue>20.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_EggRaptorFertilized</defName>
+    <label>raptor egg (fert.)</label>
+    <description>Fertilized raptor egg. If all goes well, it should hatch into a baby raptor. It can be eaten raw, but it's much better cooked.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Raptor</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/EggRaptor</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(98,93,89)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.0</Mass>
+      <MaxHitPoints>20</MaxHitPoints>
+	  <MarketValue>20.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10</hatcherDaystoHatch>
+        <hatcherPawn>OE_Raptor</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Tionant Eggs ====================-->
+<!--=============== Blue ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_EggBlueTionantFertilized</defName>
+    <label>blue tionant egg (fert.)</label>
+    <description>Fertilized blue tionante egg. If all goes well, it should hatch into a blue baby tionante. Not recommended for use in food, very toxic.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Blue</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/EggTionant/Blue</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<statBases>
+      <Mass>3.5</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+	  <MarketValue>35.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>14</hatcherDaystoHatch>
+        <hatcherPawn>OE_Tionant_Blue</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Green ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_EggGreenTionantFertilized</defName>
+    <label>green tionant egg (fert.)</label>
+    <description>Fertilized green tionante egg. If all goes well, it should hatch into a green baby tionante. Not recommended for use in food, very toxic.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Green</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/EggTionant/Green</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<statBases>
+      <Mass>3.5</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+	  <MarketValue>35.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>14</hatcherDaystoHatch>
+        <hatcherPawn>OE_Tionant_Green</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Red ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_EggRedTionantFertilized</defName>
+    <label>red tionant egg (fert.)</label>
+    <description>Fertilized red tionante egg. If all goes well, it should hatch into a red baby tionante. Not recommended for use in food, very toxic.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Red</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/EggTionant/Red</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<statBases>
+      <Mass>3.5</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+	  <MarketValue>35.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>14</hatcherDaystoHatch>
+        <hatcherPawn>OE_Tionant_Red</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Yellow ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_EggYellowTionantFertilized</defName>
+    <label>yellow tionant egg (fert.)</label>
+    <description>Fertilized yellow tionante egg. If all goes well, it should hatch into a yellow baby tionante. Not recommended for use in food, very toxic.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Yellow</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/EggTionant/Yellow</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<statBases>
+      <Mass>3.5</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+	  <MarketValue>35.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>14</hatcherDaystoHatch>
+        <hatcherPawn>OE_Tionant_Yellow</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Tionant Jelly ====================-->
+<!--=============== Blue ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Blue_TionantJelly</defName>
+    <label>blue tionant jelly</label>
+    <description>Unique jelly produced by blue tionant. This medicinal jelly is used in medicine or in the synthesis of certain substances.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Blue</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/JellyTionant/JellyBlue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <uiIconForStackCount>1</uiIconForStackCount>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>125</MarketValue>
+      <Mass>0.1</Mass>
+	  <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.75</MedicalPotency>
+      <MedicalQualityMax>1.75</MedicalQualityMax>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<healthAffectsPrice>false</healthAffectsPrice>
+	<thingClass>Medicine</thingClass>
+    <stackLimit>25</stackLimit>
+	<thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OETionantGel</li>
+    </tradeTags>
+	<orderedTakeGroup>Medicine</orderedTakeGroup>
+  </ThingDef>
+
+<!--=============== Green ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Green_TionantJelly</defName>
+    <label>green tionant jelly</label>
+    <description>Unique jelly produced by the green tionant. This vegetable jelly is used as food or in cooking.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Green</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/JellyTionant/JellyGreen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <uiIconForStackCount>1</uiIconForStackCount>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>25</MarketValue>
+      <Mass>0.1</Mass>
+	  <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+	  <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<ingestible>
+      <foodType>VegetableOrFruit, Fluid</foodType>
+	  <preferability>RawTasty</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+	<healthAffectsPrice>false</healthAffectsPrice>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OETionantGel</li>
+    </tradeTags>
+	<tickerType>Rare</tickerType>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Red ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Red_TionantJelly</defName>
+    <label>red tionant jelly</label>
+    <description>Unique jelly produced by the red tionant. This meat jelly is used as food or in cooking.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Red</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/JellyTionant/JellyRed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <uiIconForStackCount>1</uiIconForStackCount>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>25</MarketValue>
+      <Mass>0.1</Mass>
+	  <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+	  <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<ingestible>
+      <foodType>Meat, Fluid</foodType>
+	  <preferability>RawTasty</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+	<healthAffectsPrice>false</healthAffectsPrice>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OETionantGel</li>
+    </tradeTags>
+	<tickerType>Rare</tickerType>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Yellow ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>OE_Yellow_TionantJelly</defName>
+    <label>yellow tionant jelly</label>
+    <description>Unique jelly produced by the yellow tionant. This animal jelly is used as food or in cooking.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Tionant_Yellow</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/JellyTionant/JellyYellow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <uiIconForStackCount>1</uiIconForStackCount>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>25</MarketValue>
+      <Mass>0.1</Mass>
+	  <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+	  <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<ingestible>
+      <foodType>AnimalProduct, Fluid</foodType>
+	  <preferability>RawTasty</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+	<healthAffectsPrice>false</healthAffectsPrice>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OETionantGel</li>
+    </tradeTags>
+	<tickerType>Rare</tickerType>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bruul Caviar ====================-->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>OE_CaviarBruulUnfertilized</defName>
+    <label>bruul caviar (unfert.)</label>
+    <description>An unfertilized bruul caviar. It can be eaten raw, but it's much, much better cooked.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Bruul_Acid</ThingDef>
+	  <ThingDef>OE_Bruul_Cryo</ThingDef>
+	  <ThingDef>OE_Bruul_Fire</ThingDef>
+	  <ThingDef>OE_Bruul_EMP</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/CaviarBruul</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.05</Mass>
+      <MaxHitPoints>5</MaxHitPoints>
+	  <MarketValue>40.0</MarketValue>
+    </statBases>
+  </ThingDef>
+<!--=============== Acid Bruul ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_CaviarBruulAcidFertilized</defName>
+    <label>acid bruul caviar (fert.)</label>
+    <description>Fertilized acid bruul caviar. If all goes well, it should hatch into a baby raptor. It can be eaten raw, but it's much better cooked.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Bruul_Acid</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/CaviarBruul</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.05</Mass>
+      <MaxHitPoints>5</MaxHitPoints>
+	  <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Bruul_Acid</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+<!--=============== Cryo Bruul ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_CaviarBruulCryoFertilized</defName>
+    <label>cryo bruul caviar (fert.)</label>
+    <description>Fertilized cryo bruul caviar. If all goes well, it should hatch into a baby raptor. It can be eaten raw, but it's much better cooked.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Bruul_Cryo</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/CaviarBruul</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.05</Mass>
+      <MaxHitPoints>5</MaxHitPoints>
+	  <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Bruul_Cryo</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+<!--=============== Fire Bruul ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_CaviarBruulFireFertilized</defName>
+    <label>fire bruul caviar (fert.)</label>
+    <description>Fertilized fire bruul caviar. If all goes well, it should hatch into a baby raptor. It can be eaten raw, but it's much better cooked.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Bruul_Fire</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/CaviarBruul</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.05</Mass>
+      <MaxHitPoints>5</MaxHitPoints>
+	  <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Bruul_Fire</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+<!--=============== EMP Bruul ====================-->
+  <ThingDef ParentName="EggFertBase">
+    <defName>OE_CaviarBruulEMPFertilized</defName>
+    <label>EMP bruul caviar (fert.)</label>
+    <description>Fertilized EMP bruul caviar. If all goes well, it should hatch into a baby raptor. It can be eaten raw, but it's much better cooked.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Bruul_EMP</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/ProductAnimal/CaviarBruul</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.05</Mass>
+      <MaxHitPoints>5</MaxHitPoints>
+	  <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Bruul_EMP</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

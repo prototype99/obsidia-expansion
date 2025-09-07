@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== CAC - Helmet ====================-->
+<!--=============== Light ====================-->
+<CAC_LightHelmet.label>Легкий шолом Культиста CAC</CAC_LightHelmet.label>
+<CAC_LightHelmet.description>Шолом легкої силової броні, що добре захищає власника. Розроблена для використання Культистами CAC.</CAC_LightHelmet.description>
+
+<CAC_LightHelmet_Prestige.label>Легкий шолом Культиста CAC(Лорд)</CAC_LightHelmet_Prestige.label>
+<CAC_LightHelmet_Prestige.description>Шолом легкої силової броні, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифікований для покращення псі-здібностей власника.</CAC_LightHelmet_Prestige.description>
+
+<CAC_LightHelmet_Mechanitor.label>Легкий шолом Культиста CAC(Контролер)</CAC_LightHelmet_Mechanitor.label>
+<CAC_LightHelmet_Mechanitor.description>Шолом легкої силової броні, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано для покращення здібностей Контролю Механоїдів.</CAC_LightHelmet_Mechanitor.description>
+
+<!--=============== Heavy ====================-->
+<CAC_HeavyHelmet.label>Важкий шолом Культиста CAC</CAC_HeavyHelmet.label>
+<CAC_HeavyHelmet.description>Шолом важкої силової броні чудово захищає власника. Розроблена для використання Культистами CAC.</CAC_HeavyHelmet.description>
+
+<CAC_HeavyHelmet_Prestige.label>Важкий шолом Культиста CAC(Лорд)</CAC_HeavyHelmet_Prestige.label>
+<CAC_HeavyHelmet_Prestige.description>Шолом важкої силової броні чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифікований для покращення псі-здібностей власника.</CAC_HeavyHelmet_Prestige.description>
+
+<CAC_HeavyHelmet_Mechanitor.label>Важкий шолом Культиста CAC(Контролер)</CAC_HeavyHelmet_Mechanitor.label>
+<CAC_HeavyHelmet_Mechanitor.description>Шолом важкої силової броні чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано для покращення здібностей Контролю Механоїдів.</CAC_HeavyHelmet_Mechanitor.description>
+
+<!--=============== Priest ====================-->
+<CAC_PriestHelmet.label>Шолом Жреця CAC</CAC_PriestHelmet.label>
+<CAC_PriestHelmet.description>Шолом важкої силової броні чудово захищає власника. Розроблена для використання Жрецями CAC.</CAC_PriestHelmet.description>
+
+<!--=============== OMC - Armor ====================-->
+<!--=============== Light ====================-->
+<CAC_LightArmor.label>Легка броня Культиста CAC</CAC_LightArmor.label>
+<CAC_LightArmor.description>Легка силова броня, що добре захищає власника. Розроблена для використання Культистами CAC.</CAC_LightArmor.description>
+
+<CAC_LightArmor_Smoker.label>Легка броня Культиста CAC(Туманник)</CAC_LightArmor_Smoker.label>
+<CAC_LightArmor_Smoker.verbs.Verb_SmokePop.label>Легка броня Культиста CAC(Туманник)</CAC_LightArmor_Smoker.verbs.Verb_SmokePop.label>
+<CAC_LightArmor_Smoker.description>Легка силова броня, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням Димової шашки.</CAC_LightArmor_Smoker.description>
+<CAC_LightArmor_Smoker.comps.CompApparelReloadable.chargeNoun>димова завіса</CAC_LightArmor_Smoker.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_LightArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_LightArmor_Jump.label>Легка броня Культиста CAC(Ворон)</CAC_LightArmor_Jump.label>
+<CAC_LightArmor_Jump.verbs.Verb_Jump.label>Легка броня Культиста CAC(Ворон)</CAC_LightArmor_Jump.verbs.Verb_Jump.label>
+<CAC_LightArmor_Jump.description>Легка силова броня, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням Реактивного ранця.</CAC_LightArmor_Jump.description>
+<CAC_LightArmor_Jump.comps.CompApparelReloadable.chargeNoun>стрибок</CAC_LightArmor_Jump.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Jump.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_LightArmor_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_LightArmor_Prestige.label>Легка броня Культиста CAC(Лорд)</CAC_LightArmor_Prestige.label>
+<CAC_LightArmor_Prestige.description>Легка силова броня, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифікований для покращення псі-здібностей власника.</CAC_LightArmor_Prestige.description>
+
+<CAC_LightArmor_Mechanitor.label>Легка броня Культиста CAC(Контролер)</CAC_LightArmor_Mechanitor.label>
+<CAC_LightArmor_Mechanitor.description>Легка силова броня, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням пакету Управління Механоїдами.</CAC_LightArmor_Mechanitor.description>
+
+<CAC_LightArmor_Turret.label>Легка броня Культиста CAC(Гоблін)</CAC_LightArmor_Turret.label>
+<CAC_LightArmor_Turret.description>Легка силова броня, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифікований з додаванням портфеля з туреллю, що працює від акумулятора.</CAC_LightArmor_Turret.description>
+<CAC_LightArmor_Turret.verbs.deploy_turret.label>поставити турель</CAC_LightArmor_Turret.verbs.deploy_turret.label>
+<CAC_LightArmor_Turret.comps.CompApparelReloadable.chargeNoun>заряд</CAC_LightArmor_Turret.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Turret.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_LightArmor_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_LightArmor_Swarmling.label>Легка броня Культиста CAC(Роєвик)</CAC_LightArmor_Swarmling.label>
+<CAC_LightArmor_Swarmling.description>Легка силова броня, що добре захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням ранця, що дає змогу розгортати дронів, які працюють від акумулятора.</CAC_LightArmor_Swarmling.description>
+<CAC_LightArmor_Swarmling.verbs.deploy_swarmling_drone.label>розгорнути дрона-роєвика</CAC_LightArmor_Swarmling.verbs.deploy_swarmling_drone.label>
+<CAC_LightArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>заряд</CAC_LightArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>
+<CAC_LightArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_LightArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Heavy ====================-->
+<CAC_HeavyArmor.label>Важка броня Культиста CAC</CAC_HeavyArmor.label>
+<CAC_HeavyArmor.description>Важка силова броня чудово захищає власника. Розроблена для використання Культистами CAC.</CAC_HeavyArmor.description>
+
+<CAC_HeavyArmor_Smoker.label>Важка броня Культиста CAC(Туманник)</CAC_HeavyArmor_Smoker.label>
+<CAC_HeavyArmor_Smoker.verbs.Verb_SmokePop.label>Важка броня Культиста CAC(Туманник)</CAC_HeavyArmor_Smoker.verbs.Verb_SmokePop.label>
+<CAC_HeavyArmor_Smoker.description>Важка силова броня чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням Димової шашки.</CAC_HeavyArmor_Smoker.description>
+<CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.chargeNoun>димова завіса</CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_HeavyArmor_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_HeavyArmor_Jump.label>Важка броня Культиста CAC(Ворон)</CAC_HeavyArmor_Jump.label>
+<CAC_HeavyArmor_Jump.verbs.Verb_Jump.label>Важка броня Культиста CAC(Ворон)</CAC_HeavyArmor_Jump.verbs.Verb_Jump.label>
+<CAC_HeavyArmor_Jump.description>Важка силова броня чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням Реактивного ранця.</CAC_HeavyArmor_Jump.description>
+<CAC_HeavyArmor_Jump.comps.CompApparelReloadable.chargeNoun>стрибок</CAC_HeavyArmor_Jump.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Jump.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_HeavyArmor_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_HeavyArmor_Prestige.label>Важка броня Культиста CAC(Лорд)</CAC_HeavyArmor_Prestige.label>
+<CAC_HeavyArmor_Prestige.description>Важка силова броня чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифікований для покращення псі-здібностей власника.</CAC_HeavyArmor_Prestige.description>
+
+<CAC_HeavyArmor_Mechanitor.label>Важка броня Культиста CAC(Контролер)</CAC_HeavyArmor_Mechanitor.label>
+<CAC_HeavyArmor_Mechanitor.description>Важка силова броня чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням пакету Управління Механоїдами.</CAC_HeavyArmor_Mechanitor.description>
+
+<CAC_HeavyArmor_Turret.label>Важка броня Культиста CAC(Гоблін)</CAC_HeavyArmor_Turret.label>
+<CAC_HeavyArmor_Turret.description>Важка силова броня чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифікований з додаванням портфеля з туреллю, що працює від акумулятора.</CAC_HeavyArmor_Turret.description>
+<CAC_HeavyArmor_Turret.verbs.deploy_turret.label>поставити турель</CAC_HeavyArmor_Turret.verbs.deploy_turret.label>
+<CAC_HeavyArmor_Turret.comps.CompApparelReloadable.chargeNoun>заряд</CAC_HeavyArmor_Turret.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Turret.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_HeavyArmor_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_HeavyArmor_Swarmling.label>Важка броня Культиста CAC(Роєвик)</CAC_HeavyArmor_Swarmling.label>
+<CAC_HeavyArmor_Swarmling.description>Важка силова броня чудово захищає власника. Розроблена для використання Культистами CAC.\n\nМодифіковано з додаванням ранця, що дає змогу розгортати дронів, які працюють від акумулятора.</CAC_HeavyArmor_Swarmling.description>
+<CAC_HeavyArmor_Swarmling.verbs.deploy_swarmling_drone.label>розгорнути дрона-роєвика</CAC_HeavyArmor_Swarmling.verbs.deploy_swarmling_drone.label>
+<CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>заряд</CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.chargeNoun>
+<CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_HeavyArmor_Swarmling.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== CAC - Grenades ====================-->
+<Grenade_Armor_CAC_TurretPack.label>капсула ранця з CAC туреллю</Grenade_Armor_CAC_TurretPack.label>
+<Grenade_Armor_CAC_SwarmlingPack.label>капсула з CAC дроном-роєвиком</Grenade_Armor_CAC_SwarmlingPack.label>
+
+<!--=============== CAC Exosuit ====================-->
+<CAC_PriestArmor.label>Броня Жреця CAC</CAC_PriestArmor.label>
+<CAC_PriestArmor.description>Важка силова броня чудово захищає власника. Розроблена та модифікована для використання Жрецями CAC.\n\nМає вбудований модуль, що дозволяє випускати ракети-дизраптори.</CAC_PriestArmor.description>
+<CAC_PriestArmor.verbs.deploy_flare.label>запустити ракету</CAC_PriestArmor.verbs.deploy_flare.label>
+<CAC_PriestArmor.comps.CompApparelReloadable.chargeNoun>дизраптор</CAC_PriestArmor.comps.CompApparelReloadable.chargeNoun>
+<CAC_PriestArmor.comps.CompApparelReloadable.cooldownGerund>перезаряджається</CAC_PriestArmor.comps.CompApparelReloadable.cooldownGerund>
+
+<CAC_DisruptorFlare.label>ракета-дизраптор</CAC_DisruptorFlare.label>
+
+</LanguageData>

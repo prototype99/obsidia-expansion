@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+<oe_attention_text>Після будь-яких змін потрібно перезапустити гру.</oe_attention_text>
+
+<!--=============== Syntherius Harvest Yield ====================-->
+<oe_syntheriusharvestyield_text>Кількість видобутку Сінтеріуса:</oe_syntheriusharvestyield_text>
+
+<oe_syntheriustree_text>Дерево Сінтеріуса: {oe_syntheriustree_harvestyield}</oe_syntheriustree_text>
+<oe_syntheriusslime_text>Сінтеріусний Слайм: {oe_syntheriusslime_milkamount}</oe_syntheriusslime_text>
+<oe_syntheriusdryad_text>Дріада Синтезу: {oe_syntheriusdryad_spawncount}</oe_syntheriusdryad_text>
+<oe_syntheriusroot_text>Корінь Сінтеріуса: {oe_syntheriusroot_harvestyield}</oe_syntheriusroot_text>
+<oe_syntheriuspack_text>Стислий Сінтеріус: {oe_syntheriuspack_killedleavings}</oe_syntheriuspack_text>
+<oe_syntheriusdryadawakened_text>Пробуджена Дріада Синтезу: {oe_syntheriusdryadawakened_spawncount}</oe_syntheriusdryadawakened_text>
+<oe_syntheriusoutpost_text>Обсидійський аванпост Сінтеріуса: {oe_syntheriusoutpost_amountperpawn}</oe_syntheriusoutpost_text>
+
+<!--=============== Research Cost Amount ====================-->
+<oe_researchcostamount_text>Вартість очок досліджень:</oe_researchcostamount_text>
+
+<oe_researchcostamount_large>Нормальна вартість - 100%</oe_researchcostamount_large>
+<oe_researchcostamount_medium>Низька вартість - 50%</oe_researchcostamount_medium>
+<oe_researchcostamount_small>Дитяча вартість - 20%</oe_researchcostamount_small>
+
+<!--=============== Misk Settings ====================-->
+<oe_misksettings_text>Інші налаштування:</oe_misksettings_text>
+<OE_ChaosSlimeHiveGen_text>Вулики хаос слаймів — лише на карті гравця</OE_ChaosSlimeHiveGen_text>
+<OE_ChaosSlimeHiveGen_tip>Якщо увімкнено(true), вулики хаос слаймів з’являтимуться лише на мапах поселень гравця й не будуть з’являтися на ворожих або нейтральних картах. Якщо вимкнено(false), вулики можуть з’явитися під час генерації світу або рейдів на будь-яку мапу фракцій.</OE_ChaosSlimeHiveGen_tip>
+
+</LanguageData>

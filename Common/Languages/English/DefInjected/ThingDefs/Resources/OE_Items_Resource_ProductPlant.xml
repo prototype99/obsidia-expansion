@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Pearlapple ====================-->
+<OE_Pearlapple_Fruit.label>pearlapple fruit</OE_Pearlapple_Fruit.label>
+<OE_Pearlapple_Fruit.description>Obsidias juicy crystal fruit that can be used as a meat substitute.</OE_Pearlapple_Fruit.description>
+
+<!--=============== Jumy ====================-->
+<OE_Jumy_Berries.label>jumy berries</OE_Jumy_Berries.label>
+<OE_Jumy_Berries.description>Small Obsidias berries are tasty and sweet.</OE_Jumy_Berries.description>
+
+<!--=============== Fungal Wood ====================-->
+<OE_FungalWoodLog.label>fungal wood</OE_FungalWoodLog.label>
+<OE_FungalWoodLog.description>Unique wood. More durable and less flammable, while being lighter.</OE_FungalWoodLog.description>
+<OE_FungalWoodLog.stuffProps.stuffAdjective>fungal wooden</OE_FungalWoodLog.stuffProps.stuffAdjective>
+<OE_FungalWoodLog.tools.log.label>log</OE_FungalWoodLog.tools.log.label>
+
+<!--=============== Dragonian Wood ====================-->
+<OE_DragonianWoodLog.label>dragonian wood</OE_DragonianWoodLog.label>
+<OE_DragonianWoodLog.description>Rare type of wood. Very valuable, durable and beautiful, yet heavy.</OE_DragonianWoodLog.description>
+<OE_DragonianWoodLog.stuffProps.stuffAdjective>dragonian wooden</OE_DragonianWoodLog.stuffProps.stuffAdjective>
+<OE_DragonianWoodLog.tools.log.label>log</OE_DragonianWoodLog.tools.log.label>
+
+<!--=============== Syntherius ====================-->
+<OE_Syntherius.label>syntherius</OE_Syntherius.label>
+<OE_Syntherius.description>Unique Obsidias resource. Used to synthesize other resources, craft weapons, and other industries in Obsidia.</OE_Syntherius.description>
+
+<!--=============== EGO Seed ====================-->
+<OE_EGOSeed.label>EGO seed</OE_EGOSeed.label>
+<OE_EGOSeed.description>The seed of an EGO tree. It can be planted to create a new EGO tree. Also used in genetic experiments or for amalgam gestating.</OE_EGOSeed.description>
+
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetterLabel>EGO Seed studied: {RESEARCH} unlocked</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the EGO Seed, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.completedLetter>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateLabelString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the EGO seed.</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.activateDescString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.jobString>Analyze EGO seed</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.jobString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.guiLabelString>
+<OE_EGOSeed.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</OE_EGOSeed.comps.CompAnalyzableUnlockResearch.inspectString>
+
+<!--=============== Pearlpeach ====================-->
+<OE_Pearlpeach_Fruit.label>pearlpeach fruit</OE_Pearlpeach_Fruit.label>
+<OE_Pearlpeach_Fruit.description>Obsidias juicy crystal fruit that can be used as a meat substitute.</OE_Pearlpeach_Fruit.description>
+
+</LanguageData>

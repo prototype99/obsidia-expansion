@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Brain ====================-->
+<!--=============== Implant - Psydeaf ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantBrain_Psydeaf</defName>
+    <label>brain implant - Psychically deaf</label>
+    <labelNoun>a brain implant - Psychically deaf</labelNoun>
+    <description>An installed brain implant - Psychically deaf.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantBrain_Psydeaf</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantBrain_Psydeaf</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+          <PsychicSensitivity>-2</PsychicSensitivity>
+        </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ImplantBrain_Psydeaf</defName>
+    <label>brain implant - Psychically deaf</label>
+    <description>Obsidia psychically deaf brain implant was designed to suppress psy-sensitivity.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantBrain_Psydeaf</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OE_Brain</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_NonBattle</li>
+    </techHediffsTags>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantBrain_Psydeaf</defName>
+    <label>install brain implant - Psychically deaf</label>
+    <description>Install a brain implant - Psychically deaf.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantBrain_Psydeaf</ThingDef>
+      <HediffDef>OE_ImplantBrain_Psydeaf</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing brain implant - Psychically deaf.</jobString>
+	<uiIconThing>OE_ImplantBrain_Psydeaf</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantBrain_Psydeaf</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantBrain_Psydeaf</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantBrain_Psydeaf</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantBrain_Psydeaf</defName>
+    <label>remove brain implant - Psychically deaf</label>
+    <description>Remove a brain implant - Psychically deaf.</description>
+    <jobString>Removing brain implant - Psychically deaf.</jobString>
+    <removesHediff>OE_ImplantBrain_Psydeaf</removesHediff>
+	<uiIconThing>OE_ImplantBrain_Psydeaf</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Prisoner ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantBrain_Prisoner</defName>
+    <label>brain implant - Suppression</label>
+    <labelNoun>a brain implant - Suppression</labelNoun>
+    <description>An installed brain implant - Suppression.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantBrain_Prisoner</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantBrain_Prisoner</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+          <SlaveSuppressionFallRate MayRequire="Ludeon.Rimworld.Ideology">-0.5</SlaveSuppressionFallRate>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
+        </statOffsets>
+		<restFallFactorOffset>-0.25</restFallFactorOffset>
+		<capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ImplantBrain_Prisoner</defName>
+    <label>brain implant - Suppression</label>
+    <description>Obsidia suppression brain implant was designed to subdue rebellious slaves without harming them, also improves their behavior and reduces their need for sleep. When hit by an EMP it will knock the host unconscious.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantBrain_Prisoner</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OE_Brain</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_NonBattle</li>
+    </techHediffsTags>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantBrain_Prisoner</defName>
+    <label>install brain implant - Suppression</label>
+    <description>Install a brain implant - Suppression.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantBrain_Prisoner</ThingDef>
+      <HediffDef>OE_ImplantBrain_Prisoner</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing brain implant - Suppression.</jobString>
+	<uiIconThing>OE_ImplantBrain_Prisoner</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantBrain_Prisoner</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantBrain_Prisoner</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantBrain_Prisoner</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantBrain_Prisoner</defName>
+    <label>remove brain implant - Suppression</label>
+    <description>Remove a brain implant - Suppression.</description>
+    <jobString>Removing brain implant - Suppression.</jobString>
+    <removesHediff>OE_ImplantBrain_Prisoner</removesHediff>
+	<uiIconThing>OE_ImplantBrain_Prisoner</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - Slave ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantBrain_Slave</defName>
+    <label>brain implant - Sacrifice</label>
+    <labelNoun>a brain implant - Sacrifice</labelNoun>
+    <description>An installed brain implant - Sacrifice.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantBrain_Slave</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantBrain_Slave</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<painFactor>-0.65</painFactor>
+		<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0</postFactor>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0</postFactor>
+          </li>
+		  <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ImplantBrain_Slave</defName>
+    <label>brain implant - Sacrifice</label>
+    <description>Obsidia Sacrifice brain implant was designed to fully paralysis, making it impossible to move.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallImplantBrain_Slave</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OE_Brain</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_NonBattle</li>
+    </techHediffsTags>
+    <costList>
+      <OE_PlatinumSynthweave>15</OE_PlatinumSynthweave>
+	  <OE_Obsidian>15</OE_Obsidian>
+      <OE_Syntherius>15</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>5</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantBrain_Slave</defName>
+    <label>install brain implant - Sacrifice</label>
+    <description>Install a brain implant - Sacrifice.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantBrain_Slave</ThingDef>
+      <HediffDef>OE_ImplantBrain_Slave</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing brain implant - Sacrifice.</jobString>
+	<uiIconThing>OE_ImplantBrain_Slave</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantBrain_Slave</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantBrain_Slave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantBrain_Slave</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantBrain_Slave</defName>
+    <label>remove brain implant - Sacrifice</label>
+    <description>Remove a brain implant - Sacrifice.</description>
+    <jobString>Removing brain implant - Sacrifice.</jobString>
+    <removesHediff>OE_ImplantBrain_Slave</removesHediff>
+	<uiIconThing>OE_ImplantBrain_Slave</uiIconThing>
+  </RecipeDef>
+<!--=============== Implant - AI interface ====================-->
+  <HediffDef ParentName="OEImplantBodyParts">
+    <defName>OE_ImplantBrain_Interface</defName>
+    <label>cyberware AI interface</label>
+    <labelNoun>a cyberware AI interface</labelNoun>
+    <description>An installed cyberware AI interface. Required for further installation of cyberware AI helpers.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantBrain_Interface</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ImplantBrain_Interface</spawnThingOnRemoved>
+	<stages>
+	  <li>
+		<statOffsets>
+          <MentalBreakThreshold>0.05</MentalBreakThreshold>
+        </statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ImplantBrain_Interface</defName>
+    <label>cyberware AI interface</label>
+    <description>Obsidia cyberware AI interface system is installed in the brain with a low-intelligent microcomputer controlled by a neural interface. Required for further installation of cyberware AI helpers.</description>
+    <descriptionHyperlinks>
+	  <RecipeDef>OE_InstallImplantBrain_Interface</RecipeDef>
+	  <ThingDef>OE_CyberwareBrain_Consciousness</ThingDef>
+	  <ThingDef>OE_CyberwareBrain_Builder</ThingDef>
+	  <ThingDef>OE_CyberwareBrain_Agronomist</ThingDef>
+	  <ThingDef>OE_CyberwareBrain_Doctor</ThingDef>
+	  <ThingDef>OE_CyberwareBrain_Soldier</ThingDef>
+	  <ThingDef MayRequire="Ludeon.RimWorld.Royalty">OE_CyberwareBrain_Psy</ThingDef>
+	  <ThingDef MayRequire="Ludeon.RimWorld.Biotech">OE_CyberwareBrain_Mechanitor</ThingDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Implant/OE_InterfaceAI</texPath>
+	  <drawSize>0.80</drawSize>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+    <costList>
+      <OE_EmpyriumSynthweave>10</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>10</OE_OrichalcumSynthweave>
+      <OE_Syntherius>50</OE_Syntherius>
+	  <AIPersonaCore>1</AIPersonaCore>
+    </costList>
+	<butcherProducts>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>35</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwaresAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstalImplantBase">
+    <defName>OE_InstallImplantBrain_Interface</defName>
+    <label>install cyberware AI interface</label>
+    <description>Install a cyberware AI interface.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ImplantBrain_Interface</ThingDef>
+      <HediffDef>OE_ImplantBrain_Interface</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cyberware AI interface.</jobString>
+	<uiIconThing>OE_ImplantBrain_Interface</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ImplantBrain_Interface</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ImplantBrain_Interface</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ImplantBrain_Interface</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveImplantBrain_Interface</defName>
+    <label>remove cyberware AI interface</label>
+    <description>Remove a cyberware AI interface.</description>
+    <jobString>Removing cyberware AI interface.</jobString>
+    <removesHediff>OE_ImplantBrain_Interface</removesHediff>
+	<uiIconThing>OE_ImplantBrain_Interface</uiIconThing>
+  </RecipeDef>
+
+</Defs>

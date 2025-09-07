@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Arachna Queen - DeathCry ====================-->
+  <DamageDef>
+	<defName>OEMechCry</defName>
+	<label>queen's death cry</label>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+	<externalViolence>true</externalViolence>
+	<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+	<impactSoundType>MechBandShockwave</impactSoundType>
+	<deathMessage>{0} has been shocked to death.</deathMessage>
+	<hediff>Frostbite</hediff>
+	<additionalHediffs>
+      <li>
+        <hediff>OE_QueenDeathCry</hediff>
+        <severityPerDamageDealt>5.0</severityPerDamageDealt>
+        <victimSeverityScaling>PsychicSensitivity</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+	<harmsHealth>true</harmsHealth>
+	<defaultDamage>10</defaultDamage>
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCenterEffecter>BlastMechBandShockwave</explosionCenterEffecter>
+    <explosionCellEffecter>MechBandElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>30</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <combatLogRules>Damage_MechBandShockwave</combatLogRules>
+  </DamageDef> 
+
+  <HediffDef>
+    <defName>OE_QueenDeathCry</defName>
+    <label>queen's death cry</label>
+    <labelNoun>queen's cry</labelNoun>
+    <description>The curse fully disarms the target and increases incoming damage. The curse has a very long duration.</description>
+	<hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+	<makesSickThought>true</makesSickThought>
+    <maxSeverity>6.5</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Curse_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <ResearchSpeed>-0.25</ResearchSpeed>
+		  <GlobalLearningFactor>-0.25</GlobalLearningFactor>
+		  <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+		  <WorkSpeedGlobalOffsetMech>-0.25</WorkSpeedGlobalOffsetMech>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

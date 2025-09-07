@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Heroic Modules ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OEHeroicModuleBase" ParentName="ApparelNoQualityBase" Abstract="True">
+    <description>The module provides the owner with various bonuses, depending on the model. Designed for use in various areas of Obsidia.</description>
+	<techLevel>Spacer</techLevel>
+	<smeltable>false</smeltable>
+	<thingSetMakerTags>
+	  <li>RewardStandardMidFreq</li>
+	</thingSetMakerTags>
+	<thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OEModules</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3550</MarketValue>
+	  <Mass>0.2</Mass>
+	  <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.35</Flammability>
+	  <EquipDelay>4</EquipDelay>
+	  <Beauty>0</Beauty>
+    </statBases>
+	<costStuffCount>35</costStuffCount>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+	  <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Battle ====================-->
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicWarrior</defName>
+    <label>Heroic Battle Module - Warrior</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HB_Battle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHB</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.30</AimingDelayFactor>
+	  <MeleeHitChance>6</MeleeHitChance>
+	  <MeleeDodgeChance>6</MeleeDodgeChance>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicResist</defName>
+    <label>Heroic Battle Module - Resist</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HB_Resist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHB</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <PainShockThreshold>0.30</PainShockThreshold>
+	  <PsychicSensitivity>-0.30</PsychicSensitivity>
+	  <Flammability>-0.30</Flammability>
+	  <ToxicResistance>0.30</ToxicResistance>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+<!--=============== Intelligence ====================-->
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicMedic</defName>
+    <label>Heroic Intelligence Module - Medic</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HI_Medic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHI</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <MedicalOperationSpeed>0.30</MedicalOperationSpeed>
+	  <MedicalPotency>0.30</MedicalPotency>
+	  <SurgerySuccessChanceFactor>0.30</SurgerySuccessChanceFactor>
+	  <MedicalTendQuality>0.30</MedicalTendQuality>
+	  <MedicalTendSpeed>0.30</MedicalTendSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicScientist</defName>
+    <label>Heroic Intelligence Module - Scientist</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HI_Scientist</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHI</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <GlobalLearningFactor>0.60</GlobalLearningFactor>
+	  <ResearchSpeed>0.30</ResearchSpeed>
+	  <DrugSynthesisSpeed>0.30</DrugSynthesisSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicSocial</defName>
+    <label>Heroic Intelligence Module - Social</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HI_Social</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHI</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <ArrestSuccessChance>0.30</ArrestSuccessChance>
+	  <SocialImpact>0.30</SocialImpact>
+	  <NegotiationAbility>0.30</NegotiationAbility>
+	  <TradePriceImprovement>0.30</TradePriceImprovement>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicBuilder</defName>
+    <label>Heroic Worker Module - Builder</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HW_Builder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <ConstructSuccessChance>0.30</ConstructSuccessChance>
+	  <ConstructionSpeed>0.30</ConstructionSpeed>
+	  <FixBrokenDownBuildingSuccessChance>0.30</FixBrokenDownBuildingSuccessChance>
+	  <SmoothingSpeed>0.30</SmoothingSpeed>
+	  <MiningYield>0.30</MiningYield>
+	  <MiningSpeed>0.30</MiningSpeed>
+	  <DeepDrillingSpeed>0.30</DeepDrillingSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicCook</defName>
+    <label>Heroic Worker Module - Cook</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HW_Cook</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <CookSpeed>0.30</CookSpeed>
+	  <FoodPoisonChance>-0.30</FoodPoisonChance>
+	  <DrugCookingSpeed>0.30</DrugCookingSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicEngineer</defName>
+    <label>Heroic Worker Module - Engineer</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HW_Engineer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>0.30</WorkSpeedGlobal>
+	  <GeneralLaborSpeed>0.30</GeneralLaborSpeed>
+	  <ButcheryMechanoidEfficiency>0.30</ButcheryMechanoidEfficiency>
+	  <ButcheryMechanoidSpeed>0.30</ButcheryMechanoidSpeed>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicFarmer</defName>
+    <label>Heroic Worker Module - Farmer</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HW_Farmer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <PlantWorkSpeed>0.30</PlantWorkSpeed>
+	  <PlantHarvestYield>0.60</PlantHarvestYield>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicHerdsman</defName>
+    <label>Heroic Worker Module - Herdsman</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HW_Herdsman</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHW</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <AnimalGatherSpeed>0.30</AnimalGatherSpeed>
+	  <AnimalGatherYield>0.30</AnimalGatherYield>
+	  <TameAnimalChance>0.30</TameAnimalChance>
+	  <TrainAnimalChance>0.30</TrainAnimalChance>
+	  <HuntingStealth>0.30</HuntingStealth>
+    </equippedStatOffsets>
+  </ThingDef>  
+
+</Defs>

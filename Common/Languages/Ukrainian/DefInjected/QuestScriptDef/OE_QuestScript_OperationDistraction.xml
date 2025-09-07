@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Operation Distraction ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_OperationDistraction.questNameRules.rulesStrings>
+  <li>questName->[operationAdjective] [operationNoun]</li>
+  <!-- Pieces -->
+  <li>operationAdjective->Таємна</li>
+  <li>operationAdjective->Зашифрована</li>
+  <li>operationAdjective->Прихована</li>
+  <li>operationAdjective->Фальшива</li>
+  <li>operationNoun->Робота</li>
+  <li>operationNoun->Місія</li>
+  <li>operationNoun->Операція</li>
+</OE_Quest_OperationDistraction.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_OperationDistraction.questDescriptionRules.rulesStrings>
+  <li>questDescription(askerIsNull==true)->До колонії надійшло зашифроване повідомлення — відправник прихований, особу встановити неможливо. У обмін на щедру винагороду вам пропонують відволікти увагу небезпечного ворога. Поки ви триматимете удар на собі, відправник виконає завдання для свого таємничого покровителя-науковця… ім’я якого не згадується, але залишає слід таємниці.</li>
+  <li>questDescription(asker_factionLeader==True)->Ви отримали пряме повідомлення від [asker_nameFull], [asker_faction_leaderTitle] фракції [asker_faction_name]. У відповідь на допомогу - відволікти сили ворога, що заважають їм через співпрацю з Доктором Олександром Айзексом - вам обіцяна нагорода.</li>
+  <li>questDescription(asker_royalInCurrentFaction==True)->Надійшло офіційне звернення від [asker_nameFull], [asker_royalTitleInCurrentFaction] фракції [asker_faction_name], який також представився як друг Доктора Олександра Айзекса. Вам пропонують гідну нагороду, якщо ви погодитесь відволікти на себе ворожу силу, що заважає виконанню їхнього завдання.</li>
+</OE_Quest_OperationDistraction.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+
+
+</LanguageData>

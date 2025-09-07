@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Chainsword ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OMCTrophyChainswordBase">
+    <defName>OMC_Trophy_Chainsword_P</defName>
+    <label>Persona Empress's Blessing</label>
+    <description>The good old persona chainsword is designed to destroy the enemies of Obsidia Empire.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Trophy_ChainSword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Pistol ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OMCTrophyPistolBase">
+    <defName>OMC_Trophy_Pistol_P</defName>
+    <label>Persona Prototype sX-01a</label>
+    <description>Prototype of a new persona pistol that uses an AI module to improve accuracy.\n\nThis is a rare trophy weapon.\n\nFeature: built-in accuracy stabilization module.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Trophy_SmartPistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OMCTrophyRanged</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

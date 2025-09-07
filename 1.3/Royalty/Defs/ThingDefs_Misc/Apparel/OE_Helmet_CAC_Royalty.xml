@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Light ====================-->
+  <ThingDef ParentName="CACHelmetLight">
+	<defName>CAC_LightHelmet_Prestige</defName>
+    <label>CAC Cultist Light Helmet(Lord)</label>
+    <description>Light power armor Helmet, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/CAC/Light/Prestige/CACHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2725</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PsychicSensitivityOffset>0.4</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_LightHelmet>1</CAC_LightHelmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/CAC/Light/Prestige/CACHelmet</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist_Prestige</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+  <ThingDef ParentName="CACHelmetHeavy">
+	<defName>CAC_HeavyHelmet_Prestige</defName>
+    <label>CAC Cultist Heavy Helmet(Lord)</label>
+    <description>Heavy power armor Helmet, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified for improves psychic powers to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/CAC/Heavy/Prestige/CACHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2750</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PsychicSensitivityOffset>0.4</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_HeavyHelmet>1</CAC_HeavyHelmet>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/CAC/Heavy/Prestige/CACHelmet</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist_Prestige</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

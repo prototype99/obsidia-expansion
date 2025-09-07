@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Heroic Brigadier ====================-->	    
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicAuraBrigadier"]</xpath>
+			<value>
+			  <costList>
+				<OE_Module_AuraBrigadier>1</OE_Module_AuraBrigadier>
+				<OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+			  </costList>
+			</value>
+		</li>
+<!--=============== Heroic Battle Commander ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicAuraBattleCommander"]</xpath>
+			<value>
+			  <costList>
+				<OE_Module_AuraBattleCommander>1</OE_Module_AuraBattleCommander>
+				<OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+			  </costList>
+			</value>
+		</li>
+<!--=============== Heroic Guard Commander ====================-->
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicAuraGuardCommander"]</xpath>
+			<value>
+			  <costList>
+				<OE_Module_AuraGuardCommander>1</OE_Module_AuraGuardCommander>
+				<OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+			  </costList>
+			</value>
+		</li>
+<!--=============== Heroic Psy Lord ====================-->
+		<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+		  <xpath>/Defs/ThingDef[defName="OE_Module_HeroicAuraPsyLord"]</xpath>
+			<value>
+			  <costList>
+				<OE_Module_AuraPsyLord>1</OE_Module_AuraPsyLord>
+				<OE_SyntheriusOfSin>5</OE_SyntheriusOfSin>
+			  </costList>
+			</value>
+		</li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

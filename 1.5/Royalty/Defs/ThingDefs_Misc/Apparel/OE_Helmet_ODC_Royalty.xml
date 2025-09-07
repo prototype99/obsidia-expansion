@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Prestige MK-2 ====================-->
+  <ThingDef ParentName="ODCHelmetBase">
+	<defName>ODC_Helmet_Prestige</defName>
+    <label>ODC Lord Mask</label>
+    <description>Moded power armor Mask, good protects the owner. Designed for use by Obsidia Drifters.\n\nModified for improves psychic powers to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/ODC/Prestige/ODCHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<statBases>
+	  <MarketValue>905</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <NegotiationAbility>0.15</NegotiationAbility>
+	  <PsychicSensitivityOffset>0.20</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Helmet_Nomad>1</ODC_Helmet_Nomad>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/ODC/Prestige/ODCHelmet</wornGraphicPath>
+	  <tags>
+		<li>ODCRecon_Prestige</li>
+		<li>ODCDuelist_Prestige</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

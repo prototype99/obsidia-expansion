@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OTC - Helmet ====================-->
+<OTC_Helmet.label>Шолом Механика OTC</OTC_Helmet.label>
+<OTC_Helmet.description>Шолом легкої силової броні, що добре захищає власника. Розроблена для використання Механіками из OTC.</OTC_Helmet.description>
+
+<OTC_Helmet_M.label>Шолом Інженера OTC</OTC_Helmet_M.label>
+<OTC_Helmet_M.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інженерами из OTC.\n\nУкріплена версія надає більше захисту власнику.</OTC_Helmet_M.description>
+
+<OTC_Helmet_M_Spacer.label>Шолом Інженера OTC(Космо-Грифон)</OTC_Helmet_M_Spacer.label>
+<OTC_Helmet_M_Spacer.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інженерами из OTC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OTC_Helmet_M_Spacer.description>
+
+<OTC_Helmet_M_Melee.label>Шолом Інженера OTC(Гладіатор)</OTC_Helmet_M_Melee.label>
+<OTC_Helmet_M_Melee.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифікація візора аналізуючим комп'ютером, який допомагає користувачеві у ближньому бою.</OTC_Helmet_M_Melee.description>
+
+<OTC_Helmet_M_Ranged.label>Шолом Інженера OTC(Рейнджер)</OTC_Helmet_M_Ranged.label>
+<OTC_Helmet_M_Ranged.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифікація візора комп'ютером прицілювання, що допомагає користувачу прицілюватися.</OTC_Helmet_M_Ranged.description>
+
+<OTC_Helmet_M_Mechanitor.label>Шолом Інженера OTC(Контролер)</OTC_Helmet_M_Mechanitor.label>
+<OTC_Helmet_M_Mechanitor.description>Шолом легкої силової броні, що добре захищає власника. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано для покращення здібностей Контролю Механоїдів.</OTC_Helmet_M_Mechanitor.description>
+
+<!--=============== OTC - Armor ====================-->
+<OTC_Armor.label>Броня Механика OTC</OTC_Armor.label>
+<OTC_Armor.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена для використання Механіками из OTC.</OTC_Armor.description>
+
+<OTC_Armor_M.label>Броня Інженера OTC</OTC_Armor_M.label>
+<OTC_Armor_M.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nУкріплена версія надає більше захисту власнику.</OTC_Armor_M.description>
+
+<OTC_Armor_M_Spacer.label>Броня Інженера OTC(Космо-Грифон)</OTC_Armor_M_Spacer.label>
+<OTC_Armor_M_Spacer.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nГерметична версія призначена для підтримки життєзабезпечення у відкритому космосі.</OTC_Armor_M_Spacer.description>
+
+<OTC_Armor_M_Grenadier_Acid.label>Броня Інженера OTC(Кислотна Гадюка)</OTC_Armor_M_Grenadier_Acid.label>
+<OTC_Armor_M_Grenadier_Acid.verbs.Verb_LaunchProjectileStatic.label>Броня Інженера OTC(Кислотна Гадюка)</OTC_Armor_M_Grenadier_Acid.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_Acid.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано установкою Гранатомета з кислотними снарядами.</OTC_Armor_M_Grenadier_Acid.description>
+<OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.chargeNoun>заряд</OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Grenadier_Cryo.label>Броня Інженера OTC(Кріо Гадюка)</OTC_Armor_M_Grenadier_Cryo.label>
+<OTC_Armor_M_Grenadier_Cryo.verbs.Verb_LaunchProjectileStatic.label>Броня Інженера OTC(Кріо Гадюка)</OTC_Armor_M_Grenadier_Cryo.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_Cryo.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано установкою Гранатомета з кріо снарядами.</OTC_Armor_M_Grenadier_Cryo.description>
+<OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.chargeNoun>заряд</OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Grenadier_Fire.label>Броня Інженера OTC(Вогненна Гадюка)</OTC_Armor_M_Grenadier_Fire.label>
+<OTC_Armor_M_Grenadier_Fire.verbs.Verb_LaunchProjectileStatic.label>Броня Інженера OTC(Вогненна Гадюка)</OTC_Armor_M_Grenadier_Fire.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_Fire.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано установкою Гранатомета з вогняними снарядами.</OTC_Armor_M_Grenadier_Fire.description>
+<OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.chargeNoun>заряд</OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Grenadier_EMP.label>Броня Інженера OTC(ЕМІ Гадюка)</OTC_Armor_M_Grenadier_EMP.label>
+<OTC_Armor_M_Grenadier_EMP.verbs.Verb_LaunchProjectileStatic.label>Броня Інженера OTC(ЕМІ Гадюка)</OTC_Armor_M_Grenadier_EMP.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_EMP.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано установкою Гранатомета з ЕМІ снарядами.\n\nПопередження! ЕМІ ущерб не призначений для знищення м'ясних мішків.</OTC_Armor_M_Grenadier_EMP.description>
+<OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.chargeNoun>заряд</OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Shield.label>Броня Інженера OTC(Вартовий)</OTC_Armor_M_Shield.label>
+<OTC_Armor_M_Shield.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано з додаванням Посиленого Бар'єру.</OTC_Armor_M_Shield.description>
+
+<OTC_Armor_M_Barrier.label>Броня Інженера OTC(Захисник)</OTC_Armor_M_Barrier.label>
+<OTC_Armor_M_Barrier.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано з додаванням Універсального Бар'єру.</OTC_Armor_M_Barrier.description>
+
+<OTC_Armor_M_Mechanitor.label>Броня Інженера OTC(Контролер)</OTC_Armor_M_Mechanitor.label>
+<OTC_Armor_M_Mechanitor.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифіковано з додаванням пакету Управління Механоїдами.</OTC_Armor_M_Mechanitor.description>
+
+<OTC_Armor_M_Turret.label>Броня Інженера OTC(Гоблін)</OTC_Armor_M_Turret.label>
+<OTC_Armor_M_Turret.description>Легка силова броня, що добре захищає власника з невеликим обмеженням мобільності. Розроблена та модифікована для використання Інженерами из OTC.\n\nМодифікований з додаванням портфеля з туреллю, що працює від акумулятора.</OTC_Armor_M_Turret.description>
+<OTC_Armor_M_Turret.verbs.deploy_acid_turret.label>поставити кислотну турель</OTC_Armor_M_Turret.verbs.deploy_acid_turret.label>
+<OTC_Armor_M_Turret.verbs.deploy_cryo_turret.label>поставити кріо турель</OTC_Armor_M_Turret.verbs.deploy_cryo_turret.label>
+<OTC_Armor_M_Turret.verbs.deploy_fire_turret.label>поставити вогняну турель</OTC_Armor_M_Turret.verbs.deploy_fire_turret.label>
+<OTC_Armor_M_Turret.verbs.deploy_EMP_turret.label>поставити ЕМІ турель</OTC_Armor_M_Turret.verbs.deploy_EMP_turret.label>
+<OTC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>заряд</OTC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>перезаряджається</OTC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OTC - Grenades ====================-->
+<Grenade_Armor_OTC_Acid.label>Граната Кислотної Гадюки</Grenade_Armor_OTC_Acid.label>
+
+<Grenade_Armor_OTC_Cryo.label>Граната Кріо Гадюки</Grenade_Armor_OTC_Cryo.label>
+
+<Grenade_Armor_OTC_Fire.label>Граната Вогненної Гадюки</Grenade_Armor_OTC_Fire.label>
+
+<Grenade_Armor_OTC_EMP.label>Граната ЕМІ Гадюки</Grenade_Armor_OTC_EMP.label>
+
+<Grenade_Armor_OTC_TurretPack_Acid.label>капсула ранця з OTC туреллю</Grenade_Armor_OTC_TurretPack_Acid.label>
+
+<Grenade_Armor_OTC_TurretPack_Cryo.label>капсула ранця з OTC туреллю</Grenade_Armor_OTC_TurretPack_Cryo.label>
+
+<Grenade_Armor_OTC_TurretPack_Fire.label>капсула ранця з OTC туреллю</Grenade_Armor_OTC_TurretPack_Fire.label>
+
+<Grenade_Armor_OTC_TurretPack_EMP.label>капсула ранця з OTC туреллю</Grenade_Armor_OTC_TurretPack_EMP.label>
+
+</LanguageData>

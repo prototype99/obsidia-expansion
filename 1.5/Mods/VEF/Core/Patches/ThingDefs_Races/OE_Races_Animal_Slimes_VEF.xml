@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Special Types ====================-->
+<!--=============== Anima ====================-->
+  <ThingDef ParentName="OECompanionSlime">
+    <defName>OE_Slime_Companion_Anima</defName>
+    <label>anima companion slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nAnima companion slime special type, that has developed an ability to enhance psychic powers of anyone they bond with. Unfortunately, as a side effect, it the bonded master of the companion slime dies, the slime will also die.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Demon_Acid</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+	  <li Class="AnimalBehaviours.CompProperties_ApplyHediffWhenBound">
+		<hediffToApply>OE_Slime_Companion_Anima_Bonded</hediffToApply>
+		<applyHediffToBonded>true</applyHediffToBonded>
+		<hediffToApplyToBonded>OE_Slime_Companion_Anima_BondedPawn</hediffToApplyToBonded>
+		<doJobIfBondedDies>false</doJobIfBondedDies>
+		<dieIfBondedDies>true</dieIfBondedDies>
+	  </li>
+	</comps>
+  </ThingDef>
+
+	<HediffDef>
+	  <defName>OE_Slime_Companion_Anima_Bonded</defName>
+	  <label>anima companion slime bonded</label>
+	  <description>This companion slime has bonded with a colonist. It will provide a psychic connection to that colonist increasing psychic powers, but the slime will die if the bonded colonist dies.</description>
+	  <hediffClass>HediffWithComps</hediffClass>
+	  <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	  <scenarioCanAdd>false</scenarioCanAdd>
+	  <maxSeverity>1.0</maxSeverity>
+	  <stages>
+		<li/>
+	  </stages>
+	</HediffDef>
+
+	<HediffDef>
+	  <defName>OE_Slime_Companion_Anima_BondedPawn</defName>
+	  <label>anima companion slime bond</label>
+	  <description>Psychic connection with a companion slime that increasing psychic powers.</description>
+	  <hediffClass>HediffWithComps</hediffClass>
+	  <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	  <scenarioCanAdd>false</scenarioCanAdd>
+	  <maxSeverity>1.0</maxSeverity>
+	  <stages>
+		<li>
+		  <minSeverity>0</minSeverity>
+		  <statOffsets>
+			<PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
+			<PsychicEntropyRecoveryRate>0.099</PsychicEntropyRecoveryRate>
+		  </statOffsets>
+		</li>
+	  </stages>
+	</HediffDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Companion_Anima</defName>
+    <label>anima companion slime</label>
+    <labelPlural>anima companion slimes</labelPlural>
+    <race>OE_Slime_Companion_Anima</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionAnima/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionAnima/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionAnima/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionAnima/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionAnima/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/CompanionAnima/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>20</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Companion_Anima</defName>
+    <label>anima companion slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Anima companion slime in 7 days. Anima companion slime special type, that has developed an ability to enhance psychic powers of anyone they bond with.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Companion_Anima</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Companion_Anima</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_DragonianWoodLog>50</OE_DragonianWoodLog>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Companion_Anima</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/ThingDef[defName="OE_SlimeHeart"]/descriptionHyperlinks</xpath>
+		  <value>
+		    <ThingDef>OE_SlimeHeart_Companion_Anima</ThingDef>
+		  </value>
+	    </li>
+	  
+	  </operations>	  
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Battle Types ====================-->
+<!--=============== Toxic ====================-->
+  <ThingDef ParentName="OEDemonSlime">
+    <defName>OE_Slime_Demon_Toxic</defName>
+    <label>toxic demon slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nToxic demon slime ranged battle type, with increased intelligence for training.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Demon_Toxic</ThingDef>
+    </descriptionHyperlinks>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>ToxGas</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>ToxGas</def>
+              <amount>4</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>toxic energy ball</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Slime_Toxic</defaultProjectile>
+		<forcedMissRadius>0.5</forcedMissRadius>
+        <accuracyTouch>0.75</accuracyTouch>
+		<accuracyShort>0.85</accuracyShort>
+		<accuracyMedium>0.80</accuracyMedium>
+		<accuracyLong>0.70</accuracyLong>
+		<warmupTime>4.0</warmupTime>
+        <minRange>3.9</minRange>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+		<range>19.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Slime_Toxic</defName>
+    <label>toxic energy ball</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergyBlast_Toxic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>ToxGas</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>1.9</explosionRadius>
+	  <explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
+	  <postExplosionGasType>ToxGas</postExplosionGasType>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Demon_Toxic</defName>
+    <label>toxic demon slime</label>
+    <labelPlural>toxic demon slimes</labelPlural>
+    <race>OE_Slime_Demon_Toxic</race>
+	<ecoSystemWeight>0.15</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonToxic/Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonToxic/Dessicated_Slime</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonToxic/Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonToxic/Dessicated_Slime</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonToxic/Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/DemonToxic/Dessicated_Slime</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>200</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Demon_Toxic</defName>
+    <label>toxic demon slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Toxic demon slime in 7 days. Toxic demon slime ranged battle type, with increased intelligence for training.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Demon_Toxic</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Demon_Toxic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>30</OE_Platinum>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_EGOSeed>1</OE_EGOSeed>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Demon_Toxic</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Special Types ====================-->
+<!--=============== Waste ====================-->
+  <ThingDef ParentName="OEBaseSlime">
+    <defName>OE_Slime_Waste</defName>
+    <label>waste slime</label>
+    <description>Slimes - an amalgam life-form that was developed as an alternative source of necessary materials for Obsidia Expansion.\n\nWaste slime special type, that has developed for eating Toxic wastepacks.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SlimeHeart_Waste</ThingDef>
+    </descriptionHyperlinks>
+	<statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <MarketValue>450</MarketValue>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ToxicResistance>1.0</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+    </statBases>
+	<tools>
+      <li>
+        <label>mouth</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>ToxGas</def>
+              <amount>3</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>ToxGas</def>
+              <amount>3</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+	<race>
+	  <thinkTreeMain>VEF_AnimalWeirdEater</thinkTreeMain>
+	  <deathAction>
+	    <workerClass>DeathActionWorker_ToxCloud</workerClass>
+	  </deathAction>
+	  <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.85</baseHungerRate>
+      <baseHealthScale>0.25</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+	  <trainability>None</trainability>
+    </race>
+	<butcherProducts>
+      <Wastepack>20</Wastepack>
+    </butcherProducts>
+	<tickerType>Normal</tickerType>
+	<comps>		
+	  <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
+		<customThingToEat>
+		  <li>Wastepack</li>
+		</customThingToEat>
+		<nutrition>1</nutrition>
+		<digThingIfMapEmpty>false</digThingIfMapEmpty>
+		<fullyDestroyThing>true</fullyDestroyThing>
+		<needsWater>false</needsWater>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Slime_Waste</defName>
+    <label>waste slime</label>
+    <labelPlural>waste slimes</labelPlural>
+    <race>OE_Slime_Waste</race>
+	<ecoSystemWeight>0.45</ecoSystemWeight>
+	<canArriveManhunter>true</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Waste/Slime</texPath>
+          <drawSize>0.45</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Waste/Dessicated_Slime</texPath>
+          <drawSize>0.45</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Waste/Slime</texPath>
+          <drawSize>0.80</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Waste/Dessicated_Slime</texPath>
+          <drawSize>0.80</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Waste/Slime</texPath>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Slime/Waste/Dessicated_Slime</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<combatPower>25</combatPower>
+  </PawnKindDef>
+
+  <ThingDef ParentName="OESlimeHeartBase">
+    <defName>OE_SlimeHeart_Waste</defName>
+    <label>waste slime heart (Сonf.)</label>
+    <description>A hyper-advanced slime core with configuration to grow up into Waste slime in 7 days. Waste slime special type, that has developed for eating Toxic wastepacks.\n\nWarning! Slime is formed untamed.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_Slime_Waste</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Resource/Special/SlimeHeart/OE_SlimeHeart_Waste</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>300</MarketValue>
+	  <WorkToMake>10000</WorkToMake>
+    </statBases>
+	<costList>
+      <OE_SlimeHeart>1</OE_SlimeHeart>
+	  <OE_Platinum>30</OE_Platinum>
+	  <Wastepack>20</Wastepack>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>OE_Slime_Waste</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs/ThingDef[defName="OE_SlimeHeart"]/descriptionHyperlinks</xpath>
+		  <value>
+		    <ThingDef>OE_SlimeHeart_Demon_Toxic</ThingDef>
+			<ThingDef>OE_SlimeHeart_Waste</ThingDef>
+		  </value>
+	    </li>
+	  
+	  </operations>	  
+	</match>
+</Operation>
+
+</Patch>

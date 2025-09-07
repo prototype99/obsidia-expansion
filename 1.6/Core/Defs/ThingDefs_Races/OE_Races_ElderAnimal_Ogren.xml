@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Elder Ogren Base ====================-->
+  <ThingDef Name="OEBaseOgrenElder" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>3.35</MoveSpeed>
+      <MarketValue>3500</MarketValue>
+      <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.75</ArmorRating_Heat>
+	  <ToxicResistance>0.60</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.30</ToxicEnvironmentResistance>
+      <FilthRate>12</FilthRate>
+	  <CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
+	  <Wildness>0.99</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.75</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.75</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.25</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.25</cooldownTime>
+		<armorPenetration>0.30</armorPenetration>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>Monkey</body>
+	  <packAnimal>true</packAnimal>
+      <maxPreyBodySize>6.0</maxPreyBodySize>
+      <petness>0.2</petness>
+      <baseBodySize>5.75</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>15.0</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal, VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+      <leatherDef>OE_Leather_Ogren</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+	  <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_ElderProvoke</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_ElderPower_Ogren</li>
+      </specialTrainables>
+      <manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <gestationPeriodDays>13</gestationPeriodDays>
+	  <willNeverEat>
+        <li>Plant_OE_EGOTree</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeArchean</li>
+      </willNeverEat>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>270</lifeExpectancy>
+	  <canCrossBreedWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Ogren</li>
+      </canCrossBreedWith>
+      <crossAggroWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Ogren</li>
+      </crossAggroWith>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.3</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.666</minAge>
+          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+          <soundDeath>Pawn_Muffalo_Death</soundDeath>
+          <soundCall>Pawn_Muffalo_Call</soundCall>
+          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Elder Ogren ====================-->
+  <ThingDef ParentName="OEBaseOgrenElder">
+    <defName>OE_Elder_Ogren</defName>
+    <label>elder ogren</label>
+    <description>Obsidia Ogren are huge and very strong creatures. By themselves, they are not aggressive unless disturbed. Their strength allows them to carry huge loads, which makes them excellent pack animals.\n\nBut deep beneath the Obsidian caverns, one Ogren remained untouched by civilization—feeding off minerals rich in psychic residue and absorbing the silent whispers of ancient forces. When the EGO Seed took root in its massive frame, it didn’t resist—it accepted.\n\nNow risen as the Elder Ogren, this titan moves with dreadful purpose. Its blows can shatter stone, and its presence incites terror in nearby foes. What once was a docile giant has become a living bulwark, awakened by raw primal instinct and otherworldly power.\n\nElder Ogrens are even rarer and more dangerous than the typical Ogren.</description>
+    <race>
+      <meatLabel>elder ogren meat</meatLabel>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Elder_Ogren</defName>
+    <label>elder ogren</label>
+    <labelPlural>elder ogren</labelPlural>
+    <race>OE_Elder_Ogren</race>
+	<combatPower>650</combatPower>
+	<ecoSystemWeight>1.0</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+	<abilities>
+      <li>OE_ElderProvoke</li>
+	  <li>OE_ElderPower_Ogren</li>
+    </abilities>
+    <lifeStages>
+      <li>
+        <label>elder ogren baby</label>
+        <labelPlural>elder ogren babies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Elder/Ogren_Grey</texPath>
+          <drawSize>1.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Elder/Dessicated_Ogren_east</texPath>
+          <drawSize>1.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Elder/Ogren_Grey</texPath>
+          <drawSize>2.55</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Elder/Dessicated_Ogren_east</texPath>
+          <drawSize>2.55</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Elder/Ogren_Grey</texPath>
+          <drawSize>3.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Ogren/Dessicated_Ogren_east</texPath>
+          <drawSize>3.25</drawSize>
+        </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>OE_EGOSeed_Elder_Ogren</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+	<alternateGraphicChance>0.70</alternateGraphicChance>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Ogren/Elder/Ogren_Blue</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Ogren/Elder/Ogren_Red</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Ogren/Elder/Ogren_Purple</texPath>
+	  </li>
+	</alternateGraphics>
+  </PawnKindDef>
+
+</Defs>

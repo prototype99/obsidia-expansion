@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Civilians ====================-->
+<!--=============== Mechanitor ====================-->
+  <BackstoryDef>
+    <defName>OE_Mechanitor</defName>
+    <title>obsidia mechanitor</title>
+    <titleShort>mechanitor</titleShort>
+    <description>[PAWN_nameDef] representative of one of the most popular Obsidia mecha fan clubs. Becoming a full-fledged mechanitor is able to reveal hiden potential. Possesses excellent creative skills.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Constructing</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <Construction>4</Construction>
+      <Crafting>4</Crafting>
+	  <Artistic>-4</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>OEFighters</li>
+	  <li>OEDrifters</li>
+	  <li>ImperialCommon</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEMechLove>0</OEMechLove>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Mech-architect ====================-->
+  <BackstoryDef>
+    <defName>OE_Mecharchitect</defName>
+    <title>obsidia mech-architect</title>
+    <titleShort>mech-architect</titleShort>
+    <description>[PAWN_nameDef] former employee of Obsidia robotics foundries. Specialized in chassis design and autonomous systems. Possesses outstanding artistic talent.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Artistic</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <Artistic>4</Artistic>
+      <Crafting>4</Crafting>
+	  <Construction>-4</Construction>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>OEFighters</li>
+	  <li>OEDrifters</li>
+	  <li>ImperialCommon</li>
+	  <li>Offworld</li>
+	  <li>Outlander</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEMechInstinct>0</OEMechInstinct>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Tree Pearlapple ====================-->
+  <ThingDef ParentName="TreeBase">
+    <defName>Plant_OE_TreePearlapple</defName>
+    <label>Pearlapple tree</label>
+    <description>Obsidias long-growing crystal tree bearing pearlapples. Pearlapple fruits used as a meat substitute.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Pearlapple_Fruit</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+		<Beauty>5</Beauty>
+		<BeautyOutdoors>5</BeautyOutdoors>
+		<Flammability>0.2</Flammability>
+	</statBases>
+    <graphicData>
+      <texPath>Things/Plant/Pearlapple</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+		<volume>(0.15, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<pathCost>14</pathCost>
+    <plant>
+		<dieIfLeafless>false</dieIfLeafless>
+		<sowMinSkill>10</sowMinSkill>
+		<growDays>28</growDays>
+		<sowWork>3500</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>OE_Pearlapple_Fruit</harvestedThingDef>
+		<harvestYield>50</harvestYield>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarm</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0</topWindExposure>
+		<visualSizeRange>0.8~2.0</visualSizeRange>
+		<fertilityMin>0.7</fertilityMin>
+		<fertilitySensitivity>1.1</fertilitySensitivity>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<interferesWithRoof>false</interferesWithRoof>
+		<immatureGraphicPath>Things/Plant/Pearlapple/Pearlapple_Immature</immatureGraphicPath>
+		<leaflessGraphicPath>Things/Plant/Pearlapple/Pearlapple_Leafless</leaflessGraphicPath>
+		<harvestWork>1250</harvestWork>
+		<harvestFailable>true</harvestFailable>
+		<harvestAfterGrowth>0.20</harvestAfterGrowth>
+    </plant>
+  </ThingDef>
+
+<!--=============== OE - Tree Syntherius ====================-->
+  <ThingDef ParentName="TreeBase">
+    <defName>Plant_OE_TreeSyntherius</defName>
+    <label>Syntherius tree</label>
+    <description>Strange and previously underestimated plant from Obsidias. Syntherius crystals grow inside the tree. Previously, it was used in jewelry, but after further exploring the possibilities of this plant, it became a key element in the production of Obsidia.\n\nThe plant is medium size, which allows it to be grown under a roof.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Syntherius</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+		<Beauty>5</Beauty>
+		<BeautyOutdoors>5</BeautyOutdoors>
+		<Flammability>0.2</Flammability>
+	</statBases>
+    <graphicData>
+      <texPath>Things/Plant/Syntherius</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+		<volume>(0.15, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+	<pathCost>14</pathCost>
+    <plant>
+		<growMinGlow>0</growMinGlow>
+		<dieIfLeafless>false</dieIfLeafless>
+		<sowMinSkill>8</sowMinSkill>
+		<growDays>32</growDays>
+		<sowWork>1750</sowWork>
+		<harvestWork>750</harvestWork>
+		<harvestedThingDef>OE_Syntherius</harvestedThingDef>
+		<harvestYield>1</harvestYield>
+		<harvestTag>Wood</harvestTag>
+		<harvestMinGrowth>0.40</harvestMinGrowth>
+		<harvestFailable>false</harvestFailable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OECore</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0</topWindExposure>
+		<visualSizeRange>0.8~2.0</visualSizeRange>
+		<fertilityMin>0.7</fertilityMin>
+		<fertilitySensitivity>1.15</fertilitySensitivity>
+		<blockAdjacentSow>false</blockAdjacentSow>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<interferesWithRoof>false</interferesWithRoof>
+		<immatureGraphicPath>Things/Plant/Syntherius/Syntherius_Immature</immatureGraphicPath>
+		<leaflessGraphicPath>Things/Plant/Syntherius/Syntherius_Leafless</leaflessGraphicPath>
+    </plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2.9</glowRadius>
+        <glowColor>(141, 99, 187)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OE - Tree Fungi ====================-->
+  <ThingDef ParentName="TreeBase">
+    <defName>Plant_OE_TreeFungi</defName>
+    <label>Fungi tree</label>
+    <description>Huge Obsidias mushrooms that yield unique wood. This wood is more durable and less flammable.\n\nThey do not require a lot of space for growth, they can grow at a short distance from each other.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_FungalWoodLog</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+		<Flammability>0.05</Flammability>
+	</statBases>
+    <graphicData>
+      <texPath>Things/Plant/Fungi</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+		<volume>(0.15, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<pathCost>14</pathCost>
+    <plant>
+		<dieIfLeafless>true</dieIfLeafless>
+		<sowMinSkill>6</sowMinSkill>
+		<growDays>8</growDays>
+		<sowWork>1750</sowWork>
+		<harvestWork>500</harvestWork>
+		<harvestedThingDef>OE_FungalWoodLog</harvestedThingDef>
+		<harvestYield>15</harvestYield>
+		<harvestTag>Wood</harvestTag>
+		<harvestMinGrowth>0.40</harvestMinGrowth>
+		<harvestFailable>false</harvestFailable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarm</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0.05</topWindExposure>
+		<visualSizeRange>0.8~2.0</visualSizeRange>
+		<fertilityMin>0.7</fertilityMin>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<interferesWithRoof>false</interferesWithRoof>
+		<blockAdjacentSow>false</blockAdjacentSow>
+		<wildClusterRadius>25</wildClusterRadius>
+        <wildClusterWeight>1</wildClusterWeight>
+    </plant>
+  </ThingDef>
+
+<!--=============== OE - Tree Dragonian ====================-->
+  <ThingDef ParentName="TreeBase">
+    <defName>Plant_OE_TreeDragonian</defName>
+    <label>Dragonian tree</label>
+    <description>According to ancient legends, these trees grow in the burial places of ancient dragon-like creatures that inhabited Obsidia long before people appeared there. Very rare and valuable Obsidias tree of medium size. This tree yields a small amount of very valuable, durable and beautiful wood.\n\nIt can grow even on rocky terrain.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_DragonianWoodLog</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+		<Beauty>10</Beauty>
+		<BeautyOutdoors>10</BeautyOutdoors>
+		<Nutrition>1.25</Nutrition>
+		<Flammability>0.05</Flammability>
+	</statBases>
+    <graphicData>
+      <texPath>Things/Plant/Dragonian</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+		<volume>(0.15, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<pathCost>14</pathCost>
+    <plant>
+		<dieIfLeafless>false</dieIfLeafless>
+		<sowMinSkill>12</sowMinSkill>
+		<growDays>32</growDays>
+		<sowWork>3500</sowWork>
+		<harvestWork>1500</harvestWork>
+		<harvestedThingDef>OE_DragonianWoodLog</harvestedThingDef>
+		<harvestYield>20</harvestYield>
+		<harvestTag>Wood</harvestTag>
+		<harvestMinGrowth>0.40</harvestMinGrowth>
+		<harvestFailable>false</harvestFailable>
+		<sowTags>
+			<li>Ground</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarmAdv</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0.05</topWindExposure>
+		<visualSizeRange>0.8~2.0</visualSizeRange>
+		<fertilityMin>0.7</fertilityMin>
+		<fertilitySensitivity>1.0</fertilitySensitivity>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<interferesWithRoof>false</interferesWithRoof>
+		<leaflessGraphicPath>Things/Plant/Dragonian/Dragonian_Leafless</leaflessGraphicPath>
+    </plant>
+  </ThingDef>
+
+<!--=============== OE - Moonplant ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Moonplant</defName>
+    <label>Moonplant</label>
+    <description>Obsidias mid-size crystal crop that yields silk net that is both difficult to tear and soft to the touch. These are used to make mooncloth.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Mooncloth</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>3</Beauty>
+	  <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Moonplant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+    <pathCost>14</pathCost>
+    <plant>
+		<dieIfLeafless>true</dieIfLeafless>
+		<sowMinSkill>10</sowMinSkill>
+		<growDays>22</growDays>
+		<sowWork>350</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>OE_Mooncloth</harvestedThingDef>
+		<harvestYield>5</harvestYield>
+		<fertilitySensitivity>1.0</fertilitySensitivity>
+		<neverBlightable>true</neverBlightable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarm</li>
+		</sowResearchPrerequisites>
+		<maxMeshCount>4</maxMeshCount>
+        <visualSizeRange>0.6~0.85</visualSizeRange>
+		<topWindExposure>0.15</topWindExposure>
+    </plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(141, 99, 187)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OE - Jumy ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Jumy</defName>
+    <label>Jumy</label>
+    <description>Small Obsidias plant inside which grows handfuls tasty and sweet berries.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Jumy_Berries</ThingDef>
+	  <ThingDef>Plant_OE_JumyBush</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>65</MaxHitPoints>
+	  <Nutrition>0.65</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Jumy</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+    <pathCost>30</pathCost>
+    <plant>
+		<dieIfLeafless>true</dieIfLeafless>
+		<sowMinSkill>10</sowMinSkill>
+		<growDays>10</growDays>
+		<sowWork>350</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>OE_Jumy_Berries</harvestedThingDef>
+		<harvestAfterGrowth>0.30</harvestAfterGrowth>
+		<harvestYield>10</harvestYield>
+		<fertilitySensitivity>1.0</fertilitySensitivity>
+		<neverBlightable>true</neverBlightable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+			<li>Decorative</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OECore</li>
+		</sowResearchPrerequisites>
+		<maxMeshCount>9</maxMeshCount>
+        <visualSizeRange>0.4~0.65</visualSizeRange>
+		<topWindExposure>0.1</topWindExposure>
+        <harvestFailable>true</harvestFailable>
+		<immatureGraphicPath>Things/Plant/Jumy/Jumy_Immature</immatureGraphicPath>
+    </plant>
+  </ThingDef>
+
+<!--=============== OE - Pellashroom ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Pellashroom</defName>
+    <label>Pellashroom</label>
+    <description>Genetically modified Obsidias mushrooms. Produces a small amount of chemfuel.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>Chemfuel</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>65</MaxHitPoints>
+	  <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Pellashroom</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+    <pathCost>30</pathCost>
+    <plant>
+		<dieIfLeafless>true</dieIfLeafless>
+		<sowMinSkill>10</sowMinSkill>
+		<growDays>18</growDays>
+		<sowWork>350</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>Chemfuel</harvestedThingDef>
+		<harvestYield>3</harvestYield>
+		<fertilitySensitivity>1.0</fertilitySensitivity>
+		<neverBlightable>true</neverBlightable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarmAdv</li>
+		</sowResearchPrerequisites>
+		<maxMeshCount>4</maxMeshCount>
+        <visualSizeRange>0.6~0.85</visualSizeRange>
+		<topWindExposure>0.15</topWindExposure>
+        <harvestFailable>true</harvestFailable>
+    </plant>
+  </ThingDef>
+
+<!--=============== OE - Lotus ====================-->
+<!--=============== Dusk ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Lotus_D</defName>
+    <label>Dusk Lotus</label>
+    <description>Beautiful dark flowers of the Obsidias Lotus.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>20</Beauty>
+      <BeautyOutdoors>20</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/LotusDusk</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+		<li>OEFarm</li>
+	  </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
+
+<!--=============== Sunny ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Lotus_S</defName>
+    <label>Sunny Lotus</label>
+    <description>Beautiful light flowers of the Obsidias Lotus.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>20</Beauty>
+      <BeautyOutdoors>20</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/LotusSunny</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+		<li>OEFarm</li>
+	  </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
+
+<!--=============== OE - Belladonna ====================-->
+<!--=============== Tundral ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Tundral_B</defName>
+    <label>Tundral Belladonna</label>
+    <description>Outlandish blue flower of Obsidias Belladonna. Can be used as a night light.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>18</Beauty>
+      <BeautyOutdoors>18</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Belladonna/Tundral</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+		<li>OEFarmAdv</li>
+	  </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.9</glowRadius>
+        <glowColor>(215, 219, 243)</glowColor>
+      </li>
+	  <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>TorchLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <radius>7.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Coral ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Coral_B</defName>
+    <label>Coral Belladonna</label>
+    <description>Outlandish pink flower of Obsidias Belladonna. Can be used as a night light.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>18</Beauty>
+      <BeautyOutdoors>18</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Belladonna/Coral</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+		<li>OEFarmAdv</li>
+	  </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.9</glowRadius>
+        <glowColor>(243, 215, 243)</glowColor>
+      </li>
+	  <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>TorchLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <radius>7.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Alpine ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Alpine_B</defName>
+    <label>Alpine Belladonna</label>
+    <description>Outlandish yellow flower of Obsidias Belladonna. Can be used as a night light.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>18</Beauty>
+      <BeautyOutdoors>18</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Belladonna/Alpine</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+		<li>OEFarmAdv</li>
+	  </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.9</glowRadius>
+        <glowColor>(243, 237, 215)</glowColor>
+      </li>
+	  <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>TorchLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <radius>7.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Oasis ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Oasis_B</defName>
+    <label>Oasis Belladonna</label>
+    <description>Outlandish green flower of Obsidias Belladonna. Can be used as a night light.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>18</Beauty>
+      <BeautyOutdoors>18</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Belladonna/Oasis</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+		<li>OEFarmAdv</li>
+	  </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.9</glowRadius>
+        <glowColor>(215, 243, 216)</glowColor>
+      </li>
+	  <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>TorchLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <radius>7.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bloody ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Bloody_B</defName>
+    <label>Bloody Belladonna</label>
+    <description>Gloomy red flower of Obsidias Belladonna. Can be used as a night light.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>18</Beauty>
+      <BeautyOutdoors>18</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Belladonna/Bloody</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+		<li>OEFarmAdv</li>
+	  </sowResearchPrerequisites>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>1.5</growDays>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.3~1.1</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5.9</glowRadius>
+        <glowColor>(251, 142, 142)</glowColor>
+      </li>
+	  <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>TorchLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            </defs>
+            <radius>7.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Iglolia ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_Iglolia</defName>
+    <label>iglolia</label>
+    <description>A fast-growing vines that grows in Obsidias dense groves. Iglolia can be harvested for a wood-like material. The plant itself is not beautiful.</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <Flammability>2.0</Flammability>
+	  <Nutrition>0.25</Nutrition>
+      <Mass>85</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Iglolia</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.38, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.47)</offset>
+      </shadowData>
+    </graphicData>
+	<selectable>true</selectable>
+    <fillPercent>0.30</fillPercent>
+    <pathCost>40</pathCost>
+    <plant>
+      <dieIfLeafless>false</dieIfLeafless>
+	  <fertilityMin>0.25</fertilityMin>
+	  <fertilitySensitivity>0.75</fertilitySensitivity>
+	  <soundHarvesting>Harvest_Tree</soundHarvesting>
+      <soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+	  <sowMinSkill>5</sowMinSkill>
+	  <growDays>9</growDays>
+	  <sowWork>1750</sowWork>
+	  <harvestWork>450</harvestWork>
+      <harvestYield>8</harvestYield>
+	  <harvestedThingDef>WoodLog</harvestedThingDef>
+	  <harvestTag>Wood</harvestTag>
+	  <harvestMinGrowth>0.60</harvestMinGrowth>
+	  <neverBlightable>true</neverBlightable>
+	  <sowTags>
+	      <li>Ground</li>
+		  <li>Hydroponic</li>
+	  </sowTags>
+	  <sowResearchPrerequisites>
+	      <li>TreeSowing</li>
+		  <li>OEFarm</li>
+	  </sowResearchPrerequisites>
+	  <treeCategory>Full</treeCategory>
+	  <visualSizeRange>0.60~2.0</visualSizeRange>
+      <wildClusterRadius>5</wildClusterRadius>
+      <wildClusterWeight>15</wildClusterWeight>
+      <interferesWithRoof>false</interferesWithRoof>
+	  <mustBeWildToSow>false</mustBeWildToSow>
+	  <treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+      <leaflessGraphicPath>Things/Plant/Iglolia/Iglolia_Leafless</leaflessGraphicPath>
+    </plant>
+    <ingestible />
+  </ThingDef>
+
+<!--=============== JumyBush ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_JumyBush</defName>
+    <label>jumy bush</label>
+    <description>An artificially bred medium Obsidias plant inside which grows handfuls tasty and sweet berries.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Jumy_Berries</ThingDef>
+	  <ThingDef>Plant_OE_Jumy</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>0.95</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/JumyBush</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+		<fertilityMin>0.5</fertilityMin>
+		<fertilitySensitivity>0.75</fertilitySensitivity>
+		<sowMinSkill>12</sowMinSkill>
+		<growDays>13</growDays>
+		<sowWork>750</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>OE_Jumy_Berries</harvestedThingDef>
+		<harvestAfterGrowth>0.35</harvestAfterGrowth>
+		<harvestYield>22</harvestYield>
+		<harvestWork>350</harvestWork>
+		<neverBlightable>true</neverBlightable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarmAdv</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0.3</topWindExposure>
+		<visualSizeRange>0.35~1.25</visualSizeRange>
+        <harvestFailable>true</harvestFailable>
+		<leaflessGraphicPath>Things/Plant/JumyBush/JumyBush_Leafless</leaflessGraphicPath>
+        <immatureGraphicPath>Things/Plant/JumyBush/JumyBush_Immature</immatureGraphicPath>
+		<wildClusterRadius>5</wildClusterRadius>
+        <wildClusterWeight>250</wildClusterWeight>
+		<wildOrder>2</wildOrder>
+		<purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+<!--=============== MyceliumStump ====================-->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_OE_MyceliumStump</defName>
+    <label>mycelium stump</label>
+    <description>An artificially bred symbiosis of tree and mycelium. Doesn't grow very fast, but can be an excellent source of raw fungus.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>RawFungus</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>0.35</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/MyceliumStump</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+	<ingestible />
+    <plant>
+		<growMinGlow>0</growMinGlow>
+		<fertilityMin>0.35</fertilityMin>
+		<fertilitySensitivity>0.75</fertilitySensitivity>
+		<sowMinSkill>12</sowMinSkill>
+		<growDays>18</growDays>
+		<sowWork>750</sowWork>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>RawFungus</harvestedThingDef>
+		<harvestAfterGrowth>0.50</harvestAfterGrowth>
+		<harvestYield>24</harvestYield>
+		<harvestWork>500</harvestWork>
+		<neverBlightable>true</neverBlightable>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<sowResearchPrerequisites>
+			<li>OEFarm</li>
+		</sowResearchPrerequisites>
+		<topWindExposure>0</topWindExposure>
+		<visualSizeRange>0.55~1.05</visualSizeRange>
+        <harvestFailable>true</harvestFailable>
+		<leaflessGraphicPath>Things/Plant/MyceliumStump/MyceliumStump_Leafless</leaflessGraphicPath>
+        <immatureGraphicPath>Things/Plant/MyceliumStump/MyceliumStump_Immature</immatureGraphicPath>
+		<wildClusterRadius>7</wildClusterRadius>
+        <wildClusterWeight>250</wildClusterWeight>
+		<wildOrder>2</wildOrder>
+		<humanFoodPlant>true</humanFoodPlant>
+		<purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Returned ====================-->
+  <ThingDef Name="OEReturned" ParentName="BasePawn">
+    <defName>OE_Returned</defName>
+    <label>returned</label>
+    <description>Returned is a resurrected corpse of Crimson Arachna Cultist. This corpse is fused with the armor and prototype of Amalgam Arachna Legs, which makes this creature extremely mobile and armored. It's the result of one of the first unsuccessful experiments of Crimson Arachna Cult in the artificial hybridization of the powers of Crimson Arachna.</description>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <statBases>
+	  <MoveSpeed>6.5</MoveSpeed>
+	  <MeatAmount>20</MeatAmount>
+      <Flammability>0.25</Flammability>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <ArmorRating_Heat>1.55</ArmorRating_Heat>
+      <ArmorRating_Blunt>1.00</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <PsychicSensitivity>2</PsychicSensitivity>
+      <MinimumContainmentStrength>150</MinimumContainmentStrength>
+      <ToxicResistance>1</ToxicResistance>
+    </statBases>
+    <uiIconPath>UI/CodexEntries/Returned</uiIconPath>
+    <tradeability>None</tradeability>
+    <hideStats>true</hideStats>
+    <race>
+      <thinkTreeMain>OE_Returned</thinkTreeMain>
+      <thinkTreeConstant>OE_ReturnedConstant</thinkTreeConstant>
+	  <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+	  <alwaysViolent>true</alwaysViolent>
+      <body>OEReturnedLike</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>8</baseHealthScale>
+      <intelligence>ToolUser</intelligence>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+	  <bloodDef>Filth_DarkBlood</bloodDef>
+      <bleedRateFactor>0.05</bleedRateFactor>
+	  <fleshType>EntityFlesh</fleshType>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <foodType>None</foodType>
+      <lifeExpectancy>250</lifeExpectancy>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <renderTree>OE_Returned</renderTree>
+      <soundCallIntervalRange>120~240</soundCallIntervalRange>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <trainability>None</trainability>
+      <isImmuneToInfections>true</isImmuneToInfections>
+	  <canBecomeShambler>true</canBecomeShambler>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundCall>Pawn_Revenant_Call</soundCall>
+          <soundWounded>Pawn_Revenant_Wounded</soundWounded>
+          <soundDeath>Pawn_Revenant_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+	  <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+	  <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+        <lookForTargetOnEscape>false</lookForTargetOnEscape>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.25, 0, .25)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.25, 0, .25)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.2, 0, -.65)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.2, 0, -.65)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>3.5</bioferriteDensity>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>3</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left spike</label>
+        <labelNoLocation>spike</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+		  <li>Stab</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.85</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>OE_ReturnedLeftLimb</linkedBodyPartsGroup>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+		<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right spike</label>
+        <labelNoLocation>spike</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+		  <li>Stab</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.85</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>OE_ReturnedRightLimb</linkedBodyPartsGroup>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+		<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+        <soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+      </li>
+    </tools>
+	<butcherProducts>
+      <OE_Empyrium>5</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_EGOSeed>1</OE_EGOSeed>
+	  <Shard>1</Shard>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef Name="OEReturnedKind">
+    <defName>OE_Returned</defName>
+    <label>returned</label>
+    <race>OE_Returned</race>
+    <defaultFactionType>Entities</defaultFactionType>
+    <immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+	<preventIdeo>true</preventIdeo>
+	<aiAvoidCover>true</aiAvoidCover>
+    <immuneToTraps>true</immuneToTraps>
+	<ignoresPainShock>true</ignoresPainShock>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+	<alternateGraphicChance>0.45</alternateGraphicChance>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Entities/Returned/Returned</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Things/Pawn/Entities/Returned/Returned_south</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2</drawSize>
+        </silhouetteGraphicData>
+      </li>
+    </lifeStages>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Entities/Returned/Returned_Alt</texPath>
+        <dessicatedGraphicData>
+            <attachPoints>
+              <li>
+                <offset>(-.25, 0, .25)</offset>
+                <type>PlatformRestraint0</type>
+              </li>
+              <li>
+                <offset>(.25, 0, .25)</offset>
+                <type>PlatformRestraint1</type>
+              </li>
+              <li>
+                <offset>(.2, 0, -.65)</offset>
+                <type>PlatformRestraint2</type>
+              </li>
+              <li>
+                <offset>(-.2, 0, -.65)</offset>
+                <type>PlatformRestraint3</type>
+              </li>
+            </attachPoints>
+        </dessicatedGraphicData> 
+	  </li>
+	</alternateGraphics>
+    <combatPower>200</combatPower>
+	<abilities>
+      <li MayRequire="ObsidiaExpansion.Xenos.Arachnas">OE_Entity_WebShot</li>
+	  <li MayRequire="Ludeon.Rimworld.Biotech">OE_MechDroneJump</li>
+    </abilities>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEReturnedKind">
+    <defName>OE_Returned_Boss</defName>
+	<overrideDeathOnDownedChance>1.0</overrideDeathOnDownedChance>
+  </PawnKindDef>
+
+  <PawnRenderTreeDef>
+    <defName>OE_Returned</defName>
+    <root Class="PawnRenderNodeProperties_Parent">
+      <debugLabel>Root</debugLabel>
+      <tagDef>Root</tagDef>
+      <children>
+        <li>
+          <debugLabel>Body</debugLabel>
+          <tagDef>Body</tagDef>
+          <useRottenColor>true</useRottenColor>
+          <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+          <children>
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>OELimbL</debugLabel>
+              <linkedBodyPartsGroup>OE_ReturnedLeftLimb</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Entities/Returned/Attachments/Returned_Limb</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-30~30</rotationRange>
+              <durationTicksRange>10~35</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.5</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataNorth>
+                  <offset>(-0.15, 0, 0.1)</offset>
+                  <rotationOffset>-45</rotationOffset>
+                </dataNorth>
+                <dataEast>
+                  <offset>(-0.15, 0, 0.15)</offset>
+                  <layer>-5</layer>
+                </dataEast>
+                <dataSouth>
+                  <offset>(0.15, -0.01, 0)</offset>
+                  <rotationOffset>45</rotationOffset>
+                </dataSouth>
+                <dataWest>
+                  <offset>(0.30, 0, 0.15)</offset>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Spastic">
+              <debugLabel>OELimbR</debugLabel>
+              <linkedBodyPartsGroup>OE_ReturnedRightLimb</linkedBodyPartsGroup>
+              <texPath>Things/Pawn/Entities/Returned/Attachments/Returned_Limb</texPath>
+              <rotDrawMode>Fresh, Rotting</rotDrawMode>
+              <rotateFacing>false</rotateFacing>
+              <rotationRange>-30~30</rotationRange>
+              <durationTicksRange>10~35</durationTicksRange>
+              <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+              <drawSize>1.5</drawSize>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataNorth>
+                  <offset>(0.15, 0, 0.1)</offset>
+                  <rotationOffset>45</rotationOffset>
+                  <flip>true</flip>
+                </dataNorth>
+                <dataEast>
+                  <offset>(-0.30, 0, 0.15)</offset>
+                </dataEast>
+                <dataSouth>
+                  <offset>(-0.15, -0.01, 0)</offset>
+                  <rotationOffset>-45</rotationOffset>
+                  <flip>true</flip>
+                </dataSouth>
+                <dataWest>
+                  <offset>(0.15, 0, 0.15)</offset>
+                  <layer>-5</layer>
+                  <flip>true</flip>
+                </dataWest>
+              </drawData>
+            </li>
+            <li>
+              <debugLabel>Wounds</debugLabel>
+              <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+              <workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+              <overlayLayer>Body</overlayLayer>
+              <useGraphic>false</useGraphic>
+              <baseLayer>10</baseLayer>
+            </li>
+            <li>
+              <debugLabel>Firefoam</debugLabel>
+              <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+              <workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+              <overlayLayer>Body</overlayLayer>
+              <useGraphic>false</useGraphic>
+              <baseLayer>20</baseLayer>
+            </li>
+          </children>
+        </li>
+        <li Class="PawnRenderNodeProperties_Carried">
+          <debugLabel>Carried thing</debugLabel>
+          <workerClass>PawnRenderNodeWorker_Carried</workerClass>
+        </li>
+      </children>
+    </root>
+  </PawnRenderTreeDef>
+
+</Defs>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Swarmella ====================-->
+  <AbilityDef>
+    <defName>OE_Biophormids_Psybolt</defName>
+    <label>psybolt</label>
+    <description>Swarmella channels her psychic abilities, unleashing up to 5 Psybolts at her enemies.</description>
+    <iconPath>UI/Abilities/OE_BiophormidsPsybolt</iconPath>
+    <cooldownTicksRange>7200</cooldownTicksRange>
+	<charges>5</charges>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>  
+      <warmupTime>1.0</warmupTime>
+      <range>14.9</range>
+      <soundCast>InfernoCannon_Fire</soundCast>
+	  <onlyManualCast>true</onlyManualCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Bullet_OE_Biophormids_Psybolt</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_Biophormids_Psybolt</defName>
+    <label>psybolt</label>
+	<graphicData>
+      <texPath>Things/Projectile/OE_Trophy_EnergyBlast</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.75,0.75)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Monarchid ====================-->
+  <AbilityDef>
+    <defName>OE_Biophormids_PsyStun</defName>
+    <label>psy stun</label>
+    <description>Momentarily disrupt motor function in the target's brain, preventing any movement.</description>
+    <iconPath>UI/Abilities/OE_BiophormidsPsyStun</iconPath>
+    <cooldownTicksRange>2400</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+	<statBases>
+      <Ability_Duration>3</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>  
+      <warmupTime>1.0</warmupTime>
+      <range>14.9</range>
+      <soundCast>InfernoCannon_Fire</soundCast>
+	  <onlyManualCast>true</onlyManualCast>
+      <targetParams>
+        <canTargetAnimals>True</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffectWithDuration">
+        <compClass>CompAbilityEffect_Stun</compClass>
+		<durationMultiplier>PsychicSensitivity</durationMultiplier>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

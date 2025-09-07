@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Broken Drill ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_BrokenDrill</defName>
+    <label>obsidia broken drill</label>
+    <description>Old Obsidia deep drill prototype. Unusable for drilling rig for extracting minerals from deep under the surface. But still can disturb something living in the depths.</description>
+    <graphicData>
+      <texPath>Things/Building/Special/OE_BrokenDrill</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,2)</drawSize>
+	  <drawOffset>(0,0,1)</drawOffset>
+    </graphicData>
+	<costList>
+      <OE_Obsidian>250</OE_Obsidian>
+      <OE_Mythril>25</OE_Mythril>
+	  <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<tradeTags>
+      <li>OEExoticBuilding</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+	<building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+	<tickerType>Normal</tickerType>
+	<statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Beauty>-25</Beauty>
+      <Mass>25</Mass>
+    </statBases>
+	<size>(1,1)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>    
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_CreatesInfestations" />
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Azulium ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Azulium</defName>
+    <label>azulium</label>
+    <description>A common antipsychotic medicine used to prevent mental breakdowns and improve overall mood. Obsidia technology, the drug is non-addictive and has no after-effects.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_AzuliumHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Azulium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.005</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrug</li>
+    </tradeTags>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>1.0</joy>
+      <drugCategory>Social</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_AzuliumHigh</hediffDef>
+          <severity>0.35</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>4</Medicine>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+	  <PsychoidLeaves>2</PsychoidLeaves>
+	  <SmokeleafLeaves>2</SmokeleafLeaves>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AzuliumHigh</defName>
+    <label>azulium effect</label>
+    <description>Active anti-psychotic azulium compounds in the bloodstream, helps control extreme mental breaks and impulsive behaviour.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.7</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+		  <label>weak</label>
+		  <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+		  <statOffsets>
+		    <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+		  </statOffsets>
+        </li>
+		<li>
+          <minSeverity>0.4</minSeverity>
+		  <label>moderate</label>
+		  <hungerRateFactorOffset>0.10</hungerRateFactorOffset>
+		  <vomitMtbDays>40</vomitMtbDays>
+		  <statOffsets>
+		    <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		  </statOffsets>
+        </li>
+		<li>
+          <minSeverity>0.8</minSeverity>
+		  <label>strong</label>
+		  <hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+		  <vomitMtbDays>20</vomitMtbDays>
+		  <statOffsets>
+		    <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+		  </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>OE_AzuliumHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OE_AzuliumHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>relaxed from azulium</label>
+        <description>That azulium makes me feel more relaxed, and gives me energy at the same time.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!--=============== Timbium ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Timbium</defName>
+    <label>timbium</label>
+    <description>Hard stimpack for workers, used by Obsidia workers to increase productivity. Obsidia technology, a stimpack can be addictive but has no after-effects.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_TimbiumHigh</HediffDef>
+	  <HediffDef>OE_TimbiumAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Civil/Timbium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>40</MarketValue>
+      <Mass>0.005</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrug</li>
+    </tradeTags>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_TimbiumHigh</hediffDef>
+          <severity>0.35</severity>
+		  <toleranceChemical>OE_Timbium</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>6</Medicine>
+		<Crafting>2</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_Drug">
+        <chemical>OE_Timbium</chemical>
+        <addictiveness>0.1</addictiveness>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>30</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_TimbiumHigh</defName>
+    <label>timbium effect</label>
+    <description>Active timbium in the bloodstream. Improves mobility, speed of work and learning.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.7</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+		  <minSeverity>0</minSeverity>
+		  <label>weak</label>
+		  <hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+		  <statOffsets>
+			<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+			<GlobalLearningFactor>0.25</GlobalLearningFactor>
+			<MoveSpeed>0.15</MoveSpeed>
+		  </statOffsets>
+        </li>
+		<li>
+		  <minSeverity>0.4</minSeverity>
+		  <label>moderate</label>
+		  <restFallFactorOffset>0.25</restFallFactorOffset>
+		  <hungerRateFactorOffset>0.25</hungerRateFactorOffset>
+		  <statOffsets>
+		    <CarryingCapacity>25</CarryingCapacity>
+			<WorkSpeedGlobal>0.35</WorkSpeedGlobal>
+			<GlobalLearningFactor>0.35</GlobalLearningFactor>
+			<MoveSpeed>0.2</MoveSpeed>
+		  </statOffsets>
+        </li>
+		<li>
+		  <minSeverity>0.8</minSeverity>
+		  <label>strong</label>
+		  <painFactor>1</painFactor>
+		  <restFallFactorOffset>0.3</restFallFactorOffset>
+		  <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+		  <statOffsets>
+		    <CarryingCapacity>35</CarryingCapacity>
+			<WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+			<GlobalLearningFactor>0.50</GlobalLearningFactor>
+			<MoveSpeed>0.25</MoveSpeed>
+		  </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>OE_Timbium</defName>
+    <label>timbium</label>
+    <addictionHediff>OE_TimbiumAddiction</addictionHediff>
+    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>OE_Chemical_Timbium</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>timbium addiction</label>
+    <description>Because of an timbium addiction, this person needs to regularly consume timbium to avoid withdrawal symptoms.</description>
+    <listPriority>20</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_TimbiumAddiction</defName>
+    <label>timbium addiction</label>
+    <description>A chemical addiction to timbium.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+	<causesNeed>OE_Chemical_Timbium</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>withdrawal</label>
+		  <painFactor>3</painFactor>
+		  <restFallFactorOffset>0.5</restFallFactorOffset>
+		  <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+		  <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>OE_TimbiumWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OE_TimbiumAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+	  <li>
+        <label>timbium withdrawal</label>
+        <description>I feel my weakness. I never thought it was so hard to work without drugs.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

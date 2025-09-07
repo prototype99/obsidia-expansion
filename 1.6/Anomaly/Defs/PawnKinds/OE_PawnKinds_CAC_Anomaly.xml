@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Returned ====================-->
+  <PawnKindDef ParentName="OEReturnedKind">
+    <defName>CAC_Returned</defName>
+    <label>returned</label>
+	<defaultFactionType>ObsidiaCrimsonArachnaCult</defaultFactionType>
+  </PawnKindDef>
+
+<!--=============== Cyber Arachna ====================-->
+  <PawnKindDef ParentName="OECyberArachnaKind">
+    <defName>CAC_CyberArachna</defName>
+    <label>Cyber Arachna</label>
+	<defaultFactionType>ObsidiaCrimsonArachnaCult</defaultFactionType>
+  </PawnKindDef>
+
+<!--=============== Priest ====================-->
+  <PawnKindDef ParentName="CACPawn">
+    <defName>CAC_SinPriest</defName>
+    <label>CAC Priest</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>40000~65000</apparelMoney>
+	<specificApparelRequirements>
+	  <li>
+	    <requiredTag>CACPriest</requiredTag>
+	  </li>
+    </specificApparelRequirements>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>20000~45000</weaponMoney>
+	<weaponTags>
+      <li>CACTrophy</li>
+    </weaponTags>
+    <techHediffsMoney>35000~50000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>9</techHediffsMaxAmount>
+	<combatPower>325</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>4~16</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>4~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>

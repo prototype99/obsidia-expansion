@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <KCSG.SymbolDef>
+    <defName>OE_Wall_Steel</defName>
+    <thing>OE_Wall</thing>
+    <stuff>Steel</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_Wall_OE_Obsidian</defName>
+    <thing>OE_Wall</thing>
+    <stuff>OE_Obsidian</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_Door_Steel</defName>
+    <thing>OE_Door</thing>
+    <stuff>Steel</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_Door_OE_Obsidian</defName>
+    <thing>OE_Door</thing>
+    <stuff>OE_Obsidian</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_Column_Light_Steel</defName>
+    <thing>OE_Column_Light</thing>
+    <stuff>Steel</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_Column_Light_OE_Obsidian</defName>
+    <thing>OE_Column_Light</thing>
+    <stuff>OE_Obsidian</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_CommsConsole_North</defName>
+    <thing>OE_CommsConsole</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_CommsConsole_South</defName>
+    <thing>OE_CommsConsole</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_CommsConsole_East</defName>
+    <thing>OE_CommsConsole</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_CommsConsole_West</defName>
+    <thing>OE_CommsConsole</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_JoyTable</defName>
+    <thing>OE_JoyTable</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_GeothermalGenerator</defName>
+    <thing>OE_GeothermalGenerator</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_QuantumGenerator_Micro</defName>
+    <thing>OE_QuantumGenerator_Micro</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_QuantumGenerator_Medium</defName>
+    <thing>OE_QuantumGenerator_Medium</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_SyntheriusGenerator_Medium</defName>
+    <thing>OE_SyntheriusGenerator_Medium</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_Battery_Medium_North</defName>
+    <thing>OE_Battery_Medium</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_SynthesisPrinter_North</defName>
+    <thing>OE_SynthesisPrinter</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_SynthesisPrinter_South</defName>
+    <thing>OE_SynthesisPrinter</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_SynthesisPrinter_East</defName>
+    <thing>OE_SynthesisPrinter</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_SynthesisPrinter_West</defName>
+    <thing>OE_SynthesisPrinter</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_ArmorStation_North</defName>
+    <thing>OE_ArmorStation</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_ArmorStation_South</defName>
+    <thing>OE_ArmorStation</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_ArmorStation_East</defName>
+    <thing>OE_ArmorStation</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_ArmorStation_West</defName>
+    <thing>OE_ArmorStation</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_WeaponWorkbench_North</defName>
+    <thing>OE_WeaponWorkbench</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_WeaponWorkbench_South</defName>
+    <thing>OE_WeaponWorkbench</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_WeaponWorkbench_East</defName>
+    <thing>OE_WeaponWorkbench</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OE_WeaponWorkbench_West</defName>
+    <thing>OE_WeaponWorkbench</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_Lotus_S</defName>
+    <thing>Plant_OE_Lotus_S</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_Lotus_D</defName>
+    <thing>Plant_OE_Lotus_D</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_TreeSyntherius</defName>
+    <thing>Plant_OE_TreeSyntherius</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_TreePearlapple</defName>
+    <thing>Plant_OE_TreePearlapple</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_TreeFungi</defName>
+    <thing>Plant_OE_TreeFungi</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_TreeDragonian</defName>
+    <thing>Plant_OE_TreeDragonian</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_Moonplant</defName>
+    <thing>Plant_OE_Moonplant</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_Jumy</defName>
+    <thing>Plant_OE_Jumy</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_Pellashroom</defName>
+    <thing>Plant_OE_Pellashroom</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_SyntheriusRoot</defName>
+    <thing>Plant_OE_SyntheriusRoot</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_EGOTree</defName>
+    <thing>Plant_OE_EGOTree</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_OE_EGORoot</defName>
+    <thing>Plant_OE_EGORoot</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OMC_Turret_Small</defName>
+    <thing>OMC_Turret_Small</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OMC_Turret_Big</defName>
+    <thing>OMC_Turret_Big</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Small_Acid</defName>
+    <thing>OTC_Turret_Small_Acid</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Big_Acid</defName>
+    <thing>OTC_Turret_Big_Acid</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Small_Cryo</defName>
+    <thing>OTC_Turret_Small_Cryo</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Big_Cryo</defName>
+    <thing>OTC_Turret_Big_Cryo</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Small_Fire</defName>
+    <thing>OTC_Turret_Small_Fire</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Big_Fire</defName>
+    <thing>OTC_Turret_Big_Fire</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Small_EMP</defName>
+    <thing>OTC_Turret_Small_EMP</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OTC_Turret_Big_EMP</defName>
+    <thing>OTC_Turret_Big_EMP</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OCC_Turret_Small</defName>
+    <thing>OCC_Turret_Small</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OCC_Turret_Big</defName>
+    <thing>OCC_Turret_Big</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OEC_Turret_Small</defName>
+    <thing>OEC_Turret_Small</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OEC_Turret_Big</defName>
+    <thing>OEC_Turret_Big</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ODC_Turret_Small</defName>
+    <thing>ODC_Turret_Small</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ODC_Turret_Big</defName>
+    <thing>ODC_Turret_Big</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>OESlave</defName>
+    <pawnKindDef>Slave</pawnKindDef>
+    <isSlave>true</isSlave>
+  </KCSG.SymbolDef>
+
+</Defs>

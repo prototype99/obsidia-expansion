@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Biophormids - Hive ====================-->
+  <ThingDef ParentName="VFEI2_BuildingInsectoidBase">
+	<defName>OE_BiophormidsHive</defName>
+	<label>biophormids hive</label>
+	<description>A hive of giant insects of the Biophormids geneline. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly.</description>
+	<thingClass>Hive</thingClass>
+	<graphicData>
+	  <texPath>Things/Building/Natural/BiophormidsHive</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.75</drawSize>
+	</graphicData>
+	<uiIconScale>0.65</uiIconScale>
+	<altitudeLayer>Building</altitudeLayer>
+	<rotatable>false</rotatable>
+	<fillPercent>0.5</fillPercent>
+	<statBases>
+	  <MaxHitPoints>130</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+	</statBases>
+	<pathCost>42</pathCost>
+	<receivesSignals>true</receivesSignals>
+	<blockWind>true</blockWind>
+	<tickerType>Normal</tickerType>
+	<passability>PassThroughOnly</passability>
+	<killedLeavings>
+	  <InsectJelly>30</InsectJelly>
+	</killedLeavings>
+	<comps>
+	  <li Class="CompProperties_CanBeDormant">
+		<startsDormant>true</startsDormant>
+		<canWakeUpFogged>false</canWakeUpFogged>
+	  </li>
+	  <li Class="CompProperties_WakeUpDormant"/>
+	  <li Class="VFEInsectoids.CompProperties_InsectSpawner">
+		<geneline>OE_Biophormids</geneline>
+		<lordJob>LordJob_DefendAndExpandHive</lordJob>
+		<spawnSound>Hive_Spawn</spawnSound>
+		<initialPawnsPoints>200</initialPawnsPoints>
+		<maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
+	  </li>
+	  <li Class="CompProperties_SelfhealHitpoints">
+		<ticksPerHeal>6000</ticksPerHeal>
+	  </li>
+	  <li Class="CompProperties_SpawnerHives"/>
+	  <li Class="CompProperties_Spawner">
+		<thingToSpawn>InsectJelly</thingToSpawn>
+		<spawnCount>25</spawnCount>
+		<spawnIntervalRange>26000~30000</spawnIntervalRange>
+		<spawnMaxAdjacent>50</spawnMaxAdjacent>
+		<spawnForbidden>true</spawnForbidden>
+		<saveKeysPrefix>jelly</saveKeysPrefix>
+	  </li>
+	  <li Class="CompProperties_Spawner">
+		<thingToSpawn>GlowPod</thingToSpawn>
+		<spawnCount>1</spawnCount>
+		<spawnIntervalRange>30000~60000</spawnIntervalRange>
+		<spawnMaxAdjacent>1</spawnMaxAdjacent>
+		<saveKeysPrefix>pod</saveKeysPrefix>
+		<inheritFaction>true</inheritFaction>
+	  </li>
+	  <li Class="CompProperties_HeatPusher">
+		<heatPerSecond>6</heatPerSecond>
+		<heatPushMaxTemperature>38</heatPushMaxTemperature>
+	  </li>
+	  <li Class="CompProperties_SpawnerFilth">
+		<filthDef>Filth_Slime</filthDef>
+		<spawnCountOnSpawn>10</spawnCountOnSpawn>
+		<spawnMtbHours>4</spawnMtbHours>
+		<spawnRadius>5</spawnRadius>
+	  </li>
+	  <li Class="CompProperties_Maintainable">
+		<compClass>VFEInsectoids.CompMaintenableHive</compClass>
+		<ticksHealthy>60000</ticksHealthy>
+		<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
+		<damagePerTickRare>10</damagePerTickRare>
+	  </li>
+	</comps>
+  </ThingDef>
+
+<!--=============== Biophormids - Artificial Hive ====================-->
+  <ThingDef ParentName="VFEI2_BuildingInsectoidBase">
+	<defName>OE_ArtificialBiophormidsHive</defName>
+	<label>artificial biophormids hive</label>
+	<description>An artificially constructed hive of giant insects. It is capable of spawning various Biophormids geneline insectoids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required.</description>
+	<thingClass>VFEInsectoids.ArtificialHive</thingClass>
+	<graphicData>
+	  <texPath>Things/Building/Natural/BiophormidsHive</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.75</drawSize>
+	</graphicData>
+	<uiIconScale>0.55</uiIconScale>
+	<uiIconOffset>(0, 0.1)</uiIconOffset>
+	<altitudeLayer>Building</altitudeLayer>
+	<rotatable>false</rotatable>
+	<fillPercent>0.5</fillPercent>
+	<statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <Flammability>0.4</Flammability>
+	  <MarketValue>1250</MarketValue>
+	  <WorkToBuild>5000</WorkToBuild>
+	</statBases>
+	<pathCost>42</pathCost>
+	<receivesSignals>true</receivesSignals>
+	<blockWind>true</blockWind>
+	<tickerType>Normal</tickerType>
+	<passability>PassThroughOnly</passability>
+	<killedLeavings>
+	  <InsectJelly>40</InsectJelly>
+	</killedLeavings>
+	<placeWorkers>
+	  <li>VFEInsectoids.PlaceWorker_ArtificialHivesNear</li>
+	</placeWorkers>
+	<building>
+	  <buildingTags>
+		<li>VFEI_ArtificialHive</li>
+	  </buildingTags>
+	</building>
+	<comps>
+	  <li Class="VFEInsectoids.CompProperties_Hive">
+		<insectTypes>
+	  	  <li>
+			<insect>OE_Labryscid</insect>
+			<insectType>Worker</insectType>
+		  </li>
+		  <li>
+			<insect>OE_Razorsythe</insect>
+			<insectType>Hunter</insectType>
+		  </li>
+		  <li>
+			<insect>OE_Winglance</insect>
+			<insectType>Hunter</insectType>
+		  </li>
+		  <li>
+			<insect>OE_Brontarok</insect>
+			<insectType>Defender</insectType>
+		  </li>
+		  <li>
+			<insect>OE_Swarmella</insect>
+			<insectType>Defender</insectType>
+		  </li>
+		</insectTypes>
+		<insectoidRespawnTime>180000</insectoidRespawnTime>
+		<spawnSound>Hive_Spawn</spawnSound>
+	  </li>
+	  <li Class="CompProperties_SelfhealHitpoints">
+		<ticksPerHeal>6000</ticksPerHeal>
+	  </li>
+	  <li Class="CompProperties_Spawner">
+		<thingToSpawn>InsectJelly</thingToSpawn>
+		<spawnCount>25</spawnCount>
+		<spawnIntervalRange>26000~30000</spawnIntervalRange>
+		<spawnMaxAdjacent>50</spawnMaxAdjacent>
+		<spawnForbidden>false</spawnForbidden>
+		<saveKeysPrefix>jelly</saveKeysPrefix>
+	  </li>
+	  <li Class="VFEInsectoids.CompProperties_MindfulSpawner">
+		<thingToSpawn>GlowPod</thingToSpawn>
+		<spawnCount>1</spawnCount>
+		<spawnIntervalRange>30000~60000</spawnIntervalRange>
+		<spawnMaxAdjacent>1</spawnMaxAdjacent>
+		<saveKeysPrefix>pod</saveKeysPrefix>
+		<inheritFaction>true</inheritFaction>
+	  </li>
+	  <li Class="CompProperties_HeatPusher">
+		<heatPerSecond>6</heatPerSecond>
+		<heatPushMaxTemperature>36</heatPushMaxTemperature>
+	  </li>
+	  <li Class="CompProperties_SpawnerFilth">
+		<filthDef>Filth_Slime</filthDef>
+		<spawnCountOnSpawn>10</spawnCountOnSpawn>
+		<spawnMtbHours>4</spawnMtbHours>
+		<spawnRadius>5</spawnRadius>
+	  </li>
+	  <li Class="CompProperties_Maintainable">
+		<compClass>VFEInsectoids.CompMaintenableHive</compClass>
+		<ticksHealthy>60000</ticksHealthy>
+		<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
+		<damagePerTickRare>10</damagePerTickRare>
+	  </li>
+	</comps>
+	<costList>
+	  <InsectJelly>150</InsectJelly>
+	  <VFEI2_RoyalInsectJelly>50</VFEI2_RoyalInsectJelly>
+	  <OE_Syntherius>35</OE_Syntherius>
+	  <OE_PherocoreBiophormids>1</OE_PherocoreBiophormids>
+	</costList>
+	<designationCategory>VFEI2_Insectoids</designationCategory>
+	<researchPrerequisites>
+	  <li>VFEI2_ExoticHivetech</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="VFEI2_BuildingInsectoidBase">
+	<defName>OE_ArtificialBiophormidsHive_Royal</defName>
+	<label>artificial royal biophormids hive</label>
+	<description>An artificially constructed royal hive of Biophormids geneline insectoids. Unlike standard hives, it exclusively spawns Monarchids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required.</description>
+	<thingClass>VFEInsectoids.ArtificialHive</thingClass>
+	<graphicData>
+	  <texPath>Things/Building/Natural/BiophormidsRoyalHive</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.55</drawSize>
+	</graphicData>
+	<uiIconScale>0.50</uiIconScale>
+	<uiIconOffset>(0, 0.1)</uiIconOffset>
+	<altitudeLayer>Building</altitudeLayer>
+	<rotatable>false</rotatable>
+	<fillPercent>0.5</fillPercent>
+	<statBases>
+	  <MaxHitPoints>250</MaxHitPoints>
+	  <Flammability>0.4</Flammability>
+	  <MarketValue>2050</MarketValue>
+	  <WorkToBuild>5000</WorkToBuild>
+	</statBases>
+	<pathCost>42</pathCost>
+	<receivesSignals>true</receivesSignals>
+	<blockWind>true</blockWind>
+	<tickerType>Normal</tickerType>
+	<passability>PassThroughOnly</passability>
+	<killedLeavings>
+	  <InsectJelly>75</InsectJelly>
+	  <OE_PherocoreBiophormids>1</OE_PherocoreBiophormids>
+	</killedLeavings>
+	<placeWorkers>
+	  <li>VFEInsectoids.PlaceWorker_ArtificialHivesNear</li>
+	</placeWorkers>
+	<building>
+	  <buildingTags>
+		<li>VFEI_ArtificialHive</li>
+	  </buildingTags>
+	</building>
+	<comps>
+	  <li Class="VFEInsectoids.CompProperties_Hive">
+		<insectTypes>
+		  <li>
+			<insect>OE_Monarchid</insect>
+			<insectType>Defender</insectType>
+		  </li>
+		</insectTypes>
+		<insectoidRespawnTime>180000</insectoidRespawnTime>
+		<spawnSound>Hive_Spawn</spawnSound>
+	  </li>
+	  <li Class="CompProperties_SelfhealHitpoints">
+		<ticksPerHeal>6000</ticksPerHeal>
+	  </li>
+	  <li Class="CompProperties_Spawner">
+		<thingToSpawn>InsectJelly</thingToSpawn>
+		<spawnCount>30</spawnCount>
+		<spawnIntervalRange>26000~30000</spawnIntervalRange>
+		<spawnMaxAdjacent>50</spawnMaxAdjacent>
+		<spawnForbidden>false</spawnForbidden>
+		<saveKeysPrefix>jelly</saveKeysPrefix>
+	  </li>
+	  <li Class="VFEInsectoids.CompProperties_MindfulSpawner">
+		<thingToSpawn>GlowPod</thingToSpawn>
+		<spawnCount>1</spawnCount>
+		<spawnIntervalRange>30000~60000</spawnIntervalRange>
+		<spawnMaxAdjacent>1</spawnMaxAdjacent>
+		<saveKeysPrefix>pod</saveKeysPrefix>
+		<inheritFaction>true</inheritFaction>
+	  </li>
+	  <li Class="CompProperties_HeatPusher">
+		<heatPerSecond>6</heatPerSecond>
+		<heatPushMaxTemperature>36</heatPushMaxTemperature>
+	  </li>
+	  <li Class="CompProperties_SpawnerFilth">
+		<filthDef>Filth_Slime</filthDef>
+		<spawnCountOnSpawn>10</spawnCountOnSpawn>
+		<spawnMtbHours>4</spawnMtbHours>
+		<spawnRadius>5</spawnRadius>
+	  </li>
+	  <li Class="CompProperties_Maintainable">
+		<compClass>VFEInsectoids.CompMaintenableHive</compClass>
+		<ticksHealthy>60000</ticksHealthy>
+		<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
+		<damagePerTickRare>10</damagePerTickRare>
+	  </li>
+	</comps>
+	<costList>
+	  <InsectJelly>200</InsectJelly>
+	  <VFEI2_RoyalInsectJelly>50</VFEI2_RoyalInsectJelly>
+	  <OE_Syntherius>65</OE_Syntherius>
+	  <OE_PherocoreBiophormids>5</OE_PherocoreBiophormids>
+	</costList>
+	<designationCategory>VFEI2_Insectoids</designationCategory>
+	<researchPrerequisites>
+	  <li>VFEI2_ExoticHivetech</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+</Defs>

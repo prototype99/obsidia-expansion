@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - ServoArm ====================-->
+<!--=============== Various ====================-->
+<!--=============== ODC ====================-->
+  <ThingDef ParentName="OEServoArmBase">
+    <defName>ODC_ServoArm</defName>
+    <label>ODC Nomad servo-arm</label>
+	<description>Servo-arm, well enhances the user’s manipulation. Designed for use by Obsidia Drifters.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>ODC_ServoArm_Buff</HediffDef>
+	</descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/ServoArm/ODC/OE_ServoArm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>ODCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+	  <WorkToMake>20000</WorkToMake>
+	  <MarketValue>485</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>5.0</Mass>
+	  <Flammability>0.25</Flammability>
+	  <EquipDelay>2</EquipDelay>
+	  <Beauty>-1</Beauty>
+	</statBases>
+	<costList>
+	  <OE_Obsidian>15</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_Platinum>10</OE_Platinum>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<apparel>
+      <wornGraphicPath>Things/Item/Equipment/Utility/ServoArm/ODC/OE_ServoArm</wornGraphicPath>
+	  <tags>
+		<li>ODCNomad</li>
+		<li>ODCRecon</li>
+		<li>ODCDuelist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGear</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_ODC_Utility</li>
+    </thingCategories>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Apparels.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>ODC_ServoArm_Buff</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>ODC_ServoArm_Buff</defName>
+    <label>ODC Nomad servo-arm</label>
+    <description>This person is using an ODC Nomad servo-arm.</description>
+	<defaultLabelColor>(0.27, 0.32, 0.44)</defaultLabelColor>
+	<stages>
+	  <li>
+		<statOffsets>
+		  <PainShockThreshold>0.15</PainShockThreshold>
+		  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+		</statOffsets>
+		<capMods>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<offset>0.4</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<isBad>false</isBad>
+  </HediffDef>
+
+</Defs>

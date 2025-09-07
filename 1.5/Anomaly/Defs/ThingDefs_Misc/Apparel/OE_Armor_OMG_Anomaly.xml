@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Commando ====================-->
+  <ThingDef ParentName="OMGArmorBase">
+	<defName>OMG_Armor_Commando</defName>
+    <label>Mercenary Armor(Commando)</label>
+    <description>Highly modified heavy power armor, excellent protects the owner. Designed for use by Mercenaries.\n\nThis modification with the pack that allows the user to deploy a battery-powered turret and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OMG/Commando/OMGArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>7550</MarketValue>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OMG/Commando/OMGArmor</wornGraphicPath>
+	  <tags>
+		<li>OMGMercenary</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy turret</label>
+        <defaultProjectile>Grenade_Armor_OMG_TurretPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OMG_TurretPack</defName>
+    <label>OMG turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/OMC_TacticalTurret_Gun</uiIconPath>
+    <projectile>
+      <explosionRadius>20.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>OMG_Turret_TacticalTurret</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OMC Tactical Turret ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OMG_Turret_TacticalTurret</defName>
+    <label>OMG tactical turret</label>
+    <description>An automatic OMG Revolver-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OE_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_Syntherius>8</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>85</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>OMG_Gun_TacticalTurret</turretGunDef>
+      <turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.9</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>OMG_Gun_TacticalTurret</defName>
+    <label>Datashot Turret</label>
+    <description>Reconstructed OMG Revolver for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/OMC_TacticalTurret_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>1.15</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_OMG_R</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

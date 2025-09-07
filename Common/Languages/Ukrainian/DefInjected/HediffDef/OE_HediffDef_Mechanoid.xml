@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Arachna Queen ====================-->
+<!--=============== Queen's Curse ====================-->
+<OE_QueenCurse.label>Прокляття</OE_QueenCurse.label>
+<OE_QueenCurse.labelNoun>прокляття</OE_QueenCurse.labelNoun>
+<OE_QueenCurse.description>Прокляття повністю обеззброює ціль і збільшити вхідну шкоду. Прокляття має дуже велику тривалість.</OE_QueenCurse.description>
+
+<!--=============== Dominator ====================-->
+<!--=============== Redline ====================-->
+<OE_Redline.label>Червона риса</OE_Redline.label>
+<OE_Redline.labelNoun>червона риса</OE_Redline.labelNoun>
+<OE_Redline.description>Особливий режим Домінаторів, що підвищує їх бойовий потенціал та швидкість пересування.</OE_Redline.description>
+<OE_Redline.stages.reboot.label>перезавантаження</OE_Redline.stages.reboot.label>
+
+<OE_RedlineAftereffect.label>Перезавантаження</OE_RedlineAftereffect.label>
+<OE_RedlineAftereffect.description>Перезавантаження основних систем Домінатора після використання здібності Червона риса.</OE_RedlineAftereffect.description>
+
+<!--=============== Chaos ====================-->
+<OE_Chaos.label>Хаос</OE_Chaos.label>
+<OE_Chaos.labelNoun>хаос</OE_Chaos.labelNoun>
+<OE_Chaos.description>Ментальні дебаффи від ефектів Хаосу.</OE_Chaos.description>
+
+<!--=============== Vanguard ====================-->
+<OE_Vanguard.label>Авангард</OE_Vanguard.label>
+<OE_Vanguard.labelNoun>авангард</OE_Vanguard.labelNoun>
+<OE_Vanguard.description>Спеціальна програма Домінатора, що зменшує вхідну шкоду з невеликим зниженням швидкості пересування.</OE_Vanguard.description>
+
+<!--=============== Camouflage ====================-->
+<OE_MechCamouflage.label>камуфляж</OE_MechCamouflage.label>
+<OE_MechCamouflage.description>Активний внутрішній модуль стелсу, який робить Домінатора невидимим.</OE_MechCamouflage.description>
+
+<!--=============== Chaos Lord ====================-->
+<!--=============== Grand Redline ====================-->
+<OE_LordRedline.label>велика червона риса</OE_LordRedline.label>
+<OE_LordRedline.labelNoun>велика червона риса</OE_LordRedline.labelNoun>
+<OE_LordRedline.description>Особливий режим Лорду Хаосу, що підвищує його бойовий потенціал та швидкість пересування.</OE_LordRedline.description>
+
+<!--=============== Shadow Walk ====================-->
+<OE_MechLordCamouflage.label>тіньова хода</OE_MechLordCamouflage.label>
+<OE_MechLordCamouflage.description>Активний внутрішній модуль стелсу, який робить Лорда Хаосу невидимим.</OE_MechLordCamouflage.description>
+
+</LanguageData>

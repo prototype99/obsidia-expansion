@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OES ====================-->
+<OES_Wings.label>Героические кибер-крылья Эйдолона</OES_Wings.label>
+<OES_Wings.description>Героические кибер-крылья обеспечивают непревзойденную маневренность благодаря гладкому, ультрасовременному дизайну. Разработан для использования Эйдолонами, когда-то называвшимися Героями! Раскрывает весь потенциал своего владельца.\n\nЭти крылья позволяют совершать 5 мощных прыжков на огромные расстояния.\n\nМожет быть перезагружен с помощью Синтериуса.</OES_Wings.description>
+<OES_Wings.verbs.heroic_jump.label>героический прыжок</OES_Wings.verbs.heroic_jump.label>
+<OES_Wings.comps.CompApparelReloadable.chargeNoun>прыжок</OES_Wings.comps.CompApparelReloadable.chargeNoun>
+<OES_Wings.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OES_Wings.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OMG ====================-->
+<OMG_Wings.label>Кибер-крылья Наемников</OMG_Wings.label>
+<OMG_Wings.description>Сильно модифицированные кибер-крылья обеспечивают непревзойденную маневренность благодаря гладкому, ультрасовременному дизайну. Предназначен для использования Наемниками.\n\nЭти крылья позволяют совершать 10 быстрых прыжков на большие расстояния.\n\nМожет быть перезагружен с помощью Синтериуса.</OMG_Wings.description>
+<OMG_Wings.verbs.mercenary_jump.label>прыжок наемника</OMG_Wings.verbs.mercenary_jump.label>
+<OMG_Wings.comps.CompApparelReloadable.chargeNoun>прыжок</OMG_Wings.comps.CompApparelReloadable.chargeNoun>
+<OMG_Wings.comps.CompApparelReloadable.cooldownGerund>перезаряжается</OMG_Wings.comps.CompApparelReloadable.cooldownGerund>
+
+</LanguageData>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Recruit ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Recruit</defName>
+    <label>OCC recruit</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>10000~11000</apparelMoney>
+	<apparelTags>
+      <li>OEProto</li>
+	  <li>OCCKnight</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleB</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>3000~5000</weaponMoney>
+	<weaponTags>
+	  <li>OEHeavyMelee</li>
+	  <li>OEBaseGun</li>
+	  <li>OCCHeavyMelee</li>
+	  <li>OCCLightGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.35</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+    </techHediffsTags>
+	<combatPower>125</combatPower>
+  </PawnKindDef>
+
+<!--=============== Knight ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Knight_Melee</defName>
+    <label>OCC knight</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OCCKnight</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~6000</weaponMoney>
+	<weaponTags>
+      <li>OCCBaseMelee</li>
+	  <li>OCCHeavyMelee</li>
+    </weaponTags>
+    <techHediffsMoney>2500~4000</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OCCBionics</li>
+    </techHediffsTags>
+	<combatPower>150</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Knight_Ranged</defName>
+    <label>OCC knight</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OCCKnight</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~6000</weaponMoney>
+	<weaponTags>
+      <li>OCCLightGun</li>
+	  <li>OCCBaseGun</li>
+    </weaponTags>
+    <techHediffsMoney>2500~4000</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OCCBionics</li>
+    </techHediffsTags>
+	<combatPower>150</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Knight_Heavy</defName>
+    <label>OCC knight</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OCCKnight</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~6000</weaponMoney>
+	<weaponTags>
+      <li>OCCSniperGun</li>
+	  <li>OCCHeavyGun</li>
+    </weaponTags>
+    <techHediffsMoney>2500~4000</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OCCBionics</li>
+    </techHediffsTags>
+	<combatPower>150</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Knight_CallAid</defName>
+    <label>OCC knight</label>
+	<itemQuality>Normal</itemQuality>
+    <apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OCCKnight</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~6000</weaponMoney>
+	<weaponTags>
+      <li>OCCBaseMelee</li>
+	  <li>OCCHeavyMelee</li>
+	  <li>OCCLightGun</li>
+	  <li>OCCBaseGun</li>
+	  <li>OCCSniperGun</li>
+	  <li>OCCHeavyGun</li>
+    </weaponTags>
+    <techHediffsMoney>2500~4000</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>4</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OCCBionics</li>
+    </techHediffsTags>
+	<combatPower>150</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Paladin ====================-->
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Paladin_Melee</defName>
+    <label>OCC paladin</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~26000</apparelMoney>
+	<apparelTags>
+      <li>OCCPaladin</li>
+	  <li>OCCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>OCCPaladin_Ranged</li>
+	  <li>OCCPaladin_Grenadier</li>
+	  <li>OCCPaladin_ForceField</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~11000</weaponMoney>
+	<weaponTags>
+      <li>OCCBaseMeleeM</li>
+	  <li>OCCHeavyMeleeM</li>
+    </weaponTags>
+    <techHediffsMoney>3500~5500</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OCCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>225</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>9~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Paladin_Ranged</defName>
+    <label>OCC paladin</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~26000</apparelMoney>
+	<apparelTags>
+      <li>OCCPaladin</li>
+	  <li>OCCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OCCPaladin_Melee</li>
+	  <li>OCCPaladin_Shield</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>7000~11000</weaponMoney>
+	<weaponTags>
+      <li>OCCLightGunM</li>
+	  <li>OCCLightGunP</li>
+	  <li>OCCBaseGunM</li>
+	  <li>OCCBaseGunP</li>
+    </weaponTags>
+    <techHediffsMoney>3500~5500</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OCCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>225</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>9~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Paladin_Heavy</defName>
+    <label>OCC paladin</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~26000</apparelMoney>
+	<apparelTags>
+      <li>OCCPaladin</li>
+	  <li>OCCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OCCPaladin_Melee</li>
+	  <li>OCCPaladin_Jump</li>
+	  <li>OCCPaladin_Shield</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>9000~13000</weaponMoney>
+	<weaponTags>
+      <li>OCCSniperGunM</li>
+	  <li>OCCSniperGunP</li>
+	  <li>OCCHeavyGunM</li>
+	  <li>OCCHeavyGunP</li>
+    </weaponTags>
+    <techHediffsMoney>3500~5500</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OCCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>225</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>9~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEPawnF">
+    <defName>OCC_Paladin_CallAid</defName>
+    <label>OCC paladin</label>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>17000~26000</apparelMoney>
+	<apparelTags>
+      <li>OCCPaladin</li>
+	  <li>OCCGrenadeBelt</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OCCPaladin_Shield</li>
+	  <li>OCCPaladin_ForceField</li>
+	  <li>OEModuleI</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OEModuleB_Psy</li>
+    </apparelDisallowTags>
+    <weaponMoney>9000~13000</weaponMoney>
+	<weaponTags>
+      <li>OCCBaseMeleeM</li>
+	  <li>OCCHeavyMeleeM</li>
+	  <li>OCCLightGunM</li>
+	  <li>OCCBaseGunM</li>
+	  <li>OCCSniperGunM</li>
+	  <li>OCCHeavyGunM</li>
+    </weaponTags>
+    <techHediffsMoney>3500~5500</techHediffsMoney>
+	<techHediffsChance>0.85</techHediffsChance>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OCCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>225</combatPower>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>9~12</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>9~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Arachna ====================-->
+  <PawnKindDef ParentName="OEKindBaseMechArachna">
+    <defName>OCC_Mech_Arachna</defName>
+    <label>OCC Arachna</label>
+    <race>OE_Mech_OCC_Arachna</race>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+    <weaponTags>
+      <li>OCCArachna</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!--=============== Dominator ====================-->
+  <PawnKindDef ParentName="OCCKindBaseMechDominator">
+    <defName>OCC_Mech_Dominator</defName>
+    <label>OCC Dominator</label>
+	<defaultFactionType>ObsidiaEmpire</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+  </PawnKindDef>
+
+</Defs>

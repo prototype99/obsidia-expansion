@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Drillspear ====================-->
+  <ThingDef Name="OCCTrophyDrillspearBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>drill</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Melee</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCTrophyDrillspearBase">
+    <defName>OCC_Trophy_Drillspear</defName>
+    <label>Balor</label>
+    <description>Spear-drill, a replica of the personal weapon of the great siegemaster Balor.\n\nThis is a rare trophy weapon.\n\nFeature: designed to destroy structures.\n\nInlaid with Might Power Stone: Weapon combat stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_DrillSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OCCTrophyMelee</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>2550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Inlaid ====================-->
+  <ThingDef ParentName="OCCTrophyDrillspearBase">
+    <defName>OCC_Trophy_Drillspear_I</defName>
+    <label>Inlaid Balor</label>
+    <description>Spear-drill, a replica of the personal weapon of the great siegemaster Balor.\n\nThis is a rare trophy weapon.\n\nFeature: designed to destroy structures.\n\nInlaid with Might Power Stone: Weapon combat stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_DrillSpear_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li MayRequire="Ludeon.Rimworld.Royalty">Bladelink</li>
+	  <li>OCCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>3350</MarketValue>
+    </statBases>
+	<tools Inherit="false">
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>drill</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Railgun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OCCTrophyRifleBase" ParentName="OERangedBaseNC" Abstract="True">
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>5.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_Trophy_RG</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_Trophy_RG</defName>
+    <label>Cronus charge</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Trophy_Charge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>175</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_Trophy_RG_I</defName>
+    <label>Inlaid Cronus charge</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Trophy_Charge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>2.0</stoppingPower>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>200</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCTrophyRifleBase">
+    <defName>OCC_Trophy_Railgun</defName>
+    <label>Cronus</label>
+    <description>Sample weapon of new experimental railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_Railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>2550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Inlaid ====================-->
+  <ThingDef ParentName="OCCTrophyRifleBase">
+    <defName>OCC_Trophy_Railgun_I</defName>
+    <label>Inlaid Cronus</label>
+    <description>Sample weapon of new experimental railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.\n\nInlaid with Dexterity Power Stone: Weapon performance stats increased.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_Railgun_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">Bladelink</li>
+	  <li>OCCTrophyRanged</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li MayRequire="Ludeon.Rimworld.Royalty">WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+      <RoyalFavorValue>1.5</RoyalFavorValue>
+	  <MarketValue>3350</MarketValue>
+	  <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs Inherit="false">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_Trophy_RG_I</defaultProjectile>
+		<forcedMissRadius>0.2</forcedMissRadius>
+        <warmupTime>2.75</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>34.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

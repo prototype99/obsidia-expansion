@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OES ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_OES</defName>
+    <kindDef>OES_Eidolon_Melee</kindDef>
+    <appearAfterTicks>350</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_OES</defName>
+    <boss>OE_Beaconboss_OES</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OES_Eidolon_Melee>3</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>2</OES_Eidolon_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OES_Eidolon_Melee>5</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>5</OES_Eidolon_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>5</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>5</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>3</OES_Undying_Melee>
+		  <OES_Undying_Ranged>2</OES_Undying_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>5</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>5</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>5</OES_Undying_Melee>
+		  <OES_Undying_Ranged>5</OES_Undying_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>8</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>5</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>8</OES_Undying_Melee>
+		  <OES_Undying_Ranged>5</OES_Undying_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>8</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>8</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>8</OES_Undying_Melee>
+		  <OES_Undying_Ranged>8</OES_Undying_Ranged>
+		  <OES_Special_A_Melee>1</OES_Special_A_Melee>
+		  <OES_Special_A_Ranged>1</OES_Special_A_Ranged>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>12</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>8</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>12</OES_Undying_Melee>
+		  <OES_Undying_Ranged>8</OES_Undying_Ranged>
+		  <OES_Special_A_Melee>2</OES_Special_A_Melee>
+		  <OES_Special_A_Ranged>2</OES_Special_A_Ranged>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OES_Eidolon_Melee>12</OES_Eidolon_Melee>
+		  <OES_Eidolon_Ranged>12</OES_Eidolon_Ranged>
+		  <OES_Undying_Melee>12</OES_Undying_Melee>
+		  <OES_Undying_Ranged>12</OES_Undying_Ranged>
+		  <OES_Special_A_Melee>3</OES_Special_A_Melee>
+		  <OES_Special_A_Ranged>3</OES_Special_A_Ranged>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Lost Eidolon squad led by {LEADERKIND_label} armed with heroic gear.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

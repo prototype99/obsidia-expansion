@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC - Sword ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OMCSwordBase">
+    <defName>OMC_Sword_P</defName>
+    <label>Persona Delimiter MK-II</label>
+    <description>Persona Modified Sword used by OMC Officers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Sword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1355</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCBaseMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OMCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OMC_Sword_M>1</OMC_Sword_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OMC - Axe ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OMCAxeBase">
+    <defName>OMC_Axe_P</defName>
+    <label>Persona Furious MK-II</label>
+    <description>Persona Modified Axe used by OMC Officers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Axe_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1355</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCBaseMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OMCWeaponMod</li>
+    </tradeTags>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.75</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Axe_M>1</OMC_Axe_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OMC - Whip ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OMCWhipBase">
+    <defName>OMC_Whip_P</defName>
+    <label>Persona Bloodspiller MK-II</label>
+    <description>Persona Modified Whip used by OMC Officers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Whip_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1115</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OMCWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_M>1</OMC_Whip_M>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== OMC - Elemental Whip ====================-->
+<!--=============== Various ====================-->
+<!--=============== Persona ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_P_Acid</defName>
+    <label>Persona Bloodspiller MK-II(Acid)</label>
+    <description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Acid/Whip_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1190</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OMCWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_Acid</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_M_Acid>1</OMC_Whip_M_Acid>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_P_Cryo</defName>
+    <label>Persona Bloodspiller MK-II(Cryo)</label>
+    <description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Cryo/Whip_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1190</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OMCWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_Cryo</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_M_Cryo>1</OMC_Whip_M_Cryo>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_P_Fire</defName>
+    <label>Persona Bloodspiller MK-II(Fire)</label>
+    <description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Fire/Whip_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1190</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OMCWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_Fire</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_M_Fire>1</OMC_Whip_M_Fire>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OMCElemWhipBase">
+    <defName>OMC_Whip_P_EMP</defName>
+    <label>Persona Bloodspiller MK-II(EMP)</label>
+    <description>Persona Modified Whip used by OMC Officers.\n\nIt's remanufactured weapon using OTC technologies. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/EMP/Whip_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>1190</MarketValue>
+    </statBases>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OMCRangedMeleeM</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OMCWeaponMod</li>
+    </tradeTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_OMC_W_M_EMP</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1.25</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>OMCGearMod</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OMC_Whip_M_EMP>1</OMC_Whip_M_EMP>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

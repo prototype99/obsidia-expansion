@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OCC ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_OCC</defName>
+    <kindDef>OCC_Paladin_Mechanitor</kindDef>
+    <appearAfterTicks>100</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_OCC</defName>
+    <boss>OE_Beaconboss_OCC</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OCC_Recruit>3</OCC_Recruit>
+		  <OCC_Knight_Melee>1</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>1</OCC_Knight_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OCC_Recruit>5</OCC_Recruit>
+		  <OCC_Knight_Melee>2</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>1</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>1</OCC_Knight_Heavy>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OCC_Knight_Melee>6</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>4</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>2</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>2</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>2</OCC_Paladin_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OCC_Knight_Melee>3</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>3</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>2</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>6</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>4</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>2</OCC_Paladin_Heavy>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OCC_Knight_Melee>3</OCC_Knight_Melee>
+		  <OCC_Knight_Ranged>2</OCC_Knight_Ranged>
+		  <OCC_Knight_Heavy>1</OCC_Knight_Heavy>
+		  <OCC_Paladin_Melee>8</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>4</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>4</OCC_Paladin_Heavy>
+		  <OCC_Mech_Arachna>2</OCC_Mech_Arachna>
+		  <OCC_Mech_Dominator>1</OCC_Mech_Dominator>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OCC_Paladin_Melee>8</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>8</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>4</OCC_Paladin_Heavy>
+		  <OCC_Mech_Arachna>4</OCC_Mech_Arachna>
+		  <OCC_Mech_Dominator>2</OCC_Mech_Dominator>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OCC_Paladin_Melee>10</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>8</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>6</OCC_Paladin_Heavy>
+		  <OCC_Mech_Arachna>6</OCC_Mech_Arachna>
+		  <OCC_Mech_Dominator>3</OCC_Mech_Dominator>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OCC_Paladin_Melee>12</OCC_Paladin_Melee>
+		  <OCC_Paladin_Ranged>10</OCC_Paladin_Ranged>
+		  <OCC_Paladin_Heavy>8</OCC_Paladin_Heavy>
+		  <OCC_Mech_Arachna>8</OCC_Mech_Arachna>
+		  <OCC_Mech_Dominator>4</OCC_Mech_Dominator>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Combat squad led by {LEADERKIND_label} armed with OCC gear.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== OMC ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OMC_Officer_Melee" or defName="OMC_Officer_Ranged" or defName="OMC_Officer_CallAid"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>2500</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>OMCShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+<!--=============== OTC ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OTC_Engineer_Acid_Melee" or defName="OTC_Engineer_Cryo_Melee" or defName="OTC_Engineer_Fire_Melee" or defName="OTC_Engineer_EMP_Melee" or defName="OTC_Engineer_CallAid"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>2500</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>OTCShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+<!--=============== OCC ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OCC_Paladin_Melee" or defName="OCC_Paladin_Ranged" or defName="OCC_Paladin_CallAid"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>4000</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>OCCShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+<!--=============== OEC ====================-->	 
+<Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	  <xpath>/Defs/PawnKindDef[defName="OEC_Inquisitor_Melee" or defName="OEC_Inquisitor_Ranged" or defName="OEC_Inquisitor_CallAid"]</xpath>
+      <value>
+        <modExtensions Inherit="False">
+	      <li Class="VFECore.PawnKindDefExtension">
+            <shieldMoney>
+		      <min>-100</min>
+		      <max>2000</max>
+		    </shieldMoney>
+            <shieldTags>
+		      <li>OECShield</li>
+		    </shieldTags>
+          </li>
+        </modExtensions>
+      </value>
+	</match>
+</Operation>
+
+<!--=============== ODC ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="ODC_Recon_Melee" or defName="ODC_Recon_Ranged" or defName="ODC_Duelist_Melee" or defName="ODC_Duelist_Ranged"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>2500</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>ODCShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+<!--=============== CAC ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="CAC_Acolyte" or defName="CAC_Prefect" or defName="CAC_SinPriest"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>7500</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>CACShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+<!--=============== OES ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OES_Eidolon_Melee" or defName="OES_Eidolon_Ranged"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>7500</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>OESShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OES_Undying_Melee" or defName="OES_Undying_Ranged"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>7500</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>EGOShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+<!--=============== OMG ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OMG_Enforcer" or defName="OMG_Battlemaster" or defName="OMG_Kingpin"]</xpath>
+    <value>
+      <modExtensions Inherit="False">
+	    <li Class="VFECore.PawnKindDefExtension">
+          <shieldMoney>
+		    <min>-100</min>
+		    <max>7500</max>
+		  </shieldMoney>
+          <shieldTags>
+		    <li>OMGShield</li>
+		  </shieldTags>
+        </li>
+      </modExtensions>
+    </value>
+</Operation>
+
+</Patch>

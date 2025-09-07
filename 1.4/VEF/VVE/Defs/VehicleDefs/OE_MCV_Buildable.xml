@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+<!--=============== Mobile Colonial Vihecle ====================-->
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+	<defName>ODC_MCV_Blueprint</defName>
+	<label>Mobile Colonial Vihecle</label>
+	<description>Mobile Colonial Vehicles(MCV) are the basis of the Obsidia Empire expansion in the past. Slow and lightly armed, but super-armored vehicle. Excellent for transporting a large number of pawns and cargo over long distances. Nowadays used by ODC.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/MCV/ODC_MobileColonialVihecle</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(6, 10)</drawSize>
+	</graphicData>
+	<designationCategory>VF_Vehicles</designationCategory>
+	<statBases>
+	  <MaxHitPoints>1000</MaxHitPoints>
+	  <WorkToBuild>55000</WorkToBuild>
+	  <Flammability>0.05</Flammability>
+	</statBases>
+	<size>(5, 9)</size>
+	<uiIconScale>1.2</uiIconScale>
+	<costList>
+	  <OE_Obsidian>650</OE_Obsidian>
+	  <OE_Platinum>250</OE_Platinum>
+	  <OE_Mythril>125</OE_Mythril>
+	  <OE_DriftersKit>5</OE_DriftersKit>
+	  <OE_SyntheriusVehicleCore>2</OE_SyntheriusVehicleCore>
+	</costList>
+	<researchPrerequisites>
+	  <li>ODCGearExp</li>
+	  <li>OESynthAdv</li>
+	</researchPrerequisites>
+	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	<thingToSpawn>ODC_MCV</thingToSpawn>
+  </Vehicles.VehicleBuildDef>
+
+</Defs>

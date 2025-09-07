@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Maid ====================-->
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>OE_Mech_Maid</defName>
+    <label>gestate maid</label>
+    <description>Gestate a maid mechanoid.</description>
+    <researchPrerequisite>OEMechtech</researchPrerequisite>
+	<workAmount>3600</workAmount>
+	<formingTicks>240000</formingTicks>
+	<gestationCycles>2</gestationCycles>
+    <ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Mythril</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Mech_Maid>1</OE_Mech_Maid>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_Maid</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+<!--=============== Arachna ====================-->
+  <RecipeDef Name="OEArachnaMechanoidRecipe" ParentName="HeavyMechanoidRecipe" Abstract="True">
+	<workAmount>3600</workAmount>
+	<formingTicks>240000</formingTicks>
+	<gestationCycles>2</gestationCycles>
+    <ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Empyrium</li>
+          </thingDefs>
+        </filter>
+        <count>55</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Orichalcum</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+<!--=============== OMC ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_OMC_Arachna</defName>
+    <label>gestate OMC Arachna</label>
+    <description>Gestate an OMC Arachna mechanoid.</description>
+    <products>
+      <OE_Mech_OMC_Arachna>1</OE_Mech_OMC_Arachna>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OMC_Arachna</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>OMCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_OTC_Arachna_Acid</defName>
+    <label>gestate OTC Arachna(Acid)</label>
+    <description>Gestate an OTC Arachna(Acid) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Arachna_Acid>1</OE_Mech_OTC_Arachna_Acid>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Arachna_Acid</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== Cryo ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_OTC_Arachna_Cryo</defName>
+    <label>gestate OTC Arachna(Cryo)</label>
+    <description>Gestate an OTC Arachna(Cryo) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Arachna_Cryo>1</OE_Mech_OTC_Arachna_Cryo>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Arachna_Cryo</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== Fire ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_OTC_Arachna_Fire</defName>
+    <label>gestate OTC Arachna(Fire)</label>
+    <description>Gestate an OTC Arachna(Fire) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Arachna_Fire>1</OE_Mech_OTC_Arachna_Fire>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Arachna_Fire</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== EMP ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_OTC_Arachna_EMP</defName>
+    <label>gestate OTC Arachna(EMP)</label>
+    <description>Gestate an OTC Arachna(EMP) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Arachna_EMP>1</OE_Mech_OTC_Arachna_EMP>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Arachna_EMP</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== OCC ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_OCC_Arachna</defName>
+    <label>gestate OCC Arachna</label>
+    <description>Gestate an OCC Arachna mechanoid.</description>
+    <products>
+      <OE_Mech_OCC_Arachna>1</OE_Mech_OCC_Arachna>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OCC_Arachna</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>OCCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== CAC ====================-->
+  <RecipeDef ParentName="OEArachnaMechanoidRecipe">
+    <defName>OE_Mech_CAC_Arachna</defName>
+    <label>gestate CAC Arachna</label>
+    <description>Gestate an CAC Arachna mechanoid.</description>
+	<workAmount>4800</workAmount>
+    <products>
+      <OE_Mech_CAC_Arachna>1</OE_Mech_CAC_Arachna>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_CAC_Arachna</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtech</li>
+	  <li>CACGear</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== Octo ====================-->
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>OE_Mech_Octo</defName>
+    <label>gestate octo-bot</label>
+    <description>Gestate an octo-bot mechanoid.</description>
+    <researchPrerequisite>OEMechtech</researchPrerequisite>
+	<workAmount>3600</workAmount>
+	<formingTicks>240000</formingTicks>
+	<gestationCycles>2</gestationCycles>
+    <ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Platinum</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Mythril</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Mech_Octo>1</OE_Mech_Octo>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_Octo</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+<!--=============== Arachna Queen ====================-->
+  <RecipeDef ParentName="SuperHeavyMechanoidRecipe">
+    <defName>OE_Mech_ArachnaQueen</defName>
+    <label>gestate arachna queen</label>
+    <description>Gestate a arachna queen mechanoid.</description>
+    <researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>CACGear</li>
+	</researchPrerequisites>
+	<workAmount>3600</workAmount>
+	<formingTicks>240000</formingTicks>
+	<gestationCycles>12</gestationCycles>
+    <ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Empyrium</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Orichalcum</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_CultistKit</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ArachnaCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Mech_ArachnaQueen>1</OE_Mech_ArachnaQueen>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_ArachnaQueen</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+<!--=============== Crimson Arachna ====================-->
+  <RecipeDef ParentName="SuperHeavyMechanoidRecipe">
+    <defName>OE_Mech_CrimsonArachna</defName>
+    <label>gestate crimson arachna</label>
+    <description>Gestate a crimson arachna mechanoid.</description>
+    <researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>CACGearAdv</li>
+	</researchPrerequisites>
+	<workAmount>3600</workAmount>
+	<formingTicks>240000</formingTicks>
+	<gestationCycles>13</gestationCycles>
+    <ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Empyrium</li>
+          </thingDefs>
+        </filter>
+        <count>115</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Orichalcum</li>
+          </thingDefs>
+        </filter>
+        <count>90</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_CultistKit</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ArachnaCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Mech_CrimsonArachna>1</OE_Mech_CrimsonArachna>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_CrimsonArachna</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+<!--=============== Dominator ====================-->
+  <RecipeDef Name="OEDominatorMechanoidRecipe" ParentName="HeavyMechanoidRecipe" Abstract="True">
+	<workAmount>3600</workAmount>
+	<formingTicks>240000</formingTicks>
+	<gestationCycles>3</gestationCycles>
+    <ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Empyrium</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Orichalcum</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ArachnaCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+<!--=============== OMC ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_OMC_Dominator</defName>
+    <label>gestate OMC Dominator</label>
+    <description>Gestate an OMC Dominator mechanoid.</description>
+    <products>
+      <OE_Mech_OMC_Dominator>1</OE_Mech_OMC_Dominator>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OMC_Dominator</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OMCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_OTC_Dominator_Acid</defName>
+    <label>gestate OTC Dominator(Acid)</label>
+    <description>Gestate an OTC Dominator(Acid) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Dominator_Acid>1</OE_Mech_OTC_Dominator_Acid>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Dominator_Acid</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== Cryo ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_OTC_Dominator_Cryo</defName>
+    <label>gestate OTC Dominator(Cryo)</label>
+    <description>Gestate an OTC Dominator(Cryo) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Dominator_Cryo>1</OE_Mech_OTC_Dominator_Cryo>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Dominator_Cryo</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== Fire ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_OTC_Dominator_Fire</defName>
+    <label>gestate OTC Dominator(Fire)</label>
+    <description>Gestate an OTC Dominator(Fire) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Dominator_Fire>1</OE_Mech_OTC_Dominator_Fire>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Dominator_Fire</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== EMP ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_OTC_Dominator_EMP</defName>
+    <label>gestate OTC Dominator(EMP)</label>
+    <description>Gestate an OTC Dominator(EMP) mechanoid.</description>
+    <products>
+      <OE_Mech_OTC_Dominator_EMP>1</OE_Mech_OTC_Dominator_EMP>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OTC_Dominator_EMP</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OTCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== OCC ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_OCC_Dominator</defName>
+    <label>gestate OCC Dominator</label>
+    <description>Gestate an OCC Dominator mechanoid.</description>
+    <products>
+      <OE_Mech_OCC_Dominator>1</OE_Mech_OCC_Dominator>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_OCC_Dominator</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OCCGearMod</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== ODC ====================-->
+<!--=============== Light ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_ODC_Dominator_Light</defName>
+    <label>gestate ODC Dominator(Light)</label>
+    <description>Gestate an ODC Dominator(Light) mechanoid.</description>
+    <products>
+      <OE_Mech_ODC_Dominator_Light>1</OE_Mech_ODC_Dominator_Light>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_ODC_Dominator_Light</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>ODCGearExp</li>
+	</researchPrerequisites>
+  </RecipeDef>
+<!--=============== Heavy ====================-->
+  <RecipeDef ParentName="OEDominatorMechanoidRecipe">
+    <defName>OE_Mech_ODC_Dominator_Heavy</defName>
+    <label>gestate ODC Dominator(Heavy)</label>
+    <description>Gestate an ODC Dominator(Heavy) mechanoid.</description>
+    <products>
+      <OE_Mech_ODC_Dominator_Heavy>1</OE_Mech_ODC_Dominator_Heavy>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_ODC_Dominator_Heavy</ThingDef>
+    </descriptionHyperlinks>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>ODCGearExp</li>
+	</researchPrerequisites>
+  </RecipeDef>
+
+<!--=============== Chaos Lord ====================-->
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>OE_Mech_ChaosLord</defName>
+    <label>gestate Chaos Lord</label>
+    <description>Gestate a Chaos Lord mechanoid.</description>
+	<researchPrerequisites>
+	  <li>OEMechtechAdv</li>
+	  <li>OEGearCross</li>
+	</researchPrerequisites>
+	<workAmount>3600</workAmount>
+	<formingTicks>240000</formingTicks>
+	<gestationCycles>7</gestationCycles>
+    <ingredients Inherit="False">
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Empyrium</li>
+          </thingDefs>
+        </filter>
+        <count>95</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Orichalcum</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ModernizationKit</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ArachnaCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OE_Mech_ChaosLord>1</OE_Mech_ChaosLord>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>OE_Mech_ChaosLord</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Fallen Legion Drone ====================-->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>OE_Mech_LegionDrone</defName>
+    <label>Fallen Legion Drone</label>
+    <description>A small, deployable combat mechanoid usually manufactured inside an ultra-tech Fallen Legion Guard mech. Fallen Legion Drone are expendable melee fighters designed to swarm-attack enemies. They are mounted with non-rechargeable power source.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OE_Mech_FallenLegion</ThingDef>
+	  <ThingDef>OE_Mech_LegionGuard</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.40</ArmorRating_Sharp>
+	  <EMPResistance>0.025</EMPResistance>
+    </statBases>
+	<tools>
+	  <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.0</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>10</amount>
+            </li>
+			<li>
+              <def>EMP</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.0</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>10</amount>
+            </li>
+			<li>
+              <def>EMP</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseHealthScale>1.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>2</OE_Empyrium>
+	  <OE_Orichalcum>2</OE_Orichalcum>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+        <wakeUpCheckRadius>30</wakeUpCheckRadius>
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>15000</totalPowerTicks>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+		<chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+      </li>
+      </comps>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>OE_Mech_LegionDrone</defName>
+    <label>Fallen Legion Drone</label>
+	<labelPlural>Fallen Legion Drone</labelPlural>
+    <race>OE_Mech_LegionDrone</race>
+	<allowInMechClusters>false</allowInMechClusters>
+	<forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/FallenLegionDrone/FallenLegionDrone</texPath>
+          <maskPath>Things/Pawn/Mechanoid/FallenLegionDrone/AllegianceOverlays/Mech_FallenLegionDrone</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

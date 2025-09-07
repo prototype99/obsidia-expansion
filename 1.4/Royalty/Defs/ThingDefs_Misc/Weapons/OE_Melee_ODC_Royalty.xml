@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Melee ====================-->
+  <ThingDef Name="ODCMeleePersonaNC" ParentName="OEMeleeBaseNC" Abstract="True">
+	<tradeTags>
+      <li>ODCWeapon</li>
+    </tradeTags>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="ODCMeleePersona" ParentName="ODCMeleeBase" Abstract="True">
+	<tradeTags>
+      <li>ODCWeapon</li>
+    </tradeTags>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+    </recipeMaker>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== ODC Knife ====================-->
+  <ThingDef ParentName="ODCMeleePersonaNC">
+    <defName>ODC_Knife_P</defName>
+    <label>Persona Scar</label>
+    <description>Persona common Knife used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Knife_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>935</MarketValue>
+	  <Mass>1.0</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== ODC Sword ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_Sword_P</defName>
+    <label>Persona Mercy - Emergent</label>
+    <description>Persona moded Sword used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Sword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1135</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.2</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Knife>1</ODC_Knife>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Big Sword ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_BigSword_P</defName>
+    <label>Persona Bequest - Apex</label>
+    <description>Persona specialised Big Sword used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/BigSword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCHeavyMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1535</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.10</MoveSpeed>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Sword>1</ODC_Sword>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Dual Sword ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_DualSword_P</defName>
+    <label>Persona Guillotine - Apex</label>
+    <description>Persona specialised Dual Sword used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/DualSword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCHeavyMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1535</MarketValue>
+	  <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.10</MoveSpeed>
+	</equippedStatOffsets>
+	<tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Sword>1</ODC_Sword>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Rapier ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_Rapier_P</defName>
+    <label>Persona Imperfect - Emergent</label>
+    <description>Persona moded Rapier used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Rapier_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1135</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Knife>1</ODC_Knife>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Rapier Guard ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_RapierGuard_P</defName>
+    <label>Persona Defiant - Apex</label>
+    <description>Persona specialised Rapier used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/RapierGuard_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCHeavyMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1335</MarketValue>
+	  <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <IncomingDamageFactor>-0.10</IncomingDamageFactor>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.80</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Elemental Rapier ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_Rapier_P_Acid</defName>
+    <label>Persona Enigma - Apex(Acid)</label>
+    <description>Persona specialised Rapier used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/Rapier_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1335</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_Rapier_P_Cryo</defName>
+    <label>Persona Enigma - Apex(Cryo)</label>
+    <description>Persona specialised Rapier used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/Rapier_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1335</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCCryo</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_Rapier_P_Fire</defName>
+    <label>Persona Enigma - Apex(Fire)</label>
+    <description>Persona specialised Rapier used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/Rapier_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1335</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="ODCMeleePersona">
+    <defName>ODC_Rapier_P_EMP</defName>
+    <label>Persona Enigma - Apex(EMP)</label>
+    <description>Persona specialised Rapier used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/Rapier_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCBaseMelee</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1335</MarketValue>
+	  <Mass>1.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.75</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <ODC_Rapier>1</ODC_Rapier>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

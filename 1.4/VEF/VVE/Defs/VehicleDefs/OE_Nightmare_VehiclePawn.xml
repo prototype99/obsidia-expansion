@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+<!--=============== Vehicles Pawn Base ====================-->
+  <Vehicles.VehicleDef Name="OEVehiclePawnBase" ParentName="VehiclePawn_Armored" Abstract="True">
+	<fillPercent>1</fillPercent>
+	<size>(2, 2)</size>
+	<uiIconScale>0.5</uiIconScale>
+	<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+	<vehicleCategory>Combat</vehicleCategory>
+	<techLevel>Spacer</techLevel>
+	<vehicleType>Land</vehicleType>
+	<statBases>
+	  <ArmorRating_Blunt>1.10</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+	  <ArmorRating_Heat>1.0</ArmorRating_Heat>
+	  <Flammability>0.15</Flammability>
+	  <MarketValue>6750</MarketValue>
+	</statBases>
+	<vehicleStats>
+	  <Mass>200</Mass>
+	  <MoveSpeed>12.5</MoveSpeed>
+	  <CargoCapacity>55</CargoCapacity>
+	  <RepairRate>0.5</RepairRate>
+	  <AccelerationRate>0.05</AccelerationRate>
+	</vehicleStats>
+	<soundSustainersOnEvent>
+	  <li>
+		<key>(IgnitionOn, IgnitionOff)</key>
+		<value>VVE_VehicleEngineBuggy</value>
+	  </li>
+	</soundSustainersOnEvent>
+	<race>
+	  <baseBodySize>2.5</baseBodySize>
+	</race>
+	<properties>
+	  <customRoadCosts AssignDefaults = "0.4" />
+	  <worldSpeedMultiplier>1.2</worldSpeedMultiplier>
+	  <winterSpeedMultiplier>1.2</winterSpeedMultiplier>
+	  <vehicleJobLimitations>
+		<li>(RepairVehicle, 3)</li>
+	  </vehicleJobLimitations>
+	  <roles>
+		<li>
+		  <key>pilot</key>
+		  <label>Pilot</label>
+		  <slots>1</slots>
+		  <slotsToOperate>1</slotsToOperate>
+		  <handlingTypes>
+			<li>Movement</li>
+			<li>Turret</li>
+		  </handlingTypes>
+		  <turretIds>
+			<li>MainTurret</li>
+		  </turretIds>
+		</li>
+	  </roles>
+	</properties>
+	<components>
+	  <li>
+		<key>Engine</key>
+		<label>Engine</label>
+		<health>100</health>
+		<priorityStatEfficiency>true</priorityStatEfficiency>
+		<depth>Internal</depth>
+		<reactors>
+		  <li Class = "Vehicles.Reactor_Explosive">
+			<indicator>VF_Explosive</indicator>
+			<chance>0.2</chance>
+			<maxHealth>0.2</maxHealth>
+			<radius>3</radius>
+			<damageDef>Flame</damageDef>
+		  </li>
+		</reactors>
+		<hitbox>
+		  <side>Back</side>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>Core</key>
+		<label>Core</label>
+		<health>75</health>
+		<depth>Internal</depth>
+		<reactors>
+		  <li Class = "Vehicles.Reactor_FuelLeak"/>
+		  <li Class = "Vehicles.Reactor_Explosive">
+			<indicator>VF_Explosive</indicator>
+			<chance>0.2</chance>
+			<maxHealth>0.2</maxHealth>
+			<radius>3</radius>
+			<damageDef>Flame</damageDef>
+		  </li>
+		</reactors>
+		<hitbox>
+		  <side>Back</side>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>FrontLeftLeg</key>
+		<label>Front Left Leg</label>
+		<health>85</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(0, 1)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>FrontRightLeg</key>
+		<label>Front Right Leg</label>
+		<health>85</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(1, 1)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>BackLeftLeg</key>
+		<label>Back Left Leg</label>
+		<health>85</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(1, 0)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>BackRightLeg</key>
+		<label>Back Right Leg</label>
+		<health>85</health>
+		<depth>External</depth>
+		<tags>
+		  <li>Wheel</li>
+		</tags>
+		<hitbox>
+		  <fallthrough>false</fallthrough>
+		  <cells>
+			<li>(0, 0)</li>
+		  </cells>
+		</hitbox>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>Gearbox</key>
+		<label>Gearbox</label>
+		<health>50</health>
+		<depth>Internal</depth>
+		<hitWeight>5</hitWeight>
+		<categories>
+		  <li>MoveSpeed</li>
+		</categories>
+	  </li>
+	  <li>
+		<key>FrontLeftArmorPlating</key>
+		<label>Front Left Armor Plating</label>
+		<health>120</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <cells>
+			<li>(0, 1)</li>
+		  </cells>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>FrontRightArmorPlating</key>
+		<label>Front Right Armor Plating</label>
+		<health>120</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <cells>
+			<li>(1, 1)</li>
+		  </cells>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>BackLeftArmorPlating</key>
+		<label>Back Left Armor Plating</label>
+		<health>120</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <cells>
+			<li>(1, 0)</li>
+		  </cells>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>BackRightArmorPlating</key>
+		<label>Back Right Armor Plating</label>
+		<health>120</health>
+		<depth>External</depth>
+		<armor>
+		  <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+		</armor>
+		<hitbox>
+		  <cells>
+			<li>(0, 0)</li>
+		  </cells>
+		</hitbox>
+	  </li>
+	  <li>
+		<key>Dashboard</key>
+		<label>Dashboard</label>
+		<health>50</health>
+		<depth>Internal</depth>
+		<hitWeight>5</hitWeight>
+	  </li>
+	  <li>
+		<key>SteeringApparatus</key>
+		<label>Steering Apparatus</label>
+		<health>40</health>
+		<depth>Internal</depth>
+		<hitWeight>5</hitWeight>
+	  </li>
+	  <li>
+		<key>Roof</key>
+		<label>Roof</label>
+		<health>120</health>
+		<depth>External</depth>
+		<hitWeight>10</hitWeight>
+		<armor>
+		  <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+		</armor>
+	  </li>
+	</components>
+	<comps>
+	  <li Class="Vehicles.CompProperties_FueledTravel">
+		<electricPowered>true</electricPowered>
+		<dischargeRate>5</dischargeRate>
+		<chargeRate>2</chargeRate>
+		<fuelType>OE_Syntherius</fuelType>
+		<leakDef>Filth_Fuel</leakDef>
+		<fuelConsumptionRate>5.0</fuelConsumptionRate>
+		<fuelConsumptionWorldMultiplier>0.8</fuelConsumptionWorldMultiplier>
+		<fuelCapacity>250</fuelCapacity>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+
+<!--=============== OMC ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase">
+	<defName>OMC_Nightmare</defName>
+	<label>Sutherland</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OMC and is equipped with a Sniper turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(183, 185, 182)</color>
+	  <colorTwo>(70, 81, 111)</colorTwo>
+	  <colorThree>(42, 42, 52)</colorThree>
+	</graphicData>
+	<buildDef>OMC_Nightmare_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>OMC_Nightmare_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase">
+	<defName>OTC_Nightmare_Acid</defName>
+	<label>Glasgow(Acid)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with an Acid Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(183, 185, 182)</color>
+	  <colorTwo>(193, 123, 176)</colorTwo>
+	  <colorThree>(42, 42, 52)</colorThree>
+	</graphicData>
+	<buildDef>OTC_Nightmare_Acid_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>OTC_Nightmare_Acid_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+<!--=============== Cryo ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase">
+	<defName>OTC_Nightmare_Cryo</defName>
+	<label>Glasgow(Cryo)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with a Cryo Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(183, 185, 182)</color>
+	  <colorTwo>(193, 123, 176)</colorTwo>
+	  <colorThree>(42, 42, 52)</colorThree>
+	</graphicData>
+	<buildDef>OTC_Nightmare_Cryo_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>OTC_Nightmare_Cryo_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+<!--=============== Fire ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase">
+	<defName>OTC_Nightmare_Fire</defName>
+	<label>Glasgow(Fire)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with a Fire Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(183, 185, 182)</color>
+	  <colorTwo>(193, 123, 176)</colorTwo>
+	  <colorThree>(42, 42, 52)</colorThree>
+	</graphicData>
+	<buildDef>OTC_Nightmare_Fire_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>OTC_Nightmare_Fire_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+<!--=============== EMP ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase">
+	<defName>OTC_Nightmare_EMP</defName>
+	<label>Glasgow(EMP)</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OTC and is equipped with an EMP Multi-Cannon turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(183, 185, 182)</color>
+	  <colorTwo>(193, 123, 176)</colorTwo>
+	  <colorThree>(42, 42, 52)</colorThree>
+	</graphicData>
+	<buildDef>OTC_Nightmare_EMP_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>OTC_Nightmare_EMP_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+
+<!--=============== OCC ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase">
+	<defName>OCC_Nightmare</defName>
+	<label>Gloucester</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OCC and is equipped with a Rocket Launcher turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(183, 185, 182)</color>
+	  <colorTwo>(248, 195, 3)</colorTwo>
+	  <colorThree>(42, 42, 52)</colorThree>
+	</graphicData>
+	<buildDef>OCC_Nightmare_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>OCC_Nightmare_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+
+<!--=============== OEC ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase" Abstract="True">
+	<defName>OEC_Nightmare</defName>
+	<label>Akatsuki</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by OEC and is equipped with a Minigun turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(183, 185, 182)</color>
+	  <colorTwo>(1, 108, 93)</colorTwo>
+	  <colorThree>(42, 42, 52)</colorThree>
+	</graphicData>
+	<buildDef>OEC_Nightmare_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>OEC_Nightmare_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+
+<!--=============== ODC ====================-->
+  <Vehicles.VehicleDef ParentName="OEVehiclePawnBase">
+	<defName>ODC_Nightmare</defName>
+	<label>Burai</label>
+	<description>Nightmare are arachna-like war machines developed by Obsidia Empire.\n\nThis model is developed by ODC and is equipped with a Shotgun turret.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Pilot x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Syntherius or Power</description>
+	<graphicData>
+	  <texPath>Things/Vehicles/Nightmare/OE_Nightmare</texPath>
+	  <graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+	  <shaderType>CutoutComplexPattern</shaderType>
+	  <drawSize>(2, 2)</drawSize>
+	  <color>(216, 209, 190)</color>
+	  <colorTwo>(235, 155, 21)</colorTwo>
+	  <colorThree>(36, 180, 195)</colorThree>
+	</graphicData>
+	<buildDef>ODC_Nightmare_Blueprint</buildDef>
+	<comps>
+	  <li Class="Vehicles.CompProperties_VehicleTurrets">
+		<turrets>
+		  <li>
+			<turretDef>ODC_Nightmare_MainTurret</turretDef>
+			<gizmoLabel>Main Turret</gizmoLabel>
+			<renderProperties>
+			  <north>(0, 0.25)</north>
+			  <south>(0, 0.25)</south>
+			  <east>(0, 0.25)</east>
+			  <west>(0, 0.25)</west>
+			</renderProperties>
+			<angleRestricted/>
+			<aimPieOffset>(0, 1)</aimPieOffset>
+			<key>MainTurret</key>
+		  </li>
+		</turrets>
+	  </li>
+	</comps>
+  </Vehicles.VehicleDef>
+
+</Defs>

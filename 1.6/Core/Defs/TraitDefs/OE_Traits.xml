@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Civilian ====================-->
+  <TraitDef>
+    <defName>OECivilian</defName>
+    <degreeDatas>
+      <li>
+        <label>handyman</label>
+        <description>{PAWN_nameDef} is a natural {PAWN_pronoun}. {PAWN_nameDef} is smart and work harder than others.</description>
+        <statOffsets>
+          <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+		  <GlobalLearningFactor>0.15</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Soldier ====================-->
+  <TraitDef>
+    <defName>OESoldier</defName>
+    <degreeDatas>
+      <li>
+        <label>trained</label>
+        <description>After many trainings, {PAWN_nameDef} learned how to use any weapon.</description>
+        <statOffsets>
+          <MeleeDodgeChance>8</MeleeDodgeChance>
+		  <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+<!--=============== Nomad ====================-->
+  <TraitDef>
+    <defName>OENomad</defName>
+    <degreeDatas>
+      <li>
+        <label>nomad</label>
+        <description>{PAWN_pronoun}'s are used to eating less food and getting enough sleep faster than others.</description>
+        <statOffsets>
+          <RestRateMultiplier>0.7</RestRateMultiplier>
+        </statOffsets>
+		<hungerRateFactor>0.7</hungerRateFactor>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Cultist ====================-->
+  <TraitDef>
+    <defName>OECultist</defName>
+    <degreeDatas>
+      <li>
+        <label>spiritual</label>
+        <description>{PAWN_nameDef} has an unshakable will and body capable of withstanding any test.</description>
+        <statOffsets>
+          <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		  <PainShockThreshold>0.25</PainShockThreshold>
+		  <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+		  <GlobalLearningFactor>-0.1</GlobalLearningFactor>
+        </statOffsets>
+		<statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+<!--=============== Eidolon ====================-->
+  <TraitDef>
+    <defName>OEEidolon</defName>
+    <degreeDatas>
+      <li>
+        <label>proudly</label>
+        <description>{PAWN_nameDef} as a hero bathed in glory.</description>
+        <statOffsets>
+          <PawnBeauty>+5</PawnBeauty>
+        </statOffsets>
+		<statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
+        </statFactors>
+		<marketValueFactorOffset>+0.25</marketValueFactorOffset>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+<!--=============== Unstable ====================-->
+<!--=============== Catalyst ====================-->
+  <TraitDef>
+    <defName>OEUnstableCatalyst</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable catalyst</label>
+        <description>A volatile force stirs within {PAWN_nameDef}. When pushed to the edge, {PAWN_pronoun} may erupt with a surge of brilliance—or chaos.\n\nThere is a 75% chance that a mental break will trigger a random Inspiration.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.3</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Frenzy_Work</li>
+		  <li>Frenzy_Go</li>
+		  <li>Frenzy_Shoot</li>
+		  <li>Inspired_Trade</li>
+		  <li>Inspired_Recruitment</li>
+		  <li>Inspired_Taming</li>
+		  <li>Inspired_Surgery</li>
+		  <li>Inspired_Creativity</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Driven by unstable energy, [PAWN_nameIndef] unlocks untamed potential.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.75</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Laborer ====================-->
+  <TraitDef>
+    <defName>OEUnstableLaborer</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable laborer</label>
+        <description>{PAWN_nameDef} pushes {PAWN_pronoun}self to extremes, chasing fleeting sparks of productivity at great mental cost.\nThere is a 50% chance that a mental break will trigger a Work Frenzy.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>
+        <mentalBreakInspirationGainSet>
+          <li>Frenzy_Work</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Driven by inner chaos, [PAWN_nameIndef] enters a manic work frenzy.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Wanderer ====================-->
+  <TraitDef>
+    <defName>OEUnstableWanderer</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable wanderer</label>
+        <description>Restless and unpredictable, {PAWN_nameDef} finds moments of clarity in rapid, purposeless motion.\nThere is a 50% chance that a mental break will trigger a Go Frenzy.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Frenzy_Go</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Overwhelmed by turmoil, [PAWN_nameIndef] feels an irresistible urge to move.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Marksman ====================-->
+  <TraitDef>
+    <defName>OEUnstableMarksman</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable marksman</label>
+        <description>In moments of instability, {PAWN_nameDef}'s focus sharpens, turning chaos into deadly precision.\nThere is a 50% chance that a mental break will trigger a Shooting Frenzy.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Frenzy_Shoot</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Riding the edge of madness, [PAWN_nameIndef] becomes unnervingly accurate with ranged weapons.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Trader ====================-->
+  <TraitDef>
+    <defName>OEUnstableTrader</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable trader</label>
+        <description>{PAWN_nameDef}'s fractured mind occasionally strikes upon strokes of commercial genius.\nThere is a 50% chance that a mental break will trigger a Inspired Trade.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Inspired_Trade</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Through the haze of instability, [PAWN_nameIndef] glimpses a moment of brilliant negotiation.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Charmer ====================-->
+  <TraitDef>
+    <defName>OEUnstableCharmer</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable charmer</label>
+        <description>{PAWN_nameDef}'s erratic energy makes {PAWN_pronoun} strangely persuasive at the strangest times.\nThere is a 50% chance that a mental break will trigger a Inspired Recruitment.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Inspired_Recruitment</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>With unstable conviction, [PAWN_nameIndef] gains the charm to sway others.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Whisperer ====================-->
+  <TraitDef>
+    <defName>OEUnstableWhisperer</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable whisperer</label>
+        <description>{PAWN_nameDef}'s volatile aura oddly resonates with animals, if only for a moment.\nThere is a 50% chance that a mental break will trigger a Inspired Taming.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Inspired_Taming</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Driven by turmoil, [PAWN_nameIndef] momentarily connects deeply with nature's creatures.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Surgeon ====================-->
+  <TraitDef>
+    <defName>OEUnstableSurgeon</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable surgeon</label>
+        <description>In a rare balance between madness and clarity, {PAWN_nameDef} performs medical miracles.\nThere is a 50% chance that a mental break will trigger a Inspired Surgery.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Inspired_Surgery</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Compelled by desperation, [PAWN_nameIndef] achieves surgical perfection.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Creator ====================-->
+  <TraitDef>
+    <defName>OEUnstableCreator</defName>
+	<commonality>0.6</commonality>
+	<degreeDatas>
+      <li>
+        <label>unstable creator</label>
+        <description>From the storm in {PAWN_pronoun} mind, bursts of artistic brilliance emerge.\nThere is a 50% chance that a mental break will trigger an Inspired Creativity.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>		
+        <mentalBreakInspirationGainSet>
+          <li>Inspired_Creativity</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>Inspired by inner chaos, [PAWN_nameIndef] becomes creatively unstoppable.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+      </li>
+    </degreeDatas>
+	<requiredWorkTags>
+      <li>Artistic</li>
+	  <li>Constructing</li>
+	  <li>Crafting</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEUnstableTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+  <ThoughtDef>
+    <defName>OE_MoodOffset_UnstableMind</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>OEUnstableCatalyst</li>
+	  <li>OEUnstableLaborer</li>
+	  <li>OEUnstableWanderer</li>
+	  <li>OEUnstableMarksman</li>
+	  <li>OEUnstableTrader</li>
+	  <li>OEUnstableCharmer</li>
+	  <li>OEUnstableWhisperer</li>
+	  <li>OEUnstableSurgeon</li>
+	  <li>OEUnstableCreator</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>unstable thoughts</label>
+        <description>The mind of {PAWN_nameDef} is in constant disarray, teetering on the edge of brilliance and collapse.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!--=============== Skills Mastery ====================-->
+  <TraitDef>
+    <defName>OESkillsMastery</defName>
+	<commonality>1</commonality>
+    <degreeDatas>
+      <li>
+        <label>golden soul</label>
+        <description>There’s something exceptional in {PAWN_nameDef} - a golden spark of talent in every endeavor.</description>
+		<degree>1</degree>
+        <skillGains>
+          <Shooting>2</Shooting>
+		  <Melee>2</Melee>
+		  <Construction>2</Construction>
+          <Mining>2</Mining>
+		  <Cooking>2</Cooking>
+		  <Plants>2</Plants>
+		  <Animals>2</Animals>
+		  <Crafting>2</Crafting>
+		  <Artistic>2</Artistic>
+		  <Medicine>2</Medicine>
+		  <Social>2</Social>
+		  <Intellectual>2</Intellectual>
+        </skillGains>
+      </li>
+	  <li>
+        <label>faded spark</label>
+        <description>Once full of promise, {PAWN_nameDef} now walks a dimmer path, struggling to meet expectations.</description>
+		<degree>-1</degree>
+        <skillGains>
+          <Shooting>-2</Shooting>
+		  <Melee>-2</Melee>
+		  <Construction>-2</Construction>
+          <Mining>-2</Mining>
+		  <Cooking>-2</Cooking>
+		  <Plants>-2</Plants>
+		  <Animals>-2</Animals>
+		  <Crafting>-2</Crafting>
+		  <Artistic>-2</Artistic>
+		  <Medicine>-2</Medicine>
+		  <Social>-2</Social>
+		  <Intellectual>-2</Intellectual>
+        </skillGains>
+      </li>
+    </degreeDatas>
+	<exclusionTags>
+	  <li>OESkillsMasteryTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Skills Quality ====================-->
+<!--=============== Mining ====================-->
+  <TraitDef>
+    <defName>OEQualityMining</defName>
+    <commonality>1</commonality>
+    <degreeDatas>
+      <li>
+        <label>vein whisperer</label>
+        <description>{PAWN_nameDef} extracts riches with uncanny precision, though never in a hurry.</description>
+        <degree>1</degree>
+		<skillGains>
+          <Mining>3</Mining>
+        </skillGains>
+        <statOffsets>
+          <MiningSpeed>-0.15</MiningSpeed>
+		  <MiningYield>0.25</MiningYield>
+        </statOffsets>
+      </li>
+      <li>
+        <label>tunnel dancer</label>
+        <description>{PAWN_nameDef} digs fast and fearlessly, but often leaves value behind.</description>
+        <degree>2</degree>
+		<skillGains>
+          <Mining>3</Mining>
+        </skillGains>
+        <statOffsets>
+          <MiningSpeed>0.25</MiningSpeed>
+		  <MiningYield>-0.15</MiningYield>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Mining</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEQualityMiningTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Cooking ====================-->
+  <TraitDef>
+    <defName>OEQualityCooking</defName>
+    <commonality>1</commonality>
+    <degreeDatas>
+      <li>
+        <label>careful chef</label>
+        <description>{PAWN_nameDef} values safety and quality in every meal, even if it takes a little longer.</description>
+        <degree>1</degree>
+		<skillGains>
+          <Cooking>3</Cooking>
+        </skillGains>
+        <statOffsets>
+          <CookSpeed>-3</CookSpeed>
+		  <FoodPoisonChance>-0.25</FoodPoisonChance>
+        </statOffsets>
+      </li>
+      <li>
+        <label>blazing cook</label>
+        <description>Quick in the kitchen, {PAWN_nameDef} favors speed over caution.</description>
+        <degree>2</degree>
+		<skillGains>
+          <Cooking>3</Cooking>
+        </skillGains>
+        <statOffsets>
+          <CookSpeed>4</CookSpeed>
+		  <FoodPoisonChance>0.15</FoodPoisonChance>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEQualityCookingTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Plants ====================-->
+  <TraitDef>
+    <defName>OEQualityPlants</defName>
+    <commonality>1</commonality>
+    <degreeDatas>
+      <li>
+        <label>gentle harvester</label>
+        <description>{PAWN_nameDef} nurtures every crop with care, but tends the fields at a measured pace.</description>
+        <degree>1</degree>
+		<skillGains>
+          <Plants>3</Plants>
+        </skillGains>
+        <statOffsets>
+          <PlantWorkSpeed>-0.15</PlantWorkSpeed>
+		  <PlantHarvestYield>0.25</PlantHarvestYield>
+        </statOffsets>
+      </li>
+      <li>
+        <label>swift planter</label>
+        <description>{PAWN_nameDef} works the land with swift hands, though some harvests suffer.</description>
+        <degree>2</degree>
+		<skillGains>
+          <Plants>3</Plants>
+        </skillGains>
+        <statOffsets>
+          <PlantWorkSpeed>0.25</PlantWorkSpeed>
+		  <PlantHarvestYield>-0.15</PlantHarvestYield>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEQualityPlantsTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+<!--=============== Animals ====================-->
+  <TraitDef>
+    <defName>OEQualityAnimals</defName>
+    <commonality>1</commonality>
+    <degreeDatas>
+      <li>
+        <label>careful handler</label>
+        <description>{PAWN_nameDef} takes time to care for animals properly, often gathering more from each creature.</description>
+        <degree>1</degree>
+		<skillGains>
+          <Animals>3</Animals>
+        </skillGains>
+        <statOffsets>
+          <AnimalGatherSpeed>-0.15</AnimalGatherSpeed>
+		  <AnimalGatherYield>0.25</AnimalGatherYield>
+        </statOffsets>
+      </li>
+      <li>
+        <label>efficient handler</label>
+        <description>{PAWN_nameDef} works quickly when gathering from animals, but may leave some resources behind.</description>
+        <degree>2</degree>
+		<skillGains>
+          <Animals>3</Animals>
+        </skillGains>
+        <statOffsets>
+          <AnimalGatherSpeed>0.25</AnimalGatherSpeed>
+		  <AnimalGatherYield>-0.15</AnimalGatherYield>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+	<exclusionTags>
+	  <li>OEQualityAnimalsTrait</li>
+    </exclusionTags>
+  </TraitDef>
+
+</Defs>

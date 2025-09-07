@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged ====================-->
+<!--=============== Biophormids - SMG ====================-->
+  <ThingDef ParentName="BaseGun">
+    <defName>EGO_Biophormids_SMG</defName>
+    <label>Buzzlash</label>
+    <description>Amalgam SMG used by Winglance.</description>
+	<tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+	<relicChance>0</relicChance>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Biophormids/SMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOBiophormidsWinglance</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>500</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>1.3</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.95</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_Biophormids_SMG</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>18.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Pawn_Megascarab_Death</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_Biophormids_SMG</defName>
+    <label>Buzzlash bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>65</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Biophormids - SniperRifle ====================-->
+  <ThingDef ParentName="BaseGun">
+    <defName>EGO_Biophormids_SniperRifle</defName>
+    <label>Viperscope</label>
+    <description>Amalgam Sniper Rifle used by Monarchid.</description>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+	<relicChance>0</relicChance>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/EGO/Biophormids/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.1</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+	  <li>EGOBiophormidsMonarchid</li>
+    </weaponTags>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+	  <MeleeHitChance>6</MeleeHitChance>
+    </equippedStatOffsets>
+	<statBases>
+      <MarketValue>500</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.20</AccuracyShort>
+      <AccuracyMedium>1.30</AccuracyMedium>
+      <AccuracyLong>1.40</AccuracyLong>
+      <RangedWeapon_Cooldown>3.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EGO_Biophormids_SR</defaultProjectile>
+        <warmupTime>2.50</warmupTime>
+        <range>44.9</range>
+        <soundCast>Pawn_Spelopede_Pain</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>fang</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>OTCAcid</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EGO_Biophormids_SR</defName>
+    <label>Viperscope bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/EGO_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.6</armorPenetrationBase>
+      <speed>95</speed>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>10</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

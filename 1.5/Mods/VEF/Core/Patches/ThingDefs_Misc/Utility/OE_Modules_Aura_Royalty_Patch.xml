@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Psy Lord ====================-->
+  <ThingDef ParentName="OEModuleAuraBase">
+    <defName>OE_Module_AuraPsyLord</defName>
+    <label>Aura Module - Psy Lord</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/A_PsyLord</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_AuraPsyLord</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AuraPsyLord</defName>
+    <label>Aura Module - Psy Lord</label>
+    <description>This person is using a Aura Module - Psy Lord. Everyone within an effect radius gains psy stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PsychicSensitivity>0.2</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+		  <MeditationFocusGain>0.1</MeditationFocusGain>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_AuraPsyLordBuff</hediff>
+		<range>8</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_AuraPsyLordBuff</defName>
+    <label>Aura Module - Psy Lord</label>
+    <description>Someone is using the Aura Module - Psy Lord nearby, boosting this person's psy stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PsychicSensitivity>0.4</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+		  <MeditationFocusGain>0.2</MeditationFocusGain>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>8</maxDistance>
+		<customMote>Mote_OE_AuraPsyLordLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_AuraPsyLordLine</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <graphicData>
+      <shaderType>MoteGlow</shaderType>
+      <texPath>Things/Mote/ModuleAuraBuff/OE_ModuleAura_LinkLine</texPath>
+	  <color>(209, 201, 39)</color>
+    </graphicData>
+  </ThingDef>
+
+<!--=============== Heroic Psy Lord ====================-->
+  <ThingDef ParentName="OEHeroicModuleAuraBase">
+    <defName>OE_Module_HeroicAuraPsyLord</defName>
+    <label>Heroic Aura Module - Psy Lord</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HA_PsyLord</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHA</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<comps>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.CompProperties_ApparelHediffs">
+	    <hediffDefnames>
+		  <li>OE_HeroicAuraPsyLord</li>
+		</hediffDefnames>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraPsyLord</defName>
+    <label>Heroic Aura Module - Psy Lord</label>
+    <description>This person is using a Heroic Aura Module - Psy Lord. Everyone within an effect radius gains psy stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PsychicSensitivity>0.4</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+		  <MeditationFocusGain>0.2</MeditationFocusGain>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <hediff>OE_HeroicAuraPsyLordBuff</hediff>
+		<range>12</range>
+		<targetingParameters>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetHumans>true</canTargetHumans>
+		</targetingParameters>
+      </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_HeroicAuraPsyLordBuff</defName>
+    <label>Heroic Aura Module - Psy Lord</label>
+    <description>Someone is using the Heroic Aura Module - Psy Lord nearby, boosting this person's psy stats bonuses.</description>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <PsychicSensitivity>0.6</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.135</PsychicEntropyRecoveryRate>
+		  <MeditationFocusGain>0.3</MeditationFocusGain>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+		<maxDistance>12</maxDistance>
+		<customMote>Mote_OE_AuraBrigadierLine</customMote>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+	    <showRemainingTime>false</showRemainingTime>
+	  </li>
+    </comps>
+	<isBad>false</isBad>
+  </HediffDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

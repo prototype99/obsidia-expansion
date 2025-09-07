@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMC ====================-->
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>OMC_Dominator_Shotgun</defName>
+    <label>Mech Doom</label>
+    <description>Reconstructed OMC Auto Shotgun for use by mechanoids. Rapid-fire and multiple-charge weapons with reduced damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OMC/Mechanoid_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Shotgun</soundInteract>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>OMCDominator</li>
+    </weaponTags>
+	<statBases>
+      <Mass>10.0</Mass>
+	  <MarketValue>2500</MarketValue>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OMC_S_M</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+<!--=============== OTC ====================-->
+  <ThingDef Name="OTCDominatorMultiCannon" ParentName="OERangedBaseNC" Abstract="True">
+	<soundInteract>Interact_ChargeLance</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+      <Mass>10.0</Mass>
+	  <MarketValue>2500</MarketValue>
+	  <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="OTCDominatorMultiCannon">
+    <defName>OTC_Dominator_MultiCannon_Acid</defName>
+    <label>Mech Pulsar(Acid)</label>
+    <description>Reconstructed OTC Multi-Cannon for use by mechanoids. Balanced weapon with Acid charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Acid/Mechanoid_MultiCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCDominator_Acid</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_MC_M_Acid</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="OTCDominatorMultiCannon">
+    <defName>OTC_Dominator_MultiCannon_Cryo</defName>
+    <label>Mech Pulsar(Cryo)</label>
+    <description>Reconstructed OTC Multi-Cannon for use by mechanoids. Balanced weapon with Cryo charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/Mechanoid_MultiCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCDominator_Cryo</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_MC_M_Cryo</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="OTCDominatorMultiCannon">
+    <defName>OTC_Dominator_MultiCannon_Fire</defName>
+    <label>Mech Pulsar(Fire)</label>
+    <description>Reconstructed OTC Multi-Cannon for use by mechanoids. Balanced weapon with Fire charges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Mechanoid_MultiCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCDominator_Fire</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_MC_M_Fire</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="OTCDominatorMultiCannon">
+    <defName>OTC_Dominator_MultiCannon_EMP</defName>
+    <label>Mech Pulsar(EMP)</label>
+    <description>Reconstructed OTC Multi-Cannon for use by mechanoids. Balanced weapon with EMP charges.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/EMP/Mechanoid_MultiCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+      <li>OTCDominator_EMP</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OTC_MC_M_EMP</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_NeedleGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== ODC ====================-->
+  <ThingDef ParentName="OERangedBaseNC">
+    <defName>ODC_Dominator_BladeLauncher</defName>
+    <label>Mech Harvest</label>
+    <description>Reconstructed heavy ODC Blade Launcher for use by mechanoids.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Mechanoid_BladeLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCDominator</li>
+    </weaponTags>
+	<statBases>
+      <Mass>10.0</Mass>
+	  <MarketValue>2500</MarketValue>
+	  <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL_C</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>saw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

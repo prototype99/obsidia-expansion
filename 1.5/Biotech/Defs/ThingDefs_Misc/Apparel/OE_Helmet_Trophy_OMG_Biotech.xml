@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Trophy Helmet ====================-->
+<!--=============== Gasveil ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Gasveil</defName>
+    <label>Mercenary Helmet(Gasveil)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides a built-in module with a tox pack.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Gasveil/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <!-- Unique -->
+	  <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+	  <Flammability>-1.0</Flammability>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Gasveil/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_DeployToxPack</verbClass>
+        <commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <soundCast>GasPack_Deploy</soundCast>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li Class="CompProperties_ReleaseGas">
+        <gasType>ToxGas</gasType>
+        <cellsToFill>45</cellsToFill>
+        <durationSeconds>12.75</durationSeconds>
+        <effecterReleasing>ToxGasReleasing</effecterReleasing>
+      </li>
+      <li Class="CompProperties_AIUSablePack">
+        <compClass>CompToxPack</compClass>
+        <checkInterval>60</checkInterval>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

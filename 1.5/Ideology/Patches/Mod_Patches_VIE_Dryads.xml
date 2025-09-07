@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Ideology Expanded - Dryads</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+<!--=============== Synthesis Dryad ====================-->
+	    <li Class="PatchOperationConditional">
+		  <xpath>/Defs/ThingDef[defName="OE_Dryad_Synthesis"]/comps</xpath>
+		  <nomatch Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OE_Dryad_Synthesis"]</xpath>
+			<value>	  
+			  <comps>
+				<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+				  <requiredCount>3</requiredCount>
+				  <podToBuild>OE_SynthesisAwakeningCocoon</podToBuild>
+				  <gizmoImage>Things/Building/UpgradeDryadSynthesis</gizmoImage>
+				  <gizmoLabel>VDE_Awaken</gizmoLabel>
+				  <gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+				</li>
+			  </comps>
+		    </value>
+		  </nomatch>
+		  <match Class="PatchOperationAdd">
+		    <xpath>/Defs/ThingDef[defName="OE_Dryad_Synthesis"]/comps</xpath>
+			<value>	  
+			  <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
+				<requiredCount>3</requiredCount>
+				<podToBuild>OE_SynthesisAwakeningCocoon</podToBuild>
+				<gizmoImage>Things/Building/UpgradeDryadSynthesis</gizmoImage>
+				<gizmoLabel>VDE_Awaken</gizmoLabel>
+				<gizmoDesc>VDE_AwakenDesc</gizmoDesc>
+			  </li>
+		    </value>
+		  </match>
+	    </li>  
+	    <li Class="PatchOperationAttributeSet">
+		  <xpath>/Defs/ThingDef[defName="OE_AwakenedDryad_Synthesis"]</xpath>
+		  <attribute>Abstract</attribute>
+		  <value>False</value>
+	    </li>
+		<li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Synthesis Awakened Dryad ====================-->
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_AwakenedDryad_Synthesis</defName>
+    <label>awakened synthesis dryad</label>
+    <race>OE_AwakenedDryad_Synthesis</race>
+	<canArriveManhunter>false</canArriveManhunter>
+	<combatPower>40</combatPower>
+	<ecoSystemWeight>1.1</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad/Awakened_Synthesis/DryadAwakenedSynthesis</texPath>
+          <drawSize>2.35</drawSize>
+		  <shadowData>
+			<volume>(0.8, 0.6, 0.6)</volume>
+			<offset>(0,0,-0.3)</offset>
+		  </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad/Awakened_Synthesis/Dessicated_DryadAwakenedSynthesis</texPath>
+          <drawSize>2.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <ThingDef>
+    <defName>OE_SynthesisAwakeningCocoon</defName>
+    <label>synthesis awakening pod</label>
+    <thingClass>ThingWithComps</thingClass>
+	<description>An awakened dryad will emerge from this pod in one day.</description>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<altitudeLayer>Building</altitudeLayer>
+	<tickerType>Normal</tickerType>
+	<graphicData>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Building/UpgradeDryadSynthesis</texPath>
+	</graphicData>
+	<statBases>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <Flammability>1.25</Flammability>
+	</statBases>
+	<fillPercent>0.5</fillPercent>
+	<selectable>true</selectable>
+	<comps>
+	  <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+		<ticksToSpawn>60000</ticksToSpawn>
+		<dryadToSpawn>OE_AwakenedDryad_Synthesis</dryadToSpawn>
+	  </li>
+	</comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

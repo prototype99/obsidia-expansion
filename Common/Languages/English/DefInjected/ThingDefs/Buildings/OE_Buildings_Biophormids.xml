@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Biophormids - Hive ====================-->
+<OE_BiophormidsHive.label>biophormids hive</OE_BiophormidsHive.label>
+<OE_BiophormidsHive.description>A hive of giant insects of the Biophormids geneline. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly.</OE_BiophormidsHive.description>
+
+<!--=============== Biophormids - Artificial Hive ====================-->
+<OE_ArtificialBiophormidsHive.label>artificial biophormids hive</OE_ArtificialBiophormidsHive.label>
+<OE_ArtificialBiophormidsHive.description>An artificially constructed hive of giant insects. It is capable of spawning various Biophormids geneline insectoids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required.</OE_ArtificialBiophormidsHive.description>
+
+<OE_ArtificialBiophormidsHive_Royal.label>artificial royal biophormids hive</OE_ArtificialBiophormidsHive_Royal.label>
+<OE_ArtificialBiophormidsHive_Royal.description>An artificially constructed royal hive of Biophormids geneline insectoids. Unlike standard hives, it exclusively spawns Monarchids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required.</OE_ArtificialBiophormidsHive_Royal.description>
+
+<!--=============== Biophormids - Thumper ====================-->
+<OE_Thumper_Monarchid.label>monarchid thumper</OE_Thumper_Monarchid.label>
+<OE_Thumper_Monarchid.description>A vibration-producing thumper device. When activated, it starts emitting powerful thump pulses, which will attract an insectoid monarchid to attack with its escorts. If you can defeat him, you can collect a special pherocore from his corpse. The thumps destabilise the thumper, so this building can only be used once.</OE_Thumper_Monarchid.description>
+
+<OE_Thumper_Monarchid.comps.0.useLabel>Activate thumper</OE_Thumper_Monarchid.comps.0.useLabel>
+
+</LanguageData>

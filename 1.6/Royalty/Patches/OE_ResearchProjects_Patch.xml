@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Obsidia Expansion - Cross Technologies ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="OEGearCross"]/prerequisites</xpath>
+    <value>
+        <li>OECWeapons</li>
+    </value>
+</Operation>
+
+</Patch>

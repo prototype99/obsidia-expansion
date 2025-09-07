@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Eyes ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticEye</defName>
+    <label>bionic eye</label>
+    <labelNoun>a bionic eye</labelNoun>
+    <description>An installed bionic eye.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEye</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEye</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Bionic/OE_BionicEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.19</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticEye</defName>
+    <label>bionic eye</label>
+    <description>Obsidia bionic eye. It is better than a biological eye in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEye</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Eye</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEye</defName>
+    <label>install bionic eye</label>
+    <description>Install a bionic eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEye</ThingDef>
+      <HediffDef>OE_ProstheticEye</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic eye.</jobString>
+	<uiIconThing>OE_ProstheticEye</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEye</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEye</defName>
+    <label>remove bionic eye</label>
+    <description>Remove a bionic eye.</description>
+    <jobString>Removing bionic eye.</jobString>
+    <removesHediff>OE_ProstheticEye</removesHediff>
+	<uiIconThing>OE_ProstheticEye</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticEye_M</defName>
+    <label>advanced bionic eye</label>
+    <labelNoun>an advanced bionic eye</labelNoun>
+    <description>An installed advanced bionic eye.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEye_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEye_M</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+	<renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Bionic/Adv/OE_BionicEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.19</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticEye_M</defName>
+    <label>advanced bionic eye</label>
+    <description>Obsidian advanced bionic eye. It is much better than a biological eye in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEye_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Eye</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticEye>1</OE_ProstheticEye>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEye_M</defName>
+    <label>install advanced bionic eye</label>
+    <description>Install an advanced bionic eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEye_M</ThingDef>
+      <HediffDef>OE_ProstheticEye_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic eye.</jobString>
+	<uiIconThing>OE_ProstheticEye_M</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEye_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEye_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEye_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEye_M</defName>
+    <label>remove advanced bionic eye</label>
+    <description>Remove an advanced bionic eye.</description>
+    <jobString>Removing advanced bionic eye.</jobString>
+    <removesHediff>OE_ProstheticEye_M</removesHediff>
+	<uiIconThing>OE_ProstheticEye_M</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticEye_CAC</defName>
+    <label>cultist bionic eye</label>
+    <labelNoun>a cultist bionic eye</labelNoun>
+    <description>An installed cultist bionic eye.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEye_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEye_CAC</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.02</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Bionic/CAC/OE_BionicEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.19</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticEye_CAC</defName>
+    <label>cultist bionic eye</label>
+    <description>Obsidia cultist bionic eye. It is much better than a biological eye in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEye_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Eye</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticEye_M>1</OE_ProstheticEye_M>
+	  <OE_CultistKit>1</OE_CultistKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+	  <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEye_CAC</defName>
+    <label>install cultist bionic eye</label>
+    <description>Install a cultist bionic eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEye_CAC</ThingDef>
+      <HediffDef>OE_ProstheticEye_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic eye.</jobString>
+	<uiIconThing>OE_ProstheticEye_CAC</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEye_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEye_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEye_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEye_CAC</defName>
+    <label>remove cultist bionic eye</label>
+    <description>Remove a cultist bionic eye.</description>
+    <jobString>Removing cultist bionic eye.</jobString>
+    <removesHediff>OE_ProstheticEye_CAC</removesHediff>
+	<uiIconThing>OE_ProstheticEye_CAC</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - OES ====================-->
+  <HediffDef ParentName="OESAddBodyParts">
+    <defName>OE_ProstheticEye_OES</defName>
+    <label>heroic bionic eye</label>
+    <labelNoun>a heroic bionic eye</labelNoun>
+    <description>An installed heroic bionic eye.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEye_OES</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEye_OES</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.03</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.03</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.03</hungerRateFactorOffset>
+	  </li>
+	</stages>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Bionic/OES/OE_BionicEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.19</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="OESBodyParts">
+    <defName>OE_ProstheticEye_OES</defName>
+    <label>heroic bionic eye</label>
+    <description>Obsidia heroic bionic eye. It is much better than a biological eye in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEye_OES</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OES/OE_Eye</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticEye_CAC>1</OE_ProstheticEye_CAC>
+	  <OE_HeroicKit>1</OE_HeroicKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+	  <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEye_OES</defName>
+    <label>install heroic bionic eye</label>
+    <description>Install a heroic bionic eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEye_OES</ThingDef>
+      <HediffDef>OE_ProstheticEye_OES</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic eye.</jobString>
+	<uiIconThing>OE_ProstheticEye_OES</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEye_OES</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEye_OES</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEye_OES</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEye_OES</defName>
+    <label>remove heroic bionic eye</label>
+    <description>Remove a heroic bionic eye.</description>
+    <jobString>Removing heroic bionic eye.</jobString>
+    <removesHediff>OE_ProstheticEye_OES</removesHediff>
+	<uiIconThing>OE_ProstheticEye_OES</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Ears ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticEar</defName>
+    <label>bionic ear</label>
+    <labelNoun>a bionic ear</labelNoun>
+    <description>An installed bionic ear.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEar</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <PawnBeauty>1</PawnBeauty>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticEar</defName>
+    <label>bionic ear</label>
+    <description>Obsidia bionic ear. It is better than a biological ear in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEar</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Ear</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEar</defName>
+    <label>install bionic ear</label>
+    <description>Install a bionic ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEar</ThingDef>
+      <HediffDef>OE_ProstheticEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic ear.</jobString>
+	<uiIconThing>OE_ProstheticEar</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEar</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEar</defName>
+    <label>remove bionic ear</label>
+    <description>Remove a bionic ear.</description>
+    <jobString>Removing bionic ear.</jobString>
+    <removesHediff>OE_ProstheticEar</removesHediff>
+	<uiIconThing>OE_ProstheticEar</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticEar_M</defName>
+    <label>advanced bionic ear</label>
+    <labelNoun>an advanced bionic ear</labelNoun>
+    <description>An installed advanced bionic ear.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEar_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEar_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <PawnBeauty>2</PawnBeauty>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticEar_M</defName>
+    <label>advanced bionic ear</label>
+    <description>Obsidian advanced bionic ear. It is much better than a biological ear in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEar_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Ear</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticEar>1</OE_ProstheticEar>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEar_M</defName>
+    <label>install advanced bionic ear</label>
+    <description>Install an advanced bionic ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEar_M</ThingDef>
+      <HediffDef>OE_ProstheticEar_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic ear.</jobString>
+	<uiIconThing>OE_ProstheticEar_M</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEar_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEar_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEar_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEar_M</defName>
+    <label>remove advanced bionic ear</label>
+    <description>Remove an advanced bionic ear.</description>
+    <jobString>Removing advanced bionic ear.</jobString>
+    <removesHediff>OE_ProstheticEar_M</removesHediff>
+	<uiIconThing>OE_ProstheticEar_M</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticEar_CAC</defName>
+    <label>cultist bionic ear</label>
+    <labelNoun>a cultist bionic ear</labelNoun>
+    <description>An installed cultist bionic ear.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEar_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEar_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <PawnBeauty>3</PawnBeauty>
+		  <GlobalLearningFactor>-0.02</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticEar_CAC</defName>
+    <label>cultist bionic ear</label>
+    <description>Obsidia cultist bionic ear. It is much better than a biological ear in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEar_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Ear</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticEar_M>1</OE_ProstheticEar_M>
+	  <OE_CultistKit>1</OE_CultistKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+	  <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEar_CAC</defName>
+    <label>install cultist bionic ear</label>
+    <description>Install a cultist bionic ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEar_CAC</ThingDef>
+      <HediffDef>OE_ProstheticEar_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic ear.</jobString>
+	<uiIconThing>OE_ProstheticEar_CAC</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEar_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEar_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEar_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEar_CAC</defName>
+    <label>remove cultist bionic ear</label>
+    <description>Remove a cultist bionic ear.</description>
+    <jobString>Removing cultist bionic ear.</jobString>
+    <removesHediff>OE_ProstheticEar_CAC</removesHediff>
+	<uiIconThing>OE_ProstheticEar_CAC</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - OES ====================-->
+  <HediffDef ParentName="OESAddBodyParts">
+    <defName>OE_ProstheticEar_OES</defName>
+    <label>heroic bionic ear</label>
+    <labelNoun>a heroic bionic ear</labelNoun>
+    <description>An installed heroic bionic ear.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticEar_OES</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticEar_OES</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <PawnBeauty>5</PawnBeauty>
+		  <GlobalLearningFactor>-0.03</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.03</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.03</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OESBodyParts">
+    <defName>OE_ProstheticEar_OES</defName>
+    <label>heroic bionic ear</label>
+    <description>Obsidia heroic bionic ear. It is much better than a biological ear in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticEar_OES</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OES/OE_Ear</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticEar_CAC>1</OE_ProstheticEar_CAC>
+	  <OE_HeroicKit>1</OE_HeroicKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+	  <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticEar_OES</defName>
+    <label>install heroic bionic ear</label>
+    <description>Install a heroic bionic ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticEar_OES</ThingDef>
+      <HediffDef>OE_ProstheticEar_OES</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic ear.</jobString>
+	<uiIconThing>OE_ProstheticEar_OES</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticEar_OES</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticEar_OES</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticEar_OES</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticEar_OES</defName>
+    <label>remove heroic bionic ear</label>
+    <description>Remove a heroic bionic ear.</description>
+    <jobString>Removing heroic bionic ear.</jobString>
+    <removesHediff>OE_ProstheticEar_OES</removesHediff>
+	<uiIconThing>OE_ProstheticEar_OES</uiIconThing>
+  </RecipeDef>
+
+<!--=============== Jaw ====================-->
+<!--=============== Prosthetic - Normal ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticJaw</defName>
+    <label>bionic jaw</label>
+    <labelNoun>a bionic jaw</labelNoun>
+    <description>An installed bionic jaw.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticJaw</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticJaw</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyParts">
+    <defName>OE_ProstheticJaw</defName>
+    <label>bionic jaw</label>
+    <description>Obsidia bionic jaw. It is better than a biological jaw in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a small strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticJaw</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OE_Jaw</texPath>
+    </graphicData>
+    <costList>
+      <OE_PlatinumSynthweave>35</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>20</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>5</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>3.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticJaw</defName>
+    <label>install bionic jaw</label>
+    <description>Install a bionic jaw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticJaw</ThingDef>
+      <HediffDef>OE_ProstheticJaw</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic jaw.</jobString>
+	<uiIconThing>OE_ProstheticJaw</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticJaw</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticJaw</defName>
+    <label>remove bionic jaw</label>
+    <description>Remove a bionic jaw.</description>
+    <jobString>Removing bionic jaw.</jobString>
+    <removesHediff>OE_ProstheticJaw</removesHediff>
+	<uiIconThing>OE_ProstheticJaw</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - Mod ====================-->
+  <HediffDef ParentName="OEAddBodyParts">
+    <defName>OE_ProstheticJaw_M</defName>
+    <label>advanced bionic jaw</label>
+    <labelNoun>an advanced bionic jaw</labelNoun>
+    <description>An installed advanced bionic jaw.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticJaw_M</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticJaw_M</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.75</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsM">
+    <defName>OE_ProstheticJaw_M</defName>
+    <label>advanced bionic jaw</label>
+    <description>Obsidian advanced bionic jaw. It is much better than a biological jaw in almost every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticJaw_M</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/Adv/OE_Jaw</texPath>
+    </graphicData>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+    </techHediffsTags>
+	<costList>
+      <OE_ProstheticJaw>1</OE_ProstheticJaw>
+	  <OE_PlatinumSynthweave>10</OE_PlatinumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>25</OE_PlatinumSynthweave>
+	  <OE_Obsidian>10</OE_Obsidian>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+      <Mass>3.0</Mass>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>OEBionicsAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticJaw_M</defName>
+    <label>install advanced bionic jaw</label>
+    <description>Install an advanced bionic jaw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticJaw_M</ThingDef>
+      <HediffDef>OE_ProstheticJaw_M</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic jaw.</jobString>
+	<uiIconThing>OE_ProstheticJaw_M</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticJaw_M</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticJaw_M</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticJaw_M</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticJaw_M</defName>
+    <label>remove advanced bionic jaw</label>
+    <description>Remove an advanced bionic jaw.</description>
+    <jobString>Removing advanced bionic jaw.</jobString>
+    <removesHediff>OE_ProstheticJaw_M</removesHediff>
+	<uiIconThing>OE_ProstheticJaw_M</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - CAC ====================-->
+  <HediffDef ParentName="CACAddBodyParts">
+    <defName>OE_ProstheticJaw_CAC</defName>
+    <label>cultist bionic jaw</label>
+    <labelNoun>a cultist bionic jaw</labelNoun>
+    <description>An installed cultist bionic jaw.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticJaw_CAC</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticJaw_CAC</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.02</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.02</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CACBodyParts">
+    <defName>OE_ProstheticJaw_CAC</defName>
+    <label>cultist bionic jaw</label>
+    <description>Obsidia cultist bionic jaw. It is much better than a biological jaw in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticJaw_CAC</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/CAC/OE_Jaw</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticJaw_M>1</OE_ProstheticJaw_M>
+	  <OE_CultistKit>1</OE_CultistKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+	  <Mass>3.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticJaw_CAC</defName>
+    <label>install cultist bionic jaw</label>
+    <description>Install a cultist bionic jaw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticJaw_CAC</ThingDef>
+      <HediffDef>OE_ProstheticJaw_CAC</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic jaw.</jobString>
+	<uiIconThing>OE_ProstheticJaw_CAC</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticJaw_CAC</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticJaw_CAC</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticJaw_CAC</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticJaw_CAC</defName>
+    <label>remove cultist bionic jaw</label>
+    <description>Remove a cultist bionic jaw.</description>
+    <jobString>Removing cultist bionic jaw.</jobString>
+    <removesHediff>OE_ProstheticJaw_CAC</removesHediff>
+	<uiIconThing>OE_ProstheticJaw_CAC</uiIconThing>
+  </RecipeDef>
+<!--=============== Prosthetic - OES ====================-->
+  <HediffDef ParentName="OESAddBodyParts">
+    <defName>OE_ProstheticJaw_OES</defName>
+    <label>heroic bionic jaw</label>
+    <labelNoun>a heroic bionic jaw</labelNoun>
+    <description>An installed heroic bionic jaw.</description>
+    <descriptionHyperlinks><ThingDef>OE_ProstheticJaw_OES</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_ProstheticJaw_OES</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+	  <li>
+	    <statOffsets>
+	      <GlobalLearningFactor>-0.03</GlobalLearningFactor>
+		  <RestFallRateFactor MayRequire="Ludeon.Rimworld.Biotech">+0.03</RestFallRateFactor>
+	    </statOffsets>
+		<hungerRateFactorOffset>0.03</hungerRateFactorOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OESBodyParts">
+    <defName>OE_ProstheticJaw_OES</defName>
+    <label>heroic bionic jaw</label>
+    <description>Obsidia heroic bionic jaw. It is much better than a biological jaw in every way. Even if it is harmed, it repairs itself over time. The use of this prosthesis puts a perceptible strain on the body.</description>
+    <descriptionHyperlinks><RecipeDef>OE_InstallProstheticJaw_OES</RecipeDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Prosthetic/OES/OE_Jaw</texPath>
+    </graphicData>
+	<costList>
+      <OE_ProstheticJaw_CAC>1</OE_ProstheticJaw_CAC>
+	  <OE_HeroicKit>1</OE_HeroicKit>
+      <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_PlatinumSynthweave>30</OE_PlatinumSynthweave>
+	  <OE_EmpyriumSynthweave>5</OE_EmpyriumSynthweave>
+	  <OE_OrichalcumSynthweave>5</OE_OrichalcumSynthweave>
+      <OE_Syntherius>10</OE_Syntherius>
+	</butcherProducts>
+    <statBases>
+	  <Mass>3.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="OESurgeryInstallBodyPartBase">
+    <defName>OE_InstallProstheticJaw_OES</defName>
+    <label>install heroic bionic jaw</label>
+    <description>Install a heroic bionic jaw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>OE_ProstheticJaw_OES</ThingDef>
+      <HediffDef>OE_ProstheticJaw_OES</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic jaw.</jobString>
+	<uiIconThing>OE_ProstheticJaw_OES</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_ProstheticJaw_OES</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_ProstheticJaw_OES</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OE_ProstheticJaw_OES</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>OE_RemoveProstheticJaw_OES</defName>
+    <label>remove heroic bionic jaw</label>
+    <description>Remove a heroic bionic jaw.</description>
+    <jobString>Removing heroic bionic jaw.</jobString>
+    <removesHediff>OE_ProstheticJaw_OES</removesHediff>
+	<uiIconThing>OE_ProstheticJaw_OES</uiIconThing>
+  </RecipeDef>
+
+</Defs>

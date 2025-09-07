@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Fallen Legion ====================-->
+  <ThingDef ParentName="SuperHeavyMechanoid">
+    <defName>OE_Mech_FallenLegion</defName>
+    <label>Fallen Legion</label>
+    <description>An ultra-tech, ultra-armored, fortress-sized mechanoid with a built-in mech gestator. Fed with appropriate resources, the Fallen Legion can form medium Fallen Legion Guards combat mechs. Fallen Legion is a unknown development model based on the Dominator. Designed for suppression of enemies and total control of the battlefield.\n\nUses specially designed gun-spear Fallen Legion Spear and mounted with 4 Legion Beam Turret.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OE_Mech_LegionGuard</ThingDef>
+	  <ThingDef>OE_Mech_LegionDrone</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>5000</MarketValue>
+      <MoveSpeed>1.5</MoveSpeed>
+      <ArmorRating_Blunt>2.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.05</ArmorRating_Sharp>
+	  <ArmorRating_Heat>2.05</ArmorRating_Heat>
+      <EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>4.0</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+	  <EMPResistance>1.0</EMPResistance>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>55.0</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>55.0</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>60</power>
+        <cooldownTime>4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>6.5</baseBodySize>
+      <baseHealthScale>12.0</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <soundAmbience>Pawn_Mech_Apocriton_Ambience</soundAmbience>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>35</OE_Empyrium>
+      <OE_Orichalcum>35</OE_Orichalcum>
+	  <OE_Syntherius>15</OE_Syntherius>
+	  <OE_SyntheriusOfSin>10</OE_SyntheriusOfSin>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>2.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.74, 0.61, 0.91)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>2000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+		<interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+        <interceptOutgoingProjectiles>true</interceptOutgoingProjectiles>
+        <chargeDurationTicks>3600</chargeDurationTicks>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1800</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>OE_Mech_LegionGuard</spawnPawnKind>
+        <fixedIngredient>OE_SyntheriusOfSin</fixedIngredient>
+        <costPerPawn>1</costPerPawn>
+        <startingIngredientCount>35</startingIngredientCount>
+        <maxIngredientCount>50</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>OE_LegionBeamTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>true</autoAttack>
+        <renderNodeProperties>
+          <li>
+            <nodeClass>PawnRenderNode_TurretGun</nodeClass>
+            <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+            <overrideMeshSize>(1, 1)</overrideMeshSize>
+            <parentTagDef>Body</parentTagDef>
+            <baseLayer>20</baseLayer>
+            <pawnType>Any</pawnType>
+            <drawData>
+              <dataWest>
+                <rotationOffset>180</rotationOffset>
+              </dataWest>
+            </drawData>
+          </li>
+        </renderNodeProperties>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>OE_LegionBeamTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>true</autoAttack>
+        <renderNodeProperties>
+          <li>
+            <nodeClass>PawnRenderNode_TurretGun</nodeClass>
+            <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+            <overrideMeshSize>(1, 1)</overrideMeshSize>
+            <parentTagDef>Body</parentTagDef>
+            <baseLayer>20</baseLayer>
+            <pawnType>Any</pawnType>
+            <drawData>
+              <dataWest>
+                <rotationOffset>180</rotationOffset>
+              </dataWest>
+            </drawData>
+          </li>
+        </renderNodeProperties>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>OE_LegionBeamTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>true</autoAttack>
+        <renderNodeProperties>
+          <li>
+            <nodeClass>PawnRenderNode_TurretGun</nodeClass>
+            <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+            <overrideMeshSize>(1, 1)</overrideMeshSize>
+            <parentTagDef>Body</parentTagDef>
+            <baseLayer>20</baseLayer>
+            <pawnType>Any</pawnType>
+            <drawData>
+              <dataWest>
+                <rotationOffset>180</rotationOffset>
+              </dataWest>
+            </drawData>
+          </li>
+        </renderNodeProperties>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>OE_LegionBeamTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>true</autoAttack>
+        <renderNodeProperties>
+          <li>
+            <nodeClass>PawnRenderNode_TurretGun</nodeClass>
+            <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+            <overrideMeshSize>(1, 1)</overrideMeshSize>
+            <parentTagDef>Body</parentTagDef>
+            <baseLayer>20</baseLayer>
+            <pawnType>Any</pawnType>
+            <drawData>
+              <dataWest>
+                <rotationOffset>180</rotationOffset>
+              </dataWest>
+            </drawData>
+          </li>
+        </renderNodeProperties>
+      </li>
+    </comps>
+  </ThingDef>
+    
+  <PawnKindDef Name="OEKindBaseMechFallenLegion" ParentName="HeavyMechanoidKind">
+    <defName>OE_Mech_FallenLegion</defName>
+    <label>Fallen Legion</label>
+	<race>OE_Mech_FallenLegion</race>
+	<combatPower>700</combatPower>
+	<maxPerGroup>5</maxPerGroup>
+	<isBoss>true</isBoss>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li> 
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/FallenLegion/FallenLegion</texPath>
+          <maskPath>Things/Pawn/Mechanoid/FallenLegion/AllegianceOverlays/Mech_FallenLegion</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5.0</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OESLegionSpear</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<skipResistant>true</skipResistant>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OEKindBaseMechFallenLegion">
+    <defName>OES_Mech_NewFallenLegion</defName>
+    <label>Fallen Legion</label>
+    <race>OE_Mech_FallenLegion</race>
+	<defaultFactionType>ObsidiaEmpireSins</defaultFactionType>
+	<allowInMechClusters>false</allowInMechClusters>
+	<minGenerationAge>1</minGenerationAge>
+	<maxGenerationAge>98</maxGenerationAge>
+  </PawnKindDef>
+
+</Defs>

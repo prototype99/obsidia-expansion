@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC - Pistol ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACPistolBase">
+    <defName>CAC_Pistol_P</defName>
+    <label>Persona Silentsong</label>
+    <description>Persona Pistol used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Pistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>2725</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_Pistol>1</CAC_Pistol>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - Shotgun Sidearm ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACShotgunSBase">
+    <defName>CAC_ShotgunS_P</defName>
+    <label>Persona Heartstriker</label>
+    <description>Persona Shotgun Sidearm used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/ShotgunSidearm_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3475</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_ShotgunS>1</CAC_ShotgunS>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - SMG ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACSMGBase">
+    <defName>CAC_SMG_P</defName>
+    <label>Persona Echo</label>
+    <description>Persona SMG used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/SMG_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3575</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_SMG>1</CAC_SMG>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - Shotgun ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACShotgunBase">
+    <defName>CAC_Shotgun_P</defName>
+    <label>Persona Grieving</label>
+    <description>Persona Shotgun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3800</MarketValue>  
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_Shotgun>1</CAC_Shotgun>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - SniperRifle ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACSniperRifleBase">
+    <defName>CAC_SniperRifle_P</defName>
+    <label>Persona Widowmaker</label>
+    <description>Persona Sniper Rifle used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/SniperRifle_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>7100</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_SniperRifle>1</CAC_SniperRifle>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - Minigun ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACMinigunBase">
+    <defName>CAC_Minigun_P</defName>
+    <label>Persona Blackout</label>
+    <description>Persona Minigun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Minigun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>5925</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_Minigun>1</CAC_Minigun>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

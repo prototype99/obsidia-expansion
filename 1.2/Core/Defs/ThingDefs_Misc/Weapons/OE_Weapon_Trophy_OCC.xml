@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Drillspear ====================-->
+  <ThingDef Name="OCCTrophyDrillspearBase" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+      <Mass>2.5</Mass>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>drill</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCTrophyDrillspearBase">
+    <defName>OCC_Trophy_Drillspear</defName>
+    <label>Balor</label>
+    <description>Spear-drill, a replica of the personal weapon of the great siegemaster Balor.\n\nThis is a rare trophy weapon.\n\nFeature: designed to destroy structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_DrillSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>OCCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Railgun ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OCCTrophyRifleBase" ParentName="OERangedBaseNC" Abstract="True">
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<statBases>
+	  <Mass>5.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OCC_Trophy_RG</defaultProjectile>
+		<forcedMissRadius>0.3</forcedMissRadius>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OCC_Trophy_RG</defName>
+    <label>Cronus charge</label>
+    <graphicData>
+      <texPath>Things/Projectile/OCC_Trophy_Charge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <explosionRadius>3.9</explosionRadius>
+      <speed>175</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OCCTrophyRifleBase">
+    <defName>OCC_Trophy_Railgun</defName>
+    <label>Cronus</label>
+    <description>Sample weapon of new experimental railgun.\n\nThis is a rare trophy weapon.\n\nFeature: ultra-fast explosive projectiles.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Trophy_Railgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OCCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2550</MarketValue>
+    </statBases>
+  </ThingDef>
+
+</Defs>

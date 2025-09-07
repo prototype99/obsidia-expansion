@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Quest - Weird Bandit Camp ====================-->
+<!--=============== NameRules ====================-->
+<OE_Quest_WeirdBanditCamp.questNameRules.rulesStrings>
+  <li>questName->[bandit] [camp]</li>
+  <li>questName->[asker_nameDef] и [camp]</li>
+  <li>questName->Странное открытие</li>
+  <li>questName->Искоренить угрозу</li>
+  <!-- Pieces -->
+  <li>camp->лагерь</li>
+  <li>camp->аванпост</li>
+  <li>camp->логово</li>
+  <li>camp->застава</li>
+  <li>bandit->бандитов</li>
+  <li>bandit->рейдеров</li>
+  <li>bandit->разбойников</li>
+  <li>bandit->мародеров</li>
+  <li>bandit->грабителей</li>
+</OE_Quest_WeirdBanditCamp.questNameRules.rulesStrings>
+
+<!--=============== DescriptionRules ====================-->
+<OE_Quest_WeirdBanditCamp.questDescriptionRules.rulesStrings>
+  <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] из [asker_faction_name], сообщает, что их разведка активности Культа Алой Арахны обнаружила нечто необычное. Их разведчики пошли по подозрительным следам, которые привели к странному лагерю неподалеку от нашего местоположения, контролируемого [siteFaction_name]\n\n[asker_nameDef] просит нашей помощи в ликвидации лагеря, уничтожении всех врагов и защитных сооружений, чтобы остановить все планы Культа Алой Арахны. [asker_label] говорит, что [sitePart0_description].</li>
+  <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] из [asker_faction_name], делится тревожными новостями. Их разведка передвижений Культа Алой Арахны обнаружила теневой лагерь, спрятанный неподалеку. Следы, по которым они шли, привели прямо к [siteFaction_name], который, похоже, замышляет что-то зловещее.\n\n[asker_label] призывает нас нанести удар первыми, уничтожив лагерь до того, как в нем разгорится тьма. [asker_label] говорит, что [sitePart0_description].</li>
+</OE_Quest_WeirdBanditCamp.questDescriptionRules.rulesStrings>
+
+<!--=============== Roots ====================-->
+<!--=============== Raid ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterLabel.value.slateRef>{BASELABEL}: It’s a Trap!</OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterLabel.value.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterText.value.slateRef>{BASETEXT}\n\nОтряд культистов перехватил наши сообщения, получил координаты нашего лагеря и теперь направляется к нашему поселению.</OE_Quest_WeirdBanditCamp.root.nodes.Delay.node.parms.customLetterText.value.slateRef>
+<!--=============== Bandit camp moved ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Время задания истекло: [resolvedQuestName]</OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Бандиты свернули лагерь и отправились в другое место. Время, отведённое для задания [resolvedQuestName], истекло.</OE_Quest_WeirdBanditCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+<!--=============== Leave, the map ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>Задание провалено: «[resolvedQuestName]»</OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>Поняв, что их местонахождение известно, бандиты свернули лагерь и отправились в другое место. Задание «[resolvedQuestName]» окончено.</OE_Quest_WeirdBanditCamp.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>
+<!--=============== Complete ====================-->
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterLabel.slateRef>Оплата прибыла</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterLabel.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterText.slateRef>Вы уничтожили бандитский лагерь!\n\nПрибыла оплата от фракции [asker_faction_name].</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterText.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>[asker_faction_royalFavorLabel]</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>
+<OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>Эти поселенцы приняли участие в успешном завершении задания [resolvedQuestName]. [asker_definite] спрашивает, кому из них за свою службу причитается [royalFavorReward_amount] ед. {lookup: [asker_faction_royalFavorLabel]; Case; 1}.</OE_Quest_WeirdBanditCamp.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>
+
+</LanguageData>

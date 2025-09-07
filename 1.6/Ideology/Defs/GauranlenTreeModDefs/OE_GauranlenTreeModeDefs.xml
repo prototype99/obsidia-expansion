@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Synthesis Dryad ====================-->
+  <GauranlenTreeModeDef>
+    <defName>OE_Synthesis</defName>
+    <label>synthesis</label>
+    <description>An insect-like caste of dryad which specializes in syntherius production. Together with its crystal growing from the body, this dryad can generate a syntherius on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+    <drawPosition>(2.499, 0)</drawPosition>
+    <pawnKindDef>OE_Dryad_Synthesis</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>OE_Dryad_Synthesis</ThingDef>
+      <ThingDef>OE_Syntherius</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+
+</Defs>

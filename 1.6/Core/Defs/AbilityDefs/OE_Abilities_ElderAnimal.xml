@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Elder Powers Core ====================-->
+  <AbilityGroupDef>
+    <defName>OEElderPower</defName>
+    <cooldownTicks>60000</cooldownTicks>
+  </AbilityGroupDef>
+
+  <AbilityDef Name="OEBaseElderPowersAbilityD" Abstract="True">
+    <groupDef>OEElderPower</groupDef>
+	<iconPath>UI/Abilities/OE_ElderPower</iconPath>
+	<hostile>false</hostile>
+	<aiCanUse>true</aiCanUse>
+	<ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>False</drawAimPie>
+	  <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+	  <range>-1</range>
+	  <targetable>false</targetable>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+		 <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+<!--=============== Elder Direwolf Powers ====================-->
+  <AbilityDef ParentName="OEBaseElderPowersAbilityD">
+    <defName>OE_ElderPower_Direwolf</defName>
+    <label>elder direwolf power</label>
+    <description>Unleash the power of the elder direwolf, empowering your strikes and lending supernatural speed to your movements.</description>
+    <comps>
+	   <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_ElderPower_Direwolf</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_ElderPower_Direwolf</defName>
+    <label>elder direwolf power</label>
+    <description>This creature has awakened its elder powers.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.298, 0.345, 0.333)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_ElderPower_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statFactors>
+		  <MeleeDamageFactor>1.25</MeleeDamageFactor>
+		</statFactors>
+		<statOffsets>
+		  <MoveSpeed>0.35</MoveSpeed>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Elder Raptor Powers ====================-->
+  <AbilityDef ParentName="OEBaseElderPowersAbilityD">
+    <defName>OE_ElderPower_Raptor</defName>
+    <label>elder raptor power</label>
+    <description>Unleash the power of the elder raptor, gaining deadly precision, blinding speed, and brutal efficiency in close combat.</description>
+    <comps>
+	   <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_ElderPower_Raptor</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_ElderPower_Raptor</defName>
+    <label>elder raptor power</label>
+    <description>This creature has awakened its elder powers.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.298, 0.345, 0.333)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_ElderPower_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statFactors>
+		  <MeleeDamageFactor>1.25</MeleeDamageFactor>
+		</statFactors>
+		<statOffsets>
+		  <MeleeHitChance>4</MeleeHitChance>
+		  <MeleeDodgeChance>12</MeleeDodgeChance>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Elder Ogren Powers ====================-->
+  <AbilityDef ParentName="OEBaseElderPowersAbilityD">
+    <defName>OE_ElderPower_Ogren</defName>
+    <label>elder ogren power</label>
+    <description>Unleash the power of the elder ogren, empowering each blow and hardening flesh like stone.</description>
+    <comps>
+	   <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_ElderPower_Ogren</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_ElderPower_Ogren</defName>
+    <label>elder ogren power</label>
+    <description>This creature has awakened its elder powers.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.298, 0.345, 0.333)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_ElderPower_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statFactors>
+		  <MeleeDamageFactor>1.25</MeleeDamageFactor>
+		</statFactors>
+		<statOffsets>
+		  <IncomingDamageFactor>-0.50</IncomingDamageFactor>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Elder Tionant Powers ====================-->
+  <AbilityDef ParentName="OEBaseElderPowersAbilityD">
+    <defName>OE_ElderPower_Tionant</defName>
+    <label>elder tionant power</label>
+    <description>Unleash the power of the elder tionant, amplifying your strength and accelerating the mending of wounds.</description>
+    <comps>
+	   <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_ElderPower_Tionant</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_ElderPower_Tionant</defName>
+    <label>elder tionant power</label>
+    <description>This creature has awakened its elder powers.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.298, 0.345, 0.333)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_ElderPower_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statFactors>
+		  <MeleeDamageFactor>1.25</MeleeDamageFactor>
+		  <InjuryHealingFactor>8</InjuryHealingFactor>
+		</statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== Elder Powers - Visual Effect ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_ElderPower_Effect</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.35</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/ElderPower/OE_ElderPower_Effect</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>6</_NumFrames>
+        <_FramesPerSec>8</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(2.0, 2.0)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>OE_ElderPower_Effect</defName>
+    <children>
+    <li>
+	  <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+	  <moteDef>Mote_OE_ElderPower_Effect</moteDef>
+	  <positionOffset>(0, 0, 0.60)</positionOffset>
+	  <burstCount>1~1</burstCount>
+	  <rotation>0</rotation>
+	  <ticksBetweenMotes>60</ticksBetweenMotes>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+	  <rotateTowardsTargetCenter>false</rotateTowardsTargetCenter>
+	</li>
+    </children>
+  </EffecterDef>
+
+<!--=============== Elder Provoke ====================-->
+  <AbilityDef>
+    <defName>OE_ElderProvoke</defName>
+    <label>elder provoke</label>
+    <description>A thunderous roar compels nearby creatures to turn their focus toward the source, drawn by an overwhelming, primal force.</description>
+    <iconPath>UI/Abilities/OE_ElderProvoke</iconPath>
+    <cooldownTicksRange>30000</cooldownTicksRange>
+	<aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<statBases>
+      <Ability_EffectRadius>5.9</Ability_EffectRadius>
+	  <Ability_Duration>10</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <targetParams>
+        <canTargetAnimals>True</canTargetAnimals>
+        <neverTargetIncapacitated>True</neverTargetIncapacitated>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityForceJob">
+        <compClass>CompAbilityEffect_ForceJob</compClass>
+        <jobDef>GotoMindControlled</jobDef>
+        <destination>Caster</destination>
+        <psychic>False</psychic>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== Elder Jump ====================-->
+  <AbilityDef>
+    <defName>OE_ElderJump</defName>
+    <label>elder jump</label>
+    <description>Jumps towards its target.</description>
+    <iconPath>UI/Abilities/OE_ElderJump</iconPath>
+    <cooldownTicksRange>5000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+	  <violent>true</violent>
+      <range>19.9</range>
+      <warmupTime>0.25</warmupTime>
+	  <requireLineOfSight>true</requireLineOfSight>
+	  <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+	  <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>True</canTargetAnimals>
+		<canTargetItems>False</canTargetItems>
+        <canTargetPawns>True</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+</Defs>

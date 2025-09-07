@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Alcrexin ====================-->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>OE_Alcrexin</defName>
+    <label>alcrexin</label>
+    <description>A specialized combat stimpack with 3 stages of effect (the effect weakens over time), intended for use by mechanitors. Obsidia technology, a stimpack can be addictive and has unpleasant side effects.</description>
+    <descriptionHyperlinks>
+      <HediffDef>OE_AlcrexinHigh</HediffDef>
+	  <HediffDef>OE_AlcrexinAftereffect</HediffDef>
+	  <HediffDef>OE_AlcrexinAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Battle/Alcrexin</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>75</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+	<tradeTags>
+      <li>OEDrugExotic</li>
+    </tradeTags>
+    <ingestible>
+      <joyKind>Chemical</joyKind>
+      <joy>0.50</joy>
+	  <drugCategory>Hard</drugCategory>
+	  <foodType>Processed, Fluid</foodType>
+	  <baseIngestTicks>80</baseIngestTicks>
+	  <ingestSound>Ingest_Inject</ingestSound>
+	  <ingestEffect>Smoke_Joint</ingestEffect>
+	  <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.27,0,0.08)</offset>
+          <behind>true</behind>
+        </northDefault>
+        <east>
+          <offset>(0.45,0,0.08)</offset>
+        </east>
+        <south>
+          <offset>(0.27,0,0.08)</offset>
+        </south>
+        <west>
+          <offset>(-0.50,0,0.08)</offset>
+          <flip>true</flip>
+        </west>
+      </ingestHoldOffsetStanding>
+	  <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>OE_AlcrexinHigh</hediffDef>
+          <severity>1</severity>
+		  <toleranceChemical>OE_Alcrexin</toleranceChemical>
+        </li>
+		<li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+		  <offset>1</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>OESynth</researchPrerequisite>
+	  <recipeUsers>
+        <li>OE_SynthesisPrinter</li>
+      </recipeUsers>
+	  <skillRequirements>
+		<Medicine>8</Medicine>
+		<Intellectual>4</Intellectual>
+		<Crafting>4</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+	  <OE_Syntherius>1</OE_Syntherius>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_Drug">
+        <chemical>OE_Alcrexin</chemical>
+		<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <addictiveness>0.15</addictiveness>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>1677</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AlcrexinHigh</defName>
+    <label>alcrexin boosted</label>
+    <description>Alcrexin in the bloodstream. Boosts mechanitors stats. Effect weakens over time.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+		  <minSeverity>0.0</minSeverity>
+		  <label>side effect kicking in</label>
+		  <hediffGivers>
+		    <li Class="HediffGiver_Random">
+              <hediff>OE_AlcrexinAftereffect</hediff>
+              <mtbDays>0.0001</mtbDays>
+            </li>
+		  </hediffGivers>
+        </li>
+		<li>
+		  <minSeverity>0.01</minSeverity>
+		  <label>first stage</label>
+		  <painFactor>0.05</painFactor>
+		  <capMods>
+			<li>
+			  <capacity>Moving</capacity>
+              <offset>0.05</offset>
+			</li>
+		  </capMods>
+		  <statOffsets>
+			<MechBandwidth>2</MechBandwidth>
+			<WorkSpeedGlobalOffsetMech>0.10</WorkSpeedGlobalOffsetMech>
+			<MechFormingSpeed>0.25</MechFormingSpeed>
+			<MechRepairSpeed>0.25</MechRepairSpeed>
+		  </statOffsets>
+        </li>
+		<li>
+		  <minSeverity>0.3</minSeverity>
+		  <label>second stage</label>
+		  <painFactor>0.10</painFactor>
+		  <capMods>
+			<li>
+			  <capacity>Moving</capacity>
+              <offset>0.10</offset>
+			</li>
+		  </capMods>
+		  <statOffsets>
+			<MechBandwidth>4</MechBandwidth>
+			<WorkSpeedGlobalOffsetMech>0.25</WorkSpeedGlobalOffsetMech>
+			<MechRemoteShieldEnergy>75</MechRemoteShieldEnergy>
+			<MechFormingSpeed>0.5</MechFormingSpeed>
+			<MechRepairSpeed>0.5</MechRepairSpeed>
+		  </statOffsets>
+        </li>
+		<li>
+		  <minSeverity>0.6</minSeverity>
+		  <label>third stage</label>
+		  <painFactor>0.15</painFactor>
+		  <capMods>
+			<li>
+			  <capacity>Moving</capacity>
+              <offset>0.15</offset>
+			</li>
+		  </capMods>
+		  <statOffsets>
+			<MechBandwidth>6</MechBandwidth>
+			<WorkSpeedGlobalOffsetMech>0.40</WorkSpeedGlobalOffsetMech>
+			<MechRemoteShieldEnergy>150</MechRemoteShieldEnergy>
+			<MechFormingSpeed>0.75</MechFormingSpeed>
+			<MechRepairSpeed>0.75</MechRepairSpeed>
+		  </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>OE_Alcrexin</defName>
+    <label>alcrexin</label>
+    <addictionHediff>OE_AlcrexinAddiction</addictionHediff>
+    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>OE_Chemical_Alcrexin</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>alcrexin addiction</label>
+    <description>Because of an alcrexin addiction, this person needs to regularly consume alcrexin to avoid withdrawal symptoms.</description>
+    <listPriority>21</listPriority>
+  </NeedDef>
+
+  <HediffDef>
+    <defName>OE_AlcrexinAftereffect</defName>
+    <label>alcrexin side effect</label>
+    <description>Alcrexin side effect. Affect about 12 hours.</description>
+    <hediffClass>Hediff_High</hediffClass>
+	<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+	<scenarioCanAdd>true</scenarioCanAdd>
+	<makesSickThought>true</makesSickThought>
+	<isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>21000~45000</disappearsAfterTicks>
+      </li>
+    </comps>
+      <stages>
+        <li>
+		  <vomitMtbDays>0.5</vomitMtbDays>
+		  <restFallFactor>1.5</restFallFactor>
+		  <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+		  <painFactor>1.5</painFactor>
+		  <lifeThreatening>true</lifeThreatening>
+		  <hediffGivers>
+		    <li Class="HediffGiver_RandomDrugEffect">
+			  <hediff>Asthma</hediff>
+              <severityToMtbDaysCurve>
+			    <points>
+                  <li>(0.45, 99999)</li>
+                  <li>(0.5, 180)</li>
+                  <li>(1, 135)</li>
+                </points>
+              </severityToMtbDaysCurve>
+              <partsToAffect>
+                <li>Lung</li>
+              </partsToAffect>
+			  <countToAffect>2</countToAffect>
+			</li>
+		  </hediffGivers>
+		  <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.15</offset>
+          </li>
+		  <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+		<statOffsets>
+		  <MechBandwidth>-2</MechBandwidth>
+		  <WorkSpeedGlobalOffsetMech>-0.40</WorkSpeedGlobalOffsetMech>
+		  <MechFormingSpeed>-0.40</MechFormingSpeed>
+		  <MechRepairSpeed>-0.40</MechRepairSpeed>
+		</statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>OE_AlcrexinAddiction</defName>
+    <label>alcrexin addiction</label>
+    <description>Because of an alcrexin addiction, this person needs to regularly consume alcrexin to avoid withdrawal symptoms.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+	<causesNeed>OE_Chemical_Alcrexin</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>withdrawal</label>
+		  <painFactor>3</painFactor>
+		  <restFallFactorOffset>0.5</restFallFactorOffset>
+		  <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+		  <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+		  <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+		<statOffsets>
+		  <MechBandwidth>-5</MechBandwidth>
+		  <WorkSpeedGlobalOffsetMech>-0.75</WorkSpeedGlobalOffsetMech>
+		  <MechFormingSpeed>-0.75</MechFormingSpeed>
+		  <MechRepairSpeed>-0.75</MechRepairSpeed>
+		</statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>OE_AlcrexinWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OE_AlcrexinAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+	  <li>
+        <label>alcrexin withdrawal</label>
+        <description>I feel my weakness. I never thought it was so hard without stimpacks.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OEC - Obsidia Exalted Corpus ====================-->
+	<ResearchProjectDef>
+		<defName>OECArmor</defName>
+		<label>OEC - Regular Armor</label>
+		<description>Craft regular Obsidia Exalted Corpus hunters light power armor.</description>
+		<baseCost>15000</baseCost>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OEConstruction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>OECWeapons</defName>
+		<label>OEC - Regular Weapons</label>
+		<description>Craft regular Obsidia Exalted Corpus hunters psy weapons.</description>
+		<baseCost>15000</baseCost>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>OECArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>OECGearMod</defName>
+		<label>OEC - Exalted Equipment</label>
+		<description>Exaltation Obsidia Exalted Corpus inquisitors equipment.</description>
+		<baseCost>25000</baseCost>
+		<tab>ObsidiaExpansion</tab>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>OEGearMod</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>2</techprintCommonality>
+		<techprintMarketValue>1500</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>ObsidiaEmpire</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>	
+
+</Defs>

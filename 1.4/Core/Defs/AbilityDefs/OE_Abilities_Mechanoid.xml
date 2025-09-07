@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Dominator ====================-->
+  <AbilityDef>
+    <defName>OE_MechRedline</defName>
+    <label>redline</label>
+    <description>Redline mode grant the Dominator an ability to increased combat potential and movespeed. Warning! It takes time to recover after use.</description>
+    <iconPath>UI/Abilities/OE_MechRedline</iconPath>
+	<cooldownTicksRange>60000</cooldownTicksRange>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>False</drawAimPie>
+	  <range>-1</range>
+      <warmupTime>0.1</warmupTime>
+	  <targetable>false</targetable>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+	    <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+    </verbProperties>
+    <comps>
+	  <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_Redline</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_Redline</defName>
+    <label>Redline</label>
+    <labelNoun>redline</labelNoun>
+    <description>A special Dominator's mode that raises their combat potential and movespeed.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.875</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Redline_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<minSeverity>0.0</minSeverity>
+		<label>reboot</label>
+		<hediffGivers>
+		  <li Class="HediffGiver_Random">
+            <hediff>OE_RedlineAftereffect</hediff>
+            <mtbDays>0.0001</mtbDays>
+          </li>
+		</hediffGivers>
+      </li>
+	  <li>
+		<minSeverity>0.01</minSeverity>
+		<statOffsets>
+		  <AimingDelayFactor>-0.4</AimingDelayFactor>
+		  <RangedCooldownFactor MayRequire="Ludeon.Rimworld.Biotech">-0.4</RangedCooldownFactor>
+		  <MeleeHitChance>8</MeleeHitChance>
+		  <MeleeDodgeChance>8</MeleeDodgeChance>
+		  <MoveSpeed>0.5</MoveSpeed>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OE_RedlineAftereffect</defName>
+    <label>Reboot</label>
+    <description>Rebooting Dominator's core systems after using the Redline ability.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0.8,0.8,0.35)</defaultLabelColor>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500~3750</disappearsAfterTicks>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Redline_AfterEffect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<capMods>
+		  <li>
+		    <capacity>Consciousness</capacity>
+			<offset>-0.20</offset>
+		  </li>
+		  <li>
+		    <capacity>Manipulation</capacity>
+			<offset>-0.60</offset>
+		  </li>
+		  <li>
+		    <capacity>Moving</capacity>
+			<offset>-0.60</offset>
+		  </li>
+		</capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== OMC ====================-->
+  <AbilityDef>
+    <defName>OE_MechRocketLauncher</defName>
+    <label>rocket launcher</label>
+    <description>Mounted rocket launcher grant the Dominator an ability launch a small explosive rocket at the target.</description>
+    <iconPath>UI/Abilities/OE_MechRocketLauncher</iconPath>
+    <cooldownTicksRange>25000</cooldownTicksRange>
+	<charges>8</charges>
+    <aiCanUse>true</aiCanUse>
+	<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>  
+      <warmupTime>1.5</warmupTime>
+      <range>19.9</range>
+      <soundCast>InfernoCannon_Fire</soundCast>
+	  <onlyManualCast>true</onlyManualCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Bullet_OMC_MRL</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OMC_MRL</defName>
+    <label>Mini's Bane MK-II rocket</label>
+    <thingClass>Projectile_Explosive</thingClass>
+	<graphicData>
+      <texPath>Things/Projectile/OMC_Rocket_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.75,0.75)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>3.9</explosionRadius>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== OTC ====================-->
+  <AbilityDef>
+    <defName>OE_MechChaos</defName>
+    <label>chaos</label>
+    <description>Chaos program grant the Dominator an ability to induce an angry psychosis in the multiple target's mind, causing them to attack anyone nearby.</description>
+    <iconPath>UI/Abilities/OE_MechChaos</iconPath>
+    <cooldownTicksRange>25000</cooldownTicksRange>
+	<charges>3</charges>
+    <aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<statBases>
+      <Ability_EffectRadius>5.9</Ability_EffectRadius>
+	  <Ability_Duration>15</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+	  <li Class="CompProperties_AbilityGiveMentalState">
+        <compClass>CompAbilityEffect_GiveMentalState</compClass>
+        <stateDef>Berserk</stateDef>
+        <stateDefForMechs>BerserkMechanoid</stateDefForMechs>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_Chaos</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_Chaos</defName>
+    <label>Chaos</label>
+    <labelNoun>chaos</labelNoun>
+    <description>Mental debuffs from the effects of the Chaos.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8,0.8,0.35)</defaultLabelColor>
+	<makesSickThought>true</makesSickThought>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500~2500</disappearsAfterTicks>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Chaos_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<capMods>
+		  <li>
+		    <capacity>Moving</capacity>
+			<offset>0.65</offset>
+		  </li>
+		  <li>
+		    <capacity>Consciousness</capacity>
+			<setMax>0.65</setMax>
+		  </li>
+		  <li>
+		    <capacity>Sight</capacity>
+			<setMax>0.25</setMax>
+		  </li>
+		  <li>
+		    <capacity>Hearing</capacity>
+			<setMax>0.25</setMax>
+		  </li>
+		</capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== OCC ====================-->
+  <AbilityDef>
+    <defName>OE_MechVanguard</defName>
+    <label>vanguard</label>
+    <description>Vanguard program grant the Dominator an ability to reducing incoming damage with small reducing movespeed.</description>
+    <iconPath>UI/Abilities/OE_MechVanguard</iconPath>
+	<cooldownTicksRange>25000</cooldownTicksRange>
+	<charges>3</charges>
+	<aiCanUse>true</aiCanUse>
+    <writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+    <verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>False</drawAimPie>
+	  <range>-1</range>
+      <warmupTime>0.1</warmupTime>
+	  <targetable>false</targetable>
+	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <targetParams>
+		 <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+    </verbProperties>
+    <comps>
+	   <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_Vanguard</hediffDef>
+        <applicableToMechs>False</applicableToMechs>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_Vanguard</defName>
+    <label>Vanguard</label>
+    <labelNoun>vanguard</labelNoun>
+    <description>A special Dominator's program that reducing incoming damage with small reducing movespeed.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.925</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Vanguard_Effect</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statOffsets>
+		  <IncomingDamageFactor>-0.75</IncomingDamageFactor>
+		  <MoveSpeed>-0.35</MoveSpeed>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!--=============== OEC ====================-->
+  <AbilityDef>
+    <defName>OE_MechBlink</defName>
+    <label>blink</label>
+    <description>Blink device grant the Dominator an ability to teleport the target to a desired position not too far from its starting point. Objects which are too large cannot be teleported.</description>
+	<iconPath>UI/Abilities/OE_MechBlink</iconPath>
+	<cooldownTicksRange>25000</cooldownTicksRange>
+	<charges>3</charges>
+	<aiCanUse>true</aiCanUse>
+	<targetRequired>False</targetRequired>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<statBases>
+      <Ability_EffectRadius>1.9</Ability_EffectRadius>
+    </statBases>
+	<verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <range>-1</range>
+	  <warmupTime>0.2</warmupTime>
+	  <targetable>false</targetable>
+	  <targetParams>
+		 <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+    </verbProperties>
+	<comps>
+      <li Class="CompProperties_AbilityTeleport">
+        <compClass>CompAbilityEffect_Teleport</compClass>
+        <destination>Selected</destination>
+        <requiresLineOfSight>True</requiresLineOfSight>
+        <range>19.9</range>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>10</clamorRadius>
+        <destClamorType>Ability</destClamorType>
+        <destClamorRadius>10</destClamorRadius>
+        <stunTicks>18~60</stunTicks>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== ODC ====================-->
+  <AbilityDef>
+    <defName>OE_MechProvoke</defName>
+    <label>provoke</label>
+    <description>Provoke program grant the Dominator an ability to Attract multiple targets to approach the caster.</description>
+    <iconPath>UI/Abilities/OE_MechProvoke</iconPath>
+    <cooldownTicksRange>25000</cooldownTicksRange>
+	<charges>3</charges>
+	<aiCanUse>true</aiCanUse>
+	<writeCombatLog>True</writeCombatLog>
+    <showPsycastEffects>False</showPsycastEffects>
+	<statBases>
+      <Ability_EffectRadius>5.9</Ability_EffectRadius>
+	  <Ability_Duration>10</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <targetParams>
+        <canTargetAnimals>True</canTargetAnimals>
+        <neverTargetIncapacitated>True</neverTargetIncapacitated>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityForceJob">
+        <compClass>CompAbilityEffect_ForceJob</compClass>
+        <jobDef>GotoMindControlled</jobDef>
+        <destination>Caster</destination>
+        <psychic>False</psychic>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

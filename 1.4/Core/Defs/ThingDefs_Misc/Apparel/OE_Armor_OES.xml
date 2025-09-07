@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OES Armor ====================-->
+  <ThingDef Name="OESArmorBase" ParentName="OEArmorBaseNQ" Abstract="True">
+	<tradeTags>
+      <li>OESArmor</li>
+    </tradeTags>
+    <statBases>
+	  <Mass>10</Mass>
+	  <ArmorRating_Sharp>2.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.70</ArmorRating_Heat>
+      <Insulation_Cold>150</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.20</ToxicResistance>
+	  <PainShockThreshold>0.20</PainShockThreshold>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.20</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</SlaveSuppressionOffset>
+	  <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">2</MechControlGroups>
+	  <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">12</MechBandwidth>
+    </equippedStatOffsets>
+  </ThingDef>
+
+<!--=============== Shield ====================-->
+  <ThingDef ParentName="OESArmorBase">
+	<defName>OES_Armor_Shield</defName>
+    <label>Heroic Eidolon Armor(Guardian)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed for use by Eidolons, once called Heroes! Reveals the full potential of its owner.\n\nThis modification intended for melee weapon user and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OES/Shield/OESArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>8250</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeHitChance>4</MeleeHitChance>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OES/Shield/OESArmor</wornGraphicPath>
+	  <tags>
+		<li>OESEidolon</li>
+		<li>OESEidolon_Shield</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Barrier ====================-->
+  <ThingDef ParentName="OESArmorBase">
+	<defName>OES_Armor_Barrier</defName>
+    <label>Heroic Eidolon Armor(Protector)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed for use by Eidolons, once called Heroes! Reveals the full potential of its owner.\n\nThis modification intended for ranged weapon user and deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OES/Barrier/OESArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>8250</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OES/Barrier/OESArmor</wornGraphicPath>
+	  <tags>
+		<li>OESEidolon</li>
+		<li>OESEidolon_Barrier</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

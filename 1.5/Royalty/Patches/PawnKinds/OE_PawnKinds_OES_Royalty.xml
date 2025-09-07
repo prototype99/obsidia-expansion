@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== OES Eidolons ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="OES_Eidolon_Melee" or defName="OES_Eidolon_Ranged" or defName="OES_Undying_Melee" or defName="OES_Undying_Ranged"]</xpath>
+	<order>Prepend</order>
+    <value>
+      <royalTitleChance>0.55</royalTitleChance>
+	  <titleSelectOne>
+        <li>OE_Title_4_Overseer</li>
+	    <li>OE_Title_5_HighMaster</li>
+        <li>OE_Title_6_ChiefAdvisor</li>
+        <li>OE_Title_7_GrandExecutor</li>
+	    <li>OE_Title_8_SupremeRegent</li>
+        <li>OE_Title_9_EternalDominator</li>
+      </titleSelectOne>
+    </value>
+</Operation>
+
+</Patch>

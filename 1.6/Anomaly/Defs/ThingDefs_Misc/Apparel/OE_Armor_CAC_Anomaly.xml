@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Light ====================-->
+<!--=============== Turret ====================-->
+  <ThingDef ParentName="CACArmorLight">
+	<defName>CAC_LightArmor_Turret</defName>
+    <label>CAC Cultist Light Armor(Goblin)</label>
+    <description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Turret/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3955</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <CAC_LightArmor>1</CAC_LightArmor>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Turret/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>CACLightCultist_Turret</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy turret</label>
+        <defaultProjectile>Grenade_Armor_CAC_TurretPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+<!--=============== Turret ====================-->
+  <ThingDef ParentName="CACArmorHeavy">
+	<defName>CAC_HeavyArmor_Turret</defName>
+    <label>CAC Cultist Heavy Armor(Goblin)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Turret/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>4155</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <CAC_HeavyArmor>1</CAC_HeavyArmor>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Turret/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>CACHeavyCultist_Turret</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>deploy turret</label>
+        <defaultProjectile>Grenade_Armor_CAC_TurretPack</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_CAC_TurretPack</defName>
+    <label>CAC turret pack capsule</label> 
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/CAC_TacticalTurret_Packed_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>Things/Building/TacticalTurret/CAC_TacticalTurret_Gun</uiIconPath>
+    <projectile>
+      <explosionRadius>15.9</explosionRadius>
+      <speed>45</speed>
+      <spawnsThingDef>CAC_Turret_TacticalTurret</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== CAC Tactical Turret ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CAC_Turret_TacticalTurret</defName>
+    <label>CAC tactical turret</label>
+    <description>An automatic CAC Shotgun-equipped turret. It will stop functioning once its battery runs out.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/CAC_TacticalTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0.10</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <compClass>CompExplosivePowered</compClass>
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>12500</totalPowerTicks>
+        <killWhenDepleted>false</killWhenDepleted>
+        <labelOverride>Battery power</labelOverride>
+        <tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <OE_Syntherius>8</OE_Syntherius>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <combatPower>75</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>CAC_Gun_TacticalTurret</turretGunDef>
+      <turretBurstWarmupTime>1.05</turretBurstWarmupTime>
+      <turretBurstCooldownTime>2.25</turretBurstCooldownTime>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>CAC_Gun_TacticalTurret</defName>
+    <label>Grieving Turret</label>
+    <description>Reconstructed CAC Shotgun for turrets.</description>
+    <graphicData>
+      <texPath>Things/Building/TacticalTurret/CAC_TacticalTurret_Gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_CAC_S</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>15.9</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Priest ====================-->
+  <ThingDef ParentName="OEArmorBase">
+	<defName>CAC_PriestArmor</defName>
+    <label>CAC Priest Armor</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Priests.\n\nIt has a built-in module with a flare dispenser.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Priest/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>CACGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+    <statBases>
+	  <Mass>15</Mass>
+	  <WorkToMake>115000</WorkToMake>
+	  <MarketValue>4855</MarketValue>
+	  <ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.10</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.95</ArmorRating_Heat>
+      <Insulation_Cold>125</Insulation_Cold>
+      <Insulation_Heat>40</Insulation_Heat>
+	  <Beauty>-4</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.25</ToxicResistance>
+	  <CarryingCapacity>30</CarryingCapacity>
+	  <MeleeDodgeChance>8</MeleeDodgeChance>
+	  <PainShockThreshold>0.3</PainShockThreshold>
+	  <MentalBreakThreshold>0.3</MentalBreakThreshold>
+	  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</ConversionPower>
+	  <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">-0.5</PsychicSensitivity>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.45</VacuumResistance>
+	  <TrapSpringChance>-0.75</TrapSpringChance>
+	  <Flammability>-0.85</Flammability>
+	  <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <OE_Empyrium>125</OE_Empyrium>
+	  <OE_Orichalcum>35</OE_Orichalcum>
+      <OE_Syntherius>30</OE_Syntherius>
+	  <OE_ArachnaCore>1</OE_ArachnaCore>
+	  <OE_CultistKit>1</OE_CultistKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Priest/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACPriest</li>
+      </tags>
+    </apparel>
+	<comps>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li Class="CompProperties_DisruptorFlarePack">
+        <checkInterval>60</checkInterval>
+        <fieldRadius>8.9</fieldRadius>
+        <durationSeconds>30</durationSeconds>
+      </li>
+      <li Class="CompProperties_ApparelReloadable">
+        <hotKey>Misc4</hotKey>
+        <soundReload>Standard_Reload</soundReload>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <maxCharges>10</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>80</baseReloadTicks>
+        <chargeNoun>flare</chargeNoun>
+      </li>
+	</comps>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStaticPsychic</verbClass>
+        <label>deploy flare</label>
+        <defaultProjectile>Grenade_DisruptorFlare</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>19.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <violent>false</violent>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>FlareLaunch</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+        <explosionRadiusRingColor>(0.8, 0.8, 0.4, 1)</explosionRadiusRingColor>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisites>
+	    <li>CACGearAdv</li>
+		<li>CACSerum</li>
+	  </researchPrerequisites>
+	  <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>CAC_DisruptorFlare</defName>
+    <label>disruptor flare</label>
+    <graphicData>
+      <texPath>Things/Projectile/DisruptorFlare</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/DisruptorFlare</uiIconPath>
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <projectile>
+      <speed>65</speed>
+      <arcHeightFactor>1.0</arcHeightFactor>
+      <spinRate>3</spinRate>
+      <explosionRadius>7.9</explosionRadius>
+      <landedEffecter>DisruptorFlareLanded</landedEffecter>
+      <spawnsThingDef>DisruptorFlare</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC - Scythe ====================-->
+  <ThingDef Name="CACScytheBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<weaponTags>
+	  <li>CACBaseMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>2.5</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACScytheBase">
+    <defName>CAC_Scythe</defName>
+    <label>Souldrinker</label>
+    <description>Regular Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Scythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>2175</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>80</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+      <OE_Syntherius>10</OE_Syntherius>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== CAC - BigScythe ====================-->
+  <ThingDef Name="CACBigScytheBase" ParentName="OEMeleeBase" Abstract="True">
+	<equippedAngleOffset>-20</equippedAngleOffset>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+	<weaponTags>
+	  <li>CACHeavyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>4</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+	  <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>45</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACBigScytheBase">
+    <defName>CAC_BigScythe</defName>
+    <label>Souleater</label>
+    <description>Regular Big Scythe used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/BigScythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>4700</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>100</OE_Empyrium>
+	  <OE_Orichalcum>40</OE_Orichalcum>
+      <OE_Syntherius>20</OE_Syntherius>
+	  <OE_ModernizationKit>2</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== CAC - Thurible ====================-->
+  <ThingDef Name="CACThuribleBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>0.85</uiIconScale>
+	<graphicData>
+	  <drawOffsetNorth>(0.0, 0.0, -0.15)</drawOffsetNorth>
+	  <drawOffsetEast>(0.0, 0.0, -0.15)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.15)</drawOffsetSouth>
+	  <drawOffsetWest>(0.0, 0.0, -0.15)</drawOffsetWest>
+    </graphicData>
+	<weaponTags>
+	  <li>CACRangedMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>CACWeapon</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>1.5</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Wave_CAC_W</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>4.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>ThumpCannon_Fire</soundCast>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>10</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Wave_CAC_W</defName>
+    <label>Apathy wave</label>
+	<graphicData>
+	  <texPath>Things/Projectile/OE_MeleeWave_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="CACThuribleBase">
+    <defName>CAC_Thurible</defName>
+    <label>Apathy</label>
+    <description>Regular Thurible used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Thurible</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3175</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGear</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <OE_Empyrium>35</OE_Empyrium>
+	  <OE_Orichalcum>45</OE_Orichalcum>
+      <OE_Syntherius>15</OE_Syntherius>
+	  <OE_ModernizationKit>2</OE_ModernizationKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

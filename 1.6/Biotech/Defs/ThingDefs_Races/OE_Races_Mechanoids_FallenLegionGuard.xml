@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Fallen Legion Guard ====================-->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>OE_Mech_LegionGuard</defName>
+    <label>Fallen Legion Guard</label>
+    <description>An ultra-tech and ultra-armored medium-sized mechanoid with a built-in mech gestator. Fed with appropriate resources, the Fallen Legion Guard can form small Fallen Legion Drones combat mechs. Fallen Legion Guard are deployable combat mechanoid usually manufactured inside an ultra-tech Fallen Legion mech. They are mounted with non-rechargeable power source.\n\nUses specially designed gun-spear Fallen Legion Guard Spear.</description>
+	<descriptionHyperlinks>
+      <ThingDef>OE_SyntheriusOfSin</ThingDef>
+	  <ThingDef>OE_Mech_FallenLegion</ThingDef>
+	  <ThingDef>OE_Mech_LegionDrone</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>750</MarketValue>
+	  <MoveSpeed>2.0</MoveSpeed>
+	  <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>500</ComfyTemperatureMax>
+      <ArmorRating_Blunt>1.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+	  <EMPResistance>0.25</EMPResistance>
+	  <FilthRate>2</FilthRate>
+    </statBases>
+	<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>OEDominator</body>
+      <baseBodySize>1.35</baseBodySize>
+      <baseHealthScale>2.5</baseHealthScale>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+          <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+	<butcherProducts>
+      <OE_Empyrium>5</OE_Empyrium>
+      <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_SyntheriusOfSin>1</OE_SyntheriusOfSin>
+    </butcherProducts>
+	<comps>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+        <wakeUpCheckRadius>30</wakeUpCheckRadius>
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>20000</totalPowerTicks>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>OE_Mech_LegionDrone</spawnPawnKind>
+        <fixedIngredient>OE_SyntheriusOfSin</fixedIngredient>
+        <costPerPawn>1</costPerPawn>
+        <startingIngredientCount>9</startingIngredientCount>
+        <maxIngredientCount>9</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+    </comps>
+  </ThingDef>
+    
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>OE_Mech_LegionGuard</defName>
+    <label>Fallen Legion Guard</label>
+	<labelPlural>Fallen Legion Guard</labelPlural>
+    <race>OE_Mech_LegionGuard</race>
+	<combatPower>150</combatPower>
+	<allowInMechClusters>false</allowInMechClusters>
+	<forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/FallenLegionGuard/FallenLegionGuard</texPath>
+          <maskPath>Things/Pawn/Mechanoid/FallenLegionGuard/AllegianceOverlays/Mech_FallenLegionGuard</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>2.15</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<weaponMoney>9999~9999</weaponMoney>
+	<weaponTags>
+      <li>OESLegionGuardSpear</li>
+    </weaponTags>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+	<abilities>
+      <li>OE_MechRedline</li>
+    </abilities>
+  </PawnKindDef>
+
+</Defs>

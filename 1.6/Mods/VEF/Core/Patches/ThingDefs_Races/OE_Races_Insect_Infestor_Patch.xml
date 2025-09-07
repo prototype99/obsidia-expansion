@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Fire Infestor ====================-->
+  <ThingDef ParentName="BaseInsect" >
+    <defName>OE_Infestor_Fire</defName>
+    <label>fire infestor</label>
+    <description>Obsidia infestor is a genetically-engineered medium-sized insectoid. Designed for long-range combat. It is, however, very slow and weak in close combat.\n\nThis specimen secrete Fire bile for spitting.</description>
+	<devNote>obsidia</devNote>
+	<statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <MarketValue>450</MarketValue>
+	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <LeatherAmount>10</LeatherAmount>
+	  <Wildness>0.45</Wildness>
+    </statBases>
+	<uiIconScale>1.15</uiIconScale>
+    <tools>
+      <li>
+        <label>head claw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>7</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>fire spit</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Infestor_Fire</defaultProjectile>
+        <accuracyTouch>0.45</accuracyTouch>
+		<accuracyShort>0.65</accuracyShort>
+		<accuracyMedium>0.85</accuracyMedium>
+		<accuracyLong>0.95</accuracyLong>
+		<warmupTime>2.25</warmupTime>
+        <minRange>4.9</minRange>
+		<range>34.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+    <race>
+      <body>BeetleLikeWithClaw</body>
+      <baseHungerRate>0.5</baseHungerRate>
+	  <baseBodySize>1.75</baseBodySize>
+      <baseHealthScale>1.55</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <trainability>Advanced</trainability>
+	  <leatherDef MayRequire="OskarPotocki.VFE.Insectoid2">VFEI2_Chitin</leatherDef>
+      <lifeExpectancy>9</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.05</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Insectoid_Eat</soundEating>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Bullet_Infestor_Fire</defName>
+    <label>fire infestor spit</label>
+	<thingClass>FireArrow</thingClass>
+	<category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergyBlast_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>OTCAcid</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Infestor_Fire</defName>
+    <label>fire infestor</label>
+    <race>OE_Infestor_Fire</race>
+	<combatPower>155</combatPower>
+    <ecoSystemWeight>0.4</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Infestor_Fire</texPath>
+          <drawSize>0.9</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Dessicated_Infestor_east</texPath>
+          <drawSize>0.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Infestor_Fire</texPath>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Dessicated_Infestor_east</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Infestor_Fire</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Dessicated_Infestor_east</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Tox Infestor ====================-->
+  <ThingDef ParentName="BaseInsect" >
+    <defName>OE_Infestor_Tox</defName>
+    <label>tox infestor</label>
+    <description>Obsidia infestor is a genetically-engineered medium-sized insectoid. Designed for long-range combat. It is, however, very slow and weak in close combat.\n\nThis specimen secrete Toxic bile for spitting.</description>
+	<devNote>obsidia</devNote>
+	<statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <MarketValue>450</MarketValue>
+	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <LeatherAmount>10</LeatherAmount>
+	  <Wildness>0.45</Wildness>
+    </statBases>
+	<uiIconScale>1.15</uiIconScale>
+    <tools>
+      <li>
+        <label>head claw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>ToxGas</def>
+              <amount>7</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<verbs>
+      <li>
+        <label>tox spit</label>
+		<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Infestor_Tox</defaultProjectile>
+        <accuracyTouch>0.45</accuracyTouch>
+		<accuracyShort>0.65</accuracyShort>
+		<accuracyMedium>0.85</accuracyMedium>
+		<accuracyLong>0.95</accuracyLong>
+		<warmupTime>2.25</warmupTime>
+        <minRange>4.9</minRange>
+		<range>34.9</range>
+		<forcedMissRadius>0.9</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pawn_Spelopede_Call</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<commonality>0.8</commonality>
+      </li>
+    </verbs>
+    <race>
+      <body>BeetleLikeWithClaw</body>
+      <baseHungerRate>0.5</baseHungerRate>
+	  <baseBodySize>1.75</baseBodySize>
+      <baseHealthScale>1.55</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <trainability>Advanced</trainability>
+	  <leatherDef MayRequire="OskarPotocki.VFE.Insectoid2">VFEI2_Chitin</leatherDef>
+      <lifeExpectancy>9</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.05</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Insectoid_Eat</soundEating>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Infestor_Tox</defName>
+    <label>tox infestor spit</label>
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_EnergyBlast_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>ToxGas</damageDef>
+	  <explosionRadius>1.9</explosionRadius>
+      <explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
+	  <postExplosionGasType>ToxGas</postExplosionGasType>
+      <damageAmountBase>25</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+	  <screenShakeFactor>0</screenShakeFactor>
+    </projectile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Infestor_Tox</defName>
+    <label>tox infestor</label>
+    <race>OE_Infestor_Tox</race>
+	<combatPower>155</combatPower>
+    <ecoSystemWeight>0.4</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Infestor_Tox</texPath>
+          <drawSize>0.9</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Dessicated_Infestor_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Infestor_Tox</texPath>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Dessicated_Infestor_east</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Infestor_Tox</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Infestor/Dessicated_Infestor_east</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+		  </value>
+	    </li>	  
+	  </operations>	  
+	</match>
+</Operation>
+
+</Patch>

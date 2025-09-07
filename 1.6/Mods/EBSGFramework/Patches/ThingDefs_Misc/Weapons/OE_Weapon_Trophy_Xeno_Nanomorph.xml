@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Obsidia Expansion - Nanomorph Xenotype</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationFindMod">
+		    <mods>
+			  <li>Vanilla Expanded Framework</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+			  <operations>
+			    
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+<!--=============== Nanomorph ====================-->
+<!--=============== Ranged ====================-->
+<!--=============== Pistol ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OETrophyXenoPistolBase" ParentName="OERangedBaseNC" Abstract="True">
+    <descriptionHyperlinks>
+	  <GeneDef>OE_NanomorphNanogenic</GeneDef>
+	</descriptionHyperlinks>	
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<statBases>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_OE_Trophy_Xeno_P</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>17.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <OE_Obsidian>25</OE_Obsidian>
+	  <OE_Mythril>100</OE_Mythril>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>25</OE_Syntherius>
+    </costList>
+	<comps>
+	  <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OE_Trophy_Xeno_NanogenicRanged_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	</comps>
+	<modExtensions>
+	  <li Class="EBSGFramework.EquipRestrictExtension">
+	    <requiredGenesToEquip>
+		  <li>OE_NanomorphNanogenic</li>
+		</requiredGenesToEquip>
+	  </li>
+	</modExtensions>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_Trophy_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OE_Trophy_Xeno_P</defName>
+    <label>Mechfeaster sting</label>
+    <graphicData>
+      <texPath>Things/Projectile/OE_Trophy_Xeno_Dart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+	  <armorPenetrationBase>0.9</armorPenetrationBase>
+      <speed>65</speed>
+	  <extraDamages>
+	   <li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OETrophyXenoPistolBase">
+    <defName>OE_Trophy_Xeno_Pistol</defName>
+    <label>Mechfeaster</label>
+    <description>This pistol was engineered with a singular purpose: to give its wielder an edge against the relentless march of the mechanoids. Each confirmed kill siphons fragments of synthetic matter, transmuting it into nanogel to sustain its bearer.\n\nRumors whisper that JC Denton, once remade as a Nanomorph, endured alone in a world consumed by steel predators. To prolong his survival, he designed and manufactured a stockpile of these pistols, a practical tool born from desperation rather than ambition.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Nanogenic.\n\nFeature: killing Mechanoids with this weapon restores 0.05 Nanogel.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_NanogenicPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<statBases>
+      <RoyalFavorValue>1.0</RoyalFavorValue>
+	  <MarketValue>1550</MarketValue>
+    </statBases>
+  </ThingDef>
+				  
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationFindMod">
+				  <mods>
+				    <li>Odyssey</li>
+				  </mods>
+				  <match Class="PatchOperationSequence">
+				    <operations>
+					  <li Class="PatchOperationAdd">
+					    <xpath>/Defs</xpath>
+						<value>
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OETrophyXenoPistolBase">
+    <defName>OE_Trophy_Xeno_Pistol_P</defName>
+    <label>Paragon Mechfeaster</label>
+    <description>This Paragon pistol was engineered with a singular purpose: to give its wielder an edge against the relentless march of the mechanoids. Each confirmed kill siphons fragments of synthetic matter, transmuting it into nanogel to sustain its bearer.\n\nRumors whisper that JC Denton, once remade as a Nanomorph, endured alone in a world consumed by steel predators. To prolong his survival, he designed and manufactured a stockpile of these pistols, a practical tool born from desperation rather than ambition.\n\nThis is a rare trophy weapon.\n\nThe weapon can only be used by carriers of these genes: Nanogenic.\n\nFeature: killing Mechanoids with this weapon restores 0.05 Nanogel.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OE/Trophy_Xeno_NanogenicPistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>OETrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps Inherit="False">
+      <li Class="VEF.Weapons.CompProperties_WeaponHediffs">
+        <hediffs>
+		  <li>
+		    <hediff>OE_Trophy_Xeno_NanogenicRanged_Hediff</hediff>
+		  </li>
+		</hediffs>
+      </li>
+	  <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Mechfeaster</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>						
+						
+						</value>
+					  </li>
+					</operations>
+				  </match>
+				</li>
+			  
+			  </operations>
+			</match>
+		  </li>  
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

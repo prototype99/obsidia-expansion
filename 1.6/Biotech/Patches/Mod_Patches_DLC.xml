@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Odyssey ====================-->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Odyssey</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/FactionDef[defName="ObsidiaMercenaryGangs" or defName="ObsidiaSyndicateClan" or defName="ObsidiaRenegadeClan" or defName="ObsidiaPilgrimClan"]/xenotypeSet/xenotypeChances</xpath>
+		  <value>
+			<Starjack MayRequire="Ludeon.RimWorld.Biotech">0.02</Starjack>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Recon ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="ODCArmorRecon">
+	<defName>ODC_Armor_Recon_Mechanitor</defName>
+    <label>ODC Recon Armor(Overseer)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Mechanoids Control pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Mechanitor/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>12</MechBandwidth>
+	  <MechFormingSpeed>0.65</MechFormingSpeed>
+	  <MechRepairSpeed>0.65</MechRepairSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Mechanitor/ODCArmor</wornGraphicPath>
+	  <tags>
+		<li>ODCRecon_Mechanitor</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Duelist ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="ODCArmorDuelist">
+	<defName>ODC_Armor_Duelist_Mechanitor</defName>
+    <label>ODC Duelist Armor(Overseer)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Mechanoids Control pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Mechanitor/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>12</MechBandwidth>
+	  <MechFormingSpeed>0.65</MechFormingSpeed>
+	  <MechRepairSpeed>0.65</MechRepairSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Armor_Duelist>1</ODC_Armor_Duelist>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Mechanitor/ODCArmor</wornGraphicPath>
+	  <tags>
+		<li>ODCDuelist_Mechanitor</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

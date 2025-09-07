@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Ranged ====================-->
+<!--=============== ODC Blade Launcher ====================-->
+  <ThingDef Name="ODCTrophyBladeLauncherPersona" ParentName="ODCTrophyBladeLauncherBase" Abstract="True">
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBaseNC">
+    <defName>ODC_Trophy_BladeLauncher_A_P</defName>
+    <label>Paragon Harvest</label>
+    <description>Rare heavy paragon blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_A_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags Inherit="False">
+      <li>ODCTrophyRanged</li>
+	  <li>OETreasureHound</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OEGearTrophy</li>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.05</RoyalFavorValue>
+	  <MarketValue>3050</MarketValue>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>PulseCharge</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Harvest</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherPersona">
+    <defName>ODC_Trophy_BladeLauncher_B_P</defName>
+    <label>Paragon Harvest - Emergent</label>
+    <description>Rare heavy paragon blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_B_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags Inherit="False">
+      <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.15</RoyalFavorValue>
+	  <MarketValue>3250</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.15</PlantHarvestYield>
+	  <AnimalGatherYield>0.15</AnimalGatherYield>
+	  <MiningYield>0.15</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_A_P>1</ODC_Trophy_BladeLauncher_A_P>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>PulseCharge</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Harvest - Emergent</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherPersona">
+    <defName>ODC_Trophy_BladeLauncher_C_P</defName>
+    <label>Paragon Harvest - Apex</label>
+    <description>Rare heavy paragon blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_C_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags Inherit="False">
+      <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+	  <li>OEGearTrophySell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <RoyalFavorValue>1.25</RoyalFavorValue>
+	  <MarketValue>3650</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.30</PlantHarvestYield>
+	  <AnimalGatherYield>0.30</AnimalGatherYield>
+	  <MiningYield>0.30</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL_C</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_B_P>1</ODC_Trophy_BladeLauncher_B_P>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+		  <li>PulseCharge</li>
+		  <li>Scoped</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Harvest - Apex</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

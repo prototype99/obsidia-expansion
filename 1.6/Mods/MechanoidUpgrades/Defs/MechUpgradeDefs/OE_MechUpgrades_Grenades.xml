@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC ====================-->
+<!--=============== Acid ====================-->
+<!--=============== Item ====================-->
+  <ThingDef ParentName="MU_MechGrenadesItemBase">
+    <defName>OTC_MechUpgrade_Grenades_Acid</defName>
+    <label>OTC grenades(Acid)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Acid damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<statBases>
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OTCGearMod</li>
+		<li>MU_Grenades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OTC_MechUpgrade_Grenades_Acid</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Upgrade ====================-->
+  <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
+    <defName>OTC_MechUpgrade_Grenades_Acid</defName>
+    <label>OTC grenades(Acid)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Acid damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_Acid</uiIconPath>
+	<ability>OTC_MechUpgrade_Ability_Acid</ability>
+	<linkedThingDef>OTC_MechUpgrade_Grenades_Acid</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty/OE_MechGranades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Acid/OE_MechGranades_1</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Acid/OE_MechGranades_2</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Acid/OE_MechGranades_3</li>
+		</texPaths>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ability ====================-->
+  <AbilityDef ParentName="MU_MechGrenadeAbility">
+    <defName>OTC_MechUpgrade_Ability_Acid</defName>
+    <label>throw Acid grenade</label>
+	<description>Throw Acid grenade.</description>
+	<iconPath>UI/Abilities/Armor/GrenadierAcid</iconPath>
+	<verbProperties>
+	  <range>17.9</range>
+	</verbProperties>
+	<comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+		<cooldown>60</cooldown>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>OE_AmmoKit</ammoDef>
+		<ammoCount>15</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+        <projectileDef>Grenade_GrenadeBelt_OTC_Acid</projectileDef>
+		<forcedMissRadius>1.5</forcedMissRadius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== Cryo ====================-->
+<!--=============== Item ====================-->
+  <ThingDef ParentName="MU_MechGrenadesItemBase">
+    <defName>OTC_MechUpgrade_Grenades_Cryo</defName>
+    <label>OTC grenades(Cryo)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Cryo damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<statBases>
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OTCGearMod</li>
+		<li>MU_Grenades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OTC_MechUpgrade_Grenades_Cryo</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Upgrade ====================-->
+  <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
+    <defName>OTC_MechUpgrade_Grenades_Cryo</defName>
+    <label>OTC grenades(Cryo)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Cryo damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_Cryo</uiIconPath>
+	<ability>OTC_MechUpgrade_Ability_Cryo</ability>
+	<linkedThingDef>OTC_MechUpgrade_Grenades_Cryo</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty/OE_MechGranades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Cryo/OE_MechGranades_1</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Cryo/OE_MechGranades_2</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Cryo/OE_MechGranades_3</li>
+		</texPaths>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ability ====================-->
+  <AbilityDef ParentName="MU_MechGrenadeAbility">
+    <defName>OTC_MechUpgrade_Ability_Cryo</defName>
+    <label>throw Cryo grenade</label>
+	<description>Throw Cryo grenade.</description>
+	<iconPath>UI/Abilities/Armor/GrenadierCryo</iconPath>
+	<verbProperties>
+	  <range>17.9</range>
+	</verbProperties>
+	<comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+		<cooldown>60</cooldown>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>OE_AmmoKit</ammoDef>
+		<ammoCount>15</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+        <projectileDef>Grenade_GrenadeBelt_OTC_Cryo</projectileDef>
+		<forcedMissRadius>1.5</forcedMissRadius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Item ====================-->
+  <ThingDef ParentName="MU_MechGrenadesItemBase">
+    <defName>OTC_MechUpgrade_Grenades_Fire</defName>
+    <label>OTC grenades(Fire)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Fire damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<statBases>
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OTCGearMod</li>
+		<li>MU_Grenades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OTC_MechUpgrade_Grenades_Fire</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Upgrade ====================-->
+  <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
+    <defName>OTC_MechUpgrade_Grenades_Fire</defName>
+    <label>OTC grenades(Fire)</label>
+    <description>A grenade belt loaded with explosives that deal powerful Fire damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_Fire</uiIconPath>
+	<ability>OTC_MechUpgrade_Ability_Fire</ability>
+	<linkedThingDef>OTC_MechUpgrade_Grenades_Fire</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty/OE_MechGranades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Fire/OE_MechGranades_1</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Fire/OE_MechGranades_2</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/Fire/OE_MechGranades_3</li>
+		</texPaths>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ability ====================-->
+  <AbilityDef ParentName="MU_MechGrenadeAbility">
+    <defName>OTC_MechUpgrade_Ability_Fire</defName>
+    <label>throw Fire grenade</label>
+	<description>Throw Fire grenade.</description>
+	<iconPath>UI/Abilities/Armor/GrenadierFire</iconPath>
+	<verbProperties>
+	  <range>17.9</range>
+	</verbProperties>
+	<comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+		<cooldown>60</cooldown>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>OE_AmmoKit</ammoDef>
+		<ammoCount>15</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+        <projectileDef>Grenade_GrenadeBelt_OTC_Fire</projectileDef>
+		<forcedMissRadius>1.5</forcedMissRadius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Item ====================-->
+  <ThingDef ParentName="MU_MechGrenadesItemBase">
+    <defName>OTC_MechUpgrade_Grenades_EMP</defName>
+    <label>OTC grenades(EMP)</label>
+    <description>A grenade belt loaded with explosives that deal powerful EMP damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<statBases>
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OTCGearMod</li>
+		<li>MU_Grenades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OTC_MechUpgrade_Grenades_EMP</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Upgrade ====================-->
+  <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
+    <defName>OTC_MechUpgrade_Grenades_EMP</defName>
+    <label>OTC grenades(EMP)</label>
+    <description>A grenade belt loaded with explosives that deal powerful EMP damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/OTC_MechUpgrade_Grenades_EMP</uiIconPath>
+	<ability>OTC_MechUpgrade_Ability_EMP</ability>
+	<linkedThingDef>OTC_MechUpgrade_Grenades_EMP</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty/OE_MechGranades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/EMP/OE_MechGranades_1</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/EMP/OE_MechGranades_2</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OTC/EMP/OE_MechGranades_3</li>
+		</texPaths>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ability ====================-->
+  <AbilityDef ParentName="MU_MechGrenadeAbility">
+    <defName>OTC_MechUpgrade_Ability_EMP</defName>
+    <label>throw EMP grenade</label>
+	<description>Throw EMP grenade.</description>
+	<iconPath>UI/Abilities/Armor/GrenadierEMP</iconPath>
+	<verbProperties>
+	  <range>17.9</range>
+	</verbProperties>
+	<comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+		<cooldown>60</cooldown>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>OE_AmmoKit</ammoDef>
+		<ammoCount>15</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+        <projectileDef>Grenade_GrenadeBelt_OTC_EMP</projectileDef>
+		<forcedMissRadius>1.5</forcedMissRadius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== OCC ====================-->
+<!--=============== Item ====================-->
+  <ThingDef ParentName="MU_MechGrenadesItemBase">
+    <defName>OCC_MechUpgrade_Grenades</defName>
+    <label>OCC grenades</label>
+    <description>A grenade belt loaded with explosives that deal powerful Blast damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Grenades/OCC_MechUpgrade_Grenades</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Obsidian>25</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<statBases>
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OCCGearMod</li>
+		<li>MU_Grenades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OCC_MechUpgrade_Grenades</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Upgrade ====================-->
+  <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
+    <defName>OCC_MechUpgrade_Grenades</defName>
+    <label>OCC grenades</label>
+    <description>A grenade belt loaded with explosives that deal powerful Blast damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/OCC_MechUpgrade_Grenades</uiIconPath>
+	<ability>OCC_MechUpgrade_Ability</ability>
+	<linkedThingDef>OCC_MechUpgrade_Grenades</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty/OE_MechGranades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OCC/OE_MechGranades_1</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OCC/OE_MechGranades_2</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OCC/OE_MechGranades_3</li>
+		</texPaths>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ability ====================-->
+  <AbilityDef ParentName="MU_MechGrenadeAbility">
+    <defName>OCC_MechUpgrade_Ability</defName>
+    <label>throw Blast grenade</label>
+	<description>Throw Blast grenade.</description>
+	<iconPath>UI/Abilities/Armor/GrenadierBlast</iconPath>
+	<verbProperties>
+	  <range>17.9</range>
+	</verbProperties>
+	<comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+		<cooldown>60</cooldown>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>OE_AmmoKit</ammoDef>
+		<ammoCount>15</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+        <projectileDef>Grenade_GrenadeBelt_OCC</projectileDef>
+		<forcedMissRadius>1.5</forcedMissRadius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== ODC ====================-->
+<!--=============== Item ====================-->
+  <ThingDef ParentName="MU_MechGrenadesItemBase">
+    <defName>ODC_MechUpgrade_Grenades</defName>
+    <label>ODC grenades</label>
+    <description>A grenade belt loaded with explosives that deal powerful Stun damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Grenades/ODC_MechUpgrade_Grenades</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Obsidian>15</OE_Obsidian>
+	  <OE_Mythril>5</OE_Mythril>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>5</OE_Syntherius>
+	  <OE_MercenaryKit>1</OE_MercenaryKit>
+    </costList>
+	<statBases>
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>ODCGear</li>
+		<li>MU_Grenades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>ODC_MechUpgrade_Grenades</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Upgrade ====================-->
+  <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
+    <defName>ODC_MechUpgrade_Grenades</defName>
+    <label>ODC grenades</label>
+    <description>A grenade belt loaded with explosives that deal powerful Stun damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/ODC_MechUpgrade_Grenades</uiIconPath>
+	<ability>ODC_MechUpgrade_Ability</ability>
+	<linkedThingDef>ODC_MechUpgrade_Grenades</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty/OE_MechGranades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/ODC/OE_MechGranades_1</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/ODC/OE_MechGranades_2</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/ODC/OE_MechGranades_3</li>
+		</texPaths>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ability ====================-->
+  <AbilityDef ParentName="MU_MechGrenadeAbility">
+    <defName>ODC_MechUpgrade_Ability</defName>
+    <label>throw Stun grenade</label>
+	<description>Throw Stun grenade.</description>
+	<iconPath>UI/Abilities/Armor/GrenadierStun</iconPath>
+	<verbProperties>
+	  <range>17.9</range>
+	</verbProperties>
+	<comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+		<cooldown>60</cooldown>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>OE_AmmoKit</ammoDef>
+		<ammoCount>15</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+        <projectileDef>Grenade_GrenadeBelt_ODC</projectileDef>
+		<forcedMissRadius>1.5</forcedMissRadius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--=============== OMG ====================-->
+<!--=============== Item ====================-->
+  <ThingDef ParentName="MU_MechGrenadesItemBase">
+    <defName>OMG_MechUpgrade_Grenades</defName>
+    <label>Mercenaries grenades</label>
+    <description>A grenade belt loaded with explosives that deal powerful Necrobane damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/Grenades/OMG_MechUpgrade_Grenades</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+	  <OE_Empyrium>10</OE_Empyrium>
+	  <OE_Orichalcum>5</OE_Orichalcum>
+	  <OE_AmmoKit>10</OE_AmmoKit>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+	<statBases>
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+	  <unfinishedThingDef>OE_UnfinishedMods</unfinishedThingDef>
+	  <researchPrerequisites>
+	    <li>OMGGear</li>
+		<li>MU_Grenades</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite Inherit="false" />
+    </recipeMaker>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>OMG_MechUpgrade_Grenades</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Upgrade ====================-->
+  <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
+    <defName>OMG_MechUpgrade_Grenades</defName>
+    <label>Mercenaries grenades</label>
+    <description>A grenade belt loaded with explosives that deal powerful Necrobane damage on explode. Designed to be used by mechanoids.\n\nCan be reloaded using Obsidia Ammo Kit.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/OMG_MechUpgrade_Grenades</uiIconPath>
+	<ability>OMG_MechUpgrade_Ability</ability>
+	<linkedThingDef>OMG_MechUpgrade_Grenades</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty/OE_MechGranades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OMG/OE_MechGranades_1</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OMG/OE_MechGranades_2</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/OMG/OE_MechGranades_3</li>
+		</texPaths>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+<!--=============== Ability ====================-->
+  <AbilityDef ParentName="MU_MechGrenadeAbility">
+    <defName>OMG_MechUpgrade_Ability</defName>
+    <label>throw Necrobane grenade</label>
+	<description>Throw Necrobane grenade.</description>
+	<iconPath>UI/Abilities/Armor/GrenadierNecrobane</iconPath>
+	<verbProperties>
+	  <range>17.9</range>
+	</verbProperties>
+	<comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+		<cooldown>60</cooldown>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>OE_AmmoKit</ammoDef>
+		<ammoCount>15</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+        <projectileDef>Grenade_GrenadeBelt_OMG</projectileDef>
+		<forcedMissRadius>1.5</forcedMissRadius>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

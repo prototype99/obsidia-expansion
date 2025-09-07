@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Recon ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Recon_Prestige</defName>
+    <label>ODC Recon</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>OE_Title_3_Custodian</li>
+      <li>OE_Title_4_Overseer</li>
+      <li>OE_Title_5_HighMaster</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+	  <li>ODCRecon_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCRecon_Barrier</li>
+	  <li>ODCRecon_Shield</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+	  <li>ODCHeavyMelee</li>
+	  <li>ODCLightGun</li>
+	  <li>ODCBaseGun</li>
+	  <li>ODCShortGun</li>
+	  <li>ODCSniperGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+<!--=============== Duelist ====================-->
+  <PawnKindDef ParentName="ODCPawn">
+    <defName>ODC_Duelist_Prestige</defName>
+    <label>ODC Duelist</label>
+	<royalTitleChance>1</royalTitleChance>
+	<titleSelectOne>
+      <li>OE_Title_3_Custodian</li>
+      <li>OE_Title_4_Overseer</li>
+      <li>OE_Title_5_HighMaster</li>
+    </titleSelectOne>
+	<itemQuality>Good</itemQuality>
+    <apparelMoney>16000~22000</apparelMoney>
+	<apparelTags>
+	  <li>ODCDuelist_Prestige</li>
+    </apparelTags>
+	<apparelDisallowTags>
+      <li>ODCDuelist_Barrier</li>
+	  <li>ODCDuelist_Shield</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>4000~5000</weaponMoney>
+	<weaponTags>
+      <li>ODCBaseMelee</li>
+	  <li>ODCHeavyMelee</li>
+	  <li>ODCLightGun</li>
+	  <li>ODCBaseGun</li>
+	  <li>ODCShortGun</li>
+	  <li>ODCSniperGun</li>
+    </weaponTags>
+    <techHediffsMoney>2000~3500</techHediffsMoney>
+	<techHediffsChance>0.65</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OEBionics_Advanced</li>
+	  <li>ODCBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>185</combatPower>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>6~8</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>6~8</range>
+      </li>
+	</skills>
+  </PawnKindDef>
+
+</Defs>

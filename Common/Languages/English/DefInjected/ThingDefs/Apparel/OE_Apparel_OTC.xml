@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OTC - Helmet ====================-->
+<OTC_Helmet.label>OTC Mechanic Helmet</OTC_Helmet.label>
+<OTC_Helmet.description>Light power armor Helmet, well protects the owner. Designed for use by OTC Mechanics.</OTC_Helmet.description>
+
+<OTC_Helmet_M.label>OTC Engineer Helmet</OTC_Helmet_M.label>
+<OTC_Helmet_M.description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nThe hardened version provides more protection to the owner.</OTC_Helmet_M.description>
+
+<OTC_Helmet_M_Spacer.label>OTC Engineer Helmet(Space Griffin)</OTC_Helmet_M_Spacer.label>
+<OTC_Helmet_M_Spacer.description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OTC_Helmet_M_Spacer.description>
+
+<OTC_Helmet_M_Melee.label>OTC Engineer Helmet(Gladiator)</OTC_Helmet_M_Melee.label>
+<OTC_Helmet_M_Melee.description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nModified visor with analyzing computer that helps the user close combat.</OTC_Helmet_M_Melee.description>
+
+<OTC_Helmet_M_Ranged.label>OTC Engineer Helmet(Ranger)</OTC_Helmet_M_Ranged.label>
+<OTC_Helmet_M_Ranged.description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nModified visor with targeting computer that helps the user aim.</OTC_Helmet_M_Ranged.description>
+
+<OTC_Helmet_M_Mechanitor.label>OTC Engineer Helmet(Overseer)</OTC_Helmet_M_Mechanitor.label>
+<OTC_Helmet_M_Mechanitor.description>Light power armor Helmet, well protects the owner. Designed and modified for use by OTC Engineers.\n\nModified for improves Mechanoids Control abilities.</OTC_Helmet_M_Mechanitor.description>
+
+<!--=============== OTC - Armor ====================-->
+<OTC_Armor.label>OTC Mechanic Armor</OTC_Armor.label>
+<OTC_Armor.description>Light power armor, well protects the owner with little mobility restriction. Designed for use by OTC Mechanics.</OTC_Armor.description>
+
+<OTC_Armor_M.label>OTC Engineer Armor</OTC_Armor_M.label>
+<OTC_Armor_M.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nThe hardened version provides more protection to the owner.</OTC_Armor_M.description>
+
+<OTC_Armor_M_Spacer.label>OTC Engineer Armor(Space Griffin)</OTC_Armor_M_Spacer.label>
+<OTC_Armor_M_Spacer.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OTC_Armor_M_Spacer.description>
+
+<OTC_Armor_M_Grenadier_Acid.label>OTC Engineer Armor(Acid Viper)</OTC_Armor_M_Grenadier_Acid.label>
+<OTC_Armor_M_Grenadier_Acid.verbs.Verb_LaunchProjectileStatic.label>OTC Engineer Armor(Acid Viper)</OTC_Armor_M_Grenadier_Acid.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_Acid.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a Acid Grenade Launcher.</OTC_Armor_M_Grenadier_Acid.description>
+<OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.chargeNoun>incendiary</OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.cooldownGerund>on cooldown</OTC_Armor_M_Grenadier_Acid.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Grenadier_Cryo.label>OTC Engineer Armor(Cryo Viper)</OTC_Armor_M_Grenadier_Cryo.label>
+<OTC_Armor_M_Grenadier_Cryo.verbs.Verb_LaunchProjectileStatic.label>OTC Engineer Armor(Cryo Viper)</OTC_Armor_M_Grenadier_Cryo.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_Cryo.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a Cryo Grenade Launcher.</OTC_Armor_M_Grenadier_Cryo.description>
+<OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.chargeNoun>incendiary</OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.cooldownGerund>on cooldown</OTC_Armor_M_Grenadier_Cryo.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Grenadier_Fire.label>OTC Engineer Armor(Fire Viper)</OTC_Armor_M_Grenadier_Fire.label>
+<OTC_Armor_M_Grenadier_Fire.verbs.Verb_LaunchProjectileStatic.label>OTC Engineer Armor(Fire Viper)</OTC_Armor_M_Grenadier_Fire.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_Fire.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a Fire Grenade Launcher.</OTC_Armor_M_Grenadier_Fire.description>
+<OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.chargeNoun>incendiary</OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.cooldownGerund>on cooldown</OTC_Armor_M_Grenadier_Fire.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Grenadier_EMP.label>OTC Engineer Armor(EMP Viper)</OTC_Armor_M_Grenadier_EMP.label>
+<OTC_Armor_M_Grenadier_EMP.verbs.Verb_LaunchProjectileStatic.label>OTC Engineer Armor(EMP Viper)</OTC_Armor_M_Grenadier_EMP.verbs.Verb_LaunchProjectileStatic.label>
+<OTC_Armor_M_Grenadier_EMP.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a EMP Grenade Launcher.\n\nWarning! EMP damage isn't intended to destroy meatbags.</OTC_Armor_M_Grenadier_EMP.description>
+<OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.chargeNoun>incendiary</OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.cooldownGerund>on cooldown</OTC_Armor_M_Grenadier_EMP.comps.CompApparelReloadable.cooldownGerund>
+
+<OTC_Armor_M_Shield.label>OTC Engineer Armor(Guardian)</OTC_Armor_M_Shield.label>
+<OTC_Armor_M_Shield.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the addition of a Reinforced Barrier.</OTC_Armor_M_Shield.description>
+
+<OTC_Armor_M_Barrier.label>OTC Engineer Armor(Protector)</OTC_Armor_M_Barrier.label>
+<OTC_Armor_M_Barrier.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the addition of the Universal Barrier.</OTC_Armor_M_Barrier.description>
+
+<OTC_Armor_M_Mechanitor.label>OTC Engineer Armor(Overseer)</OTC_Armor_M_Mechanitor.label>
+<OTC_Armor_M_Mechanitor.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the addition of a Mechanoids Control pack.</OTC_Armor_M_Mechanitor.description>
+
+<OTC_Armor_M_Turret.label>OTC Engineer Armor(Goblin)</OTC_Armor_M_Turret.label>
+<OTC_Armor_M_Turret.description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</OTC_Armor_M_Turret.description>
+<OTC_Armor_M_Turret.verbs.deploy_acid_turret.label>deploy acid turret</OTC_Armor_M_Turret.verbs.deploy_acid_turret.label>
+<OTC_Armor_M_Turret.verbs.deploy_cryo_turret.label>deploy cryo turret</OTC_Armor_M_Turret.verbs.deploy_cryo_turret.label>
+<OTC_Armor_M_Turret.verbs.deploy_fire_turret.label>deploy fire turret</OTC_Armor_M_Turret.verbs.deploy_fire_turret.label>
+<OTC_Armor_M_Turret.verbs.deploy_EMP_turret.label>deploy EMP turret</OTC_Armor_M_Turret.verbs.deploy_EMP_turret.label>
+<OTC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</OTC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OTC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</OTC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OTC - Grenades ====================-->
+<Grenade_Armor_OTC_Acid.label>Acid Viper Grenade</Grenade_Armor_OTC_Acid.label>
+
+<Grenade_Armor_OTC_Cryo.label>Cryo Viper Grenade</Grenade_Armor_OTC_Cryo.label>
+
+<Grenade_Armor_OTC_Fire.label>Fire Viper Grenade</Grenade_Armor_OTC_Fire.label>
+
+<Grenade_Armor_OTC_EMP.label>EMP Viper Grenade</Grenade_Armor_OTC_EMP.label>
+
+<Grenade_Armor_OTC_TurretPack_Acid.label>OTC turret pack capsule</Grenade_Armor_OTC_TurretPack_Acid.label>
+
+<Grenade_Armor_OTC_TurretPack_Cryo.label>OTC turret pack capsule</Grenade_Armor_OTC_TurretPack_Cryo.label>
+
+<Grenade_Armor_OTC_TurretPack_Fire.label>OTC turret pack capsule</Grenade_Armor_OTC_TurretPack_Fire.label>
+
+<Grenade_Armor_OTC_TurretPack_EMP.label>OTC turret pack capsule</Grenade_Armor_OTC_TurretPack_EMP.label>
+
+</LanguageData>

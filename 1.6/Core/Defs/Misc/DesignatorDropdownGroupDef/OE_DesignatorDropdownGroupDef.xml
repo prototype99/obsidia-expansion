@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Metal Hex ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Floor_Tile_MetalHex</defName>
+    <label>hex tile</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Artificial Ecosystem ====================-->
+  <DesignatorDropdownGroupDef>
+	<defName>OE_ArtEcosys_Micro</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+	<defName>OE_ArtEcosys_Medium</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+	<defName>OE_ArtEcosys_Large</defName>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Wood Floor ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Floor_Tile_Wood</defName>
+    <label>wood planks</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Small Turrets ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Turrets_Small</defName>
+    <label>small Obsidia turrets</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Small Powered Turrets ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Turrets_SmallPowered</defName>
+    <label>small Obsidia powered turrets</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Big Turrets ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Turrets_Big</defName>
+    <label>big Obsidia turrets</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== EGO Turrets ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Turrets_EGO</defName>
+    <label>EGO Obsidia turrets</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Obsidia LED Lights Strip ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Lighting_Strip</defName>
+    <label>obsidia LED lights strip</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Obsidia Lights ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Lighting_Ceiling</defName>
+    <label>obsidia ceiling lamps</label>
+  </DesignatorDropdownGroupDef>
+
+</Defs>

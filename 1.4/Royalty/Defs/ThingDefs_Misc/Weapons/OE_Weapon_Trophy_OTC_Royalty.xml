@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee ====================-->
+<!--=============== Elemental Sword ====================-->
+<!--=============== Acid ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordAcid">
+    <defName>OTC_Trophy_Sword_P_Acid</defName>
+    <label>Persona Acid Rift</label>
+    <description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with Acid charges.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Acid/Trophy_Sword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<!--=============== Cryo ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordCryo">
+    <defName>OTC_Trophy_Sword_P_Cryo</defName>
+    <label>Persona Cryo Rift</label>
+    <description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with Cryo charges.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Cryo/Trophy_Sword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordFire">
+    <defName>OTC_Trophy_Sword_P_Fire</defName>
+    <label>Persona Fire Rift</label>
+    <description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with Fire charges.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Fire/Trophy_Sword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCTrophyElemswordEMP">
+    <defName>OTC_Trophy_Sword_P_EMP</defName>
+    <label>Persona EMP Rift</label>
+    <description>Limited edition unique elemental persona sword.\n\nThis is a rare trophy weapon with EMP charges.\n\nFeature: a built-in module that improves combat performance.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/EMP/Trophy_Sword_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>Bladelink</li>
+	  <li>OTCTrophyMelee</li>
+    </weaponTags>
+	<thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+<!--=============== Cards ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="OTCTrophyCardsBase">
+    <defName>OTC_Trophy_Cards_P</defName>
+    <label>Persona Randy's Deck</label>
+    <description>Persona deck of combat throwing cards designed by a certain engineer, Randy.\n\nThis is a rare trophy weapon.\n\nFeature: able to deal a random additional type of damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OTC/Trophy_Cards_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Bladelink</li>
+	  <li>OTCTrophyRanged</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2050</MarketValue>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

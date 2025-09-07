@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC Armor ====================-->
+  <ThingDef Name="OTCArmorBase" ParentName="OEArmorBase" Abstract="True">
+	<statBases>
+      <WorkToMake>100000</WorkToMake>
+	  <Mass>12</Mass>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>30</CarryingCapacity>
+	  <Flammability>-1</Flammability>
+	  <ToxicSensitivity>-0.40</ToxicSensitivity>
+	  <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="OTCArmorBase">
+	<defName>OTC_Armor</defName>
+    <label>OTC Mechanic Armor</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed for use by OTC Mechanics.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/OTCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OTCMechanic</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>3325</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.70</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>185</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_Mooncloth>70</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/OTCArmor</wornGraphicPath>
+	  <tags>
+		<li>OTCMechanic</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCArmor</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Modded ====================-->
+  <ThingDef Name="OTCArmorMod" ParentName="OTCArmorBase">
+	<defName>OTC_Armor_M</defName>
+    <label>OTC Engineer Armor</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nThe hardened version provides more protection to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeTags>
+      <li>OTCEngineer</li>
+    </tradeTags>
+    <statBases>
+	  <MarketValue>3525</MarketValue>
+	  <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <Insulation_Cold>45</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor>1</OTC_Armor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OTCGearMod</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Spacer</defName>
+    <label>OTC Engineer Armor(Space Griffin)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Spacer/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3775</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>80</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Spacer/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Grenadier - Acid ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Grenadier_Acid</defName>
+    <label>OTC Engineer Armor(Acid Viper)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a Acid Grenade Launcher.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/Acid/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3775</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/Acid/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Grenadier_Acid</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>Launch Acid Grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>14.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_Armor_OTC_Acid</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Grenadier - Cryo ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Grenadier_Cryo</defName>
+    <label>OTC Engineer Armor(Cryo Viper)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a Cryo Grenade Launcher.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/Cryo/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3775</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/Cryo/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Grenadier_Cryo</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>Launch Cryo Grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>14.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_Armor_OTC_Cryo</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Grenadier - Fire ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Grenadier_Fire</defName>
+    <label>OTC Engineer Armor(Fire Viper)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a Fire Grenade Launcher.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/Fire/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3775</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/Fire/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Grenadier_Fire</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+		<maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>Launch Fire Grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>14.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_Armor_OTC_Fire</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Grenadier - EMP ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Grenadier_EMP</defName>
+    <label>OTC Engineer Armor(EMP Viper)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified by installing a EMP Grenade Launcher.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/EMP/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3775</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Grenadier/EMP/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Grenadier_EMP</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>2</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>Launch EMP Grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>14.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Grenade_Armor_OTC_EMP</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Grenade Armor ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="Grenade_Armor_OTC" ParentName="BaseBullet" Abstract="True">
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>20</speed>
+      <damageAmountBase>10</damageAmountBase>
+      <explosionRadius>2.9</explosionRadius>
+      <arcHeightFactor>0.4</arcHeightFactor>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="Grenade_Armor_OTC">
+    <defName>Grenade_Armor_OTC_Acid</defName>
+    <label>Acid Viper Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_M_Acid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierAcid</uiIconPath>
+    <projectile>
+      <damageDef>OTCAcid</damageDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="Grenade_Armor_OTC">
+    <defName>Grenade_Armor_OTC_Cryo</defName>
+    <label>Cryo Viper Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_M_Cryo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierCryo</uiIconPath>
+    <projectile>
+      <damageDef>OTCCryo</damageDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="Grenade_Armor_OTC">
+    <defName>Grenade_Armor_OTC_Fire</defName>
+    <label>Fire Viper Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_M_Fire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierFire</uiIconPath>
+    <projectile>
+      <damageDef>Flame</damageDef>
+	  <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="Grenade_Armor_OTC">
+    <defName>Grenade_Armor_OTC_EMP</defName>
+    <label>EMP Viper Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/OTC_Grenade_M_EMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierEMP</uiIconPath>
+    <projectile>
+      <damageDef>EMP</damageDef>
+    </projectile>
+  </ThingDef> 
+
+<!--=============== Shield ====================-->
+  <ThingDef ParentName="OTCArmorMod">
+	<defName>OTC_Armor_M_Shield</defName>
+    <label>OTC Engineer Armor(Guardian)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the addition of a Reinforced Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Shield/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>ShieldBelt</thingClass>
+    <statBases>
+	  <MarketValue>3775</MarketValue>
+	  <EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.75</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Shield/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Shield</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Barrier ====================-->
+  <ThingDef Name="OTCArmorModBarrier" ParentName="OTCArmorMod" Abstract="True">
+	<!--= OTC_Armor_M_Barrier =-->
+    <label>OTC Engineer Armor(Protector)</label>
+    <description>Light power armor, well protects the owner with little mobility restriction. Designed and modified for use by OTC Engineers.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/OTC/Barrier/OTCArmor_M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>D9ASB.RangedShieldBelt</thingClass>
+    <statBases>
+	  <MarketValue>3775</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <OTC_Armor_M>1</OTC_Armor_M>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/OTC/Barrier/OTCArmor_M</wornGraphicPath>
+	  <tags>
+		<li>OTCEngineer_Barrier</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Obsidia Escaped Subject ====================-->
+  <CreepJoinerFormKindDef ParentName="OEBaseCreepJoinerEscapedSubject">
+    <defName>OEC_EscapedSubject</defName>
+    <label>escaped subject</label>
+    <weight>1</weight>
+    <letterLabel>Very scared looking Obsidia Empire Hunter is approaching your colony.</letterLabel>
+    <letterPrompt>{PAWN_nameDef} becoming a volunteer in experiments to improve the people of the Obsidia Empire, not knowing what horrors were hidden behind these experiments. Couldn't stand it {PAWN_pronoun} decided to run away. Caught the right moment and get into the security arsenal, stealing the OEC equipment and escaping from the research complex. Having escaped from {PAWN_possessive} pursuers, {PAWN_nameDef} came across your settlement.\n\n{PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</letterPrompt>
+	<apparelMoney>12000~14000</apparelMoney>
+	<apparelTags>
+      <li>OECHunter</li>
+    </apparelTags>
+    <fixedInventory>
+      <OEC_Knife />
+    </fixedInventory>
+	<techHediffsMoney>2000~3500</techHediffsMoney>
+    <techHediffsChance>0.55</techHediffsChance>
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<techHediffsTags>
+      <li>OEBionics</li>
+	  <li>OECBionics</li>
+    </techHediffsTags>
+	<combatPower>150</combatPower>
+  </CreepJoinerFormKindDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

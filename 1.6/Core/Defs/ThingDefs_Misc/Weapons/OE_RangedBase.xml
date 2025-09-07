@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Ranged Base ====================-->
+  <ThingDef Name="OERangedBase" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+    <smeltable>true</smeltable>
+	<relicChance>0.2</relicChance>
+	<tickerType>Normal</tickerType>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <unfinishedThingDef>OE_UnfinishedRanged</unfinishedThingDef>
+    </recipeMaker>
+    <comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged Base(Non-Crafted) ====================-->
+  <ThingDef Name="OERangedBaseNC" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+    <smeltable>false</smeltable>
+	<relicChance>0</relicChance>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged Base(Non-Quality) ====================-->
+  <ThingDef Name="OERangedBaseNQ" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+    <smeltable>false</smeltable>
+	<relicChance>0</relicChance>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.35</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.45</SellPriceFactor>
+    </statBases>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>    
+    </comps>
+  </ThingDef>
+
+<!--=============== Ranged Base(Non-Quality-EGO) ====================-->
+  <ThingDef Name="OERangedBaseNQE" Abstract="True" ParentName="OERangedBaseNQ">
+	<statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.55</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Beauty>-2</Beauty>
+      <SellPriceFactor>0.3</SellPriceFactor>
+    </statBases>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>    
+    </comps>
+  </ThingDef>
+
+</Defs>

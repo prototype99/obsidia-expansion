@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== EGO Helmet ====================-->
+<!--=============== Mask ====================-->
+<EGO_Helmet_Mask.label>EGO Mask</EGO_Helmet_Mask.label>
+<EGO_Helmet_Mask.description>Specially gestated amalgam Mask, well protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Helmet_Mask.description>
+
+<!--=============== Helm ====================-->
+<EGO_Helmet_Helm.label>EGO Helm</EGO_Helmet_Helm.label>
+<EGO_Helmet_Helm.description>Specially gestated amalgam Helm, perfectly protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Helmet_Helm.description>
+
+<!--=============== Exohelm ====================-->
+<!--=============== Worker ====================-->
+<EGO_Helmet_Exohelm_Worker.label>EGO Exohelm(Constructor)</EGO_Helmet_Exohelm_Worker.label>
+<EGO_Helmet_Exohelm_Worker.description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve working stats.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Helmet_Exohelm_Worker.description>
+
+<!--=============== Melee ====================-->
+<EGO_Helmet_Exohelm_Melee.label>EGO Exohelm(Berserker)</EGO_Helmet_Exohelm_Melee.label>
+<EGO_Helmet_Exohelm_Melee.description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve melee combat stats.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Helmet_Exohelm_Melee.description>
+
+<!--=============== Ranged ====================-->
+<EGO_Helmet_Exohelm_Ranged.label>EGO Exohelm(Ballista)</EGO_Helmet_Exohelm_Ranged.label>
+<EGO_Helmet_Exohelm_Ranged.description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve ranged combat stats.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Helmet_Exohelm_Ranged.description>
+
+<!--=============== Psy ====================-->
+<EGO_Helmet_Exohelm_Psy.label>EGO Exohelm(Mindweaver)</EGO_Helmet_Exohelm_Psy.label>
+<EGO_Helmet_Exohelm_Psy.description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve psy stats.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Helmet_Exohelm_Psy.description>
+
+<!--=============== Mechanitor ====================-->
+<EGO_Helmet_Exohelm_Mechanitor.label>EGO Exohelm(Automancer)</EGO_Helmet_Exohelm_Mechanitor.label>
+<EGO_Helmet_Exohelm_Mechanitor.description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve mechanitor stats.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Helmet_Exohelm_Mechanitor.description>
+
+<!--=============== EGO Armor ====================-->
+<!--=============== Suit ====================-->
+<EGO_Armor_Suit.label>EGO Suit</EGO_Armor_Suit.label>
+<EGO_Armor_Suit.description>Specially gestated amalgam Suit, well protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Armor_Suit.description>
+
+<!--=============== Carapace ====================-->
+<EGO_Armor_Carapace.label>EGO Carapace</EGO_Armor_Carapace.label>
+<EGO_Armor_Carapace.description>Specially gestated amalgam Carapace, perfectly protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Armor_Carapace.description>
+
+<!--=============== Shell ====================-->
+<!--=============== Worker ====================-->
+<EGO_Armor_Shell_Worker.label>EGO Shell(Constructor)</EGO_Armor_Shell_Worker.label>
+<EGO_Armor_Shell_Worker.description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve working stats.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Armor_Shell_Worker.description>
+
+<!--=============== Melee ====================-->
+<EGO_Armor_Shell_Melee.label>EGO Shell(Berserker)</EGO_Armor_Shell_Melee.label>
+<EGO_Armor_Shell_Melee.verbs.Verb_SmokePop.label>EGO Shell(Berserker)</EGO_Armor_Shell_Melee.verbs.Verb_SmokePop.label>
+<EGO_Armor_Shell_Melee.description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve melee combat stats and modified with the addition of a Smokepop pack.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Armor_Shell_Melee.description>
+<EGO_Armor_Shell_Melee.comps.CompApparelReloadable.chargeNoun>smokepop</EGO_Armor_Shell_Melee.comps.CompApparelReloadable.chargeNoun>
+<EGO_Armor_Shell_Melee.comps.CompApparelReloadable.cooldownGerund>on cooldown</EGO_Armor_Shell_Melee.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Ranged ====================-->
+<EGO_Armor_Shell_Ranged.label>EGO Shell(Ballista)</EGO_Armor_Shell_Ranged.label>
+<EGO_Armor_Shell_Ranged.verbs.Verb_LaunchProjectileStatic.label>EGO Shell(Ballista)</EGO_Armor_Shell_Ranged.verbs.Verb_LaunchProjectileStatic.label>
+<EGO_Armor_Shell_Ranged.description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve ranged combat stats and modified by installing a Grenade Launcher.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Armor_Shell_Ranged.description>
+<EGO_Armor_Shell_Ranged.comps.CompApparelReloadable.chargeNoun>grenade</EGO_Armor_Shell_Ranged.comps.CompApparelReloadable.chargeNoun>
+<EGO_Armor_Shell_Ranged.comps.CompApparelReloadable.cooldownGerund>on cooldown</EGO_Armor_Shell_Ranged.comps.CompApparelReloadable.cooldownGerund>
+
+<EGO_Grenade.label>EGO Ballista Grenade</EGO_Grenade.label>
+
+<!--=============== Psy ====================-->
+<EGO_Armor_Shell_Psy.label>EGO Shell(Mindweaver)</EGO_Armor_Shell_Psy.label>
+<EGO_Armor_Shell_Psy.verbs.Verb_Jump.label>EGO Shell(Mindweaver)</EGO_Armor_Shell_Psy.verbs.Verb_Jump.label>
+<EGO_Armor_Shell_Psy.description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve psy stats and modified with the addition of a Jump pack.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Armor_Shell_Psy.description>
+<EGO_Armor_Shell_Psy.comps.CompApparelReloadable.chargeNoun>jump</EGO_Armor_Shell_Psy.comps.CompApparelReloadable.chargeNoun>
+<EGO_Armor_Shell_Psy.comps.CompApparelReloadable.cooldownGerund>on cooldown</EGO_Armor_Shell_Psy.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== Mechanitor ====================-->
+<EGO_Armor_Shell_Mechanitor.label>EGO Shell(Automancer)</EGO_Armor_Shell_Mechanitor.label>
+<EGO_Armor_Shell_Mechanitor.description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve mechanitor stats and modified with the pack that allows the user to deploy a battery-powered turret.\n\nThe item's quality levels can be reset using an EGO Seed.</EGO_Armor_Shell_Mechanitor.description>
+
+<EGO_Armor_Shell_Mechanitor.verbs.deploy_turret.label>deploy turret</EGO_Armor_Shell_Mechanitor.verbs.deploy_turret.label>
+<Grenade_Armor_EGO_TurretPack.label>EGO turret pack capsule</Grenade_Armor_EGO_TurretPack.label>
+<EGO_Armor_Shell_Mechanitor.comps.CompApparelReloadable.chargeNoun>incendiary</EGO_Armor_Shell_Mechanitor.comps.CompApparelReloadable.chargeNoun>
+<EGO_Armor_Shell_Mechanitor.comps.CompApparelReloadable.cooldownGerund>on cooldown</EGO_Armor_Shell_Mechanitor.comps.CompApparelReloadable.cooldownGerund>
+
+</LanguageData>

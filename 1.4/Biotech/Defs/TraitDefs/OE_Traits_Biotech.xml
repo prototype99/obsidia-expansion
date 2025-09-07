@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Mechanitor ====================-->
+  <TraitDef>
+    <defName>OEMechLove</defName>
+    <degreeDatas>
+      <li>
+        <label>mech fan</label>
+        <description>{PAWN_nameDef} is a big fan of mechanoids. As a {PAWN_pronoun} can control a larger number of mechanoids.</description>
+        <statOffsets>
+          <MechControlGroups>1</MechControlGroups>
+		  <MechBandwidth>3</MechBandwidth>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

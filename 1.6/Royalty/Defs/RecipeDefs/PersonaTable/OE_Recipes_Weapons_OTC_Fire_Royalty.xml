@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OTC - Hammer ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_Hammer_P_Fire</defName>
+    <label>Reset Persona Nemesis Prototype(Fire)</label>
+    <description>Reset an Persona Nemesis Prototype(Fire).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Nemesis Prototype(Fire).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_Hammer_P_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_Hammer_P_Fire</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_Hammer_P_Fire>1</OTC_Hammer_P_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - BigAxe ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_BigAxe_P_Fire</defName>
+    <label>Reset Persona Genesis Prototype(Fire)</label>
+    <description>Reset an Persona Genesis Prototype(Fire).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Genesis Prototype(Fire).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_BigAxe_P_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_BigAxe_P_Fire</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_BigAxe_P_Fire>1</OTC_BigAxe_P_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+<!--=============== OTC - ChainAxe ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OTC_ChainAxe_P_Fire</defName>
+    <label>Reset Persona Netherbane Prototype(Fire)</label>
+    <description>Reset an Persona Netherbane Prototype(Fire).\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Netherbane Prototype(Fire).</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OTC_ChainAxe_P_Fire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OTC_ChainAxe_P_Fire</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OTC_ChainAxe_P_Fire>1</OTC_ChainAxe_P_Fire>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>OTCGearMod</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

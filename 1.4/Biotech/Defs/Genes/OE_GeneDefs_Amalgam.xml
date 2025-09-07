@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Amalgam Microfibral Muscle ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamMicrofibralMuscle</defName>
+    <label>microfibral muscle</label> 
+    <description>Carriers of this amalgam gene take less injuries than others from the same damage and feel half as much pain compared to a baseliner gene. They have extra-strong muscle fibers.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamMicrofibralMuscle</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>1</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+	<painFactor>0.5</painFactor>
+	<statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+	<statOffsets>
+      <CarryingCapacity>20</CarryingCapacity>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatArc>1</biostatArc>
+    <exclusionTags>
+      <li>Pain</li>
+	  <li>Toughness</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Armored Skeleton ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamArmoredSkeleton</defName>
+    <label>armored skeleton</label> 
+    <description>Carriers of this amalgam gene are not slowed down when taking damage and do more damage in close-quarters combat. They have thickened, densified bones, nearly-solid ribcages, and strengthened binding factors in joints and flesh.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamArmoredSkeleton</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>2</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+    <statFactors>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+	  <MeleeDamageFactor>1.5</MeleeDamageFactor>
+    </statFactors>
+	<statOffsets>
+      <CarryingCapacity>20</CarryingCapacity>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatArc>1</biostatArc>
+    <exclusionTags>
+	  <li>MeleeDamage</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Temperature-Tolerant ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamTemperature</defName>
+    <label>amalgam temperature-tolerant</label> 
+    <labelShortAdj>amalgam-tolerant</labelShortAdj> 
+    <description>Carriers of this amalgam gene are more comfortable in any temperatures. They have shielded temperature resistant skin layer.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamTemperature</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>3</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+    <statOffsets>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatArc>1</biostatArc>
+    <exclusionTags>
+      <li>MinTemperature</li>
+	  <li>MaxTemperature</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Plating Skin ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamPlatingSkin</defName>
+    <label>plating skin</label> 
+    <description>Carriers of this amalgam gene have armored skin and are resistant to blast damage. They have shielded plating skin layer.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamPlatingSkin</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>4</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+    <damageFactors>
+	  <OCCBlast>0.30</OCCBlast>
+    </damageFactors>
+	<statOffsets>
+	  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	</statOffsets>
+    <biostatCpx>2</biostatCpx>
+	<biostatArc>1</biostatArc>
+    <exclusionTags>
+	  <li>BlastDamage</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Shielded Skin ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamShieldedSkin</defName>
+    <label>shielded skin</label> 
+    <description>Carriers of this amalgam gene are resistant to environmental toxins, toxic buildup, acid, cryo and flame damages from any sources. They have shielded flexible skin layer.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamShieldedSkin</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>5</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+    <statOffsets>      
+	  <ToxicResistance>0.70</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.70</ToxicEnvironmentResistance>
+    </statOffsets>
+	<damageFactors>
+      <OTCAcid>0.30</OTCAcid>
+	  <OTCCryo>0.30</OTCCryo>
+	  <Flame>0.30</Flame>
+    </damageFactors>
+	<statFactors>
+      <Flammability>0.15</Flammability>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+	<biostatArc>1</biostatArc>
+    <exclusionTags>
+      <li>AcidDamage</li>
+	  <li>CryoDamage</li>
+	  <li>FireDamage</li>
+	  <li>ToxicEnvironmentResistance</li>
+	  <li>ToxResistance</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Healing Factor ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamHealingFactor</defName>
+    <label>healing factor</label> 
+    <description>Carriers of this amalgam gene gain immunity to diseases considerably faster than normal and heal from wounds four times as fast as normal.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamHealingFactor</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>6</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+	<statFactors>
+      <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+	  <InjuryHealingFactor>4</InjuryHealingFactor>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+	<biostatArc>1</biostatArc>
+	<exclusionTags>
+      <li>Immunity</li>
+	  <li>WoundHealingRate</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Mech Domination ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamMechDomination</defName>
+    <label>mech domination</label> 
+    <description>Carriers of this amalgam gene have neuroenhancer allows to control many more mechanoids at once.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamMechDomination</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>8</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+	<statOffsets>
+      <MechBandwidth>20</MechBandwidth>
+	  <MechControlGroups>2</MechControlGroups>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+	<biostatArc>2</biostatArc>
+  </GeneDef>
+
+<!--=============== Amalgam Mech Exploiter ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamMechExploiter</defName>
+    <label>mech exploiter</label> 
+    <description>Carriers of this amalgam gene have neuroenhancer allows to control mechanoids more effective.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamMechExploiter</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>9</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+	<statOffsets>
+	  <WorkSpeedGlobalOffsetMech>0.50</WorkSpeedGlobalOffsetMech>
+	  <MechFormingSpeed>0.50</MechFormingSpeed>
+	  <MechRepairSpeed>0.50</MechRepairSpeed>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+	<biostatArc>2</biostatArc>
+  </GeneDef>
+
+<!--=============== Amalgam Hemogen Recovery ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamHemogenRecovery</defName>
+    <label>hemogen recovery</label> 
+    <description>Carriers of this amalgam gene restores an additional 4 hemogen per day.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamHemogenRecovery</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+	<marketValueFactor>1.25</marketValueFactor>
+	<prerequisite>Hemogenic</prerequisite>
+	<resourceLabel>hemogen</resourceLabel>
+	<resourceLossPerDay>-0.04</resourceLossPerDay>
+    <biostatCpx>2</biostatCpx>
+	<biostatArc>1</biostatArc>
+  </GeneDef>
+
+<!--=============== Amalgam Nervous System ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamNervousSystem</defName>
+    <label>amalgam nervous system</label> 
+    <description>Amalgam nervous system improve the carrier's consciousness capacity and improves negotiating abilities.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamNervousSystem</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>11</displayOrderInCategory>
+	<marketValueFactor>1.35</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <postFactor>1.25</postFactor>
+      </li>
+    </capMods>
+	<statOffsets>
+      <RestRateMultiplier>0.25</RestRateMultiplier>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <TradePriceImprovement>0.25</TradePriceImprovement>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+	<biostatArc>2</biostatArc>
+  </GeneDef>
+
+<!--=============== Amalgam Eyes ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamEyes</defName>
+    <label>amalgam eyes</label> 
+    <description>Amalgam eyes improve the carrier's sight capacity and improves accuracy.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamEyes</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>12</displayOrderInCategory>
+	<marketValueFactor>1.35</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Sight</capacity>
+        <postFactor>1.25</postFactor>
+      </li>
+    </capMods>
+	<statOffsets>
+      <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+	  <MeleeHitChance>8</MeleeHitChance>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+	<biostatArc>2</biostatArc>
+  </GeneDef>
+
+<!--=============== Amalgam Fingers ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamFingers</defName>
+    <label>amalgam fingers</label> 
+    <description>Amalgam fingers improve the carrier's manipulation capacity. This aids with many tasks, especially crafting and construction.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamFingers</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>13</displayOrderInCategory>
+	<marketValueFactor>1.35</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <postFactor>1.25</postFactor>
+      </li>
+    </capMods>
+    <biostatCpx>3</biostatCpx>
+	<biostatArc>2</biostatArc>
+	<exclusionTags>
+      <li>Hands</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Tail ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamTail</defName>
+    <label>amalgam tail</label> 
+    <description>Carriers of this amalgam gene grow a tail that can act as a dexterous fifth limb.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamTail</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>14</displayOrderInCategory>
+	<marketValueFactor>1.35</marketValueFactor>
+	<capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.25</offset>
+      </li>
+    </capMods>
+    <biostatCpx>3</biostatCpx>
+	<biostatArc>2</biostatArc>
+	<graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/Tail/AmalgamTail</graphicPath>
+	  <drawLoc>Tailbone</drawLoc>
+      <colorType>Hair</colorType>
+      <drawOffsetNorth>(0, 0.2, -0.15)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.15)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.1, -0.15)</drawOffsetEast>
+	  <drawScale>1.2</drawScale>
+    </graphicData>
+	<exclusionTags>
+      <li>Tail</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== Amalgam Gene Flexibility ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamGeneFlexibility</defName>
+    <label>amalgam gene flexibility</label>
+    <description>Carriers of this amalgam gene have special cellular structure that facilitate and optimize metabolism. This improves overall genetic and metabolic quality, but increases the market value significantly.</description>
+    <iconPath>UI/Icons/Genes/OE_AmalgamGeneFlexibility</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+	<marketValueFactor>5.0</marketValueFactor>
+    <biostatCpx>4</biostatCpx>
+	<biostatMet>10</biostatMet>
+	<biostatArc>4</biostatArc>
+  </GeneDef>
+
+</Defs>

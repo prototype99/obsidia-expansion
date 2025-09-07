@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Proto Helmet ====================-->
+  <ThingDef ParentName="OEHelmetBase">
+	<defName>OE_Helmet_Proto</defName>
+    <label>obsidia proto helmet</label>
+    <description>Proto power armor Helmet, perfectly protects the owner. Designed for use by Obsidia Empire warriors several centuries ago.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OE/Proto/OEHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+	<tradeTags>
+      <li>OEGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+    <statBases>
+	  <WorkToMake>17500</WorkToMake>
+	  <MarketValue>655</MarketValue>
+	  <Mass>2.5</Mass>
+	  <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <SocialImpact>0.10</SocialImpact>
+	  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.10</ConversionPower>
+	  <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</SocialIdeoSpreadFrequencyFactor>
+	</equippedStatOffsets>
+	<costList Inherit="False">
+      <OE_Obsidian>20</OE_Obsidian>
+	  <OE_Mythril>10</OE_Mythril>
+	  <OE_Mooncloth>10</OE_Mooncloth>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OE/Proto/OEHelmet</wornGraphicPath>
+	  <tags>
+		<li>OEProto</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>OEConstruction</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

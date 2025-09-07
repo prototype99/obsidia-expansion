@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OCC - Blast ====================-->
+<OCCBlast.label>вибух</OCCBlast.label>
+<OCCBlast.deathMessage>{0} {0_gender ? помер : померла} від вибуху.</OCCBlast.deathMessage>
+
+<!--=============== OTC - Acid ====================-->
+<OTCAcid.label>кислота</OTCAcid.label>
+<OTCAcid.deathMessage>{0} {0_gender ? розчинився : розчинилася} в кислотних опіках.</OTCAcid.deathMessage>
+
+<!--=============== OTC - Cryo ====================-->
+<OTCCryo.label>кріо</OTCCryo.label>
+<OTCCryo.deathMessage>{0} {0_gender ? помер : померла} від обмороження.</OTCCryo.deathMessage>
+
+<!--=============== OE - UnstableToxins ====================-->
+<OEUnstableToxins.label>нестабільні токсини</OEUnstableToxins.label>
+<OEUnstableToxins.deathMessage>{0} {0_gender ? отримав : отримала} передозування нестабільними токсинами.</OEUnstableToxins.deathMessage>
+
+<!--=============== Arachna Queen - DeathCry ====================-->
+<OEMechCry.label>передсмертний крик королеви</OEMechCry.label>
+<OEMechCry.deathMessage>{0} {0_gender ? помер : померла} від розряду.</OEMechCry.deathMessage>
+
+<!--=============== Monarchid - DeathCry ====================-->
+<OEMonarchidCry.label>передсмертний крик монархіда</OEMonarchidCry.label>
+<OEMonarchidCry.deathMessage>{0} {0_gender ? помер : померла} від розряду.</OEMonarchidCry.deathMessage>
+
+<!--=============== OMG - Necrobane ====================-->
+<OMGNecrobane.label>некробейн</OMGNecrobane.label>
+<OMGNecrobane.deathMessage>{0} {0_gender ? загинув : загинула} від некробейну... але знову {0_gender ? піднявся : піднялася}.</OMGNecrobane.deathMessage>
+
+</LanguageData>

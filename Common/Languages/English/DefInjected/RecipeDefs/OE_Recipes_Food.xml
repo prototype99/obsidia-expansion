@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Jumyline ====================-->
+<OE_Cook_JumylinePack.label>cook jumyline candies x5</OE_Cook_JumylinePack.label>
+<OE_Cook_JumylinePack.description>Cook 5 jumyline candies from jumy berries and chocolate.</OE_Cook_JumylinePack.description>
+<OE_Cook_JumylinePack.jobString>Cooking 5 jumyline candies.</OE_Cook_JumylinePack.jobString>
+
+<OE_Cook_JumylineBulk.label>cook jumyline candies x10</OE_Cook_JumylineBulk.label>
+<OE_Cook_JumylineBulk.description>Cook 10 jumyline candies from jumy berries and chocolate.</OE_Cook_JumylineBulk.description>
+<OE_Cook_JumylineBulk.jobString>Cooking 10 jumyline candies.</OE_Cook_JumylineBulk.jobString>
+
+<!--=============== Obsidia Can Meal ====================-->
+<!--=============== Normal ====================-->
+<OE_CookCanMeal.label>cook obsidia can meal</OE_CookCanMeal.label>
+<OE_CookCanMeal.description>Cook an exquisite, high-quality meal from a combination of meat and plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</OE_CookCanMeal.description>
+<OE_CookCanMeal.jobString>Cooking obsidia can meal.</OE_CookCanMeal.jobString>
+<OE_CookCanMeal.ingredients.0.filter.customSummary>protein</OE_CookCanMeal.ingredients.0.filter.customSummary>
+
+<OE_CookCanMealBulk.label>cook obsidia can meal x4</OE_CookCanMealBulk.label>
+<OE_CookCanMealBulk.description>Cook 4 an exquisite, high-quality meals from a combination of meat and plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</OE_CookCanMealBulk.description>
+<OE_CookCanMealBulk.jobString>Cooking 4 obsidia can meals.</OE_CookCanMealBulk.jobString>
+<OE_CookCanMealBulk.ingredients.0.filter.customSummary>protein</OE_CookCanMealBulk.ingredients.0.filter.customSummary>
+
+<!--=============== Vegetarian ====================-->
+<OE_CookCanMeal_Veg.label>cook vegetarian obsidia can meal</OE_CookCanMeal_Veg.label>
+<OE_CookCanMeal_Veg.description>Cook an exquisite, high-quality meal from a combination of meat and plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</OE_CookCanMeal_Veg.description>
+<OE_CookCanMeal_Veg.jobString>Cooking vegetarian obsidia can meal.</OE_CookCanMeal_Veg.jobString>
+<OE_CookCanMeal_Veg.ingredients.0.filter.customSummary>vegetarian ingredients</OE_CookCanMeal_Veg.ingredients.0.filter.customSummary>
+
+<OE_CookCanMealBulk_Veg.label>cook vegetarian obsidia can meal x4</OE_CookCanMealBulk_Veg.label>
+<OE_CookCanMealBulk_Veg.description>Cook 4 an exquisite, high-quality meals from plant ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</OE_CookCanMealBulk_Veg.description>
+<OE_CookCanMealBulk_Veg.jobString>Cooking 4 vegetarian obsidia can meals.</OE_CookCanMealBulk_Veg.jobString>
+<OE_CookCanMealBulk_Veg.ingredients.0.filter.customSummary>vegetarian ingredients</OE_CookCanMealBulk_Veg.ingredients.0.filter.customSummary>
+
+<!--=============== Carnivore ====================-->
+<OE_CookCanMeal_Meat.label>cook carnivore obsidia can meal</OE_CookCanMeal_Meat.label>
+<OE_CookCanMeal_Meat.description>Cook an exquisite, high-quality meal from meat ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</OE_CookCanMeal_Meat.description>
+<OE_CookCanMeal_Meat.jobString>Cooking carnivore obsidia can meal.</OE_CookCanMeal_Meat.jobString>
+
+<OE_CookCanMealBulk_Meat.label>cook carnivore obsidia can meal x4</OE_CookCanMealBulk_Meat.label>
+<OE_CookCanMealBulk_Meat.description>Cook 4 an exquisite, high-quality meals from meat ingredients. Jumy berries are delicately used as a spice to enhance the flavors. While much of the ingredients are meticulously trimmed away, this process ensures the creation of an unparalleled dining experience.</OE_CookCanMealBulk_Meat.description>
+<OE_CookCanMealBulk_Meat.jobString>Cooking 4 carnivore obsidia can meals.</OE_CookCanMealBulk_Meat.jobString>
+
+</LanguageData>

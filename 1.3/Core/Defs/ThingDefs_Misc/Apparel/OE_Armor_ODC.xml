@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Armor ====================-->
+  <ThingDef Name="ODCArmorBase" ParentName="OEArmorBase" Abstract="True">
+    <tradeTags>
+      <li>ODCArmor</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>85000</WorkToMake>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>7.5</Mass>
+      <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>30</Insulation_Heat>
+    </statBases>
+	<equippedStatOffsets>
+      <ToxicSensitivity>-0.15</ToxicSensitivity>
+	  <ForagedNutritionPerDay>5</ForagedNutritionPerDay>
+    </equippedStatOffsets>
+  </ThingDef>
+
+<!--=============== Nomad MK-1 ====================-->
+  <ThingDef ParentName="ODCArmorBase">
+    <defName>ODC_Armor_Nomad</defName>
+    <label>ODC Nomad Armor</label>
+    <description>Power armor, good protects the owner. Designed for use by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>2925</MarketValue>
+    </statBases>
+    <costList Inherit="False">
+      <OE_Obsidian>185</OE_Obsidian>
+	  <OE_Platinum>50</OE_Platinum>
+	  <OE_Mooncloth>50</OE_Mooncloth>
+	  <OE_Syntherius>10</OE_Syntherius>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCNomad</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGear</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Recon MK-2 ====================-->
+  <ThingDef Name="ODCArmorRecon" ParentName="ODCArmorBase">
+    <defName>ODC_Armor_Recon</defName>
+    <label>ODC Recon Armor</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>3125</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <RangedWeapon_Cooldown>-0.10</RangedWeapon_Cooldown>
+	  <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.15</AimingDelayFactor>
+	  <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Armor_Nomad>1</ODC_Armor_Nomad>
+	  <OE_Leather_Astrinx>5</OE_Leather_Astrinx>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Recon MK-3 Various ====================-->
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="ODCArmorRecon">
+    <defName>ODC_Armor_Recon_Spacer</defName>
+    <label>ODC Recon Armor(Space Griffin)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Spacer/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3375</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>45</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Spacer/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Smoker ====================-->
+  <ThingDef ParentName="ODCArmorRecon">
+    <defName>ODC_Armor_Recon_Smoker</defName>
+    <label>ODC Recon Armor(Fogler)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Smokepop pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Smoker/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3375</MarketValue>
+	  <SmokepopBeltRadius>6.9</SmokepopBeltRadius>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Smoker/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon_Smoker</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smokepop</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Smokepop</verbClass>
+		<commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Shield ====================-->
+  <ThingDef ParentName="ODCArmorRecon">
+    <defName>ODC_Armor_Recon_Shield</defName>
+    <label>ODC Recon Armor(Guardian)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of a Reinforced Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Shield/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>ShieldBelt</thingClass>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.75</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Shield/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon_Shield</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Barrier ====================-->
+  <ThingDef Name="ODCArmorReconBarrier" ParentName="ODCArmorRecon" Abstract="True">
+    <!--= ODC_Armor_Recon_Barrier =-->
+    <label>ODC Recon Armor(Protector)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nRecon version improves shooting skills to the owner.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Barrier/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>VFECore.Apparel_ShieldBubble</thingClass>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Recon>1</ODC_Armor_Recon>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Recon/Barrier/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCRecon_Barrier</li>
+      </tags>
+    </apparel>
+	<comps>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
+		 <compClass>VFECore.CompShieldBubble</compClass>
+		 <blockRangedAttack>true</blockRangedAttack>
+		 <blockMeleeAttack>false</blockMeleeAttack>
+		 <showWhenDrafted>true</showWhenDrafted>
+		 <showOnHostiles>true</showOnHostiles>
+		 <showOnNeutralInCombat>true</showOnNeutralInCombat>
+		 <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		 <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+		 <EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+		 <minShieldSize>1.4</minShieldSize>
+		 <maxShieldSize>1.8</maxShieldSize>
+		 <disableRotation>true</disableRotation>
+	  </li>
+	</comps>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Duelist MK-2 ====================-->
+  <ThingDef Name="ODCArmorDuelist" ParentName="ODCArmorBase">
+    <defName>ODC_Armor_Duelist</defName>
+    <label>ODC Duelist Armor</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	  <MarketValue>3125</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MeleeHitChance>2</MeleeHitChance>
+	  <MeleeDodgeChance>2</MeleeDodgeChance>
+	  <MeleeWeapon_DamageMultiplier>0.10</MeleeWeapon_DamageMultiplier>
+	  <TrapSpringChance>-0.55</TrapSpringChance>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <ODC_Armor_Nomad>1</ODC_Armor_Nomad>
+	  <OE_Leather_Raptor>5</OE_Leather_Raptor>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearAdv</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Duelist MK-3 Various ====================-->
+<!--=============== Spacer ====================-->
+  <ThingDef ParentName="ODCArmorDuelist">
+    <defName>ODC_Armor_Duelist_Spacer</defName>
+    <label>ODC Duelist Armor(Space Griffin)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Spacer/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3375</MarketValue>
+	  <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>60</Insulation_Heat>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Duelist>1</ODC_Armor_Duelist>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Spacer/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Smoker ====================-->
+  <ThingDef ParentName="ODCArmorDuelist">
+    <defName>ODC_Armor_Duelist_Smoker</defName>
+    <label>ODC Duelist Armor(Fogler)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Smokepop pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Smoker/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+      <MarketValue>3375</MarketValue>
+	  <SmokepopBeltRadius>6.9</SmokepopBeltRadius>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Duelist>1</ODC_Armor_Duelist>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Smoker/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist_Smoker</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smokepop</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Smokepop</verbClass>
+		<commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Shield ====================-->
+  <ThingDef ParentName="ODCArmorDuelist">
+    <defName>ODC_Armor_Duelist_Shield</defName>
+    <label>ODC Duelist Armor(Guardian)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of a Reinforced Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Shield/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>ShieldBelt</thingClass>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.75</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Duelist>1</ODC_Armor_Duelist>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Shield/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist_Shield</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Barrier ====================-->
+  <ThingDef Name="ODCArmorDuelistBarrier" ParentName="ODCArmorDuelist" Abstract="True">
+    <!--= ODC_Armor_Duelist_Barrier =-->
+    <label>ODC Duelist Armor(Protector)</label>
+    <description>Moded power armor, good protects the owner. Designed for use by Obsidia Drifters.\n\nDuelist version improves melee skills to the owner.\n\nModified with the addition of the Universal Barrier.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Barrier/ODCArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>VFECore.Apparel_ShieldBubble</thingClass>
+    <statBases>
+	  <MarketValue>3375</MarketValue>
+	  <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.5</EnergyShieldEnergyMax>
+    </statBases>
+    <costList Inherit="False">
+      <ODC_Armor_Duelist>1</ODC_Armor_Duelist>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/ODC/Duelist/Barrier/ODCArmor</wornGraphicPath>
+	  <tags>
+        <li>ODCDuelist_Barrier</li>
+      </tags>
+    </apparel>
+	<comps>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
+		 <compClass>VFECore.CompShieldBubble</compClass>
+		 <blockRangedAttack>true</blockRangedAttack>
+		 <blockMeleeAttack>false</blockMeleeAttack>
+		 <showWhenDrafted>true</showWhenDrafted>
+		 <showOnHostiles>true</showOnHostiles>
+		 <showOnNeutralInCombat>true</showOnNeutralInCombat>
+		 <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		 <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+		 <EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+		 <minShieldSize>1.4</minShieldSize>
+		 <maxShieldSize>1.8</maxShieldSize>
+		 <disableRotation>true</disableRotation>
+	  </li>
+	</comps>
+	<recipeMaker>
+      <researchPrerequisite>ODCGearExp</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

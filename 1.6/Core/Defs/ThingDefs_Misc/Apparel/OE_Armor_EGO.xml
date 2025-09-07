@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Armor ====================-->
+  <ThingDef Name="EGOArmorBase" ParentName="OEArmorCoreNQ" Abstract="True">
+	<tradeTags>
+      <li>EGOGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>30000</WorkToMake>
+	  <Mass>12</Mass>
+    </statBases>
+	<apparel Inherit="False">
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+		<li>OnSkin</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<comps>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_EGO_Armor</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Suit ====================-->
+  <ThingDef ParentName="EGOArmorBase">
+	<defName>EGO_Armor_Suit</defName>
+    <label>EGO Suit</label>
+    <description>Specially gestated amalgam Suit, well protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/EGO/Suit/EGOArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3065</MarketValue>
+	  <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>10</CarryingCapacity>
+	  <MoveSpeed>0.2</MoveSpeed>
+	  <ForagedNutritionPerDay>-1</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.10</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
+    </equippedStatOffsets>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/EGO/Suit/EGOArmor</wornGraphicPath>
+	  <tags>
+		<li>EGOGear</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Carapace ====================-->
+  <ThingDef ParentName="EGOArmorBase">
+	<defName>EGO_Armor_Carapace</defName>
+    <label>EGO Carapace</label>
+    <description>Specially gestated amalgam Carapace, perfectly protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/EGO/Carapace/EGOArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3315</MarketValue>
+	  <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <Insulation_Cold>55</Insulation_Cold>
+      <Insulation_Heat>55</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>20</CarryingCapacity>
+	  <MoveSpeed>0.25</MoveSpeed>
+	  <ForagedNutritionPerDay>-2</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
+    </equippedStatOffsets>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/EGO/Carapace/EGOArmor</wornGraphicPath>
+	  <tags>
+		<li>EGOGear</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Shell ====================-->
+<!--=============== Various ====================-->
+<!--=============== Worker ====================-->
+  <ThingDef ParentName="EGOArmorBase">
+	<defName>EGO_Armor_Shell_Worker</defName>
+    <label>EGO Shell(Constructor)</label>
+    <description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve working stats.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Worker/EGOArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3665</MarketValue>
+	  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>30</CarryingCapacity>
+	  <MoveSpeed>0.35</MoveSpeed>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.2</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
+	  <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+	  <GlobalLearningFactor>0.50</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Worker/EGOArmor</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Melee ====================-->
+  <ThingDef ParentName="EGOArmorBase">
+	<defName>EGO_Armor_Shell_Melee</defName>
+    <label>EGO Shell(Berserker)</label>
+    <description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve melee combat stats and modified with the addition of a Smokepop pack.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Melee/EGOArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3665</MarketValue>
+	  <ArmorRating_Sharp>1.75</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+	  <PackRadius>6.9</PackRadius>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>40</CarryingCapacity>
+	  <MoveSpeed>0.2</MoveSpeed>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.2</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
+	  <MeleeHitChance>5</MeleeHitChance>
+	  <MeleeDodgeChance>5</MeleeDodgeChance>
+	  <MeleeWeapon_DamageMultiplier>0.20</MeleeWeapon_DamageMultiplier>
+    </equippedStatOffsets>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Melee/EGOArmor</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+		<li>OESUndying_Melee</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>10</maxCharges>
+        <ammoDef>OE_EGOSeed</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smokepop</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+		<verbClass>Verb_Smokepop</verbClass>
+		<commandIcon>UI/Abilities/Armor/Smoker</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Ranged ====================-->
+  <ThingDef ParentName="EGOArmorBase">
+	<defName>EGO_Armor_Shell_Ranged</defName>
+    <label>EGO Shell(Ballista)</label>
+    <description>Specially gestated amalgam Shell, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve ranged combat stats and modified by installing a Grenade Launcher.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Ranged/EGOArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>3665</MarketValue>
+	  <ArmorRating_Sharp>1.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.90</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+      <CarryingCapacity>35</CarryingCapacity>
+	  <MoveSpeed>0.25</MoveSpeed>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.2</RawNutritionFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
+	  <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.20</AimingDelayFactor>
+	  <RangedWeapon_Cooldown>-0.20</RangedWeapon_Cooldown>
+    </equippedStatOffsets>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/EGO/Shell/Ranged/EGOArmor</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+		<li>OESUndying_Ranged</li>
+      </tags>
+    </apparel>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>10</maxCharges>
+        <ammoDef>OE_EGOSeed</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>14.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>EGO_Grenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <defName>EGO_Grenade</defName>
+	<label>EGO Ballista Grenade</label>
+	<thingClass>Projectile_Explosive</thingClass>
+	<graphicData>
+      <texPath>Things/Projectile/EGO_Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierAcid</uiIconPath>
+    <projectile>
+      <explosionRadius>2.9</explosionRadius>
+      <damageDef>OTCAcid</damageDef>
+	  <damageAmountBase>15</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <explosionDelay>100</explosionDelay>
+	  <speed>35</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>0.4</shadowSize>
+	  <extraDamages>
+		<li>
+         <def>OTCCryo</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+</Defs>

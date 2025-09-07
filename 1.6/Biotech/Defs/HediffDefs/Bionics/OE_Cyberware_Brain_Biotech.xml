@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Brain ====================-->
+<!--=============== Cyberware - Mechanitor ====================-->
+  <HediffDef ParentName="OECyberwareLvlParts">
+    <defName>OE_CyberwareBrain_Mechanitor</defName>
+    <label>cyberware AI - Mechanitor</label>
+    <labelNoun>a cyberware AI - Mechanitor</labelNoun>
+    <description>An installed cyberware AI - Mechanitor.\n\nThis cyberware can be installed up to 10 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_CyberwareBrain_Mechanitor</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>OE_CyberwareBrain_Mechanitor</spawnThingOnRemoved>
+    <minSeverity>0</minSeverity>
+    <maxSeverity>10</maxSeverity>
+	<stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.01</SocialImpact>
+		  <MechBandwidth>3</MechBandwidth>
+          <MechControlGroups>1</MechControlGroups>
+		  <MechRepairSpeed>0.05</MechRepairSpeed>
+		  <MechFormingSpeed>0.05</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.05</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.02</SocialImpact>
+		  <MechBandwidth>6</MechBandwidth>
+          <MechControlGroups>1</MechControlGroups>
+		  <MechRepairSpeed>0.10</MechRepairSpeed>
+		  <MechFormingSpeed>0.10</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.10</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.03</SocialImpact>
+		  <MechBandwidth>9</MechBandwidth>
+          <MechControlGroups>2</MechControlGroups>
+		  <MechRepairSpeed>0.15</MechRepairSpeed>
+		  <MechFormingSpeed>0.15</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.15</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.04</SocialImpact>
+		  <MechBandwidth>12</MechBandwidth>
+          <MechControlGroups>2</MechControlGroups>
+		  <MechRepairSpeed>0.20</MechRepairSpeed>
+		  <MechFormingSpeed>0.20</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.20</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.05</SocialImpact>
+		  <MechBandwidth>15</MechBandwidth>
+          <MechControlGroups>3</MechControlGroups>
+		  <MechRepairSpeed>0.25</MechRepairSpeed>
+		  <MechFormingSpeed>0.25</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.25</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>6</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.06</SocialImpact>
+		  <MechBandwidth>18</MechBandwidth>
+          <MechControlGroups>3</MechControlGroups>
+		  <MechRepairSpeed>0.30</MechRepairSpeed>
+		  <MechFormingSpeed>0.30</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.30</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>7</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.07</SocialImpact>
+		  <MechBandwidth>21</MechBandwidth>
+          <MechControlGroups>4</MechControlGroups>
+		  <MechRepairSpeed>0.35</MechRepairSpeed>
+		  <MechFormingSpeed>0.35</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.35</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>8</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.08</SocialImpact>
+		  <MechBandwidth>24</MechBandwidth>
+          <MechControlGroups>4</MechControlGroups>
+		  <MechRepairSpeed>0.40</MechRepairSpeed>
+		  <MechFormingSpeed>0.40</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.40</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+	  <li>
+        <minSeverity>9</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.09</SocialImpact>
+		  <MechBandwidth>27</MechBandwidth>
+          <MechControlGroups>5</MechControlGroups>
+		  <MechRepairSpeed>0.45</MechRepairSpeed>
+		  <MechFormingSpeed>0.45</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.45</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+      <li>
+        <minSeverity>10</minSeverity>
+        <statOffsets>
+		  <SocialImpact>-0.10</SocialImpact>
+		  <MechBandwidth>30</MechBandwidth>
+          <MechControlGroups>5</MechControlGroups>
+		  <MechRepairSpeed>0.50</MechRepairSpeed>
+		  <MechFormingSpeed>0.50</MechFormingSpeed>
+		  <WorkSpeedGlobalOffsetMech>0.50</WorkSpeedGlobalOffsetMech>
+	    </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="OEBodyPartsCW">
+    <defName>OE_CyberwareBrain_Mechanitor</defName>
+    <label>cyberware AI - Mechanitor</label>
+    <description>Obsidia cyberware AI assistant is technology installed into the human brain that sometimes has the capability to interface with the nervous system. Its purpose is to achieve higher performance and improvements Mechanoids control abilities.\n\nInstallation requires - cyberware AI interface.\n\nThis cyberware can be installed up to 10 times to increase its effect.</description>
+    <descriptionHyperlinks><ThingDef>OE_ImplantBrain_Interface</ThingDef><HediffDef>OE_CyberwareBrain_Mechanitor</HediffDef></descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Health/Сyberware/Brain/OE_Mechanitor</texPath>
+    </graphicData>
+    <costList>
+      <OE_Empyrium>10</OE_Empyrium>
+	  <OE_FungalWoodLog>10</OE_FungalWoodLog>
+      <OE_Syntherius>40</OE_Syntherius>
+    </costList>
+	<butcherProducts>
+	  <OE_Empyrium>5</OE_Empyrium>
+	  <OE_FungalWoodLog>5</OE_FungalWoodLog>
+      <OE_Syntherius>20</OE_Syntherius>
+	</butcherProducts>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Implant {0_label}</useLabel>
+        <userMustHaveHediff>OE_ImplantBrain_Interface</userMustHaveHediff>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OE_CyberwareBrain_Mechanitor</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+	<recipeMaker>
+      <researchPrerequisite>OECyberwaresAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

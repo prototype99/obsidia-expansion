@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OCC ====================-->
+  <ThingDef ParentName="OEMeleeBaseNC">
+    <defName>OCC_Dominator_Drill</defName>
+    <label>Mech Balor</label>
+    <description>Reconstructed OCC Drill for use by mechanoids. Slow weapon are designed to destroy structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/OCC/Mechanoid_Drill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+	<weaponTags>
+      <li>OCCDominator</li>
+    </weaponTags>
+	<statBases>
+      <Mass>10.0</Mass>
+	  <MarketValue>2500</MarketValue>
+    </statBases>
+    <tools>
+      <li>
+        <label>drill</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

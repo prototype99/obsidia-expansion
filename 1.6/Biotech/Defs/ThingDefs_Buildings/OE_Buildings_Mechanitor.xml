@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Worker Antenna ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_MechWorkerAntenna</defName>
+    <label>mech efficiency obsidia antenna</label>
+    <description>A remote mech efficiency device. Any mechanoids in its effect radius will improves working stats.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_MechWorkerAntenna</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,4)</drawSize>
+	  <drawOffset>(0,0,0.75)</drawOffset>
+      <shadowData>
+        <volume>(0.8, 0.35, 0.8)</volume>
+        <offset>(0, 0, -0.2)</offset>
+      </shadowData>
+    </graphicData>	
+	<uiOrder>2420.666</uiOrder>
+	<descriptionHyperlinks>
+      <HediffDef>OE_BattlecraftRush</HediffDef>
+    </descriptionHyperlinks>
+	<costList>
+      <OE_Empyrium>15</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+      <OE_ArachnaCore>1</OE_ArachnaCore>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.4</fillPercent>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<drawerType>RealtimeOnly</drawerType>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+	<building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+	<tickerType>Normal</tickerType>
+	<tradeTags>
+      <li>OEBuilding</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <MarketValue>1650</MarketValue>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<size>(3,3)</size>
+    <passability>PassThroughOnly</passability>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <designationCategory>Biotech</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_CauseHediff_AoE">
+        <range>29.9</range>
+        <onlyTargetMechs>true</onlyTargetMechs>
+        <hediff>OE_MechWorkerBoost</hediff>
+        <activeSound>MechBooster_Working</activeSound>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>OEMechtechAdv</li>
+    </researchPrerequisites>
+	<placeWorkers>
+      <li>PlaceWorker_ShowCauseHediffAoE</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_MechWorkerBoost</defName>
+    <label>efficiency boost</label>
+    <description>This mechanoid's energy efficiency, move and work speed are being enhanced by a nearby mech efficiency antenna.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>30</disappearsAfterTicks>
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MechEnergyUsageFactor>-0.20</MechEnergyUsageFactor>
+		  <MoveSpeed>0.20</MoveSpeed>
+          <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+
+<!--=============== Combat Antenna ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_MechCombatAntenna</defName>
+    <label>mech combat obsidia antenna</label>
+    <description>A remote mech combat enhancement device. Any mechanoids in its effect radius will improves combat stats.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_MechCombatAntenna</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,4)</drawSize>
+	  <drawOffset>(0,0,0.75)</drawOffset>
+      <shadowData>
+        <volume>(0.8, 0.35, 0.8)</volume>
+        <offset>(0, 0, -0.2)</offset>
+      </shadowData>
+    </graphicData>
+	<uiOrder>2420.666</uiOrder>
+	<descriptionHyperlinks>
+      <HediffDef>OE_BattlecraftRush</HediffDef>
+    </descriptionHyperlinks>
+	<costList>
+      <OE_Empyrium>15</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+      <OE_ArachnaCore>1</OE_ArachnaCore>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.4</fillPercent>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<drawerType>RealtimeOnly</drawerType>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+	<building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+	<tickerType>Normal</tickerType>
+	<tradeTags>
+      <li>OEBuilding</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <MarketValue>1650</MarketValue>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<size>(3,3)</size>
+    <passability>PassThroughOnly</passability>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <designationCategory>Biotech</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_CauseHediff_AoE">
+        <range>29.9</range>
+        <onlyTargetMechs>true</onlyTargetMechs>
+        <hediff>OE_MechCombatBoost</hediff>
+        <activeSound>MechBooster_Working</activeSound>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>OEMechtechAdv</li>
+    </researchPrerequisites>
+	<placeWorkers>
+      <li>PlaceWorker_ShowCauseHediffAoE</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_MechCombatBoost</defName>
+    <label>combat boost</label>
+    <description>This mechanoid's armor and targeting are being enhanced by a nearby mech combat antenna.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>30</disappearsAfterTicks>
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+		  <MeleeHitChance>4</MeleeHitChance>
+		  <RangedCooldownFactor>-0.25</RangedCooldownFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <isBad>false</isBad>
+  </HediffDef>
+
+<!--=============== Corrupter Antenna ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_MechCorrupterAntenna</defName>
+    <label>mech corrupter obsidia antenna</label>
+    <description>A remote mech deterioration device. Any mechanoids in its effect radius will deteriorate combat stats.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/OE_MechCorrupterAntenna</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,4)</drawSize>
+	  <drawOffset>(0,0,0.75)</drawOffset>
+      <shadowData>
+        <volume>(0.8, 0.35, 0.8)</volume>
+        <offset>(0, 0, -0.2)</offset>
+      </shadowData>
+    </graphicData>
+	<uiOrder>2420.666</uiOrder>	
+	<descriptionHyperlinks>
+      <HediffDef>OE_BattlecraftRush</HediffDef>
+    </descriptionHyperlinks>
+	<costList>
+      <OE_Empyrium>15</OE_Empyrium>
+	  <OE_Orichalcum>15</OE_Orichalcum>
+	  <OE_Syntherius>10</OE_Syntherius>
+      <OE_ArachnaCore>1</OE_ArachnaCore>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.4</fillPercent>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<drawerType>RealtimeOnly</drawerType>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+	<building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+	<tickerType>Normal</tickerType>
+	<tradeTags>
+      <li>OEBuilding</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <MarketValue>1650</MarketValue>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<size>(3,3)</size>
+    <passability>PassThroughOnly</passability>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <designationCategory>Biotech</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_CauseHediff_AoE">
+        <range>29.9</range>
+        <onlyTargetMechs>true</onlyTargetMechs>
+        <hediff>OE_MechCorrupterBoost</hediff>
+        <activeSound>MechBooster_Working</activeSound>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>OEMechtechAdv</li>
+    </researchPrerequisites>
+	<placeWorkers>
+      <li>PlaceWorker_ShowCauseHediffAoE</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_MechCorrupterBoost</defName>
+    <label>mech corruption</label>
+    <description>This mechanoid's speed, armor and targeting are being reduced by a nearby mech corrupter antenna.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8,0.8,0.35)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1250</disappearsAfterTicks>
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statFactors>
+		  <MoveSpeed>0.85</MoveSpeed>
+		</statFactors>
+		<statOffsets>
+          <ArmorRating_Sharp>-0.20</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>-0.20</ArmorRating_Blunt>
+		  <MeleeHitChance>-4</MeleeHitChance>
+		  <RangedCooldownFactor>0.25</RangedCooldownFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <isBad>true</isBad>
+  </HediffDef>
+
+<!--=============== Mech Recharger ====================-->
+  <ThingDef ParentName="BaseMechCharger">
+    <defName>OE_MechRecharger</defName>
+    <label>obsidia mech recharger</label>
+    <description>Obsidia Mech Recharger is a compact and versatile unit. Mechanoids of all standard classified sizes can recharge here.\n\nDuring recharge, this recharger produces toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to time.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/OE_MechRecharger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawRotated>false</drawRotated>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<uiOrder>2410.666</uiOrder>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>500</MarketValue>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+	<tradeTags>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+    <size>(1,1)</size>
+    <building>
+      <requiredMechWeightClasses>
+        <li>Light</li>
+		<li>Medium</li>
+        <li>Heavy</li>
+        <li>UltraHeavy</li>
+      </requiredMechWeightClasses>
+      <barDrawData>
+        <north>
+          <preRotationOffset>(0.002166748,-0.3722534)</preRotationOffset>
+          <size>(0.4398041,0.1365509)</size>
+        </north>
+        <south>
+          <preRotationOffset>(-0.002609305,-0.6002655)</preRotationOffset>
+          <size>(0.4398041,0.121376)</size>
+        </south>
+        <east>
+          <preRotationOffset>(0.04148867,0.6301422)</preRotationOffset>
+          <size>(0.4066238,0.1425552)</size>
+        </east>
+        <west>
+          <preRotationOffset>(-0.02767944,0.6171188)</preRotationOffset>
+          <size>(0.397522,0.1395264)</size>
+        </west>
+      </barDrawData>
+    </building>
+    <costList>
+      <OE_Obsidian>20</OE_Obsidian>
+      <OE_Mythril>10</OE_Mythril>
+	  <OE_Syntherius>30</OE_Syntherius>
+    </costList>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>OEMechtech</li>
+    </researchPrerequisites>
+	<fillPercent>0.2</fillPercent>
+	<blockWind>False</blockWind>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_ThingContainer">
+        <compClass>CompThingContainer</compClass>
+        <stackLimit>10</stackLimit>
+        <drawContainedThing>false</drawContainedThing>
+        <dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== EGO Helmet ====================-->
+<!--=============== Exohelm ====================-->
+<!--=============== Psy ====================-->
+  <ThingDef ParentName="EGOHelmetBase">
+	<defName>EGO_Helmet_Exohelm_Psy</defName>
+    <label>EGO Exohelm(Mindweaver)</label>
+    <description>Specially gestated amalgam Exohelm, excellent protects the owner. Designed for use by Undyings. Amalgams are hybrids of EGO seed and Obsidia technology.\n\nThis modification improve psy stats.\n\nThe item's quality levels can be reset using an EGO Seed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Psy/EGOHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>2400</MarketValue>
+	  <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.75</ArmorRating_Heat>
+      <Insulation_Cold>100</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+	  <Beauty>-1</Beauty>
+    </statBases>
+	<equippedStatOffsets>
+	  <ToxicResistance>0.90</ToxicResistance>
+	  <ToxicEnvironmentResistance>0.90</ToxicEnvironmentResistance>
+	  <ForagedNutritionPerDay>-4</ForagedNutritionPerDay>
+	  <RawNutritionFactor MayRequire="Ludeon.RimWorld.Biotech">-0.15</RawNutritionFactor>
+	  <PsychicSensitivity>0.5</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.091</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.25</MeditationFocusGain>
+    </equippedStatOffsets>
+    <apparel>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/EGO/Exohelm/Psy/EGOHelmet</wornGraphicPath>
+	  <tags>
+		<li>OESUndying</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

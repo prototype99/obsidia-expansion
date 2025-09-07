@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Obsidia Dialects ====================-->
+<!--=============== Standard ====================-->
+  <FactionLanguages.DialectDef>
+    <defName>OE_Obsidia_Standard</defName>
+	<label>Standard Obsidia dialect</label>
+	<description>The primary form of the language used throughout the Obsidia Empire. It represents a stabilized and regulated version of Obsidia language, forged in the aftermath of unification during Obsidia’s Last War. Characterized by its formal structure, adaptive syntax, and emphasis on clarity, this dialect stands apart from many galactic languages due to its calculated precision and embedded cultural authority. It is used in governance, military command, and interplanetary coordination, embodying the ideological uniformity and discipline of the Empire.</description>
+	<nameMaker>OE_Namer_Obsidia_Dialect_Standard</nameMaker>
+	<learningDifficulty>2.5</learningDifficulty>
+  </FactionLanguages.DialectDef>
+
+<!--=============== Outerworld ====================-->
+  <FactionLanguages.DialectDef>
+    <defName>OE_Obsidia_Outerworld</defName>
+	<label>Outerworld Obsidia dialect</label>
+	<description>A divergent variant of the original tongue, shaped by time, distance, and the influence of foreign environments. Spoken by colonists, nomads, exiles, and mercenaries beyond the reach of the Obsidia Empire, it integrates borrowed terminology, altered phonetics, and simplified constructions. Though rooted in Standard Obsidia, this dialect reflects adaptation, cultural fusion, and the independence of those who chose a life away from imperial control. It is often seen as less rigid, more expressive, and marked by regional innovation.</description>
+	<nameMaker>OE_Namer_Obsidia_Dialect_Outerworld</nameMaker>
+	<learningDifficulty>1.75</learningDifficulty>
+  </FactionLanguages.DialectDef>
+
+<!--=============== Ancient ====================-->
+  <FactionLanguages.DialectDef>
+    <defName>OE_Obsidia_Ancient</defName>
+	<label>Ancient Obsidia dialect</label>
+	<description>The original, unaltered form of the language spoken during the era of Obsidia’s Last War. It remains untouched by modern reforms and simplifications, preserving a dense, multifaceted structure that incorporates elements from numerous absorbed cultures, dialects, and ideologies. Rich in ceremonial phrasing, archaic grammar, and symbolic depth, this dialect is both linguistically complex and historically significant. Often encountered in ancient inscriptions, restricted archives, and military relics, it is studied by scholars and mystics alike for its role in shaping the ideological foundation of Obsidia.</description>
+	<nameMaker>OE_Namer_Obsidia_Dialect_Ancient</nameMaker>
+	<learningDifficulty>4.0</learningDifficulty>
+  </FactionLanguages.DialectDef>
+
+</Defs>

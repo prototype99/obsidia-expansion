@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Rosner Base ====================-->
+  <ThingDef Name="OEBaseRosner" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>3.3</MoveSpeed>
+      <MarketValue>950</MarketValue>
+      <ComfyTemperatureMin>-75</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <FilthRate>24</FilthRate>
+	  <CaravanRidingSpeedFactor>1.25</CaravanRidingSpeedFactor>
+	  <Wildness>0.65</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>horn</label>
+        <capacities>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.29</armorPenetration>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+		<armorPenetration>0.29</armorPenetration>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>left foot</label>
+        <labelNoLocation>foot</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.29</armorPenetration>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right foot</label>
+        <labelNoLocation>foot</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.29</armorPenetration>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithHoovesAndHorn</body>
+	  <herdAnimal>true</herdAnimal>
+	  <packAnimal>true</packAnimal>
+      <maxPreyBodySize>2.3</maxPreyBodySize>
+      <petness>0.1</petness>
+      <baseBodySize>4.2</baseBodySize>
+      <baseHungerRate>1.15</baseHungerRate>
+      <baseHealthScale>5.55</baseHealthScale>
+	  <roamMtbDays>2</roamMtbDays>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>OE_Leather_Direwolf</leatherDef>
+      <trainability>None</trainability>
+	  <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">WarTrumpet</li>
+      </specialTrainables>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.60</manhunterOnDamageChance>
+      <gestationPeriodDays>12</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>35</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.3</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.666</minAge>
+          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+          <soundDeath>Pawn_Muffalo_Death</soundDeath>
+          <soundCall>Pawn_Muffalo_Call</soundCall>
+          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+      <soundEating>Herbivore_Eat</soundEating>
+    </race>
+    <tradeTags>
+      <li>OEAnimal</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>24</milkAmount>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseRosner" Abstract="True">
+    <combatPower>285</combatPower>
+    <ecoSystemWeight>1.15</ecoSystemWeight>
+	<wildGroupSize>3~5</wildGroupSize>
+  </PawnKindDef>
+
+<!--=============== Rosner ====================-->
+  <ThingDef ParentName="OEBaseRosner">
+    <defName>OE_Rosner</defName>
+    <label>rosner</label>
+    <description>An Obsidia giant mammal with giant horn, domesticated in ancient times for fur, meat and milk. Rosner are peaceful creatures that can be tamed. But at the same time, they are very easy to enrage if you attack them. Once angered, its massive strength and sharp horn make it a brutal opponent.</description>
+    <race>
+      <meatLabel>rosner meat</meatLabel>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseRosner">
+    <defName>OE_Rosner</defName>
+    <label>rosner</label>
+    <race>OE_Rosner</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rosner/Rosner_Brown</texPath>
+          <drawSize>2.5</drawSize>
+		  <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rosner/Dessicated_Rosner_east</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rosner/Rosner_Brown</texPath>
+          <drawSize>3.25</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.6, 0.4)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rosner/Dessicated_Rosner_east</texPath>
+          <drawSize>3.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rosner/Rosner_Brown</texPath>
+          <drawSize>4.0</drawSize>
+          <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rosner/Dessicated_Rosner_east</texPath>
+          <drawSize>4.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<alternateGraphicChance>0.55</alternateGraphicChance>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Rosner/Rosner_Red</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Rosner/Rosner_White</texPath>
+	  </li>
+	</alternateGraphics>
+  </PawnKindDef>
+
+</Defs>

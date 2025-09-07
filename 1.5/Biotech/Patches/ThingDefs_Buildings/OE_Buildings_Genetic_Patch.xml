@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Colonial Gene Bank ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <value>
+      <li>OE_ColonialGeneBank</li>
+	  <li>OE_ColonialGeneProcessor</li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="GeneAssembler"]/descriptionHyperlinks</xpath>
+    <value>
+      <ThingDef>OE_ColonialGeneBank</ThingDef>
+	  <ThingDef>OE_ColonialGeneProcessor</ThingDef>
+    </value>
+</Operation>
+
+</Patch>

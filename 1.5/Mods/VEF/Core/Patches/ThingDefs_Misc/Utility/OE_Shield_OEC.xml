@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OEC - Shields ====================-->
+<!--=============== Small ====================-->
+  <ThingDef ParentName="OEShieldBase">
+    <defName>OEC_Shield_Small</defName>
+    <label>Exalted Deflector</label>
+	<description>Exalted small Psy Shield used by the OEC Inquisitors.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/OEC/OECShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>1.4</uiIconScale>
+	<tradeTags>
+      <li>OECGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>775</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.35</ArmorRating_Heat>
+	  <Beauty>1</Beauty>
+      <WorkToMake>100000</WorkToMake>
+      <Mass>2.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Obsidian>45</OE_Obsidian>
+	  <OE_Mythril>30</OE_Mythril>
+	  <OE_Platinum>10</OE_Platinum>
+	  <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+	<equippedStatOffsets>
+      <PsychicSensitivity>0.20</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>4</MeleeDodgeChance>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>OECShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/OEC/OECShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.0</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisites>
+        <li>OECGearMod</li>
+        <li>OEGearCross</li>
+      </researchPrerequisites>
+	  <recipeUsers>
+        <li>OE_ArmorStation</li>
+		<li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Gear_OEC_Utility</li>
+    </thingCategories>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

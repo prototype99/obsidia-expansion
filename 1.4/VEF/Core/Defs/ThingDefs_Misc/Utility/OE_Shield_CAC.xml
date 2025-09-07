@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== CAC - Shields ====================-->
+<!--=============== Big ====================-->
+  <ThingDef ParentName="OEShieldBase">
+    <defName>CAC_Shield_Big</defName>
+    <label>Cursed Bulwark</label>
+	<description>Regular big Shield used by CAC Cultists.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Shield/CAC/CACShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<tradeTags>
+      <li>CACCultist</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3975</MarketValue>
+	  <MaxHitPoints>250</MaxHitPoints>
+      <ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <WorkToMake>100000</WorkToMake>
+      <Mass>5.0</Mass>
+    </statBases>
+	<costList>
+      <OE_Obsidian>100</OE_Obsidian>
+	  <OE_Mythril>50</OE_Mythril>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+	  <OE_Syntherius>15</OE_Syntherius>
+    </costList>
+	<equippedStatOffsets>
+      <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+	  <MeleeDodgeChance>-2</MeleeDodgeChance>
+	  <Flammability>-0.50</Flammability>
+	  <RangedWeapon_Cooldown>-0.20</RangedWeapon_Cooldown>
+	  <MeleeWeapon_CooldownMultiplier>-0.20</MeleeWeapon_CooldownMultiplier>
+	  <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+	  <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+	<comps>
+      <li Class="VFECore.CompProperties_Shield">
+        <shieldTags>
+          <li>CACShield</li>
+        </shieldTags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <coveredBodyPartGroups>
+          <li>Neck</li>
+          <li>Torso</li>
+          <li>Arms</li>
+          <li>Hands</li>
+          <li>Legs</li>
+        </coveredBodyPartGroups>
+        <offHandGraphicData>
+          <texPath>Things/Item/Equipment/Utility/Shield/CAC/CACShield</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.1</drawSize>
+        </offHandGraphicData>
+        <offHandHoldOffset>
+          <northDefault>
+            <offset>(-0.15, 0, 0.05)</offset>
+            <behind>true</behind>
+          </northDefault>
+          <east>
+            <offset>(0.05, 0, 0.05)</offset>
+            <behind>true</behind>
+          </east>
+          <south>
+            <offset>(0.15, -0.04, 0.05)</offset>
+          </south>
+          <west>
+            <offset>(-0.05, -0.04, 0.05)</offset>
+          </west>
+        </offHandHoldOffset>
+      </li>
+    </comps>
+	<tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>centre</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisite>CACGear</researchPrerequisite>
+	  <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

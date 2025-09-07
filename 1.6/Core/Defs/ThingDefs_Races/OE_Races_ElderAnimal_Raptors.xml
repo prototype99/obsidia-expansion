@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Elder Raptors Base ====================-->
+  <ThingDef Name="OEBaseRaptorElder" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>7.0</MoveSpeed>
+      <MarketValue>3650</MarketValue>
+      <ComfyTemperatureMin>-14</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>64</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.40</ArmorRating_Heat>
+	  <ToxicResistance>0.55</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.25</ToxicEnvironmentResistance>
+      <FilthRate>2</FilthRate>
+	  <CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
+	  <Wildness>0.99</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>left foot claw</label>
+        <capacities>
+          <li>Scratch</li>
+		  <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.25</cooldownTime>
+		<armorPenetration>0.75</armorPenetration>
+        <linkedBodyPartsGroup>OELeftFootClawAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.35</chanceFactor>
+      </li>
+      <li>
+        <label>right foot claw</label>
+        <capacities>
+          <li>Scratch</li>
+		  <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.25</cooldownTime>
+		<armorPenetration>0.75</armorPenetration>
+        <linkedBodyPartsGroup>OERightFootClawAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.35</chanceFactor>
+      </li>
+	  <li>
+        <label>left arm claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.0</cooldownTime>
+		<armorPenetration>0.75</armorPenetration>
+        <linkedBodyPartsGroup>OELeftArmClawAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.35</chanceFactor>
+      </li>
+      <li>
+        <label>right arm claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.0</cooldownTime>
+		<armorPenetration>0.75</armorPenetration>
+        <linkedBodyPartsGroup>OERightArmClawAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.35</chanceFactor>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.55</cooldownTime>
+		<armorPenetration>0.75</armorPenetration>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>OERaptorLike</body>
+      <predator>true</predator>
+	  <packAnimal>true</packAnimal>
+      <maxPreyBodySize>5.5</maxPreyBodySize>
+      <petness>0.1</petness>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>10.0</baseHealthScale>
+      <foodType>CarnivoreAnimalStrict</foodType>
+      <leatherDef>OE_Leather_Raptor</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+	  <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_ElderJump</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">OE_ElderPower_Raptor</li>
+      </specialTrainables>
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+	  <canFishForFood>true</canFishForFood>
+      <gestationPeriodDays>8</gestationPeriodDays>
+	  <roamMtbDays>7</roamMtbDays>
+      <lifeExpectancy>95</lifeExpectancy>
+	  <neverIncludeInQuests>true</neverIncludeInQuests>
+	  <canCrossBreedWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Raptor</li>
+      </canCrossBreedWith>
+      <crossAggroWith>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">OE_Raptor</li>
+      </crossAggroWith>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>OE_EggElderRaptorUnfertilized</eggUnfertilizedDef>
+		<eggFertilizedDef>OE_EggElderRaptorFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>12</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1~2</eggCountRange>
+	  </li>
+	</comps>
+    <tradeTags>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--=============== Elder Raptor ====================-->
+  <ThingDef ParentName="OEBaseRaptorElder">
+    <defName>OE_Elder_Raptor</defName>
+    <label>elder raptor</label>
+    <description>Raptors are large, aggressive theropods, but seem to be very intelligent for beasts. These theropods prefer to live in warmer climates. Difficult but accessible to taming, which makes these fast and deadly predators an excellent fighting unit.\n\nYet one Raptor was different. After a violent volcanic eruption scorched the southern plains, this lone survivor began to display unnatural agility and heightened aggression. Unbeknownst to observers, the creature had absorbed an EGO Seed buried beneath ancient lava beds—melding it with its own genetic code over years of solitude and constant pursuit.\n\nThe resulting Elder Raptor is a blur of motion and violence. Quicker than the eye, with claws that rend steel and a feral leap that closes any distance in a flash, it is evolution given purpose.\n\nElder Raptors are even rarer and more dangerous than the typical Raptor.</description>
+    <race>
+      <meatLabel>elder raptor meat</meatLabel>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Elder_Raptor</defName>
+    <label>elder raptor</label>
+    <labelPlural>elder raptors</labelPlural>
+    <race>OE_Elder_Raptor</race>
+	<combatPower>550</combatPower>
+    <ecoSystemWeight>1.0</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+	<abilities>
+      <li>OE_ElderJump</li>
+	  <li>OE_ElderPower_Raptor</li>
+    </abilities>
+    <lifeStages>
+      <li>
+        <label>elder raptor juvenile</label>
+		<labelPlural>elder raptor juveniles</labelPlural>
+		<bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Raptor/Elder/Raptor_Black</texPath>
+          <drawSize>1.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Raptor/Elder/Dessicated_Raptor_east</texPath>
+          <drawSize>1.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Raptor/Elder/Raptor_Black</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Raptor/Elder/Dessicated_Raptor_east</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Raptor/Elder/Raptor_Black</texPath>
+          <drawSize>3.0</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Raptor/Elder/Dessicated_Raptor_east</texPath>
+          <drawSize>3.0</drawSize>
+        </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>OE_EGOSeed_Elder_Raptor</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+	<alternateGraphicChance>0.7</alternateGraphicChance>
+	<alternateGraphics>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Raptor/Elder/Raptor_Blue</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Raptor/Elder/Raptor_Pink</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Raptor/Elder/Raptor_Silver</texPath>
+	  </li>
+	  <li>
+	    <texPath>Things/Pawn/Animal/Raptor/Elder/Raptor_White</texPath>
+	  </li>
+	</alternateGraphics>
+  </PawnKindDef>
+
+</Defs>

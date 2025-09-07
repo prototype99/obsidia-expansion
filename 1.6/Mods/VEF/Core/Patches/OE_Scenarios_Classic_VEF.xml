@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!--=============== Obsidia Colonists ====================-->	 
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ScenarioDef[defName="OE_ObsidiaColonists"]/scenario/parts</xpath>
+    <value>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>ObsidiaRenegadeClan</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-35~10</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>ObsidiaPilgrimClan</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-35~10</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>ObsidiaEmpire</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>10~35</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>OutlanderCivil</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-75~25</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>TribeCivil</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-75~25</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+    </value>
+</Operation>
+
+<!--=============== Obsidia Agent ====================-->	
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ScenarioDef[defName="OE_ObsidiaAgent"]/scenario/parts</xpath>
+    <value>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>ObsidiaRenegadeClan</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-75~25</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>ObsidiaPilgrimClan</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-75~25</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>ObsidiaEmpire</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>10~35</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>OutlanderCivil</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-100~-75</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+		<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+		  <factionDef>TribeCivil</factionDef>
+		  <affectStartingGoodwill>True</affectStartingGoodwill>
+		  <startingGoodwillRange>-100~-75</startingGoodwillRange>
+		  <def>VFEC_ForcedFactionGoodwill</def>
+		</li>
+    </value>
+</Operation>
+
+</Patch>

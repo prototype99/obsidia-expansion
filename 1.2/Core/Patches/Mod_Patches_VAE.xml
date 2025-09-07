@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Vanilla Armour Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OMC Barrier ====================-->
+  <ThingDef ParentName="OMCArmorModBarrier">
+	<defName>OMC_Armor_M_Barrier</defName>
+  </ThingDef>
+
+<!--=============== OTC Barrier ====================-->
+  <ThingDef ParentName="OTCArmorModBarrier">
+	<defName>OTC_Armor_M_Barrier</defName>
+  </ThingDef>
+
+<!--=============== OCC Barrier ====================-->
+  <ThingDef ParentName="OCCArmorModBarrier">
+	<defName>OCC_Armor_M_Barrier</defName>
+  </ThingDef>
+
+<!--=============== ODC Barrier ====================-->
+  <ThingDef ParentName="ODCArmorReconBarrier">
+	<defName>ODC_Armor_Recon_Barrier</defName>
+  </ThingDef>
+
+  <ThingDef ParentName="ODCArmorDuelistBarrier">
+	<defName>ODC_Armor_Duelist_Barrier</defName>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

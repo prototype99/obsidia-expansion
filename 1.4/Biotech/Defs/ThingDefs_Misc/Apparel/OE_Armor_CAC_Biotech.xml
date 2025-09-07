@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Light ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="CACArmorLight">
+	<defName>CAC_LightArmor_Mechanitor</defName>
+    <label>CAC Cultist Light Armor(Overseer)</label>
+    <description>Light power armor, well protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Mechanoids Control pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Mechanitor/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5550</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechFormingSpeed>0.75</MechFormingSpeed>
+	  <MechRepairSpeed>0.75</MechRepairSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_LightArmor>1</CAC_LightArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Light/Mechanitor/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACLightCultist_Mechanitor</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Heavy ====================-->
+<!--=============== Mechanitor ====================-->
+  <ThingDef ParentName="CACArmorHeavy">
+	<defName>CAC_HeavyArmor_Mechanitor</defName>
+    <label>CAC Cultist Heavy Armor(Overseer)</label>
+    <description>Heavy power armor, excellent protects the owner. Designed and modified for use by CAC Cultists.\n\nModified with the addition of a Mechanoids Control pack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Mechanitor/CACArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <MarketValue>5925</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <MechControlGroups>2</MechControlGroups>
+	  <MechBandwidth>15</MechBandwidth>
+	  <MechFormingSpeed>0.75</MechFormingSpeed>
+	  <MechRepairSpeed>0.75</MechRepairSpeed>
+    </equippedStatOffsets>
+    <costList Inherit="False">
+      <CAC_HeavyArmor>1</CAC_HeavyArmor>
+	  <OE_ModernizationKit>1</OE_ModernizationKit>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Armor/CAC/Heavy/Mechanitor/CACArmor</wornGraphicPath>
+	  <tags>
+		<li>Spacer</li>
+		<li>EVA</li>
+		<li>CACHeavyCultist_Mechanitor</li>
+      </tags>
+    </apparel>
+	<recipeMaker>
+      <researchPrerequisite>CACGearAdv</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+<!--=============== Structure Storage ====================-->
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Storage_A</defName>
+  <isStorage>true</isStorage>
+  <spawnConduits>false</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Door_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.</li>
+      <li>.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.</li>
+      <li>.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,OE_Wall_OE_Obsidian,OE_Door_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.</li>
+      <li>.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,PowerConduit,.,PowerConduit,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,PowerConduit,.,PowerConduit,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,.,PowerConduit,OE_Wall_OE_Obsidian,PowerConduit,.,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,OE_Column_Light_OE_Obsidian,.,.,OE_Wall_OE_Obsidian,.,.,OE_Column_Light_OE_Obsidian,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,.,.,.,OE_Wall_OE_Obsidian,.,.,.,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,PowerConduit,PowerConduit,PowerConduit,.,.,.,OE_Wall_OE_Obsidian,.,.,.,PowerConduit,PowerConduit,PowerConduit,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Door_OE_Obsidian,.,OE_Door_OE_Obsidian,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,OE_Door_OE_Obsidian,.,OE_Door_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,PowerConduit,PowerConduit,PowerConduit,.,.,.,OE_Wall_OE_Obsidian,.,.,.,PowerConduit,PowerConduit,PowerConduit,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,.,.,.,OE_Wall_OE_Obsidian,.,.,.,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,OE_Column_Light_OE_Obsidian,.,.,OE_Wall_OE_Obsidian,.,.,OE_Column_Light_OE_Obsidian,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,.,PowerConduit,OE_Wall_OE_Obsidian,PowerConduit,.,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.,PowerConduit,.,PowerConduit,.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian</li>
+      <li>.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,PowerConduit,.,PowerConduit,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.</li>
+      <li>.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,OE_Wall_OE_Obsidian,OE_Door_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.</li>
+      <li>.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.</li>
+      <li>.,.,.,.,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Door_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,OE_Wall_OE_Obsidian,.,.,.,.</li>
+    </li>
+  </layouts>
+  <roofGrid>
+    <li>.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+    <li>.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+    <li>.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.</li>
+    <li>.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+    <li>.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.</li>
+    <li>.,.,.,1,1,1,1,1,1,1,1,1,1,1,1,1,.,.,.</li>
+    <li>.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+    <li>.,.,.,.,1,1,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+  </roofGrid>
+  <terrainGrid>
+    <li>.,.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.,.</li>
+    <li>.,.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.,.</li>
+    <li>.,.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Storage</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+</Defs>

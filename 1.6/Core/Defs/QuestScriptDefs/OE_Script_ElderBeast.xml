@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Quest - Elder Beast ====================-->
+  <QuestScriptDef>
+    <defName>OE_Quest_ElderBeast</defName>
+    <rootSelectionWeight>0.85</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+	<autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+		<li>questName->[beastAdjective] [beastNoun]</li>
+        <!-- Pieces -->
+		<li>beastAdjective->Bone-chilling</li>
+		<li>beastAdjective->Echoing</li>
+		<li>beastAdjective->Distant</li>
+		<li>beastAdjective->Low</li>
+		<li>beastAdjective->Elder</li>
+		<li>beastNoun->Howl</li>
+		<li>beastNoun->Roar</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Colonists reported hearing something strange nearby — a deep, animalistic sound echoing through the land.\n\nThey couldn’t identify what creature made it, but it sounded large.\n\nVery large.Something is out there... and it might be coming this way.</li>
+		<li>questDescription->It began with a sound — low, primal, and impossibly distant. It echoed across the trees, through rock and bone, as if the land itself remembered the beast.\n\nAnimals have fled. The air is colder. Even the wind seems to avoid the forest now.\n\nSomething ancient is stirring — watching, listening, drawing closer. You don’t know what it is… only that it was never meant to return.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_GetWalkInSpot" />
+        
+		<!-- Elder Beast Arrive -->
+        <li Class="QuestNode_Set">
+          <name>ElderBeastDelayTicks</name>
+          <value>$(roundToTicksRough(randInt(30000, 120000)))</value>
+        </li>
+		<li Class="QuestNode_Delay">
+          <delayTicks>$ElderBeastDelayTicks</delayTicks>
+          <node Class="QuestNode_Sequence">
+		    <nodes>
+			  <li Class="QuestNode_RandomNode">
+			    <nodes>
+				  <!-- Elder Direwolf -->
+				  <li Class="QuestNode_Sequence">
+					<nodes>
+					  <li Class="QuestNode_GeneratePawn">
+					    <kindDef>OE_Elder_Direwolf</kindDef>
+						<storeAs>elderbeast</storeAs>
+					  </li>
+					  <li Class="QuestNode_PawnsArrive">
+					    <pawns>$elderbeast</pawns>
+						<customLetterLabel TKey="LetterLabelAnimalArrived">Elder Beast Approaching</customLetterLabel>
+						<customLetterText TKey="LetterTextAnimalArrived">[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</customLetterText>
+					  </li>
+					</nodes>
+				  </li>
+				  <!-- Elder Raptor -->
+				  <li Class="QuestNode_Sequence">
+					<nodes>
+					  <li Class="QuestNode_GeneratePawn">
+					    <kindDef>OE_Elder_Raptor</kindDef>
+						<storeAs>elderbeast</storeAs>
+					  </li>
+					  <li Class="QuestNode_PawnsArrive">
+					    <pawns>$elderbeast</pawns>
+						<customLetterLabel TKey="LetterLabelAnimalArrived">Elder Beast Approaching</customLetterLabel>
+						<customLetterText TKey="LetterTextAnimalArrived">[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</customLetterText>
+					  </li>
+					</nodes>
+				  </li>
+				  <!-- Elder Ogren -->
+				  <li Class="QuestNode_Sequence">
+					<nodes>
+					  <li Class="QuestNode_GeneratePawn">
+					    <kindDef>OE_Elder_Ogren</kindDef>
+						<storeAs>elderbeast</storeAs>
+					  </li>
+					  <li Class="QuestNode_PawnsArrive">
+					    <pawns>$elderbeast</pawns>
+						<customLetterLabel TKey="LetterLabelAnimalArrived">Elder Beast Approaching</customLetterLabel>
+						<customLetterText TKey="LetterTextAnimalArrived">[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</customLetterText>
+					  </li>
+					</nodes>
+				  </li>
+				  <!-- Elder Tionants -->
+				  <li Class="QuestNode_Sequence">
+					<nodes>
+					  <li Class="QuestNode_RandomNode">
+					    <nodes>
+						  <!-- Elder Tionant Blue -->
+						  <li Class="QuestNode_GeneratePawn">
+						    <kindDef>OE_Elder_Tionant_Blue</kindDef>
+						    <storeAs>elderbeast</storeAs>
+						  </li>
+						  <!-- Elder Tionant Green -->
+						  <li Class="QuestNode_GeneratePawn">
+						    <kindDef>OE_Elder_Tionant_Green</kindDef>
+						    <storeAs>elderbeast</storeAs>
+						  </li>
+						  <!-- Elder Tionant Red -->
+						  <li Class="QuestNode_GeneratePawn">
+						    <kindDef>OE_Elder_Tionant_Red</kindDef>
+						    <storeAs>elderbeast</storeAs>
+						  </li>
+						  <!-- Elder Tionant Yellow -->
+						  <li Class="QuestNode_GeneratePawn">
+						    <kindDef>OE_Elder_Tionant_Yellow</kindDef>
+						    <storeAs>elderbeast</storeAs>
+						  </li>
+						</nodes>
+					  </li>
+					  <li Class="QuestNode_PawnsArrive">
+					    <pawns>$elderbeast</pawns>
+						<customLetterLabel TKey="LetterLabelAnimalArrived">Elder Beast Approaching</customLetterLabel>
+						<customLetterText TKey="LetterTextAnimalArrived">[elderbeast_label] is approaching the colony — it appears extremely dangerous, but not aggressive… for now. You must decide how to respond:\n\n-leave it alone;\n-attempt to tame it;\n-hunt it for rare and valuable trophies.</customLetterText>
+					  </li>
+					</nodes>
+				  </li>	  
+				</nodes>
+			  </li>
+			</nodes>
+          </node>
+        </li>        
+
+		<!-- End a few seconds beast arrives -->
+        <li Class="QuestNode_Delay">
+          <delayTicks>$($ElderBeastDelayTicks+600)</delayTicks>
+          <node Class="QuestNode_End" />
+        </li>
+		
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>  

@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Biotech</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		  <li Class="PatchOperationFindMod">
+		    <mods>
+			  <li>Vanilla Expanded Framework</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+			  <operations>
+			    				
+				<li Class="PatchOperationFindMod">
+				  <mods>
+				    <li>Royalty</li>
+				  </mods>
+				  <match Class="PatchOperationSequence">
+				    <operations>
+					  <li Class="PatchOperationAdd">
+					    <xpath>/Defs</xpath>
+						<value>
+<!--=============== Mothoids / Drakonids ====================-->
+<!--=============== Dual Sword ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_Xeno_DualSword</defName>
+    <label>Persona bond Moonveil Twins</label>
+    <description>Persona bond a Moonveil Twins.</description>
+    <jobString>Persona bonding a Moonveil Twins.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_DualSword</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_DualSword</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_DualSword_P>1</OE_Trophy_Xeno_DualSword_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_Xeno_DualSword_P</defName>
+    <label>Reset Persona Moonveil Twins</label>
+    <description>Reset a Persona Moonveil Twins.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Moonveil Twins.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_DualSword_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_DualSword_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_DualSword_P>1</OE_Trophy_Xeno_DualSword_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Axotl / Slimes ====================-->
+<!--=============== Katana ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_OE_Trophy_Xeno_Katana</defName>
+    <label>Persona bond Chaos Blade</label>
+    <description>Persona bond a Chaos Blade.</description>
+    <jobString>Persona bonding a Chaos Blade.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_Katana</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_Katana</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_Katana_P>1</OE_Trophy_Xeno_Katana_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_OE_Trophy_Xeno_Katana_P</defName>
+    <label>Reset Persona Chaos Blade</label>
+    <description>Reset a Persona Chaos Blade.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Chaos Blade.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Trophy_Xeno_Katana_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Trophy_Xeno_Katana_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OE_Trophy_Xeno_Katana_P>1</OE_Trophy_Xeno_Katana_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Tortle / Ceratons ====================-->
+<!--=============== Giant Sword ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_ODC_Trophy_Xeno_GiantSword</defName>
+    <label>Persona bond Tyrant’s Edge</label>
+    <description>Persona bond a Tyrant’s Edge.</description>
+    <jobString>Persona bonding a Tyrant’s Edge.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ODC_Trophy_Xeno_GiantSword</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ODC_Trophy_Xeno_GiantSword</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ODC_Trophy_Xeno_GiantSword_P>1</ODC_Trophy_Xeno_GiantSword_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_ODC_Trophy_Xeno_GiantSword_P</defName>
+    <label>Reset Persona Tyrant’s Edge</label>
+    <description>Reset a Persona Tyrant’s Edge.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Tyrant’s Edge.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ODC_Trophy_Xeno_GiantSword_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ODC_Trophy_Xeno_GiantSword_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ODC_Trophy_Xeno_GiantSword_P>1</ODC_Trophy_Xeno_GiantSword_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Deathrest ====================-->
+<!--=============== Scepter ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OES_Trophy_Xeno_Scepter</defName>
+    <label>Reset Deathveil Scepter</label>
+    <description>Reset a Deathveil Scepter.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Deathveil Scepter.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OES_Trophy_Xeno_Scepter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OES_Trophy_Xeno_Scepter</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OES_Trophy_Xeno_Scepter>1</OES_Trophy_Xeno_Scepter>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<!--=============== Hemogenic ====================-->
+<!--=============== Rapier ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_EGO_Trophy_Xeno_Rapier</defName>
+    <label>Reset Sanguine Bloom</label>
+    <description>Reset a Sanguine Bloom.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a Sanguine Bloom.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EGO_Trophy_Xeno_Rapier</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EGO_Trophy_Xeno_Rapier</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EGO_Trophy_Xeno_Rapier>1</EGO_Trophy_Xeno_Rapier>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>  
+						
+						</value>
+					  </li>
+					  
+					  <li Class="PatchOperationFindMod">
+					    <mods>
+					      <li>Obsidia Expansion - Arachnas Xenotype</li>
+					    </mods>
+					    <match Class="PatchOperationSequence">
+					      <operations>
+						    <li Class="PatchOperationAdd">
+						      <xpath>/Defs</xpath>
+							  <value>
+<!--=============== Arachnas / Spiderfolk ====================-->
+<!--=============== Thurible ====================-->
+  <RecipeDef>
+    <defName>OE_Bond_CAC_Trophy_Xeno_Thurible</defName>
+    <label>Persona bond Silken Censer</label>
+    <description>Persona bond a Silken Censer.</description>
+    <jobString>Persona bonding a Silken Censer.</jobString>
+	<workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_Xeno_Thurible</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_PersonaKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_Xeno_Thurible</li>
+		<li>OE_PersonaKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_Xeno_Thurible_P>1</CAC_Trophy_Xeno_Thurible_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>OE_Reset_CAC_Trophy_Xeno_Thurible_P</defName>
+    <label>Reset Persona Silken Censer</label>
+    <description>Reset a Persona Silken Censer.\n\nWarning! Item Quality and Persona traits will be changed.</description>
+    <jobString>Resetting a Persona Silken Censer.</jobString>
+	<workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CAC_Trophy_Xeno_Thurible_P</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CAC_Trophy_Xeno_Thurible_P</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CAC_Trophy_Xeno_Thurible_P>1</CAC_Trophy_Xeno_Thurible_P>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>	
+							
+							  </value>
+						    </li>
+						  </operations>
+					    </match>
+					  </li>
+					  <li Class="PatchOperationFindMod">
+					    <mods>
+					      <li>Obsidia Expansion - Tailborne Xenotype</li>
+					    </mods>
+					    <match Class="PatchOperationSequence">
+					      <operations>
+						    <li Class="PatchOperationAdd">
+						      <xpath>/Defs</xpath>
+							  <value>
+<!--=============== Tailborne ====================-->
+<!--=============== Sword ====================-->
+  <RecipeDef>
+    <defName>OE_Reset_OMG_Trophy_Xeno_TailborneSword</defName>
+    <label>Reset LinkBlade.v2</label>
+    <description>Reset a LinkBlade.v2.\n\nWarning! Persona traits will be changed.</description>
+    <jobString>Resetting a LinkBlade.v2.</jobString>
+	<workAmount>650</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<unfinishedThingDef>OE_UnfinishedGear</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OMG_Trophy_Xeno_TailborneSword</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>OE_Syntherius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OMG_Trophy_Xeno_TailborneSword</li>
+		<li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <OMG_Trophy_Xeno_TailborneSword>1</OMG_Trophy_Xeno_TailborneSword>
+    </products>
+	<recipeUsers>
+      <li>OE_PersonaTable</li>
+    </recipeUsers>
+	<skillRequirements>
+	  <Crafting>12</Crafting>
+	  <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+							
+							  </value>							
+						    </li>
+						  </operations>
+					    </match>
+					  </li>					  
+					</operations>
+				  </match>
+				</li>
+				  
+			  </operations>
+			</match>
+		  </li>  
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

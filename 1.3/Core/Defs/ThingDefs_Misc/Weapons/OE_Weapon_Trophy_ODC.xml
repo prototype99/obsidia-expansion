@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Melee ====================-->
+<!--=============== ODC Sickle ====================-->
+  <ThingDef Name="ODCTrophySickleBaseNC" ParentName="OEMeleeBaseNC" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>10.0</MeleeDodgeChance>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef Name="ODCTrophySickleBase" ParentName="OEMeleeBase" Abstract="True">
+	<uiIconScale>1.2</uiIconScale>
+	<statBases>
+      <Mass>2.0</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeDodgeChance>10.0</MeleeDodgeChance>
+	  <MeleeHitChance>2</MeleeHitChance>
+	  <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophySickleBaseNC">
+    <defName>ODC_Trophy_Sickle_A</defName>
+    <label>Temptation</label>
+    <description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1550</MarketValue>
+    </statBases>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCTrophySickleBase">
+    <defName>ODC_Trophy_Sickle_B</defName>
+    <label>Temptation - Emergent</label>
+    <description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1750</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <HuntingStealth>0.10</HuntingStealth>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+      <ODC_Trophy_Sickle_A>1</ODC_Trophy_Sickle_A>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCTrophySickleBase">
+    <defName>ODC_Trophy_Sickle_C</defName>
+    <label>Temptation - Apex</label>
+    <description>An archaic sickle crafted by the best crafters on special orders from the elite Obsidia Drifters.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves combat performance.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_Sickle_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<weaponTags>
+	  <li>ODCTrophyMelee</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>1950</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <HuntingStealth>0.10</HuntingStealth>
+    </equippedStatOffsets>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Scratch</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<costList>
+      <ODC_Trophy_Sickle_B>1</ODC_Trophy_Sickle_B>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Ranged ====================-->
+<!--=============== ODC Blade Launcher ====================-->
+  <ThingDef Name="ODCTrophyBladeLauncherBaseNC" ParentName="OERangedBaseNC" Abstract="True">
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>8.5</Mass>
+	  <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+	  <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>saw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef Name="ODCTrophyBladeLauncherBase" ParentName="OERangedBase" Abstract="True">
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+	<graphicData>
+      <drawSize>1.2</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, -0.25)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, -0.25)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, -0.25)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, -0.25)</drawOffsetWest>
+    </graphicData>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<statBases>
+	  <Mass>8.5</Mass>
+	  <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+	  <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>saw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_Trophy_BL</defName>
+    <label>Harvest saw</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_Trophy_Saw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>2.5</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_Trophy_BL_C</defName>
+    <label>Harvest saw</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_Trophy_Saw_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Scratch</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <stoppingPower>2.5</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Various ====================-->
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBaseNC">
+    <defName>ODC_Trophy_BladeLauncher_A</defName>
+    <label>Harvest</label>
+    <description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2550</MarketValue>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBase">
+    <defName>ODC_Trophy_BladeLauncher_B</defName>
+    <label>Harvest - Emergent</label>
+    <description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>2750</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.10</PlantHarvestYield>
+	  <AnimalGatherYield>0.10</AnimalGatherYield>
+	  <MiningYield>0.10</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_A>1</ODC_Trophy_BladeLauncher_A>
+      <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCTrophyBladeLauncherBase">
+    <defName>ODC_Trophy_BladeLauncher_C</defName>
+    <label>Harvest - Apex</label>
+    <description>Rare heavy blade launcher weapon used by Obsidia Drifters. This weapon was a working tool, but upgraded for ranged combat.\n\nThis is a rare trophy weapon.\n\nFeature: a built-in module that improves work skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Trophy_BladeLauncher_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>ODCTrophyRanged</li>
+    </weaponTags>
+	<tradeTags>
+      <li>OETrophyWeapons</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3150</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+	  <PlantHarvestYield>0.10</PlantHarvestYield>
+	  <AnimalGatherYield>0.10</AnimalGatherYield>
+	  <MiningYield>0.10</MiningYield>
+    </equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_Trophy_BL_C</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<costList>
+      <ODC_Trophy_BladeLauncher_B>1</ODC_Trophy_BladeLauncher_B>
+      <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Ancient Tube EGO ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
+    <value>
+	  <li>OE_AncientPodEGO</li>
+	  <li MayRequire="Ludeon.Rimworld.Anomaly">OE_ChaosSlimeHiveCore</li>
+    </value>
+</Operation>
+
+</Patch>

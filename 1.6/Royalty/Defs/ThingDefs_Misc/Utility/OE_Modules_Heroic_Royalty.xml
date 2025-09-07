@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Various ====================-->
+<!--=============== Battle ====================-->
+  <ThingDef ParentName="OEHeroicModuleBase">
+    <defName>OE_Module_HeroicPsy</defName>
+    <label>Heroic Battle Module - Psy</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/HB_Psy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleHB</li>
+		<li>OEModuleHB_Psy</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+	</apparel>
+	<equippedStatOffsets>
+      <PsychicSensitivity>0.6</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.135</PsychicEntropyRecoveryRate>
+	  <MeditationFocusGain>0.3</MeditationFocusGain>
+    </equippedStatOffsets>
+  </ThingDef>
+
+</Defs>

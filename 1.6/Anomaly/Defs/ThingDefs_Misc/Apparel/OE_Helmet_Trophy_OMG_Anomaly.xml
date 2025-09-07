@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OMG Trophy Helmet ====================-->
+<!--=============== Firemark ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Firemark</defName>
+    <label>Mercenary Helmet(Firemark)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides a built-in module with a flyer dispenser.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Firemark/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <MeleeHitChance>8.0</MeleeHitChance>
+	  <MeleeDodgeChance>8.0</MeleeDodgeChance>
+	  <ShootingAccuracyPawn>8.0</ShootingAccuracyPawn>
+	  <AimingDelayFactor>-0.25</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Firemark/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStaticPsychic</verbClass>
+        <commandIcon>UI/Abilities/Armor/DisruptorFlare</commandIcon>
+        <defaultProjectile>OMG_DisruptorFlare</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <violent>false</violent>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>FlareLaunch</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+        <explosionRadiusRingColor>(0.8, 0.8, 0.4, 1)</explosionRadiusRingColor>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_DisruptorFlarePack">
+        <checkInterval>60</checkInterval>
+        <fieldRadius>8.9</fieldRadius>
+        <durationSeconds>30</durationSeconds>
+      </li>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>10</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>1</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>OMG_DisruptorFlare</defName>
+    <label>disruptor flare</label>
+    <graphicData>
+      <texPath>Things/Projectile/DisruptorFlare</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/DisruptorFlare</uiIconPath>
+    <thingClass>Projectile_SpawnsThing</thingClass>
+    <projectile>
+      <speed>65</speed>
+      <arcHeightFactor>1.0</arcHeightFactor>
+      <spinRate>3</spinRate>
+      <explosionRadius>7.9</explosionRadius>
+      <landedEffecter>DisruptorFlareLanded</landedEffecter>
+      <spawnsThingDef>DisruptorFlare</spawnsThingDef>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Fleshcrafter ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Fleshcrafter</defName>
+    <label>Mercenary Helmet(Fleshcrafter)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides the owner with power of Biomutation lance.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Fleshcrafter/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <MedicalOperationSpeed>0.25</MedicalOperationSpeed>
+	  <MedicalPotency>0.25</MedicalPotency>
+	  <SurgerySuccessChanceFactor>0.25</SurgerySuccessChanceFactor>
+	  <MedicalTendQuality>0.25</MedicalTendQuality>
+	  <MedicalTendSpeed>0.25</MedicalTendSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Fleshcrafter/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_CastTargetEffectBiomutationLance</verbClass>
+        <commandIcon>UI/Abilities/Armor/PlantGrower</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>25.9</range>
+        <warmupTime>1.5</warmupTime>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+          <neverTargetIncapacitated>true</neverTargetIncapacitated>
+        </targetParams>
+        <soundAiming>BiomutationLanceWarmup</soundAiming>
+        <aimingTargetEffecter>BiomutationLanceWarmup</aimingTargetEffecter>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_MutateIntoFleshbeast</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_GoodwillImpact">
+        <goodwillImpact>-200</goodwillImpact>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Necrospark ====================-->
+  <ThingDef ParentName="OMGTrophyHelmetBase">
+	<defName>OMG_Trophy_Helmet_Necrospark</defName>
+    <label>Mercenary Helmet(Necrospark)</label>
+    <description>Highly modified heavy power armor Helmet, excellent protects the owner. Designed for use by Mercenaries.\n\nThis variation provides a built-in module with a deadlife pack.\n\nThis modification deprives item's quality levels.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Necrospark/OMGHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+	<equippedStatOffsets>
+	  <!-- Core -->
+	  <ToxicResistance>0.75</ToxicResistance>
+	  <SocialImpact>0.25</SocialImpact>
+	  <NegotiationAbility>0.25</NegotiationAbility>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+	  <!-- Unique -->
+	  <GlobalLearningFactor>0.50</GlobalLearningFactor>
+	  <ResearchSpeed>0.25</ResearchSpeed>
+	  <DrugSynthesisSpeed>0.25</DrugSynthesisSpeed>
+	  <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.25</EntityStudyRate>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/Helmet/OMG/Trophy/Necrospark/OMGHelmet</wornGraphicPath>
+	  <tags>
+		<li>OETreasureHound</li>
+		<li>Spacer</li>
+		<li>EVA</li>
+      </tags>
+	  <immuneToToxGasExposure>true</immuneToToxGasExposure>
+	  <ai_pickUpOpportunistically>true</ai_pickUpOpportunistically>
+    </apparel>
+	<verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <defaultProjectile>Grenade_OMG_Deadlife</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>0.1</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <onlyManualCast>true</onlyManualCast>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+	<comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>2</maxCharges>
+		<ammoDef>OE_Syntherius</ammoDef>
+        <ammoCountToRefill>30</ammoCountToRefill>
+        <baseReloadTicks>45</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Grenade_OMG_Deadlife</defName>
+    <label>deadlife capsule</label>
+    <graphicData>
+      <texPath>Things/Projectile/OMG_Trophy_Dart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconPath>UI/Abilities/Armor/GrenadierNecrobane</uiIconPath>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>DeadlifeDust</damageDef>
+      <speed>45</speed>
+      <explosionRadius>0.1</explosionRadius>
+	  <soundExplode>ToxicShellLanded</soundExplode>
+      <postExplosionSpawnThingDef>Shell_OMG_Deadlife</postExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Shell_OMG_Deadlife</defName>
+    <label>deadlife capsule</label>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Projectile/OMG_Trophy_DartLanded</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <comps>
+      <li Class="CompProperties_ReleaseGas">
+        <gasType>DeadlifeDust</gasType>
+        <cellsToFill>20</cellsToFill>
+        <durationSeconds>10</durationSeconds>
+        <effecterReleasing>DeadlifeReleasing</effecterReleasing>
+      </li>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>600</delayTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Permits from royal titles ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_TradeCaravan_Standard</defName>
+    <label>trade with goods trader</label>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>OMG_TradeCaravan_Exotic</defName>
+    <label>trade with exotic goods trader</label>
+  </RoyalTitlePermitDef>
+
+<!--=============== Combat Support ====================-->
+<!--=============== OMG ====================-->
+<!--=============== Duo ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_Duo_CallAid</defName>
+    <label>call mercenary duo</label>
+    <description>Call a group of 2 Mercenary Enforcers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_1_Visitor</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,0)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>OMG_Enforcer</pawnKindDef>
+      <pawnCount>2</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Squad ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_Squad_CallAid</defName>
+    <label>call mercenary squad</label>
+    <description>Call a group of 4 Mercenary Enforcers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_2_Member</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>OMG_Duo_CallAid</prerequisite>
+    <uiPosition>(1,0)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>OMG_Enforcer</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>40</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Team ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_Team_CallAid</defName>
+    <label>call mercenary team</label>
+    <description>Call a group of 8 Mercenary Enforcers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_3_Sponsor</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OMG_Squad_CallAid</prerequisite>
+    <uiPosition>(2,0)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+      <pawnKindDef>OMG_Battlemaster</pawnKindDef>
+      <pawnCount>8</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Platoon ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_Platoon_CallAid</defName>
+    <label>call mercenary platoon</label>
+    <description>Call a group of 12 Mercenary Enforcers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_4_VIP</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OMG_Team_CallAid</prerequisite>
+    <uiPosition>(3,0)</uiPosition>
+    <royalAid>
+      <favorCost>16</favorCost>
+      <pawnKindDef>OMG_Battlemaster</pawnKindDef>
+      <pawnCount>12</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>90</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Battalion ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_Battalion_CallAid</defName>
+    <label>call mercenary battalion</label>
+    <description>Call a group of 18 Mercenary Enforcers to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_5_OrichalcumClient</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OMG_Platoon_CallAid</prerequisite>
+    <uiPosition>(4,0)</uiPosition>
+    <royalAid>
+      <favorCost>24</favorCost>
+      <pawnKindDef>OMG_Battlemaster</pawnKindDef>
+      <pawnCount>18</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>120</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Psy Duo ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_PsyDuo_CallAid</defName>
+    <label>call mercenary psy-duo</label>
+    <description>Call a group of 2 Mercenary Battlemasters to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_3_Sponsor</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>OMG_Battlemaster</pawnKindDef>
+      <pawnCount>2</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Psy Squad ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_PsySquad_CallAid</defName>
+    <label>call mercenary psy-squad</label>
+    <description>Call a group of 4 Mercenary Battlemasters to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_4_VIP</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>OMG_PsyDuo_CallAid</prerequisite>
+    <uiPosition>(3,1)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>OMG_Battlemaster</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>90</cooldownDays>
+  </RoyalTitlePermitDef>
+<!--=============== Psy Team ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_PsyTeam_CallAid</defName>
+    <label>call mercenary psy-team</label>
+    <description>Call a group of 8 Mercenary Battlemasters to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>OE_Title_5_OrichalcumClient</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>OMG_PsySquad_CallAid</prerequisite>
+    <uiPosition>(4,1)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+      <pawnKindDef>OMG_Battlemaster</pawnKindDef>
+      <pawnCount>8</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>120</cooldownDays>
+  </RoyalTitlePermitDef>
+
+<!--=============== Bombardment ====================-->
+  <RoyalTitlePermitDef>
+    <defName>OMG_CallOrbitalSalvo</defName>
+    <label>call mercenary orbital salvo</label>
+    <description>Call a salvo of orbital strikes around a target position.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>OE_Title_5_OrichalcumClient</minTitle>
+    <faction>ObsidiaMercenaryGangs</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>120</cooldownDays>
+    <uiPosition>(4,2)</uiPosition>
+    <royalAid>
+      <favorCost>10</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>15.9</radius>
+      <explosionRadiusRange>7.9</explosionRadiusRange>
+      <explosionCount>20</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+</Defs>

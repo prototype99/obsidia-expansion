@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== OMC - Helmet ====================-->
+<OMC_Helmet.label>OMC Soldier Helmet</OMC_Helmet.label>
+<OMC_Helmet.description>Medium power armor Helmet, perfectly protects the owner. Designed for use by regular OMC soldiers.</OMC_Helmet.description>
+
+<OMC_Helmet_M.label>OMC Officer Helmet</OMC_Helmet_M.label>
+<OMC_Helmet_M.description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nThe hardened version provides more protection to the owner.</OMC_Helmet_M.description>
+
+<OMC_Helmet_M_Spacer.label>OMC Officer Helmet(Space Griffin)</OMC_Helmet_M_Spacer.label>
+<OMC_Helmet_M_Spacer.description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OMC_Helmet_M_Spacer.description>
+
+<OMC_Helmet_M_Melee.label>OMC Officer Helmet(Gladiator)</OMC_Helmet_M_Melee.label>
+<OMC_Helmet_M_Melee.description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nModified visor with analyzing computer that helps the user close combat.</OMC_Helmet_M_Melee.description>
+
+<OMC_Helmet_M_Ranged.label>OMC Officer Helmet(Ranger)</OMC_Helmet_M_Ranged.label>
+<OMC_Helmet_M_Ranged.description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nModified visor with targeting computer that helps the user aim.</OMC_Helmet_M_Ranged.description>
+
+<OMC_Helmet_M_Mechanitor.label>OMC Officer Helmet(Overseer)</OMC_Helmet_M_Mechanitor.label>
+<OMC_Helmet_M_Mechanitor.description>Medium power armor Helmet, perfectly protects the owner. Designed and modified for use by OMC Regular Officers.\n\nModified for improves Mechanoids Control abilities.</OMC_Helmet_M_Mechanitor.description>
+
+<!--=============== OMC - Armor ====================-->
+<OMC_Armor.label>OMC Soldier Armor</OMC_Armor.label>
+<OMC_Armor.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed for use by regular OMC soldiers.</OMC_Armor.description>
+
+<OMC_Armor_M.label>OMC Officer Armor</OMC_Armor_M.label>
+<OMC_Armor_M.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nThe hardened version provides more protection to the owner.</OMC_Armor_M.description>
+
+<OMC_Armor_M_Spacer.label>OMC Officer Armor(Space Griffin)</OMC_Armor_M_Spacer.label>
+<OMC_Armor_M_Spacer.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nPressure-sealed version designed to keep the occupant alive in outer space.</OMC_Armor_M_Spacer.description>
+
+<OMC_Armor_M_Smoker.label>OMC Officer Armor(Fogler)</OMC_Armor_M_Smoker.label>
+<OMC_Armor_M_Smoker.verbs.Verb_SmokePop.label>OMC Officer Armor(Fogler)</OMC_Armor_M_Smoker.verbs.Verb_SmokePop.label>
+<OMC_Armor_M_Smoker.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nModified with the addition of a Smokepop pack.</OMC_Armor_M_Smoker.description>
+<OMC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>smokepop</OMC_Armor_M_Smoker.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMC_Armor_M_Smoker.comps.CompApparelReloadable.cooldownGerund>
+
+<OMC_Armor_M_Jump.label>OMC Officer Armor(Raven)</OMC_Armor_M_Jump.label>
+<OMC_Armor_M_Jump.verbs.Verb_Jump.label>OMC Officer Armor(Raven)</OMC_Armor_M_Jump.verbs.Verb_Jump.label>
+<OMC_Armor_M_Jump.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nModified with the addition of a Jump pack.</OMC_Armor_M_Jump.description>
+<OMC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>jump</OMC_Armor_M_Jump.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMC_Armor_M_Jump.comps.CompApparelReloadable.cooldownGerund>
+
+<OMC_Armor_M_Shield.label>OMC Officer Armor(Guardian)</OMC_Armor_M_Shield.label>
+<OMC_Armor_M_Shield.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nModified with the addition of the Reinforced Barrier.</OMC_Armor_M_Shield.description>
+
+<OMC_Armor_M_Barrier.label>OMC Officer Armor(Protector)</OMC_Armor_M_Barrier.label>
+<OMC_Armor_M_Barrier.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nModified with the addition of the Universal Barrier.</OMC_Armor_M_Barrier.description>
+
+<OMC_Armor_M_ForceField.label>OMC Officer Armor(Warden)</OMC_Armor_M_ForceField.label>
+<OMC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>OMC Officer Armor(Warden)</OMC_Armor_M_ForceField.verbs.Verb_DeployBroadshield.label>
+<OMC_Armor_M_ForceField.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nModified with the addition of a Low-Shield pack.</OMC_Armor_M_ForceField.description>
+<OMC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>shield</OMC_Armor_M_ForceField.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMC_Armor_M_ForceField.comps.CompApparelReloadable.cooldownGerund>
+
+<OMC_Armor_M_Mechanitor.label>OMC Officer Armor(Overseer)</OMC_Armor_M_Mechanitor.label>
+<OMC_Armor_M_Mechanitor.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nModified with the addition of a Mechanoids Control pack.</OMC_Armor_M_Mechanitor.description>
+
+<OMC_Armor_M_Turret.label>OMC Officer Armor(Goblin)</OMC_Armor_M_Turret.label>
+<OMC_Armor_M_Turret.description>Medium power armor, perfectly protects the owner with little mobility restriction. Designed and modified for use by OMC Regular Officers.\n\nModified with the pack that allows the user to deploy a battery-powered turret.</OMC_Armor_M_Turret.description>
+<OMC_Armor_M_Turret.verbs.deploy_turret.label>deploy turret</OMC_Armor_M_Turret.verbs.deploy_turret.label>
+<OMC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>incendiary</OMC_Armor_M_Turret.comps.CompApparelReloadable.chargeNoun>
+<OMC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>on cooldown</OMC_Armor_M_Turret.comps.CompApparelReloadable.cooldownGerund>
+
+<!--=============== OМC - Grenades ====================-->
+<Grenade_Armor_OMC_TurretPack.label>OMC turret pack capsule</Grenade_Armor_OMC_TurretPack.label>
+
+</LanguageData>

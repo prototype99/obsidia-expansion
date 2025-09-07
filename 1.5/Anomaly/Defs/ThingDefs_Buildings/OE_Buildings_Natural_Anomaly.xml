@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== Slime Spawners ====================-->
+<!--=============== Base ====================-->  
+  <ThingDef Name="OEChaosSlimeSpawnerBase" ParentName="BuildingBase" Abstract="True">
+	<thingClass>Hive</thingClass>
+	<altitudeLayer>Building</altitudeLayer>
+	<selectable>true</selectable>
+	<rotatable>false</rotatable>
+	<pathCost>50</pathCost>
+    <fillPercent>1.0</fillPercent>
+	<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+	<statBases>
+      <Beauty>-25</Beauty>
+	  <Flammability>0.75</Flammability>
+    </statBases>
+	<forceDebugSpawnable>true</forceDebugSpawnable>
+    <receivesSignals>true</receivesSignals>
+	<tickerType>Normal</tickerType>
+	<blockWind>true</blockWind>
+	<passability>PassThroughOnly</passability>
+	<blockPlants>true</blockPlants>
+	<building>
+	  <claimable>false</claimable>
+	  <deconstructible>false</deconstructible>
+	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+	</building>
+	<comps>
+	  <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_Slime</filthDef>
+        <spawnCountOnSpawn>8</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>5.9</spawnRadius>
+      </li>
+	</comps>
+  </ThingDef>
+
+<!--=============== Slime Hive Core ====================-->  
+  <ThingDef ParentName="OEChaosSlimeSpawnerBase">
+    <defName>OE_ChaosSlimeHive_Core</defName>
+    <label>core chaos slime hive</label>
+    <description>A core hive of dangerous chaos slimes. If activated, it will spawn additional chaos slimes and smaller hives over time.</description>
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <size>(2,2)</size>
+	<graphicData>
+      <texPath>Things/Building/Natural/ChaosSlimeHive/Core</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+	  <shadowData>
+        <volume>(1.9, 1.3, 1.2)</volume>
+        <offset>(0, 0, -0.2)</offset>
+      </shadowData>
+    </graphicData>
+	<building>
+	  <combatPower>250</combatPower>
+	</building>
+    <uiIconScale>0.65</uiIconScale>
+    <statBases>
+	  <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <killedLeavingsRanges>
+      <OE_Syntherius>10~20</OE_Syntherius>
+	  <OE_SlimeHeart>1~3</OE_SlimeHeart>
+	  <Shard>0~1</Shard>
+    </killedLeavingsRanges>
+    <comps>
+	  <li Class="CompProperties_WakeUpDormant"/>
+	  <li Class="CompProperties_CanBeDormant">
+        <startsDormant>true</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+	  <li Class="CompProperties_SpawnerPawn">
+        <pawnSpawnRadius>3</pawnSpawnRadius>
+		<spawnablePawnKinds>
+          <li>OE_ChaosSlime_Larval</li>
+          <li>OE_ChaosSlime_Adult</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>50</initialPawnsPoints>
+        <maxPawnsToSpawn>20</maxPawnsToSpawn>
+		<pawnSpawnIntervalDays>1.5</pawnSpawnIntervalDays>
+        <shouldJoinParentLord>True</shouldJoinParentLord>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>3000</ticksPerHeal>
+      </li> 
+      
+	  <li Class="CompProperties_Spawner">
+		<thingToSpawn>OE_ChaosSlimeHive_Small</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>720000~1080000</spawnIntervalRange>
+        <spawnMaxAdjacent>5</spawnMaxAdjacent>
+        <saveKeysPrefix>small</saveKeysPrefix>
+        <inheritFaction>true</inheritFaction>
+      </li>
+	  <li Class="CompProperties_Spawner">
+        <thingToSpawn>OE_ChaosSlimeHive_Medium</thingToSpawn>
+		<spawnCount>1</spawnCount>
+        <spawnIntervalRange>1440000~1800000</spawnIntervalRange>
+        <spawnMaxAdjacent>4</spawnMaxAdjacent>
+        <saveKeysPrefix>medium</saveKeysPrefix>
+        <inheritFaction>true</inheritFaction>
+      </li> 
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>OE_ChaosSlimeHive_Big</thingToSpawn>
+		<spawnCount>1</spawnCount>
+        <spawnIntervalRange>2400000~3900000</spawnIntervalRange>
+        <spawnMaxAdjacent>2</spawnMaxAdjacent>
+        <saveKeysPrefix>big</saveKeysPrefix>
+        <inheritFaction>true</inheritFaction>
+      </li> 
+	  <li Class="CompProperties_Spawner">
+        <thingToSpawn>OE_ChaosSlimeHive_Giant</thingToSpawn>
+		<spawnCount>1</spawnCount>
+        <spawnIntervalRange>4500000~9000000</spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+        <saveKeysPrefix>giant</saveKeysPrefix>
+        <inheritFaction>true</inheritFaction>
+      </li>
+    </comps>
+	<placeWorkers>
+      <li>PlaceWorker_CocoonTriggerRadius</li>
+    </placeWorkers>
+  </ThingDef>
+
+<!--=============== Slime Hive Small ====================-->  
+  <ThingDef ParentName="OEChaosSlimeSpawnerBase">
+    <defName>OE_ChaosSlimeHive_Small</defName>
+    <label>small chaos slime hive</label>
+    <description>A small hive of dangerous chaos slimes. If activated, it will spawn additional chaos slimes.</description>
+    <graphicData>
+      <texPath>Things/Building/Natural/ChaosSlimeHive/Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+	<building>
+	  <combatPower>250</combatPower>
+	</building>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <killedLeavingsRanges>
+      <OE_Syntherius>5~10</OE_Syntherius>
+	  <OE_SlimeHeart>0~1</OE_SlimeHeart>
+    </killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_WakeUpDormant" />
+	  <li Class="CompProperties_CanBeDormant">
+        <startsDormant>false</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+	  <li Class="CompProperties_SpawnerPawn">
+        <pawnSpawnRadius>4</pawnSpawnRadius>
+		<spawnablePawnKinds>
+          <li>OE_ChaosSlime_Larval</li>
+          <li>OE_ChaosSlime_Adult</li>
+          <li>OE_ChaosSlime_Badass</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>50</initialPawnsPoints>
+        <maxPawnsToSpawn>12</maxPawnsToSpawn>
+		<pawnSpawnIntervalDays>1.5</pawnSpawnIntervalDays>
+        <shouldJoinParentLord>True</shouldJoinParentLord>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>6000</ticksPerHeal>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Slime Hive Medium ====================-->
+  <ThingDef ParentName="OEChaosSlimeSpawnerBase">
+    <defName>OE_ChaosSlimeHive_Medium</defName>
+    <label>medium chaos slime hive</label>
+    <description>A medium hive of dangerous chaos slimes. If activated, it will spawn additional dangerous chaos slimes.</description>
+    <graphicData>
+      <texPath>Things/Building/Natural/ChaosSlimeHive/Medium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+	<building>
+	  <combatPower>300</combatPower>
+	</building>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+    </statBases>
+    <killedLeavingsRanges>
+      <OE_Syntherius>8~14</OE_Syntherius>
+	  <OE_SlimeHeart>0~2</OE_SlimeHeart>
+    </killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_WakeUpDormant" />
+	  <li Class="CompProperties_CanBeDormant">
+        <startsDormant>false</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+	  <li Class="CompProperties_SpawnerPawn">
+        <pawnSpawnRadius>2</pawnSpawnRadius>
+		<spawnablePawnKinds>
+          <li>OE_ChaosSlime_Adult</li>
+          <li>OE_ChaosSlime_Badass</li>
+		  <li>OE_ChaosSlime_SuperBadass</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>50</initialPawnsPoints>
+        <maxPawnsToSpawn>9</maxPawnsToSpawn>
+		<pawnSpawnIntervalDays>2.0</pawnSpawnIntervalDays>
+        <shouldJoinParentLord>True</shouldJoinParentLord>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>6000</ticksPerHeal>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Slime Hive Big ====================-->
+  <ThingDef ParentName="OEChaosSlimeSpawnerBase">
+    <defName>OE_ChaosSlimeHive_Big</defName>
+    <label>big chaos slime hive</label>
+    <description>A big hive of dangerous chaos slimes. If activated, it will spawn additional very dangerous chaos slimes.</description>
+    <graphicData>
+      <texPath>Things/Building/Natural/ChaosSlimeHive/Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+	<building>
+	  <combatPower>500</combatPower>
+	</building>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+    </statBases>
+    <killedLeavingsRanges>
+      <OE_Syntherius>8~14</OE_Syntherius>
+	  <OE_SlimeHeart>1~3</OE_SlimeHeart>
+	  <Shard>0~1</Shard>
+    </killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_WakeUpDormant" />
+	  <li Class="CompProperties_CanBeDormant">
+        <startsDormant>false</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+	  <li Class="CompProperties_SpawnerPawn">
+        <pawnSpawnRadius>2</pawnSpawnRadius>
+		<spawnablePawnKinds>
+		  <li>OE_ChaosSlime_SuperBadass</li>
+		  <li>OE_ChaosSlime_UltimateBadass</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>100</initialPawnsPoints>
+        <maxPawnsToSpawn>6</maxPawnsToSpawn>
+		<pawnSpawnIntervalDays>2.5</pawnSpawnIntervalDays>
+        <shouldJoinParentLord>True</shouldJoinParentLord>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>6000</ticksPerHeal>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Slime Hive Giant ====================-->
+  <ThingDef ParentName="OEChaosSlimeSpawnerBase">
+    <defName>OE_ChaosSlimeHive_Giant</defName>
+    <label>giant chaos slime hive</label>
+    <description>A giant hive of dangerous chaos slimes. If activated, it will spawn additional chaos slime the Invincible.</description>
+    <graphicData>
+      <texPath>Things/Building/Natural/ChaosSlimeHive/Giant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+	<building>
+	  <combatPower>700</combatPower>
+	</building>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+    </statBases>
+    <killedLeavingsRanges>
+      <OE_Syntherius>10~25</OE_Syntherius>
+	  <OE_SlimeHeart>2~3</OE_SlimeHeart>
+	  <Shard>0~2</Shard>
+    </killedLeavingsRanges>
+    <comps>
+      <li Class="CompProperties_WakeUpDormant" />
+	  <li Class="CompProperties_CanBeDormant">
+        <startsDormant>false</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+	  <li Class="CompProperties_SpawnerPawn">
+        <pawnSpawnRadius>2</pawnSpawnRadius>
+		<spawnablePawnKinds>
+		  <li>OE_ChaosSlime_Invincible</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>100</initialPawnsPoints>
+        <maxPawnsToSpawn>3</maxPawnsToSpawn>
+		<pawnSpawnIntervalDays>3.0</pawnSpawnIntervalDays>
+        <shouldJoinParentLord>True</shouldJoinParentLord>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>3000</ticksPerHeal>
+      </li>
+	</comps>
+  </ThingDef>
+
+  <GenStepDef>
+    <defName>OE_ChaosSlimeHiveCore</defName>
+	<order>1100</order>
+    <genStep Class="GenStep_ScatterThings">
+      <thingDef>OE_ChaosSlimeHive_Core</thingDef>
+	  <allowInWaterBiome>false</allowInWaterBiome>
+      <minSpacing>10</minSpacing>
+      <extraNoBuildEdgeDist>7</extraNoBuildEdgeDist>
+	  <countPer10kCellsRange>0.25~0.35</countPer10kCellsRange>
+      <clearSpaceSize>8</clearSpaceSize>
+	  <terrainValidationRadius>7</terrainValidationRadius>
+	  <terrainValidationDisallowed>
+        <li>Road</li>
+      </terrainValidationDisallowed>
+	  <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+		<li Class="ScattererValidator_NoNonNaturalEdifices">
+          <radius>7</radius>
+        </li>
+		<li Class="ScattererValidator_AvoidSpecialThings" />
+      </validators>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

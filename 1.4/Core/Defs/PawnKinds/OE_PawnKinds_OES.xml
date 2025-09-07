@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OES Eidolons ====================-->
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OES_Eidolon_Melee</defName>
+    <label>Obsidia Eidolon</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+      <li>OESEidolon</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OESEidolon_Barrier</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>OESMelee</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>255</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OES_Eidolon_Ranged</defName>
+    <label>Obsidia Eidolon</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+      <li>OESEidolon</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OESEidolon_Shield</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>OESGun</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>255</combatPower>
+  </PawnKindDef>  
+
+<!--=============== OES Undyings ====================-->
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OES_Undying_Melee</defName>
+    <label>Obsidia Undying</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+      <li>OESEidolon</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OESEidolon_Barrier</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>EGOMelee</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>255</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OES_Undying_Ranged</defName>
+    <label>Obsidia Undying</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+      <li>OESEidolon</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OESEidolon_Shield</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>EGOGun</li>
+    </weaponTags>
+    <techHediffsMoney>25000~45000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>12</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_ImplantBrain_Interface</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>255</combatPower>
+  </PawnKindDef> 
+
+<!--=============== OES Special ====================-->
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OES_Special_A_Melee</defName>
+    <label>Obsidia Antihero</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+      <li>OESEidolon</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OESEidolon_Barrier</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>OESMelee</li>
+	  <li>EGOMelee</li>
+    </weaponTags>
+    <techHediffsMoney>35000~50000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>15</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_Implant_Special_A</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>285</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OESPawn">
+    <defName>OES_Special_A_Ranged</defName>
+    <label>Obsidia Antihero</label>
+	<itemQuality>Excellent</itemQuality>
+    <apparelMoney>25000~35000</apparelMoney>
+	<apparelTags>
+      <li>OESEidolon</li>
+    </apparelTags>
+	<apparelDisallowTags>
+	  <li>OESEidolon_Shield</li>
+	  <li>OEModuleI</li>
+    </apparelDisallowTags>
+    <weaponMoney>15000~25000</weaponMoney>
+	<weaponTags>
+      <li>OESGun</li>
+	  <li>EGOGun</li>
+    </weaponTags>
+    <techHediffsMoney>35000~50000</techHediffsMoney>
+	<techHediffsChance>1.00</techHediffsChance>
+	<techHediffsMaxAmount>15</techHediffsMaxAmount>
+	<techHediffsRequired>
+      <li>OE_Implant_Special_A</li>
+    </techHediffsRequired>
+	<techHediffsTags>
+      <li>OEBionics_Advanced</li>
+	  <li>OMCBionics</li>
+	  <li>OTCBionics</li>
+	  <li>OCCBionics</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">OECBionics</li>
+	  <li>ODCBionics</li>
+	  <li>CACBionics</li>
+	  <li>OEBionics_Cyberware</li>
+    </techHediffsTags>
+	<combatPower>285</combatPower>
+  </PawnKindDef>  
+
+</Defs>

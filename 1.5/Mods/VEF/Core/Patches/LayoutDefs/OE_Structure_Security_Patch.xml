@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+<!--=============== OEC ====================-->
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_A</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.</li>
+      <li>Barricade_OE_Obsidian,OEC_Turret_Small,.,.,.,.,.,.,.</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,OEC_Turret_Small,.,Barricade_OE_Obsidian</li>
+      <li>.,.,.,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,.,.,.,.,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,MetalTile</li>
+    <li>MetalTile,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,.,.,.,.,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Small</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_B</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+      <li>.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>.,.,.,.,.,.,OEC_Turret_Small,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,OEC_Turret_Small,.,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,.,.,.</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.</li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,.,.,.,.,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,.,.,.,.,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Small</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_C</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>.,.,.,.,OEC_Turret_Small,.,Barricade_OE_Obsidian,.</li>
+      <li>.,.,.,.,.,.,Barricade_OE_Obsidian,.</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>.,Barricade_OE_Obsidian,OEC_Turret_Small,.,.,.,.,.</li>
+      <li>.,Barricade_OE_Obsidian,.,.,.,.,.,.</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,.,.,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>MetalTile,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,.,MetalTile,MetalTile,MetalTile,MetalTile,.,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,MetalTile</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,.,.,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Small</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_D</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+      <li>.,Barricade_OE_Obsidian,OEC_Turret_Small,.,.,.,.,.</li>
+      <li>.,Barricade_OE_Obsidian,.,.,.,.,.,.</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>.,.,.,.,OEC_Turret_Small,.,Barricade_OE_Obsidian,.</li>
+      <li>.,.,.,.,.,.,Barricade_OE_Obsidian,.</li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,.,.,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,MetalTile</li>
+    <li>MetalTile,.,MetalTile,MetalTile,MetalTile,MetalTile,.,MetalTile</li>
+    <li>MetalTile,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,.,.,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Small</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_E</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,OE_QuantumGenerator_Micro,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>.,.,Barricade_OE_Obsidian,.,.,.,OEC_Turret_Big,.,.,.,.,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,.,.</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Big</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_F</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>.,.,Barricade_OE_Obsidian,.,.,.,OEC_Turret_Big,.,.,OE_QuantumGenerator_Micro,.,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,.,.</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Big</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_G</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>.,.,Barricade_OE_Obsidian,.,.,.,OEC_Turret_Big,.,.,.,.,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,.,OE_QuantumGenerator_Micro,.,.,.,.,.,.,Barricade_OE_Obsidian,.,.</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Big</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>OE_Structure_Security_OEC_H</defName>
+  <spawnConduits>true</spawnConduits>
+  <layouts>
+    <li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>.,.,Barricade_OE_Obsidian,.,.,.,OEC_Turret_Big,.,.,.,.,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,.,.</li>
+      <li>Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,.,.,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,OE_QuantumGenerator_Micro,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,Barricade_OE_Obsidian</li>
+      <li>Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian</li>
+      <li>.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.</li>
+      <li>.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.,.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.</li>
+      <li>.,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,Barricade_OE_Obsidian,Barricade_OE_Obsidian,Barricade_OE_Obsidian,.,.,.</li>
+    </li>
+  </layouts>
+  <terrainGrid>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,OE_ObsidianTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile</li>
+    <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+    <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.</li>
+    <li>.,.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.,.,.</li>
+  </terrainGrid>
+  <tags>
+    <li>OE_Structure_Security_Big</li>
+  </tags>
+  <modRequirements>
+    <li>obsidiaexpansion.core</li>
+  </modRequirements>
+</KCSG.StructureLayoutDef>
+
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

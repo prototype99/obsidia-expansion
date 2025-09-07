@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Melee Base ====================-->
+  <ThingDef Name="OEMeleeBase" ParentName="BaseWeapon" Abstract="True">
+    <techLevel>Spacer</techLevel>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<smeltable>true</smeltable>
+	<relicChance>0.2</relicChance>
+	<tickerType>Normal</tickerType>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+	<weaponClasses>
+	  <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+	  <unfinishedThingDef>OE_UnfinishedMelee</unfinishedThingDef>
+    </recipeMaker>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Melee Base(Non-Crafted) ====================-->
+  <ThingDef Name="OEMeleeBaseNC" ParentName="BaseWeapon" Abstract="True">
+    <techLevel>Spacer</techLevel>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<smeltable>false</smeltable>
+	<relicChance>0</relicChance>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+	<weaponClasses>
+	  <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Melee Base(Non-Quality) ====================-->
+  <ThingDef Name="OEMeleeBaseNQ" ParentName="BaseWeapon" Abstract="True">
+    <techLevel>Spacer</techLevel>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<smeltable>false</smeltable>
+	<relicChance>0</relicChance>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+	<weaponClasses>
+	  <li>Melee</li>
+    </weaponClasses>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.35</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.45</SellPriceFactor>
+    </statBases>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>    
+    </comps>
+  </ThingDef>
+
+<!--=============== Melee Base(Non-Quality-EGO) ====================-->
+  <ThingDef Name="OEMeleeBaseNQE" ParentName="OEMeleeBaseNQ" Abstract="True">
+	<statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.55</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Beauty>-2</Beauty>
+      <SellPriceFactor>0.3</SellPriceFactor>
+    </statBases>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li>
+        <compClass>CompEquippable</compClass>
+      </li>    
+    </comps>
+  </ThingDef>
+
+</Defs>

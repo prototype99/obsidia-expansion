@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== OEC ====================-->
+  <ThingDef ParentName="OEBeaconBase">
+    <defName>OE_Beacon_OEC</defName>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ obsidia squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaEmpire</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_OEC</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Anomaly</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== CAC - Anomaly ====================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>OE_Beacon_CAC_Anomaly</defName>
+	<label>anomaly obsidia beacon</label>
+	<description>Operating on a bizarre, irregular frequency unseen in any known spectrum, the Anomaly Obsidia Beacon is rumored to reach beyond our reality to the dark heart of Obsidia itself. When activated, the beacon transmits an ominous call, luring powerful and hostile Entities from Obsidia’s shadowed depths. Though highly unstable, its pulse can breach dimensions and summon one or more unknown creatures, each bound by no allegiance and driven by a ferocious will to hunt. Once triggered, the beacon fractures and self-destructs, making it a single-use artifact whose signal can never be precisely controlled—nor its consequences predicted.\n\nMechanitor is required to use this device.</description>
+	<graphicData>
+      <texPath>Things/Building/Beacon/AnomalyCrimsonArachnaBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+	<rotatable>false</rotatable>
+	<altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<fillPercent>0.3</fillPercent>
+	<tradeTags>
+      <li>OEBuildingBeacons</li>
+	  <li>OEBuildingSell</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+	<building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <designationCategory>Anomaly</designationCategory>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0.25</Flammability>
+    </statBases>
+	<size>(1,1)</size>
+	<costList>
+      <OE_Obsidian>50</OE_Obsidian>
+      <OE_Mythril>50</OE_Mythril>
+	  <OE_Syntherius>35</OE_Syntherius>
+	  <Shard>1</Shard>
+    </costList>
+	<killedLeavings>
+      <OE_Obsidian>2</OE_Obsidian>
+	  <OE_Mythril>1</OE_Mythril>
+	  <OE_Syntherius>1</OE_Syntherius>
+	  <Shard>1</Shard>
+    </killedLeavings>
+	<researchPrerequisites>
+      <li>OEContainment</li>
+	  <li>BasicPsychicRituals</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon /unknown/ anomaly squad</useLabel>
+        <useDuration>900</useDuration>
+		<floatMenuFactionIcon>ObsidiaCrimsonArachnaCult</floatMenuFactionIcon>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup">
+        <bossgroupDef>OE_Beacongroup_CAC_Anomaly</bossgroupDef>
+        <effecterDef>MechbandDishUsed</effecterDef>
+        <prepareEffecterDef>MechBandDishPrepared</prepareEffecterDef>
+        <unlockedLetterLabelKey>LetterLabelBossgroupCallerUnlocked</unlockedLetterLabelKey>
+        <unlockedLetterTextKey>LetterBossgroupCallerUnlocked</unlockedLetterTextKey>
+        <delayTicks>120</delayTicks>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>true</spawnKilledLeavings>
+        <effecterDef>MechbandBuildingDestroyed</effecterDef>
+      </li>
+    </comps>
+	<tickerType>Normal</tickerType>
+    <filthLeaving>Filth_MachineBits</filthLeaving>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

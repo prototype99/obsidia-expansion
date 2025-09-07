@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== OE - Trophy Modules ====================-->
+<!--=============== Base ====================-->
+  <ThingDef Name="OETrophyModuleBase" ParentName="ApparelNoQualityBase" Abstract="True">
+	<techLevel>Spacer</techLevel>
+	<smeltable>false</smeltable>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	</thingSetMakerTags>
+	<thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+	<tradeTags>
+      <li>OEModules</li>
+    </tradeTags>
+	<statBases>
+      <MarketValue>3125</MarketValue>
+	  <Mass>0.2</Mass>
+	  <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+	  <EquipDelay>4</EquipDelay>
+	  <Beauty>0</Beauty>
+	  <RangedWeapon_Cooldown>7.5</RangedWeapon_Cooldown>
+    </statBases>
+	<costStuffCount>35</costStuffCount>
+	<tickerType>Normal</tickerType>
+	<apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+	  <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+<!--=============== Psychic ====================-->
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_Shock</defName>
+    <label>Psychic Module - Shock</label>
+	<description>The module provides the owner with power of Psychic shock lance. Unique designed on the basis of Archotech technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_Shock</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleT</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+	<verbs>
+      <li>
+		<verbClass>Verb_CastTargetEffect</verbClass>
+		<commandIcon>UI/Abilities/Armor/Shock</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>19.9</range>
+        <warmupTime>2.5</warmupTime>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+          <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+          <neverTargetIncapacitated>true</neverTargetIncapacitated>
+        </targetParams>
+        <soundCast>PsychicShockLanceCast</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+		<ammoDef>Apparel_PsychicShockLance</ammoDef>
+        <ammoCountToRefill>2</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_PsychicShock</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_BrainDamageChance">
+        <brainDamageChance>0.3</brainDamageChance>
+      </li>
+      <li Class="CompProperties_TargetEffect_GoodwillImpact">
+        <goodwillImpact>-200</goodwillImpact>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_Insanity</defName>
+    <label>Psychic Module - Insanity</label>
+	<description>The module provides the owner with power of Psychic insanity lance. Unique designed on the basis of Archotech technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_Insanity</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleT</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+	<verbs>
+      <li>
+		<verbClass>Verb_CastTargetEffect</verbClass>
+		<commandIcon>UI/Abilities/Armor/Insanity</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>19.9</range>
+        <warmupTime>2.5</warmupTime>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+          <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+          <neverTargetIncapacitated>true</neverTargetIncapacitated>
+        </targetParams>
+        <soundCast>PsychicInsanityLanceCast</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+		<ammoDef>Apparel_PsychicShockLance</ammoDef>
+        <ammoCountToRefill>2</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_Berserk</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_BrainDamageChance">
+        <brainDamageChance>0.3</brainDamageChance>
+      </li>
+      <li Class="CompProperties_TargetEffect_GoodwillImpact">
+        <goodwillImpact>-200</goodwillImpact>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Targeter ====================-->
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_PowerBeam</defName>
+    <label>Targeter Module - Power beam</label>
+	<description>The module provides the owner acess to orbital power beam targeter. Unique designed on ancient targeting unit for a network satellites.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_PowerBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleT</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+	<verbs>
+      <li>
+		<verbClass>Verb_PowerBeam</verbClass>
+		<commandIcon>UI/Abilities/Armor/PowerBeam</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <ai_AvoidFriendlyFireRadius>15</ai_AvoidFriendlyFireRadius>
+		<range>39.9</range>
+        <warmupTime>2.5</warmupTime>
+		<burstShotCount>1</burstShotCount>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+		<soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+		<ammoDef>OrbitalTargeterPowerBeam</ammoDef>
+        <ammoCountToRefill>2</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="OETrophyModuleBase">
+    <defName>OE_Module_Bombardment</defName>
+    <label>Targeter Module - Orbital bombardment</label>
+	<description>The module provides the owner acess to orbital bombardment targeter. Unique designed on ancient targeting unit for a network satellites.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Utility/Modules/T_Bombardment</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<apparel>
+	  <tags>
+		<li>OEModuleT</li>
+      </tags>
+	  <defaultOutfitTags>
+		<li>Trophy</li>
+      </defaultOutfitTags>
+	</apparel>
+	<verbs>
+      <li>
+		<verbClass>Verb_Bombardment</verbClass>
+		<commandIcon>UI/Abilities/Armor/Bombardment</commandIcon>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
+		<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+		<range>39.9</range>
+        <warmupTime>2.5</warmupTime>
+		<burstShotCount>1</burstShotCount>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+		<soundCast>OrbitalTargeter_Fire</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>3</maxCharges>
+		<ammoDef>OrbitalTargeterBombardment</ammoDef>
+        <ammoCountToRefill>2</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

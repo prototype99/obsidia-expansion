@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Corrupter Mutalisk ====================-->
+  <ThingDef ParentName="BaseInsect" >
+    <defName>OE_Mutalisk_Corrupter</defName>
+    <label>corrupter mutalisk</label>
+    <description>Obsidia mutalisk is a genetically-engineered giant insectoid. This is not a combat unit. Designed as a support unit that emits an aura that weakens opponents.\n\nThe aura increases movement speed but reduces armor.</description>
+	<descriptionHyperlinks>
+	  <HediffDef>OE_AuraMutalisk_Corrupter</HediffDef>
+	</descriptionHyperlinks>
+	<devNote>obsidia</devNote>
+	<statBases>
+      <MoveSpeed>2.0</MoveSpeed>
+      <MarketValue>650</MarketValue>
+	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.35</ArmorRating_Heat>
+      <LeatherAmount>13</LeatherAmount>
+    </statBases>
+	<uiIconScale>1.15</uiIconScale>
+    <tools>
+      <li>
+        <label>head claw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>3.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>BeetleLikeWithClaw</body>
+      <baseHungerRate>0.65</baseHungerRate>
+	  <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>1.75</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <trainability>Intermediate</trainability>
+	  <leatherDef MayRequire="OskarPotocki.VFE.Insectoid2">VFEI2_Chitin</leatherDef>
+      <wildness>0.65</wildness>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.05</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Insectoid_Eat</soundEating>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+	<comps>
+	  <li Class="AnimalBehaviours.CompProperties_HediffEffecter">
+	    <hediff>OE_AuraMutalisk_Corrupter</hediff>
+		<radius>45</radius>
+		<severity>1</severity>
+		<tickInterval>250</tickInterval>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OE_AuraMutalisk_Corrupter</defName>
+    <label>weakening disturbance</label>
+    <description>Strong waves of psychic energy increase move speed but reduce armor.\n\nTo remove this effect, you need to track down and eliminate the corrupter mutalisk.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>OE_Mutalisk_Corrupter</ThingDef>
+	</descriptionHyperlinks>
+	<defaultLabelColor>(0.8, 0, 0)</defaultLabelColor>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <hediffClass>HediffWithComps</hediffClass>
+	<maxSeverity>1.0</maxSeverity>
+	<stages>
+	  <li>
+	    <statFactors>
+		  <MoveSpeed>1.25</MoveSpeed>
+		</statFactors>
+		<statOffsets>
+	      <ArmorRating_Sharp>-0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>-0.4</ArmorRating_Blunt>
+		  <ArmorRating_Heat>-0.4</ArmorRating_Heat>
+		</statOffsets>  
+	  </li>
+	</stages>
+	<isBad>true</isBad>
+	<comps>
+	  <li Class="HediffCompProperties_SeverityPerDay">
+	    <severityPerDay>-1</severityPerDay>
+	  </li>
+	</comps>
+  </HediffDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>OE_Mutalisk_Corrupter</defName>
+    <label>corrupter mutalisk</label>
+    <race>OE_Mutalisk_Corrupter</race>
+	<combatPower>250</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mutalisk/Mutalisk_Corrupter</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mutalisk/Dessicated_Mutalisk_east</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mutalisk/Mutalisk_Corrupter</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mutalisk/Dessicated_Mutalisk_east</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mutalisk/Mutalisk_Corrupter</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.5, 0.37)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mutalisk/Dessicated_Mutalisk_east</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

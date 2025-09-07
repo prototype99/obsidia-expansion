@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!--=============== OMC ====================-->
+<!--=============== Boss ====================-->
+  <BossDef>
+    <defName>OE_Beaconboss_OMC</defName>
+    <kindDef>OMC_Officer_Mechanitor</kindDef>
+    <appearAfterTicks>100</appearAfterTicks>
+  </BossDef>
+
+<!--=============== Groups ====================-->
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>OE_Beacongroup_OMC</defName>
+    <boss>OE_Beaconboss_OMC</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OMC_Recruit>3</OMC_Recruit>
+		  <OMC_Soldier_Melee>1</OMC_Soldier_Melee>
+		  <OMC_Soldier_Ranged>1</OMC_Soldier_Ranged>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <OMC_Recruit>5</OMC_Recruit>
+		  <OMC_Soldier_Melee>1</OMC_Soldier_Melee>
+		  <OMC_Soldier_RMelee>1</OMC_Soldier_RMelee>
+		  <OMC_Soldier_Ranged>1</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>1</OMC_Soldier_Sniper>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+		  <OMC_Soldier_Melee>4</OMC_Soldier_Melee>
+		  <OMC_Soldier_RMelee>2</OMC_Soldier_RMelee>
+		  <OMC_Soldier_Ranged>4</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>2</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>1</OMC_Officer_Melee>
+		  <OMC_Officer_RMelee>1</OMC_Officer_RMelee>
+		  <OMC_Officer_Ranged>1</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>1</OMC_Officer_Sniper>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OMC_Soldier_Melee>2</OMC_Soldier_Melee>
+		  <OMC_Soldier_RMelee>2</OMC_Soldier_RMelee>
+		  <OMC_Soldier_Ranged>2</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>2</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>4</OMC_Officer_Melee>
+		  <OMC_Officer_RMelee>2</OMC_Officer_RMelee>
+		  <OMC_Officer_Ranged>4</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>2</OMC_Officer_Sniper>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OMC_Soldier_Melee>2</OMC_Soldier_Melee>
+		  <OMC_Soldier_RMelee>1</OMC_Soldier_RMelee>
+		  <OMC_Soldier_Ranged>2</OMC_Soldier_Ranged>
+		  <OMC_Soldier_Sniper>1</OMC_Soldier_Sniper>
+		  <OMC_Officer_Melee>4</OMC_Officer_Melee>
+		  <OMC_Officer_RMelee>4</OMC_Officer_RMelee>
+		  <OMC_Officer_Ranged>4</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>4</OMC_Officer_Sniper>
+		  <OMC_Mech_Arachna>2</OMC_Mech_Arachna>
+		  <OMC_Mech_Dominator>1</OMC_Mech_Dominator>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OMC_Officer_Melee>5</OMC_Officer_Melee>
+		  <OMC_Officer_RMelee>5</OMC_Officer_RMelee>
+		  <OMC_Officer_Ranged>5</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>5</OMC_Officer_Sniper>
+		  <OMC_Mech_Arachna>4</OMC_Mech_Arachna>
+		  <OMC_Mech_Dominator>2</OMC_Mech_Dominator>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>2</bossCount>
+        <escorts>
+		  <OMC_Officer_Melee>7</OMC_Officer_Melee>
+		  <OMC_Officer_RMelee>5</OMC_Officer_RMelee>
+		  <OMC_Officer_Ranged>7</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>5</OMC_Officer_Sniper>
+		  <OMC_Mech_Arachna>6</OMC_Mech_Arachna>
+		  <OMC_Mech_Dominator>3</OMC_Mech_Dominator>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>3</bossCount>
+        <escorts>
+		  <OMC_Officer_Melee>9</OMC_Officer_Melee>
+		  <OMC_Officer_RMelee>6</OMC_Officer_RMelee>
+		  <OMC_Officer_Ranged>9</OMC_Officer_Ranged>
+		  <OMC_Officer_Sniper>6</OMC_Officer_Sniper>
+		  <OMC_Mech_Arachna>8</OMC_Mech_Arachna>
+		  <OMC_Mech_Dominator>4</OMC_Mech_Dominator>
+		  <OE_Mech_NewChaosLord>1</OE_Mech_NewChaosLord>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Combat squad led by {LEADERKIND_label} armed with OMC gear.</leaderDescription>
+    <rewardDef>OE_SyntheriusPack</rewardDef>
+  </BossgroupDef>
+
+</Defs>

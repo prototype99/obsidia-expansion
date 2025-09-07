@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+<!--=============== Jumyline ====================-->
+<OE_Cook_JumylinePack.label>приготувати цукерки юмілін x5</OE_Cook_JumylinePack.label>
+<OE_Cook_JumylinePack.description>Приготувати 5 цукерок юмілін з юмі ягід і шоколаду.</OE_Cook_JumylinePack.description>
+<OE_Cook_JumylinePack.jobString>Приготувати 5 цукерок юмілін.</OE_Cook_JumylinePack.jobString>
+
+<OE_Cook_JumylineBulk.label>приготувати цукерки юмілін x10</OE_Cook_JumylineBulk.label>
+<OE_Cook_JumylineBulk.description>Приготувати 10 цукерок юмілін з юмі ягід та шоколаду.</OE_Cook_JumylineBulk.description>
+<OE_Cook_JumylineBulk.jobString>Приготувати 10 цукерок юмілін.</OE_Cook_JumylineBulk.jobString>
+
+<!--=============== Obsidia Can Meal ====================-->
+<!--=============== Normal ====================-->
+<OE_CookCanMeal.label>приготувати консервована страва обсидії</OE_CookCanMeal.label>
+<OE_CookCanMeal.description>Приготуйте вишукану, високоякісну страву з поєднання м'ясних і рослинних інгредієнтів. Юмі ягоди делікатно використовуються як приправа для посилення смаку. Хоча більша частина інгредієнтів ретельно обрізається, цей процес гарантує створення неперевершеної страви.</OE_CookCanMeal.description>
+<OE_CookCanMeal.jobString>Приготувати консервована страва обсидії.</OE_CookCanMeal.jobString>
+<OE_CookCanMeal.ingredients.0.filter.customSummary>содержит белок</OE_CookCanMeal.ingredients.0.filter.customSummary>
+
+<OE_CookCanMealBulk.label>приготувати консервована страва обсидії x4</OE_CookCanMealBulk.label>
+<OE_CookCanMealBulk.description>Приготуйте 4 вишукані, високоякісні страви з поєднання м'ясних і рослинних інгредієнтів. Юмі ягоди делікатно використовуються як приправа для посилення смаку. Хоча більша частина інгредієнтів ретельно обрізається, цей процес гарантує створення неперевершеної страви.</OE_CookCanMealBulk.description>
+<OE_CookCanMealBulk.jobString>Приготувати 4 консервовані страви обсидії.</OE_CookCanMealBulk.jobString>
+<OE_CookCanMealBulk.ingredients.0.filter.customSummary>содержит белок</OE_CookCanMealBulk.ingredients.0.filter.customSummary>
+
+<!--=============== Vegetarian ====================-->
+<OE_CookCanMeal_Veg.label>приготувати вегетаріанська консервована страва обсидії</OE_CookCanMeal_Veg.label>
+<OE_CookCanMeal_Veg.description>Приготуйте вишукану, високоякісну страву з рослинних інгредієнтів. Юмі ягоди делікатно використовуються як приправа для посилення смаку. Хоча більша частина інгредієнтів ретельно обрізається, цей процес гарантує створення неперевершеної страви.</OE_CookCanMeal_Veg.description>
+<OE_CookCanMeal_Veg.jobString>Приготувати вегетаріанська консервована страва обсидії.</OE_CookCanMeal_Veg.jobString>
+<OE_CookCanMeal_Veg.ingredients.0.filter.customSummary>вегетарианские ингредиенты</OE_CookCanMeal_Veg.ingredients.0.filter.customSummary>
+
+<OE_CookCanMealBulk_Veg.label>приготувати вегетаріанська консервована страва обсидії x4</OE_CookCanMealBulk_Veg.label>
+<OE_CookCanMealBulk_Veg.description>Приготуйте 4 вишукані, високоякісні страви з рослинних інгредієнтів. Юмі ягоди делікатно використовуються як приправа для посилення смаку. Хоча більша частина інгредієнтів ретельно обрізається, цей процес гарантує створення неперевершеної страви.</OE_CookCanMealBulk_Veg.description>
+<OE_CookCanMealBulk_Veg.jobString>Приготувати 4 вегетаріанські консервовані страви обсидії.</OE_CookCanMealBulk_Veg.jobString>
+<OE_CookCanMealBulk_Veg.ingredients.0.filter.customSummary>вегетарианские ингредиенты</OE_CookCanMealBulk_Veg.ingredients.0.filter.customSummary>
+
+<!--=============== Carnivore ====================-->
+<OE_CookCanMeal_Meat.label>приготувати м'ясна консервована страва обсидії</OE_CookCanMeal_Meat.label>
+<OE_CookCanMeal_Meat.description>Приготуйте вишукану, високоякісну страву з м'ясних інгредієнтів. Юмі ягоди делікатно використовуються як приправа для посилення смаку. Хоча більша частина інгредієнтів ретельно обрізається, цей процес гарантує створення неперевершеної страви.</OE_CookCanMeal_Meat.description>
+<OE_CookCanMeal_Meat.jobString>Приготувати м'ясна консервована страва обсидії.</OE_CookCanMeal_Meat.jobString>
+
+<OE_CookCanMealBulk_Meat.label>приготувати м'ясна консервована страва обсидії x4</OE_CookCanMealBulk_Meat.label>
+<OE_CookCanMealBulk_Meat.description>Приготуйте 4 вишукані, високоякісні страви з м'ясних інгредієнтів. Юмі ягоди делікатно використовуються як приправа для посилення смаку. Хоча більша частина інгредієнтів ретельно обрізається, цей процес гарантує створення неперевершеної страви.</OE_CookCanMealBulk_Meat.description>
+<OE_CookCanMealBulk_Meat.jobString>Приготувати 4 м'ясні консервовані страви обсидії.</OE_CookCanMealBulk_Meat.jobString>
+
+</LanguageData>

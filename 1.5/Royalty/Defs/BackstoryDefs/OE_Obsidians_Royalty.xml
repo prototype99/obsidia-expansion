@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Civilians ====================-->
+<!--=============== Psycaster ====================-->
+  <BackstoryDef>
+    <defName>OE_Psy</defName>
+    <title>obsidia psycaster</title>
+    <titleShort>psycaster</titleShort>
+    <description>[PAWN_nameDef] representative of one of the ancient genera of Obsidia. Instead of participating in political clashes for power, chose the path of conquering new lands. Has excellent intellectual abilities and a sense of beauty.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Artistic</li>
+	  <li>Intellectual</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <Artistic>4</Artistic>
+      <Intellectual>4</Intellectual>
+	  <Construction>-4</Construction>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>OEFighters</li>
+	  <li>ImperialCommon</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEPsyBlood>0</OEPsyBlood>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Mindseeker ====================-->
+  <BackstoryDef>
+    <defName>OE_Mindseeker</defName>
+    <title>obsidia mindseeker</title>
+    <titleShort>mindseeker</titleShort>
+    <description>[PAWN_nameDef] representative of Obsidia spiritual circles. Dedicated their life to inner harmony, healing, and understanding the unseen. Gifted in speech and medicine.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Social</li>
+	  <li>Intellectual</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <Social>4</Social>
+      <Medicine>4</Medicine>
+	  <Construction>-4</Construction>
+    </skillGains>
+    <spawnCategories>
+      <li>OECivilians</li>
+	  <li>OEFighters</li>
+	  <li>ImperialCommon</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEPsyMonk>0</OEPsyMonk>
+    </forcedTraits>
+	<bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+<!--=============== Combat ====================-->
+<!--=============== Psy-Melee ====================-->
+  <BackstoryDef>
+    <defName>OE_Soldier_MeleePsy</defName>
+    <title>obsidia warpriest</title>
+    <titleShort>warpriest</titleShort>
+    <description>[PAWN_nameDef] underwent intensive combat and psi-training under the Obsidia Inquisition. Trained to inspire allies and eliminate enemies with righteous fury. Skilled in melee combat and social influence.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+	  <li>Social</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Caring</li>
+    </workDisables>
+    <skillGains>
+      <Melee>3</Melee>
+      <Social>4</Social>
+      <Shooting>-3</Shooting>
+    </skillGains>
+    <spawnCategories>
+      <li>OEFighters</li>
+	  <li>ImperialCommon</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEPsyWarrior>0</OEPsyWarrior>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<possessions>
+      <OE_Blue_TionantJelly>2</OE_Blue_TionantJelly>
+    </possessions>
+  </BackstoryDef>
+
+<!--=============== Psy-Ranged ====================-->
+  <BackstoryDef>
+    <defName>OE_Soldier_RangedPsy</defName>
+    <title>obsidia reaver</title>
+    <titleShort>reaver</titleShort>
+    <description>[PAWN_nameDef] descendant of Obsidia nobility who chose the path of a psi-warrior. Completed specialized military training focused on precision and tactical superiority. Highly skilled in ranged combat and intellectual pursuits.</description>
+    <slot>Adulthood</slot>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+	  <li>Violent</li>
+    </requiredWorkTags>
+	<workDisables>
+	  <li>Caring</li>
+    </workDisables>
+    <skillGains>
+      <Shooting>3</Shooting>
+      <Intellectual>4</Intellectual>
+      <Melee>-3</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>OEFighters</li>
+	  <li>ImperialCommon</li>
+    </spawnCategories>
+	<forcedTraits>
+      <OEPsyMarksman>0</OEPsyMarksman>
+    </forcedTraits>
+	<bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	<possessions>
+      <OE_Blue_TionantJelly>2</OE_Blue_TionantJelly>
+    </possessions>
+  </BackstoryDef>
+
+</Defs>

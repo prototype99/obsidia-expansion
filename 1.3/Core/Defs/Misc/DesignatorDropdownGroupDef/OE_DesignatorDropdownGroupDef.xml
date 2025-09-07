@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Artificial Ecosystem ====================-->
+  <DesignatorDropdownGroupDef>
+	<defName>OE_ArtEcosys_Micro</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+	<defName>OE_ArtEcosys_Medium</defName>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+	<defName>OE_ArtEcosys_Large</defName>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Wood Floor ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Floor_Tile_Wood</defName>
+    <label>wood planks</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Small Turrets ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Turrets_Small</defName>
+    <label>small Obsidia turrets</label>
+  </DesignatorDropdownGroupDef>
+
+<!--=============== Big Turrets ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>OE_Turrets_Big</defName>
+    <label>big Obsidia turrets</label>
+  </DesignatorDropdownGroupDef>
+
+</Defs>

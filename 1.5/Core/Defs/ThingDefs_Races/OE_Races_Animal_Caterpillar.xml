@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Caterpillar Base ====================-->
+  <ThingDef Name="OEBaseCaterpillar" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>obsidia</devNote>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <MarketValue>155</MarketValue>
+      <FilthRate>4</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+    </statBases>
+    <tools>
+      <li>
+        <label>mandibles</label>
+		<capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5.8</power>
+        <cooldownTime>2.1</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>3</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>BeetleLike</body>
+	  <herdAnimal>true</herdAnimal>
+      <maxPreyBodySize>1.1</maxPreyBodySize>
+      <petness>0.2</petness>
+      <baseBodySize>0.35</baseBodySize>
+      <baseHungerRate>0.125</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+	  <roamMtbDays>2</roamMtbDays>
+	  <fleshType>Insectoid</fleshType>
+	  <bloodDef>Filth_BloodInsect</bloodDef>
+	  <useMeatFrom>OE_Bruul_Acid</useMeatFrom>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>OE_Leather_Bruul</leatherDef>
+      <trainability>None</trainability>
+      <wildness>0.25</wildness>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+      <gestationPeriodDays>4.5</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Insectoid_Eat</soundEating>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>OEAnimal</li>
+	  <li>OEAnimalSell</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="OEKindBaseCaterpillar" Abstract="True">
+    <combatPower>30</combatPower>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
+	<wildGroupSize>2~5</wildGroupSize>
+  </PawnKindDef>
+
+<!--=============== Caterpillar ====================-->
+  <ThingDef ParentName="OEBaseCaterpillar">
+    <defName>OE_Caterpillar_Brown</defName>
+    <label>obsidia caterpillar</label>
+    <description>Caterpillar is a genetically engineered creature. Scientists planned to create a small, peaceful creature that would serve as a convenient source of meat.\n\nThis specimen adapted to life at average temperatures.</description>
+    <uiIconScale>1.15</uiIconScale>
+	<statBases>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>35</ComfyTemperatureMax>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseCaterpillar">
+    <defName>OE_Caterpillar_Brown</defName>
+    <label>obsidia caterpillar</label>
+    <race>OE_Caterpillar_Brown</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Brown</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Brown</texPath>
+          <drawSize>0.35</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Brown</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Brown</texPath>
+          <drawSize>0.65</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Brown</texPath>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Brown</texPath>
+          <drawSize>1.15</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Arctic Caterpillar ====================-->
+  <ThingDef ParentName="OEBaseCaterpillar">
+    <defName>OE_Caterpillar_Arctic</defName>
+    <label>obsidia caterpillar</label>
+    <description>Caterpillar is a genetically engineered creature. Scientists planned to create a small, peaceful creature that would serve as a convenient source of meat.\n\nThis specimen adapted to life at cold temperatures.</description>
+    <uiIconScale>1.15</uiIconScale>
+	<statBases>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>25</ComfyTemperatureMax>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseCaterpillar">
+    <defName>OE_Caterpillar_Arctic</defName>
+    <label>obsidia caterpillar</label>
+    <race>OE_Caterpillar_Arctic</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Blue</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Blue</texPath>
+          <drawSize>0.35</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Blue</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Blue</texPath>
+          <drawSize>0.65</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Blue</texPath>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Blue</texPath>
+          <drawSize>1.15</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!--=============== Desert Caterpillar ====================-->
+  <ThingDef ParentName="OEBaseCaterpillar">
+    <defName>OE_Caterpillar_Desert</defName>
+    <label>obsidia caterpillar</label>
+    <description>Caterpillar is a genetically engineered creature. Scientists planned to create a small, peaceful creature that would serve as a convenient source of meat.\n\nThis specimen adapted to life at hot temperatures.</description>
+    <uiIconScale>1.15</uiIconScale>
+	<statBases>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="OEKindBaseCaterpillar">
+    <defName>OE_Caterpillar_Desert</defName>
+    <label>obsidia caterpillar</label>
+    <race>OE_Caterpillar_Desert</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Red</texPath>
+          <drawSize>0.35</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Red</texPath>
+          <drawSize>0.35</drawSize>
+		</femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.35</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Red</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Red</texPath>
+          <drawSize>0.65</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>0.65</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarMale_Red</texPath>
+          <drawSize>1.15</drawSize>
+        </bodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/CaterpillarFemale_Red</texPath>
+          <drawSize>1.15</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Caterpillar/Dessicated_Caterpillar_east</texPath>
+          <drawSize>1.15</drawSize>	
+		</femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== CAC - Pistol ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACPistolBase">
+    <defName>CAC_Pistol_P</defName>
+    <label>Paragon Silentsong</label>
+    <description>Paragon Pistol used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Pistol_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<weaponTags Inherit="False">
+	  <li>CACLightGunP</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>2725</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_Pistol>1</CAC_Pistol>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Sighted</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Silentsong</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - Shotgun Sidearm ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACShotgunSBase">
+    <defName>CAC_ShotgunS_P</defName>
+    <label>Paragon Heartstriker</label>
+    <description>Paragon Shotgun Sidearm used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/ShotgunSidearm_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<weaponTags Inherit="False">
+	  <li>CACShortGunP</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3475</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+	  <Flammability>-0.75</Flammability>
+    </equippedStatOffsets>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_ShotgunS>1</CAC_ShotgunS>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Pistol</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Heartstriker</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - SMG ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACSMGBase">
+    <defName>CAC_SMG_P</defName>
+    <label>Paragon Echo</label>
+    <description>Paragon SMG used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/SMG_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<weaponTags Inherit="False">
+	  <li>CACBaseGunP</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3575</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_SMG>1</CAC_SMG>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+		  <li>LowStoppingPower</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Echo</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - Shotgun ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACShotgunBase">
+    <defName>CAC_Shotgun_P</defName>
+    <label>Paragon Grieving</label>
+    <description>Paragon Shotgun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Shotgun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<weaponTags Inherit="False">
+	  <li>CACShortGunP</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>3800</MarketValue>  
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_Shotgun>1</CAC_Shotgun>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>BurstFire</li>
+		  <li>Gun</li>
+		  <li>Shotgun</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Grieving</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - SniperRifle ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACSniperRifleBase">
+    <defName>CAC_SniperRifle_P</defName>
+    <label>Paragon Widowmaker</label>
+    <description>Paragon Sniper Rifle used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/SniperRifle_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<weaponTags Inherit="False">
+	  <li>CACSniperGunP</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>7100</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_SniperRifle>1</CAC_SniperRifle>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Rifle</li>
+		  <li>Scoped</li>
+        </weaponCategories>	
+		<namerLabels>
+          <li>Paragon Widowmaker</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== CAC - Minigun ====================-->
+<!--=============== Persona ====================-->
+  <ThingDef ParentName="CACMinigunBase">
+    <defName>CAC_Minigun_P</defName>
+    <label>Paragon Blackout</label>
+    <description>Paragon Minigun used by CAC Cultists. Specially modified weapon with increased power but difficult to handle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/CAC/Minigun_P</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<weaponTags Inherit="False">
+	  <li>CACHeavyGunP</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>WeaponsUnique</li>
+    </thingSetMakerTags>
+	<statBases>
+      <MarketValue>5925</MarketValue>
+    </statBases>
+	<recipeMaker>
+      <recipeUsers>
+        <li>OE_PersonaTable</li>
+      </recipeUsers>
+	  <researchPrerequisite>CACGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <CAC_Minigun>1</CAC_Minigun>
+	  <OE_PersonaKit>1</OE_PersonaKit>
+    </costList>
+	<possessionCount>0</possessionCount>
+	<comps Inherit="False">
+      <li Class="CompProperties_Styleable"/>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_EquippableAbilityReloadable"/>
+	  <li Class="CompProperties_Biocodable"/>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Odyssey" Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+		  <li>Gun</li>
+		  <li>Sighted</li>
+		  <li>Attachable</li>
+        </weaponCategories>
+		<namerLabels>
+          <li>Paragon Blackout</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

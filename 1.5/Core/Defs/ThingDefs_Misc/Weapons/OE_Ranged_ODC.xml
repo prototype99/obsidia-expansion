@@ -1,0 +1,1992 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== ODC Ranged ====================-->
+  <ThingDef Name="ODCRangedBase" ParentName="OERangedBase" Abstract="True">
+	<tradeTags>
+      <li>ODCGear</li>
+	  <li>OEGearSell</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>OE_WeaponWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>OE_Category_Weapons_ODC_Ranged</li>
+    </thingCategories>
+  </ThingDef>
+
+<!--=============== ODC - Pistol ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_P</defName>
+    <label>Purpose bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Pistol</defName>
+    <label>Purpose</label>
+    <description>Common Auto Pistol used bby Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>490</MarketValue>
+	  <Mass>1.5</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_P</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>55</OE_Obsidian>
+	  <OE_Platinum>40</OE_Platinum>
+	  <OE_Mooncloth>2</OE_Mooncloth>
+      <OE_Syntherius>5</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC - Revolver ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_R</defName>
+    <label>Trespasser bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Revolver</defName>
+    <label>Trespasser - Emergent</label>
+    <description>Moded Revolver used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>690</MarketValue>
+	  <Mass>1.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Pistol>1</ODC_Pistol>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Elemental Revolver ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef Name="ODCElemRevolverBullet" ParentName="BaseBullet" Abstract="True">
+	<graphicData>
+      <texPath>Things/Projectile/ODC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="ODCElemRevolverBullet">
+    <defName>Bullet_ODC_R_Acid</defName>
+    <label>Trespasser Acid bullet</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Revolver_Acid</defName>
+    <label>Trespasser - Apex(Acid)</label>
+    <description>Specialised Revolver used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>890</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_Acid</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver>1</ODC_Revolver>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="ODCElemRevolverBullet">
+    <defName>Bullet_ODC_R_Cryo</defName>
+    <label>Trespasser Cryo bullet</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>OTCCryo</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Revolver_Cryo</defName>
+    <label>Trespasser - Apex(Cryo)</label>
+    <description>Specialised Revolver used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>890</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_Cryo</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver>1</ODC_Revolver>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="ODCElemRevolverBullet">
+    <defName>Bullet_ODC_R_Fire</defName>
+    <label>Trespasser Fire bullet</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Revolver_Fire</defName>
+    <label>Trespasser - Apex(Fire)</label>
+    <description>Specialised Revolver used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>890</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_Fire</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver>1</ODC_Revolver>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="ODCElemRevolverBullet">
+    <defName>Bullet_ODC_R_EMP</defName>
+    <label>Trespasser EMP bullet</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>EMP</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Revolver_EMP</defName>
+    <label>Trespasser - Apex(EMP)</label>
+    <description>Specialised Revolver used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>890</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R_EMP</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Revolver>1</ODC_Revolver>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC SMG ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_SMG</defName>
+    <label>Misfit bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_SMG_A</defName>
+    <label>Misfit - Emergent</label>
+    <description>Moded SMG used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SMG_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>690</MarketValue>
+	  <Mass>2.0</Mass>
+	  <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Pistol>1</ODC_Pistol>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_SMG_B</defName>
+    <label>Misfit - Apex</label>
+    <description>Specialised SMG used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SMG_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCLightGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>890</MarketValue>
+	  <Mass>2.5</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_R</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_SMG_A>1</ODC_SMG_A>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Rifle ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_RF</defName>
+    <label>Inheritance bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Normal ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Rifle</defName>
+    <label>Inheritance</label>
+    <description>Common Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Rifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCBaseGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>985</MarketValue>
+	  <Mass>4.0</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RF</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGear</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>85</OE_Obsidian>
+	  <OE_Platinum>50</OE_Platinum>
+	  <OE_Mooncloth>4</OE_Mooncloth>
+      <OE_Syntherius>7</OE_Syntherius>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Shotgun ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_S</defName>
+    <label>Conspirator blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Shotgun</defName>
+    <label>Conspirator - Emergent</label>
+    <description>Moded Shotgun used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCShortGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1185</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Rifle>1</ODC_Rifle>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC Elemental Shotgun ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef Name="ODCElemShotgunBullet" ParentName="BaseBullet" Abstract="True">
+	<graphicData>
+      <texPath>Things/Projectile/ODC_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <stoppingPower>3.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="ODCElemShotgunBullet">
+    <defName>Bullet_ODC_S_Acid</defName>
+    <label>Conspirator blast</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Shotgun_Acid</defName>
+    <label>Conspirator - Apex(Acid)</label>
+    <description>Specialised Shotgun used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCShortGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_Acid</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun>1</ODC_Shotgun>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="ODCElemShotgunBullet">
+    <defName>Bullet_ODC_S_Cryo</defName>
+    <label>Conspirator bullet</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>OTCCryo</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Shotgun_Cryo</defName>
+    <label>Conspirator - Apex(Cryo)</label>
+    <description>Specialised Shotgun used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCShortGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_Cryo</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun>1</ODC_Shotgun>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="ODCElemShotgunBullet">
+    <defName>Bullet_ODC_S_Fire</defName>
+    <label>Conspirator bullet</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Shotgun_Fire</defName>
+    <label>Conspirator - Apex(Fire)</label>
+    <description>Specialised Shotgun used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCShortGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_Fire</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun>1</ODC_Shotgun>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="ODCElemShotgunBullet">
+    <defName>Bullet_ODC_S_EMP</defName>
+    <label>Conspirator bullet</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>EMP</def>
+		 <amount>5</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_Shotgun_EMP</defName>
+    <label>Conspirator - Apex(EMP)</label>
+    <description>Specialised Shotgun used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>ShortShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCShortGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_S_EMP</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Shotgun>1</ODC_Shotgun>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC AssaultRifle ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_AR</defName>
+    <label>Thoughtless bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_BulletSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_AssaultRifle_A</defName>
+    <label>Thoughtless - Emergent</label>
+    <description>Moded Assault Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/AssaultRifle_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCBaseGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1185</MarketValue>
+	  <Mass>4.0</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_AR</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>4</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Rifle>1</ODC_Rifle>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_AssaultRifle_B</defName>
+    <label>Thoughtless - Apex</label>
+    <description>Specialised Assault Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/AssaultRifle_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCBaseGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_AR</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>6</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+		<soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_AssaultRifle_A>1</ODC_AssaultRifle_A>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC SniperRifle ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_SR</defName>
+    <label>Smuggler bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_BulletBig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>110</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_SniperRifle_A</defName>
+    <label>Smuggler - Emergent</label>
+    <description>Moded Sniper Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SniperRifle_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCSniperGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1385</MarketValue>
+	  <Mass>4.5</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_SR</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>49.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_Rifle>1</ODC_Rifle>
+	  <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_SniperRifle_B</defName>
+    <label>Smuggler - Apex</label>
+    <description>Specialised Sniper Rifle used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/SniperRifle_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+	  <li>LongShots</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCSniperGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>1785</MarketValue>
+	  <Mass>5.0</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_SR</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>58.9</range>
+        <burstShotCount>1</burstShotCount>
+		<soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_SniperRifle_A>1</ODC_SniperRifle_A>
+	  <OE_DriftersKit>2</OE_DriftersKit>
+    </costList>
+  </ThingDef>
+
+<!--=============== ODC - Rocket Launcher ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ODC_RL</defName>
+    <label>Boomshooter rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/ODC_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Emergent ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_RocketLauncher</defName>
+    <label>Boomshooter - Emergent</label>
+    <description>Moded Rocket Launcher used by Obsidia Drifters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <WorkToMake>65000</WorkToMake>
+	  <MarketValue>2155</MarketValue>
+	  <Mass>11.5</Mass>
+      <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.30</MoveSpeed>
+	</equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL</defaultProjectile>
+		<forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>30.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearAdv</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <OE_Obsidian>175</OE_Obsidian>
+	  <OE_Platinum>50</OE_Platinum>
+	  <OE_Mooncloth>6</OE_Mooncloth>
+      <OE_Syntherius>24</OE_Syntherius>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== ODC Elemental Rocket Launcher ====================-->
+<!--=============== Bullets ====================-->
+  <ThingDef Name="ODCElemRocketLauncherBullet" ParentName="BaseBullet" Abstract="True">
+	<graphicData>
+      <texPath>Things/Projectile/ODC_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>OCCBlast</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Acid ====================-->
+  <ThingDef ParentName="ODCElemRocketLauncherBullet">
+    <defName>Bullet_ODC_RL_Acid</defName>
+    <label>Boomshooter rocket</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>OTCAcid</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_RocketLauncher_Acid</defName>
+    <label>Boomshooter - Apex(Acid)</label>
+    <description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with Acid damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Acid/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2155</MarketValue>
+	  <Mass>13.0</Mass>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.30</MoveSpeed>
+	</equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_Acid</defaultProjectile>
+		<forcedMissRadius>4.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher>1</ODC_RocketLauncher>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Cryo ====================-->
+  <ThingDef ParentName="ODCElemRocketLauncherBullet">
+    <defName>Bullet_ODC_RL_Cryo</defName>
+    <label>Boomshooter rocket</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>OTCCryo</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_RocketLauncher_Cryo</defName>
+    <label>Boomshooter - Apex(Cryo)</label>
+    <description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with Cryo damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Cryo/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2155</MarketValue>
+	  <Mass>13.0</Mass>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.30</MoveSpeed>
+	</equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_Cryo</defaultProjectile>
+		<forcedMissRadius>4.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher>1</ODC_RocketLauncher>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== Fire ====================-->
+  <ThingDef ParentName="ODCElemRocketLauncherBullet">
+    <defName>Bullet_ODC_RL_Fire</defName>
+    <label>Boomshooter rocket</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>Flame</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_RocketLauncher_Fire</defName>
+    <label>Boomshooter - Apex(Fire)</label>
+    <description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with Fire damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/Fire/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2155</MarketValue>
+	  <Mass>13.0</Mass>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.30</MoveSpeed>
+	</equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_Fire</defaultProjectile>
+		<forcedMissRadius>4.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher>1</ODC_RocketLauncher>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--=============== EMP ====================-->
+  <ThingDef ParentName="ODCElemRocketLauncherBullet">
+    <defName>Bullet_ODC_RL_EMP</defName>
+    <label>Boomshooter rocket</label>
+	<projectile>
+	  <extraDamages>
+		<li>
+         <def>EMP</def>
+		 <amount>15</amount>
+       </li>
+	  </extraDamages>
+    </projectile>
+  </ThingDef>
+
+<!--=============== Apex ====================-->
+  <ThingDef ParentName="ODCRangedBase">
+    <defName>ODC_RocketLauncher_EMP</defName>
+    <label>Boomshooter - Apex(EMP)</label>
+    <description>Specialised Rocket Launcher used by Obsidia Drifters. Charged with EMP damage.\n\nWarning! EMP damage isn't intended to destroy meatbags.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/ODC/EMP/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+	  <drawOffsetNorth>(0.0, 0.0, 0.2)</drawOffsetNorth>
+	  <drawOffsetEast>(-0.2, 0.0, 0.2)</drawOffsetEast>
+	  <drawOffsetSouth>(0.0, 0.0, 0.2)</drawOffsetSouth>
+	  <drawOffsetWest>(0.2, 0.0, 0.2)</drawOffsetWest>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>ODCHeavyGun</li>
+    </weaponTags>
+	<statBases>
+      <MarketValue>2155</MarketValue>
+	  <Mass>13.0</Mass>
+	  <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.30</MoveSpeed>
+	</equippedStatOffsets>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ODC_RL_EMP</defaultProjectile>
+		<forcedMissRadius>4.9</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>40.0</range>
+        <burstShotCount>2</burstShotCount>
+		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+		<soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		<onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+	  <researchPrerequisite>ODCGearExp</researchPrerequisite>	
+    </recipeMaker>
+    <costList>
+      <ODC_RocketLauncher>1</ODC_RocketLauncher>
+	  <OE_DriftersKit>1</OE_DriftersKit>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>OCCBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
