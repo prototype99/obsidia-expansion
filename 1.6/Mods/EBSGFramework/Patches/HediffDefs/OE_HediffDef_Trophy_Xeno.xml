@@ -4,13 +4,19 @@
 
 <Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Vanilla Expanded Framework</li>
+		<li>Biotech</li>
 	</mods>
 	<match Class="PatchOperationSequence">
 		<operations>
-		  <li Class="PatchOperationAdd">
-		    <xpath>/Defs</xpath>
-			<value>
+		  <li Class="PatchOperationFindMod">
+		    <mods>
+			  <li>Vanilla Expanded Framework</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+			  <operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
 <!--=============== Moonveil Twins / Silver Eclipse - Effect ====================-->
   <HediffDef>
     <defName>OE_Trophy_Xeno_NightHunter_Hediff</defName>
@@ -439,6 +445,18 @@
     </comps>
   </HediffDef>
 
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationFindMod">
+				  <mods>
+				    <li>Obsidia Expansion - Nanomorph Xenotype</li>
+				  </mods>
+				  <match Class="PatchOperationSequence">
+				    <operations>
+					  <li Class="PatchOperationAdd">
+					    <xpath>/Defs</xpath>
+						<value>
 <!--=============== Mechfeaster - Effect ====================-->
   <HediffDef>
     <defName>OE_Trophy_Xeno_NanogenicRanged_Hediff</defName>
@@ -472,10 +490,17 @@
     </comps>
   </HediffDef>
 
-			</value>
-		  </li>
+						</value>
+					  </li>
+					</operations>
+				  </match>
+				</li>
+			  
+			  </operations>
+			</match>
+		  </li>  
 		</operations>
 	</match>
 </Operation>
 
-</Patch>
+</Patch>	

@@ -93,7 +93,7 @@
 						  <inSignal>$inSignal</inSignal>
 						  <map>$map</map>
 						  <enemyFaction>ObsidiaCrimsonArachnaCult</enemyFaction>
-						  <points>$points</points>
+						  <points>$(points*1.25)</points>
 						  <walkInSpot>$walkInSpot</walkInSpot>
 						</parms>
 					  </li>

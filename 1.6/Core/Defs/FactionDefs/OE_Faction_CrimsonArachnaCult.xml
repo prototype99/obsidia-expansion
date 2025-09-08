@@ -227,6 +227,17 @@
 		  <CAC_SinPriest MayRequire="Ludeon.RimWorld.Anomaly">1</CAC_SinPriest>
         </options>
       </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+		  <CAC_Deacon>5</CAC_Deacon>
+		  <CAC_Pontifex>5</CAC_Pontifex>
+		  <CAC_Returned MayRequire="Ludeon.RimWorld.Anomaly">20</CAC_Returned>
+		  <CAC_CyberArachna MayRequire="Ludeon.RimWorld.Anomaly">15</CAC_CyberArachna>
+		  <CAC_SinPriest MayRequire="Ludeon.RimWorld.Anomaly">2</CAC_SinPriest>
+        </options>
+      </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/Expanding/Colony</settlementTexturePath>
 	<disallowedRaidAgeRestrictions>
